@@ -16,6 +16,9 @@ figures/*
 !figures/.gitkeep
 reports/**/figures/**
 reports/**/figures_rendered/**
+reports/**/raw_extraction/*wall_face_samples.csv
+reports/2026-06-04_ethan_transient_axial_package/all_salt_axial_patch_heat_timeseries.csv
+reports/2026-06-04_ethan_transient_axial_package/all_salt_transient_timeseries.csv
 
 linked_cases/*
 !linked_cases/.gitkeep
