@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-06-04",
+  "source_case": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_jin_coarse_mesh",
+  "target_case": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt1/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation",
+  "job_walltime": "72:00:00",
+  "nprocs": 64,
+  "runtime_env_script": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-02_runtime_recovery/scripts/of13-env.sh",
+  "required_runtime_dependency": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so",
+  "purpose": "Salt 1 Jin continuation for improved late-time heat-balance decay and a defensible Salt 1 representative.",
+  "staging_mode": "minimal restart stage (restart state plus required runtime files only)",
+  "non_destructive_note": "The imported staged source case is not edited; continuation is run from a staged writable copy under jadyn_runs/salt1/2026-06-04_jin_continuation_candidate."
+}

@@ -1,0 +1,23 @@
+# Writer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Writer`
+- task ID: `AGENT-043`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `.agent/status/2026-06-11_AGENT-041.md`
+- files changed:
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `.agent/status/2026-06-11_AGENT-043.md`
+  - `.agent/journal/2026-06-11/writer-sign-hint-boundary.md`
+- commands run:
+  - `sed -n '96,130p' reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `sed -n '68,130p' journals/2026-06/2026-06-11_ethan_runs.md`
+- results or observations:
+  - Added an explicit caveat about `flow_direction_sign_hint` to the internal brief.
+  - Extended the June 11 journal progressively so the remaining rollout boundary is documented immediately after the rerun reviewer gate rather than as a later retrospective rewrite.
+- next steps:
+  - Append the Salt 2 rollout-gate clearance once the reviewer rerun is recorded.

@@ -1,0 +1,68 @@
+{
+  "generated_at": "2026-06-07T15:29:30-05:00",
+  "source_id": "reporting_figure_convention_refresh_2026-06-07",
+  "source_owner": "ethan_runs_local_reporting_refresh",
+  "case_id": "campaign_reporting_and_visualization_refresh",
+  "native_outputs_policy": "reporting_and_visualization artifacts were regenerated locally from registered or staged sources; imported solver output roots were not mutated",
+  "provenance_note": "June 7 reporting refresh that standardized typed figure subfolders, switched last-timestep temperature slices to the z-reference frame, and refreshed the continuation/convergence/wall-loss related packages after the repaired-runtime results.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "scripts": [
+    "tools/common.py",
+    "tools/extract/render_last_timestep_temperature_slices.py",
+    "tools/analyze/build_ethan_continuation_diagnosis.py",
+    "tools/analyze/build_ethan_convergence_and_salt1_campaign.py",
+    "tools/analyze/build_ethan_wall_loss_resistance_report.py",
+    "tools/analyze/build_salt2_behavior_package.py",
+    "tools/analyze/build_ethan_transient_axial_package.py",
+    "tools/analyze/build_ethan_transient_axial_audit.py",
+    "reports/2026-06-01_weekly_status/make_weekly_status_figures.py",
+    "staging/render_jobs/2026-06-07_smoke_reconstructed_case_kirst.sbatch",
+    "staging/render_jobs/2026-06-07_smoke_reconstructed_case_salt2.sbatch"
+  ],
+  "refreshed_reports": [
+    "reports/2026-06-05_ethan_continuation_diagnosis",
+    "reports/2026-06-05_ethan_convergence_and_salt1_campaign",
+    "reports/2026-06-05_ethan_wall_loss_resistance_coupling",
+    "reports/2026-06-04_salt2_behavior_package",
+    "reports/2026-06-04_ethan_transient_axial_package",
+    "reports/2026-06-01_weekly_status"
+  ],
+  "verified_outputs": {
+    "continuation_summary": "reports/2026-06-05_ethan_continuation_diagnosis/summary.json",
+    "continuation_figure_png": "reports/2026-06-05_ethan_continuation_diagnosis/figures/png/continuation_job_sequence.png",
+    "convergence_figure_png": "reports/2026-06-05_ethan_convergence_and_salt1_campaign/figures/png/eight_case_convergence_dashboard.png",
+    "wall_loss_figure_png": "reports/2026-06-05_ethan_wall_loss_resistance_coupling/figures/png/salt_mdot_vs_ambient_loss_error.png",
+    "salt2_behavior_figure_png": "reports/2026-06-04_salt2_behavior_package/figures/png/salt2_mdot_compare.png",
+    "transient_metric_coverage_png": "reports/2026-06-04_ethan_transient_axial_package/figures/png/metric_coverage_end_times.png",
+    "weekly_status_figure_png": "reports/2026-06-01_weekly_status/figures/png/salt2_convergence_monitor.png",
+    "slice_png": [
+      "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+      "figures/png/val_salt_test_2_coarse_mesh_laminar.png"
+    ],
+    "slice_svg": [
+      "figures/svg/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.svg",
+      "figures/svg/val_salt_test_2_coarse_mesh_laminar_last_timestep_temperature_slice.svg"
+    ],
+    "slice_pdf": [
+      "figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.pdf",
+      "figures/pdf/val_salt_test_2_coarse_mesh_laminar_last_timestep_temperature_slice.pdf"
+    ],
+    "slice_status": "figures/last_timestep_temperature_slice_status.json",
+    "smoke_jobs": {
+      "3214869": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "3214870": "val_salt_test_2_coarse_mesh_laminar"
+    }
+  },
+  "unresolved_items": [
+    "Salt 4 Jin continuation 3210231 was still running when the continuation report was refreshed.",
+    "Salt 1 Kirst retry 3211199 failed on missing root-level T and needs staged restart-tree repair before another retry.",
+    "Transient axial package rebuild still encounters reconstructed-T scalar-token parse failures on some cases.",
+    "Only two cases were rerendered under the new z-reference ParaView slice convention so far."
+  ]
+}

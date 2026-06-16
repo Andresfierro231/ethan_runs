@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-04T16:50:27-05:00",
+  "source_ids": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh"
+  ],
+  "pressure_row_count": 108,
+  "pressure_drop_row_count": 54,
+  "heat_drift_row_count": 126,
+  "heat_latest_row_count": 126,
+  "representative_row_count": 3,
+  "notes": [
+    "Pressure drops use latest-time patch-averaged p and p_rgh from reconstructed fields.",
+    "Section heat drift uses the existing wallHeatFlux time-history reductions.",
+    "Axial h(x) and Nu(x) are intentionally deferred until a cleaner T-field postprocessing path is in place."
+  ]
+}

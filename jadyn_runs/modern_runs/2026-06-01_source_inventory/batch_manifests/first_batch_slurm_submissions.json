@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-01T12:18:00-05:00",
+  "stage_job": {
+    "job_id": 3200181,
+    "job_name": "modern_stage1",
+    "script": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-06-01_source_inventory/slurm/stage_first_batch.sbatch",
+    "state_at_write": "RUNNING"
+  },
+  "register_job": {
+    "job_id": 3200186,
+    "job_name": "modern_reg1",
+    "script": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-06-01_source_inventory/slurm/register_first_batch.sbatch",
+    "dependency": "afterok:3200181",
+    "state_at_write": "PENDING"
+  }
+}

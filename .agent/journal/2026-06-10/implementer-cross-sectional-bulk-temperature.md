@@ -1,0 +1,89 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-025`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_transient_axial_package.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-025.md`
+  - `.agent/journal/2026-06-10/implementer-cross-sectional-bulk-temperature.md`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- commands run:
+  - `python3.11 -m py_compile tools/extract/sample_leg_centerline_major_loss.py tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+  - `foamPostProcess -dict system/streamwise_bulk_temperature_functions -time '7434'`
+- results or observations:
+  - Replaced the TP-endpoint bulk-temperature proxy path with an OpenFOAM `surfaces`/`cutPlane` streamwise bulk-temperature extraction aligned to the repaired major-span bins.
+  - The first cut-plane attempt exposed a reconstructed-field defect: some temp-case retained `T` files contained literal `-nan` scalar tokens that OpenFOAM refused to parse.
+  - Added a local temp-case sanitization pass for reconstructed `T` that replaces standalone invalid `nan` tokens with nearby finite scalar interpolation before running the cut-plane function object.
+  - The live rebuild advanced to a newer retained hydraulic window `7444-7448 s`; the matched cut-plane thermal extraction completed on all five retained times.
+  - Final raw thermal provenance from `leg_major_loss_extraction_summary.json`:
+    - `cross_section_temperature_available_times = [7444, 7445, 7446, 7447, 7448]`
+    - `cross_section_temperature_row_count = 1895`
+    - `thermal_nan_token_replacements_by_time = {7444: 1, 7446: 2, 7447: 6, 7448: 3}`
+  - Final package rebuild succeeded via the refreshed raw extraction tree; `summary.json`, `README.md`, and `thermal_streamwise_summary.csv` now all report the matched-bulk method and the `7444-7448 s` shared window.
+- incomplete lines of investigation:
+  - The matched bulk term is still area-weighted rather than mass-flux-weighted.
+  - Thermal interpretation should still be reviewed span-by-span against the new loopwise figures before publication use.
+- next steps:
+  - Reviewer pass on the rebuilt package with focus on HTC/`UA'` interpretation boundary and on whether the direct hydraulic and thermal stories align on the repaired loop coordinate.
+
+## Follow-On Repair Pass
+
+- date: `2026-06-10`
+- files changed in follow-on pass:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-025.md`
+  - `.agent/journal/2026-06-10/implementer-cross-sectional-bulk-temperature.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_streamwise_friction_patch_averages.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- commands run in follow-on pass:
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py tools/extract/sample_streamwise_friction_patch_averages.py tools/extract/sample_leg_centerline_major_loss.py tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction`
+- results or observations from follow-on pass:
+  - Replaced the area-weighted matched-bulk method with a connected-region, mass-flux-weighted reduction on each cut plane using sampled `T` and `U`.
+  - Added `flow_direction_sign_hint = +1.0` on all Salt 2 major spans and documented that this assumes the registered span order already follows the physical loop flow direction.
+  - Added a deterministic temp extraction workspace key derived from `source_id + profile_name + selected_times + required_fields`, so the thermal extraction no longer depends on mutable shared temp-case state.
+  - Added `thermal_sanitization_summary.json` as a dedicated raw artifact. The rebuilt package and the raw extractor summary now agree exactly on `T` token replacement provenance:
+    - `7484: 4`
+    - `7485: 5`
+    - `7487: 2`
+  - Added thermal support gates for report-facing local HTC / `UA'`:
+    - chosen-region area ratio to reference area must lie in `[0.5, 2.0]`
+    - chosen-region aligned positive mass flux must exceed tolerance
+    - `|T_bulk - T_wall| >= 0.25 K`
+    - region-selection fallback or wrong-sign support is treated as non-usable
+  - The rebuilt package moved to a later frozen window `7483-7487 s` and completed successfully.
+  - Mean chosen-region area ratio to reference area improved to near-unity on the non-pathological bulk of the loop:
+    - `lower_leg = 1.426`
+    - `right_leg = 1.482`
+    - `left_lower_leg = 1.000`
+    - `test_section_span = 1.008`
+    - `left_upper_leg = 1.000`
+    - `upper_leg = 1.010`
+  - The old report-blocking HTC spikes are removed from the primary mass-flux-weighted curve. The top non-masked local HTC values are now about `1402 W/m^2/K` on `lower_leg` and `740 W/m^2/K` on `upper_leg`, rather than `~1e4 W/m^2/K` singularities from tiny `Delta T`.
+  - Residual support issues remain localized rather than global:
+    - `285` retained bin rows are still thermal-support-flagged
+    - `240` retained bin rows have chosen-region area ratio above `2.0`, but those rows are now explicitly marked `area_ratio_out_of_range` and their local HTC / `UA'` values are written as `NaN`
+  - The new `case_loopwise_thermal_support_qc` figure makes the remaining flagged locations visible without contaminating the primary HTC / `UA'` plots.
+- incomplete lines of investigation after follow-on pass:
+  - The chosen-region selection still accepts some large-area supports before gating; those rows are safely masked in report-facing derived metrics, but the underlying geometry/support issue is not solved everywhere.
+  - `flow_direction_sign_hint` is currently profile-authored rather than inferred from a more fundamental volumetric or streamline-based direction field.
+- next steps after follow-on pass:
+  - External reviewer pass focused on whether the remaining flagged-bin pattern is acceptable for report use and whether the mass-flux-weighted effective HTC / `UA'` language should still be labeled as effective CFD-side indicators rather than local transport coefficients.

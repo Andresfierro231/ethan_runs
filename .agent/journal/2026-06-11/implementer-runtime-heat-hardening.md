@@ -1,0 +1,38 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-032`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+  - `tools/extract/sample_streamwise_friction_patch_averages.py`
+  - `tools/case_analysis_profiles.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.json`
+- files changed:
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+  - `.agent/status/2026-06-11_AGENT-032.md`
+  - `.agent/journal/2026-06-11/implementer-runtime-heat-hardening.md`
+- commands run:
+  - `python3.11 -m py_compile tools/analyze/build_ethan_case_heat_summary.py tools/extract/sample_feature_minor_loss_budget.py`
+  - `python tools/analyze/build_ethan_case_heat_summary.py --source-id val_salt_test_2_coarse_mesh_laminar --output-dir tmp/2026-06-11_heat_summary_smoke`
+  - `python tools/extract/sample_feature_minor_loss_budget.py --analysis-manifest reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json --output-dir tmp/2026-06-11_feature_minor_loss_manifest_check`
+  - `python tools/extract/sample_feature_minor_loss_budget.py --source-id val_salt_test_2_coarse_mesh_laminar --last-n-times 1 --output-dir tmp/2026-06-11_feature_minor_loss_smoke_live`
+  - `find tmp_extract/ethan_legwise_hydraulic_budget/val_salt_test_2_coarse_mesh_laminar/842cdddb207714a5 -maxdepth 2 -type d | sort | head -200`
+  - `find tmp_extract/ethan_case_analysis_snapshots/val_salt_test_2_coarse_mesh_laminar/salt2_val_case_v1/processors64 -maxdepth 1 -mindepth 1 -type d | sort | tail -20`
+- results or observations:
+  - Added explicit temp-case keying to the feature-budget extractor so separate runs no longer share one mutable extraction workspace.
+  - Confirmed that a live one-time smoke run now uses a new hashed extraction root and completes successfully.
+  - The first manifest-based smoke run exposed a separate upstream problem: the June 10 package manifest still requests `7483-7487`, but its referenced shared frozen snapshot now only contains `7502-7506`.
+  - Tightened the extractor so that this manifest drift now fails fast with a clear requested-versus-available time message instead of quietly reconstructing the wrong state or failing later with a misleading missing-time error.
+  - Added explicit validation-reference provenance to the heat summary, including the source CSV path, availability status, and the lag between the live heat tail and the referenced validation row.
+- incomplete lines of investigation:
+  - The broader snapshot-mutability issue still lives in the shared package-builder runtime path and needs a later dedicated builder/runtime hardening pass.
+  - `profile_dp_pa` and `wall_dp_pa` remain deferred in the feature extractor; this slice intentionally improved runtime safety and provenance clarity, not feature-pressure semantics.
+- next steps:
+  - Push the snapshot-drift finding into the later package-builder/runtime hardening task.
+  - Use the new explicit heat-summary provenance fields in any reviewer or report-facing wording that mentions validation lag.

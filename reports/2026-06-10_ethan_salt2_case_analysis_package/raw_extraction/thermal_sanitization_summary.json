@@ -1,0 +1,17 @@
+{
+  "extract_case": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar/d9730fe17aca800a",
+  "generated_at": "2026-06-10T17:14:14-05:00",
+  "replacement_rule": "Replace standalone invalid scalar nan tokens in reconstructed T fields using nearest finite neighbors within the same ASCII field file.",
+  "replacements_by_time": {
+    "7484": 4,
+    "7485": 5,
+    "7487": 2
+  },
+  "selected_times": [
+    "7483",
+    "7484",
+    "7485",
+    "7486",
+    "7487"
+  ]
+}

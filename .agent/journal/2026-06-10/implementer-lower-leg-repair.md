@@ -1,0 +1,43 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-016`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/case_analysis_profiles.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_wall_face_samples.csv`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-016.md`
+  - `.agent/journal/2026-06-10/implementer-lower-leg-repair.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/**`
+- commands run:
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,260p' journals/2026-06/2026-06-09_ethan_runs.md`
+  - `sed -n '1,260p' journals/2026-06/2026-06-08_ethan_runs.md`
+  - `python - <<'PY' ... lower-leg patch-centroid polyline prototype ... PY`
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py tools/extract/sample_leg_centerline_major_loss.py tools/analyze/build_ethan_case_analysis_package.py tools/analyze/build_ethan_case_heat_summary.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+- results or observations:
+  - The patch-centroid polyline prototype for `lower_leg` was viable enough to implement. Using ordered area-weighted wall-patch centroids as the span polyline reduced the lower-leg face-to-centerline distance statistics from the quarantined TP/TW-proxy level of about `0.444 m` median in the earlier June 10 package to a rebuilt-package range of min `0.008826 m`, median `0.011025 m`, p95 `0.012127 m`, max `0.018749 m`.
+  - The implementation is now wired into both station generation and wall-face projection, so `lower_leg` no longer mixes one coordinate system for bins with another for face assignment.
+  - The rebuilt package froze a new hydraulic retained window of `7326-7330 s`; the heat tail reached `7335 s`.
+  - `lower_leg` is no longer quarantined in `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`; only `right_leg` remains quarantined.
+  - The rebuilt `lower_leg` row in `major_loss_summary.csv` now shows `valid_bin_count = 440`, `total_bin_row_count = 440`, `empty_bin_fraction = 0.0`, `median_face_distance_to_centerline_m = 0.011025343241075776`, and `summary_status = warning_heavy` rather than `quarantined_projection_misregistration`.
+  - The remaining `lower_leg` warning heaviness is now primarily a tau-variation issue, not a missing-coverage issue. Most lower-leg `darcy_f` values are clustered near `1`, but a small extreme tail still inflates the mean.
+- incomplete lines of investigation:
+  - The repair is intentionally scoped to `lower_leg` only; `right_leg` still uses the TP/TW proxy and remains quarantined.
+  - The circularized local geometry estimator itself was not changed, so any residual high-`f` tail now reflects the existing area-per-length estimator, tau heuristic, or local flow physics rather than the old lower-leg projection collapse.
+- next steps:
+  - Send the lower-leg repair to review with emphasis on the patch-centroid assumptions, the use of ordered patch names as the streamwise sequence, and the decision to leave `right_leg` quarantined.

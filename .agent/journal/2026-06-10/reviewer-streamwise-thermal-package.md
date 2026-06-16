@@ -1,0 +1,45 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Reviewer`
+- task ID: `AGENT-027`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `reports/AGENTS.override.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/thermal_streamwise_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-027.md`
+  - `.agent/journal/2026-06-10/reviewer-streamwise-thermal-package.md`
+- commands run:
+  - `sed -n '1,220p' reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `sed -n '1,120p' reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `sed -n '1,120p' reports/2026-06-10_ethan_salt2_case_analysis_package/thermal_streamwise_summary.csv`
+  - `python3.11 - <<'PY' ... major_loss_cumulative_timeseries.csv area-ratio/dT/HTC scan ...`
+  - `python3.11 - <<'PY' ... bulk_cross_section_temperature_samples.csv area scan ...`
+  - `view_image reports/2026-06-10_ethan_salt2_case_analysis_package/figures/png/case_loopwise_thermal_profiles.png`
+  - `view_image reports/2026-06-10_ethan_salt2_case_analysis_package/figures/png/case_loopwise_effective_ua_per_m.png`
+- results or observations:
+  - Opened the reviewer pass on the rebuilt matched-bulk thermal package.
+  - Review focus is report readiness: whether the new streamwise thermal figures and summary language are supported by the raw extraction and whether the remaining limitations are stated tightly enough.
+  - Findings:
+    - The matched cut-plane support is often much larger than the geometry-surrogate flow area, which means the sampled surface is not behaving like one local pipe cross-section. Span-mean `bulk_cross_section_area_ratio_to_geom` is already `2.06-3.90` across the package summary, and individual bins reach `12.13` on `right_leg` and `11.92` on `left_upper_leg`.
+    - The effective-HTC and `UA'` plots still contain denominator-driven spikes that are not report-clean local transport values. Example: `left_upper_leg` line `1262` in `major_loss_cumulative_timeseries.csv` has `bulk_minus_wall_temp_k = 0.0375 K` with `wall_heatflux_area_avg_w_m2 = -373.2`, producing `effective_htc_w_m2_k = 9947.7`.
+    - The cut-plane temperature itself still shows likely nonlocal contamination in the `upper_leg`: bins near lines `1448-1452` in the cumulative timeseries carry `bulk_temp_fluid_area_avg_k ~417 K` against wall temperatures near `457 K`, with only modest wall heat flux. That is too large a local fluid-wall inversion to accept casually as a clean local bulk-fluid signal.
+    - Sanitization provenance is unstable across reruns. `summary.json` still reports `thermal_nan_token_replacements_by_time = {7444:1, 7446:2, 7447:6, 7448:3}`, but the current raw extractor summary now reports an empty map because the temp case was already sanitized before the latest invocation. That makes the provenance invocation-order dependent unless the first sanitization event is persisted separately.
+  - Review verdict:
+    - The matched-bulk extension is a real improvement over the TP-endpoint proxy and is usable for qualitative loopwise thermal patterning.
+    - It is not yet clean enough for publication-grade local HTC / `UA'` claims without a better bulk-temperature reduction and tighter outlier handling.
+- incomplete lines of investigation:
+  - Did not review the SVG/PDF figure renderings separately; findings are based on the PNG outputs and CSV/JSON artifacts.
+  - Did not implement corrective changes in this reviewer pass.
+- next steps:
+  - Best next technical step is a mass-flux-weighted or single-connected-region cross-sectional bulk-temperature reduction.
+  - Best next report step is to describe the current matched-bulk curves as qualitative effective-transfer indicators rather than definitive local HTC measurements.

@@ -1,0 +1,63 @@
+# AGENT-074 Raw Journal
+
+## 2026-06-15 campaign synthesis row 14
+
+- role: `Writer`
+- task: `AGENT-074`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `journals/2026-06/2026-06-09_ethan_runs.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `journals/2026-06/2026-06-12_ethan_runs.md`
+  - `../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-02_ethan_modern_runs_first_batch_v1.md`
+  - `../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-12_workflow_journal.md`
+  - `../cfd-modeling-tools/cross_model_comparison/operational_notes/2026-06-12_ethan_postprocessing_all_runs_v1/CHECKPOINT.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/TODO.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/executive_summary.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/technical_analysis.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/methodology.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/readiness_matrix.csv`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/cross_run_summary.csv`
+  - representative per-run executive summaries for `val_water_test_1_coarse_mesh_laminar`, `viscosity_screening_salt_test_1_jin_coarse_mesh`, `viscosity_screening_salt_test_1_kirst_coarse_mesh`, `viscosity_screening_salt_test_2_kirst_coarse_mesh`, and `val_salt_test_2_coarse_mesh_laminar`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-15_AGENT-074.md`
+  - `.agent/journal/2026-06-15/writer-ethan-postprocessing-campaign-synthesis.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/executive_summary.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/technical_analysis.md`
+- commands run:
+  - `sed -n '1,220p' .agent/FILE_OWNERSHIP.md`
+  - `sed -n '1,240p' .agent/ROLES.md`
+  - `ls -la ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/TODO.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/operational_notes/2026-06-12_ethan_postprocessing_all_runs_v1/CHECKPOINT.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/executive_summary.md`
+  - `sed -n '1,260p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/technical_analysis.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/methodology.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/readiness_matrix.csv`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/cross_run_summary.csv`
+  - `sed -n '1,220p' journals/2026-06/2026-06-09_ethan_runs.md`
+  - `sed -n '1,220p' journals/2026-06/2026-06-11_ethan_runs.md`
+  - `sed -n '1,220p' journals/2026-06/2026-06-12_ethan_runs.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-02_ethan_modern_runs_first_batch_v1.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-12_workflow_journal.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs/val_water_test_1_coarse_mesh_laminar/reports/executive_summary.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs/viscosity_screening_salt_test_1_jin_coarse_mesh/reports/executive_summary.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs/viscosity_screening_salt_test_1_kirst_coarse_mesh/reports/executive_summary.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs/viscosity_screening_salt_test_2_kirst_coarse_mesh/reports/executive_summary.md`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs/val_salt_test_2_coarse_mesh_laminar/reports/executive_summary.md`
+  - `python3.11 -c "import csv,collections,statistics as s; p='../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/cross_run_summary.csv'; rows=list(csv.DictReader(open(p))); print('readiness',dict(collections.Counter(r['readiness_label'] for r in rows))); print('status',dict(collections.Counter(r['run_status'] for r in rows))); print('fluid',dict(collections.Counter(r['fluid'] for r in rows))); print('comparison_candidates',[r['source_id'] for r in rows if r['readiness_label']=='comparison_candidate']); print('water_tw_rmse_avg',sum(float(r['exp_tw_rmse_k']) for r in rows if r['fluid']=='water')/4); print('salt_tw_rmse_avg',sum(float(r['exp_tw_rmse_k']) for r in rows if r['fluid']!='water')/9); print('water_q_err_avg',sum(float(r['exp_q_external_loss_abs_error_pct']) for r in rows if r['fluid']=='water')/4); print('salt_q_err_avg',sum(float(r['exp_q_external_loss_abs_error_pct']) for r in rows if r['fluid']!='water')/9)"`
+  - `python3.11 -c "import csv; p='../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/cross_run_summary.csv'; rows=list(csv.DictReader(open(p))); keys=['exp_tw_rmse_k','exp_tp_rmse_k','exp_mdot_abs_error_pct','exp_q_external_loss_abs_error_pct'];\nfor k in keys:\n rows2=sorted(rows,key=lambda r: float(r[k]));\n print(k,'best',rows2[0]['source_id'],rows2[0][k],'worst',rows2[-1]['source_id'],rows2[-1][k])"`
+- observations:
+  - The campaign-level generic reports were too thin for review. They restated counts and scope but did not distinguish workflow maturity from validation quality or preserve the repaired live Salt 2 continuation caveat strongly enough.
+  - The top-level evidence split is sharper than the generic prose admitted. Water rows stay thermally closer to experiment on average (`TW RMSE ~2.22 K`, external-loss error `~5.95%`) than the salt-family rows (`TW RMSE ~9.30 K`, external-loss error `~21.06%`) even though all four water rows remain `convergence_audit_required`.
+  - The `comparison_candidate` rows are heterogeneous and should not be collapsed together:
+    - `viscosity_screening_salt_test_2_kirst_coarse_mesh` is the strongest workflow-maturity row because it completed, converged, and is called `essentially_steady` in its per-run report.
+    - `viscosity_screening_salt_test_1_kirst_coarse_mesh` completed and converged, but its per-run report still calls it `not_steady_enough` and keeps large Salt 1 validation misses explicit.
+    - `val_salt_test_2_coarse_mesh_laminar` remains a continuation-affected live row with mixed `8602 / 1724 / 3871 s` time bases even after the maturity-contract repair.
+  - The June 9 heat audit remains important campaign context: it explains why salt-family ambient-loss mismatch and TW miss should still be treated as an open physical-loss/source-placement problem rather than a solved validation result.
+- next steps:
+  - row `14` is ready for `AGENT-057` review
+  - if review opens a defect, repair it through a bounded queue row instead of silently diluting the campaign-level caveat language

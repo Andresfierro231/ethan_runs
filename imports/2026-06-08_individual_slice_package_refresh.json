@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-08T13:10:00-05:00",
+  "workspace": "ethan_runs",
+  "pass_id": "2026-06-08_individual_slice_package_refresh",
+  "updated_script": "tools/analyze/build_ethan_presentation_figure_package.py",
+  "package_root": "reports/2026-06-08_ethan_presentation_figure_package",
+  "removed_outputs": [
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/pdf/temperature_velocity_slice_panel.pdf",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/svg/temperature_velocity_slice_panel.svg",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/temperature_velocity_slice_panel.png"
+  ],
+  "added_outputs": [
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_temperature_slice.pdf",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_velocity_slice.pdf",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/pdf/val_salt_test_2_coarse_mesh_laminar_temperature_slice.pdf",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/pdf/val_salt_test_2_coarse_mesh_laminar_velocity_slice.pdf"
+  ],
+  "note": "Switched the presentation package from a raster-composited slice panel to direct copies of the individual stamped slice figures so PDF/SVG outputs stay sharp."
+}

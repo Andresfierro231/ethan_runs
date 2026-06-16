@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-01T09:52:00-05:00",
+  "case_id": "salt_test_2",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar",
+  "source_case_path_from_log": "/scratch/09807/ethanrozak/foam_vv/runs/jin_viscosity_emissivity_testing_20260502_194913/cases/val_salt_test_2_coarse_mesh_laminar",
+  "native_outputs_policy": "read_only_imports_only",
+  "decision": "continuation_recommended",
+  "decision_basis": {
+    "configured_end_time": 10000,
+    "observed_final_time": 1724.714285714,
+    "run_termination_reason": "15 (Terminated)",
+    "qoi_rtol": 0.0001,
+    "qoi_window": 100,
+    "last_two_window_relative_change": {
+      "mdot_pipeleg_left_04_test_section": -0.00026913004354166324,
+      "mdot_pipeleg_lower_05_straight": -0.0002684097968756457,
+      "mdot_pipeleg_right_02_middle": -0.0002677522391362113,
+      "mdot_pipeleg_upper_05_cooler": -0.0002685210507480242,
+      "total_Q": 0.030844951470493487,
+      "probe_T_mean": 9.37566526312984e-05
+    }
+  },
+  "render_retry": {
+    "job_id": "3199773",
+    "scheduler_state": "COMPLETED",
+    "elapsed": "00:00:21",
+    "artifact_status": "skipped",
+    "artifact_reason": "paraview_5_10 failed without output."
+  }
+}

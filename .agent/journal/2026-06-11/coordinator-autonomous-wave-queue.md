@@ -1,0 +1,24 @@
+# Coordinator Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Coordinator`
+- task ID: `AGENT-037`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `reports/AGENTS.override.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-11_AGENT-037.md`
+  - `.agent/journal/2026-06-11/coordinator-autonomous-wave-queue.md`
+- commands run:
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,220p' reports/AGENTS.override.md`
+- results or observations:
+  - Added explicit wave-state tracking so the board reflects where the autonomous execution loop currently sits within the report-first and reusable-script hardening plan.
+  - Added a short autonomous queue so the next steps are durable and can be claimed without a fresh user prompt.
+  - Claimed the focused Salt 2 reviewer pass as the next active task because it is the current gate before broader rollout.
+- next steps:
+  - Execute the reviewer pass and decide whether the next autonomous action is a targeted implementation fix or rollout preparation.

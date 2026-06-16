@@ -1,0 +1,46 @@
+# Implementer Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Implementer`
+- task ID: `AGENT-010`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `.agent/BOARD.md`
+  - `.agent/DECISIONS.md`
+  - `tools/hydraulic_budget_defs.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+  - `tools/analyze/build_ethan_legwise_hydraulic_budget_package.py`
+  - `reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction/leg_centerline_station_definitions.csv`
+  - `reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction/leg_major_loss_timeseries.csv`
+  - `reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction/feature_minor_loss_timeseries.csv`
+  - `tmp_extract/ethan_legwise_hydraulic_budget/val_salt_test_2_coarse_mesh_laminar/*`
+- files changed:
+  - `tools/hydraulic_budget_defs.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+  - `tools/analyze/build_ethan_legwise_hydraulic_budget_package.py`
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-09_AGENT-010.md`
+  - `.agent/journal/2026-06-09/implementer-hydraulic-budget-integration.md`
+- commands run:
+  - `python3.11 -m py_compile tools/hydraulic_budget_defs.py tools/extract/sample_leg_centerline_major_loss.py tools/extract/sample_feature_minor_loss_budget.py tools/analyze/build_ethan_legwise_hydraulic_budget_package.py`
+  - `python tools/analyze/build_ethan_legwise_hydraulic_budget_package.py`
+  - `ps -ef | grep -E 'reconstructPar|foamPostProcess|sample_feature_minor_loss_budget|sample_leg_centerline_major_loss' | grep -v grep`
+- results or observations:
+  - Added the shared hydraulic definitions layer with canonical major spans, feature budgets, TP/TW centerline geometry helpers, and retained-time selection helpers.
+  - Integrated the legwise package builder and fixed the first schema mismatch by making it consume the new centerline station-definition CSV format (`bin_index`, `s_mid_m`).
+  - Confirmed the first full-builder failure after that fix was not geometry-related; it came from live retained-time rollover while the feature extractor was reconstructing `p/p_rgh`.
+  - Hardened both extractors so they clear stale reconstructed root times, reconstruct requested retained times one-by-one, and continue with the subset that actually materializes locally instead of aborting on one missing time.
+  - The end-to-end hydraulic package is still not complete; I stopped after the live-rollover hardening pass so tomorrow can start from a clean rerun rather than another partial late-day integration cycle.
+- contradictions or open issues:
+  - The live continuation can drop retained processor times between the major extractor pass and the feature extractor pass; the one-time-at-a-time reconstruction logic should reduce this, but it still needs to be validated with a fresh builder run.
+  - The feature extractor currently reports pressure-budget primitives directly, but `profile_dp_pa` remains deferred and `wall_dp_pa` / `minor_residual_dp_pa` are finalized in the builder, not in the extractor itself.
+  - The integrated package has not yet produced its final `hydraulic_budget_summary.json`, figures, or reviewed interpretation text.
+- tomorrow todo:
+  - Rerun `python tools/analyze/build_ethan_legwise_hydraulic_budget_package.py` on the compute node.
+  - If the build succeeds, inspect `reports/2026-06-09_ethan_legwise_hydraulic_budget_package/hydraulic_budget_summary.json`, `leg_major_loss_summary.csv`, and `feature_minor_loss_summary.csv` for sign/coverage sanity.
+  - If the build still fails on live rollover, add an explicit local retained-time snapshot step before reconstruction so both extractors operate on the same frozen processor-time set.
+  - After the package is stable, decide whether `test_section_complex` should stay aggregated or be split into tee-entry, tee-exit, and connector-transition feature objects before the later HTC pass.

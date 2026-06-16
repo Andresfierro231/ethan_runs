@@ -1,0 +1,50 @@
+# Implementer Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Implementer`
+- task ID: `AGENT-008`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `staging/AGENTS.override.md`
+  - `reports/2026-06-09_ethan_streamwise_friction_package/implementation_notes.md`
+  - `tools/extract/sample_streamwise_friction_patch_averages.py`
+  - `tools/analyze/build_ethan_streamwise_friction_package.py`
+  - `tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar/constant/polyMesh/boundary`
+  - `tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar/constant/polyMesh/faces`
+  - `tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar/constant/polyMesh/points`
+  - `tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar/675*/wallShearStress`
+  - `tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar/675*/yPlus`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv`
+- files changed:
+  - `.agent/BOARD.md`
+  - `tools/extract/sample_streamwise_friction_dense_faces.py`
+  - `tools/analyze/build_ethan_dense_streamwise_friction_package.py`
+  - `reports/2026-06-09_ethan_dense_streamwise_friction_package/**`
+  - `.agent/status/2026-06-09_AGENT-008.md`
+  - `.agent/journal/2026-06-09/implementer-dense-streamwise-friction-package.md`
+- commands run:
+  - `python3.11 -m py_compile tools/extract/sample_streamwise_friction_dense_faces.py tools/analyze/build_ethan_dense_streamwise_friction_package.py`
+  - `python tools/analyze/build_ethan_dense_streamwise_friction_package.py`
+  - `python tools/analyze/build_ethan_dense_streamwise_friction_package.py --skip-extraction`
+- results or observations:
+  - Added a dense extractor that reuses the staged/reconstructed Salt 2 case, streams selected boundary faces from `constant/polyMesh`, loads only the referenced points, and exports wall-face geometry plus retained-time `wallShearStress` / `yPlus` samples for the main-loop wall patches.
+  - Added a dense package builder that bins wall-face samples along a `TP1`-anchored streamwise coordinate with a default target spacing of `0.025 m`, then computes area-weighted `tau_w`, Darcy friction factor, `yPlus`, and warning metrics for each `(time, s-bin)`.
+  - The package built successfully at `reports/2026-06-09_ethan_dense_streamwise_friction_package/` with `150` dense bins, `143424` wall faces, and `717120` wall-face samples across the retained field window.
+  - The latest successful package state tracks the live continuation through `history_time_end_s = 6761 s` and retained wall-field times `6756–6760 s`.
+  - The package now exposes a critical limitation explicitly: although `s = 0` is defined at `TP1`, the first dense main-loop wall coverage currently begins at about `s = 0.675 m`, so `TP1` landmark friction is intentionally left `NaN` rather than silently extrapolated from downstream data.
+- implementation corrections made during the task:
+  - Switched execution from `python3.11` to the local `python` interpreter after the environment check showed only that interpreter had `matplotlib`.
+  - Removed a Python-version-specific `zip(..., strict=False)` call after the compute-node run showed the system `python` does not support that keyword argument.
+  - Changed the dense summary writer so bins with no data remain in the output as explicit `NaN` rows instead of being dropped.
+  - Tightened TP landmark interpolation so out-of-coverage stations, especially `TP1`, remain `NaN` instead of being backfilled from the nearest valid dense bin.
+  - Expanded `summary.json` to retain named figure groups and explicit `first_valid_s_m` / `valid_bin_count` metadata.
+- incomplete lines of investigation:
+  - The dense public main-loop path still excludes lower-left corner/junction wall surfaces and likely other junction-local surfaces, so the public `s` coverage is not yet continuous from `TP1`.
+  - The current `s` mapping is still legwise-projected rather than centerline- or slice-based through bends and junctions.
+  - Internal HTC and related thermal transport metrics remain deferred until the station definition is upgraded again.
+- next steps:
+  - Decide whether to add explicit corner/junction wall patches into the dense main-loop path before further interpretation.
+  - Replace the legwise projection with a centerline- or slice-based station generator so friction and later HTC can be reported continuously from `TP1`.
+  - Reuse the current wall-face extraction schema as the base layer for later internal HTC primitives instead of redesigning the package format again.

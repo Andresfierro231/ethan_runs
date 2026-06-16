@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-06-01T14:15:53-05:00",
+  "source_id": "val_water_test_1_coarse_mesh_laminar",
+  "source_owner": "ethan_modern_runs_staged",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_1_coarse_mesh_laminar",
+  "local_stage_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_1_coarse_mesh_laminar",
+  "local_link_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/linked_cases/val_water_test_1_coarse_mesh_laminar",
+  "case_id": "water_test_1",
+  "ingested_at": "2026-06-01T14:15:50-05:00",
+  "size_bytes": 7248479093,
+  "key_files": [
+    "case_config.yaml",
+    "0",
+    "constant",
+    "system",
+    "postProcessing"
+  ],
+  "native_outputs_policy": "read_only_imports_only",
+  "provenance_note": "Local staged copy for modern_runs intake. External origin is documented in jadyn_runs/modern_runs/2026-06-01_source_inventory/batch_manifests/first_batch_source_to_stage_map.json.",
+  "case_summary": {
+    "fluid": "water",
+    "turbulence_model": "laminar",
+    "heater_power_W": 58.8,
+    "cooling_power_W": 26.86,
+    "T_init_K": 314.515625,
+    "nprocs": 64
+  }
+}

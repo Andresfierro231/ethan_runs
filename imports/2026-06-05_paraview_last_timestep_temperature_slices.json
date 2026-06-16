@@ -1,0 +1,86 @@
+{
+  "generated_at": "2026-06-05T17:40:48-05:00",
+  "source_id": "paraview_last_timestep_temperature_slices_2026-06-05",
+  "source_owner": "ethan_runs_local_visualization_pass",
+  "case_id": "campaign_last_timestep_temperature_slices",
+  "native_outputs_policy": "read_only_source_cases_reconstructed_into_local_mirrors_only",
+  "provenance_note": "ParaView latest-time temperature-slice pass. Raw collated processors64 cases were not rendered directly; latest-time T fields are reconstructed into staging/render_inputs/<source_id>/reconstructed_case before pvbatch rendering.",
+  "scripts": [
+    "tools/extract/render_last_timestep_temperature_slices.py",
+    "tools/extract/stage_latest_time_reconstruction.py",
+    "staging/render_jobs/2026-06-05_last_timestep_temperature_slices.sbatch",
+    "staging/render_jobs/2026-06-05_smoke_reconstructed_case.sbatch"
+  ],
+  "verified_outputs": {
+    "png": "figures/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+    "svg": "figures/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.svg",
+    "smoke_job_id": "3211183"
+  },
+  "registered_cases": [
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "case_id": "salt_test_2",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar"
+    },
+    {
+      "source_id": "val_water_test_1_coarse_mesh_laminar",
+      "case_id": "water_test_1",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_1_coarse_mesh_laminar"
+    },
+    {
+      "source_id": "val_water_test_2_coarse_mesh_laminar",
+      "case_id": "water_test_2",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_2_coarse_mesh_laminar"
+    },
+    {
+      "source_id": "val_water_test_3_coarse_mesh_laminar",
+      "case_id": "water_test_3",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_3_coarse_mesh_laminar"
+    },
+    {
+      "source_id": "val_water_test_4_coarse_mesh_laminar",
+      "case_id": "water_test_4",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_4_coarse_mesh_laminar"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "case_id": "salt_test_1_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_jin_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "case_id": "salt_test_1_kirst",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_kirst_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "case_id": "salt_test_2_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "case_id": "salt_test_2_kirst",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_kirst_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_id": "salt_test_3_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "case_id": "salt_test_3_kirst",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_kirst_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_id": "salt_test_4_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "case_id": "salt_test_4_kirst",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_kirst_coarse_mesh"
+    }
+  ]
+}

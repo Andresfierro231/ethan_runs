@@ -1,0 +1,10 @@
+source_id,base_case_id,variant_label,run_status,essential_steadiness_class,patch_count,leg_count,patches_with_q_avg,patches_with_areaAverage_T,patches_with_areaAverage_Nu,latest_patch_time_s,latest_field_time_label,extraction_status,axial_field_extraction_error
+val_salt_test_2_coarse_mesh_laminar,salt_test_2,,running,essentially_steady,49,5,49,0,0,3811.0,,q_only_fallback,
+viscosity_screening_salt_test_1_jin_coarse_mesh,salt_test_1,jin,terminated,not_steady_enough,49,5,49,0,0,3230.0,,q_only_fallback,
+viscosity_screening_salt_test_1_kirst_coarse_mesh,salt_test_1,kirst,completed,not_steady_enough,49,5,49,0,0,3279.163522,,q_only_fallback,
+viscosity_screening_salt_test_2_jin_coarse_mesh,salt_test_2,jin,terminated,essentially_steady,49,5,49,49,49,2432.0,2431,full_field_success,
+viscosity_screening_salt_test_2_kirst_coarse_mesh,salt_test_2,kirst,completed,essentially_steady,49,5,49,49,49,586.560241,586,full_field_success,
+viscosity_screening_salt_test_3_jin_coarse_mesh,salt_test_3,jin,terminated,essentially_steady,49,5,49,0,0,2515.0,,q_only_fallback,
+viscosity_screening_salt_test_3_kirst_coarse_mesh,salt_test_3,kirst,terminated,essentially_steady,49,5,49,49,49,3298.0,3297,full_field_success,
+viscosity_screening_salt_test_4_jin_coarse_mesh,salt_test_4,jin,terminated,borderline_but_usable,49,5,49,0,0,2083.0,,q_only_fallback,
+viscosity_screening_salt_test_4_kirst_coarse_mesh,salt_test_4,kirst,terminated,essentially_steady,49,5,49,0,0,2984.0,,q_only_fallback,

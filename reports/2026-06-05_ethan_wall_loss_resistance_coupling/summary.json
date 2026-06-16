@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-06-07T15:15:47-05:00",
+  "coupling_rows": [
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "exp_case_name": "Salt 2",
+      "variant_label": "",
+      "essential_steadiness_class": "essentially_steady",
+      "exp_all_temp_rmse_k": "5.195921279377687",
+      "exp_mdot_abs_error_pct": "18.951017976190467",
+      "exp_q_external_loss_abs_error_pct": "20.574219228738393",
+      "sim_ambient_proxy_w": "187.77204918069998",
+      "sim_cooling_branch_total_removal_w": "136.35074002",
+      "sim_section_test_section_net_q_w": "-7.314405494"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "exp_case_name": "Salt 1",
+      "variant_label": "jin",
+      "essential_steadiness_class": "not_steady_enough",
+      "exp_all_temp_rmse_k": "17.745189678331162",
+      "exp_mdot_abs_error_pct": "28.70387302215191",
+      "exp_q_external_loss_abs_error_pct": "27.360108353568656",
+      "sim_ambient_proxy_w": "167.774126774",
+      "sim_cooling_branch_total_removal_w": "135.60317786",
+      "sim_section_test_section_net_q_w": "0.7475739344"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "exp_case_name": "Salt 1",
+      "variant_label": "kirst",
+      "essential_steadiness_class": "not_steady_enough",
+      "exp_all_temp_rmse_k": "17.55620984679648",
+      "exp_mdot_abs_error_pct": "30.809515537974686",
+      "exp_q_external_loss_abs_error_pct": "27.346344175812238",
+      "sim_ambient_proxy_w": "167.80591747262997",
+      "sim_cooling_branch_total_removal_w": "135.60317786",
+      "sim_section_test_section_net_q_w": "0.806212777"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "exp_case_name": "Salt 2",
+      "variant_label": "jin",
+      "essential_steadiness_class": "essentially_steady",
+      "exp_all_temp_rmse_k": "5.622281562405422",
+      "exp_mdot_abs_error_pct": "21.65710934523809",
+      "exp_q_external_loss_abs_error_pct": "20.945467128832053",
+      "sim_ambient_proxy_w": "186.8943747244",
+      "sim_cooling_branch_total_removal_w": "136.3507399",
+      "sim_section_test_section_net_q_w": "-5.499522598"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "exp_case_name": "Salt 2",
+      "variant_label": "kirst",
+      "essential_steadiness_class": "essentially_steady",
+      "exp_all_temp_rmse_k": "6.140964304544514",
+      "exp_mdot_abs_error_pct": "27.121653571428574",
+      "exp_q_external_loss_abs_error_pct": "20.43851841298395",
+      "sim_ambient_proxy_w": "188.09286214599",
+      "sim_cooling_branch_total_removal_w": "136.35073988",
+      "sim_section_test_section_net_q_w": "-5.039731247"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "exp_case_name": "Salt 3",
+      "variant_label": "jin",
+      "essential_steadiness_class": "essentially_steady",
+      "exp_all_temp_rmse_k": "5.612608549444536",
+      "exp_mdot_abs_error_pct": "14.711376500000014",
+      "exp_q_external_loss_abs_error_pct": "19.009679138345895",
+      "sim_ambient_proxy_w": "211.76299764877",
+      "sim_cooling_branch_total_removal_w": "150.76963870000003",
+      "sim_section_test_section_net_q_w": "-10.24342229"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "exp_case_name": "Salt 3",
+      "variant_label": "kirst",
+      "essential_steadiness_class": "essentially_steady",
+      "exp_all_temp_rmse_k": "5.458447708953641",
+      "exp_mdot_abs_error_pct": "20.17977992857144",
+      "exp_q_external_loss_abs_error_pct": "19.01950843267885",
+      "sim_ambient_proxy_w": "211.73729728346",
+      "sim_cooling_branch_total_removal_w": "150.76963876",
+      "sim_section_test_section_net_q_w": "-10.2680828"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "exp_case_name": "Salt 4",
+      "variant_label": "jin",
+      "essential_steadiness_class": "borderline_but_usable",
+      "exp_all_temp_rmse_k": "6.061627553731621",
+      "exp_mdot_abs_error_pct": "15.496810024875622",
+      "exp_q_external_loss_abs_error_pct": "17.40163440703854",
+      "sim_ambient_proxy_w": "244.24024581527993",
+      "sim_cooling_branch_total_removal_w": "169.22681362",
+      "sim_section_test_section_net_q_w": "-16.52275142"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "exp_case_name": "Salt 4",
+      "variant_label": "kirst",
+      "essential_steadiness_class": "essentially_steady",
+      "exp_all_temp_rmse_k": "5.908171197457817",
+      "exp_mdot_abs_error_pct": "20.999207201492545",
+      "exp_q_external_loss_abs_error_pct": "17.45227379771527",
+      "sim_ambient_proxy_w": "244.09050705061998",
+      "sim_cooling_branch_total_removal_w": "169.22681525",
+      "sim_section_test_section_net_q_w": "-16.54605165"
+    }
+  ],
+  "hypothesis_rows": [
+    {
+      "hypothesis": "Shared wall-loss boundary underpredicts ambient exchange",
+      "evidence_for": "Ambient-loss proxy error stays clustered near 17-21% for Salt 2-4 and near 27% for Salt 1 while Jin/Kirst changes do not remove the bias.",
+      "evidence_against": "Ambient-loss error alone does not explain the large mdot spread across Jin/Kirst and Salt 1-4.",
+      "low_cost_test": "Recompute report metrics after a wall-loss sensitivity centered on Salt 2 validation and Salt 4 Jin.",
+      "worth_doing_now": "yes"
+    },
+    {
+      "hypothesis": "Hydraulic resistance is too high in the upper-left loop path",
+      "evidence_for": "Upper-leg |\u0394p_rgh| dominates every salt row, and Jin usually lowers upper-leg/left-leg loss together with better mdot agreement.",
+      "evidence_against": "Pressure data are latest-time only in the current package; full transient pressure-history confirmation is still pending.",
+      "low_cost_test": "Build transient p_rgh history extraction for the upper leg, left leg, and test-section branch before changing geometry.",
+      "worth_doing_now": "yes"
+    },
+    {
+      "hypothesis": "Constant Cp is not the leading-order cause of the mdot mismatch",
+      "evidence_for": "All salt rows share effectively constant Cp=1423.47, yet mdot changes materially between Jin and Kirst while ambient-loss bias remains clustered.",
+      "evidence_against": "Cp still affects buoyancy through enthalpy-temperature conversion and should not be ruled out permanently without a focused sensitivity.",
+      "low_cost_test": "Defer Cp sensitivity until after wall-loss and resistance-coupling checks, because those levers have stronger evidence today.",
+      "worth_doing_now": "no"
+    },
+    {
+      "hypothesis": "Salt 1 is a coupled low-power regime problem, not just missing runtime",
+      "evidence_for": "Salt 1 remains about 4% off in net heat balance even when flat in time, and both temperature and mdot errors are much worse than Salt 2-4.",
+      "evidence_against": "The Salt 1 continuations have not yet been extended successfully after the new runtime path was introduced.",
+      "low_cost_test": "Continue both Salt 1 Jin and Salt 1 Kirst with the repaired bootstrap before proposing lower-power wall-loss or cooler-h sensitivities.",
+      "worth_doing_now": "yes"
+    }
+  ]
+}

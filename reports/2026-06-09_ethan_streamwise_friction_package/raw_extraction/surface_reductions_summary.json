@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-09T15:07:38-05:00",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "extract_case_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar",
+  "selected_times": [
+    "6744",
+    "6745",
+    "6746",
+    "6747",
+    "6748"
+  ],
+  "surface_reductions_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/raw_extraction/surface_reductions.csv"
+}

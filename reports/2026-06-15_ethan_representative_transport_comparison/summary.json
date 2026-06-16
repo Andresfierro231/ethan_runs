@@ -1,0 +1,40 @@
+{
+  "case_ids": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh"
+  ],
+  "figure_paths": {
+    "boundary_landmarks": {
+      "pdf": "reports/2026-06-15_ethan_representative_transport_comparison/figures/pdf/representative_boundary_landmarks.pdf",
+      "png": "reports/2026-06-15_ethan_representative_transport_comparison/figures/png/representative_boundary_landmarks.png",
+      "svg": "reports/2026-06-15_ethan_representative_transport_comparison/figures/svg/representative_boundary_landmarks.svg"
+    },
+    "friction_and_pressure": {
+      "pdf": "reports/2026-06-15_ethan_representative_transport_comparison/figures/pdf/representative_friction_and_pressure.pdf",
+      "png": "reports/2026-06-15_ethan_representative_transport_comparison/figures/png/representative_friction_and_pressure.png",
+      "svg": "reports/2026-06-15_ethan_representative_transport_comparison/figures/svg/representative_friction_and_pressure.svg"
+    },
+    "thermal_and_resistance": {
+      "pdf": "reports/2026-06-15_ethan_representative_transport_comparison/figures/pdf/representative_thermal_and_resistance.pdf",
+      "png": "reports/2026-06-15_ethan_representative_transport_comparison/figures/png/representative_thermal_and_resistance.png",
+      "svg": "reports/2026-06-15_ethan_representative_transport_comparison/figures/svg/representative_thermal_and_resistance.svg"
+    }
+  },
+  "generated_at": "2026-06-15T15:40:49-05:00",
+  "loop_span_order": [
+    "lower_leg",
+    "right_leg",
+    "upper_leg",
+    "left_upper_leg",
+    "test_section_span",
+    "left_lower_leg"
+  ],
+  "package_dirs": [
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_kirst_coarse_mesh"
+  ],
+  "representative_boundary_layer_landmarks_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison/representative_boundary_layer_landmarks.csv",
+  "representative_transport_profiles_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison/representative_transport_profiles.csv"
+}

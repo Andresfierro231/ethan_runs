@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-06-02T10:01:10-05:00",
+  "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+  "source_owner": "ethan_modern_runs_staged",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_kirst_coarse_mesh",
+  "local_stage_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_kirst_coarse_mesh",
+  "local_link_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/linked_cases/viscosity_screening_salt_test_2_kirst_coarse_mesh",
+  "case_id": "salt_test_2_kirst",
+  "ingested_at": "2026-06-01T14:15:42-05:00",
+  "size_bytes": 3251948680,
+  "key_files": [
+    "case_config.yaml",
+    "0",
+    "constant",
+    "system",
+    "postProcessing"
+  ],
+  "native_outputs_policy": "read_only_imports_only",
+  "provenance_note": "Read-only import manifest for Ethan case intake.",
+  "case_summary": {
+    "fluid": "hitec_salt_kirst",
+    "turbulence_model": "laminar",
+    "heater_power_W": 265.7,
+    "cooling_power_W": 56.34,
+    "T_init_K": 447.0,
+    "nprocs": 64
+  }
+}

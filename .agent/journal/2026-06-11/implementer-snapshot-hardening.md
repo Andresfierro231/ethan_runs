@@ -1,0 +1,33 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-033`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+- files changed:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `.agent/status/2026-06-11_AGENT-033.md`
+  - `.agent/journal/2026-06-11/implementer-snapshot-hardening.md`
+- commands run:
+  - `python3.11 -m py_compile tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction --output-dir tmp/2026-06-11_case_analysis_raw_reuse_smoke`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --last-n-times 1 --output-dir tmp/2026-06-11_case_analysis_live_smoke`
+  - `sed -n '1,260p' reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+- results or observations:
+  - Replaced the old mutable frozen-runtime root with a request-keyed snapshot path derived from source ID, live runtime root, retained times, and profile name.
+  - Added `snapshot_request.json` at the keyed snapshot root so later audits can recover exactly which retained-window request created a given frozen runtime.
+  - Changed the case-analysis builder so `--raw-extraction-dir` rebuilds now form the manifest from authoritative raw metadata before any live retained-time selection or fresh snapshot creation.
+  - Confirmed the raw-reuse smoke build succeeds without manufacturing a new frozen runtime, while a live one-time smoke build now writes a keyed snapshot path and associated request metadata.
+  - Left the older shared snapshot path in place as historical generated output, but new builds no longer target that mutable location.
+- incomplete lines of investigation:
+  - The broader reusable profile contract still needs a dedicated pass so later Salt-family cases fail early on missing spans, fields, and sign/provenance assumptions instead of relying on implicit profile completeness.
+  - The existing June 10 package manifest still points at the old mutable snapshot root; this hardening fixes future builds and raw-reuse behavior, not the historical package artifact itself.
+- next steps:
+  - Move into profile-contract hardening and early validation for `tools/case_analysis_profiles.py`.
+  - Keep the keyed snapshot metadata available for the later reproducibility reviewer pass.

@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-08T12:30:00-05:00",
+  "workspace": "ethan_runs",
+  "pass_id": "2026-06-08_ethan_presentation_figure_package",
+  "scripts": [
+    "tools/analyze/build_ethan_presentation_figure_package.py",
+    "tools/run_openfoam_case.sh"
+  ],
+  "package_root": "reports/2026-06-08_ethan_presentation_figure_package",
+  "figure_outputs": [
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/representative_branch_pressure_drop.png",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/jin_vs_kirst_delta_dashboard.png",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/representative_heat_balance_partition.png",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/late_window_steadiness_dashboard.png",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/temperature_velocity_slice_panel.png"
+  ],
+  "reused_inputs": [
+    "reports/2026-06-04_all_salt_behavior_package/representative_case_selection.csv",
+    "reports/2026-06-04_all_salt_behavior_package/jin_vs_kirst_summary.csv",
+    "reports/2026-06-04_all_salt_behavior_package/all_salt_case_status.csv",
+    "reports/2026-06-04_ethan_section_transport_package/section_pressure_drops.csv",
+    "reports/2026-06-04_ethan_transient_axial_package/all_salt_transient_last_window.csv",
+    "reports/2026-06-04_ethan_transient_axial_package/all_salt_axial_leg_summary.csv",
+    "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+    "figures/png/val_salt_test_2_coarse_mesh_laminar.png",
+    "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.png",
+    "figures/png/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.png"
+  ],
+  "live_status_sources": [
+    "sacct -j 3210231,3202708,3211199 --format=JobID,JobName%28,State,ExitCode,Elapsed",
+    "jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_continuation",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/logs/log.foamRun_continuation"
+  ]
+}

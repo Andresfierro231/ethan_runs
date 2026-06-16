@@ -1,0 +1,49 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-045`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+  - `registry/case_registry.csv`
+  - `tools/case_analysis_profiles.py`
+  - `tools/hydraulic_budget_defs.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+- files changed:
+  - `tools/case_analysis_profiles.py`
+  - `.agent/status/2026-06-11_AGENT-045.md`
+  - `.agent/journal/2026-06-11/implementer-salt1-jin-profile-rollout.md`
+- commands run:
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py`
+  - `python3.11 -c "from tools.case_analysis_profiles import get_case_analysis_profile; profile = get_case_analysis_profile('viscosity_screening_salt_test_1_jin_coarse_mesh'); print(profile.profile_name); print(len(profile.major_spans), len(profile.feature_budgets))"`
+  - `python -u - <<'PY' ... stage-by-stage probe through sample_leg_centerline_major_loss for Salt 1 Jin ... PY`
+  - `python -u - <<'PY' ... sample_leg_centerline_major_loss.main() into tmp/2026-06-11_salt1_jin_raw/major ... PY`
+  - `python -u - <<'PY' ... sample_feature_minor_loss_budget.main() into tmp/2026-06-11_salt1_jin_raw/major ... PY`
+  - `mkdir -p tmp/2026-06-11_salt1_jin_raw_seed_package/raw_extraction`
+  - `cp -a tmp/2026-06-11_salt1_jin_raw/major/. tmp/2026-06-11_salt1_jin_raw_seed_package/raw_extraction/`
+  - `python -u - <<'PY' ... build_ethan_case_heat_summary.main() into tmp/2026-06-11_salt1_jin_raw_seed_package ... PY`
+  - `python -u - <<'PY' ... build_ethan_case_analysis_package.main() --raw-extraction-dir tmp/2026-06-11_salt1_jin_raw_seed_package/raw_extraction --output-dir tmp/2026-06-11_salt1_jin_case_analysis_package ... PY`
+- results or observations:
+  - Registered `viscosity_screening_salt_test_1_jin_coarse_mesh` as `salt1_jin_case_v1` through the shared Salt-family profile helper, reusing the Salt 2-hardened span and feature contract.
+  - The staged Salt 1 Jin runtime exposes the same major-span and NCC naming family as Salt 2 and resolves cleanly through `resolve_case_paths`.
+  - The first compatible retained field time for the hardened package smoke is `3229 s`; stable late-time field selection found `3226-3229 s`, and the one-time smoke used the final retained step.
+  - The major extractor completed successfully but the thermal cut-plane batch is materially expensive on Salt 1 Jin. The long pole is `foamPostProcess` inside `build_cross_section_temperature_rows`, not profile incompatibility.
+  - A complete frozen raw extraction was produced in `tmp/2026-06-11_salt1_jin_raw/major/` with `379` streamwise rows, `152184` wall-face samples, `379` cross-sectional thermal rows, and `3` repaired `T` NaN tokens at `3229 s`.
+  - The feature extractor completed on the same retained time and produced `5` feature rows, with negative residuals on `corner_lower_left`, `corner_lower_right`, and `test_section_complex`.
+  - A seed package with matching heat artifacts was built in `tmp/2026-06-11_salt1_jin_raw_seed_package/`, then the full hardened raw-reuse package built cleanly at `tmp/2026-06-11_salt1_jin_case_analysis_package/`.
+  - The resulting Salt 1 Jin package preserves the new machine-readable direction-sign limitation, validated raw-reuse provenance, and reused heat-artifact metadata.
+- incomplete lines of investigation:
+  - The first rollout smoke used only one retained hydraulic time, so reviewer attention should stay on schema/provenance compatibility and obvious scientific red flags rather than on late-window statistics.
+  - The Salt 1 Jin major extractor runtime is dominated by the thermal cut-plane batch; this may warrant a later runtime-tuning task if broader Salt-family rollout becomes too slow.
+- next steps:
+  - Run the first Salt-family reviewer gate on `tmp/2026-06-11_salt1_jin_case_analysis_package/**`.
+  - If the reviewer gate clears, continue to the next planned Salt-family case without reopening the Salt 1 Jin profile contract.
+  - If the reviewer gate fails, record a bounded remediation task rather than broadening the rollout by default.

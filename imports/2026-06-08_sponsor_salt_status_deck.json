@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-08T10:08:00-05:00",
+  "source_id": "sponsor_salt_status_deck_2026-06-08",
+  "source_owner": "ethan_runs_local_reporting_refresh",
+  "case_id": "campaign_sponsor_salt_status_deck",
+  "native_outputs_policy": "deck_artifacts_compiled_from_existing_reports_and_live_scheduler_or_log_queries_only; imported_solver_output_roots_not_mutated",
+  "provenance_note": "Sponsor-facing June 8 salt status deck scaffold. Uses the established salt report packages plus a same-day live continuation snapshot for Salt 2 and Salt 4 Jin.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "source_reports": [
+    "reports/2026-06-04_all_salt_behavior_package",
+    "reports/2026-06-04_salt2_behavior_package",
+    "reports/2026-06-04_ethan_essential_steadiness_audit",
+    "reports/2026-06-05_ethan_continuation_diagnosis",
+    "reports/2026-06-05_ethan_convergence_and_salt1_campaign",
+    "reports/2026-06-05_ethan_wall_loss_resistance_coupling"
+  ],
+  "live_queries": [
+    "date --iso-8601=seconds",
+    "sacct -j 3210231,3202708,3210268,3210760,3210761,3211197,3211199 --format=JobID,JobName%30,State,ExitCode,Elapsed,Start,End",
+    "tail -40 jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_continuation",
+    "ls -lt jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_continuation"
+  ],
+  "scripts": [
+    "tools/publish/download_results_to_laptop.sh"
+  ],
+  "verified_outputs": {
+    "deck_readme": "reports/2026-06-08_sponsor_salt_status_deck/README.md",
+    "deck_outline": "reports/2026-06-08_sponsor_salt_status_deck/slide_outline.md",
+    "deck_live_status_csv": "reports/2026-06-08_sponsor_salt_status_deck/live_status_summary.csv",
+    "deck_summary_json": "reports/2026-06-08_sponsor_salt_status_deck/summary.json"
+  },
+  "unresolved_items": [
+    "Salt 4 Jin continuation 3210231 is still running and therefore remains a live operational update rather than a completed result.",
+    "Salt 1 Kirst retry 3211199 still needs staged restart-tree repair for missing root-level T.",
+    "Transient p_rgh history extraction for upper leg, left leg, and test-section branch is still the next high-value analysis gap.",
+    "Water rows remain outside the sponsor-facing headline because they still need convergence-audit restraint."
+  ]
+}

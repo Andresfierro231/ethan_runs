@@ -1,0 +1,34 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-039`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_timeseries.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_window_summary.csv`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v3/summary.json`
+- files changed:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `.agent/status/2026-06-11_AGENT-039.md`
+  - `.agent/journal/2026-06-11/implementer-heat-summary-decoupling.md`
+- commands run:
+  - `python3.11 -m py_compile tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction --output-dir tmp/2026-06-11_case_analysis_raw_reuse_smoke_v3`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir tmp/2026-06-11_case_analysis_raw_reuse_rawonly --output-dir tmp/2026-06-11_case_analysis_raw_reuse_no_heat_should_fail`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir tmp/2026-06-11_case_analysis_package_mismatch/raw_extraction --output-dir tmp/2026-06-11_case_analysis_package_mismatch_should_fail`
+- results or observations:
+  - Added a strict raw-reuse heat path that copies `heat_loss_summary.json`, the heat CSV artifacts, and the referenced heat figures from the source package instead of regenerating heat accounting from the live continuation.
+  - Positive raw reuse now preserves `heat_latest_time_s = 7506.0` from the frozen June 10 package while keeping the hydraulic retained window at `7483-7487 s`.
+  - The reused heat summary is rewritten into the new output package with local figure paths plus explicit reuse metadata.
+  - Older frozen heat summaries without the newer validation-provenance fields are deterministically enriched from their own retained metadata, not from live runtime reads.
+  - Raw reuse now fails clearly when heat artifacts are absent next to the supplied `raw_extraction/` directory, and it still fails clearly when hydraulic raw-summary identity metadata is corrupted.
+- incomplete lines of investigation:
+  - This slice intentionally reused frozen package heat artifacts; it did not attempt to reconstruct a heat summary from a frozen raw-extraction directory alone.
+  - The remaining non-thermal rollout boundary is still the `flow_direction_sign_hint` assumption in the profile contract.
+- next steps:
+  - Rerun the focused Salt 2 reviewer gate with the new raw-reuse smoke package.
+  - If the reviewer clears the heat reproducibility issue, decide whether to validate or explicitly demote the direction-sign assumption before broader rollout.

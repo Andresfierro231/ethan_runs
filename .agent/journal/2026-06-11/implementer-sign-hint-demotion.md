@@ -1,0 +1,28 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-042`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/case_analysis_profiles.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4/analysis_manifest.json`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4/summary.json`
+- files changed:
+  - `tools/case_analysis_profiles.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `.agent/status/2026-06-11_AGENT-042.md`
+  - `.agent/journal/2026-06-11/implementer-sign-hint-demotion.md`
+- commands run:
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction --output-dir tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4`
+- results or observations:
+  - Added shared flow-direction-hint metadata in the profile layer so the assumption has one canonical status string, meaning, and per-span export path.
+  - The case-analysis manifest and report summary now both expose that metadata explicitly instead of leaving the assumption implied by code and reviewer prose alone.
+  - The summary `limitations` block now states the direction assumption in the same terms as the machine-readable metadata.
+- incomplete lines of investigation:
+  - The pipeline still does not validate direction automatically; this slice intentionally demoted the assumption rather than pretending to infer it.
+  - `history_time_end_s` still comes from live mdot history during raw reuse and remains a documented metadata caveat.
+- next steps:
+  - Finish the reviewer rerun and, if cleared, move on to the first Salt-family profile rollout candidate.

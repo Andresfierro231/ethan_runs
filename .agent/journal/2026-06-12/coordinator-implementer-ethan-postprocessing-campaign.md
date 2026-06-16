@@ -1,0 +1,51 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-056`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `registry/case_registry.csv`
+  - `reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+  - `reports/2026-06-04_ethan_direct_validation/ethan_direct_validation_summary.csv`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/latest_heat_partition.csv`
+  - `../cfd-modeling-tools/cross_model_comparison/AGENTS.md`
+  - `../cfd-modeling-tools/.agent/BOARD.md`
+  - `../cfd-modeling-tools/.agent/FILE_OWNERSHIP.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `tools/analyze/build_ethan_run_postprocessing_package.py`
+  - `tools/analyze/build_ethan_postprocessing_campaign.py`
+  - `imports/2026-06-12_ethan_postprocessing_campaign.json`
+  - `.agent/status/2026-06-12_AGENT-056.md`
+  - `.agent/journal/2026-06-12/coordinator-implementer-ethan-postprocessing-campaign.md`
+  - `journals/2026-06/2026-06-12_ethan_runs.md`
+  - `../cfd-modeling-tools/.agent/BOARD.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/**`
+  - `../cfd-modeling-tools/cross_model_comparison/operational_notes/2026-06-12_ethan_postprocessing_all_runs_v1/**`
+  - `../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-12_workflow_journal.md`
+- commands run:
+  - `python -m py_compile tools/analyze/build_ethan_run_postprocessing_package.py tools/analyze/build_ethan_postprocessing_campaign.py`
+  - `python tools/analyze/build_ethan_run_postprocessing_package.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --campaign-root tmp/2026-06-12_ethan_postprocessing_campaign_smoke --reuse-existing-renders`
+  - `python tools/analyze/build_ethan_postprocessing_campaign.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --source-id val_water_test_1_coarse_mesh_laminar --campaign-root tmp/2026-06-12_ethan_postprocessing_campaign_smoke_campaign --reuse-existing-renders`
+  - `python tools/analyze/build_ethan_postprocessing_campaign.py --campaign-slug 2026-06-12_ethan_postprocessing_all_runs_v1 --reuse-existing-renders`
+  - `sed -n '1,260p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/manifest.json`
+  - `sed -n '1,220p' ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/executive_summary.md`
+- results or observations:
+  - Added a reusable per-run builder, `tools/analyze/build_ethan_run_postprocessing_package.py`, that inventories native labeled postProcessing families, exports field tables, renders CSV-backed SVG/PDF/TikZ figures, writes per-run narrative layers, and emits both markdown and JSON artifact maps.
+  - Added an orchestrator, `tools/analyze/build_ethan_postprocessing_campaign.py`, that queues all 13 registered CFD runs by default, materializes the per-run packages, then writes campaign-level synthesis tables, figures, methodology prose, checkpoint notes, and a cross-model workflow journal.
+  - The full canonical build completed successfully at `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1`.
+  - Campaign-level counts from the generated executive summary are:
+    - fluid counts: `{'hitec_salt': 1, 'water': 4, 'hitec_salt_jin': 4, 'hitec_salt_kirst': 4}`
+    - runtime status counts: `{'running': 1, 'terminated': 10, 'completed': 2}`
+    - readiness counts: `{'comparison_candidate': 3, 'convergence_audit_required': 10}`
+  - Pressure is explicitly recorded as unavailable from the baseline native monitor set rather than silently omitted; the v1 campaign preserves that limitation in both manifests and report prose.
+  - The implementation stayed monitor-first by design. It reuses existing rendered artifacts when present but does not launch new OpenFOAM reconstruction or ParaView rendering jobs.
+- next steps:
+  - Run a reviewer pass on one water case, one salt Jin case, and one salt Kirst case to verify that the per-run technical narratives stay scientifically conservative relative to the exported tables and figures.
+  - Decide whether paper drafting can proceed on the current monitor-first evidence set or whether a phase-2 campaign should reconstruct pressure and richer field-level comparisons.

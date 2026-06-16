@@ -1,0 +1,29 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Reviewer`
+- task ID: `AGENT-041`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/case_analysis_profiles.py`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v3/summary.json`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- files changed:
+  - `.agent/status/2026-06-11_AGENT-041.md`
+  - `.agent/journal/2026-06-11/reviewer-heat-decoupling-rerun.md`
+- commands run:
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | sed -n '408,482p'`
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | sed -n '1665,1688p'`
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | rg "build_mdot_series|history_time_end_s|raw_extraction_provenance"`
+  - `nl -ba tmp/2026-06-11_case_analysis_raw_reuse_smoke_v3/summary.json | sed -n '1,220p'`
+  - `nl -ba journals/2026-06/2026-06-11_ethan_runs.md | sed -n '58,120p'`
+  - `nl -ba tools/case_analysis_profiles.py | sed -n '226,235p'`
+- results or observations:
+  - The new raw-reuse heat path is doing the right thing: frozen package heat artifacts are required, copied locally, and the rebuilt summary now preserves `heat_latest_time_s = 7506.0` instead of drifting to the live continuation tail.
+  - The curated June 11 journal now records the first reviewer gate and the bounded heat-decoupling fix in progressive order rather than deferring that context to an end-of-day retrospective.
+  - The previous high-severity rollout blocker is closed.
+  - The remaining substantive rollout boundary is the semantics of `flow_direction_sign_hint`: it is enforced as present and non-zero, but it is still not a validated inferred direction rule.
+  - Residual low-risk provenance drift remains in `history_time_end_s`, which still comes from live mdot history during raw reuse. That does not appear to affect the frozen hydraulic/thermal evidence, but it should stay documented as a metadata caveat until tightened later.
+- next steps:
+  - Demote `flow_direction_sign_hint` explicitly in machine-readable outputs and rollout criteria so the scripts do not imply stronger direction inference than they actually provide.

@@ -1,0 +1,82 @@
+{
+  "generated_at": "2026-06-02T10:01:44-05:00",
+  "source_ids": [
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar",
+    "val_water_test_3_coarse_mesh_laminar",
+    "val_water_test_4_coarse_mesh_laminar"
+  ],
+  "claim_status_counts": {
+    "needs_convergence_audit": 4
+  },
+  "rows": [
+    {
+      "source_id": "val_water_test_1_coarse_mesh_laminar",
+      "case_id": "water_test_1",
+      "heater_power_W": 58.8,
+      "cooling_power_W": 26.86,
+      "final_time": 3195.0,
+      "run_status": "terminated",
+      "run_termination_reason": "15 (Terminated)",
+      "convergence_reached": false,
+      "convergence_iteration": "",
+      "convergence_dTsigma": "",
+      "mdot_mean_abs_kg_s": 0.00650637830175,
+      "final_total_wall_heat_abs_w": 0.204109,
+      "probe_T_avg_K": 315.2750875,
+      "claim_status": "needs_convergence_audit",
+      "determination": "No recorded convergence marker; use only for preliminary trend inspection until a convergence audit is completed."
+    },
+    {
+      "source_id": "val_water_test_2_coarse_mesh_laminar",
+      "case_id": "water_test_2",
+      "heater_power_W": 77.6,
+      "cooling_power_W": 35.63,
+      "final_time": 2436.0,
+      "run_status": "terminated",
+      "run_termination_reason": "15 (Terminated)",
+      "convergence_reached": false,
+      "convergence_iteration": "",
+      "convergence_dTsigma": "",
+      "mdot_mean_abs_kg_s": 0.007834229101,
+      "final_total_wall_heat_abs_w": 0.205404,
+      "probe_T_avg_K": 320.6125005,
+      "claim_status": "needs_convergence_audit",
+      "determination": "No recorded convergence marker; use only for preliminary trend inspection until a convergence audit is completed."
+    },
+    {
+      "source_id": "val_water_test_3_coarse_mesh_laminar",
+      "case_id": "water_test_3",
+      "heater_power_W": 93.0,
+      "cooling_power_W": 43.02,
+      "final_time": 2254.0,
+      "run_status": "terminated",
+      "run_termination_reason": "15 (Terminated)",
+      "convergence_reached": false,
+      "convergence_iteration": "",
+      "convergence_dTsigma": "",
+      "mdot_mean_abs_kg_s": 0.008932687613,
+      "final_total_wall_heat_abs_w": 0.225496,
+      "probe_T_avg_K": 324.77022983333336,
+      "claim_status": "needs_convergence_audit",
+      "determination": "No recorded convergence marker; use only for preliminary trend inspection until a convergence audit is completed."
+    },
+    {
+      "source_id": "val_water_test_4_coarse_mesh_laminar",
+      "case_id": "water_test_4",
+      "heater_power_W": 129.0,
+      "cooling_power_W": 58.06,
+      "final_time": 1468.0,
+      "run_status": "terminated",
+      "run_termination_reason": "15 (Terminated)",
+      "convergence_reached": false,
+      "convergence_iteration": "",
+      "convergence_dTsigma": "",
+      "mdot_mean_abs_kg_s": 0.0108710076475,
+      "final_total_wall_heat_abs_w": 0.131641,
+      "probe_T_avg_K": 334.89368133333335,
+      "claim_status": "needs_convergence_audit",
+      "determination": "Shorter runtime and no recorded convergence marker; not suitable for validation claims without further audit or continuation."
+    }
+  ]
+}

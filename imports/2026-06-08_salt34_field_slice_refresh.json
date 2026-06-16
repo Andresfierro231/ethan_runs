@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-08T13:46:21-05:00",
+  "pass_name": "salt34_field_slice_refresh",
+  "reconstructed_velocity_fields": {
+    "viscosity_screening_salt_test_3_jin_coarse_mesh": "staging/render_inputs/viscosity_screening_salt_test_3_jin_coarse_mesh/reconstructed_case/2514/U",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh": "staging/render_inputs/viscosity_screening_salt_test_4_jin_coarse_mesh/reconstructed_case/2082/U"
+  },
+  "render_jobs": {
+    "3216945": "staging/render_jobs/2026-06-08_render_only_temperature_salt3_blackbar.sbatch",
+    "3216946": "staging/render_jobs/2026-06-08_render_only_velocity_salt3.sbatch",
+    "3216947": "staging/render_jobs/2026-06-08_render_only_velocity_salt4.sbatch",
+    "3216948": "staging/render_jobs/2026-06-08_render_only_temperature_salt4_blackbar.sbatch"
+  },
+  "generated_figures": [
+    "figures/png/viscosity_screening_salt_test_3_jin_coarse_mesh.png",
+    "figures/png/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_velocity_slice.png",
+    "figures/png/viscosity_screening_salt_test_4_jin_coarse_mesh.png",
+    "figures/png/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_velocity_slice.png",
+    "reports/2026-06-08_ethan_presentation_figure_package/summary.json",
+    "reports/2026-06-08_ethan_presentation_figure_package/presentation_takeaways.md"
+  ],
+  "notes": [
+    "Salt 3 and Salt 4 latest-time field slices were added to the presentation package defaults.",
+    "Slurm reported ExitCode=11 for three render jobs even though the output figure files were written successfully.",
+    "The package still does not contain a transient Delta p(x) reconstruction or a separately derived HTC(x) curve."
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-06-01T11:46:33-05:00",
+  "source_id": "modern_runs_campaign_inventory_2026-06-01",
+  "source_owner": "ethan_modern_runs_external",
+  "source_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs",
+  "local_stage_root": "",
+  "local_link_path": "",
+  "case_id": "campaign_modern_runs",
+  "ingested_at": "2026-06-01T11:46:33-05:00",
+  "size_bytes": "",
+  "key_files": [
+    "case_config.yaml",
+    "system/controlDict",
+    "logs/log.foamRun",
+    "postProcessing",
+    "constant/polyMesh/boundary"
+  ],
+  "native_outputs_policy": "read_only_inventory_only",
+  "provenance_note": "Point-in-time source inventory for Ethan modern_runs while permissions are actively changing under a long-running chmod pass.",
+  "campaign_summary": {
+    "groups": [
+      "salt",
+      "water"
+    ],
+    "total_cases": 16,
+    "fully_extractable_cases": 10,
+    "partial_cases": 3,
+    "blocked_cases": 3,
+    "salt_cases": 8,
+    "water_cases": 8
+  },
+  "campaign_structure": {
+    "salt": {
+      "theme": "viscosity screening",
+      "cases": [
+        "viscosity_screening_salt_test_1_jin_coarse_mesh",
+        "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+        "viscosity_screening_salt_test_2_jin_coarse_mesh",
+        "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+        "viscosity_screening_salt_test_3_jin_coarse_mesh",
+        "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+        "viscosity_screening_salt_test_4_jin_coarse_mesh",
+        "viscosity_screening_salt_test_4_kirst_coarse_mesh"
+      ]
+    },
+    "water": {
+      "theme": "validation and turbulence-model sweep",
+      "cases": [
+        "val_water_test_1_coarse_mesh_kOmegaSSTLM",
+        "val_water_test_1_coarse_mesh_laminar",
+        "val_water_test_2_coarse_mesh_kOmegaSSTLM",
+        "val_water_test_2_coarse_mesh_laminar",
+        "val_water_test_3_coarse_mesh_kOmegaSSTLM",
+        "val_water_test_3_coarse_mesh_laminar",
+        "val_water_test_4_coarse_mesh_kOmegaSSTLM",
+        "val_water_test_4_coarse_mesh_laminar"
+      ]
+    }
+  }
+}

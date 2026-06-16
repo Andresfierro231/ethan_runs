@@ -1,0 +1,34 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-036`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/feature_minor_loss_extraction_summary.json`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v2/analysis_manifest.json`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v2/summary.json`
+- files changed:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `.agent/status/2026-06-11_AGENT-036.md`
+  - `.agent/journal/2026-06-11/implementer-raw-reuse-provenance-validation.md`
+- commands run:
+  - `python3.11 -m py_compile tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction --output-dir tmp/2026-06-11_case_analysis_raw_reuse_smoke_v2`
+  - `cp -a reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction tmp/2026-06-11_case_analysis_raw_reuse_mismatch`
+  - `python3.11 -c "import json, pathlib; path = pathlib.Path('tmp/2026-06-11_case_analysis_raw_reuse_mismatch/feature_minor_loss_extraction_summary.json'); data = json.loads(path.read_text()); data['source_id'] = 'intentionally_bad_source'; path.write_text(json.dumps(data, indent=2) + '\n')"`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir tmp/2026-06-11_case_analysis_raw_reuse_mismatch --output-dir tmp/2026-06-11_case_analysis_raw_reuse_should_fail`
+- results or observations:
+  - Added raw-summary validation for `source_id`, `profile_name`, `requested_times`, `available_times`, and `runtime_root` agreement between the copied major-loss and feature-loss extraction summaries.
+  - The raw-reuse builder now records that validated metadata block under `raw_extraction_provenance` in both the rebuilt manifest and the report-facing summary.
+  - A valid raw-reuse rebuild from the June 10 Salt 2 package still succeeds and now carries explicit provenance status instead of silently trusting copied summary files.
+  - A deliberately corrupted raw-extraction copy now fails immediately with a targeted `source_id` mismatch error, rather than continuing into a misleading downstream rebuild.
+  - Historical raw-extraction metadata from the June 10 package still points at the old non-keyed frozen snapshot path; this slice validates and records that metadata rather than rewriting historical package artifacts.
+- incomplete lines of investigation:
+  - The raw-reuse validator currently checks the hydraulic raw summaries; it does not attempt to reconcile the separate heat-summary runtime path, which is intentionally live and independently provenance-tracked.
+  - The current Salt 2 package still needs a reviewer pass on the scientific interpretation boundary; these code changes improve runtime and provenance safety, not the remaining hydraulic/thermal caveats themselves.
+- next steps:
+  - Run the focused Salt 2 reviewer pass from the latest package state, using the new manifest/summary provenance fields as part of the reproducibility check.
+  - If reviewer findings stay bounded, move next into adding the next Salt-family profile under the new explicit contract.

@@ -1,0 +1,31 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-065`
+- branch/worktree: `no-HEAD`
+- intent:
+  - continue the autonomous Salt-family rollout queue at `viscosity_screening_salt_test_3_kirst_coarse_mesh`
+  - audit case compatibility under the shared profile contract
+  - register the case if compatible and build the retained-window review package
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-061.md`
+  - `.agent/status/2026-06-12_AGENT-064.md`
+  - `.agent/journal/2026-06-12/reviewer-salt3-jin-rollout-gate.md`
+  - `tools/case_analysis_profiles.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-065.md`
+  - `.agent/journal/2026-06-12/coordinator-implementer-salt3-kirst-rollout.md`
+- commands run:
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_jin_case_analysis_package_window4/README.md`
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_jin_case_analysis_package_window4/summary.json`
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_jin_case_analysis_package_window4/analysis_manifest.json`
+  - `head -20 tmp/2026-06-12_salt3_jin_case_analysis_package_window4/major_loss_summary.csv`
+  - `head -20 tmp/2026-06-12_salt3_jin_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `sed -n '1,220p' tmp/2026-06-12_salt3_jin_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+- results or observations:
+  - Salt 3 Jin cleared the same caveated rollout standard used for the prior Salt-family cases, so the queue advances to Salt 3 Kirst without a new remediation stop.
+- next step:
+  - register Salt 3 Kirst in `tools/case_analysis_profiles.py`, validate the profile contract and stable retained times, then build the retained-window package

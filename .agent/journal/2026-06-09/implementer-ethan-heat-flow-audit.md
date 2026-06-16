@@ -1,0 +1,61 @@
+# Implementer Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Implementer`
+- task ID: `AGENT-013`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `tools/analyze/build_ethan_report_package.py`
+  - `tools/analyze/build_all_salt_behavior_package.py`
+  - `tools/analyze/build_ethan_section_transport_package.py`
+  - `tools/analyze/build_salt2_behavior_package.py`
+  - `tools/common.py`
+  - `registry/case_registry.csv`
+  - `reports/2026-06-04_ethan_case_metadata_index/README.md`
+  - `reports/2026-06-04_ethan_direct_validation/README.md`
+  - `reports/2026-06-04_ethan_section_transport_package/README.md`
+  - `reports/2026-06-04_ethan_transient_axial_package/README.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/**`
+  - `imports/2026-06-09_steady_state_heat_flow_audit.json`
+  - `journals/2026-06/2026-06-09_ethan_runs.md`
+  - `.agent/status/2026-06-09_AGENT-013.md`
+  - `.agent/journal/2026-06-09/implementer-ethan-heat-flow-audit.md`
+- commands run:
+  - `python -m py_compile tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `python tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+- results or observations:
+  - Added a new cross-case builder that recomputes latest steady-state heat partitions directly from each case's current `wallHeatFlux.dat` tail, joins those values to the June 4 metadata and direct-validation indices, and emits a dated report package with CSVs, JSON, README synthesis, and two figures.
+  - The generated package covers `13` registered CFD cases, not `12`; the separate `modern_runs_campaign_inventory_2026-06-01` row remains excluded because it is an `inventory_only` campaign record rather than a CFD case.
+  - All `13` audited cases had a usable late wall-heat window under the current `50`-sample freeze rule.
+  - The clearest cross-case signal is that salt rows sit about `-52.78 W` low relative to the Ethan-linked ambient-loss reference on average, while water rows sit only about `-2.52 W` low; this makes wall-loss partitioning the first TW suspect for the salt family.
+  - The cooling branch remains the largest explicit sink in every case, with the junction bucket the next recurring nontrivial sink after the cooler and test-section branch.
+  - `val_salt_test_2_coarse_mesh_laminar` now has wall-heat data through about `6830 s`, which extends beyond the June 4 direct-validation provenance and is flagged explicitly in the package.
+- implementation corrections made during the task:
+  - Repaired a truncated first write of `build_ethan_steady_state_heat_flow_audit.py` that omitted the README writer and `main()` entrypoint.
+  - Tightened all CSV writers to project rows onto declared fieldnames so report emission does not break when in-memory case dictionaries gain derived columns.
+  - Fixed fluid-family normalization so salt rows are labeled as `S*` and summarized as `salt` rather than inheriting raw `hitec_salt*` strings in the user-facing tables.
+  - Corrected the TW hypothesis logic to trigger on absolute ambient-loss error magnitude; otherwise all negative ambient-loss mismatches fell through to a cooling-branch explanation.
+- incomplete lines of investigation:
+  - The package intentionally does not recompute direct CFD-vs-experiment TW metrics from raw probes; it reuses the June 4 direct-validation package and warns when live heat tails extend beyond that snapshot.
+  - No new OpenFOAM postprocessing was launched in this task; the audit uses current saved postProcessing outputs only.
+  - The report identifies likely under-loss in the salt rows, but it does not yet separate whether that missing loss belongs mostly to test-section surroundings, supports, junctions, or heater-neighbor regions.
+- next steps:
+  - Refresh direct validation for the active Salt 2 continuation if the current live TW RMSE matters for decisions.
+  - Use `latest_heat_partition.csv` and `tw_hypothesis_matrix.csv` to design the next source/loss-informed 1D ROM inputs, especially junction/parasitic losses and sectionwise source placement.
+  - If a second pass is needed, add a more explicit salt family comparison block that groups Jin/Kirst pairs by base case in the package README or a follow-on report.
+- stopping point:
+  - Heat-flow audit package is built and journaled. The repo is at a clean scientific stopping point for today.
+  - The main unresolved item is no longer "where is the heat going?" but "which physical loss/source pathways should be transferred into the 1D ROM first?"
+- tomorrow todo:
+  - Refresh direct validation for `val_salt_test_2_coarse_mesh_laminar` against the current runtime snapshot so TW metrics match the live heat-tail horizon.
+  - Rank the salt under-loss candidates into a first ROM-facing import set: junction losses, test-section surroundings, support/parasitic losses, and source placement shape.
+  - Turn the new `ethan_runs` heat-audit outputs into an explicit 3D-to-1D source/loss contract proposal for `cfd-modeling-tools/tamu_first_order_model/Fluid`.

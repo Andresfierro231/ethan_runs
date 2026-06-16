@@ -1,0 +1,40 @@
+fields:
+  - name: source_id
+    source: registry
+    key: source_id
+  - name: case_id
+    path: operating_point.case_id
+  - name: fluid
+    path: fluid
+  - name: turbulence_model
+    path: turbulence_model
+  - name: heater_power_W
+    path: operating_point.heater_power_W
+  - name: cooling_power_W
+    path: operating_point.cooling_power_W
+  - name: T_init_K
+    path: operating_point.T_init_K
+  - name: nprocs
+    path: nprocs
+  - name: scale_to_meters
+    path: scale_to_meters
+  - name: mesh_group_id
+    path: mesh_group_id
+  - name: kernel_factor
+    path: mesh_settings.kernel_factor
+  - name: kernel_blend
+    path: mesh_settings.kernel_blend
+  - name: core_ratio
+    path: mesh_settings.core_ratio
+  - name: first_cell_size
+    path: mesh_settings.inflation.first_cell_size
+  - name: bulk_cell_size
+    path: mesh_settings.inflation.bulk_cell_size
+  - name: qoi_rtol
+    path: convergence.qoi.rtol
+  - name: convergence_window
+    path: convergence.qoi.window
+  - name: validation_status
+    default: pending_log_extraction
+  - name: validation_note
+    default: no solver-log extraction implemented yet

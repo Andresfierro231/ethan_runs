@@ -1,0 +1,53 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-15`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-070`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `journals/2026-06/2026-06-04_ethan_runs.md`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+  - `journals/2026-06/2026-06-12_ethan_runs.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-04_ethan_section_transport_package/README.md`
+  - `reports/2026-06-04_ethan_transient_axial_package/README.md`
+  - `operational_notes/2026-06-07_runtime_operator_reference.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_streamwise_friction_package.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-15_AGENT-070.md`
+  - `.agent/journal/2026-06-15/coordinator-implementer-streamwise-transport-phase1.md`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_streamwise_boundary_layer_landmarks.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_representative_transport_comparison.py`
+  - `tmp/2026-06-15_streamwise_transport_phase1_smoke/raw_reuse_case_package/**`
+- commands run:
+  - `git status --short`
+  - `python -m py_compile tools/extract/sample_leg_centerline_major_loss.py tools/extract/sample_streamwise_boundary_layer_landmarks.py tools/analyze/build_ethan_case_analysis_package.py tools/analyze/build_ethan_representative_transport_comparison.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --help`
+  - `python tools/analyze/build_ethan_representative_transport_comparison.py --help`
+  - `python tools/extract/sample_streamwise_boundary_layer_landmarks.py --help`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction --output-dir tmp/2026-06-15_streamwise_transport_phase1_smoke/raw_reuse_case_package`
+  - `python - <<'PY' ...` to inspect `tmp/2026-06-15_streamwise_transport_phase1_smoke/raw_reuse_case_package/summary.json` and `major_loss_summary.csv`
+- results or observations:
+  - Extended `tools/extract/sample_leg_centerline_major_loss.py` so the raw leg-major-loss timeseries now exports direct `p_rgh`-based gradient fields, Fanning-coefficient fields, thermal-resistance fields, and momentum-resistance proxy fields instead of leaving those to downstream ad hoc derivations.
+  - Added `tools/extract/sample_streamwise_boundary_layer_landmarks.py` as a new raw extractor. It reuses the major-loss extraction geometry, constructs representative wall-to-centerline line sets per span anchor/midpoint, samples reconstructed `T` and `U`, and reduces first-pass landmark metrics such as `delta99_u`, `delta_star_u`, `theta_u`, `H12`, and `delta99_t` with QC status rows.
+  - Extended `tools/analyze/build_ethan_case_analysis_package.py` to run the new boundary-layer extractor during live builds, load the new raw fields, publish boundary-layer summary artifacts when present, and add an effective thermal-resistance figure plus new resistance statistics to the package summaries.
+  - Added `tools/analyze/build_ethan_representative_transport_comparison.py` to consume finished per-case packages for the Salt 2 trio and emit cross-case transport/boundary-layer comparison CSVs and figures without rerunning OpenFOAM extraction.
+  - The raw-reuse smoke rebuild succeeded against the older June 10 raw extraction. That verified that older packages remain rebuildable with `boundary_layer.available = False`, and it confirmed the new resistance columns and `case_loopwise_effective_thermal_resistance` figure appear in the rebuilt package.
+- contradictions or unresolved issues:
+  - The new boundary-layer extractor has only been statically validated and CLI-smoked. It still needs one real compute-node package build to confirm the `sets` sampling dictionary and raw `.xy` parsing behave as expected on the retained reconstructed-field snapshots.
+  - The new trio comparison builder compiled and exposed the intended CLI, but it still needs regenerated Salt 2 trio packages that include `boundary_layer_landmark_summary.csv` before it can be fully exercised end-to-end.
+- next steps:
+  - Run the updated case-analysis package through `tools/analyze/submit_ethan_case_analysis_package_sbatch.sh` for `val_salt_test_2_coarse_mesh_laminar`, `viscosity_screening_salt_test_2_jin_coarse_mesh`, and `viscosity_screening_salt_test_2_kirst_coarse_mesh`.
+  - Inspect the emitted `boundary_layer_landmark_summary.csv` rows for non-usable QC statuses before using the new `delta99` or shape-factor outputs in report text.
+  - After the three per-case packages exist, run `tools/analyze/build_ethan_representative_transport_comparison.py --package-dir ...` on the trio and review the cross-case figures for expected ordering and continuity across the repaired loop coordinate.

@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-07T15:20:38-05:00",
+  "source_ids": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh"
+  ],
+  "transient_row_count": 733680,
+  "last_window_row_count": 306,
+  "axial_patch_timeseries_row_count": 1005480,
+  "axial_patch_latest_row_count": 441,
+  "axial_leg_summary_row_count": 72,
+  "representative_summary_row_count": 9
+}

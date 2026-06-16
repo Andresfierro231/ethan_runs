@@ -1,0 +1,51 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Reviewer`
+- task ID: `AGENT-020`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-020.md`
+  - `.agent/journal/2026-06-10/reviewer-full-hydraulic-repair.md`
+- commands run:
+  - `sed -n '1,240p' tools/case_analysis_profiles.py`
+  - `sed -n '150,980p' tools/extract/sample_leg_centerline_major_loss.py`
+  - `sed -n '220,340p' tools/analyze/build_ethan_case_analysis_package.py`
+  - `sed -n '780,930p' tools/analyze/build_ethan_case_analysis_package.py`
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | sed -n '800,930p'`
+  - `nl -ba journals/2026-06/2026-06-10_ethan_runs.md | sed -n '1,220p'`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv | sed -n '1,20p'`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv | sed -n '1,20p'`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/README.md | sed -n '1,120p'`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json | sed -n '1,120p'`
+- results or observations:
+  - Review opened for the final full-repair package and the anchored patch-centroid method.
+  - The hydraulic geometry repair itself is credible at the span-registration level. `lower_leg` and `right_leg` now have centimeter-scale projected face distances and zero empty-bin fractions in `major_loss_summary.csv`.
+  - The two substantive residual issues are in package robustness and interpretation framing, not in the existence of the anchored-centerline path itself.
+- incomplete lines of investigation:
+  - No additional review lines are pending for this pass.
+- next steps:
+  - Hand back the findings; implementation follow-up is needed if the refresh path should become fully offline/provenance-safe.
+
+## 2026-06-10 Review Findings
+
+- Finding 1: `--raw-extraction-dir` still accepts arbitrary raw artifacts without validating that they match the requested `source_id` or profile. The builder copies or reuses the raw tree and then packages it under `args.source_id`, but never checks `leg_major_loss_extraction_summary.json` or `feature_minor_loss_extraction_summary.json` for a matching `source_id` / `profile_name`. That means a wrong raw directory can silently produce a provenance-corrupted package. See `tools/analyze/build_ethan_case_analysis_package.py:810-818` and `:836-887`.
+- Finding 2: the raw-reuse refresh path still depends on live runtime state even when it should be a package-only refresh. The builder always selects current stable times and creates a new frozen snapshot before it decides whether raw extraction will be reused. That means a nominally offline package refresh still touches the live continuation tree and can fail or drift based on current runtime state. See `tools/analyze/build_ethan_case_analysis_package.py:791-807` and `:810-813`.
+- Finding 3: the curated journal overstates readiness by saying “the hydraulic registration problem is now fixed at the package level” even though every span remains `warning_heavy` and three feature objects still carry negative residual pressure. The package caveats do mention those issues, but the high-level wording is stronger than the evidence supports for scientific interpretation. See `journals/2026-06/2026-06-10_ethan_runs.md:79-85`, `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv:2-7`, and `reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv:2-4`.

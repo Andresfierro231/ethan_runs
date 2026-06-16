@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-08T11:43:00-05:00",
+  "workspace": "ethan_runs",
+  "pass_id": "2026-06-08_render_only_figure_refresh",
+  "observed_outputs": [
+    "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+    "figures/png/val_salt_test_2_coarse_mesh_laminar.png",
+    "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.png",
+    "figures/png/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.png",
+    "figures/svg/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.svg",
+    "figures/svg/val_salt_test_2_coarse_mesh_laminar_last_timestep_temperature_slice.svg",
+    "figures/svg/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.svg",
+    "figures/svg/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.svg",
+    "figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.pdf",
+    "figures/pdf/val_salt_test_2_coarse_mesh_laminar_last_timestep_temperature_slice.pdf",
+    "figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.pdf",
+    "figures/pdf/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.pdf"
+  ],
+  "staging_actions": [
+    {
+      "path": "staging/render_inputs/viscosity_screening_salt_test_1_kirst_coarse_mesh/reconstructed_case/3279_tonly_backup_2026-06-08",
+      "reason": "Preserved prior T-only staging before reconstructing T and U together."
+    },
+    {
+      "path": "staging/render_inputs/val_salt_test_2_coarse_mesh_laminar/reconstructed_case/1724_tonly_backup_2026-06-08",
+      "reason": "Preserved prior T-only staging before reconstructing T and U together."
+    }
+  ],
+  "job_ids": {
+    "failed_mixed_jobs": [
+      3216669,
+      3216670,
+      3216671,
+      3216672
+    ],
+    "render_only_jobs": [
+      3216685,
+      3216686,
+      3216687,
+      3216688
+    ]
+  },
+  "notes": [
+    "Temperature scalar-bar labels and titles were forced to black and verified in the exported SVG text nodes.",
+    "Velocity plots were rendered from fresh staged reconstructed cases containing both T and U."
+  ]
+}

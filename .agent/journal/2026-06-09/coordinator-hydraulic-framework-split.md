@@ -1,0 +1,24 @@
+# Coordinator Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Coordinator`
+- task ID: `AGENT-009`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/DECISIONS.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/DECISIONS.md`
+  - `.agent/status/2026-06-09_AGENT-009.md`
+  - `.agent/journal/2026-06-09/coordinator-hydraulic-framework-split.md`
+- results or observations:
+  - Recorded the agreed Salt 2 hydraulic-analysis framework as a split between legwise centerline major-loss reporting and feature-based minor-loss pressure budgeting.
+  - Assigned the implementer integration task under `AGENT-010` and used parallel subagent work to land the first major-loss and feature-loss extractor drafts separately.
+  - Closed the coordination and subagent extraction task records to `Done Awaiting Review` while leaving the integrated hydraulic-package task active.
+- tomorrow todo:
+  - Keep `AGENT-010` as the only active Salt 2 hydraulic task unless a separate reviewer is assigned.
+  - After the next package build succeeds, assign a `Reviewer` task focused on sign conventions, coverage gaps, and budget closure.
+  - If the live retained-time rollover still causes instability, formalize a snapshot staging task before any broader extension to internal HTC.

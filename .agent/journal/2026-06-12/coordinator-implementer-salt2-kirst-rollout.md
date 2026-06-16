@@ -1,0 +1,39 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-055`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `staging/AGENTS.override.md`
+  - `.agent/status/2026-06-11_AGENT-049.md`
+  - `.agent/status/2026-06-11_AGENT-053.md`
+  - `.agent/journal/2026-06-11/implementer-salt1-kirst-profile-rollout.md`
+  - `.agent/journal/2026-06-11/implementer-salt2-jin-profile-rollout.md`
+  - `tools/case_analysis_profiles.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `tools/case_analysis_profiles.py`
+  - `.agent/status/2026-06-12_AGENT-055.md`
+  - `.agent/journal/2026-06-12/coordinator-implementer-salt2-kirst-rollout.md`
+  - `tmp/2026-06-12_salt2_kirst_case_analysis_package_window4/**`
+- commands run:
+  - `python - <<'PY' ... resolve_case_paths('viscosity_screening_salt_test_2_kirst_coarse_mesh') ... defs.select_stable_processor_times(...) ... PY`
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py`
+  - `python3.11 -c "from tools.case_analysis_profiles import get_case_analysis_profile; profile = get_case_analysis_profile('viscosity_screening_salt_test_2_kirst_coarse_mesh'); print(profile.profile_name); print(len(profile.major_spans), len(profile.feature_budgets))"`
+  - `python -c "from tools.case_analysis_profiles import resolve_case_paths; source_root, runtime_root, metadata = resolve_case_paths('viscosity_screening_salt_test_2_kirst_coarse_mesh'); print(source_root); print(runtime_root); print(metadata.get('case_name'))"`
+  - `python -c "from tools import hydraulic_budget_defs as defs; from tools.case_analysis_profiles import resolve_case_paths; from pathlib import Path; _, runtime_root, _ = resolve_case_paths('viscosity_screening_salt_test_2_kirst_coarse_mesh'); print(defs.select_stable_processor_times(Path(runtime_root), 5, required_fields=('wallShearStress','yPlus','p','p_rgh','T','U','wallHeatFlux')))" `
+  - `python -u tools/analyze/build_ethan_case_analysis_package.py --source-id viscosity_screening_salt_test_2_kirst_coarse_mesh --time-selector 583,584,585,586 --output-dir tmp/2026-06-12_salt2_kirst_case_analysis_package_window4`
+- results or observations:
+  - The next autonomous Salt-family successor remains `viscosity_screening_salt_test_2_kirst_coarse_mesh`.
+  - Stable retained late hydraulic times are available at `583-586 s`.
+  - The user explicitly requested continuing the queue autonomously, so this rollout is being opened in the same session as the unrelated active `AGENT-056` task, with disjoint implementation scope outside the shared board file.
+  - Registered `viscosity_screening_salt_test_2_kirst_coarse_mesh` as `salt2_kirst_case_v1` through the shared Salt-family profile helper.
+  - The retained-window package build completed successfully on `583-586 s` and emitted a full package under `tmp/2026-06-12_salt2_kirst_case_analysis_package_window4/`.
+- next steps:
+  - Reviewer gate recorded under `AGENT-057`.
+  - Advance the autonomous queue to `viscosity_screening_salt_test_3_jin_coarse_mesh`.

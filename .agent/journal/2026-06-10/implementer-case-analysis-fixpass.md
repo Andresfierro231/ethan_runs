@@ -1,0 +1,47 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-015`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `.agent/journal/2026-06-10/reviewer-case-analysis-package.md`
+- commands run:
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `nl -ba tools/analyze/build_ethan_case_heat_summary.py | sed -n '1,280p'`
+  - `nl -ba tools/extract/sample_leg_centerline_major_loss.py | sed -n '480,560p'`
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | sed -n '240,870p'`
+  - `python3.11 -c "<summarize wall-face distance-to-centerline statistics by span and patch>"`
+  - `python3.11 -m py_compile tools/analyze/build_ethan_case_analysis_package.py tools/analyze/build_ethan_case_heat_summary.py tools/extract/sample_leg_centerline_major_loss.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-015.md`
+  - `.agent/journal/2026-06-10/implementer-case-analysis-fixpass.md`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/**`
+- results or observations:
+  - Opened a dedicated fix-pass task so the implementation work after review is separated from the original framework landing and from the reviewer log.
+  - Corrected the feature requested-time summary bug by reading the extractor's `requested_times` / `available_times` keys instead of the nonexistent `selected_times` key.
+  - Corrected feature warning propagation by normalizing raw `0/1` and text warning flags, so the package now preserves the extractor's warning state and also flags negative minor residuals explicitly.
+  - Replaced the stale feature notes with integrator-owned notes that describe the inferred wall reference and list the warning sources when present.
+  - Corrected the heat summary so the reported ambient-loss error is recomputed from the current live-tail `ambient_proxy_w` against the older validation reference, and exposed the stale-reference time mismatch directly in the package outputs.
+  - Corrected major-loss empty-bin handling so zero-face bins are warning-flagged instead of silently looking clean, and corrected `max_yplus` so it is now a true maximum rather than a mean of maxima.
+  - The sidecar diagnosis and local distance audit both point to the same root cause for `lower_leg` and `right_leg`: the TP/TW centerline proxy is badly misregistered for those spans, and the extractor had no projection-distance gate. Median face-to-centerline distances are about `0.444 m` and `0.468 m` for those spans versus about `0.011 m` for the usable left/test/upper spans.
+  - Rather than fabricate a risky geometric repair, I added a package-level quarantine diagnostic based on projected face distance relative to a span reference threshold. The rebuilt package now marks `lower_leg` and `right_leg` as `quarantined_projection_misregistration` in `major_loss_summary.csv` and in `summary.json`.
+  - The rebuilt package advanced to a newer frozen retained window `7313-7317 s`, with the live heat tail at `7322 s`.
+- incomplete lines of investigation:
+  - The root cause of the `lower_leg` / `right_leg` failure is diagnosed at the method level, but the true geometric repair is not yet implemented.
+  - The current major-loss warning heuristic based on `tauw_streamwise_max_rel_dev > 0.20` remains aggressive enough that even the non-quarantined spans are warning-heavy; that may deserve a separate calibration pass.
+- next steps:
+  - Decide whether to derive a patch-faithful streamwise coordinate for `lower_leg` and `right_leg` or keep them quarantined for the next reporting round.
+  - If connector-level minor-loss interpretation becomes important, split `test_section_complex` into smaller feature objects before the next case-profile rollout.

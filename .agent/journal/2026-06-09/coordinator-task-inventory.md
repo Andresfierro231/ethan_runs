@@ -1,0 +1,36 @@
+# Coordinator Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Coordinator`
+- task ID: `AGENT-005`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `operational_notes/2026-06-07_todo.md`
+  - `operational_notes/2026-06-08_todo.md`
+  - `operational_notes/2026-06-08_presentation_package_todo.md`
+  - `JOURNAL.md`
+  - `reports/2026-06-08_ethan_presentation_figure_package/presentation_takeaways.md`
+  - `reports/2026-06-08_sponsor_salt_status_deck/README.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-09_AGENT-005.md`
+  - `.agent/journal/2026-06-09/coordinator-task-inventory.md`
+- commands run:
+  - `sed -n ...` on board, ownership, roles, TODOs, journal, and report context files
+  - `rg --files operational_notes`
+  - `rg --files journals/2026-06`
+  - `ls -lt .agent/journal/2026-06-09`
+- results or observations:
+  - Confirmed there were no active task claims on the board.
+  - Found a stale board-state inconsistency: `AGENT-004` appeared in both `Backlog` and `Done Awaiting Review`.
+  - Separated pending work into two layers: agent coordination backlog and repo scientific/operational backlog.
+  - The highest-current scientific follow-ons remain Salt 4 continuation-state refresh, Salt 1 Kirst restart-tree repair, Salt 2 extension decision, laptop ParaView transfer verification, and transient pressure-history / reconstructed-`T` follow-up.
+- incomplete lines of investigation:
+  - The current live post-June-8 Salt 4 state is newer than the June 8 sponsor and presentation package wording, so a fresh writer or coordinator refresh may be needed before any new outward-facing summary.
+  - No reviewer task has been assigned yet for `AGENT-001`, `AGENT-002`, or `AGENT-004`.
+- next steps:
+  - Assign one explicit follow-on task before any non-coordinator edit.
+  - Likely next assignments: reviewer pass on coordination scaffolding, cleaner dry-run inventory (`AGENT-003`), or writer refresh for stale Salt 4 continuation wording.

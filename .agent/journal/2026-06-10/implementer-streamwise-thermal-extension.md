@@ -1,0 +1,38 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-023`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-023.md`
+  - `.agent/journal/2026-06-10/implementer-streamwise-thermal-extension.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_streamwise_friction_dense_faces.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/**`
+- commands run:
+  - `python3.11 -m py_compile tools/extract/sample_streamwise_friction_dense_faces.py tools/extract/sample_leg_centerline_major_loss.py tools/analyze/build_ethan_case_analysis_package.py tools/case_analysis_profiles.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --time-selector 7412,7413,7414,7415,7416`
+- results or observations:
+  - Extended the case-analysis profile to require `T` and `wallHeatFlux` alongside the existing hydraulic fields.
+  - Extended the repaired major-loss extractor so each retained wall face now carries wall `T` and wall heat flux on the same repaired streamwise coordinate used for hydraulic reduction.
+  - Added span-bin thermal reductions: wall-area-averaged `T_wall`, wall-area-averaged `q''`, a TP-endpoint linear bulk-temperature proxy, `Delta T_proxy`, effective `h`, and effective `UA'` per unit length.
+  - Extended the package builder to propagate the new thermal columns into `major_loss_cumulative_timeseries.csv`, summarize them in `major_loss_summary.csv` and `thermal_streamwise_summary.csv`, and render the new loopwise figures `case_loopwise_thermal_profiles` and `case_loopwise_effective_ua_per_m`.
+  - The first rebuild failed because reconstructed OpenFOAM wall `T` boundary files contain nested dictionaries under patch entries; the existing boundary parser exited the patch block too early and could not read `value uniform ...` layouts. I fixed `sample_streamwise_friction_dense_faces.py` so it tracks brace depth correctly and can expand uniform boundary values when the patch face count is known.
+  - The rebuild then completed successfully, but the requested late-window extraction did not preserve `7412-7415 s` in the frozen snapshot. The resulting first streamwise thermal package is therefore a single retained snapshot at `7416 s`, not a five-time average.
+  - The package summary now exposes that limitation directly in `analysis_manifest.json` via `missing_snapshot_times` and in `summary.json` via the retained-time lists and the streamwise bulk-temperature-proxy caveat.
+- incomplete lines of investigation:
+  - Replace the TP-endpoint bulk-temperature proxy with a matched cross-sectional bulk-fluid reduction on the same streamwise bins so the local `h` and `UA'` curves become stronger report-grade quantities.
+  - Decide whether the report should treat the current `7416 s` snapshot as a first late-tail reference or whether the frozen-snapshot builder should be tightened so a multi-time retained window is guaranteed.
+- next steps:
+  - Hand the first streamwise thermal package to review and then decide whether to build the next iteration around matched fluid-side cross-sectional bulk temperatures.

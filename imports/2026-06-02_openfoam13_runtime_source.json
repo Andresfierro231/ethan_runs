@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-02T10:00:00-05:00",
+  "source_id": "openfoam13_runtime_recovery_2026-06-02",
+  "source_owner": "openfoam_foundation_official_source_pack",
+  "source_root": "/work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13/source",
+  "local_stage_root": "/work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13",
+  "case_id": "openfoam13_runtime_recovery",
+  "native_outputs_policy": "source_download_runtime_only",
+  "provenance_note": "Fallback official OpenFOAM Foundation v13 source-install path for salt2 runtime recovery. Preferred first choice remains coworker-provided access to the original private OpenFOAM 13 tree used in the source runs.",
+  "official_sources": {
+    "openfoam_13_source_pack": "https://openfoam.org/download/13-source/",
+    "compile_from_source": "https://openfoam.org/download/source/"
+  },
+  "expected_runtime_dependency": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so"
+}

@@ -1,0 +1,10 @@
+source_id,exp_case_name,variant_label,essential_steadiness_class,exp_all_temp_rmse_k,exp_mdot_abs_error_pct,exp_q_external_loss_abs_error_pct,sim_ambient_proxy_w,sim_cooling_branch_total_removal_w,sim_section_test_section_net_q_w
+val_salt_test_2_coarse_mesh_laminar,Salt 2,,essentially_steady,5.195921279377687,18.951017976190467,20.574219228738393,187.77204918069998,136.35074002,-7.314405494
+viscosity_screening_salt_test_1_jin_coarse_mesh,Salt 1,jin,not_steady_enough,17.745189678331162,28.70387302215191,27.360108353568656,167.774126774,135.60317786,0.7475739344
+viscosity_screening_salt_test_1_kirst_coarse_mesh,Salt 1,kirst,not_steady_enough,17.55620984679648,30.809515537974686,27.346344175812238,167.80591747262997,135.60317786,0.806212777
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2,jin,essentially_steady,5.622281562405422,21.65710934523809,20.945467128832053,186.8943747244,136.3507399,-5.499522598
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2,kirst,essentially_steady,6.140964304544514,27.121653571428574,20.43851841298395,188.09286214599,136.35073988,-5.039731247
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3,jin,essentially_steady,5.612608549444536,14.711376500000014,19.009679138345895,211.76299764877,150.76963870000003,-10.24342229
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3,kirst,essentially_steady,5.458447708953641,20.17977992857144,19.01950843267885,211.73729728346,150.76963876,-10.2680828
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4,jin,borderline_but_usable,6.061627553731621,15.496810024875622,17.40163440703854,244.24024581527993,169.22681362,-16.52275142
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4,kirst,essentially_steady,5.908171197457817,20.999207201492545,17.45227379771527,244.09050705061998,169.22681525,-16.54605165

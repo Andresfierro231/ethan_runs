@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-06-08T10:08:00-05:00",
+  "audience": "external_sponsor",
+  "scope": "salt_first_status_and_decisions",
+  "deliverable": "slide_outline",
+  "title": "June 8, 2026 sponsor-facing salt campaign status deck scaffold",
+  "source_packages": [
+    "reports/2026-06-04_all_salt_behavior_package",
+    "reports/2026-06-04_salt2_behavior_package",
+    "reports/2026-06-04_ethan_essential_steadiness_audit",
+    "reports/2026-06-05_ethan_continuation_diagnosis",
+    "reports/2026-06-05_ethan_convergence_and_salt1_campaign",
+    "reports/2026-06-05_ethan_wall_loss_resistance_coupling"
+  ],
+  "source_figures": [
+    "reports/2026-06-05_ethan_convergence_and_salt1_campaign/figures/png/eight_case_convergence_dashboard.png",
+    "reports/2026-06-04_salt2_behavior_package/figures/png/salt2_mdot_compare.png",
+    "reports/2026-06-04_salt2_behavior_package/figures/png/salt2_tp_compare.png",
+    "reports/2026-06-05_ethan_wall_loss_resistance_coupling/figures/png/salt_mdot_vs_ambient_loss_error.png",
+    "reports/2026-06-05_ethan_wall_loss_resistance_coupling/figures/png/salt_section_pressure_drop_heatmap.png"
+  ],
+  "live_snapshot": {
+    "captured_at": "2026-06-08T10:08:00-05:00",
+    "salt2_continuation": {
+      "job_id": "3202708",
+      "state": "TIMEOUT",
+      "ended_at": "2026-06-07T11:42:53-05:00",
+      "latest_solver_time_seen_s": "5292.994285714",
+      "interpretation": "timed out after successful advancement; treat as a budget decision, not an environment failure"
+    },
+    "salt4_jin_continuation": {
+      "job_id": "3210231",
+      "state": "RUNNING",
+      "elapsed": "2-22:38:23",
+      "latest_solver_time_seen_s": "3896.935643564",
+      "latest_log_mtime": "2026-06-08T10:08:00-05:00",
+      "continuity_error_cumulative": "0.000105979532",
+      "courant_mean": "0.0992615276",
+      "courant_max": "0.99930974",
+      "interpretation": "healthy live continuation; operationally meaningful progress, but not yet a completed scientific endpoint"
+    }
+  },
+  "decision_summary": [
+    "Use val_salt_test_2_coarse_mesh_laminar as the sponsor-facing validation anchor.",
+    "Continue to monitor or complete Salt 4 Jin continuation 3210231 before refreshing the sponsor interpretation package.",
+    "Repair the Salt 1 Kirst staged restart tree before any new retry after 3211199.",
+    "Build transient p_rgh histories for the upper leg, left leg, and test-section branch before proposing geometry changes or a pure wall-loss explanation."
+  ],
+  "not_first_priority": [
+    "insulation_thickening_first",
+    "cp_sensitivity_before_wall_loss_and_resistance_checks",
+    "water_case_cleanup_in_this_deck"
+  ],
+  "package_files": [
+    "reports/2026-06-08_sponsor_salt_status_deck/README.md",
+    "reports/2026-06-08_sponsor_salt_status_deck/slide_outline.md",
+    "reports/2026-06-08_sponsor_salt_status_deck/live_status_summary.csv"
+  ]
+}

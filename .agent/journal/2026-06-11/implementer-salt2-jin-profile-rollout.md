@@ -1,0 +1,30 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-053`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+  - `registry/case_registry.csv`
+  - `staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh/constant/polyMesh/boundary`
+  - `staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh/system/topoSetDict`
+  - `tools/case_analysis_profiles.py`
+- files changed:
+  - `tools/case_analysis_profiles.py`
+  - `.agent/status/2026-06-11_AGENT-053.md`
+  - `.agent/journal/2026-06-11/implementer-salt2-jin-profile-rollout.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- commands run:
+  - `rg -n "viscosity_screening_salt_test_2_jin_coarse_mesh" reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv registry/case_registry.csv`
+  - `python -c "from tools.case_analysis_profiles import resolve_case_paths; source_root, runtime_root, metadata = resolve_case_paths('viscosity_screening_salt_test_2_jin_coarse_mesh'); print(source_root); print(runtime_root); print(metadata.get('case_name'))"`
+  - `rg -n "ncc_pipeleg_lower_01_fitting_start|pipeleg_upper_09_straight|ncc_pipeleg_left_02_connector_end|mdot_pipeleg_upper_05_cooler" staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh/constant/polyMesh/boundary staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh/system/topoSetDict`
+  - `python -c "from tools import hydraulic_budget_defs as defs; from tools.case_analysis_profiles import resolve_case_paths; from pathlib import Path; _, runtime_root, _ = resolve_case_paths('viscosity_screening_salt_test_2_jin_coarse_mesh'); print(defs.select_stable_processor_times(Path(runtime_root), 5, required_fields=('wallShearStress','yPlus','p','p_rgh','T','U','wallHeatFlux')))" `
+- results or observations:
+  - Salt 2 Jin is registered and staged under the same geometry / NCC / mdot naming family as the earlier Salt-family rollout cases.
+  - Stable retained late hydraulic times are available at `2428-2431 s`.
+  - Registered `viscosity_screening_salt_test_2_jin_coarse_mesh` as `salt2_jin_case_v1` through the shared Salt-family profile helper.
+- next steps:
+  - Build the Salt 2 Jin retained-window case-analysis package.
+  - Reuse the same reviewer-gate discipline now cleared on Salt 1 Jin and Salt 1 Kirst.

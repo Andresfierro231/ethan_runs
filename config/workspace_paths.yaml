@@ -1,0 +1,10 @@
+workspace_root: .
+local_staging_root: staging
+local_link_root: linked_cases
+local_work_products_root: work_products
+local_figure_root: figures_rendered
+cross_model_publish_root: ../cfd-modeling-tools/cross_model_comparison
+default_campaign_prefix: ethan
+default_source_owner: native_2d_cfd_external
+first_case_source_path: /scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar
+native_outputs_policy: read_only_imports_only

@@ -1,0 +1,129 @@
+{
+  "generated_at": "2026-06-12T16:50:37-05:00",
+  "builder": "tools/analyze/build_ethan_steady_state_heat_flow_audit.py",
+  "output_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit",
+  "case_count": 13,
+  "source_ids": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar",
+    "val_water_test_3_coarse_mesh_laminar",
+    "val_water_test_4_coarse_mesh_laminar"
+  ],
+  "fluid_counts": {
+    "salt": 9,
+    "water": 4
+  },
+  "run_status_counts": {
+    "running": 1,
+    "terminated": 10,
+    "completed": 2
+  },
+  "steady_window_status_counts": {
+    "usable_window": 13
+  },
+  "top_tw_rmse_cases": [
+    {
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "display_label": "S1 jin",
+      "fluid_family": "salt",
+      "exp_tw_rmse_k": 17.804909804082378,
+      "tw_hypothesis_label": "under-loss"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "display_label": "S1 kirst",
+      "fluid_family": "salt",
+      "exp_tw_rmse_k": 17.690732707468666,
+      "tw_hypothesis_label": "under-loss"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "display_label": "S4 jin",
+      "fluid_family": "salt",
+      "exp_tw_rmse_k": 7.555170550541495,
+      "tw_hypothesis_label": "under-loss"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "display_label": "S4 kirst",
+      "fluid_family": "salt",
+      "exp_tw_rmse_k": 7.272489858169521,
+      "tw_hypothesis_label": "under-loss"
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "display_label": "S2 kirst",
+      "fluid_family": "salt",
+      "exp_tw_rmse_k": 6.971738348376763,
+      "tw_hypothesis_label": "under-loss"
+    }
+  ],
+  "largest_ambient_error_cases": [
+    {
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "display_label": "S1 jin",
+      "ambient_error_pct": -27.360108353568656,
+      "ambient_error_w": -63.192801963485834
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "display_label": "S1 kirst",
+      "ambient_error_pct": -27.346344175812238,
+      "ambient_error_w": -63.16101126485586
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "display_label": "S2 jin",
+      "ambient_error_pct": -20.945467128832053,
+      "ambient_error_w": -49.51759045535053
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "display_label": "S2 kirst",
+      "ambient_error_pct": -20.43851841298395,
+      "ambient_error_w": -48.31910303376051
+    },
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "display_label": "S2",
+      "ambient_error_pct": -20.436343908446457,
+      "ambient_error_w": -48.3139622448505
+    }
+  ],
+  "refresh_or_rerun_candidates": [
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "base_case_id": "salt_test_2",
+      "fluid": "hitec_salt",
+      "fluid_family": "salt",
+      "variant_label": "",
+      "run_status": "running",
+      "steady_window_status": "usable_window",
+      "latest_heat_time_s": 8602.0,
+      "priority": "medium",
+      "recommendation": "refresh direct validation against the current runtime snapshot",
+      "rationale": "The wall-heat tail is newer than the June 4 validation snapshot, so the TW comparison is slightly out of date for this case."
+    }
+  ],
+  "figures": {
+    "cross_case_heat_partition_comparison": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/png/cross_case_heat_partition_comparison.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/cross_case_heat_partition_comparison.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/pdf/cross_case_heat_partition_comparison.pdf"
+    },
+    "tw_rmse_vs_heat_partition_error": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/png/tw_rmse_vs_heat_partition_error.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/tw_rmse_vs_heat_partition_error.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/pdf/tw_rmse_vs_heat_partition_error.pdf"
+    }
+  }
+}

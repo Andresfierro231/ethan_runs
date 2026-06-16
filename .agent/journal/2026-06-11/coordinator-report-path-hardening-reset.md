@@ -1,0 +1,30 @@
+# Coordinator Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Coordinator`
+- task ID: `AGENT-028`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `reports/AGENTS.override.md`
+  - `tools/AGENTS.override.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-11_AGENT-028.md`
+  - `.agent/journal/2026-06-11/coordinator-report-path-hardening-reset.md`
+- commands run:
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,260p' .agent/FILE_OWNERSHIP.md`
+  - `sed -n '1,240p' .agent/JOURNAL_POLICY.md`
+- results or observations:
+  - Closed the stale active `AGENT-021` / `AGENT-022` board state after confirming that later June 10 tasks already superseded that work.
+  - Opened a new June 11 writer task for the internal Salt 2 brief and a new implementer task for the first reusable-script hardening slice.
+  - Recorded that `codex` is holding the paired writer and implementer tasks together because the user explicitly requested the report path and script hardening in one pass.
+- incomplete lines of investigation:
+  - The broader multi-agent split for later Salt-family rollout is still pending a later board update after the first Salt 2 hardening slice and reviewer refresh are in place.
+- next steps:
+  - Build the June 11 brief package.
+  - Land the first runtime/heat hardening changes under `AGENT-032`.

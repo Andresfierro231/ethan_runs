@@ -1,0 +1,36 @@
+# Writer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Writer`
+- task ID: `AGENT-029`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `reports/AGENTS.override.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.json`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+- files changed:
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/figure_manifest.md`
+  - `.agent/status/2026-06-11_AGENT-029.md`
+  - `.agent/journal/2026-06-11/writer-salt2-internal-technical-brief.md`
+- commands run:
+  - `sed -n '1,220p' reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `sed -n '1,240p' reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `sed -n '1,240p' reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.json`
+  - `sed -n '1,220p' reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+- results or observations:
+  - Added a new dated internal technical brief package rather than rewriting the June 10 package in place.
+  - Narrowed the report path to three claims only: loopwise hydraulic comparison, late-tail heat partition, and the current interpretation boundary for streamwise thermal indicators.
+  - Added a figure manifest that separates headline evidence from supporting and QC-only figures so later report drafting does not accidentally over-promote the thermal products.
+- incomplete lines of investigation:
+  - The brief intentionally does not tighten the thermal language beyond “effective, support-gated indicators”; that still depends on a later reviewer pass.
+  - The brief carries the `left_upper_leg` and `upper_leg` disagreement forward as open technical issues rather than resolving them.
+- next steps:
+  - Use the brief in the later internal reviewer pass.
+  - Keep it aligned with any follow-on Salt 2 package review or hardening updates.

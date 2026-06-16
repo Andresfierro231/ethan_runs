@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-06-01T11:46:33-05:00",
+  "source_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs",
+  "campaign_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-06-01_source_inventory",
+  "permission_state_note": "External chmod pass was still reported as running during this inventory. Readability classifications are a point-in-time observation, not a durable guarantee.",
+  "counts": {
+    "total_cases": 16,
+    "salt_cases": 8,
+    "water_cases": 8,
+    "full_extractable": 10,
+    "partial_extractable": 1,
+    "partial_metadata": 2,
+    "blocked": 3
+  },
+  "recommended_first_stage_batch": [
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar"
+  ],
+  "notes": [
+    "Salt appears to be a property-model campaign: Jin vs Kirst viscosity closures on tests 1-4.",
+    "Water appears to be a model-form campaign: laminar vs kOmegaSSTLM on tests 1-4.",
+    "All readable cases share the same mesh_group_id, parallel partition count, and convergence structure."
+  ]
+}

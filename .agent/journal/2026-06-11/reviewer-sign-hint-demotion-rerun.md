@@ -1,0 +1,28 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Reviewer`
+- task ID: `AGENT-044`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4/analysis_manifest.json`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4/summary.json`
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/case_analysis_profiles.py`
+- files changed:
+  - `.agent/status/2026-06-11_AGENT-044.md`
+  - `.agent/journal/2026-06-11/reviewer-sign-hint-demotion-rerun.md`
+- commands run:
+  - `nl -ba tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4/analysis_manifest.json | sed -n '1,140p'`
+  - `nl -ba tmp/2026-06-11_case_analysis_raw_reuse_smoke_v4/summary.json | sed -n '1,260p'`
+  - `nl -ba reports/2026-06-11_salt2_internal_technical_report_brief/README.md | sed -n '96,130p'`
+  - `nl -ba journals/2026-06/2026-06-11_ethan_runs.md | sed -n '68,130p'`
+- results or observations:
+  - The raw-reuse smoke package now exposes the direction-sign assumption explicitly in both the manifest and summary, and the brief/journal use the same boundary language.
+  - That resolves the previous rollout-boundary ambiguity: the scripts no longer imply stronger automatic direction inference than they actually provide.
+  - Residual live `history_time_end_s` metadata drift remains documented, but it does not appear to alter the frozen hydraulic or thermal evidence used by the package.
+  - On that basis, Salt 2 is sufficiently hardened to begin the first Salt-family profile rollout task.
+- next steps:
+  - Start with `viscosity_screening_salt_test_1_jin_coarse_mesh` and verify that its geometry, patch naming, and required fields are compatible with the current Salt 2-derived profile contract before copying any profile definitions forward.

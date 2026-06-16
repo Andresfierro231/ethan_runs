@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-08T12:58:00-05:00",
+  "workspace": "ethan_runs",
+  "pass_id": "2026-06-08_timestep_stamp_refresh",
+  "updated_scripts": [
+    "tools/extract/render_last_timestep_temperature_slices.py",
+    "tools/extract/render_last_timestep_field_slices.py",
+    "tools/analyze/build_ethan_presentation_figure_package.py"
+  ],
+  "updated_outputs": [
+    "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+    "figures/png/val_salt_test_2_coarse_mesh_laminar.png",
+    "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.png",
+    "figures/png/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.png",
+    "reports/2026-06-08_ethan_presentation_figure_package/figures/png/temperature_velocity_slice_panel.png"
+  ],
+  "verification": [
+    "SVG exports contain black text nodes `t = 3279 s` and `t = 1724 s` in the upper-right stamp position.",
+    "Rebuilt the presentation figure package after refreshing the stamped source images."
+  ]
+}

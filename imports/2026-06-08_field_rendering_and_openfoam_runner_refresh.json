@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-08T10:08:00-05:00",
+  "source_id": "field_rendering_and_openfoam_runner_refresh_2026-06-08",
+  "source_owner": "ethan_runs_local_visualization_and_runtime_refresh",
+  "case_id": "campaign_field_rendering_and_openfoam_runner_refresh",
+  "native_outputs_policy": "new visualization and runtime helper artifacts only; imported solver output roots not mutated",
+  "provenance_note": "June 8 refresh that adds a generic temperature/velocity ParaView slice renderer, matching latest-time field reconstruction helper, smoke render job scripts, and a reusable OpenFOAM launcher wrapper.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh"
+  ],
+  "scripts": [
+    "tools/extract/render_last_timestep_field_slices.py",
+    "tools/extract/stage_latest_time_field_reconstruction.py",
+    "tools/run_openfoam_case.sh",
+    "staging/render_jobs/2026-06-08_smoke_temperature_kirst_blackbar.sbatch",
+    "staging/render_jobs/2026-06-08_smoke_temperature_salt2_blackbar.sbatch",
+    "staging/render_jobs/2026-06-08_smoke_velocity_kirst.sbatch",
+    "staging/render_jobs/2026-06-08_smoke_velocity_salt2.sbatch"
+  ],
+  "expected_outputs": {
+    "temperature_pngs": [
+      "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+      "figures/png/val_salt_test_2_coarse_mesh_laminar.png"
+    ],
+    "velocity_pngs": [
+      "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.png",
+      "figures/png/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.png"
+    ],
+    "temperature_status": [
+      "figures/2026-06-08_smoke_temperature_kirst_status.json",
+      "figures/2026-06-08_smoke_temperature_salt2_status.json"
+    ],
+    "velocity_status": [
+      "figures/2026-06-08_smoke_velocity_kirst_status.json",
+      "figures/2026-06-08_smoke_velocity_salt2_status.json"
+    ]
+  },
+  "unresolved_items": [
+    "The new smoke jobs still need to be submitted and monitored.",
+    "The current generic renderer is a parallel add-on and does not yet replace the older temperature-only script.",
+    "Existing continuation sbatches still duplicate runtime bootstrap logic until they are migrated to tools/run_openfoam_case.sh."
+  ]
+}

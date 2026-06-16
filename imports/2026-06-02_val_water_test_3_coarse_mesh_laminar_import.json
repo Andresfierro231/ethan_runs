@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-06-02T10:01:13-05:00",
+  "source_id": "val_water_test_3_coarse_mesh_laminar",
+  "source_owner": "ethan_modern_runs_staged",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_3_coarse_mesh_laminar",
+  "local_stage_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_3_coarse_mesh_laminar",
+  "local_link_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/linked_cases/val_water_test_3_coarse_mesh_laminar",
+  "case_id": "water_test_3",
+  "ingested_at": "2026-06-01T14:15:56-05:00",
+  "size_bytes": 7123783997,
+  "key_files": [
+    "case_config.yaml",
+    "0",
+    "constant",
+    "system",
+    "postProcessing"
+  ],
+  "native_outputs_policy": "read_only_imports_only",
+  "provenance_note": "Read-only import manifest for Ethan case intake.",
+  "case_summary": {
+    "fluid": "water",
+    "turbulence_model": "laminar",
+    "heater_power_W": 93.0,
+    "cooling_power_W": 43.02,
+    "T_init_K": 324.390625,
+    "nprocs": 64
+  }
+}

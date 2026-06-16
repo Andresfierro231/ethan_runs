@@ -1,0 +1,35 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-051`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-11_AGENT-049.md`
+  - `tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/analysis_manifest.json`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_streamwise_friction_patch_averages.py`
+  - `tmp_extract/ethan_streamwise_friction/viscosity_screening_salt_test_1_kirst_coarse_mesh/70cc0c653ace4e30/postProcessing/streamwiseBulkThermal/**`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-11_AGENT-049.md`
+  - `.agent/status/2026-06-11_AGENT-051.md`
+  - `.agent/journal/2026-06-11/implementer-salt1-kirst-thermal-kernel-blocker.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- commands run:
+  - `find tmp/2026-06-11_salt1_kirst_case_analysis_package_window4 -maxdepth 3 -print | sort`
+  - `python -u tools/extract/sample_leg_centerline_major_loss.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --analysis-manifest tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/analysis_manifest.json --output-dir tmp/2026-06-11_salt1_kirst_major_debug > tmp/2026-06-11_salt1_kirst_major_debug/run.log 2>&1`
+  - `python tools/extract/sample_leg_centerline_major_loss.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --analysis-manifest tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/analysis_manifest.json --output-dir tmp/2026-06-11_salt1_kirst_major_debug_skip --skip-extraction`
+  - `find tmp_extract/ethan_streamwise_friction/viscosity_screening_salt_test_1_kirst_coarse_mesh/70cc0c653ace4e30/postProcessing/streamwiseBulkThermal -maxdepth 1 -mindepth 1 -type d | sort`
+  - `find tmp_extract/ethan_streamwise_friction/viscosity_screening_salt_test_1_kirst_coarse_mesh/70cc0c653ace4e30/postProcessing/streamwiseBulkThermal/3279 -maxdepth 1 -mindepth 1 -type d | wc -l`
+  - `nl -ba tools/extract/sample_leg_centerline_major_loss.py | sed -n '724,980p'`
+  - `nl -ba tools/extract/sample_leg_centerline_major_loss.py | sed -n '1668,1995p'`
+- results or observations:
+  - The first Salt 1 Kirst full-window package build wrote `analysis_manifest.json` and created `raw_extraction/`, but it did not write any extractor summaries or package CSVs.
+  - The thermal surface generation itself succeeded: `streamwiseBulkThermal/3276`, `3277`, `3278`, and `3279` all exist under the keyed temp extract case, and the `3279` directory contains `379` surface directories, matching the successful Salt 1 Jin late-window run.
+  - The stall occurs after `foamPostProcess` generation and before the first `csv_dump()` in `sample_leg_centerline_major_loss.py`, which narrows the issue to the Python-side parse / connected-region / aggregation path rather than OpenFOAM field generation or case-profile resolution.
+  - A `--skip-extraction` rerun against the already-generated Salt 1 Kirst thermal surfaces still does not write the first output CSV within several minutes, which strengthens the diagnosis that the bottleneck is the reduction path after output generation.
+- next steps:
+  - Instrument or restructure the postprocessing parse loop to expose progress by time/surface and identify the exact Salt 1 Kirst object or algorithmic step that hangs.
+  - Keep the remediation narrow to `sample_leg_centerline_major_loss.py` so the broader rollout and already-cleared Salt 2 / Salt 1 Jin paths remain stable.

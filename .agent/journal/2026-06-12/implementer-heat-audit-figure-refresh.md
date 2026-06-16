@@ -1,0 +1,41 @@
+# Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-063`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-063.md`
+  - `.agent/journal/2026-06-12/implementer-heat-audit-figure-refresh.md`
+  - `tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/summary.json`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/cross_case_heat_partition_comparison.svg`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/tw_rmse_vs_heat_partition_error.svg`
+  - matching regenerated `png` and `pdf` figure siblings under `reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/`
+- commands run:
+  - `rg -n "cross_case_heat_partition_comparison|tw_rmse_vs_heat_partition_error|display_label" tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `sed -n '700,790p' tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `python3.11 -m py_compile tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `python3.11 tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `python --version`
+  - `python -c "import matplotlib; print(matplotlib.__version__)"`
+  - `python -m py_compile tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `python tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `ls -lt reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/cross_case_heat_partition_comparison.svg reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/tw_rmse_vs_heat_partition_error.svg`
+  - `rg -n "S2 val|Salt cases|Water cases|136\\.4|244\\.6" reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/cross_case_heat_partition_comparison.svg reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/tw_rmse_vs_heat_partition_error.svg`
+  - `rg -n "S1 jin|S1 kirst|S2 val|S2 jin|S2 kirst|W1|W2|W3|W4" reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/cross_case_heat_partition_comparison.svg reports/2026-06-09_ethan_steady_state_heat_flow_audit/figures/svg/tw_rmse_vs_heat_partition_error.svg`
+- results or observations:
+  - Added plot-only case ordering and label helpers so both figures sort by fluid family and case number, with the Salt 2 validation row labeled `S2 val` and positioned between `S1 kirst` and `S2 jin`.
+  - The grouped heat-partition figure now renders two stacked panels, `Salt cases` and `Water cases`, and labels each nontrivial bar with a one-decimal heat magnitude.
+  - The TW-vs-heat scatter now uses the same separate salt/water panels and the same `S2 val` grouping while preserving the case-label point annotations.
+  - The first regeneration attempt under `python3.11` failed because that interpreter lacks `matplotlib` in this workspace.
+  - The second regeneration attempt under workspace `python` initially hit a Python 3.9 compatibility issue on `zip(..., strict=True)`; removing that restored compatibility and the full audit rebuild completed successfully.
+  - SVG-level validation confirms the refreshed assets contain `S2 val`, `Salt cases`, `Water cases`, and representative bar labels such as `244.6` and `136.4`.
+- next steps:
+  - No further implementation steps are required unless the user wants another heat-audit layout pass.

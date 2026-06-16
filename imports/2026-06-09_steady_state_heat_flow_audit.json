@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-06-09T17:54:28-05:00",
+  "source_id": "steady_state_heat_flow_audit_2026-06-09",
+  "source_owner": "ethan_runs_local_reporting_refresh",
+  "case_id": "campaign_steady_state_heat_flow_audit",
+  "native_outputs_policy": "analysis compiled from existing registered case postProcessing plus existing June 4 metadata and validation reports only; imported solver output roots were not mutated and no new OpenFOAM postprocessing was launched",
+  "provenance_note": "Cross-case steady-state heat-flow audit for all registered CFD cases. Recomputes wallHeatFlux-based heat partitions, joins them to the June 4 metadata/direct-validation stack, and emits TW-oriented interpretation tables and figures.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar",
+    "val_water_test_3_coarse_mesh_laminar",
+    "val_water_test_4_coarse_mesh_laminar"
+  ],
+  "source_reports": [
+    "reports/2026-06-04_ethan_case_metadata_index",
+    "reports/2026-06-04_ethan_direct_validation",
+    "reports/2026-06-04_ethan_essential_steadiness_audit",
+    "reports/2026-06-04_ethan_section_transport_package",
+    "reports/2026-06-04_ethan_transient_axial_package"
+  ],
+  "scripts": [
+    "tools/analyze/build_ethan_steady_state_heat_flow_audit.py"
+  ],
+  "commands": [
+    "python -m py_compile tools/analyze/build_ethan_steady_state_heat_flow_audit.py",
+    "python tools/analyze/build_ethan_steady_state_heat_flow_audit.py"
+  ],
+  "verified_outputs": {
+    "report_readme": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md",
+    "summary_json": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/summary.json",
+    "case_heat_inventory_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/case_heat_inventory.csv",
+    "latest_heat_partition_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/latest_heat_partition.csv",
+    "heat_window_summary_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/heat_window_summary.csv",
+    "tw_hypothesis_matrix_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/tw_hypothesis_matrix.csv",
+    "rerun_recommendations_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/rerun_recommendations.csv"
+  },
+  "unresolved_items": [
+    "The live Salt 2 continuation now has wall-heat history beyond the June 4 direct-validation snapshot, so a fresh TW recompute is still the next targeted validation refresh.",
+    "The audit isolates a salt-family under-loss pattern but does not yet localize which physical pathway dominates that missing loss.",
+    "This pass intentionally did not touch DMDC or launch new field postprocessing jobs."
+  ]
+}

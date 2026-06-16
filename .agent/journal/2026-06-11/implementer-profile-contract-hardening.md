@@ -1,0 +1,34 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-035`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/hydraulic_budget_defs.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+- files changed:
+  - `tools/case_analysis_profiles.py`
+  - `tools/hydraulic_budget_defs.py`
+  - `.agent/status/2026-06-11_AGENT-035.md`
+  - `.agent/journal/2026-06-11/implementer-profile-contract-hardening.md`
+- commands run:
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py tools/hydraulic_budget_defs.py`
+  - `python3.11 -c "from tools.case_analysis_profiles import get_case_analysis_profile; profile = get_case_analysis_profile('val_salt_test_2_coarse_mesh_laminar'); print(profile.profile_name); print(len(profile.major_spans), len(profile.feature_budgets))"`
+  - `python3.11 -c "from dataclasses import replace; from tools.case_analysis_profiles import CaseAnalysisProfileContractError, get_case_analysis_profile, validate_case_analysis_profile; profile = get_case_analysis_profile('val_salt_test_2_coarse_mesh_laminar'); broken = replace(profile, major_span_order=profile.major_span_order[:-1]);\ntry:\n    validate_case_analysis_profile(broken)\nexcept CaseAnalysisProfileContractError as exc:\n    print(type(exc).__name__)\n    print(str(exc))"`
+  - `python -c "from tools.hydraulic_budget_defs import build_major_span_station_rows; rows = build_major_span_station_rows(target_ds_m=0.05); print(len(rows)); print(rows[0]['span_name'], rows[-1]['span_name'])"`
+- results or observations:
+  - Added an explicit `CaseAnalysisProfileContractError` path so future case additions fail on incomplete or inconsistent profile definitions instead of drifting into extractor runtime.
+  - The validator now checks required field coverage, positive `target_ds_m`, positive heat-window count, TP/TW probe-file existence, span-order completeness, loop-order consistency, centerline-label coverage, patch completeness, finite non-zero sign hints, and adjacent-feature span references.
+  - Refactored TP/TW station-center loading into `tools/case_analysis_profiles.py` and reused it from `tools/hydraulic_budget_defs.py` so the contract layer and geometry helper share one station-label interpretation rule.
+  - Confirmed the valid Salt 2 profile still imports cleanly and that a deliberately broken `major_span_order` now fails with a targeted contract error message.
+  - The lightweight station-row smoke required the repo’s plain `python` interpreter because `python3.11` on this node lacks `numpy`; that was an environment detail, not a profile-contract failure.
+- incomplete lines of investigation:
+  - The raw-reuse builder path still trusts copied hydraulic summary metadata without first validating that the major-loss and feature-loss summaries agree on source/profile identity and retained-window context.
+  - This slice validates the case-profile contract, not the runtime contents of staged CFD directories; later rollout still needs per-case reviewer gates on real extracted outputs.
+- next steps:
+  - Add raw-extraction provenance validation to the case-analysis builder before wider Salt-family reuse.
+  - Keep the new contract validator as the first failure boundary for any new profile registration work.

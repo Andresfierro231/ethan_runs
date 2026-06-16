@@ -1,0 +1,48 @@
+# Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Implementer`
+- task ID: `AGENT-058`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `../cfd-modeling-tools/cross_model_comparison/AGENTS.md`
+  - `../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/TODO.md`
+  - `../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-12_workflow_journal.md`
+  - `../cfd-modeling-tools/cross_model_comparison/operational_notes/2026-06-12_ethan_postprocessing_all_runs_v1/CHECKPOINT.md`
+- files changed:
+  - `.agent/status/2026-06-12_AGENT-058.md`
+  - `.agent/journal/2026-06-12/implementer-ethan-postprocessing-plotting-blocked.md`
+- commands run:
+  - `pwd`
+  - `cat AGENTS.md`
+  - `cat .agent/BOARD.md`
+  - `cat .agent/FILE_OWNERSHIP.md`
+  - `cat .agent/ROLES.md`
+  - `cat ../cfd-modeling-tools/cross_model_comparison/AGENTS.md`
+  - `find ../cfd-modeling-tools/cross_model_comparison -name AGENTS.override.md -o -name README.md -o -name TODO.md | rg "2026-06-12_ethan_postprocessing_all_runs_v1|cross_model_comparison/(journals|operational_notes)"`
+  - `ls -la ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1`
+  - `ls -lt ../cfd-modeling-tools/cross_model_comparison/journals/2026-06 | head -20`
+  - `find ../cfd-modeling-tools/cross_model_comparison/operational_notes -maxdepth 2 -type f | sort | tail -20`
+  - `cat ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/TODO.md`
+  - `cat ../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-12_workflow_journal.md`
+  - `cat ../cfd-modeling-tools/cross_model_comparison/operational_notes/2026-06-12_ethan_postprocessing_all_runs_v1/CHECKPOINT.md`
+  - `rg -n "Ethan Postprocessing Queue|Plotting|campaign_synthesis|AGENT-058" .agent/BOARD.md`
+  - `find ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1 -maxdepth 3 \( -name README.md -o -name AGENTS.override.md -o -name TODO.md \) -print`
+  - `rg -n "Ethan Postprocessing Queue|Plotting=|waiting-on-plotting|campaign_synthesis|artifact_map" .agent ../cfd-modeling-tools/cross_model_comparison -g '*.md'`
+  - `find ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs -maxdepth 2 -type d | sed -n '1,200p'`
+  - `date --iso-8601=seconds`
+  - `git rev-parse --abbrev-ref HEAD`
+  - `find ../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/runs -maxdepth 1 -mindepth 1 -type d | wc -l`
+- results or observations:
+  - The required startup files and campaign-local context were read successfully.
+  - The campaign subtree exists with `13` run directories and the expected `tables/`, `figures/`, `manifests/`, and `reports/` subdirectories under each run.
+  - `.agent/BOARD.md` does not currently contain an `Ethan Postprocessing Queue` section, a `Plotting` column, or any row that can be claimed by `AGENT-058`.
+  - Because the board does not record the assignment or allowed edit paths for this task, proceeding would violate the root `AGENTS.md` rule to refuse unassigned work and the board rule to confirm scope before editing.
+  - The requested output tree is under `../cfd-modeling-tools/cross_model_comparison/**`, which sits outside the current writable workspace root; no regeneration should start until that write path is explicitly enabled.
+- next steps:
+  - Have the coordinator add the Ethan postprocessing queue state to `.agent/BOARD.md` with the plotting assignment model described in the task instructions.
+  - After the queue exists, claim the highest `Plotting=queued` row and request the write path needed to regenerate artifacts in `cross_model_comparison`.

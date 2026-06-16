@@ -1,0 +1,46 @@
+# Writer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Writer`
+- task ID: `AGENT-034`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `reports/AGENTS.override.md`
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/figure_manifest.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_cumulative_timeseries.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/feature_minor_loss_extraction_summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/thermal_sanitization_summary.json`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+  - `reports/2026-06-05_ethan_continuation_diagnosis/README.md`
+  - `journals/2026-06/2026-06-09_ethan_runs.md`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- files changed:
+  - `reports/2026-06-11_salt2_rigor_repair_methods_note/README.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `.agent/status/2026-06-11_AGENT-034.md`
+  - `.agent/journal/2026-06-11/writer-salt2-rigor-repair-note.md`
+  - `.agent/BOARD.md`
+- commands run:
+  - `sed -n '1,260p' reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `sed -n '1,260p' reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv | sed -n '1,40p'`
+  - `rg -n '^val_salt_test_2_coarse_mesh_laminar,7487\\.0,left_upper_leg' reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_cumulative_timeseries.csv | tail -5`
+  - `rg -n '^val_salt_test_2_coarse_mesh_laminar,7487\\.0,upper_leg' reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_cumulative_timeseries.csv | tail -5`
+- results or observations:
+  - Wrote a new June 11 note that shifts from report messaging to rigor and repair sequencing.
+  - Kept the direct-terminal `p_rgh` endpoint issue explicit instead of softening it into generic caveat language.
+  - Ranked repair approaches so package hardening and reviewer confirmation happen before stronger physical claims.
+  - Added a curated June 11 journal entry because this was an interpretive pass, not just a packaging action.
+- incomplete lines of investigation:
+  - The note does not decide whether the upper-span direct-vs-shear disagreement is ultimately physical or reduction-induced.
+  - The note intentionally does not tighten local HTC language beyond support-gated effective indicators.
+- next steps:
+  - Use the new note to constrain the next Salt 2 hardening/reviewer cycle.
+  - If a future pass fixes the direct-terminal summary issue, rerun the reviewer brief rather than editing the prose alone.

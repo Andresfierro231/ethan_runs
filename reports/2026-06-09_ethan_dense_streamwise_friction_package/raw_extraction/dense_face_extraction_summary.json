@@ -1,0 +1,23 @@
+{
+  "extract_case": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar",
+  "generated_at": "2026-06-09T15:31:48-05:00",
+  "geometry": {
+    "main_loop_length_m": 3.7484144205436354,
+    "selected_face_count": 143424,
+    "selected_patch_count": 25,
+    "selected_point_count": 143664
+  },
+  "geometry_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/raw_extraction/wall_face_geometry.csv",
+  "main_loop_length_m": 3.7484144205436354,
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "sample_row_count": 717120,
+  "samples_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/raw_extraction/wall_face_samples.csv",
+  "selected_times": [
+    6756.0,
+    6757.0,
+    6758.0,
+    6759.0,
+    6760.0
+  ],
+  "source_id": "val_salt_test_2_coarse_mesh_laminar"
+}

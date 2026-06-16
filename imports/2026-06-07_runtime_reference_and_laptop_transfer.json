@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-07T15:38:49-05:00",
+  "source_id": "runtime_reference_and_laptop_transfer_2026-06-07",
+  "source_owner": "ethan_runs_local_operator_documentation",
+  "case_id": "workspace_operator_reference_and_transfer_support",
+  "native_outputs_policy": "documentation and transfer helpers only; imported solver outputs were not mutated",
+  "provenance_note": "June 7 operator-reference pass that recorded the verified Python and ParaView environment facts, added a laptop download helper, and documented candidate future figures and simulations.",
+  "scripts": [
+    "tools/publish/download_results_to_laptop.sh"
+  ],
+  "documents": [
+    "operational_notes/2026-06-07_runtime_operator_reference.md",
+    "operational_notes/2026-06-08_todo.md",
+    "journals/2026-06/2026-06-07_ethan_runs.md"
+  ],
+  "verified_runtime_facts": {
+    "hostname": "login3.ls6.tacc.utexas.edu",
+    "python_version": "3.9.7",
+    "python_executable": "/usr/bin/python",
+    "python_matplotlib_version": "3.4.3",
+    "python311_version": "3.11.9",
+    "python311_has_matplotlib": false,
+    "paraview_module_load": "module load gcc/11.2.0 impi/19.0.9 paraview_osmesa/5.13.3"
+  },
+  "monday_followup": [
+    "Run tools/publish/download_results_to_laptop.sh from the personal laptop and verify local ParaView open on the reconstructed cases.",
+    "Keep the Monday next-step choice narrow between Salt 2 extension, Salt 1 Kirst repaired retry, and targeted resistance/loss sensitivity."
+  ]
+}

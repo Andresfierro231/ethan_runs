@@ -1,0 +1,58 @@
+# Cleaner Raw Journal
+
+- date: `2026-06-15`
+- agent role: `Cleaner`
+- task ID: `AGENT-003`
+- branch/worktree: `no-HEAD`
+
+## Dry-Run Inventory
+
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/CLEANUP_POLICY.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package_window4/README.md`
+  - `tmp/2026-06-12_ethan_postprocessing_campaign_smoke_campaign/TODO.md`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke/README.md`
+  - `.agent/cleanup/README.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-15_AGENT-003.md`
+  - `.agent/journal/2026-06-15/cleaner-generated-artifact-inventory.md`
+  - `.agent/cleanup/2026-06-15_AGENT-003_dry_run_inventory.md`
+- commands run:
+  - `find tmp -mindepth 1 -maxdepth 1 -type d | sort`
+  - `find tmp_extract -mindepth 1 -maxdepth 1 -type d | sort`
+  - `find cache -mindepth 1 -maxdepth 1 -type d | sort`
+  - `du -sh tmp/* 2>/dev/null | sort -h`
+  - `du -sh tmp_extract/ethan_case_analysis_snapshots tmp_extract/ethan_legwise_hydraulic_budget tmp_extract/ethan_section_transport tmp_extract/ethan_streamwise_friction tmp_extract/salt2_jin_probe`
+  - `du -sh cache/* 2>/dev/null | sort -h`
+  - `find tmp -mindepth 1 -maxdepth 1 -type d ! -path 'tmp/slurm_codex_board_jobs' ! -path 'tmp/2026-06-15_streamwise_transport_phase1_smoke' ! -path 'tmp/2026-06-15_field_transport_phase2_smoke' -printf '%TY-%Tm-%Td %TH:%TM %p\n' | sort`
+  - `find tmp_extract -mindepth 1 -maxdepth 2 -type d -printf '%TY-%Tm-%Td %TH:%TM %p\n' | sort`
+  - `find cache -mindepth 1 -maxdepth 2 -type d -printf '%TY-%Tm-%Td %TH:%TM %p\n' | sort`
+  - `find tmp/slurm_case_analysis_jobs -maxdepth 2 -type f | sort | head -40`
+  - `find tmp/2026-06-12_ethan_postprocessing_campaign_smoke_campaign -maxdepth 2 -type f | sort | head -60`
+  - `find tmp/2026-06-11_case_analysis_raw_reuse_smoke -maxdepth 2 -type f | sort | head -40`
+  - `find tmp/2026-06-11_case_analysis_package_mismatch -maxdepth 2 -type f | sort | head -40`
+  - `find tmp/2026-06-11_case_analysis_package_mismatch_should_fail -maxdepth 2 -type f | sort | head -40`
+  - `find tmp/2026-06-11_case_analysis_raw_reuse_missing_heat_should_fail -maxdepth 2 -type f | sort | head -40`
+  - `find tmp/2026-06-11_case_analysis_raw_reuse_no_heat_should_fail -maxdepth 2 -type f | sort | head -40`
+  - `find tmp/2026-06-11_feature_minor_loss_smoke_live -maxdepth 2 -type f | sort | head -40`
+  - `find cache/paraview_cases -maxdepth 2 -type f | sort | head -40`
+  - `rg -n '12R|repair_val_salt_test_2_coarse_mesh_laminar_maturity_contract|waiting-on-plotting|AGENT-003' .agent/BOARD.md`
+- results or observations:
+  - `tmp/` contains a mix of clearly reproducible smoke outputs, failed-path experiments, and durable late-window package directories that should not be deleted casually.
+  - The `*_package_window4` directories carry full retained-window package READMEs and function as reusable review artifacts, so they were classified as `stale but potentially useful` rather than direct delete candidates.
+  - `tmp_extract/` is large (`22G` snapshots, `12G` streamwise friction, `2.0G` hydraulic budget, `1.1G` section transport, `227M` Salt 2 probe) and stores intermediate extraction products that appear expensive to rebuild.
+  - `cache/paraview_cases` is small (`28K`) but active enough to be treated as convenience cache material for optional archive/removal only after confirming nobody still relies on those `.foam` launch stubs.
+  - `tmp/2026-06-15_12R_smoke` was left untouched because queue repair row `12R` is live on the board with `Plotting = running` under `AGENT-058`.
+  - `tmp/slurm_codex_board_jobs/**`, `tmp/2026-06-15_streamwise_transport_phase1_smoke/**`, and `tmp/2026-06-15_field_transport_phase2_smoke/**` were explicitly excluded because they belong to active tasks.
+- incomplete lines of investigation:
+  - I did not diff duplicate smoke directories against one another; the dry-run report treats them as likely duplicate families based on naming, timestamps, and repeated README structure rather than proving byte identity.
+  - I did not inspect whether any downstream documentation outside the allowed scope still links to specific `tmp_extract` paths.
+- next steps:
+  - Use `.agent/cleanup/2026-06-15_AGENT-003_dry_run_inventory.md` as the confirmation gate for any later cleanup pass.
+  - If approval is given, delete only the `safe generated artifact` and `duplicate output` rows first and archive the `stale but potentially useful` rows instead of deleting them outright.

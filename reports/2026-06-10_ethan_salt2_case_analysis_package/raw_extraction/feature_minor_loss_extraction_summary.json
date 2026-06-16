@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-10T17:47:30-05:00",
+  "profile_name": "salt2_val_case_v1",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_case_analysis_snapshots/val_salt_test_2_coarse_mesh_laminar/salt2_val_case_v1",
+  "extract_case_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_legwise_hydraulic_budget/val_salt_test_2_coarse_mesh_laminar",
+  "requested_times": [
+    7483.0,
+    7484.0,
+    7485.0,
+    7486.0,
+    7487.0
+  ],
+  "available_times": [
+    7483.0,
+    7484.0,
+    7485.0,
+    7486.0,
+    7487.0
+  ],
+  "feature_names": [
+    "corner_lower_left",
+    "corner_lower_right",
+    "corner_upper_left",
+    "corner_upper_right",
+    "test_section_complex"
+  ],
+  "feature_patch_count": 10,
+  "raw_pressure_row_count": 50,
+  "feature_patch_pressure_row_count": 50,
+  "feature_minor_loss_row_count": 25,
+  "warning_counts_by_feature": {
+    "corner_lower_right": 5,
+    "corner_upper_right": 5,
+    "test_section_complex": 5
+  },
+  "missing_reduction_events": [],
+  "feature_patch_pressure_timeseries_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/feature_patch_pressure_timeseries.csv",
+  "feature_minor_loss_timeseries_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/feature_minor_loss_timeseries.csv",
+  "assumptions": [
+    "delta columns use end minus start in FEATURE_BUDGETS order.",
+    "profile_dp_pa and wall_dp_pa are deferred in this first extractor; minor_residual_dp_pa and minor_k_reference therefore remain NaN.",
+    "minor_k_reference remains NaN until a shared reference density/velocity convention is supplied by the integrator."
+  ]
+}

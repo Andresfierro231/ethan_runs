@@ -1,0 +1,42 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Reviewer`
+- task ID: `AGENT-038`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `reports/2026-06-11_salt2_internal_technical_report_brief/README.md`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+  - `tools/case_analysis_profiles.py`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v2/summary.json`
+- files changed:
+  - `.agent/status/2026-06-11_AGENT-038.md`
+  - `.agent/journal/2026-06-11/reviewer-salt2-final-package-and-hardening.md`
+- commands run:
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | sed -n '286,392p'`
+  - `nl -ba tools/analyze/build_ethan_case_analysis_package.py | sed -n '1578,1665p'`
+  - `nl -ba tools/analyze/build_ethan_case_heat_summary.py | sed -n '170,290p'`
+  - `nl -ba tools/case_analysis_profiles.py | sed -n '158,277p'`
+  - `nl -ba tools/case_analysis_profiles.py | rg "flow_direction_sign_hint"`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/analysis_manifest.json | sed -n '1,120p'`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json | sed -n '1,160p'`
+  - `nl -ba reports/2026-06-10_ethan_salt2_case_analysis_package/README.md | sed -n '1,120p'`
+  - `nl -ba reports/2026-06-11_salt2_internal_technical_report_brief/README.md | sed -n '30,120p'`
+  - `nl -ba tmp/2026-06-11_case_analysis_raw_reuse_smoke_v2/summary.json | sed -n '1,220p'`
+- results or observations:
+  - The June 11 hardening passes closed the most obvious hydraulic raw-reuse drift hazards: keyed snapshots, explicit profile validation, and early rejection of mismatched hydraulic raw summaries are real improvements.
+  - The remaining highest-severity gap is thermal reproducibility: the case-analysis builder still calls `build_case_heat_summary(...)` after raw reuse, and that helper always resolves the live runtime root and reads the current wall-heat history from there.
+  - The raw-reuse smoke confirms the consequence: hydraulic retained times stay frozen at `7483-7487 s`, while the rebuilt heat summary jumps to `7931 s` because it is reading the current live continuation state rather than a frozen package input.
+  - The historical June 10 package itself still points at the older non-keyed frozen snapshot root, so the package artifact has not been upgraded to the new immutable snapshot naming scheme even though future builds now use it.
+  - The new profile contract is useful, but it only enforces that `flow_direction_sign_hint` exists and is non-zero; it does not validate that the sign matches extracted mdot or any independent direction evidence.
+  - The scientific interpretation boundary in the brief remains appropriately conservative on the known hydraulic divergence (`left_upper_leg`, `upper_leg`) and on masked thermal support bins; those do not need immediate wording rollback beyond the documented caveats.
+- incomplete lines of investigation:
+  - I did not re-run the full June 10 package live extraction; this reviewer pass was intentionally focused on final-package evidence and the June 11 hardening slices.
+  - I did not promote the remaining hydraulic divergence or the `285` masked thermal bins into new blocking findings because the current package and brief already keep those inside a conservative interpretation boundary.
+- next steps:
+  - Open one narrow implementer task to decouple heat-summary rebuilds from live runtime state when `--raw-extraction-dir` is used.
+  - After that lands, decide whether to add sign-direction validation or explicitly keep sign inference outside Salt-family rollout acceptance criteria.

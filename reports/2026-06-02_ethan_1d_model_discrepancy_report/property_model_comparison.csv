@@ -1,0 +1,5 @@
+evidence_family,variant_or_branch,cp_model,mu_model,rho_model,k_model,notes
+shared_3d_run,jin,"constant 1423.47 J/kg-K","expInvT coeffs [0.001149,-810.896,780600]","linear coeffs [2293.6,-0.7497]","polynomial coeffs [0.78,-0.00125,1.6e-06]","Matches shared Jin CFD case_config files."
+shared_3d_run,kirst,"constant 1423.47 J/kg-K","expInvT coeffs [6.757e-05,2247.11]","linear coeffs [2293.6,-0.7497]","polynomial coeffs [0.78,-0.00125,1.6e-06]","Matches shared Kirst CFD case_config files and the two current converged CFD candidates."
+current_1d_workspace,salt_current,"tabulated from SALT_ROWS","tabulated from SALT_ROWS","tabulated from SALT_ROWS","tabulated from SALT_ROWS","This is the current default branch in materials.py."
+current_1d_workspace,salt_promoted,"constant mean Cp from SALT_ROWS","Jin-style exponential fit over SALT_ROWS","tabulated from SALT_ROWS","tabulated from SALT_ROWS","Closer to Jin than Kirst but still not structurally identical to shared 3D Jin config."

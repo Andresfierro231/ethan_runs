@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-05-29T16:28:22-05:00",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "source_owner": "native_2d_cfd_external",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar",
+  "local_stage_root": "",
+  "local_link_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/linked_cases/val_salt_test_2_coarse_mesh_laminar",
+  "case_id": "salt_test_2",
+  "ingested_at": "2026-05-29T15:48:57-05:00",
+  "size_bytes": 4170342240,
+  "key_files": [
+    "case_config.yaml",
+    "0",
+    "constant",
+    "system",
+    "postProcessing"
+  ],
+  "native_outputs_policy": "read_only_imports_only",
+  "provenance_note": "Read-only import manifest for Ethan case intake.",
+  "case_summary": {
+    "fluid": "hitec_salt",
+    "turbulence_model": "laminar",
+    "heater_power_W": 265.7,
+    "cooling_power_W": 56.34,
+    "T_init_K": 451.5,
+    "nprocs": 64
+  }
+}

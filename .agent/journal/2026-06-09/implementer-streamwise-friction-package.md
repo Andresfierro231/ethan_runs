@@ -1,0 +1,55 @@
+# Implementer Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Implementer`
+- task ID: `AGENT-007`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `staging/AGENTS.override.md`
+  - `reports/2026-06-04_ethan_transient_axial_package/README.md`
+  - `reports/2026-06-04_ethan_section_transport_package/README.md`
+  - `operational_notes/2026-06-01_salt_test_2_setup_dossier.md`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv`
+  - `tools/analyze/build_ethan_transient_axial_package.py`
+  - `tools/analyze/build_ethan_section_transport_package.py`
+  - `tools/extract/render_last_timestep_temperature_slices.py`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/temperature_probes/*/T`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/wall_temperature_probes/*/T`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_*/surfaceFieldValue.dat`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/yPlus/*/yPlus.dat`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/wallShearStress/*/wallShearStress.dat`
+  - `jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/processors64/*`
+- files changed:
+  - `.agent/BOARD.md`
+  - `tools/extract/sample_streamwise_friction_patch_averages.py`
+  - `tools/analyze/build_ethan_streamwise_friction_package.py`
+  - `reports/2026-06-09_ethan_streamwise_friction_package/**`
+  - `.agent/status/2026-06-09_AGENT-007.md`
+  - `.agent/journal/2026-06-09/implementer-streamwise-friction-package.md`
+- commands run:
+  - `python -m py_compile tools/extract/sample_streamwise_friction_patch_averages.py tools/analyze/build_ethan_streamwise_friction_package.py`
+  - `MPLCONFIGDIR=/tmp/mpl_streamwise python tools/extract/sample_streamwise_friction_patch_averages.py --help`
+  - `MPLCONFIGDIR=/tmp/mpl_streamwise python tools/analyze/build_ethan_streamwise_friction_package.py --help`
+  - `MPLCONFIGDIR=/tmp/mpl_streamwise python tools/analyze/build_ethan_streamwise_friction_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+  - `MPLCONFIGDIR=/tmp/mpl_streamwise python tools/analyze/build_ethan_streamwise_friction_package.py --source-id val_salt_test_2_coarse_mesh_laminar --skip-extraction`
+- results or observations:
+  - Implemented a compute-node-friendly extractor that stages only the needed Salt 2 case metadata, reconstructs retained `wallShearStress` and `yPlus` fields, and writes reusable `surfaceFieldValue` reductions for main-loop and branch wall patches.
+  - Implemented a report builder that merges chunked continuation histories, anchors `s = 0` at `TP1`, maps main-loop patches onto the `TP1 -> TP2 -> TP3 -> TP6 -> TP1` circulation path, and computes patchwise Darcy friction factor using the retained live wall-shear window.
+  - The package currently built successfully at `reports/2026-06-09_ethan_streamwise_friction_package/` with an exact retained field window of `6744–6748 s`, `125` main-loop friction rows, and `5` samples per main-loop patch.
+  - The bulk-history context extends through `6749 s`, so the package now reflects the live continuation rather than the original `1724 s` source horizon.
+  - `warning_flag` is active for every exported patch under the current proxy rules; this is scientifically usable as a caution marker but too blunt to treat as a final azimuthal-nonuniformity diagnostic.
+- implementation corrections made during the task:
+  - Removed an invalid `rho` face-zone reduction path after `foamPostProcess` showed that `surfaceFieldValue` could not process the volume `rho` field on internal face zones in this mode.
+  - Switched bulk density to the merged TP-history density law reconstruction for v1.
+  - Fixed the extractor to collect every selected retained time rather than only the first output directory.
+  - Fixed the extractor again to restrict collection to the currently selected retained time window and ignore stale earlier debug reductions.
+- incomplete lines of investigation:
+  - The current `s` mapping is patchwise and legwise; it is not yet a dense centerline station set and does not yet include a true branch-local public profile.
+  - The friction warning logic still uses a wall-shear spread proxy plus `yPlus` nonuniformity, not a true circumferential station metric.
+  - Internal HTC and local wall/bulk thermal transport metrics are intentionally deferred to the next pass.
+- next steps:
+  - Replace the patchwise leg interpolation with a denser streamwise station generator while preserving the same reduction schema.
+  - Add a branch-local coordinate or explicit exclusion note if the branch becomes part of the public friction narrative.
+  - Extend the retained-field reduction layer with the primitives needed for internal HTC once the denser `s` sampling is approved.

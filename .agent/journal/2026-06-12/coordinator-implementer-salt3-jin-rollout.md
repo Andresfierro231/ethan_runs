@@ -1,0 +1,43 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-061`
+- branch/worktree: `no-HEAD`
+- intent:
+  - resume the autonomous Salt-family rollout queue at `viscosity_screening_salt_test_3_jin_coarse_mesh`
+  - audit case compatibility under the shared profile contract
+  - register the case if compatible and build the retained-window review package
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `tools/case_analysis_profiles.py`
+  - `.agent/status/2026-06-12_AGENT-055.md`
+  - `.agent/status/2026-06-12_AGENT-057.md`
+  - `.agent/journal/2026-06-12/reviewer-salt2-kirst-rollout-gate.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-061.md`
+  - `.agent/journal/2026-06-12/coordinator-implementer-salt3-jin-rollout.md`
+- commands run:
+  - `pwd`
+  - `hostname`
+  - `sed -n '1,220p' AGENTS.md`
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,260p' .agent/FILE_OWNERSHIP.md`
+  - `sed -n '1,260p' .agent/ROLES.md`
+  - `sed -n '1,220p' tools/AGENTS.override.md`
+  - `rg -n "SALT[0-9]_(JIN|KIRST)_SOURCE_ID|SUPPORTED_CASE_ANALYSIS_PROFILES|build_salt_family_case_profile" tools/case_analysis_profiles.py`
+  - `sed -n '1,260p' tools/case_analysis_profiles.py`
+  - `sed -n '1,260p' .agent/status/2026-06-12_AGENT-055.md`
+  - `sed -n '1,260p' .agent/status/2026-06-12_AGENT-057.md`
+  - `sed -n '1,260p' .agent/journal/2026-06-12/reviewer-salt2-kirst-rollout-gate.md`
+- results or observations:
+  - task IDs `AGENT-057`, `AGENT-058`, and `AGENT-059` are now reserved by the Ethan postprocessing queue and cannot be reused for Salt-family rollout work
+  - the next queued Salt-family case remains `viscosity_screening_salt_test_3_jin_coarse_mesh`
+  - the current session is running on compute host `c318-008.ls6.tacc.utexas.edu`, so the package build path is not being launched from a login node
+- next step:
+  - register Salt 3 Jin in `tools/case_analysis_profiles.py`, validate the profile contract and stable retained times, then build the retained-window package

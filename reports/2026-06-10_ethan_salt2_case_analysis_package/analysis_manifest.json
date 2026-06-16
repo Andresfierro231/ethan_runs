@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-06-10T17:49:24-05:00",
+  "profile_name": "salt2_val_case_v1",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar",
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_case_analysis_snapshots/val_salt_test_2_coarse_mesh_laminar/salt2_val_case_v1",
+  "live_runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "frozen_runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_case_analysis_snapshots/val_salt_test_2_coarse_mesh_laminar/salt2_val_case_v1",
+  "requested_times": [
+    "7483",
+    "7484",
+    "7485",
+    "7486",
+    "7487"
+  ],
+  "missing_snapshot_times": [],
+  "target_ds_m": 0.01,
+  "required_fields": [
+    "wallShearStress",
+    "yPlus",
+    "p",
+    "p_rgh",
+    "T",
+    "U",
+    "wallHeatFlux"
+  ],
+  "wall_fields": [
+    "wallShearStress",
+    "yPlus"
+  ],
+  "pressure_fields": [
+    "p",
+    "p_rgh"
+  ],
+  "sign_conventions": {
+    "feature_pressure_delta": "end_minus_start",
+    "major_dp_gradient": "positive magnitude from Darcy-f estimate",
+    "major_direct_pressure_drop_gradient": "minus d(area_avg(p_rgh))/ds so positive means pressure drop along local streamwise coordinate"
+  },
+  "deferred_terms": [
+    "profile_dp_pa remains unsampled in the first feature-budget implementation",
+    "feature wall_dp_pa is inferred from adjacent major-span gradients"
+  ]
+}

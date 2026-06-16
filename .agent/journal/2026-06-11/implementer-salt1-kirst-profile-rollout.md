@@ -1,0 +1,32 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-049`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+  - `registry/case_registry.csv`
+  - `staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_kirst_coarse_mesh/constant/polyMesh/boundary`
+  - `staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_kirst_coarse_mesh/system/topoSetDict`
+  - `tools/case_analysis_profiles.py`
+- files changed:
+  - `tools/case_analysis_profiles.py`
+  - `.agent/status/2026-06-11_AGENT-049.md`
+  - `.agent/journal/2026-06-11/implementer-salt1-kirst-profile-rollout.md`
+- commands run:
+  - `rg -n "viscosity_screening_salt_test_1_kirst_coarse_mesh" reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv registry/case_registry.csv`
+  - `rg -n "ncc_pipeleg_lower_01_fitting_start|pipeleg_upper_09_straight|ncc_pipeleg_left_02_connector_end|mdot_pipeleg_upper_05_cooler" staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_kirst_coarse_mesh/constant/polyMesh/boundary staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_kirst_coarse_mesh/system/topoSetDict`
+  - `python -c "from tools.case_analysis_profiles import resolve_case_paths; source_root, runtime_root, metadata = resolve_case_paths('viscosity_screening_salt_test_1_kirst_coarse_mesh'); print(source_root); print(runtime_root)"`
+  - `python -c "from tools import hydraulic_budget_defs as defs; from tools.case_analysis_profiles import resolve_case_paths; from pathlib import Path; _, runtime_root, _ = resolve_case_paths('viscosity_screening_salt_test_1_kirst_coarse_mesh'); print(defs.select_stable_processor_times(Path(runtime_root), 5, required_fields=('wallShearStress','yPlus','p','p_rgh','T','U','wallHeatFlux')))" `
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py`
+  - `python3.11 -c "from tools.case_analysis_profiles import get_case_analysis_profile; profile = get_case_analysis_profile('viscosity_screening_salt_test_1_kirst_coarse_mesh'); print(profile.profile_name); print(len(profile.major_spans), len(profile.feature_budgets))"`
+- results or observations:
+  - Salt 1 Kirst has the same metadata/registry availability and the same geometry-family naming signatures used by the shared Salt-family case-analysis profile.
+  - Stable retained late hydraulic times are available at `3276-3279 s`, which is the right basis for the next full-window package build.
+  - Registered `viscosity_screening_salt_test_1_kirst_coarse_mesh` as `salt1_kirst_case_v1` through the same shared helper used for Salt 2 and Salt 1 Jin.
+- next steps:
+  - Build the Salt 1 Kirst retained-window case-analysis package.
+  - Reuse the same reviewer-gate discipline now established on Salt 1 Jin.

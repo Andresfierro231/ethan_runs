@@ -1,0 +1,84 @@
+{
+  "generated_at": "2026-06-15T12:39:29-05:00",
+  "source_id": "paraview_cell_association_refresh_2026-06-15",
+  "source_owner": "ethan_runs_local_visualization_refresh",
+  "case_id": "campaign_paraview_cell_association_refresh",
+  "native_outputs_policy": "read_only_source_cases_reconstructed_into_local_mirrors_only",
+  "provenance_note": "June 15 refresh that makes cell-associated coloring the default for the ParaView last-timestep slice renderers, preserves cell association through the velocity-magnitude calculator, and regenerates the currently populated temperature and velocity slice outputs for the four existing source IDs.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "scripts": [
+    "tools/extract/render_last_timestep_temperature_slices.py",
+    "tools/extract/render_last_timestep_field_slices.py",
+    "tools/extract/stage_latest_time_field_reconstruction.py",
+    "staging/render_jobs/2026-06-15_paraview_cell_association_refresh.sbatch"
+  ],
+  "reconstruction_status": [
+    "staging/render_inputs/2026-06-15_paraview_cell_association_refresh_reconstruction_status.json"
+  ],
+  "status_outputs": [
+    "figures/last_timestep_temperature_slice_status.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_velocity_status.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_temperature_val_salt_test_2_coarse_mesh_laminar.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_temperature_viscosity_screening_salt_test_1_kirst_coarse_mesh.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_temperature_viscosity_screening_salt_test_3_jin_coarse_mesh.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_temperature_viscosity_screening_salt_test_4_jin_coarse_mesh.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_velocity_val_salt_test_2_coarse_mesh_laminar.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_1_kirst_coarse_mesh.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_3_jin_coarse_mesh.json",
+    "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_4_jin_coarse_mesh.json"
+  ],
+  "refreshed_outputs": {
+    "temperature_pngs": [
+      "figures/png/val_salt_test_2_coarse_mesh_laminar.png",
+      "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh.png",
+      "figures/png/viscosity_screening_salt_test_3_jin_coarse_mesh.png",
+      "figures/png/viscosity_screening_salt_test_4_jin_coarse_mesh.png"
+    ],
+    "temperature_svgs": [
+      "figures/svg/val_salt_test_2_coarse_mesh_laminar_last_timestep_temperature_slice.svg",
+      "figures/svg/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.svg",
+      "figures/svg/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_temperature_slice.svg",
+      "figures/svg/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_temperature_slice.svg"
+    ],
+    "temperature_pdfs": [
+      "figures/pdf/val_salt_test_2_coarse_mesh_laminar_last_timestep_temperature_slice.pdf",
+      "figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_temperature_slice.pdf",
+      "figures/pdf/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_temperature_slice.pdf",
+      "figures/pdf/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_temperature_slice.pdf"
+    ],
+    "velocity_pngs": [
+      "figures/png/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.png",
+      "figures/png/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.png",
+      "figures/png/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_velocity_slice.png",
+      "figures/png/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_velocity_slice.png"
+    ],
+    "velocity_svgs": [
+      "figures/svg/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.svg",
+      "figures/svg/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.svg",
+      "figures/svg/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_velocity_slice.svg",
+      "figures/svg/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_velocity_slice.svg"
+    ],
+    "velocity_pdfs": [
+      "figures/pdf/val_salt_test_2_coarse_mesh_laminar_last_timestep_velocity_slice.pdf",
+      "figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.pdf",
+      "figures/pdf/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_velocity_slice.pdf",
+      "figures/pdf/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_velocity_slice.pdf"
+    ]
+  },
+  "validation": [
+    "Both aggregate status files report requested_array_association `cells`, case_count 4, rendered_count 4, failed_count 0.",
+    "Per-case temperature and velocity status files each record resolved_array_association `CELLS`.",
+    "Refreshed figure mtimes span 2026-06-15 12:35:09 through 2026-06-15 12:39:09 America/Chicago."
+  ],
+  "runtime_notes": [
+    "Two login-submitted sbatch attempts (3233607 and 3233641/3233654) did not complete the render phase cleanly in this session.",
+    "The successful regeneration path used the active idev allocation with unsandboxed `mpiexec -n 1 ... pvbatch`, one case per ParaView process.",
+    "Each ParaView process still terminated with the previously observed post-output segmentation fault, so file existence and status JSON content remain the authoritative success criteria for this render family."
+  ]
+}

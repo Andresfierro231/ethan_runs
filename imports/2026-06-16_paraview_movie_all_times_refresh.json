@@ -1,0 +1,52 @@
+{
+  "generated_at": "2026-06-16T09:27:00-05:00",
+  "source_id": "paraview_movie_all_times_refresh_2026-06-16",
+  "source_owner": "ethan_runs_local_visualization_refresh",
+  "case_id": "campaign_paraview_movie_all_times_refresh",
+  "native_outputs_policy": "read_only_source_cases_reconstructed_into_local_mirrors_only",
+  "provenance_note": "June 16 refresh that expands representative ParaView movie staging to the richest available retained time histories, prefers continuation-stage sources when they contain more times than the registered source root, and reruns the representative movie path in explicit high-resolution PNG-frame mode.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar",
+    "val_water_test_3_coarse_mesh_laminar",
+    "val_water_test_4_coarse_mesh_laminar"
+  ],
+  "scripts": [
+    "tools/extract/stage_latest_time_field_reconstruction.py",
+    "tools/extract/render_representative_field_movies.py",
+    "tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_smoke.sbatch",
+    "tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_refresh.sbatch"
+  ],
+  "status_outputs": [
+    "staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json",
+    "tmp/2026-06-16_paraview_movie_all_times_refresh/movie_all_times_smoke_status.json",
+    "tmp/2026-06-16_paraview_movie_all_times_refresh/movie_all_times_refresh_status.json"
+  ],
+  "submitted_jobs": [
+    {
+      "job_id": "3236147",
+      "kind": "salt2_smoke_frames_only",
+      "script": "tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_smoke.sbatch"
+    },
+    {
+      "job_id": "3236160",
+      "kind": "full_representative_frames_only_refresh",
+      "script": "tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_refresh.sbatch"
+    }
+  ],
+  "source_root_resolution_policy": [
+    "Use the registered source_root by default.",
+    "If a matching continuation-stage tree under jadyn_runs/**/case_stage has more numeric times, prefer that richer source root for reconstruction staging.",
+    "Current known richer continuation roots include Salt 1 Jin, Salt 2 validation, and Salt 4 Jin."
+  ],
+  "runtime_notes": [
+    "The OpenFOAM 13 bootstrap must be sourced outside strict pipefail mode because its bashrc alias setup is not safe under set -euo pipefail.",
+    "After reconstruction, the batch wrapper must purge modules and reload gcc/11.2.0 + impi/19.0.9 + paraview_osmesa/5.13.3 before invoking pvbatch.",
+    "Representative movie output is currently being refreshed in frames-only mode at 3840x2160 per frame."
+  ]
+}

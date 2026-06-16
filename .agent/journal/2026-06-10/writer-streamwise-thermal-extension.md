@@ -1,0 +1,22 @@
+# Writer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Writer`
+- task ID: `AGENT-024`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- files changed:
+  - `.agent/journal/2026-06-10/writer-streamwise-thermal-extension.md`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- commands run:
+  - `sed -n '283,430p' journals/2026-06/2026-06-10_ethan_runs.md`
+- results or observations:
+  - Updated the June 10 curated journal with a dedicated `Streamwise Thermal Extension` section.
+  - Recorded the exact method used for the first report-facing local thermal reduction: repaired major-span bins, wall `T`, wall heat flux, TP-endpoint bulk-temperature proxy, effective `h`, and effective `UA'`.
+  - Documented the meaning of the `upper transport` and `lower transport` heat-balance labels as patch-family aggregations from the existing `wallHeatFlux` section bookkeeping.
+  - Recorded the main interpretation boundary explicitly: the current `h` and `UA'` are effective streamwise indicators, not definitive local convective HTC, because the bulk temperature is still approximate and the current retained window reduced to a single frozen time.
+- incomplete lines of investigation:
+  - A future journal update should replace the TP-endpoint bulk-temperature caveat with a cross-sectional bulk-temperature method once that reduction exists.
+- next steps:
+  - Keep the current journal language conservative until a reviewer signs off on the streamwise thermal package and any cross-sectional bulk-temperature upgrade.

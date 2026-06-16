@@ -1,0 +1,56 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-010`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/DECISIONS.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `tools/hydraulic_budget_defs.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+  - `tools/analyze/build_ethan_legwise_hydraulic_budget_package.py`
+  - `tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `tools/analyze/build_salt2_behavior_package.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/DECISIONS.md`
+  - `.agent/status/2026-06-10_AGENT-010.md`
+  - `.agent/journal/2026-06-10/implementer-case-analysis-framework.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/hydraulic_budget_defs.py`
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_legwise_hydraulic_budget_package.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+- commands run:
+  - `git status --short`
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py tools/hydraulic_budget_defs.py tools/analyze/build_ethan_case_heat_summary.py tools/analyze/build_ethan_case_analysis_package.py tools/analyze/build_ethan_legwise_hydraulic_budget_package.py tools/extract/sample_leg_centerline_major_loss.py tools/extract/sample_feature_minor_loss_budget.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+- results or observations:
+  - Added a shared case-profile module so the package builder and hydraulic extractors no longer depend exclusively on top-level Salt 2 constants.
+  - Added a shared analysis manifest contract to freeze retained times, `ds`, required fields, and sign conventions before the hydraulic streams run.
+  - Added a generic case-analysis package builder plus a case-scoped heat-summary builder; the legacy June 9 hydraulic builder now wraps the shared builder.
+  - Wired both hydraulic extractors to consume the manifest and to resolve runtime/profile context from the shared profile layer.
+  - Kept the first supported profile on `val_salt_test_2_coarse_mesh_laminar` only so the interface is reusable without pretending that other cases are already profiled.
+  - Static validation passed under `python3.11 -m py_compile`.
+  - The June 10 package build succeeded on the login node when reusing the June 9 hydraulic raw extraction. The resulting summary makes the key provenance mismatch explicit: the shared manifest requested retained times near `7275-7279 s`, while the reused major-loss rows still cover `6825-6829 s` and the reused feature-budget rows cover `6823-6826 s`.
+  - After that mismatch was confirmed on the compute node too, I added a frozen runtime-snapshot step in the generic builder so both hydraulic extractors consume the same copied processor-time set instead of the live moving continuation tree.
+  - The compute-side rerun then completed successfully against the frozen snapshot at `tmp_extract/ethan_case_analysis_snapshots/val_salt_test_2_coarse_mesh_laminar/salt2_val_case_v1`, with the manifest, major-loss extractor, and feature-budget extractor all aligned on retained times `7284-7288 s`.
+  - The rebuilt case package now reports `heat_latest_time_s = 7293 s` while keeping the hydraulic window frozen at `7284-7288 s`, which is the intended separation between live thermal tail context and frozen hydraulic extraction provenance.
+- incomplete lines of investigation:
+  - The feature extractor still hardcodes the OpenFOAM runtime bootstrap path for the Salt 2 environment; a later cross-case pass may need that path moved into the profile contract too.
+  - Reviewer-specific briefs and curated writer consolidation are not yet landed in this implementation pass.
+  - The framework still leaves `test_section_complex` aggregated; there is not yet a finer split into tee-entry, tee-exit, and connector-transition features.
+- next steps:
+  - Assign reviewer passes for major loss, feature pressure budgets, and heat accounting separately.
+  - Decide whether `test_section_complex` should stay aggregated before the later HTC-oriented pass.
+  - Add the next case profile once the Salt 2 reviewer round accepts the shared manifest and output schema.

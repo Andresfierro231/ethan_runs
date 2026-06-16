@@ -1,0 +1,31 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Reviewer`
+- task ID: `AGENT-052`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/summary.json`
+  - `tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/analysis_manifest.json`
+  - `tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/major_loss_summary.csv`
+  - `tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- files changed:
+  - `.agent/status/2026-06-11_AGENT-052.md`
+  - `.agent/journal/2026-06-11/reviewer-salt1-kirst-rollout-gate.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- commands run:
+  - `sed -n '1,220p' tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/summary.json`
+  - `head -20 tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/major_loss_summary.csv`
+  - `head -20 tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `sed -n '1,220p' tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/analysis_manifest.json`
+  - `rg -n "raw_extraction|validation_status|quarantined_spans|negative_residual_feature_names|thermal_support_flagged_bin_count|history_time_end_s|flow_direction_hints|manual_profile_assumption" tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/summary.json tmp/2026-06-11_salt1_kirst_case_analysis_package_window4/analysis_manifest.json`
+- results or observations:
+  - Salt 1 Kirst now has a complete retained-window package on `3276-3279 s` with no quarantined spans and matching major/feature retained times.
+  - The package preserves the same caveat family already accepted on Salt 1 Jin: all major spans remain `warning_heavy`, `left_upper_leg` and `upper_leg` still diverge materially in direct-vs-shear comparison, the manual direction-sign assumption remains explicit, and negative feature residuals persist on `corner_lower_left`, `corner_lower_right`, and `test_section_complex`.
+  - Thermal support remains caveated rather than promoted: `thermal_support_flagged_bin_count = 228`, the sanitization provenance is explicit, and the language remains in effective-indicator terms.
+  - The earlier apparent Salt 1 Kirst “stall” does not invalidate the package results. The package existed on disk already; the real reusable-script issue was that the long thermal reduction stage was silent and the major extractor could not resume from already-generated `streamwiseBulkThermal` outputs until `AGENT-051` added reuse and progress logging.
+- review outcome:
+  - Salt 1 Kirst clears the same caveated late-window rollout standard used for Salt 1 Jin.
+  - The rollout may continue to the next planned Salt-family case, while carrying forward the same hydraulic, thermal, and manual-direction caveats.

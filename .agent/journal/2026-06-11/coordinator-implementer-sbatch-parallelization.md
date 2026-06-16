@@ -1,0 +1,38 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-050`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `tools/AGENTS.override.md`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/run_openfoam_case.sh`
+  - `jadyn_runs/salt1/2026-06-04_jin_continuation_candidate/run_continuation_openfoam13.sbatch`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `tools/analyze/submit_ethan_case_analysis_package_sbatch.sh`
+  - `.agent/status/2026-06-11_AGENT-050.md`
+  - `.agent/journal/2026-06-11/coordinator-implementer-sbatch-parallelization.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- commands run:
+  - `rg -n "sbatch|SBATCH|srun|slurm" -g"*.py" -g"*.sh" -g"*.md" .`
+  - `find staging -maxdepth 2 -type d | sort`
+  - `rg -n "analysis_jobs|case_analysis_package|build_ethan_case_analysis_package" .`
+  - `bash -n tools/analyze/submit_ethan_case_analysis_package_sbatch.sh`
+  - `bash tools/analyze/submit_ethan_case_analysis_package_sbatch.sh --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --output-dir tmp/2026-06-11_salt1_kirst_case_analysis_package_window4 --time-selector 3276,3277,3278,3279 --dry-run`
+  - `bash tools/analyze/submit_ethan_case_analysis_package_sbatch.sh --time 01:00:00 --source-id val_salt_test_2_coarse_mesh_laminar --output-dir tmp/2026-06-11_case_analysis_raw_reuse_sbatch_smoke --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction`
+- results or observations:
+  - The long pole in the current Salt-family rollout remains the major extractor thermal cut-plane `foamPostProcess` batch inside `build_ethan_case_analysis_package.py`.
+  - The rollout can safely parallelize read-only compatibility audits, dry-run batch-script generation, and distinct package builds that write to isolated output directories, but case-to-case scientific promotion remains sequential because each next case depends on the prior reviewer gate.
+  - Added `tools/analyze/submit_ethan_case_analysis_package_sbatch.sh` as a reusable submission helper that emits a job-specific sbatch script under `tmp/slurm_case_analysis_jobs/`.
+  - Dry-run validation succeeded for the active Salt 1 Kirst late-window build configuration.
+  - A live submission probe against a light Salt 2 raw-reuse rebuild exposed an environment boundary: `sbatch` is not available on the current compute node and returns `NOTIFICATION: sbatch not available on compute nodes. Use a login node.`
+  - Tightened the wrapper so it now fails clearly when `sbatch` does not return a usable numeric job id, instead of surfacing an empty `job_id`.
+- next steps:
+  - Keep the current Salt 1 Kirst full-window build running on the compute node.
+  - Use the new wrapper in `--dry-run` mode from compute nodes and submit from a login node when batch offload is desired.
+  - Preserve the reviewer-gated sequential rollout even if later build execution is offloaded to Slurm.

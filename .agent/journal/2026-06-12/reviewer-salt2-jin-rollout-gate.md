@@ -1,0 +1,40 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Reviewer`
+- task ID: `AGENT-054`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tmp/2026-06-11_salt2_jin_case_analysis_package_window4/README.md`
+  - `tmp/2026-06-11_salt2_jin_case_analysis_package_window4/summary.json`
+  - `tmp/2026-06-11_salt2_jin_case_analysis_package_window4/analysis_manifest.json`
+  - `tmp/2026-06-11_salt2_jin_case_analysis_package_window4/major_loss_summary.csv`
+  - `tmp/2026-06-11_salt2_jin_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `tmp/2026-06-11_salt2_jin_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `.agent/status/2026-06-11_AGENT-053.md`
+  - `.agent/BOARD.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-11_AGENT-053.md`
+  - `.agent/status/2026-06-12_AGENT-054.md`
+  - `.agent/journal/2026-06-12/reviewer-salt2-jin-rollout-gate.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+- commands run:
+  - `sed -n '1,260p' tmp/2026-06-11_salt2_jin_case_analysis_package_window4/README.md`
+  - `sed -n '1,220p' tmp/2026-06-11_salt2_jin_case_analysis_package_window4/summary.json`
+  - `sed -n '1,260p' tmp/2026-06-11_salt2_jin_case_analysis_package_window4/analysis_manifest.json`
+  - `head -20 tmp/2026-06-11_salt2_jin_case_analysis_package_window4/major_loss_summary.csv`
+  - `head -20 tmp/2026-06-11_salt2_jin_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `sed -n '1,220p' tmp/2026-06-11_salt2_jin_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `rg -n "raw_extraction|validation_status|quarantined_spans|negative_residual_feature_names|thermal_support_flagged_bin_count|history_time_end_s|flow_direction_hints|manual_profile_assumption|warning_heavy" tmp/2026-06-11_salt2_jin_case_analysis_package_window4/summary.json tmp/2026-06-11_salt2_jin_case_analysis_package_window4/analysis_manifest.json tmp/2026-06-11_salt2_jin_case_analysis_package_window4/major_loss_summary.csv`
+  - `rg -n "viscosity_screening_salt_test_[0-9]_(jin|kirst)_coarse_mesh" registry/case_registry.csv reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+- results or observations:
+  - The stale AGENT-053 status note was only bookkeeping drift. The Salt 2 Jin package had already finished on June 11, 2026 at `12:39:20 CDT`, with the full retained hydraulic window `2428-2431 s` and heat tail `2432 s`.
+  - Salt 2 Jin preserves the same accepted rollout caveat family rather than opening a new provenance or schema blocker: no quarantined spans, explicit manual `flow_direction_hints` status, explicit thermal sanitization provenance, and negative feature residuals limited to `corner_lower_left` and `corner_lower_right`.
+  - All six major spans remain `warning_heavy`. The strongest direct-vs-shear disagreement is still concentrated on `left_upper_leg` and `upper_leg`, so the hydraulic interpretation boundary should stay as caveated as the earlier Salt-family reviewer passes.
+  - Streamwise thermal outputs remain support-gated indicators rather than settled local HTC truth. `thermal_support_flagged_bin_count = 224`, and the package preserves the same quality-gate framing already accepted in the prior rollout reviews.
+  - The next obvious Salt-family successor already registered in the metadata and case registry is `viscosity_screening_salt_test_2_kirst_coarse_mesh`, so the autonomous queue can advance cleanly without inventing a new selection rule.
+- review outcome:
+  - Salt 2 Jin clears the same caveated late-window rollout standard used for Salt 1 Jin and Salt 1 Kirst.
+  - The rollout may continue to `viscosity_screening_salt_test_2_kirst_coarse_mesh`, while preserving the existing hydraulic, thermal, manual-direction, and `history_time_end_s` caveats.

@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-06-12T15:52:31-05:00",
+  "source_id": "ethan_postprocessing_campaign_2026-06-12",
+  "source_owner": "ethan_runs_local_reporting_refresh",
+  "case_id": "campaign_ethan_postprocessing_all_runs_v1",
+  "native_outputs_policy": "analysis compiled from existing registered case postProcessing, existing metadata indices, and existing validation reports only; imported solver output roots were not mutated and no new OpenFOAM postprocessing was launched",
+  "provenance_note": "Canonical all-run Ethan postprocessing campaign for the 13 registered CFD cases. Packages each run into report-ready monitor analysis with artifact maps, then builds a cross-run synthesis under cross_model_comparison with CSV-backed SVG/PDF/TikZ figures.",
+  "registry_reference_path": "registry/case_registry.csv",
+  "registry_rows_referenced": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar",
+    "val_water_test_3_coarse_mesh_laminar",
+    "val_water_test_4_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh"
+  ],
+  "source_reports": [
+    "reports/2026-06-04_ethan_case_metadata_index",
+    "reports/2026-06-04_ethan_direct_validation",
+    "reports/2026-06-09_ethan_steady_state_heat_flow_audit",
+    "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-02_ethan_modern_runs_first_batch_v1"
+  ],
+  "scripts": [
+    "tools/analyze/build_ethan_run_postprocessing_package.py",
+    "tools/analyze/build_ethan_postprocessing_campaign.py"
+  ],
+  "commands": [
+    "python -m py_compile tools/analyze/build_ethan_run_postprocessing_package.py tools/analyze/build_ethan_postprocessing_campaign.py",
+    "python tools/analyze/build_ethan_run_postprocessing_package.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --campaign-root tmp/2026-06-12_ethan_postprocessing_campaign_smoke --reuse-existing-renders",
+    "python tools/analyze/build_ethan_postprocessing_campaign.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --source-id val_water_test_1_coarse_mesh_laminar --campaign-root tmp/2026-06-12_ethan_postprocessing_campaign_smoke_campaign --reuse-existing-renders",
+    "python tools/analyze/build_ethan_postprocessing_campaign.py --campaign-slug 2026-06-12_ethan_postprocessing_all_runs_v1 --reuse-existing-renders"
+  ],
+  "verified_outputs": {
+    "campaign_root": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1",
+    "campaign_manifest": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/manifest.json",
+    "campaign_executive_summary": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/executive_summary.md",
+    "campaign_technical_analysis": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/technical_analysis.md",
+    "campaign_methodology": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/reports/methodology.md",
+    "campaign_run_index_csv": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/run_index.csv",
+    "campaign_readiness_matrix_csv": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/readiness_matrix.csv",
+    "campaign_cross_run_summary_csv": "../cfd-modeling-tools/cross_model_comparison/campaigns/2026-06-12_ethan_postprocessing_all_runs_v1/data/cross_run_summary.csv",
+    "cross_model_checkpoint": "../cfd-modeling-tools/cross_model_comparison/operational_notes/2026-06-12_ethan_postprocessing_all_runs_v1/CHECKPOINT.md",
+    "cross_model_journal": "../cfd-modeling-tools/cross_model_comparison/journals/2026-06/2026-06-12_workflow_journal.md"
+  },
+  "unresolved_items": [
+    "Pressure remains an explicit availability boundary in v1 because the baseline native postProcessing monitor stack does not publish direct pressure histories for these runs.",
+    "The campaign includes all 13 registered runs, but 10 are still labeled convergence_audit_required rather than comparison_candidate.",
+    "This pass is intentionally monitor-first. It reuses existing rendered artifacts when present but does not launch new field reconstruction or ParaView rendering."
+  ]
+}

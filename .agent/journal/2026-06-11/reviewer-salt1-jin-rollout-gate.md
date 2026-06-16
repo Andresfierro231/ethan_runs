@@ -1,0 +1,22 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Reviewer`
+- task ID: `AGENT-046`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/summary.json`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/analysis_manifest.json`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/README.md`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/major_loss_summary.csv`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/feature_minor_loss_summary.csv`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+- findings:
+  - No new profile-contract incompatibility surfaced. The Salt 1 Jin case resolves through the hardened profile contract, builds a complete raw extraction, and rebuilds into a full package with validated raw-reuse provenance.
+  - The package preserves the intended machine-readable caveats: manual direction-sign assumption, deferred `profile_dp_pa`, inferred feature `wall_dp_pa`, and reused frozen heat artifacts.
+  - The current artifact is still only a one-time retained smoke at `3229 s`, while the case exposes four stable late retained times (`3226-3229 s`). That is the new boundary.
+  - Because all later Salt-family comparisons should be held to the same late-window standard as Salt 2, the one-time Salt 1 Jin package is not enough to clear rollout expansion yet.
+  - The thermal kernel is operationally expensive but not failing. The long pole is the cut-plane `foamPostProcess` stage inside the major extractor.
+- reviewer decision:
+  - Do not expand to the next Salt-family case yet.
+  - Open one bounded remediation task only: rebuild Salt 1 Jin on the full retained late window, then rerun the reviewer gate.

@@ -1,0 +1,53 @@
+{
+  "bin_count": 150,
+  "equivalent_circular_diameter_m": 0.021794342506493102,
+  "face_count": 143424,
+  "figure_paths": {
+    "bulk_context": {
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/pdf/salt2_val_loop_bulk_context.pdf",
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/png/salt2_val_loop_bulk_context.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/svg/salt2_val_loop_bulk_context.svg"
+    },
+    "heatmap": {
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/pdf/salt2_val_dense_main_loop_heatmap.pdf",
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/png/salt2_val_dense_main_loop_heatmap.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/svg/salt2_val_dense_main_loop_heatmap.svg"
+    },
+    "late_window_profile": {
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/pdf/salt2_val_dense_main_loop_late_window_profile.pdf",
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/png/salt2_val_dense_main_loop_late_window_profile.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/svg/salt2_val_dense_main_loop_late_window_profile.svg"
+    },
+    "tp_landmark_timeseries": {
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/pdf/salt2_val_dense_tp_landmark_timeseries.pdf",
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/png/salt2_val_dense_tp_landmark_timeseries.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_dense_streamwise_friction_package/figures/svg/salt2_val_dense_tp_landmark_timeseries.svg"
+    }
+  },
+  "first_valid_s_m": 0.6747145956978544,
+  "flow_area_m2": 0.000373058916725,
+  "generated_at": "2026-06-09T15:32:06-05:00",
+  "history_time_end_s": 6761.0,
+  "main_loop_total_length_m": 3.7484144205436354,
+  "retained_field_times_s": [
+    6756.0,
+    6757.0,
+    6758.0,
+    6759.0,
+    6760.0
+  ],
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "sample_row_count": 717120,
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "target_ds_m": 0.025,
+  "tp_landmarks_m": {
+    "TP1": 0.0,
+    "TP2": 0.9495160000002864,
+    "TP3": 1.875002497718866,
+    "TP4": 2.1985034977188658,
+    "TP5": 2.449781497718866,
+    "TP6": 2.824517497718866
+  },
+  "valid_bin_count": 88,
+  "warning_note": "warning_flag=yes marks >20% max relative deviation of retained wall-face streamwise shear inside a dense s-bin; this is stronger than the v1 patchwise proxy but still not a slice-normal circumferential average."
+}

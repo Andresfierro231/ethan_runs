@@ -1,0 +1,33 @@
+# Writer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Writer`
+- task ID: `AGENT-017`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `journals/2026-06/2026-06-09_ethan_runs.md`
+  - `journals/2026-06/2026-06-08_ethan_runs.md`
+  - `.agent/journal/2026-06-10/implementer-lower-leg-repair.md`
+  - `.agent/journal/2026-06-10/implementer-case-analysis-fixpass.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_centerline_station_definitions.csv`
+- files changed:
+  - `.agent/journal/2026-06-10/writer-lower-leg-repair.md`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+- commands run:
+  - `sed -n '1,260p' journals/2026-06/2026-06-09_ethan_runs.md`
+  - `sed -n '1,260p' journals/2026-06/2026-06-08_ethan_runs.md`
+  - `sed -n '1,220p' .agent/journal/2026-06-10/implementer-case-analysis-fixpass.md`
+  - `sed -n '1,220p' reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `sed -n '1,120p' reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `sed -n '1,220p' reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `sed -n '280,360p' reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_centerline_station_definitions.csv`
+- results or observations:
+  - Wrote `journals/2026-06/2026-06-10_ethan_runs.md` with a detailed record of the lower-leg repair method, the exact assumptions, the before/after projection-distance evidence, the retained-time window used for the rebuilt package, and the caveat that `right_leg` remains quarantined.
+- incomplete lines of investigation:
+  - None for the writer task. The remaining uncertainty is scientific review of the repaired lower-leg method, not missing documentation.
+- next steps:
+  - Hand the June 10 journal entry to review together with the rebuilt package and the implementer raw note.

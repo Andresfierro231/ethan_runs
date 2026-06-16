@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-06-02",
+  "campaign": "kirst_visualization_first_pass",
+  "workspace_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "jobs": [
+    {
+      "job_id": 3203083,
+      "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "job_file": "staging/render_jobs/viscosity_screening_salt_test_1_kirst_coarse_mesh_render.sbatch",
+      "status_at_record_time": "PENDING",
+      "reason": "Priority"
+    },
+    {
+      "job_id": 3203084,
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "job_file": "staging/render_jobs/viscosity_screening_salt_test_2_kirst_coarse_mesh_render.sbatch",
+      "status_at_record_time": "PENDING",
+      "reason": "Priority"
+    }
+  ],
+  "related_active_job": {
+    "job_id": 3202708,
+    "description": "salt_test_2 continuation",
+    "status_at_record_time": "RUNNING"
+  }
+}

@@ -1,0 +1,34 @@
+# Implementer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Implementer`
+- task ID: `AGENT-047`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/summary.json`
+  - `tmp/2026-06-11_salt1_jin_case_analysis_package/analysis_manifest.json`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+- files changed:
+  - `.agent/status/2026-06-11_AGENT-047.md`
+  - `.agent/journal/2026-06-11/implementer-salt1-jin-full-window.md`
+- commands run:
+  - `python -u - <<'PY' ... build_ethan_case_analysis_package.main() --source-id viscosity_screening_salt_test_1_jin_coarse_mesh --last-n-times 5 --output-dir tmp/2026-06-11_salt1_jin_case_analysis_package_window4 ... PY`
+  - `sed -n '1,280p' tmp/2026-06-11_salt1_jin_case_analysis_package_window4/summary.json`
+  - `sed -n '1,220p' tmp/2026-06-11_salt1_jin_case_analysis_package_window4/analysis_manifest.json`
+  - `sed -n '1,220p' tmp/2026-06-11_salt1_jin_case_analysis_package_window4/major_loss_summary.csv`
+- results or observations:
+  - The bounded remediation was execution-only, not a code fix: rebuild Salt 1 Jin on the full stable late retained window instead of the one-time `3229 s` smoke.
+  - The live builder selected `3226-3229 s` as the stable retained hydraulic window and created a new keyed frozen snapshot at `tmp_extract/ethan_case_analysis_snapshots/viscosity_screening_salt_test_1_jin_coarse_mesh/salt1_jin_case_v1/7739c0ef2e4b9b5b/`.
+  - The resulting package at `tmp/2026-06-11_salt1_jin_case_analysis_package_window4/` contains all expected CSV, JSON, README, and figure outputs.
+  - Multi-time package counts now sit on the intended late-window basis:
+    - `requested_times_s = [3226, 3227, 3228, 3229]`
+    - `thermal_support_flagged_bin_count = 228`
+    - `negative_residual_feature_names = corner_lower_left, corner_lower_right, test_section_complex`
+    - `heat_latest_time_s = 3230`
+  - Thermal sanitization remains deterministic and explicit across the late window: `3226: 2`, `3227: 1`, `3229: 3` token repairs.
+  - The runtime cost remains dominated by the major extractor cut-plane thermal batch, followed by the feature extractor multi-time pressure-surface batch. This is operationally heavy but completed without intervention.
+- next steps:
+  - Rerun the Salt 1 Jin reviewer gate on the new full-window package.
+  - If the rerun gate clears, continue to the next Salt-family case in the planned order.

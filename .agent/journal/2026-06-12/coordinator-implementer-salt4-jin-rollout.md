@@ -1,0 +1,76 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-067`
+- branch/worktree: `no-HEAD`
+- intent:
+  - continue the autonomous Salt-family rollout queue at `viscosity_screening_salt_test_4_jin_coarse_mesh`
+  - audit case compatibility under the shared profile contract
+  - register the case if compatible and build the retained-window review package
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-065.md`
+  - `.agent/status/2026-06-12_AGENT-066.md`
+  - `.agent/journal/2026-06-12/reviewer-salt3-kirst-rollout-gate.md`
+  - `tools/case_analysis_profiles.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-067.md`
+  - `.agent/journal/2026-06-12/coordinator-implementer-salt4-jin-rollout.md`
+- commands run:
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/README.md`
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/summary.json`
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/analysis_manifest.json`
+  - `head -20 tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/major_loss_summary.csv`
+  - `head -20 tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `sed -n '1,220p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py`
+  - `python3.11 -c "from tools.case_analysis_profiles import get_case_analysis_profile; profile = get_case_analysis_profile('viscosity_screening_salt_test_4_jin_coarse_mesh'); print(profile.profile_name); print(len(profile.major_spans), len(profile.feature_budgets))"`
+  - `python -c "from tools.case_analysis_profiles import resolve_case_paths; source_root, runtime_root, metadata = resolve_case_paths('viscosity_screening_salt_test_4_jin_coarse_mesh'); print(source_root); print(runtime_root)"`
+  - `python -c "from tools import hydraulic_budget_defs as defs; from tools.case_analysis_profiles import resolve_case_paths; from pathlib import Path; _, runtime_root, _ = resolve_case_paths('viscosity_screening_salt_test_4_jin_coarse_mesh'); print(defs.select_stable_processor_times(Path(runtime_root), 5, required_fields=('wallShearStress','yPlus','p','p_rgh','T','U','wallHeatFlux')))"`
+  - `python -u tools/analyze/build_ethan_case_analysis_package.py --source-id viscosity_screening_salt_test_4_jin_coarse_mesh --time-selector 2079,2080,2081,2082 --output-dir tmp/2026-06-12_salt4_jin_case_analysis_package_window4`
+- results or observations:
+  - Salt 3 Kirst cleared the same caveated rollout standard used for the prior Salt-family cases, so the queue advances to Salt 4 Jin without a new remediation stop.
+  - Salt 4 Jin registered cleanly as `salt4_jin_case_v1`, and the stable retained times selected from the live runtime were `2079-2082 s`.
+  - The retained-window build is running on compute host `c318-008.ls6.tacc.utexas.edu` and has already cleared the four retained field reconstructions; it is currently inside the normal long thermal-cut-plane reduction path.
+- next step:
+  - finish the Salt 4 Jin build, review the resulting package, and if it clears the same caveated standard advance to the final remaining Salt-family case, Salt 4 Kirst
+
+## 2026-06-14 bounded recovery cleanup
+
+- agent role: `Coordinator / Reviewer`
+- files inspected:
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/README.md`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/summary.json`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/analysis_manifest.json`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/major_loss_summary.csv`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/raw_extraction/feature_minor_loss_extraction_summary.json`
+  - `tmp/2026-06-12_salt4_jin_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `.agent/status/2026-06-12_AGENT-067.md`
+  - `.agent/BOARD.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-067.md`
+  - `.agent/journal/2026-06-12/coordinator-implementer-salt4-jin-rollout.md`
+- commands run:
+  - `sed -n '1,260p' tmp/2026-06-12_salt4_jin_case_analysis_package_window4/README.md`
+  - `sed -n '1,260p' tmp/2026-06-12_salt4_jin_case_analysis_package_window4/summary.json`
+  - `sed -n '1,260p' tmp/2026-06-12_salt4_jin_case_analysis_package_window4/analysis_manifest.json`
+  - `head -20 tmp/2026-06-12_salt4_jin_case_analysis_package_window4/major_loss_summary.csv`
+  - `head -20 tmp/2026-06-12_salt4_jin_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `sed -n '1,220p' tmp/2026-06-12_salt4_jin_case_analysis_package_window4/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `sed -n '1,220p' tmp/2026-06-12_salt4_jin_case_analysis_package_window4/raw_extraction/feature_minor_loss_extraction_summary.json`
+  - `sed -n '1,220p' tmp/2026-06-12_salt4_jin_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `rg -n "validation_status|quarantined_spans|negative_residual_feature_names|thermal_support_flagged_bin_count|history_time_end_s|manual_profile_assumption|warning_heavy" tmp/2026-06-12_salt4_jin_case_analysis_package_window4/summary.json tmp/2026-06-12_salt4_jin_case_analysis_package_window4/analysis_manifest.json tmp/2026-06-12_salt4_jin_case_analysis_package_window4/major_loss_summary.csv`
+- results or observations:
+  - The Salt 4 Jin package had already completed on `2026-06-12T17:50:51-05:00`; the stale status note was bookkeeping drift, not a live build.
+  - Salt 4 Jin preserves the same accepted caveat family as Salt 3 Kirst: all six major spans remain `warning_heavy`, `quarantined_spans` is empty, `flow_direction_hints.status` remains `manual_profile_assumption_not_auto_validated`, and `thermal_support_flagged_bin_count = 224`.
+  - Negative feature residuals remain limited to `corner_lower_left`, `corner_lower_right`, and `corner_upper_left`, which stays within the existing reference-budget caveat boundary instead of opening a new blocker.
+  - Reconstructed retained `T` fields again required narrow local sanitization before cut-plane reduction, with replacements `2079:1`, `2080:2`, `2081:2`, and `2082:3`.
+  - The README still ends with one stale "Salt 2 package" phrase in next actions, but the machine-readable provenance and the reviewer gate criteria are otherwise aligned.
+- review outcome:
+  - Salt 4 Jin clears the same caveated late-window rollout standard used for the earlier Salt-family cases.
+  - The bounded recovery pass closes the stale AGENT-067 "build running" state durably and stops without advancing to Salt 4 Kirst in this run.

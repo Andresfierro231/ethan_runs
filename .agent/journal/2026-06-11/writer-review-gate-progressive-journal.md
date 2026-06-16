@@ -1,0 +1,23 @@
+# Writer Raw Journal
+
+- date: `2026-06-11`
+- agent role: `Writer`
+- task ID: `AGENT-040`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `.agent/status/2026-06-11_AGENT-038.md`
+  - `.agent/journal/2026-06-11/reviewer-salt2-final-package-and-hardening.md`
+  - `tmp/2026-06-11_case_analysis_raw_reuse_smoke_v3/summary.json`
+- files changed:
+  - `journals/2026-06/2026-06-11_ethan_runs.md`
+  - `.agent/status/2026-06-11_AGENT-040.md`
+  - `.agent/journal/2026-06-11/writer-review-gate-progressive-journal.md`
+- commands run:
+  - `sed -n '1,260p' journals/2026-06/2026-06-11_ethan_runs.md`
+- results or observations:
+  - Updated the curated June 11 journal as a progressive checkpoint log rather than waiting for a later retrospective summary.
+  - Recorded the first reviewer gate outcome, the raw-reuse heat-drift finding, and the bounded fix that followed it.
+  - Set up the next journal checkpoint explicitly around the rerun reviewer gate and the remaining direction-sign boundary.
+- next steps:
+  - Append the rerun reviewer outcome after the next gate lands.

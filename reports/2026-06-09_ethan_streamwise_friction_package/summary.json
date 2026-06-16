@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-09T15:07:42-05:00",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "history_time_end_s": 6749.0,
+  "retained_field_times_s": [
+    6744.0,
+    6745.0,
+    6746.0,
+    6747.0,
+    6748.0
+  ],
+  "flow_area_m2": 0.000373058916725,
+  "equivalent_circular_diameter_m": 0.021794342506493102,
+  "main_loop_total_length_m": 3.7484144205436354,
+  "profile_figure_paths": {
+    "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/figures/png/salt2_val_main_loop_late_window_profile.png",
+    "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/figures/svg/salt2_val_main_loop_late_window_profile.svg",
+    "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/figures/pdf/salt2_val_main_loop_late_window_profile.pdf"
+  },
+  "context_figure_paths": {
+    "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/figures/png/salt2_val_loop_bulk_context.png",
+    "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/figures/svg/salt2_val_loop_bulk_context.svg",
+    "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_streamwise_friction_package/figures/pdf/salt2_val_loop_bulk_context.pdf"
+  },
+  "warning_proxy_note": "warning_flag=yes uses wall-shear spread proxy and yPlus nonuniformity proxy; it is not yet a true circumferential station-by-station spread metric."
+}

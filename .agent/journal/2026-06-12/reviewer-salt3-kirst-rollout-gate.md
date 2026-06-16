@@ -1,0 +1,37 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-12`
+- agent role: `Coordinator / Reviewer`
+- task ID: `AGENT-066`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/README.md`
+  - `tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/summary.json`
+  - `tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/analysis_manifest.json`
+  - `tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/major_loss_summary.csv`
+  - `tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `.agent/status/2026-06-12_AGENT-065.md`
+  - `.agent/BOARD.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-12_AGENT-065.md`
+  - `.agent/status/2026-06-12_AGENT-066.md`
+  - `.agent/journal/2026-06-12/reviewer-salt3-kirst-rollout-gate.md`
+- commands run:
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/README.md`
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/summary.json`
+  - `sed -n '1,260p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/analysis_manifest.json`
+  - `head -20 tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/major_loss_summary.csv`
+  - `head -20 tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/feature_minor_loss_summary.csv`
+  - `sed -n '1,220p' tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/raw_extraction/thermal_sanitization_summary.json`
+  - `rg -n "raw_extraction|validation_status|quarantined_spans|negative_residual_feature_names|thermal_support_flagged_bin_count|history_time_end_s|flow_direction_hints|manual_profile_assumption|warning_heavy|requested_retained_times_s|available_retained_times_s|heat_time_tail_s" tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/summary.json tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/analysis_manifest.json tmp/2026-06-12_salt3_kirst_case_analysis_package_window4/major_loss_summary.csv`
+- results or observations:
+  - Salt 3 Kirst now has a complete retained-window package on `3294-3297 s` with no quarantined spans and matching major, feature, and thermal retained times.
+  - The package preserves the same accepted rollout caveat family seen in the earlier Salt-family cases: all six major spans remain `warning_heavy`, the manual direction-sign assumption remains explicit, and thermal outputs stay support-gated with `thermal_support_flagged_bin_count = 224`.
+  - Negative feature residuals persist on `corner_lower_left`, `corner_lower_right`, and `corner_upper_left`, which keeps the same reference-budget caveat boundary rather than opening a new blocker.
+  - Reconstructed retained `T` files again needed narrow local sanitization before cut-plane reduction, this time with `3294: 4`, `3295: 3`, `3296: 1`, and `3297: 2` replacements.
+  - The package README still contains one stale “Salt 2 package” phrase in the next-actions text, but the machine-readable source/profile provenance is correct and the mismatch does not alter the review gate.
+- review outcome:
+  - Salt 3 Kirst clears the same caveated late-window rollout standard used for Salt 1 Jin, Salt 1 Kirst, Salt 2 Jin, Salt 2 Kirst, and Salt 3 Jin.
+  - The rollout may continue to `viscosity_screening_salt_test_4_jin_coarse_mesh`, while carrying forward the same hydraulic, thermal, manual-direction, and `history_time_end_s` caveats.

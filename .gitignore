@@ -1,0 +1,35 @@
+__pycache__/
+*.py[cod]
+
+# Local tool state
+.codex/
+
+# Scheduler and runtime logs
+*.out
+*.err
+
+cache/*
+!cache/.gitkeep
+
+# Generated figures and render outputs
+figures/*
+!figures/.gitkeep
+reports/**/figures/**
+reports/**/figures_rendered/**
+
+linked_cases/*
+!linked_cases/.gitkeep
+
+# Heavy local staging mirrors
+staging/modern_runs/**
+staging/render_inputs/**
+staging/render_jobs/**
+jadyn_runs/**/case_stage/**
+
+tmp/*
+!tmp/.gitkeep
+
+tmp_extract/*
+
+work_products/*
+!work_products/.gitkeep

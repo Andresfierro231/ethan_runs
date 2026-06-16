@@ -1,0 +1,75 @@
+{
+  "available_times": [
+    6825.0,
+    6826.0,
+    6827.0,
+    6828.0,
+    6829.0
+  ],
+  "extract_case": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp_extract/ethan_streamwise_friction/val_salt_test_2_coarse_mesh_laminar",
+  "generated_at": "2026-06-09T17:54:12-05:00",
+  "geometry": {
+    "selected_face_count": 152184,
+    "selected_patch_count": 28,
+    "selected_point_count": 152464,
+    "span_face_count": {
+      "left_lower_leg": 13056,
+      "left_upper_leg": 15264,
+      "lower_leg": 38064,
+      "right_leg": 38880,
+      "test_section_span": 8760,
+      "upper_leg": 38160
+    },
+    "span_wall_area_m2": {
+      "left_lower_leg": 0.021303587866568365,
+      "left_upper_leg": 0.024858001379171532,
+      "lower_leg": 0.06235019615817718,
+      "right_leg": 0.0634350010930269,
+      "test_section_span": 0.016409977216191723,
+      "upper_leg": 0.062350196154249055
+    }
+  },
+  "major_loss_row_count": 1920,
+  "major_loss_timeseries_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction/leg_major_loss_timeseries.csv",
+  "major_span_names": [
+    "lower_leg",
+    "right_leg",
+    "left_lower_leg",
+    "test_section_span",
+    "left_upper_leg",
+    "upper_leg"
+  ],
+  "mdot_monitor_area_m2_by_span": {
+    "left_lower_leg": 0.00038243255716666663,
+    "left_upper_leg": 0.00038243255716666663,
+    "lower_leg": 0.0003824325571,
+    "right_leg": 0.0003824325572,
+    "test_section_span": 0.0003449379954,
+    "upper_leg": 0.0003824325572
+  },
+  "mdot_source_by_span": {
+    "left_lower_leg": "main_loop_mean_abs",
+    "left_upper_leg": "main_loop_mean_abs",
+    "lower_leg": "mdot_pipeleg_lower_05_straight",
+    "right_leg": "mdot_pipeleg_right_02_middle",
+    "test_section_span": "mdot_pipeleg_left_04_test_section",
+    "upper_leg": "mdot_pipeleg_upper_05_cooler"
+  },
+  "output_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction",
+  "requested_times": [
+    6825.0,
+    6826.0,
+    6827.0,
+    6828.0,
+    6829.0
+  ],
+  "rho_time_count_global": 6831,
+  "runtime_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "station_definition_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction/leg_centerline_station_definitions.csv",
+  "station_row_count": 384,
+  "target_ds_m": 0.01,
+  "wall_face_sample_count": 760920,
+  "wall_face_samples_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-09_ethan_legwise_hydraulic_budget_package/raw_extraction/leg_wall_face_samples.csv",
+  "warning_row_count": 1125
+}

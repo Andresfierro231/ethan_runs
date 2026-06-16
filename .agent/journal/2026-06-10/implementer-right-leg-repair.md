@@ -1,0 +1,62 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-018`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `.agent/journal/2026-06-10/implementer-lower-leg-repair.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-018.md`
+  - `.agent/journal/2026-06-10/implementer-right-leg-repair.md`
+  - `tools/case_analysis_profiles.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+- commands run:
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,260p' .agent/FILE_OWNERSHIP.md`
+  - `sed -n '1,220p' tools/AGENTS.override.md`
+  - `sed -n '1,220p' reports/AGENTS.override.md`
+  - `python3.11 -c "<prototype right-leg patch-centroid projection distances from existing face samples>"`
+  - `python -c "<prototype right-leg path with span-end anchor extension>"`
+- results or observations:
+  - The simple three-wall-patch centroid polyline is not sufficient for `right_leg`. It reduces the median projected distance to about `0.011 m`, but the p95 remains about `0.130 m` because the polyline terminates at the wall-patch centroids rather than the true span ends.
+  - Extending the right-leg polyline with actual start/end anchors resolves that failure mode cleanly in the prototype. A path that uses the NCC start/end patch centroids plus the three wall-patch centroids reduces the right-leg projected distance distribution to about `0.011 m` throughout the span.
+- incomplete lines of investigation:
+  - The code change is implemented, but the package rebuild and post-change diagnostics are still pending.
+- next steps:
+  - Rebuild the June 10 Salt 2 case package and inspect whether `right_leg` exits quarantine without introducing new coverage or friction artifacts.
+
+## Update: `2026-06-10T12:42:26-05:00`
+
+- additional files changed:
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/**`
+- additional commands run:
+  - `python3.11 -m py_compile tools/case_analysis_profiles.py tools/extract/sample_leg_centerline_major_loss.py tools/analyze/build_ethan_case_analysis_package.py tools/analyze/build_ethan_case_heat_summary.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+  - `python3.11 -m py_compile tools/analyze/build_ethan_case_analysis_package.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction`
+- additional results or observations:
+  - The implemented repair extends every `patch_centroid_polyline` span with the actual NCC start/end patch centroids, so the explicit streamwise path now covers the full span rather than only the interior wall-patch centroids.
+  - `right_leg` is fully repaired under this method. In the rebuilt package it now reports `valid_bin_count = 465`, `total_bin_row_count = 465`, `empty_bin_fraction = 0.0`, `median_face_distance_to_centerline_m = 0.011025343240929148`, and `p95_face_distance_to_centerline_m = 0.011025343265719694` in `major_loss_summary.csv`. The old quarantined state had `valid_bin_count = 105`, `total_bin_row_count = 470`, `empty_bin_fraction = 0.776595744680851`, median distance about `0.468 m`, and p95 about `0.872 m`.
+  - The same anchored-path generalization also improved `lower_leg` further. In the final rebuilt package `lower_leg` reports `valid_bin_count = 460`, `total_bin_row_count = 460`, `mean_darcy_f = 0.8925998301184789`, median distance `0.01102534324076041`, and p95 distance `0.011844021316045825`.
+  - The final package at `reports/2026-06-10_ethan_salt2_case_analysis_package/` now has no quarantined major-loss spans. The retained hydraulic window is `7353-7357 s`, and the live heat tail in the package summary is `7365 s`.
+  - The right-leg station-definition rows now begin on the explicit anchored segment `ncc_pipeleg_right_01_lower_start -> pipeleg_right_01_lower`, confirming that both bin generation and face projection use the anchored path.
+  - The package refresh path exposed two builder issues that are now fixed in `tools/analyze/build_ethan_case_analysis_package.py`:
+    - `--raw-extraction-dir` now tolerates the case where the source and target raw-extraction directories are the same.
+    - When raw extraction is reused, the top-level package `summary.json` and `analysis_manifest.json` now take the raw extractor's retained times and frozen runtime root as authoritative, instead of stamping a newer live selected-time window onto older hydraulic artifacts.
+- additional incomplete lines of investigation:
+  - The full hydraulic registration problem is fixed, but the package is still not interpretation-clean. All major spans remain `warning_heavy`, `profile_dp_pa` remains unsampled, and three feature objects still report negative residual minor pressure.
+- additional next steps:
+  - Send the final package to review with focus on whether the anchored patch-centroid method is physically defensible for both repaired spans and whether the remaining feature residual signs are acceptable under the current adjacent-major reference scheme.

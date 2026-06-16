@@ -1,0 +1,84 @@
+# Reviewer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Reviewer`
+- task ID: `AGENT-014`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_window_summary.csv`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/feature_minor_loss_extraction_summary.json`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/analyze/build_ethan_case_heat_summary.py`
+  - `tools/analyze/build_ethan_steady_state_heat_flow_audit.py`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/extract/sample_feature_minor_loss_budget.py`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-014.md`
+  - `.agent/journal/2026-06-10/reviewer-case-analysis-package.md`
+- commands run:
+  - `sed -n '1,260p' AGENTS.md`
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,260p' .agent/FILE_OWNERSHIP.md`
+  - `sed -n '1,260p' .agent/ROLES.md`
+  - `sed -n '1,220p' .agent/JOURNAL_POLICY.md`
+  - `sed -n '1,220p' tools/AGENTS.override.md`
+  - `sed -n '1,220p' reports/AGENTS.override.md`
+  - `sed -n '1,260p' reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
+  - `sed -n '1,260p' reports/2026-06-10_ethan_salt2_case_analysis_package/summary.json`
+  - `sed -n '1,220p' reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/feature_minor_loss_extraction_summary.json`
+  - `sed -n '1,220p' reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction/leg_major_loss_extraction_summary.json`
+  - `sed -n '1,120p' reports/2026-06-10_ethan_salt2_case_analysis_package/major_loss_summary.csv`
+  - `sed -n '1,120p' reports/2026-06-10_ethan_salt2_case_analysis_package/feature_minor_loss_summary.csv`
+  - `sed -n '1,120p' reports/2026-06-10_ethan_salt2_case_analysis_package/heat_loss_summary.csv`
+  - `rg -n "requested_times_s|requested_times|feature_minor_loss|minor_residual_dp_pa|minor_k_reference|darcy_f" tools/analyze/build_ethan_case_analysis_package.py tools/extract/sample_feature_minor_loss_budget.py tools/extract/sample_leg_centerline_major_loss.py`
+  - `python3.11 -c "<summarize warning fractions and residual sign ranges from the package CSVs>"`
+- results or observations:
+  - The integrated package now correctly aligns major-loss and feature-budget extraction on the same frozen retained window `7284-7288 s`.
+  - The top-level package summary still drops the feature requested-time metadata because the builder reads `selected_times` from the feature extraction summary, while the raw extractor actually emits `requested_times` and `available_times`.
+  - Two feature objects report negative `mean_minor_residual_dp_pa` and negative `mean_minor_k_reference`, which means the inferred adjacent-major-wall reference exceeds the total feature pressure change over the frozen window. That is not necessarily impossible, but it is not described as a sign-sensitive interpretation caveat in the package README.
+  - The major-loss package contains large warning fractions and extreme `darcy_f` outliers in some spans. The summary mean is therefore vulnerable to a few bins with inflated values, especially in `lower_leg` and `right_leg`.
+  - The heat summary is internally consistent with the June 9 heat-flow audit semantics and explicitly carries forward the stale-validation caveat tied to the June 4 validation package.
+- incomplete lines of investigation:
+  - Sidecar reviewer outputs for the three parallel streams are still pending at the time this raw note is opened.
+  - I have not yet decided whether the negative feature residuals indicate a legitimate local pressure recovery, a weak adjacent-span proxy, or a sign/definition problem that needs a stricter budget contract.
+  - I have not yet checked whether the extreme major-loss `darcy_f` bins should be filtered, re-binned, or only surfaced with stronger warning language.
+- next steps:
+  - Wait on the major-loss, feature-budget, and heat-accounting sidecar reviewers.
+  - Consolidate their findings into a brief verdict with file references.
+  - Hand back the top review findings before any next-case generalization or interpretation tightening.
+
+## 2026-06-10 Review Consolidation
+
+- reviewer verdict: the June 10 Salt 2 case-analysis package is useful as a framework/provenance milestone, but it is not review-clean as a scientific package because it still mixes real extraction results with dropped warnings, stale summary metadata, and two major-loss spans that look geometrically misregistered.
+- highest-severity findings:
+  - `summary.json` drops feature requested-time provenance because `tools/analyze/build_ethan_case_analysis_package.py` reads `selected_times` instead of the extractor's `requested_times` key for the feature summary block.
+  - Feature warnings are lost during integration because the packaged builder expects `warning_flag == "yes"` while the raw feature extractor emits numeric `0/1` flags for warning-bearing rows.
+  - The heat package republishes `exp_q_external_loss_abs_error_pct` from the June 4 validation row as if it were a live-tail quantity at `7293 s`, instead of recomputing the current-tail ambient-loss error against the old reference.
+  - `lower_leg` and `right_leg` major-loss results are not physically trustworthy in their current form because large stretches of those spans have empty or sparse bins and the circular-perimeter geometry estimate blows up to unrealistic `D_h`, `A`, and `f` values near the retained endpoints.
+- medium-severity findings:
+  - Packaged feature notes still say `wall_dp_pa`, `minor_residual_dp_pa`, and `minor_k_reference` remain `NaN` even though the integrator fills those columns.
+  - Negative `minor_residual_dp_pa` and negative `K` values for `corner_lower_left` and `corner_upper_left` are currently better interpreted as adjacent-span over-correction or definition weakness than as credible negative bend losses.
+  - `max_yplus` in the major-loss summary is currently a mean of per-bin maxima rather than a true maximum.
+  - The June 10 heat package keeps the right thermal section accounting semantics, but it does not carry forward some of the June 9 audit's machine-readable interpretation fields such as explicit ambient-error recomputation and steady-window status.
+- evidence-backed assessment:
+  - The shared manifest and frozen snapshot contract worked: both hydraulic streams retained `7284-7288 s`, and the package no longer has the earlier moving-target time mismatch.
+  - The heat-accounting structure remains coherent and stable over the late 50-sample window, so the standing hypothesis that Salt 2 is under-losing heat outside the modeled cooling path still makes sense.
+  - The safe interpretation boundary today is therefore: trust the framework/provenance improvement, trust the broad thermal direction, but do not over-interpret feature warning-free summaries or the `lower_leg` / `right_leg` friction numbers until the flagged issues are corrected.
+- sidecar reviewer outputs referenced:
+  - major-loss sidecar: `019eb227-f56e-78d3-874e-0f0f8e0b59bf`
+  - feature-budget sidecar: `019eb228-2b7a-75d2-a732-7d20565897de`
+  - heat-accounting sidecar: `019eb229-fe23-7ed0-af73-9f51e5e8b2f9`

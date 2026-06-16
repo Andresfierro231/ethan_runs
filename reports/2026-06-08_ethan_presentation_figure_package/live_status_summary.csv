@@ -1,0 +1,4 @@
+job_id,label,state,elapsed,latest_observed_sim_time_s,observed_on,note
+3202708,Salt 2 continuation,TIMEOUT,5-00:00:22,5939.017142857,2026-06-08,"Timed out while still progressing; final observed solver tail remained numerically calm."
+3210231,Salt 4 Jin continuation retry,TIMEOUT,3-00:00:12,3942.950738916,2026-06-08,"Timed out while still progressing; final observed solver tail remained numerically calm."
+3211199,Salt 1 Kirst retry,FAILED,00:00:33,,2026-06-08,"Restart-tree staging defect; treat separately from the repaired runtime/bootstrap path."

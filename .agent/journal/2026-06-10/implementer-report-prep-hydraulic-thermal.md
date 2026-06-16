@@ -1,0 +1,40 @@
+# Implementer Raw Journal
+
+- date: `2026-06-10`
+- agent role: `Implementer`
+- task ID: `AGENT-021`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `.agent/JOURNAL_POLICY.md`
+  - `tools/AGENTS.override.md`
+  - `reports/AGENTS.override.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-10_AGENT-021.md`
+  - `.agent/journal/2026-06-10/implementer-report-prep-hydraulic-thermal.md`
+  - `tools/extract/sample_leg_centerline_major_loss.py`
+  - `tools/analyze/build_ethan_case_analysis_package.py`
+  - `tools/case_analysis_profiles.py`
+  - `reports/2026-06-10_ethan_salt2_case_analysis_package/**`
+- commands run:
+  - `sed -n '1,220p' journals/2026-06/2026-06-10_ethan_runs.md`
+  - `sed -n '1,260p' tools/extract/sample_leg_centerline_major_loss.py`
+  - `sed -n '260,900p' tools/analyze/build_ethan_case_analysis_package.py`
+  - `python3.11 -m py_compile tools/extract/sample_leg_centerline_major_loss.py tools/analyze/build_ethan_case_analysis_package.py tools/case_analysis_profiles.py`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar`
+  - `python tools/analyze/build_ethan_case_analysis_package.py --source-id val_salt_test_2_coarse_mesh_laminar --raw-extraction-dir reports/2026-06-10_ethan_salt2_case_analysis_package/raw_extraction`
+- results or observations:
+  - Extended the major-loss extractor so the same repaired wall faces now carry `p` and `p_rgh` alongside `wallShearStress` and `yPlus`.
+  - Extended the case-analysis builder so the package now writes direct wall-`p_rgh` pressure-gradient and pressure-drop-based friction comparisons on the same retained bins as the shear-based reduction.
+  - Added loopwise comparison plots on a physical loop order with span landmarks.
+  - Found and fixed one packaging bug where both loopwise figures were written but only one survived in `summary.json`.
+  - Found and corrected one methodological bug where direct pressure gradients were initially reported in local span-coordinate sign rather than flow-aligned sign; the reducer now infers a per-span `flow_alignment_sign` from the retained `p_rgh` drop across each span.
+- incomplete lines of investigation:
+  - `left_upper_leg` and `upper_leg` still diverge materially between the shear-based and direct-pressure-based reductions.
+  - The direct comparison is wall-registered and finite-difference-based; it is not yet a centerline-volume pressure reduction.
+- next steps:
+  - Hand the new hydraulic comparison outputs to review before treating the full loopwise comparison as settled report evidence.

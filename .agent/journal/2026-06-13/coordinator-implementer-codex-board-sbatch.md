@@ -1,0 +1,65 @@
+# Coordinator / Implementer Raw Journal
+
+- date: `2026-06-13`
+- agent role: `Coordinator / Implementer`
+- task ID: `AGENT-068`
+- branch/worktree: `no-HEAD`
+- intent:
+  - create a bounded Codex sbatch harness for the Ethan queue
+  - restrict the unattended slice to the currently half-finished rows plus one additional queued analysis row
+  - emit durable prompt and scheduler artifacts under `tmp/slurm_codex_board_jobs/`
+- files inspected:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-11_AGENT-050.md`
+  - `.agent/journal/2026-06-11/coordinator-implementer-sbatch-parallelization.md`
+  - `tools/analyze/submit_ethan_case_analysis_package_sbatch.sh`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-13_AGENT-068.md`
+  - `.agent/journal/2026-06-13/coordinator-implementer-codex-board-sbatch.md`
+  - `tools/analyze/submit_codex_board_queue_sbatch.sh`
+- commands run:
+  - `hostname`
+  - `which codex`
+  - `which sbatch`
+  - `/home1/09748/andresfierro231/.local/bin/codex --help`
+  - `/home1/09748/andresfierro231/.local/bin/codex exec --help`
+  - `/home1/09748/andresfierro231/.local/bin/codex --version`
+  - `TMPDIR=/tmp /home1/09748/andresfierro231/.local/bin/codex exec --skip-git-repo-check --sandbox read-only --output-last-message /tmp/codex_exec_smoke_last.txt --json "Reply with exactly OK."`
+  - `bash -n tools/analyze/submit_codex_board_queue_sbatch.sh`
+  - `bash tools/analyze/submit_codex_board_queue_sbatch.sh --dry-run`
+  - `bash tools/analyze/submit_codex_board_queue_sbatch.sh`
+  - `squeue -j 3229309`
+  - `sacct -j 3229309`
+- results or observations:
+  - The current shell is on login node `login3.ls6.tacc.utexas.edu`, which is the correct submission surface for `sbatch`.
+  - Both `/home1/09748/andresfierro231/.local/bin/codex` and `/usr/bin/sbatch` are visible on the login node.
+  - The installed Codex CLI is `codex-cli 0.139.0`.
+  - `codex exec` works non-interactively in this environment; a read-only smoke test returned `OK` and wrote a JSON event stream.
+  - Implemented `tools/analyze/submit_codex_board_queue_sbatch.sh` as a bounded wrapper that pre-validates the live board state, snapshots the board, emits a prompt and sbatch script under `tmp/slurm_codex_board_jobs/`, and submits one Codex batch task.
+  - The bounded prompt is intentionally limited to: Salt 4 Jin reviewer closure, plotting row 5, analysis row 2, and one additional analysis row (row 3), then exit.
+  - Dry-run validation succeeded and produced a passing board assertion for the intended slice.
+  - Live submission succeeded with Slurm job `3229309`. Generated artifacts live under `tmp/slurm_codex_board_jobs/20260613T171842_codex_ethan_queue_resume/`.
+  - Immediate scheduler follow-up shows `3229309` is still `PENDING (Resources)`, so no Codex work has started yet.
+- next step:
+  - monitor `3229309` until it transitions to `RUNNING`, then inspect `slurm-<jobid>.out`, `slurm-<jobid>.err`, `codex-events.jsonl`, and `codex-last-message.txt` for actual progress
+
+## 2026-06-15 follow-up
+
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-13_AGENT-068.md`
+  - `.agent/journal/2026-06-13/coordinator-implementer-codex-board-sbatch.md`
+  - `README.md`
+  - `tools/analyze/submit_codex_board_queue_sbatch.sh`
+- commands run:
+  - `sacct -j 3229309`
+  - `sed -n '1,220p' tmp/slurm_codex_board_jobs/20260613T171842_codex_ethan_queue_resume/codex-last-message.txt`
+  - `tail -40 tmp/slurm_codex_board_jobs/20260613T171842_codex_ethan_queue_resume/slurm-3229309.out`
+  - `sed -n '1,260p' README.md`
+  - `sed -n '1,260p' tools/analyze/submit_codex_board_queue_sbatch.sh`
+- results or observations:
+  - `sacct` now shows job `3229309` as `COMPLETED` with exit code `0:0`.
+  - The emitted Codex logs confirm the bounded queue-resume slice finished and stopped at the intended boundary after closing AGENT-067, releasing plotting row 5, and completing analysis rows 2-3.
+  - The stale pending-state note in `.agent/status/2026-06-13_AGENT-068.md` is now closed.
+  - Added a root-README section and a script-help example so the submission path is documented in two places: a repo entrypoint view and the wrapper's own CLI help.

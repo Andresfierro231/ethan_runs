@@ -1,0 +1,9 @@
+comparison_scope,case,scenario_or_source,property_branch,mdot_kg_s,measured_mdot_kg_s,mdot_error_kg_s,qhx_or_cooler_W,qambient_W,status_or_note
+current_1d_predictive,Salt 1,predictive_airside_ins_1.0in_rad_1,salt_current,0.014407,0.0158,-0.001393,30.6186,238.6783,Accepted predictive root
+current_1d_predictive,Salt 1,predictive_airside_ins_1.0in_rad_1,salt_promoted,0.018560,0.0158,0.002760,37.3862,230.9669,Rejected periodicity root
+current_1d_predictive,Salt 2,predictive_airside_ins_1.0in_rad_1,salt_current,0.017199,0.0168,0.000399,33.3183,269.3766,Accepted predictive root
+current_1d_predictive,Salt 2,predictive_airside_ins_1.0in_rad_1,salt_promoted,0.018958,0.0168,0.002158,37.3750,236.4120,Rejected periodicity root
+current_1d_measured_loss,Salt 1,imposed_hx_duty,validation_imposed_ethan_v2,0.010034,0.0158,-0.005766,55.58,230.9669,Uses measured-state ambient loss prescription
+current_1d_measured_loss,Salt 2,imposed_hx_duty,validation_imposed_ethan_v2,0.010688,0.0168,-0.006112,56.34,236.4120,Uses measured-state ambient loss prescription
+shared_3d_cfd_candidate,salt_test_1_kirst,viscosity_screening_salt_test_1_kirst_coarse_mesh,hitec_salt_kirst,0.010932,,,55.58,9.48783,Completed and converged CFD row
+shared_3d_cfd_candidate,salt_test_2_kirst,viscosity_screening_salt_test_2_kirst_coarse_mesh,hitec_salt_kirst,0.012244,,,56.34,0.773351,Completed and converged CFD row

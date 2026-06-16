@@ -1,0 +1,7 @@
+{
+  "generated_at": "2026-06-04",
+  "source_case": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "staged_target_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt4/2026-06-04_jin_continuation_candidate",
+  "purpose": "Writable continuation staging for Salt 4 Jin background extension.",
+  "submission_script": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/run_continuation_openfoam13.sbatch"
+}

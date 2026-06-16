@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-06-08T13:44:25-05:00",
+  "output_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-08_ethan_presentation_figure_package",
+  "base_case_ids": [
+    "salt_test_2",
+    "salt_test_3",
+    "salt_test_4"
+  ],
+  "figure_families": [
+    "branch_pressure",
+    "jin_kirst_delta",
+    "heat_balance",
+    "steadiness",
+    "slice_panel"
+  ],
+  "slice_source_ids": [
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "representative_sources": {
+    "salt_test_2": "val_salt_test_2_coarse_mesh_laminar",
+    "salt_test_3": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "salt_test_4": "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  },
+  "figure_stems": [
+    "representative_branch_pressure_drop",
+    "jin_vs_kirst_delta_dashboard",
+    "representative_heat_balance_partition",
+    "late_window_steadiness_dashboard",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh_temperature_slice",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh_velocity_slice",
+    "val_salt_test_2_coarse_mesh_laminar_temperature_slice",
+    "val_salt_test_2_coarse_mesh_laminar_velocity_slice",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh_temperature_slice",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh_velocity_slice",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh_temperature_slice",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh_velocity_slice"
+  ]
+}

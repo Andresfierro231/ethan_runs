@@ -1,0 +1,49 @@
+# Tester Raw Journal
+
+- date: `2026-06-09`
+- agent role: `Tester`
+- task ID: `AGENT-006`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `jadyn_runs/AGENTS.override.md`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/README.md`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/TODO.md`
+  - `reports/2026-06-05_ethan_continuation_diagnosis/README.md`
+  - `operational_notes/2026-06-08_todo.md`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/controlDict`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/functions`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_continuation`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/postProcessing/yPlus/3930/yPlus.dat`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/postProcessing/total_Q.dat`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/postProcessing/piv_slab_velocity/3929/volFieldValue.dat`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh/owner`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh/points`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh/faces`
+  - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh/boundary`
+  - `jadyn_runs/salt2/2026-06-02_runtime_recovery/scripts/of13-env.sh`
+- files changed:
+  - `operational_notes/2026-06-09_salt4_mesh_runtime_diagnostics.md`
+  - `.agent/status/2026-06-09_AGENT-006.md`
+  - `.agent/journal/2026-06-09/tester-salt4-mesh-runtime-diagnostics.md`
+- commands run:
+  - `sacct -j 3210231,3211200 --format=JobID,JobName%40,State,ExitCode,Elapsed,Start,End%25`
+  - `tail -40 .../logs/log.foamRun_continuation`
+  - `head -40 .../postProcessing/yPlus/3930/yPlus.dat`
+  - `head -20 .../constant/polyMesh/owner`
+  - `head -20 .../constant/polyMesh/points`
+  - `head -20 .../constant/polyMesh/faces`
+  - `head -40 .../constant/polyMesh/boundary`
+  - `sed -n 240,560p .../system/functions`
+  - `tail -20 .../postProcessing/total_Q.dat`
+  - `tail -20 .../postProcessing/piv_slab_velocity/3929/volFieldValue.dat`
+- results or observations:
+  - `3211200` is the current live Salt 4 continuation, and it is still advancing stably past `4601.975369458 s`.
+  - No stored `checkMesh` audit was found in the staged Salt 4 workspace.
+  - Existing yPlus evidence points first toward junction / NCC refinement, not broad straight-leg refinement.
+  - A compute-side `checkMesh -allGeometry -allTopology` pass is still required before recommending global mesh refinement.
+- incomplete lines of investigation:
+  - Latest-time `yPlus` and `wallShearStress` were not regenerated in this task because heavy OpenFOAM postprocessing was intentionally not launched from the login node.
+  - The stale June 8 Salt 4 wording in presentation/sponsor packages was identified but not refreshed here because that is a writer-style package update outside this tester scope.
+- next steps:
+  - Run the recorded compute-side diagnostic commands for `checkMesh`, latest-time `yPlus`, and latest-time `wallShearStress`.
+  - If outward-facing Salt 4 status text is needed, assign a writer refresh to replace stale `3210231` live wording with current `3211200` state.
