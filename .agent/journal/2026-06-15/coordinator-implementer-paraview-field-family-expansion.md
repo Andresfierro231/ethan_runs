@@ -284,15 +284,40 @@
   - Live jobs after those fixes:
     - `3236147`: Salt 2 smoke, frames-only representative movie refresh
     - `3236160`: full 8-case frames-only representative movie refresh
+  - Salt 2 smoke job `3236147` completed successfully and rewrote the Salt 2
+    movie statuses:
+    - `temperature`: `frame_count: 7`, `movie_format: frames_only`,
+      `frame_times: [0.0, 1720.0, 1722.0, 1723.0, 1724.0, 5178.0, 8598.0]`
+    - `velocity_y`: `frame_count: 16`, `movie_format: frames_only`,
+      `frame_times: [0.0, 1720.0, 1721.0, 1722.0, 1723.0, 1724.0, 5178.0, 5179.0, 5180.0, 5181.0, 5182.0, 8598.0, 8599.0, 8600.0, 8601.0, 8602.0]`
+  - The first full refresh submission `3236160` still failed after the wrapper
+    fixes because of a real code bug: timestep tokens were rendered with
+    default `:g` precision, so `3617.6625` was truncated to `3617.66`. That
+    caused Salt 1 Jin staging to mark the refresh failed even though
+    reconstruction had actually succeeded.
+  - Fixed both `stage_latest_time_field_reconstruction.py` and
+    `render_representative_field_movies.py` to use higher-precision timestep
+    tokens via `format(time_value, ".15g")`.
+  - Resubmitted the corrected full 8-case frames-only representative refresh
+    as Slurm job `3237163`.
+- closeout checklist:
+  - wait for `3237163` to finish
+  - confirm `staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json`
+    reports `failed_count: 0`
+  - confirm
+    `tmp/2026-06-16_paraview_movie_all_times_refresh/movie_all_times_refresh_status.json`
+    reports `failed_count: 0`
+  - spot-check per-case movie statuses under
+    `figures/figures_rendered/paraview_movies/<source_id>/<field>/status.json`
+    for explicit `frame_times`
+  - once those pass, update `.agent/status/2026-06-15_AGENT-075.md` and the
+    board/handoff as complete
 - contradictions or unresolved issues:
-  - At the end of this turn, the Salt 2 smoke render and the full 8-case
-    frames-only refresh were still running on the cluster, so the updated
-    representative movie `status.json` payloads had not yet been rewritten.
-  - The staging-side refresh for Salt 2 is already confirmed from
-    `staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json`,
-    but the render-side frame counts still need confirmation from the live job
-    outputs.
+  - At the end of this turn, corrected full-refresh job `3237163` was still
+    running on the cluster, so the final all-8-case aggregate movie refresh
+    status file still needed confirmation.
 - next steps:
-  - Let jobs `3236147` and `3236160` finish.
+  - Let job `3237163` finish.
   - Confirm refreshed representative movie status JSON payloads now contain
-    explicit `frame_times` and the expected higher frame counts.
+    explicit `frame_times` and the expected higher frame counts for all 8
+    representative cases.

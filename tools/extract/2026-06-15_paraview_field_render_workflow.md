@@ -390,6 +390,75 @@ Tracked launch artifacts for the June 16 refresh:
   and
   `tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_refresh.sbatch`
 
+### Recreate later
+
+To recreate the June 16 representative movie refresh later:
+
+1. Reconstruct the representative staged mirrors with all retained times:
+
+```bash
+source jadyn_runs/salt2/2026-06-02_runtime_recovery/scripts/of13-env.sh
+export LD_LIBRARY_PATH="/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data:${LD_LIBRARY_PATH:-}"
+unset FOAM_SIGFPE
+
+python3.11 tools/extract/stage_latest_time_field_reconstruction.py \
+  --all-times \
+  --source-id viscosity_screening_salt_test_1_jin_coarse_mesh \
+  --source-id val_salt_test_2_coarse_mesh_laminar \
+  --source-id viscosity_screening_salt_test_3_jin_coarse_mesh \
+  --source-id viscosity_screening_salt_test_4_jin_coarse_mesh \
+  --source-id val_water_test_1_coarse_mesh_laminar \
+  --source-id val_water_test_2_coarse_mesh_laminar \
+  --source-id val_water_test_3_coarse_mesh_laminar \
+  --source-id val_water_test_4_coarse_mesh_laminar \
+  --field T \
+  --field U \
+  --status-path staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json
+```
+
+2. Reset modules for ParaView rendering:
+
+```bash
+module purge
+module load gcc/11.2.0 impi/19.0.9 paraview_osmesa/5.13.3
+unset TACC_PARAVIEW_BIN
+```
+
+3. Render high-resolution PNG frames:
+
+```bash
+"$TACC_PARAVIEW_OSMESA_BIN/pvbatch" \
+  tools/extract/render_representative_field_movies.py \
+  --source-id viscosity_screening_salt_test_1_jin_coarse_mesh \
+  --source-id val_salt_test_2_coarse_mesh_laminar \
+  --source-id viscosity_screening_salt_test_3_jin_coarse_mesh \
+  --source-id viscosity_screening_salt_test_4_jin_coarse_mesh \
+  --source-id val_water_test_1_coarse_mesh_laminar \
+  --source-id val_water_test_2_coarse_mesh_laminar \
+  --source-id val_water_test_3_coarse_mesh_laminar \
+  --source-id val_water_test_4_coarse_mesh_laminar \
+  --field temperature \
+  --field velocity_y \
+  --frames-only \
+  --image-width 3840 \
+  --image-height 2160 \
+  --output-root figures/figures_rendered/paraview_movies \
+  --status-path tmp/2026-06-16_paraview_movie_all_times_refresh/movie_all_times_refresh_status.json
+```
+
+4. Validate from artifacts, not just exit code:
+   - `staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json`
+   - `tmp/2026-06-16_paraview_movie_all_times_refresh/movie_all_times_refresh_status.json`
+   - `figures/figures_rendered/paraview_movies/<source_id>/<field>/status.json`
+   - `figures/figures_rendered/paraview_movies/<source_id>/<field>/frames/*.png`
+
+Known pitfalls to preserve in any future wrapper:
+
+- Do not source the OpenFOAM 13 bootstrap under `set -euo pipefail`.
+- Do not leave the OpenFOAM 13 module stack active when launching ParaView.
+- Preserve full timestep tokens; use high-precision formatting so times like
+  `3617.6625` are not truncated to `3617.66`.
+
 ### Movie-specific caveats
 
 The representative time-series mirrors contained invalid reconstructed

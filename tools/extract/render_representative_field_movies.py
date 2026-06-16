@@ -229,7 +229,7 @@ def mirror_case_root(source_root: Path, source_id: str) -> Path:
 
 
 def time_token(time_value: float) -> str:
-    return f"{time_value:g}"
+    return format(time_value, ".15g")
 
 
 def field_file_paths(case_root: Path, time_value: float, required_arrays: Iterable[str]) -> list[Path]:

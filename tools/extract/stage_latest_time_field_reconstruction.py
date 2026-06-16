@@ -54,6 +54,10 @@ def iso_timestamp() -> str:
     return datetime.now().astimezone().isoformat(timespec="seconds")
 
 
+def time_token(time_value: float) -> str:
+    return format(time_value, ".15g")
+
+
 def ensure_dir(path: Path) -> Path:
     path.mkdir(parents=True, exist_ok=True)
     return path
@@ -194,7 +198,7 @@ def reconstruct_field_times(
     if new_times_only:
         command.append("-newTimes")
     result = subprocess.run(command, cwd=str(ROOT), capture_output=True, text=True)
-    latest_dir = mirror_root / f"{latest_time:g}"
+    latest_dir = mirror_root / time_token(latest_time)
     mirrored_times = sorted(numeric_dir_values(mirror_root))
     reconstructed_paths = {field_name: str(latest_dir / field_name) for field_name in fields}
     status = {

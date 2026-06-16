@@ -37,6 +37,11 @@
       "job_id": "3236160",
       "kind": "full_representative_frames_only_refresh",
       "script": "tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_refresh.sbatch"
+    },
+    {
+      "job_id": "3237163",
+      "kind": "corrected_full_representative_frames_only_refresh",
+      "script": "tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_refresh.sbatch"
     }
   ],
   "source_root_resolution_policy": [
@@ -47,6 +52,7 @@
   "runtime_notes": [
     "The OpenFOAM 13 bootstrap must be sourced outside strict pipefail mode because its bashrc alias setup is not safe under set -euo pipefail.",
     "After reconstruction, the batch wrapper must purge modules and reload gcc/11.2.0 + impi/19.0.9 + paraview_osmesa/5.13.3 before invoking pvbatch.",
-    "Representative movie output is currently being refreshed in frames-only mode at 3840x2160 per frame."
+    "Representative movie output is currently being refreshed in frames-only mode at 3840x2160 per frame.",
+    "A timestep-token precision bug was discovered during the first full refresh: default :g formatting truncated values like 3617.6625 to 3617.66. The scripts now use format(time_value, \".15g\") for durable timestep path resolution."
   ]
 }
