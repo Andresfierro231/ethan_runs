@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-18T16:57:57-05:00",
+  "script": "tools/analyze/build_ethan_salt_feature_path_hydraulic_hardening.py",
+  "output_dir": "reports/2026-06-19_ethan_salt_feature_path_hydraulic_hardening",
+  "input_roots": [
+    "reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+    "reports/2026-06-17_ethan_nondimensional_dashboard_package"
+  ],
+  "summary": {
+    "feature_case_row_count": 45,
+    "fit_ready_row_count": 0,
+    "proxy_positive_sensitivity_only_count": 21
+  }
+}

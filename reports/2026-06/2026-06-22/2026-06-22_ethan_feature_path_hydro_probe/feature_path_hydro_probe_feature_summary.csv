@@ -1,0 +1,6 @@
+feature_name,feature_class,case_count,probe_ready_case_count,partial_probe_case_count,blocked_case_count,mean_probe_ready_fraction,mean_window_hydro_correction_abs_pa,mean_endpoint_hydro_proxy_abs_pa
+corner_lower_left,bend,9,9,0,0,1.0,370.0813561539271,337.97894908200556
+corner_lower_right,bend,9,9,0,0,1.0,352.966479596845,340.34273940761125
+corner_upper_left,bend,9,9,0,0,1.0,567.9353047128748,325.6824077791113
+corner_upper_right,bend,9,9,0,0,1.0,225.28901411337702,341.54496379843624
+test_section_complex,quartz_transition,9,9,0,0,1.0,4839.0341209623475,4773.368339855378

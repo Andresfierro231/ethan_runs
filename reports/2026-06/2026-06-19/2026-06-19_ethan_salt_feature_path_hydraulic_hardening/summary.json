@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-19T15:06:52-05:00",
+  "source_case_count": 9,
+  "feature_case_row_count": 45,
+  "feature_time_row_count": 185,
+  "fit_ready_row_count": 0,
+  "pressure_method_statuses": {
+    "full_path_missing_proxy_only_available": 45
+  },
+  "fit_status_counts": {
+    "excluded": 24,
+    "sensitivity_only": 21
+  }
+}

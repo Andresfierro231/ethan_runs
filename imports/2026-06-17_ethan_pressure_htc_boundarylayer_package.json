@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-17T18:12:00-05:00",
+  "task_id": "AGENT-079",
+  "builder_script": "tools/analyze/build_ethan_pressure_htc_boundarylayer_package.py",
+  "builder_command": "python tools/analyze/build_ethan_pressure_htc_boundarylayer_package.py --output-dir reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+  "package_index_csv": "reports/2026-06-15_ethan_all_runs_field_transport_campaign/field_transport_package_index.csv",
+  "metadata_index_csv": "reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv",
+  "output_dir": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+  "smoke_output_dir": "tmp/2026-06-17_ethan_pressure_htc_boundarylayer_package_smoke",
+  "case_count": 13,
+  "families": {
+    "salt": 9,
+    "water": 4
+  },
+  "artifacts": [
+    "pressure_closure_by_section.csv",
+    "pressure_closure_by_case.csv",
+    "feature_keff_by_case.csv",
+    "salt_side_htc_nu_fields.csv",
+    "water_effective_htc_nu_fields.csv",
+    "water_bulk_temperature_reweight_comparison.csv",
+    "water_bulk_temperature_reweight_summary.csv",
+    "fluid_side_htc_nu_section_summary.csv",
+    "enthalpy_balance_by_leg.csv",
+    "enthalpy_balance_by_case.csv",
+    "bulk_vs_centerline_temperature_correction.csv",
+    "boundary_layer_detail.csv",
+    "boundary_layer_summary_by_section.csv",
+    "representative_boundary_layer_profiles.csv",
+    "representative_maps_index.csv",
+    "README.md",
+    "MATH_COMPANION.md",
+    "summary.json"
+  ],
+  "limitations": [
+    "Feature K_eff reuses the stored p_rgh residual closure because the raw package does not preserve a dedicated feature-path density integral.",
+    "Water-family exact bulk-temperature rebuilds depend on the preserved June 15 cut-plane surface samples and inherit their connected-region support logic and retained-time coverage.",
+    "Boundary-layer reporting remains a landmark-first method; representative maps are sparse landmark profile reconstructions rather than full circumferential field maps."
+  ]
+}

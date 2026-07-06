@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-30",
+  "task": "AGENT-156",
+  "owner": "claude",
+  "status": "complete — paper-oriented results package",
+  "purpose": "Report friction, pressure, HTC, and effective-heat-resistance closures derived from mainline continuation CFD (Salt 2/3/4 Jin) after OF13 thermal blocker (B1) resolved.",
+  "scope": "Salt 2/3/4 Jin mainline continuation (t=7915 s). Salt 1 excluded (short window). Coarse mesh; no GCI bound.",
+  "inputs": {
+    "of13_env": "tools/ofenv/of13_env.sh",
+    "reconstructed_cases": "tmp/2026-06-30_claude_action_items/recon_salt{2,3,4}_of13"
+  },
+  "outputs": {
+    "report_readme": "reports/2026-06/2026-06-30/2026-06-30_claude_closure_results/README.md",
+    "section_mean_pressure": "work_products/2026-06-30_claude_continuation_section_mean",
+    "segment_friction": "work_products/2026-06-30_claude_segment_friction",
+    "thermal_htc": "work_products/2026-06-30_claude_thermal_htc",
+    "upcomer_convection": "work_products/2026-06-30_claude_upcomer_convection_cell"
+  },
+  "key_results": {
+    "re_range": "Re ~59/81/111 (Salt 2/3/4)",
+    "lower_leg_htc": "252/269/288 W/m2K",
+    "lower_leg_nu": null,
+    "upcomer_nu": "3.11/4.06/4.99",
+    "upcomer_backflow_fraction": "0.15-0.33 (exclusive to left leg)",
+    "upcomer_ri_range": "64-300 (buoyancy-dominated)"
+  },
+  "limitations": [
+    "Coarse mesh only (no GCI bound, T6 blocked).",
+    "Upper_leg friction unusable (buoyancy residual).",
+    "2-7 wall faces per case had NaN T (sanitized to field mean).",
+    "Salt 1 excluded (heat closes only -2.08%; short window).",
+    "Nu(Re,Pr) not identifiable (Pr collinear with Re in this laminar salt set).",
+    "Probe-CSV geometry subsequently found to be schematic (swapped lower/right); superseded by mesh-PCA centerlines from AGENT-162."
+  ]
+}

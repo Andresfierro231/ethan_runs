@@ -75,3 +75,74 @@ from LS6 each time.
 - Preserved the main unresolved blocker explicitly: the cached Box OAuth state
   is stale, so a live upload requires a fresh Box login or equivalent token
   refresh before `--execute` can succeed.
+
+## 2026-06-17 rclone recovery
+
+- The user established a working `rclone` install at `~/bin/rclone` and a
+  working `box:` remote in `~/.config/rclone/rclone.conf`.
+- Live login-side checks succeeded:
+  - `rclone lsd box:`
+  - `rclone lsd "box:Andres_Obsidian_Notes_Box"`
+  - `rclone lsd "box:Andres_Obsidian_Notes_Box/tamu_flow_loop"`
+- Those checks exposed the real rclone-visible collaborator-output path:
+  - `box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data`
+  rather than the earlier inferred `analyzing_operational_data` leaf name from
+  the API-facing Box notes.
+- Reworked the full upload wrapper to use `rclone copy` directly instead of the
+  Python Box SDK helper.
+- Added a one-file compute-node probe script:
+  `tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_box_probe.sbatch`
+- The current shell is already inside interactive Slurm job `3233156` on
+  `c318-008`, so `sbatch` is disabled from this session. To validate
+  compute-node reachability, ran the probe directly on the current allocation.
+- Probe result: success. The file `probe.txt` landed at:
+  `box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data/ethans runs probe 2026-06-17`
+- After the probe cleared, launched the full transfer live from the same
+  compute allocation with:
+  `bash staging/upload_jobs/2026-06-16_ethan_runs_box_upload.sbatch`
+- Early live-transfer observations:
+  - traversal reached the expected `~105 GiB` mirror scope immediately
+  - files began copying into `ethans runs` right away
+  - one warning appeared for an OpenFOAM symlink under
+    `dynamicCode/totalQ/lnInclude/...`: `Can't follow symlink without -L/--copy-links`
+  - that warning is acceptable for now because Box cannot preserve Unix
+    symlinks directly and the skipped path is a generated helper include, not a
+    primary ParaView target
+- Active runtime log:
+  `tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log`
+
+## 2026-06-17 symlink follow-up and operator docs
+
+- Extended `operational_notes/2026-06-16_ethan_box_upload_plan.md` into a
+  reproducible `rclone` runbook covering install, Box auth, reconnect,
+  verification, probe upload, primary mirror launch, monitoring, and the
+  bounded symlink follow-up workflow.
+- Confirmed the main mirror skipped heterogeneous symlinks, but separated them
+  into two operational classes:
+  - broad convenience trees under `staging/render_inputs/**`
+  - OpenFOAM-generated helper files under `dynamicCode/*/lnInclude/*`
+- Chose not to rerun the whole workspace with `--copy-links`, because that
+  would dereference unrelated render-input trees and inflate the payload.
+- Generated a bounded manifest of the skipped OpenFOAM helper links:
+  - `tmp/2026-06-16_ethan_box_upload_probe/openfoam_dynamiccode_symlink_manifest.txt`
+  - `tmp/2026-06-16_ethan_box_upload_probe/openfoam_dynamiccode_symlink_targets.txt`
+- Counted `119` manifest entries, all rooted under `staging/**/dynamicCode` or
+  `jadyn_runs/**/dynamicCode`.
+- Added a dedicated follow-up wrapper:
+  `tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_openfoam_symlink_followup.sbatch`
+- The wrapper uses:
+  - `rclone copy --copy-links --files-from <manifest>` to upload only the
+    listed symlink targets
+  - sibling destination
+    `box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data/ethans runs openfoam symlink targets`
+  - `rclone copyto` to place the manifest and target map alongside the payload
+- Verified the wrapper syntax locally with:
+  `bash -n tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_openfoam_symlink_followup.sbatch`
+- Submitted the follow-up as a real queued batch job from the login node, since
+  `sbatch` is disabled from the current compute shell:
+  - submission command:
+    `ssh login1 'cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch --parsable tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_openfoam_symlink_followup.sbatch'`
+  - returned job id: `3241193`
+- Immediate queue-state check:
+  - `ssh login1 'squeue -j 3241193'`
+  - state: running on `c318-009` in `NuclearEnergy-dev`

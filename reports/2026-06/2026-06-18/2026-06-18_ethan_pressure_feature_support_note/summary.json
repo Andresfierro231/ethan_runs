@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-18T16:14:18-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_pressure_feature_support_note.py",
+  "pressure_package_dir": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+  "closure_dir": "reports/2026-06-18_ethan_transport_interpretation_closure",
+  "feature_keff_status": "not_ready",
+  "water_test_section_status": "supporting_only",
+  "hydro_corrected_pressure_status": "diagnostic_only",
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "feature_keff_family_summary.csv",
+    "water_test_section_support_metrics.csv",
+    "pressure_support_readiness.csv",
+    "feature_support_conclusions.csv",
+    "water_test_section_support_note.md",
+    "pressure_support_readiness.md"
+  ]
+}

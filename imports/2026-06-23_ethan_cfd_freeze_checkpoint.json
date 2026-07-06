@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-06-23T10:34:58-05:00",
+  "task_id": "AGENT-108",
+  "output_dir": "reports/2026-06-23_ethan_cfd_freeze_checkpoint",
+  "temporary_checkpoint_root": "tmp/2026-06-23_salt_last20_checkpoint",
+  "summary": {
+    "salt_continuation_cases_with_20_saved_times": 3,
+    "salt_high_q_cases_with_20_saved_times": 3,
+    "salt_low_q_cases_with_20_saved_times": 3,
+    "water_cases_with_20_saved_times": 4,
+    "salt1_saved_times": 18,
+    "water_4x64_operational_assessment": "acceptable_not_converged"
+  },
+  "canceled_jobs": [
+    {
+      "job_id": 3250777,
+      "job_name": "ethan_salt_contpack",
+      "reason": "mistaken checkpoint cancellation"
+    },
+    {
+      "job_id": 3251884,
+      "job_name": "ethan_salt_loqbal3",
+      "reason": "mistaken checkpoint cancellation"
+    },
+    {
+      "job_id": 3253879,
+      "job_name": "ethan_water_cont_nq",
+      "reason": "mistaken checkpoint cancellation before start"
+    },
+    {
+      "job_id": 3253880,
+      "job_name": "ethan_salt_hiqb3_nq",
+      "reason": "mistaken checkpoint cancellation before start"
+    }
+  ],
+  "recovered_jobs": [
+    {
+      "job_id": 3254178,
+      "job_name": "ethan_salt_contpack",
+      "partition": "NuclearEnergy"
+    },
+    {
+      "job_id": 3254179,
+      "job_name": "ethan_salt_loqbal3",
+      "partition": "NuclearEnergy"
+    },
+    {
+      "job_id": 3254180,
+      "job_name": "ethan_water_cont_nq",
+      "partition": "normal"
+    },
+    {
+      "job_id": 3254181,
+      "job_name": "ethan_salt_hiqb3_nq",
+      "partition": "normal"
+    }
+  ],
+  "artifacts": [
+    "reports/2026-06-23_ethan_cfd_freeze_checkpoint/freeze_case_windows.csv",
+    "reports/2026-06-23_ethan_cfd_freeze_checkpoint/representative_timesteps.csv",
+    "reports/2026-06-23_ethan_cfd_freeze_checkpoint/water_packing_assessment.csv",
+    "reports/2026-06-23_ethan_cfd_freeze_checkpoint/summary.json"
+  ],
+  "limitations": [
+    "The temporary Salt checkpoint copy was still materializing when this manifest was written.",
+    "The checkpoint package is a bounded late-window snapshot and does not imply that the relaunched CFD lanes have converged.",
+    "Salt 1 remains below the 20-step representative-window target."
+  ]
+}

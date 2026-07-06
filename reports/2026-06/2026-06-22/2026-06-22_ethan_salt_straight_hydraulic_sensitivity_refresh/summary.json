@@ -1,0 +1,23 @@
+{
+  "generated_on": "2026-06-23",
+  "preserved_late_windows_s": {
+    "Salt 2 Jin": [5009.0, 5029.0],
+    "Salt 3 Jin": [4931.0, 4951.0],
+    "Salt 4 Jin": [7797.0, 7817.0]
+  },
+  "case_mean_defended_row_count": 5,
+  "late_window_defended_row_count": 4,
+  "dropped_case_mean_rows": [
+    {
+      "case_label": "Salt 3 Jin",
+      "section_name": "lower_leg",
+      "exclusion_reason_primary": "support_fraction_below_floor"
+    }
+  ],
+  "retained_late_window_defended_rows": [
+    "Salt 2 Jin / test_section_span",
+    "Salt 3 Jin / test_section_span",
+    "Salt 4 Jin / lower_leg",
+    "Salt 4 Jin / test_section_span"
+  ]
+}

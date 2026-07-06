@@ -1,0 +1,161 @@
+{
+  "manifest_id": "2026-06-19_ethan_blocker_report_and_followon_wave",
+  "created_at": "2026-06-19T00:00:00-05:00",
+  "refreshed_at": "2026-06-22T10:00:00-05:00",
+  "workspace_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "purpose": "Document why the June 18 continuation wave was needed, convert the current blockers into a Salt-first 1D-model plan, stage plus submit the bounded visible-control Salt follow-on CFD wave, and repair plus relaunch the failed Salt 4 and packed optimum jobs after the June 19 staging failures were diagnosed.",
+  "inputs": [
+    "reports/2026-06-19_ethan_closure_to_modeling_handoff/README.md",
+    "reports/2026-06-19_ethan_closure_to_modeling_handoff/exact_fit_used_rows.csv",
+    "reports/2026-06-19_ethan_closure_to_modeling_handoff/future_upstream_requirements.md",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/README.md",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/model_dependency_handoff.md",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/salt_friction_fit_results.json",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/salt_nu_fit_results.json",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/hydraulic_fit_ready_rows.csv",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/thermal_fit_ready_rows.csv",
+    "reports/2026-06-18_ethan_salt_thermal_model_surface_ranking/README.md",
+    "reports/2026-06-15_ethan_boundary_modeling_report/README.md",
+    "reports/2026-06-02_ethan_1d_model_discrepancy_report/README.md",
+    "reports/2026-06-17_ethan_nondimensional_dashboard_package/salt_candidate_correlation_inputs.csv",
+    "reports/2026-06-19_ethan_salt_straight_hydraulic_sensitivity/README.md",
+    "reports/2026-06-19_ethan_salt_feature_path_hydraulic_hardening/README.md",
+    "reports/2026-06-19_ethan_insulation_optimizer_package/README.md",
+    "reports/2026-06-19_ethan_insulation_optimizer_package/case_thickness_tables.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/README.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/campaign_manifest.csv",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "jadyn_runs/salt1/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation",
+    "jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation"
+  ],
+  "artifacts": [
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/README.md",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/blocker_queue.csv",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/blocker_resolution_plan.md",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/one_d_model_steps.csv",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/one_d_implementation_spec.md",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/one_d_state_vector.csv",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/one_d_closure_map.csv",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/one_d_calibration_table_spec.csv",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/run_recommendations.csv",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/summary.json",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/README.md",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/TODO.md",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/campaign_manifest.csv",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/failed_stage_preserved/2026-06-22_salt4_bracket_repair",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/scripts/run_continuation_generic_openfoam13.sbatch",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/README.md",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/TODO.md",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/campaign_manifest.csv",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/failed_stage_preserved/2026-06-19_job3246927_selfstage_failed_rg_missing",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/scripts/stage_optimum_insulation_cases.sh",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/scripts/run_packed_optimum_insulation_wave.sbatch",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/scripts/run_packed_optimum_insulation_wave_selfstage.sbatch"
+  ],
+  "submitted_jobs": [
+    {
+      "case_key": "salt2_jin_hiq_hiins",
+      "job_name": "ethan_s2j_hiqins",
+      "job_id": 3246561,
+      "walltime": "120:00:00",
+      "submission_event": "2026-06-19 initial bracket-wave submission"
+    },
+    {
+      "case_key": "salt2_jin_loq_loins",
+      "job_name": "ethan_s2j_loqins",
+      "job_id": 3246564,
+      "walltime": "120:00:00",
+      "submission_event": "2026-06-19 initial bracket-wave submission"
+    },
+    {
+      "case_key": "salt4_jin_hiq_hiins",
+      "job_name": "ethan_s4j_hiqins",
+      "job_id": 3246562,
+      "walltime": "120:00:00",
+      "submission_event": "2026-06-19 initial bracket-wave submission"
+    },
+    {
+      "case_key": "salt4_jin_loq_loins",
+      "job_name": "ethan_s4j_loqins",
+      "job_id": 3246563,
+      "walltime": "120:00:00",
+      "submission_event": "2026-06-19 initial bracket-wave submission"
+    },
+    {
+      "case_key": "salt1_jin_optins,salt2_jin_optins,salt3_jin_optins,salt4_jin_optins",
+      "job_name": "ethan_salt_optpack",
+      "job_id": 3246927,
+      "walltime": "120:00:00",
+      "submission_mode": "compute-node self staging",
+      "submission_event": "2026-06-19 initial optimum-wave submission"
+    }
+  ],
+  "repair_jobs": [
+    {
+      "case_key": "salt4_jin_hiq_hiins",
+      "job_name": "ethan_s4j_hiqins_r2",
+      "job_id": 3250524,
+      "walltime": "120:00:00",
+      "repair_reason": "initial job 3246562 failed because the staged tree lacked system/controlDict"
+    },
+    {
+      "case_key": "salt4_jin_loq_loins",
+      "job_name": "ethan_s4j_loqins_r2",
+      "job_id": 3250525,
+      "walltime": "120:00:00",
+      "repair_reason": "initial job 3246563 failed because the staged tree lacked system/controlDict"
+    },
+    {
+      "case_key": "salt1_jin_optins,salt2_jin_optins,salt3_jin_optins,salt4_jin_optins",
+      "job_name": "ethan_salt_optpack",
+      "job_id": 3250526,
+      "walltime": "120:00:00",
+      "submission_mode": "pre-staged local runs",
+      "repair_reason": "initial job 3246927 failed because the self-staging script depended on rg, which was not available on the compute node"
+    }
+  ],
+  "preserved_failures": [
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/failed_stage_preserved/2026-06-22_salt4_bracket_repair/salt4_jin_hiq_hiins_job3246562_failed_missing_system_controlDict",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/failed_stage_preserved/2026-06-22_salt4_bracket_repair/salt4_jin_loq_loins_job3246563_failed_missing_system_controlDict",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/failed_stage_preserved/2026-06-19_job3246927_selfstage_failed_rg_missing"
+  ],
+  "current_queue_snapshot": {
+    "as_of": "2026-06-22T10:00:00-05:00",
+    "running_jobs": [
+      3244950,
+      3244951,
+      3244954,
+      3244957,
+      3246561,
+      3246564,
+      3250524,
+      3250525
+    ],
+    "pending_jobs": [
+      3250526
+    ],
+    "failed_jobs": [
+      3246562,
+      3246563,
+      3246927
+    ],
+    "timed_out_jobs": [
+      3244952,
+      3244953,
+      3244956
+    ],
+    "completed_jobs": [
+      3244955
+    ]
+  },
+  "submission_host": "login3.ls6.tacc.utexas.edu",
+  "limitations": [
+    "The readable cooler branch remains fixed-Q, so no direct cooler-h mutation was submitted in this wave.",
+    "Feature K_eff remains blocked by missing retained-time full-path hydro closure and is not solved by these runs alone.",
+    "Water remains readiness-only and is intentionally excluded from this new scenario wave.",
+    "The defended 1D spec is intentionally hybrid: blocked feature and return-path losses remain calibrated residual buckets until closure support expands.",
+    "The packed optimum-thickness submission was repaired and resubmitted on 2026-06-22 without canceling any other active jobs.",
+    "The June 22 Water timeouts reinforce bounded Water-readiness interpretation, but repairing Water jobs was outside this task scope."
+  ]
+}

@@ -4,9 +4,9 @@ from __future__ import annotations
 import argparse
 import json
 import os
+import shutil
 import subprocess
 import sys
-import textwrap
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -104,57 +104,110 @@ def ensure_openfoam_mirror(source_root: Path, source_id: str) -> Path:
     return foam_path
 
 
-def write_paraview_driver(driver_path: Path, candidate: Path, screenshot_path: Path, metadata_path: Path) -> None:
-    case_type = "Decomposed Case" if (candidate.parent / "processors64").exists() else "Reconstructed Case"
-    script = textwrap.dedent(
-        f"""
-        from paraview.simple import *
-        import json
+def numeric_dir_values(root: Path) -> list[float]:
+    values: list[float] = []
+    if not root.exists():
+        return values
+    for item in root.iterdir():
+        if not item.is_dir():
+            continue
+        try:
+            values.append(float(item.name))
+        except ValueError:
+            continue
+    return values
 
-        reader = OpenFOAMReader(FileName=r"{candidate}")
-        reader.CaseType = "{case_type}"
-        reader.MeshRegions = ["internalMesh"]
 
-        renderView = CreateView("RenderView")
-        renderView.ViewSize = [1600, 1200]
-        renderView.Background = [1.0, 1.0, 1.0]
+def discover_case_times(source_root: Path) -> list[float]:
+    candidates = numeric_dir_values(source_root)
+    candidates.extend(numeric_dir_values(source_root / "processors64"))
+    for processor_dir in sorted(source_root.glob("processor*")):
+        candidates.extend(numeric_dir_values(processor_dir))
+    return sorted(set(candidates))
 
-        display = Show(reader, renderView)
-        display.Representation = "Surface"
-        display.DiffuseColor = [0.75, 0.75, 0.75]
-        display.AmbientColor = [0.75, 0.75, 0.75]
 
-        UpdatePipeline(proxy=reader)
-        bounds = [float(value) for value in reader.GetDataInformation().GetBounds()]
-        xmin, xmax, ymin, ymax, zmin, zmax = bounds
-        xmid = 0.5 * (xmin + xmax)
-        ymid = 0.5 * (ymin + ymax)
-        zmid = 0.5 * (zmin + zmax)
-        xy_span = max(abs(xmax - xmin), abs(ymax - ymin), 1.0)
-        z_span = max(abs(zmax - zmin), 1.0)
-        renderView.CameraParallelProjection = 1
-        renderView.CameraPosition = [xmid, ymid, zmid - (2.0 * z_span)]
-        renderView.CameraFocalPoint = [xmid, ymid, zmid]
-        renderView.CameraViewUp = [0.0, 1.0, 0.0]
-        renderView.CameraParallelScale = 0.55 * xy_span
+def case_type_for_candidate(candidate: Path) -> str:
+    case_root = candidate.parent
+    if numeric_dir_values(case_root):
+        return "Reconstructed Case"
+    if (case_root / "processors64").exists() or any(case_root.glob("processor*")):
+        return "Decomposed Case"
+    return "Reconstructed Case"
 
-        Render(renderView)
-        SaveScreenshot(r"{screenshot_path}", renderView)
-        with open(r"{metadata_path}", "w", encoding="utf-8") as handle:
-            json.dump(
-                {{
-                    "bounds": bounds,
-                    "camera_position": [float(value) for value in renderView.CameraPosition],
-                    "camera_focal_point": [float(value) for value in renderView.CameraFocalPoint],
-                    "camera_view_up": [float(value) for value in renderView.CameraViewUp],
-                    "camera_parallel_scale": float(renderView.CameraParallelScale),
-                }},
-                handle,
-                indent=2,
-            )
-        """
-    ).strip()
-    driver_path.write_text(script + "\n", encoding="utf-8")
+
+def latest_time_for_candidate(candidate: Path) -> float | None:
+    times = discover_case_times(candidate.parent)
+    return times[-1] if times else None
+
+
+def write_paraview_driver(
+    driver_path: Path,
+    candidate: Path,
+    screenshot_path: Path,
+    metadata_path: Path,
+    *,
+    case_type: str,
+    render_time: float | None,
+) -> None:
+    lines = [
+        "from paraview.simple import *",
+        "import json",
+        "",
+        f'reader = OpenFOAMReader(FileName=r"{candidate}")',
+        f'reader.CaseType = "{case_type}"',
+        'reader.MeshRegions = ["internalMesh"]',
+        "",
+        'renderView = CreateView("RenderView")',
+        "renderView.ViewSize = [1600, 1200]",
+        "renderView.Background = [1.0, 1.0, 1.0]",
+        "",
+        "display = Show(reader, renderView)",
+        'display.Representation = "Surface"',
+        "display.DiffuseColor = [0.75, 0.75, 0.75]",
+        "display.AmbientColor = [0.75, 0.75, 0.75]",
+        "",
+        "UpdatePipeline(proxy=reader)",
+    ]
+    if render_time is not None:
+        lines.extend(
+            [
+                'if hasattr(reader, "ListtimestepsaccordingtocontrolDict"):',
+                "    reader.ListtimestepsaccordingtocontrolDict = 0",
+                f"UpdatePipeline(time={render_time!r}, proxy=reader)",
+            ]
+        )
+    lines.extend(
+        [
+            "bounds = [float(value) for value in reader.GetDataInformation().GetBounds()]",
+            "xmin, xmax, ymin, ymax, zmin, zmax = bounds",
+            "xmid = 0.5 * (xmin + xmax)",
+            "ymid = 0.5 * (ymin + ymax)",
+            "zmid = 0.5 * (zmin + zmax)",
+            "xy_span = max(abs(xmax - xmin), abs(ymax - ymin), 1.0)",
+            "z_span = max(abs(zmax - zmin), 1.0)",
+            "renderView.CameraParallelProjection = 1",
+            "renderView.CameraPosition = [xmid, ymid, zmid - (2.0 * z_span)]",
+            "renderView.CameraFocalPoint = [xmid, ymid, zmid]",
+            "renderView.CameraViewUp = [0.0, 1.0, 0.0]",
+            "renderView.CameraParallelScale = 0.55 * xy_span",
+            "",
+            "Render(renderView)",
+            f'SaveScreenshot(r"{screenshot_path}", renderView)',
+            f'with open(r"{metadata_path}", "w", encoding="utf-8") as handle:',
+            "    json.dump(",
+            "        {",
+            '            "bounds": bounds,',
+            '            "camera_position": [float(value) for value in renderView.CameraPosition],',
+            '            "camera_focal_point": [float(value) for value in renderView.CameraFocalPoint],',
+            '            "camera_view_up": [float(value) for value in renderView.CameraViewUp],',
+            '            "camera_parallel_scale": float(renderView.CameraParallelScale),',
+            "        },",
+            "        handle,",
+            "        indent=2,",
+            "    )",
+        ]
+    )
+    driver_path.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
 def run_pyvista(candidate: Path, figure_root: Path) -> tuple[bool, str, list[str], str, dict[str, object]]:
@@ -183,13 +236,49 @@ def run_paraview(candidate: Path, figure_root: Path, source_id: str) -> tuple[bo
     screenshot_path = figure_root / "overview.png"
     driver_path = WORKSPACE_ROOT / "tmp" / f"paraview_render_{source_id}.py"
     metadata_path = WORKSPACE_ROOT / "tmp" / f"paraview_render_{source_id}_camera.json"
-    write_paraview_driver(driver_path, candidate, screenshot_path, metadata_path)
+    case_type = case_type_for_candidate(candidate)
+    render_time = latest_time_for_candidate(candidate)
+    write_paraview_driver(
+        driver_path,
+        candidate,
+        screenshot_path,
+        metadata_path,
+        case_type=case_type,
+        render_time=render_time,
+    )
 
     def load_metadata() -> dict[str, object]:
         if not metadata_path.exists():
             return {}
         with metadata_path.open("r", encoding="utf-8") as handle:
             return json.load(handle)
+
+    def has_valid_bounds(metadata: dict[str, object]) -> bool:
+        bounds = metadata.get("bounds")
+        if not isinstance(bounds, list) or len(bounds) != 6:
+            return False
+        try:
+            xmin, xmax, ymin, ymax, zmin, zmax = [float(value) for value in bounds]
+        except (TypeError, ValueError):
+            return False
+        return (
+            abs(xmin) < 1.0e298
+            and abs(xmax) < 1.0e298
+            and abs(ymin) < 1.0e298
+            and abs(ymax) < 1.0e298
+            and abs(zmin) < 1.0e298
+            and abs(zmax) < 1.0e298
+            and xmin < xmax
+            and ymin < ymax
+            and zmin <= zmax
+        )
+
+    def needs_srun() -> bool:
+        return bool(os.environ.get("SLURM_JOB_ID")) and not os.environ.get("SLURM_STEP_ID") and shutil.which("srun")
+
+    def clear_outputs() -> None:
+        screenshot_path.unlink(missing_ok=True)
+        metadata_path.unlink(missing_ok=True)
 
     executable_names = ("pvbatch", "pvpython")
 
@@ -205,27 +294,34 @@ def run_paraview(candidate: Path, figure_root: Path, source_id: str) -> tuple[bo
                 executable_path = Path(bin_root) / executable_name
                 if not executable_path.exists():
                     continue
+                clear_outputs()
+                command = [str(executable_path), str(driver_path)]
+                if needs_srun():
+                    command = ["srun", "-n", "1", *command]
                 result = subprocess.run(
-                    [str(executable_path), str(driver_path)],
+                    command,
                     cwd=str(WORKSPACE_ROOT),
                     capture_output=True,
                     text=True,
                 )
-                if result.returncode == 0 and screenshot_path.exists():
+                metadata = load_metadata()
+                if result.returncode == 0 and screenshot_path.exists() and has_valid_bounds(metadata):
                     return (
                         True,
                         f"Rendered with {backend_name}:{executable_name}.",
                         [str(screenshot_path)],
                         backend_name,
-                        load_metadata(),
+                        metadata,
                     )
 
         last_error = "No ParaView backend succeeded."
+        launcher = "srun -n 1 " if needs_srun() else ""
         for backend in PARAVIEW_BACKENDS:
             for executable_name in executable_names:
+                clear_outputs()
                 command = (
                     f"{backend['module_load']} >/dev/null 2>&1 && "
-                    f"${backend['bin_env']}/{executable_name} {driver_path}"
+                    f"{launcher}${backend['bin_env']}/{executable_name} {driver_path}"
                 )
                 result = subprocess.run(
                     ["bash", "-lc", command],
@@ -233,18 +329,22 @@ def run_paraview(candidate: Path, figure_root: Path, source_id: str) -> tuple[bo
                     capture_output=True,
                     text=True,
                 )
-                if result.returncode == 0 and screenshot_path.exists():
+                metadata = load_metadata()
+                if result.returncode == 0 and screenshot_path.exists() and has_valid_bounds(metadata):
                     return (
                         True,
                         f"Rendered with {backend['name']}:{executable_name}.",
                         [str(screenshot_path)],
                         backend["name"],
-                        load_metadata(),
+                        metadata,
                     )
 
                 stderr = result.stderr.strip()
                 stdout = result.stdout.strip()
-                last_error = stderr or stdout or f"{backend['name']}:{executable_name} failed without output."
+                if result.returncode == 0 and screenshot_path.exists() and metadata:
+                    last_error = "ParaView wrote an overview image but reported invalid dataset bounds."
+                else:
+                    last_error = stderr or stdout or f"{backend['name']}:{executable_name} failed without output."
 
         return False, last_error, [], "paraview", {}
     finally:

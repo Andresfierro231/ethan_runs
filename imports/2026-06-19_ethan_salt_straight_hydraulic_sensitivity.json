@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-06-18T16:54:23-05:00",
+  "script": "tools/analyze/build_ethan_salt_straight_hydraulic_sensitivity.py",
+  "output_dir": "reports/2026-06-19_ethan_salt_straight_hydraulic_sensitivity",
+  "input_roots": [
+    "reports/2026-06-18_ethan_salt_model_dependency_package"
+  ],
+  "summary": {
+    "base_fit_row_count": 12,
+    "late_window_status": "not_run"
+  }
+}

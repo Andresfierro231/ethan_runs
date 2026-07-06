@@ -1,0 +1,77 @@
+{
+  "date": "2026-06-22",
+  "task_id": "AGENT-096",
+  "role": "Coordinator / Writer",
+  "workspace": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "objective": "Harden ../papers/3d_analysis from a scaffold into a quantitatively grounded Salt-focused draft.",
+  "source_packages": [
+    "reports/2026-06-15_ethan_field_transport_campaign",
+    "reports/2026-06-15_ethan_representative_transport_comparison",
+    "reports/2026-06-15_ethan_boundary_modeling_report/README.md",
+    "reports/2026-06-15_ethan_postprocessing_campaign_paper_handoff/README.md",
+    "reports/2026-06-18_ethan_transport_analysis_package",
+    "reports/2026-06-18_ethan_salt_paper_handoff_package",
+    "reports/2026-06-19_ethan_water_readiness_handoff"
+  ],
+  "manuscript_outputs": {
+    "repo": "../papers/3d_analysis",
+    "updated_files": [
+      "frontmatter/metadata.tex",
+      "frontmatter/abstract.tex",
+      "sections/01_introduction_and_claim.tex",
+      "sections/02_dataset_and_case_selection.tex",
+      "sections/03_postprocessing_method_and_provenance.tex",
+      "sections/04_salt_family_results.tex",
+      "sections/05_salt2_mechanism_results.tex",
+      "sections/06_trust_limits_and_interpretation.tex",
+      "sections/07_conclusions.tex",
+      "appendices/app_a_evidence_and_provenance_map.tex",
+      "appendices/app_b_open_questions_and_fill_in_targets.tex",
+      "tables/table_salt_case_matrix.tex",
+      "tables/table_salt2_matched_case_summary.tex",
+      "tables/table_trust_boundaries.tex",
+      "tables/table_artifact_provenance.tex",
+      "tables/table_salt_family_quantitative_summary.tex",
+      "tables/table_water_support_matrix.tex",
+      "notes/source_of_truth_audit.md",
+      "notes/paper_journal.md",
+      "notes/asset_import_log.md"
+    ]
+  },
+  "quantitative_claims": {
+    "salt_family_grouped_heat": {
+      "intended_transfer_hotspot": "test_section_span",
+      "parasitic_loss_hotspot": "left_lower_leg",
+      "promoted_cases": [
+        "Salt 2 val",
+        "Salt 2 Jin",
+        "Salt 2 Kirst",
+        "Salt 4 Jin",
+        "Salt 4 Kirst"
+      ]
+    },
+    "matched_salt2_safe_branch_ordering": {
+      "mean_ua_order": [
+        "Salt 2 val",
+        "Salt 2 Jin",
+        "Salt 2 Kirst"
+      ],
+      "safe_branches": [
+        "left_lower_leg",
+        "test_section_span",
+        "left_upper_leg",
+        "upcomer"
+      ]
+    }
+  },
+  "validation": {
+    "placeholder_scan": "rg -n \"\\\\FillTarget|outline-first scaffold|this section should|this paper should|drafting aid|Remaining Fill-In Targets|Outline Scaffold\" ../papers/3d_analysis -S",
+    "paper_build": "module load texlive/2023 && latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex",
+    "paper_build_result": "success",
+    "paper_build_workdir": "../papers/3d_analysis"
+  },
+  "notes": [
+    "Water was kept as appendix-only context and future-work ordering, not promoted into the co-equal main-text result layer.",
+    "The manuscript repo required unsandboxed writes because ../papers/3d_analysis is read-only inside the workspace sandbox."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-18T15:01:44-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_salt_paper_handoff_package.py",
+  "builder_command": "python tools/analyze/build_ethan_salt_paper_handoff_package.py --output-dir reports/2026-06-18_ethan_salt_paper_handoff_package",
+  "smoke_command": "python tools/analyze/build_ethan_salt_paper_handoff_package.py --output-dir tmp/2026-06-18_ethan_salt_paper_handoff_package_smoke",
+  "output_dir": "reports/2026-06-18_ethan_salt_paper_handoff_package",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_salt_paper_handoff_package_smoke",
+  "inputs": {
+    "scrutiny_dir": "reports/2026-06-17_ethan_transport_scrutiny_package",
+    "analysis_dir": "reports/2026-06-18_ethan_transport_analysis_package",
+    "closure_dir": "reports/2026-06-18_ethan_transport_interpretation_closure",
+    "field_campaign_dir": "reports/2026-06-15_ethan_field_transport_campaign",
+    "representative_dir": "reports/2026-06-15_ethan_representative_transport_comparison"
+  },
+  "artifacts": [
+    "staged_assets_manifest.csv",
+    "figure_claim_map.csv",
+    "table_claim_map.csv",
+    "README.md",
+    "staged_assets_readme.md",
+    "closure_gate_note.md",
+    "summary.json",
+    "figures/pdf/salt_paper_salt2_heat_loss.pdf",
+    "figures/pdf/salt_paper_salt4_heat_loss.pdf",
+    "figures/pdf/salt_paper_salt2_azimuthal_means.pdf",
+    "figures/pdf/salt_paper_salt4_azimuthal_means.pdf",
+    "figures/pdf/salt_paper_salt2_friction_pressure_zoomed.pdf",
+    "figures/pdf/salt_paper_salt2_thermal_and_resistance.pdf",
+    "figures/pdf/salt_paper_salt2_branch_thermal_safe_subset.pdf",
+    "figures/pdf/salt_paper_family_branch_thermal_safe_subset.pdf",
+    "figures/pdf/salt_paper_salt_branch_trust_heatmap.pdf",
+    "figures/pdf/salt_paper_salt_safe_branch_support.pdf"
+  ],
+  "headline_results": {
+    "staged_asset_count": 12,
+    "main_text_candidate_count": 8,
+    "appendix_support_count": 2,
+    "cross_family_hydraulic_status": "blocked_by_excluded_hydraulic_branch",
+    "resolved_exclude_count": 2
+  },
+  "promotion_boundary": [
+    "Do not promote Salt 2 boundary-layer figures as headline evidence.",
+    "Do not promote all-runs cross-family assets into the Salt paper surface.",
+    "Restrict branch-thermal promotion to left_lower_leg, test_section_span, left_upper_leg, and upcomer.",
+    "Use the June 18 interpretation closure package as the current science gate even though the staged Salt assets themselves are unchanged."
+  ]
+}

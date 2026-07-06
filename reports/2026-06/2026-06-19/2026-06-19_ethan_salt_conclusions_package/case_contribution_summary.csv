@@ -1,0 +1,11 @@
+source_id,case_label,straight_section_friction_row_count,feature_keff_row_count,salt_nu_row_count,total_fit_used_rows
+val_salt_test_2_coarse_mesh_laminar,Salt 2 Val,0,2,0,2
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,2,0,0,2
+viscosity_screening_salt_test_1_jin_coarse_mesh,Salt 1 Jin,0,1,0,1
+viscosity_screening_salt_test_1_kirst_coarse_mesh,Salt 1 Kirst,0,1,0,1
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2 Jin,1,2,0,3
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2 Kirst,1,2,1,4
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,2,2,0,4
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,2,2,1,5
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,2,2,0,4
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,2,2,0,4

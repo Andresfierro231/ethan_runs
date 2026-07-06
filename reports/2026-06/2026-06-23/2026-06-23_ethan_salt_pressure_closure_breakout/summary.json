@@ -1,0 +1,164 @@
+{
+  "generated_at": "2026-06-23T12:15:55-05:00",
+  "source_report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+  "figures": [
+    {
+      "family_id": 1,
+      "family_label": "Salt 1",
+      "source_ids": "viscosity_screening_salt_test_1_jin_coarse_mesh,viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/png/salt1_pressure_closure_breakout.png",
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/svg/salt1_pressure_closure_breakout.svg",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/pdf/salt1_pressure_closure_breakout.pdf"
+    },
+    {
+      "family_id": 2,
+      "family_label": "Salt 2",
+      "source_ids": "val_salt_test_2_coarse_mesh_laminar,viscosity_screening_salt_test_2_jin_coarse_mesh,viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/png/salt2_pressure_closure_breakout.png",
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/svg/salt2_pressure_closure_breakout.svg",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/pdf/salt2_pressure_closure_breakout.pdf"
+    },
+    {
+      "family_id": 3,
+      "family_label": "Salt 3",
+      "source_ids": "viscosity_screening_salt_test_3_jin_coarse_mesh,viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/png/salt3_pressure_closure_breakout.png",
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/svg/salt3_pressure_closure_breakout.svg",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/pdf/salt3_pressure_closure_breakout.pdf"
+    },
+    {
+      "family_id": 4,
+      "family_label": "Salt 4",
+      "source_ids": "viscosity_screening_salt_test_4_jin_coarse_mesh,viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/png/salt4_pressure_closure_breakout.png",
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/svg/salt4_pressure_closure_breakout.svg",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_pressure_closure_breakout/figures/pdf/salt4_pressure_closure_breakout.pdf"
+    }
+  ],
+  "span_labels": [
+    {
+      "family_id": 1,
+      "representative_source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "span_name": "lower_leg",
+      "span_label": "lower_leg\nTP3 -> TP2"
+    },
+    {
+      "family_id": 1,
+      "representative_source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "span_name": "right_leg",
+      "span_label": "right_leg\nTP2 -> TP1"
+    },
+    {
+      "family_id": 1,
+      "representative_source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "span_name": "upper_leg",
+      "span_label": "upper_leg\nTP6 -> TP1"
+    },
+    {
+      "family_id": 1,
+      "representative_source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "span_name": "left_upper_leg",
+      "span_label": "left_upper_leg\nTP5 -> TP6"
+    },
+    {
+      "family_id": 1,
+      "representative_source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "span_name": "left_lower_leg",
+      "span_label": "left_lower_leg\nTP3 -> TP4"
+    },
+    {
+      "family_id": 2,
+      "representative_source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "span_name": "lower_leg",
+      "span_label": "lower_leg\nTP3 -> TP2"
+    },
+    {
+      "family_id": 2,
+      "representative_source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "span_name": "right_leg",
+      "span_label": "right_leg\nTP2 -> TP1"
+    },
+    {
+      "family_id": 2,
+      "representative_source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "span_name": "upper_leg",
+      "span_label": "upper_leg\nTP6 -> TP1"
+    },
+    {
+      "family_id": 2,
+      "representative_source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "span_name": "left_upper_leg",
+      "span_label": "left_upper_leg\nTP5 -> TP6"
+    },
+    {
+      "family_id": 2,
+      "representative_source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "span_name": "left_lower_leg",
+      "span_label": "left_lower_leg\nTP3 -> TP4"
+    },
+    {
+      "family_id": 3,
+      "representative_source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "span_name": "lower_leg",
+      "span_label": "lower_leg\nTP3 -> TP2"
+    },
+    {
+      "family_id": 3,
+      "representative_source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "span_name": "right_leg",
+      "span_label": "right_leg\nTP2 -> TP1"
+    },
+    {
+      "family_id": 3,
+      "representative_source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "span_name": "upper_leg",
+      "span_label": "upper_leg\nTP6 -> TP1"
+    },
+    {
+      "family_id": 3,
+      "representative_source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "span_name": "left_upper_leg",
+      "span_label": "left_upper_leg\nTP5 -> TP6"
+    },
+    {
+      "family_id": 3,
+      "representative_source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "span_name": "left_lower_leg",
+      "span_label": "left_lower_leg\nTP3 -> TP4"
+    },
+    {
+      "family_id": 4,
+      "representative_source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "span_name": "lower_leg",
+      "span_label": "lower_leg\nTP3 -> TP2"
+    },
+    {
+      "family_id": 4,
+      "representative_source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "span_name": "right_leg",
+      "span_label": "right_leg\nTP2 -> TP1"
+    },
+    {
+      "family_id": 4,
+      "representative_source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "span_name": "upper_leg",
+      "span_label": "upper_leg\nTP6 -> TP1"
+    },
+    {
+      "family_id": 4,
+      "representative_source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "span_name": "left_upper_leg",
+      "span_label": "left_upper_leg\nTP5 -> TP6"
+    },
+    {
+      "family_id": 4,
+      "representative_source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "span_name": "left_lower_leg",
+      "span_label": "left_lower_leg\nTP3 -> TP4"
+    }
+  ],
+  "notes": [
+    "Endpoint p_rgh loss is used in the breakout because it exists across all five straight Salt spans.",
+    "Integrated p_rgh loss remains available in the source package only for lower_leg and right_leg."
+  ]
+}

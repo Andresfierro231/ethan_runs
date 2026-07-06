@@ -1,0 +1,21 @@
+symbol,scope,kind,units,solve_role,v1_status,definition,notes
+mdot_loop,global,solved_state,kg/s,nonlinear_unknown,admit,Loop mass flow rate solved from buoyancy versus modeled hydraulic loss,Primary hydraulic state
+T_bulk_node[j],node,solved_state,K,energy_unknown,admit,Bulk temperature at each control-volume boundary around the loop,One node per segment boundary
+rho_seg[j],segment,derived_property,kg/m3,property_eval,admit,Density evaluated at segment mean bulk temperature,Use explicit salt material branch
+mu_seg[j],segment,derived_property,Pa*s,property_eval,admit,Dynamic viscosity evaluated at segment mean bulk temperature,Needed for Reynolds number
+cp_seg[j],segment,derived_property,J/kg/K,property_eval,admit,Specific heat evaluated at segment mean bulk temperature,Used in energy march
+k_seg[j],segment,derived_property,W/m/K,property_eval,admit,Thermal conductivity evaluated at segment mean bulk temperature,Needed for optional Nu to HTC path
+Re_seg[j],segment,derived_closure_input,1,closure_input,admit,Effective Reynolds number from mdot geometry and viscosity,Primary hydraulic and thermal fit input
+Pr_seg[j],segment,derived_closure_input,1,closure_input,admit,Effective Prandtl number from material properties,Used only where direct Nu mode is enabled
+Deltap_buoyancy_loop,global,derived_balance_term,Pa,loop_balance,admit,Integrated buoyancy head from density and elevation map,Drives natural circulation
+fD_seg[j],segment,derived_closure_output,1,closure_eval,partial,Apparent Darcy friction factor,Defended only on lower_leg and test_section_span
+Deltap_straight_seg[j],segment,derived_balance_term,Pa,closure_eval,partial,Straight-section pressure loss from defended friction fit,Use only on admitted straight classes
+UAprime_seg[j],segment,derived_closure_output,W/m/K,energy_closure,admit,Effective thermal conductance per unit length,Primary thermal surface
+HTC_seg[j],segment,derived_secondary_output,W/m2/K,diagnostic_or_alt_closure,admit_secondary,Effective heat transfer coefficient,Secondary to UA' in v1
+Nu_seg[j],segment,derived_secondary_output,1,diagnostic_or_alt_closure,limited,Effective Nusselt number,Fitted direct use only on left_lower_leg
+Q_heater_seg[j],segment,fixed_input,W,boundary_input,admit,Imposed heater power on heater segments,Visible readable control
+Q_cooler_seg[j],segment,fixed_input,W,boundary_input,admit,Imposed cooler sink on cooler bucket,Use fixed negative Q not live cooler h
+UA_lumped_residual,global,calibrated_parameter,W/K,calibration_only,admit_calibration_only,Lumped unresolved thermal loss remainder,Needed until full branch thermal coverage expands
+Deltap_residual,global,calibrated_parameter,Pa,calibration_only,admit_calibration_only,Lumped unresolved hydraulic loss remainder,Absorbs blocked feature and return-path losses in v1
+T_amb,global,fixed_input,K,boundary_input,admit,Ambient temperature used in external loss terms,Case operating input
+p_ref,global,diagnostic_reference,Pa,reference_only,optional,Arbitrary pressure reference for reporting only,Not needed for loop closure if only pressure differences are used

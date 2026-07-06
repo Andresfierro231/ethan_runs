@@ -1,0 +1,9 @@
+step,scope,status,exact_boundary
+salt_v1_family_gate,Salt only,admit,Do not collapse Salt and Water into one shared fit family yet
+salt_straight_friction,lower_leg|test_section_span,admit,Use class-aware Re power law with explicit caveats
+salt_primary_thermal_surface,left_lower_leg|test_section_span|left_upper_leg|upcomer,admit_state_surface,Carry UA'(x) as the primary thermal surface
+salt_secondary_thermal_surface,left_lower_leg|test_section_span|left_upper_leg|upcomer,admit_state_surface,Carry HTC(x) as the secondary thermal surface
+salt_nu_fit,left_lower_leg,admit_limited_fit,Do not use outside the direct left-lower-leg domain
+feature_keff,all_features,exclude,Blocked until retained-time full-path hydro closure exists
+water_dependencies,water_family,exclude,Blocked until Water closure hardening lands
+

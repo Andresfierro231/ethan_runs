@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-06-23T11:05:55-05:00",
+  "package_index": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/package_index.csv",
+  "case_count": 13,
+  "family_count": 2,
+  "row_count": 21603,
+  "figure_count": 13,
+  "missing_packages": [],
+  "dynamic_pressure_definition": "0.5 * rho_bulk_kg_m3 * bulk_velocity_m_s^2",
+  "pressure_definition_note": "p_rgh is hydrostatic-corrected pressure; it is not dynamic pressure.",
+  "developing_flow_note": "Use p_rgh(s) for streamwise loss shape and q_dyn(s) for kinetic scale. Developing or redeveloping flow can make both vary materially with s."
+}

@@ -1,0 +1,76 @@
+{
+  "generated_at": "2026-06-18T14:41:08-05:00",
+  "task_id": "AGENT-085",
+  "builder_script": "tools/analyze/build_ethan_salt_model_dependency_package_v2.py",
+  "builder_command": "python -m tools.analyze.build_ethan_salt_model_dependency_package_v2 --output-dir reports/2026-06-19_ethan_salt_model_dependency_package_v2",
+  "smoke_builder_command": "python -m tools.analyze.build_ethan_salt_model_dependency_package_v2 --output-dir tmp/2026-06-19_ethan_salt_model_dependency_package_v2_smoke --feature-dir tmp/2026-06-19_ethan_salt_feature_hydraulic_hardening_smoke --thermal-dir tmp/2026-06-19_ethan_salt_thermal_closure_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/ethan_salt_hardening_common.py tools/analyze/build_ethan_salt_feature_hydraulic_hardening.py tools/analyze/build_ethan_salt_thermal_closure_hardening.py tools/analyze/build_ethan_salt_model_dependency_package_v2.py tools/analyze/test_ethan_salt_hardening_v2.py",
+    "python -m unittest discover -s tools/analyze -p 'test_ethan_salt_hardening_v2.py'",
+    "python -m tools.analyze.build_ethan_salt_feature_hydraulic_hardening --output-dir tmp/2026-06-19_ethan_salt_feature_hydraulic_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python -m tools.analyze.build_ethan_salt_thermal_closure_hardening --output-dir tmp/2026-06-19_ethan_salt_thermal_closure_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python -m tools.analyze.build_ethan_salt_model_dependency_package_v2 --output-dir tmp/2026-06-19_ethan_salt_model_dependency_package_v2_smoke --feature-dir tmp/2026-06-19_ethan_salt_feature_hydraulic_hardening_smoke --thermal-dir tmp/2026-06-19_ethan_salt_thermal_closure_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python -m tools.analyze.build_ethan_salt_feature_hydraulic_hardening --output-dir reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+    "python -m tools.analyze.build_ethan_salt_thermal_closure_hardening --output-dir reports/2026-06-19_ethan_salt_thermal_closure_hardening",
+    "python -m tools.analyze.build_ethan_salt_model_dependency_package_v2 --output-dir reports/2026-06-19_ethan_salt_model_dependency_package_v2",
+    "python -c \"... schema_and_sanity_ok check over durable v2 outputs ...\""
+  ],
+  "canonical_inputs": {
+    "feature_hardening_package": "reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+    "thermal_hardening_package": "reports/2026-06-19_ethan_salt_thermal_closure_hardening",
+    "salt_dependency_v1": "reports/2026-06-18_ethan_salt_model_dependency_package",
+    "salt_checkpoint_suite": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite"
+  },
+  "output_dir": "reports/2026-06-19_ethan_salt_model_dependency_package_v2",
+  "smoke_output_dir": "tmp/2026-06-19_ethan_salt_model_dependency_package_v2_smoke",
+  "summary": {
+    "case_count": 9,
+    "hydraulic_fit_used_count": 28,
+    "feature_fit_used_count": 16,
+    "thermal_fit_used_count": 2,
+    "straight_section_status": "provisional_defended",
+    "feature_status": "provisional_defended",
+    "thermal_status": "not_defensible_yet"
+  },
+  "sensitivity_highlights": {
+    "hydraulic_direct_to_shear_gate_strict": {
+      "base_row_count": 12,
+      "sensitivity_row_count": 6,
+      "qualitative_conclusion_changed": true
+    },
+    "hydraulic_feature_boundary_bin_count_5": {
+      "base_row_count": 16,
+      "sensitivity_row_count": 16,
+      "qualitative_conclusion_changed": false
+    },
+    "thermal_closure_gate_loose": {
+      "base_row_count": 2,
+      "sensitivity_row_count": 3,
+      "qualitative_conclusion_changed": true
+    },
+    "thermal_property_convention_case_probe": {
+      "base_row_count": 27,
+      "sensitivity_row_count": 27,
+      "qualitative_conclusion_changed": false
+    }
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "provenance_map.csv",
+    "hydraulic_fit_ready_rows.csv",
+    "hydraulic_exclusion_summary.csv",
+    "thermal_fit_ready_rows.csv",
+    "thermal_exclusion_summary.csv",
+    "salt_friction_fit_results.json",
+    "salt_nu_fit_results.json",
+    "sensitivity_summary.csv",
+    "model_dependency_handoff.md",
+    "water_extension_todo.md"
+  ],
+  "limitations": [
+    "Feature K_eff is only provisionally defended because the promoted method still uses patch-endpoint p_rgh plus a local straight-reference proxy rather than a full feature-path hydro integral.",
+    "Salt HTC/Nu remains non-defensible because only two direct branch rows survive the full closure gate stack.",
+    "Hydraulic late-window sensitivity remains not run because the preserved additive straight-section artifacts are case-level means."
+  ]
+}

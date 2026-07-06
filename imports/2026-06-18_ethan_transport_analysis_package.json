@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-18T11:25:45-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_transport_analysis_package.py",
+  "builder_command": "python tools/analyze/build_ethan_transport_analysis_package.py --output-dir reports/2026-06-18_ethan_transport_analysis_package",
+  "smoke_command": "python tools/analyze/build_ethan_transport_analysis_package.py --output-dir tmp/2026-06-18_ethan_transport_analysis_package_smoke",
+  "output_dir": "reports/2026-06-18_ethan_transport_analysis_package",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_transport_analysis_package_smoke",
+  "inputs": {
+    "scrutiny_dir": "reports/2026-06-17_ethan_transport_scrutiny_package",
+    "representative_dir": "reports/2026-06-15_ethan_representative_transport_comparison",
+    "field_campaign_dir": "reports/2026-06-15_ethan_field_transport_campaign",
+    "all_runs_dir": "reports/2026-06-15_ethan_all_runs_field_transport_campaign",
+    "math_reference": "reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md",
+    "interpretation_readme": "reports/2026-06-17_ethan_transport_interpretation_package/README.md"
+  },
+  "artifacts": [
+    "case_family_interpretation_matrix.csv",
+    "transport_contradiction_priority.csv",
+    "promotion_candidate_index.csv",
+    "README.md",
+    "summary.json",
+    "figures/pdf/transport_analysis_cross_family_branch_trust.pdf",
+    "figures/pdf/transport_analysis_salt_branch_trust.pdf",
+    "figures/pdf/transport_analysis_water_branch_trust.pdf",
+    "figures/pdf/transport_analysis_hydraulic_hotspots.pdf",
+    "figures/pdf/transport_analysis_salt_safe_branch_support.pdf",
+    "figures/pdf/transport_analysis_water_safe_branch_support.pdf"
+  ],
+  "headline_results": {
+    "promotion_stage_now_count": 7,
+    "priority_one_contradiction_count": 2
+  },
+  "follow_on_boundary": [
+    "Use the Salt-only handoff package to stage manuscript assets rather than importing directly from the broader all-runs analysis package.",
+    "Investigate the two water-family left_lower_leg hydraulic contradiction rows before making stronger cross-family hydraulic claims."
+  ]
+}

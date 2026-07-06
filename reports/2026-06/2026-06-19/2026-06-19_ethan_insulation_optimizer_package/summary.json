@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-19T16:34:02-05:00",
+  "builder_script": "tools/analyze/build_ethan_insulation_optimizer_package.py",
+  "ethan_model_file": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Ethan_wall_and_heat_losses/first_order_model_tamu_loop.py",
+  "output_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-19_ethan_insulation_optimizer_package",
+  "summary": {
+    "experimental_case_count": 8,
+    "salt_experimental_case_count": 4,
+    "water_experimental_case_count": 4,
+    "known_cfd_case_count": 13,
+    "known_salt_screening_case_count": 8,
+    "known_salt_validation_case_count": 1,
+    "known_water_case_count": 4
+  },
+  "family_results": [
+    {
+      "family": "salt",
+      "experimental_case_count": 4,
+      "known_three_d_case_count": 9,
+      "mean_optimum_thickness_in": 1.9066082676131595,
+      "median_optimum_thickness_in": 1.7784278241401785,
+      "std_optimum_thickness_in": 0.3353314342980508,
+      "min_optimum_thickness_in": 1.6695774221722808,
+      "max_optimum_thickness_in": 2.4,
+      "recommended_uniform_thickness_in": 1.9,
+      "known_three_d_mean_thickness_in": 1.427777777777778,
+      "known_three_d_min_thickness_in": 1.4,
+      "known_three_d_max_thickness_in": 1.65,
+      "delta_known_three_d_mean_minus_optimum_in": -0.47883048983538146
+    },
+    {
+      "family": "water",
+      "experimental_case_count": 4,
+      "known_three_d_case_count": 4,
+      "mean_optimum_thickness_in": 0.3931572848937199,
+      "median_optimum_thickness_in": 0.3970120180227706,
+      "std_optimum_thickness_in": 0.016376288706403678,
+      "min_optimum_thickness_in": 0.37235510352933876,
+      "max_optimum_thickness_in": 0.40625,
+      "recommended_uniform_thickness_in": 0.4,
+      "known_three_d_mean_thickness_in": 0.4,
+      "known_three_d_min_thickness_in": 0.4,
+      "known_three_d_max_thickness_in": 0.4,
+      "delta_known_three_d_mean_minus_optimum_in": 0.006842715106280095
+    }
+  ],
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "case_thickness_tables.md",
+    "experimental_case_optima.csv",
+    "experimental_thickness_trace.csv",
+    "family_optima.csv",
+    "all_known_case_thickness_comparison.csv",
+    "salt_screening_thickness_quantification.csv",
+    "thickness_scientific_analysis.md",
+    "figures/png/salt_q_unaccounted_vs_thickness.png",
+    "figures/png/water_q_unaccounted_vs_thickness.png",
+    "figures/png/three_d_vs_effective_thickness.png"
+  ]
+}

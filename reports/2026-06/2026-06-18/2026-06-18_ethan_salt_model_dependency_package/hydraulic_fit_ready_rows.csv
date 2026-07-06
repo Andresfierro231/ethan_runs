@@ -1,0 +1,13 @@
+source_id,case_label,scope_name,scope_kind,re_effective,apparent_darcy_f_local,pressure_loss_hydro_pa,support_fraction,direct_to_shear_darcy_ratio,property_temperature_k,fit_use_status
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2 Jin,test_section_span,test_section_leg,97.54143211575995,46.163210316366786,112.16024712505327,1.0,0.6920072580417043,454.5839300545905,fit_used
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2 Kirst,test_section_span,test_section_leg,80.34651277493121,53.573765793842185,112.56447632151708,1.0,0.6136250632963717,454.1134747275903,fit_used
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,lower_leg,main_loop_leg,92.58857161606477,2.7248192153153044,18.552735178323566,0.75,0.5120362017341502,453.14417968869003,fit_used
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,test_section_span,test_section_leg,108.36043512934887,42.36576072197514,111.59988989762351,1.0,0.8197409388103486,459.85811941483394,fit_used
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,lower_leg,main_loop_leg,110.26437941689072,2.182920658319686,17.71820844238141,0.75,0.5386439925851295,460.1915603729567,fit_used
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,test_section_span,test_section_leg,128.73775331586128,35.23147986216345,110.64194867304968,1.0,1.0630119464416792,467.05736040152436,fit_used
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,lower_leg,main_loop_leg,91.26909353295369,2.5230015434682858,17.93869410712182,0.75,0.5036702486058046,460.4629682129505,fit_used
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,test_section_span,test_section_leg,105.91769377715526,40.522781179988066,111.46699396272447,1.0,0.9118392244555725,467.7334494747958,fit_used
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,lower_leg,main_loop_leg,150.19205488780372,1.6636004069258814,17.5989102974695,0.7608695652173914,0.6519296742131764,475.7530964783173,fit_used
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,test_section_span,test_section_leg,173.73605749616746,26.714861457611974,109.33969761918434,1.0,1.4483110020195988,482.54219081672426,fit_used
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,lower_leg,main_loop_leg,121.56502531923894,1.846950237665355,17.07347607964857,0.75,0.5644330770266981,475.89831179412374,fit_used
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,test_section_span,test_section_leg,140.40213430161438,30.66803329834763,109.69085169870596,1.0,1.3165378550091913,483.1599869069545,fit_used

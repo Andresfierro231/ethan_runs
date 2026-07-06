@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-06-22T09:31:33-05:00",
+  "package_count": 9,
+  "source_ids": [
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh"
+  ],
+  "artifacts": {
+    "package_index_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/field_transport_package_index.csv",
+    "streamwise_heat_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/field_transport_streamwise_heat_comparison.csv",
+    "grouped_heat_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/field_transport_grouped_heat_comparison.csv",
+    "azimuthal_transport_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/field_transport_azimuthal_transport_comparison.csv",
+    "branch_thermal_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/field_transport_branch_thermal_comparison.csv"
+  },
+  "figure_paths": {
+    "heat_loss_comparison": {
+      "png": "reports/2026-06-15_ethan_field_transport_campaign/figures/png/field_transport_heat_loss_comparison.png",
+      "svg": "reports/2026-06-15_ethan_field_transport_campaign/figures/svg/field_transport_heat_loss_comparison.svg",
+      "pdf": "reports/2026-06-15_ethan_field_transport_campaign/figures/pdf/field_transport_heat_loss_comparison.pdf"
+    },
+    "azimuthal_means_comparison": {
+      "png": "reports/2026-06-15_ethan_field_transport_campaign/figures/png/field_transport_azimuthal_means_comparison.png",
+      "svg": "reports/2026-06-15_ethan_field_transport_campaign/figures/svg/field_transport_azimuthal_means_comparison.svg",
+      "pdf": "reports/2026-06-15_ethan_field_transport_campaign/figures/pdf/field_transport_azimuthal_means_comparison.pdf"
+    },
+    "branch_thermal_comparison": {
+      "png": "reports/2026-06-15_ethan_field_transport_campaign/figures/png/field_transport_branch_thermal_comparison.png",
+      "svg": "reports/2026-06-15_ethan_field_transport_campaign/figures/svg/field_transport_branch_thermal_comparison.svg",
+      "pdf": "reports/2026-06-15_ethan_field_transport_campaign/figures/pdf/field_transport_branch_thermal_comparison.pdf"
+    },
+    "branch_thermal_qc_comparison": {
+      "png": "reports/2026-06-15_ethan_field_transport_campaign/figures/png/field_transport_branch_thermal_qc_comparison.png",
+      "svg": "reports/2026-06-15_ethan_field_transport_campaign/figures/svg/field_transport_branch_thermal_qc_comparison.svg",
+      "pdf": "reports/2026-06-15_ethan_field_transport_campaign/figures/pdf/field_transport_branch_thermal_qc_comparison.pdf"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "manifest_id": "2026-07-01_perturbation_requalification",
+  "owner": "claude",
+  "task": "AGENT-166",
+  "generated_at": "2026-07-01",
+  "purpose": "T3: implement operating-point convergence gate for Salt Q-perturbation runs. Resolves TODO-PERT-REQUAL.",
+  "scope": "All 16 Salt Jin Q-perturbation and control runs across June 19/25 campaigns.",
+  "modified_tools": [
+    "tools/analyze/assess_time_convergence.py"
+  ],
+  "new_tools": [
+    "tools/analyze/test_assess_time_convergence.py"
+  ],
+  "new_docs": [
+    ".agent/journal/2026-07-01/T3-perturbation-requalification.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-01_claude_perturbation_requal"
+  ],
+  "headline_result": "All 14 genuine Q-perturbation runs are FALSE_STEADY (mdot moved <0.3% vs 1.6-3.5% expected). None usable for upcomer correlation.",
+  "gate_parameters": {
+    "flag": "--require-moved-from <nominal_mdot>",
+    "scaling": "mdot ~ Q^(1/3) laminar natural-convection expectation",
+    "verdicts": ["requalified", "false_steady", "insufficient_move", "moving_not_plateaued", "too_short"]
+  },
+  "tests": "7 new tests + 183 total passing."
+}

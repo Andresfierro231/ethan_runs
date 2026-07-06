@@ -71,6 +71,10 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR))
     parser.add_argument("--window-count", type=int, default=DEFAULT_HEAT_WINDOW_COUNT)
     parser.add_argument(
+        "--runtime-root",
+        help="Optional runtime-root override for continuation or packed relaunch case trees.",
+    )
+    parser.add_argument(
         "--validation-csv",
         default=str(VALIDATION_CSV),
         help=(
@@ -176,9 +180,11 @@ def build_case_heat_summary(
     output_dir: Path,
     window_count: int,
     validation_csv: Path = VALIDATION_CSV,
+    runtime_root_override: Path | None = None,
 ) -> dict[str, Any]:
     profile = get_case_analysis_profile(source_id)
-    source_root, runtime_root, metadata = resolve_case_paths(source_id)
+    source_root, resolved_runtime_root, metadata = resolve_case_paths(source_id)
+    runtime_root = runtime_root_override.resolve() if runtime_root_override else resolved_runtime_root
     heat_rows = s2.parse_wall_heatflux_section_series(runtime_root, metadata)
     validation_row, validation_status = load_validation_reference(source_id, validation_csv)
 
@@ -295,11 +301,13 @@ def build_case_heat_summary(
 
 def main() -> int:
     args = parse_args()
+    runtime_root_override = Path(args.runtime_root).resolve() if args.runtime_root else None
     build_case_heat_summary(
         args.source_id,
         Path(args.output_dir),
         args.window_count,
         Path(args.validation_csv),
+        runtime_root_override=runtime_root_override,
     )
     return 0
 

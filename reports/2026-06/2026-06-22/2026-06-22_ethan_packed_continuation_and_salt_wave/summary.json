@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-06-22T11:54:50-05:00",
+  "running_jobs": {
+    "packed_salt_continuation": 3250777,
+    "packed_water_continuation_pilot": 3250776,
+    "salt_bracket": [
+      3250778,
+      3250779,
+      3250780,
+      3250781,
+      3250782,
+      3250783
+    ]
+  },
+  "pending_jobs": {
+    "packed_salt_optimum": 3250784
+  },
+  "cancelled_jobs": [
+    3250696,
+    3250697,
+    3250699,
+    3250700
+  ],
+  "retention": {
+    "write_interval_s": 1,
+    "purge_write": 21,
+    "target_late_window_s": 20
+  },
+  "packed_layout_check": {
+    "water_job_alloc_cpus": 256,
+    "water_active_solver_steps": 4,
+    "water_solver_step_cpus_each": 64,
+    "salt_job_alloc_cpus": 256,
+    "salt_active_solver_steps": 3,
+    "salt_solver_step_cpus_each": 64
+  }
+}

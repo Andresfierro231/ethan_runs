@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-19T15:06:54-05:00",
+  "base_fit_row_count": 12,
+  "retained_time_row_count": 74,
+  "late_window_row_count": 18,
+  "late_window_fit_used_row_count": 8,
+  "late_window_status": "not_run",
+  "min_available_window_span_s": 3.0,
+  "max_available_window_span_s": 4.0,
+  "fit_status_counts": {
+    "fit_used": 12
+  },
+  "retained_time_fit_status_counts": {
+    "excluded": 41,
+    "fit_used": 33
+  }
+}

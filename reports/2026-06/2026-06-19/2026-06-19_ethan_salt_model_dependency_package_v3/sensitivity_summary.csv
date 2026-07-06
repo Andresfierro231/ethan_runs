@@ -1,0 +1,9 @@
+asset_family,sensitivity_name,status,base_row_count,sensitivity_row_count,row_count_delta,qualitative_conclusion_changed,row_count,case_count,branch_names,note
+straight_section_friction,direct_to_shear_gate_loose,run,12,12,0,no,,,,direct-to-shear ratio gate 0.40-2.50 on case-mean defended rows
+straight_section_friction,direct_to_shear_gate_base,run,12,12,0,no,,,,direct-to-shear ratio gate 0.50-2.00 on case-mean defended rows
+straight_section_friction,direct_to_shear_gate_strict,run,12,6,-6,yes,,,,direct-to-shear ratio gate 0.67-1.50 on case-mean defended rows
+straight_section_friction,late_window_choice,not_run,12,8,-4,unknown,,,,"retained-time defended straight rows were rebuilt, but the preserved late-window coverage is only 3.0-4.0 s across target sections; need about 20 s of preserved continuation support before rerunning the late-window sensitivity"
+salt_nu,thermal_residual_threshold_0.40,run,,5,,,5,5,left_lower_leg,direct-branch Salt Nu rows surviving mean residual fraction <= 0.40
+salt_nu,thermal_residual_threshold_0.45,run,,7,,,7,7,left_lower_leg,direct-branch Salt Nu rows surviving mean residual fraction <= 0.45
+salt_nu,thermal_residual_threshold_0.50,run,,9,,,9,8,left_lower_leg|left_upper_leg,direct-branch Salt Nu rows surviving mean residual fraction <= 0.50
+feature_keff,full_path_hydro_integral,not_run,,,,,0,0,,defended feature-path hydro-integral rows do not exist in the current additive stack

@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-18T11:48:31-05:00",
+  "case_count": 9,
+  "fit_ready_hydraulic_count": 12,
+  "fit_ready_feature_count": 19,
+  "fit_ready_branch_count": 36,
+  "exclusion_row_count": 148,
+  "figure_paths": {
+    "fit_ready_asset_counts": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase5_fit_ready_handoff/figures/png/fit_ready_asset_counts.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase5_fit_ready_handoff/figures/svg/fit_ready_asset_counts.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase5_fit_ready_handoff/figures/pdf/fit_ready_asset_counts.pdf"
+    },
+    "exclusion_audit": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase5_fit_ready_handoff/figures/png/fit_ready_exclusion_audit.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase5_fit_ready_handoff/figures/svg/fit_ready_exclusion_audit.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase5_fit_ready_handoff/figures/pdf/fit_ready_exclusion_audit.pdf"
+    }
+  },
+  "main_findings": [
+    "The final fit-ready subset is much narrower than the full Salt artifact set and remains intentionally so.",
+    "Hydraulic, feature, and branch candidates can now be consumed without manual triage because exclusions are explicit.",
+    "Enthalpy and boundary-layer context remain documented alongside the fit tables but are not automatically promoted as fit-ready regression families."
+  ]
+}

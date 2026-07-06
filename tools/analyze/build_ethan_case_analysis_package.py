@@ -81,6 +81,10 @@ def build_parser(default_output_dir: Path) -> argparse.ArgumentParser:
     parser.add_argument("--skip-extraction", action="store_true")
     parser.add_argument("--output-dir", default=str(default_output_dir))
     parser.add_argument(
+        "--runtime-root",
+        help="Optional runtime-root override for continuation or packed relaunch case trees.",
+    )
+    parser.add_argument(
         "--raw-extraction-dir",
         help="Reuse an existing raw extraction directory instead of calling the hydraulic extractors.",
     )
@@ -1152,6 +1156,7 @@ def summarize_major_rows(rows: list[dict[str, Any]], span_order: list[str], majo
                         "hydraulic_diameter_geom_m": row["hydraulic_diameter_geom_m"],
                         "bulk_velocity_m_s": row["bulk_velocity_m_s"],
                         "rho_bulk_kg_m3": row["rho_bulk_kg_m3"],
+                        "mdot_mean_abs_kg_s": row["mdot_mean_abs_kg_s"],
                         "warning_flag": normalize_warning_flag(row.get("warning_flag", "")),
                     }
                 )
@@ -1470,6 +1475,372 @@ def build_loop_offsets(span_order: list[str], span_lengths: dict[str, float]) ->
         offsets[span_name] = running_length
         running_length += float(span_lengths.get(span_name, 0.0))
     return offsets
+
+
+def build_branch_definitions(
+    major_span_order: list[str],
+    derived_thermal_branches: dict[str, tuple[str, ...]],
+) -> tuple[list[str], dict[str, tuple[str, ...]]]:
+    branch_order = list(major_span_order)
+    branch_membership: dict[str, tuple[str, ...]] = {
+        span_name: (span_name,) for span_name in major_span_order
+    }
+    for branch_name, branch_spans in derived_thermal_branches.items():
+        if branch_name not in branch_membership:
+            branch_order.append(branch_name)
+        branch_membership[branch_name] = tuple(str(span_name) for span_name in branch_spans)
+    return branch_order, branch_membership
+
+
+def safe_weighted_mean(pairs: list[tuple[float, float]]) -> float:
+    numerator = 0.0
+    denominator = 0.0
+    for value, weight in pairs:
+        if not math.isfinite(value) or not math.isfinite(weight) or weight <= defs.EPS:
+            continue
+        numerator += float(value) * float(weight)
+        denominator += float(weight)
+    return float(numerator / denominator) if denominator > defs.EPS else math.nan
+
+
+def row_length_weight(row: dict[str, Any]) -> float:
+    ds_value = safe_float(float(row["s_end_m"]) - float(row["s_start_m"]))
+    return float(ds_value) if ds_value is not None and math.isfinite(ds_value) and ds_value > defs.EPS else math.nan
+
+
+def row_thermal_flow_weight(row: dict[str, Any]) -> float:
+    # Branch summaries should reflect the same support-qualified thermal state
+    # as the primary effective HTC/UA'/R outputs. Reusing the chosen-region
+    # positive mass flux and the accepted streamwise bin width keeps the branch
+    # reduction tied to the same bins that survived the per-row QC gates.
+    if str(row.get("thermal_support_status", "")) != "usable":
+        return math.nan
+    positive_flux = safe_float(row.get("bulk_cross_section_chosen_region_positive_mass_flux_kg_s"))
+    ds_value = row_length_weight(row)
+    if positive_flux is None or not math.isfinite(positive_flux) or positive_flux <= defs.EPS:
+        return math.nan
+    if not math.isfinite(ds_value):
+        return math.nan
+    return float(positive_flux * ds_value)
+
+
+def summarize_branch_thermal_rows(
+    cumulative_rows: list[dict[str, Any]],
+    major_span_order: list[str],
+    derived_thermal_branches: dict[str, tuple[str, ...]],
+) -> tuple[list[dict[str, Any]], list[dict[str, Any]], list[str]]:
+    span_lengths = span_lengths_from_rows(cumulative_rows)
+    branch_order, branch_membership = build_branch_definitions(major_span_order, derived_thermal_branches)
+    cumulative_by_span = defaultdict(list)
+    for row in cumulative_rows:
+        cumulative_by_span[str(row["span_name"])].append(row)
+    for span_name in cumulative_by_span:
+        cumulative_by_span[span_name].sort(key=lambda row: (float(row["time_s"]), int(row["bin_index"])))
+
+    profile_rows: list[dict[str, Any]] = []
+    summary_rows: list[dict[str, Any]] = []
+    for branch_name in branch_order:
+        branch_spans = branch_membership[branch_name]
+        branch_offsets = build_loop_offsets(list(branch_spans), span_lengths)
+        span_rank = {span_name: index for index, span_name in enumerate(branch_spans)}
+        branch_total_length = sum(float(span_lengths.get(span_name, 0.0)) for span_name in branch_spans)
+        branch_rows: list[dict[str, Any]] = []
+        for span_name in branch_spans:
+            offset = float(branch_offsets.get(span_name, 0.0))
+            for row in cumulative_by_span.get(span_name, []):
+                profile_row = {
+                    **row,
+                    "branch_name": branch_name,
+                    "branch_type": "derived_branch" if len(branch_spans) > 1 else "span_section",
+                    "component_span_name": span_name,
+                    "component_span_order_index": span_rank[span_name],
+                    # The composite branch coordinate deliberately skips corners
+                    # and junctions. It concatenates only the validated major
+                    # span bins the package already trusts.
+                    "branch_s_start_m": float(offset + float(row["s_start_m"])),
+                    "branch_s_end_m": float(offset + float(row["s_end_m"])),
+                    "branch_s_mid_m": float(offset + float(row["s_mid_m"])),
+                    "branch_total_length_m": float(branch_total_length),
+                    "branch_profile_index": int(span_rank[span_name] * 100000 + int(row["bin_index"])),
+                    "branch_s_fraction": (
+                        float((offset + float(row["s_mid_m"])) / branch_total_length)
+                        if branch_total_length > defs.EPS
+                        else math.nan
+                    ),
+                }
+                branch_rows.append(profile_row)
+                profile_rows.append(profile_row)
+
+        rows_by_time: dict[float, list[dict[str, Any]]] = defaultdict(list)
+        for row in branch_rows:
+            rows_by_time[float(row["time_s"])].append(row)
+
+        thermal_weight_pairs = [(row, row_thermal_flow_weight(row)) for row in branch_rows]
+        length_weight_pairs = [(row, row_length_weight(row)) for row in branch_rows]
+        usable_rows = [row for row, weight in thermal_weight_pairs if math.isfinite(weight)]
+        branch_heat_totals: list[float] = []
+        branch_heat_abs_totals: list[float] = []
+        abs_delta_t_values: list[float] = []
+        positive_flux_values: list[float] = []
+        area_ratio_values: list[float] = []
+        thermal_status_counts: dict[str, int] = defaultdict(int)
+        for time_value in sorted(rows_by_time):
+            total_heat = 0.0
+            total_abs_heat = 0.0
+            has_heat = False
+            for row in rows_by_time[time_value]:
+                q_prime = safe_float(row.get("wall_heat_per_length_w_m"))
+                ds_value = row_length_weight(row)
+                if q_prime is None or not math.isfinite(q_prime) or not math.isfinite(ds_value):
+                    continue
+                total_heat += float(q_prime) * float(ds_value)
+                total_abs_heat += abs(float(q_prime)) * float(ds_value)
+                has_heat = True
+            if has_heat:
+                branch_heat_totals.append(float(total_heat))
+                branch_heat_abs_totals.append(float(total_abs_heat))
+        for row in branch_rows:
+            delta_t_value = safe_float(row.get("bulk_minus_wall_temp_k"))
+            if delta_t_value is not None and math.isfinite(delta_t_value):
+                abs_delta_t_values.append(abs(float(delta_t_value)))
+            positive_flux_value = safe_float(row.get("bulk_cross_section_chosen_region_positive_mass_flux_kg_s"))
+            if positive_flux_value is not None and math.isfinite(positive_flux_value):
+                positive_flux_values.append(float(positive_flux_value))
+            area_ratio_value = safe_float(row.get("bulk_cross_section_chosen_region_area_ratio_to_reference"))
+            if area_ratio_value is not None and math.isfinite(area_ratio_value):
+                area_ratio_values.append(float(area_ratio_value))
+            thermal_status_counts[str(row.get("thermal_support_status", ""))] += 1
+
+        summary_rows.append(
+            {
+                "branch_name": branch_name,
+                "branch_type": "derived_branch" if len(branch_spans) > 1 else "span_section",
+                "component_spans": ", ".join(branch_spans),
+                "component_span_count": len(branch_spans),
+                "branch_total_length_m": float(branch_total_length),
+                "time_sample_count": len(rows_by_time),
+                "total_row_count": len(branch_rows),
+                "usable_row_count": len(usable_rows),
+                "masked_row_count": max(len(branch_rows) - len(usable_rows), 0),
+                "warning_fraction": float(
+                    sum(1 for row in branch_rows if normalize_warning_flag(row.get("warning_flag", "")) == "yes")
+                    / max(len(branch_rows), 1)
+                ),
+                "thermal_warning_fraction": float(
+                    sum(
+                        1
+                        for row in branch_rows
+                        if normalize_warning_flag(row.get("thermal_support_warning_flag", "")) == "yes"
+                    )
+                    / max(len(branch_rows), 1)
+                ),
+                "mean_mdot_mean_abs_kg_s": safe_weighted_mean(
+                    [
+                        (float(row["mdot_mean_abs_kg_s"]), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_bulk_positive_mass_flux_kg_s": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("bulk_cross_section_chosen_region_positive_mass_flux_kg_s")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_t_wall_area_avg_k": safe_weighted_mean(
+                    [(numeric_or_nan(row.get("t_wall_area_avg_k")), weight) for row, weight in thermal_weight_pairs]
+                ),
+                "mean_bulk_temp_fluid_area_avg_k": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("bulk_temp_fluid_area_avg_k")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_bulk_temp_area_weighted_k": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("bulk_temp_area_weighted_k")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_bulk_minus_wall_temp_k": safe_weighted_mean(
+                    [(numeric_or_nan(row.get("bulk_minus_wall_temp_k")), weight) for row, weight in thermal_weight_pairs]
+                ),
+                "mean_abs_bulk_minus_wall_temp_k": defs.safe_nanmean(abs_delta_t_values),
+                "min_abs_bulk_minus_wall_temp_k": min(abs_delta_t_values) if abs_delta_t_values else math.nan,
+                "mean_wall_heat_per_length_w_m": safe_weighted_mean(
+                    [(numeric_or_nan(row.get("wall_heat_per_length_w_m")), weight) for row, weight in length_weight_pairs]
+                ),
+                "mean_wall_heatflux_area_avg_w_m2": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("wall_heatflux_area_avg_w_m2")), weight)
+                        for row, weight in length_weight_pairs
+                    ]
+                ),
+                "mean_effective_htc_w_m2_k": safe_weighted_mean(
+                    [(numeric_or_nan(row.get("effective_htc_w_m2_k")), weight) for row, weight in thermal_weight_pairs]
+                ),
+                "mean_effective_ua_per_m_w_m_k": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("effective_ua_per_m_w_m_k")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_effective_thermal_resistance_k_m_w": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("effective_thermal_resistance_k_m_w")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_effective_htc_tp_endpoint_proxy_w_m2_k": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("effective_htc_tp_endpoint_proxy_w_m2_k")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_effective_ua_per_m_tp_endpoint_proxy_w_m_k": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("effective_ua_per_m_tp_endpoint_proxy_w_m_k")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "mean_effective_thermal_resistance_tp_endpoint_proxy_k_m_w": safe_weighted_mean(
+                    [
+                        (numeric_or_nan(row.get("effective_thermal_resistance_tp_endpoint_proxy_k_m_w")), weight)
+                        for row, weight in thermal_weight_pairs
+                    ]
+                ),
+                "min_bulk_positive_mass_flux_kg_s": min(positive_flux_values) if positive_flux_values else math.nan,
+                "mean_area_ratio_to_reference": defs.safe_nanmean(area_ratio_values),
+                "max_area_ratio_to_reference": max(area_ratio_values) if area_ratio_values else math.nan,
+                "thermal_status_breakdown_json": json.dumps(dict(sorted(thermal_status_counts.items())), sort_keys=True),
+                "mean_branch_total_wall_heat_w": defs.safe_nanmean(branch_heat_totals),
+                "mean_branch_total_abs_wall_heat_w": defs.safe_nanmean(branch_heat_abs_totals),
+            }
+        )
+
+    profile_rows.sort(
+        key=lambda row: (
+            branch_order.index(str(row["branch_name"])),
+            float(row["time_s"]),
+            int(row["branch_profile_index"]),
+        )
+    )
+    return profile_rows, summary_rows, branch_order
+
+
+def summarize_thermal_support_qc_rows(
+    cumulative_rows: list[dict[str, Any]],
+    branch_thermal_rows: list[dict[str, Any]],
+    major_span_order: list[str],
+    branch_order: list[str],
+) -> list[dict[str, Any]]:
+    def summarize_scope(
+        scope_type: str,
+        scope_name: str,
+        component_spans: str,
+        rows: list[dict[str, Any]],
+        order_index: int,
+    ) -> dict[str, Any]:
+        status_counts: dict[str, int] = defaultdict(int)
+        abs_delta_t_values: list[float] = []
+        positive_flux_values: list[float] = []
+        area_ratio_values: list[float] = []
+        for row in rows:
+            status_counts[str(row.get("thermal_support_status", ""))] += 1
+            delta_t_value = safe_float(row.get("bulk_minus_wall_temp_k"))
+            if delta_t_value is not None and math.isfinite(delta_t_value):
+                abs_delta_t_values.append(abs(float(delta_t_value)))
+            positive_flux_value = safe_float(row.get("bulk_cross_section_chosen_region_positive_mass_flux_kg_s"))
+            if positive_flux_value is not None and math.isfinite(positive_flux_value):
+                positive_flux_values.append(float(positive_flux_value))
+            area_ratio_value = safe_float(row.get("bulk_cross_section_chosen_region_area_ratio_to_reference"))
+            if area_ratio_value is not None and math.isfinite(area_ratio_value):
+                area_ratio_values.append(float(area_ratio_value))
+        total_count = len(rows)
+        usable_count = int(status_counts.get("usable", 0))
+        masked_count = max(total_count - usable_count, 0)
+        return {
+            "scope_type": scope_type,
+            "scope_name": scope_name,
+            "component_spans": component_spans,
+            "scope_order_index": order_index,
+            "total_row_count": total_count,
+            "usable_row_count": usable_count,
+            "masked_row_count": masked_count,
+            "usable_fraction": float(usable_count / max(total_count, 1)),
+            "thermal_warning_fraction": float(masked_count / max(total_count, 1)),
+            "mean_abs_bulk_minus_wall_temp_k": defs.safe_nanmean(abs_delta_t_values),
+            "min_abs_bulk_minus_wall_temp_k": min(abs_delta_t_values) if abs_delta_t_values else math.nan,
+            "mean_bulk_positive_mass_flux_kg_s": defs.safe_nanmean(positive_flux_values),
+            "min_bulk_positive_mass_flux_kg_s": min(positive_flux_values) if positive_flux_values else math.nan,
+            "mean_area_ratio_to_reference": defs.safe_nanmean(area_ratio_values),
+            "max_area_ratio_to_reference": max(area_ratio_values) if area_ratio_values else math.nan,
+            "thermal_status_breakdown_json": json.dumps(dict(sorted(status_counts.items())), sort_keys=True),
+        }
+
+    rows_by_span: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in cumulative_rows:
+        rows_by_span[str(row["span_name"])].append(row)
+    rows_by_branch: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in branch_thermal_rows:
+        rows_by_branch[str(row["branch_name"])].append(row)
+
+    output_rows: list[dict[str, Any]] = []
+    for index, span_name in enumerate(major_span_order):
+        payload = rows_by_span.get(span_name, [])
+        if not payload:
+            continue
+        output_rows.append(
+            summarize_scope(
+                "span_section",
+                span_name,
+                span_name,
+                payload,
+                index,
+            )
+        )
+    for index, branch_name in enumerate(branch_order):
+        payload = rows_by_branch.get(branch_name, [])
+        if not payload:
+            continue
+        component_span_names: list[str] = []
+        for row in sorted(payload, key=lambda row: int(row["component_span_order_index"])):
+            span_name = str(row["component_span_name"])
+            if span_name not in component_span_names:
+                component_span_names.append(span_name)
+        component_spans = ", ".join(component_span_names)
+        if not component_spans:
+            component_spans = branch_name
+        output_rows.append(
+            summarize_scope(
+                "branch",
+                branch_name,
+                component_spans,
+                payload,
+                index,
+            )
+        )
+    return output_rows
+
+
+def mean_profile_by_branch(rows: list[dict[str, Any]], value_key: str) -> dict[str, tuple[list[float], list[float]]]:
+    grouped: dict[str, dict[int, list[float]]] = defaultdict(lambda: defaultdict(list))
+    s_mid_map: dict[str, dict[int, float]] = defaultdict(dict)
+    for row in rows:
+        value = safe_float(row.get(value_key))
+        if value is None or not math.isfinite(value):
+            continue
+        branch_name = str(row["branch_name"])
+        profile_index = int(row["branch_profile_index"])
+        grouped[branch_name][profile_index].append(float(value))
+        s_mid_map[branch_name][profile_index] = float(row["branch_s_mid_m"])
+    profile_map: dict[str, tuple[list[float], list[float]]] = {}
+    for branch_name, by_index in grouped.items():
+        indices = sorted(by_index)
+        profile_map[branch_name] = (
+            [s_mid_map[branch_name][index] for index in indices],
+            [defs.safe_nanmean(by_index[index]) for index in indices],
+        )
+    return profile_map
 
 
 def merge_azimuthal_transport_rows(
@@ -2118,6 +2489,279 @@ def plot_loopwise_thermal_profiles(
     }
 
 
+def plot_branch_thermal_profiles(
+    output_dir: Path,
+    branch_profile_rows: list[dict[str, Any]],
+    branch_order: list[str],
+) -> dict[str, str]:
+    if not branch_profile_rows:
+        return {}
+
+    color_cycle = list(plt.get_cmap("tab10").colors)
+    branch_colors = {
+        branch_name: color_cycle[index % len(color_cycle)]
+        for index, branch_name in enumerate(branch_order)
+    }
+
+    def format_branch_label(branch_name: str) -> str:
+        return branch_name.replace("_", " ")
+
+    def plot_metric_panels(
+        primary_key: str,
+        proxy_key: str | None,
+        ylabel: str,
+        title: str,
+        filename: str,
+        primary_label: str,
+        proxy_label: str | None = None,
+    ) -> dict[str, str]:
+        primary_profiles = mean_profile_by_branch(branch_profile_rows, primary_key)
+        proxy_profiles = mean_profile_by_branch(branch_profile_rows, proxy_key) if proxy_key else {}
+        fig, axes = plt.subplots(
+            len(branch_order),
+            1,
+            figsize=(14, max(11.0, 2.25 * len(branch_order))),
+            sharex=False,
+        )
+        axes_list = list(np.atleast_1d(axes))
+        for axis, branch_name in zip(axes_list, branch_order):
+            color = branch_colors[branch_name]
+            if branch_name in primary_profiles:
+                s_values, values = primary_profiles[branch_name]
+                axis.plot(s_values, values, color=color, linewidth=1.8)
+            if proxy_key and branch_name in proxy_profiles:
+                s_values_proxy, values_proxy = proxy_profiles[branch_name]
+                axis.plot(
+                    s_values_proxy,
+                    values_proxy,
+                    color=color,
+                    linewidth=1.1,
+                    linestyle="--",
+                    alpha=0.8,
+                )
+            axis.set_title(format_branch_label(branch_name))
+            axis.set_ylabel(ylabel)
+            axis.axhline(0.0, color="#d1d5db", linewidth=0.9)
+        axes_list[0].plot([], [], color="#111827", linewidth=1.8, label=primary_label)
+        if proxy_key and proxy_label:
+            axes_list[0].plot([], [], color="#111827", linewidth=1.1, linestyle="--", label=proxy_label)
+        axes_list[0].legend(loc="best")
+        axes_list[-1].set_xlabel("Distance along branch [m]")
+        fig.suptitle(title, y=0.995)
+        fig.tight_layout()
+        paths = save_matplotlib_figure(fig, output_dir, filename, dpi=220)
+        plt.close(fig)
+        return paths
+
+    wall_temp_profiles = mean_profile_by_branch(branch_profile_rows, "t_wall_area_avg_k")
+    bulk_temp_profiles = mean_profile_by_branch(branch_profile_rows, "bulk_temp_fluid_area_avg_k")
+    bulk_temp_tp_profiles = mean_profile_by_branch(branch_profile_rows, "bulk_temp_tp_endpoint_proxy_k")
+    fig_t, axes_t = plt.subplots(
+        len(branch_order),
+        1,
+        figsize=(14, max(11.0, 2.3 * len(branch_order))),
+        sharex=False,
+    )
+    axes_t_list = list(np.atleast_1d(axes_t))
+    for axis, branch_name in zip(axes_t_list, branch_order):
+        color = branch_colors[branch_name]
+        if branch_name in wall_temp_profiles:
+            s_values, values = wall_temp_profiles[branch_name]
+            axis.plot(s_values, values, color="#e07a5f", linewidth=1.8)
+        if branch_name in bulk_temp_profiles:
+            s_values, values = bulk_temp_profiles[branch_name]
+            axis.plot(s_values, values, color=color, linewidth=1.6)
+        if branch_name in bulk_temp_tp_profiles:
+            s_values_proxy, values_proxy = bulk_temp_tp_profiles[branch_name]
+            axis.plot(
+                s_values_proxy,
+                values_proxy,
+                color=color,
+                linewidth=1.1,
+                linestyle="--",
+                alpha=0.8,
+            )
+        axis.set_title(format_branch_label(branch_name))
+        axis.set_ylabel("T [K]")
+    axes_t_list[0].plot([], [], color="#e07a5f", linewidth=1.8, label="wall T")
+    axes_t_list[0].plot([], [], color="#111827", linewidth=1.6, label="bulk T from cutPlane")
+    axes_t_list[0].plot([], [], color="#111827", linewidth=1.1, linestyle="--", label="bulk T TP proxy")
+    axes_t_list[0].legend(loc="best")
+    axes_t_list[-1].set_xlabel("Distance along branch [m]")
+    fig_t.suptitle("Branch-local wall and bulk-fluid temperature profiles", y=0.995)
+    fig_t.tight_layout()
+    branch_temperature_paths = save_matplotlib_figure(
+        fig_t,
+        output_dir,
+        "case_branch_bulk_vs_wall_temperature_profiles",
+        dpi=220,
+    )
+    plt.close(fig_t)
+
+    branch_htc_paths = plot_metric_panels(
+        "effective_htc_w_m2_k",
+        "effective_htc_tp_endpoint_proxy_w_m2_k",
+        "HTC [W/m^2/K]",
+        "Branch-local effective HTC profiles",
+        "case_branch_effective_htc_profiles",
+        "effective HTC from mass-flux-weighted bulk",
+        "effective HTC from TP proxy",
+    )
+    branch_ua_paths = plot_metric_panels(
+        "effective_ua_per_m_w_m_k",
+        "effective_ua_per_m_tp_endpoint_proxy_w_m_k",
+        "UA' [W/m/K]",
+        "Branch-local effective UA per unit length",
+        "case_branch_effective_ua_per_m_profiles",
+        "effective UA' from mass-flux-weighted bulk",
+        "effective UA' from TP proxy",
+    )
+    branch_r_paths = plot_metric_panels(
+        "effective_thermal_resistance_k_m_w",
+        "effective_thermal_resistance_tp_endpoint_proxy_k_m_w",
+        "R_th' [K m / W]",
+        "Branch-local effective thermal resistance per unit length",
+        "case_branch_effective_thermal_resistance_profiles",
+        "1 / UA' from mass-flux-weighted bulk",
+        "1 / UA' from TP proxy",
+    )
+
+    upcomer_rows = [row for row in branch_profile_rows if str(row["branch_name"]) == "upcomer"]
+    upcomer_paths: dict[str, str] = {}
+    if upcomer_rows:
+        upcomer_delta_profiles = mean_profile_by_branch(upcomer_rows, "bulk_minus_wall_temp_k")
+        upcomer_delta_proxy_profiles = mean_profile_by_branch(
+            upcomer_rows,
+            "bulk_minus_wall_tp_endpoint_proxy_k",
+        )
+        upcomer_htc_profiles = mean_profile_by_branch(upcomer_rows, "effective_htc_w_m2_k")
+        upcomer_htc_proxy_profiles = mean_profile_by_branch(
+            upcomer_rows,
+            "effective_htc_tp_endpoint_proxy_w_m2_k",
+        )
+        upcomer_ua_profiles = mean_profile_by_branch(upcomer_rows, "effective_ua_per_m_w_m_k")
+        upcomer_ua_proxy_profiles = mean_profile_by_branch(
+            upcomer_rows,
+            "effective_ua_per_m_tp_endpoint_proxy_w_m_k",
+        )
+        upcomer_r_profiles = mean_profile_by_branch(upcomer_rows, "effective_thermal_resistance_k_m_w")
+        upcomer_r_proxy_profiles = mean_profile_by_branch(
+            upcomer_rows,
+            "effective_thermal_resistance_tp_endpoint_proxy_k_m_w",
+        )
+        upcomer_wall_temp_profiles = mean_profile_by_branch(upcomer_rows, "t_wall_area_avg_k")
+        upcomer_bulk_temp_profiles = mean_profile_by_branch(upcomer_rows, "bulk_temp_fluid_area_avg_k")
+        upcomer_bulk_temp_proxy_profiles = mean_profile_by_branch(
+            upcomer_rows,
+            "bulk_temp_tp_endpoint_proxy_k",
+        )
+
+        fig_u, axes_u = plt.subplots(4, 1, figsize=(14, 13), sharex=True)
+        if "upcomer" in upcomer_wall_temp_profiles:
+            s_values, values = upcomer_wall_temp_profiles["upcomer"]
+            axes_u[0].plot(s_values, values, color="#e07a5f", linewidth=1.8)
+        if "upcomer" in upcomer_bulk_temp_profiles:
+            s_values, values = upcomer_bulk_temp_profiles["upcomer"]
+            axes_u[0].plot(s_values, values, color="#0b3954", linewidth=1.6)
+        if "upcomer" in upcomer_bulk_temp_proxy_profiles:
+            s_values, values = upcomer_bulk_temp_proxy_profiles["upcomer"]
+            axes_u[0].plot(s_values, values, color="#94a1b2", linewidth=1.1, linestyle="--")
+        if "upcomer" in upcomer_delta_profiles:
+            s_values, values = upcomer_delta_profiles["upcomer"]
+            axes_u[1].plot(s_values, values, color="#6d597a", linewidth=1.8)
+        if "upcomer" in upcomer_delta_proxy_profiles:
+            s_values, values = upcomer_delta_proxy_profiles["upcomer"]
+            axes_u[1].plot(s_values, values, color="#94a1b2", linewidth=1.1, linestyle="--")
+        if "upcomer" in upcomer_htc_profiles:
+            s_values, values = upcomer_htc_profiles["upcomer"]
+            axes_u[2].plot(s_values, values, color="#0b3954", linewidth=1.8)
+        if "upcomer" in upcomer_htc_proxy_profiles:
+            s_values, values = upcomer_htc_proxy_profiles["upcomer"]
+            axes_u[2].plot(s_values, values, color="#94a1b2", linewidth=1.1, linestyle="--")
+        if "upcomer" in upcomer_ua_profiles:
+            s_values, values = upcomer_ua_profiles["upcomer"]
+            axes_u[3].plot(s_values, values, color="#2a9d8f", linewidth=1.8)
+        if "upcomer" in upcomer_ua_proxy_profiles:
+            s_values, values = upcomer_ua_proxy_profiles["upcomer"]
+            axes_u[3].plot(s_values, values, color="#94a1b2", linewidth=1.1, linestyle="--")
+        axes_u[0].plot([], [], color="#e07a5f", linewidth=1.8, label="wall T")
+        axes_u[0].plot([], [], color="#0b3954", linewidth=1.6, label="bulk T from cutPlane")
+        axes_u[0].plot([], [], color="#94a1b2", linewidth=1.1, linestyle="--", label="bulk T TP proxy")
+        axes_u[1].plot([], [], color="#6d597a", linewidth=1.8, label="cutPlane bulk - wall")
+        axes_u[1].plot([], [], color="#94a1b2", linewidth=1.1, linestyle="--", label="TP proxy - wall")
+        axes_u[2].plot([], [], color="#0b3954", linewidth=1.8, label="effective HTC")
+        axes_u[2].plot([], [], color="#94a1b2", linewidth=1.1, linestyle="--", label="HTC TP proxy")
+        axes_u[3].plot([], [], color="#2a9d8f", linewidth=1.8, label="effective UA'")
+        axes_u[3].plot([], [], color="#94a1b2", linewidth=1.1, linestyle="--", label="UA' TP proxy")
+        axes_u[0].set_ylabel("T [K]")
+        axes_u[1].set_ylabel("T_bulk - T_wall [K]")
+        axes_u[2].set_ylabel("HTC [W/m^2/K]")
+        axes_u[3].set_ylabel("UA' [W/m/K]")
+        axes_u[3].set_xlabel("Distance along upcomer branch [m]")
+        for axis in axes_u:
+            axis.legend(loc="best")
+        fig_u.suptitle(
+            "Upcomer branch thermal detail (left_lower_leg + test_section_span + left_upper_leg; corners skipped)",
+            y=0.995,
+        )
+        fig_u.tight_layout()
+        upcomer_paths = save_matplotlib_figure(
+            fig_u,
+            output_dir,
+            "case_upcomer_thermal_profiles",
+            dpi=220,
+        )
+        plt.close(fig_u)
+
+    return {
+        "branch_temperature_profiles": branch_temperature_paths,
+        "branch_effective_htc": branch_htc_paths,
+        "branch_effective_ua_per_m": branch_ua_paths,
+        "branch_effective_thermal_resistance": branch_r_paths,
+        "upcomer_thermal_profiles": upcomer_paths,
+    }
+
+
+def plot_thermal_support_summary(
+    output_dir: Path,
+    qc_rows: list[dict[str, Any]],
+) -> dict[str, str]:
+    if not qc_rows:
+        return {}
+    ordered_rows = sorted(
+        qc_rows,
+        key=lambda row: (
+            0 if str(row["scope_type"]) == "span_section" else 1,
+            int(row["scope_order_index"]),
+        ),
+    )
+    labels = [str(row["scope_name"]).replace("_", "\n") for row in ordered_rows]
+    colors = ["#0b6e4f" if str(row["scope_type"]) == "span_section" else "#bc3908" for row in ordered_rows]
+    x = np.arange(len(ordered_rows), dtype=float)
+    fig, axes = plt.subplots(4, 1, figsize=(15, 13), sharex=True)
+    panel_specs = [
+        ("usable_fraction", "Usable fraction [-]", "Thermal support usable fraction"),
+        ("thermal_warning_fraction", "Masked fraction [-]", "Thermal support masked fraction"),
+        ("mean_bulk_positive_mass_flux_kg_s", "Mean +mass flux [kg/s]", "Chosen-region positive mass-flux support"),
+        ("min_abs_bulk_minus_wall_temp_k", "Min |T_bulk - T_wall| [K]", "Minimum resolved thermal driving force"),
+    ]
+    for axis, (field_name, ylabel, title) in zip(axes, panel_specs):
+        values = [float(row.get(field_name, math.nan)) for row in ordered_rows]
+        axis.bar(x, values, color=colors, width=0.8)
+        axis.set_ylabel(ylabel)
+        axis.set_title(title)
+    axes[0].bar([], [], color="#0b6e4f", label="span sections")
+    axes[0].bar([], [], color="#bc3908", label="branch reductions")
+    axes[0].legend(loc="best")
+    axes[-1].set_xticks(x)
+    axes[-1].set_xticklabels(labels)
+    axes[-1].set_xlabel("Scope")
+    fig.tight_layout()
+    paths = save_matplotlib_figure(fig, output_dir, "case_thermal_support_summary", dpi=220)
+    plt.close(fig)
+    return paths
+
+
 def plot_loopwise_thermal_qc(
     output_dir: Path,
     cumulative_rows: list[dict[str, Any]],
@@ -2282,6 +2926,9 @@ def write_readme(output_dir: Path, summary: dict[str, Any]) -> None:
     validation_final_time = safe_float(summary["heat_loss"].get("validation_reference", {}).get("final_time"))
     thermal_times = summary.get("streamwise_thermal", {}).get("available_times_s", [])
     thermal_nan_replacements = summary.get("streamwise_thermal", {}).get("thermal_nan_token_replacements_by_time", {})
+    branch_thermal_available = bool(summary.get("branch_thermal", {}).get("available"))
+    branch_thermal_count = int(summary.get("branch_thermal", {}).get("branch_count", 0))
+    derived_branch_names = [str(value) for value in summary.get("branch_thermal", {}).get("derived_branch_names", [])]
     boundary_layer_available = bool(summary.get("boundary_layer", {}).get("available"))
     boundary_landmark_count = int(summary.get("boundary_layer", {}).get("landmark_count", 0))
     azimuthal_available = bool(summary.get("azimuthal_transport", {}).get("available"))
@@ -2308,6 +2955,16 @@ def write_readme(output_dir: Path, summary: dict[str, Any]) -> None:
             else "- Boundary-layer landmark rows are not available in this package build."
         ),
         (
+            f"- Branch thermal summaries are available for `{branch_thermal_count}` branch sections, including derived branch `{', '.join(derived_branch_names)}`."
+            if branch_thermal_available
+            else "- Branch thermal summaries are not available in this package build."
+        ),
+        (
+            "- Thermal support QC summaries now compare usable fraction, masked fraction, positive mass-flux support, and minimum resolved |T_bulk - T_wall| for both span sections and branch reductions."
+            if branch_thermal_available
+            else "- Thermal support QC summary tables are not available in this package build."
+        ),
+        (
             f"- Azimuthal wall transport was reduced on `{theta_bin_count}` theta bins per retained streamwise station."
             if azimuthal_available
             else "- Azimuthal wall transport rows are not available in this package build."
@@ -2321,6 +2978,11 @@ def write_readme(output_dir: Path, summary: dict[str, Any]) -> None:
         "- Major losses are reported legwise with centerline bins, while corner and connector effects remain in the feature-based minor-loss budget.",
         "- The hydraulic package now carries two parallel major-loss reductions on the same repaired bins: a shear-based estimate and a direct wall-pressure-drop view from area-averaged `p_rgh`.",
         "- The streamwise thermal extension now reports wall temperature, matched cross-sectional fluid temperature from OpenFOAM cut planes using connected-region, mass-flux-weighted support selection, the legacy TP-endpoint bulk estimate for comparison, wall heat flux, effective HTC, and effective `UA'` on the same repaired loop coordinate.",
+        (
+            "- The new branch thermal layer keeps the six repaired span sections as first-class outputs and also publishes a derived `upcomer` branch by concatenating `left_lower_leg`, `test_section_span`, and `left_upper_leg` on a branch-local coordinate while still skipping corners and junctions."
+            if branch_thermal_available
+            else "- No branch thermal layer is published here, so branch-local HTC / UA' / R_th interpretation remains deferred."
+        ),
         (
             "- The azimuthal transport extension now publishes theta-binned wall shear and wall heat-transfer summaries on the same repaired streamwise bins, plus streamwise total and grouped wall-heat-loss reductions."
             if azimuthal_available
@@ -2338,6 +3000,11 @@ def write_readme(output_dir: Path, summary: dict[str, Any]) -> None:
         "- `profile_dp_pa` remains deferred; feature `wall_dp_pa` is still inferred from adjacent major-span gradients.",
         "- Hydraulic diameter and flow area remain geometry estimates from wall area per unit length using a circular-perimeter approximation.",
         "- The direct hydraulic comparison uses wall-area-averaged `p_rgh`, not a volume-centerline probe, so it is best interpreted as a wall-registered pressure-drop diagnostic on the repaired span coordinate.",
+        (
+            "- Branch thermal summaries use flow-weighted support from the same accepted major-span bins. The derived `upcomer` intentionally excludes corner and junction segments, so its branch coordinate is a concatenation of trusted spans rather than a full left-side geometric arclength."
+            if branch_thermal_available
+            else "- No branch-local thermal reduction is available in this package build."
+        ),
         (
             "- Azimuthal friction factors are normalized with the matched streamwise-bin bulk density and bulk velocity, so they should be interpreted as circumferential distribution relative to the same bulk transport state used by the streamwise major-loss package."
             if azimuthal_available
@@ -2381,6 +3048,11 @@ def write_readme(output_dir: Path, summary: dict[str, Any]) -> None:
             else "- Rebuild with azimuthal transport enabled before attempting grouped parasitic heat-loss interpretation."
         ),
         (
+            "- Use the new branch thermal summary to discuss branch-local bulk temperature, flow support, and effective HTC / UA' only with the same support-gated language as the streamwise bins."
+            if branch_thermal_available
+            else "- Add the branch-thermal reduction layer before attempting branch-local HTC / UA' / R_th discussion."
+        ),
+        (
             "- Review the boundary-layer landmark QC rows before using `delta99` or shape-factor language beyond first-pass comparative context."
             if boundary_layer_available
             else "- Add the boundary-layer landmark extractor to the next rebuild if first-pass near-wall profile metrics are needed."
@@ -2402,7 +3074,8 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
     raw_dir = output_dir / "raw_extraction"
     raw_reuse_heat_summary: dict[str, Any] | None = None
 
-    _, runtime_root, _ = resolve_case_paths(args.source_id)
+    _, resolved_runtime_root, _ = resolve_case_paths(args.source_id)
+    runtime_root = Path(args.runtime_root).resolve() if args.runtime_root else resolved_runtime_root
     if args.raw_extraction_dir:
         raw_extraction_source_dir = Path(args.raw_extraction_dir).resolve()
         copy_raw_extraction_tree(raw_extraction_source_dir, raw_dir)
@@ -2501,6 +3174,17 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
         profile.major_span_order,
         profile.major_spans,
     )
+    branch_thermal_rows, branch_thermal_summary_rows, branch_thermal_order = summarize_branch_thermal_rows(
+        cumulative_rows,
+        profile.major_span_order,
+        profile.derived_thermal_branches,
+    )
+    thermal_support_qc_rows = summarize_thermal_support_qc_rows(
+        cumulative_rows,
+        branch_thermal_rows,
+        profile.major_span_order,
+        branch_thermal_order,
+    )
     integrated_feature_rows = merge_feature_budget(
         feature_rows,
         cumulative_rows,
@@ -2508,7 +3192,12 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
         profile.feature_budgets,
     )
     feature_summary_rows = summarize_feature_rows(integrated_feature_rows)
-    heat_summary = raw_reuse_heat_summary or build_case_heat_summary(args.source_id, output_dir, profile.heat_window_count)
+    heat_summary = raw_reuse_heat_summary or build_case_heat_summary(
+        args.source_id,
+        output_dir,
+        profile.heat_window_count,
+        runtime_root_override=runtime_root,
+    )
     major_summary_meta = load_json(raw_dir / "leg_major_loss_extraction_summary.json")
     thermal_sanitization_summary = (
         load_json(raw_dir / "thermal_sanitization_summary.json")
@@ -2549,6 +3238,24 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
         list(cumulative_rows[0].keys()),
         cumulative_rows,
     )
+    if branch_thermal_rows:
+        csv_dump(
+            output_dir / "branch_thermal_profiles.csv",
+            list(branch_thermal_rows[0].keys()),
+            branch_thermal_rows,
+        )
+    if branch_thermal_summary_rows:
+        csv_dump(
+            output_dir / "branch_thermal_summary.csv",
+            list(branch_thermal_summary_rows[0].keys()),
+            branch_thermal_summary_rows,
+        )
+    if thermal_support_qc_rows:
+        csv_dump(
+            output_dir / "thermal_support_qc_summary.csv",
+            list(thermal_support_qc_rows[0].keys()),
+            thermal_support_qc_rows,
+        )
     csv_dump(
         output_dir / "feature_minor_loss_timeseries.csv",
         list(integrated_feature_rows[0].keys()),
@@ -2613,7 +3320,9 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
     gradient_paths = plot_legwise_pressure_gradient(output_dir, cumulative_rows, profile.major_span_order, set(quarantined_spans))
     loopwise_paths = plot_loopwise_hydraulic_comparisons(output_dir, cumulative_rows, profile.loop_span_order)
     thermal_paths = plot_loopwise_thermal_profiles(output_dir, cumulative_rows, profile.loop_span_order)
+    branch_thermal_paths = plot_branch_thermal_profiles(output_dir, branch_thermal_rows, branch_thermal_order)
     thermal_qc_paths = plot_loopwise_thermal_qc(output_dir, cumulative_rows, profile.loop_span_order)
+    thermal_support_summary_paths = plot_thermal_support_summary(output_dir, thermal_support_qc_rows)
     feature_paths = plot_feature_bars(output_dir, feature_summary_rows)
     streamwise_heat_loss_paths = (
         plot_streamwise_heat_loss(output_dir, streamwise_heat_loss_rows, parasitic_heat_loss_rows)
@@ -2661,6 +3370,22 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
                 if normalize_warning_flag(row.get("thermal_support_warning_flag", "")) == "yes"
             ),
         },
+        "branch_thermal": {
+            "available": bool(branch_thermal_rows),
+            "profile_csv": str(output_dir / "branch_thermal_profiles.csv"),
+            "summary_csv": str(output_dir / "branch_thermal_summary.csv"),
+            "thermal_qc_summary_csv": str(output_dir / "thermal_support_qc_summary.csv"),
+            "branch_order": branch_thermal_order,
+            "derived_branch_names": list(profile.derived_thermal_branches),
+            "available_times_s": sorted({float(row["time_s"]) for row in branch_thermal_rows}),
+            "branch_count": len(branch_thermal_order),
+            "usable_row_count": sum(
+                1 for row in branch_thermal_rows if str(row.get("thermal_support_status", "")) == "usable"
+            ),
+            "masked_row_count": sum(
+                1 for row in branch_thermal_rows if str(row.get("thermal_support_status", "")) != "usable"
+            ),
+        },
         "boundary_layer": {
             "available": bool(boundary_layer_rows),
             "profile_csv": str(output_dir / "boundary_layer_landmark_profiles.csv"),
@@ -2701,7 +3426,9 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
             "major_pressure_gradient": gradient_paths,
             "loopwise_hydraulics": loopwise_paths,
             "loopwise_thermal": thermal_paths,
+            "branch_thermal": branch_thermal_paths,
             "loopwise_thermal_qc": thermal_qc_paths,
+            "thermal_support_summary": thermal_support_summary_paths,
             "feature_budgets": feature_paths,
             "streamwise_heat_loss": streamwise_heat_loss_paths,
             "heat_loss": heat_summary.get("figure_paths", {}),
@@ -2713,6 +3440,7 @@ def main(argv: list[str] | None = None, default_output_dir: Path = DEFAULT_OUTPU
             "direct_pressure_gradient_method": "wall-area-averaged p_rgh reduced on the same repaired bins, then differentiated along local span arclength",
             "streamwise_bulk_temperature_method": "bulk temperature is computed from OpenFOAM cutPlane sampled T and U on repaired major-span bins, selecting one connected region by aligned positive mass-flux support and reference-area agreement, then mass-flux-weighting T over that chosen region",
             "streamwise_bulk_temperature_weighting": "HTC and UA' are only reported where chosen-region support passes the current area-ratio, aligned-flux, and minimum-|Delta T| gates",
+            "branch_thermal": "branch-local thermal profiles reuse the validated major-span bins; the derived upcomer branch concatenates left_lower_leg, test_section_span, and left_upper_leg while intentionally skipping corners and junctions",
             "boundary_layer_landmarks": "wall-to-centerline sampled-set landmarks provide first-pass local profile metrics only; they are not a full circumferential or full-span boundary-layer reconstruction",
             "azimuthal_transport": "theta-binned wall transport uses registered wall-face projection onto the repaired streamwise coordinate and local cross-plane azimuth bins; local friction factors are normalized with the matched streamwise-bin bulk rho and bulk velocity rather than a wall-local velocity scale",
             "flow_direction_sign_hint": flow_direction_metadata["meaning"],

@@ -122,6 +122,40 @@ def load_boundary_rows(path: Path) -> list[dict[str, Any]]:
     return rows
 
 
+def load_branch_thermal_rows(path: Path) -> list[dict[str, Any]]:
+    rows: list[dict[str, Any]] = []
+    for row in load_csv_rows(path):
+        rows.append(
+            {
+                **row,
+                "branch_name": str(row["branch_name"]),
+                "branch_type": str(row["branch_type"]),
+                "component_spans": str(row["component_spans"]),
+                "component_span_count": int(row["component_span_count"]),
+                "branch_total_length_m": safe_float(row.get("branch_total_length_m"), math.nan),
+                "usable_row_count": int(row["usable_row_count"]),
+                "masked_row_count": int(row["masked_row_count"]),
+                "usable_fraction": (
+                    float(int(row["usable_row_count"]) / max(int(row["total_row_count"]), 1))
+                    if row.get("total_row_count")
+                    else math.nan
+                ),
+                "thermal_warning_fraction": safe_float(row.get("thermal_warning_fraction"), math.nan),
+                "mean_bulk_temp_fluid_area_avg_k": safe_float(row.get("mean_bulk_temp_fluid_area_avg_k"), math.nan),
+                "mean_abs_bulk_minus_wall_temp_k": safe_float(row.get("mean_abs_bulk_minus_wall_temp_k"), math.nan),
+                "min_abs_bulk_minus_wall_temp_k": safe_float(row.get("min_abs_bulk_minus_wall_temp_k"), math.nan),
+                "mean_bulk_positive_mass_flux_kg_s": safe_float(row.get("mean_bulk_positive_mass_flux_kg_s"), math.nan),
+                "mean_effective_htc_w_m2_k": safe_float(row.get("mean_effective_htc_w_m2_k"), math.nan),
+                "mean_effective_ua_per_m_w_m_k": safe_float(row.get("mean_effective_ua_per_m_w_m_k"), math.nan),
+                "mean_effective_thermal_resistance_k_m_w": safe_float(
+                    row.get("mean_effective_thermal_resistance_k_m_w"),
+                    math.nan,
+                ),
+            }
+        )
+    return rows
+
+
 def span_lengths_from_rows(rows: list[dict[str, Any]]) -> dict[str, float]:
     lengths: dict[str, float] = {}
     for row in rows:
@@ -335,6 +369,52 @@ def plot_boundary_landmarks(output_dir: Path, rows: list[dict[str, Any]]) -> dic
     return paths
 
 
+def plot_branch_thermal_summary(output_dir: Path, rows: list[dict[str, Any]]) -> dict[str, str]:
+    grouped: dict[str, list[dict[str, Any]]] = defaultdict(list)
+    for row in rows:
+        grouped[str(row["source_id"])].append(row)
+    branch_names = sorted(
+        {str(row["branch_name"]) for row in rows},
+        key=lambda name: (name != "upcomer", name),
+    )
+    x = np.arange(len(branch_names), dtype=float)
+    fig, axes = plt.subplots(4, 1, figsize=(15, 13), sharex=True)
+    width = 0.75 / max(len(grouped), 1)
+    panel_specs = [
+        ("mean_bulk_temp_fluid_area_avg_k", "Mean bulk T [K]", "Representative Salt 2 branch bulk temperature comparison"),
+        ("mean_effective_htc_w_m2_k", "Mean HTC [W/m^2/K]", "Representative Salt 2 branch effective HTC comparison"),
+        ("mean_effective_ua_per_m_w_m_k", "Mean UA' [W/m/K]", "Representative Salt 2 branch effective UA' comparison"),
+        ("mean_effective_thermal_resistance_k_m_w", "Mean R_th' [K m / W]", "Representative Salt 2 branch effective thermal resistance comparison"),
+    ]
+    branch_lookup = {(str(row["source_id"]), str(row["branch_name"])): row for row in rows}
+    for series_index, source_id in enumerate(sorted(grouped, key=sort_key)):
+        offset = (series_index - (len(grouped) - 1) / 2.0) * width
+        for axis, (field_name, ylabel, title) in zip(axes, panel_specs):
+            values = [
+                float(branch_lookup[(source_id, branch_name)].get(field_name, math.nan))
+                if (source_id, branch_name) in branch_lookup
+                else math.nan
+                for branch_name in branch_names
+            ]
+            axis.bar(
+                x + offset,
+                values,
+                width=width,
+                color=case_color(source_id),
+                label=case_label(source_id) if axis is axes[0] else None,
+            )
+            axis.set_ylabel(ylabel)
+            axis.set_title(title)
+    axes[0].legend(loc="best")
+    axes[-1].set_xticks(x)
+    axes[-1].set_xticklabels([name.replace("_", "\n") for name in branch_names])
+    axes[-1].set_xlabel("Branch")
+    fig.tight_layout()
+    paths = save_matplotlib_figure(fig, output_dir, "representative_branch_thermal_summary", dpi=220)
+    plt.close(fig)
+    return paths
+
+
 def write_readme(output_dir: Path, packages: list[dict[str, Any]], summary: dict[str, Any]) -> None:
     lines = [
         "# Representative Salt 2 Transport Comparison",
@@ -355,12 +435,14 @@ def write_readme(output_dir: Path, packages: list[dict[str, Any]], summary: dict
             "",
             "- `major_loss_cumulative_timeseries.csv` is reduced into loopwise mean streamwise friction, direct pressure-gradient, effective HTC, thermal resistance, and momentum-resistance proxy curves.",
             "- `boundary_layer_landmark_summary.csv` is reduced into representative landmark comparisons for `delta99_u`, `delta99_t`, and `H12`.",
+            "- `branch_thermal_summary.csv` is reduced into branch-local bulk-temperature and effective thermal comparison tables for the six repaired sections plus the derived `upcomer` branch.",
             "- Loopwise alignment follows the per-case `loop_span_order` carried by the Salt-family case-analysis package.",
             "",
             "## Assumptions And Limits",
             "",
             "- Effective thermal metrics are the primary thermal comparison outputs. They inherit the package masking and thermal sanitization rules from the per-case builder.",
             "- Boundary-layer rows are first-pass wall-to-centerline landmark samples, not a full circumferential or full-span closure model.",
+            "- Branch thermal rows reuse validated span bins. The derived `upcomer` branch concatenates `left_lower_leg`, `test_section_span`, and `left_upper_leg` while intentionally skipping corners and junctions.",
             "- The validation case in this corrected trio may be on a later continuation-era retained window than older June 10 validation products; use the package `requested_times_s` values above when citing provenance.",
             "- Any package row filtered out upstream by QC remains absent here; this comparison builder does not backfill missing transport data.",
             "",
@@ -368,7 +450,8 @@ def write_readme(output_dir: Path, packages: list[dict[str, Any]], summary: dict
             "",
             f"- `representative_transport_profiles.csv`: `{summary['representative_transport_profiles_csv']}`",
             f"- `representative_boundary_layer_landmarks.csv`: `{summary['representative_boundary_layer_landmarks_csv']}`",
-            "- `figures/`: friction/pressure, thermal/resistance, and boundary-landmark overlays",
+            f"- `representative_branch_thermal_summary.csv`: `{summary['representative_branch_thermal_summary_csv']}`",
+            "- `figures/`: friction/pressure, thermal/resistance, boundary-landmark, and branch-thermal overlays",
         ]
     )
     (output_dir / "README.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
@@ -387,10 +470,13 @@ def main() -> int:
         source_id = str(summary["source_id"])
         transport_rows = load_transport_rows(package_dir / "major_loss_cumulative_timeseries.csv")
         boundary_rows = load_boundary_rows(package_dir / "boundary_layer_landmark_summary.csv")
+        branch_thermal_rows = load_branch_thermal_rows(package_dir / "branch_thermal_summary.csv")
         if not transport_rows:
             raise RuntimeError(f"Missing transport rows under {package_dir}")
         if not boundary_rows:
             raise RuntimeError(f"Missing boundary-layer landmark rows under {package_dir}")
+        if not branch_thermal_rows:
+            raise RuntimeError(f"Missing branch-thermal rows under {package_dir}")
         packages.append(
             {
                 "package_dir": str(package_dir),
@@ -398,6 +484,7 @@ def main() -> int:
                 "source_id": source_id,
                 "transport_rows": transport_rows,
                 "boundary_rows": boundary_rows,
+                "branch_thermal_rows": branch_thermal_rows,
             }
         )
 
@@ -409,6 +496,7 @@ def main() -> int:
 
     mean_transport_rows: list[dict[str, Any]] = []
     mean_boundary_rows: list[dict[str, Any]] = []
+    representative_branch_rows: list[dict[str, Any]] = []
     for payload in packages:
         source_id = str(payload["source_id"])
         mean_transport_rows.extend(
@@ -417,6 +505,14 @@ def main() -> int:
         mean_boundary_rows.extend(
             build_mean_boundary_rows(source_id, payload["boundary_rows"], offsets, total_length)
         )
+        for row in payload["branch_thermal_rows"]:
+            representative_branch_rows.append(
+                {
+                    **row,
+                    "source_id": source_id,
+                    "case_label": case_label(source_id),
+                }
+            )
 
     csv_dump(
         output_dir / "representative_transport_profiles.csv",
@@ -428,10 +524,16 @@ def main() -> int:
         list(mean_boundary_rows[0].keys()),
         mean_boundary_rows,
     )
+    csv_dump(
+        output_dir / "representative_branch_thermal_summary.csv",
+        list(representative_branch_rows[0].keys()),
+        representative_branch_rows,
+    )
 
     friction_paths = plot_friction_and_pressure(output_dir, mean_transport_rows)
     thermal_paths = plot_thermal_and_resistance(output_dir, mean_transport_rows)
     boundary_paths = plot_boundary_landmarks(output_dir, mean_boundary_rows)
+    branch_paths = plot_branch_thermal_summary(output_dir, representative_branch_rows)
 
     summary = {
         "generated_at": iso_timestamp(),
@@ -440,10 +542,12 @@ def main() -> int:
         "loop_span_order": loop_span_order,
         "representative_transport_profiles_csv": str((output_dir / "representative_transport_profiles.csv").resolve()),
         "representative_boundary_layer_landmarks_csv": str((output_dir / "representative_boundary_layer_landmarks.csv").resolve()),
+        "representative_branch_thermal_summary_csv": str((output_dir / "representative_branch_thermal_summary.csv").resolve()),
         "figure_paths": {
             "friction_and_pressure": friction_paths,
             "thermal_and_resistance": thermal_paths,
             "boundary_landmarks": boundary_paths,
+            "branch_thermal_summary": branch_paths,
         },
     }
     with (output_dir / "summary.json").open("w", encoding="utf-8") as handle:

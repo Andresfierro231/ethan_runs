@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-18T16:54:32-05:00",
+  "script": "tools/analyze/build_ethan_salt_thermal_closure_hardening_v3.py",
+  "output_dir": "reports/2026-06-19_ethan_salt_thermal_closure_hardening_v3",
+  "input_roots": [
+    "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+    "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate",
+    "tmp/2026-06-15_live_case_analysis"
+  ],
+  "summary": {
+    "fit_ready_row_count": 7,
+    "fit_ready_branches": [
+      "left_lower_leg"
+    ],
+    "residual_fraction_max": 0.45
+  }
+}

@@ -1,0 +1,5 @@
+feature_class,fit_use_status,exclusion_reason_primary,row_count
+bend,excluded,nonpositive_path_feature_excess_loss,22
+bend,fit_used,closure_supported,14
+quartz_transition,excluded,nonpositive_path_feature_excess_loss,2
+quartz_transition,fit_used,closure_supported,7

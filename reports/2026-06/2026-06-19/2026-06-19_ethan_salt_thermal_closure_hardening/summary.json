@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-18T14:38:48-05:00",
+  "case_count": 9,
+  "timeseries_row_count": 259,
+  "case_row_count": 63,
+  "fit_ready_count": 2,
+  "branch_fit_ready_counts": {
+    "left_lower_leg": 2
+  },
+  "property_convention": "branch_bulk",
+  "support_fraction_min": 0.9,
+  "delta_t_min_k": 0.25,
+  "residual_fraction_max": 0.3,
+  "grouped_reconstruction_max": 0.05,
+  "pass_time_fraction_min": 0.75
+}

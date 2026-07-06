@@ -1,0 +1,10 @@
+source_id,case_label,leg_count,candidate_leg_count,screening_leg_count,blocked_leg_count,mean_enthalpy_residual_fraction,max_enthalpy_residual_fraction
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,6,0,0,6,2.372725796160735,7.567109783228613
+viscosity_screening_salt_test_1_jin_coarse_mesh,Salt 1 Jin,6,0,0,6,2.9398368827878785,7.787809779468553
+viscosity_screening_salt_test_1_kirst_coarse_mesh,Salt 1 Kirst,6,0,0,6,2.923341537431375,7.761912183589256
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2 Jin,6,0,0,6,2.3294425763258633,7.249171692765898
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2 Kirst,6,1,0,5,2.273126075399153,7.251995187470622
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,6,0,0,6,2.3342754401225827,7.378919314048618
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,6,0,1,5,2.2830299826939235,7.303332235394552
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,6,0,0,6,2.3096566275218042,7.352802602781248
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,6,0,0,6,2.2953355050843025,7.372536137386492

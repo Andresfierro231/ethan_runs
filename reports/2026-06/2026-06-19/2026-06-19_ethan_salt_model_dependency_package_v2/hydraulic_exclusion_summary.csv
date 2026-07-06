@@ -1,0 +1,5 @@
+asset_family,fit_use_status,exclusion_reason_primary,row_count
+feature_keff,excluded,nonpositive_local_feature_excess_loss,24
+straight_section_friction,excluded,buoyancy_aided_or_net_gain_section,18
+straight_section_friction,excluded,direct_to_shear_magnitude_gap,13
+straight_section_friction,excluded,support_fraction_below_floor,11

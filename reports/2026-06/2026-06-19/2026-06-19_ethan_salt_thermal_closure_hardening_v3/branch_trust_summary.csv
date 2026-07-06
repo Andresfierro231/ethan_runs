@@ -1,0 +1,8 @@
+branch_name,row_count,fit_used_count,sensitivity_only_count,excluded_count,mean_support_fraction,mean_residual_fraction_of_wall_heat,min_delta_t_wall_bulk_mean_k,recommended_domain_status
+left_lower_leg,9,7,2,0,0.9411764705882353,0.3734161590547065,2.8986987703063942,defended_direct_branch_domain
+left_upper_leg,9,0,9,0,0.9487179487179487,0.6084255925203904,3.0602950451294433,not_defended
+lower_leg,9,0,0,9,0.748792270531401,1.7131093612106238,13.336334052438973,not_defended
+right_leg,9,0,0,9,0.7311827956989249,7.447287673192213,10.572563466051387,not_defended
+test_section_span,9,0,9,0,1.0,2.6388538995430477,2.880798706712866,not_defended
+upcomer,9,0,9,0,0.9632981397687279,1.0169049570368414,3.40379602907729,not_defended
+upper_leg,9,0,0,9,0.9550827423167849,2.0014385211017816,7.3823320578671785,not_defended

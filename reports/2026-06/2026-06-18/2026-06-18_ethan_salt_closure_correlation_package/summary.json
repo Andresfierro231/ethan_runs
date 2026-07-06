@@ -1,0 +1,46 @@
+{
+  "generated_at": "2026-06-18T11:20:33-05:00",
+  "case_count": 9,
+  "straight_section_row_count": 54,
+  "feature_row_count": 45,
+  "branch_row_count": 63,
+  "enthalpy_row_count": 54,
+  "boundary_summary_row_count": 54,
+  "representative_profile_row_count": 7015,
+  "straight_section_fit_candidates": 12,
+  "feature_fit_candidates": 19,
+  "branch_fit_candidates": 36,
+  "enthalpy_fit_candidates": 1,
+  "figure_paths": {
+    "hydraulic_agreement": {
+      "png": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/png/salt_hydraulic_agreement.png",
+      "svg": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/svg/salt_hydraulic_agreement.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/pdf/salt_hydraulic_agreement.pdf"
+    },
+    "branch_usability": {
+      "png": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/png/salt_branch_usability.png",
+      "svg": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/svg/salt_branch_usability.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/pdf/salt_branch_usability.pdf"
+    },
+    "heat_partition": {
+      "png": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/png/salt_heat_loss_partition.png",
+      "svg": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/svg/salt_heat_loss_partition.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/pdf/salt_heat_loss_partition.pdf"
+    },
+    "boundary_ratios": {
+      "png": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/png/salt_boundary_layer_ratios.png",
+      "svg": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/svg/salt_boundary_layer_ratios.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/pdf/salt_boundary_layer_ratios.pdf"
+    },
+    "representative_profiles": {
+      "png": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/png/salt_representative_boundary_profiles.png",
+      "svg": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/svg/salt_representative_boundary_profiles.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_closure_correlation_package/figures/pdf/salt_representative_boundary_profiles.pdf"
+    }
+  },
+  "limitations": [
+    "Feature K_eff remains tied to the June 17 residual p_rgh feature path rather than a dedicated feature hydro integral.",
+    "Heat-loss partition remains case-level and audit-style; it is not yet a resolved internal-convection / wall-conduction / external-radiation decomposition.",
+    "Representative boundary-layer context is limited to the currently preserved Salt 2 landmark profile set already available in the additive June 17 package."
+  ]
+}

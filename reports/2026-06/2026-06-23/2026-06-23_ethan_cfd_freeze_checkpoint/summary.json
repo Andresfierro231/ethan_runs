@@ -1,0 +1,27 @@
+{
+  "generated_on": "2026-06-23",
+  "salt_cases_with_at_least_20_retained_steps": [
+    "salt2_cont",
+    "salt3_cont",
+    "salt4_cont",
+    "salt2_hiq",
+    "salt3_hiq",
+    "salt4_hiq",
+    "salt2_loq",
+    "salt3_loq",
+    "salt4_loq"
+  ],
+  "salt_cases_with_fewer_than_20_retained_steps": [
+    "salt1_jin"
+  ],
+  "water_pack_assessment": {
+    "operational_call": "no obvious overload signature",
+    "evidence": [
+      "all four water continuations produced at least 20 retained representative steps",
+      "each water lane continued advancing to a later retained endpoint before freeze",
+      "no water lane failed with OOM or node failure before the manual freeze",
+      "slurm accounting for the four foamRun steps reported MaxRSS between about 0.65 and 0.73 GB and MaxVMSize between about 5.26 and 5.34 GB"
+    ],
+    "scientific_boundary": "operationally acceptable does not mean converged; Water 4 remained the least settled lane at freeze."
+  }
+}

@@ -21,3 +21,10 @@ Generated: `2026-06-08T13:46:21-05:00`
 
 - If a true hydraulic-evolution slide is needed, build transient `p_rgh` histories or a distance-resolved pressure reconstruction rather than reusing the latest-time ranking bar chart.
 - If the deck needs an explicit heat-transfer coefficient label, decide whether `Nu(x)` is sufficient as the scientific proxy or derive `HTC(x)` from a documented conductivity and length scale definition.
+
+## June 22 Retrospective Status
+
+- The Salt 3/4 slice refresh itself stayed valid and needed no further render
+  repair.
+- The two suggested actions remain optional presentation/product decisions, not
+  stale render-pipeline debt.

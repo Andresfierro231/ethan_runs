@@ -1,0 +1,70 @@
+{
+  "generated_at": "2026-06-19T00:00:00-05:00",
+  "refreshed_at": "2026-06-22T10:00:00-05:00",
+  "current_continuation_wave_needed_for": [
+    "retained-time Salt and Water closure support",
+    "last-window straight-section hydraulic sensitivity support",
+    "Water readiness without premature scenario expansion"
+  ],
+  "defended_today": {
+    "straight_section_friction": "provisional_defended",
+    "feature_keff": "not_defensible_yet",
+    "salt_nu": "provisional_defended_limited_domain"
+  },
+  "implementation_spec_artifacts": [
+    "blocker_resolution_plan.md",
+    "one_d_implementation_spec.md",
+    "one_d_state_vector.csv",
+    "one_d_closure_map.csv",
+    "one_d_calibration_table_spec.csv"
+  ],
+  "next_checkpoints": [
+    "rebuild retained-time straight rows from the active continuations",
+    "rerun late-window straight sensitivity from preserved rows",
+    "build retained-time feature-path hydro extractor before any defended feature K_eff fit",
+    "wire explicit Jin and Kirst salt property branches into the 1D model"
+  ],
+  "submitted_followon_case_count": 4,
+  "deferred_followon_case_count": 2,
+  "repair_relaunch_count": 3,
+  "repair_failures_diagnosed": [
+    "3246562 missing system/controlDict in the staged Salt 4 high-Q child",
+    "3246563 missing system/controlDict in the staged Salt 4 low-Q child",
+    "3246927 compute-node self-staging depended on rg, which was unavailable on the runtime path"
+  ],
+  "repaired_job_ids": [
+    3250524,
+    3250525,
+    3250526
+  ],
+  "cooler_h_visible_do_not_mutate": true,
+  "queue_snapshot": {
+    "as_of": "2026-06-22T10:00:00-05:00",
+    "running": [
+      3244950,
+      3244951,
+      3244954,
+      3244957,
+      3246561,
+      3246564,
+      3250524,
+      3250525
+    ],
+    "pending": [
+      3250526
+    ],
+    "failed": [
+      3246562,
+      3246563,
+      3246927
+    ],
+    "timed_out": [
+      3244952,
+      3244953,
+      3244956
+    ],
+    "completed": [
+      3244955
+    ]
+  }
+}

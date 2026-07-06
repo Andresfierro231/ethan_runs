@@ -602,6 +602,20 @@ Important observations from that path:
 - the wrapper validates success by testing for the expected per-render
   `status.json` files after each invocation
 
+Slurm-accounting policy for the known post-write `ExitCode=11` case:
+
+- do not let the batch job fail solely because `pvbatch` returned `11` after
+  the outputs were already written
+- capture the raw ParaView return code for logging, but make the final batch
+  status depend on the durable artifacts instead
+- require the expected `status.json` files to exist and report
+  `status: rendered`
+- treat missing status files, malformed payloads, or failed status values as
+  the real batch failure condition
+
+This yields cleaner scheduler history: successful renders show `COMPLETED 0:0`
+in `sacct` even when ParaView emitted the known shutdown segfault internally.
+
 Final durable totals:
 
 - `16/16` movie status files reported `status: rendered`

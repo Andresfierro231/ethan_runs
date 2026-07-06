@@ -11,29 +11,34 @@
 set -euo pipefail
 
 ROOT=/scratch/09748/andresfierro231/projects_scratch/ethan_runs
-VENV_ROOT=${SLURM_TMPDIR:-/tmp}/${USER}_box_cli_env
-MANIFEST_PATH="$ROOT/tmp/2026-06-16_ethan_box_upload_probe/execute_manifest.json"
-PYTHON_BIN=${PYTHON_BIN:-python3.11}
+RCLONE_BIN=${RCLONE_BIN:-$HOME/bin/rclone}
+REMOTE_ROOT='box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data/ethans runs'
+LOG_PATH="$ROOT/tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log"
 
 cd "$ROOT"
 
 echo "[ethan-box-upload] root: $ROOT"
-echo "[ethan-box-upload] venv: $VENV_ROOT"
-echo "[ethan-box-upload] manifest: $MANIFEST_PATH"
+echo "[ethan-box-upload] remote: $REMOTE_ROOT"
+echo "[ethan-box-upload] log: $LOG_PATH"
 
-if [[ ! -x "$VENV_ROOT/bin/python" ]]; then
-  echo "[ethan-box-upload] creating virtualenv"
-  "$PYTHON_BIN" -m venv "$VENV_ROOT"
-  "$VENV_ROOT/bin/pip" install --upgrade pip
-  "$VENV_ROOT/bin/pip" install box-sdk-gen requests pyjwt
-else
-  echo "[ethan-box-upload] reusing existing virtualenv"
-fi
+test -x "$RCLONE_BIN"
+test -f "$HOME/.config/rclone/rclone.conf"
 
-"$VENV_ROOT/bin/python" tools/publish/upload_ethan_runs_to_box.py \
-  --execute \
-  --overwrite-changed \
-  --source-root "$ROOT" \
-  --box-folder-id 385169164073 \
-  --remote-subfolder "ethans runs" \
-  --manifest-path "$MANIFEST_PATH"
+"$RCLONE_BIN" copy "$ROOT" "$REMOTE_ROOT" \
+  --progress \
+  --log-file "$LOG_PATH" \
+  --log-level INFO \
+  --checkers 16 \
+  --transfers 8 \
+  --exclude '.git/**' \
+  --exclude '.agent/**' \
+  --exclude '.agents/**' \
+  --exclude '.codex/**' \
+  --exclude 'cache/**' \
+  --exclude 'figures/**' \
+  --exclude 'figures_rendered/**' \
+  --exclude 'linked_cases/**' \
+  --exclude 'tmp/**' \
+  --exclude 'tmp_extract/**' \
+  --exclude '__pycache__/**' \
+  --exclude '.pytest_cache/**'

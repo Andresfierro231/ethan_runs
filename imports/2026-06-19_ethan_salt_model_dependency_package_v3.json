@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-18T16:57:57-05:00",
+  "script": "tools/analyze/build_ethan_salt_model_dependency_package_v3.py",
+  "output_dir": "reports/2026-06-19_ethan_salt_model_dependency_package_v3",
+  "input_roots": [
+    "reports/2026-06-19_ethan_salt_feature_path_hydraulic_hardening",
+    "reports/2026-06-19_ethan_salt_thermal_closure_hardening_v3",
+    "reports/2026-06-19_ethan_salt_straight_hydraulic_sensitivity"
+  ],
+  "summary": {
+    "straight_section_status": "provisional_defended",
+    "feature_status": "not_defensible_yet",
+    "thermal_status": "provisional_defended",
+    "thermal_fit_used_count": 7
+  }
+}

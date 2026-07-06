@@ -96,3 +96,23 @@ boundary-condition files rather than only summary metadata.
 - Build result: success. Remaining log noise is limited to table-width and
   underfull-box warnings in existing manuscript tables, not errors from the new
   boundary-modeling text.
+
+## 2026-06-22 setup-map extension
+
+- Re-opened the AGENT-078 report root because the user asked more directly for
+  documentation of how Ethan is set up, not only how the heater/cooler/test
+  section BCs behave.
+- Extended
+  `reports/2026-06-15_ethan_boundary_modeling_report/README.md`
+  with a more direct setup-level overview:
+  - which files define the readable case
+  - what is physically resolved versus represented by wall surrogates
+  - how the thermal roles map around the loop
+  - the recommended file-read order for anyone trying to understand a case
+- Kept the scientific boundary unchanged:
+  - `0/T` remains the governing thermal implementation
+  - `case_config.yaml` remains nominal metadata unless reconciled against
+    `0/T`
+  - the readable Ethan cases are still best described as single-fluid loop
+    models with patch-based heater/cooler/insulation surrogates rather than
+    resolved conjugate-heat-transfer models

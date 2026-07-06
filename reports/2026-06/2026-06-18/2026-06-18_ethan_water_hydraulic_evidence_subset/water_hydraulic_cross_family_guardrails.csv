@@ -1,0 +1,7 @@
+branch,status,required_caveat,cross_family_ready
+left_lower_leg,excluded,Excluded from Water-family hydraulic evidence.,no
+left_upper_leg,contextual_only,Not stable enough for Water-family branch-pressure dependency work.,no
+lower_leg,contextual_only,Not stable enough for Water-family branch-pressure dependency work.,no
+right_leg,water_only_candidate,Candidate for Water-family hydraulic interpretation only; do not assume Salt cross-family promotion without a separate Salt-side branch screen.,no
+test_section_span,water_only_candidate,Candidate for Water-family hydraulic interpretation only; do not assume Salt cross-family promotion without a separate Salt-side branch screen.,no
+upper_leg,water_only_candidate,Candidate for Water-family hydraulic interpretation only; do not assume Salt cross-family promotion without a separate Salt-side branch screen.,no

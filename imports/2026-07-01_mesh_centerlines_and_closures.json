@@ -1,0 +1,45 @@
+{
+  "manifest_id": "2026-07-01_mesh_centerlines_and_closures",
+  "owner": "claude",
+  "task": "AGENT-162",
+  "generated_at": "2026-07-01",
+  "purpose": "T1/T1b/T4/T5: re-extract all hydraulic and thermal closures from mesh-true PCA centerlines; fix probe-CSV orientation bug; implement momentum-budget friction decomposition.",
+  "scope": "Salt 2/3/4 Jin mainline continuations (t=7915 s). T1=geometry fix, T1b=momentum budget, T4=downcomer thermal, T5=all-span recirculation/Ri. Scaling study deferred.",
+  "new_tools": [
+    "tools/extract/build_mesh_centerlines.py",
+    "tools/extract/test_build_mesh_centerlines.py",
+    "tools/analyze/derive_streamwise_momentum_budget.py",
+    "tools/analyze/test_derive_streamwise_momentum_budget.py"
+  ],
+  "modified_tools": [
+    "tools/extract/sample_section_mean_pressure.py",
+    "tools/analyze/derive_segment_friction.py",
+    "tools/extract/sample_upcomer_convection_cell.py",
+    "tools/extract/sample_segment_htc_uaprime.py"
+  ],
+  "new_docs": [
+    ".agent/journal/2026-07-01/T1-mesh-centerlines-geometry-refix.md",
+    ".agent/journal/2026-07-01/T1b-momentum-budget-debuoyed-friction.md",
+    ".agent/journal/2026-07-01/T4-downcomer-thermal.md",
+    ".agent/journal/2026-07-01/T5-allspan-recirculation-ri.md",
+    "operational_notes/07-26/01/2026-07-01_scaling_study_resume_later.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-01_claude_mesh_centerlines",
+    "work_products/2026-07-01_claude_section_mean_pressure",
+    "work_products/2026-07-01_claude_segment_friction",
+    "work_products/2026-07-01_claude_momentum_budget",
+    "work_products/2026-07-01_claude_allspan_convection",
+    "work_products/2026-07-01_claude_thermal_downcomer"
+  ],
+  "key_findings": {
+    "geometry": "Heater/cooler inclined 21.5 deg (not vertical); test-section bore 20.9 mm vs 22.1 mm elsewhere; probe-CSV swapped lower<->right.",
+    "momentum_budget": "De-buoyed f/f_lam per leg: heater ~2.7, downcomer ~1.0-1.3, upcomer ~2.0-2.7, cooler ~1.5-2.0.",
+    "downcomer_thermal": "HTC ~43-44 W/m2K, UA' ~3.0, Nu ~1.74-1.76 (stable passive parasitic).",
+    "upcomer_recirculation": "Backflow 0.19-0.34 EXCLUSIVE to upcomer (left leg); heater/downcomer/cooler zero."
+  },
+  "tests": "39 passing across tools/analyze and tools/extract.",
+  "open_questions_for_user": [
+    "Confirm loop-closure energy check (optional T1b capstone): sum friction losses vs buoyancy head."
+  ]
+}

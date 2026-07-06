@@ -1,0 +1,5 @@
+phase_order,phase_name,status,board_task,goal
+1,Freeze current closures,in_progress,AGENT-100,Use the current provisional straight friction and left-lower-leg direct Nu or HTC evidence as the working Salt pseudo-steady closure set.
+2,Refresh straight subset after continuations,complete,AGENT-104,Preserved `20 s` Salt windows were frozen from the continuation roots and the straight-section late-window subset was rebuilt from those retained-time packages.
+3,Pathwise feature hardening,complete,AGENT-103,"Build the retained-time feature-path p versus p_rgh decomposition, subtract the same-basis straight reference, and reopen feature K_eff on the stable feature subset."
+4,1D replay refresh,in_progress,AGENT-102,"The local replay against the frozen CFD state is built, but the tracked external Fluid lane is still on the June 19 `v1` bundle and lacks a producer for a refreshed June 22 validation bundle."

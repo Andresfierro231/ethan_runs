@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-06-18T11:20:33-05:00",
+  "task_id": "AGENT-080",
+  "builder_script": "tools/analyze/build_ethan_salt_closure_correlation_package.py",
+  "builder_command": "python tools/analyze/build_ethan_salt_closure_correlation_package.py --output-dir reports/2026-06-18_ethan_salt_closure_correlation_package",
+  "canonical_inputs": {
+    "pressure_package": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+    "dashboard_package": "reports/2026-06-17_ethan_nondimensional_dashboard_package",
+    "transport_package": "reports/2026-06-15_ethan_all_runs_field_transport_campaign",
+    "heat_audit_package": "reports/2026-06-09_ethan_steady_state_heat_flow_audit"
+  },
+  "output_dir": "reports/2026-06-18_ethan_salt_closure_correlation_package",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_salt_closure_correlation_package_smoke",
+  "case_count": 9,
+  "artifacts": [
+    "salt_hydraulic_section_closure.csv",
+    "salt_hydraulic_case_summary.csv",
+    "salt_feature_keff.csv",
+    "salt_heat_loss_partition_case.csv",
+    "salt_leg_enthalpy_summary.csv",
+    "salt_branch_usability.csv",
+    "salt_boundary_layer_summary.csv",
+    "salt_representative_boundary_profiles.csv",
+    "salt_case_correlation_inputs.csv",
+    "salt_straight_section_correlation_inputs.csv",
+    "salt_feature_correlation_inputs.csv",
+    "salt_fit_exclusion_log.csv",
+    "README.md",
+    "MATH_COMPANION.md",
+    "summary.json",
+    "figures/png/salt_hydraulic_agreement.png",
+    "figures/png/salt_branch_usability.png",
+    "figures/png/salt_heat_loss_partition.png",
+    "figures/png/salt_boundary_layer_ratios.png",
+    "figures/png/salt_representative_boundary_profiles.png"
+  ],
+  "limitations": [
+    "Feature K_eff remains tied to the June 17 residual p_rgh feature path rather than a dedicated feature hydro integral.",
+    "Heat-loss partition remains case-level and audit-style; it is not yet a resolved internal-convection / wall-conduction / external-radiation decomposition.",
+    "Representative boundary-layer context is limited to the currently preserved Salt 2 landmark profile set already available in the additive June 17 package."
+  ]
+}

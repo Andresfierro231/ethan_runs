@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-18T13:58:42-05:00",
+  "package_name": "2026-06-18_ethan_transport_scientific_interpretation_package",
+  "contradiction_rows_examined": 2,
+  "resolved": 1,
+  "unresolved": 1,
+  "excluded": 2,
+  "branch_variable_family_combinations_examined": 231,
+  "headline_eligible": 60,
+  "supporting_only": 6,
+  "contextual_only": 36,
+  "internal_only": 30,
+  "excluded_branch_rows": 99,
+  "salt_only_conclusion_count": 5,
+  "water_only_conclusion_count": 2,
+  "cross_family_conclusion_count": 3,
+  "unresolved_blocker_count": 2
+}

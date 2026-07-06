@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-06-18T15:19:49-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_cross_family_hydraulic_redesign_screen.py",
+  "builder_command": "python tools/analyze/build_ethan_cross_family_hydraulic_redesign_screen.py --output-dir reports/2026-06-18_ethan_cross_family_hydraulic_redesign_screen",
+  "smoke_command": "python tools/analyze/build_ethan_cross_family_hydraulic_redesign_screen.py --output-dir tmp/2026-06-18_ethan_cross_family_hydraulic_redesign_screen_smoke",
+  "output_dir": "reports/2026-06-18_ethan_cross_family_hydraulic_redesign_screen",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_cross_family_hydraulic_redesign_screen_smoke",
+  "inputs": {
+    "salt_subset_dir": "reports/2026-06-18_ethan_salt_hydraulic_evidence_subset",
+    "water_subset_dir": "reports/2026-06-18_ethan_water_hydraulic_evidence_subset",
+    "closure_dir": "reports/2026-06-18_ethan_transport_interpretation_closure"
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "overlap_case_time_audit.csv",
+    "overlap_case_summary.csv",
+    "overlap_family_summary.csv",
+    "direct_reduction_recommendations.csv",
+    "modeling_guardrails.md"
+  ],
+  "headline_results": {
+    "shared_overlap_branches": [
+      "right_leg",
+      "test_section_span",
+      "upper_leg"
+    ],
+    "bounded_cumulative_redesign_candidate_count": 1,
+    "bounded_cumulative_redesign_candidate_branch": "right_leg",
+    "timeseries_only_gap_branch_count": 1,
+    "timeseries_only_gap_branch": "upper_leg"
+  },
+  "remaining_boundary": [
+    "This package does not promote any branch to cross-family hydraulic readiness.",
+    "The current closure guardrail still blocks cross-family hydraulic fitting even on shared clean overlap branches.",
+    "If future redesign work is attempted, start with cumulative direct branch-end drop on right_leg and keep test_section_span and upper_leg guarded."
+  ]
+}

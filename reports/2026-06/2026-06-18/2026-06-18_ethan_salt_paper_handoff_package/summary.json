@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-18T15:01:44-05:00",
+  "inputs": {
+    "scrutiny_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package",
+    "analysis_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package",
+    "closure_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_interpretation_closure",
+    "field_campaign_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign",
+    "representative_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison"
+  },
+  "closure_gate": {
+    "cross_family_hydraulic_status": "blocked_by_excluded_hydraulic_branch",
+    "resolved_exclude_count": 2,
+    "headline_eligible_count": 60
+  },
+  "staged_asset_count": 12,
+  "main_text_candidate_count": 8,
+  "appendix_support_count": 2,
+  "artifacts": {
+    "staged_assets_manifest_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_paper_handoff_package/staged_assets_manifest.csv",
+    "figure_claim_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_paper_handoff_package/figure_claim_map.csv",
+    "table_claim_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_paper_handoff_package/table_claim_map.csv",
+    "closure_gate_note_md": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_paper_handoff_package/closure_gate_note.md"
+  }
+}

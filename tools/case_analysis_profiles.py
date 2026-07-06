@@ -70,6 +70,7 @@ class CaseAnalysisProfile:
     source_id: str
     tp_tw_locations: Path
     major_spans: dict[str, dict[str, Any]]
+    derived_thermal_branches: dict[str, tuple[str, ...]]
     feature_budgets: dict[str, dict[str, Any]]
     thermal_patch_roles: dict[str, str]
     thermal_role_groups: dict[str, tuple[str, ...]]
@@ -227,6 +228,21 @@ def validate_case_analysis_profile(profile: CaseAnalysisProfile) -> None:
     if not major_span_names:
         raise CaseAnalysisProfileContractError("`major_spans` must be non-empty")
     major_span_name_set = set(major_span_names)
+    for branch_name, branch_spans in profile.derived_thermal_branches.items():
+        normalized_branch_name = str(branch_name).strip()
+        if not normalized_branch_name:
+            raise CaseAnalysisProfileContractError("`derived_thermal_branches` contains an empty branch name")
+        normalized_branch_spans = require_nonempty_string_list(
+            "derived thermal branch",
+            normalized_branch_name,
+            branch_spans,
+        )
+        unknown_branch_spans = [span_name for span_name in normalized_branch_spans if span_name not in major_span_name_set]
+        if unknown_branch_spans:
+            raise CaseAnalysisProfileContractError(
+                f"derived thermal branch `{normalized_branch_name}` references unknown major spans: "
+                f"{', '.join(sorted(set(unknown_branch_spans)))}"
+            )
 
     require_order("major_span_order", profile.major_span_order, major_span_name_set, exact_set=True)
     require_order("loop_span_order", profile.loop_span_order, major_span_name_set, exact_set=True)
@@ -577,6 +593,20 @@ SALT2_LOOP_SPAN_ORDER = [
     "left_lower_leg",
 ]
 
+# The current branch-level thermal request keeps the six repaired streamwise
+# spans as first-class report sections and adds one derived composite branch
+# that follows the full left-side/upcomer path through the same bins. Corners
+# and junctions stay excluded because the major-span extraction already omits
+# them; the derived branch is therefore a concatenation of validated span bins,
+# not a fresh geometric reconstruction with new corner assumptions.
+SALT_FAMILY_DERIVED_THERMAL_BRANCHES: dict[str, tuple[str, ...]] = {
+    "upcomer": (
+        "left_lower_leg",
+        "test_section_span",
+        "left_upper_leg",
+    ),
+}
+
 
 def build_salt_family_case_profile(source_id: str, profile_name: str) -> CaseAnalysisProfile:
     return CaseAnalysisProfile(
@@ -584,6 +614,7 @@ def build_salt_family_case_profile(source_id: str, profile_name: str) -> CaseAna
         source_id=source_id,
         tp_tw_locations=TP_TW_LOCATIONS,
         major_spans=SALT2_MAJOR_SPANS,
+        derived_thermal_branches=SALT_FAMILY_DERIVED_THERMAL_BRANCHES,
         feature_budgets=SALT2_FEATURE_BUDGETS,
         thermal_patch_roles=build_salt_family_thermal_patch_roles(),
         thermal_role_groups=SALT_FAMILY_THERMAL_ROLE_GROUPS,
@@ -605,6 +636,7 @@ def build_water_family_case_profile(source_id: str, profile_name: str) -> CaseAn
         source_id=source_id,
         tp_tw_locations=TP_TW_LOCATIONS,
         major_spans=SALT2_MAJOR_SPANS,
+        derived_thermal_branches=SALT_FAMILY_DERIVED_THERMAL_BRANCHES,
         feature_budgets=SALT2_FEATURE_BUDGETS,
         thermal_patch_roles=build_salt_family_thermal_patch_roles(),
         thermal_role_groups=SALT_FAMILY_THERMAL_ROLE_GROUPS,
@@ -648,6 +680,7 @@ def get_case_analysis_profile(source_id: str) -> CaseAnalysisProfile:
         source_id=profile.source_id,
         tp_tw_locations=profile.tp_tw_locations,
         major_spans=copy.deepcopy(profile.major_spans),
+        derived_thermal_branches=copy.deepcopy(profile.derived_thermal_branches),
         feature_budgets=copy.deepcopy(profile.feature_budgets),
         thermal_patch_roles=copy.deepcopy(profile.thermal_patch_roles),
         thermal_role_groups=copy.deepcopy(profile.thermal_role_groups),

@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-01",
+  "task": "AGENT-168",
+  "owner": "claude",
+  "status": "final (with overnight corrections appended 2026-07-02 by AGENT-171)",
+  "purpose": "Internal comparison of 1D loop model forms F0-F5: what each assumes, how it is driven, its error vs CFD (mdot and per-segment dP), and the theory for why it errs.",
+  "inputs": {
+    "cfd_reference_mdot": "work_products/2026-07-01_claude_momentum_budget/",
+    "predictivity_trial": "work_products/2026-07-01_claude_1d_predictivity_trial/",
+    "bend_minor_loss": "work_products/2026-07-01_claude_bend_minor_loss/",
+    "mesh_centerlines": "work_products/2026-07-01_claude_mesh_centerlines/"
+  },
+  "outputs": {
+    "report_readme": "reports/2026-07/2026-07-01/2026-07-01_model_form_comparison/README.md"
+  },
+  "headline_findings": {
+    "mdot_error_default_F2": "+27% (over-predicts) at ins=1.0in; -27% at CFD-matched T",
+    "mdot_error_cfd_closures_F3": "-18% (under-predicts) at ins=1.0in; -49% at CFD-matched T",
+    "conclusion": "mdot is NOT a robust closure-quality metric; condition-dependent. Per-segment dP distribution is robust.",
+    "open_discrepancy": "Factor-2 mdot gap at matched-T with CFD friction — no validated mechanism yet",
+    "dominant_lever": "Thermal boundary (effective insulation) >> hydraulic closures for mdot"
+  },
+  "limitations": [
+    "All CFD reference is coarse mesh (no GCI bound, T6 blocked).",
+    "1D 'matched insulation' = matched loop T / effective UA, not identical BC form to CFD.",
+    "Overnight corrections (section 6) appended 2026-07-02 — read those before citing section 5."
+  ]
+}

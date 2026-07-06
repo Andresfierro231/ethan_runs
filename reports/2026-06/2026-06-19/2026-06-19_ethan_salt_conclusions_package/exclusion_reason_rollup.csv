@@ -1,0 +1,11 @@
+asset_family,fit_use_status,exclusion_reason_primary,row_count,scientific_effect
+feature_keff,excluded,nonpositive_local_feature_excess_loss,24,removes rows from defended hydraulic dependency use
+straight_section_friction,excluded,buoyancy_aided_or_net_gain_section,18,removes rows from defended hydraulic dependency use
+straight_section_friction,excluded,direct_to_shear_magnitude_gap,13,removes rows from defended hydraulic dependency use
+straight_section_friction,excluded,support_fraction_below_floor,11,removes rows from defended hydraulic dependency use
+thermal_branch,excluded,right_leg_blocked_by_policy,9,removes rows from defended Salt Nu use
+thermal_branch,excluded,thermal_low_usable_fraction,2,removes rows from defended Salt Nu use
+thermal_branch,excluded,thermal_small_delta_t,2,removes rows from defended Salt Nu use
+thermal_branch,excluded,thermal_support_marginal,14,removes rows from defended Salt Nu use
+thermal_branch,sensitivity_only,derived_branch_overlap_double_counting,9,removes rows from defended Salt Nu use
+thermal_branch,sensitivity_only,enthalpy_wall_heat_balance_loose,25,removes rows from defended Salt Nu use

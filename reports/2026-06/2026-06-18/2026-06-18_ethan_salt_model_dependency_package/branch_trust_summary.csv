@@ -1,0 +1,8 @@
+branch_name,row_count,screened_candidate_count,closure_supported_count,fit_used_count,sensitivity_only_count,excluded_count,dominant_exclusion_reason
+left_lower_leg,9,9,1,1,8,0,enthalpy_wall_heat_balance_loose
+left_upper_leg,9,9,0,0,9,0,enthalpy_wall_heat_balance_loose
+lower_leg,9,0,0,0,0,9,thermal_support_marginal
+right_leg,9,0,0,0,0,9,right_leg_blocked_by_policy
+test_section_span,9,9,0,0,9,0,enthalpy_wall_heat_balance_loose
+upcomer,9,9,0,0,9,0,derived_branch_overlap_double_counting
+upper_leg,9,0,0,0,0,9,thermal_support_marginal

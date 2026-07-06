@@ -1,0 +1,4 @@
+condition_label,baseline_case_count,hybrid_case_count,baseline_cases,hybrid_cases,missing_hybrid_cases,coverage_status
+ins_1.0in_rad_0,4,1,Salt 1|Salt 2|Salt 3|Salt 4,Salt 1,Salt 2|Salt 3|Salt 4,partial
+ins_1.0in_rad_1,4,1,Salt 1|Salt 2|Salt 3|Salt 4,Salt 1,Salt 2|Salt 3|Salt 4,partial
+ins_2.0in_rad_1,4,1,Salt 1|Salt 2|Salt 3|Salt 4,Salt 1,Salt 2|Salt 3|Salt 4,partial

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-06-18T14:41:08-05:00",
+  "task_id": "AGENT-085",
+  "builder_script": "tools/analyze/build_ethan_salt_thermal_closure_hardening.py",
+  "builder_command": "python -m tools.analyze.build_ethan_salt_thermal_closure_hardening --output-dir reports/2026-06-19_ethan_salt_thermal_closure_hardening",
+  "smoke_builder_command": "python -m tools.analyze.build_ethan_salt_thermal_closure_hardening --output-dir tmp/2026-06-19_ethan_salt_thermal_closure_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/ethan_salt_hardening_common.py tools/analyze/build_ethan_salt_thermal_closure_hardening.py",
+    "python -m unittest discover -s tools/analyze -p 'test_ethan_salt_hardening_v2.py'",
+    "python -m tools.analyze.build_ethan_salt_thermal_closure_hardening --output-dir tmp/2026-06-19_ethan_salt_thermal_closure_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python -m tools.analyze.build_ethan_salt_thermal_closure_hardening --output-dir reports/2026-06-19_ethan_salt_thermal_closure_hardening"
+  ],
+  "canonical_inputs": {
+    "pressure_htc_boundarylayer_package": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+    "branch_promotion_gate": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/branch_promotion_gate.csv",
+    "raw_live_case_analysis_root": "tmp/2026-06-15_live_case_analysis"
+  },
+  "output_dir": "reports/2026-06-19_ethan_salt_thermal_closure_hardening",
+  "smoke_output_dir": "tmp/2026-06-19_ethan_salt_thermal_closure_hardening_smoke",
+  "summary": {
+    "case_count": 9,
+    "timeseries_row_count": 259,
+    "case_row_count": 63,
+    "fit_ready_count": 2,
+    "branch_fit_ready_counts": {
+      "left_lower_leg": 2
+    }
+  },
+  "artifacts": [
+    "README.md",
+    "MATH_COMPANION.md",
+    "summary.json",
+    "thermal_closure_timeseries.csv",
+    "thermal_closure_by_case.csv",
+    "thermal_fit_ready_rows.csv",
+    "thermal_exclusion_summary.csv",
+    "branch_trust_summary.csv",
+    "closure_waterfall_by_case.csv"
+  ],
+  "limitations": [
+    "The package preserves explicit intended/parasitic/sink/residual buckets, but still does not resolve a full internal convection vs wall conduction vs external convection-radiation resistance split.",
+    "Only two direct branch rows survive the full closure stack; Salt Nu remains blocked from defended fitting.",
+    "right_leg remains hard-blocked and upcomer remains sensitivity-only."
+  ]
+}

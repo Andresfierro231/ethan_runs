@@ -1,0 +1,8 @@
+case_key,source_id,priority_rank,submit_now,mutation_profile,heater_scale,insulation_delta_in,why_selected
+salt2_jin_hiq_hiins,viscosity_screening_salt_test_2_jin_coarse_mesh,1,yes,hiQ_hiIns,1.10,0.40,Validation-anchor Salt case with defended test-section friction row and defended left-lower-leg Nu row
+salt2_jin_loq_loins,viscosity_screening_salt_test_2_jin_coarse_mesh,1,yes,loQ_loIns,0.90,-0.40,Validation-anchor Salt case with visible heater and insulation controls only
+salt4_jin_hiq_hiins,viscosity_screening_salt_test_4_jin_coarse_mesh,1,yes,hiQ_hiIns,1.10,0.40,Hot high-Re edge of the defended Salt domain
+salt4_jin_loq_loins,viscosity_screening_salt_test_4_jin_coarse_mesh,1,yes,loQ_loIns,0.90,-0.40,Hot high-Re edge counterpart for bounded bracket testing
+salt3_jin_hiq_hiins,viscosity_screening_salt_test_3_jin_coarse_mesh,2,defer,hiQ_hiIns,1.10,0.40,Useful mid-band interpolation case but lower priority than the first bracket wave
+salt3_jin_loq_loins,viscosity_screening_salt_test_3_jin_coarse_mesh,2,defer,loQ_loIns,0.90,-0.40,Useful mid-band interpolation case but lower priority than the first bracket wave
+

@@ -1,0 +1,29 @@
+{
+  "import_id": "2026-06-22_ethan_heat_balance_contract",
+  "generated_at": "2026-06-22T17:35:06-05:00",
+  "workspace": "ethan_runs",
+  "scripts": [],
+  "outputs": [
+    "reports/2026-06-22_ethan_heat_balance_contract",
+    "operational_notes/2026-06-22_salt_heat_balance_contract.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave",
+    "journals/2026-06/2026-06-22_ethan_runs.md"
+  ],
+  "sources": [
+    "reports/2026-06-15_ethan_boundary_modeling_report",
+    "reports/2026-06-09_ethan_steady_state_heat_flow_audit",
+    "journals/2026-06/2026-06-10_ethan_runs.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/case_config.yaml",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt2_jin_hiq_hiins/case_stage/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt2_jin_hiq_hiins/case_config.yaml",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt2_jin_loq_loins/case_stage/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt2_jin_loq_loins/case_config.yaml"
+  ],
+  "notes": [
+    "This is a documentation-only interpretive pass. No solver dictionaries were regenerated or resubmitted here.",
+    "The contract separates observed late-time runtime closure from balance-by-construction staging rules for future DOE children.",
+    "Future readable Salt DOE children should use Q_in minus Q_lost bookkeeping, with Q_lost decomposed into Q_removed plus Q_ambient at the parent reference state."
+  ]
+}

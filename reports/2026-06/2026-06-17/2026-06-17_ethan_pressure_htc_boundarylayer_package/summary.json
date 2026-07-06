@@ -1,0 +1,107 @@
+{
+  "generated_at": "2026-06-17T17:37:53-05:00",
+  "package_index_csv": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/package_index.csv",
+  "case_count": 13,
+  "salt_case_count": 9,
+  "water_case_count": 4,
+  "pressure_section_row_count": 78,
+  "feature_row_count": 65,
+  "salt_htc_field_row_count": 218448,
+  "water_htc_field_row_count": 118080,
+  "water_bulk_reweight_row_count": 7580,
+  "enthalpy_leg_row_count": 342,
+  "boundary_ratio_row_count": 1653,
+  "representative_profile_row_count": 14030,
+  "representative_map_count": 12,
+  "water_bulk_reweight_summary_by_case": [
+    {
+      "source_id": "val_water_test_1_coarse_mesh_laminar",
+      "case_label": "Water 1",
+      "comparison_row_count": 1895,
+      "mean_exact_cp_minus_stored_flow_k": 4.647538783649842e-05,
+      "max_abs_exact_cp_minus_stored_flow_k": 0.0001713720458269563,
+      "mean_exact_flow_minus_stored_flow_k": -1.3448923051678524e-05,
+      "max_abs_exact_flow_minus_stored_flow_k": 8.071090303474193e-05,
+      "mean_exact_cp_minus_exact_flow_k": 5.992431088817694e-05,
+      "max_abs_exact_cp_minus_exact_flow_k": 0.00023236208625121435,
+      "selection_status_counts": "aligned_area_match:1895"
+    },
+    {
+      "source_id": "val_water_test_2_coarse_mesh_laminar",
+      "case_label": "Water 2",
+      "comparison_row_count": 1895,
+      "mean_exact_cp_minus_stored_flow_k": 5.522034071776761e-05,
+      "max_abs_exact_cp_minus_stored_flow_k": 0.00021062596533738542,
+      "mean_exact_flow_minus_stored_flow_k": -4.135521776438905e-05,
+      "max_abs_exact_flow_minus_stored_flow_k": 0.00019841224400352075,
+      "mean_exact_cp_minus_exact_flow_k": 9.657555848215666e-05,
+      "max_abs_exact_cp_minus_exact_flow_k": 0.0003722038031810371,
+      "selection_status_counts": "aligned_area_match:1895"
+    },
+    {
+      "source_id": "val_water_test_3_coarse_mesh_laminar",
+      "case_label": "Water 3",
+      "comparison_row_count": 1895,
+      "mean_exact_cp_minus_stored_flow_k": 5.802399712846058e-05,
+      "max_abs_exact_cp_minus_stored_flow_k": 0.00022702756569970006,
+      "mean_exact_flow_minus_stored_flow_k": -7.1789602827241e-05,
+      "max_abs_exact_flow_minus_stored_flow_k": 0.0003192021098357145,
+      "mean_exact_cp_minus_exact_flow_k": 0.0001298135999557016,
+      "max_abs_exact_cp_minus_exact_flow_k": 0.0004912766652864775,
+      "selection_status_counts": "aligned_area_match:1895"
+    },
+    {
+      "source_id": "val_water_test_4_coarse_mesh_laminar",
+      "case_label": "Water 4",
+      "comparison_row_count": 1895,
+      "mean_exact_cp_minus_stored_flow_k": 4.765521914788106e-05,
+      "max_abs_exact_cp_minus_stored_flow_k": 0.000189545813782388,
+      "mean_exact_flow_minus_stored_flow_k": -0.0001676010431793959,
+      "max_abs_exact_flow_minus_stored_flow_k": 0.0007047734354728163,
+      "mean_exact_cp_minus_exact_flow_k": 0.00021525626232727697,
+      "max_abs_exact_cp_minus_exact_flow_k": 0.0008334867941357516,
+      "selection_status_counts": "aligned_area_match:1895"
+    }
+  ],
+  "figure_paths": {
+    "pressure_closure": {
+      "png": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/pressure_closure_straight_sections.png",
+      "svg": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/svg/pressure_closure_straight_sections.svg",
+      "pdf": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/pdf/pressure_closure_straight_sections.pdf"
+    },
+    "feature_keff": {
+      "png": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/feature_keff_by_case.png",
+      "svg": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/svg/feature_keff_by_case.svg",
+      "pdf": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/pdf/feature_keff_by_case.pdf"
+    },
+    "boundary_ratio": {
+      "png": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/boundary_layer_ratio_family_summary.png",
+      "svg": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/svg/boundary_layer_ratio_family_summary.svg",
+      "pdf": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/pdf/boundary_layer_ratio_family_summary.pdf"
+    },
+    "bulk_centerline": {
+      "png": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/bulk_vs_centerline_correction.png",
+      "svg": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/svg/bulk_vs_centerline_correction.svg",
+      "pdf": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/pdf/bulk_vs_centerline_correction.pdf"
+    },
+    "representative_profiles": {
+      "val_salt_test_2_coarse_mesh_laminar_left_lower_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_salt_test_2_coarse_mesh_laminar_left_lower_leg_boundary_profiles.png",
+      "val_salt_test_2_coarse_mesh_laminar_left_upper_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_salt_test_2_coarse_mesh_laminar_left_upper_leg_boundary_profiles.png",
+      "val_salt_test_2_coarse_mesh_laminar_lower_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_salt_test_2_coarse_mesh_laminar_lower_leg_boundary_profiles.png",
+      "val_salt_test_2_coarse_mesh_laminar_right_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_salt_test_2_coarse_mesh_laminar_right_leg_boundary_profiles.png",
+      "val_salt_test_2_coarse_mesh_laminar_test_section_span_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_salt_test_2_coarse_mesh_laminar_test_section_span_boundary_profiles.png",
+      "val_salt_test_2_coarse_mesh_laminar_upper_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_salt_test_2_coarse_mesh_laminar_upper_leg_boundary_profiles.png",
+      "val_water_test_2_coarse_mesh_laminar_left_lower_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_water_test_2_coarse_mesh_laminar_left_lower_leg_boundary_profiles.png",
+      "val_water_test_2_coarse_mesh_laminar_left_upper_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_water_test_2_coarse_mesh_laminar_left_upper_leg_boundary_profiles.png",
+      "val_water_test_2_coarse_mesh_laminar_lower_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_water_test_2_coarse_mesh_laminar_lower_leg_boundary_profiles.png",
+      "val_water_test_2_coarse_mesh_laminar_right_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_water_test_2_coarse_mesh_laminar_right_leg_boundary_profiles.png",
+      "val_water_test_2_coarse_mesh_laminar_test_section_span_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_water_test_2_coarse_mesh_laminar_test_section_span_boundary_profiles.png",
+      "val_water_test_2_coarse_mesh_laminar_upper_leg_boundary_profiles": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/figures/png/val_water_test_2_coarse_mesh_laminar_upper_leg_boundary_profiles.png"
+    }
+  },
+  "limitations": [
+    "Feature K_eff reuses the stored p_rgh residual closure because the raw package does not preserve a dedicated feature-path density integral.",
+    "Water-family exact bulk-temperature rebuilds depend on the preserved June 15 cut-plane surface samples and inherit their connected-region support logic and retained-time coverage.",
+    "Boundary-layer reporting remains a landmark-first method; the representative maps are sparse profile reconstructions rather than full circumferential boundary-layer fields."
+  ]
+}

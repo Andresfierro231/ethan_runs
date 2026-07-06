@@ -1,0 +1,24 @@
+{
+  "import_id": "2026-06-23_ethan_prgh_mean_method_and_presentation_breakdown",
+  "generated_at": "2026-06-23T12:28:00-05:00",
+  "workspace": "ethan_runs",
+  "scripts": [
+    "tools/analyze/build_ethan_prgh_vs_dynamic_profiles.py"
+  ],
+  "outputs": [
+    "reports/2026-06-23_ethan_prgh_vs_dynamic_profiles/README.md",
+    "reports/2026-06-23_presentation/slide_outline.md",
+    "reports/2026-06-23_presentation/presentation_takeaways.md",
+    "reports/2026-06-23_presentation/README.md"
+  ],
+  "sources": [
+    "tools/analyze/build_ethan_prgh_vs_dynamic_profiles.py",
+    "reports/2026-06-23_ethan_1d_closure_bakeoff/best_full_coverage_case_metrics.csv",
+    "reports/2026-06-23_ethan_1d_closure_bakeoff/observable_leaderboard.csv",
+    "reports/2026-06-23_ethan_prgh_vs_dynamic_profiles/README.md"
+  ],
+  "notes": [
+    "The p_rgh/q_dyn README update is documentation-only and describes the already-published June 23 plotting method.",
+    "The presentation update adds a case-level 1D performance breakdown from the defended full-coverage scenario and explicitly records the hybrid coverage boundary."
+  ]
+}

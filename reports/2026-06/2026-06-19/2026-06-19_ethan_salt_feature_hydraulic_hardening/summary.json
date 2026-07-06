@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-18T14:39:44-05:00",
+  "case_count": 9,
+  "timeseries_row_count": 185,
+  "case_row_count": 45,
+  "fit_ready_count": 21,
+  "feature_class_counts": {
+    "bend": 36,
+    "quartz_transition": 9
+  },
+  "fit_ready_feature_name_counts": {
+    "corner_upper_right": 9,
+    "test_section_complex": 7,
+    "corner_upper_left": 5
+  },
+  "boundary_bin_count": 3,
+  "support_fraction_min": 0.6666666666666666,
+  "positive_time_fraction_min": 0.75
+}

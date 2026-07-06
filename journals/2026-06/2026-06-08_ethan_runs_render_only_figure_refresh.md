@@ -21,3 +21,11 @@
 - Normalize the render-only job wrapper so the successful path is the default for future figure refreshes.
 - If the batch accounting anomaly for `3216687` matters operationally, rerun that case once more under the same render-only path and compare exit behavior.
 - Generalize the render workflow if more fields beyond `T` and `U` are needed.
+
+## June 22 Retrospective Status
+
+- The first and third suggested actions are now resolved in substance by the
+  later generic field-renderer and ParaView family work.
+- The remaining unresolved point is only whether cleaner Slurm accounting is
+  worth additional hardening; the render family no longer treats that exit code
+  anomaly as a scientific blocker.

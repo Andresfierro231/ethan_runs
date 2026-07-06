@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-06-18T15:10:38-05:00",
+  "task_id": "AGENT-086",
+  "builder_script": "tools/analyze/build_ethan_salt_conclusions_package.py",
+  "builder_command": "python -m tools.analyze.build_ethan_salt_conclusions_package --output-dir reports/2026-06-19_ethan_salt_conclusions_package",
+  "smoke_builder_command": "python -m tools.analyze.build_ethan_salt_conclusions_package --output-dir tmp/2026-06-19_ethan_salt_conclusions_package_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/build_ethan_salt_conclusions_package.py tools/analyze/test_ethan_salt_conclusions_and_water_phase1.py",
+    "python -m unittest discover -s tools/analyze -p 'test_ethan_salt_conclusions_and_water_phase1.py'",
+    "python -m tools.analyze.build_ethan_salt_conclusions_package --output-dir tmp/2026-06-19_ethan_salt_conclusions_package_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python -m tools.analyze.build_ethan_salt_conclusions_package --output-dir reports/2026-06-19_ethan_salt_conclusions_package"
+  ],
+  "canonical_inputs": {
+    "salt_dependency_v2": "reports/2026-06-19_ethan_salt_model_dependency_package_v2"
+  },
+  "output_dir": "reports/2026-06-19_ethan_salt_conclusions_package",
+  "smoke_output_dir": "tmp/2026-06-19_ethan_salt_conclusions_package_smoke",
+  "summary": {
+    "case_count": 9,
+    "hydraulic_fit_used_count": 28,
+    "thermal_fit_used_count": 2,
+    "straight_section_status": "provisional_defended",
+    "feature_status": "provisional_defended",
+    "thermal_status": "not_defensible_yet"
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "dependency_status.csv",
+    "exact_fit_used_rows.csv",
+    "case_contribution_summary.csv",
+    "exclusion_reason_rollup.csv",
+    "sensitivity_interpretation.csv",
+    "blocked_dependency_requirements.csv",
+    "salt_dependency_conclusions.md",
+    "upstream_requirements.md"
+  ],
+  "limitations": [
+    "This package does not add new extraction or new closure calculations; it is a conclusions layer on top of the Salt dependency v2 package.",
+    "Feature K_eff remains provisional because the full feature-path hydro integral still does not exist.",
+    "Salt Nu remains blocked because only two direct rows survive closure."
+  ]
+}

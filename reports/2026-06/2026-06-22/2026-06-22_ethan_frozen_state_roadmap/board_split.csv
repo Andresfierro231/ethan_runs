@@ -1,0 +1,7 @@
+task_id,owner,status,scope,dependency,goal
+AGENT-099,codex,complete,repo-local roadmap and board split,None,Publish the frozen-state execution roadmap and handoff order.
+AGENT-100,codex,complete,repo-local frozen-state results package,None,Freeze the retained-time Salt state and quantify branchwise drift and closure limits.
+AGENT-103,codex,complete,repo-local feature-path hydro decomposition and Salt dependency refresh,None,Reopen feature K_eff on the defended patch-endpoint path basis.
+AGENT-101,unassigned,queued,external LitRev repo,Requires edits in ../papers,Audit whether the literature basis already supports a broader developing-flow HTC closure.
+AGENT-102,unassigned,queued,external Fluid 1D repo,Wait for the frozen-state package now published,Rerun the existing Fluid 1D lane with the current closure bundle and compare against the frozen CFD state.
+AGENT-104,unassigned,queued,repo-local straight sensitivity refresh,Wait for continuation jobs to finish,Refresh the straight late-window sensitivity package after longer retained windows land.

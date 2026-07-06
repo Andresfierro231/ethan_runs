@@ -132,6 +132,42 @@
       still referenced by `config/workspace_paths.yaml`,
       `tools/publish/publish_cross_model_campaign.py`, and older June 2 journal
       workflows, which is why it exists outside the newer `figures/` tree
+
+## June 22 legacy overview closeout
+
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-15_AGENT-073.md`
+  - `.agent/journal/2026-06-15/coordinator-implementer-paraview-cell-association-refresh.md`
+  - `imports/2026-06-15_paraview_cell_association_refresh.json`
+  - `tools/extract/render_field_figures.py`
+  - `figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/overview.png`
+  - `figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/status.json`
+- commands run:
+  - `python3.11 tools/extract/render_field_figures.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --backend paraview`
+  - `bash -lc 'module purge >/dev/null 2>&1 && module load gcc/11.2.0 impi/19.0.9 paraview_osmesa/5.13.3 >/dev/null 2>&1 && unset TACC_PARAVIEW_BIN && "$TACC_PARAVIEW_OSMESA_BIN/pvbatch" ...'`
+  - `srun -n 1 bash -lc 'module purge >/dev/null 2>&1 && module load gcc/11.2.0 impi/19.0.9 paraview_osmesa/5.13.3 >/dev/null 2>&1 && unset TACC_PARAVIEW_BIN && "$TACC_PARAVIEW_OSMESA_BIN/pvbatch" ...'`
+  - `python3.11 -m py_compile tools/extract/render_field_figures.py`
+  - `srun -n 1 bash -lc 'cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && python3.11 tools/extract/render_field_figures.py --source-id viscosity_screening_salt_test_1_kirst_coarse_mesh --backend paraview'`
+  - `cat figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/status.json`
+- results or observations:
+  - The remaining legacy failure was not a camera-framing bug. The staged
+    reconstructed mirrors keep `processors64` as a symlink, so the overview
+    driver was incorrectly treating them as decomposed even when direct
+    reconstructed timestep directories were present.
+  - `render_field_figures.py` now classifies a case entry as reconstructed when
+    direct numeric time directories exist under the candidate root, resolves the
+    latest valid retained time before reading bounds, and rejects invalid-bounds
+    screenshots instead of treating them as successful renders.
+  - The ParaView launcher also now knows when it is inside a Slurm allocation
+    and can escalate module-loaded ParaView commands through `srun -n 1` when
+    needed. In this workspace, the most reliable validation path was to run the
+    whole Python entrypoint from an outer Slurm step.
+  - The authoritative closeout validation succeeded on
+    `viscosity_screening_salt_test_1_kirst_coarse_mesh`: the refreshed
+    `figures_rendered/.../overview.png` exists, the matching `status.json`
+    reports `status: rendered`, and the recorded bounds/camera metadata are all
+    finite and consistent with a centered loop view.
 *** Add File: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/imports/2026-06-15_paraview_cell_association_refresh.json
 {
   "generated_at": "2026-06-15T12:39:29-05:00",

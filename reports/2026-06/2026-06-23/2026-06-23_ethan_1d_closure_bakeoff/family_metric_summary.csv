@@ -1,0 +1,3 @@
+scenario_family,scenario_count,full_coverage_scenario_count,best_composite_rank,best_energy_error_pct_of_heater,median_energy_error_pct_of_heater,best_tw_rmse_k,median_tw_rmse_k,best_tp_rmse_k,median_tp_rmse_k,best_mass_flow_relative_error_pct_vs_cfd,median_mass_flow_relative_error_pct_vs_cfd
+baseline,3,3,1,11.273958063403725,11.274319964365688,62.78650266020921,91.92017855308167,62.69252440281759,91.68532123044072,26.690955464130884,50.913510540752306
+hybrid,3,0,2,16.007002036920685,16.00742585362433,66.39605357348935,93.8656123579714,65.99111022680384,93.30039176463046,19.55085369385196,43.806962301800304

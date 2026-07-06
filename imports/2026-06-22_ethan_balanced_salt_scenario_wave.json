@@ -1,0 +1,31 @@
+{
+  "import_id": "2026-06-22_ethan_balanced_salt_scenario_wave",
+  "generated_at": "2026-06-22T18:25:00-05:00",
+  "workspace": "ethan_runs",
+  "scripts": [
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/scripts/run_packed_three_case_openfoam13.sbatch",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/scripts/stage_balanced_salt_bracket_cases.py"
+  ],
+  "outputs": [
+    "reports/2026-06-22_ethan_balanced_salt_scenario_wave",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/campaign_manifest.csv",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/campaign_manifest.csv",
+    "journals/2026-06/2026-06-22_ethan_runs.md"
+  ],
+  "sources": [
+    "reports/2026-06-09_ethan_steady_state_heat_flow_audit/latest_heat_partition.csv",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt2_jin_hiq_hiins/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt2_jin_loq_loins/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt3_jin_hiq_hiins/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt3_jin_loq_loins/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt4_jin_hiq_hiins/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/runs/salt4_jin_loq_loins/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/0/T",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/optimum_insulation_wave/README.md",
+    "reports/2026-06-19_ethan_insulation_optimizer_package/experimental_case_optima.csv"
+  ],
+  "notes": [
+    "The six bracket relaunches were repurposed in place rather than copied into fresh sibling trees so the queue could be corrected quickly after cancellation.",
+    "The packed optimum-insulation wave was canceled without relaunch because the measured-state wall-loss optimizer does not certify a <2 W 3D staging residual under the current fixed-Q cooling contract.",
+    "An abandoned partial fresh-copy attempt remains at runs/salt2_jin_hiq_balq/ and should be archived or removed in a later confirmed cleanup pass."
+  ]
+}

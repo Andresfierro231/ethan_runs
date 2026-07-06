@@ -1,0 +1,30 @@
+{
+  "import_id": "2026-06-23_ethan_salt_family_heat_loss_breakout",
+  "generated_at": "2026-06-23T12:09:58-05:00",
+  "workspace": "ethan_runs",
+  "scripts": [
+    "tools/analyze/build_ethan_salt_family_heat_loss_breakout.py"
+  ],
+  "outputs": [
+    "reports/2026-06-23_ethan_salt_family_heat_loss_breakout"
+  ],
+  "sources": [
+    "reports/2026-06-15_ethan_field_transport_campaign/field_transport_package_index.csv",
+    "reports/2026-06-15_ethan_field_transport_campaign/field_transport_streamwise_heat_comparison.csv",
+    "reports/2026-06-15_ethan_field_transport_campaign/field_transport_grouped_heat_comparison.csv",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar/summary.json",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar/leg_centerline_station_definitions.csv",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_jin_coarse_mesh/summary.json",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_jin_coarse_mesh/leg_centerline_station_definitions.csv",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh/summary.json",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh/leg_centerline_station_definitions.csv",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh/summary.json",
+    "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh/leg_centerline_station_definitions.csv",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv"
+  ],
+  "notes": [
+    "This breakout package is a presentation-facing re-plot of existing June 15 field-transport outputs; no CFD extraction was reopened.",
+    "The figures separate net total, intended transfer only, and parasitic loss only into different subplot rows so dashed and dotted role encodings are no longer required.",
+    "Span headers report the authored TP endpoints for the full span, while the plotted x extents still reflect only the visible streamwise heat rows carried by the June 15 package."
+  ]
+}

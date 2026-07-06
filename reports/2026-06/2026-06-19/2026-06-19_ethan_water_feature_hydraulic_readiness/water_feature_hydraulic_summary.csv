@@ -1,0 +1,6 @@
+feature_name,case_count,candidate_case_count,blocked_case_count,mean_positive_proxy_fraction,mean_warning_fraction
+corner_lower_left,4,3,0,0.8,0.2
+corner_lower_right,4,3,1,0.7,0.3
+corner_upper_left,4,4,0,0.95,0.05
+corner_upper_right,4,1,0,1.0,0.75
+test_section_complex,4,0,0,1.0,1.0

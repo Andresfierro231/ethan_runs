@@ -1,0 +1,148 @@
+{
+  "generated_at": "2026-06-17T17:27:18-05:00",
+  "package_count": 13,
+  "package_dirs": [
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_kirst_coarse_mesh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_1_coarse_mesh_laminar",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_3_coarse_mesh_laminar",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_4_coarse_mesh_laminar"
+  ],
+  "inputs": {
+    "package_index_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_all_runs_field_transport_campaign/field_transport_package_index.csv",
+    "representative_summary": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison/summary.json",
+    "field_campaign_summary": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/summary.json",
+    "all_runs_summary": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_all_runs_field_transport_campaign/summary.json",
+    "math_reference": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md",
+    "interpretation_readme": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_interpretation_package/README.md"
+  },
+  "artifacts": {
+    "transport_claim_matrix_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/transport_claim_matrix.csv",
+    "transport_contradiction_log_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/transport_contradiction_log.csv",
+    "paper_safe_asset_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/paper_safe_asset_map.csv",
+    "transport_status_counts_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/transport_status_counts.csv"
+  },
+  "figure_paths": {
+    "branch_heatmap": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/png/transport_scrutiny_branch_heatmap.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/svg/transport_scrutiny_branch_heatmap.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/pdf/transport_scrutiny_branch_heatmap.pdf"
+    },
+    "hydraulic_agreement": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/png/transport_scrutiny_hydraulic_agreement.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/svg/transport_scrutiny_hydraulic_agreement.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/pdf/transport_scrutiny_hydraulic_agreement.pdf"
+    },
+    "thermal_qc": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/png/transport_scrutiny_thermal_qc.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/svg/transport_scrutiny_thermal_qc.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package/figures/pdf/transport_scrutiny_thermal_qc.pdf"
+    }
+  },
+  "status_counts": [
+    {
+      "variable_family": "boundary_layer_context",
+      "scrutiny_status": "internal_only",
+      "row_count": 13
+    },
+    {
+      "variable_family": "direct_pressure_gradient",
+      "scrutiny_status": "do_not_promote",
+      "row_count": 1
+    },
+    {
+      "variable_family": "direct_pressure_gradient",
+      "scrutiny_status": "internal_only",
+      "row_count": 24
+    },
+    {
+      "variable_family": "direct_pressure_gradient",
+      "scrutiny_status": "paper_safe",
+      "row_count": 53
+    },
+    {
+      "variable_family": "effective_htc",
+      "scrutiny_status": "do_not_promote",
+      "row_count": 34
+    },
+    {
+      "variable_family": "effective_htc",
+      "scrutiny_status": "internal_only",
+      "row_count": 20
+    },
+    {
+      "variable_family": "effective_htc",
+      "scrutiny_status": "paper_safe",
+      "row_count": 37
+    },
+    {
+      "variable_family": "effective_ua",
+      "scrutiny_status": "do_not_promote",
+      "row_count": 34
+    },
+    {
+      "variable_family": "effective_ua",
+      "scrutiny_status": "internal_only",
+      "row_count": 20
+    },
+    {
+      "variable_family": "effective_ua",
+      "scrutiny_status": "paper_safe",
+      "row_count": 37
+    },
+    {
+      "variable_family": "momentum_resistance",
+      "scrutiny_status": "do_not_promote",
+      "row_count": 1
+    },
+    {
+      "variable_family": "momentum_resistance",
+      "scrutiny_status": "internal_only",
+      "row_count": 24
+    },
+    {
+      "variable_family": "momentum_resistance",
+      "scrutiny_status": "paper_safe",
+      "row_count": 53
+    },
+    {
+      "variable_family": "shear_friction",
+      "scrutiny_status": "do_not_promote",
+      "row_count": 2
+    },
+    {
+      "variable_family": "shear_friction",
+      "scrutiny_status": "internal_only",
+      "row_count": 23
+    },
+    {
+      "variable_family": "shear_friction",
+      "scrutiny_status": "paper_safe",
+      "row_count": 53
+    },
+    {
+      "variable_family": "thermal_resistance",
+      "scrutiny_status": "do_not_promote",
+      "row_count": 34
+    },
+    {
+      "variable_family": "thermal_resistance",
+      "scrutiny_status": "internal_only",
+      "row_count": 20
+    },
+    {
+      "variable_family": "thermal_resistance",
+      "scrutiny_status": "paper_safe",
+      "row_count": 37
+    }
+  ],
+  "code_fix_contradiction_count": 2
+}

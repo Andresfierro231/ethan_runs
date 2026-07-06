@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-22T10:31:30-05:00",
+  "report": "reports/2026-06-22_ethan_weekend_run_triage",
+  "input_roots": [
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave",
+    "reports/2026-06-19_ethan_litrev_to_1d_modeling_handoff"
+  ],
+  "summary": {
+    "action": "stopped_scientifically_capped_jobs",
+    "stopped_job_count": 9,
+    "retained_field_window_seconds": 4,
+    "required_late_window_seconds": 20
+  }
+}

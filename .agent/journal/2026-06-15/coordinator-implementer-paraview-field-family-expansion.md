@@ -321,3 +321,33 @@
   - Confirm refreshed representative movie status JSON payloads now contain
     explicit `frame_times` and the expected higher frame counts for all 8
     representative cases.
+
+## June 22 all-times refresh closeout
+
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-15_AGENT-075.md`
+  - `.agent/journal/2026-06-15/coordinator-implementer-paraview-field-family-expansion.md`
+  - `imports/2026-06-16_paraview_movie_all_times_refresh.json`
+- commands run:
+  - `sacct -j 3237163`
+  - `python3.11 -c "import json, pathlib; ... staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json ..."`
+  - `python3.11 -c "import json, pathlib, collections; ... figures/figures_rendered/paraview_movies/*/*/status.json ..."`
+  - `python3.11 -c "import json, pathlib, collections; ... figures/figures_rendered/paraview_velocity_arrows/*/*/status.json ..."`
+- results or observations:
+  - Corrected full-refresh job `3237163` completed successfully with Slurm
+    state `COMPLETED` and exit code `0:0`.
+  - The aggregate reconstruction status now closes cleanly at `8/8` ready
+    representative mirrors, including the richer continuation-stage sources for
+    Salt 1 Jin, Salt 2 validation, and Salt 4 Jin.
+  - Durable representative movie status files under
+    `figures/figures_rendered/paraview_movies/` now report `16/16` rendered
+    outputs. All durable movie statuses remain `movie_format: frames_only`,
+    which is the intended current deliverable after the environment refused MP4
+    packaging.
+  - Durable branch-arrow status files under
+    `figures/figures_rendered/paraview_velocity_arrows/` report `32/32`
+    rendered outputs across the 8 representative Salt/Water cases.
+  - With the job complete, the remaining items are review questions rather than
+    execution blockers: the task is closed at the current `frames_only` movie
+    boundary, with PNG-frame sequences and status JSON as the durable output.

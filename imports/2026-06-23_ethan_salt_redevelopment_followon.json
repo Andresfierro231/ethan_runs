@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-06-23T11:32:26-05:00",
+  "package": "2026-06-23_ethan_salt_redevelopment_followon",
+  "summary": {
+    "generated_at": "2026-06-23T11:32:26-05:00",
+    "salt_case_count": 9,
+    "profile_row_count": 14023,
+    "span_summary_row_count": 54,
+    "feature_case_row_count": 45,
+    "feature_fit_used_case_count": 21,
+    "figure_case_count": 9
+  },
+  "inputs": {
+    "package_index_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/package_index.csv",
+    "feature_case_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-22_ethan_feature_path_hydro_decomposition/feature_path_case_summary.csv",
+    "feature_readme": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-22_ethan_feature_path_hydro_decomposition/README.md"
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_redevelopment_followon",
+    "profile_rows_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_redevelopment_followon/salt_redevelopment_profile_rows.csv",
+    "span_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_redevelopment_followon/salt_redevelopment_span_summary.csv",
+    "feature_class_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_salt_redevelopment_followon/feature_class_summary.csv"
+  }
+}

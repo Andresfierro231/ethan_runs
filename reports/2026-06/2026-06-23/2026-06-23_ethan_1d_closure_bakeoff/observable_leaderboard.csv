@@ -1,0 +1,25 @@
+observable,metric_key,rank,scenario,scenario_family,coverage_status,comparison_pair_count,primary_case_count,metric_value,composite_rank
+Energy error [% heater],mean_energy_error_pct_of_heater,1,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_0,baseline,full,3,3,11.273958063403725,3
+Energy error [% heater],mean_energy_error_pct_of_heater,2,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1,baseline,full,3,3,11.274319964365688,1
+Energy error [% heater],mean_energy_error_pct_of_heater,3,ethan_cfd_informed_salt_baseline_ins_2.0in_rad_1,baseline,full,3,3,11.274412391778393,4
+Energy error [% heater],mean_energy_error_pct_of_heater,4,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_0,hybrid,partial,1,3,16.007002036920685,5
+Energy error [% heater],mean_energy_error_pct_of_heater,5,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_1,hybrid,partial,1,3,16.00742585362433,2
+Energy error [% heater],mean_energy_error_pct_of_heater,6,ethan_cfd_informed_salt_hybrid_ins_2.0in_rad_1,hybrid,partial,1,3,16.007583977051596,6
+TW RMSE [K],mean_tw_rmse_k,1,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1,baseline,full,3,3,62.78650266020921,1
+TW RMSE [K],mean_tw_rmse_k,2,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_1,hybrid,partial,1,3,66.39605357348935,2
+TW RMSE [K],mean_tw_rmse_k,3,ethan_cfd_informed_salt_baseline_ins_2.0in_rad_1,baseline,full,3,3,91.92017855308167,4
+TW RMSE [K],mean_tw_rmse_k,4,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_0,baseline,full,3,3,93.57539635486758,3
+TW RMSE [K],mean_tw_rmse_k,5,ethan_cfd_informed_salt_hybrid_ins_2.0in_rad_1,hybrid,partial,1,3,93.8656123579714,6
+TW RMSE [K],mean_tw_rmse_k,6,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_0,hybrid,partial,1,3,94.92983845031326,5
+TP RMSE [K],mean_tp_rmse_k,1,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1,baseline,full,3,3,62.69252440281759,1
+TP RMSE [K],mean_tp_rmse_k,2,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_1,hybrid,partial,1,3,65.99111022680384,2
+TP RMSE [K],mean_tp_rmse_k,3,ethan_cfd_informed_salt_baseline_ins_2.0in_rad_1,baseline,full,3,3,91.68532123044072,4
+TP RMSE [K],mean_tp_rmse_k,4,ethan_cfd_informed_salt_hybrid_ins_2.0in_rad_1,hybrid,partial,1,3,93.30039176463046,6
+TP RMSE [K],mean_tp_rmse_k,5,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_0,baseline,full,3,3,93.76943777555393,3
+TP RMSE [K],mean_tp_rmse_k,6,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_0,hybrid,partial,1,3,94.69539046109901,5
+Mass-flow error [%],mean_mass_flow_relative_error_pct_vs_cfd,1,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_1,hybrid,partial,1,3,19.55085369385196,2
+Mass-flow error [%],mean_mass_flow_relative_error_pct_vs_cfd,2,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1,baseline,full,3,3,26.690955464130884,1
+Mass-flow error [%],mean_mass_flow_relative_error_pct_vs_cfd,3,ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_0,hybrid,partial,1,3,43.806962301800304,5
+Mass-flow error [%],mean_mass_flow_relative_error_pct_vs_cfd,4,ethan_cfd_informed_salt_hybrid_ins_2.0in_rad_1,hybrid,partial,1,3,48.31463253367283,6
+Mass-flow error [%],mean_mass_flow_relative_error_pct_vs_cfd,5,ethan_cfd_informed_salt_baseline_ins_1.0in_rad_0,baseline,full,3,3,50.913510540752306,3
+Mass-flow error [%],mean_mass_flow_relative_error_pct_vs_cfd,6,ethan_cfd_informed_salt_baseline_ins_2.0in_rad_1,baseline,full,3,3,54.47620312414845,4

@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-06-22T09:47:35-05:00",
+  "inputs": {
+    "salt_family_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family",
+    "salt2_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2",
+    "water_subset_dir": "reports/2026-06-18_ethan_water_hydraulic_evidence_subset",
+    "closure_dir": "reports/2026-06-18_ethan_transport_interpretation_closure"
+  },
+  "candidate_branch_count": 6,
+  "contextual_branch_count": 0,
+  "excluded_branch_count": 0,
+  "shared_overlap_branch_count": 3,
+  "candidate_branches": [
+    "left_lower_leg",
+    "left_upper_leg",
+    "lower_leg",
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "shared_overlap_branches": [
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "artifacts": {
+    "salt_hydraulic_case_branch_screen_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_hydraulic_evidence_subset/salt_hydraulic_case_branch_screen.csv",
+    "salt_hydraulic_family_subset_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_hydraulic_evidence_subset/salt_hydraulic_family_subset.csv",
+    "salt_hydraulic_overlap_with_water_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_salt_hydraulic_evidence_subset/salt_hydraulic_overlap_with_water.csv"
+  },
+  "remaining_boundary": [
+    "No Salt branch is blocked at the current family-only screen, but overlap with Water does not by itself authorize cross-family hydraulic fitting.",
+    "Shared clean branches are limited to the intersection with the Water candidate subset: right_leg, test_section_span, and upper_leg.",
+    "Cross-family hydraulics remain guarded by the June 18 interpretation closure package."
+  ]
+}

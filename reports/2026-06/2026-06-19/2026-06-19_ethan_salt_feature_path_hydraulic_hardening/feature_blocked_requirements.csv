@@ -1,0 +1,2 @@
+dependency_or_gap,current_status,missing_requirement,why_it_matters,current_bias_risk
+feature_keff_full_path_closure,not_defensible_yet,retained-time feature-path density or hydro integral beyond proxy endpoint p_rgh plus local straight reference,feature K_eff cannot move beyond proxy-only context without a path-resolved dissipative loss basis,proxy endpoint residual can over- or under-attribute local feature loss

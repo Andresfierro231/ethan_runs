@@ -1,0 +1,40 @@
+{
+  "generated_at": "2026-06-18T13:58:42-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_transport_scientific_interpretation_package.py",
+  "builder_command": "python tools/analyze/build_ethan_transport_scientific_interpretation_package.py --output-dir reports/2026-06-18_ethan_transport_scientific_interpretation_package",
+  "smoke_command": "python tools/analyze/build_ethan_transport_scientific_interpretation_package.py --output-dir tmp/2026-06-18_ethan_transport_scientific_interpretation_package_smoke",
+  "output_dir": "reports/2026-06-18_ethan_transport_scientific_interpretation_package",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_transport_scientific_interpretation_package_smoke",
+  "inputs": {
+    "package_index": "reports/2026-06-15_ethan_all_runs_field_transport_campaign/field_transport_package_index.csv",
+    "analysis_dir": "reports/2026-06-18_ethan_transport_analysis_package",
+    "scrutiny_dir": "reports/2026-06-17_ethan_transport_scrutiny_package",
+    "math_reference": "reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md"
+  },
+  "artifacts": [
+    "README.md",
+    "interpretation_summary.json",
+    "contradiction_resolution_rows.csv",
+    "branch_thermal_interpretation.csv",
+    "scientific_conclusions.csv",
+    "internal_only_decisions.csv",
+    "cross_family_claims_audit.csv",
+    "methods_interpretation.md",
+    "model_dependency_readiness.md",
+    "remaining_blockers.md"
+  ],
+  "headline_results": {
+    "contradiction_rows_examined": 2,
+    "resolved_exclude_count": 1,
+    "unresolved_exclude_count": 1,
+    "salt_safe_branch_count": 4,
+    "cross_family_hydraulic_status": "blocked_by_unresolved_hydraulic_contradiction"
+  },
+  "remaining_boundary": [
+    "Water 1 left_lower_leg is resolved for exclusion, not for use.",
+    "Water 2 left_lower_leg remains unresolved_exclude until the branch sign-registration path is audited.",
+    "Salt-only thermal dependency work can use left_lower_leg, test_section_span, left_upper_leg, and upcomer as effective, support-gated branches.",
+    "Boundary-layer landmarks remain contextual-only and momentum resistance remains a proxy."
+  ]
+}

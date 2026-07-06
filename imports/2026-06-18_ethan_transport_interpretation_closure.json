@@ -1,0 +1,44 @@
+{
+  "generated_at": "2026-06-18T14:21:43-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_transport_interpretation_closure.py",
+  "builder_command": "python tools/analyze/build_ethan_transport_interpretation_closure.py --output-dir reports/2026-06-18_ethan_transport_interpretation_closure",
+  "smoke_command": "python tools/analyze/build_ethan_transport_interpretation_closure.py --output-dir tmp/2026-06-18_ethan_transport_interpretation_closure_smoke",
+  "output_dir": "reports/2026-06-18_ethan_transport_interpretation_closure",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_transport_interpretation_closure_smoke",
+  "inputs": {
+    "package_index": "reports/2026-06-15_ethan_all_runs_field_transport_campaign/field_transport_package_index.csv",
+    "analysis_dir": "reports/2026-06-18_ethan_transport_analysis_package",
+    "scrutiny_dir": "reports/2026-06-17_ethan_transport_scrutiny_package",
+    "math_reference": "reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md",
+    "previous_interpretation_dir": "reports/2026-06-18_ethan_transport_scientific_interpretation_package"
+  },
+  "artifacts": [
+    "README.md",
+    "interpretation_summary.json",
+    "water2_left_lower_leg_hydraulic_audit.csv",
+    "water2_left_lower_leg_hydraulic_audit.md",
+    "contradiction_resolution_rows.csv",
+    "branch_thermal_interpretation.csv",
+    "scientific_conclusions.csv",
+    "internal_only_decisions.csv",
+    "cross_family_claims_audit.csv",
+    "methods_interpretation.md",
+    "model_dependency_readiness.md",
+    "remaining_blockers.md"
+  ],
+  "headline_results": {
+    "water2_previous_status": "unresolved_exclude",
+    "water2_current_status": "resolved_exclude",
+    "resolved_exclude_count": 2,
+    "unresolved_exclude_count": 0,
+    "salt_safe_branch_count": 4,
+    "cross_family_hydraulic_status": "blocked_by_excluded_hydraulic_branch"
+  },
+  "remaining_boundary": [
+    "Water 1 and Water 2 left_lower_leg are both exclusions from the usable hydraulic evidence subset.",
+    "Cross-family hydraulic dependency work remains blocked because Water left_lower_leg is excluded, not because a sign mystery remains.",
+    "Salt-only thermal dependency work remains bounded to left_lower_leg, test_section_span, left_upper_leg, and upcomer.",
+    "Boundary-layer landmarks remain contextual-only and momentum resistance remains a proxy."
+  ]
+}

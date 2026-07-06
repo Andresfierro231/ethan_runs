@@ -1,0 +1,4 @@
+readiness_status,row_count
+blocked,1
+candidate_for_future_dependency_fit,11
+needs_closure_rebuild,8

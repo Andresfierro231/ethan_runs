@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-22T10:25:26-05:00",
+  "feature_case_row_count": 45,
+  "feature_time_row_count": 185,
+  "probe_ready_time_row_count": 185,
+  "partial_time_row_count": 0,
+  "blocked_time_row_count": 0,
+  "case_status_counts": {
+    "probe_ready_for_downstream_review": 45
+  },
+  "feature_status_counts": {
+    "corner_lower_left": 9,
+    "corner_lower_right": 9,
+    "corner_upper_left": 9,
+    "corner_upper_right": 9,
+    "test_section_complex": 9
+  },
+  "window_station_count": 3
+}

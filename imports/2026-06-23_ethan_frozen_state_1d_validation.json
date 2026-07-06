@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-23T10:56:59-05:00",
+  "package": "2026-06-23_ethan_frozen_state_1d_validation",
+  "summary": {
+    "generated_at": "2026-06-23T10:56:59-05:00",
+    "frozen_reference_count": 9,
+    "primary_frozen_reference_count": 3,
+    "comparison_row_count": 33,
+    "sensor_error_row_count": 528,
+    "scenario_count_primary": 6,
+    "best_primary_scenario": "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1",
+    "best_primary_composite_score": 0.6294276289902812,
+    "best_case_count_primary": 3,
+    "figure_stems": [
+      "primary_best_energy_partition",
+      "primary_best_mass_flow",
+      "primary_best_sensor_parity",
+      "primary_branch_development",
+      "primary_scenario_metric_heatmap"
+    ]
+  },
+  "inputs": {
+    "frozen_state_contract": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-22_ethan_frozen_state_results/frozen_state_contract.csv",
+    "frozen_state_readable_1d": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-22_ethan_frozen_state_results/one_d_readable_status.csv",
+    "frozen_state_branch_behavior": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-22_ethan_frozen_state_results/branch_behavior_summary.csv"
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_frozen_state_1d_validation",
+    "summary_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_frozen_state_1d_validation/summary.json",
+    "case_metric_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_frozen_state_1d_validation/case_metric_summary.csv",
+    "scenario_ranking_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-23_ethan_frozen_state_1d_validation/scenario_ranking.csv"
+  }
+}

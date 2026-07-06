@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-06-18T11:48:31-05:00",
+  "task_id": "AGENT-081",
+  "builder_script": "tools/analyze/build_ethan_salt_analysis_checkpoint_suite.py",
+  "builder_command": "python tools/analyze/build_ethan_salt_analysis_checkpoint_suite.py --output-dir reports/2026-06-18_ethan_salt_analysis_checkpoint_suite",
+  "smoke_builder_command": "python tools/analyze/build_ethan_salt_analysis_checkpoint_suite.py --output-dir tmp/2026-06-18_ethan_salt_analysis_checkpoint_suite_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "canonical_inputs": {
+    "salt_closure_correlation_package": "reports/2026-06-18_ethan_salt_closure_correlation_package",
+    "pressure_htc_boundarylayer_package": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package"
+  },
+  "output_dir": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_salt_analysis_checkpoint_suite_smoke",
+  "case_count": 9,
+  "phase_names": [
+    "phase1_hydraulic_hardening",
+    "phase2_heatloss_enthalpy_closure",
+    "phase3_branch_trust_gate",
+    "phase4_boundary_layer_context",
+    "phase5_fit_ready_handoff"
+  ],
+  "phase_summaries": {
+    "phase1_hydraulic_hardening": {
+      "case_count": 9,
+      "hydraulic_row_count": 54,
+      "candidate_section_count": 12,
+      "screening_section_count": 42,
+      "feature_row_count": 45,
+      "candidate_feature_count": 19,
+      "buoyancy_aided_section_count": 18
+    },
+    "phase2_heatloss_enthalpy_closure": {
+      "case_count": 9,
+      "leg_row_count": 54,
+      "candidate_leg_count": 1,
+      "screening_leg_count": 1,
+      "blocked_leg_count": 52,
+      "max_enthalpy_residual_fraction": 7.787809779468553
+    },
+    "phase3_branch_trust_gate": {
+      "branch_row_count": 63,
+      "candidate_branch_row_count": 36,
+      "screening_branch_row_count": 14,
+      "blocked_branch_row_count": 13,
+      "candidate_branch_names": [
+        "left_lower_leg",
+        "left_upper_leg",
+        "test_section_span",
+        "upcomer"
+      ]
+    },
+    "phase4_boundary_layer_context": {
+      "boundary_span_row_count": 54,
+      "representative_profile_row_count": 7015,
+      "bulk_centerline_row_count": 1073,
+      "case_context_count": 9
+    },
+    "phase5_fit_ready_handoff": {
+      "case_count": 9,
+      "fit_ready_hydraulic_count": 12,
+      "fit_ready_feature_count": 19,
+      "fit_ready_branch_count": 36,
+      "exclusion_row_count": 148
+    }
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "phase1_hydraulic_hardening/README.md",
+    "phase1_hydraulic_hardening/summary.json",
+    "phase1_hydraulic_hardening/hydraulic_case_checkpoint.csv",
+    "phase1_hydraulic_hardening/hydraulic_fit_candidates.csv",
+    "phase1_hydraulic_hardening/feature_keff_status.csv",
+    "phase1_hydraulic_hardening/figures/png/hydraulic_fit_status_heatmap.png",
+    "phase2_heatloss_enthalpy_closure/README.md",
+    "phase2_heatloss_enthalpy_closure/summary.json",
+    "phase2_heatloss_enthalpy_closure/leg_enthalpy_closure_screen.csv",
+    "phase2_heatloss_enthalpy_closure/enthalpy_case_checkpoint.csv",
+    "phase2_heatloss_enthalpy_closure/figures/png/enthalpy_residual_heatmap.png",
+    "phase3_branch_trust_gate/README.md",
+    "phase3_branch_trust_gate/summary.json",
+    "phase3_branch_trust_gate/branch_promotion_gate.csv",
+    "phase3_branch_trust_gate/branch_candidate_subset.csv",
+    "phase3_branch_trust_gate/figures/png/branch_promotion_gate.png",
+    "phase4_boundary_layer_context/README.md",
+    "phase4_boundary_layer_context/summary.json",
+    "phase4_boundary_layer_context/boundary_layer_span_context.csv",
+    "phase4_boundary_layer_context/bulk_centerline_salt_context.csv",
+    "phase4_boundary_layer_context/figures/png/bulk_centerline_correction.png",
+    "phase5_fit_ready_handoff/README.md",
+    "phase5_fit_ready_handoff/summary.json",
+    "phase5_fit_ready_handoff/fit_ready_case_table.csv",
+    "phase5_fit_ready_handoff/fit_ready_hydraulic_sections.csv",
+    "phase5_fit_ready_handoff/fit_ready_features.csv",
+    "phase5_fit_ready_handoff/fit_ready_thermal_branches.csv",
+    "phase5_fit_ready_handoff/fit_ready_exclusion_audit.csv",
+    "phase5_fit_ready_handoff/figures/png/fit_ready_asset_counts.png"
+  ],
+  "limitations": [
+    "This suite is additive and interpretive; it does not create a new upstream feature-path hydro-integral extractor.",
+    "The heat-loss / enthalpy phase documents the current closure deficit but does not resolve internal-convection, wall-conduction, and external-loss channels into a new physical resistance decomposition.",
+    "Boundary-layer context remains tied to the preserved representative Salt profile set already available in the June 17 additive package."
+  ]
+}

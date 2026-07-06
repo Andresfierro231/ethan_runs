@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-23T10:23:00-05:00",
+  "salt_case_count": 9,
+  "branch_count": 7,
+  "straight_fit_row_count": 5,
+  "straight_late_window_fit_row_count": 4,
+  "straight_late_window_dropped_rows": [
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_label": "Salt 3 Jin",
+      "section_name": "lower_leg",
+      "exclusion_reason_primary": "support_fraction_below_floor",
+      "support_fraction": 0.7472527472527476
+    }
+  ],
+  "feature_reopened_status": "provisional_defended",
+  "best_one_d_case_count": 4
+}

@@ -4,7 +4,7 @@
   "source_owner": "ethan_runs_local_visualization_refresh",
   "case_id": "campaign_paraview_cell_association_refresh",
   "native_outputs_policy": "read_only_source_cases_reconstructed_into_local_mirrors_only",
-  "provenance_note": "June 15 refresh that makes cell-associated coloring the default for the ParaView last-timestep slice renderers, preserves cell association through the velocity-magnitude calculator, and regenerates the currently populated temperature and velocity slice outputs for the four existing source IDs.",
+  "provenance_note": "June 15 refresh that makes cell-associated coloring the default for the ParaView last-timestep slice renderers, preserves cell association through the velocity-magnitude calculator, regenerates the currently populated temperature and velocity slice outputs for the four existing source IDs, and concludes with a June 22 validation fix for the legacy `figures_rendered/<source_id>/overview.png` renderer.",
   "registry_reference_path": "registry/case_registry.csv",
   "registry_rows_referenced": [
     "val_salt_test_2_coarse_mesh_laminar",
@@ -15,6 +15,7 @@
   "scripts": [
     "tools/extract/render_last_timestep_temperature_slices.py",
     "tools/extract/render_last_timestep_field_slices.py",
+    "tools/extract/render_field_figures.py",
     "tools/extract/stage_latest_time_field_reconstruction.py",
     "staging/render_jobs/2026-06-15_paraview_cell_association_refresh.sbatch"
   ],
@@ -31,7 +32,8 @@
     "figures/2026-06-15_paraview_cell_association_refresh_velocity_val_salt_test_2_coarse_mesh_laminar.json",
     "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_1_kirst_coarse_mesh.json",
     "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_3_jin_coarse_mesh.json",
-    "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_4_jin_coarse_mesh.json"
+    "figures/2026-06-15_paraview_cell_association_refresh_velocity_viscosity_screening_salt_test_4_jin_coarse_mesh.json",
+    "figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/status.json"
   ],
   "refreshed_outputs": {
     "temperature_pngs": [
@@ -69,16 +71,22 @@
       "figures/pdf/viscosity_screening_salt_test_1_kirst_coarse_mesh_last_timestep_velocity_slice.pdf",
       "figures/pdf/viscosity_screening_salt_test_3_jin_coarse_mesh_last_timestep_velocity_slice.pdf",
       "figures/pdf/viscosity_screening_salt_test_4_jin_coarse_mesh_last_timestep_velocity_slice.pdf"
+    ],
+    "legacy_overview_validation": [
+      "figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/overview.png",
+      "figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/status.json"
     ]
   },
   "validation": [
     "Both aggregate status files report requested_array_association `cells`, case_count 4, rendered_count 4, failed_count 0.",
     "Per-case temperature and velocity status files each record resolved_array_association `CELLS`.",
-    "Refreshed figure mtimes span 2026-06-15 12:35:09 through 2026-06-15 12:39:09 America/Chicago."
+    "Refreshed figure mtimes span 2026-06-15 12:35:09 through 2026-06-15 12:39:09 America/Chicago.",
+    "June 22 legacy overview validation rendered `figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/overview.png` with valid bounds and explicit camera metadata under a compute-node `srun -n 1 ... python3.11 tools/extract/render_field_figures.py ...` step."
   ],
   "runtime_notes": [
     "Two login-submitted sbatch attempts (3233607 and 3233641/3233654) did not complete the render phase cleanly in this session.",
     "The successful regeneration path used the active idev allocation with unsandboxed `mpiexec -n 1 ... pvbatch`, one case per ParaView process.",
-    "Each ParaView process still terminated with the previously observed post-output segmentation fault, so file existence and status JSON content remain the authoritative success criteria for this render family."
+    "Each ParaView process still terminated with the previously observed post-output segmentation fault, so file existence and status JSON content remain the authoritative success criteria for this render family.",
+    "For the legacy overview path, direct nested launcher attempts inside the sandbox were less reliable than validating from an outer Slurm step; the durable success criterion is the rendered overview PNG plus matching valid-bounds status JSON."
   ]
 }

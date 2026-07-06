@@ -1,0 +1,30 @@
+{
+  "import_id": "2026-06-22_ethan_frozen_state_results",
+  "generated_at": "2026-06-22T15:45:00-05:00",
+  "workspace": "ethan_runs",
+  "scripts": [
+    "tools/analyze/build_ethan_feature_path_hydro_decomposition.py",
+    "tools/analyze/build_ethan_salt_feature_path_hydraulic_hardening_v2.py",
+    "tools/analyze/build_ethan_salt_model_dependency_package_v4.py",
+    "tools/analyze/build_ethan_frozen_state_results_package.py"
+  ],
+  "outputs": [
+    "reports/2026-06-22_ethan_feature_path_hydro_decomposition",
+    "reports/2026-06-22_ethan_salt_feature_path_hydraulic_hardening_v2",
+    "reports/2026-06-22_ethan_salt_model_dependency_package_v4",
+    "reports/2026-06-22_ethan_frozen_state_results",
+    "reports/2026-06-22_ethan_frozen_state_roadmap"
+  ],
+  "sources": [
+    "reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+    "reports/2026-06-22_ethan_feature_path_hydro_probe",
+    "reports/2026-06-19_ethan_salt_straight_hydraulic_sensitivity",
+    "reports/2026-06-19_ethan_salt_thermal_closure_hardening_v3",
+    "reports/2026-06-17_ethan_nondimensional_dashboard_package",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/ethan_cfd_informed_salt_v1"
+  ],
+  "notes": [
+    "The reopened feature K_eff basis is provisional and uses patch-endpoint p versus p_rgh plus the existing local-boundary straight reference.",
+    "The readable Fluid diagnostics are carried into the frozen-state report as a stale reference surface only; AGENT-102 still needs to rerun the 1D lane against the current closure set."
+  ]
+}

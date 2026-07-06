@@ -1,0 +1,9 @@
+{
+  "generated_at": "2026-06-18T15:10:38-05:00",
+  "case_count": 4,
+  "hydraulic_candidate_branch_count": 3,
+  "hydraulic_contextual_branch_count": 2,
+  "hydraulic_excluded_branch_count": 1,
+  "thermal_candidate_span_count": 1,
+  "thermal_priority_span_count": 1
+}

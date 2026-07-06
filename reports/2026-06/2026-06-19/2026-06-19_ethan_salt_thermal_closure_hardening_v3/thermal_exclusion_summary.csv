@@ -1,0 +1,7 @@
+asset_family,fit_use_status,exclusion_reason_primary,row_count
+thermal_branch,excluded,right_leg_blocked_by_policy,9
+thermal_branch,excluded,thermal_low_usable_fraction,2
+thermal_branch,excluded,thermal_small_delta_t,2
+thermal_branch,excluded,thermal_support_marginal,14
+thermal_branch,sensitivity_only,derived_branch_overlap_double_counting,9
+thermal_branch,sensitivity_only,enthalpy_wall_heat_balance_loose,20

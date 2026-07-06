@@ -1,0 +1,7 @@
+span_name,hydraulic_classification,case_count,readiness_status_counts,mean_usable_fraction,mean_enthalpy_residual
+left_lower_leg,excluded,4,Counter({'blocked_hydraulic_exclusion': 4}),0.6140625,1.2792033649589436
+left_upper_leg,contextual_only,4,"Counter({'closure_rebuild_candidate': 3, 'support_present_context_only': 1})",0.9972222222222222,0.5036130242265009
+lower_leg,contextual_only,4,Counter({'blocked_by_support_or_closure': 4}),0.46153846153846156,0.3848646303961628
+right_leg,water_family_candidate,4,Counter({'blocked_by_support_or_closure': 4}),0.16,8.236314641967553
+test_section_span,water_family_candidate,4,Counter({'closure_rebuild_priority': 4}),1.0,2.3757239880182963
+upper_leg,water_family_candidate,4,Counter({'blocked_by_support_or_closure': 4}),0.8740134340890009,1.9545780836716546

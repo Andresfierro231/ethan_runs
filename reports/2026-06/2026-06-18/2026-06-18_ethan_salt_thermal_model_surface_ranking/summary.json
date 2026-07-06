@@ -1,0 +1,23 @@
+{
+  "generated_at": "2026-06-18T16:14:17-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_salt_thermal_model_surface_ranking.py",
+  "safe_branches": [
+    "left_lower_leg",
+    "test_section_span",
+    "left_upper_leg",
+    "upcomer"
+  ],
+  "branch_count": 4,
+  "salt_case_count": 9,
+  "primary_surface": "effective_ua_profile",
+  "secondary_surface": "effective_htc_profile",
+  "diagnostic_only_surface": "thermal_resistance_profile",
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "salt_safe_subset_branch_stats.csv",
+    "salt_safe_subset_thermal_ranking.csv",
+    "salt_safe_subset_model_surface_decision.md"
+  ]
+}

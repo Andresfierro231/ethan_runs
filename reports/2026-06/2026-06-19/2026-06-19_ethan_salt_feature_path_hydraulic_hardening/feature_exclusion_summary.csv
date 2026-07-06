@@ -1,0 +1,5 @@
+feature_class,fit_use_status,exclusion_reason_primary,row_count
+bend,excluded,nonpositive_local_feature_proxy_excess,22
+bend,sensitivity_only,missing_full_path_density_integral,14
+quartz_transition,excluded,nonpositive_local_feature_proxy_excess,2
+quartz_transition,sensitivity_only,missing_full_path_density_integral,7

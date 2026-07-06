@@ -53,6 +53,37 @@ for `salt_test_2`.
 - `python tools/publish/publish_cross_model_campaign.py --source-id <source-id>`
 - `python tools/run_registered_pipeline.py --source-id <source-id>`
 
+## ParaView Render Accounting
+
+ParaView `pvbatch` still sometimes exits with a post-write `ExitCode=11`
+segfault after successfully writing outputs. The current trusted Slurm pattern
+is to treat the raw ParaView exit code as advisory, then validate the expected
+`status.json` files and only fail the batch job if those durable outputs are
+missing or invalid.
+
+See:
+
+- `tools/extract/2026-06-15_paraview_field_render_workflow.md`
+- `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+
+## Download Results To A Laptop
+
+Use `tools/publish/download_results_to_laptop.sh` from a local machine, not
+through Slurm and not from an LS6 compute node. The minimum useful payload for
+local ParaView viewing is usually:
+
+- `staging/render_inputs/<source_id>/reconstructed_case`
+- `work_products/<source_id>` for lightweight metadata
+
+The helper also pulls shared report packages plus `figures/png`, `figures/svg`,
+and `figures/pdf`. Representative reconstructed-case payloads in this workspace
+are about `1.7G` to `2.5G` per case.
+
+See:
+
+- `tools/publish/download_results_to_laptop.sh`
+- `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+
 ## Codex Batch Job Submission
 
 Use `tools/analyze/submit_codex_board_queue_sbatch.sh` when you want to launch

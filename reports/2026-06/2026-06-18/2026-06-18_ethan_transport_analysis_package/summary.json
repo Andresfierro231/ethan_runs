@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-06-18T11:25:45-05:00",
+  "inputs": {
+    "scrutiny_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_scrutiny_package",
+    "representative_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison",
+    "field_campaign_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign",
+    "all_runs_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_all_runs_field_transport_campaign",
+    "math_reference": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md",
+    "interpretation_readme": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_transport_interpretation_package/README.md"
+  },
+  "artifacts": {
+    "case_family_interpretation_matrix_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/case_family_interpretation_matrix.csv",
+    "transport_contradiction_priority_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/transport_contradiction_priority.csv",
+    "promotion_candidate_index_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/promotion_candidate_index.csv"
+  },
+  "figure_paths": {
+    "cross_family_branch_trust": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/png/transport_analysis_cross_family_branch_trust.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/svg/transport_analysis_cross_family_branch_trust.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/pdf/transport_analysis_cross_family_branch_trust.pdf"
+    },
+    "salt_branch_trust": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/png/transport_analysis_salt_branch_trust.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/svg/transport_analysis_salt_branch_trust.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/pdf/transport_analysis_salt_branch_trust.pdf"
+    },
+    "water_branch_trust": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/png/transport_analysis_water_branch_trust.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/svg/transport_analysis_water_branch_trust.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/pdf/transport_analysis_water_branch_trust.pdf"
+    },
+    "hydraulic_hotspots": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/png/transport_analysis_hydraulic_hotspots.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/svg/transport_analysis_hydraulic_hotspots.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/pdf/transport_analysis_hydraulic_hotspots.pdf"
+    },
+    "salt_safe_branch_support": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/png/transport_analysis_salt_safe_branch_support.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/svg/transport_analysis_salt_safe_branch_support.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/pdf/transport_analysis_salt_safe_branch_support.pdf"
+    },
+    "water_safe_branch_support": {
+      "png": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/png/transport_analysis_water_safe_branch_support.png",
+      "svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/svg/transport_analysis_water_safe_branch_support.svg",
+      "pdf": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-18_ethan_transport_analysis_package/figures/pdf/transport_analysis_water_safe_branch_support.pdf"
+    }
+  },
+  "promotion_stage_now_count": 7,
+  "priority_one_contradiction_count": 2
+}

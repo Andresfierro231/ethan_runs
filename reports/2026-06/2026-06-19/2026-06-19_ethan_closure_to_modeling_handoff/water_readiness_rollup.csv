@@ -1,0 +1,4 @@
+artifact_family,status_counts,note
+water_dependency_readiness,"Counter({'partial_candidate_subset_available': 1, 'not_ready_for_defended_fit': 1, 'not_started_from_closure_gated_method': 1, 'support_first_not_dependency_ready': 1})",starter dependency posture from the bounded phase-1 package
+water_thermal_closure_readiness,"Counter({'blocked_by_support_or_closure': 12, 'blocked_hydraulic_exclusion': 4, 'closure_rebuild_priority': 4, 'closure_rebuild_candidate': 3, 'support_present_context_only': 1})",case-span readiness outcomes from the new thermal closure package
+water_feature_hydraulic_readiness,"Counter({'candidate_for_future_dependency_fit': 11, 'needs_closure_rebuild': 8, 'blocked': 1})",case-feature readiness outcomes from the new hydraulic feature audit

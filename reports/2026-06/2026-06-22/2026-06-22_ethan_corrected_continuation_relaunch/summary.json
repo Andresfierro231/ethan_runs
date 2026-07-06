@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-22T11:18:00-05:00",
+  "decision": "restart_corrected_minimal_continuation_subset",
+  "purge_write": 21,
+  "write_interval_s": 1,
+  "target_late_window_s": 20,
+  "estimated_per_saved_time_mb": 510,
+  "estimated_per_case_retained_restart_gb": 10.7,
+  "estimated_total_retained_restart_gb": 42.8,
+  "restarted_jobs": {
+    "salt2_jin": 3250696,
+    "salt3_jin": 3250699,
+    "salt4_jin": 3250700,
+    "water2": 3250697
+  }
+}

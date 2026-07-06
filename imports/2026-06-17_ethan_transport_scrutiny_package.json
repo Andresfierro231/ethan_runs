@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-06-17T17:27:18-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_transport_scrutiny_package.py",
+  "builder_command": "python tools/analyze/build_ethan_transport_scrutiny_package.py --output-dir reports/2026-06-17_ethan_transport_scrutiny_package",
+  "smoke_command": "python tools/analyze/build_ethan_transport_scrutiny_package.py --output-dir tmp/2026-06-17_ethan_transport_scrutiny_package_smoke",
+  "output_dir": "reports/2026-06-17_ethan_transport_scrutiny_package",
+  "smoke_output_dir": "tmp/2026-06-17_ethan_transport_scrutiny_package_smoke",
+  "inputs": {
+    "package_index_csv": "reports/2026-06-15_ethan_all_runs_field_transport_campaign/field_transport_package_index.csv",
+    "representative_summary": "reports/2026-06-15_ethan_representative_transport_comparison/summary.json",
+    "field_campaign_summary": "reports/2026-06-15_ethan_field_transport_campaign/summary.json",
+    "all_runs_summary": "reports/2026-06-15_ethan_all_runs_field_transport_campaign/summary.json",
+    "math_reference": "reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md",
+    "interpretation_readme": "reports/2026-06-17_ethan_transport_interpretation_package/README.md"
+  },
+  "package_count": 13,
+  "artifacts": [
+    "transport_claim_matrix.csv",
+    "transport_contradiction_log.csv",
+    "paper_safe_asset_map.csv",
+    "transport_status_counts.csv",
+    "README.md",
+    "summary.json",
+    "figures/transport_scrutiny_branch_heatmap.*",
+    "figures/transport_scrutiny_hydraulic_agreement.*",
+    "figures/transport_scrutiny_thermal_qc.*"
+  ],
+  "headline_results": {
+    "paper_safe_branch_thermal_rows": 37,
+    "internal_only_branch_thermal_rows": 20,
+    "blocked_branch_thermal_rows": 34,
+    "hydraulic_code_fix_contradiction_count": 2
+  },
+  "follow_on_boundary": [
+    "Use paper_safe_asset_map.csv as the gate before promoting new transport figures into ../papers/3d_analysis.",
+    "Investigate the two water-family left_lower_leg hydraulic contradiction rows before making stronger cross-family hydraulic claims."
+  ]
+}

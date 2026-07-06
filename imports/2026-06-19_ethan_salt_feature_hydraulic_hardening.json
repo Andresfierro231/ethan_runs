@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-06-18T14:41:08-05:00",
+  "task_id": "AGENT-085",
+  "builder_script": "tools/analyze/build_ethan_salt_feature_hydraulic_hardening.py",
+  "builder_command": "python -m tools.analyze.build_ethan_salt_feature_hydraulic_hardening --output-dir reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+  "smoke_builder_command": "python -m tools.analyze.build_ethan_salt_feature_hydraulic_hardening --output-dir tmp/2026-06-19_ethan_salt_feature_hydraulic_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/ethan_salt_hardening_common.py tools/analyze/build_ethan_salt_feature_hydraulic_hardening.py",
+    "python -m unittest discover -s tools/analyze -p 'test_ethan_salt_hardening_v2.py'",
+    "python -m tools.analyze.build_ethan_salt_feature_hydraulic_hardening --output-dir tmp/2026-06-19_ethan_salt_feature_hydraulic_hardening_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python -m tools.analyze.build_ethan_salt_feature_hydraulic_hardening --output-dir reports/2026-06-19_ethan_salt_feature_hydraulic_hardening"
+  ],
+  "canonical_inputs": {
+    "raw_live_case_analysis_root": "tmp/2026-06-15_live_case_analysis",
+    "salt_closure_correlation_inputs": "reports/2026-06-18_ethan_salt_closure_correlation_package/salt_feature_correlation_inputs.csv",
+    "salt_dashboard": "reports/2026-06-17_ethan_nondimensional_dashboard_package/salt_dashboard.csv",
+    "case_metadata_index": "reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv"
+  },
+  "output_dir": "reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+  "smoke_output_dir": "tmp/2026-06-19_ethan_salt_feature_hydraulic_hardening_smoke",
+  "summary": {
+    "case_count": 9,
+    "timeseries_row_count": 185,
+    "case_row_count": 45,
+    "fit_ready_count": 21,
+    "fit_ready_feature_name_counts": {
+      "corner_upper_right": 9,
+      "test_section_complex": 7,
+      "corner_upper_left": 5
+    }
+  },
+  "artifacts": [
+    "README.md",
+    "MATH_COMPANION.md",
+    "summary.json",
+    "feature_hydro_closure_timeseries.csv",
+    "feature_hydro_closure_by_case.csv",
+    "feature_fit_ready_rows.csv",
+    "feature_exclusion_summary.csv",
+    "feature_method_comparison.csv"
+  ],
+  "limitations": [
+    "The promoted feature method remains patch-endpoint p_rgh plus local straight-reference, not a full feature-path hydro integral.",
+    "corner_upper_left remains below the v2 feature stability threshold even though its local-boundary-reference sign is often positive.",
+    "Nonpositive local feature excess remains a hard exclusion."
+  ]
+}

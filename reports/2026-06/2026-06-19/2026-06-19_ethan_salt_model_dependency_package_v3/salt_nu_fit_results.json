@@ -1,0 +1,50 @@
+{
+  "recommended_status": "provisional_defended",
+  "recommended_model": "branch_aware_re_power_law",
+  "fit_used_row_count": 7,
+  "domain_branch_names": [
+    "left_lower_leg"
+  ],
+  "domain_case_count": 7,
+  "reason": "limited_direct_branch_domain",
+  "constant_model": {
+    "status": "fit",
+    "model_type": "geometric_constant",
+    "row_count": 7,
+    "coefficient_names": [
+      "group:left_lower_leg"
+    ],
+    "coefficients": [
+      1.5121833564480482
+    ],
+    "rmse_log": 0.22805980012874685,
+    "mae_log": 0.1911869514739222,
+    "r2_log": 0.0
+  },
+  "power_law_model": {
+    "status": "fit",
+    "model_type": "branch_aware_re_power_law",
+    "row_count": 7,
+    "coefficient_names": [
+      "intercept",
+      "log_re"
+    ],
+    "coefficients": [
+      -3.0042709987998366,
+      0.9607621732507654
+    ],
+    "rmse_log": 0.015959866691929045,
+    "mae_log": 0.012912836993032821,
+    "r2_log": 0.9951026511580998,
+    "bootstrap_ci95": {
+      "intercept": [
+        -3.2408423988394874,
+        -2.4295914083781867
+      ],
+      "log_re": [
+        0.8380785622247191,
+        1.0134878675209877
+      ]
+    }
+  }
+}

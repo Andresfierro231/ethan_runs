@@ -1,0 +1,5 @@
+source_id,case_label,final_time_s,heater_power_w,cooling_power_w,outer_insulation_thickness_in,cooler_h_w_m2_k,mdot_mean_abs_kg_s,max_branch_temp_delta_k,package_root
+val_water_test_1_coarse_mesh_laminar,Water 1,5274.0,58.8,26.86,0.4,105.01276709392775,0.00650637830175,1.216515629118419,tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_1_coarse_mesh_laminar
+val_water_test_2_coarse_mesh_laminar,Water 2,3985.0,77.6,35.63,0.4,105.26501991603676,0.007834229101,1.3295540401924768,tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar
+val_water_test_3_coarse_mesh_laminar,Water 3,3732.0,93.0,43.02,0.4,108.63406705855405,0.008932687613,1.3570732909163326,tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_3_coarse_mesh_laminar
+val_water_test_4_coarse_mesh_laminar,Water 4,2542.0,129.0,58.06,0.4,108.76017831603211,0.0108710076475,1.448630468421186,tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_4_coarse_mesh_laminar

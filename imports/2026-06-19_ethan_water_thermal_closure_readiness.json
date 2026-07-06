@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-18T16:54:26-05:00",
+  "script": "tools/analyze/build_ethan_water_thermal_closure_readiness.py",
+  "output_dir": "reports/2026-06-19_ethan_water_thermal_closure_readiness",
+  "input_roots": [
+    "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+    "reports/2026-06-19_ethan_water_phase1_starter_package"
+  ],
+  "summary": {
+    "row_count": 24,
+    "closure_rebuild_priority_count": 4,
+    "closure_rebuild_candidate_count": 3
+  }
+}

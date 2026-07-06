@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-18T11:48:23-05:00",
+  "branch_row_count": 63,
+  "candidate_branch_row_count": 36,
+  "screening_branch_row_count": 14,
+  "blocked_branch_row_count": 13,
+  "candidate_branch_names": [
+    "left_lower_leg",
+    "left_upper_leg",
+    "test_section_span",
+    "upcomer"
+  ],
+  "figure_paths": {
+    "promotion_gate": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/png/branch_promotion_gate.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/svg/branch_promotion_gate.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/pdf/branch_promotion_gate.pdf"
+    },
+    "status_counts": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/png/branch_status_counts.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/svg/branch_status_counts.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/pdf/branch_status_counts.pdf"
+    },
+    "reason_counts": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/png/branch_reason_counts.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/svg/branch_reason_counts.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase3_branch_trust_gate/figures/pdf/branch_reason_counts.pdf"
+    }
+  },
+  "main_findings": [
+    "left_lower_leg, left_upper_leg, test_section_span, and upcomer form the stable Salt thermal-fit subset under the current support rules.",
+    "right_leg is blocked across the whole Salt family under the current branch trust gate.",
+    "lower_leg and upper_leg remain screening or blocked because of marginal thermal support and small local driving-temperature differences."
+  ]
+}

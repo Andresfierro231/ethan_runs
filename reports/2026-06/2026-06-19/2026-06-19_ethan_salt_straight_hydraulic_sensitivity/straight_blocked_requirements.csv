@@ -1,0 +1,2 @@
+dependency_or_gap,current_status,missing_requirement,why_it_matters,current_bias_risk
+hydraulic_late_window_sensitivity,not_run,about 20 s of preserved retained-time defended straight-section rows from the continuation artifacts,"late-window stability of the defended straight-section friction model should be shown from retained-time rows, not only case means","the currently preserved 3-5 s tails are long enough to rebuild retained-time rows, but too short to claim a true 20 s late-window sensitivity"

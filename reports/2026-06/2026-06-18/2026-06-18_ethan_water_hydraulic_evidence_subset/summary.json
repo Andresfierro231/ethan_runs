@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-22T09:47:35-05:00",
+  "package_name": "2026-06-18_ethan_water_hydraulic_evidence_subset",
+  "case_count": 4,
+  "candidate_branch_count": 3,
+  "contextual_branch_count": 2,
+  "excluded_branch_count": 1,
+  "candidate_branches": [
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "cross_family_ready_branch_count": 0
+}

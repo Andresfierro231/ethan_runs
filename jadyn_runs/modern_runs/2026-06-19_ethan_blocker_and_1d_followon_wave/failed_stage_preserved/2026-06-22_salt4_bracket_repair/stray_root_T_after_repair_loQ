@@ -1,0 +1,1277 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  13
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    format      ascii;
+    class       volScalarField;
+    location    "0";
+    object      T;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 1 0 0 0];
+
+internalField   uniform 475.0;
+steadyWall      true;
+
+boundaryField
+{
+    #includeEtc "caseDicts/setConstraintTypes"
+
+
+
+
+    "ncc_junction_lower_left_right_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: junction_lower_left
+    "junction_lower_left"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.546238209255409;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_junction_lower_left_upper_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: junction_lower_right
+    "junction_lower_right"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.544776496651314;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_junction_lower_right_upper_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+
+    "ncc_junction_lower_right_left_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: junction_upper_right
+    "junction_upper_right"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.583438440008289;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_junction_upper_right_left_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+
+    "ncc_junction_upper_right_lower_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+
+    "ncc_junction_upper_left_right_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: junction_upper_left
+    "junction_upper_left"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.886947042822767;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_junction_upper_left_lower_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // stub fin: jn_lower_left_cap, Q_loss = 5.561 W @ T_init → h_cal = 82.844 W/m2K
+    "junction_lower_left_left_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 82.84425490159224;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "junction_lower_left_left_step"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: ext_lower_left_left
+    "junction_lower_left_left_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8359269682879193;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // stub fin: jn_lower_left_lower, Q_loss = 6.036 W @ T_init → h_cal = 89.922 W/m2K
+    "junction_lower_left_lower_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 89.92193051097358;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: ext_lower_left_lower
+    "junction_lower_left_lower_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 5.94807969570157;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // stub fin: jn_lower_right_cap, Q_loss = 5.553 W @ T_init → h_cal = 82.716 W/m2K
+    "junction_lower_right_right_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 82.71636061552115;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "junction_lower_right_right_step"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: ext_lower_right_right
+    "junction_lower_right_right_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8345896367342878;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // stub fin: jn_lower_right_lower, Q_loss = 4.584 W @ T_init → h_cal = 68.285 W/m2K
+    "junction_lower_right_lower_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 68.28479402807014;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: ext_lower_right_lower
+    "junction_lower_right_lower_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 5.0271949460183745;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // stub fin: jn_upper_right_cap, Q_loss = 5.783 W @ T_init → h_cal = 86.155 W/m2K
+    "junction_upper_right_right_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 86.15513765254893;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "junction_upper_right_right_step"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: ext_upper_right_right
+    "junction_upper_right_right_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.869961442922709;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // stub fin: jn_upper_right_upper, Q_loss = 6.274 W @ T_init → h_cal = 93.465 W/m2K
+    "junction_upper_right_upper_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 93.46530107082373;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: ext_upper_right_upper
+    "junction_upper_right_upper_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.629291371277055;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // stub fin: jn_upper_left_upper, Q_loss = 4.724 W @ T_init → h_cal = 70.378 W/m2K
+    "junction_upper_left_upper_stub"
+    {
+        type            externalTemperature;
+
+        h               uniform 70.3783103883255;
+        Ta              constant 299.96999999999997;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: ext_upper_left_upper
+    "junction_upper_left_upper_extension"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.086745729076576;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_lower_01_fitting_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_01_fitting
+    "pipeleg_lower_01_fitting"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8359269682887787;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_02_straight
+    "pipeleg_lower_02_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.9414420850257827;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_03_bend
+    "pipeleg_lower_03_bend"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 7.288234727971945;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_04_straight [powered, Q=101.3 W, layer 1]
+    "pipeleg_lower_04_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        Q               constant 101.28;
+
+
+
+        powerLayer      1;
+
+        h               uniform 4.225308245061517;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.003175 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (50 0 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (1200 0 0 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_05_straight [powered, Q=101.3 W, layer 1]
+    "pipeleg_lower_05_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        Q               constant 101.28;
+
+
+
+        powerLayer      1;
+
+        h               uniform 4.267943990794285;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.003175 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (50 0 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (1200 0 0 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_06_straight [powered, Q=101.3 W, layer 1]
+    "pipeleg_lower_06_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        Q               constant 101.28;
+
+
+
+        powerLayer      1;
+
+        h               uniform 4.085776480431927;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.003175 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (50 0 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (1200 0 0 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_07_bend
+    "pipeleg_lower_07_bend"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 7.120270506212496;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_08_straight
+    "pipeleg_lower_08_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8072183973894917;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_lower_09_fitting_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_lower_09_fitting
+    "pipeleg_lower_09_fitting"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8345896367355725;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.006096001 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_right_01_lower_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_right_01_lower
+    "pipeleg_right_01_lower"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.5851756828849735;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_right_02_middle
+    "pipeleg_right_02_middle"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.5897738807574324;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_right_03_upper_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_right_03_upper
+    "pipeleg_right_03_upper"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.5811002843182895;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_upper_01_straight_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_01_straight
+    "pipeleg_upper_01_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8477988596301573;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_02_bend
+    "pipeleg_upper_02_bend"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 7.15758857709381;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_03_straight
+    "pipeleg_upper_03_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.331662273290003;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_04_reducer, Q_loss = 20.54 W
+    "pipeleg_upper_04_reducer"
+    {
+        type            externalTemperature;
+
+
+
+        Q               constant -20.539119272541168;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // cooler: Q_loss = 128.15 W (air-side 81.34 + jacket-to-ambient 46.81)
+    "pipeleg_upper_05_cooler"
+    {
+        type            externalTemperature;
+
+
+
+        Q               constant -128.1485764924187;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_06_reducer, Q_loss = 20.54 W
+    "pipeleg_upper_06_reducer"
+    {
+        type            externalTemperature;
+
+
+
+        Q               constant -20.539119272541168;
+
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_07_straight
+    "pipeleg_upper_07_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 4.320037045526876;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_08_bend
+    "pipeleg_upper_08_bend"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 7.150872707819249;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_upper_09_straight_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_upper_09_straight
+    "pipeleg_upper_09_straight"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.8479229710780194;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_left_01_upper_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_01_upper
+    "pipeleg_left_01_upper"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.5654354089331215;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_left_02_connector_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_02_connector
+    "pipeleg_left_02_connector"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 18.055116361024403;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_left_03_fitting_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_03_fitting
+    "pipeleg_left_03_fitting"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 5.75364137492667;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.0105;
+
+        thicknessLayers (0.002199999999999999 0.006096001 0.0254);
+        kappaLayerCoeffs  ((1.4 0 0 0 0 0 0 0) (9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((2214.39 0 0 0 0 0 0 0) (8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((740 0 0 0 0 0 0 0) (458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_04_test_section [powered, Q=37.0 W, layer 0]
+    "pipeleg_left_04_test_section"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        Q               constant 37.0;
+
+
+
+        powerLayer      0;
+
+        h               uniform 7.703696069906455;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.0105;
+
+        thicknessLayers (0.002199999999999999);
+        kappaLayerCoeffs  ((1.4 0 0 0 0 0 0 0));
+        rhoLayerCoeffs    ((2214.39 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((740 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_left_05_fitting_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_05_fitting
+    "pipeleg_left_05_fitting"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 5.750311295327297;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.0105;
+
+        thicknessLayers (0.002199999999999999 0.006096001 0.0254);
+        kappaLayerCoeffs  ((1.4 0 0 0 0 0 0 0) (9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((2214.39 0 0 0 0 0 0 0) (8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((740 0 0 0 0 0 0 0) (458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_left_06_connector_start"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_06_connector
+    "pipeleg_left_06_connector"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 18.0495194582369;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+
+
+    "ncc_pipeleg_left_07_lower_end"
+    {
+        type            zeroGradient;
+    }
+
+
+
+
+    // first-order segment: pipeleg_left_07_lower
+    "pipeleg_left_07_lower"
+    {
+        type            rcExternalTemperature;
+        steadyWall      $steadyWall;
+
+
+        h               uniform 3.652396563434314;
+        Ta              constant 299.96999999999997;
+        Tsur            constant 299.96999999999997;
+        emissivity      0.95;
+        internalRadius  0.011049;
+
+        thicknessLayers (0.001651 0.0254);
+        kappaLayerCoeffs  ((9.248 0.01571 0 0 0 0 0 0) (0.036056549855 -6.2436910698e-05 1.9275102287e-07 0 0 0 0 0));
+        rhoLayerCoeffs    ((8084.2 -0.42086 -3.8942e-05 0 0 0 0 0) (128.0 0 0 0 0 0 0 0));
+        CpLayerCoeffs     ((458.98 0.1328 0 0 0 0 0 0) (1000 0 0 0 0 0 0 0));
+
+        value           $internalField;
+    }
+
+
+
+}
+
+// ************************************************************************* //

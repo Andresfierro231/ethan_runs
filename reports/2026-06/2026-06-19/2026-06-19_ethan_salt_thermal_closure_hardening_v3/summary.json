@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-18T16:54:32-05:00",
+  "source_case_count": 9,
+  "timeseries_row_count": 259,
+  "case_row_count": 63,
+  "fit_ready_row_count": 7,
+  "residual_fraction_max": 0.45,
+  "fit_ready_branches": [
+    "left_lower_leg"
+  ],
+  "fit_status_counts": {
+    "fit_used": 7,
+    "sensitivity_only": 29,
+    "excluded": 27
+  }
+}

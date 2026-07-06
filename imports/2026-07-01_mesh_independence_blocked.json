@@ -1,0 +1,22 @@
+{
+  "manifest_id": "2026-07-01_mesh_independence_blocked",
+  "owner": "claude",
+  "task": "AGENT-167",
+  "generated_at": "2026-07-01",
+  "purpose": "T6: attempt mesh-independence GCI on Salt 2/4 Jin. HARD BLOCKED — no mesh generator available.",
+  "scope": "Salt 2 and Salt 4 Jin coarse mesh (nCells=2,166,996). Verified-only; nothing launched.",
+  "new_tools": [],
+  "new_docs": [
+    ".agent/journal/2026-07-01/T6-mesh-independence-gci.md"
+  ],
+  "work_products": [],
+  "blocker": "No external NCC mesh generator in repo or in Ethan's accessible source tree. Only one mesh level (mesh_group_id 7ab7fb2650596980) exists. Cannot generate medium/fine meshes without the bespoke parametric mesher. GCI not fabricated per protocol.",
+  "verified": {
+    "coarse_ncells": 2166996,
+    "compute_gci_py": "Correct (Roache/ASME V&V20, Fs=1.25 for 3-grid). No fix needed.",
+    "extractor_chain": "build_mesh_centerlines -> sample_section_mean_pressure -> derive_streamwise_momentum_budget -> sample_segment_htc_uaprime -> assess_time_convergence -> compute_gci"
+  },
+  "open_questions_for_user": [
+    "Provide external NCC mesh generator + inputs, OR pre-built medium/fine polyMeshes for Salt 2/4 Jin. See operational_notes/07-26/01/2026-07-01_T6_gci_blocker_ethan_request.md."
+  ]
+}

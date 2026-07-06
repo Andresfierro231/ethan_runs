@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-06-22T10:31:30-05:00",
+  "decision": "stop_current_weekend_science_jobs",
+  "reason": "retained_restart_field_window_capped_by_purgeWrite_5",
+  "required_late_window_seconds": 20,
+  "preserved_field_span_seconds": 4,
+  "stopped_jobs": [
+    3244950,
+    3244951,
+    3244954,
+    3244957,
+    3246561,
+    3246564,
+    3250524,
+    3250525,
+    3250526
+  ],
+  "continuation_wave_latest_times_s": {
+    "salt2_jin": 4875,
+    "salt3_jin": 4808,
+    "salt4_jin": 7687,
+    "water2": 6065
+  },
+  "salt_bracket_wave_latest_times_s": {
+    "salt2_jin_hiq_hiins": 4429,
+    "salt2_jin_loq_loins": 4403,
+    "salt4_jin_hiq_hiins_r2": 5793,
+    "salt4_jin_loq_loins_r2": 5793
+  }
+}

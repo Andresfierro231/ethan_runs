@@ -1,0 +1,36 @@
+{
+  "manifest_id": "2026-07-04_friction_closures_and_claude_bootstrap",
+  "owner": "claude",
+  "task": "AGENT-179",
+  "generated_at": "2026-07-04",
+  "purpose": "Create CLAUDE.md bootstrap, implement friction closure library (F1/F3h), wire friction_form knob into 1D solver, submit gap analysis job, write Monday handoff journal.",
+  "scope": "Salt 2/3/4 Jin closures; 1D model friction decomposition; coordination bootstrap for future Claude sessions.",
+  "new_tools": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py"
+  ],
+  "modified_tools": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "new_docs": [
+    "CLAUDE.md",
+    ".agent/journal/2026-07-04/coordinator-monday-handoff-and-claude-bootstrap.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-04_friction_forms/run_friction_forms_compare.py"
+  ],
+  "submitted_jobs": {
+    "3275531": "jin_perleg_gap development queue — insulation sweep + per-leg friction diagnosis"
+  },
+  "key_findings": {
+    "hagenbach_entry_correction": "Explains 42-79% of upcomer excess f (short segment L=0.12m) but only 4-8% in heater/cooler (long segments L=0.35m).",
+    "F3h_vs_F1_mdot": "F3h reduces mdot 13-19% vs F1 (Salt 2-4). Moves in right direction but insufficient to close factor-2 gap.",
+    "residual_gap": "2-3x gap in heated/cooled verticals after F3h is buoyancy-modified velocity profile, not entry length.",
+    "FRIC_FIT_001_status": "NOT implemented — target_value in training CSV is not standard Darcy f_D (values ~46 at Re~97, physically implausible). Do not use until normalization resolved."
+  },
+  "open_questions_for_user": [
+    "T6 blocker: Ethan needs to provide NCC parametric mesh generator or pre-built medium/fine polyMesh for Salt 2/4 Jin.",
+    "LitRev friction forms: please point to the specific LitRev section or provide correlation names for friction_closures.py.",
+    "F4 Ri correction target: confirm preferred Richardson-number correction form (Aicher & Martin, or other)."
+  ],
+  "backward_compatibility": "friction_form='F1' default; solver.py backward-compatible."
+}

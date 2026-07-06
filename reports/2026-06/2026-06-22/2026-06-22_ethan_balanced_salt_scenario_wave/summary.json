@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-06-22T18:25:00-05:00",
+  "summary": {
+    "canceled_bracket_job_ids": [
+      3250778,
+      3250779,
+      3250780,
+      3250781,
+      3250782,
+      3250783
+    ],
+    "canceled_optimum_job_id": 3250784,
+    "replacement_packed_job_ids": [
+      3251883,
+      3251884
+    ],
+    "replacement_layout": "two packed 3x64 Salt nodes",
+    "strict_reference_residual_gate_w": 2.0
+  }
+}

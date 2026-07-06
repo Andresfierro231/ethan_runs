@@ -1,0 +1,34 @@
+{
+  "manifest_id": "2026-07-02_overnight_synthesis",
+  "owner": "claude",
+  "task": "AGENT-171",
+  "generated_at": "2026-07-02",
+  "purpose": "Per-leg friction multiplier implementation; corrected predictivity story (insulation artifact); mesh GCI self-generation de-risk.",
+  "scope": "Salt 2/3/4 Jin 1D model; Salt 2 Jin OF13 mesh refinement de-risk on a clone.",
+  "modified_tools": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "new_docs": [
+    ".agent/journal/2026-07-02/mesh-self-generation-gci.md",
+    ".agent/journal/2026-07-02/predictivity-culminating-diagnosis.md",
+    ".agent/journal/2026-07-02/driver-finding-REVISED-insulation-sensitivity.md",
+    ".agent/journal/2026-07-02/per-leg-friction-implementation-and-predictivity.md",
+    "reports/2026-07/2026-07-02/2026-07-02_overnight_synthesis/README.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-02_overnight"
+  ],
+  "key_findings": {
+    "per_leg_friction": "ScenarioConfig.friction_multiplier_by_parent_segment added; backward-compatible.",
+    "corrected_predictivity": "Earlier '+27% closures help mdot' was artifact of 60K thermal offset. At CFD-matched T: default -27%, per-leg -49% (Salt 2). mdot is condition-dependent; per-segment dP is robust.",
+    "dominant_lever": "Thermal boundary (effective insulation) >> closures for mdot prediction.",
+    "factor_2_open": "Factor-2 mdot gap at matched T with CFD friction. No validated mechanism. 'Drive too weak' DISPROVEN.",
+    "mesh_gci_blocker": "refineMesh geometrically correct but NCC interface breaks OF13 fvMeshStitcher at runtime. Fix: conformal-first remesh."
+  },
+  "limitations": [
+    "All CFD on coarse mesh (no GCI bound).",
+    "T2 insulation runs advancing ~22 s/hr vs 25000 s needed — will not reach steady.",
+    "Factor-2 mechanism not yet resolved.",
+    "No GCI fabricated."
+  ]
+}

@@ -54,5 +54,11 @@
     "After reconstruction, the batch wrapper must purge modules and reload gcc/11.2.0 + impi/19.0.9 + paraview_osmesa/5.13.3 before invoking pvbatch.",
     "Representative movie output is currently being refreshed in frames-only mode at 3840x2160 per frame.",
     "A timestep-token precision bug was discovered during the first full refresh: default :g formatting truncated values like 3617.6625 to 3617.66. The scripts now use format(time_value, \".15g\") for durable timestep path resolution."
+  ],
+  "final_validation": [
+    "Corrected full refresh job `3237163` completed successfully with `sacct` state `COMPLETED` and exit code `0:0`.",
+    "`staging/render_inputs/2026-06-16_paraview_movie_all_times_refresh_status.json` reports `8/8` representative source IDs with `status: ready` after richest-source reconstruction staging.",
+    "Durable movie statuses under `figures/figures_rendered/paraview_movies/*/*/status.json` report `16/16` rendered outputs, all with `movie_format: frames_only` and explicit `frame_count` metadata.",
+    "Durable branch-arrow statuses under `figures/figures_rendered/paraview_velocity_arrows/*/*/status.json` report `32/32` rendered outputs across the 8 representative Salt/Water cases."
   ]
 }

@@ -1,0 +1,48 @@
+{
+  "recommended_status": "not_defensible_yet",
+  "recommended_model": "exploratory_screened_only_model",
+  "defended_model": {
+    "status": "not_fit",
+    "reason": "insufficient_rows_or_rank"
+  },
+  "exploratory_model": {
+    "status": "fit",
+    "model_type": "branch_aware_re_power_law_screened_only",
+    "row_count": 27,
+    "coefficient_names": [
+      "intercept",
+      "log_re",
+      "branch_name:left_upper_leg",
+      "branch_name:test_section_span"
+    ],
+    "coefficients": [
+      -4.733998275442097,
+      1.3412132361357063,
+      0.13891908294642447,
+      -0.08429154763532866
+    ],
+    "rmse_log": 0.34120601080328106,
+    "mae_log": 0.2448357234771292,
+    "r2_log": 0.6352127148335198,
+    "bootstrap_ci95": {
+      "intercept": [
+        -7.870778616817493,
+        -2.343025905167311
+      ],
+      "log_re": [
+        0.8168702602388205,
+        1.9996560585306535
+      ],
+      "branch_name:left_upper_leg": [
+        -0.12532872836967934,
+        0.3471060349526466
+      ],
+      "branch_name:test_section_span": [
+        -0.5708644367332755,
+        0.3096364121169741
+      ]
+    }
+  },
+  "fit_used_row_count": 2,
+  "screened_row_count": 27
+}

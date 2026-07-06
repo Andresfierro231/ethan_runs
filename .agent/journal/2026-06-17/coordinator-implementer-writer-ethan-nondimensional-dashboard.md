@@ -1,0 +1,95 @@
+# Coordinator / Implementer / Writer Raw Journal
+
+- date: `2026-06-17`
+- agent role: `Coordinator / Implementer / Writer`
+- task ID: `AGENT-083`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `tools/AGENTS.override.md`
+  - `reports/2026-06-15_ethan_boundary_modeling_report/README.md`
+  - `reports/2026-06-02_ethan_case_metadata_index/README.md`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+  - `reports/2026-06-15_ethan_all_runs_field_transport_campaign/README.md`
+  - `reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/latest_heat_partition.csv`
+  - `reports/2026-06-09_ethan_steady_state_heat_flow_audit/heat_window_summary.csv`
+  - `tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar/summary.json`
+  - `tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar/thermal_streamwise_summary.csv`
+  - `tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv`
+  - `journals/2026-06/2026-06-10_ethan_runs.md`
+  - `journals/2026-06/2026-06-15_ethan_runs.md`
+  - `journals/2026-06/2026-06-16_ethan_runs.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-17_AGENT-083.md`
+  - `.agent/journal/2026-06-17/coordinator-implementer-writer-ethan-nondimensional-dashboard.md`
+  - `journals/2026-06/2026-06-17_ethan_runs.md`
+  - `imports/2026-06-17_ethan_nondimensional_dashboard_package.json`
+  - `tools/analyze/build_ethan_nondimensional_dashboard_package.py`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/README.md`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/summary.json`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/salt_dashboard.csv`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/water_dashboard.csv`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/salt_candidate_correlation_inputs.csv`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/water_candidate_correlation_inputs.csv`
+  - `reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/**`
+- commands run:
+  - `pwd`
+  - `sed -n '1,260p' AGENTS.md`
+  - `sed -n '1,260p' .agent/BOARD.md`
+  - `sed -n '1,260p' .agent/FILE_OWNERSHIP.md`
+  - `sed -n '1,260p' .agent/ROLES.md`
+  - `sed -n '1,220p' tools/AGENTS.override.md`
+  - `rg -n "nondimensional|dashboard|effective friction|effective HTC|candidate correlation|correlation" reports tools journals operational_notes .agent -g '!tmp/**' -g '!tmp_extract/**'`
+  - `sed -n '1,240p' reports/2026-06-15_ethan_boundary_modeling_report/README.md`
+  - `sed -n '1,220p' reports/2026-06-02_ethan_case_metadata_index/README.md`
+  - `sed -n '1,220p' reports/2026-06-09_ethan_steady_state_heat_flow_audit/README.md`
+  - `sed -n '1,220p' reports/2026-06-15_ethan_all_runs_field_transport_campaign/README.md`
+  - `head -5 reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv`
+  - `head -5 tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar/thermal_streamwise_summary.csv`
+  - `head -5 tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv`
+  - `python3.11 -m py_compile tools/analyze/build_ethan_nondimensional_dashboard_package.py`
+  - `python -m py_compile tools/analyze/build_ethan_nondimensional_dashboard_package.py`
+  - `python tools/analyze/build_ethan_nondimensional_dashboard_package.py --output-dir tmp/2026-06-17_ethan_nondimensional_dashboard_smoke`
+  - `python tools/analyze/build_ethan_nondimensional_dashboard_package.py`
+  - `find reports/2026-06-17_ethan_nondimensional_dashboard_package/figures -type f | sort`
+  - `python -c "import json, pathlib; p=pathlib.Path('reports/2026-06-17_ethan_nondimensional_dashboard_package/summary.json'); d=json.load(p.open()); print(d['dashboard_case_count']); print(d['family_case_counts']); print(d['missing_cases']);"`
+- results or observations:
+  - Claimed a new bounded board slice for the dashboard/spec work rather than touching the active field-transport implementation paths.
+  - Added `tools/analyze/build_ethan_nondimensional_dashboard_package.py` as a new standalone builder that only consumes existing CSV/JSON artifacts plus the June 15 live case-analysis package roots.
+  - The builder deliberately avoids re-reading `case_config.yaml` or editing the shared case-analysis builder because the required screening fields already exist in the metadata and heat-audit packages.
+  - The package resolves all `13` comparable Ethan CFD cases:
+    - `9` salt
+    - `4` water
+  - No cases were dropped for missing late-window case-analysis roots.
+  - Dashboard rows combine:
+    - starting thermal and boundary-condition metadata
+    - insulation and nominal cooler setup descriptors
+    - late-window heat-audit means
+    - late-window span and branch bulk-temperature summaries
+    - first candidate lower-dimensional screening inputs such as branch temperature spreads and heat-partition fractions
+  - Temperature reduction method is explicit and reproducible:
+    - source: `raw_extraction/bulk_cross_section_temperature_samples.csv`
+    - time window: each package `summary.json` `requested_times_s`
+    - value preference: `bulk_temp_flow_weighted_k`, then area-average fallback
+    - weights: positive aligned mass flux when available, else cross-section area
+  - The package now exists at `reports/2026-06-17_ethan_nondimensional_dashboard_package/` with:
+    - `README.md`
+    - `summary.json`
+    - `salt_dashboard.csv`
+    - `water_dashboard.csv`
+    - `salt_candidate_correlation_inputs.csv`
+    - `water_candidate_correlation_inputs.csv`
+    - family dashboard figures in `figures/png`, `figures/svg`, and `figures/pdf`
+  - The manifest `imports/2026-06-17_ethan_nondimensional_dashboard_package.json` captures the exact input paths, resolved case-analysis roots, assumptions, and output artifact paths.
+- contradictions or unresolved issues:
+  - The first-pass package does not publish final nondimensional groups such as Reynolds, Prandtl, or a cleaned all-run effective-friction scalar because that would require locking a property-evaluation convention and waiting for the separate friction/minor-loss work the user is doing in parallel.
+  - The canonical metadata index does not publish a clean initial hydraulic state, so the package records that gap and uses late-window `mdot_mean_abs_kg_s` instead of inventing an initial-flow field.
+  - The nominal metadata cooler `h` remains a screening descriptor only; the readable 3D boundary-condition evidence still says the cooler branch is implemented as fixed `Q` in `0/T`.
+- next steps:
+  - Use the candidate-input tables as the staging contract for the user’s later friction/minor-loss additions.
+  - If the user wants the next reduction step, extend the builder to evaluate late-temperature fluid properties and add family-specific nondimensional groups on top of the current dashboard rows.

@@ -1,0 +1,7 @@
+{
+  "recommended_status": "not_defensible_yet",
+  "recommended_model": "refused_until_full_path_closure",
+  "fit_used_row_count": 0,
+  "screened_proxy_positive_row_count": 21,
+  "reason": "full feature-path hydro integral still missing in the current additive artifact stack"
+}

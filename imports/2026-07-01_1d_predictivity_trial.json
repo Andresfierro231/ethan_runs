@@ -1,0 +1,27 @@
+{
+  "manifest_id": "2026-07-01_1d_predictivity_trial",
+  "owner": "claude",
+  "task": "AGENT-168",
+  "generated_at": "2026-07-01",
+  "purpose": "Inject mesh-corrected CFD closures (per-corner bend K, de-buoyed per-leg friction) into tamu_loop_model_v2 and quantify 1D predictivity vs CFD for loop mdot and per-segment dP.",
+  "scope": "Salt 2/3/4 Jin. Model forms: default, CFD closures, zero-minor, zero-major-zero-minor. Salt 1 low-trust caveat.",
+  "modified_tools": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml"
+  ],
+  "new_docs": [
+    ".agent/journal/2026-07-01/3d-closure-into-1d-predictivity-trial.md",
+    "reports/2026-07/2026-07-01/2026-07-01_model_form_comparison/README.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-01_claude_1d_predictivity_trial"
+  ],
+  "key_findings": {
+    "mdot_default": "+25 to +30% (over-predicts) at ins=1.0in",
+    "mdot_cfd_closures": "-17 to -19% (under-predicts) at ins=1.0in",
+    "loss_budget": "~95% friction / ~5% corner-minor",
+    "bend_k_issue": "Injected corner-K overweight minor loss ~5-8x (local q_ref normalization vs pipe bulk)",
+    "residual_gap": "+-20% residual is buoyancy/dT-driven (model Re 2-3x CFD)"
+  },
+  "tests": "4 passed (test_geometry_refinement, test_launch_predictive_closure_study). All 13 campaign plans load.",
+  "note": "Numbers at ins=1.0in later found to be condition-dependent (loop 60K too hot vs CFD). Overnight corrections (AGENT-171) appended to report README."
+}

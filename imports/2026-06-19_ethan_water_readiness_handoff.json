@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-18T16:54:44-05:00",
+  "script": "tools/analyze/build_ethan_water_readiness_handoff.py",
+  "output_dir": "reports/2026-06-19_ethan_water_readiness_handoff",
+  "input_roots": [
+    "reports/2026-06-19_ethan_water_phase1_starter_package",
+    "reports/2026-06-19_ethan_water_thermal_closure_readiness",
+    "reports/2026-06-19_ethan_water_feature_hydraulic_readiness"
+  ],
+  "summary": {
+    "dependency_rollup_count": 4,
+    "thermal_status_family_count": 5,
+    "feature_status_family_count": 3
+  }
+}

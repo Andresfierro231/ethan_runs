@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-18T16:54:44-05:00",
+  "dependency_status_counts": {
+    "partial_candidate_subset_available": 1,
+    "not_ready_for_defended_fit": 1,
+    "not_started_from_closure_gated_method": 1,
+    "support_first_not_dependency_ready": 1
+  },
+  "thermal_status_counts": {
+    "blocked_hydraulic_exclusion": 4,
+    "closure_rebuild_candidate": 3,
+    "support_present_context_only": 1,
+    "blocked_by_support_or_closure": 12,
+    "closure_rebuild_priority": 4
+  },
+  "feature_status_counts": {
+    "needs_closure_rebuild": 8,
+    "blocked": 1,
+    "candidate_for_future_dependency_fit": 11
+  }
+}

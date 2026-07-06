@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-18T11:48:21-05:00",
+  "case_count": 9,
+  "leg_row_count": 54,
+  "candidate_leg_count": 1,
+  "screening_leg_count": 1,
+  "blocked_leg_count": 52,
+  "max_enthalpy_residual_fraction": 7.787809779468553,
+  "figure_paths": {
+    "heat_partition_stack": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/png/heat_partition_stack.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/svg/heat_partition_stack.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/pdf/heat_partition_stack.pdf"
+    },
+    "enthalpy_residual_heatmap": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/png/enthalpy_residual_heatmap.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/svg/enthalpy_residual_heatmap.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/pdf/enthalpy_residual_heatmap.pdf"
+    },
+    "enthalpy_residual_ranking": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/png/enthalpy_residual_ranking.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/svg/enthalpy_residual_ranking.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase2_heatloss_enthalpy_closure/figures/pdf/enthalpy_residual_ranking.pdf"
+    }
+  },
+  "main_findings": [
+    "Current Salt heat-loss separation is still case-level and audit-style rather than a resolved resistance decomposition.",
+    "Enthalpy closure is the dominant remaining Salt blocker: almost every span remains screening-only or blocked under the current residual thresholds.",
+    "The current package can localize the worst residual spans, but it does not yet explain the residual into physically separated internal, wall, and external channels."
+  ]
+}

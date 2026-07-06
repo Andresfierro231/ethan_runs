@@ -30,3 +30,10 @@ Date: 2026-06-08
 - Submit the four smoke jobs and verify that the regenerated temperature scalar-bar labels are black in the new outputs.
 - If the smoke jobs succeed, decide whether to fan the new velocity renderer out to more salt representatives.
 - Migrate future continuation sbatches to `tools/run_openfoam_case.sh` instead of duplicating bootstrap logic per case.
+
+## June 22 Retrospective Status
+
+- The smoke-job submission and first velocity rollout items are resolved by the
+  later ParaView figure-family work.
+- The continuation-sbatch migration note remains a separate runtime/launcher
+  concern rather than unfinished ParaView render work.

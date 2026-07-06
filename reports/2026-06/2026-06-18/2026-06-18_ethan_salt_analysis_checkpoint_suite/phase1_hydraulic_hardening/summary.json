@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-06-18T11:48:18-05:00",
+  "case_count": 9,
+  "hydraulic_row_count": 54,
+  "candidate_section_count": 12,
+  "screening_section_count": 42,
+  "feature_row_count": 45,
+  "candidate_feature_count": 19,
+  "buoyancy_aided_section_count": 18,
+  "figure_paths": {
+    "fit_status_heatmap": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/png/hydraulic_fit_status_heatmap.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/svg/hydraulic_fit_status_heatmap.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/pdf/hydraulic_fit_status_heatmap.pdf"
+    },
+    "direct_to_shear_ratio": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/png/hydraulic_direct_to_shear_ratio.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/svg/hydraulic_direct_to_shear_ratio.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/pdf/hydraulic_direct_to_shear_ratio.pdf"
+    },
+    "feature_keff_status": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/png/feature_keff_status_by_kind.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/svg/feature_keff_status_by_kind.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase1_hydraulic_hardening/figures/pdf/feature_keff_status_by_kind.pdf"
+    }
+  },
+  "main_findings": [
+    "Every Salt case still contains two buoyancy-aided or net-gain straight sections under the signed hydro-corrected closure.",
+    "Only lower_leg and test_section_span contribute most of the current straight-section fit candidates.",
+    "Many upper_leg rows remain screening-only because direct and shear friction proxies disagree materially in magnitude."
+  ]
+}

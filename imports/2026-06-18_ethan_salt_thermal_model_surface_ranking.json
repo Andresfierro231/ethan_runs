@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-18T16:14:17-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_salt_thermal_model_surface_ranking.py",
+  "builder_command": "python tools/analyze/build_ethan_salt_thermal_model_surface_ranking.py --output-dir reports/2026-06-18_ethan_salt_thermal_model_surface_ranking",
+  "smoke_command": "python tools/analyze/build_ethan_salt_thermal_model_surface_ranking.py --output-dir tmp/2026-06-18_ethan_salt_thermal_model_surface_ranking_smoke",
+  "output_dir": "reports/2026-06-18_ethan_salt_thermal_model_surface_ranking",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_salt_thermal_model_surface_ranking_smoke",
+  "inputs": {
+    "closure_dir": "reports/2026-06-18_ethan_transport_interpretation_closure",
+    "salt_case_roots": [
+      "tmp/2026-06-15_live_case_analysis/contract_fix_salt2",
+      "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family"
+    ]
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "salt_safe_subset_branch_stats.csv",
+    "salt_safe_subset_thermal_ranking.csv",
+    "salt_safe_subset_model_surface_decision.md"
+  ],
+  "headline_results": {
+    "primary_surface": "effective_ua_profile",
+    "secondary_surface": "effective_htc_profile",
+    "supporting_only_surface": "branch_average_thermal_resistance",
+    "diagnostic_only_surface": "thermal_resistance_profile"
+  },
+  "remaining_boundary": [
+    "This ranking is Salt-only and remains bounded to left_lower_leg, test_section_span, left_upper_leg, and upcomer.",
+    "It does not promote right_leg thermal behavior.",
+    "It does not widen Water thermal readiness or any cross-family thermal claim."
+  ]
+}

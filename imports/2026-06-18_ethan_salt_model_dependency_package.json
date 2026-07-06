@@ -1,0 +1,85 @@
+{
+  "generated_at": "2026-06-18T13:55:42-05:00",
+  "task_id": "AGENT-084",
+  "builder_script": "tools/analyze/build_ethan_salt_model_dependency_package.py",
+  "builder_command": "python tools/analyze/build_ethan_salt_model_dependency_package.py --output-dir reports/2026-06-18_ethan_salt_model_dependency_package",
+  "smoke_builder_command": "python tools/analyze/build_ethan_salt_model_dependency_package.py --output-dir tmp/2026-06-18_ethan_salt_model_dependency_package_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/build_ethan_salt_model_dependency_package.py tools/analyze/test_ethan_salt_model_dependency_package.py",
+    "python -m unittest discover -s tools/analyze -p 'test_ethan_salt_model_dependency_package.py'",
+    "python tools/analyze/build_ethan_salt_model_dependency_package.py --output-dir tmp/2026-06-18_ethan_salt_model_dependency_package_smoke --source-id val_salt_test_2_coarse_mesh_laminar --source-id viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "python tools/analyze/build_ethan_salt_model_dependency_package.py --output-dir reports/2026-06-18_ethan_salt_model_dependency_package"
+  ],
+  "schema_sanity_check": "python - <<'PY' ... audited thermal_fit_ready_rows.csv, hydraulic_fit_ready_rows.csv, hydraulic_hardening_audit.csv, and summary.json for gating/sign/count consistency ... PY",
+  "canonical_inputs": {
+    "checkpoint_suite": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite",
+    "salt_closure_correlation_package": "reports/2026-06-18_ethan_salt_closure_correlation_package",
+    "pressure_htc_boundarylayer_package": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+    "nondimensional_dashboard_package": "reports/2026-06-17_ethan_nondimensional_dashboard_package",
+    "field_transport_campaign": "reports/2026-06-15_ethan_all_runs_field_transport_campaign",
+    "steady_state_heat_flow_audit": "reports/2026-06-09_ethan_steady_state_heat_flow_audit",
+    "case_metadata_index": "reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv"
+  },
+  "output_dir": "reports/2026-06-18_ethan_salt_model_dependency_package",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_salt_model_dependency_package_smoke",
+  "case_count": 9,
+  "summary": {
+    "thermal_row_count": 63,
+    "thermal_screened_candidate_count": 36,
+    "thermal_closure_supported_count": 1,
+    "thermal_fit_used_count": 1,
+    "thermal_sensitivity_only_count": 35,
+    "thermal_excluded_count": 27,
+    "hydraulic_row_count": 99,
+    "hydraulic_straight_fit_used_count": 12,
+    "hydraulic_feature_excluded_count": 45,
+    "friction_recommended_status": "provisional_defended",
+    "friction_recommended_model": "class_aware_re_power_law",
+    "nu_recommended_status": "not_defensible_yet",
+    "nu_recommended_model": "exploratory_screened_only_model"
+  },
+  "sensitivity_highlights": {
+    "hydraulic_direct_to_shear_gate_strict": {
+      "base_row_count": 12,
+      "sensitivity_row_count": 6,
+      "base_log_re_slope": -0.9477837868063631,
+      "sensitivity_log_re_slope": -0.9580925293037778,
+      "qualitative_conclusion_changed": true
+    },
+    "thermal_property_convention_case_probe": {
+      "base_row_count": 27,
+      "sensitivity_row_count": 27,
+      "base_log_re_slope": 1.1275809543042417,
+      "sensitivity_log_re_slope": 1.0815565397483788,
+      "qualitative_conclusion_changed": false
+    },
+    "thermal_late_window_latest_section_target": {
+      "base_row_count": 27,
+      "sensitivity_row_count": 27,
+      "base_log_re_slope": 1.1275809543042417,
+      "sensitivity_log_re_slope": 1.341329278351378,
+      "qualitative_conclusion_changed": true
+    }
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "provenance_map.csv",
+    "thermal_decomposition_rows.csv",
+    "thermal_fit_ready_rows.csv",
+    "thermal_exclusion_summary.csv",
+    "branch_trust_summary.csv",
+    "hydraulic_hardening_audit.csv",
+    "hydraulic_fit_ready_rows.csv",
+    "hydraulic_exclusion_summary.csv",
+    "salt_friction_fit_results.json",
+    "salt_nu_fit_results.json",
+    "sensitivity_summary.csv",
+    "model_dependency_handoff.md"
+  ],
+  "limitations": [
+    "Feature K_eff remains excluded from defended fitting because the additive artifacts only preserve residual p_rgh feature pressure loss, not a dedicated feature hydro-integral closure.",
+    "Salt HTC/Nu remains non-defensible because only one direct branch row survives the full support, enthalpy, overlap, and direction gate stack.",
+    "Hydraulic late-window sensitivity is not runnable from preserved artifacts because time-resolved hydro-corrected section/path closures were not carried into the additive package."
+  ]
+}

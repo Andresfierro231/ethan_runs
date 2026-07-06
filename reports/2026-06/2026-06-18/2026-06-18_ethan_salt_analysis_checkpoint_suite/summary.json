@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-06-18T11:48:31-05:00",
+  "phase_names": [
+    "phase1_hydraulic_hardening",
+    "phase2_heatloss_enthalpy_closure",
+    "phase3_branch_trust_gate",
+    "phase4_boundary_layer_context",
+    "phase5_fit_ready_handoff"
+  ],
+  "phase_summaries": {
+    "phase1_hydraulic_hardening": {
+      "generated_at": "2026-06-18T11:48:18-05:00",
+      "case_count": 9,
+      "hydraulic_row_count": 54,
+      "candidate_section_count": 12,
+      "screening_section_count": 42,
+      "feature_row_count": 45,
+      "candidate_feature_count": 19,
+      "buoyancy_aided_section_count": 18
+    },
+    "phase2_heatloss_enthalpy_closure": {
+      "generated_at": "2026-06-18T11:48:21-05:00",
+      "case_count": 9,
+      "leg_row_count": 54,
+      "candidate_leg_count": 1,
+      "screening_leg_count": 1,
+      "blocked_leg_count": 52,
+      "max_enthalpy_residual_fraction": 7.787809779468553
+    },
+    "phase3_branch_trust_gate": {
+      "generated_at": "2026-06-18T11:48:23-05:00",
+      "branch_row_count": 63,
+      "candidate_branch_row_count": 36,
+      "screening_branch_row_count": 14,
+      "blocked_branch_row_count": 13,
+      "candidate_branch_names": [
+        "left_lower_leg",
+        "left_upper_leg",
+        "test_section_span",
+        "upcomer"
+      ]
+    },
+    "phase4_boundary_layer_context": {
+      "generated_at": "2026-06-18T11:48:29-05:00",
+      "boundary_span_row_count": 54,
+      "representative_profile_row_count": 7015,
+      "bulk_centerline_row_count": 1073,
+      "case_context_count": 9
+    },
+    "phase5_fit_ready_handoff": {
+      "generated_at": "2026-06-18T11:48:31-05:00",
+      "case_count": 9,
+      "fit_ready_hydraulic_count": 12,
+      "fit_ready_feature_count": 19,
+      "fit_ready_branch_count": 36,
+      "exclusion_row_count": 148
+    }
+  }
+}

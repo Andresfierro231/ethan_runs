@@ -1,0 +1,5 @@
+asset_family,sensitivity_name,status,base_row_count,sensitivity_row_count,row_count_delta,qualitative_conclusion_changed,note
+straight_section_friction,direct_to_shear_gate_loose,run,12,12,0,no,direct-to-shear ratio gate 0.40-2.50 on case-mean defended rows
+straight_section_friction,direct_to_shear_gate_base,run,12,12,0,no,direct-to-shear ratio gate 0.50-2.00 on case-mean defended rows
+straight_section_friction,direct_to_shear_gate_strict,run,12,6,-6,yes,direct-to-shear ratio gate 0.67-1.50 on case-mean defended rows
+straight_section_friction,late_window_choice,not_run,12,8,-4,unknown,"retained-time defended straight rows were rebuilt, but the preserved late-window coverage is only 3.0-4.0 s across target sections; need about 20 s of preserved continuation support before rerunning the late-window sensitivity"

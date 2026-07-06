@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-06-18T11:48:29-05:00",
+  "boundary_span_row_count": 54,
+  "representative_profile_row_count": 7015,
+  "bulk_centerline_row_count": 1073,
+  "case_context_count": 9,
+  "figure_paths": {
+    "boundary_context": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/png/boundary_layer_context_boxplots.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/svg/boundary_layer_context_boxplots.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/pdf/boundary_layer_context_boxplots.pdf"
+    },
+    "salt2_profiles": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/png/salt2_representative_profiles.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/svg/salt2_representative_profiles.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/pdf/salt2_representative_profiles.pdf"
+    },
+    "bulk_centerline": {
+      "png": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/png/bulk_centerline_correction.png",
+      "svg": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/svg/bulk_centerline_correction.svg",
+      "pdf": "reports/2026-06-18_ethan_salt_analysis_checkpoint_suite/phase4_boundary_layer_context/figures/pdf/bulk_centerline_correction.pdf"
+    }
+  },
+  "main_findings": [
+    "All-case Salt boundary-layer context remains landmark-first and should stay that way in the current interpretation stack.",
+    "The currently available representative profile context is dominated by the preserved Salt 2 profile set.",
+    "Bulk-vs-centerline temperature correction is already available and should be carried forward as context whenever thermal profile claims are made."
+  ]
+}

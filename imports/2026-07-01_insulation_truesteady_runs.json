@@ -1,0 +1,26 @@
+{
+  "manifest_id": "2026-07-01_insulation_truesteady_runs",
+  "owner": "claude",
+  "task": "AGENT-164",
+  "generated_at": "2026-07-01",
+  "purpose": "T2: stage and launch Salt 2 Jin hiins/loins true-steady insulation runs from the nominal continuation.",
+  "scope": "Salt 2 Jin only (conservative start). External wall h knob on 32 passive rcExternalTemperature segments. endTime=33000 s (~5 tau_ext past restart t=7915 s).",
+  "new_staging": [
+    "jadyn_runs/modern_runs/2026-07-01_insulation_truesteady/runs/salt2_jin_hiins_loH",
+    "jadyn_runs/modern_runs/2026-07-01_insulation_truesteady/runs/salt2_jin_loins_hiH"
+  ],
+  "new_docs": [
+    ".agent/journal/2026-07-01/T2-truesteady-insulation-runs.md"
+  ],
+  "work_products": [],
+  "insulation_convention_locked": "hiins=more_insulation=lower_h; loins=less_insulation=higher_h",
+  "running_jobs": {
+    "node": "c318-008 (idev 3269598, NuclearEnergy-dev)",
+    "hiins": "ibrun -n 64 offset 0",
+    "loins": "ibrun -n 64 offset 64"
+  },
+  "admissibility_gate": "Runs are inadmissible until mdot moves off nominal (-0.0132 kg/s) and re-plateaus AND wall dT differs from nominal. Apply T3 gate (AGENT-166) before extracting closures.",
+  "open_questions_for_user": [
+    "Confirm insulation naming convention: hiins=LOWER h (more insulation) is correct per user instruction 2026-07-01."
+  ]
+}

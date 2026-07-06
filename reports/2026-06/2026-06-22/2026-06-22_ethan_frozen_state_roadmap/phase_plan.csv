@@ -1,0 +1,6 @@
+phase_order,phase_name,status,board_task,goal
+1,freeze_current_closures,complete,AGENT-100,Freeze the retained-time Salt state and publish current closure and drift summaries.
+2,refresh_straight_after_continuations,queued,AGENT-104,Refresh the straight-section sensitivity package after the current continuation jobs preserve longer late windows.
+3,pathwise_feature_hardening,complete,AGENT-103,Build the retained-time feature-path p versus p_rgh decomposition and reopen feature K_eff on the stable subset.
+4,fluid_one_d_replay,queued,AGENT-102,Rerun the external Fluid 1D lane against the frozen CFD state with the current closure set.
+5,litrev_htc_followup,queued,AGENT-101,Audit whether more literature support is still needed for a broader developing-flow internal HTC closure surface.

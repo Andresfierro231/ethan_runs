@@ -416,3 +416,15 @@ Date: 2026-06-15
   - `.agent/journal/2026-06-15/coordinator-implementer-paraview-field-family-expansion.md`
 - Paper-facing same-day provenance:
   - `/scratch/09748/andresfierro231/projects_scratch/papers/dmdc_analysis/notes/2026-06-15_ethan_all_run_campaign_update.md`
+
+### June 22 Retrospective Status
+
+- The June 15 checkpoint note above was accurate at the time it was written.
+- Since then, `AGENT-073` and `AGENT-075` were closed and moved out of
+  `Active`, so the ParaView notes from this checkpoint should no longer be read
+  as pending closure bookkeeping.
+- The remaining live caveats are runtime/format boundaries, not incomplete
+  figure-family implementation:
+  - post-write ParaView MPI shutdown can still exit noisily
+  - representative movie delivery is currently durable frame sequences plus
+    `frames_only`/`.ogv` status, not MP4 packaging

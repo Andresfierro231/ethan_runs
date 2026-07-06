@@ -1,0 +1,41 @@
+family_id,representative_source_id,span_name,span_label
+1,viscosity_screening_salt_test_1_jin_coarse_mesh,lower_leg,"lower_leg
+TP3 -> TP2"
+1,viscosity_screening_salt_test_1_jin_coarse_mesh,right_leg,"right_leg
+TP2 -> TP1"
+1,viscosity_screening_salt_test_1_jin_coarse_mesh,upper_leg,"upper_leg
+TP6 -> TP1"
+1,viscosity_screening_salt_test_1_jin_coarse_mesh,left_upper_leg,"left_upper_leg
+TP5 -> TP6"
+1,viscosity_screening_salt_test_1_jin_coarse_mesh,left_lower_leg,"left_lower_leg
+TP3 -> TP4"
+2,val_salt_test_2_coarse_mesh_laminar,lower_leg,"lower_leg
+TP3 -> TP2"
+2,val_salt_test_2_coarse_mesh_laminar,right_leg,"right_leg
+TP2 -> TP1"
+2,val_salt_test_2_coarse_mesh_laminar,upper_leg,"upper_leg
+TP6 -> TP1"
+2,val_salt_test_2_coarse_mesh_laminar,left_upper_leg,"left_upper_leg
+TP5 -> TP6"
+2,val_salt_test_2_coarse_mesh_laminar,left_lower_leg,"left_lower_leg
+TP3 -> TP4"
+3,viscosity_screening_salt_test_3_jin_coarse_mesh,lower_leg,"lower_leg
+TP3 -> TP2"
+3,viscosity_screening_salt_test_3_jin_coarse_mesh,right_leg,"right_leg
+TP2 -> TP1"
+3,viscosity_screening_salt_test_3_jin_coarse_mesh,upper_leg,"upper_leg
+TP6 -> TP1"
+3,viscosity_screening_salt_test_3_jin_coarse_mesh,left_upper_leg,"left_upper_leg
+TP5 -> TP6"
+3,viscosity_screening_salt_test_3_jin_coarse_mesh,left_lower_leg,"left_lower_leg
+TP3 -> TP4"
+4,viscosity_screening_salt_test_4_jin_coarse_mesh,lower_leg,"lower_leg
+TP3 -> TP2"
+4,viscosity_screening_salt_test_4_jin_coarse_mesh,right_leg,"right_leg
+TP2 -> TP1"
+4,viscosity_screening_salt_test_4_jin_coarse_mesh,upper_leg,"upper_leg
+TP6 -> TP1"
+4,viscosity_screening_salt_test_4_jin_coarse_mesh,left_upper_leg,"left_upper_leg
+TP5 -> TP6"
+4,viscosity_screening_salt_test_4_jin_coarse_mesh,left_lower_leg,"left_lower_leg
+TP3 -> TP4"

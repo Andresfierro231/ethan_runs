@@ -1,0 +1,10 @@
+branch_name,fit_status,fit_reason,row_count
+left_lower_leg,candidate,thermal_support_clean,9
+left_upper_leg,candidate,thermal_support_clean,9
+lower_leg,do_not_fit,thermal_low_usable_fraction,2
+lower_leg,screening_only,thermal_support_marginal,7
+right_leg,do_not_fit,thermal_low_usable_fraction,9
+test_section_span,candidate,thermal_support_clean,9
+upcomer,candidate,thermal_support_clean,9
+upper_leg,do_not_fit,thermal_small_delta_t,2
+upper_leg,screening_only,thermal_support_marginal,7

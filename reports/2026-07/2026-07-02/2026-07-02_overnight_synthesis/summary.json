@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-07-02",
+  "task": "AGENT-171",
+  "owner": "claude",
+  "status": "final",
+  "purpose": "Overnight synthesis of 2026-07-01/02 autonomous work: per-leg friction multiplier implementation, corrected predictivity story, mesh self-generation de-risk, and T2 insulation-run flag.",
+  "inputs": {
+    "predictivity_trial": "work_products/2026-07-01_claude_1d_predictivity_trial/",
+    "overnight_artifacts": "work_products/2026-07-02_overnight/",
+    "model_form_comparison": "reports/2026-07/2026-07-01/2026-07-01_model_form_comparison/README.md"
+  },
+  "outputs": {
+    "report_readme": "reports/2026-07/2026-07-02/2026-07-02_overnight_synthesis/README.md",
+    "reusable_scripts": "work_products/2026-07-02_overnight/",
+    "journals": ".agent/journal/2026-07-02/"
+  },
+  "headline_findings": {
+    "per_leg_friction_multiplier": "Added ScenarioConfig.friction_multiplier_by_parent_segment to 1D solver (backward-compatible).",
+    "corrected_predictivity": "Earlier 'closures improve mdot' was an artifact of running 60 K too hot. At matched T, CFD closures make mdot WORSE. mdot is condition-dependent; use per-segment dP instead.",
+    "dominant_lever": "Thermal boundary (insulation/ambient-loss) is the dominant 1D error lever, more important than hydraulic closures.",
+    "open_factor_2": "Factor-2 mdot discrepancy at matched T with CFD friction — no validated mechanism.",
+    "mesh_gci_blocker": "refineMesh geometrically correct (×8, 100% hex) but refined NCC interface breaks OF13 fvMeshStitcher at runtime. Fix: conformal-first remesh."
+  },
+  "model_improvement_ranking": [
+    "Match effective thermal boundary (insulation UA) to each CFD case",
+    "Reconcile loop momentum budget term-by-term to explain factor-2",
+    "Mesh-independence via conformal-first remesh (T6)",
+    "Fix T2 timestep / acceleration to reach steady state"
+  ],
+  "limitations": [
+    "All CFD reference is coarse mesh (no GCI bound, T6 blocked).",
+    "T2 insulation runs advancing ~22 s/hr vs 25000 s needed — will not reach steady.",
+    "No validated mechanism for the factor-2 mdot discrepancy at matched T.",
+    "Mesh GCI not produced (correctly, not fabricated)."
+  ]
+}

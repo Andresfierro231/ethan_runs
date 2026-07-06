@@ -1,0 +1,113 @@
+{
+  "straight_section_dependency": {
+    "recommended_status": "provisional_defended",
+    "recommended_model": "class_aware_re_power_law",
+    "constant_model": {
+      "status": "fit",
+      "model_type": "geometric_constant",
+      "row_count": 12,
+      "coefficient_names": [
+        "group:lower_leg",
+        "group:test_section_span"
+      ],
+      "coefficients": [
+        0.7662070056166332,
+        3.647404051388148
+      ],
+      "rmse_log": 0.20772385889675893,
+      "mae_log": 0.18028756086177644,
+      "r2_log": 0.9790621751538807
+    },
+    "power_model": {
+      "status": "fit",
+      "model_type": "class_aware_re_power_law",
+      "row_count": 12,
+      "coefficient_names": [
+        "intercept",
+        "log_re",
+        "category_name:test_section_span"
+      ],
+      "coefficients": [
+        5.231637812204384,
+        -0.9477837868063631,
+        2.9210668438865617
+      ],
+      "rmse_log": 0.035878677813696094,
+      "mae_log": 0.03092013933530512,
+      "r2_log": 0.9993753573141287,
+      "bootstrap_ci95": {
+        "intercept": [
+          4.883604310183116,
+          5.83910945813645
+        ],
+        "log_re": [
+          -1.0746119964927836,
+          -0.8749097056435152
+        ],
+        "category_name:test_section_span": [
+          2.8707154928900036,
+          2.9764655866238723
+        ]
+      }
+    },
+    "fit_used_row_count": 12
+  },
+  "feature_dependency": {
+    "recommended_status": "provisional_defended",
+    "recommended_model": "feature_name_aware_re_power_law",
+    "stability_fraction_by_feature": {
+      "corner_upper_right": 1.0,
+      "test_section_complex": 0.7777777777777778,
+      "corner_upper_left": 0.5555555555555556
+    },
+    "constant_model": {
+      "status": "fit",
+      "model_type": "geometric_constant",
+      "row_count": 16,
+      "coefficient_names": [
+        "group:corner_upper_right",
+        "group:test_section_complex"
+      ],
+      "coefficients": [
+        2.196937185102996,
+        2.0026578719776835
+      ],
+      "rmse_log": 0.5496759165106064,
+      "mae_log": 0.49429380440671356,
+      "r2_log": 0.029825660366474938
+    },
+    "power_model": {
+      "status": "fit",
+      "model_type": "feature_name_aware_re_power_law",
+      "row_count": 16,
+      "coefficient_names": [
+        "intercept",
+        "log_re",
+        "category_name:test_section_complex"
+      ],
+      "coefficients": [
+        -4.903461240854273,
+        1.5632483338754497,
+        -0.2971519239337742
+      ],
+      "rmse_log": 0.29129960116844295,
+      "mae_log": 0.2439086458415915,
+      "r2_log": 0.7275315976022232,
+      "bootstrap_ci95": {
+        "intercept": [
+          -8.184394200936605,
+          -2.6952244207263365
+        ],
+        "log_re": [
+          1.0778871683879814,
+          2.301472058421483
+        ],
+        "category_name:test_section_complex": [
+          -0.622156302243205,
+          -0.010217990235063047
+        ]
+      }
+    },
+    "fit_used_row_count": 16
+  }
+}

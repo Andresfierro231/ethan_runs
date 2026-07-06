@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-18T15:00:07-05:00",
+  "task_id": "AGENT-072",
+  "builder_script": "tools/analyze/build_ethan_salt_hydraulic_evidence_subset.py",
+  "builder_command": "python tools/analyze/build_ethan_salt_hydraulic_evidence_subset.py --output-dir reports/2026-06-18_ethan_salt_hydraulic_evidence_subset",
+  "smoke_command": "python tools/analyze/build_ethan_salt_hydraulic_evidence_subset.py --output-dir tmp/2026-06-18_ethan_salt_hydraulic_evidence_subset_smoke",
+  "output_dir": "reports/2026-06-18_ethan_salt_hydraulic_evidence_subset",
+  "smoke_output_dir": "tmp/2026-06-18_ethan_salt_hydraulic_evidence_subset_smoke",
+  "inputs": {
+    "salt_family_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family",
+    "salt2_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2",
+    "water_subset_dir": "reports/2026-06-18_ethan_water_hydraulic_evidence_subset",
+    "closure_dir": "reports/2026-06-18_ethan_transport_interpretation_closure"
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "salt_hydraulic_case_branch_screen.csv",
+    "salt_hydraulic_family_subset.csv",
+    "salt_hydraulic_overlap_with_water.csv"
+  ],
+  "headline_results": {
+    "candidate_branch_count": 6,
+    "contextual_branch_count": 0,
+    "excluded_branch_count": 0,
+    "shared_overlap_branch_count": 3,
+    "shared_overlap_branches": [
+      "right_leg",
+      "test_section_span",
+      "upper_leg"
+    ]
+  },
+  "remaining_boundary": [
+    "All six Salt branches are clean at the family-only hydraulic screen.",
+    "Only right_leg, test_section_span, and upper_leg overlap with the current non-excluded Water candidate subset.",
+    "Cross-family hydraulics remain guarded by the June 18 interpretation closure package even on the shared clean overlap branches."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "generated_at": "2026-06-18T15:10:38-05:00",
+  "task_id": "AGENT-086",
+  "builder_script": "tools/analyze/build_ethan_water_phase1_starter_package.py",
+  "builder_command": "python -m tools.analyze.build_ethan_water_phase1_starter_package --output-dir reports/2026-06-19_ethan_water_phase1_starter_package",
+  "smoke_builder_command": "python -m tools.analyze.build_ethan_water_phase1_starter_package --output-dir tmp/2026-06-19_ethan_water_phase1_starter_package_smoke --source-id val_water_test_1_coarse_mesh_laminar --source-id val_water_test_4_coarse_mesh_laminar",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/build_ethan_water_phase1_starter_package.py tools/analyze/test_ethan_salt_conclusions_and_water_phase1.py",
+    "python -m unittest discover -s tools/analyze -p 'test_ethan_salt_conclusions_and_water_phase1.py'",
+    "python -m tools.analyze.build_ethan_water_phase1_starter_package --output-dir tmp/2026-06-19_ethan_water_phase1_starter_package_smoke --source-id val_water_test_1_coarse_mesh_laminar --source-id val_water_test_4_coarse_mesh_laminar",
+    "python -m tools.analyze.build_ethan_water_phase1_starter_package --output-dir reports/2026-06-19_ethan_water_phase1_starter_package"
+  ],
+  "canonical_inputs": {
+    "water_hydraulic_evidence_subset": "reports/2026-06-18_ethan_water_hydraulic_evidence_subset",
+    "pressure_htc_boundarylayer_package": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package",
+    "water_dashboard": "reports/2026-06-17_ethan_nondimensional_dashboard_package/water_dashboard.csv"
+  },
+  "output_dir": "reports/2026-06-19_ethan_water_phase1_starter_package",
+  "smoke_output_dir": "tmp/2026-06-19_ethan_water_phase1_starter_package_smoke",
+  "summary": {
+    "case_count": 4,
+    "hydraulic_candidate_branch_count": 3,
+    "hydraulic_contextual_branch_count": 2,
+    "hydraulic_excluded_branch_count": 1,
+    "thermal_candidate_span_count": 1,
+    "thermal_priority_span_count": 1
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "water_case_context.csv",
+    "water_hydraulic_branch_readiness.csv",
+    "water_thermal_span_phase1.csv",
+    "water_bulk_reweight_context.csv",
+    "water_dependency_readiness.csv",
+    "water_phase1_handoff.md"
+  ],
+  "limitations": [
+    "This package is a readiness/starter layer only and does not claim defended water dependencies.",
+    "Water feature K_eff hardening has not been started yet in an additive package.",
+    "Water thermal closure is still support-first and must be rebuilt before any defended HTC/Nu dependency claim."
+  ]
+}

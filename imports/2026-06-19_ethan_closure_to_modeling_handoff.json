@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-18T16:56:43-05:00",
+  "script": "tools/analyze/build_ethan_closure_to_modeling_handoff.py",
+  "output_dir": "reports/2026-06-19_ethan_closure_to_modeling_handoff",
+  "input_roots": [
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3",
+    "reports/2026-06-19_ethan_water_readiness_handoff",
+    "reports/2026-06-19_ethan_salt_feature_path_hydraulic_hardening",
+    "reports/2026-06-19_ethan_salt_thermal_closure_hardening_v3",
+    "reports/2026-06-19_ethan_salt_straight_hydraulic_sensitivity"
+  ],
+  "summary": {
+    "salt_fit_row_count": 19,
+    "blocked_dependency_count": 2
+  }
+}

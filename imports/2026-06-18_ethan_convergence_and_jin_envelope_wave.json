@@ -1,0 +1,83 @@
+{
+  "manifest_id": "2026-06-18_ethan_convergence_and_jin_envelope_wave",
+  "created_at": "2026-06-18T17:05:00-05:00",
+  "workspace_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "campaign_root": "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave",
+  "purpose": "Stage and submit the June 18 Salt Jin and Water continuation wave, and document the gated Jin-only Salt DOE envelope path without reopening numerics, mesh, or turbulence mode.",
+  "inputs": [
+    "jadyn_runs/salt1/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_1_coarse_mesh_laminar",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_2_coarse_mesh_laminar",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_3_coarse_mesh_laminar",
+    "staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_4_coarse_mesh_laminar",
+    "jadyn_runs/salt2/2026-06-02_runtime_recovery/scripts/of13-env.sh",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so"
+  ],
+  "artifacts": [
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/README.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/TODO.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/campaign_manifest.csv",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/doe_scaffold_notes.md",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/scripts/run_continuation_generic_openfoam13.sbatch"
+  ],
+  "submitted_jobs": [
+    {
+      "case_key": "salt1_jin",
+      "job_name": "ethan_s1j_cont",
+      "job_id": 3244955,
+      "walltime": "120:00:00"
+    },
+    {
+      "case_key": "salt2_jin",
+      "job_name": "ethan_s2j_cont",
+      "job_id": 3244951,
+      "walltime": "120:00:00"
+    },
+    {
+      "case_key": "salt3_jin",
+      "job_name": "ethan_s3j_cont",
+      "job_id": 3244950,
+      "walltime": "120:00:00"
+    },
+    {
+      "case_key": "salt4_jin",
+      "job_name": "ethan_s4j_cont",
+      "job_id": 3244954,
+      "walltime": "120:00:00"
+    },
+    {
+      "case_key": "water1",
+      "job_name": "ethan_w1_cont",
+      "job_id": 3244953,
+      "walltime": "72:00:00"
+    },
+    {
+      "case_key": "water2",
+      "job_name": "ethan_w2_cont",
+      "job_id": 3244957,
+      "walltime": "72:00:00"
+    },
+    {
+      "case_key": "water3",
+      "job_name": "ethan_w3_cont",
+      "job_id": 3244952,
+      "walltime": "72:00:00"
+    },
+    {
+      "case_key": "water4",
+      "job_name": "ethan_w4_cont",
+      "job_id": 3244956,
+      "walltime": "72:00:00"
+    }
+  ],
+  "submission_host": "login3.ls6.tacc.utexas.edu",
+  "submission_note": "Direct local sbatch was blocked on compute host c318-008.ls6.tacc.utexas.edu, so all eight jobs were submitted through login3 over ssh.",
+  "limitations": [
+    "No DOE child jobs were submitted in this pass because the campaign gate requires at least one clean new parent write.",
+    "No numerics, mesh, turbulence, or property-model changes were made in this wave.",
+    "The separately powered test-section patch remains fixed in the later DOE scaffold notes."
+  ]
+}

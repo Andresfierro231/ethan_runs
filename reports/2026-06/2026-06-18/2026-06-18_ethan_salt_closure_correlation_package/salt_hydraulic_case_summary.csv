@@ -1,0 +1,10 @@
+source_id,case_label,straight_section_count,candidate_section_count,screening_section_count,blocked_section_count,mean_abs_hydro_pressure_loss_pa,max_abs_hydro_pressure_loss_pa,mean_direct_to_shear_darcy_ratio,buoyancy_aided_section_count
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,6,2,4,0,124.62395468224709,196.57968988576994,1.5629641214652523,2
+viscosity_screening_salt_test_1_jin_coarse_mesh,Salt 1 Jin,6,0,6,0,126.76983261586713,196.77680391449303,1.4558231498462737,2
+viscosity_screening_salt_test_1_kirst_coarse_mesh,Salt 1 Kirst,6,0,6,0,126.2796180702511,196.86871060325348,1.4518437398532384,2
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2 Jin,6,1,5,0,125.05373054262593,196.53248887927225,1.5493521478628427,2
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2 Kirst,6,1,5,0,125.28115151243344,195.6898672954071,1.5982654927384459,2
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,6,2,4,0,122.7490191220564,196.09562523844306,1.5863846402453545,2
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,6,2,4,0,124.06806534934913,195.3913634152757,1.6002785603853578,2
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,6,2,4,0,119.79468067563835,195.0839358850933,1.7488586229942573,2
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,6,2,4,0,121.66574799670416,194.58251053371805,1.6833014728381865,2

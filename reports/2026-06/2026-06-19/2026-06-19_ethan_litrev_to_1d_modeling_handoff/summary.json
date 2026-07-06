@@ -1,0 +1,72 @@
+{
+  "generated_at": "2026-06-19T00:00:00-05:00",
+  "refreshed_at": "2026-06-22T10:00:00-05:00",
+  "package": "2026-06-19_ethan_litrev_to_1d_modeling_handoff",
+  "closure_crosswalk_rows": 15,
+  "correlation_registry_rows": 14,
+  "segment_policy_rows": 10,
+  "shared_bundle_contract_rows": 8,
+  "nondimensional_group_rows": 10,
+  "required_future_observable_rows": 7,
+  "rom_test_matrix_rows": 8,
+  "dual_path_workstream_rows": 9,
+  "dual_path_ready_to_start": true,
+  "implementation_boundary": "report_and_planning_only_in_ethan_runs",
+  "queue_refresh_note": "June 22 runtime refresh distinguishes workflow/job-health evidence from closure-authority changes.",
+  "current_status_counts": {
+    "admit_v1": 5,
+    "baseline_only": 2,
+    "comparison_or_sensitivity_only": 4,
+    "calibration_only": 2,
+    "blocked": 2
+  },
+  "primary_inputs": [
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/correlation_table.csv",
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/implementation_ready_recommendations.csv",
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/modeling_decision_memo.csv",
+    "reports/2026-06-19_ethan_closure_to_modeling_handoff/README.md",
+    "reports/2026-06-19_ethan_blocker_report_and_followon_wave/one_d_implementation_spec.md",
+    "reports/2026-06-19_ethan_salt_model_dependency_package_v3/README.md",
+    "reports/2026-06-18_ethan_salt_thermal_model_surface_ranking/README.md",
+    "reports/2026-06-17_ethan_nondimensional_dashboard_package/README.md",
+    "reports/2026-06-15_ethan_boundary_modeling_report/README.md",
+    "reports/2026-06-02_ethan_1d_model_discrepancy_report/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/Makefile",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/practical_reduced_order_planning_2026-06-05_v1/REPORT.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/profile_descriptor_diagnostics_weekend_salt1_ins1_rad1_v1/REPORT.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/joint_htc_friction_calibration_weekend_focused_v1/trial_grid__salt.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/joint_htc_friction_calibration_weekend_focused_v1/case_metrics__salt.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_joint_calibration_contracts.py"
+  ],
+  "runtime_snapshot": {
+    "as_of": "2026-06-22T10:00:00-05:00",
+    "running": [
+      3244950,
+      3244951,
+      3244954,
+      3244957,
+      3246561,
+      3246564,
+      3250524,
+      3250525
+    ],
+    "pending": [
+      3250526
+    ],
+    "failed": [
+      3246562,
+      3246563,
+      3246927
+    ],
+    "timed_out": [
+      3244952,
+      3244953,
+      3244956
+    ],
+    "completed": [
+      3244955
+    ]
+  }
+}

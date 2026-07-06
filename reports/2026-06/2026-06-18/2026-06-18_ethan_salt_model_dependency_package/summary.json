@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-18T13:55:42-05:00",
+  "case_count": 9,
+  "thermal": {
+    "row_count": 63,
+    "screened_candidate_count": 36,
+    "closure_supported_count": 1,
+    "fit_used_count": 1,
+    "sensitivity_only_count": 35,
+    "excluded_count": 27
+  },
+  "hydraulic": {
+    "row_count": 99,
+    "straight_fit_used_count": 12,
+    "feature_excluded_count": 45
+  },
+  "friction_dependency": {
+    "recommended_status": "provisional_defended",
+    "recommended_model": "class_aware_re_power_law"
+  },
+  "nu_dependency": {
+    "recommended_status": "not_defensible_yet",
+    "recommended_model": "exploratory_screened_only_model"
+  }
+}

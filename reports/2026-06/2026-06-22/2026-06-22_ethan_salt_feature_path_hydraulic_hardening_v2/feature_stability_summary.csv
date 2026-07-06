@@ -1,0 +1,6 @@
+feature_name,feature_class,case_count,fit_used_case_count,fit_used_case_fraction,mean_positive_time_fraction,mean_support_fraction_min,mean_feature_excess_path_pa,mean_keff_effective_path
+corner_lower_left,bend,9,0,0.0,0.0,1.0,-2.8330974603853574,-6.473273478202178
+corner_lower_right,bend,9,0,0.0,0.0,1.0,-0.7635600346533873,-2.3039075958457818
+corner_upper_left,bend,9,5,0.5555555555555556,0.5555555555555556,1.0,1.7844794886216953,5.951381057387983
+corner_upper_right,bend,9,9,1.0,1.0,1.0,4.548588272628096,10.169616262914834
+test_section_complex,quartz_transition,9,7,0.7777777777777778,0.7777777777777778,1.0,1.8310530053711587,5.235446757198861

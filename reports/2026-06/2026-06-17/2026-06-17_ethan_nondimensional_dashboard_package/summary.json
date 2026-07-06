@@ -1,0 +1,525 @@
+{
+  "generated_at": "2026-06-17T14:51:33-05:00",
+  "script_path": "tools/analyze/build_ethan_nondimensional_dashboard_package.py",
+  "output_root": "reports/2026-06-17_ethan_nondimensional_dashboard_package",
+  "dashboard_case_count": 13,
+  "family_case_counts": {
+    "salt": 9,
+    "water": 4
+  },
+  "input_paths": {
+    "metadata_csv": "reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv",
+    "heat_latest_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/latest_heat_partition.csv",
+    "heat_window_csv": "reports/2026-06-09_ethan_steady_state_heat_flow_audit/heat_window_summary.csv",
+    "field_transport_readme": "reports/2026-06-15_ethan_all_runs_field_transport_campaign/README.md",
+    "boundary_report_readme": "reports/2026-06-15_ethan_boundary_modeling_report/README.md"
+  },
+  "assumptions": [
+    "Water and salt remain separate dashboard/correlation-screening families.",
+    "Branch temperatures are late-window means over retained cut-plane bins, not instantaneous final-timestep values.",
+    "Initial hydraulic state is not published cleanly enough in the canonical metadata index, so the dashboard records that gap and carries late-window |mdot| as the hydraulic context field.",
+    "Metadata cooler h is retained as a screening descriptor even though the readable 3D `0/T` implementation applies fixed-Q cooling sinks.",
+    "Candidate correlation inputs are not final nondimensional groups; they are quick screening descriptors for the next reduced-order pass."
+  ],
+  "case_inputs": [
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar/summary.json",
+      "requested_times_s": [
+        8598.0,
+        8599.0,
+        8600.0,
+        8601.0,
+        8602.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/val_salt_test_2_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 5,
+        "region_coverage_counts": {
+          "lower_leg": 5,
+          "right_leg": 5,
+          "left_lower_leg": 5,
+          "test_section_span": 5,
+          "left_upper_leg": 5,
+          "upper_leg": 5,
+          "heater": 5,
+          "downcomer": 5,
+          "upcomer": 5,
+          "cooler": 5
+        },
+        "requested_times_s": [
+          8598.0,
+          8599.0,
+          8600.0,
+          8601.0,
+          8602.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_jin_coarse_mesh/summary.json",
+      "requested_times_s": [
+        3226.0,
+        3227.0,
+        3228.0,
+        3229.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_jin_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          3226.0,
+          3227.0,
+          3228.0,
+          3229.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_kirst_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_kirst_coarse_mesh/summary.json",
+      "requested_times_s": [
+        3276.0,
+        3277.0,
+        3278.0,
+        3279.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_1_kirst_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          3276.0,
+          3277.0,
+          3278.0,
+          3279.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_jin_coarse_mesh/summary.json",
+      "requested_times_s": [
+        2428.0,
+        2429.0,
+        2430.0,
+        2431.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_jin_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          2428.0,
+          2429.0,
+          2430.0,
+          2431.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_kirst_coarse_mesh/summary.json",
+      "requested_times_s": [
+        583.0,
+        584.0,
+        585.0,
+        586.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_kirst_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          583.0,
+          584.0,
+          585.0,
+          586.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh/summary.json",
+      "requested_times_s": [
+        2511.0,
+        2512.0,
+        2513.0,
+        2514.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          2511.0,
+          2512.0,
+          2513.0,
+          2514.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_kirst_coarse_mesh/summary.json",
+      "requested_times_s": [
+        3294.0,
+        3295.0,
+        3296.0,
+        3297.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_kirst_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          3294.0,
+          3295.0,
+          3296.0,
+          3297.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh/summary.json",
+      "requested_times_s": [
+        2079.0,
+        2080.0,
+        2081.0,
+        2082.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          2079.0,
+          2080.0,
+          2081.0,
+          2082.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_kirst_coarse_mesh/summary.json",
+      "requested_times_s": [
+        2980.0,
+        2981.0,
+        2982.0,
+        2983.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_kirst_coarse_mesh/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 4,
+        "region_coverage_counts": {
+          "lower_leg": 4,
+          "right_leg": 4,
+          "left_lower_leg": 4,
+          "test_section_span": 4,
+          "left_upper_leg": 4,
+          "upper_leg": 4,
+          "heater": 4,
+          "downcomer": 4,
+          "upcomer": 4,
+          "cooler": 4
+        },
+        "requested_times_s": [
+          2980.0,
+          2981.0,
+          2982.0,
+          2983.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "val_water_test_1_coarse_mesh_laminar",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_1_coarse_mesh_laminar",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_1_coarse_mesh_laminar/summary.json",
+      "requested_times_s": [
+        5270.0,
+        5271.0,
+        5272.0,
+        5273.0,
+        5274.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_1_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 5,
+        "region_coverage_counts": {
+          "lower_leg": 5,
+          "right_leg": 5,
+          "left_lower_leg": 5,
+          "test_section_span": 5,
+          "left_upper_leg": 5,
+          "upper_leg": 5,
+          "heater": 5,
+          "downcomer": 5,
+          "upcomer": 5,
+          "cooler": 5
+        },
+        "requested_times_s": [
+          5270.0,
+          5271.0,
+          5272.0,
+          5273.0,
+          5274.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "val_water_test_2_coarse_mesh_laminar",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar/summary.json",
+      "requested_times_s": [
+        3976.0,
+        3977.0,
+        3978.0,
+        3979.0,
+        3980.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_2_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 5,
+        "region_coverage_counts": {
+          "lower_leg": 5,
+          "right_leg": 5,
+          "left_lower_leg": 5,
+          "test_section_span": 5,
+          "left_upper_leg": 5,
+          "upper_leg": 5,
+          "heater": 5,
+          "downcomer": 5,
+          "upcomer": 5,
+          "cooler": 5
+        },
+        "requested_times_s": [
+          3976.0,
+          3977.0,
+          3978.0,
+          3979.0,
+          3980.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "val_water_test_3_coarse_mesh_laminar",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_3_coarse_mesh_laminar",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_3_coarse_mesh_laminar/summary.json",
+      "requested_times_s": [
+        3724.0,
+        3725.0,
+        3726.0,
+        3727.0,
+        3728.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_3_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 5,
+        "region_coverage_counts": {
+          "lower_leg": 5,
+          "right_leg": 5,
+          "left_lower_leg": 5,
+          "test_section_span": 5,
+          "left_upper_leg": 5,
+          "upper_leg": 5,
+          "heater": 5,
+          "downcomer": 5,
+          "upcomer": 5,
+          "cooler": 5
+        },
+        "requested_times_s": [
+          3724.0,
+          3725.0,
+          3726.0,
+          3727.0,
+          3728.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    },
+    {
+      "source_id": "val_water_test_4_coarse_mesh_laminar",
+      "package_root": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_4_coarse_mesh_laminar",
+      "package_summary_path": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_4_coarse_mesh_laminar/summary.json",
+      "requested_times_s": [
+        2538.0,
+        2539.0,
+        2540.0,
+        2541.0,
+        2542.0
+      ],
+      "temperature_source": {
+        "source": "tmp/2026-06-15_live_case_analysis/contract_fix_water_family/val_water_test_4_coarse_mesh_laminar/raw_extraction/bulk_cross_section_temperature_samples.csv",
+        "coverage_status": "complete",
+        "time_count": 5,
+        "region_coverage_counts": {
+          "lower_leg": 5,
+          "right_leg": 5,
+          "left_lower_leg": 5,
+          "test_section_span": 5,
+          "left_upper_leg": 5,
+          "upper_leg": 5,
+          "heater": 5,
+          "downcomer": 5,
+          "upcomer": 5,
+          "cooler": 5
+        },
+        "requested_times_s": [
+          2538.0,
+          2539.0,
+          2540.0,
+          2541.0,
+          2542.0
+        ],
+        "weighting_note": "positive_mass_flux_else_area",
+        "value_note": "bulk_temp_flow_weighted_k preferred, then area-average bulk temperature"
+      }
+    }
+  ],
+  "missing_cases": [],
+  "artifacts": {
+    "salt_dashboard_csv": "reports/2026-06-17_ethan_nondimensional_dashboard_package/salt_dashboard.csv",
+    "water_dashboard_csv": "reports/2026-06-17_ethan_nondimensional_dashboard_package/water_dashboard.csv",
+    "salt_candidate_inputs_csv": "reports/2026-06-17_ethan_nondimensional_dashboard_package/salt_candidate_correlation_inputs.csv",
+    "water_candidate_inputs_csv": "reports/2026-06-17_ethan_nondimensional_dashboard_package/water_candidate_correlation_inputs.csv",
+    "summary_json": "reports/2026-06-17_ethan_nondimensional_dashboard_package/summary.json",
+    "readme_md": "reports/2026-06-17_ethan_nondimensional_dashboard_package/README.md",
+    "figures": {
+      "salt": {
+        "png": "reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/png/salt_dashboard_overview.png",
+        "svg": "reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/svg/salt_dashboard_overview.svg",
+        "pdf": "reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/pdf/salt_dashboard_overview.pdf"
+      },
+      "water": {
+        "png": "reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/png/water_dashboard_overview.png",
+        "svg": "reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/svg/water_dashboard_overview.svg",
+        "pdf": "reports/2026-06-17_ethan_nondimensional_dashboard_package/figures/pdf/water_dashboard_overview.pdf"
+      }
+    }
+  }
+}

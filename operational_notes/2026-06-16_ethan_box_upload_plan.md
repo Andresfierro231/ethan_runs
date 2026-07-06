@@ -13,21 +13,25 @@ open locally in ParaView, without writing anything into the raw-data Box tree.
 Recommended Box root:
 
 - Box folder ID: `385169164073`
-- Box path:
+- Earlier API-facing label:
   `All Files/Andres_Obsidian_Notes_Box/tamu_flow_loop/analyzing_operational_data`
+- Actual `rclone`-visible path:
+  `box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data`
 
-Chosen remote subfolder:
+Chosen remote subfolders:
 
-- `ethans runs`
+- primary mirror: `ethans runs`
+- symlink follow-up payload: `ethans runs openfoam symlink targets`
 
-Recommended resulting remote path:
+Recommended resulting remote paths:
 
 ```text
-All Files
+box:
   / Andres_Obsidian_Notes_Box
     / tamu_flow_loop
-      / analyzing_operational_data
+      / a_tacc_analyzing_operational_data
         / ethans runs
+        / ethans runs openfoam symlink targets
 ```
 
 This keeps the Ethan share-out aligned with the existing collaborator-facing
@@ -41,12 +45,109 @@ forbidden raw-data Box folder `246873664013`.
 - The Ethan workspace content is analysis-side material, not TAMU source data.
 - A dedicated `ethans runs` subfolder makes it easy to keep the upload bounded
   and recognizable without mixing it into existing TAMU loop artifacts.
+- A separate symlink-target folder is safer than rerunning the main upload with
+  `--copy-links`, because it avoids expanding unrelated symlinked trees such as
+  `staging/render_inputs/**`.
 
-## Upload scope
+## Local prerequisites
 
-Default local source root:
+Expected local root:
 
 - `/scratch/09748/andresfierro231/projects_scratch/ethan_runs`
+
+Required user-local tools and config:
+
+- `~/bin/rclone`
+- `~/.config/rclone/rclone.conf`
+
+Current verified state:
+
+- `~/bin/rclone` exists and runs.
+- `rclone listremotes` shows `box:`.
+- `rclone lsd box:` succeeds.
+- `rclone lsd "box:Andres_Obsidian_Notes_Box/tamu_flow_loop"` succeeds.
+- A compute-node probe upload succeeded into a temporary Box folder.
+
+## Setup and auth procedure
+
+Use `rclone`, not the older Python Box SDK helper, as the active upload path.
+
+Install `rclone` in user space:
+
+```bash
+mkdir -p "$HOME/software" "$HOME/bin"
+cd "$HOME/software"
+curl -O https://downloads.rclone.org/rclone-current-linux-amd64.zip
+unzip rclone-current-linux-amd64.zip
+cp rclone-*-linux-amd64/rclone "$HOME/bin/"
+chmod +x "$HOME/bin/rclone"
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+"$HOME/bin/rclone" version
+```
+
+Configure Box from TACC:
+
+```bash
+"$HOME/bin/rclone" config
+```
+
+Recommended choices:
+
+- remote name: `box`
+- storage: `box`
+- `client_id`: Enter
+- `client_secret`: Enter
+- `box_sub_type`: `user`
+- auto browser auth: `n`
+
+Because TACC is headless, complete the authorization on a machine with a
+browser:
+
+```bash
+rclone authorize "box"
+```
+
+Paste the returned token blob back into the TACC `rclone config` session.
+
+If Box auth later expires:
+
+```bash
+"$HOME/bin/rclone" config reconnect box:
+```
+
+## Verification checklist
+
+On the login node:
+
+```bash
+"$HOME/bin/rclone" listremotes
+"$HOME/bin/rclone" lsd box:
+"$HOME/bin/rclone" lsd "box:Andres_Obsidian_Notes_Box"
+"$HOME/bin/rclone" lsd "box:Andres_Obsidian_Notes_Box/tamu_flow_loop"
+```
+
+Expected collaborator-output branch:
+
+- `a_tacc_analyzing_operational_data`
+
+Compute-node smoke test:
+
+```bash
+mkdir -p tmp/2026-06-16_ethan_box_upload_probe/probe_src
+date --iso-8601=seconds \
+  > tmp/2026-06-16_ethan_box_upload_probe/probe_src/probe.txt
+bash tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_box_probe.sbatch
+```
+
+Probe verification:
+
+```bash
+"$HOME/bin/rclone" ls \
+  "box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data/ethans runs probe 2026-06-17"
+```
+
+## Primary mirror scope
 
 Mirror strategy:
 
@@ -97,22 +198,94 @@ Implications:
 
 - A direct Box mirror is feasible but heavy.
 - Many individual OpenFOAM files exceed `50 MB`, so Box’s chunked-upload path
-  is required.
-- The transfer should run under Slurm, not from the login node.
+  is required internally by `rclone`.
+- The transfer should run under Slurm or from an existing compute allocation,
+  not from the login node.
 
-## Auth/tooling boundary
+## Primary upload command
 
-- No Node-based Box CLI is installed locally, and no `node`/`npm` module is
-  available.
-- The current Box OAuth cache under `~/.box/oauth_token_cache.json` is expired.
-- The uploader therefore uses the Box Python SDK package installed into a
-  virtualenv at run time, reading the same `~/.box/box_environments.json` and
-  `~/.box/oauth_token_cache.json` credentials when they are valid.
+Use `rclone copy`, not `rclone sync`, for the default mirror:
 
-Live upload boundary:
+```bash
+bash staging/upload_jobs/2026-06-16_ethan_runs_box_upload.sbatch
+```
 
-- `--execute` requires a fresh Box login or refreshable token cache.
-- The live one-file Box probe already fails with `invalid_grant`, confirming
-  the current refresh token is expired.
-- Until that happens, the safe validation path is local inventory mode and
-  script syntax checks.
+That wrapper uploads:
+
+- source: `/scratch/09748/andresfierro231/projects_scratch/ethan_runs`
+- destination:
+  `box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data/ethans runs`
+
+Current monitoring file:
+
+- `tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log`
+
+Useful monitor command:
+
+```bash
+tail -f tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log
+```
+
+## Known skipped content in the primary mirror
+
+The main `rclone copy` deliberately does not follow symlinks.
+
+Observed skipped categories:
+
+- many symlinked convenience trees under `staging/render_inputs/**`
+- generated OpenFOAM dynamic-code helper links under
+  `dynamicCode/*/lnInclude/*`
+
+The render-input symlinks are intentionally left alone in the primary mirror.
+They are local convenience links, not authoritative payload.
+
+## OpenFOAM symlink follow-up
+
+Reason for a separate follow-up:
+
+- The skipped OpenFOAM symlink files are small but potentially useful for full
+  case reproducibility.
+- Running the whole tree with `--copy-links` would be unsafe because it would
+  dereference unrelated symlinked directories and multiply the upload scope.
+
+Bounded follow-up policy:
+
+- upload only symlinked files matching
+  `staging/**/dynamicCode/*/lnInclude/*` and
+  `jadyn_runs/**/dynamicCode/*/lnInclude/*`
+- preserve their root-relative paths
+- upload into sibling Box folder `ethans runs openfoam symlink targets`
+- include the manifest and target map used to drive the copy
+
+Current manifest artifacts:
+
+- path list:
+  `tmp/2026-06-16_ethan_box_upload_probe/openfoam_dynamiccode_symlink_manifest.txt`
+- symlink-to-target map:
+  `tmp/2026-06-16_ethan_box_upload_probe/openfoam_dynamiccode_symlink_targets.txt`
+
+Current bounded inventory:
+
+- `119` OpenFOAM `lnInclude` symlink files
+
+Follow-up job entrypoint:
+
+```bash
+bash tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_openfoam_symlink_followup.sbatch
+```
+
+If a real queued batch submission is preferred from a compute node:
+
+```bash
+ssh login1 \
+  'cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && \
+   sbatch --parsable tmp/2026-06-16_ethan_box_upload_probe/2026-06-17_rclone_openfoam_symlink_followup.sbatch'
+```
+
+## Operator guidance
+
+- Use `copy` first; do not switch to `sync` unless deletes on Box are intended.
+- Keep the primary mirror and the symlink-target payload separate.
+- Re-run `rclone config reconnect box:` if token refresh fails.
+- Prefer storing provenance notes and manifests alongside the upload plan so the
+  Box tree remains reproducible later.

@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-23T10:48:40-05:00",
+  "task_id": "AGENT-110",
+  "builder_script": "tools/analyze/build_ethan_dynamic_pressure_profiles.py",
+  "builder_command": "python tools/analyze/build_ethan_dynamic_pressure_profiles.py",
+  "validation_commands": [
+    "python -m py_compile tools/analyze/build_ethan_dynamic_pressure_profiles.py",
+    "python tools/analyze/build_ethan_dynamic_pressure_profiles.py"
+  ],
+  "canonical_inputs": {
+    "package_index": "reports/2026-06-17_ethan_pressure_htc_boundarylayer_package/package_index.csv"
+  },
+  "output_dir": "reports/2026-06-23_ethan_dynamic_pressure_profiles",
+  "summary": {
+    "case_count": 13,
+    "family_count": 2,
+    "row_count": 21603,
+    "figure_count": 13,
+    "dynamic_pressure_definition": "0.5 * rho_bulk_kg_m3 * bulk_velocity_m_s^2"
+  },
+  "artifacts": [
+    "README.md",
+    "summary.json",
+    "dynamic_pressure_profile_rows.csv",
+    "dynamic_pressure_profile_summary.csv",
+    "figure_index.csv",
+    "figures/png/*_dynamic_pressure_by_leg.png",
+    "figures/svg/*_dynamic_pressure_by_leg.svg",
+    "figures/pdf/*_dynamic_pressure_by_leg.pdf"
+  ],
+  "limitations": [
+    "The published dynamic pressure is a postprocessed bulk surrogate built from preserved streamwise-bin rho and U, not a fresh raw-cell field integral.",
+    "The package distinguishes p_rgh from dynamic pressure explicitly because p_rgh is hydrostatic-corrected pressure, not 0.5 rho U^2."
+  ]
+}

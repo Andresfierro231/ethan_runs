@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-06-22T10:25:26-05:00",
+  "script": "tools/analyze/build_ethan_feature_path_hydro_probe.py",
+  "output_dir": "reports/2026-06-22_ethan_feature_path_hydro_probe",
+  "input_roots": [
+    "reports/2026-06-17_ethan_nondimensional_dashboard_package",
+    "reports/2026-06-18_ethan_salt_closure_correlation_package",
+    "reports/2026-06-19_ethan_salt_feature_hydraulic_hardening",
+    "tmp/2026-06-15_live_case_analysis"
+  ],
+  "summary": {
+    "feature_case_row_count": 45,
+    "feature_time_row_count": 185,
+    "probe_ready_time_row_count": 185,
+    "partial_time_row_count": 0,
+    "blocked_time_row_count": 0
+  }
+}

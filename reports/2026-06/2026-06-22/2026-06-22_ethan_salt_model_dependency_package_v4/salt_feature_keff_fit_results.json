@@ -1,0 +1,32 @@
+{
+  "recommended_status": "provisional_defended",
+  "recommended_model": "geometric_constant",
+  "fit_used_row_count": 16,
+  "stable_feature_names": [
+    "corner_upper_right",
+    "test_section_complex"
+  ],
+  "stable_case_count": 9,
+  "feature_stability": {
+    "corner_upper_right": 1.0,
+    "test_section_complex": 0.7777777777777778,
+    "corner_upper_left": 0.5555555555555556
+  },
+  "reason": "stable_patch_endpoint_prgh_local_boundary_reference",
+  "constant_model": {
+    "status": "fit",
+    "model_type": "geometric_constant",
+    "row_count": 16,
+    "coefficient_names": [
+      "group:corner_upper_right",
+      "group:test_section_complex"
+    ],
+    "coefficients": [
+      2.196937185102996,
+      2.0026578719776835
+    ],
+    "rmse_log": 0.5496759165106064,
+    "mae_log": 0.49429380440671356,
+    "r2_log": 0.029825660366474938
+  }
+}

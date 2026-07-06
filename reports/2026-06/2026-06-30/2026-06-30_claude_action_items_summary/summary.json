@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-30",
+  "task": "AGENT-156",
+  "owner": "claude",
+  "status": "complete",
+  "purpose": "Address the 8 ranked action items from the 2026-06-30 inspection of the CFD post-processing to 1D closure pipeline.",
+  "scope": "Salt 2/3/4 Jin primary (Salt 1 caveated). Kirst historical-only; perturbations separate.",
+  "inputs": {
+    "staged_data": "tmp/2026-06-30_claude_action_items/recon_salt{2,3,4}_of13",
+    "workflow_note": "operational_notes/06-26/30/2026-06-30_cfd_1d_closure_workflow.md"
+  },
+  "outputs": {
+    "report_readme": "reports/2026-06/2026-06-30/2026-06-30_claude_action_items_summary/README.md",
+    "work_products": [
+      "work_products/2026-06-30_claude_time_convergence",
+      "work_products/2026-06-30_claude_closure_representation",
+      "work_products/2026-06-30_claude_freeze_window_reconcile",
+      "work_products/2026-06-30_claude_segment_map",
+      "work_products/2026-06-30_claude_section_mean_pressure"
+    ]
+  },
+  "item_status": {
+    "1_section_mean_pressure": "workflow done; static p_rgh sound on straights; dynamic head blocked by velocity flux anomaly",
+    "2_convergence": "done+run: Salt 2/3/4 stationary; Salt 1 quasi",
+    "3_closure_representation": "done+run: form-loss-dominated f; dof<=1; Pr collinear",
+    "4_measured_geometry": "partial: measured bore ~2.2x circle; proposed patch",
+    "5_mesh_independence": "protocol done; blocked on runtime",
+    "6_provenance_reconcile": "done+run: 13/14 lanes unverifiable",
+    "7_segment_map": "done+run: only upcomer ambiguous, heated_incline provisional",
+    "8_smaller_corrections": "documented proposed patches"
+  },
+  "limitations": [
+    "Section-mean pressure numbers are on parent-warmup (staged) data, not mainline continuation.",
+    "Dynamic head not trustworthy (velocity flux anomaly — fixed in later AGENT-156 phase 2).",
+    "13/14 freeze-window lanes unverifiable from staged data.",
+    "2 segment-map confirmations pending from Ethan."
+  ]
+}

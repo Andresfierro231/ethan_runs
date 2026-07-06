@@ -1,0 +1,6 @@
+blocker_id,asset_family,current_status,missing_requirement,cfd_role,implementation_role,priority
+feature_keff_full_path_closure,feature_keff,not_defensible_yet,retained-time feature-path density or hydro integral beyond proxy endpoint residual,low,high,1
+straight_late_window_retained_rows,straight_section_friction,provisional_defended,retained-time defended hydro-corrected straight rows for true late-window sensitivity,high,medium,1
+water_thermal_closure,test_section_span,closure_rebuild_priority,stronger closure support on existing Water cases,high,medium,2
+water_feature_hardening,water_feature_rows,readiness_only,closure-gated hardening on proxy-positive Water features,medium,medium,3
+

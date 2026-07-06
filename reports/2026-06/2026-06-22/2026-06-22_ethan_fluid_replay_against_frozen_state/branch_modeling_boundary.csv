@@ -1,0 +1,8 @@
+branch_name,branch_alias,dominant_fit_status,domain_note,modeling_note
+left_lower_leg,upcomer_direct_leg,fit_used,direct_left_lower_leg_or_equivalent_only,Best current direct internal HTC and Nu evidence lane; use as the defended direct developing-flow thermal branch.
+left_upper_leg,upcomer_direct_leg,sensitivity_only,not_in_defended_nu_domain,Carry as a primary UA' or HTC state-surface branch only; direct Nu is not yet defended.
+lower_leg,heater_leg,excluded,not_in_defended_nu_domain,Heating-dominant branch; direct thermal closure is not defended under the current residual and support gates.
+right_leg,downcomer,excluded,not_in_defended_nu_domain,Downcomer return branch remains blocked for direct Nu; cooler-adjacent return observables are still missing.
+test_section_span,upcomer_direct_leg,sensitivity_only,not_in_defended_nu_domain,Carry as a primary UA' or HTC state-surface branch only; direct Nu is not yet defended and entry effects remain active.
+upcomer,derived_upcomer,sensitivity_only,derived_overlap_context_only,Derived sensitivity-only branch; model separately from the straight direct branches and consider a convection-cell style closure coupled to the loop state.
+upper_leg,cooler_leg,excluded,not_in_defended_nu_domain,Cooler-side branch; direct thermal closure remains blocked and should stay inside the residual bucket for now.

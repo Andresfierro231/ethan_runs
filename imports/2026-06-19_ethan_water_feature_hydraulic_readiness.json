@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-06-18T16:54:23-05:00",
+  "script": "tools/analyze/build_ethan_water_feature_hydraulic_readiness.py",
+  "output_dir": "reports/2026-06-19_ethan_water_feature_hydraulic_readiness",
+  "input_roots": [
+    "reports/2026-06-17_ethan_nondimensional_dashboard_package",
+    "tmp/2026-06-15_live_case_analysis"
+  ],
+  "summary": {
+    "feature_case_row_count": 20,
+    "candidate_for_future_dependency_fit_count": 11,
+    "needs_closure_rebuild_count": 8
+  }
+}

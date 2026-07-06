@@ -1,0 +1,28 @@
+{
+  "import_id": "2026-06-23_ethan_dynamic_and_heat_figure_clarity",
+  "generated_at": "2026-06-23T12:28:00-05:00",
+  "workspace": "ethan_runs",
+  "scripts": [
+    "tools/analyze/build_ethan_salt_family_heat_loss_breakout.py"
+  ],
+  "outputs": [
+    "reports/2026-06-23_ethan_dynamic_pressure_profiles/README.md",
+    "reports/2026-06-23_ethan_prgh_vs_dynamic_profiles/README.md",
+    "reports/2026-06-23_ethan_salt_family_heat_loss_breakout",
+    "tmp/2026-06-23_ethan_salt_family_heat_loss_breakout_refresh_smoke"
+  ],
+  "sources": [
+    "reports/2026-06-23_ethan_dynamic_pressure_profiles/dynamic_pressure_profile_rows.csv",
+    "reports/2026-06-23_ethan_dynamic_pressure_profiles/README.md",
+    "reports/2026-06-23_ethan_prgh_vs_dynamic_profiles/README.md",
+    "reports/2026-06-15_ethan_field_transport_campaign/field_transport_package_index.csv",
+    "reports/2026-06-15_ethan_field_transport_campaign/field_transport_streamwise_heat_comparison.csv",
+    "reports/2026-06-15_ethan_field_transport_campaign/field_transport_grouped_heat_comparison.csv",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv"
+  ],
+  "notes": [
+    "This refresh did not reopen CFD extraction. The dynamic-package clarification is documentation-only, while the heat-loss readability fix is a regeneration of the existing June 23 breakout package.",
+    "The q_dyn sawtooth explanation is grounded in the published dynamic_pressure_profile_rows.csv table, where repeated discrete bulk_velocity_m_s values produce repeated q_dyn levels in some coarse streamwise bins.",
+    "The refreshed heat-loss figures replace repeated per-subplot span labels with a single shared top span guide for the whole figure."
+  ]
+}

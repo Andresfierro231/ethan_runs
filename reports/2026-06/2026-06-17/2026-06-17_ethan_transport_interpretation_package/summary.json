@@ -1,0 +1,15 @@
+{
+  "generated_at": "2026-06-17",
+  "purpose": "Internal evidence-first interpretation layer for the current Ethan transport postprocessing outputs.",
+  "source_packages": {
+    "math_reference": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-17_ethan_streamwise_transport_math_reference/MATH_COMPANION.md",
+    "representative_salt2": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison/summary.json",
+    "salt_family_campaign": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/summary.json",
+    "all_runs_campaign": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_all_runs_field_transport_campaign/summary.json"
+  },
+  "primary_artifacts": {
+    "representative_branch_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_representative_transport_comparison/representative_branch_thermal_summary.csv",
+    "salt_family_branch_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_field_transport_campaign/field_transport_branch_thermal_comparison.csv",
+    "all_runs_branch_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-15_ethan_all_runs_field_transport_campaign/field_transport_branch_thermal_comparison.csv"
+  }
+}
