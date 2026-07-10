@@ -1,0 +1,66 @@
+{
+  "manifest_id": "2026-07-09_timeseries_steadystate",
+  "owner": "claude",
+  "task": "AGENT-244",
+  "generated_at": "2026-07-09",
+  "purpose": "Time-resolved postprocessor plots + steady-state / oscillation / CLT-uncertainty analysis across all Ethan CFD runs.",
+  "scope": "All jadyn + modern OpenFOAM runs with postProcessing scalar series (52 dirs; 47 unique after de-duplication). Groups: mdot legs, temperature probes, wall-temperature probes, total_Q net heat.",
+  "new_tools": [
+    "tools/analyze/openfoam_timeseries.py",
+    "tools/analyze/timeseries_stats.py",
+    "tools/analyze/svg_timeseries_chart.py",
+    "tools/analyze/build_timeseries_steadystate_report.py",
+    "tools/analyze/test_openfoam_timeseries.py",
+    "tools/analyze/test_timeseries_stats.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/METHODOLOGY.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/DATA_DISCLOSURE.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/case_inventory.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/summary.json",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/cases/<slug>/figures/*.svg",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/cases/<slug>/stats.csv"
+  ],
+  "inputs_read_only": [
+    "jadyn_runs/**/postProcessing/mdot_*/**/surfaceFieldValue.dat",
+    "jadyn_runs/**/postProcessing/temperature_probes/**/T",
+    "jadyn_runs/**/postProcessing/wall_temperature_probes/**/T",
+    "jadyn_runs/**/postProcessing/total_Q.dat"
+  ],
+  "counts": {
+    "postprocessing_dirs": 52,
+    "unique_cases": 47,
+    "duplicates_excluded": 5,
+    "series_analyzed": 2577,
+    "svgs_generated": 417,
+    "package_size": "119M",
+    "window_seconds": 300
+  },
+  "verdict_counts_by_group": {
+    "mdot": {"steady": 40, "quasi": 5, "not_steady": 2},
+    "temperature": {"steady": 275, "quasi": 1, "not_steady": 0},
+    "wall_temperature": {"steady": 46, "quasi": 0, "not_steady": 0},
+    "heat": {"steady": 6, "quasi": 5, "not_steady": 35}
+  },
+  "method_notes": [
+    "Plots vs time grouped by quantity (mdot / temperature / wall_temperature / heat); last-300s companion with OLS trendline, equation + R^2 in legend.",
+    "RMSE about mean (= RMS fluctuation) and RMSE about trend (detrended oscillation), plus variance and peak-to-peak, quantify oscillation.",
+    "Steady-state verdict: relative-to-mean drift when the mean is well separated from zero, else scale-free drift_ratio (drift / oscillation amplitude) to avoid the near-zero-mean trap.",
+    "Uncertainty of the mean via CLT: naive SEM = sigma/sqrt(N) and autocorrelation-corrected SEM = sigma/sqrt(N_eff), N_eff = N / tau_int; SEM-vs-averaging-time convergence plotted against a 1/sqrt(t) reference.",
+    "Ran locally in ~2.5 min (scalar data ~200 MB); no overnight job needed (threshold was 30 min).",
+    "Pure-Python stats + stdlib-only SVG so it rebuilds in a minimal HPC shell."
+  ],
+  "key_findings": [
+    "mdot and temperature/wall-temperature are steady in almost all runs; loops reach a stationary (gently oscillating) state.",
+    "total_Q is the NET heat residual (~0.1 W vs hundreds-of-W loop scale); its 'not steady' verdicts reflect a small residual's relative noisiness, not thermal runaway.",
+    "The only mdot rows flagged not-steady are the salt3 corrected-Q perturbations (hi5q/hi10q) whose mass flow is still moving — independently consistent with the corrected-Salt gate 'too short / needs extended continuation'."
+  ],
+  "open_questions_for_user": [
+    "Window is 300 s of simulated time; rerun with --window-seconds to change it.",
+    "Optional: aggregate per-patch wallHeatFlux.dat for an absolute (non-residual) heat-vs-time series if a thermal steadiness verdict on absolute heat is wanted."
+  ]
+}
