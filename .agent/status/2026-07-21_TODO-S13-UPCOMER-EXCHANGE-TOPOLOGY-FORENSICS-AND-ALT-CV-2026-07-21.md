@@ -79,13 +79,13 @@ surface extraction, sampler refresh, harvest, UQ, or S11/S15/S6 trigger.
   passed, emitted `released_alt_cv_rows=0` and
   `surface_extraction_allowed=false`.
 - `python3.11 tools/agent/runtime_input_lint.py ...`:
-  pending.
+  passed.
 - `python3.11 tools/agent/source_property_gate.py ... --strict`:
-  pending.
+  passed, `candidate_rows=0 findings=0`.
 - `python3.11 tools/agent/split_policy_lint.py ...`:
-  pending.
+  passed.
 - `python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-TOPOLOGY-FORENSICS-AND-ALT-CV-2026-07-21`:
-  pending.
+  passed.
 
 ## Unresolved Blockers
 

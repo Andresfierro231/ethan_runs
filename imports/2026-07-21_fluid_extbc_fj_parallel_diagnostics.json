@@ -87,6 +87,7 @@
   "scheduler_action": false,
   "openfoam_solver_or_postprocessing_launch": false,
   "fluid_source_mutated": false,
+  "external_fluid_edit": false,
   "external_repo_mutated": false,
   "validation_rows_consumed": 0,
   "holdout_rows_consumed": 0,

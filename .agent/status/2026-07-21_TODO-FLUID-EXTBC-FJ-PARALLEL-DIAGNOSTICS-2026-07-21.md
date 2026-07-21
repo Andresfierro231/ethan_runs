@@ -42,7 +42,7 @@ baseline. Non-baseline heat-loss perturbation solves were attempted in
 foreground execution but exceeded practical bounds; they are fail-closed in
 `sensitivity_matrix.csv` for a later compute-safe subprocess/scheduler row.
 
-## Changed Artifacts
+## Changes Made
 
 - `.agent/BOARD.md`
 - `.agent/status/2026-07-21_TODO-FLUID-EXTBC-FJ-PARALLEL-DIAGNOSTICS-2026-07-21.md`
