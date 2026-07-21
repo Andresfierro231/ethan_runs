@@ -5,6 +5,12 @@ Reviewed: `2026-07-04`
 This file is the Claude equivalent of `AGENTS.md`. Claude does not auto-load
 `AGENTS.md` on startup, so this file provides the same orientation.
 
+2026-07-13 continuity anchor: for current closure, lit-rev, and predictive
+model work, open
+`operational_notes/07-26/13/2026-07-13_CURRENT_CLOSURE_AND_PREDICTIVE_MODEL_START_HERE.md`
+after the board files. Older phase summaries below are historical context, not
+the authoritative latest handoff.
+
 ---
 
 ## 1. Required reading (read these in order before doing any work)
@@ -15,7 +21,10 @@ This file is the Claude equivalent of `AGENTS.md`. Claude does not auto-load
    edit paths, and the unclaimed task queue. Claim a row BEFORE editing.
 3. **`.agent/FILE_OWNERSHIP.md`** — which paths belong to which agents.
 4. **`.agent/ROLES.md`** — role definitions (Coordinator / Implementer / Writer / etc.).
-5. **`operational_notes/07-26/01/2026-07-01_MASTER_TODO_1d_closures.md`** —
+5. **`operational_notes/07-26/13/2026-07-13_CURRENT_CLOSURE_AND_PREDICTIVE_MODEL_START_HERE.md`** —
+   current lit-rev and predictive-model handoff: open-first files, trusted
+   packages, blockers, and next sequence.
+6. **`operational_notes/07-26/01/2026-07-01_MASTER_TODO_1d_closures.md`** —
    the definitive current-phase task backlog (T1–T13 with context, method,
    acceptance, deps).
 
@@ -122,7 +131,9 @@ friction-factor and heat-transfer closure forms from the literature.
    Tools wrap foamPostProcess in a subshell.
 3. **Probe CSV (`tp_tw_probe_locations.csv`) is a schematic** — does NOT match mesh.
    `lower_leg` in CSV = downcomer in mesh. `right_leg` in CSV = heater in mesh. Use
-   mesh PCA centerlines for geometry.
+   mesh PCA centerlines for geometry. See `reference/geometry_reference.md` for the
+   canonical geometry and naming reference (segment names, flow directions, dimensions,
+   insulation, corner K values, operating points).
 4. **Characteristic Ri = section MEDIAN**, not mean. The mean is ~100× larger (dominated
    by near-zero velocity cells).
 5. **Sbatch from compute nodes**: use `ssh login3.ls6.tacc.utexas.edu "/usr/bin/sbatch <absolute_path>"`.
@@ -142,6 +153,27 @@ friction-factor and heat-transfer closure forms from the literature.
   `.agent/journal/YYYY-MM-DD/<role>-<slug>.md`.
 - The `journals/` directory (curated journal) was active through June 30; current
   sessions write to `.agent/journal/` only.
+
+### New research avenue continuity protocol
+
+Claude and Codex agents must use the same form when opening a clearly new
+research avenue: a new modeling question, source family, closure path,
+campaign, validation split, predictive mode, or literature-derived line of
+work.
+
+1. Create or claim a `.agent/BOARD.md` row before editing. The row must name
+   the task ID, role, owner, allowed edit paths, required read-only context,
+   native-output guardrails, objective, acceptance signal, and current status.
+2. Write a dated start-here or handoff note under `operational_notes/` or the
+   package `README.md`. It must include: why this avenue exists, files to open
+   first, trusted packages, unresolved blockers, active board rows, next task
+   sequence, output contract, and do-not-do guardrails.
+3. Cross-link the new note from the nearest current start-here document or
+   package README so the chain of work is findable without reading chat logs.
+4. Preserve provenance by author/title for literature ideas and by exact file
+   path for repo evidence. Do not rely on citation numbers that may change.
+5. End the work with a status file, dated journal entry, and import manifest
+   when the task creates or updates a research artifact.
 
 ---
 
@@ -165,8 +197,26 @@ All new session notes → `.agent/journal/YYYY-MM-DD/`. All durable method notes
 
 ## 9. File output conventions — must match Codex
 
-Claude and Codex share the same repo. Every output artifact must follow the same
-structure so either agent can pick up the other's work without ambiguity.
+Claude and Codex share the same repo and work as teammates on one corpus (no
+per-document owner). Every output artifact must follow the same structure so
+either teammate can pick up the other's work without ambiguity.
+
+### 9.0 Frontmatter, index, and topic maps (read first)
+
+The documentation continuity system (AGENT-294) sits on top of the conventions
+below:
+
+- Add YAML frontmatter to new durable docs per `.agent/DOC_FRONTMATTER_SCHEMA.md`.
+  Fill **provenance, tags, related** first — they are the priority core.
+- Blockers live only in `.agent/blockers.yml` (rendered to `.agent/BLOCKERS.md`).
+  Overturning a finding sets the old doc's `status: superseded` + `superseded_by`.
+- At end of a significant session run `python3 tools/docs/build_repo_index.py`
+  (and `--check`). `.agent/STATE.md` + `.agent/BLOCKERS.md` are generated and are
+  the authoritative "current state" — trust them over any prose summary.
+- Start a topic from its hub in `operational_notes/maps/`; update the hub when
+  your thread lands a durable result.
+
+See AGENTS.md "Documentation continuity and index protocol" for the binding rule.
 
 ### 9.1 Status files (`.agent/status/`)
 

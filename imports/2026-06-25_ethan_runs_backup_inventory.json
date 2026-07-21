@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-06-25T13:10:00-05:00",
+  "task_id": "AGENT-129",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "recommended_backup_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/cfd_runs/ethan_runs_backup",
+  "recommended_mirror_root": "mirror/ethan_runs",
+  "destination_state_on_2026_06_25": "empty_cfd_runs_subtree",
+  "default_scope": {
+    "include": [
+      "staging/**",
+      "jadyn_runs/**",
+      "tmp_extract/**",
+      "reports/**",
+      "figures/**",
+      "work_products/**",
+      "imports/**",
+      "registry/**",
+      "config/**",
+      "tools/**",
+      "journals/**",
+      "operational_notes/**"
+    ],
+    "exclude": [
+      ".git/**",
+      ".agent/**",
+      ".agents/**",
+      ".codex/**",
+      "cache/**",
+      "tmp/**",
+      "linked_cases/**",
+      "__pycache__/**",
+      ".pytest_cache/**",
+      ".DS_Store"
+    ]
+  },
+  "observed_sizes": {
+    "included_scope_bytes": 786074703912,
+    "included_scope_gib": 732.09,
+    "included_scope_file_count_estimate": 1197130,
+    "staging_human": "72G",
+    "jadyn_runs_human": "497G",
+    "tmp_extract_human": "163G",
+    "reports_human": "1.3G",
+    "figures_human": "1.8G",
+    "tmp_human_excluded_by_default": "166G"
+  },
+  "backup_layout": {
+    "top_level_readme": "README.md",
+    "latest_manifests": "manifests/latest",
+    "history_manifests": "manifests/history/<timestamp>",
+    "workspace_mirror": "mirror/ethan_runs"
+  },
+  "incremental_strategy": {
+    "plan_command": "bash tools/publish/rsync_ethan_runs_backup.sh plan",
+    "sync_command": "bash tools/publish/rsync_ethan_runs_backup.sh sync",
+    "compute_submit_command": "bash tools/publish/submit_ethan_runs_backup_sbatch.sh --mode sync --time 10:00:00",
+    "delta_files": [
+      "manifests/latest/new_files.txt",
+      "manifests/latest/changed_files.txt",
+      "manifests/latest/summary.txt"
+    ]
+  },
+  "walltime_estimate": {
+    "initial_sync_recommended": "10:00:00",
+    "incremental_plan_or_sync_recommended": "02:00:00",
+    "incremental_checksum_audit_recommended": "04:00:00",
+    "initial_sync_with_tmp_recommended": "12:00:00"
+  },
+  "notes": [
+    "Default sync mode is additive and does not delete files already present in the backup mirror.",
+    "Use the manifest-producing dry-run before each sync to see exactly which new or changed files would move.",
+    "The default scope excludes tmp/ because it is large scratch state; include it only when that payload is explicitly required."
+  ]
+}

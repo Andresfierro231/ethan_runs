@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-06-29T18:02:11-05:00",
+  "script_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/build_ethan_upcomer_recirculation_evidence.py",
+  "inputs": {
+    "paper_case_inventory_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory/paper_case_inventory.csv",
+    "source_contract_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/source_contract_map.csv",
+    "branch_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/branch_map.csv",
+    "salt_dashboard_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-17/2026-06-17_ethan_nondimensional_dashboard_package/salt_dashboard.csv"
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_upcomer_recirculation_evidence",
+    "work_product_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_upcomer_recirculation_evidence",
+    "case_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_upcomer_recirculation_evidence/upcomer_recirculation_case_summary.csv",
+    "profile_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_upcomer_recirculation_evidence/upcomer_recirculation_profile.csv",
+    "predictor_screen_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_upcomer_recirculation_evidence/upcomer_recirculation_predictor_screen.csv",
+    "figure_index_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_upcomer_recirculation_evidence/figure_index.csv",
+    "figure_svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_upcomer_recirculation_evidence/figures/svg/upcomer_reverse_shear_fraction_profile.svg"
+  }
+}

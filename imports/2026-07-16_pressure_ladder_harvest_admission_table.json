@@ -1,0 +1,59 @@
+{
+  "task": "AGENT-449",
+  "date": "2026-07-16",
+  "description": "Integrated completed July 15 pressure-ladder harvests into branch orientation, straight-loss subtraction, and recirculation-mask admission tables without submitting duplicate jobs.",
+  "work_product": "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table",
+  "source_packages": [
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch",
+      "job_id": "3297860",
+      "role": "nominal Salt2/Salt3/Salt4 pressure ladder harvest"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch",
+      "job_id": "3297863",
+      "role": "expanded Salt1, Salt2 +/-5Q, Salt4 +/-5Q, and val_salt2 pressure ladder harvest"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan/current_evidence_recirculation_classification.csv",
+      "role": "recirculation mask and upcomer hybrid-lane policy evidence"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/branch_specific_fit_mask.csv",
+      "role": "ordinary-pipe/upcomer exclusion continuity"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv",
+      "job_id": "3297845",
+      "role": "raw two-tap pressure context"
+    }
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/summary.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/adjacent_pair_recirc_screen.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/case_pressure_ladder_admission_summary.csv"
+  ],
+  "scripts": [
+    "tools/analyze/build_pressure_ladder_harvest_admission_table.py",
+    "tools/analyze/test_pressure_ladder_harvest_admission_table.py"
+  ],
+  "validation": [
+    "python3.11 -m unittest tools.analyze.test_pressure_ladder_harvest_admission_table",
+    "python3.11 tools/analyze/build_pressure_ladder_harvest_admission_table.py",
+    "python3.11 -m json.tool imports/2026-07-16_pressure_ladder_harvest_admission_table.json"
+  ],
+  "summary": {
+    "station_rows": 330,
+    "adjacent_pair_rows": 264,
+    "branch_rows": 66,
+    "case_rows": 11,
+    "recirc_mask_blocked_branch_rows": 66,
+    "pressure_definition_conflict_branch_rows": 24,
+    "true_fit_rows": 0,
+    "duplicate_jobs_submitted": false
+  },
+  "interpretation_boundary": "The package admits no true f_D or component K coefficient rows. It is a screening and handoff artifact for pressure definition, orientation, straight-loss subtraction, recirculation mask, mesh/GCI, and source-window gates."
+}

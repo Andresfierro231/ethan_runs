@@ -1,0 +1,34 @@
+{
+  "task": "TODO-THESIS-FIGURE-POLISH-NONSCORING-LEDGER-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Figures/Writer/Reviewer",
+  "objective": "Produce a non-scoring polish/export ledger for existing thesis figures.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGURE-POLISH-NONSCORING-LEDGER-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figure-polish-nonscoring-ledger.md",
+    "imports/2026-07-21_thesis_figure_polish_nonscoring_ledger.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figure_polish_nonscoring_ledger"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/figures/**",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "completed figure/table packages",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "generated docs index files"
+  ],
+  "figure_source_overwrite": false,
+  "renderer_or_scheduler_launch": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "thesis_body_edit": false,
+  "fitting_or_model_selection": false,
+  "closure_admission": false,
+  "final_score_claim": false,
+  "generated_index_refreshed": false,
+  "runtime_leakage_relaxed": false
+}

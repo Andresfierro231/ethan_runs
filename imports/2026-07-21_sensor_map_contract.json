@@ -1,0 +1,35 @@
+{
+  "task": "TODO-PRED-SENSOR-MAP",
+  "date": "2026-07-21",
+  "role": "Writer/Implementer/Reviewer",
+  "objective": "Consolidate completed S7 TP/TW sensor-map evidence into the canonical sensor-map row.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRED-SENSOR-MAP.md",
+    ".agent/journal/2026-07-21/sensor-map-contract.md",
+    "imports/2026-07-21_sensor_map_contract.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/**",
+    "Fluid sensor docs/source",
+    "native CFD solver outputs",
+    "registry/admission state",
+    "scheduler state",
+    "generated docs index files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "fitting_or_model_selection": false,
+  "final_score_claim": false,
+  "runtime_temperature_input_allowed": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false
+}

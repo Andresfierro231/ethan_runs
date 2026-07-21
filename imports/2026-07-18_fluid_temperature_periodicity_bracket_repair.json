@@ -1,0 +1,70 @@
+{
+  "task": "TODO-FLUID-TEMP-PERIODICITY-BRACKET-REPAIR",
+  "task_id": "TODO-FLUID-TEMP-PERIODICITY-BRACKET-REPAIR",
+  "date": "2026-07-18",
+  "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Audit Salt3/Salt4 finite rejected temperature-periodicity roots and produce a Fluid patch contract without relaxing accepted-root policy.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_TODO-FLUID-TEMP-PERIODICITY-BRACKET-REPAIR.md",
+    ".agent/journal/2026-07-18/fluid-temperature-periodicity-bracket-repair.md",
+    "imports/2026-07-18_fluid_temperature_periodicity_bracket_repair.json",
+    "tools/analyze/build_fluid_temperature_periodicity_bracket_repair.py",
+    "tools/analyze/test_fluid_temperature_periodicity_bracket_repair.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/",
+    "operational_notes/07-26/18/2026-07-18_FLUID_TEMPERATURE_PERIODICITY_BRACKET_REPAIR_HANDOFF.md",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score/",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/.agent/BOARD.md"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/temperature_root_bound_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/temperature_root_sweep.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/prior_rejected_root_context.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/root_repair_decision.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/fluid_patch_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_fluid_temperature_periodicity_bracket_repair/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_fluid_temperature_periodicity_bracket_repair.py tools/analyze/test_fluid_temperature_periodicity_bracket_repair.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/test_fluid_temperature_periodicity_bracket_repair.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_fluid_temperature_periodicity_bracket_repair.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_fluid_temperature_periodicity_bracket_repair.py --validate-existing",
+      "result": "passed"
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs": false,
+    "registry": false,
+    "scheduler": false,
+    "external_fluid_source": false,
+    "generated_docs_index": false,
+    "scientific_admission": false,
+    "fitting_or_model_selection": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "summary": {
+    "umx1_rows_audited": 9,
+    "current_bound_already_bracketed_rows": 3,
+    "upper_bound_recovered_rows": 6,
+    "no_bracket_before_hard_ceiling_rows": 0,
+    "admission_status": "not_admitted_audit_only"
+  }
+}

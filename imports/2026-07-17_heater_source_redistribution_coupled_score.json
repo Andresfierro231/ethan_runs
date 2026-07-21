@@ -1,0 +1,53 @@
+{
+  "task": "AGENT-511",
+  "date": "2026-07-17",
+  "role": "Thermal-modeling/Forward-pred/Implementer/Tester/Writer",
+  "objective": "Implement and score a Salt2-fit heater-source redistribution candidate using existing Fluid tw4_to_tp3_three_span support.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "Ran bounded compute-node srun scoring in foreground/reuse mode; no open job left by this task.",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-511.md",
+    ".agent/journal/2026-07-17/heater-source-redistribution-coupled-score.md",
+    "imports/2026-07-17_heater_source_redistribution_coupled_score.json",
+    "tools/analyze/build_heater_source_redistribution_coupled_score.py",
+    "tools/analyze/test_heater_source_redistribution_coupled_score.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "scheduler": {
+    "job_id": "",
+    "job_name": "",
+    "state": "completed_or_reused_completed_rows",
+    "elapsed": "",
+    "exit_code": "0",
+    "node": "",
+    "command": "srun -N1 -n1 python3 tools/analyze/build_heater_source_redistribution_coupled_score.py --run-fluid --timeout-seconds 273; python3 tools/analyze/build_heater_source_redistribution_coupled_score.py --reuse-existing-coupled --timeout-seconds 273",
+    "stdout": "",
+    "stderr": ""
+  },
+  "outputs": {
+    "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score",
+    "coupled_rows": 27,
+    "completed_rows": 27,
+    "selected_lambda": 0.0,
+    "admitted_candidates": 0,
+    "blocker_decision": "keep_open"
+  },
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "external_fluid_source_edited": false,
+    "openfoam_launched": false,
+    "generated_index_refreshed": false
+  }
+}

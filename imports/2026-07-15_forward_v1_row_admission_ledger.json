@@ -1,0 +1,61 @@
+{
+  "task": "AGENT-407",
+  "date": "2026-07-15",
+  "title": "Forward-v1 row admission ledger",
+  "status": "complete",
+  "artifact_root": "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger",
+  "created_outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/row_admission_ledger.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/final_predictive_hx_closure_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/hx_candidate_reconciliation.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/internal_nu_fit_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/realized_wallHeatFlux_replay_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/imposed_cooler_diagnostic_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/test_section_negative_source_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/summary.json"
+  ],
+  "source_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_model_scores.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_rmse_summary_with_leakage_policy.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff/test_section_model_result_ledger.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/predictive_hx_fit_setup_only_refresh/hx_primary_forward_scores.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/best_predictive_heat_loss_discrepancy_refresh/best_predictive_leg_heat_loss_discrepancy.csv",
+    ".agent/journal/2026-07-14/thermal-admission-internal-nu-final-gate.md",
+    ".agent/journal/2026-07-14/upcomer-recirculation-internal-nu-admissibility.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_matched_plane_parser_repair/summary.json"
+  ],
+  "summary": {
+    "ledger_rows": 31,
+    "predictive_candidate_rows": 6,
+    "diagnostic_replay_rows": 18,
+    "diagnostic_upper_bound_rows": 6,
+    "blocked_empty_fit_rows": 1,
+    "preferred_setup_legal_hx_candidate": "salt2_fit_constant_UA_bulk_drive",
+    "internal_nu_admitted_rows": 0,
+    "runtime_input_audit_violations": 0,
+    "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted"
+  },
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "external_cfd_modeling_tools_mutated": false,
+    "scheduler_mutated": false,
+    "registry_or_admission_state_mutated": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_forward_v1_row_admission_ledger.py",
+      "status": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_forward_v1_row_admission_ledger",
+      "status": "passed",
+      "tests": 5
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_forward_v1_row_admission_ledger.py tools/analyze/test_forward_v1_row_admission_ledger.py",
+      "status": "passed"
+    }
+  ]
+}

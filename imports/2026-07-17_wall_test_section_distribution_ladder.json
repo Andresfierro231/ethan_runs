@@ -1,0 +1,64 @@
+{
+  "date": "2026-07-17",
+  "task": "AGENT-498",
+  "type": "derived_work_product",
+  "title": "Wall/test-section distribution ladder",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_mutated": false,
+  "scheduler_action_taken": true,
+  "scheduler_job_id": "3299312",
+  "previous_scheduler_job_id": "3300891",
+  "coupled_execution": {
+    "status": "completed",
+    "completed_rows": 12,
+    "completed_command": "srun -N1 --overlap -n1 python3 tools/analyze/build_wall_test_section_distribution_ladder.py --run-fluid --timeout-seconds 273",
+    "refresh_command": "python3 tools/analyze/build_wall_test_section_distribution_ladder.py --reuse-existing-coupled --timeout-seconds 273"
+  },
+  "probe_execution": {
+    "localization_rows": 204,
+    "delta_rows": 136,
+    "role_segment_summary_rows": 80,
+    "probe_gate_counts": {
+      "fail": 106,
+      "not_compared": 16,
+      "pass": 14
+    }
+  },
+  "sources": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/segment_heat_placement_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_shape_regression_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/local_candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/static_candidate_gate.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/scenario_contracts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_error_localization.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/role_segment_error_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/blocker_decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "predictive-wall-test-section-submodels",
+      "status": "keep_open",
+      "reason": "AGENT-498 completed 12/12 coupled Fluid rows with accepted roots, but 0/4 local wall distribution candidates are admitted. Mdot improves versus M3, while all-probe/TW RMSE remains far worse than M3 on Salt3 validation and Salt4 holdout."
+    }
+  ]
+}

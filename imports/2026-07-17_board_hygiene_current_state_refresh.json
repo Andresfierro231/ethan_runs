@@ -1,0 +1,59 @@
+{
+  "task": "AGENT-517",
+  "date": "2026-07-17",
+  "role": "Coordinator/Cleaner/Writer",
+  "type": "coordination_manifest",
+  "summary": "Cleaned the task board by moving completed rows out of Active, audited explicit handoff paths for the archived rows, and regenerated generated current-state and blocker indexes.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-517.md",
+    ".agent/journal/2026-07-17/board-hygiene-current-state-refresh.md",
+    "imports/2026-07-17_board_hygiene_current_state_refresh.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": true,
+  "archived_rows_moved_from_active": 60,
+  "archived_rows_with_missing_explicit_handoff_paths": 0,
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/board_dashboard.py",
+      "result": "passed"
+    },
+    {
+      "command": "archived-row handoff path audit",
+      "result": "60 rows checked, 0 missing explicit status/journal/import paths"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id AGENT-517 --json",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "No native CFD/OpenFOAM outputs mutated.",
+    "No registry or admission state changed.",
+    "No scheduler action or solver launch performed.",
+    "No Fluid or external repository edit made.",
+    "No scientific admission, fitting, tuning, or model-selection state changed."
+  ]
+}

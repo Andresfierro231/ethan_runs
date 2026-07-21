@@ -1,0 +1,55 @@
+{
+  "task": "TODO-THESIS-UPCOMER-ORTHOGONAL-ARROW-RENDER-2026-07-21",
+  "task_id": "TODO-THESIS-UPCOMER-ORTHOGONAL-ARROW-RENDER-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Figures/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Create a Salt4 Jin upcomer orthogonal velocity-arrow render for thesis use.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-UPCOMER-ORTHOGONAL-ARROW-RENDER-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-upcomer-orthogonal-arrow-render.md",
+    "imports/2026-07-21_thesis_upcomer_orthogonal_arrow_render.json",
+    "tools/extract/render_branch_velocity_arrow_images.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_upcomer_orthogonal_arrow_render/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_upcomer_orthogonal_arrow_render/output_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_upcomer_orthogonal_arrow_render/salt4_upcomer_side_x_status.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_upcomer_orthogonal_arrow_render/scripts/render_salt4_upcomer_side_x.sbatch",
+    "figures/figures_rendered/paraview_velocity_arrows_orthogonal/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/png/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_magnitude_arrows_side_x.png",
+    "figures/figures_rendered/paraview_velocity_arrows_orthogonal/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/svg/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_magnitude_arrows_side_x.svg",
+    "figures/figures_rendered/paraview_velocity_arrows_orthogonal/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/pdf/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_magnitude_arrows_side_x.pdf",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "reports/thesis_dossier/figures/README.md",
+    "reports/thesis_dossier/figures/figure_claim_crosswalk.csv",
+    "reports/thesis_dossier/figures/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "tools/extract/2026-06-15_paraview_field_render_workflow.md",
+    "figures/figures_rendered/paraview_velocity_arrows/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/status.json",
+    "staging/render_inputs/viscosity_screening_salt_test_4_jin_coarse_mesh/reconstructed_case/viscosity_screening_salt_test_4_jin_coarse_mesh.foam"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "submitted task-owned Slurm render jobs 3308604 failed and 3308608 completed",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_solver_outputs_modified": false,
+    "existing_front_view_figures_overwritten": false,
+    "registry_modified": false,
+    "admission_state_modified": false,
+    "fluid_source_modified": false,
+    "external_repo_modified": false,
+    "blocker_register_source_modified": false
+  },
+  "validation": {
+    "status": "passed",
+    "commands": [
+      "python3.11 -m py_compile tools/extract/render_branch_velocity_arrow_images.py",
+      "bash -n work_products/2026-07/2026-07-21/2026-07-21_thesis_upcomer_orthogonal_arrow_render/scripts/render_salt4_upcomer_side_x.sbatch",
+      "sacct -j 3308608 --format JobID,JobName,Partition,Account,State,Elapsed,ExitCode -P",
+      "python3.11 -c \"<validate PNG/SVG/PDF paths from status JSON>\"",
+      "view_image <side_x png>"
+    ]
+  }
+}

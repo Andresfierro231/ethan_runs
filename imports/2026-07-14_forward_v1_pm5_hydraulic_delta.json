@@ -1,0 +1,45 @@
+{
+  "date": "2026-07-14",
+  "task": "AGENT-362",
+  "title": "Forward-v1 +/-5Q corrected-Q and hydraulic tap-length delta",
+  "decision": "progress_delta_forward_v1_still_blocked",
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/forward_v1_gate_delta_after_pm5_hydraulic.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/thesis_pm5_hydraulic_progress_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/next_gate_actions_after_pm5_hydraulic.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/summary.json",
+    "tools/analyze/build_forward_v1_pm5_hydraulic_delta.py",
+    "tools/analyze/test_forward_v1_pm5_hydraulic_delta.py",
+    ".agent/status/2026-07-14_AGENT-362.md",
+    ".agent/journal/2026-07-14/forward-v1-pm5-hydraulic-delta.md"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_heat_role_reduction.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_forward_gate_queue.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json"
+  ],
+  "admitted_progress": {
+    "pm5_terminal_harvest_rows": 4,
+    "pm5_closure_fit_admissible_terminal_gate_rows": 4,
+    "hydraulic_centerline_resolved_rows": 12
+  },
+  "not_admitted": {
+    "pm5_independent_training_expansion_rows": 0,
+    "component_fit_admissible_rows": 0,
+    "h1_faithful_launchable": false,
+    "final_forward_v1_admitted": false
+  },
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action_taken": false,
+    "external_fluid_modified": false
+  }
+}

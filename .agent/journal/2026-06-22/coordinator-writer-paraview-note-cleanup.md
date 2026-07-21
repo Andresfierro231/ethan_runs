@@ -8,10 +8,10 @@
   - preserve historical checkpoints while marking which follow-ups are now resolved or only optional future work
 - files inspected:
   - `.agent/BOARD.md`
-  - `operational_notes/2026-06-08_render_only_figure_refresh_todo.md`
-  - `operational_notes/2026-06-08_rendering_and_runner_todo.md`
-  - `operational_notes/2026-06-08_salt34_field_slice_refresh_todo.md`
-  - `operational_notes/2026-06-08_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_render_only_figure_refresh_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_rendering_and_runner_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_salt34_field_slice_refresh_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_todo.md`
   - `journals/2026-06/2026-06-15_ethan_runs.md`
   - `.agent/status/2026-06-15_AGENT-073.md`
   - `.agent/status/2026-06-15_AGENT-075.md`
@@ -27,10 +27,10 @@
   - `.agent/BOARD.md`
   - `.agent/status/2026-06-22_AGENT-095.md`
   - `.agent/journal/2026-06-22/coordinator-writer-paraview-note-cleanup.md`
-  - `operational_notes/2026-06-08_render_only_figure_refresh_todo.md`
-  - `operational_notes/2026-06-08_rendering_and_runner_todo.md`
-  - `operational_notes/2026-06-08_salt34_field_slice_refresh_todo.md`
-  - `operational_notes/2026-06-08_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_render_only_figure_refresh_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_rendering_and_runner_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_salt34_field_slice_refresh_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_todo.md`
   - `journals/2026-06/2026-06-08_ethan_runs_render_only_figure_refresh.md`
   - `journals/2026-06/2026-06-08_salt34_field_slice_refresh.md`
   - `journals/2026-06/2026-06-08_ethan_runs_rendering_and_runner_addendum.md`
@@ -38,10 +38,10 @@
 
 - commands run:
   - `rg -n -i "paraview|pvbatch|render|movie|arrow|overview" .agent/BOARD.md operational_notes journals .agent/journal .agent/status tools/extract/2026-06-15_paraview_field_render_workflow.md README.md`
-  - `sed -n '1,120p' operational_notes/2026-06-08_render_only_figure_refresh_todo.md`
-  - `sed -n '1,120p' operational_notes/2026-06-08_rendering_and_runner_todo.md`
-  - `sed -n '1,120p' operational_notes/2026-06-08_salt34_field_slice_refresh_todo.md`
-  - `sed -n '1,120p' operational_notes/2026-06-08_todo.md`
+  - `sed -n '1,120p' operational_notes/06-26/08/2026-06-08_render_only_figure_refresh_todo.md`
+  - `sed -n '1,120p' operational_notes/06-26/08/2026-06-08_rendering_and_runner_todo.md`
+  - `sed -n '1,120p' operational_notes/06-26/08/2026-06-08_salt34_field_slice_refresh_todo.md`
+  - `sed -n '1,120p' operational_notes/06-26/08/2026-06-08_todo.md`
   - `tail -40 journals/2026-06/2026-06-08_ethan_runs_render_only_figure_refresh.md`
   - `tail -40 journals/2026-06/2026-06-08_salt34_field_slice_refresh.md`
   - `tail -40 journals/2026-06/2026-06-08_ethan_runs_rendering_and_runner_addendum.md`

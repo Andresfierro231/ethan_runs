@@ -1,0 +1,80 @@
+{
+  "date": "2026-07-21",
+  "task": "TODO-CSEM-REMAINING-PLACEHOLDER-IMPORT-2026-07-21",
+  "task_id": "TODO-CSEM-REMAINING-PLACEHOLDER-IMPORT-2026-07-21",
+  "objective": "Implement remaining CSEM thesis placeholders through a stable in-scope script.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    "tools/papers/apply_csem_remaining_placeholders.py",
+    ".agent/status/2026-07-21_TODO-CSEM-REMAINING-PLACEHOLDER-IMPORT-2026-07-21.md",
+    ".agent/journal/2026-07-21/csem-remaining-placeholder-import.md",
+    "imports/2026-07-21_csem_remaining_placeholder_import.json"
+  ],
+  "external_changed_files": [
+    "../papers/UTexas_Research/csem-Masters_dissertation/chapters/03_physical_system_and_evidence.tex",
+    "../papers/UTexas_Research/csem-Masters_dissertation/chapters/appendix_segment_atlas.tex",
+    "../papers/UTexas_Research/csem-Masters_dissertation/chapters/appendix_validation_split.tex",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/status/2026-07-21_csem-ch3-cfd-evidence-import-2026-07-21.md",
+    "../papers/.agent/status/2026-07-21_csem-appendix-segment-atlas-import-2026-07-21.md",
+    "../papers/.agent/status/2026-07-21_csem-appendix-validation-split-import-2026-07-21.md",
+    "../papers/.agent/journal/2026-07-21/csem-ch3-cfd-evidence-import.md",
+    "../papers/.agent/journal/2026-07-21/csem-appendix-segment-atlas-import.md",
+    "../papers/.agent/journal/2026-07-21/csem-appendix-validation-split-import.md"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/16_ch3_csem_cfd_evidence_database.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_current_draft_packet/ordered_reading_manifest.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/AGENTS.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/README.md",
+    "../papers/.agent/BOARD.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "external_papers_mutated": true,
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "generated_docs_index_mutated": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/papers/apply_csem_remaining_placeholders.py tools/papers/check_csem_local_instruction_layer.py",
+      "result": "PASS"
+    },
+    {
+      "command": "python3.11 tools/papers/apply_csem_remaining_placeholders.py",
+      "result": "PASS"
+    },
+    {
+      "command": "scripts/build_thesis.sh",
+      "cwd": "../papers/UTexas_Research/csem-Masters_dissertation",
+      "result": "PASS; masterthesis.pdf regenerated as 44 pages, 408831 bytes"
+    },
+    {
+      "command": "scripts/check_guardrails.sh",
+      "cwd": "../papers/UTexas_Research/csem-Masters_dissertation",
+      "result": "PASS"
+    },
+    {
+      "command": "python3.11 tools/papers/check_csem_local_instruction_layer.py --strict-placeholders",
+      "result": "PASS"
+    },
+    {
+      "command": "python3.11 -m json.tool imports/2026-07-21_csem_remaining_placeholder_import.json",
+      "result": "PASS"
+    }
+  ],
+  "provenance": {
+    "reason": "User requested implementation of the planned next CSEM thesis steps.",
+    "script_mode": "external CSEM manuscript and coordination write",
+    "pdf": "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.pdf"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-07-13T21:43:43+00:00",
+  "task_id": "AGENT-293",
+  "kind": "no_submit_confirmation_harness",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation",
+  "generated_by": "tools/analyze/build_predictive_forward_v0_solve_case_confirmation.py",
+  "source_files": [
+    "tools/analyze/run_predictive_forward_v0_imposed_cooler.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid"
+  ],
+  "outputs": [
+    "README.md",
+    "summary.json",
+    "expected_outputs.csv",
+    "comparison_metric_contract.csv",
+    "comparison_summary.json",
+    "solve_case_vs_fast_scan_comparison.csv",
+    "scripts/run_forward_v0_solve_case_confirmation.sh",
+    "scripts/run_forward_v0_solve_case_confirmation.sbatch",
+    "logs/"
+  ],
+  "prepared_sbatch_command": "sbatch work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch",
+  "compute_node_requirements": {
+    "account": "ASC23046",
+    "partition": "NuclearEnergy",
+    "nodes": 1,
+    "tasks": 1,
+    "cpus_per_task": 4,
+    "walltime": "06:00:00"
+  },
+  "comparison_status": "pending_compute_node_run",
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "scheduler_job_submitted": false
+}

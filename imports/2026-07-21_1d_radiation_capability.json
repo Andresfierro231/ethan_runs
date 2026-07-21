@@ -1,0 +1,69 @@
+{
+  "task": "TODO-1D-RADIATION-CAPABILITY",
+  "task_id": "TODO-1D-RADIATION-CAPABILITY",
+  "date": "2026-07-21",
+  "role": "Implementer/Tester/Writer",
+  "objective": "Build a repo-local 1D radiation capability and sensitivity package from setup radiation fields without Fluid edits, fitting, admission, or CFD replay double counting.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-1D-RADIATION-CAPABILITY.md",
+    ".agent/journal/2026-07-21/1d-radiation-capability.md",
+    "imports/2026-07-21_1d_radiation_capability.json",
+    "tools/analyze/build_1d_radiation_sensitivity.py",
+    "tools/analyze/test_1d_radiation_sensitivity.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/radiation_analytic_tests.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/radiation_sensitivity_scenarios.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/radiation_energy_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/runtime_double_counting_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/radiation_analytic_tests.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/runtime_mode_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/runtime_legality_guardrail.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/cfd_emissivity_by_run.csv",
+    "operational_notes/maps/thermal-boundary-and-radiation.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "no_scorecard_outputs": true,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_1d_radiation_sensitivity.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_1d_radiation_sensitivity",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_1d_radiation_sensitivity.py tools/analyze/test_1d_radiation_sensitivity.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py --strict work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability",
+      "result": "passed"
+    }
+  ]
+}

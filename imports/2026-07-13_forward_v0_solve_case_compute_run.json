@@ -1,0 +1,41 @@
+{
+  "created_local": "2026-07-13T17:21:58-0500",
+  "task_id": "AGENT-301",
+  "kind": "compute_submission_manifest",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_forward_v0_solve_case_compute_run",
+  "source_harness_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation",
+  "source_files": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sh",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch",
+    "tools/analyze/run_predictive_forward_v0_imposed_cooler.py",
+    "tools/analyze/build_predictive_forward_v0_solve_case_confirmation.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid"
+  ],
+  "outputs": [
+    ".agent/status/2026-07-13_AGENT-301.md",
+    ".agent/journal/2026-07-13/forward-v0-solve-case-compute-run.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_v0_solve_case_compute_run/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_v0_solve_case_compute_run/summary.json"
+  ],
+  "scheduler": {
+    "submitted": true,
+    "submit_command": "ssh login3 \"cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch\"",
+    "job_id": "3293960",
+    "initial_state": "RUNNING",
+    "initial_node": "c318-011",
+    "account": "ASC23046",
+    "partition": "NuclearEnergy",
+    "walltime": "06:00:00"
+  },
+  "expected_result_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation",
+  "expected_result_files": [
+    "fast_scan_reference/forward_v0_results.csv",
+    "solve_case_full/forward_v0_results.csv",
+    "comparison_summary.json",
+    "solve_case_vs_fast_scan_comparison.csv"
+  ],
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false
+}

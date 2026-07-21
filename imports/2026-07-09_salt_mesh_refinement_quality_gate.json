@@ -1,0 +1,51 @@
+{
+  "manifest_id": "2026-07-09_salt_mesh_refinement_quality_gate",
+  "task_id": "AGENT-228",
+  "created": "2026-07-09",
+  "generated_at": "2026-07-09T09:24:45-05:00",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "source_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt",
+  "input_inventory": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_discovery/mesh_case_inventory.csv",
+  "purpose": "First script-driven categorization and lightweight quality gate for Ethan-provided Salt coarse/medium/fine mesh-family folders before staging, registry updates, GCI calculation, or closure-correlation retry.",
+  "outputs": [
+    "tools/analyze/build_salt_mesh_refinement_quality_gate.py",
+    "tools/analyze/test_salt_mesh_refinement_quality_gate.py",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_case_catalog.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_quality_gate.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/endpoint_postprocessing_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/gci_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/closure_observation_update_recommendations.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/summary.json",
+    ".agent/status/2026-07-09_AGENT-228.md",
+    ".agent/journal/2026-07-09/salt-mesh-refinement-quality-gate.md"
+  ],
+  "case_count": 24,
+  "endpoint_summary_count": 48,
+  "gci_candidate_count": 10,
+  "gate_verdict_counts": {
+    "admitted_for_gci_input": 2,
+    "historical_kirst_only": 12,
+    "inventory_only": 6,
+    "partial_needs_coarse_reconciliation": 2,
+    "partial_needs_continuation": 2
+  },
+  "gci_triplet_status_counts": {
+    "partial_needs_coarse_reconciliation": 5,
+    "partial_needs_continuation_or_gate": 5
+  },
+  "admission_summary": {
+    "salt2_jin": "Medium and fine pass the lightweight gate; coarse is held for reconciliation with the repo mainline continuation before GCI use.",
+    "salt4_jin": "Endpoint QoIs are summarized, but medium/fine tail with signal-15/no clean convergenceMonitor evidence in this gate and require continuation or a later admission decision.",
+    "kirst_policy": "Inventoried and labeled as historical provenance only; do not use as current mainline closure evidence unless a future dated task explicitly re-admits Kirst.",
+    "secondary_jin_policy": "Salt 1 and Salt 3 Jin mesh families remain inventory-only in this pass."
+  },
+  "monitor_summary_policy": "Large postProcessing monitor files are parsed from a bounded tail window of the latest restart segment. The summaries are screening signals, not full-history reconstructions.",
+  "read_only_sources": true,
+  "source_tree_modified": false,
+  "native_solver_outputs_modified": false,
+  "registry_updated": false,
+  "staging_updated": false,
+  "closure_observations_updated": false,
+  "gci_calculated": false
+}

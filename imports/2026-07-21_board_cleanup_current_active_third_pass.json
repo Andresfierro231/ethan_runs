@@ -1,0 +1,64 @@
+{
+  "task": "AGENT-575",
+  "task_id": "AGENT-575",
+  "date": "2026-07-21",
+  "role": "Coordinator/Cleaner/Writer",
+  "objective": "Third-pass cleanup of .agent/BOARD.md by archiving completed July 20/21 rows only after validator confirmation.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_AGENT-575.md",
+    ".agent/journal/2026-07-21/board-cleanup-current-active-third-pass.md",
+    "imports/2026-07-21_board_cleanup_current_active_third_pass.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "status, journal, and import artifacts for the 10 archived completed rows",
+    "current active/ambiguous AGENT-574 row",
+    "current active AGENT-519 monitor row",
+    "open TODO rows"
+  ],
+  "archived_completed_rows": [
+    "AGENT-573",
+    "AGENT-572",
+    "AGENT-571",
+    "TODO-F6-ENDPOINT-FACE-UQ-EXECUTION",
+    "TODO-F6-ENDPOINT-PAIR-SAME-QOI-UQ-PREFLIGHT",
+    "TODO-F6-NON-UPCOMER-BRANCH-MODELING-ANALYSIS",
+    "AGENT-570",
+    "AGENT-569",
+    "AGENT-568",
+    "AGENT-567"
+  ],
+  "preserved_open_or_live_rows": [
+    "AGENT-574",
+    "AGENT-519",
+    "TODO-FLUID-EXTERNAL-BC-DICT",
+    "TODO-PRED-SENSOR-MAP",
+    "TODO-PRED-ENDTOEND-SCORE",
+    "TODO-THESIS-JUNCTION-AWARE-SECTION-REFRESH",
+    "TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES",
+    "TODO-THESIS-FIGURES-DIAGRAMS"
+  ],
+  "validation": [
+    "python3.11 tools/agent/preflight_task.py --task-id AGENT-575",
+    "python3.11 tools/agent/finish_task.py --task-id <TASK> for each archived row",
+    "python3.11 tools/agent/board_dashboard.py --limit 40",
+    "python3.11 tools/agent/finish_task.py --task-id AGENT-575",
+    "python3.11 tools/docs/build_repo_index.py",
+    "python3.11 tools/docs/build_repo_index.py --check"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "no_scorecard_outputs": true
+}

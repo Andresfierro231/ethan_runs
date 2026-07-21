@@ -1,0 +1,86 @@
+{
+  "task": "AGENT-442",
+  "date": "2026-07-15",
+  "status": "complete",
+  "type": "sbatch_analysis_closeout",
+  "created_files": [
+    "tools/analyze/build_branch_specific_ordinary_pipe_scorecard.py",
+    "tools/analyze/test_branch_specific_ordinary_pipe_scorecard.py",
+    "tools/analyze/build_sensor_tp2_restore_scorecard.py",
+    "tools/analyze/test_sensor_tp2_restore_scorecard.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/ordinary_pipe_candidate_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/branch_specific_fit_mask.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/branch_model_equations.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/aggregate_sensor_count_delta.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/tp2_tw10_gate_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_sensor_overnight_sbatch/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_sensor_overnight_sbatch/scripts/run_branch_sensor_scorecards.sbatch",
+    ".agent/status/2026-07-15_AGENT-442.md",
+    ".agent/journal/2026-07-15/branch-scorecard-and-sensor-map-sbatch.md",
+    "imports/2026-07-15_branch_scorecard_and_sensor_map_sbatch.json"
+  ],
+  "local_validation": {
+    "branch_builder": "passed",
+    "sensor_builder": "passed",
+    "unit_tests": "9 passed"
+  },
+  "submitted_job": {
+    "job_id": "3297849",
+    "job_name": "branch_sensor",
+    "partition": "development",
+    "node": "c309-005",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:00:01",
+    "stdout": "work_products/2026-07/2026-07-15/2026-07-15_branch_sensor_overnight_sbatch/logs/branch_sensor-3297849.out",
+    "stderr": "work_products/2026-07/2026-07-15/2026-07-15_branch_sensor_overnight_sbatch/logs/branch_sensor-3297849.err"
+  },
+  "existing_overnight_jobs_not_duplicated": [
+    {
+      "job_id": "3297844",
+      "name": "m3ts_score",
+      "owner": "AGENT-439",
+      "dependency": "afterok:3295438"
+    },
+    {
+      "job_id": "3297842",
+      "name": "val_s2_ext",
+      "owner": "AGENT-439",
+      "dependency": "afterok:3295438"
+    },
+    {
+      "job_id": "3297843",
+      "name": "pm5_onset",
+      "owner": "AGENT-439",
+      "dependency": "afterok:3295438"
+    },
+    {
+      "job_id": "3297845",
+      "name": "cqp_stage",
+      "owner": "AGENT-440",
+      "dependency": "none"
+    }
+  ],
+  "results": {
+    "branch_evidence_rows_reviewed": 28,
+    "ordinary_fit_rows_admitted": 0,
+    "upcomer_evidence_rows_reviewed": 25,
+    "upcomer_ordinary_fit_rows_admitted": 0,
+    "tp2_source_segment_after_refresh": "right_downcomer_bottom_horizontal_junction",
+    "aggregate_current": "5 TP + 10 TW",
+    "aggregate_after_tp2_gates": "6 TP + 10 TW",
+    "tw10_after_refresh": "excluded"
+  },
+  "guardrails": {
+    "openfoam_launched": false,
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "generated_index_refreshed": false,
+    "external_fluid_edited": false
+  }
+}

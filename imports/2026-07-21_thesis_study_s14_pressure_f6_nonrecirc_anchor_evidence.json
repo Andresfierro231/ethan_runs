@@ -1,0 +1,59 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S14-PRESSURE-F6-NONRECIRC-ANCHOR-EVIDENCE-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s14-pressure-f6-nonrecirc-anchor-evidence.md",
+    "imports/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/build_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/test_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_gate_scoring_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_decision_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f3_vs_f6_comparison_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_publication_claim_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/pressure_basis_decomposition_figure_data.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/low_recirculation_anchor_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/component_k_rejection_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/s11_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json"
+  ],
+  "date": "2026-07-21",
+  "decision": "pressure_F6_use_map_complete_no_admitted_score",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "objective": "Score current F6 pressure evidence and decide where F6 should be used, remain diagnostic, stay future-candidate, or be forbidden.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/non_upcomer_f6_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/f3_vs_branch_f6_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/stage_a_b_pair_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_b_pair_reconstructed_static_deltas.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_candidate_admission_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_comparison_matrix.csv"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics / cfd-pp / Implementer / Tester / Writer / Reviewer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json",
+  "task": "TODO-THESIS-STUDY-S14-PRESSURE-F6-NONRECIRC-ANCHOR-EVIDENCE-2026-07-21",
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-THESIS-STUDY-S14-PRESSURE-F6-NONRECIRC-ANCHOR-EVIDENCE-2026-07-21",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/build_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/test_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/test_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence.py",
+      "result": "passed: 6 tests"
+    }
+  ]
+}

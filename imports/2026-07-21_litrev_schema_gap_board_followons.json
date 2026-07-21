@@ -1,0 +1,39 @@
+{
+  "task": "TODO-LITREV-SCHEMA-GAP-BOARD-FOLLOWONS-2026-07-21",
+  "task_id": "TODO-LITREV-SCHEMA-GAP-BOARD-FOLLOWONS-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer",
+  "objective": "Add missing open board rows implied by the LitRev CFD postprocessing schema gap audit.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-SCHEMA-GAP-BOARD-FOLLOWONS-2026-07-21.md",
+    ".agent/journal/2026-07-21/litrev-schema-gap-board-followons.md",
+    "imports/2026-07-21_litrev_schema_gap_board_followons.json"
+  ],
+  "added_board_rows": [
+    "TODO-LITREV-PRESSURE-PLANE-BASIS-STANDARDIZATION",
+    "TODO-LITREV-MATCHED-PLANE-RECIRC-FIELD-HARVEST",
+    "TODO-LITREV-SAME-QOI-UQ-EXECUTION",
+    "TODO-LITREV-SPLIT-JUNCTION-STORAGE-RADIATION-EXTRACTION",
+    "TODO-LITREV-LATEST-CFD-SCHEMA-PROMOTION"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/README.md",
+    ".agent/BOARD.md",
+    "native CFD/OpenFOAM outputs read-only"
+  ],
+  "validation": [
+    "rg -n \"TODO-LITREV-(PRESSURE-PLANE-BASIS-STANDARDIZATION|MATCHED-PLANE-RECIRC-FIELD-HARVEST|SAME-QOI-UQ-EXECUTION|SPLIT-JUNCTION-STORAGE-RADIATION-EXTRACTION|LATEST-CFD-SCHEMA-PROMOTION)\" .agent/BOARD.md",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-LITREV-SCHEMA-GAP-BOARD-FOLLOWONS-2026-07-21"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false
+}

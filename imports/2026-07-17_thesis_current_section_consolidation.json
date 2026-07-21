@@ -1,0 +1,80 @@
+{
+  "manifest_type": "documentation_consolidation",
+  "task": "AGENT-502",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer/Cleaner",
+  "objective": "Consolidate the thesis dossier into stable current sections for thesis/paper incorporation while preserving dated notes as provenance.",
+  "created": [
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/01_modeling_approach.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md",
+    "reports/thesis_dossier/Chapters_and_sections/dated/README.md",
+    ".agent/status/2026-07-17_AGENT-502.md",
+    ".agent/journal/2026-07-17/thesis-current-section-consolidation.md",
+    "imports/2026-07-17_thesis_current_section_consolidation.json"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_model_form_section.md",
+    "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_modeling_approach_section.md",
+    "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_split_policy_section.md",
+    "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-14_thesis_presentation_story_sync.md",
+    "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-14_upcomer_recirculation_internal_nu_story.md"
+  ],
+  "moved": [
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-14_thesis_presentation_story_sync.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-14_thesis_presentation_story_sync.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-14_thesis_presentation_update.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-14_thesis_presentation_update.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-14_upcomer_recirculation_internal_nu_story.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-14_upcomer_recirculation_internal_nu_story.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-16_salt1_confident_use_and_forward_scorecard_story.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-16_salt1_confident_use_and_forward_scorecard_story.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-17_current_context.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_current_context.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-17_model_form_section.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_model_form_section.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-17_modeling_approach_section.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_modeling_approach_section.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-17_split_policy_section.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_split_policy_section.md"
+    },
+    {
+      "from": "reports/thesis_dossier/Chapters_and_sections/2026-07-17_upcomer_recirculation_modeling_section.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/dated/2026-07-17_upcomer_recirculation_modeling_section.md"
+    }
+  ],
+  "validation": [
+    "find reports/thesis_dossier -maxdepth 4 -type f | sort",
+    "rg -n \"Chapters_and_sections/2026-|reports/thesis_dossier/2026-07|master_thesis_bullet_outline\" reports/thesis_dossier",
+    "python3.11 -c \"import json; json.load(open('imports/2026-07-17_thesis_current_section_consolidation.json')); print('json ok')\""
+  ],
+  "guardrails": [
+    "No native CFD outputs were mutated.",
+    "No registry or admission state was changed.",
+    "No scheduler action or solver/postprocessing launch was performed.",
+    "No generated documentation index refresh was run.",
+    "No external Fluid files were edited.",
+    "No new scientific admission claim was made."
+  ]
+}

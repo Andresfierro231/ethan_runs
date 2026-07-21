@@ -1,0 +1,41 @@
+{
+  "task": "TODO-THESIS-CH8-CSEM-SAM-LIMITATIONS-DRAFT",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer",
+  "objective": "Draft Chapter 8 CSEM limitations, SAM relevance, future-work, and conclusion prose from existing evidence only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CH8-CSEM-SAM-LIMITATIONS-DRAFT.md",
+    ".agent/journal/2026-07-21/thesis-ch8-csem-sam-limitations-draft.md",
+    "imports/2026-07-21_thesis_ch8_csem_sam_limitations_draft.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/20_ch8_csem_sam_limitations_conclusions.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/README.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/21/2026-07-21_THESIS_CSEM_BOARD_DISPATCH.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/11_sam_facing_interpretation.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    ".agent/BLOCKERS.md",
+    "../papers/UTexas_Research/3d_analysis/sections/06_trust_limits_and_interpretation.tex",
+    "../papers/UTexas_Research/3d_analysis/sections/07_conclusions.tex"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_paper_tree_edited": false,
+  "scientific_admission_changed": false,
+  "no_scorecard_outputs": true,
+  "guardrails": [
+    "No SAM model, SAM validation, or SAM calibration claim.",
+    "No Salt-versus-Water synthesis claim.",
+    "No final predictive-score conclusion."
+  ]
+}

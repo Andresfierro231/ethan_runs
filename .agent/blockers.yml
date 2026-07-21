@@ -1,0 +1,268 @@
+# Structured blocker register (curated). Rendered to .agent/BLOCKERS.md and
+# validated by tools/docs/build_repo_index.py --check.
+#
+# One entry per DISTINCT blocker. status: open | resolved | superseded.
+# - open      -> must carry last_reviewed; must NOT carry resolved_by/superseded_by.
+# - resolved  -> carry resolved_by + resolved_on.
+# - superseded-> carry superseded_by + superseded_on.
+# evidence: repo-relative path to the dated file that most recently touched it.
+#
+# Seeded 2026-07-13 by AGENT-293 from the AGENT-289 blocker audit
+# (.agent/journal/2026-07-13/coordinator-writer-external-report-and-blocker-audit.md §3).
+
+blockers:
+  # ---- GENUINELY OPEN (frontier) ----
+  - id: two-tap-corner-lower-right-component-isolation-fails
+    title: Two-tap corner_lower_right lacks admissible straight-reference component isolation
+    status: open
+    severity: high
+    blocks: [component-k-audit, pressure-ledger-two-tap]
+    evidence: work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv
+    last_reviewed: 2026-07-18
+    notes: >
+      Component isolation was audited after raw endpoint harvest and
+      pressure/basis resolution. Prior centerline K_local remains negative for
+      Salt2/Salt3/Salt4 corner_lower_right, raw static pressure paired with the
+      old straight subtraction is a mixed-basis option, and p_rgh minus the
+      prior straight reference remains negative. The selected label is
+      apparent_cluster_only for all three rows. Do not clip K, introduce a
+      hidden multiplier, fit F6, or admit component K from this feature.
+
+  - id: two-tap-corner-lower-right-same-qoi-uq-missing
+    title: Two-tap corner_lower_right lacks same-QOI mesh/time uncertainty
+    status: open
+    severity: high
+    blocks: [component-k-audit, pressure-ledger-two-tap]
+    evidence: work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv
+    last_reviewed: 2026-07-18
+    notes: >
+      Same-QOI UQ inventory found only the harvested nominal endpoint pairs and
+      prior proxy/centerline evidence. No valid same-label, same-formula,
+      same-sign-convention mesh/time family is available for the
+      corner_lower_right pressure-loss/K_local QOI. Current status is
+      missing_no_GCI_diagnostic_only for Salt2/Salt3/Salt4. Do not borrow
+      unrelated GCI or fabricate monotonicity.
+
+  - id: two-tap-corner-lower-right-material-reverse-flow
+    title: Two-tap corner_lower_right raw endpoints fail ordinary recirculation gate
+    status: open
+    severity: high
+    blocks: [component-k-audit, pressure-ledger-two-tap, f6-friction-re-correction]
+    evidence: work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv
+    last_reviewed: 2026-07-18
+    notes: >
+      The staged raw endpoint sampler resolved raw-surface availability and the
+      pressure/basis audit found finite static-p, p_rgh, hydrostatic, kinetic,
+      density, velocity, and local dynamic-pressure terms for all three
+      Salt2/Salt3/Salt4 corner_lower_right pairs. However, every pair fails the
+      ordinary recirculation gate: aggregate RAF is about 0.763 and aggregate
+      RMF is about 0.500, far above the <0.01 ordinary threshold. These rows
+      must remain diagnostic or section-effective until a later task either
+      documents apparent/cluster treatment or finds a non-recirculating anchor.
+      Do not fit F6 or admit component K from these rows.
+
+  - id: two-tap-raw-endpoint-sampling-pending
+    title: Two-tap corner_lower_right raw endpoint surfaces not harvested
+    status: resolved
+    severity: medium
+    blocks: [f6-friction-re-correction, component-k-audit, pressure-ledger-two-tap]
+    evidence: work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/RUNNING.md
+    resolved_by: work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv
+    resolved_on: 2026-07-18
+    notes: >
+      Agent C converted the corner_lower_right repair queue into exact
+      Salt2/Salt3/Salt4 raw endpoint requirements and emitted a staged
+      mesh-station VTK sampler. Jobs 3302384 and 3302388 failed before
+      endpoint surfaces due staged-copy setup bugs. The resubmission job
+      3302464 reconstructed and postprocessed all three staged cases and wrote
+      all six endpoint VTK files, but Slurm still exited 1:0 because the old
+      harvest parser could not read OpenFOAM wrapped POLYGONS/FIELD VTK output.
+      The parser was fixed and local harvest from the staged VTKs produced
+      six sampled raw rows in raw_endpoint_pressure_velocity.csv. This resolves
+      the raw-surface availability blocker only. Pressure/velocity basis
+      admission, straight-reference/component isolation scoring, F6 fitting,
+      and component-K admission remain separate future tasks.
+
+  - id: closure-qoi-mesh-gci
+    title: Closure-QOI mesh GCI not publication-ready
+    status: resolved
+    severity: high
+    blocks: [T6, T11, mesh-uncertainty-bounds]
+    resolved_by: work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout
+    resolved_on: 2026-07-16
+    evidence: work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/README.md
+    notes: >
+      Resolved by AGENT-474 as a final-use disposition closeout, not by new
+      coefficient admission. The current non-upcomer final-use ledger has 13
+      rows: 0 admitted publication-GCI rows, 10 rows excluded by documented
+      heater/downcomer branch-gate failures, 3 cooler/HX rows excluded as
+      boundary-residual lanes, and 0 retained extraction-required rows. Do not
+      reuse excluded rows as fit evidence unless a future package explicitly
+      reopens and admits that branch/QOI. Heater/downcomer/cooler/HX model-form
+      work may continue as new evidence, but it is no longer an ambiguous
+      Closure-QOI mesh-GCI blocker for the current final-use set.
+
+  - id: refined-mesh-t-reconstruction-corruption
+    title: Refined-mesh reconstructed T corruption (-nan) under OF13
+    status: resolved
+    severity: high
+    blocks: [salt2-refined-thermal-closure, thermal-gci, closure-qoi-mesh-gci]
+    resolved_by: work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh
+    resolved_on: 2026-07-14
+    evidence: .agent/journal/2026-07-14/thermal-closure-mesh-gate-refresh.md
+    notes: >
+      Split-reconstruction workaround produced medium, fine, and coarse
+      repair-smoke thermal outputs. Do not re-report OF13 reconstructed-T
+      corruption as an open blocker. Rows remain smoke/diagnostic only; the
+      active blocker moved to closure-qoi-mesh-gci because sign, heat-balance,
+      lower-leg Nu, and downcomer policy gates still block admission.
+
+  - id: thermal-cfd-1d-parity
+    title: Thermal CFD-to-1D parity / internal-development model unsolved
+    status: resolved
+    severity: high
+    blocks: [predictive-thermal, internal-nu-admission]
+    resolved_by: work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate
+    resolved_on: 2026-07-16
+    evidence: work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/README.md
+    notes: >
+      Resolved narrowly by AGENT-452 as a blocker to predictive thermal
+      continuation, not as an admitted internal-Nu fit. The July 16 gate proves
+      7/7 residual owners are separated, current thermal rows keep
+      internal-Nu fit-admissible count at 0, setup-only HX/cooler continuation
+      is runtime-legal, and LitRev branchwise heat-loss methodology is applied.
+      Internal Nu remains reference/baseline or diagnostic-only until a later
+      sign/heat-balance/mesh/recirculation admission gate admits true rows; do
+      not tune Nu to absorb heater, cooler/HX, passive wall, radiation,
+      storage, or branch-mixing residuals.
+
+  - id: upcomer-onset-data-sparsity
+    title: Upcomer recirculation onset extrapolated (too few Re points)
+    status: open
+    severity: medium
+    blocks: [T10, upcomer-correlation]
+    evidence: work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/README.md
+    last_reviewed: 2026-07-16
+    notes: >
+      Open and classified by AGENT-464. Current upcomer evidence has 3 observed
+      recirculation points, 0 non-recirculating anchors, and 0 single-stream
+      fit-admitted rows. The test-section/upcomer rows remain hybrid/onset
+      diagnostics, not conventional Nu/f_D/K fit evidence. Resolution requires
+      near-onset Re coverage, a non-recirculating or transition anchor,
+      mesh/time uncertainty for onset metrics, and wall/bulk Delta-T extraction
+      on the same retained window before any closure promotion.
+
+  - id: predictive-heater-cooler-wall-submodels
+    title: Predictive heater / cooler / wall-layer submodels unresolved
+    status: superseded
+    severity: high
+    blocks: [TODO-PRED-HX-FIT, TODO-PRED-HEATER-TEST-CONTRACT, TODO-PRED-WALL-LAYER]
+    superseded_by: predictive-wall-test-section-submodels
+    superseded_on: 2026-07-16
+    evidence: work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md
+    notes: >
+      Superseded by AGENT-454 after split-aware runtime-input admission.
+      Heater (`salt2_fit_constant_heater_efficiency`) and cooler/HX
+      (`salt2_fit_constant_UA_bulk_drive`) pass Salt3/Salt4 held-out W and
+      percent gates with zero runtime leakage. The remaining unresolved
+      physical submodel is wall/test-section/passive-boundary heat loss, which
+      is tracked under predictive-wall-test-section-submodels. Do not re-report
+      the full heater/cooler/wall bundle as open.
+
+  - id: predictive-wall-test-section-submodels
+    title: Predictive wall / test-section / passive-boundary submodels unresolved
+    status: open
+    severity: high
+    blocks: [TODO-PREDICT-TEST-SECTION-HEAT-LOSS, TODO-PREDICT-SEGMENT-THERMAL-MODELS, TODO-PRED-WALL-LAYER]
+    evidence: work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md
+    last_reviewed: 2026-07-17
+    notes: >
+      Still open after AGENT-531 refreshed the blocker audit with completed
+      AGENT-498, AGENT-511, AGENT-513, AGENT-520, and AGENT-522 evidence.
+      The audit consolidated 34 coupled gate rows, 17 candidate sanity rows,
+      969 probe rows, 153 sensor-map audit rows, and 22 invariant failure-mode
+      rows. It found 0 admitted candidates and 0 scoreable source-segment
+      mismatches. TP2 and TW10 remain known policy/extraction exclusions, but
+      TW5/TW6 are scoreable heated-incline TW targets and remain the dominant
+      persistent residuals across tested passive distribution, wall-temperature
+      drive, heater-source, and wall-circuit lanes. AGENT-511 final coupled
+      gate rows show heater-source redistribution still fails TP/TW/all-probe
+      gates despite mdot improvement; AGENT-522 final wall-circuit rows likewise
+      admit 0/8 candidates, with worst Salt4 heated-incline TW5/TW6 regressions.
+      The current no-ambiguity next lane is axial mixing/upcomer stratification
+      after active AGENT-526 resolves the overlapping wall/fluid coupling
+      fallback. Do not retry passive wall-state selectors as the next primary
+      lane, and do not use realized CFD wallHeatFlux, CFD mdot, imposed CFD
+      cooler duty, realized test-section heat, or validation/holdout
+      temperatures as runtime inputs.
+
+  - id: fluid-external-boundary-api-gap
+    title: Fluid does not accept first-class CFD wall-layer/external-boundary dictionaries
+    status: resolved
+    severity: medium
+    blocks: [external-bc-parity, forward-wall-layer-drive]
+    resolved_by: work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation
+    resolved_on: 2026-07-15
+    evidence: work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/README.md
+    notes: >
+      API-level blocker resolved/superseded by AGENT-318 plus AGENT-413:
+      external-boundary dictionaries for h/Ta/Tsur/emissivity/source/drive are
+      present, and AGENT-413 adds a direct predictive HX UA multiplier. The
+      remaining open work is wall/test-section/passive-boundary campaign
+      validation and setup-only scorecard admission under
+      predictive-wall-test-section-submodels.
+
+  - id: f6-friction-re-correction
+    title: Buoyancy/Re friction correction not yet a validated closure
+    status: open
+    severity: medium
+    blocks: [friction-closure-upgrade]
+    evidence: work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/README.md
+    last_reviewed: 2026-07-18
+    notes: >
+      Still open but narrowed by AGENT-547 into a legwise pressure-anchor
+      contract. The landed two-tap endpoint harvest now provides 3 finite raw
+      `corner_lower_right` pressure/velocity feature pairs, but all 3 fail the
+      material reverse-flow gate and remain diagnostic/component-lane only.
+      The current inventory has 0 ordinary F6 fit-eligible rows and 0
+      admission-review-eligible rows. Future promotion must either supply
+      non-recirculating or low-reverse straight-leg pressure anchors, or build
+      an explicit upcomer throughflow-plus-recirculation pressure closure, and
+      then show validation/holdout improvement over F3_shah_apparent without a
+      hidden global multiplier. Every future scorecard/admission-contract row
+      must carry source-validity envelope and property-mode sensitivity labels.
+
+  # ---- STALE / FALSE (kept as resolved records so they are NOT re-reported) ----
+  - id: of12-reconstructpar-segfault
+    title: OF12 reconstructPar SEGFAULT with custom libRCWallBC.so
+    status: resolved
+    severity: high
+    resolved_by: tools/ofenv/of13_env.sh
+    resolved_on: 2026-07-01
+    evidence: operational_notes/07-26/01/2026-07-01_MASTER_TODO_1d_closures.md
+    notes: >
+      Fixed by the OF13 env (recon_salt{2,3,4}_of13 built). Still headlined in
+      CLAUDE.md as a live gotcha - stale. Do NOT confuse with the genuinely-open
+      refined-mesh-t-reconstruction-corruption blocker.
+
+  - id: no-mesh-for-gci
+    title: "No mesh for GCI - waiting on Ethan's NCC mesh generator (T6)"
+    status: superseded
+    severity: high
+    superseded_by: closure-qoi-mesh-gci
+    superseded_on: 2026-07-09
+    evidence: operational_notes/07-26/09/2026-07-09_salt_mesh_refinement_discovery_plan.md
+    notes: Ethan's coarse/medium/fine family (24 cases) is readable since 2026-07-09; the real blocker is closure-qoi-mesh-gci.
+
+  - id: cfd-no-radiation-parity
+    title: "CFD has no radiation - run 1D radiation-off to match"
+    status: superseded
+    severity: medium
+    superseded_by: null
+    superseded_on: 2026-07-13
+    evidence: operational_notes/07-26/13/2026-07-13_cfd_radiative_boundary_correction.md
+    notes: >
+      Superseded by AGENT-277/287: rcExternalTemperature includes radiative
+      exchange (emissivity 0.95, Tsur ~299 K), microcase-verified. Radiation-off
+      is a sensitivity, not parity; do not add a separate 1D radiation term on top
+      of CFD wallHeatFlux.

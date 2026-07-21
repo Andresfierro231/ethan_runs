@@ -1,0 +1,40 @@
+{
+  "task_id": "AGENT-532",
+  "date": "2026-07-17",
+  "title": "Mentor-facing thesis outline save",
+  "type": "documentation_manifest",
+  "status": "complete",
+  "objective": "Save the polished mentor-facing proposed master's thesis outline as a standalone thesis dossier file and link it from the dossier front door.",
+  "created_files": [
+    ".agent/status/2026-07-17_AGENT-532.md",
+    ".agent/journal/2026-07-17/mentor-thesis-outline-save.md",
+    "imports/2026-07-17_mentor_thesis_outline_save.json",
+    "reports/thesis_dossier/mentor_thesis_outline.md"
+  ],
+  "updated_files": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "primary_output": "reports/thesis_dossier/mentor_thesis_outline.md",
+  "source_context": [
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/11_sam_facing_interpretation.md"
+  ],
+  "guardrails": {
+    "native_cfd_outputs_modified": false,
+    "registry_modified": false,
+    "scheduler_action_taken": false,
+    "fluid_source_modified": false,
+    "generated_index_refreshed": false,
+    "scientific_admission_changed": false,
+    "model_fitting_or_selection_changed": false
+  },
+  "notes": [
+    "The mentor outline is intentionally cleaner than Outline.md.",
+    "Outline.md remains the internal execution roadmap.",
+    "The saved outline uses master's thesis language and avoids overclaiming SAM validation."
+  ]
+}

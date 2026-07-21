@@ -1,0 +1,47 @@
+{
+  "manifest_id": "2026-07-07_friction_forms_mdot_comparison",
+  "owner": "claude",
+  "task": "AGENT-195",
+  "generated_at": "2026-07-07",
+  "purpose": "Friction closure mdot comparison — F1/F3_hagenbach/F3_shah_apparent/F4_leg_class on Salt 2/3/4 Jin at matched insulation",
+  "scope": "Salt 2 (ins=0.25 in), Salt 3 (ins=0.30 in), Salt 4 (ins=0.30 in) Jin coarse-mesh cases; 4 friction forms; 12 solver runs total",
+  "new_tools": [
+    "work_products/2026-07-07_friction_forms_comparison/run_single_salt.py",
+    "work_products/2026-07-07_friction_forms_comparison/run_parallel_all_salts.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07-07_friction_forms_comparison/README.md",
+    ".agent/status/2026-07-07_AGENT-195.md",
+    ".agent/journal/2026-07-07/implementer-friction-mdot-comparison.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-07_friction_forms_comparison/mdot_comparison.csv",
+    "work_products/2026-07-07_friction_forms_comparison/summary.json"
+  ],
+  "changes_to_existing": [
+    {
+      "file": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+      "change": "Docstring fix in dp_F3_hagenbach() lines 206-208: corrected 'CONSERVATIVE (over-estimates)' to 'underestimates total entry-length ΔP at x+ < 1 because it omits the elevated distributed wall shear'"
+    }
+  ],
+  "key_results": {
+    "F1_mdot_err_salt2_pct": 9.703,
+    "F1_mdot_err_salt3_pct": 16.215,
+    "F1_mdot_err_salt4_pct": 17.972,
+    "F3_hagenbach_mdot_err_salt2_pct": 3.499,
+    "F3_hagenbach_mdot_err_salt3_pct": 6.690,
+    "F3_hagenbach_mdot_err_salt4_pct": 5.685,
+    "F3_shah_apparent_mdot_err_salt2_pct": -0.927,
+    "F3_shah_apparent_mdot_err_salt3_pct": 3.331,
+    "F3_shah_apparent_mdot_err_salt4_pct": 3.747,
+    "F4_leg_class_mdot_err_salt2_pct": -23.185,
+    "F4_leg_class_mdot_err_salt3_pct": -23.572,
+    "F4_leg_class_mdot_err_salt4_pct": -24.656
+  },
+  "verify_gate_status": "PASS",
+  "open_questions_for_user": [
+    "F4_leg_class over-predicts loop friction by ~24% on all salts — should TODO-RI-CORRECTED-F4 be promoted to HIGH priority?",
+    "F3_shah_apparent has residual +3-4% error at Salt 3/4; is this within acceptable tolerance for the 1D model or should insulation sensitivity be explored?",
+    "Should the mdot_comparison.csv serve as input to TODO-MODEL-FORM-BAKEOFF directly, or does it need the observation-table contract structure first?"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "task": "AGENT-457",
+  "date": "2026-07-16",
+  "title": "Postprocessed CFD streamwise pressure and 1D maps",
+  "status": "complete",
+  "created_by": "codex",
+  "source_inputs": [
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv",
+      "summary": "AGENT-445 station pressure ladder harvest for Salt2/Salt3/Salt4 mainline cases.",
+      "harvest_job_id": "3297860",
+      "harvest_summary": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/summary.json",
+      "source_manifest": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/source_manifest.csv"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/station_pressure_ladder.csv",
+      "summary": "AGENT-447 expanded station pressure ladder harvest for Salt1 nominal/perturbations, Salt2 +/-5Q, Salt4 +/-5Q, and val_salt2.",
+      "harvest_job_id": "3297863",
+      "harvest_summary": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/summary.json",
+      "source_manifest": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/source_manifest.csv"
+    },
+    {
+      "path": "reference/geometry_reference.md",
+      "summary": "Authoritative CFD span names, physical locations, and lower/right leg flow-order guardrails."
+    },
+    {
+      "path": "../cfd-modeling-tools/tamu_first_order_model/Fluid/outputs_tamu_loop_v2_resumable/geometry/loop_segments.csv",
+      "summary": "Fluid 1D segment names used for CFD-to-1D map labels."
+    }
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_branch_average_pressure_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/case_provenance_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/summary.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/per_case/*.md"
+  ],
+  "scripts": [
+    "tools/analyze/build_postprocessed_streamwise_pressure_1d_maps.py",
+    "tools/analyze/test_postprocessed_streamwise_pressure_1d_maps.py",
+    "tools/analyze/build_salt2_streamwise_pressure_1d_map.py"
+  ],
+  "case_keys": [
+    "salt1_hi10q",
+    "salt1_lo10q",
+    "salt1_nominal",
+    "salt2_hi5q",
+    "salt2_lo5q",
+    "salt2_mainline",
+    "salt3_mainline",
+    "salt4_hi5q",
+    "salt4_lo5q",
+    "salt4_mainline",
+    "val_salt2"
+  ],
+  "acceptance": {
+    "case_count": 11,
+    "source_station_rows": 330,
+    "mapped_station_rows": 330,
+    "branch_average_rows": 66,
+    "tests": [
+      "python3.11 -m unittest tools.analyze.test_postprocessed_streamwise_pressure_1d_maps",
+      "python3.11 tools/analyze/build_postprocessed_streamwise_pressure_1d_maps.py",
+      "python3.11 -m json.tool imports/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps.json",
+      "python3.11 -m json.tool work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/summary.json"
+    ]
+  },
+  "guardrails": [
+    "No native CFD solver outputs were mutated.",
+    "No scheduler jobs were submitted.",
+    "No registry or admission-state files were changed.",
+    "Generated docs indexes were not refreshed.",
+    "Rows remain diagnostic pressure-map evidence and are not fit-admitted friction or component-K evidence."
+  ]
+}

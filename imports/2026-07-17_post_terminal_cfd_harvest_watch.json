@@ -1,0 +1,58 @@
+{
+  "task": "AGENT-519",
+  "date": "2026-07-17",
+  "title": "Post-terminal CFD harvest watch",
+  "status": "active",
+  "objective": "Assign a read-only scheduler monitor for live/future CFD jobs and terminal-admission readiness without duplicate submissions.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-519.md",
+    ".agent/journal/2026-07-17/post-terminal-cfd-harvest-watch.md",
+    "imports/2026-07-17_post_terminal_cfd_harvest_watch.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/live_scheduler_snapshot.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/scheduler_refresh_2026-07-21.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/terminal_admission_trigger_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/terminal_trigger_refresh_2026-07-21.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/source_manifest.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read_only_squeue_sacct_checks_only",
+  "external_fluid_edit": false,
+  "read_only_context": [
+    "operational_notes/07-26/15/2026-07-15_TOMORROW_START_HERE.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/terminal_status_refresh.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_corrected_q_live_terminal_gate_followup/README.md"
+  ],
+  "scheduler_checks": [
+    {
+      "command": "squeue -u $(whoami)",
+      "result": "pass after sandbox escalation",
+      "action": "read_only"
+    },
+    {
+      "command": "sacct -j 3293924,3295438,3299610,3299620,3300966 --format=JobID,JobName%30,State,Elapsed,ExitCode",
+      "result": "pass",
+      "action": "read_only"
+    }
+  ],
+  "monitor_jobs": [
+    "3293924",
+    "3295438",
+    "3299610",
+    "3299620",
+    "3307441"
+  ],
+  "context_only_jobs": [
+    "3300966"
+  ],
+  "guardrails": [
+    "Do not submit duplicate corrected-Q, high-heat, pressure, PM5, PM10, or admission jobs from this row.",
+    "Do not run harvest or parser scripts from this row.",
+    "Do not mutate native CFD/OpenFOAM outputs.",
+    "Do not mutate registry/admission state.",
+    "When terminal-success evidence lands, claim a separate cfd-pp/admission row before harvest."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "task_id": "AGENT-361",
+  "date": "2026-07-14",
+  "status": "complete",
+  "artifacts": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/source_manifest.csv",
+    ".agent/status/2026-07-14_AGENT-361.md",
+    ".agent/journal/2026-07-14/fluid-reset-development-api.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "thermal_fit_used": false,
+  "scheduler_action_used": false,
+  "global_friction_multiplier_exported": false,
+  "external_fluid_code_edited": true,
+  "decision": {
+    "fluid_api": "reset_development_k_by_segment_added_as_separate_minor_loss_term",
+    "h1": "still_not_launchable_pending_admitted_pressure_evidence",
+    "next_hydraulic_step": "build_h1_gate_against_agent349_and_fluid_reset_api_outputs"
+  }
+}

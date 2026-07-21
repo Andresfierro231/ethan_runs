@@ -1,0 +1,77 @@
+{
+  "task": "AGENT-528",
+  "date": "2026-07-17",
+  "role": "Coordinator/Implementer/Tester/Writer",
+  "type": "coordination_manifest",
+  "summary": "Documented the principal-agent plus monitor-agent background terminal policy and updated background_compute_helper output; inspected Slurm job 3300966 read-only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-528.md",
+    ".agent/journal/2026-07-17/background-terminal-monitor-agent-policy.md",
+    "imports/2026-07-17_background_terminal_monitor_agent_policy.json",
+    "AGENTS.md",
+    ".agent/README.md",
+    "operational_notes/START_HERE_FOR_AGENTS.md",
+    "operational_notes/maps/agent-operations.md",
+    "tools/agent/README.md",
+    "tools/agent/background_compute_helper.py"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/agent/test_agent_tools.py",
+    "logs/2026-07-17/heater_source_redistribution_coupled_score.out",
+    "scheduler/accounting state for job 3300966"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": false,
+  "job_3300966": {
+    "job_name": "ag511_hsrc",
+    "node": "c318-009",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:36:50",
+    "start": "2026-07-17T15:46:27",
+    "end": "2026-07-17T16:23:17",
+    "stdout_log": "logs/2026-07-17/heater_source_redistribution_coupled_score.out",
+    "stderr_log": "logs/2026-07-17/heater_source_redistribution_coupled_score.err"
+  },
+  "validation": [
+    {
+      "command": "sacct -j 3300966 --format=JobID,JobName,Partition,Account,State,ExitCode,Elapsed,Start,End,NodeList%30",
+      "result": "completed 0:0 on c318-009"
+    },
+    {
+      "command": "tail -80 logs/2026-07-17/heater_source_redistribution_coupled_score.out",
+      "result": "reported 27 coupled completed rows, selected lambda 0, no admitted candidates, blocker keep_open"
+    },
+    {
+      "command": "python3.11 -m pytest tools/agent",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/agent/background_compute_helper.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/background_compute_helper.py --duration long --openfoam --persistent --host-kind compute",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id AGENT-528 --json",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "No native CFD/OpenFOAM outputs mutated.",
+    "No registry or admission state changed.",
+    "No scheduler submission, cancellation, requeue, dependency mutation, solver launch, or postprocessing launch performed.",
+    "No Fluid or external repository edit made.",
+    "No generated-index refresh while active rows list generated index files as read-only.",
+    "No scientific admission, fitting, tuning, or model-selection state changed."
+  ]
+}

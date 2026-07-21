@@ -1,0 +1,26 @@
+{
+  "task_id": "AGENT-338",
+  "date": "2026-07-14",
+  "status": "complete",
+  "artifacts": [
+    "tools/analyze/build_hydraulic_reset_k_admission_contract.py",
+    "tools/analyze/test_hydraulic_reset_k_admission_contract.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/hydraulic_reset_development_contract.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/component_cluster_k_admission_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/tap_length_gap_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/f6_readiness_handoff.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/summary.json",
+    ".agent/status/2026-07-14_AGENT-338.md",
+    ".agent/journal/2026-07-14/hydraulic-reset-k-admission-contract.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "thermal_fit_used": false,
+  "global_friction_multiplier_exported": false,
+  "decision": {
+    "h1": "faithful_path_requires_reset_development_api_and_admitted_component_k",
+    "component_cluster_k": "zero_fit_admissible_rows_currently",
+    "f6": "next_bounded_candidate_after_admitted_re_variation"
+  }
+}

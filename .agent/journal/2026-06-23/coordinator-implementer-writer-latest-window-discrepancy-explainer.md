@@ -22,3 +22,7 @@
     `branch_development_summary.csv`, which made the smoke path work against
     the older June 22 stack while preserving the direct latest-window path for
     the new freeze package.
+  - On `2026-06-26`, the default latest-window directory targets were corrected
+    to the nested `reports/2026-06/2026-06-23/...` tree so the final
+    discrepancy explainer publishes on the same surface as the refreshed freeze
+    and retargeted local 1D packages.

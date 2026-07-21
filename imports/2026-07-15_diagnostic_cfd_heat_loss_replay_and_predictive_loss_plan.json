@@ -1,0 +1,50 @@
+{
+  "task": "AGENT-410",
+  "date": "2026-07-15",
+  "status": "complete",
+  "created_at": "2026-07-15T08:55:27-05:00",
+  "objective": "Add a report-ready diagnostic CFD-realized heat-loss replay section, answer Salt1-4/other-CFD/val_salt2 data sufficiency, record Jin Salt2 vs val Salt2 report evidence, and publish a setup-predictive heat-loss variant plan.",
+  "source_paths": [
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/best_predictive_heat_loss_discrepancy_refresh/presentation_brief.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/best_predictive_heat_loss_discrepancy_refresh/model_change_recommendations.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/external_bc_thermal_profile_parity_refresh/source_sink_parity_contract.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_forward_v1_unblock/salt_training_fit_input_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/salt2_jin_comparison.csv",
+    "reports/2026-06/2026-06-29/2026-06-29_ethan_salt_pressure_drop_predictivity/cfd_pressure_budget_elements.csv"
+  ],
+  "generated_paths": [
+    "tools/analyze/build_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan.py",
+    "tools/analyze/test_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/report_addendum.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/diagnostic_forced_cfd_heat_loss_replay.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/diagnostic_forced_replay_case_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/train_test_data_sufficiency.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/jin_vs_val_salt2_report_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/predictive_heat_loss_variant_plan.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/summary.json",
+    "reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+    ".agent/status/2026-07-15_AGENT-410.md",
+    ".agent/journal/2026-07-15/diagnostic-cfd-heat-loss-replay-and-predictive-loss-plan.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan.py tools/analyze/test_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan.py",
+      "result": "passed"
+    }
+  ],
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "external_cfd_modeling_tools_mutated": false,
+    "scheduler_mutated": false,
+    "registry_or_admission_state_mutated": false
+  }
+}

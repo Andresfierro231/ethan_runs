@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-392",
+  "date": "2026-07-14",
+  "title": "Thermal overnight compute-node complementary rescue",
+  "workspace": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "compute_node": "c318-008.ls6.tacc.utexas.edu",
+  "source_packages": [
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_thermal_parity_and_overnight_study_handoff/overnight_study_queue.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/overnight_study_recommendations.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run"
+  ],
+  "created_artifacts": [
+    ".agent/status/2026-07-14_AGENT-392.md",
+    ".agent/journal/2026-07-14/thermal-overnight-compute-node-rescue.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue"
+  ],
+  "launch": {
+    "session": "ag392_thermal",
+    "runner_pid": 2114243,
+    "launch_time_local": "2026-07-15T07:50:31-05:00",
+    "completed_stages": [
+      "external_bc_refresh",
+      "external_bc_tests",
+      "setup_only_hx_fit",
+      "setup_only_hx_tests",
+      "heater_fraction_refresh",
+      "heater_fraction_tests",
+      "heat_loss_discrepancy_refresh",
+      "heat_loss_discrepancy_tests"
+    ],
+    "finished_time_local": "2026-07-15T07:53:14-05:00",
+    "failed_stage_count": 0,
+    "overall_status": "complete",
+    "run_summary": "work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/run_summary.json"
+  },
+  "parallel_completed_runner": {
+    "task": "AGENT-391",
+    "path": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run",
+    "exit_code": 0,
+    "finished_at": "2026-07-14T18:09:19-05:00"
+  },
+  "guardrails": [
+    "no OpenFOAM solver launch",
+    "no native CFD solver-output mutation",
+    "no registry or admission-state mutation",
+    "no external cfd-modeling-tools edits",
+    "diagnostic until admitted"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "base_task": "AGENT-351",
+  "corrected_q_pm5_response_overlay": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/corrected_q_pm5_response_overlay.csv",
+  "date": "2026-07-14",
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_index_refresh": "not_run_active_AGENT_344_owns_generated_index_scope",
+  "journal": ".agent/journal/2026-07-14/flow-rate-temperature-bc-response-paper-analysis.md",
+  "kind": "work_product_import",
+  "native_cfd_outputs_mutated": false,
+  "paper_conclusions": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/paper_conclusions.csv",
+  "paper_ready_analysis": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/paper_ready_analysis.md",
+  "status": ".agent/status/2026-07-14_AGENT-359.md",
+  "summary": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/summary.json",
+  "task": "AGENT-359",
+  "trend_correlation_analysis": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/trend_correlation_analysis.csv",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study"
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "AGENT-250",
+  "created_at": "2026-07-10T00:00:00-05:00",
+  "purpose": "Build a registry-driven corrected Salt Q status table and register corrected-Q sensitivity case roots.",
+  "inputs_read": [
+    "registry/case_registry.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/convergence_resubmit_recommendations.csv"
+  ],
+  "outputs_written": [
+    "tools/analyze/build_registry_corrected_q_status_table.py",
+    "tools/analyze/test_registry_corrected_q_status_table.py",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/README.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/selected_corrected_q_status_table.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/selected_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/all_corrected_q_status_table.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/all_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/corrected_q_registry_coverage.csv"
+  ],
+  "registry_updates": {
+    "path": "registry/case_registry.csv",
+    "appended_rows": 14,
+    "source_owner": "corrected_salt_q_sensitivity",
+    "coverage": "All corrected_case_manifest.csv rows registered with matching source_root paths."
+  },
+  "admission_policy": "Corrected-Q rows remain sensitivity/correlation-support perturbation rows and are not nominal baselines or closure-fit admissions."
+}

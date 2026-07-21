@@ -1,0 +1,39 @@
+{
+  "task": "TODO-THESIS-CH1-CSEM-MOTIVATION-DRAFT",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer",
+  "objective": "Draft Chapter 1 CSEM motivation and contribution prose from existing evidence only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CH1-CSEM-MOTIVATION-DRAFT.md",
+    ".agent/journal/2026-07-21/thesis-ch1-csem-motivation-draft.md",
+    "imports/2026-07-21_thesis_ch1_csem_motivation_draft.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/15_ch1_csem_motivation_and_contribution.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/README.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/21/2026-07-21_THESIS_CSEM_BOARD_DISPATCH.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/01_modeling_approach.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "../papers/UTexas_Research/3d_analysis/sections/01_introduction_and_claim.tex"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_paper_tree_edited": false,
+  "scientific_admission_changed": false,
+  "no_scorecard_outputs": true,
+  "guardrails": [
+    "CFD is high-fidelity reference, not experimental validation.",
+    "No fitting, tuning, model selection, or new closure admission.",
+    "No SAM validation claim."
+  ]
+}

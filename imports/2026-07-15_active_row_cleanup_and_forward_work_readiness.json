@@ -1,0 +1,38 @@
+{
+  "task": "AGENT-401",
+  "date": "2026-07-15",
+  "generated_by": "codex",
+  "type": "work_product_import_manifest",
+  "package": "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness",
+  "builder": "tools/analyze/build_active_row_cleanup_and_forward_work_readiness.py",
+  "tests": [
+    "tools/analyze/test_active_row_cleanup_and_forward_work_readiness.py"
+  ],
+  "source_inputs": [
+    ".agent/BOARD.md",
+    ".agent/BLOCKERS.md"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/active_row_status_audit.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/forward_work_claim_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/safe_next_work_queue.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/coordination_issues.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_active_row_cleanup_and_forward_work_readiness",
+      "result": "pass",
+      "tests": 4
+    }
+  ],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action_taken": false,
+    "generated_indexes_mutated": false,
+    "external_fluid_modified": false
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "task": "TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE",
+  "task_id": "TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE",
+  "date": "2026-07-21",
+  "role": "Thermal-modeling/Forward-pred/Implementer/Tester/Writer",
+  "objective": "Build a Phase 3 wall/test-section score gate from existing setup-only candidate scorecards and Phase 2 split heat-loss evidence without launching new execution or changing admission state.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE.md",
+    ".agent/journal/2026-07-21/heatloss-phase-3-wall-test-section-model-score.md",
+    "imports/2026-07-21_heatloss_phase_3_wall_test_section_model_score.json",
+    "tools/analyze/build_heatloss_phase3_wall_test_section_model_score.py",
+    "tools/analyze/test_heatloss_phase3_wall_test_section_model_score.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/wall_test_section_candidate_gate_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/heat_path_target_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/phase3_release_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/runtime_thermal_input_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/phase4_handoff_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/runtime_mode_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/heat_path_evidence_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/probe_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_test_section_passive_loss_admission_repair/test_section_candidate_class_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/thermal_model_slot_admission.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "model_scoring": "existing score rows aggregated only; no new model execution",
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heatloss_phase3_wall_test_section_model_score",
+      "result": "passed; 6 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_heatloss_phase3_wall_test_section_model_score.py tools/analyze/test_heatloss_phase3_wall_test_section_model_score.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score",
+      "result": "passed"
+    }
+  ]
+}

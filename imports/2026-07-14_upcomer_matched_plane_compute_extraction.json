@@ -1,0 +1,43 @@
+{
+  "task_id": "AGENT-344",
+  "created_at": "2026-07-14T14:04:00-05:00",
+  "kind": "upcomer_matched_plane_compute_extraction",
+  "title": "Compute-node matched upcomer plane extraction workflow",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "inputs": {
+    "prior_plan": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan",
+    "extraction_contract": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_extraction_contract.csv",
+    "candidate_cases": "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/upcomer_onset_candidate_cases.csv"
+  },
+  "output_package": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction",
+  "outputs": {
+    "readme": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/README.md",
+    "method_trace": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/method_trace.md",
+    "candidate_readiness": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/candidate_readiness_matrix.csv",
+    "admission_table": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/matched_plane_metrics_admission.csv",
+    "mesh_repeat": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/mesh_family_repeat_status.csv",
+    "slurm_log": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/slurm_submission_log.csv"
+  },
+  "scripts": [
+    "tools/extract/sample_upcomer_matched_plane_metrics.py",
+    "tools/extract/test_sample_upcomer_matched_plane_metrics.py"
+  ],
+  "slurm": {
+    "nominal_job_id": "3295492",
+    "first_queue_state": "PENDING (Priority)",
+    "submitted_from": "login3.ls6.tacc.utexas.edu",
+    "account": "ASC23046"
+  },
+  "result": {
+    "candidate_rows": 23,
+    "runnable_now_rows": 3,
+    "dependency_gated_rows": 8,
+    "blocked_rows": 12,
+    "admission_rows_initial": 27,
+    "parsed_admission_rows_available": 0,
+    "status": "submitted_pending_compute"
+  },
+  "interpretation_boundary": "Implementation and submission are complete, but admission-grade metric values are pending Slurm job 3295492 completion. Corrected-Q candidates remain blocked until terminal harvest supplies representative times.",
+  "status": "submitted-pending"
+}

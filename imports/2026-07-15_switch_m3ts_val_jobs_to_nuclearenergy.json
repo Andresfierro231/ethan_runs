@@ -1,0 +1,58 @@
+{
+  "task": "AGENT-446",
+  "date": "2026-07-15",
+  "status": "complete",
+  "type": "scheduler_partition_switch",
+  "request": "Switch the AGENT-439 jobs on development to NuclearEnergy.",
+  "actions": [
+    {
+      "job_id": "3297842",
+      "name": "val_s2_ext",
+      "action": "scontrol_update_partition",
+      "from_partition": "development",
+      "to_partition": "NuclearEnergy",
+      "final_state": "PENDING",
+      "reason": "Priority",
+      "dependency": "null",
+      "scontrol_start_estimate": "2026-07-16T01:59:54"
+    },
+    {
+      "job_id": "3297844",
+      "name": "m3ts_score",
+      "action": "scontrol_update_partition",
+      "from_partition": "development",
+      "to_partition": "NuclearEnergy",
+      "final_state": "PENDING",
+      "reason": "Priority",
+      "dependency": "null",
+      "scontrol_start_estimate": "2026-07-16T02:50:00"
+    },
+    {
+      "job_id": "3297843",
+      "name": "pm5_onset",
+      "action": "observed_no_change_needed",
+      "partition": "NuclearEnergy",
+      "final_state": "RUNNING",
+      "node": "c318-012",
+      "dependency": "null"
+    }
+  ],
+  "scheduler_policy": {
+    "new_submission": false,
+    "cancellation": false,
+    "duplicate_jobs_created": false
+  },
+  "updated_files": [
+    "work_products/2026-07/2026-07-15/2026-07-15_m3ts_val_salt2_matched_plane_sbatch_submit/submitted_jobs.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_m3ts_val_salt2_matched_plane_sbatch_submit/README.md",
+    ".agent/status/2026-07-15_AGENT-446.md",
+    ".agent/journal/2026-07-15/switch-m3ts-val-jobs-to-nuclearenergy.md"
+  ],
+  "guardrails": {
+    "openfoam_login_node_run": false,
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "generated_index_refreshed": false,
+    "external_fluid_edited": false
+  }
+}

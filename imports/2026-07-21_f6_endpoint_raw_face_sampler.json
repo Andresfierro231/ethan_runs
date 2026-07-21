@@ -1,0 +1,70 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-ENDPOINT-RAW-FACE-SAMPLER.md",
+    ".agent/journal/2026-07-21/f6-endpoint-raw-face-sampler.md",
+    "imports/2026-07-21_f6_endpoint_raw_face_sampler.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/build_f6_endpoint_raw_face_sampler.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/test_f6_endpoint_raw_face_sampler.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/sampler_preflight_repair.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/stage_a_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/blocked_coarse_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/raw_f6_endpoint_face_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/endpoint_pair_pressure_deltas.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/ordinary_flow_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/same_qoi_uq_gap_after_sampling.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/script_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/run_stage_a_f6_endpoint_sampler.sh",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/controlDicts/salt_2_medium.controlDict",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/controlDicts/salt_2_fine.controlDict"
+  ],
+  "date": "2026-07-21",
+  "decision": "stage_a_raw_face_sampler_handoff_complete_no_launch_no_admission",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Implement a narrow F6 raw-face sampler unblock package for passable endpoint faces while preserving no-launch and no-admission guardrails.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/launch_preflight.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/raw_endpoint_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_pressure_deltas.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/run_endpoint_sampler.sh",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics / cfd-pp / Implementer / Tester / Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/summary.json",
+  "task": "TODO-F6-ENDPOINT-RAW-FACE-SAMPLER",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/build_f6_endpoint_raw_face_sampler.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/build_f6_endpoint_raw_face_sampler.py work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/test_f6_endpoint_raw_face_sampler.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/test_f6_endpoint_raw_face_sampler.py",
+      "result": "passed"
+    },
+    {
+      "command": "bash -n work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/run_stage_a_f6_endpoint_sampler.sh",
+      "result": "passed"
+    },
+    {
+      "command": "bash -n work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch",
+      "result": "passed"
+    }
+  ]
+}

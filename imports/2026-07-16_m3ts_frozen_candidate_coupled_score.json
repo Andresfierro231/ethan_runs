@@ -1,0 +1,35 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-470",
+  "type": "derived_work_product",
+  "title": "M3+TS frozen candidate coupled score",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m3ts_coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m3ts_admission_review.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m2_m3_delta_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/blocker_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/blocker_decision.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "predictive-wall-test-section-submodels",
+      "status": "keep_open",
+      "reason": "No frozen M3+TS candidate is admitted; the bounded compute-node run-fluid package has 9/9 coupled rows timing out after 45 seconds and 0 completed Fluid score rows."
+    }
+  ]
+}

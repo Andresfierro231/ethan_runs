@@ -1,0 +1,50 @@
+{
+  "task_id": "AGENT-364",
+  "date": "2026-07-14",
+  "status": "complete",
+  "artifact": "reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+  "artifacts": [
+    "reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+    "reports/thesis_dossier/README.md",
+    ".agent/status/2026-07-14_AGENT-364.md",
+    ".agent/journal/2026-07-14/tomorrow-powerpoint-outline.md"
+  ],
+  "source_inputs": [
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "reports/thesis_dossier/2026-07-14_upcomer_recirculation_internal_nu_story.md",
+    "reports/thesis_dossier/2026-07-14_thesis_presentation_story_sync.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/paper_ready_analysis.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_best_predictive_heat_loss_discrepancy/presentation_brief.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/README.md"
+  ],
+  "slide_count": {
+    "main": 14,
+    "backup": 4
+  },
+  "included_sections": [
+    "titles",
+    "bullet_points",
+    "figures_or_better_figure_requests",
+    "speaker_notes",
+    "claim_boundaries",
+    "next_work"
+  ],
+  "claim_boundaries": {
+    "forward_v1": "blocked_no_go_final_forward_v1_not_admitted",
+    "corrected_pm5q": "terminal_harvested_perturbation_evidence_not_training_expansion",
+    "heat_loss": "diagnostic_model_form_evidence_not_final_predictive_hx_validation",
+    "upcomer": "recirculating_regime_invalidates_single_stream_Nu_fD_K",
+    "hydraulics": "api_progress_but_no_fit_admissible_component_cluster_K"
+  },
+  "mutations": {
+    "native_cfd_solver_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_state": false,
+    "generated_indexes": false,
+    "external_cfd_modeling_tools": false
+  }
+}

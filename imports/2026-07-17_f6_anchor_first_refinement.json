@@ -1,0 +1,57 @@
+{
+  "task": "AGENT-505",
+  "date": "2026-07-17",
+  "type": "analysis_work_product",
+  "status": "complete",
+  "description": "Anchor-first F6 refinement package that keeps PM5 diagnostic-only, refreshes terminal readiness conservatively, and prioritizes high-heat/PM10 harvest before Salt3 onset-matrix CFD.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-505.md",
+    ".agent/journal/2026-07-17/f6-anchor-first-refinement.md",
+    "imports/2026-07-17_f6_anchor_first_refinement.json",
+    "tools/analyze/build_f6_anchor_first_refinement.py",
+    "tools/analyze/test_f6_anchor_first_refinement.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/anchor_gate_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/f6_lane_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/pressure_residual_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/recommended_next_cfd_runs.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/terminal_status_refresh.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_row_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_resolution_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_next_action_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/terminal_status_refresh.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/anchor_gate_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/f6_lane_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/pressure_residual_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/recommended_next_cfd_runs.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read_only_status_check",
+  "external_fluid_edit": false,
+  "blocker_register_mutated": false,
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "scientific_admission_change": "none",
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_f6_anchor_first_refinement.py tools/analyze/test_f6_anchor_first_refinement.py",
+    "python3.11 -m unittest tools.analyze.test_f6_anchor_first_refinement",
+    "python3.11 tools/analyze/build_f6_anchor_first_refinement.py --live-scheduler",
+    "python3.11 -m json.tool imports/2026-07-17_f6_anchor_first_refinement.json",
+    "python3.11 tools/agent/finish_task.py --task-id AGENT-505"
+  ]
+}

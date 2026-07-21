@@ -1,0 +1,100 @@
+{
+  "task": "TODO-PRESSURE-F6-CAND001-TIMEOUT-DISPOSITION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / cfd-pp / Scheduler / Tester / Writer",
+  "status": "complete",
+  "objective": "Disposition CAND-001 after high-heat job timeouts without launching or admitting any F6/component-K evidence.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/source_case_readiness_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/endpoint_field_availability.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/summary.json",
+    "read-only scheduler/accounting state for jobs 3299610 and 3299620",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q0500w_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_high_heat_bracket",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q1000w_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_high_heat_bracket",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q3x_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_high_heat_probe",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q1500w_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_high_heat_bracket",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree and external repos",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRESSURE-F6-CAND001-TIMEOUT-DISPOSITION-2026-07-21.md",
+    ".agent/journal/2026-07-21/pressure-f6-cand001-timeout-disposition.md",
+    "imports/2026-07-21_pressure_f6_cand001_timeout_disposition.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/build_pressure_f6_cand001_timeout_disposition.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/test_pressure_f6_cand001_timeout_disposition.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/scheduler_disposition.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/case_log_disposition.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/partial_output_inventory.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/endpoint_gate_after_timeout.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/candidate_disposition.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/no_launch_no_admission_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/next_task_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/source_manifest.csv"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/summary.json",
+    "candidate_disposition": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/candidate_disposition.csv",
+    "scheduler_disposition": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/scheduler_disposition.csv"
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-PRESSURE-F6-CAND001-TIMEOUT-DISPOSITION-2026-07-21",
+      "result": "passed before package edits"
+    },
+    {
+      "command": "sacct -j 3299610 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList -P",
+      "result": "3299610 TIMEOUT"
+    },
+    {
+      "command": "sacct -j 3299620 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList -P",
+      "result": "3299620 TIMEOUT"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/build_pressure_f6_cand001_timeout_disposition.py work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/test_pressure_f6_cand001_timeout_disposition.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/test_pressure_f6_cand001_timeout_disposition.py",
+      "result": "passed: Ran 5 tests in 0.553s OK"
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "solver_or_postprocessing_or_sampler_launched": false,
+    "fluid_or_external_repo_edited": false,
+    "blocker_register_mutated": false,
+    "generated_index_mutation": false,
+    "fitting_or_model_selection": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "cluster_k_admitted": false,
+    "clipped_k": false,
+    "global_multiplier_applied": false
+  },
+  "scientific_result": {
+    "candidate_id": "CAND-001",
+    "decision": "retry_needed_with_scheduler_plan",
+    "current_attempt_disposition": "fail_closed_as_F6_evidence",
+    "partial_output_use": "scheduler_runtime_diagnostic_only",
+    "timeout_jobs": 2,
+    "terminal_success_cases": 0,
+    "endpoint_fields_ready": 0,
+    "sampler_release": false,
+    "f6_review_release": false,
+    "next_action": "claim a separate retry scheduler plan for CAND-001 or audit CAND-002 fallback terminal readiness"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "task_id": "AGENT-259",
+  "date": "2026-07-13",
+  "role": "Coordinator / Writer",
+  "owner": "codex",
+  "purpose": "Read-only live-job heartbeat and cleanup guidance for carry-over Salt1 nominal and selected corrected-Q jobs.",
+  "snapshot_time": "2026-07-13T10:19:15-05:00",
+  "host": "c318-008.ls6.tacc.utexas.edu",
+  "outputs": [
+    ".agent/status/2026-07-13_AGENT-259.md",
+    ".agent/journal/2026-07-13/live-job-heartbeat-and-cleanup-call.md",
+    "operational_notes/07-26/13/2026-07-13_live_job_heartbeat_and_cleanup_call.md"
+  ],
+  "read_only_sources": [
+    "scheduler state for jobs 3282992, 3288671, and 3292998",
+    "tmux session listing from c318-008 session",
+    "jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/logs/log.foamRun_salt1_nominal_continuation",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt1_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt1_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_salt4_hi10q_weekend_attach"
+  ],
+  "actions_performed": [
+    "read-only squeue and sacct checks",
+    "read-only tmux listing",
+    "read-only live log tails",
+    "wrote cleanup guidance"
+  ],
+  "actions_not_performed": [
+    "no job submission",
+    "no job cancellation",
+    "no tmux/session cleanup",
+    "no solver-output mutation",
+    "no Fluid edits",
+    "no closure admission"
+  ],
+  "cleanup_call": "Unsafe to clean up c318-008 interactive/launcher context while 3288671.5 remains running; repeat host-side tmux/process audit after the step is terminal."
+}

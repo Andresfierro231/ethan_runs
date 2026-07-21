@@ -1,0 +1,38 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-466",
+  "type": "derived_work_product",
+  "title": "Downcomer Internal-Nu unlock and blocker roadmap",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/internal_nu_fit_admissible_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/targeted_extraction_admission_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/README.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/downcomer_admission_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/downcomer_policy_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/litrev_gate_application.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/future_studies_and_blockers.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/blocker_resolution_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "closure-qoi-mesh-gci",
+      "status": "keep_open",
+      "reason": "Downcomer remains the simplest non-upcomer Nu candidate but has zero fit-admissible rows because sign/heat-balance, low-recirculation, and mesh/GCI gates do not pass."
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task": "AGENT-544",
+  "task_id": "AGENT-544",
+  "date": "2026-07-18",
+  "role": "Forward-pred/Implementer/Tester/Writer",
+  "objective": "Implement and validate the UMX1 dry/smoke scorer using the existing Fluid UMX1 API while preserving no-admission and read-only Fluid guardrails.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_AGENT-544.md",
+    ".agent/journal/2026-07-18/umx1-dry-smoke-scorer.md",
+    "imports/2026-07-18_umx1_dry_smoke_scorer.json",
+    "tools/analyze/build_umx1_dry_smoke_scorer.py",
+    "tools/analyze/test_umx1_dry_smoke_scorer.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_no_admission_review.csv",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_umx1_dry_smoke_scorer",
+      "result": "passed; 7 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_umx1_dry_smoke_scorer.py --output-dir work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer --refresh-summary",
+      "result": "passed; regenerated summary/README/no-admission review from existing smoke CSVs"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_umx1_dry_smoke_scorer.py --output-dir work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer --validate-existing --allow-failed-smoke",
+      "result": "passed; failed roots retained as expected no-admission evidence"
+    }
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_state_mutated": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "generated_index_refreshed": false,
+    "scientific_admission_changed": false,
+    "fitting_or_model_selection_performed": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "notes": [
+    "Fluid source remained read-only under the AGENT-544 guardrail.",
+    "Existing fast-scan smoke rows show 9/9 conservation pass but only 3/9 accepted-root pass.",
+    "Exchange candidates worsened all scored probe groups versus the disabled baseline in Salt2/Salt3/Salt4, so no grid expansion or admission was made."
+  ]
+}

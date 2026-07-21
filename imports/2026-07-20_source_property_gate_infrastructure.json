@@ -1,0 +1,68 @@
+{
+  "task": "AGENT-554",
+  "date": "2026-07-20",
+  "type": "tooling_manifest",
+  "objective": "Promote AGENT-546 source/property scanner policy into reusable repo tooling and warning-mode finish-task enforcement.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-554.md",
+    ".agent/journal/2026-07-20/source-property-gate-infrastructure.md",
+    "imports/2026-07-20_source_property_gate_infrastructure.json",
+    "tools/agent/source_property_gate.py",
+    "tools/agent/finish_task.py",
+    "tools/agent/test_agent_tools.py",
+    "tools/agent/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_source_property_gate_infrastructure/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_source_property_gate_infrastructure/final_scorecard_source_property_todo.csv",
+    "operational_notes/maps/agent-operations.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "tools/agent/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id AGENT-554",
+      "result": "passed with no conflicts"
+    },
+    {
+      "command": "python3.11 -m pytest tools/agent/test_agent_tools.py",
+      "result": "passed, 13 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/agent/source_property_gate.py tools/agent/finish_task.py tools/agent/test_agent_tools.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement --warn",
+      "result": "warning-mode audit ran and reported classified source/property blockers"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell --warn --todo-out work_products/2026-07/2026-07-20/2026-07-20_source_property_gate_infrastructure/final_scorecard_source_property_todo.csv",
+      "result": "passed and wrote 22 follow-up rows plus header"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id AGENT-554",
+      "result": "passed"
+    }
+  ],
+  "no_scorecard_outputs": true,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": "not_run_active_monitor_row_keeps_generated_docs_read_only",
+  "scientific_admission_change": "none",
+  "notes": [
+    "finish_task.py source/property integration is warning mode by user request.",
+    "The TODO ledger is a follow-up artifact, not a scorecard or admission output.",
+    "Historical scorecards were not rewritten."
+  ]
+}

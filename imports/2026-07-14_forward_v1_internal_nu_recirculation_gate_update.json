@@ -1,0 +1,35 @@
+{
+  "created": "2026-07-14",
+  "task": "AGENT-337",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_gate_checklist.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/scorecard_inputs_waiting_on_agents.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/internal_nu_dependency_blockers.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/final_forward_v1_gate_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json",
+    ".agent/status/2026-07-14_AGENT-337.md",
+    ".agent/journal/2026-07-14/forward-v1-internal-nu-recirculation-gate-update.md"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/upcomer_recirculation_onset_conditions.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/coefficient_naming_rules_for_recirculation.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_model_readiness_after_h1_proxy/README.md"
+  ],
+  "decision": "forward_v1_blocked_no_go_internal_nu_fit_closed",
+  "admitted": [
+    "Nu_section_effective_upcomer_diagnostic as diagnostic_validation_only",
+    "baseline/literature/default internal Nu behavior for predictive runs"
+  ],
+  "not_admitted": [
+    "fitted internal Nu rows",
+    "universal or transferable upcomer Nu labels from current recirculating Salt2-4 rows",
+    "diagnostic upcomer Nu as trainable closure data"
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "task": "AGENT-481",
+  "date": "2026-07-17",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/status/2026-07-17_AGENT-481.md",
+    ".agent/journal/2026-07-17/canonical-final-predictive-split-policy.md",
+    "imports/2026-07-17_canonical_final_predictive_split_policy.json",
+    "operational_notes/07-26/17/2026-07-17_CANONICAL_FINAL_PREDICTIVE_SPLIT_POLICY.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_durable_test_data_and_thesis_story/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/split_admission_decisions.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false
+}

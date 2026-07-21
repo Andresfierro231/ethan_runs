@@ -1,0 +1,44 @@
+{
+  "task_id": "TODO-PRED-THERMAL-MESH-GATE",
+  "created_at": "2026-07-13T17:07:18-05:00",
+  "kind": "thermal_mesh_gate",
+  "title": "Salt2 repaired thermal UA/HTC/Nu mesh gate",
+  "native_solver_outputs_mutated": false,
+  "case_id": "salt_2",
+  "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "inputs": {
+    "medium_segment_csv": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/medium/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "fine_segment_csv": "work_products/2026-07/2026-07-13/2026-07-13_salt2_fine_reconstructed_t_repair_plan_sbatch/repair_trial_output/outputs/fine/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "medium_summary": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/summary.json",
+    "fine_summary": "work_products/2026-07/2026-07-13/2026-07-13_salt2_fine_reconstructed_t_repair_plan_sbatch/repair_trial_output/summary.json",
+    "previous_gci_package": "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci"
+  },
+  "output_package": "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate",
+  "scripts": [
+    "tools/analyze/build_thermal_mesh_gate.py",
+    "tools/analyze/test_thermal_mesh_gate.py"
+  ],
+  "scheduler_evidence": {
+    "job_id": "3293768",
+    "job_name": "s2_fine_T+",
+    "state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:22:33",
+    "node": "c318-016",
+    "evidence_source": "manual_sacct_observation"
+  },
+  "result": {
+    "qoi_row_count": 7,
+    "two_level_complete_count": 5,
+    "fit_admissible_count": 0,
+    "publication_ready_thermal_gci_count": 0,
+    "admission_decision_counts": {
+      "blocked_downcomer_policy": 1,
+      "blocked_missing_two_level_value": 1,
+      "blocked_sign_review": 5
+    },
+    "thermal_mesh_gate_status": "blocked_sign_review_and_missing_coarse_triplets"
+  },
+  "interpretation_boundary": "Fine reconstructed-T extraction is repaired, but thermal UA/HTC/Nu remains diagnostic-only until sign, heat-balance, downcomer policy, lower-leg Nu, and coarse thermal triplet gates are resolved.",
+  "status": "complete"
+}

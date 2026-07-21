@@ -1,0 +1,52 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active AGENT-482 owns generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "runtime_input_audit.csv",
+    "salt1_bc_source_material_contract.csv",
+    "salt1_patchwise_heat_source_sink_ledger.csv",
+    "salt1_pressure_branch_score_rows.csv",
+    "salt1_pressure_streamwise_rows.csv",
+    "salt1_sensor_target_rows.csv",
+    "salt1_split_ready_manifest.csv",
+    "salt1_thermal_score_rows.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_predict_salt1_schema_promotion",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "all_cases_promoted": [
+      "salt1_hi10q",
+      "salt1_lo10q",
+      "salt1_nominal"
+    ],
+    "all_sources_present": true,
+    "bc_contract_rows": 21,
+    "branch_pressure_rows": 18,
+    "date": "2026-07-17",
+    "external_fluid_edit": false,
+    "generated_index_refreshed": false,
+    "heat_ledger_rows": 18,
+    "native_solver_outputs_mutated": false,
+    "promoted_cases": 3,
+    "registry_mutated": false,
+    "runtime_audit_pass_rows": 5,
+    "runtime_audit_rows": 5,
+    "scheduler_action": false,
+    "sensor_target_rows": 51,
+    "split_role_counts": {
+      "final_training": 1,
+      "training_support": 2
+    },
+    "streamwise_pressure_rows": 90,
+    "task": "TODO-PREDICT-SALT1-SCHEMA-PROMOTION",
+    "thermal_score_rows": 18
+  },
+  "task": "TODO-PREDICT-SALT1-SCHEMA-PROMOTION"
+}

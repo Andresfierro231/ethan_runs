@@ -1,0 +1,51 @@
+{
+  "task_id": "TODO-PRED-VALIDATION-SPLIT",
+  "date": "2026-07-13",
+  "role": "Coordinator / Writer",
+  "purpose": "Define a thesis-safe train/validation/holdout admission protocol for Salt, corrected-Q, and low-heat rows before fitting predictive thermal corrections.",
+  "artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/response_variable_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/summary.json",
+    ".agent/status/2026-07-13_TODO-PRED-VALIDATION-SPLIT.md",
+    ".agent/journal/2026-07-13/predictive-validation-split.md"
+  ],
+  "source_evidence_read_only": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/README.md",
+    ".agent/status/README.md",
+    ".agent/journal/README.md",
+    "operational_notes/07-26/13/2026-07-13_CURRENT_CLOSURE_AND_PREDICTIVE_MODEL_START_HERE.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/case_runtime_inputs_forward_v0.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/validation_target_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/uncertainty_readiness.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/heldout_validation_scores.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/all_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/admission_decision_table.csv",
+    "imports/2026-06-23_ethan_cfd_freeze_checkpoint.json"
+  ],
+  "decisions": [
+    "Salt2 is the only current training row for a one-scalar thermal correction.",
+    "Salt3 is validation and Salt4 is final holdout.",
+    "Salt1 nominal is diagnostic-only until Salt1 policy and predictive input-contract admission are explicit.",
+    "Corrected-Q rows are blocked today and enter as validation/holdout sensitivity evidence after row-specific admission.",
+    "Low-heat rows are blocked today and enter as extrapolation validation/holdout after requalification.",
+    "Per-case thermal hacks are explicitly forbidden."
+  ],
+  "validation": [
+    "python3.11 -m json.tool work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/summary.json",
+    "python3.11 -m json.tool imports/2026-07-13_predictive_validation_split.json",
+    "python3.11 -c \"import csv; [list(csv.DictReader(open(p, newline=''))) for p in ['work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv', 'work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/response_variable_contract.csv']]\""
+  ],
+  "registry_mutated": false,
+  "native_solver_outputs_mutated": false
+}

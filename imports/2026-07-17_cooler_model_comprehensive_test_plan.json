@@ -1,0 +1,40 @@
+{
+  "task": "AGENT-480",
+  "date": "2026-07-17",
+  "type": "documentation_manifest",
+  "description": "Comprehensive test plan for constant-UA effectiveness/NTU and segmented distributed-UA cooler model candidates.",
+  "created_files": [
+    ".agent/status/2026-07-17_AGENT-480.md",
+    ".agent/journal/2026-07-17/cooler-model-comprehensive-test-plan.md",
+    "operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md"
+  ],
+  "updated_files": [
+    ".agent/BOARD.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "source_context": [
+    ".agent/BLOCKERS.md",
+    "operational_notes/07-26/16/2026-07-16_FLUID_WALLS_TOMORROW_HANDOFF.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/setup_only_hx_boundary_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/hx_candidate_gate_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_coupled_scorecard.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "guardrails": [
+    "No native CFD solver output mutation.",
+    "No registry mutation.",
+    "No scheduler action.",
+    "No solver or postprocessing launch.",
+    "No external Fluid edit.",
+    "No scientific admission change."
+  ]
+}

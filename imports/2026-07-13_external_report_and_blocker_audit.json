@@ -1,0 +1,29 @@
+{
+  "manifest_id": "2026-07-13_external_report_and_blocker_audit",
+  "owner": "claude",
+  "task": "AGENT-289",
+  "generated_at": "2026-07-13",
+  "purpose": "External-report journal for 2026-07-13 plus verified blocker audit and an Obsidian-style connected research index consolidating all prior open TODOs and research avenues.",
+  "scope": "Documentation-only pass over today's 33 journal/status files (AGENT-259..288), the July operational notes and reports, the MASTER TODO, .agent/DECISIONS.md, and the full BOARD; no science artifacts, solver outputs, scheduler state, registry, or external cfd-modeling-tools files modified.",
+  "new_tools": [],
+  "new_docs": [
+    ".agent/journal/2026-07-13/coordinator-writer-external-report-and-blocker-audit.md",
+    "operational_notes/07-26/13/2026-07-13_external_report_research_index_and_blocker_audit.md",
+    ".agent/status/2026-07-13_AGENT-289.md"
+  ],
+  "work_products": [],
+  "key_findings": [
+    "Three stale/false blockers identified for scrub from CLAUDE.md/MASTER TODO: OF12 reconstructPar segfault (fixed by OF13), 'no mesh for GCI' (Ethan family readable since 2026-07-09), and 'CFD has no radiation' (superseded by AGENT-277/287).",
+    "Genuinely-open frontier blockers: closure-QOI mesh GCI not publication-ready, refined-mesh T reconstruction corruption, thermal CFD-to-1D parity/internal-development model, upcomer onset data sparsity, predictive heater/cooler/wall-layer submodels, and the Fluid external-boundary API gap.",
+    "Cooler/HX boundary is the first-order thermal error: baseline fixed-mdot mean-abs Tmean error 63.746 K drops to 4.456 K when CFD cooler duty is imposed.",
+    "Production friction closure is F3_shah_apparent; F4 buoyancy and F5 Ri corrections remain unvalidated/failed candidates."
+  ],
+  "documentation_anomalies": [
+    "AGENT-276 holds a board claim but has no status/journal/import file and incomplete outputs (logged for reopen in AGENT-278).",
+    "AGENT-277 README contradicts its decision JSON on microcase_confirmed (logged for reopen in AGENT-278)."
+  ],
+  "open_questions_for_user": [
+    "Approve a separate coordinator task to scrub the three stale blockers from CLAUDE.md and the MASTER TODO.",
+    "Confirm whether AGENT-276 (no-radiation fixed-mdot replay) results are still needed before reopening it."
+  ]
+}

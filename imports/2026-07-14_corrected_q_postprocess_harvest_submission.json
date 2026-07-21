@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-342",
+  "created_at": "2026-07-14T13:40:00-05:00",
+  "description": "Submitted Salt2/Salt4 corrected-Q postprocess/harvest jobs for stopped +/-5Q rows and dependency-gated selected +/-10Q rows.",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "submitted_jobs": [
+    {
+      "job_id": "3295437",
+      "job_name": "saltq_s24_done_harv",
+      "dependency": "none",
+      "rows": [
+        "salt2_jin_lo5q_corrected",
+        "salt2_jin_hi5q_corrected",
+        "salt4_jin_lo5q_corrected",
+        "salt4_jin_hi5q_corrected"
+      ],
+      "initial_state": "RUNNING"
+    },
+    {
+      "job_id": "3295438",
+      "job_name": "saltq_s24_sel_harv",
+      "dependency": "afterany:3293924",
+      "rows": [
+        "salt2_jin_lo10q_corrected",
+        "salt2_jin_hi10q_corrected",
+        "salt4_jin_lo10q_corrected",
+        "salt4_jin_hi10q_corrected"
+      ],
+      "initial_state": "PENDING_DEPENDENCY"
+    }
+  ],
+  "upstream_live_job": {
+    "job_id": "3293924",
+    "job_name": "saltq_sel_cont",
+    "observed_state_at_submission": "RUNNING"
+  },
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/run_salt2_salt4_stopped_corrected_q_harvest.sbatch",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/run_salt2_salt4_selected_corrected_q_harvest_after_3293924.sbatch",
+    ".agent/status/2026-07-14_AGENT-342.md",
+    ".agent/journal/2026-07-14/corrected-q-postprocess-harvest-submission.md"
+  ],
+  "verification": [
+    "bash -n run_salt2_salt4_stopped_corrected_q_harvest.sbatch",
+    "bash -n run_salt2_salt4_selected_corrected_q_harvest_after_3293924.sbatch",
+    "ssh login3.ls6.tacc.utexas.edu 'cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch --parsable ...'",
+    "squeue -j 3295437,3295438,3293924"
+  ],
+  "salt1_diagnostic_reason": "Salt1 corrected-Q remains diagnostic pending Salt1-specific admission policy, operating-point movement, and quasi-steady time-window UQ; the continuation history includes weak global convergenceMonitor early-stop evidence."
+}

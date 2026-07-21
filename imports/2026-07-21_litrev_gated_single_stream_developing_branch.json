@@ -1,0 +1,47 @@
+{
+  "task": "TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH",
+  "task_id": "TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Build a precheck table for LitRev gated single-stream developing branch logic without fitting or admitting any closure coefficient.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH.md",
+    ".agent/journal/2026-07-21/litrev-gated-single-stream-developing-branch.md",
+    "imports/2026-07-21_litrev_gated_single_stream_developing_branch.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/build_litrev_gated_single_stream_developing_branch.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/test_litrev_gated_single_stream_developing_branch.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_developing_branch_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_branch_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv"
+  ],
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/build_litrev_gated_single_stream_developing_branch.py",
+    "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/test_litrev_gated_single_stream_developing_branch.py",
+    "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/build_litrev_gated_single_stream_developing_branch.py work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/test_litrev_gated_single_stream_developing_branch.py",
+    "python3.11 -c \"import json, pathlib; json.loads(pathlib.Path('imports/2026-07-21_litrev_gated_single_stream_developing_branch.json').read_text())\"",
+    "python3.11 tools/agent/preflight_task.py --task-id TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launch": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "notes": "Precheck only. No branch row is admitted for coefficient fitting or model selection."
+}

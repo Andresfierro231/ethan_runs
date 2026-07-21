@@ -1,0 +1,46 @@
+{
+  "manifest_type": "corrected_q_last_time_and_weekend_attach",
+  "created_at": "2026-07-10T17:45:00-05:00",
+  "task_id": "AGENT-253",
+  "outputs": [
+    "tools/analyze/build_registry_corrected_q_status_table.py",
+    "tools/analyze/test_registry_corrected_q_status_table.py",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/selected_corrected_q_status_table.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/all_corrected_q_status_table.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/corrected_q_latest_timesteps.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_salt4_hi10q_attach_to_allocation.sh",
+    ".agent/status/2026-07-10_AGENT-253.md",
+    ".agent/journal/2026-07-10/corrected-q-last-time-and-salt4-weekend-attach.md",
+    "operational_notes/07-26/10/2026-07-10_corrected_q_weekend_handoff.md"
+  ],
+  "scheduler_observations": [
+    {
+      "job_id": "3288671",
+      "name": "saltq_sel_cont",
+      "state": "RUNNING",
+      "node": "c318-017",
+      "allocated_cpus": 256,
+      "reason_for_selection": "same corrected-Q campaign allocation; before repair attach it had more than 70 free cores"
+    },
+    {
+      "job_id": "3288671.5",
+      "name": "foamRun",
+      "state": "RUNNING",
+      "allocated_cpus": 64,
+      "case_key": "salt4_jin_hi10q_corrected",
+      "latest_written_timestep_observed_s": 11537.000,
+      "latest_log_time_observed_s": 11537.723
+    }
+  ],
+  "validation": [
+    "python3.11 -m unittest tools.analyze.test_registry_corrected_q_status_table",
+    "python3.11 tools/analyze/build_registry_corrected_q_status_table.py --strict-registry",
+    "bash -n jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_salt4_hi10q_attach_to_allocation.sh",
+    "bash jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_salt4_hi10q_attach_to_allocation.sh preflight",
+    "sacct -j 3288671"
+  ],
+  "native_solver_outputs_mutated": false,
+  "new_bulk_resubmission": false,
+  "attached_to_existing_allocation": true,
+  "admission_boundary": "corrected-Q rows remain sensitivity/correlation-support until explicit post-run gate evidence admits them"
+}

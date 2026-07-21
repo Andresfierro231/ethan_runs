@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-07-13T21:43:16+00:00",
+  "task_id": "TODO-PRED-HYDRAULIC-GATE",
+  "kind": "generated_analysis_package",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate",
+  "generated_by": "tools/analyze/build_predictive_hydraulic_gate.py",
+  "source_files": [
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler"
+  ],
+  "outputs": [
+    "hydraulic_fit_safety_gate.csv",
+    "forward_v0_hydraulic_residuals.csv",
+    "hydraulic_gate_decisions.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "pressure_gradient_fit_safe_spans": [
+    "left_lower_leg",
+    "left_upper_leg"
+  ],
+  "forward_v0_mdot_overprediction_vs_cfd_kg_s": {
+    "F0_current_fluid_sources": 0.008081666666666668,
+    "F1_heater_only": 0.005477500000000001
+  },
+  "hydraulic_gate_status": "blocked_for_thermal_claim_mdot_overpredicted",
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false
+}

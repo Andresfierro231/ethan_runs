@@ -1,0 +1,65 @@
+{
+  "task": "TODO-PRESSURE-CORNER-SAME-QOI-SCIENTIFIC-SYNTHESIS-2026-07-21",
+  "date": "2026-07-21",
+  "generated_by": "codex",
+  "objective": "Document what was tried, what worked, what did not work, why, and the efficient next progress sequence for the pressure-corner/same-QOI thread.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRESSURE-CORNER-SAME-QOI-SCIENTIFIC-SYNTHESIS-2026-07-21.md",
+    ".agent/journal/2026-07-21/pressure-corner-same-qoi-scientific-synthesis.md",
+    "imports/2026-07-21_pressure_corner_same_qoi_scientific_synthesis.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/build_pressure_corner_same_qoi_scientific_synthesis.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/test_pressure_corner_same_qoi_scientific_synthesis.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/attempt_outcome_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/blocker_analysis.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/next_evidence_sequence.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/scientific_finding_narrative.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/uq_gap_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/pressure_corner_methods_note.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/residual_uq_progress.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "outputs": {
+    "attempt_rows": 5,
+    "blocker_rows": 7,
+    "next_sequence_rows": 6,
+    "same_qoi_rows_reviewed": 83,
+    "pressure_corner_rows_reviewed": 3,
+    "admitted_rows": 0,
+    "component_k_admitted_rows": 0,
+    "cluster_k_admitted_rows": 0,
+    "f6_fit_rows": 0,
+    "clipped_k_rows": 0,
+    "package_multiplier_rows": 0,
+    "recommended_next_board_row": "TODO-PRESSURE-CORNER-LOW-RECIRC-ANCHOR-HARVEST"
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "no_scorecard_outputs": true,
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/build_pressure_corner_same_qoi_scientific_synthesis.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/test_pressure_corner_same_qoi_scientific_synthesis.py",
+      "result": "PASS: validated 5 attempts, 7 blockers, 6 next-sequence rows"
+    }
+  ]
+}

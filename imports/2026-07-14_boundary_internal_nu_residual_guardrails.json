@@ -1,0 +1,47 @@
+{
+  "task": "AGENT-336",
+  "date": "2026-07-14",
+  "role": "BC-modeling/Implementer/Tester/Writer",
+  "status": "complete",
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails",
+  "created_artifacts": [
+    ".agent/status/2026-07-14_AGENT-336.md",
+    ".agent/journal/2026-07-14/boundary-internal-nu-residual-guardrails.md",
+    "imports/2026-07-14_boundary_internal_nu_residual_guardrails.json",
+    "tools/analyze/build_boundary_internal_nu_residual_guardrails.py",
+    "tools/analyze/test_boundary_internal_nu_residual_guardrails.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/thermal_residual_ownership_guardrails.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/boundary_fields_needed_for_upcomer_extraction.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/summary.json"
+  ],
+  "read_only_sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/sign_radiation_nu_policy.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/decision_table.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_boundary_internal_nu_residual_guardrails",
+      "result": "pass",
+      "tests": 4
+    },
+    {
+      "command": "python3.11 tools/analyze/build_boundary_internal_nu_residual_guardrails.py",
+      "result": "pass",
+      "package": "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails"
+    }
+  ],
+  "guardrails": [
+    "Do not fit heater residuals into internal Nu.",
+    "Do not fit cooler/HX residuals into internal Nu.",
+    "Do not fit wall-layer/external convection residuals into internal Nu.",
+    "Do not fit radiation metadata or a separate radiation residual into internal Nu.",
+    "Do not fit storage or branch-mixing/recirculation residuals into internal Nu.",
+    "Boundary and Nu extraction metrics must share case paths, time windows, segment/patch maps, and upcomer inlet/mid/outlet planes."
+  ]
+}

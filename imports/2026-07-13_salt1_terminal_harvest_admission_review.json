@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-283",
+  "type": "terminal_harvest_admission_review_manifest",
+  "purpose": "Run scheduler/log/postProcessing/admission review for ended Salt1 rows that AGENT-280 found essentially steady.",
+  "inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/final_window_metrics.csv"
+  ],
+  "outputs": [
+    "tools/analyze/build_terminal_harvest_admission_review.py",
+    "tools/analyze/test_terminal_harvest_admission_review.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/scheduler_terminal_review.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/log_tail_review.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/postprocessing_availability.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/final_window_admission_review.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/admission_decision_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/summary.json",
+    ".agent/status/2026-07-13_AGENT-283.md",
+    ".agent/journal/2026-07-13/salt1-terminal-harvest-admission-review.md"
+  ],
+  "cases": [
+    {
+      "case_id": "salt1_nominal",
+      "job_step": "3282992.0",
+      "decision": "terminal_harvest_complete_context_only"
+    },
+    {
+      "case_id": "salt1_lo10q",
+      "job_step": "3288671.0",
+      "decision": "terminal_harvest_complete_context_only"
+    },
+    {
+      "case_id": "salt1_hi10q",
+      "job_step": "3288671.1",
+      "decision": "terminal_harvest_complete_context_only"
+    }
+  ],
+  "excluded_cases": [
+    {
+      "case_id": "salt4_hi10q",
+      "reason": "not steady in AGENT-280; continued in packed job 3293441"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false
+}

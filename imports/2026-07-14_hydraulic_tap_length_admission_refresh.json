@@ -1,0 +1,26 @@
+{
+  "task_id": "AGENT-349",
+  "date": "2026-07-14",
+  "status": "complete",
+  "artifacts": [
+    "tools/analyze/build_hydraulic_tap_length_admission_refresh.py",
+    "tools/analyze/test_hydraulic_tap_length_admission_refresh.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/tap_centerline_length_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/h1_faithful_readiness_after_tap_refresh.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/summary.json",
+    ".agent/status/2026-07-14_AGENT-349.md",
+    ".agent/journal/2026-07-14/hydraulic-tap-length-admission-refresh.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "thermal_fit_used": false,
+  "external_fluid_code_edited": false,
+  "global_friction_multiplier_exported": false,
+  "decision": {
+    "tap_lengths": "12_corner_rows_resolved_from_existing_mesh_centerline_3_connector_rows_blocked",
+    "component_cluster_k": "zero_fit_admissible_rows_after_refresh",
+    "h1": "not_launchable_pending_reset_api_and_admitted_pressure_evidence"
+  }
+}

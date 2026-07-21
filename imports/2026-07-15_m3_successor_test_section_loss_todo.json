@@ -1,0 +1,32 @@
+{
+  "task": "AGENT-430",
+  "date": "2026-07-15",
+  "type": "documentation_coordination_manifest",
+  "purpose": "Record the board and documentation update that makes the M3 successor a setup-only model with explicit test-section heat loss rather than a deletion of the test section.",
+  "created_or_updated": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-15_AGENT-430.md",
+    ".agent/journal/2026-07-15/m3-successor-test-section-loss-todo.md",
+    "operational_notes/07-26/15/2026-07-15_m3_successor_test_section_heat_loss_requirement.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md"
+  ],
+  "source_evidence": [
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/report.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/README.md"
+  ],
+  "board_todo_added": "TODO-PREDICT-TEST-SECTION-HEAT-LOSS",
+  "modeling_decision": "Current diagnostic M3 is an ablation. The predictive successor should be M3+TS: heater model, cooler/HX model, explicit setup-only distributed test-section heat-loss model, and pressure-root mdot solve.",
+  "runtime_forbidden_inputs": [
+    "realized CFD test-section net heat",
+    "realized CFD wallHeatFlux",
+    "CFD mdot",
+    "imposed CFD cooler duty",
+    "validation or holdout temperatures"
+  ],
+  "native_cfd_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "powerpoint_created": false
+}

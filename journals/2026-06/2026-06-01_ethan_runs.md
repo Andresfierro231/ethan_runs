@@ -309,10 +309,10 @@
 ### First Things To Check Tomorrow
 
 - Re-read:
-  - `operational_notes/2026-06-01_salt2_continuation_runtime_followup.md`
-  - `operational_notes/2026-06-01_modern_runs_first_batch_extraction_summary.md`
-  - `operational_notes/2026-06-01_publish_handoff_gate.md`
-  - `operational_notes/2026-06-01_todo.md`
+  - `operational_notes/06-26/01/2026-06-01_salt2_continuation_runtime_followup.md`
+  - `operational_notes/06-26/01/2026-06-01_modern_runs_first_batch_extraction_summary.md`
+  - `operational_notes/06-26/01/2026-06-01_publish_handoff_gate.md`
+  - `operational_notes/06-26/01/2026-06-01_todo.md`
 - Re-check the current launcher and status metadata:
   - `jadyn_runs/salt2/2026-06-01_continuation_candidate/run_continuation_andres2d_container_template.sbatch`
   - `jadyn_runs/salt2/2026-06-01_continuation_candidate/setup_summary.json`

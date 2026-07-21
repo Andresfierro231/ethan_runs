@@ -1,0 +1,83 @@
+{
+  "task": "AGENT-485",
+  "date": "2026-07-17",
+  "status": "complete",
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor",
+  "campaign": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe",
+  "jobs": [
+    {
+      "job_id": "3299610",
+      "job_name": "salt4_q3x_probe",
+      "scheduler_state_at_refresh": "RUNNING",
+      "scheduler_source": "sacct",
+      "case_keys": [
+        "salt4_jin_q3x_no_recirc_probe"
+      ]
+    },
+    {
+      "job_id": "3299620",
+      "job_name": "salt4_heat_pack",
+      "scheduler_state_at_refresh": "RUNNING",
+      "scheduler_source": "sacct",
+      "case_keys": [
+        "salt4_jin_q0500w_no_recirc_probe",
+        "salt4_jin_q1000w_no_recirc_probe",
+        "salt4_jin_q1500w_no_recirc_probe"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_key": "salt4_jin_q0500w_no_recirc_probe",
+      "target_heater_power_W": 500,
+      "harvest_readiness_at_refresh": "running_not_terminal"
+    },
+    {
+      "case_key": "salt4_jin_q1000w_no_recirc_probe",
+      "target_heater_power_W": 1000,
+      "harvest_readiness_at_refresh": "running_not_terminal"
+    },
+    {
+      "case_key": "salt4_jin_q3x_no_recirc_probe",
+      "target_heater_power_W": 1012.8,
+      "harvest_readiness_at_refresh": "running_not_terminal"
+    },
+    {
+      "case_key": "salt4_jin_q1500w_no_recirc_probe",
+      "target_heater_power_W": 1500,
+      "harvest_readiness_at_refresh": "running_not_terminal"
+    }
+  ],
+  "created_paths": [
+    "tools/analyze/build_high_heat_harvest_readiness_and_live_monitor.py",
+    "tools/analyze/test_high_heat_harvest_readiness_and_live_monitor.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/live_job_status.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/high_heat_case_index.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/required_qoi_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/postprocess_command_plan.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/failure_modes_and_actions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/scheduler_query_diagnostics.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/summary.json",
+    ".agent/status/2026-07-17_AGENT-485.md",
+    ".agent/journal/2026-07-17/high-heat-harvest-readiness-and-live-monitor.md",
+    "imports/2026-07-17_high_heat_harvest_readiness_and_live_monitor.json"
+  ],
+  "source_paths": [
+    "imports/2026-07-16_high_heat_no_recirc_probe.json",
+    "imports/2026-07-16_high_heat_bracket_pack_500_1000_1500.json",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/high_heat_probe_manifest.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/high_heat_bracket_pack_manifest.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/logs/runtime_preflight_3299610.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/logs/bracket_runtime_preflight_3299620.csv"
+  ],
+  "guardrails": {
+    "native_existing_output_mutation": "none",
+    "registry_mutation": "none",
+    "scheduler_action": "read-only sacct status check for jobs 3299610 and 3299620",
+    "solver_or_postprocess_launch": "none",
+    "generated_docs_index_refresh": "none; active AGENT-482 owns generated index scope"
+  }
+}

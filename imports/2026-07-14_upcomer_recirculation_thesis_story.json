@@ -1,0 +1,33 @@
+{
+  "task_id": "AGENT-335",
+  "date": "2026-07-14",
+  "kind": "upcomer_recirculation_thesis_story",
+  "created_local": "2026-07-14T12:26:30-05:00",
+  "role": "Thesis/Presentation/Documentation",
+  "created": [
+    "reports/thesis_dossier/2026-07-14_upcomer_recirculation_internal_nu_story.md",
+    ".agent/status/2026-07-14_AGENT-335.md",
+    ".agent/journal/2026-07-14/upcomer-recirculation-thesis-story.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "source_evidence": [
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md"
+  ],
+  "validation_commands": [
+    "python3.11 -m json.tool imports/2026-07-14_upcomer_recirculation_thesis_story.json",
+    "rg -n 'recirculating|single-stream|scientific result|onset remains|150|200|250' reports/thesis_dossier/2026-07-14_upcomer_recirculation_internal_nu_story.md"
+  ],
+  "boundaries": {
+    "native_solver_outputs_mutated": false,
+    "external_cfd_modeling_tools_modified": false,
+    "registry_or_admission_state_modified": false,
+    "scheduler_state_modified": false,
+    "generated_index_refreshed": false
+  },
+  "status": "complete"
+}

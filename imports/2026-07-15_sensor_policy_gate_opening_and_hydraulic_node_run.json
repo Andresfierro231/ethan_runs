@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-405",
+  "date": "2026-07-15",
+  "type": "work_product",
+  "status": "complete",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run",
+  "primary_outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/sensor_map_policy_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/gate_opening_criteria.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/pm5_run_decision.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_admission_decisions.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/final_hydraulic_residual_attribution.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/pm5_matched_pressure_upcomer_run_decision.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_node_run_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/test_section_complex_raw_two_tap_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/f6_ready_to_run_gate.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/fluid_reset_k_diagnostic_sweep.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/source_manifest.csv"
+  ],
+  "tests": [
+    "python3.11 -m py_compile tools/analyze/build_sensor_policy_gate_opening_and_hydraulic_node_run.py tools/analyze/test_sensor_policy_gate_opening_and_hydraulic_node_run.py",
+    "python3.11 -m unittest tools.analyze.test_sensor_policy_gate_opening_and_hydraulic_node_run"
+  ],
+  "result": {
+    "sensor_policy_gate": "open_target_only_no_runtime_temperature",
+    "internal_nu_gate": "closed_pending_pm5_resampling_and_wallHeatFlux",
+    "closure_qoi_mesh_gci_gate": "closed_pending_admitted_triplets_and_failed_gate_matrix",
+    "hydraulic_node_run": "completed_on_c318-008",
+    "raw_two_tap_admission": "blocked_preflight_only",
+    "f6_gate_admission": "blocked_not_admitted",
+    "reset_k_admission": "diagnostic_admitted_component_separation_only",
+    "final_hydraulic_residual_attribution": "provisional_not_final",
+    "pm5_run_decision": "targeted_resampling_required_no_blind_relaunch",
+    "native_cfd_outputs_mutated": false,
+    "external_fluid_modified": false,
+    "registry_or_admission_state_mutated": false,
+    "completed_agent373_outputs_mutated": false,
+    "pm5_job_launched": false
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "task": "AGENT-428",
+  "date": "2026-07-15",
+  "role": "Thesis / Presentation / Documentation / Figures",
+  "status": "complete",
+  "purpose": "Correct prior presentation deliverable shape: Markdown outline plus standalone figures only, no PowerPoint creation or attachment.",
+  "outputs": [
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figure_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/term_glossary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/equation_register.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig01_loop_schematic.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig02_glossary_equations.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig03_boundary_mode_ladder.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig04_mode_error_bars.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig05_test_section_tradeoff.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig06_heater_cooler_rmse.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig07_steady_state_rms_sem.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig08_admission_gate_funnel.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig09_forward_v1_roadmap.svg",
+    "tools/analyze/build_integrated_powerpoint_figures_and_definitions.py",
+    "tools/analyze/test_integrated_powerpoint_figures_and_definitions.py",
+    ".agent/status/2026-07-15_AGENT-428.md",
+    ".agent/journal/2026-07-15/definitions-first-outline-and-figure-only-correction.md"
+  ],
+  "removed_powerpoint_artifacts": [
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_figures.pptx",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/2026-07-15_integrated_weekly_powerpoint_figures.pptx",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/deck_summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/deck_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/slides/slide_*.png",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures_png/fig*.png",
+    "tools/analyze/build_integrated_powerpoint_figure_deck.py"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/build_integrated_powerpoint_figures_and_definitions.py",
+    "python3.11 -m pytest -q tools/analyze/test_integrated_powerpoint_figures_and_definitions.py",
+    "python3.11 -m json.tool imports/2026-07-15_integrated_powerpoint_figures_and_definitions.json",
+    "python3.11 -m json.tool imports/2026-07-15_definitions_first_outline_and_figure_only_correction.json"
+  ],
+  "guardrails": {
+    "powerpoint_created": false,
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "generated_index_refreshed": false,
+    "external_fluid_mutated": false,
+    "existing_reports_thesis_dossier_2026_07_15_powerpoint_deck_mutated": false
+  }
+}

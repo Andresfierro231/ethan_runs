@@ -1,0 +1,32 @@
+{
+  "task_id": "AGENT-322",
+  "date": "2026-07-14",
+  "artifact": "work_products/2026-07/2026-07-14/2026-07-14_math_theory_assumptions_results_register",
+  "description": "Cross-cutting equation, assumption, theory, and result-intake contract for CFD-to-1D closure and forward-model work.",
+  "created_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "source_inputs": [
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "reports/thesis_dossier/master_thesis_bullet_outline.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_model_readiness_after_h1_proxy/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/README.md"
+  ],
+  "outputs": [
+    "README.md",
+    "equation_register.csv",
+    "assumption_register.csv",
+    "result_intake_contract.csv",
+    "current_evidence_hooks.csv",
+    "summary.json"
+  ],
+  "validation_commands": [
+    "python3.11 -m unittest tools.analyze.test_math_theory_results_register",
+    "python3.11 tools/analyze/build_math_theory_results_register.py"
+  ],
+  "index_refresh": "not_run_active_AGENT_317_claims_generated_index_files"
+}

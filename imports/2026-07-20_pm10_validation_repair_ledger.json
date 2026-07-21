@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-570",
+  "date": "2026-07-20",
+  "objective": "Implement PM10 validation/repair ledger and clarify PM10 validation-only use.",
+  "decision": "pm10_validation_ready_recirc_diagnostic_no_relaunch",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-570.md",
+    ".agent/journal/2026-07-20/pm10-validation-repair-ledger.md",
+    "imports/2026-07-20_pm10_validation_repair_ledger.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/pm10_validation_use_ledger.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/pm10_parse_repair_decision.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/pm10_next_use_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission/pm10_upcomer_anchor_classification.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/partial_parse_inventory.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/remaining_case_relaunch_queue.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger_pm10_resolved.csv",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "tools/analyze"
+  ],
+  "no_scorecard_outputs": true,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": "none",
+  "external_fluid_edit": false,
+  "tools_analyze_edit": false,
+  "pm10_relaunch": false,
+  "fit_or_model_selection_run": false,
+  "score_grid_run": false,
+  "scientific_admission_change": "none",
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "validation": [
+    "python3.11 tools/agent/preflight_task.py --task-id AGENT-570",
+    "python3.11 -m json.tool imports/2026-07-20_pm10_validation_repair_ledger.json",
+    "python3.11 -m json.tool work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/summary.json",
+    "python3.11 -c <csv parse check for generated CSVs>",
+    "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger --strict",
+    "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger .agent/journal/2026-07-20/pm10-validation-repair-ledger.md",
+    "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger"
+  ],
+  "notes": "PM10 is validation-ready as recirculation diagnostic evidence; no current PM10 relaunch is needed for the four validation rows, and zero fit/model-selection rows are released."
+}

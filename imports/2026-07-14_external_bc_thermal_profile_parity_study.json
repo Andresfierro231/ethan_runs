@@ -1,0 +1,31 @@
+{
+  "task": "AGENT-365",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study",
+  "builder": "tools/analyze/build_external_bc_thermal_profile_parity_study.py",
+  "tests": "tools/analyze/test_external_bc_thermal_profile_parity_study.py",
+  "source_manifest": "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/source_manifest.csv",
+  "summary": "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/summary.json",
+  "outputs": {
+    "external_bc_patch_contract_rows": 207,
+    "external_bc_segment_equivalent_rows": 24,
+    "source_sink_parity_contract_rows": 12,
+    "section_heat_loss_comparison_rows": 15,
+    "thermal_profile_drive_rows": 15,
+    "case_summary_rows": 3,
+    "admission_decision_rows": 5
+  },
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "heavy_openfoam_run": false,
+    "external_fluid_modified": false,
+    "predictive_hx_admitted": false,
+    "internal_nu_closure_admitted": false
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_external_bc_thermal_profile_parity_study.py tools/analyze/test_external_bc_thermal_profile_parity_study.py",
+    "python3.11 -m unittest tools.analyze.test_external_bc_thermal_profile_parity_study"
+  ]
+}

@@ -11,7 +11,7 @@
   - `registry/case_registry.csv`
   - `jadyn_runs/modern_runs/README.md`
   - `reports/2026-06-08_ethan_presentation_figure_package/README.md`
-  - `operational_notes/2026-06-08_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_todo.md`
   - `journals/2026-06/2026-06-08_ethan_runs.md`
 - files changed:
   - `AGENTS.md`

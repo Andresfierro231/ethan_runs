@@ -1,0 +1,57 @@
+{
+  "manifest_type": "end_of_day_wrap_up",
+  "created_at": "2026-07-10T17:15:00-05:00",
+  "updated_at": "2026-07-10T17:23:00-05:00",
+  "task_id": "AGENT-251",
+  "role": "Coordinator / Writer",
+  "inputs": [
+    ".agent/status/2026-07-10_AGENT-248.md",
+    ".agent/status/2026-07-10_AGENT-249.md",
+    ".agent/status/2026-07-10_AGENT-250.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/",
+    "work_products/2026-07/2026-07-10/2026-07-10_corrected_salt_selected_q_steadiness_packed_resubmit/",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/",
+    "scheduler snapshots for jobs 3282992, 3288671, and 3288637",
+    "live log tail for Salt1 nominal job 3282992",
+    "live log tails for selected corrected-Q job 3288671"
+  ],
+  "outputs": [
+    ".agent/status/2026-07-10_AGENT-251.md",
+    ".agent/journal/2026-07-10/end-of-day-wrap-up-and-next-steps.md",
+    "operational_notes/07-26/10/2026-07-10_end_of_day_todo.md"
+  ],
+  "scheduler_observations": [
+    {
+      "job_id": "3282992",
+      "name": "salt1_nom_cont",
+      "state": "RUNNING",
+      "node": "c318-016",
+      "elapsed_observed": "2-04:01:18",
+      "decision": "continue_running; excluded_until_terminal_gate"
+    },
+    {
+      "job_id": "3288671",
+      "name": "saltq_sel_cont",
+      "state": "RUNNING",
+      "node": "c318-017",
+      "elapsed_observed": "05:03:37",
+      "decision": "partial_running; salt1 corrected-Q steps running; salt4 +10Q failed"
+    },
+    {
+      "job_id": "3288671.2",
+      "name": "foamRun",
+      "state": "FAILED",
+      "elapsed_observed": "00:02:33",
+      "decision": "salt4_jin_hi10q_corrected repair-first due to OpenFOAM time precision fatal"
+    },
+    {
+      "job_id": "3288637",
+      "name": "agent248_salt2_pressure",
+      "state": "CANCELLED",
+      "elapsed_observed": "00:00:00",
+      "decision": "duplicate batch canceled after immediate compute-node rerun completed"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "new_jobs_submitted": false
+}

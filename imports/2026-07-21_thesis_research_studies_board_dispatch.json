@@ -1,0 +1,43 @@
+{
+  "task": "TODO-THESIS-RESEARCH-STUDIES-BOARD-DISPATCH-2026-07-21",
+  "date": "2026-07-21",
+  "summary": "Created a thesis research-study dispatch package and board rows for writing-focused progress without duplicating active S0-S3 implementation work.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-RESEARCH-STUDIES-BOARD-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-research-studies-board-dispatch.md",
+    "imports/2026-07-21_thesis_research_studies_board_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_THESIS_RESEARCH_STUDIES_BOARD_DISPATCH.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/study_portfolio.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/figure_table_wishlist.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/dependency_order.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/board_row_proposals.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/26_predictive_model_studies_roadmap.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_paper_edit": false,
+  "solver_or_postprocessing_launched": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_changed": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "no_scorecard_outputs": true,
+  "notes": "Generated documentation index refresh was deferred because generated index files were read-only in this row while another active row owned them."
+}

@@ -1,0 +1,49 @@
+{
+  "manifest_id": "2026-07-13_doc_continuity_system",
+  "task": "AGENT-294",
+  "generated_at": "2026-07-13",
+  "purpose": "Documentation continuity + report-generation system: frontmatter schema, repo-index generator (STATE/catalog/BLOCKERS with anti-stale check), curated blocker register, topic map-of-content hubs, and a binding cross-agent rule.",
+  "scope": "Repo-wide documentation infrastructure. Claude and Codex are teammates on one shared corpus (no per-doc owner). No science artifacts, solver outputs, scheduler state, registry, or external cfd-modeling-tools files modified.",
+  "teammate_model": "No per-document owner field. Traceability via task ID; the BOARD Owner column is only a live active-task lock, not authorship.",
+  "priority_fields": ["provenance", "tags", "related"],
+  "new_tools": [
+    "tools/docs/build_repo_index.py",
+    "tools/docs/test_build_repo_index.py"
+  ],
+  "new_docs": [
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    ".agent/blockers.yml",
+    "operational_notes/maps/README.md",
+    "operational_notes/maps/friction-closures.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "operational_notes/maps/mesh-gci-and-uncertainty.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "operational_notes/maps/geometry-and-mesh-truth.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    ".agent/journal/2026-07-13/coordinator-doc-continuity-and-report-system.md",
+    ".agent/status/2026-07-13_AGENT-294.md"
+  ],
+  "generated_artifacts": [
+    ".agent/STATE.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/BLOCKERS.md"
+  ],
+  "modified_docs": [
+    "AGENTS.md (Documentation continuity and index protocol section)",
+    "CLAUDE.md (section 9.0)",
+    ".agent/BOARD.md (own AGENT-294 row)"
+  ],
+  "verification": {
+    "unit_tests": "python3 tools/docs/test_build_repo_index.py -> 10 passed",
+    "register_check": "python3 tools/docs/build_repo_index.py --check -> OK (10 entries)",
+    "generation": "python3 tools/docs/build_repo_index.py -> indexed 974 docs; 105 board rows; 10 blockers"
+  },
+  "open_questions_for_user": [
+    "Install a git pre-commit or nightly cron hook to auto-run the generator?",
+    "Backfill frontmatter on high-traffic legacy docs to raise priority-field coverage, or leave adoption incremental?"
+  ]
+}

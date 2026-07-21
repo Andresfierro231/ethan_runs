@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active AGENT-482 owns generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "downstream_gate_contract.csv",
+    "equation_forms.csv",
+    "pressure_model_slots.csv",
+    "runtime_input_contract.csv",
+    "segment_equation_contract.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "thermal_model_slots.csv"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_equation_contract",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "all_sources_present": true,
+    "coupled_m3ts_may_start": false,
+    "date": "2026-07-17",
+    "downstream_gate_rows": 4,
+    "equation_rows": 5,
+    "external_fluid_edit": false,
+    "generated_index_refreshed": false,
+    "native_solver_outputs_mutated": false,
+    "pressure_and_thermal_scorecards_may_start": true,
+    "pressure_slot_rows": 7,
+    "registry_mutated": false,
+    "runtime_audit_rows": 6,
+    "runtime_forbidden_pass_rows": 6,
+    "scheduler_action": false,
+    "segment_rows": 7,
+    "task": "TODO-PREDICT-SEGMENT-EQUATION-CONTRACT",
+    "thermal_slot_rows": 7
+  },
+  "task": "TODO-PREDICT-SEGMENT-EQUATION-CONTRACT"
+}

@@ -1,0 +1,43 @@
+{
+  "task": "AGENT-551",
+  "date": "2026-07-20",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-551.md",
+    ".agent/journal/2026-07-20/board-cleanup-current-active.md",
+    "imports/2026-07-20_board_cleanup_current_active.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/README.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    "tools/agent/board_dashboard.py",
+    "tools/agent/preflight_task.py",
+    "tools/agent/finish_task.py",
+    "tools/docs/build_repo_index.py",
+    ".agent/status/2026-07-18_AGENT-546.md",
+    ".agent/status/2026-07-18_AGENT-547.md",
+    ".agent/status/2026-07-18_AGENT-548.md",
+    ".agent/status/2026-07-18_AGENT-549.md",
+    ".agent/status/2026-07-18_AGENT-550.md",
+    ".agent/status/2026-07-18_TODO-TSWFC2-DISTRIBUTED-WALL-FLUID.md",
+    ".agent/status/2026-07-18_TODO-TSWFC2-NEXT-CONTEXT-HANDOFF.md",
+    ".agent/status/2026-07-18_TODO-TWO-TAP-NEXT-CONTEXT-HANDOFF.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "notes": [
+    "Board cleanup only; no scientific admission, fitting, model selection, scheduler mutation, registry mutation, or native-output mutation.",
+    "Generated index files are listed as changed because the AGENT-551 board row owns index regeneration."
+  ]
+}

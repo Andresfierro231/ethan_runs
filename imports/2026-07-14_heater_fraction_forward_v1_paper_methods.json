@@ -1,0 +1,49 @@
+{
+  "task": "AGENT-390",
+  "date": "2026-07-14",
+  "generated_by": "codex",
+  "type": "work_product_import_manifest",
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods",
+  "builder": "tools/analyze/build_heater_fraction_forward_v1_paper_methods.py",
+  "tests": [
+    "tools/analyze/test_heater_fraction_forward_v1_paper_methods.py"
+  ],
+  "source_inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_contract_interpretation.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_heat_ledger.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/candidate_parameters.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/recommended_model.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/boundary_model_task_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_math_theory_assumptions_results_register/equation_register.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/model_result_ledger.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/methods_process.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_scalar_candidates.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_split_scores.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_model_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_decision_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/result_intake_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/claim_limitations_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/figure_table_index.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heater_fraction_forward_v1_paper_methods",
+      "result": "pass",
+      "tests": 5
+    }
+  ],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action_taken": false,
+    "external_fluid_modified_by_this_task": false,
+    "runtime_input_audit_violations": 0
+  }
+}

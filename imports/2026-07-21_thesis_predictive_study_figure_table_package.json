@@ -1,0 +1,54 @@
+{
+  "task": "TODO-THESIS-PREDICTIVE-STUDY-FIGURE-TABLE-PACKAGE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Figures/Writer/Reviewer/Implementer",
+  "objective": "Assemble quantitative thesis figures and tables from completed study packages with explicit source artifacts and claim boundaries.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-PREDICTIVE-STUDY-FIGURE-TABLE-PACKAGE-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-predictive-study-figure-table-package.md",
+    "imports/2026-07-21_thesis_predictive_study_figure_table_package.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/stage_gate_flow_diagram.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/figure_to_claim_crosswalk.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/quantitative_visual_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/blocked_scorecard_shell.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/caption_bank.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_s0_s3_first_wave_writing_integration/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/**",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "generated docs index files"
+  ],
+  "mutation_flags": {
+    "native_output_mutation": false,
+    "registry_mutation": false,
+    "scheduler_action": false,
+    "fluid_or_external_edit": false,
+    "generated_index_refresh": false,
+    "model_fitting_or_selection": false,
+    "closure_admission_change": false,
+    "destructive_cleanup": false
+  },
+  "validation": {
+    "json_parse": "pass",
+    "csv_parse": "pass",
+    "build_repo_index_check": "pass: blocker register OK (15 entries)",
+    "finish_task": "pass: finish_task OK"
+  }
+}

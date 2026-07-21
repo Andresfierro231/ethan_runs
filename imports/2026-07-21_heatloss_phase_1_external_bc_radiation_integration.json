@@ -1,0 +1,80 @@
+{
+  "task": "TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION",
+  "task_id": "TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION",
+  "date": "2026-07-21",
+  "role": "Implementer/Tester/Writer/Thermal-modeling",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION.md",
+    ".agent/journal/2026-07-21/heatloss-phase-1-external-bc-radiation-integration.md",
+    "imports/2026-07-21_heatloss_phase_1_external_bc_radiation_integration.json",
+    "tools/analyze/build_heatloss_phase1_external_bc_radiation_integration.py",
+    "tools/analyze/test_heatloss_phase1_external_bc_radiation_integration.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/external_bc_dictionary_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/external_bc_segment_role_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/runtime_mode_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/radiation_semantics_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/radiation_analytic_tests.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/fluid_handoff_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/validation_report.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/summary.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/heat_path_release_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/cfd_emissivity_by_run.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "model_scoring": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": true,
+  "no_scorecard_outputs": true,
+  "provenance_note": "Phase 1 is a repo-local external-boundary/radiation schema and runtime audit package. It does not edit Fluid or solver outputs.",
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_heatloss_phase1_external_bc_radiation_integration.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_heatloss_phase1_external_bc_radiation_integration.py tools/analyze/test_heatloss_phase1_external_bc_radiation_integration.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heatloss_phase1_external_bc_radiation_integration",
+      "result": "passed; 7 tests"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration",
+      "result": "passed"
+    },
+    {
+      "command": "structural CSV/JSON artifact check",
+      "result": "passed; 7 CSV files plus summary.json and validation_report.json"
+    }
+  ]
+}

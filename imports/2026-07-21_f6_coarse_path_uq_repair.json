@@ -1,0 +1,50 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-COARSE-PATH-UQ-REPAIR.md",
+    ".agent/journal/2026-07-21/f6-coarse-path-uq-repair.md",
+    "imports/2026-07-21_f6_coarse_path_uq_repair.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/build_f6_coarse_path_uq_repair.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/test_f6_coarse_path_uq_repair.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/coarse_source_repair_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/coarse_vtk_sampling_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/mesh_uq_implication.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/summary.json"
+  ],
+  "date": "2026-07-21",
+  "decision": "coarse_source_paths_repaired_but_same_qoi_static_pressure_uq_still_blocked",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Repair or close the blocked F6 coarse endpoint rows and state mesh/UQ implications without coefficient admission.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/blocked_coarse_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/repaired_case_source_inventory.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/sampler_ready_endpoint_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_pair_qa.csv",
+    "tmp/2026-06-30_claude_action_items/recon_salt2_of13",
+    "tmp/2026-06-30_claude_action_items/recon_salt3_of13",
+    "tmp/2026-06-30_claude_action_items/recon_salt4_of13"
+  ],
+  "registry_mutated": false,
+  "role": "cfd-pp / Mesh-GCI / Tester / Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/summary.json",
+  "task": "TODO-F6-COARSE-PATH-UQ-REPAIR",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/build_f6_coarse_path_uq_repair.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/build_f6_coarse_path_uq_repair.py work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/test_f6_coarse_path_uq_repair.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/test_f6_coarse_path_uq_repair.py",
+      "result": "passed: 3 tests"
+    }
+  ]
+}

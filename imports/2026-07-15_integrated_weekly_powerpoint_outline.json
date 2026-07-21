@@ -1,0 +1,24 @@
+{
+  "task": "AGENT-426",
+  "date": "2026-07-15",
+  "output": "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline.md",
+  "inputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/mdot_temperature_error_report.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/presentation_outline.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/report.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_training_testing_oscillation_steady_state/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_user_train_scope/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/README.md",
+    ".agent/BLOCKERS.md"
+  ],
+  "artifact_type": "presentation_outline",
+  "guardrails": [
+    "diagnostic CFD-informed rows are not presented as final predictive rows",
+    "realized wallHeatFlux, CFD mdot, imposed cooler duty, and validation temperatures are not runtime predictive inputs",
+    "internal Nu and F6 remain review-ready but not fit-admitted",
+    "stale blockers are not re-opened"
+  ]
+}

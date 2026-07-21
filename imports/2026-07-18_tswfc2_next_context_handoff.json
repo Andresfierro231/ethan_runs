@@ -1,0 +1,34 @@
+{
+  "task": "TODO-TSWFC2-NEXT-CONTEXT-HANDOFF",
+  "date": "2026-07-18",
+  "objective": "Document the next-session context and task sequence for TSWFC2 after the distributed wall/fluid API implementation.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_TODO-TSWFC2-NEXT-CONTEXT-HANDOFF.md",
+    ".agent/journal/2026-07-18/tswfc2-next-context-handoff.md",
+    "imports/2026-07-18_tswfc2_next_context_handoff.json",
+    "operational_notes/07-26/18/2026-07-18_TSWFC2_NEXT_CONTEXT_AND_STEPS.md"
+  ],
+  "read_only_context": [
+    ".agent/status/2026-07-18_TODO-TSWFC2-DISTRIBUTED-WALL-FLUID.md",
+    ".agent/journal/2026-07-18/tswfc2-distributed-wall-fluid-api.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_fluid_api_contract/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_fluid_api_contract/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_fluid_api_contract/fluid_api_change_log.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_fluid_api_contract/node_geometry_reconciliation.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_fluid_api_contract/runtime_guardrail_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_fluid_api_contract/next_step_handoff.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "fluid_source_edit": false,
+  "generated_index_refreshed": false,
+  "scorecard_created": false,
+  "scientific_admission_change": "none",
+  "fitting_or_model_selection": "none",
+  "notes": "Context-only handoff. Next useful sequence is API review, smoke scenario preparation, smoke execution, then a temperature-shape scorecard."
+}

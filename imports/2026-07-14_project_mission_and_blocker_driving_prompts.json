@@ -1,0 +1,28 @@
+{
+  "task_id": "AGENT-316",
+  "date": "2026-07-14",
+  "description": "Coordinator mission and scientific-questions documentation for driving active blocker-focused agent lanes.",
+  "created_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "source_inputs": [
+    "reports/thesis_dossier/master_thesis_bullet_outline.md",
+    "reports/thesis_dossier/2026-07-14_thesis_presentation_update.md",
+    ".agent/BLOCKERS.md",
+    ".agent/STATE.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_model_readiness_after_h1_proxy/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md"
+  ],
+  "outputs": [
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "reports/thesis_dossier/README.md",
+    "operational_notes/maps/README.md",
+    ".agent/status/2026-07-14_AGENT-316.md",
+    ".agent/journal/2026-07-14/project-mission-and-blocker-driving-prompts.md"
+  ],
+  "validation_commands": [],
+  "index_refresh": "not_run_task_scope_did_not_claim_generated_index_files"
+}

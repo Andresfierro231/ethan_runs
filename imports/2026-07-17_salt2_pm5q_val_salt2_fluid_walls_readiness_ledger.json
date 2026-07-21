@@ -1,0 +1,49 @@
+{
+  "task": "AGENT-484",
+  "date": "2026-07-17",
+  "role": "Implementer/Tester/Writer",
+  "status": "complete",
+  "title": "Salt2 +/-5Q and val_salt2 fluid+walls readiness ledger",
+  "outputs": [
+    "tools/analyze/build_salt2_pm5q_val_salt2_readiness_ledger.py",
+    "tools/analyze/test_salt2_pm5q_val_salt2_readiness_ledger.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/fluid_walls_readiness_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/pressure_readiness_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/pm5_recirc_readiness_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/thermal_source_sink_ledger.csv"
+  ],
+  "primary_sources": [
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+    "operational_notes/07-26/16/2026-07-16_fluid_walls_steady_1d_model_form.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_heat_role_reduction.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_section_heat_loss_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_patch_heat_ledger.csv"
+  ],
+  "commands": [
+    "python3 -m pytest tools/analyze/test_salt2_pm5q_val_salt2_readiness_ledger.py",
+    "python3 tools/analyze/build_salt2_pm5q_val_salt2_readiness_ledger.py"
+  ],
+  "guardrails": [
+    "No native solver output mutation",
+    "No registry mutation",
+    "No scheduler action",
+    "No duplicate pressure or PM5 jobs",
+    "No generated docs index refresh because AGENT-482 owns that scope",
+    "No external Fluid edit",
+    "No scientific admission change"
+  ],
+  "summary": {
+    "case_rows": 3,
+    "readiness_rows": 21,
+    "pressure_rows": 18,
+    "pm5_rows": 7,
+    "thermal_rows": 26,
+    "fit_admitted_pressure_rows": 0,
+    "salt2_pm5q_legal_use": "holdout_testing_only_no_fit_no_tune",
+    "val_salt2_legal_use": "external_test_only_no_fit_no_tune"
+  }
+}

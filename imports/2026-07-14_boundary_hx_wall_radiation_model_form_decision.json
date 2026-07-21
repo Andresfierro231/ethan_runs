@@ -1,0 +1,34 @@
+{
+  "task": "AGENT-314",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "created": [
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/decision_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/source_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/summary.json",
+    ".agent/status/2026-07-14_AGENT-314.md",
+    ".agent/journal/2026-07-14/boundary-hx-wall-radiation-model-form-decision.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md"
+  ],
+  "read_only_inputs": [
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_todo_campaign_index/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv"
+  ],
+  "notes": [
+    "The user-provided operational_notes/maps/13/... path was not present; equivalent reports/2026-07/... package was used.",
+    "No native CFD solver outputs were mutated.",
+    "External ../cfd-modeling-tools was not edited.",
+    "Generated index refresh was skipped because active AGENT-309 owns generated index files."
+  ]
+}

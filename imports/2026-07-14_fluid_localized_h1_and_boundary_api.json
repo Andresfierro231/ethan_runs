@@ -1,0 +1,13 @@
+{
+  "created": "2026-07-14",
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-14_localized_h1_fixed_k_hook.md"
+  ],
+  "sources": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py"
+  ],
+  "task": "AGENT-326"
+}

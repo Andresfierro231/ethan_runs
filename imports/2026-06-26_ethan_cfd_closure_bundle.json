@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-06-26T09:51:41-05:00",
+  "task_id": "AGENT-138",
+  "purpose": "Local Salt CFD closure bundle for downstream 1D modeling",
+  "source_artifacts": [
+    "reports/2026-06/2026-06-23/2026-06-23_ethan_1d_closure_bakeoff/closure_term_recommendations.csv",
+    "reports/2026-06/2026-06-23/2026-06-23_ethan_1d_closure_bakeoff/branch_development_summary.csv",
+    "reports/2026-06/2026-06-23/2026-06-23_ethan_1d_closure_bakeoff/stale_and_data_needs.csv",
+    "reports/2026-06/2026-06-19/2026-06-19_ethan_closure_to_modeling_handoff/blocked_dependency_requirements.csv"
+  ],
+  "output_root": "work_products/2026-06-26_ethan_cfd_closure_bundle",
+  "outputs": [
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/README.md",
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/closure_term_contract.csv",
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/branch_state_surface_policy.csv",
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/reference_curve_samples.csv",
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/blocked_term_followons.csv",
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/salt_closure_bundle.json",
+    "work_products/2026-06-26_ethan_cfd_closure_bundle/summary.json"
+  ],
+  "summary": {
+    "generated_at": "2026-06-26T09:51:41-05:00",
+    "family_scope": "salt_only",
+    "straight_friction_status": "provisional_defended",
+    "straight_friction_region_count": 2,
+    "direct_nu_status": "provisional_defended_limited_domain",
+    "direct_nu_region_count": 1,
+    "primary_ua_region_count": 4,
+    "blocked_term_count": 2,
+    "follow_on_gap_count": 5
+  }
+}

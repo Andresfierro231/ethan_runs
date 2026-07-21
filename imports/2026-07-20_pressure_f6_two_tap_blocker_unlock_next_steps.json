@@ -1,0 +1,87 @@
+{
+  "task": "TODO-PRESSURE-F6-TWO-TAP-BLOCKER-UNLOCK-NEXT-STEPS",
+  "date": "2026-07-20",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "objective": "Document implementation-ready next steps to unlock pressure/F6/two-tap blockers while preserving no-admission guardrails.",
+  "decision": "next_steps_contract_complete_no_admission",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-PRESSURE-F6-TWO-TAP-BLOCKER-UNLOCK-NEXT-STEPS.md",
+    ".agent/journal/2026-07-20/pressure-f6-two-tap-blocker-unlock-next-steps.md",
+    "imports/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/build_pressure_f6_two_tap_blocker_unlock_next_steps.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/test_pressure_f6_two_tap_blocker_unlock_next_steps.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/blocker_unlock_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/cand001_terminal_readiness.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/future_sampler_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/same_qoi_uq_unlock_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/recirc_apparent_k_model_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/pressure_f6_next_gate.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/paper_blocker_methods_note.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_same_qoi_anchor_launch_package/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_blocker_register_review_after_unlock_wave/**",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/build_pressure_f6_two_tap_blocker_unlock_next_steps.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/test_pressure_f6_two_tap_blocker_unlock_next_steps.py",
+      "result": "passed: 6 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-PRESSURE-F6-TWO-TAP-BLOCKER-UNLOCK-NEXT-STEPS",
+      "result": "passed: no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-PRESSURE-F6-TWO-TAP-BLOCKER-UNLOCK-NEXT-STEPS",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "solver_or_postprocessing_launch": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "ordinary_component_k_allowed_now": false,
+    "same_qoi_uq_complete": false,
+    "endpoint_pressure_invented": false,
+    "hidden_global_multiplier_used": false,
+    "clipped_k_used": false,
+    "blocker_register_mutated": false
+  },
+  "resolved_questions": [
+    "next ordinary-flow unlock path is CAND-001 after terminal review and a future sampler row",
+    "current recirculating rows should be kept in a section-effective apparent-K diagnostic lane"
+  ],
+  "unresolved_blockers": [
+    "two-tap-corner-lower-right-material-reverse-flow",
+    "two-tap-corner-lower-right-component-isolation-fails",
+    "two-tap-corner-lower-right-same-qoi-uq-missing",
+    "f6-friction-re-correction"
+  ]
+}

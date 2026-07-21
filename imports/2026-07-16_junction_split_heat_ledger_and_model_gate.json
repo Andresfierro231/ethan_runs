@@ -1,0 +1,45 @@
+{
+  "task": "AGENT-473",
+  "created_local": "2026-07-16T17:51:00-05:00",
+  "objective": "Implement the evidence-first junction heat-loss plan: split Salt2-4 junction/stub heat by physical junction from existing patch evidence, reconcile pressure-case heat-ledger coverage, and gate whether the 1D Fluid model can be updated safely.",
+  "script": "tools/analyze/build_junction_split_heat_ledger_and_model_gate.py",
+  "test": "tools/analyze/test_junction_split_heat_ledger_and_model_gate.py",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/cfd_heat_audit_by_run.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_coverage_by_pressure_case.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_patch_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/patch_wall_shell_temperatures.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/case_pressure_ladder_admission_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/heat_loss_ledger_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_bc_role_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_patch_bc_role_table.csv"
+  ],
+  "output_artifacts": [
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_patch_ledger.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_heat_ledger.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_temperature_drive_candidates.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/case_heat_ledger_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/model_update_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_heat_by_bucket.svg",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_heat_ledger_and_model_gate.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/summary.json"
+  ],
+  "result": {
+    "junction_split_cases": [
+      "salt2_mainline",
+      "salt3_mainline",
+      "salt4_mainline"
+    ],
+    "junction_split_patch_rows": 87,
+    "pressure_cases_covered_by_admission_table": 11,
+    "overall_ready_for_fluid_model_edit": false,
+    "reason_model_edit_blocked": "val_salt2 and perturbation cases lack equivalent patch-split junction heat ledgers, and pressure corner K remains diagnostic with zero admitted fit rows."
+  },
+  "guardrails": [
+    "No native CFD output mutation.",
+    "No scheduler submissions or duplicate pressure jobs.",
+    "No registry, blocker, generated-index, or external Fluid edits."
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "task": "TODO-THESIS-STUDY-S8-WALL-TEST-SECTION-AXIAL-MIXING-CANDIDATE-2026-07-21",
+  "task_id": "TODO-THESIS-STUDY-S8-WALL-TEST-SECTION-AXIAL-MIXING-CANDIDATE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Implementer/Tester/Writer",
+  "objective": "Implement the S8 wall/test-section axial-mixing candidate study as a reproducible evidence screen and negative falsification package.",
+  "outcome": {
+    "study_state": "negative_result_no_s11_candidate",
+    "phase3_candidate_rows": 15,
+    "admitted_candidate_rows": 0,
+    "smoke_family_rows": 7,
+    "s11_ready_candidates": 0,
+    "final_score_values": 0,
+    "runtime_leakage_pass": true
+  },
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S8-WALL-TEST-SECTION-AXIAL-MIXING-CANDIDATE-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s8-wall-test-section-axial-mixing-candidate.md",
+    "imports/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate.json",
+    "tools/analyze/build_thesis_study_s8_wall_test_section_axial_mixing_candidate.py",
+    "tools/analyze/test_thesis_study_s8_wall_test_section_axial_mixing_candidate.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/acceptance_gate_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/candidate_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/figure_table_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/m3_prior_candidate_comparison.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/negative_or_admission_ready_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/smoke_family_verdicts.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/wall_test_section_candidate_gate_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/runtime_thermal_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_amx1_axial_mixing_dry_contract/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_amx1_salt2_smoke_intake/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake/case_metric_deltas.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_amx1_gradient_clipped_smoke_intake/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_amx1_gradient_clipped_smoke_intake/form_deltas.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/form_deltas.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/scenario_score_intake.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/summary.json"
+  ],
+  "legacy_draft_artifacts_left_in_place": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/admission_disposition.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/build_s8_wall_test_section_axial_mixing_candidate.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/check_s8_wall_test_section_axial_mixing_candidate.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/heat_path_ownership_and_gate_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/next_candidate_ladder_excerpt.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/phase4_dependency_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/prior_candidate_comparison.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/role_segment_residual_focus.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/split_claim_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/tw5_tw6_residual_focus.csv"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_action_taken": false,
+    "fluid_or_external_repo_edited": false,
+    "generated_docs_index_refreshed": false,
+    "blocker_register_mutated": false,
+    "solver_or_sampler_launched": false,
+    "model_fit_or_selected": false,
+    "closure_admitted": false,
+    "final_score_claimed": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "fluid_source_mutated": false,
+  "external_repo_mutated": false,
+  "fit_or_model_selection_performed": false,
+  "closure_admission_mutated": false,
+  "generated_docs_index_mutated": false,
+  "final_score_claimed": false,
+  "no_scorecard_outputs": true,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_thesis_study_s8_wall_test_section_axial_mixing_candidate.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_thesis_study_s8_wall_test_section_axial_mixing_candidate.py",
+      "result": "pass; 1 test passed"
+    },
+    {
+      "command": "python3.11 -m json.tool work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/summary.json",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 -m json.tool imports/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate.json",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-STUDY-S8-WALL-TEST-SECTION-AXIAL-MIXING-CANDIDATE-2026-07-21",
+      "result": "pass"
+    }
+  ]
+}

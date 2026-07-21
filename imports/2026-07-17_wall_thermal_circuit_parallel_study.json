@@ -1,0 +1,66 @@
+{
+  "date": "2026-07-17",
+  "task": "AGENT-522",
+  "type": "derived_work_product",
+  "title": "Parallel wall thermal-circuit study",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_mutated": false,
+  "scheduler_action_taken": true,
+  "scheduler_job_id": "3301052",
+  "overlap_smoke_attempted": true,
+  "overlap_smoke_result": "failed_stream_socket_permission_error_no_repo_write_no_fluid_solve",
+  "coupled_execution": {
+    "status": "completed",
+    "submitted_command": "ssh login1 cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/ag522_wall_circuit.sbatch",
+    "job_id": "3301052",
+    "elapsed": "00:05:37",
+    "exit_code": "0:0",
+    "completed_rows": 24,
+    "admitted_candidates": 0,
+    "probe_localization_rows": 408,
+    "probe_delta_rows": 272,
+    "role_segment_summary_rows": 160,
+    "run_command": "python3 tools/analyze/build_wall_thermal_circuit_study.py --run-fluid --parallel-workers 8 --timeout-seconds 273",
+    "refresh_command": "python3 tools/analyze/build_wall_thermal_circuit_study.py --reuse-existing-coupled --parallel-workers 8 --timeout-seconds 273"
+  },
+  "sources": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv"
+  ],
+  "outputs": [
+    "tools/analyze/build_wall_thermal_circuit_study.py",
+    "tools/analyze/test_wall_thermal_circuit_study.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/wall_candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/scenario_contracts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/agent511_import_status.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/probe_error_localization.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/probe_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/role_segment_error_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/background_run_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/ag522_wall_circuit.sbatch",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/blocker_decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "predictive-wall-test-section-submodels",
+      "status": "keep_open",
+      "reason": "AGENT-522 completed 24/24 coupled rows with 0 admitted candidates. Several rows improve mdot, but every validation/holdout gate fails because TP/TW/all-probe RMSE remains worse than M3."
+    }
+  ]
+}

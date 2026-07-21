@@ -1,0 +1,55 @@
+{
+  "task": "AGENT-526",
+  "date": "2026-07-17",
+  "role": "Thermal-modeling/Forward-pred/Implementer/Tester/Writer",
+  "objective": "Implement and score an explicit test-section wall/fluid series-coupling fallback after source redistribution and non-series wall-circuit candidates failed admission.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "Ran one bounded foreground compute-node srun coupled scoring pass; reused completed coupled rows for derived-table regeneration; no open job left by this task.",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-526.md",
+    ".agent/journal/2026-07-17/test-section-wall-fluid-coupling-candidate.md",
+    "imports/2026-07-17_test_section_wall_fluid_coupling_candidate.json",
+    "tools/analyze/build_test_section_wall_fluid_coupling_candidate.py",
+    "tools/analyze/test_test_section_wall_fluid_coupling_candidate.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "scheduler": {
+    "job_id": "",
+    "job_name": "",
+    "state": "completed",
+    "elapsed": "",
+    "exit_code": "0",
+    "node": "",
+    "command": "srun -N1 -n1 python3.11 tools/analyze/build_test_section_wall_fluid_coupling_candidate.py --run-fluid --timeout-seconds 273",
+    "stdout": "6/6 rows completed; summary written to work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/summary.json",
+    "stderr": "srun initially reported busy nodes, then created StepId=3299312.7 and completed successfully."
+  },
+  "outputs": {
+    "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate",
+    "coupled_rows": 6,
+    "completed_rows": 6,
+    "probe_rows": 102,
+    "local_test_section_behavior_rows": 18,
+    "admitted_candidates": 0,
+    "blocker_decision": "keep_open"
+  },
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "external_fluid_source_edited": false,
+    "openfoam_launched": false,
+    "blocker_register_mutated": false,
+    "generated_index_refreshed": false
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "manifest_id": "2026-07-07_f5_ri_corrected",
+  "owner": "claude",
+  "task": "AGENT-200",
+  "generated_at": "2026-07-07",
+  "purpose": "Implement F5_ri_corrected friction closure: 1-parameter OLS Ri correction on F3_shah_apparent baseline; candidate screen only (R²<0 for all leg classes with 3-point data)",
+  "scope": "Salt 2/3/4 Jin mainline operating points; non-upcomer spans; cfd-modeling-tools Fluid solver + test suite",
+  "new_tools": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_friction_closures.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07-07_f5_ri_corrected/README.md",
+    ".agent/status/2026-07-07_AGENT-200.md",
+    ".agent/journal/2026-07-07/implementer-f5-ri-corrected.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-07_f5_ri_corrected/f5_fit_summary.csv",
+    "work_products/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv",
+    "work_products/2026-07-07_f5_ri_corrected/run_f5_mdot_comparison.py",
+    "work_products/2026-07-07_f5_ri_corrected/README.md",
+    "work_products/2026-07-07_f5_ri_corrected/summary.json"
+  ],
+  "key_finding": "F5 ≡ F3_shah_apparent (c=0 for all non-upcomer leg classes; R²<0 for all with 3-point forced-intercept OLS). Ri correction does not improve on F3_shah_apparent with current Salt 2-4 data (narrow Ri range 0.38-1.38 per class).",
+  "fit_results": {
+    "heater":    {"c_fitted": 1.473233, "c_active": 0.0, "R2": -74.5727, "fit_quality": "poor_set_to_mean"},
+    "cooler":    {"c_fitted": 0.607650, "c_active": 0.0, "R2": -27.5042, "fit_quality": "poor_set_to_mean"},
+    "downcomer": {"c_fitted": 0.721452, "c_active": 0.0, "R2": -4.2989,  "fit_quality": "poor_set_to_mean"},
+    "upcomer":   {"c_active": 0.0, "fit_quality": "excluded"}
+  },
+  "test_results": {
+    "new_f5_tests": 9,
+    "total_fluid_tests": 61,
+    "total_fluid_pass": 61,
+    "total_repo_tests": 299,
+    "total_repo_pass": 299
+  },
+  "open_questions_for_user": [
+    "Is a 3-point forced-intercept OLS the right screen criterion, or should we use a 2-parameter fit (intercept free) or a physical form (e.g., Scheele-Hanratty correction)?",
+    "After AGENT-181 gate requalification, should F5 be re-fit automatically from expanded Ri range, or should the re-fit await a dedicated coordinator decision?",
+    "The phi_mean values (heater ≈ 1.81, cooler ≈ 1.54, downcomer ≈ 1.81) differ substantially across leg classes — does this suggest the dominant mechanism is flow-regime dependent rather than Ri-dependent?"
+  ]
+}

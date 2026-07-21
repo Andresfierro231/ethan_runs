@@ -1,0 +1,46 @@
+{
+  "task_id": "AGENT-329",
+  "date": "2026-07-14",
+  "kind": "thesis_presentation_story_sync",
+  "created_local": "2026-07-14T11:52:58-05:00",
+  "role": "Thesis/Presentation/Documentation",
+  "created": [
+    "reports/thesis_dossier/2026-07-14_thesis_presentation_story_sync.md",
+    ".agent/status/2026-07-14_AGENT-329.md",
+    ".agent/journal/2026-07-14/thesis-presentation-story-sync.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "source_evidence": [
+    ".agent/BLOCKERS.md",
+    ".agent/BOARD.md",
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "reports/thesis_dossier/2026-07-14_thesis_presentation_update.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/README.md"
+  ],
+  "validation_commands": [
+    "python3.11 -m json.tool imports/2026-07-14_thesis_presentation_story_sync.json",
+    "rg -n \"refined-mesh-t-reconstruction-corruption|2026-07-14_thesis_presentation_story_sync\" reports/thesis_dossier/README.md reports/thesis_dossier/2026-07-14_thesis_presentation_story_sync.md"
+  ],
+  "boundaries": {
+    "native_solver_outputs_mutated": false,
+    "external_cfd_modeling_tools_modified": false,
+    "registry_or_admission_state_modified": false,
+    "scheduler_state_modified": false,
+    "generated_index_refreshed": false,
+    "active_agent_outputs_promoted": false,
+    "landed_boundary_task_matrix_consumed": true
+  },
+  "status": "complete"
+}

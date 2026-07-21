@@ -1,0 +1,86 @@
+{
+  "task": "TODO-TWO-TAP-FACE-QREF-UQ-PROGRESS",
+  "date": "2026-07-20",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "objective": "Extract face-level q_ref diagnostics from harvested two-tap VTK surfaces and carry forward same-QOI residual UQ status without admitting pressure, F6, or component-K coefficients.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-TWO-TAP-FACE-QREF-UQ-PROGRESS.md",
+    ".agent/journal/2026-07-20/two-tap-face-qref-uq-progress.md",
+    "imports/2026-07-20_two_tap_face_qref_uq_progress.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/build_two_tap_face_qref_uq_progress.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/face_level_qref_flux_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/residual_uq_progress.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/pressure_f6_two_tap_progress.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/paper_qref_uq_progress_note.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/test_two_tap_face_qref_uq_progress.py"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_surface_file_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/case_sampling_plan.csv",
+    "tmp/2026-07-18_two_tap_staged_endpoint_sampler/staged_reconstructed/*/postProcessing/agentCTwoTapRawEndpointSurfaces/*/*.vtk",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/same_qoi_uq_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/next_extraction_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/build_two_tap_face_qref_uq_progress.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/test_two_tap_face_qref_uq_progress.py",
+      "result": "passed: 5 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-TWO-TAP-FACE-QREF-UQ-PROGRESS",
+      "result": "passed: no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-TWO-TAP-FACE-QREF-UQ-PROGRESS",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "solver_or_postprocessing_launch": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "ordinary_component_k_allowed_now": false,
+    "same_qoi_uq_complete": false,
+    "endpoint_pressure_invented": false,
+    "hidden_global_multiplier_used": false,
+    "clipped_k_used": false
+  },
+  "resolved_questions": [
+    "face-level positive/negative/absolute mass flux is now extracted from the existing VTK surfaces",
+    "face-level q_ref evidence remains diagnostic because material reverse flow persists"
+  ],
+  "unresolved_blockers": [
+    "same-QOI mesh/time UQ missing",
+    "component isolation apparent-cluster-only",
+    "ordinary reverse-flow gate fails",
+    "nonrecirculating same-topology anchor still future work"
+  ]
+}

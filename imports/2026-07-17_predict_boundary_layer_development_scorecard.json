@@ -1,0 +1,37 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active board rows own generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "development_toggle_scorecard.csv",
+    "output_metric_ablation_contract.csv",
+    "prerequisite_gate_scorecard.csv",
+    "runtime_development_input_audit.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "all_sources_present": true,
+    "date": "2026-07-17",
+    "diagnostic_ready_toggle_rows": 32,
+    "executable_ablation_rows": 0,
+    "external_fluid_edit": false,
+    "generated_index_refreshed": false,
+    "metric_contract_rows": 5,
+    "native_solver_outputs_mutated": false,
+    "prerequisite_gate_rows": 4,
+    "registry_mutated": false,
+    "runtime_audit_pass_rows": 4,
+    "runtime_audit_rows": 4,
+    "scheduler_action": false,
+    "task": "TODO-PREDICT-BOUNDARY-LAYER-DEVELOPMENT-SCORECARD",
+    "toggle_rows": 35
+  },
+  "task": "TODO-PREDICT-BOUNDARY-LAYER-DEVELOPMENT-SCORECARD"
+}

@@ -1,0 +1,47 @@
+{
+  "created_at": "2026-07-10",
+  "task_id": "AGENT-258",
+  "role": "Coordinator / Writer",
+  "purpose": "Document the dependency between the salt4_attach_3288671 tmux session, the srun launcher on c318-008, and the Slurm-owned corrected-Q allocation on c318-017.",
+  "observed_jobs": [
+    {
+      "job_id": "3285548",
+      "name": "idv43192",
+      "state": "RUNNING",
+      "node": "c318-008",
+      "interpretation": "Interactive allocation hosting the tmux launcher."
+    },
+    {
+      "job_id": "3288671",
+      "name": "saltq_sel_cont",
+      "state": "RUNNING",
+      "node": "c318-017",
+      "interpretation": "Slurm-owned corrected-Q allocation."
+    }
+  ],
+  "observed_tmux_sessions": [
+    "salt4_attach_3288671",
+    "work"
+  ],
+  "safe_actions": [
+    "detach_from_tmux",
+    "close_local_terminal_if_tmux_and_allocation_remain_alive"
+  ],
+  "unsafe_actions_before_attached_step_terminal": [
+    "scancel_3285548",
+    "kill_salt4_attach_3288671_tmux",
+    "kill_srun_jobid_3288671_launcher",
+    "scancel_3288671"
+  ],
+  "outputs": [
+    ".agent/status/2026-07-10_AGENT-258.md",
+    ".agent/journal/2026-07-10/srun-tmux-allocation-dependency-handoff.md",
+    "operational_notes/07-26/10/2026-07-10_srun_tmux_allocation_dependency_handoff.md"
+  ],
+  "mutations_avoided": [
+    "no_solver_output_mutation",
+    "no_slurm_submission",
+    "no_registry_edit",
+    "no_external_model_edit"
+  ]
+}

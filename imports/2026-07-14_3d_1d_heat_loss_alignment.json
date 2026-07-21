@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-350",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "objective": "Build a diagnostic Salt2-4 3D-vs-1D heat-loss alignment study with same-assumption heat-path bookkeeping and thesis-ready methodology documentation.",
+  "outputs": [
+    "tools/analyze/build_3d_1d_heat_loss_alignment.py",
+    "tools/analyze/test_3d_1d_heat_loss_alignment.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/methodology_and_assumptions.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/thesis_presentation_notes.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/assumption_match_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_role.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/case_heat_loss_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/summary.json",
+    ".agent/status/2026-07-14_AGENT-350.md",
+    ".agent/journal/2026-07-14/3d-1d-heat-loss-alignment.md"
+  ],
+  "source_inputs": [
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/patchwise_heat_ledger_enthalpy_interfaces.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/section_heat_balance.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/fixed_mdot_parity_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/parity_decision_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/section_heat_loss_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/discrepancy_attribution.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/cfd_boundary_condition_contract_no_radiation.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/case_runtime_inputs_forward_v0.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_heat_ledger.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_3d_1d_heat_loss_alignment",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_3d_1d_heat_loss_alignment.py",
+      "result": "pass"
+    }
+  ],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "heavy_openfoam_run": false,
+    "external_fluid_modified": false,
+    "predictive_rows_admitted": 0,
+    "radiation_policy": "rcExternalTemperature radiation remains inseparable inside total wallHeatFlux; no separate radiation term was added."
+  }
+}

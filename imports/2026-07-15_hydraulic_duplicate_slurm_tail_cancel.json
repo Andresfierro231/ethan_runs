@@ -1,0 +1,27 @@
+{
+  "task": "AGENT-412",
+  "date": "2026-07-15",
+  "role": "Coordinator/Hydraulics/Scheduler/Writer",
+  "artifact_root": "work_products/2026-07/2026-07-15/2026-07-15_hydraulic_duplicate_slurm_tail_cancel",
+  "artifacts": [
+    "README.md",
+    "scheduler_before_after.csv",
+    "local_replacement_outputs.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "cancelled_jobs": [
+    "3295989",
+    "3295990",
+    "3295991"
+  ],
+  "mutation_summary": {
+    "scheduler_state": true,
+    "native_cfd_outputs": false,
+    "openfoam_launch": false,
+    "new_jobs_submitted": false,
+    "registry_or_admission_state": false,
+    "generated_indexes": false,
+    "external_cfd_modeling_tools": false
+  }
+}

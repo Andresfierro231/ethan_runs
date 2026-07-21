@@ -1,0 +1,73 @@
+{
+  "task": "TODO-FLUID-EXTERNAL-BC-PHASE-D-SMOKE-SCORECARD-2026-07-21",
+  "task_id": "TODO-FLUID-EXTERNAL-BC-PHASE-D-SMOKE-SCORECARD-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Tester/Writer",
+  "objective": "Run a train/support-only smoke of the runtime-legal external thermal boundary input path after Fluid Phase C.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-EXTERNAL-BC-PHASE-D-SMOKE-SCORECARD-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-external-bc-phase-d-smoke-scorecard.md",
+    "imports/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/build_phase_d_smoke_scorecard.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/check_phase_d_smoke_scorecard.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/failure_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/heat_path_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/phase_d_train_upcomer_ambient_smoke_dictionary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/smoke_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/split_claim_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "reports/thesis_dossier/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_c_implementation/summary.json",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-FLUID-EXTERNAL-BC-PHASE-C-IMPLEMENTATION-2026-07-21",
+      "result": "finish_task: OK"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/build_phase_d_smoke_scorecard.py work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/check_phase_d_smoke_scorecard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/build_phase_d_smoke_scorecard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/check_phase_d_smoke_scorecard.py",
+      "result": "Phase D smoke scorecard checks passed."
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "solver_or_postprocessing_launch": false,
+    "external_fluid_repo_mutated": false,
+    "fit_or_model_selection": false,
+    "validation_holdout_external_scoring": false,
+    "final_predictive_admission": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false
+  }
+}

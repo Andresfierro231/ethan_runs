@@ -1,0 +1,84 @@
+{
+  "task": "AGENT-503",
+  "date": "2026-07-17",
+  "status": "complete",
+  "title": "val_salt2 pressure evidence and corner-K diagnosis",
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis",
+  "changed_files": [
+    ".agent/BOARD.md",
+    "tools/analyze/build_val_salt2_pressure_evidence_corner_k_diagnosis.py",
+    "tools/analyze/test_val_salt2_pressure_evidence_corner_k_diagnosis.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/val_salt2_pressure_evidence_status.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_failure_modes.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/pressure_evidence_use_policy.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/next_pressure_evidence_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/source_manifest.csv",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    ".agent/status/2026-07-17_AGENT-503.md",
+    ".agent/journal/2026-07-17/val-salt2-pressure-evidence-corner-k-diagnosis.md",
+    "imports/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis.json"
+  ],
+  "created_paths": [
+    "tools/analyze/build_val_salt2_pressure_evidence_corner_k_diagnosis.py",
+    "tools/analyze/test_val_salt2_pressure_evidence_corner_k_diagnosis.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/val_salt2_pressure_evidence_status.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_failure_modes.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/pressure_evidence_use_policy.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/next_pressure_evidence_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/source_manifest.csv",
+    ".agent/status/2026-07-17_AGENT-503.md",
+    ".agent/journal/2026-07-17/val-salt2-pressure-evidence-corner-k-diagnosis.md",
+    "imports/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_admission_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_unlock_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_pressure_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv"
+  ],
+  "source_paths": [
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_admission_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_unlock_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_pressure_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/build_val_salt2_pressure_evidence_corner_k_diagnosis.py",
+    "python3.11 -m unittest tools.analyze.test_val_salt2_pressure_evidence_corner_k_diagnosis",
+    "python3.11 -m py_compile tools/analyze/build_val_salt2_pressure_evidence_corner_k_diagnosis.py tools/analyze/test_val_salt2_pressure_evidence_corner_k_diagnosis.py",
+    "python3 -m json.tool work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/summary.json"
+  ],
+  "result": {
+    "val_salt2_branch_rows": 6,
+    "val_salt2_branch_fit_admitted_rows": 0,
+    "val_salt2_recirc_blocked_branch_rows": 6,
+    "val_salt2_pressure_definition_conflict_rows": 2,
+    "corner_rows": 12,
+    "corner_fit_admitted_rows": 0,
+    "corner_centerline_negative_k_rows": 12,
+    "decision": "keep_val_salt2_pressure_and_corner_K_diagnostic_no_fit"
+  },
+  "guardrails": {
+    "native_existing_output_mutation": "none",
+    "registry_mutation": "none",
+    "scheduler_action": "none",
+    "solver_or_postprocess_launch": "none",
+    "external_fluid_edit": "none",
+    "duplicate_pressure_ladder_jobs": "none",
+    "generated_docs_index_refresh": "none",
+    "holdout_or_external_fit_tuning": "none",
+    "scientific_admission_change": "none"
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false
+}

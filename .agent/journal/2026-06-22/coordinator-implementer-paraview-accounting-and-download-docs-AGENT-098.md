@@ -15,7 +15,7 @@
   - `staging/AGENTS.override.md`
   - `tools/extract/2026-06-15_paraview_field_render_workflow.md`
   - `tools/publish/download_results_to_laptop.sh`
-  - `operational_notes/2026-06-16_ethan_box_upload_plan.md`
+  - `operational_notes/06-26/16/2026-06-16_ethan_box_upload_plan.md`
   - `tmp/2026-06-16_paraview_movie_all_times_refresh/2026-06-16_movie_all_times_refresh.sbatch`
   - `staging/render_jobs/2026-06-15_paraview_cell_association_refresh.sbatch`
 - plan:
@@ -30,12 +30,12 @@
   - `.agent/journal/2026-06-22/coordinator-implementer-paraview-accounting-and-download-docs-AGENT-098.md`
   - `README.md`
   - `tools/extract/2026-06-15_paraview_field_render_workflow.md`
-  - `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+  - `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
 
 - commands run:
   - `sed -n '600,690p' tools/extract/2026-06-15_paraview_field_render_workflow.md`
   - `sed -n '1,220p' tools/publish/download_results_to_laptop.sh`
-  - `sed -n '1,220p' operational_notes/2026-06-16_ethan_box_upload_plan.md`
+  - `sed -n '1,220p' operational_notes/06-26/16/2026-06-16_ethan_box_upload_plan.md`
   - `du -sh staging/render_inputs/viscosity_screening_salt_test_1_jin_coarse_mesh/reconstructed_case staging/render_inputs/val_salt_test_2_coarse_mesh_laminar/reconstructed_case staging/render_inputs/val_water_test_1_coarse_mesh_laminar/reconstructed_case staging/render_inputs/viscosity_screening_salt_test_4_jin_coarse_mesh/reconstructed_case`
   - `du -sh figures/figures_rendered/paraview_movies/val_salt_test_2_coarse_mesh_laminar figures/figures_rendered/paraview_movies/val_water_test_1_coarse_mesh_laminar figures/figures_rendered/paraview_velocity_arrows/val_salt_test_2_coarse_mesh_laminar figures/figures_rendered/paraview_field_families`
   - `sacct -j 3237163 --format=JobID,JobName%30,State,ExitCode`

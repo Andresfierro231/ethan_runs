@@ -1,0 +1,50 @@
+{
+  "task_id": "TODO-PRED-HEATER-TEST-CONTRACT",
+  "date": "2026-07-13",
+  "role": "Implementer / Writer",
+  "owner": "codex",
+  "artifact_root": "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract",
+  "generated_files": [
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_heat_ledger.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_contract_interpretation.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/candidate_parameters.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/recommended_model.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/summary.json"
+  ],
+  "source_inputs": [
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv",
+      "use": "F0/F1 forward-v0 imposed-cooler case results"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_variant_summary.csv",
+      "use": "variant-level Tmean and mdot error comparison"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/section_heat_balance.csv",
+      "use": "diagnostic heater/test-section/cooler/passive section heat ledger"
+    }
+  ],
+  "scripts": [
+    "tools/analyze/build_heater_test_section_contract.py",
+    "tools/analyze/test_heater_test_section_contract.py"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heater_test_section_contract",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_heater_test_section_contract.py",
+      "result": "pass"
+    }
+  ],
+  "guardrails": [
+    "Realized CFD wallHeatFlux is diagnostic-only and is not a forward runtime input.",
+    "Heater, test-section, cooler, and passive external residuals are kept as separate ledgers.",
+    "Calibrated eta_heater and test_section_external_loss candidates require train/heldout split before runtime scoring.",
+    "Thermal closure claims are provisional."
+  ],
+  "recommended_candidate_id": "C1_heater_only_predictive_setup"
+}

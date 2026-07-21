@@ -1,0 +1,202 @@
+{
+  "date": "2026-06-25",
+  "submitted_at": "2026-06-25T11:20:41-05:00",
+  "objective": "Relaunch the failed normal-queue Water and Salt high-Q continuation lanes, submit the requested Salt 1 Jin continuation, and add bounded Salt heater-only recirculation-onset boundary cases.",
+  "queue_policy": {
+    "partition": "normal",
+    "default_qos": "qnormal",
+    "max_walltime": "2-00:00:00",
+    "requested_single_job_walltime": "216:00:00",
+    "single_job_rejection": "QOSMaxWallDurationPerJobLimit",
+    "implemented_chain_segments": 5,
+    "segment_walltime": "48:00:00",
+    "effective_chain_coverage": "240:00:00"
+  },
+  "runtime_packaging": {
+    "runtime_lib_copy": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/runtime_libs/libRCWallBC.so",
+    "runtime_lib_source": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so",
+    "lightweight_processors64_materialization": true,
+    "new_staged_case_count": 8
+  },
+  "scientific_basis": {
+    "requested_cases": [
+      "water1",
+      "water2",
+      "water3",
+      "water4",
+      "salt1_jin_basecont",
+      "salt1_jin_hiq_balq",
+      "salt2_jin_hiq_balq",
+      "salt3_jin_hiq_balq",
+      "salt4_jin_hiq_balq"
+    ],
+    "extra_boundary_cases": [
+      "salt1_jin_loq_balq",
+      "salt2_jin_hi5q_balq",
+      "salt2_jin_lo5q_balq",
+      "salt3_jin_hi5q_balq",
+      "salt3_jin_lo5q_balq",
+      "salt4_jin_hi5q_balq",
+      "salt4_jin_lo5q_balq"
+    ],
+    "rationale": [
+      "Salt 1 Jin is the lowest-mean case but already has the largest baseline loop temperature span, so it must be bracketed on both heater directions.",
+      "Salt 4 Jin is the hottest mean-state case but does not have the largest baseline loop span, so mean state and loop delta-T are not locked together.",
+      "Balanced +/-5 percent heater cases for Salt 2-4 are the smallest additional set that can localize recirculation onset between the live baseline, live -10 percent, and requested +10 percent lanes without reopening the rejected insulation sweep."
+    ],
+    "source_table": "reports/2026-06/2026-06-17/2026-06-17_ethan_nondimensional_dashboard_package/salt_candidate_correlation_inputs.csv",
+    "contract_note": "operational_notes/06-26/22/2026-06-22_salt_heat_balance_contract.md"
+  },
+  "existing_live_related_jobs": [
+    {
+      "job_id": 3254178,
+      "job_name": "ethan_salt_contpack",
+      "partition": "NuclearEnergy",
+      "state_at_submit": "RUNNING"
+    },
+    {
+      "job_id": 3254179,
+      "job_name": "ethan_salt_loqbal3",
+      "partition": "NuclearEnergy",
+      "state_at_submit": "RUNNING"
+    }
+  ],
+  "submitted_chains": [
+    {
+      "chain_name": "ethan_s1cont_s1hi_nq9d",
+      "cases": [
+        "salt1_jin_basecont",
+        "salt1_jin_hiq_balq"
+      ],
+      "job_ids": [
+        "3259065",
+        "3259066",
+        "3259067",
+        "3259068",
+        "3259069"
+      ],
+      "first_job_id": "3259065",
+      "final_job_id": "3259069",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_s23hi_nq9d",
+      "cases": [
+        "salt2_jin_hiq_balq",
+        "salt3_jin_hiq_balq"
+      ],
+      "job_ids": [
+        "3259070",
+        "3259071",
+        "3259072",
+        "3259073",
+        "3259074"
+      ],
+      "first_job_id": "3259070",
+      "final_job_id": "3259074",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_s2mid_nq9d",
+      "cases": [
+        "salt2_jin_hi5q_balq",
+        "salt2_jin_lo5q_balq"
+      ],
+      "job_ids": [
+        "3259080",
+        "3259081",
+        "3259082",
+        "3259083",
+        "3259084"
+      ],
+      "first_job_id": "3259080",
+      "final_job_id": "3259084",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_s3mid_nq9d",
+      "cases": [
+        "salt3_jin_hi5q_balq",
+        "salt3_jin_lo5q_balq"
+      ],
+      "job_ids": [
+        "3259085",
+        "3259086",
+        "3259087",
+        "3259088",
+        "3259089"
+      ],
+      "first_job_id": "3259085",
+      "final_job_id": "3259089",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_s4hi_s1lo_nq9d",
+      "cases": [
+        "salt4_jin_hiq_balq",
+        "salt1_jin_loq_balq"
+      ],
+      "job_ids": [
+        "3259075",
+        "3259076",
+        "3259077",
+        "3259078",
+        "3259079"
+      ],
+      "first_job_id": "3259075",
+      "final_job_id": "3259079",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_s4mid_nq9d",
+      "cases": [
+        "salt4_jin_hi5q_balq",
+        "salt4_jin_lo5q_balq"
+      ],
+      "job_ids": [
+        "3259090",
+        "3259091",
+        "3259092",
+        "3259093",
+        "3259094"
+      ],
+      "first_job_id": "3259090",
+      "final_job_id": "3259094",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_w12_nq9d",
+      "cases": [
+        "water1",
+        "water2"
+      ],
+      "job_ids": [
+        "3259055",
+        "3259056",
+        "3259057",
+        "3259058",
+        "3259059"
+      ],
+      "first_job_id": "3259055",
+      "final_job_id": "3259059",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    },
+    {
+      "chain_name": "ethan_w34_nq9d",
+      "cases": [
+        "water3",
+        "water4"
+      ],
+      "job_ids": [
+        "3259060",
+        "3259061",
+        "3259062",
+        "3259063",
+        "3259064"
+      ],
+      "first_job_id": "3259060",
+      "final_job_id": "3259064",
+      "initial_state": "first segment pending; downstream segments pending on dependency"
+    }
+  ]
+}

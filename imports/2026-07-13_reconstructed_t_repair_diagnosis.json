@@ -1,0 +1,30 @@
+{
+  "task_id": "AGENT-265",
+  "created_at": "2026-07-13T10:31:00-05:00",
+  "purpose": "Diagnose the corrupted reconstructed T blocker before new thermal UA/HTC/Nu closure claims",
+  "source_context": [
+    ".agent/journal/2026-07-09/salt2-refined-closure-qoi-repair-batch.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/README.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/README.md"
+  ],
+  "artifacts": [
+    "tools/analyze/diagnose_reconstructed_t_corruption.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_diagnosis/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_diagnosis/diagnosis.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_diagnosis/field_quality_summary.csv",
+    ".agent/status/2026-07-13_AGENT-265.md",
+    ".agent/journal/2026-07-13/reconstructed-t-repair-diagnosis.md"
+  ],
+  "observations": {
+    "source_medium_nonfinite_tokens": 0,
+    "source_fine_nonfinite_tokens": 0,
+    "reconstructed_medium_nonfinite_tokens": 5,
+    "first_reconstructed_nonfinite_line": 6825807,
+    "first_reconstructed_nonfinite_token": "-nan",
+    "foam_error": "wrong token type - expected Scalar, found on line 6825807 the punctuation token '-'"
+  },
+  "conclusion": "Thermal UA/HTC/Nu remains blocked by serial reconstructed-T corruption; native/decomposed source T is not the immediate blocker.",
+  "source_cases_read_only": true,
+  "scheduler_actions": "none",
+  "thermal_closure_claims_added": false
+}

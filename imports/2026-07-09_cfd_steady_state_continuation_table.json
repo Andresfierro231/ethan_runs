@@ -1,0 +1,42 @@
+{
+  "manifest_type": "cfd_steady_state_continuation_table",
+  "created_at": "2026-07-09T17:46:28-05:00",
+  "task_id": "AGENT-246",
+  "artifacts": [
+    "work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/primary_cfd_continuation_decisions.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/all_timeseries_case_rollup.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/summary.json",
+    ".agent/status/2026-07-09_AGENT-246.md",
+    ".agent/journal/2026-07-09/cfd-steady-state-continuation-table.md"
+  ],
+  "source_paths": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/convergence_resubmit_recommendations.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt1_nominal_3282992_monitor_admission/README.md",
+    "jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/logs/log.foamRun_salt1_nominal_continuation"
+  ],
+  "counts": {
+    "all_timeseries_cases": 47,
+    "primary_decision_rows": 22
+  },
+  "key_decisions": {
+    "continue_now": [
+      "salt1_jin_nominal_continuation_corrected/job_3282992_until_terminal_gate",
+      "salt2_jin_lo10q_corrected_if_authorized",
+      "salt2_jin_hi10q_corrected_if_authorized"
+    ],
+    "do_not_continue_now": [
+      "salt4_jin_nominal",
+      "salt2_jin_nominal_for_hydraulic_closure_only",
+      "salt3_jin_nominal_for_hydraulic_closure_only"
+    ],
+    "repair_before_resubmit": [
+      "salt1_jin_hi10q_corrected",
+      "salt3_jin_hi5q_corrected",
+      "salt3_jin_hi10q_corrected"
+    ]
+  },
+  "native_solver_outputs_modified": false
+}

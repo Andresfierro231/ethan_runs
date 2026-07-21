@@ -1,0 +1,58 @@
+{
+  "generated_at": "2026-07-18T17:39:31-05:00",
+  "task": "AGENT-130",
+  "kind": "ethan_postprocessing_registry_pipeline",
+  "storage_format_fast": "sqlite",
+  "storage_format_tabular": "csv",
+  "source_ids": [
+    "salt2_jin_lo10q_corrected",
+    "salt2_jin_hi10q_corrected",
+    "salt4_jin_lo10q_corrected",
+    "salt4_jin_hi10q_corrected"
+  ],
+  "run_outputs": [
+    {
+      "source_id": "salt2_jin_lo10q_corrected",
+      "normalized_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_lo10q/salt2_jin_lo10q_corrected/aggregates/postprocessing_case_long.csv",
+      "grouped_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_lo10q/salt2_jin_lo10q_corrected/aggregates/wall_heat_flux_grouped.csv",
+      "summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_lo10q/salt2_jin_lo10q_corrected/aggregates/case_summary.csv",
+      "summary_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_lo10q/salt2_jin_lo10q_corrected/aggregates/case_summary.json",
+      "manifest_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_lo10q/salt2_jin_lo10q_corrected/aggregation_manifest.json",
+      "sqlite_db": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_lo10q/salt2_jin_lo10q_corrected/aggregates/postprocessing.sqlite"
+    },
+    {
+      "source_id": "salt2_jin_hi10q_corrected",
+      "normalized_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_hi10q/salt2_jin_hi10q_corrected/aggregates/postprocessing_case_long.csv",
+      "grouped_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_hi10q/salt2_jin_hi10q_corrected/aggregates/wall_heat_flux_grouped.csv",
+      "summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_hi10q/salt2_jin_hi10q_corrected/aggregates/case_summary.csv",
+      "summary_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_hi10q/salt2_jin_hi10q_corrected/aggregates/case_summary.json",
+      "manifest_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_hi10q/salt2_jin_hi10q_corrected/aggregation_manifest.json",
+      "sqlite_db": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_2_jin_corrected_q_hi10q/salt2_jin_hi10q_corrected/aggregates/postprocessing.sqlite"
+    },
+    {
+      "source_id": "salt4_jin_lo10q_corrected",
+      "normalized_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_lo10q/salt4_jin_lo10q_corrected/aggregates/postprocessing_case_long.csv",
+      "grouped_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_lo10q/salt4_jin_lo10q_corrected/aggregates/wall_heat_flux_grouped.csv",
+      "summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_lo10q/salt4_jin_lo10q_corrected/aggregates/case_summary.csv",
+      "summary_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_lo10q/salt4_jin_lo10q_corrected/aggregates/case_summary.json",
+      "manifest_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_lo10q/salt4_jin_lo10q_corrected/aggregation_manifest.json",
+      "sqlite_db": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_lo10q/salt4_jin_lo10q_corrected/aggregates/postprocessing.sqlite"
+    },
+    {
+      "source_id": "salt4_jin_hi10q_corrected",
+      "normalized_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_hi10q/salt4_jin_hi10q_corrected/aggregates/postprocessing_case_long.csv",
+      "grouped_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_hi10q/salt4_jin_hi10q_corrected/aggregates/wall_heat_flux_grouped.csv",
+      "summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_hi10q/salt4_jin_hi10q_corrected/aggregates/case_summary.csv",
+      "summary_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_hi10q/salt4_jin_hi10q_corrected/aggregates/case_summary.json",
+      "manifest_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_hi10q/salt4_jin_hi10q_corrected/aggregation_manifest.json",
+      "sqlite_db": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/corrected_salt_q_sensitivity/salt_test_4_jin_corrected_q_hi10q/salt4_jin_hi10q_corrected/aggregates/postprocessing.sqlite"
+    }
+  ],
+  "index_outputs": {
+    "global_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/_all_postprocessing_runs.csv",
+    "global_sqlite": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/_all_postprocessing_runs.sqlite",
+    "extended_salt_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/_family_index.csv",
+    "extended_salt_sqlite": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/registry/extended_salt/_family_index.sqlite"
+  },
+  "note": "SQLite was used instead of Parquet because the current environment does not have pyarrow/pandas installed."
+}

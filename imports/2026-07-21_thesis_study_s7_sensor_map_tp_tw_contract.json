@@ -1,0 +1,42 @@
+{
+  "task": "TODO-THESIS-STUDY-S7-SENSOR-MAP-TP-TW-CONTRACT-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Writer / Implementer / Tester",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S7-SENSOR-MAP-TP-TW-CONTRACT-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s7-sensor-map-tp-tw-contract.md",
+    "imports/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/build_s7_sensor_map_tp_tw_contract.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/check_s7_sensor_map_tp_tw_contract.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/one_d_path_position_map.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/bounded_or_excluded_sensor_rationale.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/bounded_excluded_sensor_rationale.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/score_only_target_policy.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/runtime_input_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_projected_sensor_registry.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_sensor_level_evidence.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/sensor_policy_gate_evidence.csv",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/split_role_scorecard_shell.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "fluid_source_mutated": false,
+  "external_repo_mutated": false,
+  "fit_or_model_selection_performed": false,
+  "closure_admission_mutated": false,
+  "generated_docs_index_mutated": false,
+  "no_scorecard_outputs": true
+}

@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-237",
+  "title": "Corrected Salt Q gate 3280969 review",
+  "source_artifacts": [
+    "tmp/2026-07-06_overnight_postprocess_jobs/slurm-saltq_gate_after-3280969.out",
+    "tmp/2026-07-06_overnight_postprocess_jobs/slurm-saltq_gate_after-3280969.err",
+    "work_products/2026-07-06_overnight_postprocess_jobs/corrected_salt_after_3275448_3275449_3275560/corrected_salt_solver_audit_summary.csv",
+    "work_products/2026-07-06_overnight_postprocess_jobs/corrected_salt_after_3275448_3275449_3275560/run_status/run_status_inventory.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/tables/corrected_salt_status_summary.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/july9_live_gate_status.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_overnight_rigor_studies_setup/README.md"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/resubmit_list.csv"
+  ],
+  "mutation_boundary": "Read-only review of completed gate outputs. No corrected Salt case trees, gate outputs, closure-fit tables, or native solver outputs were modified.",
+  "closure_fit_policy": "No row is promoted into closure fits without operating_point_verdict=requalified from the formal gate."
+}

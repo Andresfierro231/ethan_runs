@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-476",
+  "type": "board_cleanup",
+  "title": "Board completed TODO and closeout cleanup",
+  "generated_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-16_AGENT-469.md",
+    ".agent/status/2026-07-16_AGENT-470.md",
+    ".agent/status/2026-07-16_AGENT-472.md",
+    ".agent/journal/2026-07-16/downcomer-policy-admission-artifact.md",
+    ".agent/journal/2026-07-16/m3ts-frozen-candidate-coupled-score.md",
+    ".agent/journal/2026-07-16/fluid-walls-model-form-and-onset-study-coordination.md"
+  ],
+  "outputs": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-16_AGENT-476.md",
+    ".agent/journal/2026-07-16/board-completed-todo-and-closeout-cleanup.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "decisions": [
+    {
+      "item": "completed_todo_rows",
+      "status": "retired_from_planned_unclaimed",
+      "reason": "Rows already reported STATUS: COMPLETE and were preserved in an archived TODO table."
+    },
+    {
+      "item": "AGENT-469/470/472",
+      "status": "archived_from_active",
+      "reason": "Rows and closeout files reported complete; no scientific decisions changed."
+    }
+  ]
+}

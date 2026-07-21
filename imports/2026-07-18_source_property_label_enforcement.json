@@ -1,0 +1,94 @@
+{
+  "task": "AGENT-546",
+  "task_id": "AGENT-546",
+  "date": "2026-07-18",
+  "role": "Forward-pred/Literature-synthesis/Implementer/Tester/Writer",
+  "objective": "Build a source-envelope and property-label enforcement audit so no fit/admission row in the enforced scorecard view has blank source/property labels.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_AGENT-546.md",
+    ".agent/journal/2026-07-18/source-property-label-enforcement.md",
+    "imports/2026-07-18_source_property_label_enforcement.json",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/source_property_label_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/final_scorecard_case_coverage_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell",
+    "post-litrev work_products/2026-07/2026-07-13 through 2026-07-18 scorecard/admission/fit/gate CSV artifacts"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/build_source_property_label_enforcement.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/test_source_property_label_enforcement.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/scorecard_artifact_inventory.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/source_property_enforced_fit_admission_rows.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/original_label_gap_rows.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/label_field_crosswalk.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/source_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/summary.json"
+  ],
+  "summary": {
+    "scorecard_artifacts_scanned": 735,
+    "scorecard_rows_scanned": 12384,
+    "fit_or_admission_candidate_rows": 1110,
+    "original_fit_or_admission_rows_missing_labels": 1028,
+    "enforced_fit_or_admission_rows_missing_labels": 0,
+    "enforced_fit_or_admission_allowed_rows": 0,
+    "enforced_fit_or_admission_blocked_rows": 1110,
+    "acceptance_signal_met": true
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id AGENT-546",
+      "result": "passed after moving scripts/tests into the task-owned work product"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/build_source_property_label_enforcement.py",
+      "result": "passed; generated enforcement package with 0 enforced fit/admission rows missing required labels"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/build_source_property_label_enforcement.py work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/test_source_property_label_enforcement.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/test_source_property_label_enforcement.py",
+      "result": "passed; 5 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed; blocker register OK with 13 entries"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "completed; indexed 1734 docs, 10 board rows, and 13 blockers"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id AGENT-546",
+      "result": "passed"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_state_mutated": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "generated_index_refreshed": true,
+    "scientific_admission_changed": false,
+    "fitting_or_model_selection_performed": false,
+    "historical_scorecards_rewritten": false
+  }
+}

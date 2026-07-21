@@ -1,0 +1,36 @@
+{
+  "task": "TODO-SAME-QOI-NEIGHBOR-WINDOW-PREFLIGHT-2026-07-21",
+  "date": "2026-07-21",
+  "role": "cfd-pp/Mesh-GCI/Tester/Writer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-SAME-QOI-NEIGHBOR-WINDOW-PREFLIGHT-2026-07-21.md",
+    ".agent/journal/2026-07-21/same-qoi-neighbor-window-preflight.md",
+    "imports/2026-07-21_same_qoi_neighbor_window_preflight.json",
+    "tools/analyze/build_same_qoi_neighbor_window_preflight.py",
+    "tools/analyze/test_same_qoi_neighbor_window_preflight.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight/neighbor_window_preflight.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight/compute_needed_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight/admission_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table/**"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "solver_or_postprocessing_or_sampler_or_harvest_launched": false,
+  "fitting_or_model_selection_performed": false,
+  "same_qoi_or_coefficient_admission_changed": false,
+  "invented_gci": false,
+  "mixed_basis_promotion": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "no_scorecard_outputs": true
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-09",
+  "task": "AGENT-236",
+  "kind": "documentation_synthesis_manifest",
+  "output_package": "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference",
+  "description": "Consolidated existing Ethan-run external-boundary-condition and setup documentation into one reference README plus compact summary table.",
+  "inputs": [
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_scenario_contract/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_scenario_contract/scenario_contract.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/cfd_thermal_boundary_contract.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_mismatch_remedy_deep_dive/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_mismatch_remedy_deep_dive/heater_values.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_informed_fixed_mdot_1d_runs/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/slide6_thermal_replay_analysis.md",
+    "operational_notes/07-26/08/2026-07-08_thermal_interface_power_policy.md",
+    "operational_notes/07-26/08/2026-07-08_thermal_boundary_contract_and_frozen_replay_plan.md",
+    "operational_notes/07-26/08/2026-07-08_thermal_mismatch_remedy_deep_dive.md",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_one_d_setup_and_confidence.md",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "outputs": [
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/source_index.csv",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/summary.json"
+  ],
+  "actions_not_taken": [
+    "No OpenFOAM extraction",
+    "No Fluid rerun",
+    "No native solver output mutation",
+    "No registry edit",
+    "No scheduler query or job action"
+  ]
+}

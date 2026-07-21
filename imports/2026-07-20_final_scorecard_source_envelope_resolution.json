@@ -1,0 +1,63 @@
+{
+  "task": "TODO-FINAL-SCORECARD-SOURCE-ENVELOPE-RESOLUTION",
+  "date": "2026-07-20",
+  "type": "work_product_manifest",
+  "objective": "Resolve final-scorecard source-envelope blockers for the four remaining fit/model-selection candidates.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-FINAL-SCORECARD-SOURCE-ENVELOPE-RESOLUTION.md",
+    ".agent/journal/2026-07-20/final-scorecard-source-envelope-resolution.md",
+    "imports/2026-07-20_final_scorecard_source_envelope_resolution.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scripts/build_final_scorecard_source_envelope_resolution.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/tests/test_final_scorecard_source_envelope_resolution.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/case_source_envelope_resolution.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scorecard_source_property_resolution_policy.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/source_envelope_evidence_detail.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/source_property_gate_after_resolution.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/remaining_integration_todo.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/remaining_source_property_todo.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv"
+  ],
+  "no_scorecard_outputs": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": "not_run",
+  "scientific_admission_change": "none",
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-FINAL-SCORECARD-SOURCE-ENVELOPE-RESOLUTION",
+      "result": "passed with no conflicts"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scripts/build_final_scorecard_source_envelope_resolution.py",
+      "result": "passed and regenerated package"
+    },
+    {
+      "command": "python3.11 -m pytest work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/tests/test_final_scorecard_source_envelope_resolution.py",
+      "result": "passed, 7 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scripts/build_final_scorecard_source_envelope_resolution.py work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/tests/test_final_scorecard_source_envelope_resolution.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution --strict",
+      "result": "passed with candidate_rows=0 findings=0"
+    }
+  ],
+  "notes": [
+    "No strict-pass fit/model-selection candidates were found from current row-specific source-envelope evidence.",
+    "The output is an integration policy, not a rewrite of the July 17 final scorecard shell.",
+    "tools/analyze/ remains read-only under this task because open board rows still claim broad tools/analyze/ scope."
+  ]
+}

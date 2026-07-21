@@ -1,0 +1,16 @@
+{
+  "task": "AGENT-415",
+  "output": "work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_expanded_case_set",
+  "summary": {
+    "task": "AGENT-415",
+    "generated": "2026-07-15T09:06:29",
+    "window_seconds": 300.0,
+    "selected_cases": 12,
+    "resolved_cases": 12,
+    "stats_rows": 684,
+    "figures": 144,
+    "not_found_requested_cases": [
+      "val_salt_test_1 / salt1_val"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-STATIC-P-BASIS-RECONSTRUCTION-AUDIT.md",
+    ".agent/journal/2026-07-21/f6-static-p-basis-reconstruction-audit.md",
+    "imports/2026-07-21_f6_static_p_basis_reconstruction_audit.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/build_f6_static_p_basis_reconstruction_audit.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/test_f6_static_p_basis_reconstruction_audit.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/pressure_basis_source_inventory.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_a_reconstruction_validation.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_a_pair_reconstruction_validation.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_b_static_p_reconstruction_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_b_pair_reconstructed_static_deltas.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/pressure_basis_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/admission_impact.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json"
+  ],
+  "date": "2026-07-21",
+  "decision": "f6_coarse_static_p_reconstructed_from_p_rgh_for_diagnostic_pair_deltas_only",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Validate whether missing coarse F6 static pressure can be reconstructed from p_rgh using an explicit hydrostatic convention, without coefficient admission.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/stage_a_b_face_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/stage_a_b_pair_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/f6_gate_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/stage_a_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/raw_f6_endpoint_face_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/stage_b_coarse_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_raw_face_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_pair_diagnostics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/README.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "tmp/2026-07-21_f6_endpoint_raw_face_sampler/staged_reconstructed/salt_2_medium/constant/g",
+    "tmp/2026-07-21_f6_endpoint_raw_face_sampler/staged_reconstructed/salt_2_fine/constant/g",
+    "tmp/2026-07-21_f6_coarse_vtk_sampler_submit/staged_reconstructed/salt_2_coarse/constant/g",
+    "tmp/2026-07-21_f6_coarse_vtk_sampler_submit/staged_reconstructed/salt_3_coarse/constant/g",
+    "tmp/2026-07-21_f6_coarse_vtk_sampler_submit/staged_reconstructed/salt_4_coarse/constant/g"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics / cfd-pp / Implementer / Reviewer / Tester / Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json",
+  "task": "TODO-F6-STATIC-P-BASIS-RECONSTRUCTION-AUDIT",
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-F6-STATIC-P-BASIS-RECONSTRUCTION-AUDIT",
+      "result": "passed after scope narrowed to package-local scripts"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/build_f6_static_p_basis_reconstruction_audit.py work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/test_f6_static_p_basis_reconstruction_audit.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/test_f6_static_p_basis_reconstruction_audit.py",
+      "result": "passed: 5 tests"
+    }
+  ]
+}

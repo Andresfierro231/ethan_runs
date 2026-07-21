@@ -1,0 +1,31 @@
+{
+  "task": "AGENT-431",
+  "date": "2026-07-15",
+  "type": "documentation_coordination_manifest",
+  "purpose": "Record segment-resolved pressure and thermal modeling policy and board TODOs for next-stage forward predictive modeling.",
+  "created_or_updated": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-15_AGENT-431.md",
+    ".agent/journal/2026-07-15/segment-resolved-pressure-thermal-modeling-plan.md",
+    "operational_notes/07-26/15/2026-07-15_segment_resolved_pressure_thermal_modeling_plan.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md"
+  ],
+  "board_todos_added": [
+    "TODO-PREDICT-SEGMENT-EQUATION-CONTRACT",
+    "TODO-PREDICT-SEGMENT-PRESSURE-MODELS",
+    "TODO-PREDICT-SEGMENT-THERMAL-MODELS",
+    "TODO-PREDICT-COUPLED-SEGMENT-M3TS-SCORECARD"
+  ],
+  "modeling_decision": "Pressure drive and loss must be treated as segment-resolved and coupled to the thermal state. The compact pressure-root equation is shorthand only after T(s), rho(T), segment geometry, and local closure forms are evaluated.",
+  "runtime_forbidden_inputs": [
+    "realized CFD wallHeatFlux",
+    "CFD mdot",
+    "imposed CFD cooler duty",
+    "validation or holdout temperatures",
+    "validation or holdout pressures as model inputs"
+  ],
+  "native_cfd_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "powerpoint_created": false
+}

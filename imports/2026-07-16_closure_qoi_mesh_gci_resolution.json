@@ -1,0 +1,40 @@
+{
+  "task": "AGENT-455",
+  "date": "2026-07-16",
+  "title": "Closure-QOI mesh-GCI resolution and leg-specific Internal-Nu admission",
+  "primary_output": "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution",
+  "blocker_action": {
+    "closure-qoi-mesh-gci": "kept_open_not_resolved",
+    "upcomer-onset-data-sparsity": "updated_with_test_section_parentage"
+  },
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/branch_specific_fit_mask.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/ordinary_pipe_candidate_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/thermal_row_admission_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/closure_qoi_blocker_punch_list.csv",
+    "operational_notes/maps/geometry-and-mesh-truth.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/geometry_taxonomy_correction.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_nu_model_form_matrix.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_internal_nu_candidate_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/upcomer_exclusion_and_hybrid_lane.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/sign_heat_balance_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/blocker_unblock_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/summary.json"
+  ],
+  "validation": [
+    "python3.11 -m unittest tools.analyze.test_closure_qoi_mesh_gci_resolution",
+    "python3.11 tools/analyze/build_closure_qoi_mesh_gci_resolution.py"
+  ],
+  "guardrails": [
+    "No native CFD solver outputs mutated",
+    "No registry/admission state mutated",
+    "No scheduler action",
+    "No external Fluid edit"
+  ]
+}

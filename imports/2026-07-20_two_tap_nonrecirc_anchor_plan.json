@@ -1,0 +1,80 @@
+{
+  "task": "TODO-TWO-TAP-NONRECIRC-ANCHOR-PLAN",
+  "date": "2026-07-20",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "objective": "Choose feasible non-recirculating anchor candidates and define the future two-tap sampling contract without launching scheduler work.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-TWO-TAP-NONRECIRC-ANCHOR-PLAN.md",
+    ".agent/journal/2026-07-20/two-tap-nonrecirc-anchor-plan.md",
+    "imports/2026-07-20_two_tap_nonrecirc_anchor_plan.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/build_two_tap_nonrecirc_anchor_plan.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/candidate_anchor_inventory.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/source_case_selection.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/staging_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/endpoint_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/same_qoi_uq_family_plan.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/launch_or_no_launch_decision.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/test_two_tap_nonrecirc_anchor_plan.py"
+  ],
+  "read_only_context": [
+    ".agent/blockers.yml",
+    "operational_notes/07-26/18/2026-07-18_TWO_TAP_NEXT_CONTEXT_AND_STEPS.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/nonrecirculating_anchor_request.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_anchor_inventory.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/build_two_tap_nonrecirc_anchor_plan.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/test_two_tap_nonrecirc_anchor_plan.py",
+      "result": "passed: 6 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-TWO-TAP-NONRECIRC-ANCHOR-PLAN",
+      "result": "passed: no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-TWO-TAP-NONRECIRC-ANCHOR-PLAN",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "solver_or_postprocessing_launch": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "endpoint_pressure_invented": false,
+    "hidden_global_multiplier_used": false,
+    "clipped_k_used": false
+  },
+  "preferred_candidate_id": "CAND-001",
+  "launch_decision": "no_launch_from_this_row",
+  "resolved_blockers": [],
+  "unresolved_blockers": [
+    "two-tap-corner-lower-right-material-reverse-flow",
+    "two-tap-corner-lower-right-component-isolation-fails",
+    "two-tap-corner-lower-right-same-qoi-uq-missing"
+  ]
+}

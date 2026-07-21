@@ -1,0 +1,30 @@
+{
+  "task_id": "TODO-LITREV-CFD-VALIDITY-DIAGNOSTICS",
+  "date": "2026-07-13",
+  "created_by": "codex",
+  "manifest_type": "analysis_package",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics",
+  "script": "tools/analyze/build_litrev_cfd_validity_diagnostics.py",
+  "test": "tools/analyze/test_litrev_cfd_validity_diagnostics.py",
+  "primary_outputs": [
+    "cfd_single_stream_validity.csv",
+    "coefficient_naming_limits.csv",
+    "validation_report.json",
+    "summary.json",
+    "README.md"
+  ],
+  "source_inputs": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/test_litrev_cfd_validity_diagnostics.py",
+    "python3.11 tools/analyze/build_litrev_cfd_validity_diagnostics.py"
+  ],
+  "boundaries": [
+    "Existing artifact proxies were used first.",
+    "Secondary velocity fraction and exact reverse-flow area/mass are marked as future extraction needs where absent.",
+    "No new OpenFOAM extraction was run."
+  ]
+}

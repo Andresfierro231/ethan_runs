@@ -1,0 +1,43 @@
+{
+  "task": "AGENT-558",
+  "date": "2026-07-20",
+  "objective": "Ingest completed external UMX1 Fluid follow-up artifacts and declare whether UMX1 is scorecard-ready, blocked, or superseded after AGENT-557 TSWFC2 not-admission.",
+  "decision": "blocked_not_scorecard_ready_no_grid",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-558.md",
+    ".agent/journal/2026-07-20/umx1-fluid-intake-decision.md",
+    "imports/2026-07-20_umx1_fluid_intake_decision.json",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/decision_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/root_and_ledger_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/scenario_score_intake.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/summary.json"
+  ],
+  "read_only_context": [
+    "../cfd-modeling-tools/.agent/BOARD.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-20_workflow_journal.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/umx1_bracket_smoke_v1/RUN_SUMMARY.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/umx1_bracket_smoke_v1/analysis/scenario_rankings.csv",
+    "/tmp/umx1_tswfc2_combined_smoke_v1_check/RUN_SUMMARY.md",
+    "/tmp/umx1_tswfc2_combined_smoke_v1_check/analysis/scenario_rankings.csv",
+    "/tmp/tswfc2_smoke_v1_check/RUN_SUMMARY.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_forward_blocker_unlock_runbook/README.md"
+  ],
+  "no_scorecard_outputs": true,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": "none",
+  "external_fluid_edit": false,
+  "tools_analyze_edit": false,
+  "fit_or_model_selection_run": false,
+  "score_grid_run": false,
+  "scientific_admission_change": "none",
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "notes": "UMX1 root handling is smoke-unlocked, but exchange score behavior remains worse than baseline and combined UMX1+TSWFC2 is also poor. Do not run a UMX1 grid without a new physical candidate or release gate."
+}

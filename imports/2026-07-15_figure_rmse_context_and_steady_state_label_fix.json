@@ -1,0 +1,36 @@
+{
+  "task": "AGENT-433",
+  "date": "2026-07-15",
+  "status": "complete",
+  "created_or_updated": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-15_AGENT-433.md",
+    ".agent/journal/2026-07-15/figure-rmse-context-and-steady-state-label-fix.md",
+    "imports/2026-07-15_figure_rmse_context_and_steady_state_label_fix.json",
+    "tools/analyze/build_integrated_powerpoint_figures_and_definitions.py",
+    "tools/analyze/test_integrated_powerpoint_figures_and_definitions.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig06_heater_cooler_rmse.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig07_steady_state_rms_sem.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/summary.json",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/heater_cooler_model_form_errors.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_user_train_scope/representative_metrics.csv",
+    "native CFD solver outputs",
+    "../cfd-modeling-tools/**"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/build_integrated_powerpoint_figures_and_definitions.py",
+    "python3.11 -m pytest tools/analyze/test_integrated_powerpoint_figures_and_definitions.py",
+    "rg checks for RMSE reference, Salt2-fit assumptions, and corrected steady-state labels"
+  ],
+  "guardrails": [
+    "No PowerPoint creation.",
+    "No native CFD output mutation.",
+    "No external Fluid edits.",
+    "No registry/admission mutation.",
+    "No generated-index refresh."
+  ]
+}

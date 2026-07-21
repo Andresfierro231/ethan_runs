@@ -1,0 +1,74 @@
+{
+  "task": "TODO-TWO-TAP-PRESSURE-BASIS-RECIRC-AUDIT",
+  "date": "2026-07-18",
+  "role": "Hydraulics/Tester/Implementer/Writer",
+  "objective": "Audit pressure/velocity basis and recirculation gates from the six harvested corner_lower_right two-tap raw endpoint rows without fitting F6 or admitting component K.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/blockers.yml",
+    ".agent/status/2026-07-18_TODO-TWO-TAP-PRESSURE-BASIS-RECIRC-AUDIT.md",
+    ".agent/journal/2026-07-18/two-tap-pressure-basis-recirc-audit.md",
+    "imports/2026-07-18_two_tap_pressure_basis_recirc_audit.json",
+    "tools/analyze/build_two_tap_pressure_basis_recirc_audit.py",
+    "tools/analyze/test_two_tap_pressure_basis_recirc_audit.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/gate_decision_table.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/next_action_queue.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/source_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/summary.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/basis_field_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/recirculation_metric_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/same_qoi_uncertainty_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/next_step_queue.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/research_path_matrix.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_two_tap_pressure_basis_recirc_audit.py",
+      "result": "passed: feature_pairs=3 basis_resolved_pairs=3 recirculation_fail_pairs=3 ordinary_component_k_candidates=0"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_two_tap_pressure_basis_recirc_audit",
+      "result": "passed: 5 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK with 13 entries; generated index files were not refreshed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "endpoint_pressure_invented": false
+  },
+  "resolved_blockers": [
+    "pressure_velocity_basis for the three harvested corner_lower_right rows"
+  ],
+  "unresolved_blockers": [
+    "two-tap-corner-lower-right-material-reverse-flow",
+    "component isolation/straight reference not audited",
+    "same-QOI uncertainty not attached",
+    "ordinary F6/component-K admission remains forbidden from these rows"
+  ]
+}

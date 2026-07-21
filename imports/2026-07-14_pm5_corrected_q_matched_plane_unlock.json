@@ -1,0 +1,86 @@
+{
+  "task": "AGENT-357",
+  "created_at": "2026-07-14T16:45:00-05:00",
+  "generated_by": "codex",
+  "work_product_root": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock",
+  "native_solver_outputs_mutated": false,
+  "scheduler_jobs_submitted": [
+    {
+      "job_id": "3295901",
+      "job_name": "upc_pm5q",
+      "partition": "normal",
+      "initial_state": "PENDING",
+      "final_state": "CANCELLED",
+      "initial_reason": "Priority",
+      "sbatch": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/submit_pm5_matched_plane_compute.sbatch"
+    },
+    {
+      "job_id": "3295968",
+      "job_name": "upc_pm5q",
+      "partition": "NuclearEnergy",
+      "initial_state": "PENDING",
+      "final_state": "CANCELLED",
+      "initial_reason": "Priority",
+      "sbatch": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/submit_pm5_matched_plane_compute.sbatch"
+    }
+  ],
+  "interactive_runs": [
+    {
+      "run_id": "interactive_3295120",
+      "allocation_job_id": "3295120",
+      "allocation_partition": "NuclearEnergy-dev",
+      "host": "c318-008.ls6.tacc.utexas.edu",
+      "launch_method": "srun -N1 -n1",
+      "final_state": "FAILED",
+      "exit_code": 1,
+      "script": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/run_pm5_interactive_srun.sh",
+      "status_file": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/interactive_srun_status.txt"
+    },
+    {
+      "run_id": "interactive_3295120_retry1",
+      "allocation_job_id": "3295120",
+      "allocation_partition": "NuclearEnergy-dev",
+      "host": "c318-008.ls6.tacc.utexas.edu",
+      "launch_method": "srun -N1 -n1",
+      "final_state": "FAILED",
+      "exit_code": 1,
+      "failure_summary": "source-case system/functions file remained in tmp staging, so OpenFOAM used inherited yPlus functions and failed without a turbulence model",
+      "script": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/run_pm5_interactive_srun.sh",
+      "status_file": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/interactive_srun_status.txt"
+    },
+    {
+      "run_id": "interactive_3295120_retry2",
+      "allocation_job_id": "3295120",
+      "allocation_partition": "NuclearEnergy-dev",
+      "host": "c318-008.ls6.tacc.utexas.edu",
+      "launch_method": "srun -N1 -n1",
+      "final_state": "COMPLETED",
+      "exit_code": 0,
+      "finished_at": "2026-07-14T18:01:29-05:00",
+      "parsed_csv_count": 4,
+      "parsed_metric_row_count": 12,
+      "admitted_metric_row_count": 0,
+      "parsed_quality_flag": "blocked-missing-field",
+      "parsed_failure_summary": "sampled plane files missing one of required fields U/rho/T; sampled wall files missing wall T or wallHeatFlux",
+      "current": true,
+      "script": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/run_pm5_interactive_srun.sh",
+      "status_file": "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/interactive_srun_status.txt"
+    }
+  ],
+  "read_only_inputs": [
+    "tools/extract/sample_upcomer_matched_plane_metrics.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_4_jin_coarse_mesh/mesh_stations.json",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_lo5q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_hi5q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_lo5q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi5q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation"
+  ],
+  "validation": [
+    "bash -n work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/run_pm5_matched_plane_compute.sh",
+    "bash -n work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/submit_pm5_matched_plane_compute.sbatch",
+    "python3.11 work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/pm5_matched_plane_helper.py preflight",
+    "python3.11 work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/pm5_matched_plane_helper.py write-control-dict --case-dir /tmp/pm5_control_test --case-key salt2_lo5q --mode surfaces"
+  ]
+}

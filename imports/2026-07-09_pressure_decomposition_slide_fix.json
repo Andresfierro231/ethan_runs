@@ -1,0 +1,26 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-232",
+  "role": "Coordinator / Implementer / Writer",
+  "purpose": "Document the pressure-decomposition misunderstanding and update the July 8 presentation slide to use a mechanical-pressure chart rather than the signed p_rgh density-gradient decomposition as the primary visual.",
+  "inputs_read_only": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv"
+  ],
+  "outputs": [
+    "tools/analyze/build_postprocessor_summary_charts.py",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/mechanical_pressure_terms_by_span.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figure_manifest.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/slide_outline_with_speaker_notes.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/pressure_decomposition_misunderstanding_and_slide_fix.md"
+  ],
+  "interpretation": [
+    "The signed p_rgh density-gradient decomposition is useful as a method/audit figure but is not presentation-safe as a mechanical pressure-loss comparison.",
+    "The right leg is the downcomer and flows downward with gravity.",
+    "The left_lower_leg, test_section_span, and left_upper_leg form the riser/upcomer path and flow upward against gravity.",
+    "The upper leg does not dominate mechanical pressure loss; its large signed density-gradient value is a p_rgh cancellation/source term."
+  ],
+  "solver_outputs_modified": false,
+  "external_code_modified": false
+}

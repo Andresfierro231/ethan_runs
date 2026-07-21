@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-284",
+  "type": "salt2_closure_qoi_mesh_gci_manifest",
+  "purpose": "Build Salt2-first Closure-QOI mesh GCI package with separate hydraulic and thermal lanes.",
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/friction_mesh_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/momentum_mesh_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/medium/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv"
+  ],
+  "outputs": [
+    "tools/analyze/build_salt2_closure_qoi_mesh_gci.py",
+    "tools/analyze/test_salt2_closure_qoi_mesh_gci.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_triplets.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_gci_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_admission_decisions.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/blocked_or_diagnostic_qois.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/summary.json",
+    ".agent/status/2026-07-13_AGENT-284.md",
+    ".agent/journal/2026-07-13/salt2-closure-qoi-mesh-gci.md"
+  ],
+  "summary": {
+    "triplet_count": 25,
+    "numeric_triplet_complete_count": 14,
+    "gci_row_count": 14,
+    "publication_ready_count": 0,
+    "thermal_status": "blocked_missing_fine_thermal_extraction"
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false
+}

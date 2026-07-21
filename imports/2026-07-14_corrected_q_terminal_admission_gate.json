@@ -1,0 +1,27 @@
+{
+  "task": "AGENT-320",
+  "date": "2026-07-14",
+  "type": "corrected_q_terminal_admission_gate",
+  "status": "complete",
+  "artifact": "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate",
+  "job_id": "3293924",
+  "checked_at_local": "2026-07-14T11:47:34-05:00",
+  "source_inputs": [
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/*/case_stage/*/logs/log.foamRun_corrected_q"
+  ],
+  "outputs": [
+    "README.md",
+    "corrected_q_terminal_gate_rows.csv",
+    "summary.json"
+  ],
+  "result": {
+    "top_level_state": "RUNNING",
+    "terminal": false,
+    "corrected_q_rows_admitted": 0,
+    "row_classification": "blocked_pending_terminal_gate"
+  },
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false
+}

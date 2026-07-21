@@ -1,0 +1,63 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-271",
+  "title": "Patch-boundary fixed-mdot 1D parity package",
+  "generated_package": "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity",
+  "script": "tools/analyze/run_patch_boundary_fixed_mdot_1d_parity.py",
+  "tests": "tools/analyze/test_patch_boundary_fixed_mdot_1d_parity.py",
+  "inputs": [
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+      "source_task": "AGENT-263",
+      "role": "patch-level CFD boundary role, BC, area, heat, and metadata table"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv",
+      "source_task": "AGENT-263",
+      "role": "segment-collapsed CFD boundary inputs"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/radiation_parity_decision.json",
+      "source_task": "AGENT-264",
+      "role": "rcExternalTemperature radiation parity decision"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+      "source_task": "AGENT-208",
+      "role": "CFD mdot and thermal target rows"
+    },
+    {
+      "path": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+      "source_task": "read-only external Fluid solver",
+      "role": "fixed-mdot thermal replay execution through pressure_residual"
+    }
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/parity_input_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/section_heat_balance.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/run_plan.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/fixed_mdot_parity_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/path_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/parity_decision_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/run_metadata.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/README.md"
+  ],
+  "commands": [
+    "python tools/analyze/run_patch_boundary_fixed_mdot_1d_parity.py --plan-only --strict",
+    "pytest -q tools/analyze/test_patch_boundary_fixed_mdot_1d_parity.py",
+    "python tools/analyze/run_patch_boundary_fixed_mdot_1d_parity.py --strict"
+  ],
+  "result_summary": {
+    "parity_contract_rows": 15,
+    "section_heat_balance_rows": 24,
+    "run_plan_rows": 15,
+    "result_rows": 12,
+    "path_summary_rows": 4,
+    "validation_errors": 0,
+    "best_path_by_mean_abs_Tmean_error": "B1_legacy_cfd_cooler_duty",
+    "radiation_parity_mode": "inseparable",
+    "external_bc_equivalent_status": "contract_only_current_fluid_api_gap"
+  },
+  "solver_output_mutation": "none",
+  "external_fluid_edits": "none"
+}

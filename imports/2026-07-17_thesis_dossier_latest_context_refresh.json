@@ -1,0 +1,35 @@
+{
+  "task": "AGENT-488",
+  "date": "2026-07-17",
+  "role": "Writer",
+  "type": "documentation_manifest",
+  "status": "complete",
+  "objective": "Refresh the living thesis dossier with latest July 16-17 context, model forms, split policy, blockers, and claim boundaries.",
+  "outputs": [
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/master_thesis_bullet_outline.md",
+    "reports/thesis_dossier/2026-07-17_thesis_dossier_latest_context_update.md",
+    ".agent/status/2026-07-17_AGENT-488.md",
+    ".agent/journal/2026-07-17/thesis-dossier-latest-context-refresh.md"
+  ],
+  "read_only_sources": [
+    ".agent/BLOCKERS.md",
+    "operational_notes/07-26/17/2026-07-17_CANONICAL_FINAL_PREDICTIVE_SPLIT_POLICY.md",
+    "operational_notes/07-26/16/2026-07-16_fluid_walls_steady_1d_model_form.md",
+    "operational_notes/07-26/15/2026-07-15_segment_resolved_pressure_thermal_modeling_plan.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt1_schema_promotion/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md"
+  ],
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "generated_index_refreshed": false,
+    "pptx_edited": false,
+    "scientific_admission_changed": false
+  },
+  "notes": "Generated index refresh was intentionally skipped because active AGENT-482 owns generated index paths."
+}

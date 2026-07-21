@@ -1,0 +1,42 @@
+{
+  "task": "TODO-SAME-QOI-UQ-PHASE-B-MESH-GCI-EVIDENCE-MATRIX-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Mesh-GCI / cfd-pp / Tester / Writer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-SAME-QOI-UQ-PHASE-B-MESH-GCI-EVIDENCE-MATRIX-2026-07-21.md",
+    ".agent/journal/2026-07-21/same-qoi-uq-phase-b-mesh-gci-evidence-matrix.md",
+    "imports/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/build_same_qoi_uq_phase_b_mesh_gci_evidence_matrix.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/check_same_qoi_uq_phase_b_mesh_gci_evidence_matrix.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/mesh_gci_coverage_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/gci_provenance_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/blocked_qoi_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/thesis_ready_table_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/phase_c_input_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/qoi_retained_window_inventory.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/same_qoi_uq_required_outputs.csv",
+    "work_products/2026-06/2026-06-30/2026-06-30_claude_gci_study/gci_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/thermal_mesh_gate_qois.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_mesh_uq.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "fluid_source_mutated": false,
+  "external_repo_mutated": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "new_mesh_solve": false,
+  "invented_gci_rows": 0,
+  "closure_admission_mutated": false,
+  "fit_or_model_selection_performed": false,
+  "generated_docs_index_mutated": false,
+  "no_scorecard_outputs": true
+}

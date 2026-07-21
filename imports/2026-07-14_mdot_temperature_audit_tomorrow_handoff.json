@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-14",
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_index_refresh": "not_run_generated_index_scope_not_claimed",
+  "journal": ".agent/journal/2026-07-14/mdot-temperature-audit-tomorrow-handoff.md",
+  "kind": "work_product_import",
+  "native_cfd_outputs_mutated": false,
+  "note": "operational_notes/07-26/14/2026-07-14_MDOT_TEMPERATURE_AUDIT_TOMORROW_HANDOFF.md",
+  "overnight_queue": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_audit_tomorrow_handoff/overnight_study_queue.csv",
+  "readme": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_audit_tomorrow_handoff/README.md",
+  "status": ".agent/status/2026-07-14_AGENT-372.md",
+  "task": "AGENT-372",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_audit_tomorrow_handoff"
+}

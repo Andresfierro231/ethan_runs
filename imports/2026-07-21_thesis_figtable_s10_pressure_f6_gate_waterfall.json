@@ -1,0 +1,44 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21",
+  "task_id": "TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figtable-s10-pressure-f6-gate-waterfall.md",
+    "imports/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/build_thesis_figtable_s10_pressure_f6_gate_waterfall.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/check_thesis_figtable_s10_pressure_f6_gate_waterfall.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/f3_shah_apparent_comparison_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/claim_boundary_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/caption_bank.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/README.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_gate_review.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/gate_rollup.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f6_candidate_admission_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table/same_qoi_uq_admission_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/pressure_residual_waterfall_shell.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_refreshed": false,
+  "thesis_chapters_or_figure_assets_mutated": false,
+  "result": {
+    "admitted_rows": 0,
+    "component_k_values_published": 0,
+    "cluster_k_values_published": 0,
+    "f6_fits_performed": 0,
+    "clipped_k_rows": 0,
+    "global_multiplier_rows": 0
+  }
+}

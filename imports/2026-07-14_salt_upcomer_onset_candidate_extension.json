@@ -1,0 +1,49 @@
+{
+  "task": "AGENT-340",
+  "created_at": "2026-07-14T12:42:35-05:00",
+  "description": "Extended the salt CFD training evidence inventory with upcomer recirculation-onset candidate classifications and actions.",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "read_only_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/upcomer_recirculation_onset_conditions.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/next_evidence_requirements.csv",
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "registry/case_registry.csv",
+    "registry/_all_postprocessing_runs.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations"
+  ],
+  "generated_or_updated_outputs": [
+    "tools/analyze/build_salt_cfd_training_evidence_inventory.py",
+    "tools/analyze/test_salt_cfd_training_evidence_inventory.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/run_actions_needed.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/upcomer_onset_candidate_cases.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/summary.json",
+    ".agent/status/2026-07-14_AGENT-340.md",
+    ".agent/journal/2026-07-14/salt-upcomer-onset-candidate-extension.md"
+  ],
+  "scheduler_observation": {
+    "job_id": "3293924",
+    "job_name": "saltq_sel_cont",
+    "observed_state": "R",
+    "elapsed": "19:37:53",
+    "node": "c318-016"
+  },
+  "result_summary": {
+    "salt1_status": "diagnostic-only pending explicit Salt1 admission/split policy and matched onset metrics",
+    "corrected_q_harvest": "not launchable as immediate harvest while selected job 3293924 is running; launch terminal harvest/postprocessing after exit or through a separately claimed dependency-gated job",
+    "existing_onset_bracket": false,
+    "current_re_upcomer_range": "71.125 to 134.883",
+    "highest_available_re_upcomer": "134.883",
+    "all_available_rows_recirculating": true,
+    "new_run_targets_if_needed": [150, 200, 250]
+  },
+  "verification": [
+    "python3.11 -m unittest tools.analyze.test_salt_cfd_training_evidence_inventory",
+    "python3.11 tools/analyze/build_salt_cfd_training_evidence_inventory.py"
+  ]
+}

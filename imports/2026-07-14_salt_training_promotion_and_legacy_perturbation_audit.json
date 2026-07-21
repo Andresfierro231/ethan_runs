@@ -1,0 +1,41 @@
+{
+  "task": "AGENT-355",
+  "created_at": "2026-07-14T16:31:00-05:00",
+  "generated_by": "codex",
+  "work_product_root": "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "scheduler_jobs_submitted": [],
+  "read_only_inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/admission_decision_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_steady_state_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_heat_role_reduction.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_perturbation_requal/perturbation_requal.csv",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/campaign_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/invalid_or_diagnostic_runs.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/candidate_readiness_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/scripts/run_upcomer_matched_plane_compute.sh",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/README.md"
+  ],
+  "generated_outputs": [
+    "tools/analyze/build_salt_training_promotion_and_legacy_perturbation_audit.py",
+    "tools/analyze/test_salt_training_promotion_and_legacy_perturbation_audit.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/salt1_training_admission_package.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/pm5_perturbed_q_split_override.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/salt_training_split_override.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/legacy_perturbation_label_audit.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/salt3_hiq_hiins_documentation.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/matched_pressure_upcomer_workflow_readiness.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/more_training_data_todo.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/summary.json"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/build_salt_training_promotion_and_legacy_perturbation_audit.py",
+    "python3.11 -m unittest tools.analyze.test_salt_training_promotion_and_legacy_perturbation_audit",
+    "python3.11 -m unittest tools.analyze.test_submitted_cfd_run_steady_state_table"
+  ],
+  "notes": "Matched pressure/upcomer extraction for +/-5Q was not submitted because the current runner does not include the harvested +/-5Q case roots."
+}

@@ -1,0 +1,43 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-S6-BLOCKED-SCORECARD-SHELL-2026-07-21",
+  "task_id": "TODO-THESIS-FIGTABLE-S6-BLOCKED-SCORECARD-SHELL-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Figures/Writer/Reviewer/Forward-pred",
+  "objective": "Build a thesis-ready S6 blocked-scorecard shell visual/table package.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-S6-BLOCKED-SCORECARD-SHELL-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figtable-s6-blocked-scorecard-shell.md",
+    "imports/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/s0_s11_gate_flow_diagram.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/frozen_candidate_placeholder_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/split_role_scorecard_shell_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/caption_bank.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/README.md"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_index_mutated": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "claim_flags": {
+    "closure_admission_changed": false,
+    "final_predictive_score_claimed": false,
+    "runtime_leakage_relaxed": false
+  }
+}

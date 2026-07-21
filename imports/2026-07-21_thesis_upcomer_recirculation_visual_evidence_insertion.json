@@ -1,0 +1,74 @@
+{
+  "task": "TODO-THESIS-UPCOMER-RECIRCULATION-VISUAL-EVIDENCE-INSERTION-2026-07-21",
+  "task_id": "TODO-THESIS-UPCOMER-RECIRCULATION-VISUAL-EVIDENCE-INSERTION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer/Figures",
+  "objective": "Document existing Salt2/Salt4 upcomer visuals as diagnostic thesis evidence for recirculation-dominated model-form selection.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-UPCOMER-RECIRCULATION-VISUAL-EVIDENCE-INSERTION-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-upcomer-recirculation-visual-evidence-insertion.md",
+    "imports/2026-07-21_thesis_upcomer_recirculation_visual_evidence_insertion.json",
+    "operational_notes/07-26/21/2026-07-21_THESIS_UPCOMER_RECIRCULATION_VISUAL_EVIDENCE_INSERTION.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "reports/thesis_dossier/figures/README.md",
+    "reports/thesis_dossier/figures/figure_claim_crosswalk.csv",
+    "reports/thesis_dossier/figures/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/20/2026-07-20_THESIS_RECIRCULATION_IMAGE_CANDIDATES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/caption_bank.md",
+    "figures/figures_rendered/paraview_velocity_arrows/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/svg/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_magnitude_arrows.svg",
+    "figures/figures_rendered/paraview_velocity_arrows/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_magnitude_arrows.svg",
+    "registry/salt2/ethan_modern_runs_staged/salt_test_2_jin/viscosity_screening_salt_test_2_jin_coarse_mesh/plots/velocity_profiles/svg/registry_velocity_final.svg"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_modified": false,
+    "rendered_figures_modified": false,
+    "registry_modified": false,
+    "admission_state_modified": false,
+    "scheduler_used": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_modified": false,
+    "external_repo_modified": false,
+    "blocker_register_source_modified": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "admission_change": "none",
+  "runtime_leakage_policy": "No CFD mdot, realized wallHeatFlux, imposed cooler duty, realized test-section heat, validation temperatures, holdout temperatures, or external-test temperatures were promoted to predictive runtime inputs.",
+  "validation": {
+    "status": "passed",
+    "commands": [
+      {
+        "command": "python3.11 -c \"<path and CSV validation>\"",
+        "result": "passed; checked five cited SVG/PDF visual paths and parsed figure/source CSVs"
+      },
+      {
+        "command": "rg -n \"F-03A|2D-axisymmetric|val_salt2|Salt2 Jin\" <task docs>",
+        "result": "passed; confirmed F-03A placement and provenance caveats"
+      },
+      {
+        "command": "git diff --check -- <task paths>",
+        "result": "passed with no output"
+      },
+      {
+        "command": "python3.11 tools/docs/build_repo_index.py",
+        "result": "passed; indexed 2287 docs, 42 board rows, 15 blockers"
+      },
+      {
+        "command": "python3.11 tools/docs/build_repo_index.py --check",
+        "result": "passed; blocker register OK with 15 entries"
+      }
+    ]
+  }
+}

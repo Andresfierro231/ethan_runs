@@ -1,0 +1,43 @@
+{
+  "task": "TODO-THESIS-ENRICHMENT-STUDY-IMAGE-TASK-DISPATCH-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer/Reviewer",
+  "objective": "Put highest-value thesis studies and image/table enrichment tasks on the board with durable handoff documentation.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-ENRICHMENT-STUDY-IMAGE-TASK-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-enrichment-study-image-task-dispatch.md",
+    "imports/2026-07-21_thesis_enrichment_study_image_task_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_THESIS_ENRICHMENT_STUDY_IMAGE_TASK_DISPATCH.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/high_value_board_coverage.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/image_table_task_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/execution_order.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/board_rows_added.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_enrichment_study_image_task_dispatch/summary.json"
+  ],
+  "read_only_context": [
+    ".agent/BLOCKERS.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/figures/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/next_study_portfolio.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "solver_or_postprocessing_launched": false,
+  "generated_index_refresh": false,
+  "fitting_tuning_or_model_selection": false,
+  "closure_admission_change": false,
+  "final_predictive_score_claim": false,
+  "thesis_chapter_edit": false,
+  "figure_asset_edit": false
+}

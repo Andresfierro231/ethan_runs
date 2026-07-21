@@ -1,0 +1,37 @@
+{
+  "task_id": "AGENT-315",
+  "date": "2026-07-14",
+  "artifact": "work_products/2026-07/2026-07-14/2026-07-14_forward_model_readiness_after_h1_proxy",
+  "description": "Forward-model readiness note after AGENT-308 H1 proxy and forward-v0 solve_case confirmation.",
+  "created_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "source_inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_variant_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/hx_validation_guardrail_scorecard.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_endtoend_scorecard_precursor/README.md"
+  ],
+  "outputs": [
+    "README.md",
+    "readiness_lanes_after_h1_proxy.csv",
+    "train_validation_holdout_guardrail.csv",
+    "residual_attribution_after_h1_proxy.csv",
+    "input_contract_gate_readiness.csv",
+    "blockers_to_final_forward_v1.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "validation_commands": [
+    "python3.11 -m unittest tools.analyze.test_forward_model_readiness_after_h1_proxy",
+    "python3.11 tools/analyze/build_forward_model_readiness_after_h1_proxy.py"
+  ],
+  "index_refresh": "not_run_active_AGENT_309_claims_generated_index_files"
+}

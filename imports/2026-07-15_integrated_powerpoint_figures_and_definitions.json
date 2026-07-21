@@ -1,0 +1,51 @@
+{
+  "task": "AGENT-428",
+  "date": "2026-07-15",
+  "role": "Thesis / Presentation / Documentation / Figures",
+  "status": "complete",
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figure_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/term_glossary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/equation_register.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig01_loop_schematic.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig02_glossary_equations.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig03_boundary_mode_ladder.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig04_mode_error_bars.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig05_test_section_tradeoff.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig06_heater_cooler_rmse.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig07_steady_state_rms_sem.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig08_admission_gate_funnel.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig09_forward_v1_roadmap.svg",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline.md",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md",
+    "tools/analyze/build_integrated_powerpoint_figures_and_definitions.py",
+    "tools/analyze/test_integrated_powerpoint_figures_and_definitions.py",
+    ".agent/status/2026-07-15_AGENT-428.md",
+    ".agent/journal/2026-07-15/definitions-first-outline-and-figure-only-correction.md"
+  ],
+  "input_sources": [
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/mode_error_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/heater_cooler_model_form_errors.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_user_train_scope/representative_metrics.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/summary.json",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline.md"
+  ],
+  "validation": [
+    "python3.11 -m pytest -q tools/analyze/test_integrated_powerpoint_figures_and_definitions.py",
+    "python3.11 tools/analyze/build_integrated_powerpoint_figures_and_definitions.py",
+    "rg validation: no AGENT-428 output path creates or references a .pptx"
+  ],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "generated_index_refreshed": false,
+    "external_fluid_mutated": false,
+    "powerpoint_created": false,
+    "powerpoint_artifacts_removed": true,
+    "existing_reports_thesis_dossier_2026_07_15_powerpoint_deck_mutated": false
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-307",
+  "kind": "tomorrow_start_here_handoff",
+  "created_local": "2026-07-13T17:38:44-05:00",
+  "updated_local": "2026-07-13T17:45:20-05:00",
+  "outputs": [
+    "operational_notes/07-26/13/2026-07-13_TOMORROW_START_HERE.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/source_manifest.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/trusted_packages.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/tomorrow_sequence.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/blockers_and_gates.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/launch_state.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_tomorrow_start_here/summary.json",
+    ".agent/status/2026-07-13_AGENT-307.md",
+    ".agent/journal/2026-07-13/tomorrow-start-here.md"
+  ],
+  "source_context": [
+    ".agent/BOARD.md",
+    "operational_notes/07-26/13/2026-07-13_TOMORROW_CORRECTED_SALT_Q_LIVE_JOB_HANDOFF.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/README.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/master_thesis_bullet_outline.md"
+  ],
+  "scheduler_snapshot": {
+    "checked_local": "2026-07-13T17:45:20-05:00",
+    "running": [
+      {"job_id": "3293924", "name": "saltq_sel_cont", "elapsed": "00:41:35", "node": "c318-016"},
+      {"job_id": "3292998", "name": "idv01713", "elapsed": "7:34:25", "node": "c318-008"}
+    ],
+    "completed_verified": [
+      {"job_id": "3294001", "name": "s2_coarse_T+", "state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:02:41", "node": "c318-011"},
+      {"job_id": "3293960", "name": "fwdv0_solve", "state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:07:19"}
+    ]
+  },
+  "new_jobs_launched_by_agent_307": false,
+  "other_active_agent_launches_observed": [
+    {"task_id": "AGENT-305", "job_id": "3294001", "name": "s2_coarse_T+", "state": "COMPLETED", "exit_code": "0:0", "elapsed": "00:02:41"}
+  ],
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false
+}

@@ -1,0 +1,54 @@
+{
+  "created_at": "2026-07-13",
+  "task_id": "AGENT-273",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Add a compact presentation table for admitted Salt2/3/4 mainline time-series uncertainty metrics.",
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/"
+  ],
+  "outputs": [
+    "tools/analyze/build_time_series_uncertainty_story.py",
+    "tools/analyze/test_time_series_uncertainty_story.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/presentation_salt234_timeseries_uncertainty.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/presentation_salt234_timeseries_uncertainty.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/README.md"
+  ],
+  "output_counts": {
+    "presentation_salt234_rows": 27,
+    "cases": 3,
+    "quantities_per_case": 9
+  },
+  "quantities": [
+    "mdot",
+    "T probe 0",
+    "T probe 1",
+    "T probe 2",
+    "T probe 3",
+    "T probe 4",
+    "T probe 5",
+    "wall T",
+    "total_Q residual"
+  ],
+  "columns": [
+    "mean",
+    "corrected_sem",
+    "oscillation_amplitude",
+    "drift_over_300s",
+    "verdict"
+  ],
+  "total_q_policy": "Report total_Q residual in absolute W terms; avoid relative error because it is a near-zero residual.",
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_time_series_uncertainty_story.py tools/analyze/test_time_series_uncertainty_story.py",
+    "python3.11 tools/analyze/test_time_series_uncertainty_story.py",
+    "python3.11 tools/analyze/build_time_series_uncertainty_story.py",
+    "python3.11 -m json.tool imports/2026-07-13_salt234_presentation_uncertainty_table.json"
+  ],
+  "mutations_avoided": [
+    "no_solver_output_mutation",
+    "no_registry_edit",
+    "no_external_model_edit",
+    "no_scheduler_action"
+  ]
+}

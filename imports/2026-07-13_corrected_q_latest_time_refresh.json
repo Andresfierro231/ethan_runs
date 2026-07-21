@@ -1,0 +1,26 @@
+{
+  "task_id": "AGENT-261",
+  "created_at": "2026-07-13T10:59:49-0500",
+  "purpose": "Refresh corrected-Q latest-time reporting with strict registry coverage and compare selected Salt1/Salt4 rows against the July 10 table without admission changes.",
+  "outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/selected_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/all_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/corrected_q_latest_timesteps.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/corrected_q_registry_coverage.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/latest_time_delta_vs_2026-07-10.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/summary.json"
+  ],
+  "inputs": [
+    "registry/case_registry.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/convergence_resubmit_recommendations.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/corrected_q_latest_timesteps.csv"
+  ],
+  "commands": [
+    "python3.11 -m unittest tools.analyze.test_registry_corrected_q_status_table",
+    "python3.11 tools/analyze/build_registry_corrected_q_status_table.py --strict-registry --output-dir work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh"
+  ],
+  "admission_changes": "none"
+}

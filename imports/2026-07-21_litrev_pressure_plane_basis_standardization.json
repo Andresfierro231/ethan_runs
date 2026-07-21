@@ -1,0 +1,72 @@
+{
+  "task": "TODO-LITREV-PRESSURE-PLANE-BASIS-STANDARDIZATION",
+  "task_id": "TODO-LITREV-PRESSURE-PLANE-BASIS-STANDARDIZATION",
+  "date": "2026-07-21",
+  "role": "cfd-pp/Hydraulics/Tester/Writer",
+  "objective": "Standardize existing CFD pressure plane and basis metadata across current station, branch, two-tap, F6 endpoint, and upcomer matched-plane pressure sources.",
+  "no_scorecard_outputs": true,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-PRESSURE-PLANE-BASIS-STANDARDIZATION.md",
+    ".agent/journal/2026-07-21/litrev-pressure-plane-basis-standardization.md",
+    "imports/2026-07-21_litrev_pressure_plane_basis_standardization.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/build_litrev_pressure_plane_basis_standardization.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/test_litrev_pressure_plane_basis_standardization.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/next_extraction_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/face_level_qref_flux_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/q_ref_orientation_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_mesh_uq.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_time_uq.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_same_window_residual_targets/pm10_plane_pressure_targets.csv",
+    ".agent/status/2026-07-21_AGENT-576.md",
+    ".agent/status/2026-07-17_AGENT-485.md"
+  ],
+  "outputs": {
+    "ledger": "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv",
+    "next_queue": "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/next_extraction_queue.csv",
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/summary.json"
+  },
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/build_litrev_pressure_plane_basis_standardization.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/build_litrev_pressure_plane_basis_standardization.py work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/test_litrev_pressure_plane_basis_standardization.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/test_litrev_pressure_plane_basis_standardization.py",
+      "result": "passed: Ran 4 tests OK"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "solver_or_postprocessing_launched": false,
+  "next_recommended_task": "TODO-LITREV-SAME-QOI-UQ-EXECUTION"
+}

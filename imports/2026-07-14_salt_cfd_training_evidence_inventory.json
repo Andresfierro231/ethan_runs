@@ -1,0 +1,83 @@
+{
+  "task": "AGENT-334",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "native_solver_outputs_mutated": false,
+  "created": [
+    "tools/analyze/build_salt_cfd_training_evidence_inventory.py",
+    "tools/analyze/test_salt_cfd_training_evidence_inventory.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/corrected_q_perturbation_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/steady_state_admission_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/bc_role_label_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/recommended_salt_split.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/run_actions_needed.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/excluded_or_diagnostic_salt_runs.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/summary.json",
+    ".agent/status/2026-07-14_AGENT-334.md",
+    ".agent/journal/2026-07-14/salt-cfd-training-evidence-inventory.md",
+    "imports/2026-07-14_salt_cfd_training_evidence_inventory.json"
+  ],
+  "read_only_inputs": [
+    "registry/case_registry.csv",
+    "registry/_all_postprocessing_runs.csv",
+    "registry/salt1/_family_index.csv",
+    "registry/salt2/_family_index.csv",
+    "registry/salt3/_family_index.csv",
+    "registry/salt4/_family_index.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/submitted_jobs.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/all_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/corrected_q_terminal_gate_rows.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/refreshed_qoi_mesh_gate_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/fit_safety_summary.csv",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/mesh-gci-and-uncertainty.md"
+  ],
+  "outputs": {
+    "candidate_rows": 25,
+    "corrected_q_rows": 14,
+    "bc_role_rows": 52,
+    "actions_needed_rows": 6,
+    "excluded_or_diagnostic_rows": 12,
+    "usable_training_now": ["salt2_jin_nominal_continuation"],
+    "usable_validation_now": ["salt3_jin_nominal_continuation"],
+    "usable_holdout_now": ["salt4_jin_nominal_continuation"],
+    "corrected_q_rows_admitted_now": 0,
+    "live_job_3293924_state": "RUNNING"
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_salt_cfd_training_evidence_inventory",
+      "result": "passed_3_tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_salt_cfd_training_evidence_inventory.py",
+      "result": "package_regenerated"
+    },
+    {
+      "command": "squeue -j 3293924",
+      "result": "RUNNING at 2026-07-14T12:31:59-05:00; elapsed 19:28:03 on c318-016"
+    }
+  ],
+  "decisions": [
+    "Salt2/Salt3/Salt4 nominal continuations are the only current train/validation/holdout rows.",
+    "Corrected Salt-Q has zero admitted rows and remains pending terminal harvest/admission or sensitivity-only.",
+    "Perturbations of a baseline must not silently become independent training rows without a dated split policy.",
+    "Salt2 mesh-family evidence remains diagnostic until closure-QOI GCI/sign/heat-balance gates admit it.",
+    "Kirst, native reference, Salt1 context rows, and original false-steady perturbation evidence are not current training evidence."
+  ]
+}

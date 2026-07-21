@@ -1,0 +1,36 @@
+{
+  "task": "AGENT-458",
+  "date": "2026-07-16",
+  "title": "Predictive test-section heat-loss model admission",
+  "primary_output": "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model",
+  "blocker_action": {
+    "kept_open": "predictive-wall-test-section-submodels",
+    "reason": "Salt2-fit setup-only physical candidates underpredict Salt3/Salt4 heat loss and lack solver-coupled M3+TS mdot/TP/TW scoring."
+  },
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff/test_section_model_result_ledger.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff/test_section_temperature_probe_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_loss_candidates.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/end_to_end_diagnostic_comparison.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/blocker_decision.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/summary.json"
+  ],
+  "validation": [
+    "python3 tools/analyze/test_predictive_test_section_heat_loss_model.py",
+    "python3 tools/analyze/build_predictive_test_section_heat_loss_model.py"
+  ],
+  "guardrails": [
+    "No native CFD solver outputs mutated",
+    "No registry state mutated",
+    "No scheduler action",
+    "No external Fluid edit"
+  ]
+}

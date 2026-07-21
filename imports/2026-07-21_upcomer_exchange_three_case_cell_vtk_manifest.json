@@ -1,0 +1,88 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-THREE-CASE-CELL-VTK-MANIFEST-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Publish a three-case cell-lane manifest for Salt2/Salt3/Salt4 upcomer exchange sampler inputs while preserving non-cell blockers.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-UPCOMER-EXCHANGE-THREE-CASE-CELL-VTK-MANIFEST-2026-07-21.md",
+    ".agent/journal/2026-07-21/upcomer-exchange-three-case-cell-vtk-manifest.md",
+    "imports/2026-07-21_upcomer_exchange_three_case_cell_vtk_manifest.json",
+    "tools/extract/build_upcomer_exchange_three_case_cell_vtk_manifest.py",
+    "tools/extract/test_build_upcomer_exchange_three_case_cell_vtk_manifest.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_three_case_cell_vtk_manifest"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_geometry_release/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/**",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "native_solver_output_mutated": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_run": false,
+  "openfoam_postprocessing_launched": false,
+  "interface_wall_qwall_or_sampler_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "fitting_or_model_selection": false,
+  "exchange_cell_admission_changed": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "phase4b_rescore_run": false,
+  "phase5_or_s6_triggered": false,
+  "residual_absorbed_into_internal_Nu": false,
+  "validated_cell_vtk_rows": [
+    {
+      "case_id": "salt_2",
+      "time_window_s": 7915,
+      "observed_cells": 2166996,
+      "observed_fields": ["T", "U", "cellID", "rho"],
+      "validation_status": "pass"
+    },
+    {
+      "case_id": "salt_3",
+      "time_window_s": 7618,
+      "observed_cells": 2166996,
+      "observed_fields": ["T", "U", "cellID", "rho"],
+      "validation_status": "pass"
+    },
+    {
+      "case_id": "salt_4",
+      "time_window_s": 10000,
+      "observed_cells": 2166996,
+      "observed_fields": ["T", "U", "cellID", "rho"],
+      "validation_status": "pass"
+    }
+  ],
+  "remaining_blockers": [
+    "exchange_interface_vtk",
+    "wall_vtk",
+    "source_sink_ledger",
+    "Q_wall_W",
+    "normal_vectors",
+    "cp_J_kg_K"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/extract/build_upcomer_exchange_three_case_cell_vtk_manifest.py tools/extract/test_build_upcomer_exchange_three_case_cell_vtk_manifest.py",
+    "python3.11 -m unittest tools.extract.test_build_upcomer_exchange_three_case_cell_vtk_manifest",
+    "python3.11 tools/extract/build_upcomer_exchange_three_case_cell_vtk_manifest.py",
+    "python3.11 tools/agent/runtime_input_lint.py ...",
+    "python3.11 tools/agent/source_property_gate.py ... --strict",
+    "python3.11 tools/agent/split_policy_lint.py ...",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-UPCOMER-EXCHANGE-THREE-CASE-CELL-VTK-MANIFEST-2026-07-21"
+  ]
+}

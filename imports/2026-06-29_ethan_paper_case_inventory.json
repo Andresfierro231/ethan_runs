@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-06-29T14:10:43-05:00",
+  "package": "2026-06-29_ethan_paper_case_inventory",
+  "inputs": {
+    "freeze_windows_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-23/2026-06-23_ethan_cfd_freeze_checkpoint/freeze_case_windows.csv",
+    "representative_timesteps_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-23/2026-06-23_ethan_cfd_freeze_checkpoint/representative_timesteps.csv",
+    "validation_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-23/2026-06-23_ethan_frozen_state_1d_validation",
+    "bakeoff_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-23/2026-06-23_ethan_1d_closure_bakeoff",
+    "queue_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-26/2026-06-26_ethan_progressive_story_synthesis/open_analysis_queue.md",
+    "paper_safe_asset_map": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-17/2026-06-17_ethan_transport_scrutiny_package/paper_safe_asset_map.csv",
+    "promotion_candidate_index": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-18/2026-06-18_ethan_transport_analysis_package/promotion_candidate_index.csv",
+    "presentation_figure_manifest": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-23/2026-06-23_presentation/figures/figure_manifest.csv"
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_paper_case_inventory",
+    "work_product_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory",
+    "inventory_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory/paper_case_inventory.csv",
+    "claim_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory/paper_case_claim_map.csv",
+    "summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory/paper_case_class_summary.csv"
+  }
+}

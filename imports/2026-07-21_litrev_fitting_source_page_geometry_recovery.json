@@ -1,0 +1,52 @@
+{
+  "task": "TODO-LITREV-FITTING-SOURCE-PAGE-GEOMETRY-RECOVERY",
+  "task_id": "TODO-LITREV-FITTING-SOURCE-PAGE-GEOMETRY-RECOVERY",
+  "date": "2026-07-21",
+  "role": "Implementer/Tester/Writer",
+  "objective": "Recover source-page and facility-geometry blockers for LitRev fitting features without importing coefficients or changing admission state.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-FITTING-SOURCE-PAGE-GEOMETRY-RECOVERY.md",
+    ".agent/journal/2026-07-21/litrev-fitting-source-page-geometry-recovery.md",
+    "imports/2026-07-21_litrev_fitting_source_page_geometry_recovery.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/build_litrev_fitting_source_page_geometry_recovery.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/test_litrev_fitting_source_page_geometry_recovery.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/facility_geometry_recovery.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/source_equation_validity_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/feature_geometry_blockers.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_geometry_source_gap_recovery/geometry_source_gap_recovery.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_geometry_source_gap_recovery/source_page_audit_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv",
+    "reference/geometry_reference.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/chapters/06_minor_losses_quartz_transition.tex",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/schemas/minor_loss_table_schema.csv"
+  ],
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/build_litrev_fitting_source_page_geometry_recovery.py",
+    "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/test_litrev_fitting_source_page_geometry_recovery.py",
+    "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/build_litrev_fitting_source_page_geometry_recovery.py work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/test_litrev_fitting_source_page_geometry_recovery.py",
+    "python3.11 -c \"import json, pathlib; json.loads(pathlib.Path('imports/2026-07-21_litrev_fitting_source_page_geometry_recovery.json').read_text())\"",
+    "python3.11 tools/agent/preflight_task.py --task-id TODO-LITREV-FITTING-SOURCE-PAGE-GEOMETRY-RECOVERY",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-LITREV-FITTING-SOURCE-PAGE-GEOMETRY-RECOVERY"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launch": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "source_coefficients_imported": false,
+  "notes": "Source-page and facility geometry recovery only. All rows retain no_coefficient_admission."
+}

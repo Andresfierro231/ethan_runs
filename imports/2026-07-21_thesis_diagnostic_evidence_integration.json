@@ -1,0 +1,86 @@
+{
+  "task": "TODO-THESIS-DIAGNOSTIC-EVIDENCE-INTEGRATION-2026-07-21",
+  "task_id": "TODO-THESIS-DIAGNOSTIC-EVIDENCE-INTEGRATION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer/Forward-pred/Hydraulics/Thermal-modeling/Implementer/Tester",
+  "objective": "Integrate existing diagnostic recirculation, energy residual, ordinary upcomer closure-exclusion, and pressure/thermal residual-ownership evidence into thesis-ready tables and current section prose without admitting coefficients.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/status/2026-07-21_TODO-THESIS-DIAGNOSTIC-EVIDENCE-INTEGRATION-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-diagnostic-evidence-integration.md",
+    "imports/2026-07-21_thesis_diagnostic_evidence_integration.json",
+    "tools/analyze/build_thesis_diagnostic_evidence_integration.py",
+    "tools/analyze/test_thesis_diagnostic_evidence_integration.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/chapter_insertion_plan.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/diagnostic_claim_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/figure_table_ledger_update.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/ordinary_closure_exclusion_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/recirculation_guard_evidence_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/residual_ownership_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/summary.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/ordinary_closure_disable_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/reverse_flow_onset_evidence_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/throughflow_recirc_variable_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/source_family_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/phase3_release_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/phase4_decision_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/attempt_outcome_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/blocker_analysis.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "sampler_or_harvest_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "admission_state_mutated": false,
+  "ordinary_upcomer_nu_fd_k_admitted_rows": 0,
+  "exchange_cell_coefficient_admitted_rows": 0,
+  "scoreable_now_rows": 0,
+  "phase4b_ready": false,
+  "phase5_trigger": "not_triggered",
+  "final_predictive_score_claimed": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": true,
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_thesis_diagnostic_evidence_integration.py tools/analyze/test_thesis_diagnostic_evidence_integration.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/test_thesis_diagnostic_evidence_integration.py",
+      "result": "passed; 5 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_thesis_diagnostic_evidence_integration.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "passed; indexed 2142 docs, 41 board rows, 15 blockers"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed; blocker register OK with 15 entries"
+    }
+  ]
+}

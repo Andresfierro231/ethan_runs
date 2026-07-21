@@ -1,8 +1,20 @@
 {
   "generated_at": "2026-06-23T10:34:58-05:00",
+  "updated_at": "2026-06-29T12:56:19-05:00",
   "task_id": "AGENT-108",
   "output_dir": "reports/2026-06-23_ethan_cfd_freeze_checkpoint",
   "temporary_checkpoint_root": "tmp/2026-06-23_salt_last20_checkpoint",
+  "temporary_checkpoint_copy_status": {
+    "verified_at": "2026-06-29T12:56:19-05:00",
+    "case_stage_complete_markers": 4,
+    "verified_cases": [
+      "salt1_jin",
+      "salt2_cont",
+      "salt3_cont",
+      "salt4_cont"
+    ],
+    "verification_note": "Each staged case under tmp/2026-06-23_salt_last20_checkpoint now has a .stage_complete marker, so the temporary Salt checkpoint copy is no longer treated as materializing."
+  },
   "summary": {
     "salt_continuation_cases_with_20_saved_times": 3,
     "salt_high_q_cases_with_20_saved_times": 3,
@@ -62,7 +74,6 @@
     "reports/2026-06-23_ethan_cfd_freeze_checkpoint/summary.json"
   ],
   "limitations": [
-    "The temporary Salt checkpoint copy was still materializing when this manifest was written.",
     "The checkpoint package is a bounded late-window snapshot and does not imply that the relaunched CFD lanes have converged.",
     "Salt 1 remains below the 20-step representative-window target."
   ]

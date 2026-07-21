@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-233",
+  "role": "Coordinator / Implementer / Writer",
+  "purpose": "Improve readability of the slide-safe mechanical pressure figure by replacing crowded x-axis grouped bars with a horizontal grouped layout.",
+  "inputs_read_only": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv"
+  ],
+  "outputs": [
+    "tools/analyze/build_postprocessor_summary_charts.py",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/mechanical_pressure_terms_by_span.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/pressure_decomposition_misunderstanding_and_slide_fix.md"
+  ],
+  "change_summary": [
+    "Added a horizontal grouped-bar SVG renderer.",
+    "Rendered mechanical_pressure_terms_by_span.svg with one readable row per case/span.",
+    "Shortened span labels for slide readability."
+  ],
+  "solver_outputs_modified": false,
+  "external_code_modified": false
+}

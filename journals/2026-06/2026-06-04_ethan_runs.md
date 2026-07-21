@@ -219,5 +219,5 @@ Date: 2026-06-04
 - That implies an unresolved difference remains between the working Salt 2 continuation runtime context and the failing Salt 1/Salt 4 continuation contexts.
 
 ### Tomorrow handoff
-- See `operational_notes/2026-06-05_todo.md` for the prioritized next-step list.
+- See `operational_notes/06-26/05/2026-06-05_todo.md` for the prioritized next-step list.
 - Do not submit more continuation jobs until the dummy-Pstream issue is understood and corrected.

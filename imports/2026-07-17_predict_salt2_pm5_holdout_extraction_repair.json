@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-486",
+  "date": "2026-07-17",
+  "role": "Implementer/Tester/Writer",
+  "status": "complete",
+  "title": "Salt2 +/-5Q PM5 holdout extraction repair and admission",
+  "outputs": [
+    "tools/extract/repair_salt2_pm5_holdout_matched_plane_sampling.py",
+    "tools/extract/test_repair_salt2_pm5_holdout_matched_plane_sampling.py",
+    "tools/analyze/build_salt2_pm5_holdout_admission.py",
+    "tools/analyze/test_salt2_pm5_holdout_admission.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_holdout_metrics.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_field_validation.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_repair_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_admission_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_runtime_leakage_audit.csv"
+  ],
+  "primary_sources": [
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_vtk_field_validation.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/command_log_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/README.md"
+  ],
+  "commands": [
+    "python3.11 -m py_compile tools/extract/repair_salt2_pm5_holdout_matched_plane_sampling.py tools/extract/test_repair_salt2_pm5_holdout_matched_plane_sampling.py tools/analyze/build_salt2_pm5_holdout_admission.py tools/analyze/test_salt2_pm5_holdout_admission.py",
+    "python3.11 -m unittest tools.extract.test_repair_salt2_pm5_holdout_matched_plane_sampling tools.analyze.test_salt2_pm5_holdout_admission",
+    "python3.11 tools/analyze/build_salt2_pm5_holdout_admission.py"
+  ],
+  "guardrails": [
+    "No native solver output mutation",
+    "No registry mutation",
+    "No scheduler action",
+    "No duplicate PM5 jobs",
+    "No old July 14 broken script relaunch",
+    "No fitting, tuning, or model selection on Salt2 +/-5Q holdout rows",
+    "wallHeatFlux remains target/diagnostic evidence only"
+  ],
+  "summary": {
+    "salt2_metric_rows": 6,
+    "salt2_validation_rows": 6,
+    "repair_decision_rows": 2,
+    "admission_rows": 6,
+    "fit_admitted_rows": 0,
+    "holdout_only_rows": 6,
+    "staged_copy_postprocessing_needed": "no",
+    "old_broken_pm5_script_relaunched": "no",
+    "admission_status": "holdout_diagnostic_only_not_fit_admitted"
+  }
+}

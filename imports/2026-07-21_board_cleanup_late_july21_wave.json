@@ -1,0 +1,99 @@
+{
+  "task": "AGENT-578",
+  "task_id": "AGENT-578",
+  "date": "2026-07-21",
+  "role": "Coordinator/Cleaner/Writer",
+  "objective": "Clean completed late July 21 rows from the Active board after validating closeout artifacts.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read-only squeue observation; no submission, cancellation, requeue, harvest, or admission action",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_AGENT-578.md",
+    ".agent/journal/2026-07-21/board-cleanup-late-july21-wave.md",
+    "imports/2026-07-21_board_cleanup_late_july21_wave.json"
+  ],
+  "read_only_context": [
+    ".agent/status/2026-07-21_TODO-UPCOMER-EXCHANGE-CELL-VOLUME-EXPORT-SBATCH-2026-07-21.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21.md",
+    ".agent/journal/2026-07-21/**",
+    "imports/2026-07-21_*.json",
+    "scheduler state from squeue -u andresfierro231"
+  ],
+  "archived_task_count": 37,
+  "archived_tasks": [
+    "TODO-UPCOMER-EXCHANGE-CELL-VOLUME-EXPORT-SBATCH-2026-07-21",
+    "TODO-FLUID-EXTERNAL-BC-PHASE-C-DIRTY-WORKTREE-AUDIT-2026-07-21",
+    "TODO-THESIS-CH7-NEGATIVE-RESULTS-CONTRIBUTION-INSERT-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-CELL-VOLUME-PARSER-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-SAMPLER-COMPUTE-EXECUTION-2026-07-21",
+    "TODO-PARALLEL-BACKGROUND-CFD-PP-LAUNCH-2026-07-21",
+    "TODO-THESIS-STUDY-EXECUTION-DOCUMENTATION-PACKAGE-2026-07-21",
+    "TODO-THESIS-ENRICHMENT-STUDY-IMAGE-TASK-DISPATCH-2026-07-21",
+    "TODO-THESIS-NEXT-STUDIES-BOARD-DISPATCH-2026-07-21",
+    "TODO-THESIS-STUDY-S7-SENSOR-MAP-TP-TW-CONTRACT-2026-07-21",
+    "TODO-THESIS-STUDY-S8-WALL-TEST-SECTION-AXIAL-MIXING-CANDIDATE-2026-07-21",
+    "TODO-THESIS-NEGATIVE-RESULTS-SCIENTIFIC-CONTRIBUTION-SECTION-2026-07-21",
+    "TODO-SAME-QOI-UQ-AND-FLUID-PHASE-STUDY-DISPATCH-2026-07-21",
+    "TODO-SAME-QOI-UQ-PHASE-A-RETAINED-WINDOW-INVENTORY-2026-07-21",
+    "TODO-SAME-QOI-UQ-PHASE-B-MESH-GCI-EVIDENCE-MATRIX-2026-07-21",
+    "TODO-SAME-QOI-UQ-PHASE-C-ADMISSION-TABLE-2026-07-21",
+    "TODO-FLUID-EXTERNAL-BC-PHASE-B-EXACT-FILE-PREFLIGHT-2026-07-21",
+    "TODO-THESIS-DIAGNOSTIC-EVIDENCE-INTEGRATION-2026-07-21",
+    "TODO-CSEM-REMAINING-PLACEHOLDER-IMPORT-2026-07-21",
+    "TODO-THESIS-CSEM-ENRICHMENT-WRITING-PASS-2026-07-21",
+    "TODO-CSEM-IN-SCOPE-SCRIPTING-2026-07-21",
+    "TODO-THESIS-RESEARCH-STUDIES-BOARD-DISPATCH-2026-07-21",
+    "TODO-PRESSURE-CORNER-SAME-QOI-SCIENTIFIC-SYNTHESIS-2026-07-21",
+    "TODO-PRED-FIRST-KEY-STUDIES-WAVE-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-EVIDENCE-PREFLIGHT-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-TERMINAL-SOURCE-READINESS-2026-07-21",
+    "TODO-HEATLOSS-UPCOMER-SOURCE-FIELD-AUDIT",
+    "TODO-HEATLOSS-UPCOMER-EXCHANGE-SAMPLER-IMPLEMENTATION",
+    "TODO-HEATLOSS-UPCOMER-SAMPLER-DESIGN",
+    "TODO-FLUID-EXTERNAL-BC-DICT",
+    "TODO-HEATLOSS-UPCOMER-EXCHANGE-EVIDENCE-EXTRACTION",
+    "TODO-UPCOMER-EXCHANGE-SAMPLER-DESIGN-2026-07-21",
+    "TODO-THESIS-S0-S3-FIRST-WAVE-WRITING-INTEGRATION-2026-07-21",
+    "TODO-THESIS-STUDY-S4-RECIRCULATION-GUARD-UPCOMER-HYBRID-2026-07-21",
+    "TODO-THESIS-STUDY-S5-SOURCE-PROPERTY-SPLIT-RELEASE-2026-07-21",
+    "TODO-THESIS-STUDY-S6-FROZEN-CANDIDATE-SCORECARD-2026-07-21",
+    "TODO-THESIS-PREDICTIVE-STUDY-FIGURE-TABLE-PACKAGE-2026-07-21"
+  ],
+  "left_active_due_to_failed_closeout": [
+    {
+      "task_id": "TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21",
+      "reason": "finish_task.py reports missing journal artifact, missing imports artifact, and missing required status section '## Changes Made'."
+    }
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <TASK>",
+      "result": "36 initial completed candidate rows passed."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-UPCOMER-EXCHANGE-CELL-VOLUME-EXPORT-SBATCH-2026-07-21",
+      "result": "passed after the row completed during cleanup."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21",
+      "result": "failed; row left in Active."
+    },
+    {
+      "command": "squeue -u andresfierro231",
+      "result": "read-only scheduler observation only; no scheduler mutation."
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "files_deleted": false
+  }
+}

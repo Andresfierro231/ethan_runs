@@ -1,0 +1,50 @@
+{
+  "manifest_id": "2026-07-09_salt_mesh_refinement_followon_readiness",
+  "task_id": "AGENT-231",
+  "created": "2026-07-09",
+  "generated_at": "2026-07-09T10:42:32-05:00",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Read-only follow-on implementation after AGENT-228: reconcile external coarse Salt 2/4 sources against mainline continuations, merge full-history endpoint monitor histories, compute screening GCI/readiness diagnostics, and document blockers before closure-observation or closure-correlation updates.",
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_case_catalog.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_quality_gate.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_scenario_contract/scenario_contract.csv",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt"
+  ],
+  "outputs": [
+    "tools/analyze/build_salt_mesh_coarse_reconciliation.py",
+    "tools/analyze/build_salt_mesh_full_history_monitor_reduction.py",
+    "tools/analyze/build_salt_mesh_gci_uq_readiness.py",
+    "tools/analyze/test_salt_mesh_refinement_followon_readiness.py",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/coarse_reconciliation.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_full_history_monitor_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_postprocessing_family_coverage.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/mesh_uq_readiness.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/gci_results.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/closure_observation_mesh_uq_handoff.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/summary.json",
+    ".agent/status/2026-07-09_AGENT-231.md",
+    ".agent/journal/2026-07-09/salt-mesh-refinement-followon-readiness.md"
+  ],
+  "coarse_verdict_counts": {
+    "superseded_by_mainline": 2
+  },
+  "monitor_row_count": 90,
+  "coverage_row_count": 54,
+  "readiness_row_count": 24,
+  "gci_row_count": 18,
+  "mesh_uq_status_counts": {
+    "blocked_coarse_superseded_by_mainline": 18,
+    "blocked_requires_mesh_level_extraction": 6
+  },
+  "publication_ready_gci_rows": 0,
+  "read_only_sources": true,
+  "source_tree_modified": false,
+  "native_solver_outputs_modified": false,
+  "registry_updated": false,
+  "staging_updated": false,
+  "closure_observations_updated": false,
+  "continuation_jobs_submitted": false,
+  "current_decision": "No mesh uncertainty row is publication-ready yet. Numeric GCI rows are screening diagnostics only until mainline coarse endpoint values are reconciled and medium/fine closure QoIs are extracted/admitted."
+}

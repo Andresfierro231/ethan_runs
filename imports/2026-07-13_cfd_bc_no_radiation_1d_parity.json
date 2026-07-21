@@ -1,0 +1,56 @@
+{
+  "task_id": "AGENT-279",
+  "created_date": "2026-07-13",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "artifact_type": "repo_local_cfd_boundary_condition_no_radiation_1d_parity_package",
+  "output_package": "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity",
+  "script": "tools/analyze/run_cfd_bc_no_radiation_1d_parity.py",
+  "tests": "tools/analyze/test_cfd_bc_no_radiation_1d_parity.py",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/**",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/**",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "generated_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/run_metadata.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/cfd_boundary_condition_contract_no_radiation.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/run_plan.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/fixed_mdot_no_radiation_parity_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/path_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/section_heat_loss_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/discrepancy_attribution.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/correction_proposal.csv"
+  ],
+  "summary": {
+    "boundary_contract_rows": 24,
+    "run_plan_rows": 12,
+    "result_rows": 12,
+    "path_summary_rows": 4,
+    "section_comparison_rows": 60,
+    "discrepancy_rows": 48,
+    "correction_rows": 5,
+    "best_path_by_mean_abs_Tmean_error": "N1_heater_cooler_imposed_rad_off",
+    "best_path_mean_abs_Tmean_error_K": 4.93387,
+    "n2_cfd_setup_hA_mean_abs_Tmean_error_K": 22.650368,
+    "radiation_policy": "forced_off_sensitivity_not_cfd_parity_after_AGENT_277_AGENT_287",
+    "superseding_radiation_guidance": "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/radiation_guidance_decision.json",
+    "admission_decision": "no_admission_changes"
+  },
+  "validation_commands": [
+    "python -m py_compile tools/analyze/run_cfd_bc_no_radiation_1d_parity.py tools/analyze/test_cfd_bc_no_radiation_1d_parity.py",
+    "python tools/analyze/test_cfd_bc_no_radiation_1d_parity.py",
+    "python tools/analyze/run_cfd_bc_no_radiation_1d_parity.py --plan-only --strict --output-dir /tmp/agent279_plan_only",
+    "python tools/analyze/run_cfd_bc_no_radiation_1d_parity.py --strict",
+    "python -m json.tool work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/run_metadata.json"
+  ],
+  "provenance_notes": [
+    "Fluid was imported read-only from ../cfd-modeling-tools; no external Fluid files were edited.",
+    "The primary replay modes force radiation_on=False only as a sensitivity after AGENT-277/287; they are not Ethan-CFD parity.",
+    "Ethan CFD rcExternalTemperature uses emissivity/Tsur in realized wallHeatFlux, with no separate exported radiation ledger.",
+    "The N2 hA/Ta replay is a repo-local approximation to temperature-dependent CFD boundary conditions; wall-layer parity remains a Fluid API gap.",
+    "No native CFD solver outputs, scheduler state, registry rows, or closure admissions were changed."
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "created_at": "2026-07-10",
+  "task_id": "AGENT-256",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Submit a small Slurm batch job to build a time-series uncertainty digest from terminal/non-live AGENT-244 cases.",
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/METHODOLOGY.md"
+  ],
+  "outputs": [
+    "tools/analyze/build_time_series_uncertainty_digest.py",
+    "work_products/2026-07/2026-07-10/2026-07-10_time_series_uncertainty_digest_sbatch/"
+  ],
+  "slurm_job": {
+    "job_id": "3289056",
+    "job_name": "ts_unc_digest",
+    "partition": "development",
+    "time_limit": "00:20:00",
+    "initial_state": "PENDING",
+    "initial_reason": "Priority",
+    "final_state": "COMPLETED",
+    "exit_code": "0:0",
+    "elapsed": "00:00:02",
+    "node": "c307-006"
+  },
+  "output_counts": {
+    "terminal_digest_rows": 379,
+    "excluded_live_or_active_rows": 36,
+    "mainline_salt234_rows": 27,
+    "presentation_case_rows": 3
+  },
+  "live_exclusions": [
+    "2026-07-08_salt1_nominal_continuation_candidate",
+    "salt1_jin_nominal_continuation_corrected",
+    "salt1_jin_lo10q_corrected",
+    "salt1_jin_hi10q_corrected",
+    "salt4_jin_hi10q_corrected"
+  ],
+  "mutations_avoided": [
+    "no_solver_output_mutation",
+    "no_external_model_edit",
+    "no_registry_edit"
+  ]
+}

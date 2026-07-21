@@ -1,0 +1,49 @@
+{
+  "task": "AGENT-456",
+  "date": "2026-07-16",
+  "title": "Salt2 streamwise pressure and 1D segment map",
+  "status": "complete",
+  "created_by": "codex",
+  "source_inputs": [
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv",
+      "description": "July 15 AGENT-445 harvested station pressure ladder; filtered to case_key=salt2_mainline."
+    },
+    {
+      "path": "reference/geometry_reference.md",
+      "description": "Authoritative CFD span naming, physical location labels, and lower/right leg flow-order guardrails."
+    },
+    {
+      "path": "../cfd-modeling-tools/tamu_first_order_model/Fluid/outputs_tamu_loop_v2_resumable/geometry/loop_segments.csv",
+      "description": "Fluid 1D segment names and lengths used for 1D mapping labels."
+    }
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/salt2_streamwise_pressure_1d_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/salt2_branch_average_pressure_map.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/salt2_loop_pressure_sequence.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/summary.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/README.md"
+  ],
+  "scripts": [
+    "tools/analyze/build_salt2_streamwise_pressure_1d_map.py",
+    "tools/analyze/test_salt2_streamwise_pressure_1d_map.py"
+  ],
+  "guardrails": [
+    "No native CFD solver outputs were mutated.",
+    "No scheduler jobs were submitted.",
+    "No registry or admission-state files were changed.",
+    "Generated docs indexes were not refreshed because active AGENT-455 owned them.",
+    "Station pressures remain diagnostic harvested averages and are not fit-admitted friction or component-K evidence."
+  ],
+  "acceptance": {
+    "station_rows": 30,
+    "branch_average_rows": 6,
+    "case_key": "salt2_mainline",
+    "time_s": 7915,
+    "tests": [
+      "python3.11 -m unittest tools.analyze.test_salt2_streamwise_pressure_1d_map"
+    ]
+  }
+}

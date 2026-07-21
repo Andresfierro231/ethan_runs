@@ -1,0 +1,38 @@
+{
+  "task": "AGENT-438",
+  "date": "2026-07-15",
+  "type": "setup_only_hx_cooler_scorecard_unlock",
+  "workspace": "projects_scratch/ethan_runs",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock",
+  "native_solver_outputs_mutated": false,
+  "scheduler_jobs_launched": false,
+  "registry_or_admission_mutated": false,
+  "external_fluid_modified": false,
+  "generated_indexes_refreshed": false,
+  "source_inputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/final_predictive_hx_closure_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/hx_candidate_reconciliation.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/fluid_variant_contract.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/final_predictive_hx_closure_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/heater_cooler_model_form_errors.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/final_forward_v1_unblock_requirements.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/hydraulic_admission_final_decisions.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/setup_only_hx_boundary_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/hx_candidate_gate_decision.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/hx_runtime_input_legality_audit.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/forward_v1_remaining_unlock_queue.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/summary.json"
+  ],
+  "result": {
+    "preferred_candidate": "salt2_fit_constant_UA_bulk_drive",
+    "preferred_validation_abs_error_W": 2.869104004,
+    "preferred_holdout_abs_error_W": 7.502618613,
+    "runtime_input_violation_count": 0,
+    "final_hx_lane_state": "advanced_as_setup_only_candidate_input_not_final_forward_v1",
+    "final_forward_v1_state": "blocked_no_go_final_forward_v1_not_admitted"
+  }
+}

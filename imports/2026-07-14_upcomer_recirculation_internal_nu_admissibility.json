@@ -1,0 +1,21 @@
+{
+  "created": "2026-07-14",
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/upcomer_recirculation_onset_conditions.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/coefficient_naming_rules_for_recirculation.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/summary.json"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/upcomer_onset_evidence_status.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_upcomer_onset/upcomer_onset_regime_table.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/cfd_single_stream_validity.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/thermal_admission_internal_nu_final_gate.csv"
+  ],
+  "task": "AGENT-330"
+}

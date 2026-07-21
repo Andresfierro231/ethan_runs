@@ -1,0 +1,53 @@
+# Coordinator / Implementer / Writer Raw Journal
+
+- date: `2026-06-25`
+- agent role: `Coordinator / Implementer / Writer`
+- task ID: `AGENT-128`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/README.md`
+  - `jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/README.md`
+  - `reports/2026-06/2026-06-17/2026-06-17_ethan_nondimensional_dashboard_package/salt_candidate_correlation_inputs.csv`
+  - `operational_notes/06-26/22/2026-06-22_salt_heat_balance_contract.md`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/stage_cases.py`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/run_packed_two_case_normal.sbatch`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/submit_jobs.sh`
+- files changed:
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/README.md`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/campaign_manifest.csv`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/stage_cases.py`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/run_packed_two_case_normal.sbatch`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/submit_jobs.sh`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/submitted_jobs.csv`
+  - `imports/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave.json`
+  - `.agent/status/2026-06-25_AGENT-128.md`
+  - `.agent/journal/2026-06-25/coordinator-implementer-writer-normal-relaunch-and-recirculation-boundary-wave.md`
+  - `journals/2026-06/2026-06-25_ethan_runs.md`
+- commands run:
+  - `sacct -j 3254178,3254179,3254180,3254181 --format=JobID,JobName%28,Partition,State,ExitCode,Elapsed,NodeList%20`
+  - `sed -n '1,200p' jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/slurm-3254180.err`
+  - `sed -n '1,200p' jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/slurm-3254181.err`
+  - `python3.11 jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/stage_cases.py`
+  - `scontrol show partition normal`
+  - `sacctmgr show qos format=Name,MaxWall,MaxJobsPU,MaxSubmitPU%20`
+  - `sacctmgr show assoc where user=andresfierro231 account=ASC23046 format=Account,User,Partition,QOS%80`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/scripts/submit_jobs.sh`
+  - `squeue -j 3259055,3259056,3259057,3259058,3259059,3259060,3259061,3259062,3259063,3259064,3259065,3259066,3259067,3259068,3259069,3259070,3259071,3259072,3259073,3259074,3259075,3259076,3259077,3259078,3259079,3259080,3259081,3259082,3259083,3259084,3259085,3259086,3259087,3259088,3259089,3259090,3259091,3259092,3259093,3259094`
+- results or observations:
+  - The failed normal relaunches were not bad scientific cases; they died at startup because `libRCWallBC.so` was resolved from `/home1/.../ethan_data` rather than a compute-visible campaign-local scratch copy.
+  - Full pre-submit case copying was too slow because `processors64/` and `postProcessing/` trees are heavy. The final June 25 staging path skips both and records the original restart source in `SOURCE_PROCESSORS64.txt` for on-demand materialization at launch.
+  - The first submit-helper attempt failed with `QOSMaxWallDurationPerJobLimit`; `qnormal` caps individual jobs at `2-00:00:00` for this account and no longer QOS such as `qgrace` is available.
+  - The second submit-helper attempt failed because banner-wrapped `sbatch --parsable` output polluted the dependency string. Parsing the last numeric line fixed this cleanly.
+  - All eight packed chains are now queued cleanly, with first segments pending on `Resources` and downstream segments pending on `Dependency`.
+- contradictions or caveats:
+  - The user requested single 9-day jobs, but the cluster policy only permits 48-hour `qnormal` jobs. The implemented five-segment chain is the closest compliant equivalent.
+  - Existing live NuclearEnergy Salt jobs `3254178` and `3254179` remain running; the June 25 normal-queue relaunch does not replace or cancel them.
+  - Chain continuation still depends on the solver writing usable restart times before each 48-hour segment ends; the queue setup now works, but runtime monitoring is still required.
+- next steps:
+  - Watch the first segment of each chain for actual node start and early runtime health, especially the Salt 1 June 25 lightweight roots that need to materialize `processors64/` on launch.
+  - If any first segment dies before solver startup, inspect the new campaign `slurm-*.err` logs immediately to separate runtime-environment issues from case physics.
+  - Once segments start producing new retained times, decide whether the extra Salt ladder is enough to localize recirculation onset or whether a later mean-state-isolation sweep is still needed.

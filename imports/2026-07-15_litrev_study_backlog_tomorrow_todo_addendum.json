@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-443",
+  "date": "2026-07-15",
+  "status": "complete",
+  "type": "handoff_addendum",
+  "created_files": [
+    ".agent/status/2026-07-15_AGENT-443.md",
+    ".agent/journal/2026-07-15/litrev-study-backlog-tomorrow-todo-addendum.md",
+    "imports/2026-07-15_litrev_study_backlog_tomorrow_todo_addendum.json"
+  ],
+  "updated_files": [
+    "operational_notes/07-26/15/2026-07-15_TOMORROW_START_HERE.md",
+    ".agent/BOARD.md"
+  ],
+  "litrev_sources": [
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/untried_litrev_model_forms.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/litrev_to_current_evidence_crosswalk.csv",
+    "operational_notes/maps/literature-synthesis-and-gates.md"
+  ],
+  "tomorrow_todos_added": [
+    "branch source-envelope and property sensitivity gates",
+    "reset/developing hydraulic map",
+    "named CFD pressure reductions and admission",
+    "heat-loss resistance network separation",
+    "internal HTC/Nu bakeoff only after gates",
+    "upcomer recirculation/onset matched-plane and Re-anchor work",
+    "nonuniform heating/inclination metadata",
+    "radiation bound without double counting rcExternalTemperature",
+    "future pressure-tap, instrumentation, transient, and ROM design paths"
+  ],
+  "guardrails": [
+    "consume AGENT-438/439/440/442 outputs before rebuilding",
+    "no scheduler action",
+    "no solver/postprocessing launch",
+    "no native CFD mutation",
+    "no registry/admission mutation",
+    "no generated-index refresh",
+    "no external Fluid edit"
+  ]
+}

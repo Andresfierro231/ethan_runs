@@ -1,0 +1,47 @@
+{
+  "task_id": "TODO-PRED-WALL-LAYER",
+  "date": "2026-07-13",
+  "owner": "codex",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping",
+  "generated_by": "tools/analyze/build_wall_layer_drive_mapping.py",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/cfd_thermal_boundary_contract.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/span_heat_residuals.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_temperature_samples.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_replay_modes.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/section_heat_parity.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/wall_layer_selector_candidates.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/blocked_rows.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/run_metadata.json"
+  ],
+  "row_counts": {
+    "drive_rows": 24,
+    "replay_rows": 72,
+    "e0_executable_rows": 18,
+    "blocked_rows": 54
+  },
+  "scientific_decisions": [
+    "CFD rcExternalTemperature uses emissivity and Tsur; realized wallHeatFlux is total and radiation is inseparable.",
+    "Do not add a separate 1D radiation term on top of realized CFD wallHeatFlux.",
+    "E0 bulk-drive external loss is diagnostic and overpredicts passive CFD heat loss.",
+    "Existing forward-bulk and recirculation metadata are assembled from July 8 interface-temperature samples.",
+    "E1 and E2 parity modes remain blocked until near-wall shell temperature is available."
+  ],
+  "validation_commands": [
+    "python3.11 tools/analyze/build_wall_layer_drive_mapping.py",
+    "python3.11 tools/analyze/test_wall_layer_drive_mapping.py"
+  ],
+  "validation_notes": [
+    "Direct test harness passed.",
+    "pytest was unavailable in this environment."
+  ],
+  "native_solver_outputs_modified": false
+}

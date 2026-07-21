@@ -1,0 +1,43 @@
+{
+  "task": "AGENT-521",
+  "date": "2026-07-17",
+  "objective": "Implement a LitRev gate carryforward ledger from existing source-envelope, property-mode, reset/named-loss, heat-loss, CFD-validity, and roadmap evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-521.md",
+    ".agent/journal/2026-07-17/litrev-gate-carryforward-ledger.md",
+    "imports/2026-07-17_litrev_gate_carryforward_ledger.json",
+    "tools/analyze/build_litrev_gate_carryforward_ledger.py",
+    "tools/analyze/test_litrev_gate_carryforward_ledger.py",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/branch_gate_carryforward_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/source_gate_crosswalk.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/fit_and_runtime_guardrails.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_mode_matrix.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/separated_heat_loss_ledger.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/cfd_single_stream_validity.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_research_studies_roadmap_and_today_start/study_priority_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_research_studies_roadmap_and_today_start/today_start_ledger.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_change": "none",
+  "solver_or_postprocessing_launched": false,
+  "notes": "Existing-evidence carryforward contract only. Generated docs index refresh was intentionally skipped because active agents own generated index files."
+}

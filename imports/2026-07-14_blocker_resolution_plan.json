@@ -1,0 +1,41 @@
+{
+  "task_id": "AGENT-323",
+  "date": "2026-07-14",
+  "artifact": "work_products/2026-07/2026-07-14/2026-07-14_blocker_resolution_plan",
+  "description": "Three-area blocker-resolution plan with source-backed work packets, scientific rigor gates, milestones, and open-blocker coverage.",
+  "created_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_modified": false,
+  "registry_modified": false,
+  "scheduler_state_modified": false,
+  "source_inputs": [
+    ".agent/BLOCKERS.md",
+    ".agent/STATE.md",
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_model_readiness_after_h1_proxy/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/README.md",
+    "operational_notes/maps/mesh-gci-and-uncertainty.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "operational_notes/maps/friction-closures.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md"
+  ],
+  "outputs": [
+    "README.md",
+    "blocker_resolution_areas.csv",
+    "work_packets.csv",
+    "scientific_rigor_checklist.csv",
+    "milestone_sequence.csv",
+    "blocker_coverage.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "validation_commands": [
+    "python3.11 -m unittest tools.analyze.test_blocker_resolution_plan",
+    "python3.11 -m py_compile tools/analyze/build_blocker_resolution_plan.py tools/analyze/test_blocker_resolution_plan.py",
+    "python3.11 tools/analyze/build_blocker_resolution_plan.py"
+  ],
+  "index_refresh": "deferred_active_AGENT_317_claims_generated_index_files"
+}

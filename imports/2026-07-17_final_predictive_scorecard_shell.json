@@ -1,0 +1,66 @@
+{
+  "task": "AGENT-509",
+  "date": "2026-07-17",
+  "title": "Final predictive scorecard shell",
+  "status": "complete",
+  "objective": "Prepare a rigorous final predictive scorecard shell using Salt1-4 nominal training, Salt2 +/-5Q and val_salt2 current blind tests, and future +/-10Q/new CFD tests after terminal/run admission.",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/split_legal_case_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/candidate_freeze_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/blocked_future_rows.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_admission_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_prediction_join_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/pm10_holdout_admission_watch.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/summary.json"
+  ],
+  "generated_artifacts": [
+    "tools/analyze/build_final_predictive_scorecard_shell.py",
+    "tools/analyze/test_final_predictive_scorecard_shell.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/model_freeze_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/metric_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/holdout_release_gates.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/admission_gate_shell.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/assumption_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/scorecard_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/source_manifest.csv",
+    ".agent/status/2026-07-17_AGENT-509.md",
+    ".agent/journal/2026-07-17/final-predictive-scorecard-shell.md",
+    "imports/2026-07-17_final_predictive_scorecard_shell.json"
+  ],
+  "validation": [
+    {
+      "command": "python3 -m py_compile tools/analyze/build_final_predictive_scorecard_shell.py tools/analyze/test_final_predictive_scorecard_shell.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3 -m unittest tools.analyze.test_final_predictive_scorecard_shell",
+      "result": "pass",
+      "tests": 9
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "openfoam_or_fluid_launched": false,
+    "generated_docs_index_refreshed": false,
+    "fit_or_model_selection_run": false,
+    "scientific_admission_changed": false
+  },
+  "decision": "Final scorecard shell is ready, but final scores remain blocked until an admitted Salt1-4 nominal frozen prediction artifact exists.",
+  "next_steps": [
+    "Resolve model admission blockers without using held-out/external rows for fitting or selection.",
+    "Build a final frozen prediction artifact trained only on Salt1-4 nominal.",
+    "Join frozen predictions into prediction_join_shell.csv and compute residuals for released rows.",
+    "Release Salt2 +/-5Q and val_salt2 only after freeze; release +/-10Q/new CFD only after terminal/run admission."
+  ]
+}

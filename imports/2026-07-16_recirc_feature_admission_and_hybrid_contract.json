@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-467",
+  "type": "derived_work_product",
+  "title": "Recirculation feature admission and hybrid 1D contract",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "blocker_register_mutated": false,
+  "generated_index_mutated": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/f6_status_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/upcomer_onset_classification.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/next_evidence_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/upcomer_exclusion_and_hybrid_lane.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_branch_scientific_review.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/next_execution_contract.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/coupled_candidate_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_branch_average_pressure_map.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/recirculation_feature_admission_table.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/next_extraction_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/recirculation_decision_table.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/decision_note.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/summary.json"
+  ],
+  "decisions": [
+    {
+      "claim_id": "current_recirc_model_state",
+      "status": "no_admitted_predictive_recirculation_model",
+      "reason": "Current evidence establishes a regime/admission boundary, not a transferable ordinary-pipe closure."
+    },
+    {
+      "claim_id": "hybrid_lane_needed",
+      "status": "published_future_contract",
+      "reason": "Future model should separate ordinary-pipe, transition, recirculating-upcomer, and test-section-subspan lanes."
+    }
+  ]
+}

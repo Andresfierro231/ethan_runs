@@ -1,0 +1,73 @@
+{
+  "task": "TODO-THESIS-STUDY-S4-RECIRCULATION-GUARD-UPCOMER-HYBRID-2026-07-21",
+  "task_id": "TODO-THESIS-STUDY-S4-RECIRCULATION-GUARD-UPCOMER-HYBRID-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/Forward-pred/Implementer/Tester/Writer",
+  "objective": "Build a thesis-ready recirculation guard study that disables ordinary one-stream closure use for current recirculating rows without admitting coefficients.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S4-RECIRCULATION-GUARD-UPCOMER-HYBRID-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s4-recirculation-guard-upcomer-hybrid.md",
+    "imports/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/build_s4_recirculation_guard.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/check_s4_recirculation_guard.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/ordinary_closure_disable_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/reverse_flow_onset_evidence_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/throughflow_recirc_variable_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/diagnostic_scoreable_classification.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/ordinary_closure_exclusion_list.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/thesis_methods_results_stub.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/exchange_cell_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/ordinary_single_stream_nu_reopening_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/upcomer_exchange_qoi_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/model_interface_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/switching_calibration_template.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_developing_branch_gate.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "admission_state_mutated": false,
+  "ordinary_upcomer_nu_fd_k_admitted_rows": 0,
+  "exchange_cell_coefficient_admitted_rows": 0,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/build_s4_recirculation_guard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/build_s4_recirculation_guard.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/check_s4_recirculation_guard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/check_s4_recirculation_guard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid",
+      "result": "passed"
+    }
+  ]
+}

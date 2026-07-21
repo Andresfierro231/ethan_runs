@@ -1,0 +1,41 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-S9-UPCOMER-EXCHANGE-EVIDENCE-2026-07-21",
+  "task_id": "TODO-THESIS-FIGTABLE-S9-UPCOMER-EXCHANGE-EVIDENCE-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-S9-UPCOMER-EXCHANGE-EVIDENCE-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figtable-s9-upcomer-exchange-evidence.md",
+    "imports/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/build_thesis_figtable_s9_upcomer_exchange_evidence.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/check_thesis_figtable_s9_upcomer_exchange_evidence.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/onset_regime_visual_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/throughflow_exchange_schematic_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/exchange_qoi_figure_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/missing_anchor_uq_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/caption_bank.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/README.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/onset_anchor_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/exchange_qoi_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/same_window_uq_requirements.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/near_onset_gap_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_refreshed": false,
+  "thesis_chapters_or_figure_assets_mutated": false,
+  "result": {
+    "ordinary_upcomer_nu_fd_k_admitted_rows": 0,
+    "exchange_cell_coefficient_admitted_rows": 0,
+    "s11_ready_candidates": 0
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "task": "AGENT-486",
+  "date": "2026-07-17",
+  "role": "Implementer/Tester/Writer",
+  "status": "complete",
+  "title": "val_salt2 external-test ledger normalization",
+  "outputs": [
+    "tools/analyze/build_val_salt2_external_test_ledger.py",
+    "tools/analyze/test_val_salt2_external_test_ledger.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_patch_heat_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_section_heat_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_junction_split.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_pressure_thermal_sensor_targets.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_admission_decision.csv"
+  ],
+  "primary_sources": [
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_patch_heat_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_section_reconciliation.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_junction_split_heat_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_training_admission_gate.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_pressure_map.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_admission_table.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/sensor_map_policy_refresh.csv"
+  ],
+  "commands": [
+    "python3.11 -m py_compile tools/analyze/build_val_salt2_external_test_ledger.py tools/analyze/test_val_salt2_external_test_ledger.py",
+    "python3.11 -m unittest tools.analyze.test_val_salt2_external_test_ledger",
+    "python3.11 tools/analyze/build_val_salt2_external_test_ledger.py"
+  ],
+  "guardrails": [
+    "No native solver output mutation",
+    "No registry mutation",
+    "No scheduler action",
+    "No duplicate pressure jobs",
+    "No val_salt2 training reclassification",
+    "No fitting, tuning, or model selection on val_salt2",
+    "wallHeatFlux, section heat, pressure, and sensors remain target/score evidence only"
+  ],
+  "summary": {
+    "patch_heat_rows": 69,
+    "section_heat_rows": 10,
+    "junction_split_rows": 4,
+    "pressure_target_rows": 30,
+    "thermal_target_rows": 14,
+    "sensor_policy_rows": 17,
+    "all_target_rows": 61,
+    "fit_allowed_rows": 0,
+    "runtime_heat_input_allowed_rows": 0,
+    "junction_loss_positive_W": "40.9260865692",
+    "max_section_latest_residual_W": "3.45099996857e-07",
+    "val_salt2_training_input_allowed": "no"
+  }
+}

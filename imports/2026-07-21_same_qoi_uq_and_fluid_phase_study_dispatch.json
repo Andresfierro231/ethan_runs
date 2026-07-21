@@ -1,0 +1,42 @@
+{
+  "task": "TODO-SAME-QOI-UQ-AND-FLUID-PHASE-STUDY-DISPATCH-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-SAME-QOI-UQ-AND-FLUID-PHASE-STUDY-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/same-qoi-uq-and-fluid-phase-study-dispatch.md",
+    "imports/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_SAME_QOI_UQ_AND_FLUID_PHASE_STUDY_DISPATCH.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/study_phase_sequence.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/same_qoi_uq_required_outputs.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/external_fluid_required_outputs.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/**",
+    "reports/thesis_dossier/Chapters_and_sections/current/**",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "external ../cfd-modeling-tools/**"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "external_fluid_edit": false,
+  "thesis_current_files_edited": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_admission_changed": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "provenance_notes": "Documentation-only board dispatch. Successor rows are studies or trigger-gated implementation handoffs. No native output, external Fluid source, registry, scheduler, admission, or thesis current-file mutation."
+}

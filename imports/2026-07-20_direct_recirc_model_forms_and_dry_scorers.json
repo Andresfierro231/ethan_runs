@@ -1,0 +1,18 @@
+{
+  "date": "2026-07-20",
+  "generated_files": [
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/frozen_direct_recirc_model_forms.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/upcomer_hybrid_dry_scorecard.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/corner_residual_dry_scorecard.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/regime_gate_dry_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/research_avenue_assignments.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/next_steps_direct_recirc.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/README.md"
+  ],
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "ordinary_coefficients_admitted": false,
+  "summary": "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/summary.json",
+  "task": "TODO-DIRECT-RECIRC-MODEL-FORMS-AND-DRY-SCORERS",
+  "work_product": "work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers"
+}

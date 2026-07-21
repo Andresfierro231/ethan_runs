@@ -1,0 +1,83 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-COARSE-VTK-SAMPLER-SUBMIT.md",
+    ".agent/journal/2026-07-21/f6-coarse-vtk-sampler-submit.md",
+    "imports/2026-07-21_f6_coarse_vtk_sampler_submit.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/RUNNING.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/build_f6_coarse_vtk_sampler_submit.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/test_f6_coarse_vtk_sampler_submit.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/stage_b_coarse_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_raw_face_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_pair_diagnostics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_static_pressure_blocker.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/script_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/run_stage_b_f6_coarse_vtk_sampler.sh",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/submit_stage_b_f6_coarse_vtk_sampler.sbatch",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/controlDicts/salt_2_coarse.controlDict",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/controlDicts/salt_3_coarse.controlDict",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/controlDicts/salt_4_coarse.controlDict",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/logs/slurm-3308382.out",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/logs/slurm-3308382.err",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/logs/salt_2_coarse_foamPostProcess.log",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/logs/salt_3_coarse_foamPostProcess.log",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/logs/salt_4_coarse_foamPostProcess.log"
+  ],
+  "date": "2026-07-21",
+  "decision": "stage_b_coarse_vtk_sampler_completed_all_rows_diagnostic_static_p_blocked",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Build, submit, and harvest the Stage B coarse VTK face-area/recirculation sampler for repaired F6 coarse endpoint rows without static-pressure reconstruction or coefficient admission.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/coarse_vtk_sampling_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/stage_a_endpoint_face_matrix.csv",
+    "tmp/2026-06-30_claude_action_items/recon_salt2_of13",
+    "tmp/2026-06-30_claude_action_items/recon_salt3_of13",
+    "tmp/2026-06-30_claude_action_items/recon_salt4_of13",
+    "scheduler/accounting state for job 3308382"
+  ],
+  "registry_mutated": false,
+  "role": "Scheduler / cfd-pp / Tester / Writer",
+  "scheduler_action": "submitted one Stage B coarse VTK sampler job 3308382; terminal state COMPLETED 0:0",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/summary.json",
+  "task": "TODO-F6-COARSE-VTK-SAMPLER-SUBMIT",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/build_f6_coarse_vtk_sampler_submit.py",
+      "result": "passed before submission"
+    },
+    {
+      "command": "bash -n work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/run_stage_b_f6_coarse_vtk_sampler.sh",
+      "result": "passed"
+    },
+    {
+      "command": "bash -n work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/submit_stage_b_f6_coarse_vtk_sampler.sbatch",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/build_f6_coarse_vtk_sampler_submit.py work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/test_f6_coarse_vtk_sampler_submit.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/test_f6_coarse_vtk_sampler_submit.py",
+      "result": "passed: 5 tests"
+    },
+    {
+      "command": "ssh login3.ls6.tacc.utexas.edu \"cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/submit_stage_b_f6_coarse_vtk_sampler.sbatch\"",
+      "result": "submitted batch job 3308382"
+    },
+    {
+      "command": "ssh login3.ls6.tacc.utexas.edu \"sacct -j 3308382 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList\"",
+      "result": "COMPLETED 0:0 elapsed 00:01:04 on c318-016"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/build_f6_coarse_vtk_sampler_submit.py --harvest --submitted --record-job-id 3308382",
+      "result": "passed after terminal completion; 12/12 raw faces sampled"
+    }
+  ]
+}

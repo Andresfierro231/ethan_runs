@@ -1,0 +1,19 @@
+{
+  "task": "AGENT-448",
+  "date": "2026-07-16",
+  "objective": "Promote Salt1 if technically clean, build admission-status scorecard, clean board, regenerate index.",
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/board_cleanup_moved_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/board_cleanup_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/final_admission_status_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_convergence_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_primary_evidence_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_terminal_monitor_metrics.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_terminal_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/summary.json",
+    ".agent/journal/2026-07-16/salt1-primary-evidence-admission-and-board-cleanup.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false
+}

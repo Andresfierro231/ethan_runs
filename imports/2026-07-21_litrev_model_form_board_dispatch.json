@@ -1,0 +1,58 @@
+{
+  "task": "TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21",
+  "task_id": "TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer",
+  "objective": "Add open board rows for model forms and evidence-preparation lanes identified by the new LitRev extraction package.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/litrev-model-form-board-dispatch.md",
+    "imports/2026-07-21_litrev_model_form_board_dispatch.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/next_agent_task_matrix.csv",
+    "native CFD/OpenFOAM outputs read-only",
+    "registry/admission state read-only",
+    "scheduler state read-only",
+    "external ../cfd-modeling-tools/** read-only"
+  ],
+  "added_board_rows": [
+    "TODO-LITREV-FITTING-INVENTORY-SOURCE-ENVELOPE",
+    "TODO-LITREV-PRESSURE-CORNER-BASIS-RECOVERY",
+    "TODO-LITREV-CFD-POSTPROCESSING-SCHEMA-GAP",
+    "TODO-LITREV-RECIRCULATION-SWITCHING-CALIBRATION",
+    "TODO-LITREV-THROUGHFLOW-RECIRC-EXCHANGE-CELL",
+    "TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH",
+    "TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY",
+    "TODO-LITREV-THERMAL-HEAT-LOSS-CONTRACT-ALIGNMENT",
+    "TODO-LITREV-TRANSIENT-ROM-PARKING-LOT"
+  ],
+  "validation": [
+    "python3.11 tools/agent/preflight_task.py --task-id TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21",
+    "rg -n \"TODO-LITREV-FITTING-INVENTORY|TODO-LITREV-PRESSURE-CORNER|TODO-LITREV-CFD-POSTPROCESSING|TODO-LITREV-RECIRCULATION-SWITCHING|TODO-LITREV-THROUGHFLOW|TODO-LITREV-GATED|TODO-LITREV-SIGNED|TODO-LITREV-THERMAL|TODO-LITREV-TRANSIENT\" .agent/BOARD.md",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21",
+    "python3.11 tools/docs/build_repo_index.py",
+    "python3.11 tools/docs/build_repo_index.py --check"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": true,
+  "scientific_admission_changed": false
+}

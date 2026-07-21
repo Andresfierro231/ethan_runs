@@ -1,0 +1,29 @@
+{
+  "task": "AGENT-441",
+  "date": "2026-07-15",
+  "type": "tomorrow_start_here_late_addendum",
+  "workspace": "projects_scratch/ethan_runs",
+  "native_solver_outputs_mutated": false,
+  "scheduler_jobs_launched": false,
+  "registry_or_admission_mutated": false,
+  "external_fluid_modified": false,
+  "generated_indexes_refreshed": false,
+  "source_inputs": [
+    "operational_notes/07-26/15/2026-07-15_TOMORROW_START_HERE.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/README.md",
+    ".agent/BOARD.md"
+  ],
+  "outputs": [
+    "operational_notes/07-26/15/2026-07-15_TOMORROW_START_HERE.md",
+    ".agent/status/2026-07-15_AGENT-441.md",
+    ".agent/journal/2026-07-15/tomorrow-start-here-late-addendum.md"
+  ],
+  "result": {
+    "late_addendum_added": true,
+    "hx_scorecard_current_input": "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock",
+    "avoid_duplicate_active_rows": [
+      "AGENT-439",
+      "AGENT-440"
+    ]
+  }
+}

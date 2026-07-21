@@ -1,0 +1,71 @@
+{
+  "import_id": "2026-07-09_closure_observation_table_thermal_refresh",
+  "created_at": "2026-07-09T17:23:42-05:00",
+  "task_id": "TODO-OBSERVATION-TABLE-THERMAL-REFRESH",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Refresh the canonical closure observation table with physical-interface thermal sampling, enthalpy residual status, recirculation gating, and no-qr radiation semantics.",
+  "output_package": "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh",
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observation_schema.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/excluded_sources.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/summary.json"
+  ],
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-07/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "work_products/2026-06/2026-06-30/2026-06-30_claude_segment_friction/segment_friction.csv",
+    "work_products/2026-06/2026-06-30/2026-06-30_claude_thermal_htc",
+    "work_products/2026-07/2026-07-07/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/patchwise_heat_ledger_enthalpy_interfaces.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/combined_openfoam_interface_samples.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/sampling_plane_plan.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_time_window_quasi_steady_uq/quasi_steady_observations.csv",
+    "work_products/2026-06/2026-06-29/2026-06-29_ethan_reduction_contract_audit/source_contract_map.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_scenario_contract/scenario_contract.csv"
+  ],
+  "code": [
+    "tools/analyze/build_closure_observation_table.py",
+    "tools/analyze/test_closure_observation_table.py"
+  ],
+  "validation": [
+    {
+      "command": "python3 -m pytest tools/analyze/test_closure_observation_table.py -q",
+      "result": "passed",
+      "details": "9 passed"
+    },
+    {
+      "command": "python3 tools/analyze/build_closure_observation_table.py",
+      "result": "passed",
+      "details": "closure_observation_rows=1032; validation_errors=0"
+    },
+    {
+      "command": "python3 tools/analyze/build_closure_observation_table.py --validate-only",
+      "result": "passed",
+      "details": "closure_observation_rows=1032; validation_errors=0"
+    }
+  ],
+  "summary": {
+    "observation_rows": 1032,
+    "fit_eligible_rows": 45,
+    "validation_eligible_rows": 1032,
+    "families": {
+      "pressure": 342,
+      "thermal": 690
+    },
+    "openfoam_interface_observation_rows": 414,
+    "physical_interface_residual_observation_rows": 195,
+    "recirculation_flag_yes_rows": 291,
+    "recirculation_fit_eligible_rows": 0,
+    "radiation_present_yes_rows": 0,
+    "validation_errors": 0
+  },
+  "mutation_policy": {
+    "native_solver_outputs_modified": false,
+    "source_openfoam_case_dictionaries_modified": false,
+    "scheduler_jobs_submitted": false,
+    "external_model_repositories_modified": false
+  }
+}

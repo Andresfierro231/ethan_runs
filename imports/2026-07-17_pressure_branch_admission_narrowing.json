@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active/completed board context owns generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "branch_pressure_admission.csv",
+    "missing_evidence_queue.csv",
+    "pressure_gate_matrix.csv",
+    "runtime_pressure_branch_input_audit.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_pressure_branch_admission_narrowing",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "all_sources_present": true,
+    "branch_rows": 7,
+    "date": "2026-07-17",
+    "external_fluid_edit": false,
+    "fit_admitted_pressure_rows": 0,
+    "generated_index_refreshed": false,
+    "least_risk_candidate_rows": 1,
+    "missing_evidence_rows": 33,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "runtime_audit_pass_rows": 4,
+    "runtime_audit_rows": 4,
+    "scheduler_action": false,
+    "task": "TODO-PRESSURE-BRANCH-ADMISSION-NARROWING"
+  },
+  "task": "TODO-PRESSURE-BRANCH-ADMISSION-NARROWING"
+}

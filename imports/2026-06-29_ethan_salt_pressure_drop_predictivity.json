@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-06-29T16:55:15-05:00",
+  "script_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/build_ethan_salt_pressure_drop_predictivity.py",
+  "inputs": {
+    "frozen_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_results",
+    "hydro_probe_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_feature_path_hydro_probe"
+  },
+  "outputs": {
+    "work_product_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_salt_pressure_drop_predictivity",
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_salt_pressure_drop_predictivity"
+  }
+}

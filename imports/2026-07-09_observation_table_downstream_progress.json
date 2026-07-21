@@ -1,0 +1,67 @@
+{
+  "import_id": "2026-07-09_observation_table_downstream_progress",
+  "created_at": "2026-07-09T17:56:29-05:00",
+  "task_id": "AGENT-247",
+  "role": "Coordinator / Implementer / Tester / Writer / Cleaner",
+  "purpose": "Run downstream scoring and admission-review products from the July 9 refreshed canonical observation table.",
+  "outputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_model_form_bakeoff_thermal_refresh",
+    "work_products/2026-07/2026-07-09/2026-07-09_thermal_control_volume_admission_review",
+    "operational_notes/07-26/09/2026-07-09_canonical_products_and_cleanup_index.md"
+  ],
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/combined_openfoam_interface_samples.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/patchwise_heat_ledger_enthalpy_interfaces.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_openfoam_boundary_condition_implementation_audit/cleanup_dry_run.csv"
+  ],
+  "code": [
+    "tools/analyze/build_model_form_bakeoff_from_observations.py",
+    "tools/analyze/test_model_form_bakeoff_from_observations.py",
+    "tools/analyze/build_thermal_control_volume_admission_review.py",
+    "tools/analyze/test_thermal_control_volume_admission_review.py"
+  ],
+  "summary": {
+    "bakeoff_observation_rows": 1032,
+    "bakeoff_case_score_rows": 15,
+    "best_mdot_model_form": "F3_shah_apparent",
+    "bakeoff_recirculation_flagged_observation_rows": 291,
+    "bakeoff_radiation_present_observation_rows": 0,
+    "thermal_admission_detail_rows": 66,
+    "thermal_admission_thesis_rows": 9,
+    "thermal_admission_fit_eligible_detail_rows": 0,
+    "thermal_admission_radiation_present_detail_rows": 0,
+    "tmp_size_probe": "187G",
+    "tmp_extract_size_probe": "205G"
+  },
+  "validation": [
+    {
+      "command": "python3 -m pytest tools/analyze/test_model_form_bakeoff_from_observations.py tools/analyze/test_thermal_control_volume_admission_review.py -q",
+      "result": "passed",
+      "details": "6 passed"
+    },
+    {
+      "command": "python3 -m py_compile tools/analyze/build_model_form_bakeoff_from_observations.py tools/analyze/build_thermal_control_volume_admission_review.py tools/analyze/test_model_form_bakeoff_from_observations.py tools/analyze/test_thermal_control_volume_admission_review.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3 tools/analyze/build_model_form_bakeoff_from_observations.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3 tools/analyze/build_thermal_control_volume_admission_review.py",
+      "result": "passed"
+    }
+  ],
+  "mutation_policy": {
+    "native_solver_outputs_modified": false,
+    "source_openfoam_case_dictionaries_modified": false,
+    "scheduler_jobs_submitted": false,
+    "external_model_repositories_modified": false,
+    "destructive_cleanup_performed": false,
+    "thermal_rows_promoted_to_fit": false
+  }
+}

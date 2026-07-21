@@ -1,0 +1,44 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-S7-SENSOR-MAP-OVERLAY-2026-07-21",
+  "task_id": "TODO-THESIS-FIGTABLE-S7-SENSOR-MAP-OVERLAY-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-S7-SENSOR-MAP-OVERLAY-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figtable-s7-sensor-map-overlay.md",
+    "imports/2026-07-21_thesis_figtable_s7_sensor_map_overlay.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/build_thesis_figtable_s7_sensor_map_overlay.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/check_thesis_figtable_s7_sensor_map_overlay.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/sensor_overlay_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/bounded_excluded_sensor_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/runtime_leakage_caveat_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/score_only_caption_bank.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/README.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/one_d_path_position_map.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/bounded_or_excluded_sensor_rationale.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/score_only_target_policy.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/runtime_leakage_audit.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_refreshed": false,
+  "thesis_chapters_or_figure_assets_mutated": false,
+  "result": {
+    "sensor_overlay_rows": 17,
+    "mapped_rows": 1,
+    "bounded_rows": 15,
+    "excluded_rows": 1,
+    "runtime_temperature_allowed_rows": 0,
+    "fit_allowed_rows": 0,
+    "model_selection_allowed_rows": 0
+  }
+}

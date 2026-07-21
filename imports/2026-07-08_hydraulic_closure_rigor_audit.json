@@ -1,0 +1,43 @@
+{
+  "created_at": "2026-07-08T18:10:00-05:00",
+  "task_id": "AGENT-223",
+  "description": "Integrated hydraulic closure rigor audit for admitted Salt 2/3/4 Jin mainline cases.",
+  "output_root": "work_products/2026-07/2026-07-08/2026-07-08_hydraulic_closure_rigor_audit",
+  "source_scope": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "inputs": [
+    "work_products/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv",
+    "work_products/2026-07-08_closure_observation_table/closure_observations.csv",
+    "work_products/2026-07-08_upcomer_onset/upcomer_onset_regime_table.csv",
+    "work_products/2026-07-07_time_window_quasi_steady_uq/quasi_steady_observations.csv",
+    "work_products/2026-07-01_claude_section_mean_pressure/section_mean_pressure_*.csv",
+    "work_products/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "work_products/2026-07-01_claude_segment_friction/segment_friction.csv",
+    "work_products/2026-07-01_claude_bend_minor_loss/bend_minor_loss_*.csv",
+    "work_products/2026-06-30_claude_upcomer_convection_cell/upcomer_convection_cell_*.csv",
+    "work_products/2026-06-30_claude_downcomer_recirculation/downcomer_recirculation.csv"
+  ],
+  "outputs": [
+    "independent_total_pressure_ledger.csv",
+    "minor_loss_two_tap_refined.csv",
+    "station_development_analysis.csv",
+    "recirculation_invalidity.csv",
+    "hydraulic_uncertainty_budget.csv",
+    "loop_closure_audit.csv",
+    "closure_decision_matrix.csv",
+    "source_inventory.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "openfoam_extraction_run": false,
+  "notes": [
+    "Existing section-mean and recirculation artifacts were sufficient for this first synthesis.",
+    "Raw centerline tap-to-tap extraction remains required for closure-grade minor-loss K values.",
+    "Mesh/GCI uncertainty remains not quantified and is carried as an explicit blocker.",
+    "Native solver outputs and prior July 8 ledgers were not modified."
+  ]
+}

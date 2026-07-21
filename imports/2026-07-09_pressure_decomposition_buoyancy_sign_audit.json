@@ -1,0 +1,25 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-230",
+  "role": "Coordinator / Implementer / Writer",
+  "purpose": "Audit and correct the pressure-decomposition summary chart density-gradient buoyancy sign convention for presentation use.",
+  "inputs_read_only": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv"
+  ],
+  "outputs": [
+    "tools/analyze/build_postprocessor_summary_charts.py",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/pressure_decomposition_by_span.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/tables/pressure_terms_summary.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/slide_outline_with_speaker_notes.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/pressure_decomposition_buoyancy_sign_audit.md"
+  ],
+  "correction": {
+    "old_plotted_value": "buoyancy_contribution_pa",
+    "new_plotted_value": "gh_drho_dxi_pa_m * L_m",
+    "reason": "The old value was station-order bookkeeping. The new value is the flow-projected density-gradient term and avoids misrepresenting lower-leg heater physics."
+  },
+  "solver_outputs_modified": false,
+  "external_code_modified": false
+}

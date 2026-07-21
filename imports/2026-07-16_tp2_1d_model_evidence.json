@@ -1,0 +1,38 @@
+{
+  "task": "AGENT-463",
+  "date": "2026-07-16",
+  "title": "TP2 1D model evidence",
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/summary.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_sensor_level_evidence.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/aggregate_rmse_before_after.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/admission_status_scorecard.csv"
+  ],
+  "source_inputs": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/docs/provisional_sensor_locations.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv",
+    "operational_notes/07-26/15/2026-07-15_sensor_and_sophisticated_modeling_decisions.md"
+  ],
+  "commands": [
+    "python -m unittest tools.analyze.test_tp2_1d_model_evidence",
+    "python -m py_compile tools/analyze/build_tp2_1d_model_evidence.py tools/analyze/test_tp2_1d_model_evidence.py",
+    "python tools/analyze/build_tp2_1d_model_evidence.py"
+  ],
+  "guardrails": [
+    "No native CFD output mutation",
+    "No registry/admission mutation",
+    "No scheduler action",
+    "No generated docs index refresh",
+    "No external Fluid source edit"
+  ],
+  "result": {
+    "tp2_status": "validation-only",
+    "tp2_finite_rows": 3,
+    "current_aggregate": "5 TP + 10 TW",
+    "restored_aggregate": "6 TP + 10 TW",
+    "tw10_status": "blocked",
+    "final_forward_v1_status": "blocked"
+  }
+}

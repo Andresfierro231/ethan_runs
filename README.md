@@ -34,6 +34,18 @@ cross-model comparison results.
 - Provenance lives in manifests, journals, checkpoints, and published reports.
 - Remote paths are not treated as analysis-ready until staged locally.
 
+## Run Classification
+
+- Continuation runs are the primary Ethan run family when they exist for a
+  case. Repo-level documentation should surface continuation packages as the
+  main runs rather than older parent warmup jobs.
+- Kirst runs are not valid current mainline inputs for this repo. Keep them
+  only as historical or provenance-bearing artifacts unless a later dated note
+  explicitly restores them.
+- Perturbation runs remain useful, but they belong in a separate
+  sensitivity/correlation-support group. Do not label them as main runs,
+  nominal runs, or the default paper-facing set.
+
 ## Milestone-one case
 
 The initial scaffold targets
@@ -64,7 +76,7 @@ missing or invalid.
 See:
 
 - `tools/extract/2026-06-15_paraview_field_render_workflow.md`
-- `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+- `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
 
 ## Download Results To A Laptop
 
@@ -82,7 +94,7 @@ are about `1.7G` to `2.5G` per case.
 See:
 
 - `tools/publish/download_results_to_laptop.sh`
-- `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+- `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
 
 ## Codex Batch Job Submission
 
@@ -116,6 +128,13 @@ Key emitted artifacts:
 - `board-assertion.txt`: pre-submit assertion result
 - `slurm-<jobid>.out` and `slurm-<jobid>.err`: scheduler stdout/stderr
 - `codex-events.jsonl` and `codex-last-message.txt`: Codex execution logs
+
+## Agent/User Start Here
+
+New agents and new users should open
+`operational_notes/START_HERE_FOR_AGENTS.md` before starting work. It links the
+board protocol, generated state files, topic maps, background compute policy,
+and the `tools/agent/` preflight/finish/lint helpers.
 
 Important flags:
 

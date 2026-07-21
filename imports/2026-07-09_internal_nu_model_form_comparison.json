@@ -1,0 +1,35 @@
+{
+  "generated_date": "2026-07-09",
+  "task_id": "AGENT-243",
+  "artifact_type": "paper_facing_reference_report",
+  "title": "Ethan internal Nusselt / HTC model-form comparison",
+  "report_dir": "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison",
+  "scope": "Consolidate existing OpenFOAM dictionary evidence, 1D Fluid solver equations, heat-ledger diagnostics, and setup reports into a paper-facing comparison of CFD-inferred internal Nu/HTC versus 1D prescribed Nu/HTC model forms.",
+  "source_paths": [
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/momentumTransport",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/thermophysicalTransport",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/physicalProperties",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/T",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/U",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/profile_descriptor_closure.py",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_one_d_setup_and_confidence.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md",
+    "tools/analyze/build_patchwise_heat_ledger.py",
+    "tools/analyze/compute_gci.py"
+  ],
+  "outputs": [
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/model_form_comparison.csv",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/source_index.csv",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/summary.json"
+  ],
+  "actions_not_performed": [
+    "No OpenFOAM extraction",
+    "No Fluid rerun",
+    "No native solver-output mutation",
+    "No cfd-modeling-tools edit",
+    "No registry edit",
+    "No scheduler action"
+  ]
+}

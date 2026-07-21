@@ -1,0 +1,44 @@
+{
+  "date": "2026-07-14",
+  "task": "AGENT-374",
+  "title": "Tomorrow forward-v1 full context and overnight plan",
+  "decision": "handoff_documented_no_jobs_launched",
+  "outputs": [
+    "operational_notes/07-26/14/2026-07-14_TOMORROW_FORWARD_V1_FULL_CONTEXT_AND_OVERNIGHT_PLAN.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/tomorrow_progress_context_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/scheduler_snapshot.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/overnight_study_recommendations.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_forward_v1_full_context_and_overnight_plan/summary.json",
+    ".agent/status/2026-07-14_AGENT-374.md",
+    ".agent/journal/2026-07-14/tomorrow-forward-v1-full-context-and-overnight-plan.md"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_blocker_documentation_audit/README.md",
+    "operational_notes/07-26/14/2026-07-14_TOMORROW_THERMAL_PARITY_AND_OVERNIGHT_STUDY_HANDOFF.md",
+    "operational_notes/07-26/14/2026-07-14_TOMORROW_HYDRAULICS_AND_OVERNIGHT_COMPUTE_HANDOFF.md",
+    "operational_notes/07-26/14/2026-07-14_SALT_TRAINING_TESTING_EVIDENCE_ROLLOUT.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/README.md",
+    ".agent/BOARD.md",
+    "read-only scheduler inspection: squeue/sacct"
+  ],
+  "summary": {
+    "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+    "current_node": "c318-008.ls6.tacc.utexas.edu",
+    "recommended_new_lightweight_studies": [
+      "external_boundary_table_fluid_rerun",
+      "setup_only_cooler_hx_replacement_screen",
+      "sensor_map_policy_refresh"
+    ],
+    "pm5_job_3295901_current_state": "CANCELLED before running",
+    "jobs_launched": 0
+  },
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action_taken": false,
+    "external_fluid_modified": false
+  }
+}

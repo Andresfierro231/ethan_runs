@@ -1,0 +1,46 @@
+{
+  "task": "AGENT-409",
+  "date": "2026-07-15",
+  "kind": "lead_closure_qoi_hydraulic_postprocess",
+  "created_by": "codex",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess",
+  "scratch_outputs": [
+    "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap/salt2_mainline/postProcessing/agent409RawTwoTapSurfaces/7915/plane_left_lower_leg__s00.xy",
+    "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap/salt2_mainline/postProcessing/agent409RawTwoTapSurfaces/7915/plane_left_upper_leg__s04.xy",
+    "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap/salt3_mainline/postProcessing/agent409RawTwoTapSurfaces/7618/plane_left_lower_leg__s00.xy",
+    "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap/salt3_mainline/postProcessing/agent409RawTwoTapSurfaces/7618/plane_left_upper_leg__s04.xy",
+    "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap/salt4_mainline/postProcessing/agent409RawTwoTapSurfaces/10000/plane_left_lower_leg__s00.xy",
+    "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap/salt4_mainline/postProcessing/agent409RawTwoTapSurfaces/10000/plane_left_upper_leg__s04.xy"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/closure_qoi_failed_gate_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/closure_qoi_postprocess_launch_plan.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap_test_section_complex.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap_postprocess_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/hydraulic_admission_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/internal_nu_reopen_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/final_forward_v1_unblock_delta.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/summary.json"
+  ],
+  "summary": {
+    "closure_qoi_rows": 25,
+    "closure_gate_status_counts": {
+      "blocked_missing_triplet": 6,
+      "blocked_non_monotone_or_oscillatory": 16,
+      "blocked_sign_or_semantics_review": 3
+    },
+    "raw_two_tap_status": "diagnostic_landed_not_fit_admitted",
+    "raw_two_tap_rows": 3,
+    "raw_two_tap_diagnostic_rows": 3,
+    "openfoam_postprocessing_launched_in_agent409_scratch": true,
+    "pm5_rows": 12,
+    "pm5_vtk_validation_fail_rows": 0,
+    "internal_nu_fit_admissible_rows_today": 0,
+    "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+    "native_solver_outputs_mutated": false,
+    "external_fluid_modified": false,
+    "scheduler_jobs_launched": false,
+    "registry_or_admission_mutated": false
+  }
+}

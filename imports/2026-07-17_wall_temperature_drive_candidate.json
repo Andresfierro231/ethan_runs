@@ -1,0 +1,85 @@
+{
+  "task": "AGENT-513",
+  "date": "2026-07-17",
+  "status": "complete",
+  "title": "wall-temperature-drive candidate",
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "bounded_compute_node_srun_completed_9_coupled_fluid_rows_no_open_job_left_by_this_task",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-513.md",
+    ".agent/journal/2026-07-17/wall-temperature-drive-candidate.md",
+    "imports/2026-07-17_wall_temperature_drive_candidate.json",
+    "tools/analyze/build_wall_temperature_drive_candidate.py",
+    "tools/analyze/test_wall_temperature_drive_candidate.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/blocker_decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/wall_candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/static_drive_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/static_candidate_gate.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/scenario_contracts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/probe_error_localization.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/probe_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/role_segment_error_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/next_steps.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/background_run_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/source_manifest.csv",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "created_paths": [
+    ".agent/status/2026-07-17_AGENT-513.md",
+    ".agent/journal/2026-07-17/wall-temperature-drive-candidate.md",
+    "imports/2026-07-17_wall_temperature_drive_candidate.json",
+    "tools/analyze/build_wall_temperature_drive_candidate.py",
+    "tools/analyze/test_wall_temperature_drive_candidate.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_passive_test_section_admission_closeout",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "source_paths": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/source_manifest.csv"
+  ],
+  "validation": [
+    "python3 -m py_compile tools/analyze/build_wall_temperature_drive_candidate.py tools/analyze/test_wall_temperature_drive_candidate.py",
+    "python3 -m unittest tools.analyze.test_wall_temperature_drive_candidate",
+    "srun -N1 -n1 python3 tools/analyze/build_wall_temperature_drive_candidate.py --run-fluid --timeout-seconds 273",
+    "python3 tools/analyze/build_wall_temperature_drive_candidate.py --reuse-existing-coupled --timeout-seconds 273"
+  ],
+  "result": {
+    "decision": "keep_predictive_wall_test_section_submodels_open",
+    "coupled_completed_rows": 9,
+    "coupled_timeout_rows": 0,
+    "candidate_rows_reviewed": 3,
+    "admitted_candidate_rows": 0,
+    "runtime_gate": "pass",
+    "primary_remaining_blocker": "source_placement_explicit_wall_fluid_coupling_or_upcomer_mixing_physics"
+  },
+  "guardrails": {
+    "native_existing_output_mutation": "none",
+    "registry_mutation": "none",
+    "openfoam_launch": "none",
+    "external_fluid_edit": "none",
+    "blocker_register_mutation": "none",
+    "generated_docs_index_refresh": "none",
+    "duplicate_pb1_pb2_pb3_rerun": "none",
+    "heldout_or_external_fit_tuning": "none",
+    "scientific_admission_change": "none"
+  }
+}

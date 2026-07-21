@@ -1,0 +1,61 @@
+{
+  "task": "TODO-PRESSURE-CORNER-PUBLICATION-FREEZE-2026-07-21",
+  "task_id": "TODO-PRESSURE-CORNER-PUBLICATION-FREEZE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / cfd-pp / Tester / Writer",
+  "objective": "Freeze the July 21 pressure-corner finding into publication-facing artifacts and board the downstream scientific phases.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRESSURE-CORNER-PUBLICATION-FREEZE-2026-07-21.md",
+    ".agent/journal/2026-07-21/pressure-corner-publication-freeze.md",
+    "imports/2026-07-21_pressure_corner_publication_freeze.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/build_pressure_corner_publication_freeze.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/pressure_corner_figure_data.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/pressure_corner_methods_note.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/pressure_corner_publication_claims.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/test_pressure_corner_publication_freeze.py"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_touched": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_or_external_repo_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "clipped_k_used": false,
+    "global_multiplier_used": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m unittest work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/test_pressure_corner_publication_freeze.py",
+      "result": "passed; Ran 4 tests; OK"
+    }
+  ],
+  "outputs": {
+    "canonical_csv": "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "row_count": 3,
+    "label_counts": {
+      "section_effective": 3
+    }
+  }
+}

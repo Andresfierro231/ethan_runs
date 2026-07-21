@@ -1,0 +1,26 @@
+{
+  "task": "AGENT-465",
+  "date": "2026-07-16",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-16_AGENT-465.md",
+    ".agent/journal/2026-07-16/final-1d-model-form-coordination.md",
+    "imports/2026-07-16_final_1d_model_form_coordination.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/README.md",
+    "reference/geometry_reference.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "generated_index_refresh": false,
+  "external_fluid_edit": false
+}

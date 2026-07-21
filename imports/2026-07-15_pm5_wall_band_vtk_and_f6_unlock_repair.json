@@ -1,0 +1,34 @@
+{
+  "task": "AGENT-406",
+  "date": "2026-07-15",
+  "type": "diagnostic_cfd_postprocess_repair",
+  "workspace": "projects_scratch/ethan_runs",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair",
+  "scratch_output": "tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair",
+  "native_solver_outputs_mutated": false,
+  "scheduler_jobs_launched": false,
+  "external_fluid_modified": false,
+  "thermal_fitting_performed": false,
+  "source_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/pm5_matched_plane_case_list.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_matched_plane_parser_repair/README.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_lo5q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/processors64/10275",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_hi5q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/processors64/9780",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_lo5q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/processors64/11695",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi5q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/processors64/11399"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_vtk_field_validation.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/pm5_f6_internal_nu_unlock_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/pm5_case_unlock_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json"
+  ],
+  "result": {
+    "parsed_metric_rows": 12,
+    "complete_with_wallHeatFlux_rows": 12,
+    "vtk_validation_fail_rows": 0,
+    "f6_unlocked_for_review_not_admitted": true,
+    "internal_nu_unlocked_for_review_not_admitted": true
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "task": "AGENT-579",
+  "task_id": "AGENT-579",
+  "date": "2026-07-21",
+  "role": "Coordinator/Cleaner/Writer",
+  "objective": "Define S14 board-hygiene closeout and add separate S13 prerequisite board rows.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_AGENT-579.md",
+    ".agent/journal/2026-07-21/s14-hygiene-and-s13-prereq-dispatch.md",
+    "imports/2026-07-21_s14_hygiene_and_s13_prereq_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_S14_HYGIENE_AND_S13_PREREQ_DISPATCH.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_geometry_release/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/README.md",
+    "scheduler state from squeue -u andresfierro231"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read-only squeue observation only; no submission, cancellation, requeue, harvest, or admission action",
+  "external_fluid_edit": false,
+  "board_actions": [
+    {
+      "task_id": "TODO-THESIS-STUDY-S14-PRESSURE-F6-NONRECIRC-ANCHOR-EVIDENCE-2026-07-21",
+      "action": "archived from Active after finish_task passed",
+      "meaning": "board hygiene only; S14 remains diagnostic/negative with 0 admitted rows and no S11 trigger"
+    },
+    {
+      "task_id": "TODO-S13-UPCOMER-EXCHANGE-GEOMETRY-CONTRACT-2026-07-21",
+      "action": "added open prerequisite row"
+    },
+    {
+      "task_id": "TODO-S13-UPCOMER-EXCHANGE-SURFACE-VTK-EXTRACTION-2026-07-21",
+      "action": "added open prerequisite row"
+    },
+    {
+      "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAMPLER-MANIFEST-PREFLIGHT-2026-07-21",
+      "action": "added open prerequisite row"
+    },
+    {
+      "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAME-WINDOW-UQ-DESIGN-2026-07-21",
+      "action": "added open prerequisite row"
+    }
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-STUDY-S14-PRESSURE-F6-NONRECIRC-ANCHOR-EVIDENCE-2026-07-21",
+      "result": "passed"
+    },
+    {
+      "command": "board parse for AGENT-579, S13, S13 prerequisite rows, and S14",
+      "result": "AGENT-579 active during closeout, S13 main row open, four S13 prerequisite rows open, S14 absent from Active"
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "files_deleted": false
+  }
+}

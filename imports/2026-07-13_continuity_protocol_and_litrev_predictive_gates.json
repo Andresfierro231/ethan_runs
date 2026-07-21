@@ -1,0 +1,60 @@
+{
+  "created_utc": "2026-07-13T21:14:42Z",
+  "task_id": "AGENT-292",
+  "kind": "continuity_protocol_and_predictive_gate_refresh",
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "board_anchor": ".agent/BOARD.md",
+  "handoff_note": "operational_notes/07-26/13/2026-07-13_CURRENT_CLOSURE_AND_PREDICTIVE_MODEL_START_HERE.md",
+  "instruction_files": [
+    "AGENTS.md",
+    "CLAUDE.md"
+  ],
+  "scripts": [
+    "tools/analyze/build_predictive_input_contract.py",
+    "tools/analyze/test_predictive_input_contract.py",
+    "tools/analyze/run_predictive_forward_v0_imposed_cooler.py",
+    "tools/analyze/test_predictive_forward_v0_imposed_cooler.py"
+  ],
+  "litrev_gate_sources": {
+    "source_envelope_gate": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+    "property_mode_lane": "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+    "named_loss_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "heat_loss_admission_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+    "cfd_coefficient_naming_limits": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv"
+  },
+  "regenerated_packages": {
+    "predictive_input_contract": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "predictive_forward_v0_imposed_cooler": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler"
+  },
+  "new_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_litrev_gate_reference_audit.csv"
+  ],
+  "validation": [
+    {
+      "command": "module load python/3.12.11; python3 tools/analyze/test_predictive_input_contract.py",
+      "status": "pass",
+      "tests": 5
+    },
+    {
+      "command": "module load python/3.12.11; python3 tools/analyze/test_predictive_forward_v0_imposed_cooler.py",
+      "status": "pass",
+      "tests": 6
+    },
+    {
+      "command": "module load python/3.12.11; python3 tools/analyze/build_predictive_input_contract.py --strict",
+      "status": "pass",
+      "runtime_fields": 32,
+      "violations": 0
+    },
+    {
+      "command": "module load python/3.12.11; python3 tools/analyze/run_predictive_forward_v0_imposed_cooler.py --strict-input-contract --engine fast_scan --sensor-source both",
+      "status": "pass",
+      "litrev_gate_reference_rows": 5,
+      "accepted_rows": 6
+    }
+  ],
+  "next_recommended_task": "TODO-PRED-HX-FIT"
+}
+

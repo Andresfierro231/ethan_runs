@@ -1,0 +1,28 @@
+{
+  "task": "TODO-THESIS-CH5-CH7-CSEM-UQ-FLUID-READINESS-ADDENDUM-INSERTION-2026-07-21",
+  "task_id": "TODO-THESIS-CH5-CH7-CSEM-UQ-FLUID-READINESS-ADDENDUM-INSERTION-2026-07-21",
+  "date": "2026-07-21",
+  "objective": "Insert completed CSEM UQ/Fluid readiness addendum into Ch. 5-7.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CH5-CH7-CSEM-UQ-FLUID-READINESS-ADDENDUM-INSERTION-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-ch5-ch7-csem-uq-fluid-readiness-addendum-insertion.md",
+    "imports/2026-07-21_thesis_ch5_ch7_csem_uq_fluid_readiness_addendum_insertion.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch5_ch7_csem_uq_fluid_readiness_addendum_insertion",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration",
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "final_score_values": 0,
+  "heldout_or_external_score_claim": false
+}

@@ -1,0 +1,69 @@
+{
+  "task": "TODO-PRESSURE-CORNER-LOW-RECIRC-ANCHOR-HARVEST",
+  "date": "2026-07-21",
+  "generated_by": "codex",
+  "objective": "Preflight low-recirculation same-topology pressure-corner anchor candidates before any sampler launch or coefficient admission.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRESSURE-CORNER-LOW-RECIRC-ANCHOR-HARVEST.md",
+    ".agent/journal/2026-07-21/pressure-corner-low-recirc-anchor-harvest.md",
+    "imports/2026-07-21_pressure_corner_low_recirc_anchor_harvest.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/build_pressure_corner_low_recirc_anchor_harvest.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/test_pressure_corner_low_recirc_anchor_harvest.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_case_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/endpoint_field_availability.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/sampler_or_no_launch_decision.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/next_evidence_sequence.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/candidate_anchor_inventory.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/source_case_selection.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/endpoint_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/same_qoi_uq_family_plan.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/source_case_selection.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/high_heat_case_index.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/terminal_status_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv"
+  ],
+  "outputs": {
+    "candidate_rows": 4,
+    "source_case_rows": 4,
+    "endpoint_field_rows": 15,
+    "anchor_decision_rows": 2,
+    "preferred_candidate_id": "CAND-001",
+    "terminal_ready_cases": 0,
+    "sampler_launch_performed": false,
+    "ordinary_component_k_review_queued": false,
+    "component_k_admitted": false,
+    "cluster_k_admitted": false,
+    "f6_fit_performed": false,
+    "clipped_k": false,
+    "global_multiplier_applied": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "no_scorecard_outputs": true,
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/build_pressure_corner_low_recirc_anchor_harvest.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/test_pressure_corner_low_recirc_anchor_harvest.py",
+      "result": "PASS: validated low-recirc preflight (4 candidates, 4 source cases, 15 field rows)"
+    }
+  ]
+}

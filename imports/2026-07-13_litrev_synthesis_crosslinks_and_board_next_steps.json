@@ -1,0 +1,52 @@
+{
+  "manifest_type": "coordination_crosslink_manifest",
+  "task_id": "AGENT-285",
+  "date": "2026-07-13",
+  "created_by": "codex",
+  "purpose": "Make the AGENT-282 lit-rev synthesis package easier to find from current operational and reference documents, and add board-visible next-step tasks.",
+  "primary_package": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/",
+  "source_package": {
+    "task_id": "AGENT-282",
+    "path": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/",
+    "role": "provenance-focused lessons learned, model forms, things to try, and research pathways derived from the HITEC closure literature review"
+  },
+  "files_created": [
+    "operational_notes/07-26/13/2026-07-13_litrev_synthesis_start_here.md",
+    ".agent/status/2026-07-13_AGENT-285.md",
+    ".agent/journal/2026-07-13/litrev-synthesis-crosslinks-and-board-next-steps.md",
+    "imports/2026-07-13_litrev_synthesis_crosslinks_and_board_next_steps.json"
+  ],
+  "files_modified": [
+    ".agent/BOARD.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md",
+    "operational_notes/07-26/10/2026-07-10_NEXT_MEETING_START_HERE.md",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md"
+  ],
+  "board_rows_added": [
+    "TODO-LITREV-SOURCE-ENVELOPE",
+    "TODO-LITREV-PROPERTY-SENSITIVITY",
+    "TODO-LITREV-RESET-NAMED-LOSSES",
+    "TODO-LITREV-HEAT-LOSS-CALIBRATION",
+    "TODO-LITREV-CFD-VALIDITY-DIAGNOSTICS"
+  ],
+  "crosslink_strategy": [
+    "Added tags and a Start Here section to the lit-rev synthesis README.",
+    "Added a dedicated July 13 operational start-here note for the lit-rev synthesis package.",
+    "Linked the package from the July 10 next-meeting start-here note.",
+    "Linked the package from the internal-Nu model-form comparison report.",
+    "Linked the package from the external-boundary setup reference report.",
+    "Linked the package to the new board TODO rows so future workers can find actionable next steps."
+  ],
+  "validation": [
+    "rg confirmed litrev_synthesis_start_here links in the package README, July 10 start-here note, and adjacent July 9 reference reports.",
+    "rg confirmed #litrev-synthesis tags in the package README, July 10 start-here note, July 13 index note, and adjacent reference reports.",
+    "rg confirmed all five TODO-LITREV board rows were added under Planned / Unclaimed."
+  ],
+  "boundaries": [
+    "No source literature-review repository files were modified.",
+    "No native solver outputs were read for interpretation or modified.",
+    "No scheduler actions were taken.",
+    "No registry or external cfd-modeling-tools files were modified."
+  ]
+}

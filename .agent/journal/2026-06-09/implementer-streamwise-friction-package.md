@@ -10,7 +10,7 @@
   - `staging/AGENTS.override.md`
   - `reports/2026-06-04_ethan_transient_axial_package/README.md`
   - `reports/2026-06-04_ethan_section_transport_package/README.md`
-  - `operational_notes/2026-06-01_salt_test_2_setup_dossier.md`
+  - `operational_notes/06-26/01/2026-06-01_salt_test_2_setup_dossier.md`
   - `jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv`
   - `tools/analyze/build_ethan_transient_axial_package.py`
   - `tools/analyze/build_ethan_section_transport_package.py`

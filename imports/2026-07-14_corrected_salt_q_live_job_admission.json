@@ -1,0 +1,88 @@
+{
+  "task": "AGENT-313",
+  "date": "2026-07-14",
+  "type": "live_job_admission_heartbeat",
+  "status": "complete",
+  "job_id": "3293924",
+  "job_name": "saltq_sel_cont",
+  "checked_at_local": "2026-07-14T11:12:55-05:00",
+  "generated_artifacts": [
+    ".agent/status/2026-07-14_AGENT-313.md",
+    ".agent/journal/2026-07-14/corrected-salt-q-live-job-admission.md"
+  ],
+  "read_only_evidence": [
+    "operational_notes/07-26/13/2026-07-13_TOMORROW_CORRECTED_SALT_Q_LIVE_JOB_HANDOFF.md",
+    ".agent/status/2026-07-13_AGENT-290.md",
+    ".agent/journal/2026-07-13/corrected-salt-q-time-precision-rerun.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/README.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/TODO.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_selected_corrected_salt_q_continuation.sbatch",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/system/controlDict",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/system/controlDict",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/controlDict",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/controlDict",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q"
+  ],
+  "scheduler_observation": {
+    "top_level_state": "RUNNING",
+    "node": "c318-016",
+    "top_level_elapsed": "18:09:31",
+    "foam_steps": {
+      "3293924.0": "RUNNING",
+      "3293924.1": "RUNNING",
+      "3293924.2": "RUNNING",
+      "3293924.3": "RUNNING"
+    }
+  },
+  "case_outcomes": [
+    {
+      "display_row": "salt2_lo10q",
+      "source_key": "salt2_jin_lo10q_corrected",
+      "slurm_step": "3293924.0",
+      "selected_restart": 10291,
+      "latest_live_time_s": 10633.766871,
+      "outcome": "running_advancing",
+      "classification": "blocked_pending_terminal_gate",
+      "downstream_admitted": false
+    },
+    {
+      "display_row": "salt2_hi10q",
+      "source_key": "salt2_jin_hi10q_corrected",
+      "slurm_step": "3293924.1",
+      "selected_restart": 9674,
+      "latest_live_time_s": 10004.348066,
+      "outcome": "running_advancing",
+      "classification": "blocked_pending_terminal_gate",
+      "downstream_admitted": false
+    },
+    {
+      "display_row": "salt4_lo10q",
+      "source_key": "salt4_jin_lo10q_corrected",
+      "slurm_step": "3293924.2",
+      "selected_restart": 11655,
+      "latest_live_time_s": 11942.703125,
+      "outcome": "running_advancing",
+      "classification": "blocked_pending_terminal_gate",
+      "downstream_admitted": false
+    },
+    {
+      "display_row": "salt4_hi10q",
+      "source_key": "salt4_jin_hi10q_corrected",
+      "slurm_step": "3293924.3",
+      "selected_restart": 12639,
+      "latest_live_time_s": 12877.584112,
+      "outcome": "running_advancing",
+      "classification": "blocked_pending_terminal_gate",
+      "downstream_admitted": false
+    }
+  ],
+  "admission_summary": "No corrected-Q rows are admitted or downstream-ready from this heartbeat because job 3293924 is still running and terminal operating-point gate evidence does not exist yet.",
+  "native_solver_outputs_modified": false,
+  "external_cfd_modeling_tools_modified": false
+}

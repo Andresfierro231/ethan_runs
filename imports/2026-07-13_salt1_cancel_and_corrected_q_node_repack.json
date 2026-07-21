@@ -1,0 +1,55 @@
+{
+  "task_id": "AGENT-268",
+  "date": "2026-07-13",
+  "role": "Coordinator / Writer",
+  "owner": "codex",
+  "purpose": "Document user-authorized Salt1 cancellation actions and recommend corrected-Q repack candidates for remaining node capacity.",
+  "snapshot_time": "2026-07-13T11:09:18-05:00",
+  "actions_performed": [
+    "scancel 3282992",
+    "scancel 3288671.0",
+    "read-only scheduler and accounting verification",
+    "read-only review of corrected-Q continuation plans and latest-time table",
+    "coordination documentation"
+  ],
+  "actions_not_performed": [
+    "did not cancel 3288671",
+    "did not cancel 3288671.1",
+    "did not cancel 3288671.5",
+    "did not launch new work",
+    "did not mutate native solver outputs",
+    "did not edit case dictionaries",
+    "did not change closure admission status"
+  ],
+  "scheduler_result": {
+    "normal_salt1_job_3282992": "CANCELLED by 890970",
+    "salt1_lo10q_step_3288671_0": "CANCELLED by 890970",
+    "corrected_q_allocation_3288671": "RUNNING on c318-017",
+    "salt1_hi10q_step_3288671_1": "RUNNING",
+    "salt4_hi10q_step_3288671_5": "RUNNING"
+  },
+  "recommendation": {
+    "primary_candidates": [
+      "salt2_jin_lo10q_corrected",
+      "salt2_jin_hi10q_corrected"
+    ],
+    "conditional_candidate": "Cancel Salt1 +10Q only with explicit user approval if another 64-rank slot is needed.",
+    "avoid_now": [
+      "bulk corrected-Q resubmission",
+      "Salt3 +5Q and +10Q before diagnosis",
+      "additional Salt4 rows before Salt4 +10Q steadiness or Salt2 first-wave proof"
+    ]
+  },
+  "outputs": [
+    ".agent/status/2026-07-13_AGENT-268.md",
+    ".agent/journal/2026-07-13/salt1-cancel-and-corrected-q-node-repack.md",
+    "operational_notes/07-26/13/2026-07-13_salt1_cancel_and_corrected_q_node_repack.md"
+  ],
+  "sources": [
+    "scheduler state for jobs 3282992 and 3288671",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/corrected_q_latest_timesteps.csv"
+  ]
+}
+

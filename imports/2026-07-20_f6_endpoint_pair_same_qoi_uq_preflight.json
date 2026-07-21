@@ -1,0 +1,58 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-F6-ENDPOINT-PAIR-SAME-QOI-UQ-PREFLIGHT.md",
+    ".agent/journal/2026-07-20/f6-endpoint-pair-same-qoi-uq-preflight.md",
+    "imports/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/build_f6_endpoint_pair_same_qoi_uq_preflight.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/test_f6_endpoint_pair_same_qoi_uq_preflight.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_pressure_deltas.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/existing_endpoint_qoi_inventory.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_mesh_uq_diagnostic.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_time_uq_status.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/raw_endpoint_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/admission_gate_status.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/paper_methods_endpoint_pair_uq_note.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/summary.json"
+  ],
+  "date": "2026-07-20",
+  "decision": "endpoint_pairs_selected_same_qoi_diagnostic_only",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Perform feasible endpoint-pair and same-QOI UQ preflight for non-upcomer F6 branches.",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/non_upcomer_f6_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/same_qoi_uq_requirements.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_section_mean_pressure",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state"
+  ],
+  "registry_mutated": false,
+  "registry_mutation": "none",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/summary.json",
+  "task": "TODO-F6-ENDPOINT-PAIR-SAME-QOI-UQ-PREFLIGHT",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/build_f6_endpoint_pair_same_qoi_uq_preflight.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/test_f6_endpoint_pair_same_qoi_uq_preflight.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight --warn",
+      "result": "passed_candidate_rows_0_findings_0"
+    }
+  ]
+}

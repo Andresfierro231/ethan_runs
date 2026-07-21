@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-432",
+  "date": "2026-07-15",
+  "status": "complete",
+  "created_or_updated": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-15_AGENT-432.md",
+    ".agent/journal/2026-07-15/sensor-and-sophisticated-modeling-todos.md",
+    "imports/2026-07-15_sensor_and_sophisticated_modeling_todos.json",
+    "operational_notes/07-26/15/2026-07-15_sensor_and_sophisticated_modeling_decisions.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/sensor_map_policy_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan/",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/",
+    "operational_notes/07-26/15/2026-07-15_m3_successor_test_section_heat_loss_requirement.md",
+    "operational_notes/07-26/15/2026-07-15_segment_resolved_pressure_thermal_modeling_plan.md",
+    "native CFD solver outputs",
+    "../cfd-modeling-tools/**"
+  ],
+  "decisions": {
+    "tp2": "Restore TP2 to the 1D path and aggregate scoring only after path projection, source_segment, and finite prediction gates pass.",
+    "tw10": "Keep TW10 excluded from aggregate scoring until a forward model emits an active-HX shell-state temperature.",
+    "upcomer": "Target a hybrid throughflow pipe plus recirculating convection-cell model, not a single-stream pipe closure for recirculating rows.",
+    "boundary_layer": "Quantify hydraulic and thermal boundary-layer development effects by segment on mdot and TP/TW errors."
+  },
+  "new_board_todos": [
+    "TODO-SENSOR-TP2-RESTORE-TW10-EXCLUDE",
+    "TODO-UPCOMER-PIPE-CELL-HYBRID-MODEL",
+    "TODO-PREDICT-BOUNDARY-LAYER-DEVELOPMENT-SCORECARD"
+  ],
+  "guardrails": [
+    "No native CFD output mutation.",
+    "No external cfd-modeling-tools edits.",
+    "No PowerPoint creation.",
+    "TP/TW probes remain post-solve validation targets only.",
+    "Do not use recirculating rows as fitted single-stream Nu/f_D/K evidence."
+  ]
+}

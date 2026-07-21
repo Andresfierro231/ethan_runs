@@ -1,0 +1,38 @@
+{
+  "task": "AGENT-454",
+  "date": "2026-07-16",
+  "title": "Predictive boundary-submodel admission",
+  "primary_output": "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission",
+  "blocker_action": {
+    "superseded": "predictive-heater-cooler-wall-submodels",
+    "new_open_blocker": "predictive-wall-test-section-submodels"
+  },
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_scalar_candidates.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/part5_heating_rmse_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/setup_only_hx_boundary_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/fluid_variant_contract.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/diagnostic_test_section_negative_source_rows.csv"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/heater_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/wall_test_section_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/blocker_decision.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/summary.json"
+  ],
+  "validation": [
+    "python3 tools/analyze/test_predictive_boundary_submodel_admission.py",
+    "python3 tools/analyze/build_predictive_boundary_submodel_admission.py"
+  ],
+  "guardrails": [
+    "No native CFD solver outputs mutated",
+    "No registry state mutated",
+    "No scheduler action",
+    "No external Fluid edit"
+  ]
+}

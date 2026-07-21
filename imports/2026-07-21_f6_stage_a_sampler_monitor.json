@@ -1,0 +1,44 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-STAGE-A-SAMPLER-MONITOR.md",
+    ".agent/journal/2026-07-21/f6-stage-a-sampler-monitor.md",
+    "imports/2026-07-21_f6_stage_a_sampler_monitor.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_sampler_monitor/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_sampler_monitor/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_sampler_monitor/expected_surface_inventory.csv"
+  ],
+  "date": "2026-07-21",
+  "decision": "stage_a_sampler_job_completed_handoff_to_harvest_qa",
+  "external_fluid_edit": false,
+  "job_id": "3308082",
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Read-only monitor closeout for Stage A F6 endpoint raw-face sampler job 3308082.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_sampler_monitor",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/RUNNING.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/logs/slurm-3308082.err",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/stage_a_endpoint_face_matrix.csv",
+    "scheduler accounting state for job 3308082"
+  ],
+  "registry_mutated": false,
+  "role": "Scheduler Monitor / Writer",
+  "scheduler_action": "read-only monitor; no submit/cancel/requeue",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_sampler_monitor/summary.json",
+  "task": "TODO-F6-STAGE-A-SAMPLER-MONITOR",
+  "validation": [
+    {
+      "command": "sacct -j 3308082 --format=JobID,JobName%24,State,ExitCode,Elapsed,NodeList%20,Start,End",
+      "result": "COMPLETED 0:0"
+    },
+    {
+      "command": "tail -80 work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/logs/slurm-3308082.err",
+      "result": "final completion line present"
+    },
+    {
+      "command": "find tmp/2026-07-21_f6_endpoint_raw_face_sampler/staged_reconstructed -name 'plane_*.vtk'",
+      "result": "8 VTK files found"
+    }
+  ]
+}

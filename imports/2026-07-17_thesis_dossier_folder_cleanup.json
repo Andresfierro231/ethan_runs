@@ -1,0 +1,69 @@
+{
+  "manifest_type": "documentation_cleanup",
+  "task": "AGENT-490",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer/Cleaner",
+  "objective": "Reorganize the thesis dossier into README.md, Outline.md, Chapters_and_sections/, and move PowerPoint-facing material under reports/powerpoint/.",
+  "created": [
+    "reports/thesis_dossier/Chapters_and_sections/README.md",
+    "reports/powerpoint/README.md",
+    ".agent/status/2026-07-17_AGENT-490.md",
+    ".agent/journal/2026-07-17/thesis-dossier-folder-cleanup.md",
+    "imports/2026-07-17_thesis_dossier_folder_cleanup.json"
+  ],
+  "updated": [
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-17_current_context.md",
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-14_thesis_presentation_story_sync.md",
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-14_upcomer_recirculation_internal_nu_story.md",
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-14_thesis_presentation_update.md",
+    "reports/powerpoint/07-15/2026-07-15_powerpoint_outline.md",
+    "reports/powerpoint/07-15/2026-07-15_integrated_weekly_powerpoint_outline.md",
+    "reports/powerpoint/07-15/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md",
+    ".agent/BOARD.md"
+  ],
+  "moved_or_renamed": [
+    {
+      "from": "reports/thesis_dossier/master_thesis_bullet_outline.md",
+      "to": "reports/thesis_dossier/Outline.md"
+    },
+    {
+      "from": "reports/thesis_dossier/2026-07-17_thesis_dossier_latest_context_update.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/2026-07-17_current_context.md"
+    },
+    {
+      "from": "reports/thesis_dossier/2026-07-16_salt1_confident_use_and_forward_scorecard_story.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/2026-07-16_salt1_confident_use_and_forward_scorecard_story.md"
+    },
+    {
+      "from": "reports/thesis_dossier/2026-07-14_upcomer_recirculation_internal_nu_story.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/2026-07-14_upcomer_recirculation_internal_nu_story.md"
+    },
+    {
+      "from": "reports/thesis_dossier/2026-07-14_thesis_presentation_story_sync.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/2026-07-14_thesis_presentation_story_sync.md"
+    },
+    {
+      "from": "reports/thesis_dossier/2026-07-14_thesis_presentation_update.md",
+      "to": "reports/thesis_dossier/Chapters_and_sections/2026-07-14_thesis_presentation_update.md"
+    }
+  ],
+  "copied": [
+    {
+      "from": "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/2026-07-15_powerpoint_deck.pptx",
+      "to": "reports/powerpoint/07-15/2026-07-15_powerpoint_deck.pptx"
+    }
+  ],
+  "validation": [
+    "find reports/thesis_dossier reports/powerpoint -maxdepth 2 -type f | sort",
+    "rg -n \"master_thesis_bullet_outline|reports/thesis_dossier/2026-07-17_thesis_dossier_latest_context_update|reports/thesis_dossier/2026-07-15|reports/thesis_dossier/2026-07-14|reports/thesis_dossier/2026-07-16_salt1\" reports/thesis_dossier reports/powerpoint"
+  ],
+  "guardrails": [
+    "No native CFD outputs were mutated.",
+    "No registry or admission state was changed.",
+    "No scheduler commands were run.",
+    "No generated documentation index refresh was run because generated index files are under a separate active board row.",
+    "The original work_products PowerPoint package was preserved as provenance."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "task_id": "AGENT-267",
+  "created_at": "2026-07-13T13:25:00-05:00",
+  "kind": "analysis_manifest",
+  "title": "Salt2 refined reconstructed-T repair trial",
+  "native_solver_outputs_mutated": false,
+  "source_cases": [
+    {
+      "level": "medium",
+      "case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "time": "518",
+      "processor_dir": "processors64",
+      "access": "read-only"
+    },
+    {
+      "level": "fine",
+      "case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "time": "399",
+      "processor_dir": "processors128",
+      "access": "read-only-not-run-in-final-smoke"
+    }
+  ],
+  "script": "tools/analyze/build_reconstructed_t_repair_trial.py",
+  "package_root": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial",
+  "summary": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/summary.json",
+  "key_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/reconstruction_trials.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/medium/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/medium/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv"
+  ],
+  "decision": "Medium repair smoke passed: clean split reconstructed T, successful temperature section sampling, and two computed finite segment thermal rows. Closure admission remains separately gated; fine mesh not yet run.",
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_reconstructed_t_repair_trial.py",
+    "python3.11 -c json.load(summary)"
+  ]
+}

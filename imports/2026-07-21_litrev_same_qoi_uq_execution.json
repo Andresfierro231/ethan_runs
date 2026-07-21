@@ -1,0 +1,68 @@
+{
+  "task": "TODO-LITREV-SAME-QOI-UQ-EXECUTION",
+  "date": "2026-07-21",
+  "generated_by": "codex",
+  "objective": "Execute the same-QOI uncertainty lane from existing artifacts and publish a canonical admission table without coefficient admission.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-SAME-QOI-UQ-EXECUTION.md",
+    ".agent/journal/2026-07-21/litrev-same-qoi-uq-execution.md",
+    "imports/2026-07-21_litrev_same_qoi_uq_execution.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/build_litrev_same_qoi_uq_execution.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/test_litrev_same_qoi_uq_execution.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/uq_gap_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_summary_by_family.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/residual_uq_progress.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_same_qoi_uq_preflight/pm10_uq_gate.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_same_qoi_uq_preflight/pm10_same_qoi_time_uq_status.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/thermal_mesh_gate_qois.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/thermal_row_admission_ledger.csv"
+  ],
+  "outputs": {
+    "same_qoi_uq_admission_table_rows": 83,
+    "gap_queue_rows": 83,
+    "admitted_rows": 0,
+    "component_k_admitted_rows": 0,
+    "cluster_k_admitted_rows": 0,
+    "f6_fit_performed_rows": 0,
+    "clipped_k_rows": 0,
+    "global_multiplier_applied_by_this_task_rows": 0
+  },
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "solver_or_sampler_launched": false,
+    "fluid_or_external_repo_mutated": false,
+    "generated_index_refreshed": false,
+    "scientific_admission_changed": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/build_litrev_same_qoi_uq_execution.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/test_litrev_same_qoi_uq_execution.py",
+      "result": "PASS: validated 83 same-QOI UQ rows across 7 source families"
+    }
+  ]
+}

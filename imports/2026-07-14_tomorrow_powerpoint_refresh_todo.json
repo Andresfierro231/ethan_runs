@@ -1,0 +1,23 @@
+{
+  "task_id": "AGENT-375",
+  "date": "2026-07-14",
+  "status": "complete",
+  "purpose": "Add a July 15 TODO to revamp the PowerPoint after new results land.",
+  "artifacts": [
+    "reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+    ".agent/status/2026-07-14_AGENT-375.md",
+    ".agent/journal/2026-07-14/tomorrow-powerpoint-refresh-todo.md"
+  ],
+  "todo_added": {
+    "trigger": "new landed result changes admission, blocker, scorecard, split-policy, figure, or thesis-claim status",
+    "rebuild_command": "python3.11 tools/analyze/build_2026_07_15_powerpoint_deck.py",
+    "wording_guardrail": "preserve predictive/calibrated/diagnostic/reference/blocked/pending labels"
+  },
+  "mutations": {
+    "native_cfd_solver_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_state": false,
+    "generated_indexes": false,
+    "external_cfd_modeling_tools": false
+  }
+}

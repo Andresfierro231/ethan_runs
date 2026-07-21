@@ -1,0 +1,56 @@
+{
+  "task": "AGENT-540",
+  "date": "2026-07-18",
+  "created_at": "2026-07-18T14:22:53-05:00",
+  "description": "UMX1 Fluid API contract hardening and dry handoff. External Fluid already contained solver-side UMX exchange support; this pass tied loader defaults to the solver constant, added focused no-solver contract tests, and documented the no-admission boundary.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_AGENT-540.md",
+    ".agent/journal/2026-07-18/umx1-fluid-api-implementation.md",
+    "imports/2026-07-18_umx1_fluid_api_implementation.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/implementation_change_log.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/validation_results.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/runtime_guardrail_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/next_step_queue.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/source_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/summary.json",
+    "operational_notes/07-26/18/2026-07-18_UMX1_FLUID_API_IMPLEMENTATION.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-18_workflow_journal.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "../cfd-modeling-tools/AGENTS.md",
+    "../cfd-modeling-tools/tamu_first_order_model/AGENTS.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/AGENTS.override.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": true,
+  "solver_or_scoring_grid_run": false,
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tests.test_solver_contracts.SolverContractTests.test_config_loader_parses_upcomer_exchange_fields tests.test_solver_contracts.SolverContractTests.test_umx1_rejects_invalid_mode_and_unknown_parent_segments tests.test_solver_contracts.SolverContractTests.test_umx1_positive_exchange_emits_conservative_segment_ledger tests.test_solver_contracts.SolverContractTests.test_umx1_march_emits_segment_ledger tests.test_solver_contracts.SolverContractTests.test_umx1_default_disabled_exchange_is_noop",
+      "cwd": "../cfd-modeling-tools/tamu_first_order_model/Fluid",
+      "result": "passed; 5 tests in 0.081 s"
+    },
+    {
+      "command": "python3.11 -m py_compile tamu_loop_model_v2/solver.py tamu_loop_model_v2/config_loader.py tests/test_solver_contracts.py",
+      "cwd": "../cfd-modeling-tools/tamu_first_order_model/Fluid",
+      "result": "passed"
+    }
+  ],
+  "notes": [
+    "No OpenFOAM run, Fluid campaign, solver scoring grid, scheduler action, registry mutation, fitting, tuning, or admission change was performed.",
+    "The external Fluid working tree already contained solver-side UMX exchange edits before this pass; AGENT-540 preserved those and hardened the API/test/doc contract."
+  ]
+}

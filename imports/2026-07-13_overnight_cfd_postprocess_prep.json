@@ -1,0 +1,40 @@
+{
+  "task_id": "AGENT-305",
+  "created_at": "2026-07-13T17:38:04-05:00",
+  "kind": "overnight_cfd_postprocess_prep",
+  "title": "Overnight CFD postprocessing preparation for thermal and pressure-momentum gates",
+  "native_solver_outputs_mutated": false,
+  "scripts": [
+    "tools/analyze/build_salt2_coarse_thermal_repair_smoke.py",
+    "tools/analyze/build_thermal_sign_enthalpy_review.py",
+    "tools/analyze/test_thermal_sign_enthalpy_review.py"
+  ],
+  "work_products": {
+    "prep_package": "work_products/2026-07/2026-07-13/2026-07-13_overnight_cfd_postprocess_prep",
+    "thermal_sign_enthalpy_review": "work_products/2026-07/2026-07-13/2026-07-13_thermal_sign_enthalpy_review",
+    "coarse_thermal_expected_output": "work_products/2026-07/2026-07-13/2026-07-13_salt2_coarse_thermal_repair_smoke"
+  },
+  "submitted_jobs": [
+    {
+      "job_id": "3294001",
+      "job_name": "s2_coarse_T+",
+      "script": "work_products/2026-07/2026-07-13/2026-07-13_overnight_cfd_postprocess_prep/scripts/run_salt2_coarse_thermal_repair_smoke.sbatch",
+      "initial_state": "RUNNING",
+      "initial_node": "c318-011",
+      "initial_elapsed": "00:00:05",
+      "walltime": "04:00:00",
+      "submitted_via": "login3"
+    }
+  ],
+  "thermal_sign_enthalpy_review_result": {
+    "review_row_count": 3,
+    "blocker_row_count": 10,
+    "fit_admissible_count": 0,
+    "overall_status": "thermal_sign_enthalpy_review_blocks_closure_admission"
+  },
+  "postprocess_triage": {
+    "momentum_pressure": "Salt2 pressure/momentum mesh-family evidence already exists; no duplicate Salt2 pressure job launched. Corrected-Q remains pending terminal harvest.",
+    "thermal": "Salt2 coarse thermal segment extraction is the missing same-workflow triplet input; job 3294001 submitted."
+  },
+  "status": "submitted_running"
+}

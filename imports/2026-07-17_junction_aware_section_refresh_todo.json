@@ -1,0 +1,29 @@
+{
+  "manifest_type": "board_todo_update",
+  "task": "AGENT-506",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer",
+  "objective": "Confirm the junction-aware thesis section exists and add a follow-up TODO to update it when better evidence lands.",
+  "confirmed_existing_section": "reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+  "created": [
+    ".agent/status/2026-07-17_AGENT-506.md",
+    ".agent/journal/2026-07-17/junction-aware-section-refresh-todo.md",
+    "imports/2026-07-17_junction_aware_section_refresh_todo.json"
+  ],
+  "updated": [
+    ".agent/BOARD.md"
+  ],
+  "todo_added": "TODO-THESIS-JUNCTION-AWARE-SECTION-REFRESH",
+  "validation": [
+    "rg -n \"TODO-THESIS-JUNCTION-AWARE-SECTION-REFRESH|AGENT-506|05_junction_aware_ledgers\" .agent/BOARD.md reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+    "python3.11 -c \"import json; json.load(open('imports/2026-07-17_junction_aware_section_refresh_todo.json')); print('json ok')\""
+  ],
+  "guardrails": [
+    "No thesis section content was edited.",
+    "No native CFD outputs were mutated.",
+    "No registry or admission state was changed.",
+    "No scheduler action or solver/postprocessing launch was performed.",
+    "No generated documentation index refresh was run.",
+    "No external Fluid files were edited."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-17",
+  "task": "AGENT-514",
+  "type": "derived_documentation",
+  "title": "Paper-facing wall/test-section coupled score and source-shape physics plan",
+  "generated_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_mutated": false,
+  "scheduler_action_taken": false,
+  "generated_index_refreshed": false,
+  "sources": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/runtime_input_audit.csv",
+    ".agent/status/2026-07-17_AGENT-498.md",
+    ".agent/journal/2026-07-17/wall-test-section-distribution-ladder.md"
+  ],
+  "outputs": [
+    "reports/thesis_dossier/Chapters_and_sections/current/07_wall_test_section_coupled_score_and_physics_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    ".agent/status/2026-07-17_AGENT-514.md",
+    ".agent/journal/2026-07-17/paper-wall-ts-coupled-score-and-physics-plan.md",
+    "imports/2026-07-17_paper_wall_ts_coupled_score_and_physics_plan.json"
+  ],
+  "decisions": [
+    {
+      "topic": "paper_use_of_AGENT_498",
+      "decision": "Use AGENT-498 as diagnostic falsification evidence, not as an admitted closure.",
+      "reason": "PB2/PB3 candidates completed coupled scoring and improved mdot versus M3, but all-probe and TW RMSE degraded by about 35-49 K on Salt3/Salt4."
+    },
+    {
+      "topic": "next_physics_sequence",
+      "decision": "Prioritize heater source redistribution, wall-temperature drive, axial mixing/upcomer exchange, and explicit upcomer/test-section wall/fluid coupling in that order unless active implementation results supersede the plan.",
+      "reason": "Passive hA redistribution and total heat-removal magnitude were falsified as sufficient explanations for the temperature-shape failure."
+    }
+  ]
+}

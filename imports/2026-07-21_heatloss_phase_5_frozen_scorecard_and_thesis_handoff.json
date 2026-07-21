@@ -1,0 +1,75 @@
+{
+  "task": "TODO-HEATLOSS-PHASE-5-FROZEN-SCORECARD-AND-THESIS-HANDOFF",
+  "task_id": "TODO-HEATLOSS-PHASE-5-FROZEN-SCORECARD-AND-THESIS-HANDOFF",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Hydraulics/Writer/Reviewer",
+  "objective": "Publish the Phase 5 negative heat-loss freeze and thesis handoff without scoring, fitting, admission, or thesis edits.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASE-5-FROZEN-SCORECARD-AND-THESIS-HANDOFF.md",
+    ".agent/journal/2026-07-21/heatloss-phase-5-frozen-scorecard-and-thesis-handoff.md",
+    "imports/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff.json",
+    "tools/analyze/build_heatloss_phase5_frozen_scorecard_and_thesis_handoff.py",
+    "tools/analyze/test_heatloss_phase5_frozen_scorecard_and_thesis_handoff.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/negative_freeze_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/metric_score_availability.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/heat_path_residual_freeze.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/blocker_delta_next_actions.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/runtime_source_split_guardrail_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/thesis_handoff_note.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/metric_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/remaining_source_property_todo.csv",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/07_wall_test_section_coupled_score_and_physics_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "model_scoring": "negative freeze availability tables only; no final score values computed",
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "thesis_files_edited": false,
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heatloss_phase5_frozen_scorecard_and_thesis_handoff",
+      "result": "passed; 6 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_heatloss_phase5_frozen_scorecard_and_thesis_handoff.py tools/analyze/test_heatloss_phase5_frozen_scorecard_and_thesis_handoff.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff",
+      "result": "passed"
+    }
+  ]
+}

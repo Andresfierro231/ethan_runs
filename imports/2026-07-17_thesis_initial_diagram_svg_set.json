@@ -1,0 +1,67 @@
+{
+  "task": "AGENT-527",
+  "date": "2026-07-17",
+  "role": "Figures/Writer/Implementer/Reviewer",
+  "type": "coordination_manifest",
+  "summary": "Created the first thesis-ready static SVG diagram set from existing AGENT-516/524 text: segment atlas, segment-local ledger inset, upcomer hybrid schematic, junction-aware comparison, M0-M6 model-form ladder, and SAM-facing flowchart.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-527.md",
+    ".agent/journal/2026-07-17/thesis-initial-diagram-svg-set.md",
+    "imports/2026-07-17_thesis_initial_diagram_svg_set.json",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/figures/README.md",
+    "reports/thesis_dossier/figures/figure_claim_crosswalk.csv",
+    "reports/thesis_dossier/figures/source_manifest.csv",
+    "reports/thesis_dossier/figures/svg/F01_fluid_walls_loop_segment_atlas.svg",
+    "reports/thesis_dossier/figures/svg/F02_segment_local_ledger_inset.svg",
+    "reports/thesis_dossier/figures/svg/F03_upcomer_hybrid_schematic.svg",
+    "reports/thesis_dossier/figures/svg/F04_junction_aware_vs_segment_only.svg",
+    "reports/thesis_dossier/figures/svg/F05_model_form_ladder.svg",
+    "reports/thesis_dossier/figures/svg/F06_sam_facing_flowchart.svg"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/11_sam_facing_interpretation.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": false,
+  "scientific_admission_changed": false,
+  "model_fitting_or_selection_changed": false,
+  "validation": [
+    {
+      "command": "python3.11 -c \"import pathlib, xml.etree.ElementTree as ET; [ET.parse(str(p)) for p in pathlib.Path('reports/thesis_dossier/figures/svg').glob('*.svg')]; print('svg xml ok')\"",
+      "result": "passed"
+    },
+    {
+      "command": "find reports/thesis_dossier/figures -maxdepth 3 -type f | sort",
+      "result": "passed"
+    },
+    {
+      "command": "rg -n \"F01_fluid_walls|F06_sam|figure_claim_crosswalk|Initial SVG Set|TODO-THESIS-FIGURES-DIAGRAMS|AGENT-527\" reports/thesis_dossier .agent/BOARD.md",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -c \"import json; json.load(open('imports/2026-07-17_thesis_initial_diagram_svg_set.json')); print('json ok')\"",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "No native CFD/OpenFOAM outputs mutated.",
+    "No registry or admission state changed.",
+    "No scheduler action, solver launch, or postprocessing performed.",
+    "No figure rendering from native case data.",
+    "No generated index refresh.",
+    "No scientific admission, model fitting, tuning, or model selection changed."
+  ]
+}

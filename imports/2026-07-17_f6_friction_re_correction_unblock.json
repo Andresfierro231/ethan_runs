@@ -1,0 +1,33 @@
+{
+  "task": "AGENT-487",
+  "date": "2026-07-17",
+  "type": "analysis_work_product",
+  "status": "complete",
+  "description": "Existing-evidence F6 friction/Re-correction unblock package that narrows the open blocker to precise ordinary-F6 and recirculation-modeled admission requirements.",
+  "outputs": [
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_candidate_inventory.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_admission_contract.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_vs_f3_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_blocker_decision.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/next_extraction_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/summary.json"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_fit_candidate_table.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/f6_status_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/recirculation_feature_admission_table.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/next_extraction_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/required_output_contract.csv"
+  ],
+  "validation": [
+    "python3 tools/analyze/test_f6_friction_re_correction_unblock.py",
+    "python3 tools/analyze/build_f6_friction_re_correction_unblock.py",
+    "python3 tools/docs/build_repo_index.py --check"
+  ],
+  "notes": "Generated docs index refresh remains pending because active AGENT-482 owns generated index files."
+}

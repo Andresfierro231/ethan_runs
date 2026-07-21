@@ -1,0 +1,48 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-CROSS-CHAPTER-VISUAL-LEDGER-2026-07-21",
+  "task_id": "TODO-THESIS-FIGTABLE-CROSS-CHAPTER-VISUAL-LEDGER-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Figures/Writer/Reviewer",
+  "objective": "Build a cross-chapter figure/table routing ledger for CSEM thesis enrichment visuals.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-CROSS-CHAPTER-VISUAL-LEDGER-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figtable-cross-chapter-visual-ledger.md",
+    "imports/2026-07-21_thesis_figtable_cross_chapter_visual_ledger.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/cross_chapter_visual_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/caption_claim_caveat_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/blocked_trigger_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/summary.json"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "reports/thesis_dossier/figures/README.md",
+    "../papers/UTexas_Research/3d_analysis/figures/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_index_mutated": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "claim_flags": {
+    "closure_admission_changed": false,
+    "final_predictive_score_claimed": false,
+    "sam_validation_claimed": false,
+    "runtime_leakage_relaxed": false
+  }
+}

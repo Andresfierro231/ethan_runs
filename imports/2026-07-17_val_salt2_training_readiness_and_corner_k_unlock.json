@@ -1,0 +1,46 @@
+{
+  "task": "AGENT-483",
+  "date": "2026-07-17",
+  "role": "Implementer/Tester/Writer",
+  "status": "complete",
+  "title": "val_salt2 training readiness and pressure corner-K unlock",
+  "outputs": [
+    "tools/analyze/build_val_salt2_training_readiness_and_corner_k_unlock.py",
+    "tools/analyze/test_val_salt2_training_readiness_and_corner_k_unlock.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_patch_heat_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_junction_split_heat_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_admission_table.csv"
+  ],
+  "primary_sources": [
+    "registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/postprocessing.sqlite",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_section_heat_loss_ledger.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/corner_pressure_drop_evidence_state.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv"
+  ],
+  "commands": [
+    "python3.11 -m py_compile tools/analyze/build_val_salt2_training_readiness_and_corner_k_unlock.py tools/analyze/test_val_salt2_training_readiness_and_corner_k_unlock.py",
+    "python3.11 -m unittest tools.analyze.test_val_salt2_training_readiness_and_corner_k_unlock",
+    "python3.11 tools/analyze/build_val_salt2_training_readiness_and_corner_k_unlock.py"
+  ],
+  "guardrails": [
+    "No native solver output mutation",
+    "No registry mutation",
+    "No scheduler action",
+    "No duplicate pressure ladder jobs",
+    "No external Fluid edit",
+    "No automatic val_salt2 training reclassification"
+  ],
+  "summary": {
+    "val_patch_rows": 69,
+    "val_junction_patch_rows": 21,
+    "val_junction_loss_positive_W": 40.9260865692,
+    "max_section_latest_residual_W": 3.450999968568347e-07,
+    "corner_rows": 12,
+    "corner_fit_admitted_rows": 0,
+    "corner_centerline_negative_k_rows": 12,
+    "val_training_policy": "external_test_only_training_quality_artifact_not_training_input"
+  }
+}

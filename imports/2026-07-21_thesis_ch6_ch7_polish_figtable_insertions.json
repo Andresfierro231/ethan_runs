@@ -1,0 +1,49 @@
+{
+  "task": "TODO-THESIS-CH6-CH7-POLISH-FIGTABLE-INSERTIONS-2026-07-21",
+  "task_id": "TODO-THESIS-CH6-CH7-POLISH-FIGTABLE-INSERTIONS-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer",
+  "objective": "Polish Ch. 6 and Ch. 7 and add figure/table insertion callouts from completed packages.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CH6-CH7-POLISH-FIGTABLE-INSERTIONS-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-ch6-ch7-polish-figtable-insertions.md",
+    "imports/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/chapter_insertions.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/ready_prose_blocks.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/blocked_claims_audit.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/20_ch8_csem_sam_limitations_conclusions.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_index_mutated": false
+  },
+  "claim_flags": {
+    "closure_admission_changed": false,
+    "final_predictive_score_claimed": false,
+    "sam_validation_claimed": false,
+    "runtime_leakage_relaxed": false
+  }
+}

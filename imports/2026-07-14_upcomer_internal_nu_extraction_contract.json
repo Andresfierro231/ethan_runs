@@ -1,0 +1,18 @@
+{
+  "created": "2026-07-14",
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_extraction_contract.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_nu_admission_criteria.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/coefficient_naming_policy.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/summary.json"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md"
+  ],
+  "task": "AGENT-339"
+}

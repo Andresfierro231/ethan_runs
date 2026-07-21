@@ -1,0 +1,34 @@
+{
+  "generated_at": "2026-06-29T17:53:18-05:00",
+  "package": "2026-06-29_ethan_closure_status_gate",
+  "inputs": {
+    "queue_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-26/2026-06-26_ethan_progressive_story_synthesis/open_analysis_queue.md",
+    "rom_checkpoint_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/operational_notes/06-26/26/2026-06-26_rom_modeling_validation_checkpoint.md",
+    "paper_inventory_readme": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_paper_case_inventory/README.md",
+    "paper_inventory_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory/paper_case_inventory.csv",
+    "reduction_audit_readme": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_reduction_contract_audit/README.md",
+    "reduction_branch_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/branch_map.csv",
+    "reduction_choice_audit_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/reduction_choice_audit.csv",
+    "closure_term_contract_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-26_ethan_cfd_closure_bundle/closure_term_contract.csv",
+    "branch_state_surface_policy_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-26_ethan_cfd_closure_bundle/branch_state_surface_policy.csv",
+    "blocked_term_followons_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-26_ethan_cfd_closure_bundle/blocked_term_followons.csv",
+    "salt_dependency_status_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-19/2026-06-19_ethan_salt_conclusions_package/dependency_status.csv",
+    "salt_blocked_requirements_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-19/2026-06-19_ethan_salt_conclusions_package/blocked_dependency_requirements.csv",
+    "salt_branch_trust_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-19/2026-06-19_ethan_salt_thermal_closure_hardening_v3/branch_trust_summary.csv",
+    "salt_thermal_exclusion_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-19/2026-06-19_ethan_salt_thermal_closure_hardening_v3/thermal_exclusion_summary.csv",
+    "feature_support_conclusions_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-18/2026-06-18_ethan_pressure_feature_support_note/feature_support_conclusions.csv",
+    "water_thermal_exclusion_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-19/2026-06-19_ethan_water_thermal_closure_readiness/water_thermal_exclusion_summary.csv",
+    "water_feature_exclusion_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-19/2026-06-19_ethan_water_feature_hydraulic_readiness/water_feature_hydraulic_exclusion_summary.csv",
+    "agent_121_status": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/.agent/status/2026-06-23_AGENT-121.md",
+    "agent_122_status": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/.agent/status/2026-06-23_AGENT-122.md",
+    "agent_123_status": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/.agent/status/2026-06-23_AGENT-123.md"
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_closure_status_gate",
+    "work_product_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_closure_status_gate",
+    "closure_status_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_closure_status_gate/closure_status_by_branch_and_family.csv",
+    "blocked_questions_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_closure_status_gate/blocked_questions.csv",
+    "source_surface_status_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_closure_status_gate/source_surface_status.csv",
+    "summary_json": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_closure_status_gate/summary.json"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-F6-ENDPOINT-FACE-UQ-EXECUTION.md",
+    ".agent/journal/2026-07-20/f6-endpoint-face-uq-execution.md",
+    "imports/2026-07-20_f6_endpoint_face_uq_execution.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/build_f6_endpoint_face_uq_execution.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/test_f6_endpoint_face_uq_execution.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/case_mesh_input_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/launch_preflight.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/time_window_family.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/mesh_family_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/gci_input_candidates.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_mesh_uq.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_time_uq.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/admission_gate_status.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/script_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/paper_methods_endpoint_face_uq.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/scripts/sample_f6_endpoint_faces.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/scripts/run_f6_endpoint_faces.sh",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/scripts/sbatch_f6_endpoint_faces.sh"
+  ],
+  "date": "2026-07-20",
+  "decision": "launch_capable_execution_package_complete_no_admission",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Implement launch-capable endpoint face/UQ execution package for non-upcomer F6 branches.",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_pressure_deltas.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_mesh_uq_diagnostic.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_time_uq_status.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/target_feature_taps.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/summary.json",
+    "work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv",
+    "tools/analyze/compute_gci.py"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics/cfd-pp/Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/summary.json",
+  "task": "TODO-F6-ENDPOINT-FACE-UQ-EXECUTION",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/build_f6_endpoint_face_uq_execution.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/test_f6_endpoint_face_uq_execution.py",
+      "result": "passed"
+    }
+  ]
+}

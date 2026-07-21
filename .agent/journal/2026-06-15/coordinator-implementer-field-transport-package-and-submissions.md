@@ -12,7 +12,7 @@
   - `tools/extract/sample_streamwise_azimuthal_transport.py`
   - `tools/analyze/build_ethan_representative_transport_comparison.py`
   - `tools/analyze/submit_ethan_case_analysis_package_sbatch.sh`
-  - `operational_notes/2026-06-07_runtime_operator_reference.md`
+  - `operational_notes/06-26/07/2026-06-07_runtime_operator_reference.md`
   - `../cfd-modeling-tools/andres_2d_axisymmetric_testing_heat_loss/README.md`
   - `journals/2026-06/2026-06-15_ethan_runs.md`
 - files changed:

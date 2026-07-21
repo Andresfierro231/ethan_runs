@@ -1,0 +1,80 @@
+{
+  "task": "AGENT-460",
+  "date": "2026-07-16",
+  "title": "Pressure map scientific review and junction/corner state",
+  "status": "complete",
+  "created_by": "codex",
+  "source_inputs": [
+    {
+      "path": "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_branch_average_pressure_map.csv",
+      "description": "AGENT-457 all-case branch-average pressure map."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv",
+      "description": "AGENT-457 all-case station-level streamwise pressure map."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv",
+      "description": "AGENT-449 pressure-ladder admission, recirculation, orientation, and straight-loss screening table."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_role.csv",
+      "description": "Salt2-4 CFD heat-path role accounting, including aggregate junction_or_stub heat transfer."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv",
+      "description": "Segment-level realized-wallflux diagnostic alignment, including junction segment rows."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv",
+      "description": "Two-tap corner pressure drop and apparent/local upper-bound K evidence."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-08/2026-07-08_minor_loss_separation/minor_loss_separation.csv",
+      "description": "Span-level estimate of minor-loss contribution to pipe-only hydraulic phi."
+    },
+    {
+      "path": "reference/geometry_reference.md",
+      "description": "Authoritative CFD span labels and flow-direction guardrails."
+    }
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/scientific_review.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_case_scientific_review.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_branch_scientific_review.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/junction_heat_loss_evidence_state.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/corner_pressure_drop_evidence_state.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/corner_pressure_drop_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/summary.json"
+  ],
+  "scripts": [
+    "tools/analyze/build_pressure_map_scientific_review_and_junction_corner_state.py",
+    "tools/analyze/test_pressure_map_scientific_review_and_junction_corner_state.py"
+  ],
+  "headline_findings": [
+    "AGENT-457 pressure maps are complete and provenance-rich, but diagnostic only.",
+    "All 66 pressure branch rows are blocked by the recirculation mask and 0 are fit-admitted.",
+    "24 pressure branch rows have static-vs-p_rgh branch delta sign differences.",
+    "Junction/stub heat loss is observed for Salt2-4 as aggregate realized heat removal: -39.128 W, -43.235 W, -48.485 W.",
+    "Corner pressure drops are identified, but K values are diagnostic upper bounds due coarse/no-GCI evidence, tap-length proxy straight-loss subtraction, and recirculation-adjacent flags."
+  ],
+  "acceptance": {
+    "tests": [
+      "python3.11 -m unittest tools.analyze.test_pressure_map_scientific_review_and_junction_corner_state",
+      "python3.11 tools/analyze/build_pressure_map_scientific_review_and_junction_corner_state.py",
+      "python3.11 -m json.tool imports/2026-07-16_pressure_map_scientific_review_and_junction_corner_state.json",
+      "python3.11 -m json.tool work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/summary.json"
+    ],
+    "pressure_cases_reviewed": 11,
+    "pressure_branch_rows_reviewed": 66,
+    "junction_other_case_rows": 3,
+    "corner_pressure_rows": 12
+  },
+  "guardrails": [
+    "No native CFD outputs were mutated.",
+    "No scheduler jobs were submitted.",
+    "No registry/admission-state files were changed.",
+    "No blocker or generated index files were edited."
+  ]
+}

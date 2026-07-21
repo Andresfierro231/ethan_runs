@@ -16,7 +16,7 @@
   - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
   - `reports/2026-06-04_ethan_section_transport_package/README.md`
   - `reports/2026-06-04_ethan_transient_axial_package/README.md`
-  - `operational_notes/2026-06-07_runtime_operator_reference.md`
+  - `operational_notes/06-26/07/2026-06-07_runtime_operator_reference.md`
   - `tools/case_analysis_profiles.py`
   - `tools/extract/sample_leg_centerline_major_loss.py`
   - `tools/analyze/build_ethan_case_analysis_package.py`

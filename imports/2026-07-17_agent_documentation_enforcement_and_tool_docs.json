@@ -1,0 +1,35 @@
+{
+  "task": "AGENT-491",
+  "date": "2026-07-17",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/README.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/status/2026-07-17_AGENT-491.md",
+    ".agent/journal/2026-07-17/agent-documentation-enforcement-and-tool-docs.md",
+    "AGENTS.md",
+    "imports/2026-07-17_agent_documentation_enforcement_and_tool_docs.json",
+    "operational_notes/START_HERE_FOR_AGENTS.md",
+    "operational_notes/07-26/17/2026-07-17_AGENT_DOCUMENTATION_ENFORCEMENT_AND_TOOL_DOCS.md",
+    "tools/agent/README.md",
+    "tools/agent/finish_task.py",
+    "tools/agent/test_agent_tools.py"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "operational_notes/07-26/17/2026-07-17_AGENT_USER_EFFICIENCY_PLATFORM.md",
+    "tools/agent/preflight_task.py",
+    "tools/docs/build_repo_index.py"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": "completed"
+}

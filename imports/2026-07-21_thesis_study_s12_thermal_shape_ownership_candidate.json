@@ -1,0 +1,25 @@
+{
+  "task": "TODO-THESIS-STUDY-S12-THERMAL-SHAPE-OWNERSHIP-CANDIDATE-2026-07-21",
+  "task_id": "TODO-THESIS-STUDY-S12-THERMAL-SHAPE-OWNERSHIP-CANDIDATE-2026-07-21",
+  "date": "2026-07-21",
+  "objective": "Identify a new physical thermal-shape owner for TW5/TW6 residuals and decide whether S11 can be released.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S12-THERMAL-SHAPE-OWNERSHIP-CANDIDATE-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s12-thermal-shape-ownership-candidate.md",
+    "imports/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s8_wall_ts_residual_atlas",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "s11_ready_candidates": 0,
+  "final_score_values": 0
+}

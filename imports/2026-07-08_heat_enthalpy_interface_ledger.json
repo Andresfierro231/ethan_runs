@@ -1,0 +1,51 @@
+{
+  "created_at": "2026-07-08",
+  "task_id": "TODO-HEAT-ENTHALPY-INTERFACE-LEDGER",
+  "owner": "codex",
+  "purpose": "Derived-data provenance manifest for the physical-interface enthalpy follow-up to the July 8 patchwise heat ledger.",
+  "source_artifacts": [
+    "work_products/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger/README.md",
+    "tmp/2026-06-30_claude_action_items/recon_salt2_of13/postProcessing/secmeanSurfaces/7915/*.xy",
+    "tmp/2026-06-30_claude_action_items/recon_salt3_of13/postProcessing/secmeanSurfaces/7618/*.xy",
+    "tmp/2026-06-30_claude_action_items/recon_salt4_of13/postProcessing/secmeanSurfaces/10000/*.xy"
+  ],
+  "read_only_foundation": {
+    "path": "work_products/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv",
+    "sha256_before": "684a07bcbfaafbb9b54b476d8a966836cec2a87e3dc311abf90d90c505fef53f",
+    "sha256_after": "684a07bcbfaafbb9b54b476d8a966836cec2a87e3dc311abf90d90c505fef53f",
+    "unchanged": true
+  },
+  "new_outputs": [
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_registry.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_temperature_samples.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_temperature_summary.json",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/patchwise_heat_ledger_enthalpy_interfaces.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/patchwise_heat_ledger_enthalpy_interfaces.json",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/resistance_network_terms.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/source_inventory.csv",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/summary.json",
+    "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/README.md"
+  ],
+  "scripts": [
+    "tools/extract/sample_physical_segment_interface_temperatures.py",
+    "tools/analyze/build_patchwise_heat_ledger_enthalpy_interfaces.py"
+  ],
+  "tests": [
+    "tools/extract/test_sample_physical_segment_interface_temperatures.py",
+    "tools/analyze/test_patchwise_heat_ledger_enthalpy_interfaces.py"
+  ],
+  "validation": {
+    "py_compile": "passed",
+    "pytest_focused": "7 passed",
+    "builder_default_run": "passed with validation_errors=0"
+  },
+  "limitations": [
+    "No new OpenFOAM sampling was run; existing secmeanSurfaces XY planes were reused.",
+    "Cooler and heater interiors are not separately bracketed by the available physical-interface planes.",
+    "Junction groups remain unbracketed by a single inlet/outlet interface pair.",
+    "High-recirculation interface temperatures use forward-flow bulk temperature and remain diagnostic-only.",
+    "Radiation is absent as a heat-ledger term because no OpenFOAM qr output term is exposed in the July 8 evidence."
+  ]
+}

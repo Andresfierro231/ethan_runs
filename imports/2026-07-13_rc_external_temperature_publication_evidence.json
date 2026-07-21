@@ -1,0 +1,53 @@
+{
+  "task": "AGENT-277",
+  "created_at": "2026-07-13T13:14:44-0500",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "description": "Strengthen rcExternalTemperature publication evidence by searching for custom source and running task-scoped OF13 microcases varying only emissivity or Tsur.",
+  "source_scope": [
+    "tools/ofenv/of13_env.sh",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/runtime_libs/libRCWallBC.so",
+    "/work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13/source/OpenFOAM-13/tutorials/fluid/roomHeating",
+    "/work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13/source/OpenFOAM-13/src/ThermophysicalTransportModels/coupledThermophysicalTransportModels/externalTemperature/externalTemperatureFvPatchScalarField.C",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/radiation_parity_decision.json"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/source_probe.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/binary_probe_refresh.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/microcase_matrix.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/microcase_run_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/wallHeatFlux_delta_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/publication_evidence_decision.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/run_metadata.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/README.md"
+  ],
+  "scripts": [
+    "tools/analyze/build_rc_external_temperature_publication_evidence.py",
+    "tools/analyze/test_rc_external_temperature_publication_evidence.py"
+  ],
+  "decision": {
+    "emissivity_Tsur_affect_heat_flux": "yes",
+    "evidence_class": "microcase_confirmed",
+    "source_confirmed": false,
+    "microcase_confirmed": true,
+    "separable_radiation_output_available": "no_separate_output_observed",
+    "parity_radiation_mode": "inseparable"
+  },
+  "microcase_final_time_deltas_W": {
+    "baseline_vs_emissivity_low": -658.64271204,
+    "baseline_vs_emissivity_zero": -809.1447412399999,
+    "baseline_vs_tsur_high": 1912.4975892599998
+  },
+  "validation": {
+    "commands": [
+      "python tools/analyze/build_rc_external_temperature_publication_evidence.py --strict",
+      "pytest -q tools/analyze/test_rc_external_temperature_publication_evidence.py",
+      "python -m py_compile tools/analyze/build_rc_external_temperature_publication_evidence.py tools/analyze/test_rc_external_temperature_publication_evidence.py"
+    ],
+    "result": "passed",
+    "focused_tests_passed": 5
+  },
+  "native_solver_outputs_modified": false,
+  "openfoam_solver_run": true,
+  "openfoam_solver_scope": "generated task-scoped roomHeating microcases under work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/microcases"
+}

@@ -1,0 +1,50 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-SAME-QOI-UQ-AND-ADMISSION-GATE.md",
+    ".agent/journal/2026-07-21/f6-same-qoi-uq-and-admission-gate.md",
+    "imports/2026-07-21_f6_same_qoi_uq_and_admission_gate.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/build_f6_same_qoi_uq_and_admission_gate.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/test_f6_same_qoi_uq_and_admission_gate.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f6_candidate_admission_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/gate_rollup.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/summary.json"
+  ],
+  "date": "2026-07-21",
+  "decision": "f6_same_qoi_admission_closed_all_rows_diagnostic",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Build an F6 same-QOI UQ and admission gate from current harvested raw metrics, coarse repair status, UQ context, and F3 comparison readiness.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_pair_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/qa_gate_status.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/mesh_uq_implication.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_summary_by_family.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/summary.json"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics / Reviewer / Tester / Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/summary.json",
+  "task": "TODO-F6-SAME-QOI-UQ-AND-ADMISSION-GATE",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/build_f6_same_qoi_uq_and_admission_gate.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/build_f6_same_qoi_uq_and_admission_gate.py work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/test_f6_same_qoi_uq_and_admission_gate.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/test_f6_same_qoi_uq_and_admission_gate.py",
+      "result": "passed: 4 tests"
+    }
+  ]
+}

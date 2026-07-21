@@ -1,0 +1,43 @@
+{
+  "task": "TODO-THESIS-CSEM-FIGURE-TABLE-ASSEMBLY",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer/Figures",
+  "objective": "Assemble a CSEM thesis figure/table incorporation package from existing assets only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CSEM-FIGURE-TABLE-ASSEMBLY.md",
+    ".agent/journal/2026-07-21/thesis-csem-figure-table-assembly.md",
+    "imports/2026-07-21_thesis_csem_figure_table_assembly.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/21/2026-07-21_THESIS_CSEM_BOARD_DISPATCH.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/figures/README.md",
+    "reports/thesis_dossier/figures/figure_claim_crosswalk.csv",
+    "reports/thesis_dossier/figures/source_manifest.csv",
+    "../papers/UTexas_Research/3d_analysis/figures/README.md",
+    "../papers/UTexas_Research/3d_analysis/notes/asset_import_log.md",
+    "../papers/UTexas_Research/3d_analysis/tables/table_artifact_provenance.tex",
+    "../papers/UTexas_Research/3d_analysis/tables/table_salt_case_matrix.tex",
+    "../papers/UTexas_Research/3d_analysis/tables/table_salt_family_quantitative_summary.tex",
+    "../papers/UTexas_Research/3d_analysis/tables/table_salt2_matched_case_summary.tex",
+    "../papers/UTexas_Research/3d_analysis/tables/table_trust_boundaries.tex"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_paper_tree_edited": false,
+  "figure_assets_edited": false,
+  "figure_regeneration": false,
+  "new_quantitative_overlays": false,
+  "admission_state_changed": false,
+  "no_scorecard_outputs": true
+}

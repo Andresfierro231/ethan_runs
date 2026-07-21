@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-07-13T21:03:55+00:00",
+  "task_id": "TODO-PRED-FORWARD-V0",
+  "kind": "generated_analysis_package",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler",
+  "generated_by": "tools/analyze/run_predictive_forward_v0_imposed_cooler.py --strict-input-contract --sensor-source both --engine fast_scan",
+  "source_files": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_validation_refresh/cfd_sensor_reference.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid"
+  ],
+  "outputs": [
+    "forward_v0_run_plan.csv",
+    "forward_v0_results.csv",
+    "forward_v0_variant_summary.csv",
+    "forward_v0_sensor_predictions_experimental.csv",
+    "forward_v0_sensor_predictions_cfd.csv",
+    "forward_v0_segment_states.csv",
+    "forward_v0_input_audit.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "engine": "fast_scan",
+  "result_rows": 6,
+  "accepted_rows": 6,
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false
+}

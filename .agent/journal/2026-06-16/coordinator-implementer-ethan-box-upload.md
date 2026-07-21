@@ -113,7 +113,7 @@ from LS6 each time.
 
 ## 2026-06-17 symlink follow-up and operator docs
 
-- Extended `operational_notes/2026-06-16_ethan_box_upload_plan.md` into a
+- Extended `operational_notes/06-26/16/2026-06-16_ethan_box_upload_plan.md` into a
   reproducible `rclone` runbook covering install, Box auth, reconnect,
   verification, probe upload, primary mirror launch, monitoring, and the
   bounded symlink follow-up workflow.

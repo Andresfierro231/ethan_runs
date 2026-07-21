@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-280",
+  "type": "stopped_sbatch_steady_state_decision_manifest",
+  "purpose": "Backfill final-window drift evidence for sbatch jobs/steps stopped or treated as complete during July 13 coordination.",
+  "outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/final_window_metrics.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/summary.json",
+    ".agent/status/2026-07-13_AGENT-280.md",
+    ".agent/journal/2026-07-13/stopped-sbatch-steady-state-decisions.md",
+    "operational_notes/07-26/13/2026-07-13_stopped_sbatch_steady_state_decisions.md"
+  ],
+  "cases": [
+    {
+      "case_id": "salt1_nominal",
+      "job_step": "3282992.0",
+      "decision": "steady enough for runtime stop; separate closure/admission context still required",
+      "window_s": [7284, 7884]
+    },
+    {
+      "case_id": "salt1_lo10q",
+      "job_step": "3288671.0",
+      "decision": "steady enough for runtime stop; not promoted as Salt1 corrected-Q closure-fit priority",
+      "window_s": [7416, 8016]
+    },
+    {
+      "case_id": "salt1_hi10q",
+      "job_step": "3288671.1",
+      "decision": "steady enough for runtime stop/freeing slot; not promoted as Salt1 corrected-Q closure-fit priority",
+      "window_s": [4987, 5587]
+    },
+    {
+      "case_id": "salt4_hi10q",
+      "job_step": "3288671.5",
+      "decision": "not steady; included in fresh packed job 3293441",
+      "window_s": [12039, 12639]
+    }
+  ],
+  "future_rule_recorded": ".agent/DECISIONS.md",
+  "native_solver_outputs_mutated": false
+}

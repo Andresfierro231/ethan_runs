@@ -1,0 +1,96 @@
+{
+  "task": "TODO-PRED-FINAL-MODEL-STARTER-IMPLEMENTATION-2026-07-21",
+  "task_id": "TODO-PRED-FINAL-MODEL-STARTER-IMPLEMENTATION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Implementer/Tester/Writer",
+  "objective": "Implement the stage-0 starter artifacts and next-study queue for approaching the final predictive model.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRED-FINAL-MODEL-STARTER-IMPLEMENTATION-2026-07-21.md",
+    ".agent/journal/2026-07-21/predictive-final-model-starter-implementation.md",
+    "imports/2026-07-21_predictive_final_model_starter_implementation.json",
+    "tools/analyze/build_predictive_final_model_starter.py",
+    "tools/analyze/test_predictive_final_model_starter.py",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/baseline_model_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/runtime_and_split_gate_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/residual_lane_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/next_study_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/freeze_readiness_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/scorecard_release_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    ".agent/BLOCKERS.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/residual_attribution_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/split_claim_boundaries.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/scorecard_output_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/admission_gate_shell.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/holdout_release_gates.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_anchor_design/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "external_fluid_source_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "new_closure_admitted": false,
+  "blocker_register_mutated": false,
+  "no_scorecard_outputs": true,
+  "outputs": {
+    "script": "tools/analyze/build_predictive_final_model_starter.py",
+    "tests": "tools/analyze/test_predictive_final_model_starter.py",
+    "package": "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/",
+    "status": ".agent/status/2026-07-21_TODO-PRED-FINAL-MODEL-STARTER-IMPLEMENTATION-2026-07-21.md",
+    "journal": ".agent/journal/2026-07-21/predictive-final-model-starter-implementation.md"
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_predictive_final_model_starter.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_predictive_final_model_starter.py tools/analyze/test_predictive_final_model_starter.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_predictive_final_model_starter",
+      "result": "passed; 7 tests"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter operational_notes/maps/forward-predictive-model.md",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter operational_notes/maps/forward-predictive-model.md",
+      "result": "passed"
+    },
+    {
+      "command": "structural CSV/JSON artifact check",
+      "result": "passed; 7 CSV files plus summary.json"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "task": "TODO-LITREV-PRESSURE-CORNER-BASIS-RECOVERY",
+  "task_id": "TODO-LITREV-PRESSURE-CORNER-BASIS-RECOVERY",
+  "date": "2026-07-21",
+  "role": "Hydraulics / cfd-pp / Tester / Writer",
+  "objective": "Audit pressure-increasing corner candidates by decomposing gross static pressure into hydrostatic, kinetic, straight/developing, recovery, and residual terms without clipping K or admitting F6/component-K rows.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-PRESSURE-CORNER-BASIS-RECOVERY.md",
+    ".agent/journal/2026-07-21/litrev-pressure-corner-basis-recovery.md",
+    "imports/2026-07-21_litrev_pressure_corner_basis_recovery.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/build_litrev_pressure_corner_basis_recovery.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/test_litrev_pressure_corner_basis_recovery.py"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/straight_development_subtraction_ledger.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_admission_repair/split_decision.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/recirc_pressure_basis_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/pair_pressure_loss_qois.csv",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_touched": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_or_external_repo_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "clipped_k_used": false,
+    "global_multiplier_used": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "python3.11 -m unittest work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/test_litrev_pressure_corner_basis_recovery.py",
+      "result": "passed; Ran 3 tests; OK"
+    }
+  ],
+  "outputs": {
+    "audit_csv": "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "row_count": 3,
+    "label_counts": {
+      "section_effective": 3
+    }
+  }
+}

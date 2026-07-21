@@ -1,0 +1,102 @@
+{
+  "task": "TODO-PRESSURE-F6-PUBLICATION-CLAIM-FREEZE",
+  "date": "2026-07-21",
+  "role": "Writer / Reviewer / Hydraulics / cfd-pp",
+  "status": "complete",
+  "objective": "Freeze publication-facing pressure/F6 claims and pressure-corner narrative boundaries after the F6 static-pressure audit and S14 branch-use study.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/admission_impact.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_b_pair_reconstructed_static_deltas.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_decision_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/f6_gate_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_gate_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/claim_boundary_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree and external repos",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRESSURE-F6-PUBLICATION-CLAIM-FREEZE.md",
+    ".agent/journal/2026-07-21/pressure-f6-publication-claim-freeze.md",
+    "imports/2026-07-21_pressure_f6_publication_claim_freeze.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/build_pressure_f6_publication_claim_freeze.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/test_pressure_f6_publication_claim_freeze.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/pressure_f6_publication_claim_freeze.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/pressure_f6_claim_boundary_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/f6_static_basis_publication_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/f6_use_decision_publication_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/admission_blocker_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/ordinary_flow_next_steps.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/pressure_corner_narrative_update.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/source_manifest.csv"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/summary.json",
+    "claim_freeze_table": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/pressure_f6_publication_claim_freeze.csv",
+    "narrative_update": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/pressure_corner_narrative_update.md",
+    "blocker_table": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/admission_blocker_table.csv"
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-PRESSURE-F6-PUBLICATION-CLAIM-FREEZE",
+      "result": "passed before edits"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/build_pressure_f6_publication_claim_freeze.py work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/test_pressure_f6_publication_claim_freeze.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/test_pressure_f6_publication_claim_freeze.py",
+      "result": "passed: Ran 5 tests in 0.293s OK"
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "solver_or_sampler_or_harvest_launch": false,
+    "fluid_or_external_repo_edited": false,
+    "blocker_register_mutated": false,
+    "generated_index_mutation": false,
+    "manuscript_files_edited": false,
+    "fitting_or_model_selection": false,
+    "f6_fit_rows": 0,
+    "component_k_admitted_rows": 0,
+    "cluster_k_admitted_rows": 0,
+    "clipped_k_rows": 0,
+    "hidden_global_multiplier_rows": 0
+  },
+  "scientific_result": {
+    "publication_state": "claim_freeze_complete_no_admission",
+    "static_pressure_basis": "validated_for_delta_diagnostic_only",
+    "static_pressure_selected_convention": "openfoam_plus_rho_g_dot_x",
+    "static_pressure_max_validation_error_pa": 4.382729351630587,
+    "pressure_corner_narrative": "pressure rise around corners is hydrostatic/recovery/section-effective/diagnostic evidence, not negative loss",
+    "ordinary_candidate_pairs": 0,
+    "endpoint_pair_rows": 10,
+    "admitted_rows": 0,
+    "next_required_gates": [
+      "lower-recirculation or ordinary-flow source family",
+      "same-QOI mesh/time UQ",
+      "F3 comparison",
+      "F6/component-K review only after the preceding gates pass"
+    ]
+  }
+}

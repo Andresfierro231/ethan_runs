@@ -1,0 +1,55 @@
+{
+  "task": "AGENT-331",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "native_solver_outputs_mutated": false,
+  "created": [
+    "tools/analyze/build_cfd_case_admission_inventory.py",
+    "tools/analyze/test_cfd_case_admission_inventory.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/cfd_case_admission_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/boundary_condition_role_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/training_validation_holdout_candidate_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/README.md",
+    ".agent/status/2026-07-14_AGENT-331.md",
+    ".agent/journal/2026-07-14/cfd-case-admission-inventory.md",
+    "imports/2026-07-14_cfd_case_admission_inventory.json"
+  ],
+  "read_only_inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/admission_decision_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/all_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/corrected_q_terminal_gate_rows.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/06-26/30/2026-06-30_run_classification_policy.md"
+  ],
+  "outputs": {
+    "case_rows": 20,
+    "boundary_rows": 38,
+    "candidate_rows": 20,
+    "training_rows_now": ["salt_2"],
+    "validation_rows_now": ["salt_3"],
+    "holdout_rows_now": ["salt_4"],
+    "corrected_q_rows_admitted": 0
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_cfd_case_admission_inventory",
+      "result": "passed_3_tests"
+    }
+  ],
+  "decisions": [
+    "Salt2/Salt3/Salt4 mainline rows are the only currently admitted split rows.",
+    "Corrected Salt-Q remains pending/blocked until terminal harvest and row-specific admission.",
+    "Boundary radiation semantics must state that rcExternalTemperature radiation is folded into total wallHeatFlux, with no separate qr export.",
+    "Salt1 terminal rows are diagnostic/context-only until a Salt1 admission policy promotes them.",
+    "Kirst and false-steady original perturbation rows are excluded."
+  ]
+}

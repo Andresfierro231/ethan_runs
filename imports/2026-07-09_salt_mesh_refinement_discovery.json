@@ -1,0 +1,50 @@
+{
+  "manifest_id": "2026-07-09_salt_mesh_refinement_discovery",
+  "task_id": "AGENT-226",
+  "created": "2026-07-09",
+  "role": "Coordinator / Writer",
+  "source_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt",
+  "purpose": "Read-only discovery of Ethan-provided Salt coarse/medium/fine mesh-family folders before staging, quality gating, GCI, or closure-correlation refresh.",
+  "outputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_discovery/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_discovery/mesh_case_inventory.csv",
+    "operational_notes/07-26/09/2026-07-09_salt_mesh_refinement_discovery_plan.md",
+    ".agent/status/2026-07-09_AGENT-226.md",
+    ".agent/journal/2026-07-09/mesh-refinement-discovery-plan.md"
+  ],
+  "case_count": 24,
+  "mesh_levels": {
+    "coarse": {
+      "case_count": 8,
+      "processor_layout": "collated processors64",
+      "cell_count": 2166996,
+      "first_cell_size": 0.225,
+      "bulk_cell_size": 1.125,
+      "mesh_group_id": "7ab7fb2650596980"
+    },
+    "medium": {
+      "case_count": 8,
+      "processor_layout": "collated processors64",
+      "cell_count": 6744264,
+      "first_cell_size": 0.15,
+      "bulk_cell_size": 0.75,
+      "mesh_group_id": "d9a216dc1a1a0424"
+    },
+    "fine": {
+      "case_count": 8,
+      "processor_layout": "collated processors128",
+      "cell_count": 21781672,
+      "first_cell_size": 0.1,
+      "bulk_cell_size": 0.5,
+      "mesh_group_id": "8cbc7f2f3d28cbeb"
+    }
+  },
+  "admission_summary": {
+    "strongest_initial_candidate": "Salt 2 Jin coarse/medium/fine after coarse-source reconciliation",
+    "upper_endpoint_candidate": "Salt 4 Jin coarse/medium/fine, but medium/fine log tails show signal 15 and require quality gate or continuation",
+    "kirst_policy": "Inventoried for provenance only; do not use as current mainline evidence unless a future dated task explicitly re-admits it.",
+    "registry_policy": "No registry updates were made in this discovery pass."
+  },
+  "read_only_sources": true,
+  "no_solver_outputs_modified": true
+}

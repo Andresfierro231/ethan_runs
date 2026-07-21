@@ -1,0 +1,33 @@
+{
+  "task": "AGENT-435",
+  "date": "2026-07-15",
+  "status": "complete",
+  "created_or_updated": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-15_AGENT-435.md",
+    ".agent/journal/2026-07-15/branch-specific-model-forms-and-upcomer-omission-plan.md",
+    "imports/2026-07-15_branch_specific_model_forms_and_upcomer_omission_plan.json",
+    "operational_notes/07-26/15/2026-07-15_branch_specific_model_forms_and_upcomer_omission_plan.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "reports/thesis_dossier/2026-07-15_integrated_weekly_powerpoint_outline_definitions_first.md"
+  ],
+  "decision": "Omit current recirculating upcomer rows from ordinary single-stream Nu, f_D, and K fits; proceed on other eligible branches with branch-specific model forms; keep upcomer in a separate recirculation/hybrid/onset lane.",
+  "new_board_todo": "TODO-BRANCH-SPECIFIC-ORDINARY-PIPE-SCORECARD",
+  "read_only_context": [
+    "AGENT-419 recirculation policy",
+    "AGENT-425 F6/internal-Nu review",
+    "AGENT-431 segment-resolved modeling plan",
+    "AGENT-432 upcomer hybrid plan",
+    "native CFD solver outputs",
+    "../cfd-modeling-tools/**"
+  ],
+  "guardrails": [
+    "No recirculating upcomer row may be fitted or labeled as single-stream Nu, f_D, or K.",
+    "No global multiplier may hide branch-specific model differences.",
+    "No validation TP/TW temperatures as runtime inputs.",
+    "No native CFD output mutation.",
+    "No external Fluid edits.",
+    "No PowerPoint creation."
+  ]
+}

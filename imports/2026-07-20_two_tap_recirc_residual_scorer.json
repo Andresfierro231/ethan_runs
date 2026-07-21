@@ -1,0 +1,85 @@
+{
+  "task": "TODO-TWO-TAP-RECIRC-RESIDUAL-SCORER",
+  "date": "2026-07-20",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "objective": "Explain lower apparent K in current recirculating corner_lower_right rows, audit q_ref readiness, and define next extraction/UQ evidence without admitting coefficients.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-TWO-TAP-RECIRC-RESIDUAL-SCORER.md",
+    ".agent/journal/2026-07-20/two-tap-recirc-residual-scorer.md",
+    "imports/2026-07-20_two_tap_recirc_residual_scorer.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/build_two_tap_recirc_residual_scorer.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/q_ref_orientation_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/lower_apparent_k_diagnosis.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/recirc_residual_scorecard.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/model_hypothesis_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/next_extraction_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/paper_diagnostic_note.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/test_two_tap_recirc_residual_scorer.py"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/section_effective_model_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/recirc_pressure_basis_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/same_qoi_uq_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/build_two_tap_recirc_residual_scorer.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/test_two_tap_recirc_residual_scorer.py",
+      "result": "passed: 5 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-TWO-TAP-RECIRC-RESIDUAL-SCORER",
+      "result": "passed: no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-TWO-TAP-RECIRC-RESIDUAL-SCORER",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "solver_or_postprocessing_launch": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "ordinary_component_k_allowed_now": false,
+    "q_ref_throughflow_trusted_now": false,
+    "endpoint_pressure_invented": false,
+    "hidden_global_multiplier_used": false,
+    "clipped_k_used": false
+  },
+  "resolved_questions": [
+    "lower apparent K is diagnostic and consistent with denominator growth under hydrostatic-dominated static pressure",
+    "current throughflow q_ref is untrusted because endpoint normal mass flux is tiny relative to speed-based flux"
+  ],
+  "unresolved_blockers": [
+    "face-level single-leg orientation/masking audit needed for throughflow q_ref",
+    "same-QOI residual mesh/time UQ missing",
+    "nonrecirculating same-topology anchor still future work"
+  ]
+}

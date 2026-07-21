@@ -1,0 +1,46 @@
+{
+  "task_id": "AGENT-341",
+  "created_at": "2026-07-14T13:41:24-05:00",
+  "kind": "upcomer_matched_plane_extraction_plan",
+  "title": "Matched upcomer inlet/mid/outlet vector and thermal plane extraction plan",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "inputs": {
+    "internal_nu_admissibility_readme": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "blocked_missing_metrics": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv",
+    "extraction_contract": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_extraction_contract.csv",
+    "candidate_cases": "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/upcomer_onset_candidate_cases.csv",
+    "mesh_gci_map": "operational_notes/maps/mesh-gci-and-uncertainty.md",
+    "nearest_scripts": [
+      "tools/extract/sample_upcomer_convection_cell.py",
+      "tools/extract/sample_physical_segment_interface_temperatures.py",
+      "tools/extract/sample_span_endpoint_temperatures.py",
+      "tools/extract/sample_segment_htc_uaprime.py"
+    ]
+  },
+  "output_package": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan",
+  "outputs": {
+    "readme": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/README.md",
+    "summary": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/summary.json",
+    "extraction_plan": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/upcomer_matched_plane_extraction_plan.csv",
+    "existing_postprocessing_status": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/existing_postprocessing_metric_status.csv",
+    "openfoam_sampling_targets": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/openfoam_sampling_targets.csv",
+    "mesh_family_repeat_plan": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/mesh_family_repeat_plan.csv",
+    "source_manifest": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/source_manifest.csv",
+    "sbatch_plan": "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/scripts/submit_upcomer_matched_plane_sampling.sbatch"
+  },
+  "scripts": [
+    "tools/extract/sample_upcomer_matched_plane_metrics.py",
+    "tools/extract/test_sample_upcomer_matched_plane_metrics.py"
+  ],
+  "result": {
+    "plan_rows": 27,
+    "mesh_repeat_rows": 9,
+    "existing_proxy_rows": 12,
+    "admission_grade_rows": 0,
+    "compute_node_required": true,
+    "main_status": "complete_plan_existing_rows_diagnostic_only"
+  },
+  "interpretation_boundary": "Existing postprocessing values are diagnostic proxies only. Admission-grade internal-Nu metrics require compute-node face-area weighting plus matched station-band wall temperature and wallHeatFlux extraction. Repair-smoke mesh rows remain diagnostic until an admission gate admits them.",
+  "status": "complete"
+}

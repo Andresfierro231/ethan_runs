@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-440",
+  "date": "2026-07-15",
+  "status": "complete_submitted_harvested",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch",
+  "created_files": [
+    "tools/analyze/build_staged_closure_qoi_pressure_sbatch.py",
+    "tools/analyze/test_staged_closure_qoi_pressure_sbatch.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/local_preflight.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/pressure_surface_harvest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/prior_agent409_launch_context.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_preflight.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/sbatch_scripts.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/submitted_job.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/run_staged_closure_qoi_pressure.sh",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/run_staged_closure_qoi_raw_pressure.sh",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/sbatch_staged_closure_qoi_pressure.sh",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/submit_staged_closure_qoi_raw_pressure.sbatch",
+    ".agent/status/2026-07-15_AGENT-440.md",
+    ".agent/journal/2026-07-15/staged-closure-qoi-pressure-sbatch.md",
+    "imports/2026-07-15_staged_closure_qoi_pressure_sbatch.json"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_staged_closure_qoi_pressure_sbatch.py tools/analyze/test_staged_closure_qoi_pressure_sbatch.py",
+    "bash -n generated runner and sbatch scripts",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/run_staged_closure_qoi_pressure.sh --preflight-only all",
+    "python3.11 tools/analyze/test_staged_closure_qoi_pressure_sbatch.py"
+  ],
+  "submitted_job": {
+    "job_id": "3297845",
+    "job_name": "cqp_stage",
+    "submit_host": "login3.ls6.tacc.utexas.edu",
+    "initial_refreshed_state": "RUNNING",
+    "final_checked_state": "COMPLETED",
+    "exit_code": "0:0",
+    "harvested_rows": 3,
+    "node": "c318-012",
+    "account": "ASC23046",
+    "partition": "NuclearEnergy"
+  },
+  "guardrails": [
+    "native CFD outputs read-only",
+    "registry/admission state not mutated",
+    "generated indexes not refreshed",
+    "external ../cfd-modeling-tools read-only",
+    "rows remain diagnostic until explicit admission gates"
+  ]
+}

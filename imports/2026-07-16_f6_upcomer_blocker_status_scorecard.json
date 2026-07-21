@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-464",
+  "type": "derived_work_product",
+  "title": "F6/upcomer blocker status scorecard",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_fit_candidate_table.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/pm5_f6_admission_readiness.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/upcomer_onset_evidence_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/next_evidence_requirements.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/f6_status_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/upcomer_onset_classification.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/next_evidence_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/blocker_decisions.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "f6-friction-re-correction",
+      "status": "keep_open",
+      "reason": "Current PM5 rows are diagnostic-only material-recirculation rows; F6 has zero fit-admissible rows."
+    },
+    {
+      "blocker_id": "upcomer-onset-data-sparsity",
+      "status": "keep_open",
+      "reason": "Current evidence observes recirculation but has no non-recirculating anchor and no single-stream fit-admitted rows."
+    }
+  ]
+}

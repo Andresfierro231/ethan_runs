@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active AGENT-482 owns generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "admission_status_scorecard.csv",
+    "aggregate_rmse_before_after.csv",
+    "sensor_policy_scorecard.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "tp2_tw10_gate_status.csv"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_sensor_tp2_restore_tw10_exclude",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "all_gates_pass": true,
+    "all_sources_present": true,
+    "current_rmse_K": 163.588758922,
+    "current_tp_count": 5,
+    "current_tw_count": 10,
+    "date": "2026-07-17",
+    "external_fluid_edit": false,
+    "gate_status": {
+      "TP2_finite_prediction_before_aggregate": "pass",
+      "TP2_runtime_input_forbidden": "pass",
+      "TP2_source_segment_named": "pass",
+      "TW10_excluded_until_active_hx_shell_state": "pass"
+    },
+    "generated_index_refreshed": false,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "restored_rmse_K": 163.760647979,
+    "restored_tp_count": 6,
+    "restored_tw_count": 10,
+    "rmse_delta_K": 0.17188905699998713,
+    "scheduler_action": false,
+    "sensor_rows": 17,
+    "task": "TODO-SENSOR-TP2-RESTORE-TW10-EXCLUDE",
+    "tp2_aggregate_after_refresh": "yes",
+    "tp2_finite_rows": 3,
+    "tp2_source_segment": "right_downcomer_bottom_horizontal_junction",
+    "tp2_total_rows": 3,
+    "tw10_aggregate_after_refresh": "no"
+  },
+  "task": "TODO-SENSOR-TP2-RESTORE-TW10-EXCLUDE"
+}

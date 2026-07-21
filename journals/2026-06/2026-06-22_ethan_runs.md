@@ -116,7 +116,7 @@ Completed the current repo-local frozen-state and feature-path hardening pass:
 ### Actions Landed
 
 - Added a dedicated contract note:
-  `operational_notes/2026-06-22_salt_heat_balance_contract.md`
+  `operational_notes/06-26/22/2026-06-22_salt_heat_balance_contract.md`
 - Added a short report package:
   `reports/2026-06-22_ethan_heat_balance_contract/`
 - Updated the June 18 continuation-wave and June 19 Salt follow-on campaign

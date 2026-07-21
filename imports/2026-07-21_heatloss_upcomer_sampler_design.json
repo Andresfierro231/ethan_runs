@@ -1,0 +1,75 @@
+{
+  "task": "TODO-HEATLOSS-UPCOMER-SAMPLER-DESIGN",
+  "task_id": "TODO-HEATLOSS-UPCOMER-SAMPLER-DESIGN",
+  "date": "2026-07-21",
+  "role": "Implementer/Tester/Writer/Thermal-modeling/Hydraulics",
+  "objective": "Publish a design-only upcomer sampler contract for heat-loss exchange evidence without editing tools/extract, launching extraction, fitting, scoring, or admitting a model.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-UPCOMER-SAMPLER-DESIGN.md",
+    ".agent/journal/2026-07-21/heatloss-upcomer-sampler-design.md",
+    "imports/2026-07-21_heatloss_upcomer_sampler_design.json",
+    "tools/analyze/build_heatloss_upcomer_sampler_design.py",
+    "tools/analyze/test_heatloss_upcomer_sampler_design.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/sampler_output_schema.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/algorithm_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/dry_run_emission_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/future_implementation_change_list.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/execution_preflight_cases.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/validation_cases.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/sampler_field_map.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/case_time_window_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/upcomer_exchange_extraction_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/no_admission_guardrail.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/missing_exchange_nu_evidence_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/cfd_evidence_requirements.csv",
+    "tools/extract/sample_upcomer_convection_cell.py"
+  ],
+  "tools_extract_mutated": false,
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "sampler_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_admission_changed": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "heat_residual_absorbed_into_internal_Nu": false,
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_heatloss_upcomer_sampler_design.py tools/analyze/test_heatloss_upcomer_sampler_design.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_heatloss_upcomer_sampler_design.py",
+      "result": "passed; generated 17 schema rows, 9 algorithm rows, 51 dry-run rows, and 3 execution preflight cases"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heatloss_upcomer_sampler_design",
+      "result": "passed; 7 tests"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design",
+      "result": "passed"
+    }
+  ]
+}

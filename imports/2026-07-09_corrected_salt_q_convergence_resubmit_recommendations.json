@@ -1,0 +1,17 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-241",
+  "title": "Corrected Salt Q convergence and resubmit recommendations",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/minimal_continuation_plan.csv",
+    "work_products/2026-07-06_overnight_postprocess_jobs/corrected_salt_after_3275448_3275449_3275560/run_status/run_status_inventory.csv",
+    "work_products/2026-07-06_overnight_postprocess_jobs/corrected_salt_after_3275448_3275449_3275560/corrected_salt_solver_audit_summary.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/convergence_resubmit_recommendations.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/README.md"
+  ],
+  "mutation_boundary": "Planning only. No sbatch submission, no case-tree mutation, no native solver output mutation, and no closure-fit table update.",
+  "admission_policy": "Rows with stationary terminal windows are not closure-admitted unless the formal operating-point gate returns requalified. Future admitted corrected-Q rows remain sensitivity/correlation-support, not nominal baseline."
+}

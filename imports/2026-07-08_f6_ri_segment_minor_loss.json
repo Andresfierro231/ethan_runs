@@ -1,0 +1,45 @@
+{
+  "manifest_id": "2026-07-08_f6_ri_segment_minor_loss",
+  "owner": "claude",
+  "task": "AGENT-210",
+  "generated_at": "2026-07-08",
+  "purpose": "F6 phi-vs-Re friction closure, Ri per segment, insulation caution, minor loss study, T13 proposal, geometry reference",
+  "scope": "Salt 2/3/4 Jin mainline (3 cases); 4 corner bends; 5 major spans; TAMU natural-circulation loop",
+  "new_tools": [
+    "work_products/2026-07-08_minor_loss_separation/minor_loss_separation.py"
+  ],
+  "new_docs": [
+    "operational_notes/07-26/08/2026-07-08_insulation_caution_note.md",
+    "operational_notes/07-26/08/2026-07-08_t13_run_campaign_proposal.md",
+    "work_products/2026-07-08_minor_loss_separation/README.md",
+    "reference/geometry_reference.md",
+    ".agent/journal/2026-07-08/implementer-f6-ri-segment-minor-loss-study.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-08_minor_loss_separation/minor_loss_separation.csv",
+    "work_products/2026-07-08_minor_loss_separation/minor_loss_separation_summary.json"
+  ],
+  "code_changes": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_friction_closures.py"
+  ],
+  "key_findings": {
+    "F6_implementation": "phi(Re, leg_class) = a×Re^b for heater (a=2.05,b=-0.027) and cooler (a=1.92,b=-0.050); constant phi=1.811 for downcomer (Re trend is Ri-driven anomaly). 72/72 tests pass.",
+    "Ri_per_segment": "Added compute_segment_ri() to solver.py; segment_ri Dict added to ModelResult. Ri = g×beta×|T_wall-T_bulk|×D/V². Self-consistent: no CFD values needed.",
+    "minor_loss_separation_heater_pct": 9.8,
+    "minor_loss_separation_cooler_pct": 9.4,
+    "minor_loss_separation_downcomer_pct": 8.8,
+    "corner_phi_reduction_pct_range": "8-12% for main pipe sections",
+    "residual_phi_pipe_only_heater": 1.635,
+    "residual_phi_pipe_only_cooler": 1.391,
+    "residual_phi_pipe_only_downcomer": 1.651,
+    "T13_Q_for_Re200": "~2400 W (8x S3)",
+    "T13_Q_for_Re300": "~5000 W (17x S3)"
+  },
+  "open_questions_for_user": [
+    "MinorLosses K values in solver.py: do they match the CFD bend_minor_loss CSV K values? If yes, F6 phi should be revised downward by ~10% to use phi_pipe_only instead of phi_original.",
+    "T13 campaign: confirm high Q values (up to 5000 W, 17x nominal S3) are acceptable for CFD study of upcomer onset. Physical loop cannot reach these, but CFD can.",
+    "Geometry reference: should reference/geometry_reference.md be linked from CLAUDE.md Section 6 as the canonical geometry source?"
+  ]
+}

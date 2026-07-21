@@ -1,0 +1,42 @@
+{
+  "task_id": "AGENT-249",
+  "created_at": "2026-07-10T00:00:00-05:00",
+  "purpose": "Document selected corrected Salt Q steadiness evidence and submit only the requested under-advanced rows as a one-node packed continuation.",
+  "selected_case_keys": [
+    "salt1_jin_lo10q_corrected",
+    "salt1_jin_hi10q_corrected",
+    "salt4_jin_hi10q_corrected"
+  ],
+  "inputs_read": [
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/convergence_resubmit_recommendations.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/README.md",
+    "selected staged OpenFOAM controlDict/functions for the three case keys"
+  ],
+  "outputs_written": [
+    "work_products/2026-07/2026-07-10/2026-07-10_corrected_salt_selected_q_steadiness_packed_resubmit/README.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_corrected_salt_selected_q_steadiness_packed_resubmit/selected_steadiness_and_resubmit_verdicts.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_selected_corrected_salt_q_continuation.sbatch",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv"
+  ],
+  "staged_input_edits": [
+    {
+      "path": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt1_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/system/controlDict",
+      "change": "endTime 9756.33125 -> 30000; timePrecision 9 -> 12"
+    },
+    {
+      "path": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt1_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/system/controlDict",
+      "change": "endTime 9756.33125 -> 30000; timePrecision 9 -> 12; selected launcher restarts from patched processor time 4010"
+    },
+    {
+      "path": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/controlDict",
+      "change": "endTime 16000 -> 30000; timePrecision 9 -> 12"
+    },
+    {
+      "path": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/functions",
+      "change": "convergenceMonitor changed from writeNow stop to diagnostic-only logging"
+    }
+  ],
+  "admission_policy": "Selected perturbation rows remain sensitivity/correlation-support only; no row is admitted to closure fits without a new post-continuation gate."
+}

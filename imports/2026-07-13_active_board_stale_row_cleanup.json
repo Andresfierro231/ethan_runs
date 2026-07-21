@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-278",
+  "type": "board_cleanup_manifest",
+  "rows_removed_from_active": [
+    {
+      "task_id": "AGENT-178",
+      "disposition": "retired_completed_superseded",
+      "evidence": [
+        ".agent/status/2026-07-04_AGENT-178.md",
+        ".agent/status/2026-07-09_AGENT-237.md",
+        ".agent/status/2026-07-09_AGENT-241.md",
+        ".agent/status/2026-07-13_AGENT-261.md",
+        ".agent/status/2026-07-13_AGENT-269.md",
+        ".agent/status/2026-07-13_AGENT-274.md"
+      ]
+    },
+    {
+      "task_id": "AGENT-181",
+      "disposition": "retired_completed_superseded",
+      "evidence": [
+        ".agent/status/2026-07-07_AGENT-181.md",
+        ".agent/status/2026-07-09_AGENT-237.md",
+        ".agent/status/2026-07-09_AGENT-241.md",
+        ".agent/status/2026-07-13_AGENT-269.md"
+      ]
+    },
+    {
+      "task_id": "AGENT-242",
+      "disposition": "retired_completed_superseded",
+      "evidence": [
+        ".agent/status/2026-07-09_AGENT-242.md",
+        ".agent/status/2026-07-13_AGENT-268.md"
+      ]
+    },
+    {
+      "task_id": "AGENT-267",
+      "disposition": "retired_completed_repair_smoke_only",
+      "evidence": [
+        "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/README.md",
+        "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/summary.json"
+      ]
+    },
+    {
+      "task_id": "AGENT-276",
+      "disposition": "retired_incomplete_starter_outputs_only",
+      "evidence": [
+        "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/cfd_boundary_condition_contract_no_radiation.csv",
+        "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/run_plan.csv"
+      ],
+      "missing_expected_outputs": [
+        ".agent/status/2026-07-13_AGENT-276.md",
+        ".agent/journal/2026-07-13/cfd-bc-no-radiation-1d-parity.md",
+        "imports/2026-07-13_cfd_bc_no_radiation_1d_parity.json",
+        "fixed_mdot_no_radiation_parity_results.csv",
+        "README.md",
+        "run_metadata.json"
+      ]
+    },
+    {
+      "task_id": "AGENT-277",
+      "disposition": "retired_inconsistent_handoff_needs_review",
+      "evidence": [
+        "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/README.md",
+        "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/publication_evidence_decision.json"
+      ],
+      "issue": "Decision JSON reports microcase_confirmed=true while README reports microcase_attempted_not_confirmed; claimed status/journal/import files are absent."
+    }
+  ],
+  "board_section_added": "Retired From Active On 2026-07-13",
+  "native_solver_outputs_mutated": false
+}

@@ -1,0 +1,41 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-298",
+  "type": "thesis_dossier_start",
+  "purpose": "Start a living thesis and weekly-presentation dossier that backfills the current CFD-to-1D research story, evidence map, claim ledger starter, blocker pointers, and thesis skeleton.",
+  "primary_output": "reports/thesis_dossier/README.md",
+  "outputs": [
+    "reports/thesis_dossier/README.md",
+    ".agent/status/2026-07-13_AGENT-298.md",
+    ".agent/journal/2026-07-13/thesis-dossier-start.md",
+    "imports/2026-07-13_thesis_dossier_start.json"
+  ],
+  "additive_discoverability_edits": [
+    ".agent/BOARD.md",
+    ".agent/DECISIONS.md",
+    "operational_notes/maps/README.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md"
+  ],
+  "generated_index_refresh": [
+    ".agent/STATE.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/BLOCKERS.md"
+  ],
+  "source_context": [
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    "operational_notes/maps/README.md",
+    "operational_notes/07-26/13/2026-07-13_external_report_research_index_and_blocker_audit.md",
+    "operational_notes/07-26/13/2026-07-13_CURRENT_CLOSURE_AND_PREDICTIVE_MODEL_START_HERE.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md"
+  ],
+  "policy": "The dossier is a living synthesis hub for weekly presentations and thesis writing. It is not a mandatory destination for routine task closeout.",
+  "native_solver_outputs_mutated": false,
+  "scheduler_state_mutated": false,
+  "registry_mutated": false,
+  "external_repositories_mutated": false
+}

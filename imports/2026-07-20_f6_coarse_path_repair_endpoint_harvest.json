@@ -1,0 +1,42 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-F6-COARSE-PATH-REPAIR-ENDPOINT-HARVEST.md",
+    ".agent/journal/2026-07-20/f6-coarse-path-repair-endpoint-harvest.md",
+    "imports/2026-07-20_f6_coarse_path_repair_endpoint_harvest.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/build_f6_coarse_path_repair_endpoint_harvest.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/test_f6_coarse_path_repair_endpoint_harvest.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/repaired_case_source_inventory.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/sampler_ready_endpoint_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/endpoint_face_metrics.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/pair_pressure_loss_qois.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/same_qoi_time_uq_status.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/same_qoi_mesh_uq_status.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/admission_gate_status.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/script_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/paper_methods_endpoint_harvest_note.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/scripts/run_repair_endpoint_harvest.sh"
+  ],
+  "date": "2026-07-20",
+  "decision": "coarse_paths_repaired_existing_raw_xy_diagnostic_harvest_complete",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Repair retained coarse paths and harvest available endpoint diagnostics.",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/case_mesh_input_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv",
+    "tools/analyze/compute_gci.py"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics/cfd-pp/Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/summary.json",
+  "task": "TODO-F6-COARSE-PATH-REPAIR-ENDPOINT-HARVEST"
+}

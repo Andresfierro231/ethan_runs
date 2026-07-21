@@ -1,0 +1,43 @@
+{
+  "task": "AGENT-302",
+  "date": "2026-07-13",
+  "role": "Writer / Implementer",
+  "artifact": "predictive_sensor_map_contract",
+  "status": "complete",
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/build_sensor_map_contract.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/sensor_map_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/native_cfd_probe_family_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/runtime_target_policy.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/sensor_map_blockers.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/summary.json",
+    ".agent/status/2026-07-13_AGENT-302.md",
+    ".agent/journal/2026-07-13/predictive-sensor-map-contract.md"
+  ],
+  "read_only_sources": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/sensor_location_status.md",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/provisional_sensor_locations.csv",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/ethan_probe_location_reference.md",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/cross_model_comparison/campaigns/2026-05-29_ethan_salt_test_2_v1/data/ethan_sensor_probe_locations.csv",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/cross_model_comparison/campaigns/2026-05-29_ethan_salt_test_2_v1/data/ethan_sensor_channel_summary.csv",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/cross_model_comparison/campaigns/2026-05-29_ethan_salt_test_2_v1/reports/sensor_location_reference.md"
+  ],
+  "commands": [
+    "python3 work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/build_sensor_map_contract.py",
+    "python3 -m py_compile work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/build_sensor_map_contract.py"
+  ],
+  "summary": {
+    "n_sensors": 17,
+    "n_provisional_diagnostic_score_allowed": 15,
+    "blocked_sensor_scores": [
+      "TP2",
+      "TW10"
+    ],
+    "sensor_temperatures_runtime_allowed": false,
+    "sensor_temperature_score_claim": "partial_provisional_only"
+  }
+}

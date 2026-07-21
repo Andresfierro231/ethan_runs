@@ -1,0 +1,60 @@
+{
+  "task": "TODO-HEATLOSS-PHASED-PROGRESS-PLAN-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer",
+  "objective": "Create a rigorous and efficient phased plan for continuing heat-loss alignment with documentation and board rows.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASED-PROGRESS-PLAN-2026-07-21.md",
+    ".agent/journal/2026-07-21/heatloss-phased-progress-plan.md",
+    "imports/2026-07-21_heatloss_phased_progress_plan.json",
+    "operational_notes/07-26/21/2026-07-21_HEATLOSS_PHASED_PROGRESS_PLAN.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "admission_state_mutated": false,
+    "blocker_register_changed": false,
+    "generated_index_refreshed": false
+  },
+  "phase_rows_added": [
+    "TODO-HEATLOSS-PHASE-0-BASELINE-RELEASE-GATE",
+    "TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION",
+    "TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE",
+    "TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE",
+    "TODO-HEATLOSS-PHASE-4-UPCOMER-EXCHANGE-AND-INTERNAL-NU-GATE",
+    "TODO-HEATLOSS-PHASE-5-FROZEN-SCORECARD-AND-THESIS-HANDOFF"
+  ],
+  "guardrails": [
+    "No heat residual hidden in internal Nu.",
+    "No radiation double counting with realized CFD wallHeatFlux.",
+    "No held-out or external-test rows used for fitting/model selection.",
+    "No code or solver work from the coordination row."
+  ]
+}

@@ -1,0 +1,49 @@
+# Coordinator / Implementer / Writer Raw Journal
+
+- date: `2026-06-26`
+- agent role: `Coordinator / Implementer / Writer`
+- task ID: `AGENT-141`
+- branch/worktree: `no-HEAD`
+- files inspected:
+  - `AGENTS.md`
+  - `.agent/BOARD.md`
+  - `.agent/FILE_OWNERSHIP.md`
+  - `.agent/ROLES.md`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/README.md`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/TODO.md`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/campaign_manifest.csv`
+  - `jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/submitted_jobs.csv`
+  - `imports/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave.json`
+  - `tmp/2026-06-26_nuclearenergy_repack_followon/run_packed_four_case_nuclear.sbatch`
+  - `operational_notes/06-26/26/2026-06-26_nuclearenergy_repack_followon.md`
+- files changed:
+  - `.agent/BOARD.md`
+  - `.agent/status/2026-06-26_AGENT-141.md`
+  - `.agent/journal/2026-06-26/coordinator-implementer-writer-nuclearenergy-repack-followon.md`
+  - `journals/2026-06/2026-06-26_ethan_runs.md`
+  - `operational_notes/06-26/26/2026-06-26_nuclearenergy_repack_followon.md`
+  - `tmp/2026-06-26_nuclearenergy_repack_followon/run_packed_four_case_nuclear.sbatch`
+- commands run:
+  - `ssh login3.ls6.tacc.utexas.edu "squeue -j 3254178,3254179,3259055,3259094 -o '%i %j %T %M %l %R'"`
+  - `ssh login3.ls6.tacc.utexas.edu "sinfo -p NuclearEnergy -o '%P %l %D %t'"`
+  - `scancel 3259055 3259056 3259057 3259058 3259059 3259060 3259061 3259062 3259063 3259064 3259065 3259066 3259067 3259068 3259069 3259070 3259071 3259072 3259073 3259074 3259075 3259076 3259077 3259078 3259079 3259080 3259081 3259082 3259083 3259084 3259085 3259086 3259087 3259088 3259089 3259090 3259091 3259092 3259093 3259094`
+  - `ssh login3.ls6.tacc.utexas.edu "cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && ... sbatch -J ethan_s123hi_ne5d tmp/2026-06-26_nuclearenergy_repack_followon/run_packed_four_case_nuclear.sbatch"`
+  - `ssh login3.ls6.tacc.utexas.edu "cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && ... sbatch -J ethan_s41lo2mid_ne5d tmp/2026-06-26_nuclearenergy_repack_followon/run_packed_four_case_nuclear.sbatch"`
+  - `ssh login3.ls6.tacc.utexas.edu "cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && ... sbatch -d afterany:3254179 -J ethan_s34mid_ne5d tmp/2026-06-26_nuclearenergy_repack_followon/run_packed_four_case_nuclear.sbatch"`
+  - `ssh login3.ls6.tacc.utexas.edu "cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && ... sbatch -d afterany:3254178 -J ethan_w1234_ne5d tmp/2026-06-26_nuclearenergy_repack_followon/run_packed_four_case_nuclear.sbatch"`
+  - `ssh login3.ls6.tacc.utexas.edu "squeue -j 3254178,3254179,3261320,3261321,3261322,3261323 -o '%i %j %T %M %l %R'"`
+  - `ssh login3.ls6.tacc.utexas.edu "scontrol show job 3261322 | sed -n '1,5p'"`
+  - `ssh login3.ls6.tacc.utexas.edu "scontrol show job 3261323 | sed -n '1,5p'"`
+- results or observations:
+  - The user-requested repack is operationally valid on `NuclearEnergy`, but the partition rejects `6 d` jobs. `sinfo` and the currently running anchor jobs both showed a hard `5-00:00:00` limit, so the packed launcher had to be clipped to `120 h`.
+  - The two extra nodes were enough to launch both immediate four-case packs at once. They started as `3261320` on `c318-[012-013]` and `3261321` on `c318-[014-015]`, while the preexisting anchors `3254178` and `3254179` continued running on `c318-011` and `c318-016`.
+  - The follow-on dependency split was implemented as the salt midpoint pack after `3254179` and the water continuation pack after `3254178`, matching the user's "one running case / the other running case" instruction.
+  - The canceled `normal` queue range no longer appears in `squeue`, so there is no duplicate pending execution path for those cases.
+- contradictions or caveats:
+  - The requested `6 d` walltime could not be honored because the live `NuclearEnergy` partition limit is `5 d`.
+  - The packed launcher assumes each staged root can either reuse an existing `processors64/` tree or populate it from `SOURCE_PROCESSORS64.txt`; startup should still be watched in case any stage root has drifted.
+  - One earlier `sacct` query on running job `3254179` showed a failed substep while the parent job remained `RUNNING`; this repack work did not investigate that runtime detail because the user request was queue restructuring, not runtime forensics.
+- next steps:
+  - Watch the new immediate jobs for first-hour startup health under `tmp/2026-06-26_nuclearenergy_repack_followon/slurm-ethan_s123hi_ne5d-3261320.*` and `.../slurm-ethan_s41lo2mid_ne5d-3261321.*`.
+  - When `3254178` or `3254179` finish, confirm that `3261322` and `3261323` leave `Dependency` and acquire nodes without unexpected account or partition policy changes.
+  - If the user still needs an effective runtime beyond `5 d` on `NuclearEnergy`, convert each dependent four-case pack into a compliant continuation chain before the first packed segment nears the walltime cap.

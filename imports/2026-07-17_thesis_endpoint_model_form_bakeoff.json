@@ -1,0 +1,86 @@
+{
+  "task": "TODO-THESIS-ENDPOINT-MODEL-FORM-BAKEOFF",
+  "date": "2026-07-17",
+  "title": "Thesis endpoint model-form bakeoff",
+  "status": "complete",
+  "objective": "Score and document thesis-ready intermediate model forms M0-M4 under the locked canonical final predictive split.",
+  "changed_files": [
+    "tools/analyze/build_thesis_endpoint_model_form_bakeoff.py",
+    "tools/analyze/test_thesis_endpoint_model_form_bakeoff.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_contracts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_scores.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_costs.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_failure_modes.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/thesis_claim_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/source_manifest.csv",
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    ".agent/status/2026-07-17_TODO-THESIS-ENDPOINT-MODEL-FORM-BAKEOFF.md",
+    ".agent/journal/2026-07-17/thesis-endpoint-model-form-bakeoff.md",
+    "imports/2026-07-17_thesis_endpoint_model_form_bakeoff.json",
+    ".agent/BOARD.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_passive_test_section_admission_closeout/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv"
+  ],
+  "generated_artifacts": [
+    "tools/analyze/build_thesis_endpoint_model_form_bakeoff.py",
+    "tools/analyze/test_thesis_endpoint_model_form_bakeoff.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_contracts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_scores.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_costs.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_failure_modes.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/thesis_claim_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/source_manifest.csv",
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    ".agent/status/2026-07-17_TODO-THESIS-ENDPOINT-MODEL-FORM-BAKEOFF.md",
+    ".agent/journal/2026-07-17/thesis-endpoint-model-form-bakeoff.md",
+    "imports/2026-07-17_thesis_endpoint_model_form_bakeoff.json"
+  ],
+  "validation": [
+    {
+      "command": "python3 -m py_compile tools/analyze/build_thesis_endpoint_model_form_bakeoff.py tools/analyze/test_thesis_endpoint_model_form_bakeoff.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3 -m unittest tools.analyze.test_thesis_endpoint_model_form_bakeoff",
+      "result": "pass",
+      "tests": 7
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "solver_or_postprocessing_launched": false,
+    "generated_docs_index_refreshed": false,
+    "fit_or_model_selection_run": false,
+    "scientific_admission_changed": false
+  },
+  "decision": "M0-M4 are represented in one thesis comparison package. Final predictive scores remain blocked until an admitted Salt1-4 nominal frozen prediction artifact exists.",
+  "next_steps": [
+    "Use the generated package as the thesis table source for M0-M4.",
+    "Add M5/M6 only after upcomer/onset and final-freeze blockers are resolved.",
+    "Preserve diagnostic labels and the locked split in any future endpoint scorecard."
+  ]
+}

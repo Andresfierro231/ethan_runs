@@ -1,0 +1,37 @@
+{
+  "manifest_id": "2026-07-08_span_endpoint_temperatures_and_ri_audit",
+  "owner": "claude",
+  "task": "AGENT-203, AGENT-204",
+  "generated_at": "2026-07-08",
+  "purpose": "Span endpoint bulk T extraction from existing XY cut files + Ri characteristic length audit",
+  "scope": "Salt 2/3/4 Jin mainline cases; 6 spans × 3 cases; t=7915s/7618s/10000s",
+  "new_tools": [
+    "tools/extract/sample_span_endpoint_temperatures.py",
+    "tools/extract/test_sample_span_endpoint_temperatures.py"
+  ],
+  "new_docs": [
+    "operational_notes/07-26/08/2026-07-08_ri_characteristic_length_audit.md",
+    "operational_notes/07-26/08/2026-07-08_friction_ri_failure_and_path_forward.md",
+    "work_products/2026-07-08_span_endpoint_temperatures/README.md",
+    ".agent/journal/2026-07-08/implementer-ri-audit-and-span-endpoint-temperatures.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-08_span_endpoint_temperatures/span_endpoint_temperatures.csv",
+    "work_products/2026-07-08_span_endpoint_temperatures/summary.json"
+  ],
+  "key_findings": {
+    "ri_characteristic_length": "D_h = 22.098 mm (correct for pipe mixed convection). 5.7% test section bias, ~2% impact on upcomer median Ri.",
+    "heater_dT_S2_K": 15.35,
+    "heater_dT_S3_K": 15.79,
+    "heater_dT_S4_K": 16.44,
+    "heater_energy_balance_error_pct": "within +-8.5%",
+    "upcomer_recirculation_ratio_at_endpoints_pct": "85-98",
+    "test_section_is_net_heat_sink": true,
+    "test_section_insulation": "2.2mm quartz only, no mineral insulation"
+  },
+  "open_questions_for_user": [
+    "Cooler cut planes only capture 45-51% of Q_cooler — full cooler energy balance requires cut planes at reducer boundaries. Accept as limitation or add new sample points?",
+    "Upcomer endpoint T values are dominated by recirculation. For 1D model validation, is the heater dT cross-check sufficient, or do we need upcomer segment T profile separately?",
+    "Right_leg (downcomer) T values are confounded by recirculation and bend geometry. Should we add a mid-leg cut plane away from bends for cleaner downcomer T sampling?"
+  ]
+}

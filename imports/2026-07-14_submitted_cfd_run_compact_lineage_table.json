@@ -1,0 +1,26 @@
+{
+  "task": "AGENT-346",
+  "created_at": "2026-07-14T14:31:00-05:00",
+  "created_by": "codex",
+  "description": "Generated a compact lineage-collapsed version of the submitted CFD run steady-state table, preserving changed-Q variants as separate runs.",
+  "source_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_steady_state_table.csv"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_compact_lineage_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/compact_lineage_summary.json"
+  ],
+  "updated_outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/source_manifest.csv"
+  ],
+  "summary": {
+    "input_row_count": 50,
+    "compact_row_count": 47,
+    "collapsed_row_count": 3,
+    "lineages_with_superseded_rows": 2,
+    "changed_q_rows_kept_separate": true
+  },
+  "native_solver_outputs_mutated": false,
+  "index_refresh": "not_run_active_AGENT_344_owns_generated_index_scope"
+}

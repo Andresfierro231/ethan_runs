@@ -1,0 +1,20 @@
+{
+  "task_id": "AGENT-368",
+  "date": "2026-07-14",
+  "status": "complete",
+  "artifacts": [
+    "operational_notes/07-26/14/2026-07-14_TOMORROW_HYDRAULICS_AND_OVERNIGHT_COMPUTE_HANDOFF.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_hydraulics_and_overnight_compute_handoff/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_hydraulics_and_overnight_compute_handoff/overnight_study_recommendations.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_hydraulics_and_overnight_compute_handoff/scheduler_snapshot.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_hydraulics_and_overnight_compute_handoff/summary.json",
+    ".agent/status/2026-07-14_AGENT-368.md",
+    ".agent/journal/2026-07-14/tomorrow-hydraulics-and-overnight-compute-handoff.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "external_fluid_code_edited": false,
+  "thermal_fit_used": false,
+  "global_hydraulic_multiplier_exported": false,
+  "jobs_submitted": [],
+  "recommendation": "harvest existing corrected-Q and matched pressure/upcomer jobs before launching any duplicate overnight studies"
+}

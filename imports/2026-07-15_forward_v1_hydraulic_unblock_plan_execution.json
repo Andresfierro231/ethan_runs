@@ -1,0 +1,27 @@
+{
+  "task": "AGENT-393",
+  "date": "2026-07-15",
+  "type": "work_product",
+  "status": "complete",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution",
+  "primary_outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/scheduler_snapshot.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/pm5_matched_pressure_upcomer_relaunch_decision.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/hydraulic_gate_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/forward_v1_post_overnight_gate_delta.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/sensor_map_policy_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/summary.json"
+  ],
+  "tests": [
+    "python3.11 -m unittest tools.analyze.test_forward_v1_hydraulic_unblock_plan_execution",
+    "python3.11 -m json.tool work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/summary.json"
+  ],
+  "result": {
+    "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+    "recommended_next_action": "repair_pm5_matched_plane_field_extraction_parser_then_refresh_f6_onset_gate",
+    "native_solver_outputs_mutated": false,
+    "external_fluid_modified": false,
+    "scheduler_jobs_launched": false
+  }
+}

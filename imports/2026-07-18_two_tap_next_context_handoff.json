@@ -1,0 +1,67 @@
+{
+  "task": "TODO-TWO-TAP-NEXT-CONTEXT-HANDOFF",
+  "date": "2026-07-18",
+  "role": "Hydraulics/Writer",
+  "objective": "Document the two-tap context, blockers, assumptions, open-first files, and rigorous next task sequence for future continuation.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_TODO-TWO-TAP-NEXT-CONTEXT-HANDOFF.md",
+    ".agent/journal/2026-07-18/two-tap-next-context-handoff.md",
+    "imports/2026-07-18_two_tap_next_context_handoff.json",
+    "operational_notes/07-26/18/2026-07-18_TWO_TAP_NEXT_CONTEXT_AND_STEPS.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/blockers.yml",
+    "operational_notes/maps/README.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "operational_notes/07-26/17/2026-07-17_MONDAY_HYDRAULICS_CONTEXT_AND_NEXT_STEPS.md",
+    "operational_notes/START_HERE_FOR_AGENTS.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/nonrecirculating_anchor_request.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-TWO-TAP-NEXT-CONTEXT-HANDOFF",
+      "result": "passed: conflicts none detected"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK with 15 entries; generated index files were not refreshed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-TWO-TAP-NEXT-CONTEXT-HANDOFF",
+      "result": "passed: finish_task OK"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "endpoint_pressure_invented": false
+  },
+  "resolved_blockers": [],
+  "unresolved_blockers": [
+    "two-tap-corner-lower-right-material-reverse-flow",
+    "two-tap-corner-lower-right-component-isolation-fails",
+    "two-tap-corner-lower-right-same-qoi-uq-missing"
+  ]
+}

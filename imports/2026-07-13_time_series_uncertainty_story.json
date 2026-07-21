@@ -1,0 +1,45 @@
+{
+  "created_at": "2026-07-13",
+  "task_id": "AGENT-272",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Convert AGENT-244 time-series steady-state metrics into paper-facing uncertainty components for considered steady/quasi-steady CFD rows.",
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/METHODOLOGY.md",
+    "work_products/2026-07/2026-07-10/2026-07-10_time_series_uncertainty_digest_sbatch/"
+  ],
+  "outputs": [
+    "tools/analyze/build_time_series_uncertainty_story.py",
+    "tools/analyze/test_time_series_uncertainty_story.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/"
+  ],
+  "output_counts": {
+    "input_rows": 415,
+    "usable_rows": 345,
+    "screened_rows": 70,
+    "mainline_salt234_rows": 25,
+    "compact_salt234_rows": 3
+  },
+  "policy": {
+    "best_estimate": "osc_mean",
+    "oscillation_component": "osc_rmse_about_trend",
+    "drift_component": "fit_slope and derived drift_over_window",
+    "mean_uncertainty": "unc_sem_corrected and unc_rel_sem_corrected",
+    "screen": "verdict; use steady directly, quasi-steady with caveat, screen out not-steady and live/active rows",
+    "derived_display_envelope": "1.96*unc_sem_corrected + osc_rmse_about_trend + 0.5*abs(fit_slope*(t_end-t_start))"
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_time_series_uncertainty_story.py tools/analyze/test_time_series_uncertainty_story.py",
+    "python3.11 tools/analyze/test_time_series_uncertainty_story.py",
+    "python3.11 tools/analyze/build_time_series_uncertainty_story.py"
+  ],
+  "validation_notes": [
+    "pytest was unavailable in the current Python environment, so the test module was run directly via unittest."
+  ],
+  "mutations_avoided": [
+    "no_solver_output_mutation",
+    "no_registry_edit",
+    "no_external_model_edit",
+    "no_scheduler_action"
+  ]
+}

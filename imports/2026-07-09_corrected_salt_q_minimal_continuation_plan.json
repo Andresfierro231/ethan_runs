@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-238",
+  "title": "Corrected Salt Q minimal continuation and resubmit plan",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/resubmit_list.csv",
+    "work_products/2026-07-06_overnight_postprocess_jobs/corrected_salt_after_3275448_3275449_3275560/run_status/run_status_inventory.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/README.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/TODO.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_packed_corrected_salt_q.sbatch",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/submit_corrected_jobs.sh"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/minimal_continuation_plan.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/no_submit_checklist.md"
+  ],
+  "mutation_boundary": "Planning only. No sbatch submission, no case-tree mutation, no native solver output mutation, and no closure-fit table update.",
+  "admission_policy": "No corrected-Q row is admitted until a future formal gate returns operating_point_verdict=requalified; admitted rows remain sensitivity/correlation-support, not nominal baseline."
+}

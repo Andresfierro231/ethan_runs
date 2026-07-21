@@ -1,0 +1,42 @@
+{
+  "task": "TODO-TWO-TAP-BLOCKER-ROADMAP",
+  "date": "2026-07-18",
+  "objective": "Implement the blocker, research-path, next-step, and admission-rule roadmap for the completed corner_lower_right raw endpoint contract.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_TODO-TWO-TAP-BLOCKER-ROADMAP.md",
+    ".agent/journal/2026-07-18/two-tap-blocker-roadmap.md",
+    "imports/2026-07-18_two_tap_blocker_roadmap.json",
+    "tools/analyze/build_two_tap_blocker_roadmap.py",
+    "tools/analyze/test_two_tap_blocker_roadmap.py",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/blocker_matrix.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/research_path_matrix.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/next_step_queue.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/admission_decision_rules.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/roadmap_summary.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/source_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/target_feature_taps.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/pressure_surface_sampling_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/basis_field_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/recirculation_metric_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/same_qoi_uncertainty_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/launch_readiness_gate.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_change": "none",
+  "f6_fit_performed": false,
+  "component_k_admitted": false,
+  "notes": "Roadmap-only package. It identifies blockers, research paths, next steps, and admission rules from the completed raw endpoint plan without sampling or admitting coefficients."
+}

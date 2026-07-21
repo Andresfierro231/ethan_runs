@@ -1,0 +1,53 @@
+{
+  "task": "AGENT-422",
+  "date": "2026-07-15",
+  "package": "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock",
+  "objective": "Unlock val_salt_test_2_coarse_mesh by refreshing terminal steady-state evidence, building a section heat-loss ledger, attaching BC/source/material contracts, and refreshing the external-test/validation split role.",
+  "inputs": [
+    "registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/wall_heat_flux_grouped.csv",
+    "registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/case_summary.csv",
+    "registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregation_manifest.json",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_left_04_test_section/5182/surfaceFieldValue.dat",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_lower_05_straight/5182/surfaceFieldValue.dat",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_right_02_middle/5182/surfaceFieldValue.dat",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_upper_05_cooler/5182/surfaceFieldValue.dat",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_patch_detail.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/material_property_evidence.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/all_timeseries_case_rollup.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/salt_unlock_master_inventory.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/terminal_steady_state_evidence.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/refreshed_terminal_steady_state_gate.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_section_heat_loss_ledger.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_bc_source_material_contract.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_split_admission_refresh.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/evidence_conflict_resolution.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/summary.json"
+  ],
+  "result": {
+    "steady_state_label": "steady",
+    "admission_decision": "external_test_validation_candidate_unlocked",
+    "usable_now": "yes_external_test_validation",
+    "latest_time_s": 8602.0,
+    "window_start_s": 8302.0,
+    "window_seconds": 300.0,
+    "latest_total_Q_postProc_W": 0.193062,
+    "max_abs_heat_linear_drift_W": 0.013287199533563616,
+    "max_relative_mdot_linear_drift": 7.950900708700645e-05
+  },
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "registry_state_mutated": false,
+    "scheduler_actions": "none",
+    "generated_index_refresh": false,
+    "external_cfd_modeling_tools_mutated": false
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_val_salt2_postprocessing_admission_unlock.py tools/analyze/test_val_salt2_postprocessing_admission_unlock.py",
+    "python3.11 -m unittest tools.analyze.test_val_salt2_postprocessing_admission_unlock"
+  ]
+}

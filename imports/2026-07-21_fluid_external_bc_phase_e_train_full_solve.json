@@ -1,0 +1,83 @@
+{
+  "task": "TODO-FLUID-EXTERNAL-BC-PHASE-E-TRAIN-FULL-SOLVE-2026-07-21",
+  "task_id": "TODO-FLUID-EXTERNAL-BC-PHASE-E-TRAIN-FULL-SOLVE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Implementer/Tester/Writer",
+  "objective": "Run a train/support-only local Fluid 1D solve through the external-boundary dictionary path and publish residual attribution without validation/holdout/external scoring or admission.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-EXTERNAL-BC-PHASE-E-TRAIN-FULL-SOLVE-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-external-bc-phase-e-train-full-solve.md",
+    "imports/2026-07-21_fluid_external_bc_phase_e_train_full_solve.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/build_phase_e_train_full_solve.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/check_phase_e_train_full_solve.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/failure_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/heat_path_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/phase_e_train_external_boundary_dictionary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/pressure_residual_attribution.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/run_summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/segment_states.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/split_claim_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/thermal_residual_attribution.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/train_solve_summary.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/segment_mapping_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_c_implementation/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/summary.json",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/reporting.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py"
+  ],
+  "validation": [
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/build_phase_e_train_full_solve.py work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/check_phase_e_train_full_solve.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/build_phase_e_train_full_solve.py",
+      "result": "passed; local Fluid 1D solve_case returned root_status=accepted"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/check_phase_e_train_full_solve.py",
+      "result": "Phase E train full solve checks passed."
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m pytest -q -p no:cacheprovider tests/test_external_boundary_contract.py",
+      "workdir": "../cfd-modeling-tools/tamu_first_order_model/Fluid",
+      "result": "7 passed, 6 subtests passed in 0.52s"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": true,
+    "external_fluid_repo_edited": false,
+    "validation_rows_consumed": 0,
+    "holdout_rows_consumed": 0,
+    "external_test_rows_consumed": 0,
+    "fit_or_model_selection": false,
+    "freeze_or_admission_decision": false,
+    "final_predictive_admission": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false
+  }
+}

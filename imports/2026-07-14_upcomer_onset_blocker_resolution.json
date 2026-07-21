@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-324",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "created": [
+    "tools/analyze/build_upcomer_onset_blocker_resolution.py",
+    "tools/analyze/test_upcomer_onset_blocker_resolution.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/upcomer_onset_evidence_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/math_and_theory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/next_evidence_requirements.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/blocker_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/results_interpretation.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/summary.json",
+    ".agent/status/2026-07-14_AGENT-324.md",
+    ".agent/journal/2026-07-14/upcomer-onset-blocker-resolution.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md"
+  ],
+  "read_only_inputs": [
+    "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_upcomer_onset/upcomer_onset_regime_table.csv",
+    "reports/2026-06/2026-06-29/2026-06-29_ethan_upcomer_recirculation_evidence/upcomer_recirculation_case_summary.csv",
+    ".agent/BLOCKERS.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_upcomer_onset_blocker_resolution",
+      "result": "passed_4_tests"
+    }
+  ],
+  "notes": [
+    "Blocker upcomer-onset-data-sparsity remains open but is now narrowed to specific missing evidence.",
+    "No native CFD solver outputs were modified.",
+    "Generated index files were not refreshed because active coordinator rows own that scope.",
+    "External ../cfd-modeling-tools was not edited."
+  ]
+}

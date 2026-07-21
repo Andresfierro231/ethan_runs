@@ -1,0 +1,34 @@
+{
+  "task": "AGENT-417",
+  "date": "2026-07-15",
+  "role": "cfd-pp/Thermal-admission/Hydraulics/Writer/Tester",
+  "artifact_root": "work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission",
+  "artifacts": [
+    "README.md",
+    "salt_unlock_master_inventory.csv",
+    "terminal_steady_state_evidence.csv",
+    "bc_source_contracts.csv",
+    "heat_loss_ledger_status.csv",
+    "closure_gate_matrix.csv",
+    "split_admission_decisions.csv",
+    "pending_or_blocked_actions.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "scripts": [
+    "tools/analyze/build_salt_external_test_and_q_unlock_admission.py",
+    "tools/analyze/test_salt_external_test_and_q_unlock_admission.py"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_salt_external_test_and_q_unlock_admission.py tools/analyze/test_salt_external_test_and_q_unlock_admission.py",
+    "python3.11 -m unittest tools.analyze.test_salt_external_test_and_q_unlock_admission",
+    "CSV/JSON count check over generated artifacts"
+  ],
+  "mutation_summary": {
+    "native_cfd_outputs": false,
+    "scheduler_state": false,
+    "registry_or_admission_state": false,
+    "generated_indexes": false,
+    "external_cfd_modeling_tools": false
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "task": "TODO-LITREV-CFD-POSTPROCESSING-SCHEMA-GAP",
+  "task_id": "TODO-LITREV-CFD-POSTPROCESSING-SCHEMA-GAP",
+  "date": "2026-07-21",
+  "role": "cfd-pp/Tester/Writer",
+  "objective": "Compare existing CFD outputs against the LitRev CFD postprocessing contract and publish a field-level schema gap audit.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-CFD-POSTPROCESSING-SCHEMA-GAP.md",
+    ".agent/journal/2026-07-21/litrev-cfd-postprocessing-schema-gap.md",
+    "imports/2026-07-21_litrev_cfd_postprocessing_schema_gap.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/README.md",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/README.md",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_and_modeling_recommendations.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/README.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/README.md",
+    ".agent/status/2026-07-21_AGENT-576.md",
+    ".agent/status/2026-07-17_AGENT-485.md",
+    "native CFD/OpenFOAM outputs read-only"
+  ],
+  "validation": [
+    "python3.11 tools/agent/preflight_task.py --task-id TODO-LITREV-CFD-POSTPROCESSING-SCHEMA-GAP",
+    "python3.11 -c \"import csv, pathlib, sys; ... parse cfd_postprocessing_schema_gap_audit.csv\""
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "notes": "Inventory-only audit. Present field status does not imply fit or coefficient admission."
+}

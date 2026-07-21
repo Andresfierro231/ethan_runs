@@ -1,0 +1,43 @@
+{
+  "task_id": "AGENT-325",
+  "date": "2026-07-14",
+  "kind": "table_update_cadence_contract",
+  "created_local": "2026-07-14T11:42:18-05:00",
+  "role": "Implementer/Tester/Writer",
+  "created": [
+    "tools/analyze/build_table_update_cadence_contract.py",
+    "tools/analyze/test_table_update_cadence_contract.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/table_update_contract.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/gate_trigger_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/daily_refresh_checklist.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/active_result_watchlist.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/summary.json",
+    ".agent/status/2026-07-14_AGENT-325.md",
+    ".agent/journal/2026-07-14/table-update-cadence-contract.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md"
+  ],
+  "source_evidence": [
+    ".agent/BOARD.md",
+    ".agent/BLOCKERS.md",
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_blocker_resolution_plan/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_math_theory_assumptions_results_register/README.md"
+  ],
+  "validation_commands": [
+    "python3.11 -m py_compile tools/analyze/build_table_update_cadence_contract.py tools/analyze/test_table_update_cadence_contract.py",
+    "python3.11 -m unittest tools.analyze.test_table_update_cadence_contract",
+    "python3.11 tools/analyze/build_table_update_cadence_contract.py",
+    "python3.11 -m json.tool work_products/2026-07/2026-07-14/2026-07-14_table_update_cadence_contract/summary.json"
+  ],
+  "boundaries": {
+    "native_solver_outputs_mutated": false,
+    "external_cfd_modeling_tools_modified": false,
+    "registry_or_admission_state_modified": false,
+    "generated_index_refreshed": false,
+    "generated_index_refresh_reason": "Skipped because active AGENT-317 claims .agent/STATE.md, .agent/catalog.json, .agent/catalog.csv, and .agent/BLOCKERS.md."
+  },
+  "status": "complete"
+}

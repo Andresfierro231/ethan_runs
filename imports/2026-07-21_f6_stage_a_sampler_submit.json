@@ -1,0 +1,63 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-STAGE-A-SAMPLER-SUBMIT.md",
+    ".agent/journal/2026-07-21/f6-stage-a-sampler-submit.md",
+    "imports/2026-07-21_f6_stage_a_sampler_submit.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/RUNNING.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/logs/slurm-3308082.err",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/logs/slurm-3308082.out"
+  ],
+  "date": "2026-07-21",
+  "decision": "stage_a_f6_sampler_submitted_monitor_handoff_created_no_admission",
+  "external_fluid_edit": false,
+  "job_id": "3308082",
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Submit the existing Stage A F6 endpoint raw-face sampler sbatch and record durable monitor handoff.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/run_stage_a_f6_endpoint_sampler.sh",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/stage_a_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/raw_endpoint_sampling_contract.csv"
+  ],
+  "registry_mutated": false,
+  "role": "Scheduler / cfd-pp / Tester / Writer",
+  "scheduler_action": "submitted job 3308082 via login3.ls6.tacc.utexas.edu",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/RUNNING.md",
+  "task": "TODO-F6-STAGE-A-SAMPLER-SUBMIT",
+  "validation": [
+    {
+      "command": "bash -n work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch",
+      "result": "passed"
+    },
+    {
+      "command": "bash -n work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/run_stage_a_f6_endpoint_sampler.sh",
+      "result": "passed"
+    },
+    {
+      "command": "squeue -u andresfierro231",
+      "result": "no pre-existing f6_face_sA job before submission"
+    },
+    {
+      "command": "sbatch work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch",
+      "result": "compute-node wrapper refused submission; no job id returned"
+    },
+    {
+      "command": "ssh login3.ls6.tacc.utexas.edu sbatch /scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch",
+      "result": "submitted batch job 3308082"
+    },
+    {
+      "command": "squeue -j 3308082",
+      "result": "RUNNING on c318-012"
+    },
+    {
+      "command": "sacct -j 3308082 --format=JobID,JobName%24,State,ExitCode,Elapsed,NodeList%20,Start,End",
+      "result": "job and batch step RUNNING"
+    }
+  ]
+}

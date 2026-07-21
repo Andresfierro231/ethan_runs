@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-06-29T15:01:20-05:00",
+  "package": "2026-06-29_ethan_reduction_contract_audit",
+  "inputs": {
+    "paper_case_inventory_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_paper_case_inventory/paper_case_inventory.csv",
+    "closure_branch_policy_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-23/2026-06-23_ethan_frozen_state_1d_validation/closure_branch_policy.csv",
+    "package_roots": {
+      "viscosity_screening_salt_test_1_jin_coarse_mesh": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-23_ethan_latest_window_case_analysis_refresh/salt1_jin",
+      "viscosity_screening_salt_test_2_jin_coarse_mesh": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt2/viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "viscosity_screening_salt_test_3_jin_coarse_mesh": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "viscosity_screening_salt_test_4_jin_coarse_mesh": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tmp/2026-06-15_live_case_analysis/contract_fix_salt_family/viscosity_screening_salt_test_4_jin_coarse_mesh"
+    }
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_reduction_contract_audit",
+    "work_product_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit",
+    "station_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/station_map.csv",
+    "branch_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/branch_map.csv",
+    "source_contract_map_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/source_contract_map.csv",
+    "reduction_choice_audit_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/reduction_choice_audit.csv",
+    "paper_reduced_branch_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/paper_reduced_branch_summary.csv",
+    "paper_reduced_major_loss_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/paper_reduced_major_loss_summary.csv",
+    "paper_reduced_streamwise_heat_loss_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-29_ethan_reduction_contract_audit/paper_reduced_streamwise_heat_loss_summary.csv"
+  }
+}

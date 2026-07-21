@@ -1,0 +1,46 @@
+{
+  "task": "TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY",
+  "task_id": "TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Writer/Reviewer",
+  "objective": "Determine whether current evidence supports MF-03 signed-flow junction modeling without implementing or admitting a network model.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY.md",
+    ".agent/journal/2026-07-21/litrev-signed-flow-junction-feasibility.md",
+    "imports/2026-07-21_litrev_signed_flow_junction_feasibility.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/build_litrev_signed_flow_junction_feasibility.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/test_litrev_signed_flow_junction_feasibility.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/signed_flow_junction_feasibility.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/signed_flow_decision_summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/litrev_source_inventory.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/facility_geometry_recovery.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_branch_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/model_interface_contract.csv"
+  ],
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/build_litrev_signed_flow_junction_feasibility.py",
+    "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/test_litrev_signed_flow_junction_feasibility.py",
+    "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/build_litrev_signed_flow_junction_feasibility.py work_products/2026-07/2026-07-21/2026-07-21_litrev_signed_flow_junction_feasibility/test_litrev_signed_flow_junction_feasibility.py",
+    "python3.11 -c \"import json, pathlib; json.loads(pathlib.Path('imports/2026-07-21_litrev_signed_flow_junction_feasibility.json').read_text())\"",
+    "python3.11 tools/agent/preflight_task.py --task-id TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launch": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "notes": "MF-03 feasibility only. Current evidence has zero candidate rows."
+}

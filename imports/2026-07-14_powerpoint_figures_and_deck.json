@@ -1,0 +1,45 @@
+{
+  "task_id": "AGENT-367",
+  "date": "2026-07-14",
+  "status": "complete",
+  "purpose": "Generate better figures from the July 15 PowerPoint outline and attach them to a PowerPoint deck.",
+  "artifacts": [
+    "tools/analyze/build_2026_07_15_powerpoint_deck.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/figure_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/figures",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/slides",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/2026-07-15_powerpoint_deck.pptx",
+    "reports/thesis_dossier/2026-07-15_powerpoint_deck.pptx",
+    "reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+    ".agent/status/2026-07-14_AGENT-367.md",
+    ".agent/journal/2026-07-14/powerpoint-figures-and-deck.md"
+  ],
+  "source_inputs": [
+    "reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/case_bc_response_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/gate_landing_requirements.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/workstream_execution_dashboard.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_best_predictive_heat_loss_discrepancy/best_predictive_leg_heat_loss_discrepancy.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/litrev_to_current_evidence_crosswalk.csv"
+  ],
+  "counts": {
+    "standalone_figures_png": 17,
+    "rendered_slide_png": 18,
+    "pptx_slides": 18
+  },
+  "deck_notes": {
+    "format": "minimal OOXML pptx with one full-slide PNG per slide",
+    "speaker_notes": "remain in reports/thesis_dossier/2026-07-15_powerpoint_outline.md",
+    "editable_objects": false
+  },
+  "mutations": {
+    "native_cfd_solver_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_state": false,
+    "generated_indexes": false,
+    "external_cfd_modeling_tools": false
+  }
+}

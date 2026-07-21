@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-459",
+  "type": "derived_work_product",
+  "title": "Branch-local Internal-Nu unblock",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_internal_nu_candidate_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_nu_model_form_matrix.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/blocker_unblock_decision.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/internal_nu_fit_admissible_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/targeted_extraction_admission_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/blocker_resolution_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/summary.json"
+  ],
+  "decision": {
+    "blocker_id": "closure-qoi-mesh-gci",
+    "status": "not_resolved",
+    "reason": "Current evidence has zero fit-admissible Internal-Nu rows and zero publication-ready final-use GCI rows."
+  }
+}

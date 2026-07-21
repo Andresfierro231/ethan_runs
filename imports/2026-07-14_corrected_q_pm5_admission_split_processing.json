@@ -1,0 +1,47 @@
+{
+  "task": "AGENT-353",
+  "date": "2026-07-14",
+  "role": "cfd-pp/Forward-pred/Implementer/Tester/Writer",
+  "status": "complete",
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing",
+  "created_artifacts": [
+    ".agent/status/2026-07-14_AGENT-353.md",
+    ".agent/journal/2026-07-14/corrected-q-pm5-admission-split-processing.md",
+    "imports/2026-07-14_corrected_q_pm5_admission_split_processing.json",
+    "tools/analyze/build_corrected_q_pm5_admission_split_processing.py",
+    "tools/analyze/test_corrected_q_pm5_admission_split_processing.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_heat_role_reduction.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_forward_gate_queue.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/summary.json"
+  ],
+  "read_only_sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/corrected_q_harvest_3295437_processing_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/recommended_salt_split.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/README.md",
+    "registry/extended_salt/corrected_salt_q_sensitivity/**/aggregates/postprocessing_case_long.csv",
+    "registry/extended_salt/corrected_salt_q_sensitivity/**/aggregates/wall_heat_flux_grouped.csv",
+    "registry/extended_salt/corrected_salt_q_sensitivity/**/aggregates/case_summary.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_corrected_q_pm5_admission_split_processing",
+      "result": "pass",
+      "tests": 3
+    },
+    {
+      "command": "python3.11 tools/analyze/build_corrected_q_pm5_admission_split_processing.py",
+      "result": "pass",
+      "package": "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing"
+    }
+  ],
+  "guardrails": [
+    "Do not treat corrected-Q +/-5Q perturbations as independent training rows without a dated perturbation split policy.",
+    "Use heat-role reductions as diagnostic/score targets only.",
+    "Do not use CFD cooler duty or realized wallHeatFlux as predictive runtime input.",
+    "No native CFD solver outputs, registry files, generated indexes, scheduler state, or external Fluid files were modified."
+  ]
+}

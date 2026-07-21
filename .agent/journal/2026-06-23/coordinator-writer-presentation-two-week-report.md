@@ -36,7 +36,7 @@
   - `.agent/status/2026-06-23_AGENT-106.md`
   - `.agent/status/2026-06-23_AGENT-107.md`
   - `tools/extract/2026-06-15_paraview_field_render_workflow.md`
-  - `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+  - `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
 - files changed:
   - `.agent/BOARD.md`
   - `.agent/status/2026-06-23_AGENT-108.md`

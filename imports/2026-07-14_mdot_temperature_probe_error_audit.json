@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-14",
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_index_refresh": "not_run_active_AGENT_344_owns_generated_index_scope",
+  "journal": ".agent/journal/2026-07-14/mdot-temperature-probe-error-audit.md",
+  "kind": "work_product_import",
+  "native_cfd_outputs_mutated": false,
+  "paper_ready_report": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/paper_ready_report.md",
+  "readme": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/README.md",
+  "status": ".agent/status/2026-07-14_AGENT-360.md",
+  "summary": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/summary.json",
+  "task": "AGENT-360",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit"
+}

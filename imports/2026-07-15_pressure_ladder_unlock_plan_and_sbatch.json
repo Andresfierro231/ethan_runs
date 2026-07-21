@@ -1,0 +1,41 @@
+{
+  "task": "AGENT-445",
+  "date": "2026-07-15",
+  "status": "complete_submitted",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch",
+  "created_files": [
+    "tools/analyze/build_pressure_ladder_unlock_sbatch.py",
+    "tools/analyze/test_pressure_ladder_unlock_sbatch.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/tomorrow_unlock_execution_plan.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/pressure_ladder_preflight.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/scripts_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/scripts/run_pressure_ladder.sh",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/scripts/submit_pressure_ladder.sbatch",
+    ".agent/status/2026-07-15_AGENT-445.md",
+    ".agent/journal/2026-07-15/pressure-ladder-unlock-plan-and-sbatch.md",
+    "imports/2026-07-15_pressure_ladder_unlock_plan_and_sbatch.json"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_pressure_ladder_unlock_sbatch.py tools/analyze/test_pressure_ladder_unlock_sbatch.py",
+    "python3.11 tools/analyze/test_pressure_ladder_unlock_sbatch.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/scripts/run_pressure_ladder.sh --preflight-only"
+  ],
+  "submitted_job": {
+    "job_id": "3297860",
+    "job_name": "press_ladder",
+    "initial_state": "PENDING",
+    "initial_reason": "Priority",
+    "partition": "NuclearEnergy",
+    "account": "ASC23046"
+  },
+  "guardrails": [
+    "native CFD outputs read-only",
+    "registry/admission state not mutated",
+    "generated indexes not refreshed",
+    "external ../cfd-modeling-tools read-only",
+    "outputs diagnostic until admission gates"
+  ]
+}

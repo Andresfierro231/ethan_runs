@@ -1,0 +1,22 @@
+{
+  "generated_date": "2026-07-10",
+  "task_id": "AGENT-254",
+  "artifact_type": "operational_index_note",
+  "title": "Next meeting start-here index",
+  "primary_output": "operational_notes/07-26/10/2026-07-10_NEXT_MEETING_START_HERE.md",
+  "purpose": "Make the end-of-day TODO and CFD-1D thermal parity roadmap easy to find at the next meeting.",
+  "outputs": [
+    "operational_notes/07-26/10/2026-07-10_NEXT_MEETING_START_HERE.md",
+    "operational_notes/07-26/10/2026-07-10_end_of_day_todo.md",
+    "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+    ".agent/status/2026-07-10_AGENT-254.md",
+    ".agent/journal/2026-07-10/next-meeting-start-here-index.md"
+  ],
+  "actions_not_performed": [
+    "No solver-output mutation",
+    "No OpenFOAM extraction",
+    "No Fluid edit",
+    "No job submission",
+    "No registry edit"
+  ]
+}

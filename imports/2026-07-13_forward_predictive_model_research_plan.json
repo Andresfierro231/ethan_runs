@@ -1,0 +1,48 @@
+{
+  "task_id": "AGENT-286",
+  "created_date": "2026-07-13",
+  "role": "Coordinator / Writer",
+  "artifact_type": "forward_predictive_model_research_plan",
+  "output_package": "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/**",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/**",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/**",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/**",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/**",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/**",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/**",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/**",
+    "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md"
+  ],
+  "generated_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/input_readiness_matrix.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/blocker_register.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/task_backlog.csv",
+    "operational_notes/07-26/13/2026-07-13_forward_predictive_model_research_plan.md",
+    ".agent/status/2026-07-13_AGENT-286.md",
+    ".agent/journal/2026-07-13/forward-predictive-model-research-plan.md"
+  ],
+  "summary": {
+    "can_run_forward_model_skeleton": true,
+    "ready_for_thesis_strength_predictive_claim": false,
+    "immediate_next_task": "TODO-PRED-INPUT-CONTRACT",
+    "second_task": "TODO-PRED-FORWARD-V0",
+    "blocker_count": 10,
+    "todo_pred_rows_added": 10,
+    "admission_decision": "no_admission_changes"
+  },
+  "validation_commands": [
+    "python -m json.tool imports/2026-07-13_forward_predictive_model_research_plan.json",
+    "python -c \"import csv, pathlib; base=pathlib.Path('work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan'); files=['input_readiness_matrix.csv','blocker_register.csv','task_backlog.csv']; [print(f, len(list(csv.DictReader((base/f).open(newline=''))))) for f in files]\"",
+    "rg -n 'TODO-PRED|AGENT-286|Forward Predictive' .agent/BOARD.md work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan operational_notes/07-26/13/2026-07-13_forward_predictive_model_research_plan.md"
+  ],
+  "provenance_notes": [
+    "Documentation and planning only; no Fluid source files were edited.",
+    "No native CFD solver outputs, scheduler state, registry rows, or closure admissions were changed.",
+    "Future TODO-PRED board rows are unclaimed and should be claimed one at a time before implementation."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-510",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer",
+  "type": "coordination_manifest",
+  "summary": "Documented the thesis endpoint strategy and intermediate model-form bakeoff plan, including split guardrails, model ladder, cost comparison requirements, numerical algorithm section requirements, and SAM-facing interpretation.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-510.md",
+    ".agent/journal/2026-07-17/thesis-endpoint-model-form-bakeoff-plan.md",
+    "imports/2026-07-17_thesis_endpoint_model_form_bakeoff_plan.json",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id AGENT-510 --json",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "No native CFD/OpenFOAM outputs mutated.",
+    "No registry or admission state changed.",
+    "No scheduler action or solver launch performed.",
+    "No generated index refresh because active rows keep generated index/map paths read-only.",
+    "No scientific admission, model fitting, or model selection changed."
+  ]
+}

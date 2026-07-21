@@ -45,3 +45,23 @@
   `tmp/2026-06-23_salt_last20_checkpoint/`.
 - Once that background copy completes, write or confirm the local manifest for
   the temporary analysis bundle.
+
+## 2026-06-29T12:56:19-05:00
+
+### Observed output
+
+- Rechecked the temporary Salt checkpoint copy root:
+  `tmp/2026-06-23_salt_last20_checkpoint/`
+- Confirmed `.stage_complete` markers exist for all four staged Salt cases:
+  - `salt1_jin`
+  - `salt2_cont`
+  - `salt3_cont`
+  - `salt4_cont`
+- Refreshed `imports/2026-06-23_ethan_cfd_freeze_checkpoint.json` so it now
+  records the checkpoint copy as verified rather than still materializing.
+
+### Interpretation
+
+- The remaining open item on `AGENT-108` was bookkeeping, not missing staging
+  data.
+- The bounded June 23 checkpoint task can now be treated as complete.

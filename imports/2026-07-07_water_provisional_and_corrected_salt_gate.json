@@ -1,0 +1,48 @@
+{
+  "import_id": "2026-07-07_water_provisional_and_corrected_salt_gate",
+  "task_id": "AGENT-181",
+  "created_at": "2026-07-07",
+  "purpose": "Document provisional Water July 6 reporting boundaries and corrected Salt preflight/gate provenance for ROM correlation admission.",
+  "source_artifacts": [
+    "work_products/2026-07-06_overnight_postprocess_jobs/water_postprocess_after_3265970/run_status/run_status_inventory.csv",
+    "work_products/2026-07-06_overnight_postprocess_jobs/water_postprocess_after_3265970/consolidated_closure_table/consolidated_closure_table.csv",
+    "work_products/2026-07-06_overnight_postprocess_jobs/water_postprocess_after_3265970/next_1d_model_forms/summary.json",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv",
+    "tmp/2026-07-06_overnight_postprocess_jobs/slurm-corrected_saltq_all_prepared-3275560.out",
+    "tmp/2026-07-07_corrected_salt_live_monitor/squeue_snapshot.psv",
+    "tmp/2026-07-07_corrected_salt_live_monitor/sacct_snapshot.psv"
+  ],
+  "generated_artifacts": [
+    "tools/analyze/check_corrected_salt_preflight.py",
+    "tools/analyze/test_check_corrected_salt_preflight.py",
+    "tools/analyze/monitor_live_corrected_salt.py",
+    "tools/analyze/test_monitor_live_corrected_salt.py",
+    "work_products/2026-07-07_water_provisional_and_corrected_salt_gate/",
+    "work_products/2026-07-07_corrected_salt_live_monitor/",
+    "reports/2026-07/2026-07-07/2026-07-07_water_provisional_and_corrected_salt_gate/",
+    "tmp/2026-07-07_corrected_salt_gate/run_corrected_salt_gate_after_live_jobs.sbatch"
+  ],
+  "admission_policy": {
+    "water": "provisional_monitor_reporting_only_due_to_TIMEOUT",
+    "corrected_salt": "closure_or_ROM_fit_admissible_only_when_operating_point_verdict_is_requalified_and_no_unreviewed_needs_special_gate_scrutiny",
+    "false_steady_perturbations": "excluded_from_closure_fitting"
+  },
+  "live_monitor": {
+    "artifact": "work_products/2026-07-07_corrected_salt_live_monitor/live_salt_sanity_monitor.json",
+    "special_scrutiny_cases": [
+      "salt1_jin_lo10q_corrected",
+      "salt1_jin_hi10q_corrected",
+      "salt3_jin_hi5q_corrected",
+      "salt3_jin_hi10q_corrected"
+    ],
+    "rule": "No row with needs_special_gate_scrutiny=true is closure-fit admissible without coordinator review."
+  },
+  "submitted_jobs": [
+    {
+      "job_id": "3279646",
+      "job_name": "saltq_gate_0707",
+      "dependency": "afterany:3275448:3275449:3275560",
+      "submission_host": "login3"
+    }
+  ]
+}

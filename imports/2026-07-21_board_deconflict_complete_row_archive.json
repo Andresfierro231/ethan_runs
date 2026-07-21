@@ -1,0 +1,73 @@
+{
+  "task": "TODO-BOARD-DECONFLICT-COMPLETE-ROW-ARCHIVE-2026-07-21",
+  "task_id": "TODO-BOARD-DECONFLICT-COMPLETE-ROW-ARCHIVE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Cleaner/Writer",
+  "objective": "Move validator-passing completed rows out of Active and add the narrow S12 Phase F train-only score row.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-BOARD-DECONFLICT-COMPLETE-ROW-ARCHIVE-2026-07-21.md",
+    ".agent/journal/2026-07-21/board-deconflict-complete-row-archive.md",
+    "imports/2026-07-21_board_deconflict_complete_row_archive.json"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_*.md",
+    ".agent/journal/2026-07-21/*.md",
+    "imports/2026-07-21_*.json"
+  ],
+  "archived_task_count": 29,
+  "archived_tasks": [
+    "TODO-UPCOMER-EXCHANGE-THREE-CASE-CELL-VTK-MANIFEST-2026-07-21",
+    "TODO-FLUID-EXTERNAL-BC-PHASE-E-TRAIN-FULL-SOLVE-2026-07-21",
+    "TODO-PRED-TRAIN-ONLY-EXTERNAL-BC-ATTRIBUTION-FREEZE-GATE-2026-07-21",
+    "TODO-THESIS-UPCOMER-RECIRCULATION-VISUAL-EVIDENCE-INSERTION-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-CELL-VTK-SALT3-SALT4-MATRIX-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-CELL-VTK-SALT2-SMOKE-2026-07-21",
+    "TODO-THESIS-POST-S8-S10-EVIDENCE-REFRESH-2026-07-21",
+    "TODO-THESIS-STUDY-S12-THERMAL-SHAPE-OWNERSHIP-CANDIDATE-2026-07-21",
+    "TODO-THESIS-CH5-CH7-CSEM-UQ-FLUID-READINESS-ADDENDUM-INSERTION-2026-07-21",
+    "TODO-THESIS-FIGTABLE-PREDICTIVE-PATH-STATUS-SET-2026-07-21",
+    "TODO-S13-UPCOMER-EXCHANGE-GEOMETRY-CONTRACT-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-GEOMETRY-RELEASE-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-SAMPLER-REUSABLE-HARVEST-SCAFFOLD-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-SURFACE-SOURCE-GENERATION-2026-07-21",
+    "TODO-UPCOMER-EXCHANGE-INPUT-GENERATION-2026-07-21",
+    "TODO-THESIS-FIGTABLE-S7-SENSOR-MAP-OVERLAY-2026-07-21",
+    "TODO-THESIS-FIGTABLE-S8-WALL-TS-RESIDUAL-ATLAS-2026-07-21",
+    "TODO-THESIS-CH6-CH7-POLISH-FIGTABLE-INSERTIONS-2026-07-21",
+    "TODO-THESIS-S7-S8-CHAPTER-INTEGRATION-AND-CH8-REFRESH-2026-07-21",
+    "TODO-THESIS-FIGTABLE-S9-UPCOMER-EXCHANGE-EVIDENCE-2026-07-21",
+    "TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21",
+    "TODO-THESIS-FIGTABLE-S6-BLOCKED-SCORECARD-SHELL-2026-07-21",
+    "TODO-THESIS-FIGTABLE-CROSS-CHAPTER-VISUAL-LEDGER-2026-07-21",
+    "TODO-THESIS-STUDY-S9-UPCOMER-ONSET-ANCHOR-EXCHANGE-UQ-2026-07-21",
+    "TODO-THESIS-STUDY-S10-PRESSURE-F6-LOW-RECIRC-ANCHOR-UQ-2026-07-21",
+    "TODO-FLUID-EXTERNAL-BC-PHASE-C-IMPLEMENTATION-2026-07-21",
+    "TODO-FLUID-EXTERNAL-BC-PHASE-D-SMOKE-SCORECARD-2026-07-21",
+    "TODO-SAME-QOI-NEIGHBOR-WINDOW-PREFLIGHT-2026-07-21",
+    "TODO-THESIS-CSEM-UQ-FLUID-READINESS-INTEGRATION-2026-07-21"
+  ],
+  "new_active_task": "TODO-FLUID-EXTERNAL-BC-PHASE-F-S12-HIAX1-TRAIN-SCORE-2026-07-21",
+  "left_active_due_to_failed_closeout": [
+    {
+      "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAMPLER-MANIFEST-PREFLIGHT-2026-07-21",
+      "reason": "finish_task.py reports missing status artifact, missing journal artifact, and missing imports artifact."
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "files_deleted": false
+  }
+}

@@ -624,7 +624,7 @@ Date: 2026-06-10
 
 - Curated context:
   - `journals/2026-06/2026-06-10_ethan_runs.md`
-  - `operational_notes/2026-06-10_todo.md`
+  - `operational_notes/06-26/10/2026-06-10_todo.md`
 - Package-level interpretation:
   - `reports/2026-06-10_ethan_salt2_case_analysis_package/README.md`
   - `reports/2026-06-10_ethan_salt2_case_analysis_package/METHODOLOGY_MATH_COMPANION.md`

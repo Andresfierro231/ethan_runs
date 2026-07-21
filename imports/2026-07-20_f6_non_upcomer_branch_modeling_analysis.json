@@ -1,0 +1,87 @@
+{
+  "task": "TODO-F6-NON-UPCOMER-BRANCH-MODELING-ANALYSIS",
+  "date": "2026-07-20",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "objective": "Analyze non-upcomer ordinary branch candidates for future F6 pressure-residual modeling without fitting or admission.",
+  "decision": "analysis_complete_no_f6_fit",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-F6-NON-UPCOMER-BRANCH-MODELING-ANALYSIS.md",
+    ".agent/journal/2026-07-20/f6-non-upcomer-branch-modeling-analysis.md",
+    "imports/2026-07-20_f6_non_upcomer_branch_modeling_analysis.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/build_f6_non_upcomer_branch_modeling_analysis.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/test_f6_non_upcomer_branch_modeling_analysis.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/non_upcomer_f6_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/right_leg_downcomer_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/test_section_span_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/f6_branch_model_form_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/same_qoi_uq_requirements.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/f3_vs_branch_f6_gate.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/paper_methods_non_upcomer_f6_note.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/**",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/**",
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/source_property_gate_after_refresh.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/build_f6_non_upcomer_branch_modeling_analysis.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/test_f6_non_upcomer_branch_modeling_analysis.py",
+      "result": "passed: 7 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/non_upcomer_f6_candidate_matrix.csv work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/right_leg_downcomer_sampling_contract.csv work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/test_section_span_sampling_contract.csv work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/f6_branch_model_form_contract.csv work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/same_qoi_uq_requirements.csv work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/f3_vs_branch_f6_gate.csv work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/source_manifest.csv --warn",
+      "result": "passed: candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-F6-NON-UPCOMER-BRANCH-MODELING-ANALYSIS",
+      "result": "passed: no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-F6-NON-UPCOMER-BRANCH-MODELING-ANALYSIS",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "solver_or_postprocessing_launch": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "ordinary_component_k_allowed_now": false,
+    "same_qoi_uq_complete": false,
+    "endpoint_pressure_invented": false,
+    "hidden_global_multiplier_used": false,
+    "clipped_k_used": false,
+    "blocker_register_mutated": false
+  },
+  "resolved_questions": [
+    "right_leg is the first non-upcomer/downcomer-like ordinary F6 target",
+    "test_section_span is the secondary ordinary F6 target",
+    "current candidate rows are not fit-ready"
+  ],
+  "unresolved_blockers": [
+    "right_leg and test_section_span endpoint pairs missing",
+    "same-QOI mesh/time UQ missing",
+    "F6 admission remains blocked"
+  ]
+}

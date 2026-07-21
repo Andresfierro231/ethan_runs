@@ -19,6 +19,15 @@ reports/**/figures_rendered/**
 reports/**/raw_extraction/*wall_face_samples.csv
 reports/2026-06-04_ethan_transient_axial_package/all_salt_axial_patch_heat_timeseries.csv
 reports/2026-06-04_ethan_transient_axial_package/all_salt_transient_timeseries.csv
+reports/**/all_salt_axial_patch_heat_timeseries.csv
+reports/**/all_salt_transient_timeseries.csv
+reports/**/salt_side_htc_nu_fields.csv
+reports/**/water_effective_htc_nu_fields.csv
+reports/**/raw_extraction/wall_face_geometry.csv
+
+# Heavy registry aggregate products; regenerate from registered postprocessing.
+registry/**/aggregates/postprocessing.sqlite
+registry/**/aggregates/postprocessing_case_long.csv
 
 linked_cases/*
 !linked_cases/.gitkeep

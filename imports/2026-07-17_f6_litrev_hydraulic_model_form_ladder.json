@@ -1,0 +1,56 @@
+{
+  "task": "AGENT-512",
+  "date": "2026-07-17",
+  "type": "analysis_work_product",
+  "status": "complete",
+  "description": "LitRev-guided F6/hydraulic model-form ladder that ranks next friction/hydraulic forms, preserves anchor-first gates, and lists forbidden shortcuts without changing admissions.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-512.md",
+    ".agent/journal/2026-07-17/f6-litrev-hydraulic-model-form-ladder.md",
+    "imports/2026-07-17_f6_litrev_hydraulic_model_form_ladder.json",
+    "tools/analyze/build_f6_litrev_hydraulic_model_form_ladder.py",
+    "tools/analyze/test_f6_litrev_hydraulic_model_form_ladder.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/anchor_first_decision_tree.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/forbidden_shortcuts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/hydraulic_model_form_ladder.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/litrev_hydraulic_crosswalk.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/anchor_gate_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/f6_lane_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/recommended_next_cfd_runs.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/untried_litrev_model_forms.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/rejected_or_demoted_litrev_shortcuts.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/litrev_to_current_evidence_crosswalk.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/prerequisite_gate_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/development_toggle_scorecard.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/hydraulic_model_form_ladder.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/anchor_first_decision_tree.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/litrev_hydraulic_crosswalk.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/forbidden_shortcuts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "blocker_register_mutated": false,
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "scientific_admission_change": "none",
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_f6_litrev_hydraulic_model_form_ladder.py tools/analyze/test_f6_litrev_hydraulic_model_form_ladder.py",
+    "python3.11 -m unittest tools.analyze.test_f6_litrev_hydraulic_model_form_ladder",
+    "python3.11 tools/analyze/build_f6_litrev_hydraulic_model_form_ladder.py",
+    "python3.11 -m json.tool imports/2026-07-17_f6_litrev_hydraulic_model_form_ladder.json",
+    "python3.11 tools/agent/finish_task.py --task-id AGENT-512"
+  ]
+}

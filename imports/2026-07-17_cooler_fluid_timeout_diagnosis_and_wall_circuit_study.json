@@ -1,0 +1,39 @@
+{
+  "task": "AGENT-492",
+  "created_utc": "2026-07-17T13:58:01Z",
+  "status": "complete",
+  "objective": "Diagnose coupled Fluid cooler timeout, rerun with justified settings, and build a wall/test-section/passive-boundary thermal-circuit study.",
+  "artifacts": [
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study/fluid_timeout_diagnosis.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study/wall_circuit_candidate_summary.csv",
+    ".agent/status/2026-07-17_AGENT-492.md",
+    ".agent/journal/2026-07-17/cooler-fluid-timeout-diagnosis-and-wall-circuit-study.md"
+  ],
+  "sources": [
+    "operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv"
+  ],
+  "decision": {
+    "timeout_subblocker": "resolved_for_AGENTS_482_cooler_rerun",
+    "rerun_timeout_seconds_used": 180,
+    "future_timeout_seconds_recommended": 273,
+    "coupled_rows_completed": 12,
+    "coupled_rows_timed_out": 0,
+    "best_wall_circuit_candidate": "PB1_total_hA_heater_power_drive_p1",
+    "best_wall_circuit_status": "static_screen_promising_not_admitted",
+    "predictive_wall_test_section_submodels": "keep_open"
+  },
+  "guardrails": [
+    "No native OpenFOAM/CFD outputs mutated.",
+    "No registry or admission-state mutation.",
+    "No scheduler action.",
+    "No external Fluid source edits.",
+    "No realized wallHeatFlux, CFD mdot, imposed CFD cooler duty, or validation/holdout temperatures used as runtime fit inputs."
+  ]
+}

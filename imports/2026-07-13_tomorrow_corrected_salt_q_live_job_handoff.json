@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-306",
+  "kind": "tomorrow_handoff",
+  "campaign": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations",
+  "live_job": {
+    "job_id": "3293924",
+    "job_name": "saltq_sel_cont",
+    "state_at_handoff": "RUNNING",
+    "node": "c318-016",
+    "top_level_elapsed_at_handoff": "00:35:38",
+    "foamrun_step_elapsed_at_handoff": "00:35:15",
+    "steps": [
+      {"job_step": "3293924.0", "case": "salt2_lo10q", "state": "RUNNING"},
+      {"job_step": "3293924.1", "case": "salt2_hi10q", "state": "RUNNING"},
+      {"job_step": "3293924.2", "case": "salt4_lo10q", "state": "RUNNING"},
+      {"job_step": "3293924.3", "case": "salt4_hi10q", "state": "RUNNING"}
+    ]
+  },
+  "no_additional_launch": {
+    "decision": true,
+    "reason": "3293924 is live and survived the startup failure window; a duplicate continuation or premature harvest would complicate provenance"
+  },
+  "handoff_note": "operational_notes/07-26/13/2026-07-13_TOMORROW_CORRECTED_SALT_Q_LIVE_JOB_HANDOFF.md",
+  "source_context": [
+    ".agent/status/2026-07-13_AGENT-290.md",
+    ".agent/journal/2026-07-13/corrected-salt-q-time-precision-rerun.md",
+    "imports/2026-07-13_corrected_salt_q_time_precision_rerun.json",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/README.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/TODO.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv"
+  ],
+  "tomorrow_first_commands": [
+    "sacct -j 3293924 --format=JobID,JobName,State,ExitCode,Elapsed,Submit,Start,End,NodeList -P",
+    "squeue -j 3293924",
+    "tail -80 jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out"
+  ],
+  "known_environment_note": "bare python3.11 lacks numpy for tools/analyze/assess_time_convergence.py; use a numerical project environment for terminal gates"
+}

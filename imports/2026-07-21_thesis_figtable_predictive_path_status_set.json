@@ -1,0 +1,25 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-PREDICTIVE-PATH-STATUS-SET-2026-07-21",
+  "task_id": "TODO-THESIS-FIGTABLE-PREDICTIVE-PATH-STATUS-SET-2026-07-21",
+  "date": "2026-07-21",
+  "objective": "Publish a predictive-path status figure/table set without releasing final scores.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-FIGTABLE-PREDICTIVE-PATH-STATUS-SET-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-figtable-predictive-path-status-set.md",
+    "imports/2026-07-21_thesis_figtable_predictive_path_status_set.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_predictive_path_status_set"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "final_score_values": 0,
+  "holdout_or_external_released": false
+}

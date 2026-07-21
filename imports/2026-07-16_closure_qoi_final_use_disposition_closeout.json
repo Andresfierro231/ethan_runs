@@ -1,0 +1,37 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-474",
+  "type": "derived_work_product",
+  "title": "Closure-QOI final-use disposition closeout",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/targeted_extraction_admission_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/blocker_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_admission_decision.csv",
+    ".agent/blockers.yml"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/closure_qoi_final_use_disposition.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/gci_results_admitted_only.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/extraction_required_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/blocker_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/closure_qoi_resolution_decision.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "closure-qoi-mesh-gci",
+      "status": "resolved",
+      "reason": "Every current non-upcomer final-use row is admitted or explicitly excluded; zero rows remain extraction-required for blocker closeout."
+    }
+  ]
+}

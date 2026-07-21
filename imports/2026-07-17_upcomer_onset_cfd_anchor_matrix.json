@@ -1,0 +1,37 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active/completed board context owns generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "anchor_group_decisions.csv",
+    "required_output_contract.csv",
+    "runtime_onset_anchor_audit.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "upcomer_onset_anchor_matrix.csv"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "after_high_heat_preflight_rows": 2,
+    "all_sources_present": true,
+    "anchor_rows": 12,
+    "date": "2026-07-17",
+    "external_fluid_edit": false,
+    "future_compute_heavy_rows": 9,
+    "future_feasibility_rows": 1,
+    "generated_index_refreshed": false,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "required_output_rows": 15,
+    "runtime_audit_pass_rows": 3,
+    "runtime_audit_rows": 3,
+    "scheduler_action": false,
+    "task": "TODO-UPCOMER-ONSET-CFD-ANCHOR-MATRIX"
+  },
+  "task": "TODO-UPCOMER-ONSET-CFD-ANCHOR-MATRIX"
+}

@@ -1,0 +1,47 @@
+{
+  "created_utc": "2026-07-13T22:24:53+00:00",
+  "task_id": "AGENT-300",
+  "kind": "generated_analysis_package",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates",
+  "generated_by": "tools/analyze/build_predictive_hydraulic_correction_candidates.py",
+  "source_files": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/hydraulic_fit_safety_gate.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/forward_v0_hydraulic_residuals.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison"
+  ],
+  "outputs": [
+    "candidate_rankings.csv",
+    "mdot_resistance_scaling.csv",
+    "fit_safe_raw_pressure_rows.csv",
+    "diagnostic_momentum_corrected_rows.csv",
+    "decision_summary.json",
+    "README.md"
+  ],
+  "best_candidate_id": "H1_localized_named_loss_and_reset_bundle",
+  "mean_required_resistance_multiplier": 2.115338371409376,
+  "raw_fit_safe_spans": [
+    "left_lower_leg",
+    "left_upper_leg"
+  ],
+  "diagnostic_momentum_corrected_spans": [
+    "left_lower_leg",
+    "left_upper_leg",
+    "lower_leg",
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "can_mdot_improve_without_thermal_fitting": "yes_hydraulic_resistance_increase_moves_mdot_toward_cfd_but_requires_forward_rerun",
+  "thermal_fit_used": false,
+  "thermal_closure_status": "blocked",
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "validation": [
+    "python3 -m py_compile tools/analyze/build_predictive_hydraulic_correction_candidates.py tools/analyze/test_predictive_hydraulic_correction_candidates.py",
+    "python3 -m unittest tools.analyze.test_predictive_hydraulic_correction_candidates",
+    "python3 tools/analyze/build_predictive_hydraulic_correction_candidates.py"
+  ]
+}

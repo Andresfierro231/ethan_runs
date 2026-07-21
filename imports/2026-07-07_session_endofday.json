@@ -1,0 +1,48 @@
+{
+  "manifest_id": "2026-07-07_session_endofday",
+  "owner": "claude",
+  "task": "AGENT-201",
+  "generated_at": "2026-07-07",
+  "purpose": "End-of-day handoff summary for 2026-07-07 claude session (AGENT-193–201)",
+  "scope": "All closure work done in the 2026-07-07 session: pressure term ledger, heat source/sink ledger, friction form comparison, upcomer correlation, F5 Ri-corrected form, pressure ledger entry flag fix, F4 stub segments fix",
+  "new_tools": [
+    "tools/analyze/build_pressure_term_ledger.py",
+    "tools/analyze/test_pressure_term_ledger.py",
+    "tools/analyze/build_heat_source_sink_ledger.py",
+    "tools/analyze/test_heat_source_sink_ledger.py",
+    "tools/analyze/build_upcomer_correlation.py",
+    "tools/analyze/test_build_upcomer_correlation.py"
+  ],
+  "new_docs": [
+    ".agent/journal/2026-07-07/coordinator-writer-end-of-day-handoff.md",
+    ".agent/status/2026-07-07_AGENT-193.md",
+    ".agent/status/2026-07-07_AGENT-194.md",
+    ".agent/status/2026-07-07_AGENT-195.md",
+    ".agent/status/2026-07-07_AGENT-196.md",
+    ".agent/status/2026-07-07_AGENT-197.md",
+    ".agent/status/2026-07-07_AGENT-199.md",
+    ".agent/status/2026-07-07_AGENT-200.md",
+    ".agent/status/2026-07-07_AGENT-201.md"
+  ],
+  "work_products": [
+    "work_products/2026-07-07_pressure_term_ledger/",
+    "work_products/2026-07-07_heat_source_sink_ledger/",
+    "work_products/2026-07-07_friction_forms_comparison/",
+    "work_products/2026-07-07_upcomer_correlation_v2/",
+    "work_products/2026-07-07_f5_ri_corrected/"
+  ],
+  "key_findings": {
+    "best_friction_form": "F3_shah_apparent (-0.93% S2, +3.33% S3, +3.75% S4)",
+    "F4_over_stiffens": "~24% mdot error without Ri correction",
+    "F5_ri_corrected": "c=0 for all leg classes (3-point fit R2 < 0); reduces to F3_shah",
+    "test_section_is_heat_sink": "Quartz test section: -5.7 to -16.8 W net (hot upcomer loses heat to ambient)",
+    "shah_entry_flag_fixed": "left_upper_leg and test_section_span development_loss_pa=0.0 (receive developed flow)",
+    "gate_job": "3280969 pending (codex AGENT-191 re-submitted; fires afterany:3275448:3275449:3275560)"
+  },
+  "test_suite_state": "299/299 passing at session end",
+  "open_questions_for_user": [
+    "Does test_section_span geometry change (bore: 20.9 mm vs 22.1 mm elsewhere) constitute a flow reset that should re-enable Shah entry assumption?",
+    "Should F5 Ri-corrected be kept as candidate-only or removed until more operating points are available?",
+    "Salt 1 qualification: when is this needed (T2 requalification first, or can it run in parallel)?"
+  ]
+}

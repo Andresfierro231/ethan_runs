@@ -1,0 +1,39 @@
+{
+  "task_id": "AGENT-311",
+  "date": "2026-07-14",
+  "kind": "documentation_closeout",
+  "created_local": "2026-07-14T11:07:48-05:00",
+  "role": "Writer",
+  "created": [
+    "reports/thesis_dossier/2026-07-14_thesis_presentation_update.md",
+    ".agent/status/2026-07-14_AGENT-311.md",
+    ".agent/journal/2026-07-14/thesis-presentation-live-results-update.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "source_evidence": [
+    ".agent/BOARD.md",
+    ".agent/BLOCKERS.md",
+    "operational_notes/07-26/13/2026-07-13_TOMORROW_START_HERE.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/master_thesis_bullet_outline.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_parallel_execution_coordination/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_coarse_thermal_repair_smoke/README.md"
+  ],
+  "read_only_scheduler_checks": [
+    "sacct -j 3293924,3294001 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList%30 -P",
+    "squeue -j 3293924,3294001"
+  ],
+  "boundaries": {
+    "native_solver_outputs_mutated": false,
+    "external_cfd_modeling_tools_modified": false,
+    "registry_or_admission_state_modified": false,
+    "generated_index_refreshed": false,
+    "generated_index_refresh_reason": "Skipped because .agent/STATE.md, .agent/catalog.json, .agent/catalog.csv, and .agent/BLOCKERS.md are in active AGENT-309 scope."
+  },
+  "status": "complete"
+}

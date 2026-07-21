@@ -1,0 +1,98 @@
+{
+  "task": "AGENT-534",
+  "task_id": "AGENT-534",
+  "date": "2026-07-17",
+  "title": "Monday morning fresh-agent handoff",
+  "type": "documentation_manifest",
+  "status": "complete",
+  "objective": "Document the current context and next steps so a fresh agent can start Monday morning without relying on chat history, with emphasis on TP/TW gate failures.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-534.md",
+    ".agent/journal/2026-07-17/monday-morning-fresh-agent-handoff.md",
+    "imports/2026-07-17_monday_morning_fresh_agent_handoff.json",
+    "operational_notes/07-26/17/2026-07-17_MONDAY_MORNING_FRESH_AGENT_HANDOFF.md",
+    "operational_notes/START_HERE_FOR_AGENTS.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/status/2026-07-17_AGENT-519.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/README.md",
+    "operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/mentor_thesis_outline.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/next_lane_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/invariant_failure_modes.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score/summary.json",
+    "scheduler/accounting state for jobs 3293924,3295438,3299610,3299620,3300966"
+  ],
+  "created_files": [
+    ".agent/status/2026-07-17_AGENT-534.md",
+    ".agent/journal/2026-07-17/monday-morning-fresh-agent-handoff.md",
+    "imports/2026-07-17_monday_morning_fresh_agent_handoff.json",
+    "operational_notes/07-26/17/2026-07-17_MONDAY_MORNING_FRESH_AGENT_HANDOFF.md"
+  ],
+  "updated_files": [
+    ".agent/BOARD.md",
+    "operational_notes/START_HERE_FOR_AGENTS.md"
+  ],
+  "primary_output": "operational_notes/07-26/17/2026-07-17_MONDAY_MORNING_FRESH_AGENT_HANDOFF.md",
+  "scheduler_snapshot": {
+    "timestamp_local": "2026-07-17",
+    "read_only_commands": [
+      "squeue -j 3293924,3295438,3299610,3299620,3300966",
+      "sacct -j 3293924,3295438,3299610,3299620,3300966 --format=JobID,JobName,State,Elapsed,ExitCode,NodeList"
+    ],
+    "jobs": [
+      {"job_id": "3293924", "name": "saltq_sel_cont", "state": "RUNNING", "elapsed": "4-00:23:19", "node": "c318-016"},
+      {"job_id": "3295438", "name": "saltq_s24_sel_harv", "state": "PENDING_DEPENDENCY", "elapsed": "00:00:00", "node": ""},
+      {"job_id": "3299610", "name": "salt4_q3x_probe", "state": "RUNNING", "elapsed": "23:47:54", "node": "c318-017"},
+      {"job_id": "3299620", "name": "salt4_heat_pack", "state": "RUNNING", "elapsed": "23:33:05", "node": "c318-018"},
+      {"job_id": "3300966", "name": "ag511_hsrc", "state": "COMPLETED", "elapsed": "00:36:50", "node": "c318-009"}
+    ]
+  },
+  "result": {
+    "handoff_note": "operational_notes/07-26/17/2026-07-17_MONDAY_MORNING_FRESH_AGENT_HANDOFF.md",
+    "primary_monday_task": "no_solver_tp_tw_gate_failure_forensics",
+    "primary_model_lane": "UMX1_energy_conserving_upcomer_exchange_or_stratification",
+    "secondary_model_lane": "TSWFC2_distributed_test_section_wall_fluid_nodes",
+    "scientific_admission_change": "none"
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read_only_squeue_sacct_snapshot_only_no_submission_cancel_requeue_dependency_change",
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "solver_or_postprocessing_launched": false,
+  "scientific_admission_change": false,
+  "guardrails": {
+    "native_cfd_outputs_modified": false,
+    "registry_modified": false,
+    "scheduler_state_modified": false,
+    "scheduler_read_only_checks_only": true,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_modified": false,
+    "generated_index_refreshed": false,
+    "scientific_admission_changed": false,
+    "model_fitting_or_selection_changed": false
+  },
+  "recommended_monday_first_steps": [
+    "Refresh board, generated state, blockers, and watched scheduler jobs.",
+    "Do not duplicate dependency-held corrected-Q harvester 3295438 or running high-heat jobs.",
+    "Claim a no-solver TP/TW gate-failure forensics row before any new solver run.",
+    "Audit the real Fluid API for upcomer mixing/stratification before building UMX1.",
+    "Build a UMX1 dry contract and runtime-input audit before any coupled scoring.",
+    "If watched jobs are terminal successful, claim separate harvest/admission rows before parsing or scoring."
+  ]
+}

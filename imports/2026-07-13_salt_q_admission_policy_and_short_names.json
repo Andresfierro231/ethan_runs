@@ -1,0 +1,45 @@
+{
+  "task_id": "AGENT-269",
+  "date": "2026-07-13",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "owner": "codex",
+  "purpose": "Implement corrected Salt-Q admission policy and short display names for selected repack rows.",
+  "policy_correction": "Converged or stationary Salt-Q perturbation rows are closure-fit admissible; post-restart too_short context alone is not an exclusion.",
+  "short_names": {
+    "salt2_jin_lo10q_corrected": "salt2_lo10q",
+    "salt2_jin_hi10q_corrected": "salt2_hi10q",
+    "salt4_jin_lo10q_corrected": "salt4_lo10q"
+  },
+  "actions_performed": [
+    "updated status-table builder admission logic",
+    "updated status-table builder short display names",
+    "updated selected continuation launcher to target salt2_lo10q, salt2_hi10q, and salt4_lo10q",
+    "patched active presentation and closure helper code to remove categorical Salt-Q exclusion",
+    "added documentation addenda superseding old too_short exclusion language",
+    "identified quarantined cleanup candidate paths",
+    "deleted approved old June 19 and June 25 invalid Salt perturbation roots"
+  ],
+  "actions_not_performed": [
+    "did not launch new jobs",
+    "did not cancel live jobs",
+    "did not rename physical live case directories",
+    "did not mutate native solver outputs"
+  ],
+  "outputs": [
+    ".agent/status/2026-07-13_AGENT-269.md",
+    ".agent/journal/2026-07-13/salt-q-admission-policy-and-short-names.md",
+    "operational_notes/07-26/13/2026-07-13_salt_q_admission_policy_and_short_names.md"
+  ],
+  "validation": [
+    "python3.11 -m unittest tools.analyze.test_registry_corrected_q_status_table",
+    "bash -n jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_selected_corrected_salt_q_continuation.sbatch",
+    "python3.11 tools/analyze/build_registry_corrected_q_status_table.py --strict-registry --output-dir work_products/2026-07/2026-07-13/2026-07-13_salt_q_policy_corrected_status_smoke",
+    "python3.11 -m py_compile tools/analyze/build_f4_ri_calibration_and_solver_gate.py tools/analyze/build_upcomer_onset_regime_table.py tools/analyze/build_presentation_readiness_and_rom_agenda.py tools/analyze/build_tomorrow_presentation_package.py",
+    "active Python stale-string scan for categorical corrected-Q exclusion",
+    "targeted find verification of deleted old invalid roots and retained July 4 repaired roots"
+  ],
+  "validation_limitations": [
+    "python3.11 -m pytest tools/analyze/test_upcomer_onset_regime_table.py could not run because pytest is not installed",
+    "direct test function invocation for test_upcomer_onset_regime_table is blocked by missing pre-existing input work_products/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv"
+  ]
+}

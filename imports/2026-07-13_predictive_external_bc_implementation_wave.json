@@ -1,0 +1,52 @@
+{
+  "task_id": "AGENT-297",
+  "date": "2026-07-13",
+  "owner": "codex",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave",
+  "generated_by": "tools/analyze/build_predictive_external_bc_implementation_wave.py",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/parity_input_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/section_heat_parity.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_primary_forward_scores.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_fit_parameters.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_validation_splits.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/forward_v0_hydraulic_residuals.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/boundary_mode_scorecard.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/hx_validation_guardrail_scorecard.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/hydraulic_guardrail_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/implementation_decision_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/fluid_external_boundary_patch_plan.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/summary.json"
+  ],
+  "row_counts": {
+    "external_boundary_rows": 24,
+    "boundary_score_rows": 24,
+    "hx_score_rows": 6,
+    "hydraulic_summary_rows": 2,
+    "decision_rows": 4
+  },
+  "scientific_decisions": [
+    "Setup-level external-boundary parity must include emissivity/Tsur radiation.",
+    "Realized CFD wallHeatFlux replay must not add separate radiation.",
+    "E1/E2 wall-shell and beta evidence remain diagnostic, not validated closure.",
+    "HX split-aware rows may be scored under Salt2 train, Salt3 validation, Salt4 holdout, but hydraulic mdot overprediction blocks end-to-end predictivity claims.",
+    "External Fluid source was inspected read-only and not modified in this task."
+  ],
+  "validation_commands": [
+    "python3.11 -m py_compile tools/analyze/build_predictive_external_bc_implementation_wave.py tools/analyze/test_predictive_external_bc_implementation_wave.py",
+    "python3.11 tools/analyze/test_predictive_external_bc_implementation_wave.py",
+    "python3.11 tools/analyze/build_predictive_external_bc_implementation_wave.py",
+    "python3 tools/docs/build_repo_index.py",
+    "python3 tools/docs/build_repo_index.py --check"
+  ],
+  "fluid_source_modified": false,
+  "native_solver_outputs_modified": false
+}

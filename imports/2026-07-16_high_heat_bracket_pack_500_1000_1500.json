@@ -1,0 +1,31 @@
+{
+  "task": "AGENT-475",
+  "date": "2026-07-16",
+  "status": "submitted",
+  "campaign": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe",
+  "job_id": "3299620",
+  "case_keys": [
+    "salt4_jin_q0500w_no_recirc_probe",
+    "salt4_jin_q1000w_no_recirc_probe",
+    "salt4_jin_q1500w_no_recirc_probe"
+  ],
+  "target_heater_powers_W": [
+    500,
+    1000,
+    1500
+  ],
+  "cooler_scaling_policy": "parent Salt4 cooler/sink patch Q multiplied by target_heater_power_W / 337.6 W",
+  "source_paths": [
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/high_heat_bracket_pack_manifest.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/bracket_pack_root_patch_audit.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/scripts/stage_high_heat_bracket_pack.py",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/scripts/run_salt4_high_heat_bracket_pack.sbatch",
+    "work_products/2026-07/2026-07-16/2026-07-16_high_heat_no_recirc_probe/bracket_pack_local_preflight.csv"
+  ],
+  "guardrails": {
+    "native_existing_output_mutation": "none",
+    "registry_mutation": "none",
+    "external_fluid_mutation": "none",
+    "scheduler_action": "submitted one AGENT-475 packed job from login1"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "task": "TODO-FINAL-SCORECARD-SOURCE-PROPERTY-REFRESH",
+  "date": "2026-07-20",
+  "type": "work_product_manifest",
+  "objective": "Build a derived final-scorecard source/property refresh package from AGENT-554 gate findings and AGENT-538 label evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-FINAL-SCORECARD-SOURCE-PROPERTY-REFRESH.md",
+    ".agent/journal/2026-07-20/final-scorecard-source-property-refresh.md",
+    "imports/2026-07-20_final_scorecard_source_property_refresh.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/scripts/build_final_scorecard_source_property_refresh.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/tests/test_final_scorecard_source_property_refresh.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/case_refresh_decision_matrix.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/source_property_gate_after_refresh.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/remaining_source_property_todo.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_source_property_gate_infrastructure/final_scorecard_source_property_todo.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/source_property_label_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/final_scorecard_case_coverage_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv"
+  ],
+  "no_scorecard_outputs": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": "not_run",
+  "scientific_admission_change": "none",
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-FINAL-SCORECARD-SOURCE-PROPERTY-REFRESH",
+      "result": "passed with no conflicts after task-owned work-product scope"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/scripts/build_final_scorecard_source_property_refresh.py",
+      "result": "passed and regenerated derived package"
+    },
+    {
+      "command": "python3.11 -m pytest work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/tests/test_final_scorecard_source_property_refresh.py",
+      "result": "passed, 6 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/scripts/build_final_scorecard_source_property_refresh.py work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/tests/test_final_scorecard_source_property_refresh.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh --warn",
+      "result": "passed in warning mode with 4 explicit remaining candidate source/property blockers and no missing/blank/placeholder label findings"
+    }
+  ],
+  "notes": [
+    "Implementation lives under the work-product package because old open board rows claim tools/analyze/.",
+    "The package is intentionally scorecard-like so finish_task emits the remaining source/property gate warning.",
+    "The warning is not a silent-label failure: missing_or_blank_required_label_findings=0 and refresh_required_label_content_findings=0."
+  ]
+}

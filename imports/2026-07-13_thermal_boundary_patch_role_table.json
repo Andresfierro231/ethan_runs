@@ -1,0 +1,30 @@
+{
+  "task": "AGENT-263",
+  "created_at": "2026-07-13T10:55:00-0500",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "description": "Patch-level CFD thermal boundary role table for admitted Salt 2/3/4 Jin mainline continuation rows.",
+  "source_scope": [
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/summary.json"
+  ],
+  "scripts": [
+    "tools/analyze/build_thermal_boundary_patch_role_table.py",
+    "tools/analyze/test_thermal_boundary_patch_role_table.py"
+  ],
+  "validation": {
+    "commands": [
+      "python tools/analyze/build_thermal_boundary_patch_role_table.py",
+      "pytest -q tools/analyze/test_thermal_boundary_patch_role_table.py tools/analyze/test_rc_external_temperature_implementation_audit.py"
+    ],
+    "result": "passed",
+    "focused_tests_passed": 11
+  },
+  "native_solver_outputs_modified": false
+}

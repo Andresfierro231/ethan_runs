@@ -1,0 +1,43 @@
+{
+  "task": "AGENT-461",
+  "date": "2026-07-16",
+  "title": "Coupled M3+TS test-section scorecard",
+  "primary_output": "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard",
+  "blocker_action": {
+    "kept_open": "predictive-wall-test-section-submodels",
+    "reason": "Fluid role-local external-boundary API and scenario contracts are implemented, but compute-node coupled --run-fluid scoring is still pending."
+  },
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/fluid_variant_contract.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_role_boundary_scenarios.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_heat_loss_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/blocker_decision.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/summary.json"
+  ],
+  "validation": [
+    "cd ../cfd-modeling-tools/tamu_first_order_model/Fluid && python -m pytest tests/test_solver_contracts.py -q -k external_boundary",
+    "cd ../cfd-modeling-tools/tamu_first_order_model/Fluid && python -m py_compile tamu_loop_model_v2/solver.py tamu_loop_model_v2/config_loader.py tests/test_solver_contracts.py",
+    "python3 tools/analyze/test_coupled_m3ts_test_section_scorecard.py",
+    "python3 tools/analyze/build_coupled_m3ts_test_section_scorecard.py"
+  ],
+  "guardrails": [
+    "No native CFD solver outputs mutated",
+    "No registry state mutated",
+    "No scheduler action",
+    "No OpenFOAM launch",
+    "Login-node coupled Fluid solve probe was stopped after exceeding interactive budget"
+  ]
+}

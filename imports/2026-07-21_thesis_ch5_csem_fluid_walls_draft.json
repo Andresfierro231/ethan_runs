@@ -1,0 +1,37 @@
+{
+  "task": "TODO-THESIS-CH5-CSEM-FLUID-WALLS-DRAFT",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer/Thermal-modeling/Hydraulics",
+  "objective": "Draft Chapter 5 CSEM steady fluid+walls model-form prose from existing evidence only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CH5-CSEM-FLUID-WALLS-DRAFT.md",
+    ".agent/journal/2026-07-21/thesis-ch5-csem-fluid-walls-draft.md",
+    "imports/2026-07-21_thesis_ch5_csem_fluid_walls_draft.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/21/2026-07-21_THESIS_CSEM_BOARD_DISPATCH.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/figures/README.md",
+    "reports/thesis_dossier/figures/figure_claim_crosswalk.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "figure_assets_edited": false,
+  "fitting_or_model_selection": false,
+  "admission_state_changed": false,
+  "runtime_leakage_rules_relaxed": false,
+  "no_scorecard_outputs": true
+}

@@ -1,0 +1,28 @@
+{
+  "task_id": "AGENT-318",
+  "date": "2026-07-14",
+  "status": "complete",
+  "artifacts": [
+    "tools/analyze/build_f6_hydraulic_screen.py",
+    "tools/analyze/test_f6_hydraulic_screen.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen/f6_hydraulic_scorecard.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen/f6_evidence_rows.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_api_localized_loss_external_bc_bridge/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_api_localized_loss_external_bc_bridge/summary.json",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-14_fluid_api_and_f6_hydraulic_screen.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "thermal_fit_used": false,
+  "global_friction_multiplier_exported": false,
+  "blocker_effects": {
+    "f6-friction-re-correction": "open_screen_only",
+    "fluid-external-boundary-api-gap": "partially_moved_api_support_added",
+    "forward-v1-hydraulic-scorecard": "unblocked_diagnostic_h1_screen"
+  }
+}

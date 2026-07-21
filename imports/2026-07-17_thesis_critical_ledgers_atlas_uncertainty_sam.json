@@ -1,0 +1,65 @@
+{
+  "task": "AGENT-516",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer/Reviewer",
+  "type": "coordination_manifest",
+  "summary": "Implemented thesis-critical enrichment sections: claim ledger, fluid+walls segment atlas, uncertainty chapter package, and SAM-facing interpretation; updated thesis dossier indices and outline while preserving split, runtime, and admission guardrails.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-516.md",
+    ".agent/journal/2026-07-17/thesis-critical-ledgers-atlas-uncertainty-sam.md",
+    "imports/2026-07-17_thesis_critical_ledgers_atlas_uncertainty_sam.json",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/11_sam_facing_interpretation.md"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/01_modeling_approach.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/07_wall_test_section_coupled_score_and_physics_plan.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/mainline_salt234_uncertainty_components.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/sensor_map_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": false,
+  "scientific_admission_changed": false,
+  "model_fitting_or_selection_changed": false,
+  "validation": [
+    {
+      "command": "find reports/thesis_dossier/Chapters_and_sections/current -maxdepth 1 -type f | sort",
+      "result": "passed"
+    },
+    {
+      "command": "rg -n \"08_thesis_claim_ledger|09_fluid_walls_segment_atlas|10_uncertainty_chapter_package|11_sam_facing_interpretation|AGENT-516|TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES\" reports/thesis_dossier .agent/BOARD.md",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -c \"import json; json.load(open('imports/2026-07-17_thesis_critical_ledgers_atlas_uncertainty_sam.json')); print('json ok')\"",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "No native CFD/OpenFOAM outputs mutated.",
+    "No registry or admission state changed.",
+    "No scheduler action, solver launch, or heavy postprocessing performed.",
+    "No generated index refresh because it was outside scoped AGENT-516 write paths.",
+    "No scientific admission, model fitting, tuning, or model selection changed.",
+    "SAM-facing text is explicitly interpretive and does not claim SAM validation."
+  ]
+}

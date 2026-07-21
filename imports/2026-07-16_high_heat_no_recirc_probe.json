@@ -1,0 +1,34 @@
+{
+  "task": "AGENT-471",
+  "date": "2026-07-16",
+  "status": "submitted",
+  "campaign": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe",
+  "case_key": "salt4_jin_q3x_no_recirc_probe",
+  "display_name": "salt4_q3x_no_recirc_probe",
+  "job_id": "3299610",
+  "target_heater_power_W": 1012.8,
+  "current_max_heater_power_W": 371.36,
+  "target_vs_current_max_ratio": 2.72727272727,
+  "source_paths": [
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/patch_q_fields.py",
+    "tools/analyze/check_corrected_salt_preflight.py"
+  ],
+  "created_paths": [
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/README.md",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/high_heat_probe_manifest.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/root_patch_audit.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/scripts/stage_high_heat_probe.py",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/scripts/run_salt4_q3x_no_recirc_probe.sbatch",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/submitted_jobs.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_high_heat_no_recirc_probe/"
+  ],
+  "guardrails": {
+    "native_existing_output_mutation": "none",
+    "registry_mutation": "none",
+    "external_fluid_mutation": "none",
+    "scheduler_action": "submitted one AGENT-471 job from login1"
+  }
+}

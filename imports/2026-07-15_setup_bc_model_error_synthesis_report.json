@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-424",
+  "date": "2026-07-15",
+  "artifact": "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report",
+  "description": "Report-ready synthesis of 1D setup variants, boundary conditions, model assumptions/forms, and resulting mass-flow and TP/TW temperature errors from existing evidence.",
+  "created_files": [
+    "tools/analyze/build_setup_bc_model_error_synthesis_report.py",
+    "tools/analyze/test_setup_bc_model_error_synthesis_report.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/report.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_setup_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/boundary_model_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/mode_error_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/heater_cooler_model_form_errors.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/setup_predictive_variant_status.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/assumptions_and_guardrails.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/summary.json",
+    ".agent/status/2026-07-15_AGENT-424.md",
+    ".agent/journal/2026-07-15/setup-bc-model-error-synthesis-report.md"
+  ],
+  "source_paths": [
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger",
+    "work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant",
+    "work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/build_setup_bc_model_error_synthesis_report.py",
+    "python3.11 -m unittest tools.analyze.test_setup_bc_model_error_synthesis_report",
+    "python3.11 -m json.tool work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/summary.json"
+  ],
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "scheduler_action": false,
+    "registry_or_admission_mutated": false,
+    "external_fluid_edited": false,
+    "generated_index_refreshed": false
+  }
+}

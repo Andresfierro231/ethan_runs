@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-17",
+  "task": "AGENT-494",
+  "type": "derived_work_product",
+  "title": "Wall/test-section coupled admission package",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_mutated": false,
+  "scheduler_action_taken": true,
+  "scheduler_job_id": "3300339",
+  "superseded_scheduler_job_id": "3300338",
+  "coupled_execution": {
+    "completed_rows": 12,
+    "completed_command": "sbatch --wrap 'python3 tools/analyze/build_wall_test_section_coupled_admission.py --run-fluid --timeout-seconds 273'",
+    "refresh_command": "python3 tools/analyze/build_wall_test_section_coupled_admission.py --reuse-existing-coupled --timeout-seconds 273"
+  },
+  "sources": [
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/scenario_contracts.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/static_component_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/static_component_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/coupled_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/background_run_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/blocker_decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "predictive-wall-test-section-submodels",
+      "status": "keep_open",
+      "reason": "PB1 passive-total static evidence and runtime audit pass, and 12/12 PB1+HX Fluid rows completed with accepted roots, but 0/4 candidates are admitted because validation/holdout coupled gates fail vs M3: mdot improves while all-probe/TW RMSE worsens sharply. Local TS6/TS7 test-section percent gates remain diagnostic/nonblocking failures."
+    }
+  ]
+}

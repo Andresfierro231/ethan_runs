@@ -1,0 +1,74 @@
+{
+  "task": "TODO-TWO-TAP-STAGED-ENDPOINT-SAMPLER",
+  "date": "2026-07-18",
+  "role": "Hydraulics/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Implement the staged-copy raw endpoint sampler/research package for Salt2/Salt3/Salt4 corner_lower_right without fitting F6 or admitting component K.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_TODO-TWO-TAP-STAGED-ENDPOINT-SAMPLER.md",
+    ".agent/journal/2026-07-18/two-tap-staged-endpoint-sampler.md",
+    "imports/2026-07-18_two_tap_staged_endpoint_sampler.json",
+    "tools/analyze/build_two_tap_staged_endpoint_sampler.py",
+    "tools/analyze/test_two_tap_staged_endpoint_sampler.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/case_sampling_plan.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/endpoint_surface_target_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_surface_file_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/sampler_preflight.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/sampler_readiness_or_failure.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/controlDicts/salt2_mainline.controlDict",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/controlDicts/salt3_mainline.controlDict",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/controlDicts/salt4_mainline.controlDict",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/run_two_tap_staged_endpoint_sampling.sh",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/submit_two_tap_staged_endpoint_sampling.sbatch",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/source_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/summary.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/**",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/**",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/**",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_section_mean_pressure/**",
+    "tools/analyze/build_expanded_salt_pressure_ladder_8pm_sbatch.py",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/**",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/**",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/**"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_two_tap_staged_endpoint_sampler.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_two_tap_staged_endpoint_sampler",
+      "result": "passed: 6 tests"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "endpoint_pressure_invented": false
+  },
+  "unresolved_blockers": [
+    "Raw VTK endpoint surfaces are pending scheduler execution.",
+    "Declared NCC endpoint patch names have zero boundary faces in the reconstructed mesh, so direct patch sampling is blocked.",
+    "Pressure/velocity basis, straight-reference/component isolation, recirculation admission, and same-QOI UQ remain future tasks after raw samples exist."
+  ]
+}

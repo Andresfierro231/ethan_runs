@@ -1,0 +1,73 @@
+{
+  "task": "TODO-LITREV-SPLIT-JUNCTION-STORAGE-RADIATION-EXTRACTION",
+  "task_id": "TODO-LITREV-SPLIT-JUNCTION-STORAGE-RADIATION-EXTRACTION",
+  "date": "2026-07-21",
+  "role": "Thermal-modeling/cfd-pp/Tester/Writer",
+  "objective": "Extract split-junction, storage, radiation, wall/contact, external-convection, cooler-removal, residual-owner, and runtime-legality evidence from LitRev heat-loss artifacts without admission or inference.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-SPLIT-JUNCTION-STORAGE-RADIATION-EXTRACTION.md",
+    ".agent/journal/2026-07-21/litrev-split-junction-storage-radiation-extraction.md",
+    "imports/2026-07-21_litrev_split_junction_storage_radiation_extraction.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/build_litrev_split_junction_storage_radiation_extraction.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/check_litrev_split_junction_storage_radiation_extraction.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/split_heat_extraction_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/junction_family_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/heat_path_owner_separation.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/missing_field_do_not_infer.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/runtime_legality_guardrail.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/split_junction_stub_heat_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/heat_path_evidence_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/runtime_legality_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "qr_admitted_rows": 0,
+  "storage_admitted_rows": 0,
+  "internal_nu_residual_absorption_rows": 0,
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/build_litrev_split_junction_storage_radiation_extraction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/build_litrev_split_junction_storage_radiation_extraction.py work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/check_litrev_split_junction_storage_radiation_extraction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction/check_litrev_split_junction_storage_radiation_extraction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py --strict work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction",
+      "result": "passed"
+    }
+  ]
+}

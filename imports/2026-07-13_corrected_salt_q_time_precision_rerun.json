@@ -1,0 +1,60 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-290",
+  "kind": "scheduler_repair_and_preflight_update",
+  "campaign": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations",
+  "source_jobs": [
+    {
+      "job_id": "3293441",
+      "result": "failed",
+      "reason": "timeFormat general with timePrecision 12 hit OpenFOAM maximum time-name precision during adaptive large-time continuation"
+    },
+    {
+      "job_id": "3293739",
+      "result": "failed",
+      "reason": "timeFormat general with timePrecision 17 still required precision 18 and hit OpenFOAM maximum"
+    },
+    {
+      "job_id": "3293765",
+      "result": "failed",
+      "reason": "timeFormat fixed with startFrom startTime could not find existing integer restart directory object T"
+    },
+    {
+      "job_id": "3293782",
+      "result": "failed",
+      "reason": "timeFormat fixed with startFrom latestTime still could not find restart object T because fixed-format time naming did not match existing integer restart directories"
+    },
+    {
+      "job_id": "3293924",
+      "result": "running_after_startup_check",
+      "reason": "explicit integer startTime with timeFormat general and timePrecision 6 passed preflight and all four foamRun steps remained RUNNING after the initial monitoring window"
+    }
+  ],
+  "changed_files": [
+    "tools/analyze/check_corrected_salt_preflight.py",
+    "tools/analyze/test_check_corrected_salt_preflight.py",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_selected_corrected_salt_q_continuation.sbatch",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/README.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/TODO.md",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv"
+  ],
+  "selected_restarts": {
+    "salt2_jin_lo10q_corrected": "10291",
+    "salt2_jin_hi10q_corrected": "9674",
+    "salt4_jin_lo10q_corrected": "11655",
+    "salt4_jin_hi10q_corrected": "12639"
+  },
+  "runtime_contract": {
+    "startFrom": "startTime",
+    "timeFormat": "general",
+    "timePrecision": 6,
+    "preflight_requires_selected_restart_match": true,
+    "preflight_rejects_latestTime_for_explicit_restart": true
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/check_corrected_salt_preflight.py",
+    "manual invocation of 7 focused preflight tests",
+    "bash -n jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_selected_corrected_salt_q_continuation.sbatch",
+    "four selected cases passed runtime/Q preflight"
+  ]
+}

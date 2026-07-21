@@ -1,0 +1,71 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-274",
+  "type": "scheduler_and_launcher_manifest",
+  "source_allocation": {
+    "job_id": "3288671",
+    "state": "COMPLETED",
+    "elapsed": "3-00:23:10",
+    "node": "c318-017"
+  },
+  "salt4_hi10q_final_window": {
+    "case_path": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+    "window_s": [12039, 12639],
+    "total_Q": {
+      "mean_W": 7.71885485857,
+      "latest_W": 6.99361,
+      "drift_W": -1.59099,
+      "span_W": 1.69738
+    },
+    "mdot_summary": {
+      "typical_abs_drift_kg_per_s": 0.000113,
+      "relative_drift_of_mean": 0.0061,
+      "relative_span_of_mean": 0.024
+    },
+    "temperature_probe_max_abs_drift_K": 1.45105,
+    "wall_temperature_probe_max_abs_drift_K": 1.52954,
+    "decision": "not steady; include in packed continuation"
+  },
+  "packed_cases": [
+    {
+      "display_name": "salt2_lo10q",
+      "source_key": "salt2_jin_lo10q_corrected"
+    },
+    {
+      "display_name": "salt2_hi10q",
+      "source_key": "salt2_jin_hi10q_corrected"
+    },
+    {
+      "display_name": "salt4_lo10q",
+      "source_key": "salt4_jin_lo10q_corrected"
+    },
+    {
+      "display_name": "salt4_hi10q",
+      "source_key": "salt4_jin_hi10q_corrected"
+    }
+  ],
+  "launcher": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/scripts/run_selected_corrected_salt_q_continuation.sbatch",
+  "submitted_job": {
+    "job_id": "3293441",
+    "submitted_from": "login3",
+    "state_after_submit": "RUNNING",
+    "node_after_submit": "c318-011",
+    "active_steps_after_submit": [
+      "3293441.0",
+      "3293441.1",
+      "3293441.2",
+      "3293441.3"
+    ]
+  },
+  "concurrency_policy": {
+    "nodes": 1,
+    "sbatch_tasks": 256,
+    "tasks_per_case": 64,
+    "max_concurrent_cases": 4
+  },
+  "notes": [
+    "The launcher patches selected restart T fields inside the sbatch job before foamRun.",
+    "The selected staged system/functions files were made diagnostic-only before submission so the job cannot terminate on the coded convergence monitor.",
+    "Native prior outputs were read for assessment only."
+  ]
+}

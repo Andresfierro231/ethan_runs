@@ -1,0 +1,43 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-TOPOLOGY-FORENSICS-AND-ALT-CV-2026-07-21",
+  "generated_at": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-TOPOLOGY-FORENSICS-AND-ALT-CV-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-topology-forensics-alt-cv.md",
+    "imports/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv.json",
+    "tools/extract/build_s13_upcomer_exchange_topology_forensics_alt_cv.py",
+    "tools/extract/test_s13_upcomer_exchange_topology_forensics_alt_cv.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/alternate_cv_release_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/component_boundary_escape_by_patch.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/component_topology_forensics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/face_connected_component_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/next_geometry_steps.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/s13_topology_forensics_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/masks/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_segmentation_case_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/masks/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/topology_cv_case_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/face_connected_component_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_interface_wall_source_recovery/s13_unblock_decision.csv",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh/"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_postprocessing_surface_sampler_or_harvest_launched": false,
+  "external_fluid_edit": false,
+  "threshold_relaxation": false,
+  "proxy_interface_admission": false,
+  "fit_or_model_selection_performed": false,
+  "exchange_cell_admission": false,
+  "s11_s15_s6_trigger": false,
+  "no_scorecard_outputs": true,
+  "notes": "Fail-closed topology forensics only. Alternate wall-adjacent component rule did not release S13 topology CVs."
+}

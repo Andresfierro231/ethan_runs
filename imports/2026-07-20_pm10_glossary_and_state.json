@@ -1,0 +1,39 @@
+{
+  "task": "AGENT-555",
+  "date": "2026-07-20",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-555.md",
+    ".agent/journal/2026-07-20/pm10-glossary-and-state.md",
+    "imports/2026-07-20_pm10_glossary_and_state.json",
+    "operational_notes/07-26/17/2026-07-17_CANONICAL_FINAL_PREDICTIVE_SPLIT_POLICY.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/README.md",
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_terminal_drift.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_terminal_admission_rows.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_split_decisions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "scientific_admission_changed": false,
+  "notes": [
+    "PM10 answer and glossary edit only; no new terminal admission decision was made.",
+    "Existing PM10 classification evidence says all four Salt2/Salt4 +/-10Q rows pass terminal drift and strict-log checks.",
+    "Existing split policy keeps PM10 rows future/frozen-model holdout scoring only after final freeze; fit, model-selection, and runtime-input admission remain forbidden."
+  ]
+}

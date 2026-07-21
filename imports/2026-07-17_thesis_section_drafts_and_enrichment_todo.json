@@ -1,0 +1,35 @@
+{
+  "manifest_type": "documentation_update",
+  "task": "AGENT-497",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer",
+  "objective": "Write Markdown thesis-section drafts for model form, split policy, and modeling approach, and add a board TODO for thesis enrichment research avenues.",
+  "created": [
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-17_model_form_section.md",
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-17_split_policy_section.md",
+    "reports/thesis_dossier/Chapters_and_sections/2026-07-17_modeling_approach_section.md",
+    ".agent/status/2026-07-17_AGENT-497.md",
+    ".agent/journal/2026-07-17/thesis-section-drafts-and-enrichment-todo.md",
+    "imports/2026-07-17_thesis_section_drafts_and_enrichment_todo.json"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/README.md"
+  ],
+  "board_todo_added": "TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES",
+  "validation": [
+    "find reports/thesis_dossier/Chapters_and_sections -maxdepth 1 -type f | sort",
+    "rg -n \"2026-07-17_(model_form|split_policy|modeling_approach)_section|TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES\" reports/thesis_dossier .agent/BOARD.md",
+    "python3.11 -c \"import json; json.load(open('imports/2026-07-17_thesis_section_drafts_and_enrichment_todo.json')); print('json ok')\""
+  ],
+  "guardrails": [
+    "No native CFD outputs were mutated.",
+    "No registry or admission state was changed.",
+    "No scheduler action or solver/postprocessing launch was performed.",
+    "No generated documentation index refresh was run.",
+    "No external Fluid files were edited.",
+    "No new scientific admission claim was made."
+  ]
+}

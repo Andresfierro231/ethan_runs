@@ -1,0 +1,42 @@
+{
+  "task_id": "AGENT-262",
+  "created_at": "2026-07-13T10:59:49-0500",
+  "purpose": "Compare AGENT-248 Salt2 medium/fine pressure-only section, friction, and momentum outputs; review signs and identify fit-safe rows while keeping thermal closure blocked.",
+  "inputs": [
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/medium/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/medium/segment_friction.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/medium/momentum_budget.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/fine/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/fine/segment_friction.csv",
+    "work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/fine/momentum_budget.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_diagnosis/README.md"
+  ],
+  "outputs": [
+    "tools/analyze/build_salt2_pressure_mesh_family_comparison.py",
+    "tools/analyze/test_salt2_pressure_mesh_family_comparison.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/pressure_station_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/friction_mesh_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/momentum_mesh_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/fit_safety_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/summary.json"
+  ],
+  "commands": [
+    "python3.11 -m py_compile tools/analyze/build_salt2_pressure_mesh_family_comparison.py tools/analyze/test_salt2_pressure_mesh_family_comparison.py",
+    "python3.11 -m unittest tools.analyze.test_salt2_pressure_mesh_family_comparison",
+    "python3.11 tools/analyze/build_salt2_pressure_mesh_family_comparison.py"
+  ],
+  "pressure_gradient_fit_safe_spans": [
+    "left_lower_leg",
+    "left_upper_leg"
+  ],
+  "momentum_corrected_fit_safe_spans": [
+    "left_lower_leg",
+    "left_upper_leg",
+    "lower_leg",
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "thermal_closure_status": "blocked"
+}

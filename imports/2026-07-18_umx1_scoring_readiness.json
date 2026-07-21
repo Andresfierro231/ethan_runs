@@ -1,0 +1,62 @@
+{
+  "task": "AGENT-543",
+  "date": "2026-07-18",
+  "created_at": "2026-07-18T14:50:48-05:00",
+  "description": "UMX1 scoring-readiness dry research package. AGENT-540 supersedes the stale no-hook blocker for Fluid API existence; this package defines split-legal candidate, runtime-input, score-gate, probe-localization, and next-run contracts without running Fluid.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_AGENT-543.md",
+    ".agent/journal/2026-07-18/umx1-scoring-readiness.md",
+    "imports/2026-07-18_umx1_scoring_readiness.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/case_split_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/candidate_grid_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/scenario_contracts.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/score_gate_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/probe_localization_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/next_run_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/blocker_reconciliation.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/source_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/validate_package.py",
+    "operational_notes/07-26/18/2026-07-18_UMX1_SCORING_READINESS.md",
+    "operational_notes/07-26/18/2026-07-18_UMX1_FLUID_API_IMPLEMENTATION.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis/next_steps_queue.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_tswfc2_dry_contract/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/next_model_contract.csv",
+    "operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "tools_analyze_edit": false,
+  "solver_or_scoring_grid_run": false,
+  "scientific_admission_changed": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id AGENT-543",
+      "result": "passed after narrowing scope away from tools/analyze/**"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/validate_package.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-18/2026-07-18_umx1_scoring_readiness/validate_package.py",
+      "result": "passed"
+    }
+  ]
+}

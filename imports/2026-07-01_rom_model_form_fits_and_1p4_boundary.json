@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-07-01T17:29:07-05:00",
+  "task_id": "AGENT-170",
+  "summary": {
+    "generated_at": "2026-07-01T17:29:07-05:00",
+    "task_id": "AGENT-170",
+    "report_dir": "reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary",
+    "work_dir": "work_products/2026-07-01_rom_model_form_fits_and_1p4_boundary",
+    "fit_rows": 5,
+    "result_rows": 39,
+    "summary_rows": 10,
+    "figure_rows": 3,
+    "grid_level": "compact",
+    "workers": 64,
+    "claude_trial_present": true,
+    "claude_trial_had_cfd_closures": "True",
+    "claude_trial_had_1p4_boundary": "False",
+    "best_model_form": "fit_major_k90_1p4",
+    "best_mean_abs_mdot_error_pct": 3.102826024132957,
+    "cfd_boundary_insulation_in": {
+      "salt_jin": 1.4,
+      "val_salt_test_2": 1.65
+    },
+    "fit_salts": [
+      2,
+      3,
+      4
+    ]
+  },
+  "source_paths": [
+    "work_products/2026-07-01_claude_1d_predictivity_trial/predictivity_mdot_table.json",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_validation_refresh",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_discrepancy_refresh",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid"
+  ],
+  "outputs": [
+    "work_products/2026-07-01_rom_model_form_fits_and_1p4_boundary/summary.json",
+    "reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary/summary.json",
+    "reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary/README.md"
+  ]
+}

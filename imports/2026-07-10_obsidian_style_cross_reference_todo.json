@@ -1,0 +1,35 @@
+{
+  "generated_date": "2026-07-10",
+  "task_id": "AGENT-257",
+  "artifact_type": "documentation_todo",
+  "title": "Lightweight Obsidian-style cross-reference TODO",
+  "purpose": "Record a future TODO to add Related blocks and stable topic tags to the current thermal-parity documentation cluster while preserving repo-relative file-path links as primary references.",
+  "outputs": [
+    "operational_notes/07-26/10/2026-07-10_NEXT_MEETING_START_HERE.md",
+    "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+    "operational_notes/07-26/10/2026-07-10_end_of_day_todo.md",
+    ".agent/status/2026-07-10_AGENT-257.md",
+    ".agent/journal/2026-07-10/obsidian-style-cross-reference-todo.md"
+  ],
+  "recommended_convention": [
+    "Use normal repo-relative markdown/file-path links as the primary source of truth.",
+    "Add a short Related block to durable notes and reports.",
+    "Add stable plain-text topic tags as search anchors.",
+    "Start with the thermal-parity cluster only; do not backfill the whole repo."
+  ],
+  "initial_cluster": [
+    "operational_notes/07-26/10/2026-07-10_NEXT_MEETING_START_HERE.md",
+    "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+    "operational_notes/07-26/10/2026-07-10_end_of_day_todo.md",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md"
+  ],
+  "actions_not_performed": [
+    "No repo-wide backfill",
+    "No solver-output mutation",
+    "No OpenFOAM extraction",
+    "No Fluid edit",
+    "No job submission",
+    "No registry edit"
+  ]
+}

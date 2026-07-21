@@ -1,0 +1,52 @@
+{
+  "date": "2026-07-14",
+  "task": "AGENT-366",
+  "title": "Forward-v1 gate refresh after Fluid API and audits",
+  "decision": "blocked_no_go_final_forward_v1_not_admitted",
+  "outputs": [
+    "tools/analyze/build_forward_v1_gate_refresh_after_fluid_api_and_audits.py",
+    "tools/analyze/test_forward_v1_gate_refresh_after_fluid_api_and_audits.py",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_gate_checklist_refreshed.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_scorecard_input_contract_next.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_blocking_gate_burndown.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_residual_attribution_skeleton.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/perturbation_split_policy_next.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/math_assumptions_theory.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/summary.json",
+    ".agent/status/2026-07-14_AGENT-366.md",
+    ".agent/journal/2026-07-14/forward-v1-gate-refresh-after-fluid-api-and-audits.md"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_gate_checklist.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_training_admission_update.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/pm5_upcomer_job_harvest_status.csv"
+  ],
+  "summary": {
+    "final_forward_v1_admitted": false,
+    "current_split": "salt_2=train;salt_3=validation;salt_4=holdout",
+    "gate_rows": 10,
+    "blocking_rows": 7,
+    "fluid_reset_development_api_implemented": true,
+    "h1_launchable_after_fluid_api": false,
+    "mdot_model_result_rows": 16,
+    "sensor_error_rows": 204,
+    "salt1_hi10q_conflict_removed": true,
+    "salt1_affects_current_salt234_score_split": false,
+    "pm5_job_state": "PENDING",
+    "pm5_parsed_files_present": 0
+  },
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action_taken": false,
+    "external_fluid_modified_by_this_task": false,
+    "map_links_deferred_due_active_agent365": true
+  }
+}

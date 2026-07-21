@@ -1,0 +1,37 @@
+{
+  "task": "AGENT-264",
+  "created_at": "2026-07-13T10:55:00-0500",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "description": "Audit whether rcExternalTemperature emissivity and Tsur affect OpenFOAM heat flux and set 1D radiation parity guidance.",
+  "source_scope": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "tools/ofenv/of13_env.sh",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so",
+    "/work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13/source/OpenFOAM-13/src/ThermophysicalTransportModels/coupledThermophysicalTransportModels/externalTemperature/externalTemperatureFvPatchScalarField.C"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/rc_external_temperature_evidence_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/radiation_parity_decision.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/rc_external_temperature_formula_audit.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/summary.json"
+  ],
+  "scripts": [
+    "tools/analyze/build_rc_external_temperature_implementation_audit.py",
+    "tools/analyze/test_rc_external_temperature_implementation_audit.py"
+  ],
+  "decision": {
+    "emissivity_Tsur_affect_heat_flux": "yes",
+    "separable_radiation_output_available": "no",
+    "parity_radiation_mode": "inseparable"
+  },
+  "validation": {
+    "commands": [
+      "python tools/analyze/build_rc_external_temperature_implementation_audit.py",
+      "pytest -q tools/analyze/test_thermal_boundary_patch_role_table.py tools/analyze/test_rc_external_temperature_implementation_audit.py"
+    ],
+    "result": "passed",
+    "focused_tests_passed": 11
+  },
+  "native_solver_outputs_modified": false,
+  "openfoam_solver_run": false
+}

@@ -1,0 +1,32 @@
+{
+  "task": "AGENT-373",
+  "date": "2026-07-14",
+  "type": "scheduler_manifest",
+  "status": "submitted",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain",
+  "dependency_tail_manifest": "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/slurm_dependency_tail_manifest.csv",
+  "active_dependency_chain": [
+    {
+      "stage": "test_section_complex_raw_two_tap",
+      "job_id": "3295989",
+      "dependency": "afterany:3295120;afterany:3295438"
+    },
+    {
+      "stage": "f6_ready_to_run_gate",
+      "job_id": "3295990",
+      "dependency": "afterok:3295989"
+    },
+    {
+      "stage": "fluid_reset_k_diagnostic_sweep",
+      "job_id": "3295991",
+      "dependency": "afterok:3295990"
+    }
+  ],
+  "cancelled_duplicate_chain": ["3295985", "3295986", "3295987"],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "external_fluid_modified": false,
+    "corrected_q_solver_duplicated": false,
+    "matched_plane_openfoam_duplicated": false
+  }
+}

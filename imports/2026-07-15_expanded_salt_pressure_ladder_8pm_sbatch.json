@@ -1,0 +1,36 @@
+{
+  "task": "AGENT-447",
+  "status": "complete_submitted",
+  "updated_at": "2026-07-15T18:15:34-05:00",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch",
+  "scripts": [
+    "tools/analyze/build_expanded_salt_pressure_ladder_8pm_sbatch.py",
+    "tools/analyze/test_expanded_salt_pressure_ladder_8pm_sbatch.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/scripts/run_expanded_pressure_ladder.sh",
+    "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/scripts/submit_expanded_pressure_ladder_8pm.sbatch"
+  ],
+  "submitted_jobs": [
+    {
+      "job_id": "3297863",
+      "job_name": "press_lad2",
+      "partition": "NuclearEnergy",
+      "account": "ASC23046",
+      "begin_time": "2026-07-15T20:00:00",
+      "last_state": "PENDING",
+      "last_reason": "BeginTime"
+    }
+  ],
+  "related_jobs": [
+    {
+      "job_id": "3297860",
+      "task": "AGENT-445",
+      "role": "nominal Salt2/Salt3/Salt4 pressure ladder",
+      "last_state": "RUNNING"
+    }
+  ],
+  "case_count": 8,
+  "station_planes_per_case": 30,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "outputs_diagnostic_until_admitted": true
+}

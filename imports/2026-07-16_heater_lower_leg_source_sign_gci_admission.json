@@ -1,0 +1,42 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-468",
+  "type": "derived_work_product",
+  "title": "Heater lower-leg source/sign/GCI admission",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/internal_nu_fit_admissible_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/targeted_extraction_admission_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/future_studies_and_blockers.csv",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "operational_notes/maps/mesh-gci-and-uncertainty.md",
+    ".agent/blockers.yml"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/heater_source_sign_heat_balance_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/heater_same_qoi_mesh_gci_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/heater_internal_nu_candidate_admission.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/gci_results_admitted_only.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/closure_qoi_blocker_delta.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/next_extraction_queue.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/blocker_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/closure_qoi_resolution_decision.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "closure-qoi-mesh-gci",
+      "status": "keep_open",
+      "reason": "Heater lower-leg source/sign/GCI admission has zero fit-admissible rows and zero publication-ready same-QOI GCI rows; next work is row-level source/enthalpy/sign heat-balance admission, same-QOI GCI reconciliation, recirculation evidence, and final-use exclusion or re-extraction."
+    }
+  ]
+}

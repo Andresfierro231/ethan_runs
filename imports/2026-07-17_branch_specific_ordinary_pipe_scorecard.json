@@ -1,0 +1,36 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active board rows own generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "branch_model_form_contract.csv",
+    "ordinary_pipe_branch_mask.csv",
+    "ordinary_pipe_exclusion_handoff.csv",
+    "runtime_branch_input_audit.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_branch_specific_ordinary_pipe_scorecard",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "all_sources_present": true,
+    "branch_rows": 7,
+    "date": "2026-07-17",
+    "exclusion_handoff_rows": 7,
+    "external_fluid_edit": false,
+    "generated_index_refreshed": false,
+    "native_solver_outputs_mutated": false,
+    "ordinary_coefficient_fit_admitted_rows": 0,
+    "ordinary_fit_included_branches": 0,
+    "registry_mutated": false,
+    "runtime_audit_pass_rows": 4,
+    "runtime_audit_rows": 4,
+    "scheduler_action": false,
+    "task": "TODO-BRANCH-SPECIFIC-ORDINARY-PIPE-SCORECARD"
+  },
+  "task": "TODO-BRANCH-SPECIFIC-ORDINARY-PIPE-SCORECARD"
+}

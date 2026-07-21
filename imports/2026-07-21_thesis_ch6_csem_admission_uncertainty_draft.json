@@ -1,0 +1,39 @@
+{
+  "task": "TODO-THESIS-CH6-CSEM-ADMISSION-UNCERTAINTY-DRAFT",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer",
+  "objective": "Draft Chapter 6 CSEM closure admission and uncertainty prose from existing evidence only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CH6-CSEM-ADMISSION-UNCERTAINTY-DRAFT.md",
+    ".agent/journal/2026-07-21/thesis-ch6-csem-admission-uncertainty-draft.md",
+    "imports/2026-07-21_thesis_ch6_csem_admission_uncertainty_draft.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/21/2026-07-21_THESIS_CSEM_BOARD_DISPATCH.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    ".agent/BLOCKERS.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_paper_tree_edited": false,
+  "fitting_or_model_selection": false,
+  "admission_state_changed": false,
+  "blocker_register_changed": false,
+  "runtime_leakage_rules_relaxed": false,
+  "no_scorecard_outputs": true
+}

@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-07-13",
+  "task_id": "AGENT-275",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Make the time-series uncertainty-story package easy to find and the reusable builder easy to rerun.",
+  "inputs": [
+    "tools/analyze/build_time_series_uncertainty_story.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/"
+  ],
+  "outputs": [
+    "tools/analyze/build_time_series_uncertainty_story.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/summary.json"
+  ],
+  "documentation_added": [
+    "Start Here section for presentation and paper-method entry points",
+    "Reusable Script section with default, smoke-test, and refreshed-input commands",
+    "Validation commands",
+    "Input Contract section for required AGENT-244-style columns",
+    "Output Contract section naming each generated table",
+    "Task trail in README and summary metadata"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_time_series_uncertainty_story.py tools/analyze/test_time_series_uncertainty_story.py",
+    "python3.11 tools/analyze/test_time_series_uncertainty_story.py",
+    "python3.11 tools/analyze/build_time_series_uncertainty_story.py",
+    "python3.11 -m json.tool imports/2026-07-13_time_series_uncertainty_doc_polish.json"
+  ],
+  "mutations_avoided": [
+    "no_solver_output_mutation",
+    "no_registry_edit",
+    "no_external_model_edit",
+    "no_scheduler_action"
+  ]
+}

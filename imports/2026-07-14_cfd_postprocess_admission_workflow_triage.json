@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-347",
+  "created_at": "2026-07-14T15:30:00-05:00",
+  "kind": "work_product_manifest",
+  "work_product_root": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage",
+  "generated_by": "tools/analyze/build_cfd_postprocess_admission_workflow_triage.py",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "index_refresh_run": false,
+  "index_refresh_note": "Skipped because active AGENT-344 owns .agent/STATE.md, .agent/catalog.json, .agent/catalog.csv, and .agent/BLOCKERS.md.",
+  "inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_steady_state_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_compact_lineage_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/bc_role_label_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/recommended_salt_split.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/stopped_salt2_salt4_pm5q/status_table/selected_corrected_q_status_table.csv",
+    "jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/campaign_manifest.csv",
+    "registry/_all_postprocessing_runs.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/workflow_automation_steps.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/steady_candidate_admission_triage.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/corrected_q_harvest_3295437_processing_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/hiins_loins_construction_review.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/salt2_jin_vs_val_comparison.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/drift_ratio_definition.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3 tools/analyze/build_cfd_postprocess_admission_workflow_triage.py",
+      "status": "passed"
+    },
+    {
+      "command": "python3 -m unittest tools.analyze.test_cfd_postprocess_admission_workflow_triage",
+      "status": "passed"
+    }
+  ]
+}

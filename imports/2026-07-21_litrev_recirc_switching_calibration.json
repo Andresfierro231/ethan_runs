@@ -1,0 +1,51 @@
+{
+  "task": "TODO-LITREV-RECIRCULATION-SWITCHING-CALIBRATION",
+  "task_id": "TODO-LITREV-RECIRCULATION-SWITCHING-CALIBRATION",
+  "date": "2026-07-21",
+  "role": "Hydraulics / Thermal-modeling / Writer",
+  "objective": "Define TAMU-specific recirculation/recovery switching calibration fields and split requirements without selecting thresholds.",
+  "no_scorecard_outputs": true,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-RECIRCULATION-SWITCHING-CALIBRATION.md",
+    ".agent/journal/2026-07-21/litrev-recirculation-switching-calibration.md",
+    "imports/2026-07-21_litrev_recirc_switching_calibration.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/switching_calibration_template.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/switching_training_split_requirements.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/unresolved_threshold_fields.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BLOCKERS.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "operational_notes/maps/thermal-closures-and-internal-nu.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_geometry_source_gap_recovery/geometry_source_gap_recovery.csv"
+  ],
+  "validation": [
+    "python3.11 -c \"import csv,json,pathlib; p=pathlib.Path('work_products/2026-07/2026-07-21/2026-07-21_litrev_recirc_switching_calibration'); assert len(list(csv.DictReader((p/'switching_calibration_template.csv').open())))==7; assert len(list(csv.DictReader((p/'switching_training_split_requirements.csv').open())))==4; assert len(list(csv.DictReader((p/'unresolved_threshold_fields.csv').open())))==6; s=json.loads((p/'summary.json').read_text()); assert s['selected_numeric_thresholds']==0; assert s['admission_status']=='no_admission_change'\""
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": false,
+  "postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_repo_mutated": false,
+  "admission_state_mutated": false,
+  "fitting_tuning_or_model_selection": false,
+  "coefficient_admission_changed": false,
+  "universal_literature_thresholds_imported": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false
+}

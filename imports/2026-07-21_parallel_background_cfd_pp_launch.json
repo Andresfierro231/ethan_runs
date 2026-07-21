@@ -1,0 +1,56 @@
+{
+  "task": "TODO-PARALLEL-BACKGROUND-CFD-PP-LAUNCH-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PARALLEL-BACKGROUND-CFD-PP-LAUNCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/parallel-background-cfd-pp-launch.md",
+    "imports/2026-07-21_parallel_background_cfd_pp_launch.json",
+    "operational_notes/07-26/21/2026-07-21_PARALLEL_BACKGROUND_CFD_PP_LAUNCH.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/**",
+    ".agent/BOARD.md",
+    "AGENT-519 scheduler monitor row",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external ../cfd-modeling-tools/**",
+    "thesis current files",
+    "generated docs index files",
+    "blocker register"
+  ],
+  "background_agents": [
+    {
+      "nickname": "Lovelace",
+      "agent_id": "019f860e-e308-7340-85de-9bcca5625bdf",
+      "task_id": "TODO-SAME-QOI-UQ-PHASE-A-RETAINED-WINDOW-INVENTORY-2026-07-21",
+      "board_owner": "codex-bg-sameqoi-a"
+    },
+    {
+      "nickname": "Ampere",
+      "agent_id": "019f860e-e42d-72c0-ab5c-247df648a500",
+      "task_id": "TODO-FLUID-EXTERNAL-BC-PHASE-B-EXACT-FILE-PREFLIGHT-2026-07-21",
+      "board_owner": "codex-bg-fluid-b"
+    },
+    {
+      "nickname": "Popper",
+      "agent_id": "019f860e-e4a7-7811-9a54-d47f29c29466",
+      "task_id": "AGENT-519-read-only-scout",
+      "board_owner": "none"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_or_harvest_launched": false,
+  "external_fluid_edit": false,
+  "thesis_current_files_edited": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_admission_changed": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "provenance_notes": "Principal-agent launch only. Worker agents own separate board rows; scheduler scout is read-only under existing monitor context."
+}

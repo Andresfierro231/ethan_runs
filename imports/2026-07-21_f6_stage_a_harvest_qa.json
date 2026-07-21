@@ -1,0 +1,52 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-STAGE-A-HARVEST-QA.md",
+    ".agent/journal/2026-07-21/f6-stage-a-harvest-qa.md",
+    "imports/2026-07-21_f6_stage_a_harvest_qa.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/build_f6_stage_a_harvest_qa.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/test_f6_stage_a_harvest_qa.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_face_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_pair_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/medium_fine_consistency.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/qa_gate_status.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/summary.json"
+  ],
+  "date": "2026-07-21",
+  "decision": "stage_a_harvest_qa_complete_all_pairs_recirc_diagnostic_no_admission",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "QA the Stage A F6 endpoint raw-face harvest and classify endpoint pairs without coefficient admission.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/raw_f6_endpoint_face_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/stage_a_endpoint_face_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/logs/slurm-3308082.err"
+  ],
+  "registry_mutated": false,
+  "role": "cfd-pp / Hydraulics / Tester / Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/summary.json",
+  "task": "TODO-F6-STAGE-A-HARVEST-QA",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/build_f6_stage_a_harvest_qa.py",
+      "result": "failed initially due to incorrect repo root parent; fixed and reran"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/build_f6_stage_a_harvest_qa.py",
+      "result": "passed after repair"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/build_f6_stage_a_harvest_qa.py work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/test_f6_stage_a_harvest_qa.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/test_f6_stage_a_harvest_qa.py",
+      "result": "passed: 4 tests"
+    }
+  ]
+}

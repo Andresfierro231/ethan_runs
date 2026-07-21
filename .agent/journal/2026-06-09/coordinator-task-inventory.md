@@ -8,9 +8,9 @@
   - `.agent/BOARD.md`
   - `.agent/FILE_OWNERSHIP.md`
   - `.agent/ROLES.md`
-  - `operational_notes/2026-06-07_todo.md`
-  - `operational_notes/2026-06-08_todo.md`
-  - `operational_notes/2026-06-08_presentation_package_todo.md`
+  - `operational_notes/06-26/07/2026-06-07_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_presentation_package_todo.md`
   - `JOURNAL.md`
   - `reports/2026-06-08_ethan_presentation_figure_package/presentation_takeaways.md`
   - `reports/2026-06-08_sponsor_salt_status_deck/README.md`

@@ -1,0 +1,38 @@
+{
+  "task": "AGENT-421",
+  "date": "2026-07-15",
+  "kind": "agent373_hydraulic_chain_node_verification",
+  "created_by": "codex",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification",
+  "source_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/hydraulic_overnight_chain.py",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap_test_section_complex.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/chain_execution_verification.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/hydraulic_admission_final_decisions.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/final_hydraulic_residual_attribution.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/pm5_matched_pressure_upcomer_evidence_rollup.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/summary.json"
+  ],
+  "summary": {
+    "agent373_stage_logic_rerun": true,
+    "raw_two_tap_rows": 3,
+    "raw_two_tap_diagnostic_admitted_rows": 3,
+    "raw_two_tap_fit_admitted_rows": 0,
+    "f6_review_rows": 12,
+    "f6_fit_admitted_rows": 0,
+    "reset_k_rows": 128,
+    "reset_k_diagnostic_admitted_rows": 128,
+    "pm5_rows": 12,
+    "pm5_wallHeatFlux_rows": 12,
+    "final_hydraulic_residual_status": "blocked_not_final",
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_jobs_launched": false,
+    "external_fluid_modified": false
+  }
+}

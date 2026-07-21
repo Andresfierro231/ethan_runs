@@ -1,0 +1,90 @@
+{
+  "task": "TODO-TWO-TAP-ENDPOINT-RESUBMIT-HARVEST",
+  "date": "2026-07-18",
+  "role": "Hydraulics/cfd-pp/Scheduler/Implementer/Tester/Writer",
+  "objective": "Execute the two-tap corner_lower_right raw endpoint sampler on staged copies only and harvest six raw endpoint rows without fitting F6 or admitting component K.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "submitted one authorized two_tap_ep Slurm resubmission job 3302464; job wrote all six VTK surfaces but exited FAILED 1:0 in the old parser; local harvest succeeded after parser fix",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/blockers.yml",
+    ".agent/status/2026-07-18_TODO-TWO-TAP-ENDPOINT-RESUBMIT-HARVEST.md",
+    ".agent/journal/2026-07-18/two-tap-endpoint-resubmit-harvest.md",
+    "imports/2026-07-18_two_tap_endpoint_resubmit_harvest.json",
+    "tools/analyze/build_two_tap_staged_endpoint_sampler.py",
+    "tools/analyze/test_two_tap_staged_endpoint_sampler.py",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/README.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/RUNNING.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_surface_file_manifest.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/sampler_readiness_or_failure.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/summary.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/run_two_tap_staged_endpoint_sampling.sh",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/submit_two_tap_staged_endpoint_sampling.sbatch",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/slurm-3302464.err",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/salt2_mainline_reconstructPar.log",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/salt2_mainline_foamPostProcess.log",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/salt3_mainline_reconstructPar.log",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/salt3_mainline_foamPostProcess.log",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/salt4_mainline_reconstructPar.log",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/logs/salt4_mainline_foamPostProcess.log",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/**",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/**"
+  ],
+  "validation": [
+    {
+      "command": "bash -n work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/run_two_tap_staged_endpoint_sampling.sh",
+      "result": "passed"
+    },
+    {
+      "command": "bash -n work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/submit_two_tap_staged_endpoint_sampling.sbatch",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_two_tap_staged_endpoint_sampler",
+      "result": "passed: 7 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_two_tap_staged_endpoint_sampler.py --harvest --record-job-id 3302464",
+      "result": "passed: raw_sampled_rows=6 raw_missing_rows=0"
+    },
+    {
+      "command": "sacct -j 3302464 --format=JobID,JobName,Partition,State,ExitCode,Elapsed,NodeList",
+      "result": "job 3302464 reported FAILED 1:0 after writing all six endpoint VTK surfaces; old in-job parser failure recorded"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK with 12 entries; generated index files were not refreshed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": true,
+    "scheduler_jobs_submitted": [
+      "3302464"
+    ],
+    "fluid_or_external_repo_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "endpoint_pressure_invented": false
+  },
+  "resolved_blockers": [
+    "two-tap-raw-endpoint-sampling-pending"
+  ],
+  "unresolved_blockers": [
+    "Pressure/velocity basis audit is not yet performed.",
+    "Straight-reference/component isolation, same-QOI UQ, F6 governance, and component-K admission remain future tasks after raw sample review."
+  ]
+}

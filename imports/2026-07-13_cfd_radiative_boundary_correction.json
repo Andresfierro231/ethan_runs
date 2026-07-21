@@ -1,0 +1,63 @@
+{
+  "task": "AGENT-287",
+  "created_at": "2026-07-13T15:37:07-0500",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "description": "Correct authoritative CFD thermal-boundary documentation to state that Ethan Salt CFD rcExternalTemperature uses emissivity/Tsur in realized wallHeatFlux, summarize emissivity/Tsur by admitted run, and warn 1D agents not to treat radiation-off replay as CFD parity.",
+  "source_scope": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/publication_evidence_decision.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/wallHeatFlux_delta_summary.csv",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md",
+    ".agent/DECISIONS.md"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/cfd_emissivity_by_run.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/radiation_guidance_decision.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/source_index.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/run_metadata.json",
+    "operational_notes/07-26/13/2026-07-13_cfd_radiative_boundary_correction.md"
+  ],
+  "additive_edits": [
+    ".agent/DECISIONS.md",
+    ".agent/BOARD.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md",
+    "tools/analyze/run_cfd_bc_no_radiation_1d_parity.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/run_metadata.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/cfd_boundary_condition_contract_no_radiation.csv",
+    "imports/2026-07-13_cfd_bc_no_radiation_1d_parity.json"
+  ],
+  "scripts": [
+    "tools/analyze/build_cfd_radiative_boundary_guidance.py",
+    "tools/analyze/test_cfd_radiative_boundary_guidance.py",
+    "tools/analyze/run_cfd_bc_no_radiation_1d_parity.py"
+  ],
+  "decision": {
+    "cfd_radiative_exchange_status": "present_in_rcExternalTemperature_inseparable_from_wallHeatFlux",
+    "separate_radiation_output_available": "no",
+    "salt_2_emissivity": 0.95,
+    "salt_2_Tsur_K": 299.19,
+    "salt_3_emissivity": 0.95,
+    "salt_3_Tsur_K": 299.79,
+    "salt_4_emissivity": 0.95,
+    "salt_4_Tsur_K": 299.97,
+    "one_d_agent_instruction": "Do not call radiation-off replay CFD parity; do not double-count radiation when using CFD wallHeatFlux; predictive 1D should include radiative external-loss capability or label radiation-off as sensitivity."
+  },
+  "validation": {
+    "commands": [
+      "python tools/analyze/build_cfd_radiative_boundary_guidance.py",
+      "pytest -q tools/analyze/test_cfd_radiative_boundary_guidance.py",
+      "python -m py_compile tools/analyze/run_cfd_bc_no_radiation_1d_parity.py tools/analyze/test_cfd_bc_no_radiation_1d_parity.py tools/analyze/build_cfd_radiative_boundary_guidance.py tools/analyze/test_cfd_radiative_boundary_guidance.py",
+      "python tools/analyze/test_cfd_bc_no_radiation_1d_parity.py",
+      "python tools/analyze/run_cfd_bc_no_radiation_1d_parity.py --strict",
+      "python -m json.tool imports/2026-07-13_cfd_bc_no_radiation_1d_parity.json",
+      "python -m json.tool work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/radiation_guidance_decision.json"
+    ],
+    "result": "passed",
+    "focused_tests_passed": 7
+  },
+  "native_solver_outputs_modified": false,
+  "external_fluid_source_modified": false,
+  "registry_modified": false
+}

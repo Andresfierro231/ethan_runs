@@ -1,0 +1,35 @@
+{
+  "task": "AGENT-414",
+  "date": "2026-07-15",
+  "type": "downstream_supersession_refresh",
+  "workspace": "projects_scratch/ethan_runs",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh",
+  "native_solver_outputs_mutated": false,
+  "scheduler_jobs_launched": false,
+  "registry_or_admission_mutated": false,
+  "external_fluid_modified": false,
+  "active_agent413_mutated": false,
+  "source_inputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/internal_nu_fit_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/summary.json"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/downstream_pm5_refresh_matrix.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/internal_nu_pm5_row_readiness.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_review_protocol.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/internal_nu_review_protocol.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/summary.json"
+  ],
+  "result": {
+    "stale_downstream_rows": 4,
+    "pm5_rows": 12,
+    "pm5_wallHeatFlux_rows": 12,
+    "f6_fit_candidate_rows": 0,
+    "internal_nu_fit_candidate_rows": 0
+  }
+}

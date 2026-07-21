@@ -1,0 +1,63 @@
+{
+  "task": "TODO-FLUID-EXTERNAL-BC-PHASE-F-S12-HIAX1-TRAIN-SCORE-2026-07-21",
+  "task_id": "TODO-FLUID-EXTERNAL-BC-PHASE-F-S12-HIAX1-TRAIN-SCORE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Build a train-only S12-HIAX1 score-gate package from legal train-only Phase E Fluid evidence without validation, holdout, external-test, freeze, or admission.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-EXTERNAL-BC-PHASE-F-S12-HIAX1-TRAIN-SCORE-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-external-bc-phase-f-s12-hiax1-train-score.md",
+    "imports/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/build_phase_f_s12_hiax1_train_score.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/check_phase_f_s12_hiax1_train_score.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/finite_train_metric_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/train_residual_detail.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/s12_hiax1_train_score_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/split_consumption_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/freeze_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/README.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_train_only_external_bc_attribution_freeze_gate/**",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    ".agent/BOARD.md"
+  ],
+  "summary": {
+    "candidate_id": "S12-HIAX1",
+    "finite_train_metrics_available": true,
+    "s12_candidate_itself_scored": false,
+    "frozen_candidate": false,
+    "predicted_mdot_kg_s": 0.00626567502343775,
+    "reference_mdot_kg_s": 0.0168,
+    "residual_mdot_kg_s": -0.010534324976562249,
+    "pressure_residual_Pa": -1.3016870923365786e-06,
+    "tp_rmse_K": 80.4585733904668,
+    "tw_rmse_K": 84.64865165641251,
+    "all_probe_rmse_K": 83.36187927489736
+  },
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "validation_rows_consumed": 0,
+    "holdout_rows_consumed": 0,
+    "external_test_rows_consumed": 0,
+    "candidate_freeze": false,
+    "source_property_release": false
+  }
+}

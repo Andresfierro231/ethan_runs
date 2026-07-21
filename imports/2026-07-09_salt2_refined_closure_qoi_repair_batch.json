@@ -1,0 +1,59 @@
+{
+  "id": "2026-07-09_salt2_refined_closure_qoi_repair_batch",
+  "task_id": "AGENT-245",
+  "created_at": "2026-07-09T17:47:30-05:00",
+  "purpose": "Submit a 2026-07-09 21:00 CDT Slurm batch job to rerun Salt2 medium/fine closure-QOI extraction with repaired hard gates after AGENT-239 produced no section samples.",
+  "source_cases": [
+    {
+      "level": "medium",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "time_s": "518",
+      "processor_dir": "processors64"
+    },
+    {
+      "level": "fine",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "time_s": "399",
+      "processor_dir": "processors128"
+    }
+  ],
+  "profile_source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "work_product": "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch",
+  "scripts": [
+    "tools/analyze/build_salt2_refined_closure_qoi_repair_batch.py",
+    "tools/analyze/test_salt2_refined_closure_qoi_repair_batch.py",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/scripts/run_repair_extraction.sh",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/scripts/sbatch_repair_extraction_9pm.sh"
+  ],
+  "submitted_batch_job": {
+    "job_id": "3287580",
+    "scheduled_start": "2026-07-09T21:00:00",
+    "state_after_submit": "PENDING",
+    "pending_reason": "BeginTime",
+    "name": "agent245_salt2_qoi",
+    "final_state": "FAILED",
+    "exit_code": "1:0",
+    "elapsed": "00:03:05",
+    "node": "c318-018",
+    "failure_summary": "Medium section sampling failed while OpenFOAM 13 foamPostProcess read corrupted reconstructed T at 518; the hard gate stopped before friction/GCI products."
+  },
+  "hard_gates": [
+    "foamPostProcess log must report Version: 13",
+    "section JSON must contain at least one sampled station row",
+    "segment_friction.csv must contain data rows",
+    "momentum_budget.csv must contain data rows",
+    "thermal CSV must contain at least one non-blocked non-no_cutplane_output row"
+  ],
+  "policies": {
+    "source_cases_read_only": true,
+    "closure_observations_updated": false,
+    "registry_updated": false,
+    "native_solver_outputs_mutated": false
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_salt2_refined_closure_qoi_repair_batch.py tools/analyze/test_salt2_refined_closure_qoi_repair_batch.py",
+    "python3.11 -c \"import tools.analyze.test_salt2_refined_closure_qoi_repair_batch as t; t.test_generator_contract(); print('manual assertions passed')\"",
+    "bash -n work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/scripts/run_repair_extraction.sh",
+    "bash -n work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/scripts/sbatch_repair_extraction_9pm.sh"
+  ]
+}

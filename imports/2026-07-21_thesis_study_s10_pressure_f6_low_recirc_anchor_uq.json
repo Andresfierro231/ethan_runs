@@ -1,0 +1,36 @@
+{
+  "task": "TODO-THESIS-STUDY-S10-PRESSURE-F6-LOW-RECIRC-ANCHOR-UQ-2026-07-21",
+  "task_id": "TODO-THESIS-STUDY-S10-PRESSURE-F6-LOW-RECIRC-ANCHOR-UQ-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S10-PRESSURE-F6-LOW-RECIRC-ANCHOR-UQ-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s10-pressure-f6-low-recirc-anchor-uq.md",
+    "imports/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq.json"
+  ],
+  "read_only_context": [
+    "tools/analyze/build_thesis_study_s10_pressure_f6_low_recirc_anchor_uq.py",
+    "tools/analyze/test_thesis_study_s10_pressure_f6_low_recirc_anchor_uq.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_candidate_admission_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_gate_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s11_unblock_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_refreshed": false,
+  "thesis_chapters_or_figure_assets_mutated": false,
+  "result": {
+    "admitted_candidate_rows": 0,
+    "s11_ready_candidates": 0,
+    "component_k_admitted_rows": 0,
+    "cluster_k_admitted_rows": 0,
+    "f6_fit_rows": 0,
+    "clipped_k_rows": 0,
+    "hidden_global_multiplier_rows": 0
+  }
+}

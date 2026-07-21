@@ -1,0 +1,79 @@
+{
+  "task": "TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE",
+  "task_id": "TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE",
+  "date": "2026-07-21",
+  "role": "Thermal-modeling/cfd-pp/Tester/Writer",
+  "objective": "Improve heat-loss evidence splitting before model-form scoring by publishing junction/stub family rows, heat-path evidence, residual owners, and a missing-field queue from existing ledgers.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE.md",
+    ".agent/journal/2026-07-21/heatloss-phase-2-split-heat-loss-evidence.md",
+    "imports/2026-07-21_heatloss_phase_2_split_heat_loss_evidence.json",
+    "tools/analyze/build_heatloss_phase2_split_heat_loss_evidence.py",
+    "tools/analyze/test_heatloss_phase2_split_heat_loss_evidence.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/split_junction_stub_heat_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/heat_path_evidence_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/runtime_legality_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/summary.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/resistance_network_terms.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/junction_heat_loss_trends.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/external_bc_segment_role_audit.csv",
+    "operational_notes/maps/thermal-boundary-and-radiation.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "model_scoring": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": true,
+  "no_scorecard_outputs": true,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_heatloss_phase2_split_heat_loss_evidence.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_heatloss_phase2_split_heat_loss_evidence.py tools/analyze/test_heatloss_phase2_split_heat_loss_evidence.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_heatloss_phase2_split_heat_loss_evidence",
+      "result": "passed; 6 tests"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence",
+      "result": "passed"
+    },
+    {
+      "command": "structural CSV/JSON artifact check",
+      "result": "passed; 6 CSV files plus summary.json"
+    }
+  ]
+}

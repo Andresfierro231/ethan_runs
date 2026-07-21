@@ -1,0 +1,35 @@
+{
+  "task": "AGENT-478",
+  "date": "2026-07-16",
+  "status": "complete",
+  "work_product": "work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design",
+  "created_paths": [
+    "tools/analyze/build_recirculation_cfd_anchor_study_design.py",
+    "tools/analyze/test_recirculation_cfd_anchor_study_design.py",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/",
+    ".agent/status/2026-07-16_AGENT-478.md",
+    ".agent/journal/2026-07-16/recirculation-cfd-anchor-study-design.md"
+  ],
+  "source_paths": [
+    "operational_notes/07-26/01/2026-07-01_MASTER_TODO_1d_closures.md",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/decision_note.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv",
+    ".agent/status/2026-07-16_AGENT-471.md",
+    ".agent/status/2026-07-16_AGENT-475.md"
+  ],
+  "summary": {
+    "proposed_rows": 11,
+    "sentinel_rows": 2,
+    "matrix_rows": 9,
+    "salt_anchor": "salt3_jin",
+    "scheduler_action": "none",
+    "case_staging": "none"
+  },
+  "guardrails": {
+    "native_output_mutation": "none",
+    "registry_mutation": "none",
+    "scheduler_action": "none",
+    "external_fluid_mutation": "none"
+  }
+}

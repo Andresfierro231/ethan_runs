@@ -1,0 +1,37 @@
+{
+  "task": "AGENT-420",
+  "date": "2026-07-15",
+  "kind": "mdot_temperature_error_report_and_presentation",
+  "created_by": "codex",
+  "source_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/paper_ready_report.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/model_mode_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/mdot_error_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/temperature_probe_error_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/trend_conclusion_register.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/model_config_appendix"
+  ],
+  "generated_outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/mdot_temperature_error_report.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/presentation_outline.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/boundary_mode_performance_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/case_mode_error_table.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/key_findings_for_paper.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/suggested_figure_plan.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation/summary.json"
+  ],
+  "summary": {
+    "boundary_mode_rows": 4,
+    "case_mode_rows": 9,
+    "key_findings": 6,
+    "figure_plan_rows": 6,
+    "slide_count": 12,
+    "native_cfd_outputs_mutated": false,
+    "external_cfd_modeling_tools_mutated": false,
+    "scheduler_state_mutated": false,
+    "registry_or_admission_state_mutated": false
+  }
+}

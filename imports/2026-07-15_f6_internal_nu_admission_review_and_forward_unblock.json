@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-425",
+  "date": "2026-07-15",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "created_by": "codex",
+  "output_root": "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock",
+  "generator": "tools/analyze/build_f6_internal_nu_admission_review_and_forward_unblock.py",
+  "test_file": "tools/analyze/test_f6_internal_nu_admission_review_and_forward_unblock.py",
+  "inputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/pm5_f6_admission_readiness.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/thermal_internal_nu_admission_review.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/internal_nu_pm5_row_readiness.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/hydraulic_admission_final_decisions.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_fit_candidate_table.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/internal_nu_h_proxy_review.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/thermal_sign_heat_balance_gate.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/internal_nu_admission_decision.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/final_forward_v1_unblock_requirements.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/summary.json"
+  ],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "scheduler_mutated": false,
+    "registry_or_admission_mutated": false,
+    "generated_index_refreshed": false,
+    "external_fluid_mutated": false
+  },
+  "validation": [
+    "python3.11 -m unittest tools.analyze.test_f6_internal_nu_admission_review_and_forward_unblock",
+    "python3.11 -m py_compile tools/analyze/build_f6_internal_nu_admission_review_and_forward_unblock.py tools/analyze/test_f6_internal_nu_admission_review_and_forward_unblock.py",
+    "python3.11 tools/analyze/build_f6_internal_nu_admission_review_and_forward_unblock.py"
+  ]
+}

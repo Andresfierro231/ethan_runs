@@ -1,0 +1,46 @@
+{
+  "task_id": "AGENT-270",
+  "created_date": "2026-07-13",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "artifact_type": "repo_local_predictive_heat_loss_path_package",
+  "output_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path",
+  "builder": "tools/analyze/build_predictive_heat_loss_path.py",
+  "tests": "tools/analyze/test_predictive_heat_loss_path.py",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_mismatch_remedy_deep_dive/fixed_mdot_replay_results.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_mismatch_remedy_deep_dive/remedy_path_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/combined_openfoam_interface_samples.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_thermal_downcomer/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_thermal_downcomer/segment_htc_uaprime_viscosity_screening_salt_test_3_jin_coarse_mesh.csv",
+    "work_products/2026-07/2026-07-01/2026-07-01_claude_thermal_downcomer/segment_htc_uaprime_viscosity_screening_salt_test_4_jin_coarse_mesh.csv"
+  ],
+  "generated_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/control_volume_effective_thermal_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/cooler_hx_duty_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/one_d_replay_mode_scores.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/fit_parameter_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/heldout_validation_scores.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/uncertainty_readiness.csv"
+  ],
+  "summary": {
+    "control_volume_rows": 15,
+    "cooler_hx_rows": 3,
+    "one_d_replay_score_rows": 15,
+    "baseline_mean_abs_Tmean_error_K": 63.746,
+    "cooler_duty_parity_mean_abs_Tmean_error_K": 4.456,
+    "cooler_duty_mean_abs_error_reduction_pct": 93.009,
+    "fit_candidate_control_volume_rows": 0,
+    "thermal_closure_admission_decision": "no_new_admission_changes"
+  },
+  "provenance_notes": [
+    "All source solver outputs and prior work-product packages were treated as read-only.",
+    "No Fluid or external cfd-modeling-tools files were edited.",
+    "The package separates CFD effective Nu/HTC as postprocessed diagnostics from the predictive 1D resistance-network model.",
+    "Thermal closure remains blocked for fit admission pending clean thermal reconstruction/decomposed sampling, radiation handling, time-window checks, and mesh uncertainty."
+  ]
+}

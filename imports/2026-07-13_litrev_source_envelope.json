@@ -1,0 +1,31 @@
+{
+  "task_id": "TODO-LITREV-SOURCE-ENVELOPE",
+  "date": "2026-07-13",
+  "created_by": "codex",
+  "manifest_type": "analysis_package",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope",
+  "script": "tools/analyze/build_litrev_source_envelope_table.py",
+  "test": "tools/analyze/test_litrev_source_envelope_table.py",
+  "primary_outputs": [
+    "branch_source_envelope.csv",
+    "source_overlap_flags.csv",
+    "validation_report.json",
+    "summary.json",
+    "README.md"
+  ],
+  "source_inputs": [
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways",
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/control_volume_effective_thermal_table.csv",
+    "/scratch/09748/andresfierro231/projects_scratch/papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/correlation_table.csv"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/test_litrev_source_envelope_table.py",
+    "python3.11 tools/analyze/build_litrev_source_envelope_table.py"
+  ],
+  "boundaries": [
+    "No native solver outputs were modified.",
+    "No new OpenFOAM extraction was performed.",
+    "Source literature-review repository was read-only."
+  ]
+}

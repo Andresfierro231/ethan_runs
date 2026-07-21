@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-09",
+  "task_id": "AGENT-229",
+  "role": "Writer",
+  "package": "reports/2026-07/2026-07-09/2026-07-09_friction_correlation_math_reference",
+  "purpose": "Document thesis-facing friction-correlation equations, coefficients, implementation status, and limitations for F1, F3 Hagenbach, F3 Shah apparent, F4 leg-class, and the diagnostic Ri-F4 candidate.",
+  "source_files": [
+    {
+      "path": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+      "role": "primary implementation",
+      "read_only": true
+    },
+    {
+      "path": "work_products/2026-07/2026-07-07/2026-07-07_f_lit_forms/README.md",
+      "role": "F1/F3 literature-form documentation",
+      "read_only": true
+    },
+    {
+      "path": "work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/README.md",
+      "role": "loop-level F1/F3/F4 mdot comparison evidence",
+      "read_only": true
+    },
+    {
+      "path": "work_products/2026-07/2026-07-07/2026-07-07_f4_buoyancy_friction/README.md",
+      "role": "F4 leg-class calibration documentation",
+      "read_only": true
+    },
+    {
+      "path": "work_products/2026-07/2026-07-07/2026-07-07_f4_ri_calibration_and_solver_gate/f4_candidate_fit_report.md",
+      "role": "diagnostic Ri-F4 candidate report",
+      "read_only": true
+    },
+    {
+      "path": "operational_notes/07-26/08/2026-07-08_claude_literature_closure_fit_rigor_review.md",
+      "role": "scientific rigor status and thesis/paper caution",
+      "read_only": true
+    },
+    {
+      "path": "journals/2026-07/2026-07-09_ethan_runs.md",
+      "role": "current dated journal context",
+      "read_only": true
+    }
+  ],
+  "outputs": [
+    "reports/2026-07/2026-07-09/2026-07-09_friction_correlation_math_reference/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_friction_correlation_math_reference/slide_equation_block.md"
+  ],
+  "solver_outputs_modified": false,
+  "external_code_modified": false,
+  "notes": [
+    "This package summarizes existing implementation and evidence only.",
+    "No new fitting, CFD extraction, OpenFOAM sampling, or solver replay was performed.",
+    "F4_leg_class is documented as implemented but provisional; the Ri-F4 candidate is documented as diagnostic-only."
+  ]
+}

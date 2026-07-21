@@ -1,0 +1,105 @@
+{
+  "task": "TODO-PRESSURE-F6-LOW-RECIRC-SOURCE-READINESS-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / cfd-pp / Tester / Writer",
+  "status": "complete",
+  "objective": "Refresh F6 low-recirculation source readiness from existing evidence and decide whether any terminal ordinary-flow candidate can justify a later staged-copy sampler/UQ row.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_case_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/endpoint_field_availability.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_decision_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/f6_gate_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/summary.json",
+    "read-only scheduler/accounting state for jobs 3299610 and 3299620",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree and external repos",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-PRESSURE-F6-LOW-RECIRC-SOURCE-READINESS-2026-07-21.md",
+    ".agent/journal/2026-07-21/pressure-f6-low-recirc-source-readiness.md",
+    "imports/2026-07-21_pressure_f6_low_recirc_source_readiness.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/build_pressure_f6_low_recirc_source_readiness.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/test_pressure_f6_low_recirc_source_readiness.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/candidate_terminal_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/source_case_readiness_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/endpoint_field_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/ordinary_flow_evidence_inventory.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/sampler_go_no_go.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/next_task_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/source_manifest.csv"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/summary.json",
+    "candidate_terminal_refresh": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/candidate_terminal_refresh.csv",
+    "sampler_go_no_go": "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/sampler_go_no_go.csv"
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-PRESSURE-F6-LOW-RECIRC-SOURCE-READINESS-2026-07-21",
+      "result": "passed before package edits"
+    },
+    {
+      "command": "squeue -j 3299610; sacct -j 3299610 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList -P",
+      "result": "3299610 absent from squeue and TIMEOUT in sacct"
+    },
+    {
+      "command": "squeue -j 3299620; sacct -j 3299620 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList -P",
+      "result": "3299620 RUNNING with foamRun steps RUNNING"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/build_pressure_f6_low_recirc_source_readiness.py work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/test_pressure_f6_low_recirc_source_readiness.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/test_pressure_f6_low_recirc_source_readiness.py",
+      "result": "passed: Ran 5 tests in 0.444s OK"
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "solver_or_postprocessing_or_sampler_launched": false,
+    "fluid_or_external_repo_edited": false,
+    "blocker_register_mutated": false,
+    "generated_index_mutation": false,
+    "fitting_or_model_selection": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "cluster_k_admitted": false,
+    "clipped_k": false,
+    "global_multiplier_applied": false
+  },
+  "scientific_result": {
+    "decision": "sampler_no_go_no_admission",
+    "preferred_candidate_id": "CAND-001",
+    "terminal_ready_cases": 0,
+    "endpoint_fields_ready": 0,
+    "ordinary_candidate_pairs": 0,
+    "endpoint_pair_rows": 10,
+    "scheduler_observation": {
+      "3299610": "TIMEOUT",
+      "3299620": "RUNNING"
+    },
+    "s13_uq_design_complete": true,
+    "s13_uq_release_allowed": false,
+    "s13_sampler_or_harvest_allowed": false,
+    "next_action": "monitor 3299620 to terminal state and review 3299610 timeout before claiming any staged-copy F6 sampler"
+  }
+}

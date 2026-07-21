@@ -1,0 +1,34 @@
+{
+  "task": "AGENT-308",
+  "date": "2026-07-13",
+  "type": "analysis",
+  "status": "complete",
+  "description": "Bounded ethan_runs-only H1 proxy rerun using Salt2 train finite fit-target named-loss K_local rows as an aggregate fixed-K Fluid MinorLosses screen.",
+  "source_context": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_parallel_execution_coordination/h1_feasibility_notes.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/decision_summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "tools/analyze/run_predictive_forward_v0_imposed_cooler.py"
+  ],
+  "created_outputs": [
+    "tools/analyze/run_predictive_h1_proxy_rerun.py",
+    "tools/analyze/test_predictive_h1_proxy_rerun.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_run_plan.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_variant_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_k_source.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/summary.json"
+  ],
+  "tests_run": [
+    "python3 -m py_compile tools/analyze/run_predictive_h1_proxy_rerun.py tools/analyze/test_predictive_h1_proxy_rerun.py",
+    "python3 -m unittest tools.analyze.test_predictive_h1_proxy_rerun",
+    "python3 tools/analyze/run_predictive_h1_proxy_rerun.py",
+    "python3 tools/docs/build_repo_index.py",
+    "python3 tools/docs/build_repo_index.py --check"
+  ],
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "thermal_fit_used": false,
+  "publication_closure_allowed": false
+}

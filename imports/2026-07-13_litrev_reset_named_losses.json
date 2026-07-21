@@ -1,0 +1,29 @@
+{
+  "task_id": "TODO-LITREV-RESET-NAMED-LOSSES",
+  "date": "2026-07-13",
+  "created_by": "codex",
+  "manifest_type": "analysis_package",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses",
+  "script": "tools/analyze/build_litrev_reset_named_losses.py",
+  "test": "tools/analyze/test_litrev_reset_named_losses.py",
+  "primary_outputs": [
+    "reset_distance_map.csv",
+    "named_pressure_loss_table.csv",
+    "validation_report.json",
+    "summary.json",
+    "README.md"
+  ],
+  "source_inputs": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/test_litrev_reset_named_losses.py",
+    "python3.11 tools/analyze/build_litrev_reset_named_losses.py"
+  ],
+  "boundaries": [
+    "No global friction multiplier was recommended.",
+    "Tap length limitations remain explicit where inherited from preserved two-tap reductions."
+  ]
+}

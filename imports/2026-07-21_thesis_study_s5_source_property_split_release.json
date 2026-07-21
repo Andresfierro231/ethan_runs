@@ -1,0 +1,72 @@
+{
+  "task": "TODO-THESIS-STUDY-S5-SOURCE-PROPERTY-SPLIT-RELEASE-2026-07-21",
+  "task_id": "TODO-THESIS-STUDY-S5-SOURCE-PROPERTY-SPLIT-RELEASE-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Reviewer/Tester/Writer",
+  "objective": "Audit source/property labels and split permissions before any final fit, model-selection, or scorecard release.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-STUDY-S5-SOURCE-PROPERTY-SPLIT-RELEASE-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-study-s5-source-property-split-release.md",
+    "imports/2026-07-21_thesis_study_s5_source_property_split_release.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/build_s5_source_property_split_release.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/check_s5_source_property_split_release.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/source_property_release_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/split_use_permissions.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/fit_model_selection_flag_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/holdout_external_protection_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/release_blocker_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/source_property_label_gate_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/source_property_enforced_fit_admission_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "staged_copy_or_extraction_launched": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "rows_released_for_fit": 0,
+  "rows_released_for_model_selection": 0,
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/build_s5_source_property_split_release.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/build_s5_source_property_split_release.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/check_s5_source_property_split_release.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/check_s5_source_property_split_release.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release",
+      "result": "passed"
+    }
+  ]
+}

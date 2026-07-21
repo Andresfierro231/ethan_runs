@@ -1,0 +1,50 @@
+{
+  "generated_at": "2026-07-01T16:08:00-05:00",
+  "package": "2026-07-01_local_1d_closure_bakeoff_refresh",
+  "inputs": {
+    "frozen_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_results",
+    "baseline_status_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_results/one_d_readable_status.csv",
+    "frozen_state_contract": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_results/frozen_state_contract.csv",
+    "closure_bundle_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-26_ethan_cfd_closure_bundle"
+  },
+  "outputs": {
+    "report_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh",
+    "baseline_surface_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/baseline_full_surface",
+    "defended_surface_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/defended_full_coverage_surface",
+    "surface_summary_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/surface_summary.csv",
+    "dated_representative_validation_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_representative_salt_last_window_validation_table.csv",
+    "dated_heater_partition_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_representative_salt_heater_partition.csv",
+    "dated_setup_markdown": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_one_d_setup_and_confidence.md",
+    "closure_term_reference_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/closure_term_reference.csv",
+    "closure_branch_policy_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/closure_branch_policy.csv",
+    "scenario_bundle_alignment_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/scenario_bundle_alignment.csv"
+  },
+  "surface_rows": [
+    {
+      "surface_label": "baseline_full_surface",
+      "surface_dir": "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/baseline_full_surface",
+      "scenario_count_primary": 6,
+      "best_primary_scenario": "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1",
+      "best_primary_composite_rank": 1.0,
+      "best_primary_composite_score": 0.6294276289902812,
+      "best_primary_mean_energy_error_pct_of_heater": 11.274319964365688,
+      "best_primary_mean_tw_rmse_k": 62.78650266020921,
+      "best_primary_mean_tp_rmse_k": 62.69252440281759,
+      "best_primary_mean_mass_flow_relative_error_pct_vs_cfd": 26.690955464130884,
+      "all_rows_accepted_for_validation": "True"
+    },
+    {
+      "surface_label": "defended_full_coverage_surface",
+      "surface_dir": "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/defended_full_coverage_surface",
+      "scenario_count_primary": 1,
+      "best_primary_scenario": "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1",
+      "best_primary_composite_rank": 1.0,
+      "best_primary_composite_score": 1.0,
+      "best_primary_mean_energy_error_pct_of_heater": 11.274319964365688,
+      "best_primary_mean_tw_rmse_k": 62.78650266020921,
+      "best_primary_mean_tp_rmse_k": 62.69252440281759,
+      "best_primary_mean_mass_flow_relative_error_pct_vs_cfd": 26.690955464130884,
+      "all_rows_accepted_for_validation": "True"
+    }
+  ]
+}

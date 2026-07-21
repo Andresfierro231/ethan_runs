@@ -1,0 +1,40 @@
+{
+  "manifest_type": "documentation_update",
+  "task": "AGENT-504",
+  "date": "2026-07-17",
+  "role": "Coordinator/Writer",
+  "objective": "Add a current thesis/paper section comparing segment-only, junction-aware, and hybrid upcomer ledgers for structured losses.",
+  "created": [
+    "reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+    ".agent/status/2026-07-17_AGENT-504.md",
+    ".agent/journal/2026-07-17/junction-aware-ledgers-thesis-section.md",
+    "imports/2026-07-17_junction_aware_ledgers_thesis_section.json"
+  ],
+  "updated": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md"
+  ],
+  "evidence_sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_heat_ledger_and_model_gate.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/scientific_review.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/README.md"
+  ],
+  "validation": [
+    "rg -n \"05_junction_aware_ledgers|40.926087|40.93|negative local K|0.*fit-admitted|four\" reports/thesis_dossier .agent/BOARD.md",
+    "python3.11 -c \"import json; json.load(open('imports/2026-07-17_junction_aware_ledgers_thesis_section.json')); print('json ok')\""
+  ],
+  "guardrails": [
+    "No native CFD outputs were mutated.",
+    "No registry or admission state was changed.",
+    "No scheduler action or solver/postprocessing launch was performed.",
+    "No generated documentation index refresh was run.",
+    "No external Fluid files were edited.",
+    "No new scientific admission claim was made."
+  ]
+}

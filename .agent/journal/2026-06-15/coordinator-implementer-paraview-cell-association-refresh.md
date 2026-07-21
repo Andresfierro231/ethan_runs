@@ -12,8 +12,8 @@
   - `README.md`
   - `tools/AGENTS.override.md`
   - `staging/AGENTS.override.md`
-  - `operational_notes/2026-06-07_todo.md`
-  - `operational_notes/2026-06-07_runtime_operator_reference.md`
+  - `operational_notes/06-26/07/2026-06-07_todo.md`
+  - `operational_notes/06-26/07/2026-06-07_runtime_operator_reference.md`
   - `tools/extract/render_last_timestep_temperature_slices.py`
   - `tools/extract/render_last_timestep_field_slices.py`
   - `tools/extract/render_field_figures.py`
@@ -43,8 +43,8 @@
   - `sed -n '1,220p' README.md`
   - `sed -n '1,220p' tools/AGENTS.override.md`
   - `sed -n '1,220p' staging/AGENTS.override.md`
-  - `sed -n '1,220p' operational_notes/2026-06-07_todo.md`
-  - `sed -n '1,220p' operational_notes/2026-06-07_runtime_operator_reference.md`
+  - `sed -n '1,220p' operational_notes/06-26/07/2026-06-07_todo.md`
+  - `sed -n '1,220p' operational_notes/06-26/07/2026-06-07_runtime_operator_reference.md`
   - `sed -n '1,260p' tools/extract/render_last_timestep_temperature_slices.py`
   - `sed -n '1,260p' tools/extract/render_last_timestep_field_slices.py`
   - `sed -n '1,260p' tools/extract/render_field_figures.py`

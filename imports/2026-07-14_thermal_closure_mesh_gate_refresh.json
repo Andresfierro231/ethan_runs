@@ -1,0 +1,61 @@
+{
+  "task_id": "AGENT-309",
+  "created_at": "2026-07-14T11:10:54-05:00",
+  "kind": "thermal_closure_mesh_gate_refresh",
+  "title": "Salt2 thermal and closure QOI mesh gate refresh after coarse thermal smoke",
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "case_id": "salt_2",
+  "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "inputs": {
+    "coarse_segment_csv": "work_products/2026-07/2026-07-13/2026-07-13_salt2_coarse_thermal_repair_smoke/outputs/coarse/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "medium_segment_csv": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/medium/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "fine_segment_csv": "work_products/2026-07/2026-07-13/2026-07-13_salt2_fine_reconstructed_t_repair_plan_sbatch/repair_trial_output/outputs/fine/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+    "coarse_summary": "work_products/2026-07/2026-07-13/2026-07-13_salt2_coarse_thermal_repair_smoke/summary.json",
+    "medium_summary": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/summary.json",
+    "fine_summary": "work_products/2026-07/2026-07-13/2026-07-13_salt2_fine_reconstructed_t_repair_plan_sbatch/repair_trial_output/summary.json",
+    "prior_closure_gci_package": "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci",
+    "enthalpy_source": "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+    "sign_review_source": "work_products/2026-07/2026-07-13/2026-07-13_thermal_sign_enthalpy_review/thermal_sign_enthalpy_review.csv",
+    "boundary_segment_source": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv"
+  },
+  "output_package": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh",
+  "outputs": {
+    "readme": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/README.md",
+    "summary": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/summary.json",
+    "qoi_status": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/refreshed_qoi_mesh_gate_status.csv",
+    "thermal_qois": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_mesh_gate_qois.csv",
+    "thermal_admission_table": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv",
+    "thermal_admission_memo": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_memo.md",
+    "sign_convention_table": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/sign_convention_table.csv"
+  },
+  "scripts": [
+    "tools/analyze/build_thermal_mesh_gate.py",
+    "tools/analyze/test_thermal_mesh_gate.py"
+  ],
+  "result": {
+    "unified_qoi_row_count": 25,
+    "thermal_qoi_row_count": 7,
+    "closure_qoi_row_count": 18,
+    "complete_triplet_count": 19,
+    "publication_ready_count": 0,
+    "fit_admissible_thermal_count": 0,
+    "admission_row_count": 16,
+    "fit_admissible_admission_count": 0,
+    "admission_class_counts": {
+      "blocked": 5,
+      "validation_only": 11
+    },
+    "classification_counts": {
+      "publication-ready GCI": 0,
+      "diagnostic-only": 0,
+      "blocked-sign-review": 5,
+      "blocked-downcomer-policy": 1,
+      "blocked-missing-triplet": 5,
+      "non-monotone/oscillatory": 14
+    },
+    "main_status": "no_publication_ready_gci_rows"
+  },
+  "interpretation_boundary": "Coarse thermal repair smoke is diagnostic evidence only. No thermal or closure QOI is publication-ready; no thermal row is fit-admissible. CFD rcExternalTemperature radiation is included in total wallHeatFlux with no separate exported qr term, and internal Nu must not absorb heater/cooler/passive-loss/wall-storage/radiation residuals.",
+  "status": "complete"
+}

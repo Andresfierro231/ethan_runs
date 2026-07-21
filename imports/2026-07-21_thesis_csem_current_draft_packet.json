@@ -1,0 +1,46 @@
+{
+  "task": "TODO-THESIS-CSEM-CURRENT-DRAFT-PACKET-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer/Reviewer",
+  "objective": "Assemble a current CSEM thesis draft packet from ready thesis-dossier sections.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CSEM-CURRENT-DRAFT-PACKET-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-csem-current-draft-packet.md",
+    "imports/2026-07-21_thesis_csem_current_draft_packet.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_current_draft_packet/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_current_draft_packet/ordered_reading_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_current_draft_packet/reviewer_checklist.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_current_draft_packet/trigger_gated_refresh_ledger.csv",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/15_ch1_csem_motivation_and_contribution.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/16_ch3_csem_cfd_evidence_database.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/20_ch8_csem_sam_limitations_conclusions.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/25_litrev_csem_thesis_incorporation.md",
+    ".agent/BLOCKERS.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_paper_tree_edited": false,
+  "scientific_admission_changed": false,
+  "trigger_gated_refresh_started": false,
+  "no_scorecard_outputs": true,
+  "guardrails": [
+    "Packet is a handoff and reading manifest, not an external manuscript edit.",
+    "No final predictive scores are claimed.",
+    "Trigger-gated refreshes remain deferred until their evidence lands."
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "task": "AGENT-525",
+  "date": "2026-07-17",
+  "objective": "Implement a two-tap/component repair contract from the first AGENT-523 extraction queue item using existing evidence only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-525.md",
+    ".agent/journal/2026-07-17/two-tap-component-repair-contract.md",
+    "imports/2026-07-17_two_tap_component_repair_contract.json",
+    "tools/analyze/build_two_tap_component_repair_contract.py",
+    "tools/analyze/test_two_tap_component_repair_contract.py",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/component_repair_targets.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/repair_field_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/future_extractor_schema.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/acceptance_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/repair_contract_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/named_pressure_readiness.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/next_pressure_extraction_queue.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/tap_centerline_length_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/next_pressure_evidence_queue.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_change": "none",
+  "notes": "Existing-evidence contract only. It selects three corner_lower_right repair targets and explicitly keeps ordinary component K admission at zero."
+}

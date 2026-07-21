@@ -1,0 +1,63 @@
+{
+  "task": "AGENT-520",
+  "created_utc": "2026-07-17T21:05:30Z",
+  "artifact": "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas",
+  "purpose": "Cross-candidate wall/test-section residual atlas consolidating completed AGENT-515/513 evidence and current AGENT-511 availability without launching duplicate scoring.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-520.md",
+    ".agent/journal/2026-07-17/wall-candidate-residual-atlas.md",
+    "imports/2026-07-17_wall_candidate_residual_atlas.json",
+    "tools/analyze/build_wall_candidate_residual_atlas.py",
+    "tools/analyze/test_wall_candidate_residual_atlas.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/candidate_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/probe_residual_atlas.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/role_segment_residual_rank.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/thermal_failure_mode_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/freeze_gate_status.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/next_candidate_decision.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/probe_residual_regression_rank.svg",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas/README.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/**",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/**",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/**",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/**",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/**",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/**",
+    "scheduler state for AGENT-511 job 3300966",
+    "active AGENT-511/516/518/519 scopes",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external ../cfd-modeling-tools/**"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "source_paths": [
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/wall_candidate_gate_failure_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/segment_heat_placement_failure_modes.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/candidate_admission_review.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/coupled_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/probe_delta_vs_m3.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/role_segment_error_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json"
+  ],
+  "summary": {
+    "completed_candidate_gate_rows": 14,
+    "pending_candidate_gate_rows": 1,
+    "probe_residual_rows": 102,
+    "role_segment_rows": 60,
+    "agent511_state": "pending_or_live_no_completed_rows",
+    "freeze_status": "blocked"
+  }
+}

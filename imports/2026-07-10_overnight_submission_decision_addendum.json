@@ -1,0 +1,35 @@
+{
+  "created_at": "2026-07-10",
+  "task_id": "AGENT-255",
+  "role": "Coordinator / Writer",
+  "purpose": "Document explicit overnight submit/wait decisions for terminal harvest/postprocessing, Thermal UA/Nu, and time-series uncertainty digest.",
+  "outputs": [
+    ".agent/status/2026-07-10_AGENT-255.md",
+    ".agent/journal/2026-07-10/overnight-submission-decision-addendum.md",
+    "operational_notes/07-26/10/2026-07-10_overnight_submission_decision_addendum.md"
+  ],
+  "live_jobs_observed": [
+    {
+      "job_id": "3282992",
+      "name": "salt1_nom_cont",
+      "state": "RUNNING"
+    },
+    {
+      "job_id": "3288671",
+      "name": "saltq_sel_cont",
+      "state": "RUNNING",
+      "notes": "Steps .0 and .1 running; step .2 failed after 00:02:33."
+    }
+  ],
+  "decisions": {
+    "harvest_postprocessing": "Wait for terminal state; do not launch ungated harvest tonight.",
+    "thermal_ua_nu": "Not production-submittable until reconstructed-T repair smoke passes.",
+    "timeseries_uncertainty_digest": "Ready as lightweight local analysis/writer task; no Slurm needed."
+  },
+  "mutations_avoided": [
+    "no_solver_output_mutation",
+    "no_slurm_submission",
+    "no_external_model_edit",
+    "no_registry_edit"
+  ]
+}

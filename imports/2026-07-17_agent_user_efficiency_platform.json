@@ -1,0 +1,44 @@
+{
+  "task": "AGENT-489",
+  "date": "2026-07-17",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/README.md",
+    ".agent/status/2026-07-17_AGENT-489.md",
+    ".agent/journal/2026-07-17/agent-user-efficiency-platform.md",
+    "AGENTS.md",
+    "README.md",
+    "imports/2026-07-17_agent_user_efficiency_platform.json",
+    "operational_notes/START_HERE_FOR_AGENTS.md",
+    "operational_notes/07-26/17/2026-07-17_AGENT_USER_EFFICIENCY_PLATFORM.md",
+    "operational_notes/maps/README.md",
+    "operational_notes/maps/agent-operations.md",
+    "operational_notes/maps/cfd-runs-and-admission.md",
+    "tools/agent/__init__.py",
+    "tools/agent/common.py",
+    "tools/agent/preflight_task.py",
+    "tools/agent/finish_task.py",
+    "tools/agent/new_task.py",
+    "tools/agent/split_policy_lint.py",
+    "tools/agent/runtime_input_lint.py",
+    "tools/agent/case_schema_lint.py",
+    "tools/agent/background_compute_helper.py",
+    "tools/agent/board_dashboard.py",
+    "tools/agent/test_agent_tools.py"
+  ],
+  "read_only_context": [
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    "operational_notes/maps/forward-predictive-model.md",
+    "tools/docs/build_repo_index.py"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": "deferred_due_active_AGENT-482_ownership"
+}
+

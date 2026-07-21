@@ -1,0 +1,91 @@
+{
+  "created_utc": "2026-07-13T22:02:15+00:00",
+  "task_id": "TODO-PRED-HX-FIT",
+  "kind": "generated_analysis_package",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit",
+  "generated_by": "tools/analyze/build_predictive_hx_fit.py --strict",
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "source_files": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "outputs": [
+    "README.md",
+    "hx_model_forms.csv",
+    "hx_validation_splits.csv",
+    "hx_baseline_predictive_airside.csv",
+    "hx_fit_parameters.csv",
+    "hx_duty_scores.csv",
+    "hx_primary_forward_scores.csv",
+    "hx_litrev_gate_reference_audit.csv",
+    "violations.csv",
+    "summary.json"
+  ],
+  "model_forms": [
+    "HX0_fluid_predictive_airside_hx",
+    "HX1_global_qhx_multiplier_on_fluid_airside",
+    "HX2_direct_UA_multiplier_in_solver"
+  ],
+  "primary_split": {
+    "split_id": "declared_train_salt2_validate_salt3_holdout_salt4",
+    "train_cases": [
+      "salt_2"
+    ],
+    "validation_cases": [
+      "salt_3"
+    ],
+    "holdout_cases": [
+      "salt_4"
+    ]
+  },
+  "fitted_parameters": {
+    "F0_current_fluid_sources": {
+      "fitted_global_qhx_multiplier": 2.53585363393
+    },
+    "F1_heater_only": {
+      "fitted_global_qhx_multiplier": 2.80063797744
+    }
+  },
+  "primary_results": {
+    "F0_current_fluid_sources": {
+      "validation_mean_abs_qhx_error_W": 12.9158133646,
+      "validation_mean_abs_Tmean_error_K": 44.0800231687,
+      "holdout_mean_abs_qhx_error_W": 31.3759506069,
+      "holdout_mean_abs_Tmean_error_K": 56.8947608768
+    },
+    "F1_heater_only": {
+      "validation_mean_abs_qhx_error_W": 2.34147503545,
+      "validation_mean_abs_Tmean_error_K": 6.53391284585,
+      "holdout_mean_abs_qhx_error_W": 17.5108674223,
+      "holdout_mean_abs_Tmean_error_K": 20.5868541659
+    }
+  },
+  "validation": [
+    {
+      "command": "module load python/3.12.11; python3 tools/analyze/test_predictive_hx_fit.py",
+      "status": "pass",
+      "tests": 6
+    },
+    {
+      "command": "module load python/3.12.11; python3 tools/analyze/build_predictive_hx_fit.py --strict",
+      "status": "pass",
+      "violations": 0
+    },
+    {
+      "command": "python -m json.tool work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/summary.json",
+      "status": "pass"
+    }
+  ],
+  "remaining_blockers": [
+    "direct Fluid UA multiplier requires a separate external Fluid edit row",
+    "hydraulic mdot overprediction remains unresolved",
+    "heater/test-section transfer and wall/storage terms remain unresolved",
+    "thermal mesh/GCI and sensor-map uncertainty remain open"
+  ]
+}
+

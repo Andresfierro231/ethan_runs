@@ -1,0 +1,56 @@
+{
+  "task": "TODO-FINAL-SCORECARD-POLICY-INTEGRATION",
+  "date": "2026-07-20",
+  "type": "work_product_manifest",
+  "objective": "Integrate final source/property resolution policy into the final predictive scorecard shell.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-FINAL-SCORECARD-POLICY-INTEGRATION.md",
+    ".agent/journal/2026-07-20/final-scorecard-policy-integration.md",
+    "imports/2026-07-20_final_scorecard_policy_integration.json",
+    "tools/analyze/build_final_predictive_scorecard_shell.py",
+    "tools/analyze/test_final_predictive_scorecard_shell.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_policy_integration/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scorecard_source_property_resolution_policy.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv",
+    "tools/agent/source_property_gate.py"
+  ],
+  "no_scorecard_outputs": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": "not_run",
+  "scientific_admission_change": "none",
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-FINAL-SCORECARD-POLICY-INTEGRATION",
+      "result": "passed after narrowing stale broad tools/analyze board rows"
+    },
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_final_predictive_scorecard_shell.py",
+      "result": "passed, 12 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_final_predictive_scorecard_shell.py tools/analyze/test_final_predictive_scorecard_shell.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell --strict",
+      "result": "passed with candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_policy_integration --strict",
+      "result": "passed with candidate_rows=0 findings=0"
+    }
+  ],
+  "notes": [
+    "The existing split_* columns are now gate-aware because AGENT-554 treats split_fit_allowed=yes as a candidate trigger.",
+    "Original split intent is preserved in original_split_fit_allowed and original_split_model_selection_allowed.",
+    "No final score, fit, model-selection, or scientific admission was produced."
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "task": "TODO-HEATLOSS-PHASE-0-BASELINE-RELEASE-GATE",
+  "task_id": "TODO-HEATLOSS-PHASE-0-BASELINE-RELEASE-GATE",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer/Reviewer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASE-0-BASELINE-RELEASE-GATE.md",
+    ".agent/journal/2026-07-21/heatloss-phase-0-baseline-release-gate.md",
+    "imports/2026-07-21_heatloss_phase_0_baseline_release_gate.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/heat_path_release_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/dependency_release_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/runtime_forbidden_field_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv",
+    "operational_notes/07-26/21/2026-07-21_HEATLOSS_PHASED_PROGRESS_PLAN.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/thermal_model_slot_admission.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/README.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/forward-predictive-model.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "model_scoring": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "no_scorecard_outputs": true,
+  "provenance_note": "Phase 0 is a release-gate documentation package built from existing heat-loss and predictive-boundary evidence only."
+}

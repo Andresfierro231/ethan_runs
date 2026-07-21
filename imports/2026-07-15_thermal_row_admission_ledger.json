@@ -1,0 +1,29 @@
+{
+  "task": "AGENT-423",
+  "created_at": "2026-07-15T11:12:00-05:00",
+  "generated_by": "codex",
+  "work_product_root": "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger",
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_state_mutated": false,
+  "scheduler_state_mutated": false,
+  "generated_index_refreshed": false,
+  "external_fluid_files_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/thermal_row_admission_ledger.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/final_predictive_hx_closure_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/fitted_internal_nu_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/realized_wallheatflux_replay_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/imposed_cooler_duty_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/diagnostic_test_section_negative_source_rows.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/row_family_summary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/README.md"
+  ],
+  "validation": [
+    "python3.11 tools/analyze/build_thermal_row_admission_ledger.py",
+    "python3.11 -m py_compile tools/analyze/build_thermal_row_admission_ledger.py tools/analyze/test_thermal_row_admission_ledger.py",
+    "python3.11 -m unittest tools/analyze/test_thermal_row_admission_ledger.py",
+    "python3.11 -m json.tool work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/summary.json"
+  ]
+}

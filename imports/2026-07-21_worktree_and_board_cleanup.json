@@ -1,0 +1,80 @@
+{
+  "task": "AGENT-580",
+  "task_id": "AGENT-580",
+  "date": "2026-07-21",
+  "role": "Coordinator/Cleaner/Writer",
+  "objective": "Clean the board where safe and provide a non-destructive worktree cleanup inventory.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_AGENT-580.md",
+    ".agent/journal/2026-07-21/worktree-and-board-cleanup.md",
+    "imports/2026-07-21_worktree_and_board_cleanup.json",
+    ".agent/cleanup/2026-07-21_AGENT-580.md"
+  ],
+  "read_only_context": [
+    "git status --short",
+    "git status --porcelain=v1",
+    ".agent/BOARD.md active table",
+    "scheduler state from squeue -u andresfierro231"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read-only squeue observation only; no submission, cancellation, requeue, harvest, or admission action",
+  "external_fluid_edit": false,
+  "board_cleanup": {
+    "active_rows_after_claim": 17,
+    "completed_candidates": 0,
+    "late_completed_rows_archived": 1,
+    "archived_rows": 1,
+    "archived_tasks": [
+      "TODO-THESIS-UPCOMER-ORTHOGONAL-ARROW-RENDER-2026-07-21"
+    ]
+  },
+  "worktree_cleanup": {
+    "mode": "dry_run_inventory_only",
+    "dirty_paths": 2049,
+    "deleted_paths": 26,
+    "modified_paths": 78,
+    "untracked_paths": 1945,
+    "files_deleted": 0,
+    "files_moved": 0,
+    "files_reverted": 0,
+    "files_staged": 0,
+    "commits_created": 0
+  },
+  "validation": [
+    {
+      "command": "Active board parse",
+      "result": "17 rows after claim; no completed rows remained to archive."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <TASK> candidate loop",
+      "result": "candidates=0"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-UPCOMER-ORTHOGONAL-ARROW-RENDER-2026-07-21",
+      "result": "passed; row archived during final cleanup"
+    },
+    {
+      "command": "git status --porcelain=v1",
+      "result": "2049 dirty paths: 26 deleted, 78 modified, 1945 untracked."
+    },
+    {
+      "command": "squeue -u andresfierro231",
+      "result": "read-only scheduler observation only."
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "files_deleted": false,
+    "files_reverted": false,
+    "git_clean_run": false
+  }
+}

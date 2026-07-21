@@ -1,0 +1,31 @@
+{
+  "task": "AGENT-408",
+  "date": "2026-07-15",
+  "role": "cfd-pp/Coordinator/Writer/Tester",
+  "artifact_root": "work_products/2026-07/2026-07-15/2026-07-15_corrected_q_live_terminal_gate_followup",
+  "artifacts": [
+    "README.md",
+    "scheduler_snapshot.csv",
+    "corrected_q_case_heartbeat.csv",
+    "harvester_dependency_status.csv",
+    "next_monitoring_commands.md",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "source_paths": [
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.json",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/run_salt2_salt4_selected_corrected_q_harvest_after_3293924.sbatch",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/slurm-saltq_s24_done_harv-3295437.out"
+  ],
+  "mutation_summary": {
+    "native_cfd_outputs": false,
+    "scheduler_state": false,
+    "registry_or_admission_state": false,
+    "generated_indexes": false,
+    "external_cfd_modeling_tools": false
+  }
+}

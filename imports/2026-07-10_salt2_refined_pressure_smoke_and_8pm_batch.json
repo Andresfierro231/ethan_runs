@@ -1,0 +1,85 @@
+{
+  "import_id": "2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch",
+  "task_id": "AGENT-248",
+  "created_at": "2026-07-10T12:07:29-0500",
+  "updated_at": "2026-07-10T16:48:58-0500",
+  "git_commit": "63d6ef1f903820d1c854e081553d7650cef6ffd3",
+  "workspace_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "purpose": "Record Salt2 medium/fine pressure-only smoke-test evidence and the 2026-07-10 20:00 CDT Slurm rerun submission.",
+  "source_policy": {
+    "source_cases_read_only": true,
+    "native_solver_outputs_mutated": false,
+    "registry_updated": false,
+    "closure_observation_table_updated": false,
+    "thermal_extraction_policy": "not run; reconstructed T remains blocked by AGENT-245"
+  },
+  "source_cases": [
+    {
+      "level": "medium",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "processor_dir": "processors64",
+      "time_s": "518"
+    },
+    {
+      "level": "fine",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "processor_dir": "processors128",
+      "time_s": "399"
+    }
+  ],
+  "generated_package": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch",
+  "scripts": [
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/build_salt2_refined_pressure_smoke_and_8pm_batch.py",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/test_salt2_refined_pressure_smoke_and_8pm_batch.py",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/scripts/run_pressure_extraction.sh",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/scripts/sbatch_pressure_extraction_8pm.sh"
+  ],
+  "validation": {
+    "python_compile": "passed",
+    "generator_contract": "passed",
+    "bash_syntax": "passed",
+    "srun_preflight": "passed",
+    "srun_smoke": "passed",
+    "smoke_host": "c318-008.ls6.tacc.utexas.edu",
+    "smoke_completed_at": "2026-07-10T12:06:47-0500",
+    "medium_sampled_rows": 30,
+    "fine_sampled_rows": 30,
+    "medium_segment_friction_lines": 13,
+    "fine_segment_friction_lines": 13,
+    "medium_momentum_budget_lines": 7,
+    "fine_momentum_budget_lines": 7
+  },
+  "immediate_compute_node_rerun": {
+    "status": "passed",
+    "host": "c318-008.ls6.tacc.utexas.edu",
+    "tmux_session": "agent248_pressure_now",
+    "started_at": "2026-07-10T16:43:22-0500",
+    "completed_at": "2026-07-10T16:48:08-0500",
+    "elapsed_wall": "00:04:46",
+    "log": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/logs/background_20260710T164330-0500_pressure.log",
+    "medium_sampled_rows": 30,
+    "fine_sampled_rows": 30,
+    "medium_segment_friction_lines": 13,
+    "fine_segment_friction_lines": 13,
+    "medium_momentum_budget_lines": 7,
+    "fine_momentum_budget_lines": 7
+  },
+  "slurm_submission": {
+    "job_id": "3288637",
+    "job_name": "agent248_salt2_pressure",
+    "submitted_at": "2026-07-10T12:06:54-0500",
+    "scheduled_start": "2026-07-10T20:00:00",
+    "state_at_submission_check": "PENDING",
+    "reason": "BeginTime",
+    "final_state": "CANCELLED+",
+    "cancelled_at": "2026-07-10T16:48:58-0500",
+    "cancel_reason": "Immediate compute-node background rerun completed successfully and the 8pm job would duplicate the same pressure-only extraction.",
+    "elapsed": "00:00:00",
+    "node_list": "None assigned"
+  },
+  "known_caveats": [
+    "This is pressure/friction/momentum readiness evidence only; not admitted GCI evidence.",
+    "Derived friction rows include negative_f_pressure_recovery_or_noise flags that require interpretation review.",
+    "Thermal closure and T-based QoIs remain blocked until reconstructed T corruption is diagnosed and repaired."
+  ]
+}

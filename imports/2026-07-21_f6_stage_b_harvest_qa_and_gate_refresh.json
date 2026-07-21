@@ -1,0 +1,50 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-F6-STAGE-B-HARVEST-QA-AND-GATE-REFRESH.md",
+    ".agent/journal/2026-07-21/f6-stage-b-harvest-qa-and-gate-refresh.md",
+    "imports/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/build_f6_stage_b_harvest_qa_and_gate_refresh.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/test_f6_stage_b_harvest_qa_and_gate_refresh.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/stage_a_b_face_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/stage_a_b_pair_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/f6_gate_refresh.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/blocker_delta.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json"
+  ],
+  "date": "2026-07-21",
+  "decision": "stage_a_b_f6_gate_refreshed_all_pairs_diagnostic_no_admission",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "objective": "Merge Stage A and Stage B F6 harvest diagnostics into a QA and gate-refresh package without static-pressure reconstruction or coefficient admission.",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_face_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_pair_qa.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_raw_face_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_pair_diagnostics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/summary.json"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics / cfd-pp / Tester / Writer",
+  "scheduler_action": "none",
+  "summary_path": "work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json",
+  "task": "TODO-F6-STAGE-B-HARVEST-QA-AND-GATE-REFRESH",
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/build_f6_stage_b_harvest_qa_and_gate_refresh.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/build_f6_stage_b_harvest_qa_and_gate_refresh.py work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/test_f6_stage_b_harvest_qa_and_gate_refresh.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/test_f6_stage_b_harvest_qa_and_gate_refresh.py",
+      "result": "passed: 5 tests"
+    }
+  ]
+}

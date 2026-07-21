@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active board rows own generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "admission_status_scorecard.csv",
+    "coupled_candidate_gate_scorecard.csv",
+    "prerequisite_gate_matrix.csv",
+    "runtime_coupled_input_audit.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "unresolved_blocker_queue.csv"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "admission_status_rows": 4,
+    "all_sources_present": true,
+    "blocking_prerequisite_gates": 6,
+    "candidate_rows": 4,
+    "candidates_admitted": 0,
+    "date": "2026-07-17",
+    "external_fluid_edit": false,
+    "final_forward_v1_status": "blocked",
+    "generated_index_refreshed": false,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "runtime_audit_pass_rows": 5,
+    "runtime_audit_rows": 5,
+    "scheduler_action": false,
+    "task": "TODO-PREDICT-COUPLED-SEGMENT-M3TS-SCORECARD",
+    "unresolved_blocker_rows": 4
+  },
+  "task": "TODO-PREDICT-COUPLED-SEGMENT-M3TS-SCORECARD"
+}

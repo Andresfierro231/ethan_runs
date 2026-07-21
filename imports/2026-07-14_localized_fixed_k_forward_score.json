@@ -1,0 +1,34 @@
+{
+  "task_id": "AGENT-328",
+  "date": "2026-07-14",
+  "artifact": "work_products/2026-07/2026-07-14/2026-07-14_localized_fixed_k_forward_score",
+  "description": "Salt2/Salt3/Salt4 localized fixed-K Fluid score using the existing localized_fixed_k_by_segment hook; result is diagnostic-only negative evidence.",
+  "created_by": "codex",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "scheduler_state_modified": false,
+  "generated_index_modified": false,
+  "source_inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_k_source.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md"
+  ],
+  "outputs": [
+    "README.md",
+    "localized_fixed_k_source.csv",
+    "localized_fixed_k_scorecard.csv",
+    "localized_fixed_k_variant_summary.csv",
+    "rigor_gate_audit.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "validation_commands": [
+    "python3 -m unittest tools.analyze.test_localized_fixed_k_forward_score",
+    "python3 -m py_compile tools/analyze/build_localized_fixed_k_forward_score.py tools/analyze/test_localized_fixed_k_forward_score.py",
+    "python3 tools/analyze/build_localized_fixed_k_forward_score.py"
+  ],
+  "dependency_note": "Fluid imports require NumPy; python3 has NumPy in this environment, python3.11 does not.",
+  "index_refresh": "not_run_active_rows_claim_generated_index_files"
+}

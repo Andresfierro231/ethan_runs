@@ -1,0 +1,33 @@
+{
+  "task": "AGENT-436",
+  "date": "2026-07-15",
+  "objective": "Submit the existing rclone Box upload sbatch job and document job id, destination, logs, and monitoring commands.",
+  "entrypoint": "staging/upload_jobs/2026-06-16_ethan_runs_box_upload.sbatch",
+  "destination": "box:Andres_Obsidian_Notes_Box/tamu_flow_loop/a_tacc_analyzing_operational_data/ethans runs",
+  "submission": {
+    "direct_compute_sbatch_attempt": "rejected: sbatch not available on compute nodes",
+    "submit_host": "login3.ls6.tacc.utexas.edu",
+    "job_id": "3297384",
+    "job_name": "ethan_box_upload",
+    "initial_state": "RUNNING",
+    "initial_node": "c318-011",
+    "initial_start": "2026-07-15T13:10:26"
+  },
+  "logs": {
+    "slurm_stdout": "staging/upload_jobs/slurm-3297384.out",
+    "slurm_stderr": "staging/upload_jobs/slurm-3297384.err",
+    "rclone_log": "tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log"
+  },
+  "monitor_commands": [
+    "squeue -j 3297384",
+    "sacct -j 3297384 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList -P",
+    "tail -f staging/upload_jobs/slurm-3297384.out",
+    "tail -f tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log"
+  ],
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "registry_state_mutated": false,
+    "generated_index_refresh": false,
+    "external_cfd_modeling_tools_mutated": false
+  }
+}

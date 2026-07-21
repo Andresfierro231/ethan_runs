@@ -1,0 +1,64 @@
+{
+  "task_id": "AGENT-352",
+  "date": "2026-07-14",
+  "status": "complete",
+  "scope": "complete existing LitRev lessons summary with current model-form crosswalk",
+  "artifacts": [
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/summary.json",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/litrev_to_current_evidence_crosswalk.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/untried_litrev_model_forms.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/rejected_or_demoted_litrev_shortcuts.csv",
+    ".agent/status/2026-07-14_AGENT-352.md",
+    ".agent/journal/2026-07-14/litrev-current-model-form-crosswalk.md"
+  ],
+  "source_inputs_read_only": [
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/README.md",
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/chapters/01_executive_summary.tex",
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/modeling_decision_memo.csv",
+    "../papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/implementation_ready_recommendations.csv"
+  ],
+  "current_evidence_inputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_localized_fixed_k_forward_score/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_h1_faithful_gap_and_f6_decision/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_heater_source_split_screen/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/README.md"
+  ],
+  "status_vocabularies": {
+    "tried_status": [
+      "tried_diagnostic",
+      "partially_tried_needs_gate",
+      "tried_rejected_or_demoted",
+      "not_tried"
+    ],
+    "evidence_class": [
+      "diagnostic",
+      "reference",
+      "sensitivity",
+      "blocked",
+      "future_method"
+    ]
+  },
+  "main_conclusions": [
+    "Fully developed pipe friction and Nu are reference-only for the current loop.",
+    "Localized fixed-K worsened mdot and remains diagnostic negative evidence.",
+    "F6 phi(Re) is a bounded next hydraulic candidate only after admitted Re-variation evidence exists.",
+    "Current Salt2-4 upcomer evidence is recirculating, so single-stream Nu, f_D, and K labels are invalid there.",
+    "Setup-only HX, wall, and radiation model forms remain untried or incomplete until first-class Fluid boundary dictionaries exist."
+  ],
+  "mutations": {
+    "source_litrev_repo": false,
+    "native_cfd_solver_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_state": false,
+    "external_cfd_modeling_tools": false,
+    "generated_indexes": false
+  },
+  "generated_index_refresh_note": "Skipped because AGENT-344 owns the active generated-index scope."
+}

@@ -1,0 +1,22 @@
+{
+  "created": "2026-07-14",
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_gate_checklist.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/scorecard_inputs_waiting_on_agents.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/final_forward_v1_gate_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_score_rows.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/h1_hydraulic_scorecard.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/decision_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/summary.json",
+    "work_products/2026-07/2026-07-14/2026-07-14_math_theory_assumptions_results_register/result_intake_contract.csv"
+  ],
+  "task": "AGENT-321"
+}

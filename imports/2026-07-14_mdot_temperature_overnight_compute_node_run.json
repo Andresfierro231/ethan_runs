@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-14",
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_index_refresh": "not_run_generated_index_scope_not_claimed",
+  "journal": ".agent/journal/2026-07-14/mdot-temperature-overnight-compute-node-run.md",
+  "kind": "work_product_import",
+  "native_cfd_outputs_mutated": false,
+  "openfoam_solver_launched": false,
+  "runner_log": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/logs/runner_events.jsonl",
+  "status": ".agent/status/2026-07-14_AGENT-391.md",
+  "summary": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/summary.json",
+  "task": "AGENT-391",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run"
+}

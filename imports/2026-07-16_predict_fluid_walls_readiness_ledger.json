@@ -1,0 +1,52 @@
+{
+  "task": "TODO-PREDICT-FLUID-WALLS-READINESS-LEDGER",
+  "created_at": "2026-07-16T17:52:04-0500",
+  "role": "Coordinator/Forward-pred/Thermal-modeling/Hydraulics/Implementer/Tester/Writer",
+  "purpose": "Create the row-by-row steady-state fluid+walls readiness ledger requested for the July 16 model-form vision.",
+  "source_paths": [
+    "operational_notes/07-26/16/2026-07-16_fluid_walls_steady_1d_model_form.md",
+    "reference/geometry_reference.md",
+    "operational_notes/07-26/15/2026-07-15_segment_resolved_pressure_thermal_modeling_plan.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_and_modeling_recommendations.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md"
+  ],
+  "created_paths": [
+    "tools/analyze/build_fluid_walls_readiness_ledger.py",
+    "tools/analyze/test_fluid_walls_readiness_ledger.py",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/fluid_walls_segment_readiness_ledger.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/fluid_walls_blocker_table.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/fluid_walls_shortest_missing_data_path.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/TOMORROW_HANDOFF.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/summary.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_predict_fluid_walls_readiness_ledger/README.md",
+    ".agent/status/2026-07-16_TODO-PREDICT-FLUID-WALLS-READINESS-LEDGER.md",
+    ".agent/journal/2026-07-16/predict-fluid-walls-readiness-ledger.md",
+    "imports/2026-07-16_predict_fluid_walls_readiness_ledger.json"
+  ],
+  "validation": [
+    {
+      "command": "python3 tools/analyze/build_fluid_walls_readiness_ledger.py",
+      "result": "passed; emitted 7 segment rows, 7 blocker rows, and 5 path rows"
+    },
+    {
+      "command": "python3 -m pytest tools/analyze/test_fluid_walls_readiness_ledger.py",
+      "result": "passed; 3 tests"
+    }
+  ],
+  "guardrails": {
+    "native_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "external_fluid_edit": false,
+    "runtime_cfd_leakage_introduced": false
+  }
+}

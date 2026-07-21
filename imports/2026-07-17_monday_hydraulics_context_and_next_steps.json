@@ -1,0 +1,31 @@
+{
+  "task": "AGENT-535",
+  "date": "2026-07-17",
+  "objective": "Document supplemental Monday fresh-agent hydraulics/extractor context and next steps without colliding with active AGENT-534.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-535.md",
+    ".agent/journal/2026-07-17/monday-hydraulics-context-and-next-steps.md",
+    "imports/2026-07-17_monday_hydraulics_context_and_next_steps.json",
+    "operational_notes/07-26/17/2026-07-17_MONDAY_HYDRAULICS_CONTEXT_AND_NEXT_STEPS.md"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/next_pressure_extraction_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/future_extractor_schema.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_extractor/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_extractor/next_raw_postprocessing_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_nonrecirculating_pressure_anchor_plan/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_change": "none",
+  "notes": "Supplemental handoff only. AGENT-534 owns the main Monday fresh-agent handoff and START_HERE update."
+}

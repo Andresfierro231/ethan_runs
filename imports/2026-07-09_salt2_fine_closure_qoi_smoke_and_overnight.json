@@ -1,0 +1,60 @@
+{
+  "id": "2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight",
+  "task_id": "AGENT-239",
+  "created_at": "2026-07-09T16:41:00-05:00",
+  "purpose": "Stage and launch Salt2 Jin refined-mesh closure-QOI smoke and overnight processing under srun without mutating imported solver outputs.",
+  "source_cases": [
+    {
+      "mesh_level": "medium",
+      "source_case_id": "viscosity_screening_salt_test_2_jin_medium_mesh",
+      "source_path": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "latest_time_s": "518",
+      "processor_dir": "processors64",
+      "role": "full-pipeline smoke test before fine"
+    },
+    {
+      "mesh_level": "fine",
+      "source_case_id": "viscosity_screening_salt_test_2_jin_fine_mesh",
+      "source_path": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "latest_time_s": "399",
+      "processor_dir": "processors128",
+      "role": "overnight target after medium smoke clears"
+    }
+  ],
+  "analysis_profile_source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "mesh_stations": "work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json",
+  "generated_package": "work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight",
+  "scripts": [
+    "tools/analyze/build_salt2_fine_closure_qoi_smoke.py",
+    "tools/analyze/test_salt2_fine_closure_qoi_smoke.py",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/run_refined_closure_qoi.sh",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/launch_smoke_then_overnight_srun.sh"
+  ],
+  "live_execution": {
+    "tmux_session": "agent239_salt2_refined_r2",
+    "launch_log": "work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/logs/tmux_smoke_then_overnight_r2.log",
+    "state_at_manifest_write": "medium reconstructPar running after first smoke exposed and fixed a missing system/functions include in the staged mirror",
+    "final_state": "medium and fine extraction completed during interactive srun chain by 2026-07-09T16:58:31-05:00"
+  },
+  "cancelled_batch_rerun": {
+    "job_id": "3287480",
+    "scheduled_start": "2026-07-09T22:00:00",
+    "cancelled": true,
+    "reason": "Would have rerun the same completed smoke_then_overnight extraction and produced no new analysis stage."
+  },
+  "policies": {
+    "source_cases_read_only": true,
+    "closure_observations_updated": false,
+    "registry_updated": false,
+    "native_solver_outputs_mutated": false
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_salt2_fine_closure_qoi_smoke.py tools/analyze/test_salt2_fine_closure_qoi_smoke.py",
+    "python3.11 -c \"import tools.analyze.test_salt2_fine_closure_qoi_smoke as t; t.test_generator_outputs_expected_contract(); t.test_generated_runner_keeps_source_case_read_only(); print('manual assertions passed')\"",
+    "srun -N1 -n1 -c4 bash work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/run_refined_closure_qoi.sh preflight"
+  ],
+  "notes": [
+    "Refined medium/fine source IDs are not registered in tools.case_analysis_profiles; the runner uses the Salt2 Jin coarse profile only as the station/segment contract and records physical medium/fine provenance separately.",
+    "The first tmux run failed during medium reconstructPar because staged controlDict included system/functions after the runner removed that file. The generator now writes an empty include-compatible system/functions file in the staged reconstruction mirror."
+  ]
+}

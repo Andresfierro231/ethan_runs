@@ -1,0 +1,46 @@
+{
+  "task_id": "AGENT-281",
+  "created_date": "2026-07-13",
+  "role": "Coordinator / Writer",
+  "artifact_type": "documentation_hardening_and_wall_layer_mapping_recommendations",
+  "parent_task": "AGENT-279",
+  "parent_package": "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/path_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/section_heat_loss_comparison.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/discrepancy_attribution.csv",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/README.md",
+    "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+    "tools/extract/sample_span_endpoint_temperatures.py",
+    "tools/extract/test_sample_physical_segment_interface_temperatures.py"
+  ],
+  "generated_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/wall_layer_bulk_temperature_mapping_recommendations.md",
+    ".agent/status/2026-07-13_AGENT-281.md",
+    ".agent/journal/2026-07-13/cfd-bc-no-radiation-wall-layer-mapping-docs.md"
+  ],
+  "summary": {
+    "documentation_added": true,
+    "readme_template_updated": true,
+    "recommended_external_mapping_candidates": [
+      "E0_bulk",
+      "E1_wall_shell",
+      "E2_low_dimensional_blend"
+    ],
+    "admission_decision": "no_admission_changes"
+  },
+  "validation_commands": [
+    "python -m py_compile tools/analyze/run_cfd_bc_no_radiation_1d_parity.py tools/analyze/test_cfd_bc_no_radiation_1d_parity.py",
+    "python tools/analyze/test_cfd_bc_no_radiation_1d_parity.py",
+    "python tools/analyze/run_cfd_bc_no_radiation_1d_parity.py --strict",
+    "python -m json.tool work_products/2026-07/2026-07-13/2026-07-13_cfd_bc_no_radiation_1d_parity/run_metadata.json",
+    "python -m json.tool imports/2026-07-13_cfd_bc_no_radiation_wall_layer_mapping_docs.json"
+  ],
+  "provenance_notes": [
+    "Documentation only; no Fluid source files were edited.",
+    "No native CFD solver outputs, scheduler state, registry rows, or closure admissions were changed.",
+    "The parent numerical package was rerun to regenerate README.md from the patched builder template."
+  ]
+}

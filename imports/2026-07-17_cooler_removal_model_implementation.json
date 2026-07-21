@@ -1,0 +1,37 @@
+{
+  "date": "2026-07-17",
+  "task": "AGENT-482",
+  "type": "derived_work_product",
+  "title": "Cooler removal model implementation",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_model_scores.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_rmse_summary_with_leakage_policy.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_coupled_scorecard.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/candidate_definitions.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/fit_parameters.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/duty_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/coupled_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/segmented_profile_diagnostics.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/model_comparison_decision.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "predictive-wall-test-section-submodels",
+      "status": "keep_open",
+      "reason": "Constant-UA cooler duty screen passes Salt3/Salt4 thresholds, but the bounded coupled Fluid attempt produced 12/12 timeout rows and 0 completed coupled scores."
+    }
+  ]
+}

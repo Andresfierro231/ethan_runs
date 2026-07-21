@@ -1,0 +1,21 @@
+{
+  "task_id": "AGENT-288",
+  "date": "2026-07-13",
+  "created_by": "codex",
+  "manifest_type": "campaign_index",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_todo_campaign_index",
+  "indexed_packages": [
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses"
+  ],
+  "primary_outputs": [
+    "README.md",
+    "summary.json"
+  ],
+  "validation": [
+    "python3.11 -c \"import json, pathlib; paths=list(pathlib.Path('work_products/2026-07/2026-07-13').glob('2026-07-13_litrev_*/summary.json'))+list(pathlib.Path('work_products/2026-07/2026-07-13').glob('2026-07-13_litrev_*/validation_report.json')); [json.load(open(p)) for p in paths]; print('json ok', len(paths))\""
+  ]
+}

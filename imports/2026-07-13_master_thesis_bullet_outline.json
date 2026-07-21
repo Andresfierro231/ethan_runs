@@ -1,0 +1,39 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-304",
+  "type": "master_thesis_bullet_outline",
+  "purpose": "Create a thesis-facing bullet outline with goals, model input/output contracts, methodology, literature-review structure, organized research avenues, and a two-week execution plan.",
+  "primary_output": "reports/thesis_dossier/master_thesis_bullet_outline.md",
+  "outputs": [
+    "reports/thesis_dossier/master_thesis_bullet_outline.md",
+    ".agent/status/2026-07-13_AGENT-304.md",
+    ".agent/journal/2026-07-13/master-thesis-bullet-outline.md",
+    "imports/2026-07-13_master_thesis_bullet_outline.json"
+  ],
+  "additive_discoverability_edits": [
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "generated_index_refresh": [
+    ".agent/STATE.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/BLOCKERS.md"
+  ],
+  "source_context": [
+    "reports/thesis_dossier/README.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "operational_notes/maps/mesh-gci-and-uncertainty.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    ".agent/BLOCKERS.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_parallel_progress_and_next_plan/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "scheduler_state_mutated": false,
+  "registry_mutated": false,
+  "external_repositories_mutated": false
+}

@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-327",
+  "date": "2026-07-14",
+  "type": "work_product_manifest",
+  "status": "complete",
+  "created": [
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/boundary_model_task_matrix.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/fluid_api_gap_for_external_bc.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/summary.json",
+    ".agent/status/2026-07-14_AGENT-327.md",
+    ".agent/journal/2026-07-14/boundary-model-task-matrix.md"
+  ],
+  "updated": [
+    ".agent/BOARD.md"
+  ],
+  "read_only_inputs": [
+    "operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_model_forms.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_fit_parameters.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/candidate_parameters.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/recommended_model.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/README.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -c parse boundary_model_task_matrix CSV/JSON",
+      "result": "passed_5_matrix_rows_5_gap_rows"
+    }
+  ],
+  "notes": [
+    "Next executable recommendation is BCM-HEATER-FRACTION-V1 repo-local.",
+    "Next external Fluid API recommendation is BCM-COOLER-HX-UA-V1 direct UA/effectiveness multiplier.",
+    "No native CFD solver outputs were modified.",
+    "External ../cfd-modeling-tools was not edited.",
+    "Generated index files were not refreshed because active coordinator rows own that scope."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "task_id": "TODO-PRED-WALL-SHELL-SAMPLE",
+  "date": "2026-07-13",
+  "owner": "codex",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling",
+  "generated_by": "tools/analyze/build_wall_shell_temperature_sampling.py",
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "tmp/2026-06-30_claude_action_items/recon_salt2_of13/7915/T",
+    "tmp/2026-06-30_claude_action_items/recon_salt2_of13/constant/polyMesh/owner",
+    "tmp/2026-06-30_claude_action_items/recon_salt2_of13/constant/polyMesh/boundary",
+    "tmp/2026-06-30_claude_action_items/recon_salt3_of13/7618/T",
+    "tmp/2026-06-30_claude_action_items/recon_salt3_of13/constant/polyMesh/owner",
+    "tmp/2026-06-30_claude_action_items/recon_salt3_of13/constant/polyMesh/boundary",
+    "tmp/2026-06-30_claude_action_items/recon_salt4_of13/10000/T",
+    "tmp/2026-06-30_claude_action_items/recon_salt4_of13/constant/polyMesh/owner",
+    "tmp/2026-06-30_claude_action_items/recon_salt4_of13/constant/polyMesh/boundary"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/patch_wall_shell_temperatures.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/segment_wall_shell_temperatures.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/run_metadata.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_replay_modes.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/section_heat_parity.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/wall_layer_selector_candidates.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/blocked_rows.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/run_metadata.json"
+  ],
+  "row_counts": {
+    "wall_shell_patch_rows": 108,
+    "wall_shell_segment_rows": 21,
+    "wall_shell_blocked_patch_rows": 0,
+    "wall_layer_drive_rows": 24,
+    "wall_layer_replay_rows": 72,
+    "wall_layer_parity_rows": 51,
+    "wall_layer_blocked_rows": 21,
+    "wall_layer_e0_executable_rows": 18,
+    "wall_layer_e1_executable_rows": 21,
+    "wall_layer_e2_executable_rows": 12
+  },
+  "proxy_definition": "boundary_face_owner_cell_temperature_mean",
+  "scientific_decisions": [
+    "The sampled wall-shell value is a first owner-cell temperature proxy, not a solved shell-center or outer-wall temperature.",
+    "E1 wall-shell replay is now executable where the proxy exists.",
+    "E2 low-dimensional blend is diagnostic only because it uses same-case beta families and the fitted beta values saturate at bounds.",
+    "The owner-cell wall-shell proxy does not close the passive external heat-loss mismatch.",
+    "CFD rcExternalTemperature uses emissivity and Tsur; realized wallHeatFlux is total and radiation is inseparable, so replay modes must not double-count radiation."
+  ],
+  "validation_commands": [
+    "python3.11 -m py_compile tools/analyze/build_wall_shell_temperature_sampling.py tools/analyze/test_wall_shell_temperature_sampling.py tools/analyze/build_wall_layer_drive_mapping.py tools/analyze/test_wall_layer_drive_mapping.py",
+    "python3.11 tools/analyze/test_wall_shell_temperature_sampling.py",
+    "python3.11 tools/analyze/test_wall_layer_drive_mapping.py"
+  ],
+  "validation_notes": [
+    "Direct wall-shell test harness passed.",
+    "Direct wall-layer test harness passed."
+  ],
+  "native_solver_outputs_modified": false
+}

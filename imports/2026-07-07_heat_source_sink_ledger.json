@@ -1,0 +1,47 @@
+{
+  "manifest_id": "2026-07-07_heat_source_sink_ledger",
+  "owner": "claude",
+  "task": "AGENT-194",
+  "generated_at": "2026-07-07",
+  "purpose": "Per-segment patchwise heat ledger for Salt 2/3/4 Jin mainline continuations: wallHeatFlux integral per patch group, BC types, mdot, and energy balance check",
+  "scope": "Salt 2/3/4 Jin mainline continuation runs (2026-06-18 envelope wave); latest available time step from postProcessing/wallHeatFlux FO output; 5 patch groups (heater, cooler, ambient_wall, test_section, junction_other); 5 spans (lower_leg, downcomer, cooling_branch, upcomer, junction)",
+  "new_tools": [
+    "tools/analyze/build_heat_source_sink_ledger.py",
+    "tools/analyze/test_heat_source_sink_ledger.py"
+  ],
+  "new_docs": [],
+  "work_products": [
+    "work_products/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.csv",
+    "work_products/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.json",
+    "work_products/2026-07-07_heat_source_sink_ledger/README.md",
+    "work_products/2026-07-07_heat_source_sink_ledger/summary.json"
+  ],
+  "key_findings": {
+    "heater_duty_W": {
+      "salt_2": 243.5,
+      "salt_3": 273.2,
+      "salt_4": 310.5
+    },
+    "cooler_removal_W": {
+      "salt_2": -136.4,
+      "salt_3": -150.8,
+      "salt_4": -169.2
+    },
+    "net_balance_pct_of_heater": {
+      "salt_2": 0.052,
+      "salt_3": 0.105,
+      "salt_4": 0.026
+    },
+    "test_section_note": "wallHeatFlux is NEGATIVE (-5.7 to -16.8 W) despite Q=37W BC input; hot upcomer fluid loses heat through quartz to ambient",
+    "enthalpy_change_W": "NaN — HTC CSV provides only mid-span T_bulk, not inlet/outlet per span",
+    "radiation_present": false,
+    "total_rows": 24,
+    "tests_added": 36,
+    "full_suite_tests_passing": 288
+  },
+  "open_questions_for_user": [
+    "Should enthalpy_change_W be computed by extracting T_bulk at NCC interface stations from temperature_probes postProcessing?",
+    "Is the test section (pipeleg_left_04) actually intended to heat the fluid, or is it purely an observation tube? The 37W electrical input in the BC does not overcome ambient heat loss at operating temperatures.",
+    "Should the net balance check use a time-averaged wallHeatFlux rather than the latest single time step to reduce quasi-steady oscillation noise?"
+  ]
+}

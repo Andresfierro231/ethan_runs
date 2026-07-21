@@ -1,0 +1,34 @@
+{
+  "date": "2026-07-16",
+  "task": "AGENT-469",
+  "type": "derived_work_product",
+  "title": "Downcomer policy admission artifact",
+  "generated_by": "codex",
+  "output_dir": "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_mutated": false,
+  "sources": [
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+    "work_products/2026-06/2026-06-30/2026-06-30_claude_downcomer_recirculation/downcomer_recirculation.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/downcomer_admission_gate.csv"
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_sign_enthalpy_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_low_recirculation_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_same_qoi_gci_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_admission_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/summary.json"
+  ],
+  "decisions": [
+    {
+      "blocker_id": "closure-qoi-mesh-gci",
+      "status": "keep_open",
+      "reason": "Downcomer ordinary Internal-Nu admission fails sign/enthalpy, interface recirculation policy, same-QOI publication GCI, and LitRev residual-absorption gates."
+    }
+  ]
+}

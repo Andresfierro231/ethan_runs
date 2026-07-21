@@ -1,0 +1,50 @@
+{
+  "manifest_id": "2026-06-30_claude_action_items",
+  "owner": "claude",
+  "task": "AGENT-156",
+  "generated_at": "2026-06-30",
+  "purpose": "Address the 8 ranked action items from the 2026-06-30 claude-inspection review of the CFD->1D closure pipeline via reusable scripts + documentation.",
+  "scope": "Salt Jin paper subset (Salt 2/3/4 Jin primary; Salt 1 caveated). Kirst historical-only; perturbations separate sensitivity.",
+  "environment": {
+    "node": "LS6 compute node c318-008 (1 core interactive)",
+    "openfoam": "Foundation v12 via 'module load intel/24.1 impi/21.12 openfoam/12' reading v13 collated cases",
+    "limitation": "custom BC libRCWallBC.so on T not available; reconstruct only p,p_rgh,U,phi,rho"
+  },
+  "new_tools": [
+    "tools/ofenv/of12_env.sh",
+    "tools/analyze/assess_time_convergence.py",
+    "tools/analyze/represent_closures_per_case.py",
+    "tools/analyze/reconcile_freeze_windows.py",
+    "tools/analyze/validate_segment_map.py",
+    "tools/extract/sample_section_mean_pressure.py",
+    "tools/analyze/test_claude_action_items.py"
+  ],
+  "new_docs": [
+    "operational_notes/06-26/30/2026-06-30_cfd_1d_closure_workflow.md",
+    "operational_notes/06-26/30/2026-06-30_cfd_to_1d_segment_map.md",
+    "operational_notes/06-26/30/2026-06-30_mesh_independence_protocol.md",
+    "reports/2026-06/2026-06-30/2026-06-30_claude_action_items_summary/README.md"
+  ],
+  "work_products": [
+    "work_products/2026-06-30_claude_time_convergence",
+    "work_products/2026-06-30_claude_closure_representation",
+    "work_products/2026-06-30_claude_freeze_window_reconcile",
+    "work_products/2026-06-30_claude_segment_map",
+    "work_products/2026-06-30_claude_section_mean_pressure"
+  ],
+  "item_status": {
+    "1_section_mean_pressure": "workflow done; static p_rgh sound on straights; dynamic head blocked by velocity flux anomaly",
+    "2_convergence": "done+run: Salt2/3/4 stationary; Salt1 quasi",
+    "3_closure_representation": "done+run: form-loss-dominated f; dof<=1; Pr collinear",
+    "4_measured_geometry": "partial: measured bore ~2.2x circle; proposed patch",
+    "5_mesh_independence": "protocol done; blocked on runtime",
+    "6_provenance_reconcile": "done+run: 13/14 lanes unverifiable",
+    "7_segment_map": "done+run: only upcomer ambiguous, heated_incline provisional",
+    "8_smaller_corrections": "documented proposed patches"
+  },
+  "open_questions_for_user": [
+    "Confirm heated_incline -> lower_leg (heated right-vertical leg).",
+    "Resolve which CFD span 'upcomer' denotes."
+  ],
+  "provenance_caveat": "Reconstructable staged data is the parent-warmup window; mainline continuation field data is not in this workspace (item #6)."
+}

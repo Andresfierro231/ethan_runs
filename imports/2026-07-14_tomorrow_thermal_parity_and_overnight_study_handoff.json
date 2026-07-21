@@ -1,0 +1,22 @@
+{
+  "task": "AGENT-370",
+  "date": "2026-07-14",
+  "type": "handoff_manifest",
+  "status": "complete",
+  "operational_note": "operational_notes/07-26/14/2026-07-14_TOMORROW_THERMAL_PARITY_AND_OVERNIGHT_STUDY_HANDOFF.md",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_thermal_parity_and_overnight_study_handoff",
+  "queue": "work_products/2026-07/2026-07-14/2026-07-14_tomorrow_thermal_parity_and_overnight_study_handoff/overnight_study_queue.csv",
+  "scheduler_snapshot": {
+    "node": "c318-008.ls6.tacc.utexas.edu",
+    "running": ["3293924 saltq_sel_cont on c318-016", "3295120 idv75667 on c318-008"],
+    "pending": ["3295438 saltq_s24_sel_harv dependency-held"],
+    "cancelled": ["3295901 upc_pm5q", "3295968 upc_pm5q"]
+  },
+  "jobs_launched": [],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "external_fluid_modified": false,
+    "generated_indexes_modified": false,
+    "scheduler_state_mutated": false
+  }
+}

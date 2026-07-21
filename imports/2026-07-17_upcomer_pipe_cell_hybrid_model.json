@@ -1,0 +1,40 @@
+{
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refresh_note": "Skipped because active board rows own generated docs index files.",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "hybrid_model_candidate_contract.csv",
+    "onset_anchor_gap.csv",
+    "recirculation_feature_scorecard.csv",
+    "runtime_hybrid_input_audit.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "upcomer_admission_decision.csv"
+  ],
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model",
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "summary": {
+    "admission_decision_rows": 3,
+    "all_sources_present": true,
+    "candidate_lanes": 4,
+    "date": "2026-07-17",
+    "diagnostic_hybrid_rows": 2,
+    "external_fluid_edit": false,
+    "feature_rows": 6,
+    "generated_index_refreshed": false,
+    "hybrid_predictive_fit_admitted_rows": 0,
+    "native_solver_outputs_mutated": false,
+    "onset_gap_rows": 3,
+    "ordinary_fit_admitted_rows": 0,
+    "registry_mutated": false,
+    "runtime_audit_pass_rows": 4,
+    "runtime_audit_rows": 4,
+    "scheduler_action": false,
+    "task": "TODO-UPCOMER-PIPE-CELL-HYBRID-MODEL"
+  },
+  "task": "TODO-UPCOMER-PIPE-CELL-HYBRID-MODEL"
+}

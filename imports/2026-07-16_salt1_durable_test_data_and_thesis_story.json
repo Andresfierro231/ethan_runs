@@ -1,0 +1,17 @@
+{
+  "task": "AGENT-453",
+  "date": "2026-07-16",
+  "objective": "Make Salt1 durable in future test data and thesis scorecard story.",
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_durable_test_data_and_thesis_story/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_durable_test_data_and_thesis_story/salt1_primary_closure_cases.csv",
+    "tools/analyze/test_data/salt1_primary_closure_cases.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_durable_test_data_and_thesis_story/future_integration_contract.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_durable_test_data_and_thesis_story/thesis_story_parallel_scorecard.csv",
+    "reports/thesis_dossier/2026-07-16_salt1_confident_use_and_forward_scorecard_story.md",
+    ".agent/journal/2026-07-16/salt1-durable-test-data-and-thesis-story.md",
+    ".agent/status/2026-07-16_AGENT-453.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false
+}

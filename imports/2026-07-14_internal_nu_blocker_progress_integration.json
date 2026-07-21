@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-14",
+  "decision": "current_fit_admissible_internal_Nu_rows_remain_zero",
+  "external_cfd_modeling_tools_mutated": false,
+  "fit_admissible_internal_nu_rows": 0,
+  "generated_index_refresh": "not_run_active_AGENT_344_owns_generated_index_scope",
+  "journal": ".agent/journal/2026-07-14/internal-nu-blocker-progress-integration.md",
+  "kind": "work_product_import",
+  "native_cfd_outputs_mutated": false,
+  "status": ".agent/status/2026-07-14_AGENT-345.md",
+  "summary": "work_products/2026-07/2026-07-14/2026-07-14_internal_nu_blocker_progress_integration/summary.json",
+  "task": "AGENT-345",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_internal_nu_blocker_progress_integration"
+}

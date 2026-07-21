@@ -1,0 +1,38 @@
+{
+  "generated_date": "2026-07-10",
+  "task_id": "AGENT-252",
+  "artifact_type": "operational_planning_note",
+  "title": "CFD-1D thermal parity roadmap",
+  "primary_output": "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+  "scope": "Capture the agreed roadmap for matching CFD and 1D thermal boundary/source contracts before developing predictive internal thermal-development closures.",
+  "source_context": [
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md",
+    "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/README.md",
+    "operational_notes/07-26/10/2026-07-10_end_of_day_todo.md",
+    ".agent/journal/2026-07-10/end-of-day-wrap-up-and-next-steps.md",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/**",
+    "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/**",
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_informed_fixed_mdot_1d_runs/**"
+  ],
+  "decisions_recorded": [
+    "Patch-level CFD boundary documentation is the target; segment-averaged reductions must be explicitly documented.",
+    "Realized wallHeatFlux is for diagnosis; imposed boundary inputs are for setup documentation.",
+    "rcExternalTemperature emissivity/Tsur usage must be audited before deciding 1D radiation parity.",
+    "Matching priority is total heat balance, branch heat loss, station/probe temperatures, then wall temperatures.",
+    "Diagnostic parity mode comes before predictive internal HTC/development model.",
+    "Predictive work should favor developing-profile and wall-adjacent-temperature models where feasible, with effective HTC as fallback."
+  ],
+  "actions_not_performed": [
+    "No OpenFOAM extraction",
+    "No Fluid code edit",
+    "No native solver-output mutation",
+    "No job submission",
+    "No registry edit"
+  ],
+  "outputs": [
+    "operational_notes/07-26/10/2026-07-10_thermal_parity_roadmap.md",
+    ".agent/status/2026-07-10_AGENT-252.md",
+    ".agent/journal/2026-07-10/thermal-parity-roadmap.md",
+    "imports/2026-07-10_thermal_parity_roadmap.json"
+  ]
+}

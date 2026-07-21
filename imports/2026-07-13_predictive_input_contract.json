@@ -1,0 +1,27 @@
+{
+  "created_utc": "2026-07-13T21:00:50+00:00",
+  "task_id": "TODO-PRED-INPUT-CONTRACT",
+  "kind": "generated_analysis_package",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+  "generated_by": "tools/analyze/build_predictive_input_contract.py --strict",
+  "source_files": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/validation_cases.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md"
+  ],
+  "outputs": [
+    "runtime_input_contract.csv",
+    "mode_contract.csv",
+    "case_runtime_inputs_forward_v0.csv",
+    "validation_target_contract.csv",
+    "violations.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "strict_status": "pass",
+  "violations": 0,
+  "native_solver_outputs_modified": false,
+  "registry_modified": false
+}

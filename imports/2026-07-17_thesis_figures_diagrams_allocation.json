@@ -1,0 +1,54 @@
+{
+  "task": "AGENT-524",
+  "date": "2026-07-17",
+  "role": "Coordinator/Figures/Writer/Reviewer",
+  "type": "coordination_manifest",
+  "summary": "Allocated the post-AGENT-516 thesis figures and diagrams lane, added a durable TODO row, and created a current thesis figure brief for segment atlas diagrams, upcomer hybrid schematic, model-form ladder, junction-aware comparison, and SAM-facing flowchart.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-524.md",
+    ".agent/journal/2026-07-17/thesis-figures-diagrams-allocation.md",
+    "imports/2026-07-17_thesis_figures_diagrams_allocation.json",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/11_sam_facing_interpretation.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "generated_index_refresh": false,
+  "scientific_admission_changed": false,
+  "model_fitting_or_selection_changed": false,
+  "validation": [
+    {
+      "command": "find reports/thesis_dossier/Chapters_and_sections/current -maxdepth 1 -type f | sort",
+      "result": "passed"
+    },
+    {
+      "command": "rg -n \"12_thesis_figures_and_diagrams_plan|TODO-THESIS-FIGURES-DIAGRAMS|AGENT-524|F-01|F-06\" reports/thesis_dossier .agent/BOARD.md",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -c \"import json; json.load(open('imports/2026-07-17_thesis_figures_diagrams_allocation.json')); print('json ok')\"",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "No native CFD/OpenFOAM outputs mutated.",
+    "No registry or admission state changed.",
+    "No scheduler action, solver launch, or postprocessing performed.",
+    "No figure rendering from native case data.",
+    "No generated index refresh.",
+    "No scientific admission, model fitting, tuning, or model selection changed."
+  ]
+}

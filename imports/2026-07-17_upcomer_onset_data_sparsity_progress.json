@@ -1,0 +1,38 @@
+{
+  "task": "AGENT-495",
+  "created_utc": "2026-07-17T15:59:10Z",
+  "status": "complete",
+  "objective": "Prove row-level upcomer/test-section admission status, prevent misuse of recirculation diagnostics as ordinary fit evidence, and define the exact next evidence queue for upcomer onset data sparsity.",
+  "artifacts": [
+    "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/upcomer_row_admission_ledger.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/anchor_inventory.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/evidence_gap_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/hybrid_upcomer_model_contract.csv",
+    ".agent/status/2026-07-17_AGENT-495.md",
+    ".agent/journal/2026-07-17/upcomer-onset-data-sparsity-progress.md"
+  ],
+  "sources": [
+    "work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger",
+    "work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock"
+  ],
+  "decision": {
+    "upcomer_onset_data_sparsity": "keep_open",
+    "ledger_rows": 68,
+    "recirculation_diagnostic_rows": 36,
+    "missing_same_window_field_rows": 32,
+    "ordinary_fit_rows": 0,
+    "anchor_candidate_rows": 0,
+    "row_policy_guardrail": "complete"
+  },
+  "guardrails": [
+    "No native OpenFOAM/CFD outputs mutated.",
+    "No registry or admission-state mutation.",
+    "No scheduler action.",
+    "No external Fluid source edits.",
+    "Current upcomer/test-section rows remain diagnostic or hybrid/onset evidence, not ordinary Nu/f_D/K fit evidence."
+  ]
+}

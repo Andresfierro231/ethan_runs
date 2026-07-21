@@ -1,0 +1,37 @@
+{
+  "task": "AGENT-562",
+  "date": "2026-07-20",
+  "type": "coordination_manifest",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-562.md",
+    ".agent/journal/2026-07-20/thesis-recirculation-image-candidates.md",
+    "imports/2026-07-20_thesis_recirculation_image_candidates.json",
+    "operational_notes/07-26/20/2026-07-20_THESIS_RECIRCULATION_IMAGE_CANDIDATES.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/figures/svg/F03_upcomer_hybrid_schematic.svg",
+    "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/figures/11_upcomer_recirculation_schematic.png",
+    "work_products/2026-07/2026-07-02/2026-07-02_master_jul_2_presentation/figures/fig6_recirculation.png",
+    "reports/2026-06/2026-06-29/2026-06-29_ethan_upcomer_recirculation_evidence/figures/svg/upcomer_reverse_shear_fraction_profile.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/upcomer_backflow_vs_re.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_upcomer_onset/figures/upcomer_onset_regime.svg",
+    "figures/figures_rendered/paraview_field_families/upcomer/y_vel/",
+    "figures/figures_rendered/paraview_velocity_arrows/"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "scientific_admission_changed": false,
+  "images_regenerated": false,
+  "notes": [
+    "Standalone operational note only; the open TODO-THESIS-FIGURES-DIAGRAMS scoped thesis plan was left read-only after preflight reported overlap.",
+    "Candidate paths are recorded so later thesis figure work can select images without relying on chat history."
+  ]
+}

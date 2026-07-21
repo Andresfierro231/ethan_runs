@@ -1,0 +1,50 @@
+{
+  "task": "AGENT-450",
+  "date": "2026-07-16",
+  "title": "Closure-QOI mesh-GCI punch-list narrowing",
+  "purpose": "Narrow the open closure-qoi-mesh-gci blocker into an exact extraction/admission punch list from existing evidence only, without resolving the blocker.",
+  "inputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_admission_decisions.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_gci_results.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/refreshed_qoi_mesh_gate_status.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/adjacent_pressure_ladder.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/station_pressure_ladder.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/adjacent_pressure_ladder.csv",
+    ".agent/blockers.yml"
+  ],
+  "outputs": [
+    "tools/analyze/build_closure_qoi_mesh_gci_punch_list.py",
+    "tools/analyze/test_closure_qoi_mesh_gci_punch_list.py",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/closure_qoi_blocker_punch_list.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/admitted_only_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/extraction_queue_candidates.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/admission_only_candidates.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/closure_qoi_narrowing_decision.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/summary.json"
+  ],
+  "result": {
+    "qoi_rows_reviewed": 25,
+    "admitted_only_candidates": 0,
+    "extraction_queue_rows": 19,
+    "admission_only_rows": 6,
+    "blocker_resolved": false
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_closure_qoi_mesh_gci_punch_list.py tools/analyze/test_closure_qoi_mesh_gci_punch_list.py",
+    "python3.11 tools/analyze/test_closure_qoi_mesh_gci_punch_list.py",
+    "python3.11 tools/analyze/build_closure_qoi_mesh_gci_punch_list.py"
+  ],
+  "guardrails": [
+    "No native CFD solver outputs were mutated.",
+    "No registry/admission state was mutated.",
+    ".agent/blockers.yml was read-only and not edited.",
+    "Generated docs indexes were not refreshed.",
+    "No scheduler jobs or OpenFOAM postprocessing were launched.",
+    "External ../cfd-modeling-tools paths were not touched."
+  ]
+}

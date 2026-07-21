@@ -1,0 +1,92 @@
+{
+  "task": "TODO-TWO-TAP-RECIRC-SECTION-EFFECTIVE-MODEL",
+  "date": "2026-07-20",
+  "role": "Hydraulics/cfd-pp/Writer",
+  "objective": "Define a recirculation-aware section-effective pressure model path for blocked two-tap corner_lower_right rows and document the completed evidence for paper drafting.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_TODO-TWO-TAP-RECIRC-SECTION-EFFECTIVE-MODEL.md",
+    ".agent/journal/2026-07-20/two-tap-recirc-section-effective-model.md",
+    "imports/2026-07-20_two_tap_recirc_section_effective_model.json",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/13_two_tap_recirc_section_effective_pressure_model.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/build_two_tap_recirc_section_effective_model.py",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/recirc_pressure_basis_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/section_effective_model_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/current_corner_lower_right_recirc_rows.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/same_qoi_uq_sampling_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/model_form_decision_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/paper_claims_and_limitations.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/artifact_crosswalk.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/figure_table_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/paper_methods_pressure_basis.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/paper_results_current_evidence.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/source_manifest.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/summary.json",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/test_two_tap_recirc_section_effective_model.py"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_pressure_residual_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/upcomer_recirc_pressure_closure_contract.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/summary.json",
+    "reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/build_two_tap_recirc_section_effective_model.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/test_two_tap_recirc_section_effective_model.py",
+      "result": "passed: 6 tests"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id TODO-TWO-TAP-RECIRC-SECTION-EFFECTIVE-MODEL",
+      "result": "passed: no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-TWO-TAP-RECIRC-SECTION-EFFECTIVE-MODEL",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_state_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "solver_or_postprocessing_launch": false,
+    "f6_fit_performed": false,
+    "component_k_admitted": false,
+    "ordinary_component_k_allowed_now": false,
+    "endpoint_pressure_invented": false,
+    "hidden_global_multiplier_used": false,
+    "clipped_k_used": false
+  },
+  "resolved_blockers": [
+    "modeling path for recirculating corner_lower_right rows documented",
+    "paper-facing documentation and claim boundaries created"
+  ],
+  "unresolved_blockers": [
+    "two-tap-corner-lower-right-material-reverse-flow remains ordinary-K blocking and must be modeled explicitly",
+    "two-tap-corner-lower-right-component-isolation-fails remains ordinary-K blocking",
+    "two-tap-corner-lower-right-same-qoi-uq-missing remains coefficient-admission blocking"
+  ]
+}

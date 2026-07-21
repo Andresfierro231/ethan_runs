@@ -1,0 +1,84 @@
+{
+  "task": "AGENT-529",
+  "date": "2026-07-17",
+  "title": "Heater source leave-Salt3-out coupled score",
+  "status": "complete",
+  "artifact_root": "work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-529.md",
+    ".agent/journal/2026-07-17/heater-source-leave-salt3-out-score.md",
+    "imports/2026-07-17_heater_source_leave_salt3_out_score.json",
+    "tools/analyze/build_heater_source_leave_salt3_out_score.py",
+    "tools/analyze/test_heater_source_leave_salt3_out_score.py",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score/"
+  ],
+  "read_only_context": [
+    "completed AGENT-511 heater-source redistribution package",
+    "completed AGENT-481/499/509 split/final-scorecard packages",
+    "completed AGENT-498/507/513/522/526 wall/source packages",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree, read-only execution only",
+    "external ../cfd-modeling-tools/**",
+    "generated docs index files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "Submitted bounded Slurm jobs 3301102 and 3301155 for Fluid coupled scoring; both completed 0:0.",
+  "external_fluid_edit": false,
+  "created_outputs": [
+    "case_split_contract.csv",
+    "case_contract_readiness.csv",
+    "candidate_definitions.csv",
+    "heater_source_lambda_grid.csv",
+    "scenario_contracts.csv",
+    "runtime_input_audit.csv",
+    "training_objective_by_lambda.csv",
+    "selected_heater_source_weights.csv",
+    "nominal_coupled_scorecard.csv",
+    "salt3_holdout_delta_vs_m3.csv",
+    "probe_error_localization.csv",
+    "blind_perturbation_external_scorecard.csv",
+    "candidate_admission_review.csv",
+    "background_run_contract.csv",
+    "ag529_heater_source_loso.sbatch",
+    "blocker_decision.json",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "source_paths": [
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy",
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score",
+    "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+    "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "slurm_jobs": [
+    {
+      "job_id": "3301102",
+      "purpose": "full Salt1/Salt2/Salt4 train grid",
+      "state": "COMPLETED",
+      "elapsed": "00:12:14",
+      "exit_code": "0:0"
+    },
+    {
+      "job_id": "3301155",
+      "purpose": "append selected nominal diagnostic rows from reused grid",
+      "state": "COMPLETED",
+      "elapsed": "00:01:44",
+      "exit_code": "0:0"
+    }
+  ],
+  "decision": {
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "blocker_decision": "keep_open",
+    "strict_selection": "blocked_no_complete_accepted_salt1_salt2_salt4_train_triplet",
+    "diagnostic_lambda": "1.0",
+    "admission_decision": "not_admitted"
+  },
+  "notes": "Salt4 train-grid rows are finite but root_status=rejected. Diagnostic lambda=1.0 fails Salt3 vs M3 and cannot be used for admission."
+}

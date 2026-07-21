@@ -1,0 +1,47 @@
+{
+  "task": "AGENT-533",
+  "date": "2026-07-17",
+  "title": "Weekend next-model handoff plan",
+  "status": "complete",
+  "artifact_root": "operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-533.md",
+    ".agent/journal/2026-07-17/weekend-next-model-handoff-plan.md",
+    "imports/2026-07-17_weekend_next_model_handoff_plan.json",
+    "operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    ".agent/STATE.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/BLOCKERS.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score",
+    "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit",
+    "work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate",
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none; read-only planning only",
+  "external_fluid_edit": false,
+  "created_outputs": [
+    "operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md",
+    ".agent/status/2026-07-17_AGENT-533.md",
+    ".agent/journal/2026-07-17/weekend-next-model-handoff-plan.md",
+    "imports/2026-07-17_weekend_next_model_handoff_plan.json"
+  ],
+  "decision": {
+    "recommended_next_model": "UMX1_energy_conserving_upcomer_exchange_stratification",
+    "secondary_model": "TSWFC2_distributed_test_section_wall_fluid_nodes",
+    "blocker_decision": "no_change",
+    "admission_decision": "no_change"
+  },
+  "notes": "Documentation-only handoff. The next implementer should audit updated Fluid for an upcomer mixing/stratification API before any coupled run."
+}

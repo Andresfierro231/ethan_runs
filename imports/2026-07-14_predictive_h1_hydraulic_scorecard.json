@@ -1,0 +1,66 @@
+{
+  "task_id": "AGENT-310",
+  "date": "2026-07-14",
+  "title": "Predictive H1 hydraulic scorecard",
+  "status": "complete",
+  "artifact_root": "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard",
+  "generated_by": [
+    "tools/analyze/build_predictive_h1_hydraulic_scorecard.py"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_predictive_h1_hydraulic_scorecard.py tools/analyze/test_predictive_h1_hydraulic_scorecard.py",
+    "python3.11 -m unittest tools.analyze.test_predictive_h1_hydraulic_scorecard",
+    "python3.11 tools/analyze/build_predictive_h1_hydraulic_scorecard.py"
+  ],
+  "source_files": [
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_results.csv",
+      "role": "H1 proxy mdot rows",
+      "mutation_status": "read_only"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/forward_v0_hydraulic_residuals.csv",
+      "role": "baseline fast_scan hydraulic residual rows",
+      "mutation_status": "read_only"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/hydraulic_fit_safety_gate.csv",
+      "role": "pressure/friction fit-safety boundary",
+      "mutation_status": "read_only"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+      "role": "train validation holdout boundary",
+      "mutation_status": "read_only"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+      "role": "named pressure loss and K source evidence",
+      "mutation_status": "read_only"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv",
+      "role": "reset and development diagnostics",
+      "mutation_status": "read_only"
+    }
+  ],
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/h1_hydraulic_scorecard.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/h1_variant_decision_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/hydraulic_term_boundary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/summary.json"
+  ],
+  "decision": {
+    "overall": "unblocks_forward_v1_scorecard_refresh_as_diagnostic_proxy_not_final_closure",
+    "thermal_fit_used": false,
+    "external_fluid_modified": false,
+    "native_solver_outputs_mutated": false,
+    "publication_closure_allowed": false
+  },
+  "index_refresh": {
+    "status": "deferred",
+    "reason": "Active AGENT-309 owns generated index refresh files on the live board."
+  }
+}

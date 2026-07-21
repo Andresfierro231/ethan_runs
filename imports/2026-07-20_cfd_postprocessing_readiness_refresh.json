@@ -1,0 +1,85 @@
+{
+  "task": "AGENT-563",
+  "task_id": "AGENT-563",
+  "date": "2026-07-20",
+  "role": "Coordinator/Writer/cfd-pp",
+  "objective": "Refresh the CFD postprocessing readiness overview table in reports from existing July 14, July 18, and July 20 evidence packages.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-20_AGENT-563.md",
+    ".agent/journal/2026-07-20/cfd-postprocessing-readiness-refresh.md",
+    "imports/2026-07-20_cfd_postprocessing_readiness_refresh.json",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/README.md",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/build_cfd_postprocessing_readiness_refresh.py",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.csv",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.md",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/scheduler_snapshot.txt",
+    "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/summary.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "reports/AGENTS.override.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/cfd_case_admission_inventory.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv",
+    "registry/_all_postprocessing_runs.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_terminal_admission_rows.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_post_3305547_harvest_wrapper/pressure_upcomer_admission_rollup.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt1_4_nominal_final_freeze/final_freeze_manifest.csv",
+    "read-only scheduler/accounting state for jobs 3293924, 3295438, 3299610, 3299620, and 3305547"
+  ],
+  "outputs": [
+    {
+      "path": "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.csv",
+      "rows": 10,
+      "description": "Machine-readable refreshed CFD postprocessing readiness table."
+    },
+    {
+      "path": "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.md",
+      "rows": 10,
+      "description": "Markdown version of the refreshed CFD postprocessing readiness table."
+    },
+    {
+      "path": "reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/summary.json",
+      "description": "Key counts and conclusion for automated reuse."
+    }
+  ],
+  "key_counts": {
+    "readiness_rows": 10,
+    "pm10_terminal_drift_pass_rows": 4,
+    "pm10_terminal_drift_total_rows": 4,
+    "pressure_upcomer_fit_candidates_released": 0,
+    "nominal_freeze_rows_included": 4,
+    "registry_generated_at_max": "2026-07-18T17:39:10-05:00"
+  },
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "admission_state_mutated": false,
+    "blocker_register_mutated": false,
+    "external_repo_mutated": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none; read-only scheduler/accounting snapshot captured",
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "no_scorecard_outputs": true,
+  "validation": [
+    "python3.11 tools/agent/preflight_task.py --task-id AGENT-563",
+    "python3.11 reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/build_cfd_postprocessing_readiness_refresh.py",
+    "python3.11 -m py_compile reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/build_cfd_postprocessing_readiness_refresh.py",
+    "wc -l reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.csv reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.md",
+    "python3.11 tools/docs/build_repo_index.py",
+    "python3.11 tools/docs/build_repo_index.py --check",
+    "python3.11 tools/agent/finish_task.py --task-id AGENT-563"
+  ]
+}

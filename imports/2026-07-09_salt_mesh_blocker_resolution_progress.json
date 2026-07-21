@@ -1,0 +1,51 @@
+{
+  "manifest_id": "2026-07-09_salt_mesh_blocker_resolution_progress",
+  "task_id": "AGENT-235",
+  "created": "2026-07-09",
+  "generated_at": "2026-07-09T15:25:40-05:00",
+  "role": "Coordinator / Implementer / Tester / Writer",
+  "purpose": "Make concrete read-only progress on Salt mesh-UQ blockers by aligning mainline coarse endpoint monitor values, recomputing endpoint-monitor GCI with mainline coarse where aligned, inventorying medium/fine closure-QOI extraction readiness, and reviewing Salt 4 admission evidence.",
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_case_catalog.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_quality_gate.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_full_history_monitor_summary.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_cfd_scenario_contract/scenario_contract.csv",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt"
+  ],
+  "outputs": [
+    "tools/analyze/build_salt_mesh_blocker_resolution_progress.py",
+    "tools/analyze/test_salt_mesh_blocker_resolution_progress.py",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/mainline_coarse_alignment.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/mainline_coarse_baseline_decisions.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/mainline_coarse_full_history_monitor_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/endpoint_monitor_gci_mainline_coarse.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/medium_fine_closure_qoi_inventory.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/salt4_admission_review.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/next_actions.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/summary.json",
+    ".agent/status/2026-07-09_AGENT-235.md",
+    ".agent/journal/2026-07-09/salt-mesh-blocker-resolution-progress.md"
+  ],
+  "alignment_row_count": 18,
+  "baseline_decision_counts": {
+    "mainline_coarse_can_replace_external_for_endpoint_monitor_gci": 2
+  },
+  "endpoint_monitor_gci_row_count": 18,
+  "endpoint_monitor_gci_status_counts": {
+    "blocked_gci_not_trustworthy": 2,
+    "blocked_medium_or_fine_not_admitted": 9,
+    "diagnostic_gci_computed": 3,
+    "endpoint_monitor_gci_ready": 4
+  },
+  "closure_inventory_count": 4,
+  "salt4_review_count": 2,
+  "current_decision": "Mainline coarse can replace external coarse for Salt 2/4 endpoint-monitor GCI screening. Salt 2 has four endpoint-monitor protocol rows ready; Salt 4 remains blocked by medium/fine admission. Closure-QOI mesh-UQ remains blocked pending medium/fine compute-node sampling.",
+  "read_only_sources": true,
+  "source_tree_modified": false,
+  "native_solver_outputs_modified": false,
+  "registry_updated": false,
+  "staging_updated": false,
+  "closure_observations_updated": false,
+  "continuation_jobs_submitted": false
+}

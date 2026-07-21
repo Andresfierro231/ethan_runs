@@ -1,0 +1,66 @@
+{
+  "task": "TODO-LITREV-MATCHED-PLANE-RECIRC-FIELD-HARVEST",
+  "task_id": "TODO-LITREV-MATCHED-PLANE-RECIRC-FIELD-HARVEST",
+  "date": "2026-07-21",
+  "role": "cfd-pp/Hydraulics/Thermal-modeling/Upcomer-onset/Tester/Writer",
+  "objective": "Publish matched-plane recirculation field harvest/readiness rows for terminal or already-sampled sources, with blocked rows for live corrected-Q and high-heat cases.",
+  "no_scorecard_outputs": true,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-LITREV-MATCHED-PLANE-RECIRC-FIELD-HARVEST.md",
+    ".agent/journal/2026-07-21/litrev-matched-plane-recirc-field-harvest.md",
+    "imports/2026-07-21_litrev_matched_plane_recirc_field_harvest.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/build_litrev_matched_plane_recirc_field_harvest.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/test_litrev_matched_plane_recirc_field_harvest.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/matched_plane_metrics_admission.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_same_window_residual_targets/pm10_plane_pressure_targets.csv",
+    ".agent/status/2026-07-21_AGENT-576.md",
+    ".agent/status/2026-07-17_AGENT-485.md",
+    "native CFD/OpenFOAM outputs read-only"
+  ],
+  "outputs": {
+    "harvest_table": "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv",
+    "readiness": "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv",
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/summary.json"
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/build_litrev_matched_plane_recirc_field_harvest.py work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/test_litrev_matched_plane_recirc_field_harvest.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/test_litrev_matched_plane_recirc_field_harvest.py",
+      "result": "passed: litrev matched-plane recirc field harvest checks passed"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/build_litrev_matched_plane_recirc_field_harvest.py",
+      "result": "passed"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_changed": false,
+  "solver_or_postprocessing_launched": false,
+  "notes": "Inventory/readiness only. No RMF/SVF inference from RAF proxies; no coefficient admission.",
+  "next_recommended_task": "Terminal-gated harvest for corrected-Q 3307441 and high-heat 3299610/3299620 after terminal state is documented."
+}

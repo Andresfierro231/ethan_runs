@@ -9,7 +9,7 @@
   - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/README.md`
   - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/TODO.md`
   - `reports/2026-06-05_ethan_continuation_diagnosis/README.md`
-  - `operational_notes/2026-06-08_todo.md`
+  - `operational_notes/06-26/08/2026-06-08_todo.md`
   - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/controlDict`
   - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/system/functions`
   - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_continuation`
@@ -22,7 +22,7 @@
   - `jadyn_runs/salt4/2026-06-04_jin_continuation_candidate/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh/boundary`
   - `jadyn_runs/salt2/2026-06-02_runtime_recovery/scripts/of13-env.sh`
 - files changed:
-  - `operational_notes/2026-06-09_salt4_mesh_runtime_diagnostics.md`
+  - `operational_notes/06-26/09/2026-06-09_salt4_mesh_runtime_diagnostics.md`
   - `.agent/status/2026-06-09_AGENT-006.md`
   - `.agent/journal/2026-06-09/tester-salt4-mesh-runtime-diagnostics.md`
 - commands run:

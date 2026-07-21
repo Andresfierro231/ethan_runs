@@ -1,0 +1,72 @@
+{
+  "task": "AGENT-493",
+  "date": "2026-07-17",
+  "status": "complete",
+  "title": "Salt PM10 terminal admission readiness",
+  "package": "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness",
+  "todo_id": "TODO-PREDICT-SALT-PM10-TERMINAL-ADMISSION",
+  "cases": [
+    "salt2_lo10q",
+    "salt2_hi10q",
+    "salt4_lo10q",
+    "salt4_hi10q"
+  ],
+  "jobs": [
+    {
+      "job_id": "3293924",
+      "job_name": "saltq_sel_cont",
+      "state_at_refresh": "RUNNING",
+      "role": "packed Salt2/Salt4 +/-10Q solver continuation"
+    },
+    {
+      "job_id": "3295438",
+      "job_name": "saltq_s24_sel_harv",
+      "state_at_refresh": "PENDING",
+      "role": "dependent Salt2/Salt4 +/-10Q harvest/postprocess job"
+    }
+  ],
+  "result": {
+    "terminal_admission_performed": "no",
+    "ready_for_terminal_admission_count": 0,
+    "blocked_live_job_count": 4,
+    "pm5_postprocessing_reusable_pattern": "yes_after_pm10_terminal_completion"
+  },
+  "created_paths": [
+    "tools/analyze/build_salt_pm10_terminal_admission_readiness.py",
+    "tools/analyze/test_salt_pm10_terminal_admission_readiness.py",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/todo_definition.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/live_job_status.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm5_workflow_reference.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/terminal_admission_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/postprocess_command_plan.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/scheduler_query_diagnostics.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/summary.json",
+    ".agent/status/2026-07-17_AGENT-493.md",
+    ".agent/journal/2026-07-17/salt-pm10-terminal-admission-readiness.md",
+    "imports/2026-07-17_salt_pm10_terminal_admission_readiness.json"
+  ],
+  "source_paths": [
+    "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/summary.json",
+    "imports/2026-07-13_salt_q_four_row_packed_continuation.json"
+  ],
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_salt_pm10_terminal_admission_readiness.py tools/analyze/test_salt_pm10_terminal_admission_readiness.py",
+    "python3.11 -m unittest tools.analyze.test_salt_pm10_terminal_admission_readiness",
+    "python3.11 tools/analyze/build_salt_pm10_terminal_admission_readiness.py"
+  ],
+  "guardrails": {
+    "native_existing_output_mutation": "none",
+    "registry_mutation": "none",
+    "scheduler_action": "read-only sacct status check for jobs 3293924 and 3295438",
+    "solver_or_postprocess_launch": "none",
+    "terminal_admission_claim": "none because jobs are non-terminal",
+    "generated_docs_index_refresh": "none"
+  }
+}

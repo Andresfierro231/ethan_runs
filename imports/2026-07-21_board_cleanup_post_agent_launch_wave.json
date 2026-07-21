@@ -1,0 +1,52 @@
+{
+  "task": "AGENT-577",
+  "date": "2026-07-21",
+  "status": "complete",
+  "title": "Board cleanup after LitRev/thesis/modeling agent launch wave",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_AGENT-577.md",
+    ".agent/journal/2026-07-21/board-cleanup-post-agent-launch-wave.md",
+    "imports/2026-07-21_board_cleanup_post_agent_launch_wave.json"
+  ],
+  "read_only_context": [
+    ".agent/status/2026-07-21_TODO-HEATLOSS-PHASED-PROGRESS-PLAN-2026-07-21.md",
+    ".agent/status/2026-07-21_TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21.md",
+    ".agent/status/2026-07-21_TODO-LITREV-SCHEMA-GAP-BOARD-FOLLOWONS-2026-07-21.md",
+    ".agent/status/2026-07-21_TODO-THESIS-CSEM-NARRATIVE-INTEGRATION-2026-07-21.md",
+    "scheduler state for job 3307441"
+  ],
+  "moved_from_active_count": 17,
+  "moved_from_active": [
+    "TODO-HEATLOSS-PHASED-PROGRESS-PLAN-2026-07-21",
+    "TODO-LITREV-MODEL-FORM-BOARD-DISPATCH-2026-07-21",
+    "TODO-LITREV-SCHEMA-GAP-BOARD-FOLLOWONS-2026-07-21",
+    "TODO-LITREV-MODEL-FORM-EXTRACTION-2026-07-21",
+    "AGENT-576",
+    "TODO-F6-COARSE-PATH-REPAIR-ENDPOINT-HARVEST",
+    "AGENT-574",
+    "TODO-PRED-FINAL-MODEL-STARTER-IMPLEMENTATION-2026-07-21",
+    "TODO-THESIS-PREDICTIVE-STUDIES-ROADMAP-2026-07-21",
+    "TODO-PRED-ENDTOEND-SCORE",
+    "TODO-THESIS-CSEM-NARRATIVE-INTEGRATION-2026-07-21",
+    "TODO-THESIS-CSEM-BOARD-DISPATCH-2026-07-21",
+    "TODO-THESIS-CH3-CSEM-CFD-EVIDENCE-DRAFT",
+    "TODO-THESIS-CH5-CSEM-FLUID-WALLS-DRAFT",
+    "TODO-THESIS-CH6-CSEM-ADMISSION-UNCERTAINTY-DRAFT",
+    "TODO-THESIS-CH7-CSEM-RESULTS-INTEGRATION-DRAFT",
+    "TODO-THESIS-CSEM-FIGURE-TABLE-ASSEMBLY"
+  ],
+  "validation": [
+    "python3.11 tools/agent/finish_task.py --task-id <TASK> passed for all 17 moved rows",
+    "Active table reparsed after cleanup",
+    "squeue -j 3307441 showed RUNNING on c318-020"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "external_paper_edit": false,
+  "scientific_admission_change": "none",
+  "blocker_register_mutated": false,
+  "generated_index_refresh": false
+}

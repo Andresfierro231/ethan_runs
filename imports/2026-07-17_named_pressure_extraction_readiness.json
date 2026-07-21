@@ -1,0 +1,41 @@
+{
+  "task": "AGENT-523",
+  "date": "2026-07-17",
+  "objective": "Implement a named pressure-loss/reset extraction readiness package from existing pressure, LitRev, segment-scorecard, F6, and val_salt2 corner-K evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-17_AGENT-523.md",
+    ".agent/journal/2026-07-17/named-pressure-extraction-readiness.md",
+    "imports/2026-07-17_named_pressure_extraction_readiness.json",
+    "tools/analyze/build_named_pressure_extraction_readiness.py",
+    "tools/analyze/test_named_pressure_extraction_readiness.py",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/README.md",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/named_pressure_readiness.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/next_pressure_extraction_queue.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/pressure_readiness_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/source_manifest.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/branch_gate_carryforward_summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/pressure_model_slot_admission.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/pressure_evidence_rollup.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/hydraulic_model_form_ladder.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/next_pressure_evidence_queue.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": false,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "scientific_admission_change": "none",
+  "production_closure": "F3_shah_apparent",
+  "notes": "Existing-evidence extraction-readiness package only. It documents 0 fit-ready named pressure rows and the next pressure-extraction queue; it does not admit ordinary f_D/K rows."
+}

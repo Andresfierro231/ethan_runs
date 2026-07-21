@@ -1,0 +1,82 @@
+{
+  "task": "AGENT-549",
+  "task_id": "AGENT-549",
+  "date": "2026-07-18",
+  "role": "Coordinator/Writer",
+  "objective": "Document Monday coordinator dispatch plans for source/property label enforcement, next-agent task allocation, structural guardrails, and no-launch recommendation.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-18_AGENT-549.md",
+    ".agent/journal/2026-07-18/monday-source-property-and-dispatch-plan.md",
+    "imports/2026-07-18_monday_source_property_and_dispatch_plan.json",
+    "operational_notes/07-26/18/2026-07-18_MONDAY_SOURCE_PROPERTY_AND_AGENT_DISPATCH.md",
+    "operational_notes/START_HERE_FOR_AGENTS.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/summary.json",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/source_property_enforced_fit_admission_rows.csv",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    "read-only scheduler snapshot from squeue -u andresfierro231"
+  ],
+  "scheduler_snapshot": {
+    "command": "squeue -u andresfierro231",
+    "observed_jobs": [
+      "3293924 RUNNING saltq_sel_cont",
+      "3295438 PENDING Dependency saltq_s24_sel_harv",
+      "3299610 RUNNING salt4_q3x_probe",
+      "3299620 RUNNING salt4_heat_pack",
+      "3302317 RUNNING idv68059"
+    ],
+    "recommendation": "do not launch an additional weekend job from AGENT-549; recheck scheduler and active Fluid ownership Monday"
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preflight_task.py --task-id AGENT-549",
+      "result": "passed; no conflicts detected"
+    },
+    {
+      "command": "python3.11 tools/agent/board_dashboard.py",
+      "result": "passed; used as current board orientation"
+    },
+    {
+      "command": "squeue -u andresfierro231",
+      "result": "read-only scheduler snapshot recorded; no launch recommended"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed; blocker register OK with 15 entries"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id AGENT-549",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "completed; indexed 1757 docs, 18 board rows, and 15 blockers"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "read-only squeue only; no submission/cancel/requeue",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_state_mutated": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "generated_index_refreshed": true,
+    "scientific_admission_changed": false,
+    "fitting_or_model_selection_performed": false
+  }
+}

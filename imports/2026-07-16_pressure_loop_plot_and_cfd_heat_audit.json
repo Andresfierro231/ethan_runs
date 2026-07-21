@@ -1,0 +1,65 @@
+{
+  "task": "AGENT-462",
+  "created_local": "2026-07-16T16:55:00-05:00",
+  "objective": "Create pressure-loop plots and a CFD heat audit from completed July 15/16 postprocessed pressure and thermal artifacts without submitting duplicate jobs.",
+  "script": "tools/analyze/build_pressure_loop_plot_and_cfd_heat_audit.py",
+  "test": "tools/analyze/test_pressure_loop_plot_and_cfd_heat_audit.py",
+  "source_artifacts": [
+    {
+      "path": "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv",
+      "use": "Station pressure values, loop order, source station labels, physical location labels, and 1D mapping columns."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_case_scientific_review.csv",
+      "use": "Pressure-case list and diagnostic admission status."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/scientific_review.md",
+      "use": "Scientific review context for pressure-map and corner-pressure admissibility."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+      "use": "Salt2, Salt3, and Salt4 mainline role-level realized heat accounting."
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_section_heat_loss_ledger.csv",
+      "use": "val_salt2 section-level realized heat ledger."
+    }
+  ],
+  "output_artifacts": [
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_loop_mainline_static_p.svg",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_loop_mainline_p_rgh.svg",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_loop_all_cases_static_p.svg",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/cfd_heat_audit_by_run.svg",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/cfd_heat_audit_by_run.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_coverage_by_pressure_case.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/junction_heat_loss_trends.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_plot_index.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_and_modeling_recommendations.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/summary.json"
+  ],
+  "coverage": {
+    "pressure_cases_plotted": 11,
+    "heat_audit_cases": [
+      "salt2_mainline",
+      "salt3_mainline",
+      "salt4_mainline",
+      "val_salt2"
+    ],
+    "pressure_cases_without_comparable_heat_audit": [
+      "salt1_hi10q",
+      "salt1_lo10q",
+      "salt1_nominal",
+      "salt2_hi5q",
+      "salt2_lo5q",
+      "salt4_hi5q",
+      "salt4_lo5q"
+    ]
+  },
+  "guardrails": [
+    "No native CFD output mutation.",
+    "No scheduler submissions or duplicate pressure jobs.",
+    "No registry, generated-index, blocker, or external Fluid edits."
+  ]
+}

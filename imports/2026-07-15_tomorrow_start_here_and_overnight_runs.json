@@ -1,0 +1,104 @@
+{
+  "task": "AGENT-437",
+  "date": "2026-07-15",
+  "status": "complete",
+  "type": "handoff",
+  "created_files": [
+    "operational_notes/07-26/15/2026-07-15_TOMORROW_START_HERE.md",
+    ".agent/status/2026-07-15_AGENT-437.md",
+    ".agent/journal/2026-07-15/tomorrow-start-here-and-overnight-runs.md",
+    "imports/2026-07-15_tomorrow_start_here_and_overnight_runs.json"
+  ],
+  "scheduler_snapshot": {
+    "checked_at": "2026-07-15T17:37:30-05:00",
+    "refreshed_before_closeout": true,
+    "jobs": [
+      {
+        "job_id": "3297384",
+        "name": "ethan_box_upload",
+        "state": "R",
+        "node": "c318-011",
+        "action": "monitor; do not duplicate unless failed",
+        "logs": [
+          "staging/upload_jobs/slurm-3297384.out",
+          "staging/upload_jobs/slurm-3297384.err",
+          "tmp/2026-06-16_ethan_box_upload_probe/rclone_full_upload.log"
+        ],
+        "sampled_progress": "about 441 GiB / 603 GiB copied, 73%, retryable rclone errors present"
+      },
+      {
+        "job_id": "3293924",
+        "name": "saltq_sel_cont",
+        "state": "R",
+        "node": "c318-016",
+        "action": "monitor until terminal"
+      },
+      {
+        "job_id": "3295438",
+        "name": "saltq_s24_sel_harv",
+        "state": "PD_DEPENDENCY",
+        "node": null,
+        "action": "wait for dependency; harvest only after successful completion"
+      },
+      {
+        "job_id": "3295120",
+        "name": "idv75667",
+        "state": "R",
+        "node": "c318-008",
+        "action": "pre-existing NuclearEnergy-dev job observed; do not touch unless user identifies it"
+      },
+      {
+        "job_id": "3295492",
+        "name": "upc_nominal",
+        "state": "COMPLETED",
+        "node": "c306-006",
+        "action": "harvest or parse completed nominal upcomer matched-plane output before relaunching nominal matched-plane work"
+      },
+      {
+        "job_id": "3295901",
+        "name": "upc_pm5q",
+        "state": "CANCELLED before running",
+        "node": null,
+        "action": "do not wait on this job; use landed diagnostic PM5 packages"
+      },
+      {
+        "job_id": "3295968",
+        "name": "upc_pm5q",
+        "state": "CANCELLED before running",
+        "node": null,
+        "action": "do not wait on this job; use landed diagnostic PM5 packages"
+      },
+      {
+        "job_id": "3295989-3295991",
+        "name": "hyd_stage",
+        "state": "CANCELLED before running",
+        "node": null,
+        "action": "do not wait on this dependency chain; use landed AGENT-405/409/421/425 diagnostics"
+      }
+    ]
+  },
+  "hydraulic_evidence_status": {
+    "agent373_stage_rerun": "AGENT-421 scratch rerun produced 3 raw two-tap preflight rows, 4 F6 gate rows, and 128 reset-K sweep rows",
+    "raw_two_tap": "AGENT-409 landed 3 staged-copy Salt2/Salt3/Salt4 diagnostics; lower-minus-upper p_rgh values are 16.30560313 Pa, 13.12073641 Pa, and 11.8397775 Pa",
+    "pm5_matched_plane": "AGENT-406 produced 12/12 PM5 matched-pressure/upcomer rows with wallHeatFlux",
+    "fit_admission": "AGENT-414/425 review keeps F6 fit candidates at 0 and internal-Nu fit candidates at 0",
+    "final_status": "final hydraulic residual remains blocked_not_final and final forward-v1 remains blocked_no_go_final_forward_v1_not_admitted"
+  },
+  "key_next_steps": [
+    "check live scheduler state for 3297384, 3293924, and 3295438",
+    "harvest or parse completed nominal upcomer matched-plane job 3295492 before relaunching nominal matched-plane work",
+    "if corrected-Q jobs are terminal and successful, harvest into the admission chain",
+    "preserve the current training/testing/holdout split and keep Salt2/Salt4 +/-10Q blocked until terminal harvest/admission",
+    "build setup-only M3+TS and HX/cooler scorecard from mdot-vs-temperature audit",
+    "freeze segment-resolved coupled pressure/thermal model contract",
+    "advance closure-QOI mesh/GCI and raw pressure admission packages",
+    "keep upcomer recirculation in the hybrid/onset lane rather than ordinary coefficient fits"
+  ],
+  "guardrails": [
+    "no new scheduler jobs submitted by AGENT-437",
+    "native CFD solver outputs not mutated",
+    "registry/admission state not mutated",
+    "generated indexes not refreshed",
+    "external ../cfd-modeling-tools kept read-only"
+  ]
+}

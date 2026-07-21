@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-14",
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_index_refresh": "not_run_active_AGENT_344_owns_generated_index_scope",
+  "journal": ".agent/journal/2026-07-14/flow-rate-temperature-bc-response-study.md",
+  "kind": "work_product_import",
+  "native_cfd_outputs_mutated": false,
+  "paper_hardened_by": "AGENT-359",
+  "status": ".agent/status/2026-07-14_AGENT-351.md",
+  "summary": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/summary.json",
+  "task": "AGENT-351",
+  "work_product": "work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study"
+}

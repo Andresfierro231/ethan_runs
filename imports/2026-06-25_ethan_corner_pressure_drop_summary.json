@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-06-25T17:45:00-05:00",
+  "task_id": "AGENT-131",
+  "builder_script": "tools/analyze/summarize_corner_pressure_drops.py",
+  "builder_command": "python3.11 tools/analyze/summarize_corner_pressure_drops.py",
+  "validation_commands": [
+    "python3.11 -m py_compile tools/analyze/summarize_corner_pressure_drops.py tools/analyze/test_corner_pressure_drop_summary.py",
+    "python3.11 tools/analyze/test_corner_pressure_drop_summary.py",
+    "python3.11 tools/analyze/summarize_corner_pressure_drops.py"
+  ],
+  "search_roots": [
+    "tmp/2026-06-18_overnight_analysis_queue/case_analysis"
+  ],
+  "output_dir": "work_products/2026-06-25_ethan_corner_pressure_drop_summary",
+  "artifacts": [
+    "work_products/2026-06-25_ethan_corner_pressure_drop_summary/README.md",
+    "work_products/2026-06-25_ethan_corner_pressure_drop_summary/selected_case_packages.csv",
+    "work_products/2026-06-25_ethan_corner_pressure_drop_summary/corner_pressure_drop_window_summary.csv",
+    "work_products/2026-06-25_ethan_corner_pressure_drop_summary/corner_pressure_drop_summary.json",
+    "operational_notes/06-26/25/2026-06-25_ethan_corner_pressure_drop_math.md"
+  ],
+  "selection_summary": {
+    "discovered_feature_csv_count": 15,
+    "selected_package_count": 13,
+    "summary_row_count": 156,
+    "window_sizes": [
+      5,
+      10,
+      20
+    ]
+  },
+  "limitations": [
+    "The summary uses existing feature endpoint CSVs and does not perform a fresh raw-field hydro integral.",
+    "The currently selected case-analysis packages expose only 4 or 5 retained corner-pressure times per case, so the 10-step and 20-step windows collapse to the same retained rows for the current table.",
+    "The sign convention is explicit: mean_delta_p_rgh_pa = average(end_p_rgh - start_p_rgh), while mean_pressure_drop_start_to_end_rgh_pa = average(start_p_rgh - end_p_rgh)."
+  ]
+}
