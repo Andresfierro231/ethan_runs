@@ -1,0 +1,7 @@
+- [ ] Copy `libRCWallBC.so` into `runtime_libs/` under the campaign root.
+- [ ] Stage all fresh June 25 case roots.
+- [ ] Submit the eight packed `normal` jobs.
+- [ ] Record job IDs in `campaign_manifest.csv` and `imports/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave.json`.
+- [ ] Recheck queue state after submission.
+- [ ] Verify each job clears the runtime-library preflight that failed `3254180` and `3254181`.
+- [ ] Compare queue backlog against the still-running `NuclearEnergy` Salt continuation and low-Q jobs before proposing any more relaunches.

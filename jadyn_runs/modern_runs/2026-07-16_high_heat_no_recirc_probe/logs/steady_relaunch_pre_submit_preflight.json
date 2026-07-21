@@ -1,0 +1,512 @@
+{
+  "cases": [
+    {
+      "case_key": "salt4_jin_q0500w_no_recirc_probe",
+      "case_dir": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q0500w_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+      "q_ratio": "1.48104265403",
+      "target_heater_power_W": 500.0,
+      "target_heater_patch_Q_W": 166.66666666666666,
+      "restart_time_s": "11658",
+      "config_ok": true,
+      "root_field_ok": true,
+      "processor_field_ok": true,
+      "runtime_controls_ok": true,
+      "overall_ok": true,
+      "config_values": {
+        "operating_point_heater_power_W": 500.0,
+        "bc_params_heater_Q": 500.0
+      },
+      "config_mismatches": [],
+      "root_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 1,
+          "pipeleg_lower_05_straight": 1,
+          "pipeleg_lower_06_straight": 1,
+          "pipeleg_upper_04_reducer": 1,
+          "pipeleg_upper_05_cooler": 1,
+          "pipeleg_upper_06_reducer": 1
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 166.666666666667,
+            "max": 166.666666666667,
+            "expected": 166.66666666666666
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 166.666666666667,
+            "max": 166.666666666667,
+            "expected": 166.66666666666666
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 166.666666666667,
+            "max": 166.666666666667,
+            "expected": 166.66666666666666
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -30.4193117188,
+            "max": -30.4193117188,
+            "expected": -30.4193117188
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -189.793507838,
+            "max": -189.793507838,
+            "expected": -189.793507838
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -30.4193117188,
+            "max": -30.4193117188,
+            "expected": -30.4193117188
+          }
+        },
+        "mismatches": [],
+        "field_format": "text",
+        "processor_blocks": 0,
+        "frame_error_count": 0
+      },
+      "processor_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 64,
+          "pipeleg_lower_05_straight": 64,
+          "pipeleg_lower_06_straight": 64,
+          "pipeleg_upper_04_reducer": 64,
+          "pipeleg_upper_05_cooler": 64,
+          "pipeleg_upper_06_reducer": 64
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 166.666667,
+            "max": 166.666667,
+            "expected": 166.66666666666666
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 166.666667,
+            "max": 166.666667,
+            "expected": 166.66666666666666
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 166.666667,
+            "max": 166.666667,
+            "expected": 166.66666666666666
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -30.4193117,
+            "max": -30.4193117,
+            "expected": -30.4193117188
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -189.793508,
+            "max": -189.793508,
+            "expected": -189.793507838
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -30.4193117,
+            "max": -30.4193117,
+            "expected": -30.4193117188
+          }
+        },
+        "mismatches": [],
+        "field_format": "decomposedBlockData",
+        "processor_blocks": 64,
+        "frame_error_count": 0,
+        "frame_errors": []
+      },
+      "runtime_summary": {
+        "controls": {
+          "exists": true,
+          "startFrom": "startTime",
+          "startTime": 11658.0,
+          "endTime": 22000.0,
+          "adjustTimeStep": true,
+          "timeFormat": "general",
+          "timePrecision": 6
+        },
+        "mismatches": [],
+        "notes": [
+          "adaptive timestep uses general time format with timePrecision >= 6"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "case_key": "salt4_jin_q1000w_no_recirc_probe",
+      "case_dir": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q1000w_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+      "q_ratio": "2.96208530806",
+      "target_heater_power_W": 1000.0,
+      "target_heater_patch_Q_W": 333.3333333333333,
+      "restart_time_s": "11031",
+      "config_ok": true,
+      "root_field_ok": true,
+      "processor_field_ok": true,
+      "runtime_controls_ok": true,
+      "overall_ok": true,
+      "config_values": {
+        "operating_point_heater_power_W": 1000.0,
+        "bc_params_heater_Q": 1000.0
+      },
+      "config_mismatches": [],
+      "root_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 1,
+          "pipeleg_lower_05_straight": 1,
+          "pipeleg_lower_06_straight": 1,
+          "pipeleg_upper_04_reducer": 1,
+          "pipeleg_upper_05_cooler": 1,
+          "pipeleg_upper_06_reducer": 1
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 333.333333333333,
+            "max": 333.333333333333,
+            "expected": 333.3333333333333
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 333.333333333333,
+            "max": 333.333333333333,
+            "expected": 333.3333333333333
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 333.333333333333,
+            "max": 333.333333333333,
+            "expected": 333.3333333333333
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -60.8386234376,
+            "max": -60.8386234376,
+            "expected": -60.8386234376
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -379.587015677,
+            "max": -379.587015677,
+            "expected": -379.587015677
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -60.8386234376,
+            "max": -60.8386234376,
+            "expected": -60.8386234376
+          }
+        },
+        "mismatches": [],
+        "field_format": "text",
+        "processor_blocks": 0,
+        "frame_error_count": 0
+      },
+      "processor_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 64,
+          "pipeleg_lower_05_straight": 64,
+          "pipeleg_lower_06_straight": 64,
+          "pipeleg_upper_04_reducer": 64,
+          "pipeleg_upper_05_cooler": 64,
+          "pipeleg_upper_06_reducer": 64
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 333.333333,
+            "max": 333.333333,
+            "expected": 333.3333333333333
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 333.333333,
+            "max": 333.333333,
+            "expected": 333.3333333333333
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 333.333333,
+            "max": 333.333333,
+            "expected": 333.3333333333333
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -60.8386234,
+            "max": -60.8386234,
+            "expected": -60.8386234376
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -379.587016,
+            "max": -379.587016,
+            "expected": -379.587015677
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -60.8386234,
+            "max": -60.8386234,
+            "expected": -60.8386234376
+          }
+        },
+        "mismatches": [],
+        "field_format": "decomposedBlockData",
+        "processor_blocks": 64,
+        "frame_error_count": 0,
+        "frame_errors": []
+      },
+      "runtime_summary": {
+        "controls": {
+          "exists": true,
+          "startFrom": "startTime",
+          "startTime": 11031.0,
+          "endTime": 22000.0,
+          "adjustTimeStep": true,
+          "timeFormat": "general",
+          "timePrecision": 6
+        },
+        "mismatches": [],
+        "notes": [
+          "adaptive timestep uses general time format with timePrecision >= 6"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "case_key": "salt4_jin_q1500w_no_recirc_probe",
+      "case_dir": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q1500w_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+      "q_ratio": "4.44312796209",
+      "target_heater_power_W": 1500.0,
+      "target_heater_patch_Q_W": 500.0,
+      "restart_time_s": "10795",
+      "config_ok": true,
+      "root_field_ok": true,
+      "processor_field_ok": true,
+      "runtime_controls_ok": true,
+      "overall_ok": true,
+      "config_values": {
+        "operating_point_heater_power_W": 1500.0,
+        "bc_params_heater_Q": 1500.0
+      },
+      "config_mismatches": [],
+      "root_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 1,
+          "pipeleg_lower_05_straight": 1,
+          "pipeleg_lower_06_straight": 1,
+          "pipeleg_upper_04_reducer": 1,
+          "pipeleg_upper_05_cooler": 1,
+          "pipeleg_upper_06_reducer": 1
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 500.0,
+            "max": 500.0,
+            "expected": 500.0
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 500.0,
+            "max": 500.0,
+            "expected": 500.0
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 500.0,
+            "max": 500.0,
+            "expected": 500.0
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -91.2579351564,
+            "max": -91.2579351564,
+            "expected": -91.2579351564
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -569.380523515,
+            "max": -569.380523515,
+            "expected": -569.380523515
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -91.2579351564,
+            "max": -91.2579351564,
+            "expected": -91.2579351564
+          }
+        },
+        "mismatches": [],
+        "field_format": "text",
+        "processor_blocks": 0,
+        "frame_error_count": 0
+      },
+      "processor_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 64,
+          "pipeleg_lower_05_straight": 64,
+          "pipeleg_lower_06_straight": 64,
+          "pipeleg_upper_04_reducer": 64,
+          "pipeleg_upper_05_cooler": 64,
+          "pipeleg_upper_06_reducer": 64
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 500.0,
+            "max": 500.0,
+            "expected": 500.0
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 500.0,
+            "max": 500.0,
+            "expected": 500.0
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 500.0,
+            "max": 500.0,
+            "expected": 500.0
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -91.2579352,
+            "max": -91.2579352,
+            "expected": -91.2579351564
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -569.380524,
+            "max": -569.380524,
+            "expected": -569.380523515
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -91.2579352,
+            "max": -91.2579352,
+            "expected": -91.2579351564
+          }
+        },
+        "mismatches": [],
+        "field_format": "decomposedBlockData",
+        "processor_blocks": 64,
+        "frame_error_count": 0,
+        "frame_errors": []
+      },
+      "runtime_summary": {
+        "controls": {
+          "exists": true,
+          "startFrom": "startTime",
+          "startTime": 10795.0,
+          "endTime": 22000.0,
+          "adjustTimeStep": true,
+          "timeFormat": "general",
+          "timePrecision": 6
+        },
+        "mismatches": [],
+        "notes": [
+          "adaptive timestep uses general time format with timePrecision >= 6"
+        ]
+      },
+      "notes": []
+    },
+    {
+      "case_key": "salt4_jin_q3x_no_recirc_probe",
+      "case_dir": "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/runs/salt4_jin_q3x_no_recirc_probe/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation",
+      "q_ratio": "3.00",
+      "target_heater_power_W": 1012.8,
+      "target_heater_patch_Q_W": 337.59999999999997,
+      "restart_time_s": "11395",
+      "config_ok": true,
+      "root_field_ok": true,
+      "processor_field_ok": true,
+      "runtime_controls_ok": true,
+      "overall_ok": true,
+      "config_values": {
+        "operating_point_heater_power_W": 1012.8,
+        "bc_params_heater_Q": 1012.8
+      },
+      "config_mismatches": [],
+      "root_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 1,
+          "pipeleg_lower_05_straight": 1,
+          "pipeleg_lower_06_straight": 1,
+          "pipeleg_upper_04_reducer": 1,
+          "pipeleg_upper_05_cooler": 1,
+          "pipeleg_upper_06_reducer": 1
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 337.6,
+            "max": 337.6,
+            "expected": 337.59999999999997
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 337.6,
+            "max": 337.6,
+            "expected": 337.59999999999997
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 337.6,
+            "max": 337.6,
+            "expected": 337.59999999999997
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -61.6173578176,
+            "max": -61.6173578176,
+            "expected": -61.6173578176
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -384.445729477,
+            "max": -384.445729477,
+            "expected": -384.445729477
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -61.6173578176,
+            "max": -61.6173578176,
+            "expected": -61.6173578176
+          }
+        },
+        "mismatches": [],
+        "field_format": "text",
+        "processor_blocks": 0,
+        "frame_error_count": 0
+      },
+      "processor_summary": {
+        "counts": {
+          "pipeleg_lower_04_straight": 64,
+          "pipeleg_lower_05_straight": 64,
+          "pipeleg_lower_06_straight": 64,
+          "pipeleg_upper_04_reducer": 64,
+          "pipeleg_upper_05_cooler": 64,
+          "pipeleg_upper_06_reducer": 64
+        },
+        "extrema": {
+          "pipeleg_lower_04_straight": {
+            "min": 337.6,
+            "max": 337.6,
+            "expected": 337.59999999999997
+          },
+          "pipeleg_lower_05_straight": {
+            "min": 337.6,
+            "max": 337.6,
+            "expected": 337.59999999999997
+          },
+          "pipeleg_lower_06_straight": {
+            "min": 337.6,
+            "max": 337.6,
+            "expected": 337.59999999999997
+          },
+          "pipeleg_upper_04_reducer": {
+            "min": -61.6173578,
+            "max": -61.6173578,
+            "expected": -61.6173578176
+          },
+          "pipeleg_upper_05_cooler": {
+            "min": -384.445729,
+            "max": -384.445729,
+            "expected": -384.445729477
+          },
+          "pipeleg_upper_06_reducer": {
+            "min": -61.6173578,
+            "max": -61.6173578,
+            "expected": -61.6173578176
+          }
+        },
+        "mismatches": [],
+        "field_format": "decomposedBlockData",
+        "processor_blocks": 64,
+        "frame_error_count": 0,
+        "frame_errors": []
+      },
+      "runtime_summary": {
+        "controls": {
+          "exists": true,
+          "startFrom": "startTime",
+          "startTime": 11395.0,
+          "endTime": 22000.0,
+          "adjustTimeStep": true,
+          "timeFormat": "general",
+          "timePrecision": 6
+        },
+        "mismatches": [],
+        "notes": [
+          "adaptive timestep uses general time format with timePrecision >= 6"
+        ]
+      },
+      "notes": []
+    }
+  ]
+}
