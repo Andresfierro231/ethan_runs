@@ -12,6 +12,10 @@ The exact June 23 latest-window freeze refresh is still in flight, so this
 section should be presented as the current local June 23 scorecard rather than
 the final refreshed external replay result.
 
+2026-06-30 refresh: the strict comparison subset below is now a legacy/stale
+support surface because Kirst rows are excluded from current mainline use.
+Use it to explain the old readable 1D miss, not as the current primary run set.
+
 ## Slide M1: What The Current 1D Model Is Actually Being Asked To Predict
 
 - Figure:
@@ -56,15 +60,15 @@ the final refreshed external replay result.
   - The takeaway is that the best current readable scenario still misses on all
     four observables we care about.
 
-## Slide M3: Case-By-Case Comparison On The Strict Published Subset
+## Slide M3: Case-By-Case Comparison On The Legacy Strict Subset
 
 - Figure:
   `reports/2026-06-23_presentation/figures/png/B_primary_best_sensor_parity.png`
 - Main claim:
-  the 1D model misses each currently published strict comparison case, not just
+  the old readable 1D model missed each legacy strict comparison case, not just
   one outlier
 - Bullets:
-  - Strict published comparison subset is:
+  - Legacy strict published comparison subset was:
     `Salt 1 Kirst`, `Salt 2 Kirst`, `Salt 2 Val`.
   - `Salt 1 Kirst`: energy `16.01%`, `T_w` RMSE `65.31 K`,
     `T_p` RMSE `65.24 K`, mdot `25.45%`.
@@ -77,6 +81,8 @@ the final refreshed external replay result.
 - Speaker notes:
   - Pair this slide with the presentation-local results table.
   - The point is that none of the published strict comparison rows are close.
+  - Say explicitly that Kirst rows are not current mainline inputs under the
+    June 30 run classification policy.
 
 ## Slide M4: Why The 1D Still Misses
 

@@ -1,0 +1,6 @@
+attempt_name,case_count,mean_mdot_abs_error_kg_s,rmse_mdot_abs_error_kg_s
+major_plus_feature_probe_baseline,9,0.00025483952391472695,0.0002607917836850889
+major_plus_feature_probe_external_losses,9,0.00025483952391472695,0.0002607917836850889
+major_plus_feature_probe_hybrid_external,9,0.00025483952391472695,0.0002607917836850889
+major_plus_feature_endpoint_baseline,9,0.48443225029948334,0.4862362817418398
+major_only_baseline,9,0.5539232734458288,0.5560017365612597

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-06-29T18:02:11-05:00",
+  "paper_case_count": 4,
+  "paper_cases": [
+    "Salt 1 Jin",
+    "Salt 2 Jin",
+    "Salt 3 Jin",
+    "Salt 4 Jin"
+  ],
+  "mean_upcomer_reverse_area_fraction": 0.6438479738650917,
+  "min_upcomer_reverse_area_fraction": 0.6074694960113894,
+  "max_upcomer_reverse_area_fraction": 0.6800998963619754,
+  "mean_right_leg_reverse_area_fraction": 0.0,
+  "strongest_available_predictor": "Heater power",
+  "figure_svg": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-29/2026-06-29_ethan_upcomer_recirculation_evidence/figures/svg/upcomer_reverse_shear_fraction_profile.svg"
+}

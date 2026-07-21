@@ -1,0 +1,17 @@
+{
+  "generated_at": "2026-06-29T17:53:18-05:00",
+  "package": "2026-06-29_ethan_closure_status_gate",
+  "current_basis_label": "june26_closure_bundle_plus_june22_published_local_surface_pre_latest_window_overnight",
+  "status_counts": {
+    "defended": 2,
+    "support_gated": 3,
+    "diagnostic_only": 2,
+    "residual_only": 4,
+    "blocked": 4
+  },
+  "notes": [
+    "Direct Salt thermal closure remains defended only on left_lower_leg.",
+    "The primary thermal surface elsewhere remains bounded UA' rather than broad direct Nu.",
+    "This package is not yet based on the queued post-overnight latest-window refresh chain."
+  ]
+}

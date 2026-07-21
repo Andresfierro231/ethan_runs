@@ -1,0 +1,8 @@
+predictor_key,predictor_label,source_column,status,available_case_count,pearson_r,spearman_rho,missing_cases,severity_metric
+reynolds_bulk,Re,,not_available_in_reused_stack,0,nan,nan,Salt 1 Jin|Salt 2 Jin|Salt 3 Jin|Salt 4 Jin,upcomer_reverse_area_fraction
+gr_over_re2,Gr/Re^2,,not_available_in_reused_stack,0,nan,nan,Salt 1 Jin|Salt 2 Jin|Salt 3 Jin|Salt 4 Jin,upcomer_reverse_area_fraction
+heater_power_W,Heater power,heater_power_W,available,4,0.9805538214407586,0.9999999999999998,,upcomer_reverse_area_fraction
+cooler_h_W_m2K,Cooler h,cooler_h_W_m2K,available,4,-0.7559761518669318,-0.7999999999999998,,upcomer_reverse_area_fraction
+temp_upcomer_bulk_k,Mean upcomer bulk temperature,temp_upcomer_bulk_k,available,4,0.9754780595973213,0.9999999999999998,,upcomer_reverse_area_fraction
+heater_to_cooler_bulk_delta_k,Heater-to-cooler bulk delta,heater_to_cooler_bulk_delta_k,available,4,0.8849708314476766,0.9999999999999998,,upcomer_reverse_area_fraction
+downcomer_to_upcomer_bulk_delta_k,Downcomer-to-upcomer bulk delta,downcomer_to_upcomer_bulk_delta_k,available,4,0.8946768791055936,0.9999999999999998,,upcomer_reverse_area_fraction

@@ -1,0 +1,10 @@
+{
+  "generated_at": "2026-06-29T16:55:15-05:00",
+  "frozen_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_results",
+  "hydro_probe_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06/2026-06-22/2026-06-22_ethan_feature_path_hydro_probe",
+  "summary_row_count": 9,
+  "element_row_count": 99,
+  "sensor_row_count": 153,
+  "replay_row_count": 45,
+  "best_local_replay_attempt": "major_plus_feature_probe_baseline"
+}

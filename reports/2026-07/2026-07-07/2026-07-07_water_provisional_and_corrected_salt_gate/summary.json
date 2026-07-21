@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-07",
+  "task_id": "AGENT-181",
+  "water": {
+    "source_job_id": "3265970",
+    "source_job_state": "TIMEOUT",
+    "postprocess_job_id": "3278452",
+    "postprocess_job_state": "COMPLETED",
+    "case_count": 4,
+    "admission": "provisional_monitor_reporting_only",
+    "caveat": "Water came from a timeout/frozen final window; July 6 outputs are not closure-fit data.",
+    "language_audit": {
+      "artifact": "work_products/2026-07-07_water_provisional_and_corrected_salt_gate/water_provisional_language_audit.json",
+      "artifacts_audited": 6,
+      "missing_timeout_frozen_caveat": 0,
+      "missing_closure_fit_block": 0,
+      "missing_rom_correlation_block": 0
+    }
+  },
+  "corrected_salt": {
+    "parent_jobs_still_running": ["3275448", "3275449", "3275560"],
+    "old_gate_job": {"job_id": "3278453", "state": "CANCELLED"},
+    "replacement_gate_job": {
+      "job_id": "3279646",
+      "state_at_submission_check": "PENDING_DEPENDENCY",
+      "dependency": "afterany:3275448:3275449:3275560"
+    },
+    "preflight_cases_audited": 14,
+    "preflight_failures": 0,
+    "live_sanity_monitor": {
+      "artifact": "work_products/2026-07-07_corrected_salt_live_monitor/live_salt_sanity_monitor.json",
+      "case_count": 14,
+      "special_scrutiny_count": 4,
+      "fatal_error_case_count": 2,
+      "flagged_cases": [
+        "salt1_jin_lo10q_corrected",
+        "salt1_jin_hi10q_corrected",
+        "salt3_jin_hi5q_corrected",
+        "salt3_jin_hi10q_corrected"
+      ]
+    },
+    "admission": "not_admissible_until_operating_point_verdict_requalified_and_no_unreviewed_needs_special_gate_scrutiny"
+  },
+  "rom_correlation_boundary": {
+    "false_steady_perturbations_allowed_in_fits": false,
+    "current_re_power_law_status": "screen_only_needs_more_true_steady_cfd",
+    "best_prior_model_form_score": {
+      "model_form": "global_mean_mult",
+      "case_count": 3,
+      "mean_abs_mdot_error_pct": 3.6615262993505056,
+      "source": "work_products/2026-07-06_overnight_postprocess_jobs/water_postprocess_after_3265970/next_1d_model_forms/summary.json"
+    }
+  }
+}

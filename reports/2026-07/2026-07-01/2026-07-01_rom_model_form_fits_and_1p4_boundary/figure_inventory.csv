@@ -1,0 +1,4 @@
+figure_id,path,description
+model_form_mdot_error_bar,reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary/figures/model_form_mdot_error_bar.png,Side-by-side mass-flow error for fitted and boundary model forms.
+predicted_vs_cfd_mdot,reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary/figures/predicted_vs_cfd_mdot.png,Predicted mdot against CFD mdot for representative closure forms.
+boundary_sensitivity_mdot_error,reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary/figures/boundary_sensitivity_mdot_error.png,1.0/1.4/2.0 in and radiation sensitivity for default closures.

@@ -1,0 +1,105 @@
+source_path,source_type,date,theme_cluster,phase_used,unique_contribution,confidence_label
+journals/2026-05/2026-05-29_ethan_runs.md,journal,2026-05-29,crosscutting,phase1,2026-05-29 ethan runs,historical
+journals/2026-06/2026-06-01_ethan_runs.md,journal,2026-06-01,crosscutting,phase1,2026-06-01 ethan runs,historical
+journals/2026-06/2026-06-02_ethan_runs.md,journal,2026-06-02,crosscutting,phase1,2026-06-02 ethan runs,historical
+journals/2026-06/2026-06-04_ethan_runs.md,journal,2026-06-04,crosscutting,phase1,2026-06-04 ethan runs,historical
+journals/2026-06/2026-06-05_ethan_runs.md,journal,2026-06-05,crosscutting,phase1,2026-06-05 ethan runs,historical
+journals/2026-06/2026-06-07_ethan_runs.md,journal,2026-06-07,crosscutting,phase1,2026-06-07 ethan runs,historical
+journals/2026-06/2026-06-08_ethan_presentation_package_and_parameterization.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 ethan presentation package and parameterization,historical
+journals/2026-06/2026-06-08_ethan_runs.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 ethan runs,historical
+journals/2026-06/2026-06-08_ethan_runs_render_only_figure_refresh.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 ethan runs render only figure refresh,historical
+journals/2026-06/2026-06-08_ethan_runs_rendering_and_runner_addendum.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 ethan runs rendering and runner addendum,historical
+journals/2026-06/2026-06-08_individual_slice_package_refresh.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 individual slice package refresh,historical
+journals/2026-06/2026-06-08_salt34_field_slice_refresh.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 salt34 field slice refresh,historical
+journals/2026-06/2026-06-08_timestep_stamp_refresh.md,journal,2026-06-08,crosscutting,phase1,2026-06-08 timestep stamp refresh,historical
+journals/2026-06/2026-06-09_ethan_runs.md,journal,2026-06-09,crosscutting,phase1,2026-06-09 ethan runs,historical
+journals/2026-06/2026-06-10_ethan_runs.md,journal,2026-06-10,crosscutting,phase1,2026-06-10 ethan runs,historical
+journals/2026-06/2026-06-11_ethan_runs.md,journal,2026-06-11,crosscutting,phase1,2026-06-11 ethan runs,historical
+journals/2026-06/2026-06-12_ethan_runs.md,journal,2026-06-12,crosscutting,phase1,2026-06-12 ethan runs,historical
+journals/2026-06/2026-06-15_ethan_runs.md,journal,2026-06-15,crosscutting,phase1,2026-06-15 ethan runs,historical
+journals/2026-06/2026-06-16_ethan_runs.md,journal,2026-06-16,crosscutting,phase1,2026-06-16 ethan runs,historical
+journals/2026-06/2026-06-17_ethan_runs.md,journal,2026-06-17,crosscutting,phase1,2026-06-17 ethan runs,historical
+journals/2026-06/2026-06-18_ethan_runs.md,journal,2026-06-18,crosscutting,phase1,2026-06-18 ethan runs,historical
+journals/2026-06/2026-06-19_ethan_runs.md,journal,2026-06-19,crosscutting,phase1,2026-06-19 ethan runs,historical
+journals/2026-06/2026-06-22_ethan_runs.md,journal,2026-06-22,crosscutting,phase1,2026-06-22 ethan runs,historical
+journals/2026-06/2026-06-23_ethan_runs.md,journal,2026-06-23,crosscutting,phase1,2026-06-23 ethan runs,historical
+journals/2026-06/2026-06-25_ethan_runs.md,journal,2026-06-25,crosscutting,phase1,2026-06-25 ethan runs,historical
+reports/2026-06/2026-06-02/2026-06-02_ethan_1d_model_discrepancy_report,report,2026-06-02,closure_modeling,phase2,2026-06-02 ethan 1d model discrepancy report,provisional
+reports/2026-06/2026-06-02/2026-06-02_water_laminar_claim_audit,report,2026-06-02,validation_and_audit,phase2,2026-06-02 water laminar claim audit,provisional
+reports/2026-06/2026-06-04/2026-06-04_all_salt_behavior_package,report,2026-06-04,validation_and_audit,phase2,2026-06-04 all salt behavior package,provisional
+reports/2026-06/2026-06-04/2026-06-04_ethan_direct_validation,report,2026-06-04,validation_and_audit,phase2,2026-06-04 ethan direct validation,high
+reports/2026-06/2026-06-04/2026-06-04_ethan_essential_steadiness_audit,report,2026-06-04,validation_and_audit,phase2,2026-06-04 ethan essential steadiness audit,provisional
+reports/2026-06/2026-06-04/2026-06-04_ethan_runtime_and_hypothesis_matrix,report,2026-06-04,validation_and_audit,phase2,2026-06-04 ethan runtime and hypothesis matrix,provisional
+reports/2026-06/2026-06-04/2026-06-04_ethan_section_transport_package,report,2026-06-04,hydraulic_thermal_transport,phase2,2026-06-04 ethan section transport package,provisional
+reports/2026-06/2026-06-04/2026-06-04_ethan_transient_axial_package,report,2026-06-04,crosscutting,phase2,2026-06-04 ethan transient axial package,provisional
+reports/2026-06/2026-06-04/2026-06-04_salt2_behavior_package,report,2026-06-04,validation_and_audit,phase2,2026-06-04 salt2 behavior package,provisional
+reports/2026-06/2026-06-05/2026-06-05_ethan_continuation_diagnosis,report,2026-06-05,runtime_campaigns,phase2,2026-06-05 ethan continuation diagnosis,provisional
+reports/2026-06/2026-06-05/2026-06-05_ethan_convergence_and_salt1_campaign,report,2026-06-05,runtime_campaigns,phase2,2026-06-05 ethan convergence and salt1 campaign,provisional
+reports/2026-06/2026-06-05/2026-06-05_ethan_wall_loss_resistance_coupling,report,2026-06-05,crosscutting,phase2,2026-06-05 ethan wall loss resistance coupling,provisional
+reports/2026-06/2026-06-05/2026-06-05_water_laminar_claim_audit,report,2026-06-05,validation_and_audit,phase2,2026-06-05 water laminar claim audit,provisional
+reports/2026-06/2026-06-09/2026-06-09_ethan_dense_streamwise_friction_package,report,2026-06-09,hydraulic_thermal_transport,phase2,2026-06-09 ethan dense streamwise friction package,provisional
+reports/2026-06/2026-06-09/2026-06-09_ethan_legwise_hydraulic_budget_package,report,2026-06-09,hydraulic_thermal_transport,phase2,2026-06-09 ethan legwise hydraulic budget package,provisional
+reports/2026-06/2026-06-09/2026-06-09_ethan_steady_state_heat_flow_audit,report,2026-06-09,hydraulic_thermal_transport,phase2,2026-06-09 ethan steady state heat flow audit,provisional
+reports/2026-06/2026-06-09/2026-06-09_ethan_streamwise_friction_package,report,2026-06-09,hydraulic_thermal_transport,phase2,2026-06-09 ethan streamwise friction package,provisional
+reports/2026-06/2026-06-10/2026-06-10_ethan_salt2_case_analysis_package,report,2026-06-10,crosscutting,phase2,2026-06-10 ethan salt2 case analysis package,high
+reports/2026-06/2026-06-11/2026-06-11_salt2_internal_technical_report_brief,report,2026-06-11,crosscutting,phase2,2026-06-11 salt2 internal technical report brief,provisional
+reports/2026-06/2026-06-11/2026-06-11_salt2_rigor_repair_methods_note,report,2026-06-11,crosscutting,phase2,2026-06-11 salt2 rigor repair methods note,provisional
+reports/2026-06/2026-06-15/2026-06-15_ethan_all_runs_field_transport_campaign,report,2026-06-15,hydraulic_thermal_transport,phase2,2026-06-15 ethan all runs field transport campaign,provisional
+reports/2026-06/2026-06-15/2026-06-15_ethan_boundary_modeling_report,report,2026-06-15,closure_modeling,phase2,2026-06-15 ethan boundary modeling report,provisional
+reports/2026-06/2026-06-15/2026-06-15_ethan_field_transport_campaign,report,2026-06-15,hydraulic_thermal_transport,phase2,2026-06-15 ethan field transport campaign,provisional
+reports/2026-06/2026-06-15/2026-06-15_ethan_postprocessing_campaign_paper_handoff,report,2026-06-15,crosscutting,phase2,2026-06-15 ethan postprocessing campaign paper handoff,high
+reports/2026-06/2026-06-15/2026-06-15_ethan_representative_transport_comparison,report,2026-06-15,hydraulic_thermal_transport,phase2,2026-06-15 ethan representative transport comparison,provisional
+reports/2026-06/2026-06-17/2026-06-17_ethan_nondimensional_dashboard_package,report,2026-06-17,closure_modeling,phase2,2026-06-17 ethan nondimensional dashboard package,provisional
+reports/2026-06/2026-06-17/2026-06-17_ethan_pressure_htc_boundarylayer_package,report,2026-06-17,hydraulic_thermal_transport,phase2,2026-06-17 ethan pressure htc boundarylayer package,provisional
+reports/2026-06/2026-06-17/2026-06-17_ethan_streamwise_transport_math_reference,report,2026-06-17,hydraulic_thermal_transport,phase2,2026-06-17 ethan streamwise transport math reference,provisional
+reports/2026-06/2026-06-17/2026-06-17_ethan_transport_interpretation_package,report,2026-06-17,hydraulic_thermal_transport,phase2,2026-06-17 ethan transport interpretation package,provisional
+reports/2026-06/2026-06-17/2026-06-17_ethan_transport_scrutiny_package,report,2026-06-17,hydraulic_thermal_transport,phase2,2026-06-17 ethan transport scrutiny package,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_cross_family_hydraulic_redesign_screen,report,2026-06-18,hydraulic_thermal_transport,phase2,2026-06-18 ethan cross family hydraulic redesign screen,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_pressure_feature_support_note,report,2026-06-18,hydraulic_thermal_transport,phase2,2026-06-18 ethan pressure feature support note,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_salt_analysis_checkpoint_suite,report,2026-06-18,runtime_campaigns,phase2,2026-06-18 ethan salt analysis checkpoint suite,high
+reports/2026-06/2026-06-18/2026-06-18_ethan_salt_closure_correlation_package,report,2026-06-18,closure_modeling,phase2,2026-06-18 ethan salt closure correlation package,high
+reports/2026-06/2026-06-18/2026-06-18_ethan_salt_hydraulic_evidence_subset,report,2026-06-18,hydraulic_thermal_transport,phase2,2026-06-18 ethan salt hydraulic evidence subset,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_salt_model_dependency_package,report,2026-06-18,closure_modeling,phase2,2026-06-18 ethan salt model dependency package,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_salt_paper_handoff_package,report,2026-06-18,crosscutting,phase2,2026-06-18 ethan salt paper handoff package,high
+reports/2026-06/2026-06-18/2026-06-18_ethan_salt_thermal_model_surface_ranking,report,2026-06-18,closure_modeling,phase2,2026-06-18 ethan salt thermal model surface ranking,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_transport_analysis_package,report,2026-06-18,hydraulic_thermal_transport,phase2,2026-06-18 ethan transport analysis package,high
+reports/2026-06/2026-06-18/2026-06-18_ethan_transport_interpretation_closure,report,2026-06-18,closure_modeling,phase2,2026-06-18 ethan transport interpretation closure,high
+reports/2026-06/2026-06-18/2026-06-18_ethan_transport_scientific_interpretation_package,report,2026-06-18,hydraulic_thermal_transport,phase2,2026-06-18 ethan transport scientific interpretation package,provisional
+reports/2026-06/2026-06-18/2026-06-18_ethan_water_hydraulic_evidence_subset,report,2026-06-18,hydraulic_thermal_transport,phase2,2026-06-18 ethan water hydraulic evidence subset,provisional
+reports/2026-06/2026-06-19/2026-06-19_ethan_blocker_report_and_followon_wave,report,2026-06-19,runtime_campaigns,phase2,2026-06-19 ethan blocker report and followon wave,medium
+reports/2026-06/2026-06-19/2026-06-19_ethan_closure_to_modeling_handoff,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan closure to modeling handoff,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_insulation_optimizer_package,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan insulation optimizer package,provisional
+reports/2026-06/2026-06-19/2026-06-19_ethan_litrev_to_1d_modeling_handoff,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan litrev to 1d modeling handoff,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_conclusions_package,report,2026-06-19,crosscutting,phase2,2026-06-19 ethan salt conclusions package,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_feature_hydraulic_hardening,report,2026-06-19,hydraulic_thermal_transport,phase2,2026-06-19 ethan salt feature hydraulic hardening,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_feature_path_hydraulic_hardening,report,2026-06-19,hydraulic_thermal_transport,phase2,2026-06-19 ethan salt feature path hydraulic hardening,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_model_dependency_package_v2,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan salt model dependency package v2,provisional
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_model_dependency_package_v3,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan salt model dependency package v3,provisional
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_straight_hydraulic_sensitivity,report,2026-06-19,hydraulic_thermal_transport,phase2,2026-06-19 ethan salt straight hydraulic sensitivity,provisional
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_thermal_closure_hardening,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan salt thermal closure hardening,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_salt_thermal_closure_hardening_v3,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan salt thermal closure hardening v3,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_water_feature_hydraulic_readiness,report,2026-06-19,hydraulic_thermal_transport,phase2,2026-06-19 ethan water feature hydraulic readiness,medium
+reports/2026-06/2026-06-19/2026-06-19_ethan_water_phase1_starter_package,report,2026-06-19,crosscutting,phase2,2026-06-19 ethan water phase1 starter package,medium
+reports/2026-06/2026-06-19/2026-06-19_ethan_water_readiness_handoff,report,2026-06-19,crosscutting,phase2,2026-06-19 ethan water readiness handoff,high
+reports/2026-06/2026-06-19/2026-06-19_ethan_water_thermal_closure_readiness,report,2026-06-19,closure_modeling,phase2,2026-06-19 ethan water thermal closure readiness,high
+reports/2026-06/2026-06-22/2026-06-22_ethan_balanced_salt_scenario_wave,report,2026-06-22,runtime_campaigns,phase2,2026-06-22 ethan balanced salt scenario wave,medium
+reports/2026-06/2026-06-22/2026-06-22_ethan_corrected_continuation_relaunch,report,2026-06-22,runtime_campaigns,phase2,2026-06-22 ethan corrected continuation relaunch,provisional
+reports/2026-06/2026-06-22/2026-06-22_ethan_feature_path_hydro_decomposition,report,2026-06-22,hydraulic_thermal_transport,phase2,2026-06-22 ethan feature path hydro decomposition,provisional
+reports/2026-06/2026-06-22/2026-06-22_ethan_feature_path_hydro_probe,report,2026-06-22,hydraulic_thermal_transport,phase2,2026-06-22 ethan feature path hydro probe,provisional
+reports/2026-06/2026-06-22/2026-06-22_ethan_fluid_replay_against_frozen_state,report,2026-06-22,closure_modeling,phase2,2026-06-22 ethan fluid replay against frozen state,high
+reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_results,report,2026-06-22,closure_modeling,phase2,2026-06-22 ethan frozen state results,high
+reports/2026-06/2026-06-22/2026-06-22_ethan_frozen_state_roadmap,report,2026-06-22,closure_modeling,phase2,2026-06-22 ethan frozen state roadmap,medium
+reports/2026-06/2026-06-22/2026-06-22_ethan_heat_balance_contract,report,2026-06-22,hydraulic_thermal_transport,phase2,2026-06-22 ethan heat balance contract,provisional
+reports/2026-06/2026-06-22/2026-06-22_ethan_packed_continuation_and_salt_wave,report,2026-06-22,runtime_campaigns,phase2,2026-06-22 ethan packed continuation and salt wave,medium
+reports/2026-06/2026-06-22/2026-06-22_ethan_salt_feature_path_hydraulic_hardening_v2,report,2026-06-22,hydraulic_thermal_transport,phase2,2026-06-22 ethan salt feature path hydraulic hardening v2,high
+reports/2026-06/2026-06-22/2026-06-22_ethan_salt_model_dependency_package_v4,report,2026-06-22,closure_modeling,phase2,2026-06-22 ethan salt model dependency package v4,provisional
+reports/2026-06/2026-06-22/2026-06-22_ethan_salt_straight_hydraulic_sensitivity_refresh,report,2026-06-22,hydraulic_thermal_transport,phase2,2026-06-22 ethan salt straight hydraulic sensitivity refresh,provisional
+reports/2026-06/2026-06-22/2026-06-22_ethan_weekend_run_triage,report,2026-06-22,runtime_campaigns,phase2,2026-06-22 ethan weekend run triage,medium
+reports/2026-06/2026-06-23/2026-06-23_ethan_1d_closure_bakeoff,report,2026-06-23,closure_modeling,phase2,2026-06-23 ethan 1d closure bakeoff,high
+reports/2026-06/2026-06-23/2026-06-23_ethan_cfd_freeze_checkpoint,report,2026-06-23,runtime_campaigns,phase2,2026-06-23 ethan cfd freeze checkpoint,medium
+reports/2026-06/2026-06-23/2026-06-23_ethan_dynamic_pressure_profiles,report,2026-06-23,hydraulic_thermal_transport,phase2,2026-06-23 ethan dynamic pressure profiles,provisional
+reports/2026-06/2026-06-23/2026-06-23_ethan_frozen_state_1d_validation,report,2026-06-23,closure_modeling,phase2,2026-06-23 ethan frozen state 1d validation,high
+reports/2026-06/2026-06-23/2026-06-23_ethan_prgh_vs_dynamic_profiles,report,2026-06-23,crosscutting,phase2,2026-06-23 ethan prgh vs dynamic profiles,provisional
+reports/2026-06/2026-06-23/2026-06-23_ethan_salt_family_heat_loss_breakout,report,2026-06-23,hydraulic_thermal_transport,phase2,2026-06-23 ethan salt family heat loss breakout,provisional
+reports/2026-06/2026-06-23/2026-06-23_ethan_salt_pressure_closure_breakout,report,2026-06-23,closure_modeling,phase2,2026-06-23 ethan salt pressure closure breakout,high
+reports/2026-06/2026-06-23/2026-06-23_ethan_salt_redevelopment_followon,report,2026-06-23,crosscutting,phase2,2026-06-23 ethan salt redevelopment followon,provisional

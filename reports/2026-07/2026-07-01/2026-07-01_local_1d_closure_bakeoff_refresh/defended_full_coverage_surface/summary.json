@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-01T16:08:00-05:00",
+  "frozen_reference_count": 9,
+  "primary_frozen_reference_count": 3,
+  "comparison_row_count": 9,
+  "sensor_error_row_count": 144,
+  "scenario_count_primary": 1,
+  "best_primary_scenario": "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1",
+  "best_primary_composite_score": 1.0,
+  "best_case_count_primary": 3,
+  "figure_stems": [
+    "primary_best_energy_partition",
+    "primary_best_mass_flow",
+    "primary_best_sensor_parity",
+    "primary_branch_development",
+    "primary_scenario_metric_heatmap"
+  ],
+  "closure_bundle_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-26_ethan_cfd_closure_bundle",
+  "closure_bundle_term_count": 10,
+  "closure_bundle_branch_policy_count": 7
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-07-13",
+  "latest_update": "2026-07-14",
+  "task_id": "AGENT-282",
+  "latest_update_task_id": "AGENT-352",
+  "type": "litrev_lessons_and_research_pathways",
+  "source_litrev_root": "/scratch/09748/andresfierro231/projects_scratch/papers/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL",
+  "outputs": [
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/litrev_to_current_evidence_crosswalk.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/untried_litrev_model_forms.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/rejected_or_demoted_litrev_shortcuts.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/summary.json"
+  ],
+  "core_conclusion": "The literature review supports a branchwise, source-status-controlled closure ledger rather than global friction, Nusselt, K, or UA multipliers.",
+  "current_state_core_conclusion": "By 2026-07-14, several LitRev model forms have been converted into gates or screens: fully developed f/Nu remain references, H1 localized fixed K is negative diagnostic evidence, F6 phi(Re) is a blocked next candidate pending admitted Re variation, internal Nu has zero fit-admissible rows because current upcomer evidence is recirculating, and setup-only HX/wall/radiation remains blocked on first-class boundary support.",
+  "new_crosswalk_outputs": {
+    "litrev_to_current_evidence_crosswalk": "One row per model family with tried status, evidence class, current Ethan evidence, and next action.",
+    "untried_litrev_model_forms": "Prioritized backlog of untried or incomplete forms with required gates.",
+    "rejected_or_demoted_litrev_shortcuts": "Guardrail list of rejected, demoted, or future-only shortcuts."
+  },
+  "status_vocabularies": {
+    "tried_status": [
+      "tried_admitted",
+      "tried_diagnostic",
+      "tried_rejected_or_demoted",
+      "partially_tried_needs_gate",
+      "not_tried"
+    ],
+    "evidence_class": [
+      "predictive",
+      "calibrated",
+      "diagnostic",
+      "reference",
+      "sensitivity",
+      "blocked",
+      "future_method"
+    ]
+  },
+  "highest_value_next_steps": [
+    "Wait for corrected-Q terminal admission before F6 or onset calibration.",
+    "Consume matched upcomer plane extraction only after the compute-node job completes and admission-grade rows are parsed.",
+    "Implement reset/development API plus admitted component/cluster K evidence before reopening H1 as a faithful hydraulic closure.",
+    "Implement setup-only cooler/HX UA and wall/external/radiation dictionaries before claiming final boundary prediction.",
+    "Keep internal Nu fitting closed until mesh/sign/heat-balance, heat-loss separation, and recirculation validity gates admit rows."
+  ],
+  "provenance_rule": "Ideas are attributed by author and title because citation numbers may change; current Ethan status uses exact package paths.",
+  "source_repo_mutated": false,
+  "native_solver_outputs_mutated": false,
+  "scheduler_state_mutated": false,
+  "registry_or_admission_state_mutated": false,
+  "generated_indexes_refreshed": false,
+  "generated_indexes_note": "Skipped because active AGENT-344 owns .agent/STATE.md, .agent/catalog.json, .agent/catalog.csv, and .agent/BLOCKERS.md."
+}

@@ -1,8 +1,21 @@
 {
-  "generated_at": "2026-06-22T17:42:19-05:00",
+  "generated_at": "2026-06-29T13:38:35-05:00",
   "readable_row_count": 15,
   "best_case_count": 4,
   "scenario_count": 6,
   "partial_coverage_condition_count": 3,
-  "hybrid_case_count": 3
+  "hybrid_case_count": 3,
+  "external_refresh": {
+    "fluid_repo_present": true,
+    "tracked_bundle_root": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/ethan_cfd_informed_salt_v2",
+    "tracked_bundle_name": "ethan_cfd_informed_salt_v2",
+    "tracked_bundle_generated_on": "2026-06-29",
+    "tracked_profile_descriptor_mode": "ethan_cfd_informed_salt_v2",
+    "tracked_results_root": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/ethan_cfd_informed_salt_v2",
+    "tracked_results_present": false,
+    "audited_reference_file_count": 7,
+    "audited_v1_occurrence_count": 16,
+    "audited_v2_occurrence_count": 38,
+    "open_blocker_count": 2
+  }
 }

@@ -15,6 +15,11 @@ speaker notes. Canonical source paths and assumptions live in:
 - presentation-local 1D setup note:
   `reports/2026-06-23_presentation/1d_model_setup_documentation.md`
 
+2026-06-30 refresh: Kirst-named figures remain in the package as legacy support
+figures only. Do not present them as current mainline references; use
+continuation/latest-window Jin evidence for current primary claims when it is
+available.
+
 ## Slide 1: Title And Question
 
 - Title: `How Predictive Is The Current CFD-Informed 1D Loop Model?`
@@ -82,8 +87,8 @@ speaker notes. Canonical source paths and assumptions live in:
 - Figure status: `exists`
 - Analysis status: `done`
 - Speaker notes:
-  - Use Salt 2 Kirst as the representative case for both the main-slide
-    `p_rgh` / `q_dyn` distinction and the redevelopment backup slide.
+  - Use this as a legacy support figure for the `p_rgh` / `q_dyn` distinction,
+    not as a current mainline Salt reference.
   - This slide is now better than the older dynamic-only figure because it
     puts the two quantities on the same legwise picture directly.
 
@@ -155,7 +160,7 @@ speaker notes. Canonical source paths and assumptions live in:
     `62.79 K` wall-temperature RMSE,
     `62.69 K` centerline-temperature RMSE,
     `26.69%` mass-flow error.
-  - Case breakdown for that same defended row:
+  - Legacy strict-subset breakdown for that same defended row:
     `Salt 1 Kirst = 16.01% / 65.31 K / 65.24 K / 25.45%`,
     `Salt 2 Kirst = 8.92% / 64.65 K / 64.78 K / 34.41%`,
     `Salt 2 Val = 8.89% / 58.40 K / 58.05 K / 20.21%`
@@ -166,7 +171,8 @@ speaker notes. Canonical source paths and assumptions live in:
 - Analysis status: `done`
 - Speaker notes:
   - This is the slide to slow down on.
-  - The mean row is useful, but the case split matters:
+  - The mean row is useful, but this legacy case split should be described as
+    stale support, not the current mainline run set:
     `Salt 1 Kirst` is the worst energy case,
     `Salt 2 Kirst` is the worst mass-flow case,
     and `Salt 2 Val` is the least-bad overall case.
@@ -259,7 +265,7 @@ speaker notes. Canonical source paths and assumptions live in:
   - The current worst recurring examples remain `TP3`, `TP4`, `TP5` on the
     probe side and `TW9`, `TW10`, `TW6` on the wall side.
 
-## Backup Slide C: Salt 2 Kirst Redevelopment Follow-On
+## Backup Slide C: Legacy Salt 2 Kirst Redevelopment Follow-On
 
 - Bullets:
   - This is the straight-leg redevelopment picture that puts
@@ -277,6 +283,8 @@ speaker notes. Canonical source paths and assumptions live in:
 - Speaker notes:
   - Use this when someone asks whether the repo now directly measures where
     fully developed assumptions break down.
+  - Label it as a legacy mechanism/support view; it should not be used as the
+    current primary Salt 2 reference.
   - The safe answer is yes for the straight-leg redevelopment picture, but no
     for a full universal feature-volume closure.
 

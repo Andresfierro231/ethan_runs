@@ -133,7 +133,7 @@ metadata fields map one-to-one onto the final thermal BC numerics.
 - Metadata rows:
   [reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/reports/2026-06-04_ethan_case_metadata_index/ethan_case_metadata_index.csv:2)
 - Common campaign setup summary:
-  [operational_notes/2026-06-01_modern_runs_source_inventory.md](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/operational_notes/2026-06-01_modern_runs_source_inventory.md:10)
+  [operational_notes/06-26/01/2026-06-01_modern_runs_source_inventory.md](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/operational_notes/06-26/01/2026-06-01_modern_runs_source_inventory.md:10)
 - Thermal-role grouping used elsewhere in the workspace:
   [tools/case_analysis_profiles.py](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/case_analysis_profiles.py:396)
 
@@ -173,7 +173,7 @@ comparing boundary-condition behavior across families.
   - residual targets: `p_rgh = 1.0e-6`, `U = 1.0e-5`, `h = 1.0e-5`
 
 Sources:
-[operational_notes/2026-06-01_modern_runs_source_inventory.md](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/operational_notes/2026-06-01_modern_runs_source_inventory.md:12),
+[operational_notes/06-26/01/2026-06-01_modern_runs_source_inventory.md](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/operational_notes/06-26/01/2026-06-01_modern_runs_source_inventory.md:12),
 [native salt case_config](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/case_config.yaml:20),
 [water test 2 case_config](/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/water/val_water_test_2_coarse_mesh_laminar/case_config.yaml:20).
 

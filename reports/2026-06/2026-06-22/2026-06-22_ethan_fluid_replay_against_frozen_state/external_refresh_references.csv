@@ -1,0 +1,8 @@
+path,exists,ethan_cfd_informed_salt_v1_occurrence_count,ethan_cfd_informed_salt_v2_occurrence_count
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/ethan_cfd_informed_salt.py,True,1,2
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/profile_descriptor_closure.py,True,1,0
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,True,2,2
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,True,4,4
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,True,4,10
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_ethan_cfd_informed_salt.py,True,3,11
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tools/build_ethan_cfd_informed_salt_v2_bundle.py,True,1,9

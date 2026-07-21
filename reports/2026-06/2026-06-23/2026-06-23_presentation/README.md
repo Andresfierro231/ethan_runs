@@ -21,6 +21,12 @@ means heater-normalized total-loss mismatch against frozen CFD:
 
 ## Fast stale note
 
+- `2026-06-30` refresh: the repo-level run taxonomy now excludes Kirst rows
+  from current mainline use. Keep the existing Kirst-named figures in this
+  package as historical mechanism/support figures only; do not present Salt 1
+  Kirst or Salt 2 Kirst as current primary references. Current mainline
+  presentation language should point to continuation/latest-window Jin
+  artifacts when they exist.
 - `AGENT-104` closed after this presentation summary was first drafted. The
   correct current straight-section citation is now
   `reports/2026-06-22_ethan_salt_straight_hydraulic_sensitivity_refresh/`,
@@ -322,7 +328,7 @@ Key completed items:
 Primary provenance:
 
 - `tools/extract/2026-06-15_paraview_field_render_workflow.md`
-- `operational_notes/2026-06-22_paraview_download_and_slurm_accounting.md`
+- `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
 - `.agent/status/2026-06-15_AGENT-075.md`
 - `.agent/status/2026-06-22_AGENT-098.md`
 
@@ -359,9 +365,10 @@ the safest current backbone:
   `reports/2026-06-23_ethan_1d_closure_bakeoff/baseline_full_surface/**`
   figures for Slides `8-9`, and use a new presentation-local summary figure
   for Slide `10` built from current bakeoff CSV truth.
-- Keep `Salt 2 Kirst` as the representative case for both the `p_rgh` versus
-  `q_dyn` explanation and the redevelopment backup so the mechanism story stays
-  consistent.
+- Keep the existing Salt 2 Kirst `p_rgh` versus `q_dyn` and redevelopment
+  figures only as legacy mechanism/support figures. For mainline scientific
+  claims, use continuation/latest-window Jin evidence and say explicitly that
+  these Kirst figures are not current primary references.
 - Keep the completed June 15 Salt-family streamwise heat-loss figure on Slide
   `2` until the still-active Salt heat-loss breakout lane lands and clears
   review.
@@ -382,7 +389,8 @@ Main-slide staged figures:
 1. `01_title_salt_dashboard_overview`
 2. `02_loop_heat_loss_comparison`
 3. `03_bounded_pressure_closure`
-4. `04_prgh_vs_qdyn_salt2_kirst`
+4. `04_prgh_vs_qdyn_salt2_kirst` (legacy support figure; not a current
+   mainline reference)
 5. `05_salt_hydraulic_agreement`
 6. `06_salt_branch_usability`
 7. `07_salt_heat_loss_partition`
@@ -394,13 +402,14 @@ Backups staged locally:
 
 - `A_representative_friction_and_pressure`
 - `B_primary_best_sensor_parity`
-- `C_salt2_kirst_redevelopment_followon`
+- `C_salt2_kirst_redevelopment_followon` (legacy support figure; not a current
+  mainline reference)
 
 If only four figures fit, the best compact local set is:
 
 - `01_title_salt_dashboard_overview`
 - `02_loop_heat_loss_comparison`
-- `04_prgh_vs_qdyn_salt2_kirst`
+- `04_prgh_vs_qdyn_salt2_kirst` as a legacy support figure only
 - `08_primary_scenario_metric_heatmap`
 
 These four together show:
@@ -458,8 +467,8 @@ Primary provenance:
 
 ### 2. Readable 1D prediction surface
 
-The best current repo-readable 1D reference numbers are still the stale
-pre-refresh rows carried into the frozen-state package:
+The best current repo-readable 1D reference numbers in this package are still
+the stale pre-refresh rows carried into the frozen-state package:
 
 - Salt 1 best readable row:
   air-outlet error `-14.01 K`, mass-flow error `-0.50%`
@@ -470,7 +479,8 @@ pre-refresh rows carried into the frozen-state package:
 - Salt 4 best readable row:
   air-outlet error `-26.37 K`, mass-flow error `+9.79%`
 
-This is useful as a baseline only. It is not the current defended 1D replay.
+This is useful as a historical baseline only. It is not the current defended
+1D replay and is not the current mainline run set.
 The frozen-state package is explicit that this readable `Fluid` surface predates
 the June 22 feature-path reopening and remains a stale reference until
 `AGENT-102` lands the refreshed replay.
@@ -491,11 +501,9 @@ Their main result is negative but useful:
   - wall-temperature RMSE: `62.79 K`
   - centerline-temperature RMSE: `62.69 K`
   - mass-flow error: `26.69%`
-- Salt 1 primary reference (`Salt 1 Kirst`) is the only case where the current
-  hybrid/profile-descriptor row wins overall, and even there the remaining
-  temperature miss is still large.
-- Salt 2 primary references (`Salt 2 Kirst`, `Salt 2 Val`) both still prefer
-  the baseline `1.0 in` / radiation-on readable row overall.
+- The legacy strict subset in this package (`Salt 1 Kirst`, `Salt 2 Kirst`,
+  `Salt 2 Val`) is retained as a stale comparison surface only. Under the
+  June 30 run taxonomy, the Kirst rows are not current mainline references.
 - The current hybrid/profile-descriptor family remains under-covered on the
   primary frozen set with only `3` comparison rows, so it still cannot be
   defended as the global winner over the full baseline family.
@@ -515,7 +523,7 @@ That pattern is consistent with the current branch-boundary story:
 `left_lower_leg` is the best direct thermal evidence lane, while the
 upper-side/upcomer/right-side portions still need different closure handling.
 
-Case-level breakdown for the current defended full-coverage row
+Legacy case-level breakdown for the current defended full-coverage row
 `ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1`:
 
 | Frozen case | Energy error [% heater] | TW RMSE [K] | TP RMSE [K] | Mass-flow error [% vs CFD] |
@@ -524,7 +532,9 @@ Case-level breakdown for the current defended full-coverage row
 | `Salt 2 Kirst` | `8.92` | `64.65` | `64.78` | `34.41` |
 | `Salt 2 Val` | `8.89` | `58.40` | `58.05` | `20.21` |
 
-This split matters for presentation:
+This split can still be used to explain why the old readable 1D surface was
+not predictive enough, but it should not be framed as the current mainline
+case set:
 
 - `Salt 1 Kirst` is the worst energy-balance row.
 - `Salt 2 Kirst` is the worst mass-flow row.

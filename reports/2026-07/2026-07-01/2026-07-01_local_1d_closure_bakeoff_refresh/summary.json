@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-01T16:08:00-05:00",
+  "baseline_shadow_row_count": 15,
+  "scenario_count": 6,
+  "defended_scenario": "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1",
+  "defended_shadow_row_count": 4,
+  "surface_labels": [
+    "baseline_full_surface",
+    "defended_full_coverage_surface"
+  ],
+  "comparison_basis": "CFD late_window_mean only",
+  "dated_representative_validation_csv": "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_representative_salt_last_window_validation_table.csv",
+  "dated_heater_partition_csv": "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_representative_salt_heater_partition.csv",
+  "dated_setup_markdown": "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_one_d_setup_and_confidence.md",
+  "closure_bundle_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-06-26_ethan_cfd_closure_bundle",
+  "closure_bundle_term_count": 10,
+  "closure_bundle_branch_policy_count": 7
+}

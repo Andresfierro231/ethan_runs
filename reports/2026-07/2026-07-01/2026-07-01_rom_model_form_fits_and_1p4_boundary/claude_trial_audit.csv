@@ -1,0 +1,2 @@
+artifact,scenario,row_count,contains_cfd_closure_form,contains_1p4_boundary,audit_note
+work_products/2026-07-01_claude_1d_predictivity_trial/predictivity_mdot_table.json,predictive_airside_ins_1.0in_rad_1,15,True,False,AGENT-168 ran CFD hydraulic closures but fixed the boundary at 1.0 in rad-on.

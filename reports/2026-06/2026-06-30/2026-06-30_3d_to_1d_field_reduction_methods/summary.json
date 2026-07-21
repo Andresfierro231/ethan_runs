@@ -1,0 +1,20 @@
+{
+  "generated": "2026-06-30",
+  "package": "2026-06-30_3d_to_1d_field_reduction_methods",
+  "purpose": "Paper-ready methods description for reducing Ethan OpenFOAM 3D CFD fields to 1D profiles and closure inputs.",
+  "native_zone_policy": {
+    "faceZones": "Use as authoritative monitor surfaces when available, especially mdot planes.",
+    "faceSets_and_cellSets": "Use authored sets for monitor/PIV support where available; Salt 2 Jin mdot sets are faceSet objects and piv_slab is a cellSet.",
+    "cellZones": "Use as geometry provenance or special-region summaries, not as the complete streamwise 1D coordinate basis."
+  },
+  "primary_coordinate_contract": "tools/case_analysis_profiles.py",
+  "key_methods": [
+    "wall-face projection onto repaired major-span streamwise coordinates",
+    "raw cuttingPlane dumps plus single-leg Python masking",
+    "section-mean p_rgh, rho, U_bulk, dynamic head, total pressure",
+    "apparent Darcy friction from total-pressure loss gradients",
+    "enthalpy-flux-weighted bulk temperature for HTC and UA prime",
+    "QC gates for flow alignment, area support, positive flux, and minimum Delta T"
+  ],
+  "report": "README.md"
+}

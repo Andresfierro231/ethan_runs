@@ -1,0 +1,40 @@
+{
+  "generated_date": "2026-07-09",
+  "task_id": "AGENT-243",
+  "role": "Coordinator / Writer",
+  "report_dir": "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison",
+  "purpose": "Paper-facing comparison of how the Ethan OpenFOAM CFD and current external Fluid 1D model treat internal Nusselt number, internal HTC, HX thermal closure, and external wall boundary modeling.",
+  "headline_findings": [
+    "The OpenFOAM CFD does not impose an internal Nusselt-number closure; internal Nu/HTC is postprocessed from wall heat flux and wall-to-bulk temperature differences.",
+    "The current 1D Fluid model explicitly closes internal convection with a laminar fully-developed/developing Nusselt maximum below Re=2300 and a Dittus-Boelter-style branch above Re=2300.",
+    "The OpenFOAM outside-wall treatment is a prescribed external-temperature/layer-resistance boundary model, not a resolved coupled outside-air convective CFD domain.",
+    "Current CFD effective Nu/UA/HTC closure observations should remain diagnostic until support, sign, bulk-temperature, and mesh-UQ gates are satisfied.",
+    "The largest current temperature-agreement shift in fixed-mdot replay is tied to the cooler/HX boundary duty, so internal Nu should not be blamed in isolation."
+  ],
+  "outputs": {
+    "readme": "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/README.md",
+    "comparison_table": "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/model_form_comparison.csv",
+    "source_index": "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/source_index.csv",
+    "summary_json": "reports/2026-07/2026-07-09/2026-07-09_internal_nu_model_form_comparison/summary.json"
+  },
+  "no_new_actions": [
+    "No OpenFOAM extraction",
+    "No Fluid rerun",
+    "No native solver-output mutation",
+    "No external cfd-modeling-tools edit",
+    "No scheduler action"
+  ],
+  "primary_sources": [
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/momentumTransport",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/thermophysicalTransport",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/physicalProperties",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/T",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/U",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/profile_descriptor_closure.py",
+    "tools/analyze/build_patchwise_heat_ledger.py",
+    "tools/analyze/compute_gci.py",
+    "reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/2026-07-01_one_d_setup_and_confidence.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md"
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "generated_date": "2026-07-09",
+  "task": "AGENT-236",
+  "role": "Coordinator / Writer",
+  "package": "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference",
+  "purpose": "Consolidate existing Ethan-run external-boundary-condition and setup documentation into one reference package with a compact findings table.",
+  "outputs": [
+    "README.md",
+    "boundary_setup_summary.csv",
+    "source_index.csv",
+    "summary.json"
+  ],
+  "evidence_scope": [
+    "July 8 CFD scenario contract",
+    "July 8 thermal boundary contract",
+    "July 8 patchwise heat ledger",
+    "July 8 thermal interface power policy",
+    "July 8 fixed-mdot thermal replay package",
+    "July 9 slide-6 thermal replay interpretation",
+    "July 1 1D setup and closure bakeoff notes",
+    "read-only external Fluid configuration and solver source"
+  ],
+  "mutation_scope": "No OpenFOAM extraction, Fluid rerun, native solver output mutation, registry edit, or scheduler action.",
+  "key_findings": [
+    "Existing documentation is thorough but fragmented across July 1 and July 8 artifacts.",
+    "Admitted Salt CFD rows are best labeled as 1.4 in layer present with surface-emissivity metadata and no exported qr/G radiation heat term.",
+    "CFD-informed comparisons should use realized heater and cooler wallHeatFlux at the fluid interface.",
+    "Current 1D defended setup is a 1.0 in radiation-on predictive-airside-HX surrogate, not a published global 1.4 in matched setup.",
+    "The current 1D cooler/HX path under-removes heat relative to CFD and is the largest thermal-state lever in fixed-mdot replays."
+  ],
+  "validation": [
+    "Manual source read across listed artifacts.",
+    "CSV and JSON syntax checked with Python standard library."
+  ]
+}

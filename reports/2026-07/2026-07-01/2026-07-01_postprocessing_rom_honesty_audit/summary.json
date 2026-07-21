@@ -1,0 +1,16 @@
+{
+  "package": "2026-07-01_postprocessing_rom_honesty_audit",
+  "date": "2026-07-01",
+  "task": "AGENT-163",
+  "status": "paper-facing internal audit; no new CFD results",
+  "primary_report": "README.md",
+  "main_findings": [
+    "Mesh-derived geometry should be the authoritative geometry contract; schematic probe CSV labels are not sufficient for closure derivation.",
+    "Section-mean total pressure exists, but variable-density buoyancy terms must be separated before heated or cooled non-isothermal leg pressure gradients are interpreted as pure friction.",
+    "The current HTC/UA'/Nu extractor has the correct enthalpy-flux bulk-temperature structure, but publication tables still need explicit heat-flux sign convention and uncertainty labeling.",
+    "Current f(Re) and Nu(Re) surfaces are narrow laminar calibrations, not transferable correlations.",
+    "Reusable thesis workflows should standardize closure observations, model-form specs, and model-error summaries."
+  ],
+  "no_compute": true,
+  "no_native_solver_output_modified": true
+}

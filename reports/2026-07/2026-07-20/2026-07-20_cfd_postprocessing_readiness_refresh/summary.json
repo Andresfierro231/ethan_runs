@@ -1,0 +1,11 @@
+{
+  "rows": 10,
+  "broad_inventory_rows": 20,
+  "salt_inventory_rows": 25,
+  "registry_rows": 21,
+  "registry_generated_at_max": "2026-07-18T17:39:10-05:00",
+  "pm10_terminal_drift_pass_rows": 4,
+  "upcomer_fit_candidates_released": 0,
+  "nominal_freeze_rows_included": 4,
+  "key_conclusion": "Broad July 14 overviews remain useful but are stale for PM10, final freeze/source-policy, high-heat, and pressure/upcomer wrapper state."
+}

@@ -1,0 +1,5 @@
+explanation_id,status,evidence,supporting_artifact
+upcomer_requires_separate_model,supported,"Upcomer stays on a sensitivity-only fit lane while right_leg/downcomer stays excluded, and the mean upcomer-minus-downcomer HTC contrast remains 91.78 W/m2-K on the defended latest-window cases.",branch_development_summary.csv + upcomer_downcomer_contrast.csv
+heat_partition_not_matched_case_by_case,supported,"The defended 1D rows still miss the frozen CFD heat partition: mean removed-duty gap = -91.46 W, mean ambient gap = 63.53 W, mean |total-loss error| = 11.53% of heater.",heat_partition_gap_summary.csv
+mass_flow_gap_tracks_hydraulic_underclosure,supported,Mean defended mass-flow error remains 28.87% vs frozen CFD while the downcomer direct thermal lane is still blocked and the upcomer direct lane is not defended.,defended_case_discrepancy_summary.csv
+global_1p4in_setup_still_unpublished_in_readable_bundle,possible_not_tested,The readable defended bundle rows still use base 1.0 in or 2.0 in insulation states only; there is still no readable globally matched 1.4 in Salt scenario on disk.,representative_salt_last_window_validation_table.csv

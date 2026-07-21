@@ -1,16 +1,28 @@
 # Ethan Frozen-State 1D Validation
 
-Generated: `2026-06-23T10:56:59-05:00`
+Generated: `2026-06-26T10:36:01-05:00`
 
 ## Scope
 
 - This package compares the current readable Salt 1D diagnostics against the
-  June 22 frozen-state CFD contract.
+  `2026-06-22_ethan_frozen_state_results` CFD contract.
 - Primary comparison set: frozen CFD rows labeled `comparison_candidate`.
 - Provisional appendix: frozen CFD rows labeled `convergence_audit_required`.
 - Straight sections are not assumed fully developed by default.
 - `upcomer` remains a separate modeling problem, and `right_leg` / downcomer
   remains blocked for direct internal `Nu`.
+
+## Current closure contract used for interpretation
+
+- Distributed straight friction is read from the local CFD closure bundle term
+  `straight_friction_class_aware_re_power_law` on `lower_leg, test_section_span`.
+- Primary thermal conductance interpretation is read from
+  `primary_ua_profile_library` on `left_lower_leg, test_section_span, left_upper_leg, upcomer`.
+- Direct fitted `Nu` remains limited to `left_lower_leg_nu_branch_aware_re_power_law` on
+  `left_lower_leg`.
+- Best current primary scenario bundle alignment:
+  `full_bundle_alignment`.
+  Uses the same readable baseline closure stack as the current defended local CFD closure bundle.
 
 ## Current best readable picture
 
@@ -35,3 +47,9 @@ Generated: `2026-06-23T10:56:59-05:00`
 - 1D side:
   `qhx_total_W + qambient_total_W`.
 - Do not infer a hidden cooler `h`, and do not double-count `ambient_proxy_w`.
+
+## Added closure-reference artifacts
+
+- `closure_term_reference.csv`
+- `closure_branch_policy.csv`
+- `scenario_bundle_alignment.csv`

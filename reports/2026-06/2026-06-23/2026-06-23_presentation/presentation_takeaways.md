@@ -4,6 +4,10 @@ Date: `2026-06-23`
 
 ## Five points to lead with
 
+2026-06-30 refresh: Kirst-named rows and figures in this package are legacy
+support evidence only. Current mainline language should point to
+continuation/latest-window Jin artifacts when they exist.
+
 1. The repo now has a canonical `13`-run Ethan CFD campaign in the cross-model
    publication tree, with per-run reports plus one uniform cross-run summary
    backbone.
@@ -42,7 +46,7 @@ Main deck:
 - `01_title_salt_dashboard_overview`
 - `02_loop_heat_loss_comparison`
 - `03_bounded_pressure_closure`
-- `04_prgh_vs_qdyn_salt2_kirst`
+- `04_prgh_vs_qdyn_salt2_kirst` (legacy support figure only)
 - `05_salt_hydraulic_agreement`
 - `06_salt_branch_usability`
 - `07_salt_heat_loss_partition`
@@ -54,7 +58,7 @@ Backups:
 
 - `A_representative_friction_and_pressure`
 - `B_primary_best_sensor_parity`
-- `C_salt2_kirst_redevelopment_followon`
+- `C_salt2_kirst_redevelopment_followon` (legacy support figure only)
 - `D_salt1to4_metric_cards`
 
 Canonical source paths, provenance packages, and assumption notes live in:
@@ -80,7 +84,7 @@ Canonical source paths, provenance packages, and assumption notes live in:
   `Salt 3 = 10.26% / 66.55 K / 65.61 K / 27.69%`,
   `Salt 4 = 12.51% / 69.18 K / 67.68 K / 29.90%`
   for `energy / TW / TP / mdot`
-- case breakdown for that defended row:
+- legacy strict-subset breakdown for that defended row:
   `Salt 1 Kirst = 16.01%` heater error, `65.31 K` TW RMSE,
   `65.24 K` TP RMSE, `25.45%` mass-flow error;
   `Salt 2 Kirst = 8.92%`, `64.65 K`, `64.78 K`, `34.41%`;
@@ -109,6 +113,9 @@ Presentation-local support files for this section:
 - `reports/2026-06-23_presentation/1d_model_setup_documentation.md`
 
 ## Current admitted correlation set
+
+2026-06-30 boundary: treat these as bounded calibration/support surfaces, not
+transferable correlations. Kirst rows are not current mainline inputs.
 
 - straight friction fit:
   `log(f_D) = 5.2316378122 - 0.9477837868 log(Re) + 2.9210668439 I[test_section_span]`

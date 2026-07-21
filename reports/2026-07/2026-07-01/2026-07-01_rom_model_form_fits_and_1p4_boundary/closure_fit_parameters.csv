@@ -1,0 +1,6 @@
+fit_id,fit_family,major,k90,k20,include_diameter,objective_rmse_pct,fit_notes
+default_1p4_rad_on,unfit_reference,1.0,1.0,0.1,True,35.743314791957076,Model default loss coefficients at CFD-matched 1.4 in rad-on boundary.
+zero_minor_1p4_rad_on,ablation,1.0,0.0,0.0,False,44.73378005741485,Major-loss only ablation.
+fit_major_defaultK_1p4,one_parameter_fit,2.1,1.0,0.1,True,4.582820620167634,Fit one global major-loss multiplier while retaining default minor K.
+fit_k90_major1_1p4,one_parameter_fit,1.0,12.5,0.0,False,6.024114684469285,Fit one global 90-degree bend K with major multiplier fixed at 1.
+fit_major_k90_1p4,two_parameter_fit,2.1,0.0,0.0,False,3.594284676386931,Fit global major-loss multiplier and global bend K to Salt 2-4 mdot.
