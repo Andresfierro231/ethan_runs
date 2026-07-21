@@ -444,7 +444,14 @@ SALT_FAMILY_THERMAL_ROLE_GROUPS: dict[str, tuple[str, ...]] = {
 SALT2_MAJOR_SPANS: dict[str, dict[str, Any]] = {
     "lower_leg": {
         "kind": "main_loop_leg",
-        "centerline_labels": ["TP1", "TW1", "TW2", "TW3", "TP2"],
+        # T8 FIX (2026-07-01, claude): centerline_labels for lower_leg<->right_leg were
+        # SWAPPED relative to the mesh wall_patches. The schematic tp_tw CSV coords for
+        # the old lower_leg labels (TP1,TW1,TW2,TW3,TP2) sat on the DOWNCOMER (0.566 m
+        # off); verified by mesh-PCA co-location (now sep~0). Swapped so labels co-locate
+        # with wall_patches. NOTE label polyline length is still ~1.3x the mesh length,
+        # so length-normalized closures should use mesh geometry (--mesh-length /
+        # --centerline-source mesh). See .agent/journal/2026-07-01/T8-span-patch-colocation-audit.md.
+        "centerline_labels": ["TP2", "TW4", "TW5", "TW6", "TP3"],
         "streamwise_coordinate_method": "patch_centroid_polyline",
         "flow_direction_sign_hint": 1.0,
         "wall_patches": [
@@ -464,7 +471,9 @@ SALT2_MAJOR_SPANS: dict[str, dict[str, Any]] = {
     },
     "right_leg": {
         "kind": "main_loop_leg",
-        "centerline_labels": ["TP2", "TW4", "TW5", "TW6", "TP3"],
+        # T8 FIX (2026-07-01, claude): see lower_leg note — labels swapped to co-locate
+        # with the downcomer (right) wall_patches.
+        "centerline_labels": ["TP1", "TW1", "TW2", "TW3", "TP2"],
         "streamwise_coordinate_method": "patch_centroid_polyline",
         "flow_direction_sign_hint": 1.0,
         "wall_patches": [

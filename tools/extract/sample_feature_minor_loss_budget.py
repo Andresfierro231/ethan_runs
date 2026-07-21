@@ -1,4 +1,34 @@
 #!/usr/bin/env python3
+"""Extract feature endpoint pressure budgets for minor-loss diagnostics.
+
+Workflow role:
+    This is the older feature-based minor-loss extractor. It reconstructs only
+    the pressure fields needed for configured feature start/end patches and
+    samples retained-time area-averaged `p` and `p_rgh` endpoints. The products
+    help diagnose where a formal two-tap minor-loss workflow is needed.
+
+Inputs:
+    - Case-analysis profile metadata for `--source-id`.
+    - Optional shared `--analysis-manifest`.
+    - Temporary reconstructed OpenFOAM pressure fields, or prior reductions
+      when `--skip-extraction` is used.
+
+Outputs:
+    Feature endpoint budget CSV/JSON products under `--output-dir`.
+
+CLI modifiers:
+    - `--source-id` selects the registered case.
+    - `--analysis-manifest` reuses resolved paths.
+    - `--last-n-times` or `--time-selector` chooses retained times.
+    - `--extract-key` forces a deterministic temporary workspace key.
+    - `--skip-extraction` reuses existing reconstructed fields/reductions.
+
+Boundaries:
+    `profile_dp_pa` and wall-distributed subtraction are deferred here, so the
+    emitted rows are diagnostic endpoints rather than final `K_local` closure
+    terms. Use a future two-tap ledger to subtract adjacent straight losses and
+    normalize by local bulk dynamic pressure.
+"""
 from __future__ import annotations
 
 import argparse

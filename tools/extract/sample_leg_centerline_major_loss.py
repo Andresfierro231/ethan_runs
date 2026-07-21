@@ -1,4 +1,34 @@
 #!/usr/bin/env python3
+"""Extract retained-time major-loss primitives along configured leg centerlines.
+
+Workflow role:
+    This is a hydraulic evidence extractor. It reconstructs or reuses a
+    temporary analysis case, samples wall/centerline geometry and pressure
+    fields on retained times, and emits legwise major-loss primitives for later
+    friction, pressure-ledger, and 1D-closure work.
+
+Inputs:
+    - Case-analysis profile metadata for the selected `--source-id`.
+    - Optional shared `--analysis-manifest` and runtime-root information.
+    - Reconstructed OpenFOAM fields in a temporary extraction workspace, or
+      existing extraction products when `--skip-extraction` is used.
+
+Outputs:
+    Raw extraction CSV/JSON products under `--output-dir`. These are evidence
+    tables, not direct solver modifications.
+
+CLI modifiers:
+    - `--source-id` selects the registered case.
+    - `--analysis-manifest` shares resolved paths with sibling extractors.
+    - `--last-n-times` or `--time-selector` controls retained OpenFOAM times.
+    - `--target-ds-m` controls streamwise station spacing.
+    - `--skip-extraction` reuses existing reconstructed fields/reductions.
+
+Boundaries:
+    This script estimates distributed leg losses. Feature residuals,
+    two-tap minor losses, buoyancy de-biasing, and development/reset terms must
+    be separated by downstream pressure-ledger tools before fitting.
+"""
 from __future__ import annotations
 
 import argparse
@@ -228,11 +258,6 @@ def sanitize_ascii_scalar_nan_tokens(field_path: Path) -> int:
 def sanitize_reconstructed_thermal_fields(case_dir: Path, selected_times: list[str]) -> dict[str, Any]:
     summary_path = case_dir / "thermal_sanitization_summary.json"
     expected_times = [canonical_time_label(value) for value in selected_times]
-    if summary_path.exists():
-        with summary_path.open("r", encoding="utf-8") as handle:
-            existing = json.load(handle)
-        if existing.get("selected_times") == expected_times:
-            return existing
 
     replacements_by_time: dict[str, int] = {}
     for time_name in selected_times:

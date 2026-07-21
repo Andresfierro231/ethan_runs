@@ -1,4 +1,31 @@
 #!/usr/bin/env python3
+"""Build a case-scoped wallHeatFlux heat summary.
+
+Workflow role:
+    This is the reusable per-case thermal intake used before family-level heat
+    ledgers or closure modeling. It resolves one registered source, samples the
+    current late wallHeatFlux window, compares against validation provenance
+    when available, and writes a compact case package.
+
+Inputs:
+    - Case-analysis profile metadata and resolved runtime paths.
+    - wallHeatFlux histories and optional direct-validation CSV rows.
+
+Outputs:
+    Case-local CSV/JSON/README/figure artifacts under `--output-dir`.
+
+CLI modifiers:
+    - `--source-id` selects the case.
+    - `--runtime-root` points at a continuation or packed relaunch tree.
+    - `--window-count` controls the retained late-time averaging window.
+    - `--validation-csv` decouples the heat summary from a specific reference
+      table; missing validation rows are recorded rather than fatal.
+
+Boundaries:
+    The script summarizes heat-flow evidence only. It does not infer fitted
+    1D closure parameters, and it does not classify patch physical roles beyond
+    the profile definitions it consumes.
+"""
 from __future__ import annotations
 
 import argparse

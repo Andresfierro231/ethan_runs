@@ -56,16 +56,20 @@ BRANCH_FIT_STATUS = {
     "upper_leg": "excluded",
 }
 
-DEFAULT_FREEZE_WINDOWS_CSV = ROOT / "reports" / "2026-06-23_ethan_cfd_freeze_checkpoint" / "freeze_case_windows.csv"
+DEFAULT_REPORT_DAY_DIR = ROOT / "reports" / "2026-06" / "2026-06-23"
+DEFAULT_FREEZE_WINDOWS_CSV = (
+    DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_cfd_freeze_checkpoint" / "freeze_case_windows.csv"
+)
 DEFAULT_REPRESENTATIVE_TIMESTEPS_CSV = (
-    ROOT / "reports" / "2026-06-23_ethan_cfd_freeze_checkpoint" / "representative_timesteps.csv"
+    DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_cfd_freeze_checkpoint" / "representative_timesteps.csv"
 )
 DEFAULT_CHECKPOINT_ROOT = ROOT / "tmp" / "2026-06-23_salt_last20_checkpoint"
 DEFAULT_CASE_ANALYSIS_ROOT = ROOT / "tmp" / "2026-06-23_ethan_latest_window_case_analysis_refresh"
-DEFAULT_OUTPUT_DIR = ROOT / "reports" / "2026-06-23_ethan_frozen_state_results_latest_window"
+DEFAULT_OUTPUT_DIR = DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_frozen_state_results_latest_window"
 DEFAULT_IMPORT_MANIFEST_PATH = ROOT / "imports" / "2026-06-23_ethan_frozen_state_results_latest_window.json"
 CASE_ANALYSIS_BUILDER = ROOT / "tools" / "analyze" / "build_ethan_case_analysis_package.py"
 TARGET_REPRESENTATIVE_COUNT = 20
+CASE_ANALYSIS_MODULE_CHECK = "import matplotlib"
 
 
 def parse_args() -> argparse.Namespace:
@@ -157,14 +161,34 @@ def build_case_refresh_manifest_rows(
     return rows
 
 
+def resolve_case_analysis_python() -> str:
+    for candidate in (sys.executable, "python"):
+        if not candidate:
+            continue
+        probe = subprocess.run(
+            [candidate, "-c", CASE_ANALYSIS_MODULE_CHECK],
+            check=False,
+            cwd=str(ROOT),
+            capture_output=True,
+            text=True,
+        )
+        if probe.returncode == 0:
+            return candidate
+    raise RuntimeError(
+        "No Python interpreter with matplotlib is available for case-analysis refresh; "
+        f"tried {sys.executable!r} and 'python'."
+    )
+
+
 def refresh_case_package(row: dict[str, Any]) -> None:
     print(
         f"[latest-window] refreshing {row['case_key']} -> {row['source_id']} "
         f"with {row['representative_time_count']} representative times",
         flush=True,
     )
+    python_executable = resolve_case_analysis_python()
     command = [
-        sys.executable,
+        python_executable,
         str(CASE_ANALYSIS_BUILDER),
         "--source-id",
         str(row["source_id"]),
@@ -522,6 +546,7 @@ def write_import_manifest(
     *,
     freeze_windows_csv: Path,
     representative_timesteps_csv: Path,
+    checkpoint_root: Path,
     output_dir: Path,
     case_refresh_rows: list[dict[str, Any]],
     import_manifest_path: Path,
@@ -532,7 +557,7 @@ def write_import_manifest(
         "inputs": {
             "freeze_windows_csv": str(freeze_windows_csv.resolve()),
             "representative_timesteps_csv": str(representative_timesteps_csv.resolve()),
-            "checkpoint_root": str(DEFAULT_CHECKPOINT_ROOT.resolve()),
+            "checkpoint_root": str(checkpoint_root.resolve()),
             "legacy_closure_map_csv": str((legacy.BLOCKER_DIR / "one_d_closure_map.csv").resolve()),
             "legacy_feature_stability_csv": str((legacy.FEATURE_DIR / "feature_stability_summary.csv").resolve()),
         },
@@ -625,6 +650,7 @@ def main() -> int:
     write_import_manifest(
         freeze_windows_csv=freeze_windows_csv,
         representative_timesteps_csv=representative_timesteps_csv,
+        checkpoint_root=checkpoint_root,
         output_dir=output_dir,
         case_refresh_rows=case_refresh_rows,
         import_manifest_path=import_manifest_path,

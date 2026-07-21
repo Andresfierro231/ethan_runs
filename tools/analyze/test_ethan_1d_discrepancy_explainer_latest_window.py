@@ -3,6 +3,10 @@ from __future__ import annotations
 import unittest
 
 from tools.analyze.build_ethan_1d_discrepancy_explainer_latest_window import (
+    DEFAULT_BAKEOFF_DIR,
+    DEFAULT_FROZEN_DIR,
+    DEFAULT_OUTPUT_DIR,
+    DEFAULT_VALIDATION_DIR,
     build_explanation_register,
     dominant_discrepancy_bucket,
 )
@@ -53,6 +57,13 @@ class Ethan1DDiscrepancyExplainerLatestWindowTests(unittest.TestCase):
         self.assertEqual(statuses["upcomer_requires_separate_model"], "supported")
         self.assertEqual(statuses["heat_partition_not_matched_case_by_case"], "supported")
         self.assertEqual(statuses["global_1p4in_setup_still_unpublished_in_readable_bundle"], "possible_not_tested")
+
+    def test_default_paths_use_nested_june_23_report_tree(self) -> None:
+        self.assertEqual(DEFAULT_FROZEN_DIR.parent.name, "2026-06-23")
+        self.assertEqual(DEFAULT_VALIDATION_DIR.parent.name, "2026-06-23")
+        self.assertEqual(DEFAULT_BAKEOFF_DIR.parent.name, "2026-06-23")
+        self.assertEqual(DEFAULT_OUTPUT_DIR.parent.name, "2026-06-23")
+        self.assertEqual(DEFAULT_OUTPUT_DIR.parent.parent.name, "2026-06")
 
 
 if __name__ == "__main__":

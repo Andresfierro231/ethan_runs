@@ -1,4 +1,34 @@
 #!/usr/bin/env python3
+"""Build local 1D closure bakeoff tables from frozen CFD contracts.
+
+Workflow role:
+    This is a model-comparison and packaging script. It reads the frozen-state
+    CFD validation package plus the defended CFD closure bundle, constructs
+    baseline and defended Salt 1D comparison surfaces, and publishes tables that
+    separate readable full-surface evidence from stricter defended subsets.
+
+Inputs:
+    - Frozen-state CFD package selected by `--frozen-dir`.
+    - CFD closure bundle selected by `--closure-bundle-dir`.
+    - Existing report products needed to align scenario, branch, and heat
+      metadata.
+
+Outputs:
+    Bakeoff CSV/JSON/README artifacts and an import manifest. These are local
+    comparison products; they do not modify the external Fluid repository.
+
+CLI modifiers:
+    - `--frozen-dir` changes the frozen CFD evidence package.
+    - `--closure-bundle-dir` changes the closure contract source.
+    - `--output-dir` redirects generated bakeoff products.
+    - `--import-manifest-path` redirects provenance registration.
+
+Boundaries:
+    This script compares preexisting model forms and closure bundles. It should
+    not be used as the only scientific score: pressure-distribution agreement,
+    thermal-state mismatch, fitted-vs-validation separation, and complexity
+    penalties belong in the follow-on model-form bakeoff row.
+"""
 from __future__ import annotations
 
 import argparse
@@ -13,15 +43,22 @@ ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from tools.analyze.cfd_closure_bundle import (  # noqa: E402
+    DEFAULT_OUTPUT_DIR as DEFAULT_CLOSURE_BUNDLE_DIR,
+    load_bundle_branch_policy_rows,
+    load_bundle_payload,
+    load_bundle_term_contract_rows,
+)
 from tools.analyze.build_ethan_frozen_state_1d_validation_package import (  # noqa: E402
     DEFAULT_FROZEN_DIR,
+    build_scenario_bundle_alignment_rows,
     build_validation_package,
     frozen_case_mdot,
 )
 from tools.analyze.ethan_closure_modeling_v3_common import csv_dump_rows, finite_float, load_csv_rows, write_json  # noqa: E402
 from tools.common import date_stamp, ensure_dir, iso_timestamp  # noqa: E402
 
-DEFAULT_OUTPUT_DIR = ROOT / "reports" / "2026-06-23_ethan_1d_closure_bakeoff"
+DEFAULT_OUTPUT_DIR = ROOT / "reports" / "2026-06" / "2026-06-23" / "2026-06-23_ethan_1d_closure_bakeoff"
 DEFAULT_IMPORT_PATH = ROOT / "imports" / "2026-06-23_ethan_1d_closure_bakeoff.json"
 CASE_INPUTS_BY_FAMILY: dict[str, dict[str, float]] = {
     "Salt 1": {"heater_power_W": 232.3, "test_section_power_W": 37.0},
@@ -41,6 +78,7 @@ def parse_args() -> argparse.Namespace:
     )
     parser.add_argument("--frozen-dir", default=str(DEFAULT_FROZEN_DIR))
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR))
+    parser.add_argument("--closure-bundle-dir", default=str(DEFAULT_CLOSURE_BUNDLE_DIR))
     parser.add_argument("--import-manifest-path", default=str(DEFAULT_IMPORT_PATH))
     return parser.parse_args()
 
@@ -242,10 +280,16 @@ def summarize_scenarios(shadow_rows: list[dict[str, Any]]) -> list[dict[str, Any
         summaries.append(
             {
                 "scenario": scenario,
+                "scenario_family": "hybrid" if str(rows[0].get("profile_descriptor_mode", "")) == "ethan_cfd_informed_salt_v1" else "baseline",
+                "closure_stack_label": (
+                    f"{rows[0].get('profile_descriptor_mode', '')}|{rows[0].get('internal_htc_mode', '')}"
+                    f"|ins={scenario_setup_metadata(scenario)['base_insulation_in']}|rad={scenario_setup_metadata(scenario)['radiation_on']}"
+                ),
                 "scenario_case_count": rows[0]["scenario_case_count"],
                 "scenario_primary_count": rows[0]["scenario_primary_count"],
                 "scenario_primary_accepted_count": rows[0]["scenario_primary_accepted_count"],
                 "scenario_all_accepted_count": rows[0]["scenario_all_accepted_count"],
+                "all_rows_accepted_for_validation": int(rows[0]["scenario_all_accepted_count"]) == int(rows[0]["scenario_case_count"]),
                 "mean_primary_energy_error_pct_of_heater": (
                     sum(energy_values) / len(energy_values) if energy_values else math.nan
                 ),
@@ -407,9 +451,19 @@ def build_heater_partition_rows(representative_rows: list[dict[str, Any]]) -> li
     return rows
 
 
-def build_setup_documentation(*, defended_scenario: dict[str, Any], frozen_dir: Path) -> str:
+def build_setup_documentation(
+    *,
+    defended_scenario: dict[str, Any],
+    frozen_dir: Path,
+    bundle_payload: dict[str, Any],
+    defended_bundle_alignment: dict[str, Any],
+) -> str:
     defended_name = str(defended_scenario["scenario"])
     setup = scenario_setup_metadata(defended_name)
+    friction = bundle_payload["distributed_friction"]
+    primary_ua = bundle_payload["primary_ua_surface"]
+    secondary_htc = bundle_payload["secondary_htc_surface"]
+    direct_nu = bundle_payload["direct_nusselt"]
     return f"""# 1D Setup And Confidence
 
 Generated: `{iso_timestamp()}`
@@ -444,19 +498,22 @@ Generated: `{iso_timestamp()}`
 ## Branch closure assignment
 
 - Distributed straight friction:
-  `straight_friction_class_aware_re_power_law`
-  on `lower_leg|test_section_span`, status `provisional_defended`
+  `{friction["closure_name"]}`
+  on `{"|".join(friction["target_regions"])}`, status `{friction["status"]}`
 - Direct internal thermal law:
-  `left_lower_leg_nu_branch_aware_re_power_law`
-  on `left_lower_leg` only, status `provisional_defended_limited_domain`
+  `{direct_nu["closure_name"]}`
+  on `{"|".join(direct_nu["target_regions"])}` only, status `{direct_nu["status"]}`
 - Primary thermal closure:
-  `primary_ua_profile_library`
-  on `left_lower_leg|test_section_span|left_upper_leg|upcomer`
+  `{primary_ua["closure_name"]}`
+  on `{"|".join(primary_ua["target_regions"])}`
 - Secondary thermal diagnostic surface:
-  `secondary_htc_profile_library`
-  on the same upcomer-side subset
+  `{secondary_htc["closure_name"]}`
+  on `{"|".join(secondary_htc["target_regions"])}`
 - Unsupported or blocked branches:
   `right_leg` / downcomer, cooler return, and feature losses remain on residual or calibration-only lanes
+- Defended winner bundle alignment:
+  `{defended_bundle_alignment.get("bundle_alignment_status", "")}`.
+  {defended_bundle_alignment.get("bundle_alignment_note", "")}
 
 ## Insulation and radiation treatment
 
@@ -517,6 +574,8 @@ def build_readme(
     scenario_rows: list[dict[str, Any]],
     defended_scenario: dict[str, Any],
     surface_rows: list[dict[str, Any]],
+    bundle_payload: dict[str, Any],
+    scenario_bundle_rows: list[dict[str, Any]],
 ) -> str:
     baseline_count = len(baseline_rows)
     scenario_count = len(scenario_rows)
@@ -525,6 +584,13 @@ def build_readme(
     full_accept_count = defended_scenario["scenario_all_accepted_count"]
     baseline_surface = next(row for row in surface_rows if row["surface_label"] == "baseline_full_surface")
     defended_surface = next(row for row in surface_rows if row["surface_label"] == "defended_full_coverage_surface")
+    top_bundle_row = next(
+        (row for row in scenario_bundle_rows if row.get("scenario") == defended_name),
+        scenario_bundle_rows[0] if scenario_bundle_rows else {},
+    )
+    friction = bundle_payload["distributed_friction"]
+    primary_ua = bundle_payload["primary_ua_surface"]
+    direct_nu = bundle_payload["direct_nusselt"]
     return f"""# Ethan 1D Closure Bakeoff
 
 Generated: `{iso_timestamp()}`
@@ -536,6 +602,18 @@ Generated: `{iso_timestamp()}`
 - Two surfaces are published:
   - `baseline_full_surface`: all readable Salt status rows copied into a local shadow table
   - `defended_full_coverage_surface`: the single full-coverage scenario that kept every Salt case accepted and valid in the shadow table
+
+## Current closure contract used for interpretation
+
+- Distributed straight friction is read from the local CFD closure bundle term
+  `{friction["closure_name"]}` on `{", ".join(friction["target_regions"])}`.
+- Primary thermal conductance interpretation is read from
+  `{primary_ua["closure_name"]}` on `{", ".join(primary_ua["target_regions"])}`.
+- Direct fitted `Nu` remains limited to `{direct_nu["closure_name"]}` on
+  `{", ".join(direct_nu["target_regions"])}`.
+- Defended winner bundle alignment:
+  `{top_bundle_row.get("bundle_alignment_status", "")}`.
+  {top_bundle_row.get("bundle_alignment_note", "")}
 
 ## Current defended result
 
@@ -554,12 +632,19 @@ Generated: `{iso_timestamp()}`
 - The currently scored readable external bundle only publishes base `1.0 in` / `2.0 in` conditions. Hybrid rows can apply branchwise effective insulation multipliers, including `right_vertical = 1.40x`, but no readable global `1.4 in` Salt scenario is published yet.
 - If the target CFD insulation is globally `1.4 in`, treat the present winner as a bounded surrogate until that condition is rerun or explicitly published.
 - The top-level bakeoff directory already contained extra `11:29` artifacts before this pass completed. They were preserved in place; the new driver guarantees only the shadow status CSVs, `surface_summary.csv`, `summary.json`, `README.md`, and the two rebuilt surface subdirectories.
+
+## Added closure-reference artifacts
+
+- `closure_term_reference.csv`
+- `closure_branch_policy.csv`
+- `scenario_bundle_alignment.csv`
 """
 
 
 def write_import_manifest(
     *,
     frozen_dir: Path,
+    closure_bundle_dir: Path,
     output_dir: Path,
     surface_rows: list[dict[str, Any]],
     import_manifest_path: Path,
@@ -571,6 +656,7 @@ def write_import_manifest(
             "frozen_dir": str(frozen_dir.resolve()),
             "baseline_status_csv": str((frozen_dir / "one_d_readable_status.csv").resolve()),
             "frozen_state_contract": str((frozen_dir / "frozen_state_contract.csv").resolve()),
+            "closure_bundle_dir": str(closure_bundle_dir.resolve()),
         },
         "outputs": {
             "report_dir": str(output_dir.resolve()),
@@ -580,6 +666,9 @@ def write_import_manifest(
             "dated_representative_validation_csv": str((output_dir / f"{date_stamp()}_representative_salt_last_window_validation_table.csv").resolve()),
             "dated_heater_partition_csv": str((output_dir / f"{date_stamp()}_representative_salt_heater_partition.csv").resolve()),
             "dated_setup_markdown": str((output_dir / f"{date_stamp()}_one_d_setup_and_confidence.md").resolve()),
+            "closure_term_reference_csv": str((output_dir / "closure_term_reference.csv").resolve()),
+            "closure_branch_policy_csv": str((output_dir / "closure_branch_policy.csv").resolve()),
+            "scenario_bundle_alignment_csv": str((output_dir / "scenario_bundle_alignment.csv").resolve()),
         },
         "surface_rows": surface_rows,
     }
@@ -589,6 +678,7 @@ def write_import_manifest(
 def main() -> int:
     args = parse_args()
     frozen_dir = Path(args.frozen_dir)
+    closure_bundle_dir = Path(args.closure_bundle_dir)
     output_dir = ensure_dir(Path(args.output_dir))
     baseline_surface_dir = ensure_dir(output_dir / "baseline_full_surface")
     defended_surface_dir = ensure_dir(output_dir / "defended_full_coverage_surface")
@@ -598,26 +688,42 @@ def main() -> int:
     heat_lookup = load_heat_lookup(frozen_rows)
     shadow_rows = build_shadow_rows(status_rows=baseline_status_rows, heat_lookup=heat_lookup)
     scenario_rows = summarize_scenarios(shadow_rows)
+    bundle_payload = load_bundle_payload(closure_bundle_dir)
+    bundle_term_rows = load_bundle_term_contract_rows(closure_bundle_dir)
+    bundle_branch_rows = load_bundle_branch_policy_rows(closure_bundle_dir)
+    scenario_bundle_rows = build_scenario_bundle_alignment_rows(
+        scenario_rows=scenario_rows,
+        bundle_payload=bundle_payload,
+    )
     defended_scenario = choose_defended_scenario(scenario_rows)
     defended_name = str(defended_scenario["scenario"])
     defended_shadow_rows = [row for row in shadow_rows if str(row["scenario"]) == defended_name]
+    defended_bundle_alignment = next(
+        (row for row in scenario_bundle_rows if row.get("scenario") == defended_name),
+        {},
+    )
 
     baseline_shadow_path = output_dir / "baseline_shadow_status.csv"
     defended_shadow_path = output_dir / "defended_shadow_status.csv"
     csv_dump_rows(baseline_shadow_path, shadow_rows)
     csv_dump_rows(defended_shadow_path, defended_shadow_rows)
     csv_dump_rows(output_dir / "scenario_shadow_summary.csv", scenario_rows)
+    csv_dump_rows(output_dir / "closure_term_reference.csv", bundle_term_rows)
+    csv_dump_rows(output_dir / "closure_branch_policy.csv", bundle_branch_rows)
+    csv_dump_rows(output_dir / "scenario_bundle_alignment.csv", scenario_bundle_rows)
 
     build_validation_package(
         frozen_dir=frozen_dir,
         one_d_status_csv=baseline_shadow_path,
         output_dir=baseline_surface_dir,
+        closure_bundle_dir=closure_bundle_dir,
         import_manifest_path=None,
     )
     build_validation_package(
         frozen_dir=frozen_dir,
         one_d_status_csv=defended_shadow_path,
         output_dir=defended_surface_dir,
+        closure_bundle_dir=closure_bundle_dir,
         import_manifest_path=None,
     )
 
@@ -638,7 +744,12 @@ def main() -> int:
     csv_dump_rows(dated_validation_csv, representative_validation_rows)
     csv_dump_rows(dated_heater_csv, heater_partition_rows)
     dated_setup_md.write_text(
-        build_setup_documentation(defended_scenario=defended_scenario, frozen_dir=frozen_dir),
+        build_setup_documentation(
+            defended_scenario=defended_scenario,
+            frozen_dir=frozen_dir,
+            bundle_payload=bundle_payload,
+            defended_bundle_alignment=defended_bundle_alignment,
+        ),
         encoding="utf-8",
     )
 
@@ -653,6 +764,9 @@ def main() -> int:
         "dated_representative_validation_csv": str(dated_validation_csv),
         "dated_heater_partition_csv": str(dated_heater_csv),
         "dated_setup_markdown": str(dated_setup_md),
+        "closure_bundle_dir": str(closure_bundle_dir.resolve()),
+        "closure_bundle_term_count": len(bundle_term_rows),
+        "closure_bundle_branch_policy_count": len(bundle_branch_rows),
     }
     write_json(output_dir / "summary.json", summary)
     (output_dir / "README.md").write_text(
@@ -662,11 +776,14 @@ def main() -> int:
             scenario_rows=scenario_rows,
             defended_scenario=defended_scenario,
             surface_rows=surface_rows,
+            bundle_payload=bundle_payload,
+            scenario_bundle_rows=scenario_bundle_rows,
         ),
         encoding="utf-8",
     )
     write_import_manifest(
         frozen_dir=frozen_dir,
+        closure_bundle_dir=closure_bundle_dir,
         output_dir=output_dir,
         surface_rows=surface_rows,
         import_manifest_path=Path(args.import_manifest_path),

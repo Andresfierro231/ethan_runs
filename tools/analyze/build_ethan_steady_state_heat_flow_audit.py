@@ -1,4 +1,32 @@
 #!/usr/bin/env python3
+"""Build a cross-case late-window wallHeatFlux heat-flow audit.
+
+Workflow role:
+    This is a thermal-closure inventory script. It reads registered case
+    metadata, validation tables, steadiness summaries, and wallHeatFlux-derived
+    histories to compare late-window heater input, cooling removal, passive
+    ambient exchange, section totals, and residuals across the Ethan family.
+
+Inputs:
+    - `registry/case_registry.csv` plus June 4 metadata/validation reports.
+    - Per-case probe and wallHeatFlux histories located through registered
+      runtime/source paths.
+
+Outputs:
+    CSV, JSON, README, and optional figures under the selected output
+    directory. The products are audit evidence, not solver inputs.
+
+CLI modifiers:
+    - `--source-id` may be repeated to restrict the audit to specific cases.
+    - `--window-count` changes the retained late-time averaging window.
+    - `--skip-figures` keeps the audit table-only for faster smoke runs.
+
+Boundaries:
+    The script is read-only with respect to solver cases. It produces a
+    case-level heat-flow audit and does not replace the still-needed patchwise
+    heat-source/sink ledger that separates heater, cooler, passive loss,
+    junction, enthalpy-change, sign-convention, and radiation-caveat terms.
+"""
 from __future__ import annotations
 
 import argparse

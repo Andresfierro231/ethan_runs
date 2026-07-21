@@ -15,10 +15,11 @@ if str(ROOT) not in sys.path:
 from tools.analyze.ethan_closure_modeling_v3_common import csv_dump_rows, finite_float, load_csv_rows, write_json  # noqa: E402
 from tools.common import ensure_dir, iso_timestamp  # noqa: E402
 
-DEFAULT_FROZEN_DIR = ROOT / "reports" / "2026-06-23_ethan_frozen_state_results_latest_window"
-DEFAULT_VALIDATION_DIR = ROOT / "reports" / "2026-06-23_ethan_frozen_state_1d_validation_latest_window"
-DEFAULT_BAKEOFF_DIR = ROOT / "reports" / "2026-06-23_ethan_1d_closure_bakeoff_latest_window"
-DEFAULT_OUTPUT_DIR = ROOT / "reports" / "2026-06-23_ethan_1d_discrepancy_explainer_latest_window"
+DEFAULT_REPORT_DAY_DIR = ROOT / "reports" / "2026-06" / "2026-06-23"
+DEFAULT_FROZEN_DIR = DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_frozen_state_results_latest_window"
+DEFAULT_VALIDATION_DIR = DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_frozen_state_1d_validation_latest_window"
+DEFAULT_BAKEOFF_DIR = DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_1d_closure_bakeoff_latest_window"
+DEFAULT_OUTPUT_DIR = DEFAULT_REPORT_DAY_DIR / "2026-06-23_ethan_1d_discrepancy_explainer_latest_window"
 DEFAULT_IMPORT_MANIFEST = ROOT / "imports" / "2026-06-23_ethan_1d_discrepancy_explainer_latest_window.json"
 
 

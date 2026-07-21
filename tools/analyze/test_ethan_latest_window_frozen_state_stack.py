@@ -1,14 +1,24 @@
 from __future__ import annotations
 
+import json
 import math
+import tempfile
 import unittest
+from pathlib import Path
+from unittest import mock
 
 from tools.analyze.build_ethan_latest_window_frozen_state_stack import (
+    CASE_ANALYSIS_MODULE_CHECK,
+    DEFAULT_FREEZE_WINDOWS_CSV,
+    DEFAULT_OUTPUT_DIR,
+    DEFAULT_REPRESENTATIVE_TIMESTEPS_CSV,
     TARGET_REPRESENTATIVE_COUNT,
     branch_drift_rollup,
     canonical_time_token,
     frozen_state_contract_rows,
     load_representative_times,
+    resolve_case_analysis_python,
+    write_import_manifest,
 )
 
 
@@ -69,6 +79,61 @@ class EthanLatestWindowFrozenStateStackTests(unittest.TestCase):
         self.assertAlmostEqual(rows[0]["mean_wall_latest_vs_mean_fraction"], 0.3)
         self.assertAlmostEqual(rows[0]["mean_htc_latest_vs_mean_fraction"], 0.4)
         self.assertAlmostEqual(rows[0]["max_htc_latest_vs_mean_fraction"], 0.5)
+
+    def test_default_paths_use_nested_june_23_report_tree(self) -> None:
+        self.assertEqual(
+            DEFAULT_FREEZE_WINDOWS_CSV,
+            DEFAULT_FREEZE_WINDOWS_CSV.parents[1] / "2026-06-23_ethan_cfd_freeze_checkpoint" / "freeze_case_windows.csv",
+        )
+        self.assertEqual(
+            DEFAULT_REPRESENTATIVE_TIMESTEPS_CSV,
+            DEFAULT_REPRESENTATIVE_TIMESTEPS_CSV.parents[1]
+            / "2026-06-23_ethan_cfd_freeze_checkpoint"
+            / "representative_timesteps.csv",
+        )
+        self.assertEqual(
+            DEFAULT_OUTPUT_DIR,
+            DEFAULT_OUTPUT_DIR.parent / "2026-06-23_ethan_frozen_state_results_latest_window",
+        )
+        self.assertEqual(DEFAULT_OUTPUT_DIR.parent.name, "2026-06-23")
+        self.assertEqual(DEFAULT_OUTPUT_DIR.parent.parent.name, "2026-06")
+
+    def test_import_manifest_records_requested_checkpoint_root(self) -> None:
+        with tempfile.TemporaryDirectory() as tmpdir:
+            root = Path(tmpdir)
+            manifest_path = root / "import.json"
+            checkpoint_root = root / "checkpoint"
+            output_dir = root / "output"
+            output_dir.mkdir()
+            write_import_manifest(
+                freeze_windows_csv=root / "freeze_case_windows.csv",
+                representative_timesteps_csv=root / "representative_timesteps.csv",
+                checkpoint_root=checkpoint_root,
+                output_dir=output_dir,
+                case_refresh_rows=[],
+                import_manifest_path=manifest_path,
+            )
+            payload = json.loads(manifest_path.read_text(encoding="utf-8"))
+            self.assertEqual(payload["inputs"]["checkpoint_root"], str(checkpoint_root.resolve()))
+
+    def test_resolve_case_analysis_python_falls_back_to_plain_python(self) -> None:
+        def fake_run(command: list[str], **_kwargs: object) -> mock.Mock:
+            executable = command[0]
+            self.assertEqual(command[1:], ["-c", CASE_ANALYSIS_MODULE_CHECK])
+            result = mock.Mock()
+            result.returncode = 1 if executable.endswith("python3.11") else 0
+            return result
+
+        with mock.patch(
+            "tools.analyze.build_ethan_latest_window_frozen_state_stack.sys.executable",
+            "/usr/bin/python3.11",
+        ):
+            with mock.patch(
+                "tools.analyze.build_ethan_latest_window_frozen_state_stack.subprocess.run",
+                side_effect=fake_run,
+            ) as run_mock:
+                self.assertEqual(resolve_case_analysis_python(), "python")
+        self.assertEqual(run_mock.call_count, 2)
 
 
 if __name__ == "__main__":

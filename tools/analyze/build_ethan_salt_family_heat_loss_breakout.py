@@ -1,4 +1,28 @@
 #!/usr/bin/env python3
+"""Render Salt-family heat-loss breakout products from reduced reports.
+
+Workflow role:
+    This is a presentation and cross-family comparison layer. It consumes the
+    existing field-transport campaign outputs and groups Salt-family heat loss
+    by total, intended-transfer, and parasitic-loss roles so patterns can be
+    reviewed before more formal thermal ledgers or closure fitting.
+
+Inputs:
+    Reduced report products from `--source-report-dir`; this script does not
+    sample OpenFOAM fields directly.
+
+Outputs:
+    CSV summaries, JSON metadata, README text, and figures under `--output-dir`.
+
+CLI modifiers:
+    - `--source-report-dir` retargets the already-built field-transport source.
+    - `--output-dir` redirects the rendered breakout package.
+
+Boundaries:
+    The output is useful for sanity checks and reporting, but it is not a
+    patchwise heat-source/sink ledger and should not be treated as a fitted
+    thermal closure contract by itself.
+"""
 from __future__ import annotations
 
 import argparse

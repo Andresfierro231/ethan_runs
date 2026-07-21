@@ -18,11 +18,17 @@ TMP_MPL_ROOT.mkdir(parents=True, exist_ok=True)
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
+from tools.analyze.cfd_closure_bundle import (  # noqa: E402
+    DEFAULT_OUTPUT_DIR as DEFAULT_CLOSURE_BUNDLE_DIR,
+    load_bundle_branch_policy_rows,
+    load_bundle_payload,
+    load_bundle_term_contract_rows,
+)
 from tools.analyze.ethan_closure_modeling_v3_common import csv_dump_rows, finite_float, load_csv_rows, write_json
 from tools.common import ensure_dir, iso_timestamp, save_matplotlib_figure
 
-DEFAULT_FROZEN_DIR = ROOT / "reports" / "2026-06-22_ethan_frozen_state_results"
-DEFAULT_OUTPUT_DIR = ROOT / "reports" / "2026-06-23_ethan_frozen_state_1d_validation"
+DEFAULT_FROZEN_DIR = ROOT / "reports" / "2026-06" / "2026-06-22" / "2026-06-22_ethan_frozen_state_results"
+DEFAULT_OUTPUT_DIR = ROOT / "reports" / "2026-06" / "2026-06-23" / "2026-06-23_ethan_frozen_state_1d_validation"
 PRESENTATION_DIR = ROOT / "reports" / "2026-06-23_presentation"
 SCENARIO_ORDER = [
     "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_0",
@@ -46,6 +52,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--frozen-dir", default=str(DEFAULT_FROZEN_DIR))
     parser.add_argument("--one-d-status-csv")
     parser.add_argument("--output-dir", default=str(DEFAULT_OUTPUT_DIR))
+    parser.add_argument("--closure-bundle-dir", default=str(DEFAULT_CLOSURE_BUNDLE_DIR))
     parser.add_argument(
         "--import-manifest-path",
         default=str(ROOT / "imports" / "2026-06-23_ethan_frozen_state_1d_validation.json"),
@@ -234,6 +241,59 @@ def closure_stack_label(summary_row: dict[str, str]) -> str:
     ins = str(summary_row.get("insulation_thickness_in", ""))
     rad = str(summary_row.get("radiation_on", ""))
     return f"{descriptor}|{htc_mode}|ins={ins}|rad={rad}"
+
+
+def bundle_alignment_status(*, scenario_family_value: str, profile_descriptor_mode: str, internal_htc_mode: str) -> tuple[str, str]:
+    if scenario_family_value == "baseline" and profile_descriptor_mode == "disabled" and internal_htc_mode == "baseline":
+        return (
+            "full_bundle_alignment",
+            "Uses the same readable baseline closure stack as the current defended local CFD closure bundle.",
+        )
+    if scenario_family_value == "hybrid":
+        return (
+            "hybrid_bundle_extension_undercovered",
+            "Extends the readable baseline stack with hybrid/profile-descriptor behavior that remains under-covered on the current frozen comparison surface.",
+        )
+    return (
+        "bounded_nondefault_alignment",
+        "Readable scenario does not match the simplest defended baseline stack exactly; keep it inside bounded comparison use.",
+    )
+
+
+def build_scenario_bundle_alignment_rows(
+    *,
+    scenario_rows: list[dict[str, Any]],
+    bundle_payload: dict[str, Any],
+) -> list[dict[str, Any]]:
+    friction = bundle_payload["distributed_friction"]
+    primary_ua = bundle_payload["primary_ua_surface"]
+    direct_nu = bundle_payload["direct_nusselt"]
+    rows: list[dict[str, Any]] = []
+    for row in scenario_rows:
+        alignment_status, alignment_note = bundle_alignment_status(
+            scenario_family_value=str(row.get("scenario_family", "")),
+            profile_descriptor_mode=str(row.get("profile_descriptor_mode", "")),
+            internal_htc_mode=str(row.get("internal_htc_mode", "")),
+        )
+        rows.append(
+            {
+                "scenario": row.get("scenario", ""),
+                "scenario_family": row.get("scenario_family", ""),
+                "closure_stack_label": row.get("closure_stack_label", ""),
+                "bundle_alignment_status": alignment_status,
+                "bundle_alignment_note": alignment_note,
+                "straight_friction_closure_name": friction["closure_name"],
+                "straight_friction_target_regions": "|".join(friction["target_regions"]),
+                "primary_ua_closure_name": primary_ua["closure_name"],
+                "primary_ua_target_regions": "|".join(primary_ua["target_regions"]),
+                "direct_nu_closure_name": direct_nu["closure_name"],
+                "direct_nu_target_regions": "|".join(direct_nu["target_regions"]),
+                "blocked_term_count": len(bundle_payload["blocked_terms"]),
+                "all_rows_accepted_for_validation": row.get("all_rows_accepted_for_validation", ""),
+                "composite_rank": finite_float(row.get("composite_rank")),
+            }
+        )
+    return rows
 
 
 def compare_sensor_tables(
@@ -500,6 +560,8 @@ def build_readme(
     scenario_rows: list[dict[str, Any]],
     best_rows: list[dict[str, Any]],
     comparison_rows: list[dict[str, Any]],
+    bundle_payload: dict[str, Any],
+    scenario_bundle_rows: list[dict[str, Any]],
 ) -> str:
     if scenario_rows:
         best_full = scenario_rows[0]
@@ -528,6 +590,10 @@ def build_readme(
             f"TP `{row['best_centerline_scenario']}`, mdot `{row['best_mass_flow_scenario']}`"
         )
     best_case_block = "\n".join(best_case_lines) if best_case_lines else "- none"
+    top_bundle_row = scenario_bundle_rows[0] if scenario_bundle_rows else {}
+    friction = bundle_payload["distributed_friction"]
+    primary_ua = bundle_payload["primary_ua_surface"]
+    direct_nu = bundle_payload["direct_nusselt"]
     return f"""# Ethan Frozen-State 1D Validation
 
 Generated: `{iso_timestamp()}`
@@ -541,6 +607,18 @@ Generated: `{iso_timestamp()}`
 - Straight sections are not assumed fully developed by default.
 - `upcomer` remains a separate modeling problem, and `right_leg` / downcomer
   remains blocked for direct internal `Nu`.
+
+## Current closure contract used for interpretation
+
+- Distributed straight friction is read from the local CFD closure bundle term
+  `{friction["closure_name"]}` on `{", ".join(friction["target_regions"])}`.
+- Primary thermal conductance interpretation is read from
+  `{primary_ua["closure_name"]}` on `{", ".join(primary_ua["target_regions"])}`.
+- Direct fitted `Nu` remains limited to `{direct_nu["closure_name"]}` on
+  `{", ".join(direct_nu["target_regions"])}`.
+- Best current primary scenario bundle alignment:
+  `{top_bundle_row.get("bundle_alignment_status", "")}`.
+  {top_bundle_row.get("bundle_alignment_note", "")}
 
 ## Current best readable picture
 
@@ -563,6 +641,12 @@ Generated: `{iso_timestamp()}`
 - 1D side:
   `qhx_total_W + qambient_total_W`.
 - Do not infer a hidden cooler `h`, and do not double-count `ambient_proxy_w`.
+
+## Added closure-reference artifacts
+
+- `closure_term_reference.csv`
+- `closure_branch_policy.csv`
+- `scenario_bundle_alignment.csv`
 """
 
 
@@ -735,6 +819,7 @@ def write_import_manifest(
     *,
     frozen_dir: Path,
     one_d_status_csv: Path,
+    closure_bundle_dir: Path,
     import_manifest_path: Path | None,
     output_dir: Path,
     summary: dict[str, Any],
@@ -749,12 +834,16 @@ def write_import_manifest(
             "frozen_state_contract": str((frozen_dir / "frozen_state_contract.csv").resolve()),
             "frozen_state_readable_1d": str(one_d_status_csv.resolve()),
             "frozen_state_branch_behavior": str((frozen_dir / "branch_behavior_summary.csv").resolve()),
+            "closure_bundle_dir": str(closure_bundle_dir.resolve()),
         },
         "outputs": {
             "report_dir": str(output_dir.resolve()),
             "summary_json": str((output_dir / "summary.json").resolve()),
             "case_metric_summary_csv": str((output_dir / "case_metric_summary.csv").resolve()),
             "scenario_ranking_csv": str((output_dir / "scenario_ranking.csv").resolve()),
+            "closure_term_reference_csv": str((output_dir / "closure_term_reference.csv").resolve()),
+            "closure_branch_policy_csv": str((output_dir / "closure_branch_policy.csv").resolve()),
+            "scenario_bundle_alignment_csv": str((output_dir / "scenario_bundle_alignment.csv").resolve()),
         },
     }
     write_json(import_manifest_path, payload)
@@ -765,6 +854,7 @@ def build_validation_package(
     frozen_dir: Path,
     one_d_status_csv: Path,
     output_dir: Path,
+    closure_bundle_dir: Path,
     import_manifest_path: Path | None,
 ) -> dict[str, Any]:
     frozen_rows = load_csv_rows(frozen_dir / "frozen_state_contract.csv")
@@ -790,6 +880,13 @@ def build_validation_package(
     scenario_rows = rank_scenarios(comparison_rows)
     best_case_rows = best_rows_by_reference(comparison_rows)
     branch_profile_rows = aggregate_branch_profiles(frozen_contexts=frozen_contexts)
+    bundle_payload = load_bundle_payload(closure_bundle_dir)
+    bundle_term_rows = load_bundle_term_contract_rows(closure_bundle_dir)
+    bundle_branch_rows = load_bundle_branch_policy_rows(closure_bundle_dir)
+    scenario_bundle_rows = build_scenario_bundle_alignment_rows(
+        scenario_rows=scenario_rows,
+        bundle_payload=bundle_payload,
+    )
 
     csv_dump_rows(output_dir / "case_metric_summary.csv", comparison_rows)
     csv_dump_rows(output_dir / "sensor_error_summary.csv", sensor_error_rows)
@@ -797,6 +894,9 @@ def build_validation_package(
     csv_dump_rows(output_dir / "scenario_ranking.csv", scenario_rows)
     csv_dump_rows(output_dir / "best_case_scenarios.csv", best_case_rows)
     csv_dump_rows(output_dir / "cfd_branch_profile_summary.csv", branch_profile_rows)
+    csv_dump_rows(output_dir / "closure_term_reference.csv", bundle_term_rows)
+    csv_dump_rows(output_dir / "closure_branch_policy.csv", bundle_branch_rows)
+    csv_dump_rows(output_dir / "scenario_bundle_alignment.csv", scenario_bundle_rows)
 
     figures = {
         "primary_scenario_metric_heatmap": plot_scenario_heatmap(scenario_rows, output_dir),
@@ -832,6 +932,9 @@ def build_validation_package(
         "best_primary_composite_score": finite_float(scenario_rows[0].get("composite_score")) if scenario_rows else math.nan,
         "best_case_count_primary": len(best_case_rows),
         "figure_stems": sorted(figures.keys()),
+        "closure_bundle_dir": str(closure_bundle_dir.resolve()),
+        "closure_bundle_term_count": len(bundle_term_rows),
+        "closure_bundle_branch_policy_count": len(bundle_branch_rows),
     }
     write_json(output_dir / "summary.json", summary)
     (output_dir / "README.md").write_text(
@@ -840,12 +943,15 @@ def build_validation_package(
             scenario_rows=scenario_rows,
             best_rows=best_case_rows,
             comparison_rows=comparison_rows,
+            bundle_payload=bundle_payload,
+            scenario_bundle_rows=scenario_bundle_rows,
         ),
         encoding="utf-8",
     )
     write_import_manifest(
         frozen_dir=frozen_dir,
         one_d_status_csv=one_d_status_csv,
+        closure_bundle_dir=closure_bundle_dir,
         import_manifest_path=import_manifest_path,
         output_dir=output_dir,
         summary=summary,
@@ -858,11 +964,13 @@ def main() -> int:
     frozen_dir = Path(args.frozen_dir)
     output_dir = ensure_dir(Path(args.output_dir))
     one_d_status_csv = Path(args.one_d_status_csv) if args.one_d_status_csv else frozen_dir / "one_d_readable_status.csv"
+    closure_bundle_dir = Path(args.closure_bundle_dir)
     import_manifest_path = Path(args.import_manifest_path) if args.import_manifest_path else None
     build_validation_package(
         frozen_dir=frozen_dir,
         one_d_status_csv=one_d_status_csv,
         output_dir=output_dir,
+        closure_bundle_dir=closure_bundle_dir,
         import_manifest_path=import_manifest_path,
     )
     return 0

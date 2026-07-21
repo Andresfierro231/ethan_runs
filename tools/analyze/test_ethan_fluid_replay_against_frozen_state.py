@@ -3,6 +3,7 @@ from __future__ import annotations
 import unittest
 
 from tools.analyze.build_ethan_fluid_replay_against_frozen_state import (
+    count_text_occurrences,
     hybrid_coverage_rows,
     scenario_condition,
     scenario_family,
@@ -30,6 +31,10 @@ class EthanFluidReplayAgainstFrozenStateTests(unittest.TestCase):
         self.assertEqual(len(coverage), 1)
         self.assertEqual(coverage[0]["coverage_status"], "partial")
         self.assertEqual(coverage[0]["missing_hybrid_cases"], "Salt 2")
+
+    def test_count_text_occurrences_counts_matches(self) -> None:
+        self.assertEqual(count_text_occurrences("v1 alpha v1 beta", "v1"), 2)
+        self.assertEqual(count_text_occurrences("no matches here", "v1"), 0)
 
 
 if __name__ == "__main__":
