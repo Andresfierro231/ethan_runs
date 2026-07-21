@@ -304,9 +304,9 @@ def make_slice(input_proxy, sample_time: float, view_preset: str = "front_z"):
     return slice_filter, bounds, origin
 
 
-def add_title(render_view, source_id: str, component: str, view_label: str) -> None:
+def add_title(render_view, source_id: str, component: str, title_detail: str) -> None:
     title = Text()
-    title.Text = f"{source_id} | {component} | velocity magnitude arrows | {view_label}"
+    title.Text = f"{source_id} | {component} | {title_detail}"
     title_display = Show(title, render_view)
     title_display.WindowLocation = "Upper Left Corner"
     title_display.Color = [0.0, 0.0, 0.0]
@@ -457,6 +457,7 @@ def render_component(
     base_opacity: float,
     view_preset: str,
     output_suffix: str,
+    velocity_mode: str,
 ) -> dict[str, object]:
     source_id = row["source_id"]
     source_root = Path(row["source_root"]).resolve()
@@ -464,13 +465,18 @@ def render_component(
     case_entry = Path(str(context["case_entry"]))
     case_type = str(context["case_type"])
     color_min, color_max = [float(value) for value in context["color_range"]]
+    scale_min, scale_max = [float(value) for value in context["scale_range"]]
     scale_factor = float(context["scale_factor"])
     component_meta = dict(context["component_data"])[component]
     clip_bounds = tuple(float(value) for value in component_meta["clip_bounds"])
     patch_names = list(component_meta["patch_names"])
     patch_bounds = list(component_meta["patch_bounds"])
-    paths = branch_output_paths(output_root, source_id, component, output_suffix)
+    paths = branch_output_paths(output_root, source_id, component, output_suffix, velocity_mode)
     view_config = VIEW_PRESETS[view_preset]
+    velocity_config = VELOCITY_MODES[velocity_mode]
+    scalar_array = str(velocity_config["scalar_array"])
+    scale_array = str(velocity_config["scale_array"])
+    vector_array = str(velocity_config["vector_array"])
 
     ResetSession()
     render_view = make_render_view()
@@ -490,15 +496,11 @@ def render_component(
 
     point_velocity = CellDatatoPointData(Input=slice_filter)
     UpdatePipeline(time=last_time, proxy=point_velocity)
-    point_magnitude = Calculator(Input=point_velocity)
-    point_magnitude.AttributeType = "Point Data"
-    point_magnitude.ResultArrayName = "Umag"
-    point_magnitude.Function = "mag(U)"
-    UpdatePipeline(time=last_time, proxy=point_magnitude)
+    velocity_source = add_velocity_mode_arrays(point_velocity, last_time, velocity_mode)
 
-    glyph = Glyph(Input=point_magnitude, GlyphType="Arrow")
-    glyph.OrientationArray = ["POINTS", "U"]
-    glyph.ScaleArray = ["POINTS", "Umag"]
+    glyph = Glyph(Input=velocity_source, GlyphType="Arrow")
+    glyph.OrientationArray = ["POINTS", vector_array]
+    glyph.ScaleArray = ["POINTS", scale_array]
     glyph_mode = "Uniform Spatial Distribution (Bounds Based)"
     glyph.GlyphMode = glyph_mode
     glyph.MaximumNumberOfSamplePoints = max_glyph_points
@@ -518,17 +520,17 @@ def render_component(
     glyph_display.Representation = "Surface"
     if hasattr(glyph_display, "InterpolateScalarsBeforeMapping"):
         glyph_display.InterpolateScalarsBeforeMapping = 0
-    association = resolve_array_association(glyph, "Umag", "auto")
-    ColorBy(glyph_display, (association, "Umag"))
-    lut = GetColorTransferFunction("Umag")
+    association = resolve_array_association(glyph, scalar_array, "auto")
+    ColorBy(glyph_display, (association, scalar_array))
+    lut = GetColorTransferFunction(scalar_array)
     lut.RescaleTransferFunction(color_min, color_max)
     scalar_bar = GetScalarBar(lut, render_view)
-    style_scalar_bar(scalar_bar, "Velocity magnitude [m/s]")
+    style_scalar_bar(scalar_bar, str(velocity_config["scalar_bar"]))
     glyph_display.SetScalarBarVisibility(render_view, True)
 
     configure_camera(render_view, input_bounds, list(slice_origin), view_preset, camera_scale_factor)
 
-    add_title(render_view, source_id, component, str(view_config["label"]))
+    add_title(render_view, source_id, component, f"{velocity_config['title']} | {view_config['label']}")
     add_time_stamp(render_view, last_time)
 
     Render(render_view)
@@ -558,6 +560,11 @@ def render_component(
         "clipped_bounds": list(clipped_bounds),
         "input_bounds": list(input_bounds),
         "slice_origin": slice_origin,
+        "velocity_mode": velocity_mode,
+        "velocity_title": velocity_config["title"],
+        "scalar_array": scalar_array,
+        "scale_array": scale_array,
+        "vector_array": vector_array,
         "view_preset": view_preset,
         "view_label": view_config["label"],
         "slice_axis": view_config["slice_axis"],
@@ -573,6 +580,7 @@ def render_component(
         "base_opacity": base_opacity,
         "image_resolution": [image_width, image_height],
         "color_range": [color_min, color_max],
+        "scale_range": [scale_min, scale_max],
         "png_path": str(paths["png"]),
         "png_exists": paths["png"].exists(),
         "svg_path": str(paths["svg"]),
@@ -598,7 +606,13 @@ def main() -> int:
     results: list[dict[str, object]] = []
     for row in rows:
         try:
-            context = case_render_context(row, args.array_association, args.glyph_scale_multiplier, args.view_preset)
+            context = case_render_context(
+                row,
+                args.array_association,
+                args.glyph_scale_multiplier,
+                args.view_preset,
+                args.velocity_mode,
+            )
         except Exception as exc:
             context = {"error": str(exc)}
         for component in components:
@@ -618,6 +632,7 @@ def main() -> int:
                     args.base_opacity,
                     args.view_preset,
                     output_suffix,
+                    args.velocity_mode,
                 )
             except Exception as exc:
                 result = {
@@ -626,6 +641,7 @@ def main() -> int:
                     "case_id": row["case_id"],
                     "component": component,
                     "requested_array_association": args.array_association,
+                    "velocity_mode": args.velocity_mode,
                     "view_preset": args.view_preset,
                     "output_suffix": output_suffix,
                     "status": "failed",
@@ -645,6 +661,7 @@ def main() -> int:
         "camera_scale_factor": args.camera_scale_factor,
         "glyph_scale_multiplier": args.glyph_scale_multiplier,
         "base_opacity": args.base_opacity,
+        "velocity_mode": args.velocity_mode,
         "view_preset": args.view_preset,
         "output_suffix": output_suffix,
         "image_count": len(results),

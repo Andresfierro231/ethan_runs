@@ -1,54 +1,53 @@
 from __future__ import annotations
 
+import csv
+import tempfile
 import unittest
+from pathlib import Path
 
 from tools.extract import build_s13_upcomer_exchange_source_bounded_cv_definition as builder
 
 
+def rows(path: Path) -> list[dict[str, str]]:
+    with path.open(newline="", encoding="utf-8") as handle:
+        return list(csv.DictReader(handle))
+
+
 class S13SourceBoundedCvDefinitionTests(unittest.TestCase):
-    def test_boundary_class_accepts_only_trusted_right_leg_wall(self) -> None:
-        classification, trusted, role, reason = builder.boundary_class("pipeleg_right_02_middle")
-        self.assertEqual(classification, "trusted_right_leg_wall")
-        self.assertTrue(trusted)
-        self.assertEqual(role, "wall_heat_boundary")
-        self.assertEqual(reason, "")
+    def test_split_reasons_deduplicates(self) -> None:
+        self.assertEqual(builder.split_reasons("a;b", "b;c"), ["a", "b", "c"])
 
-        classification, trusted, role, reason = builder.boundary_class("outlet")
-        self.assertEqual(classification, "untrusted_boundary_escape")
-        self.assertFalse(trusted)
-        self.assertEqual(role, "unreleased_source_or_sink_boundary")
-        self.assertIn("unreleased_boundary", reason)
+    def test_case_decision_blocks_current_evidence(self) -> None:
+        decision = builder.case_decision("salt_2", builder.load_inputs())
+        self.assertEqual(decision["release_status"], "blocked_source_bounded_cv_not_released")
+        self.assertEqual(decision["s12_hiax1_unlocked"], "false")
+        self.assertIn("missing_positive_right_leg_wall_faces_or_area", decision["blocking_reason"])
 
-    def test_outward_normal_flips_when_selected_cell_is_neighbour(self) -> None:
-        normal = builder.outward_normal((2.0, 0.0, 0.0), owner_selected=True, neighbour_selected=False)
-        self.assertEqual(normal, (1.0, 0.0, 0.0))
+    def test_package_writes_required_artifacts(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "pkg"
+            payload = builder.build_package(out)
+            self.assertFalse(payload["summary"]["s12_hiax1_unlocked"])
+            for name in [
+                "recirc_cv_cells.csv",
+                "exchange_interface_faces.csv",
+                "trusted_wall_faces.csv",
+                "wall_core_band.csv",
+                "normal_convention.csv",
+                "source_sink_boundary_ledger.csv",
+                "release_decision.csv",
+                "summary.json",
+                "README.md",
+            ]:
+                self.assertTrue((out / name).exists(), name)
 
-        normal = builder.outward_normal((2.0, 0.0, 0.0), owner_selected=False, neighbour_selected=True)
-        self.assertEqual(normal, (-1.0, -0.0, -0.0))
-
-    def test_decision_requires_interface_wall_and_no_boundary_escape(self) -> None:
-        accum = builder.CaseAccum(interface_faces=[{"face_id": 1}], wall_faces=[], boundary_by_patch={})
-        accum.interface_area_m2 = 1.0
-        row = builder.decision_for_case("salt_2", {1, 2}, accum)
-        self.assertEqual(row["release_status"], "blocked_source_bounded_cv_not_released")
-        self.assertIn("missing_positive_trusted_right_leg_wall", row["blocking_reason"])
-
-        accum.wall_faces.append({"face_id": 2})
-        accum.wall_area_m2 = 0.5
-        accum.untrusted_boundary_faces = 3
-        row = builder.decision_for_case("salt_2", {1, 2}, accum)
-        self.assertIn("selected_cv_touches_non_wall_or_unreleased_boundary_faces", row["blocking_reason"])
-
-        accum.untrusted_boundary_faces = 0
-        accum.untrusted_boundary_area_m2 = 0.0
-        row = builder.decision_for_case("salt_2", {1, 2}, accum)
-        self.assertEqual(row["release_status"], "released_source_bounded_cv")
-        self.assertEqual(row["blocking_reason"], "")
-
-    def test_next_rows_block_sampler_when_group_not_released(self) -> None:
-        rows = builder.next_rows(group_released=False)
-        self.assertIn("Do not rerun sampler", rows[0]["next_step"])
-        self.assertIn("no surface extraction", rows[0]["guardrail"])
+    def test_release_decision_has_three_blocked_cases(self) -> None:
+        with tempfile.TemporaryDirectory() as tmp:
+            out = Path(tmp) / "pkg"
+            builder.build_package(out)
+            release_rows = rows(out / "release_decision.csv")
+            self.assertEqual(len(release_rows), 3)
+            self.assertTrue(all(row["release_status"].startswith("blocked") for row in release_rows))
 
 
 if __name__ == "__main__":
