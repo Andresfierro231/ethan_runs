@@ -1,0 +1,10 @@
+audit_id,runtime_input,used_as_runtime_input,status,detail
+RUNTIME-01,CFD mdot,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-02,realized wallHeatFlux,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-03,imposed cooler duty,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-04,realized test-section heat,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-05,validation temperatures,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-06,holdout temperatures,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-07,external-test temperatures,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-08,train residual fill,False,pass,forbidden input audit; not used; package is read-only evidence synthesis
+RUNTIME-09,validation/holdout/external score rows,False,pass,"forbidden input audit; validation, holdout, and external-test rows scored: 0/0/0"

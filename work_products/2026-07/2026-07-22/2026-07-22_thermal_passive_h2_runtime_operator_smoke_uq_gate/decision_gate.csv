@@ -1,0 +1,6 @@
+gate,reason,status
+runtime_input_audit,only setup basis plus model-predicted wall state consumed,pass
+operator_smoke,8 scenario summaries generated,diagnostic_pass
+tp_tw_projection_sensitivity,6 existing sensitivity groups summarized,support_only
+numeric_q_loss_release,diagnostic q rows are not a source/property or heat-loss release,closed
+admission_or_freeze,"no protected scoring, fitting, model selection, candidate freeze, or final score",closed

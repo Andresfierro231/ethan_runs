@@ -1,0 +1,32 @@
+{
+  "blocker_decision": "not_resolved_heater_narrowed",
+  "generated_at": "2026-07-16T22:28:03+00:00",
+  "heater_candidate_rows": 7,
+  "heater_final_use_gci_rows": 6,
+  "heater_fit_admissible_rows": 0,
+  "heater_mesh_gci_pass_rows": 0,
+  "heater_missing_triplet_gci_rows": 1,
+  "heater_nonpublication_hydraulic_gci_rows": 3,
+  "heater_nu_candidate_rows": 2,
+  "heater_publication_ready_gci_rows": 0,
+  "heater_recirculation_pass_rows": 0,
+  "heater_sign_heat_balance_pass_rows": 0,
+  "heater_source_allows_fit_pass_rows": 0,
+  "heater_thermal_sign_blocked_gci_rows": 2,
+  "next_extraction_queue_rows": 4,
+  "outputs": [
+    "README.md",
+    "heater_source_sign_heat_balance_gate.csv",
+    "heater_same_qoi_mesh_gci_gate.csv",
+    "heater_internal_nu_candidate_admission.csv",
+    "gci_results_admitted_only.csv",
+    "closure_qoi_blocker_delta.csv",
+    "next_extraction_queue.csv",
+    "blocker_decision.csv",
+    "closure_qoi_resolution_decision.md",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "source_package": "work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission",
+  "task": "AGENT-468"
+}

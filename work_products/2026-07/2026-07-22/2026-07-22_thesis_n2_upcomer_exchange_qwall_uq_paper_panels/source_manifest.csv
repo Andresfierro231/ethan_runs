@@ -1,0 +1,5 @@
+source_key,path,summary_path,exists,mutation_status
+s13_limited,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/summary.json,true,read_only
+s13_source_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/summary.json,true,read_only
+s13_exact_qwall,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/summary.json,true,read_only
+s13_source_prereq,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/summary.json,true,read_only

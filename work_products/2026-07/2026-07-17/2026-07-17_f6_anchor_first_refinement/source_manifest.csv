@@ -1,0 +1,9 @@
+source_id,path,exists,role
+f6_gate_matrix,work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_row_gate_matrix.csv,yes,current PM5 row-level F6 gates
+f6_scorecard,work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_resolution_scorecard.csv,yes,current F6 vs F3 decision scorecard
+f6_next_action_queue,work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_next_action_queue.csv,yes,current narrowed F6 evidence queue
+f6_summary,work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/summary.json,yes,current F6 recorrection summary
+pm10_case_readiness,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv,yes,recorded PM10 terminal readiness
+pm10_summary,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/summary.json,yes,recorded PM10 readiness summary
+high_heat_harvest_queue,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,yes,recorded high-heat harvest readiness
+recirculation_anchor_matrix,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv,yes,Salt3 Q x insulation onset matrix

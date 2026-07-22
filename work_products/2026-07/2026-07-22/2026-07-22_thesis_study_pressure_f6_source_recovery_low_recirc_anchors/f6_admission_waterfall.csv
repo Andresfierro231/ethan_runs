@@ -1,0 +1,9 @@
+gate,required_status,current_status,pass_now,blocker,next_action
+terminal_source_availability,CAND001 terminal successful rows,CAND001 job 3308712 still RUNNING,false,no terminal source cases,wait for terminal state and claim terminal readiness row
+endpoint_static_pressure_basis,raw endpoint pressure fields ready,endpoint_fields_ready 0,false,no endpoint field release,after terminal success run staged-copy sampler/readiness row if authorized
+velocity_dynamic_pressure_basis,velocity/dynamic basis documented for same endpoints,not measured pending terminal harvest,false,no same-window velocity basis,include in post-terminal sampler contract
+low_recirculation_mask,RAF/RMF or equivalent low-recirculation mask passes,pending,false,no confirmed low-recirculation mask for terminal probes,evaluate after terminal fields exist
+same_qoi_time_mesh_uq,same-QOI temporal and mesh UQ admissible,same_qoi_mesh_uq_admissible_rows 0,false,UQ absent,run UQ only after endpoint rows exist
+source_property_legality,source/property labels release-ready,source_property_release_ready_rows 0,false,source/property release absent,preflight after terminal endpoint evidence
+component_isolation_or_section_effective_policy,component K isolated or section-effective label retained,section-effective label retained,true,lower-right remains not component-isolated,keep lower-right diagnostic or section-effective
+ordinary_f6_admission,all upstream gates pass,0 admitted F6 rows,false,upstream gates fail,no F6/F3 comparison or S11/S15/S6 trigger

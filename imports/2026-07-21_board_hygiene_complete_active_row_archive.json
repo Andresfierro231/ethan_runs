@@ -1,0 +1,42 @@
+{
+  "task": "TODO-BOARD-HYGIENE-COMPLETE-ACTIVE-ROW-ARCHIVE-2026-07-21",
+  "task_id": "TODO-BOARD-HYGIENE-COMPLETE-ACTIVE-ROW-ARCHIVE-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-BOARD-HYGIENE-COMPLETE-ACTIVE-ROW-ARCHIVE-2026-07-21.md",
+    ".agent/journal/2026-07-21/board-hygiene-complete-active-row-archive.md",
+    "imports/2026-07-21_board_hygiene_complete_active_row_archive.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_board_hygiene_complete_active_row_archive/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_board_hygiene_complete_active_row_archive/run_board_hygiene.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_board_hygiene_complete_active_row_archive/archived_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_board_hygiene_complete_active_row_archive/validation_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_board_hygiene_complete_active_row_archive/remaining_active_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_board_hygiene_complete_active_row_archive/summary.json"
+  ],
+  "read_only_context": [
+    ".agent/status/**",
+    ".agent/journal/2026-07-21/**",
+    "imports/*.json",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_fluid_mutation": false,
+  "external_repo_mutation": false,
+  "fluid_source_mutation": false,
+  "fit_or_model_selection": false,
+  "scientific_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "deletion": false
+}

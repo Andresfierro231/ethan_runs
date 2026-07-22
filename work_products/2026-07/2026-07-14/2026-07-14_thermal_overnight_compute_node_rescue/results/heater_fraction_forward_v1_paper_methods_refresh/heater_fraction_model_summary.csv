@@ -1,0 +1,5 @@
+model_id,train_abs_Tmean_error_K,validation_abs_Tmean_error_K,holdout_abs_Tmean_error_K,heldout_mean_abs_Tmean_error_K,all_mean_abs_Tmean_error_K,fit_rows,heldout_rows,final_forward_v1_status
+H0_heater_only_unfitted,2.32187151784,4.54939778652,6.95562897347,5.75251337999,4.60896609261,none,salt_3;salt_4,blocked_no_go_final_forward_v1_not_admitted
+H1_eta_heater_fit_salt2,1.00684793836e-10,2.0813513524,4.31731335748,3.19933235494,2.13288823666,salt_2,salt_3;salt_4,blocked_no_go_final_forward_v1_not_admitted
+H2_test_section_external_loss_fit_salt2,1.62881708121e-10,2.34516270228,4.87920581237,3.61218425732,2.40812283827,salt_2,salt_3;salt_4,blocked_no_go_final_forward_v1_not_admitted
+H3_test_section_37W_rejected,33.7233346222,34.3599218122,35.037598529,34.6987601706,34.3736183211,none,salt_3;salt_4,blocked_no_go_final_forward_v1_not_admitted

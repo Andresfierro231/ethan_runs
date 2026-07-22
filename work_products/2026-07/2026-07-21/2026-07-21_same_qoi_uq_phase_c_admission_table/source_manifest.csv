@@ -1,0 +1,8 @@
+source_path,role,exists,mutation
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/qoi_retained_window_inventory.csv,Phase A time-window gate,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/phase_c_input_table.csv,Phase B mesh/GCI gate input,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/mesh_gci_coverage_matrix.csv,Phase B mesh/GCI rationale,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,prior same-QOI execution,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/blocker_analysis.csv,pressure/F6 blocker synthesis,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/summary.json,terminal recirculation source readiness,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/summary.json,heat-loss frozen scorecard blocker,true,read_only

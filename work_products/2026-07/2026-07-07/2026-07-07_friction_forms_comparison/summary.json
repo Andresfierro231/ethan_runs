@@ -1,0 +1,51 @@
+{
+  "generated_at": "2026-07-07T18:30:18-05:00",
+  "task": "AGENT-195",
+  "inputs": {
+    "friction_forms": [
+      "F1",
+      "F3_hagenbach",
+      "F3_shah_apparent",
+      "F4_leg_class"
+    ],
+    "salt_cases": [
+      "Salt 2",
+      "Salt 3",
+      "Salt 4"
+    ],
+    "insulation_in": {
+      "Salt 2": 0.25,
+      "Salt 3": 0.3,
+      "Salt 4": 0.3
+    },
+    "cfd_mdot_kg_s": {
+      "Salt 2": 0.01318354663,
+      "Salt 3": 0.01497722,
+      "Salt 4": 0.01698467657
+    },
+    "minor_losses": {
+      "k_90deg": 0.0,
+      "k_20deg": 0.0
+    },
+    "property_set": "salt_jin",
+    "radiation_on": true
+  },
+  "outputs": {
+    "mdot_comparison_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-07_friction_forms_comparison/mdot_comparison.csv"
+  },
+  "counts": {
+    "total_rows": 12,
+    "salts": 3,
+    "friction_forms": 4,
+    "verify_failures": 0,
+    "wall_time_seconds": 426.1
+  },
+  "verify_failures": [],
+  "limitations": [
+    "F4_leg_class stub mapping (top_horizontal_inlet\u2192cooler, top_horizontal_exit\u2192downcomer, bottom_horizontal_inlet\u2192heater, bottom_horizontal_exit\u2192upcomer) applied via runtime monkey-patch; stubs are ~25 mm each so contribution is negligible (<0.2 Pa each).",
+    "insulation matching from Jin temperature sweep (rad=1); \u00b10.05 in sensitivity not explored.",
+    "No minor losses (k_90deg=k_20deg=0.0) to match Jin gap baseline.",
+    "F4 upcomer correlation is valid only for 3 Re points (Salt 2/3/4 Jin); extrapolation below Salt 2 Re is speculative."
+  ],
+  "f4_stub_patch_rationale": "AGENT-191 hardened solver.py to raise ValueError for unmapped segments. solver.py is READ-ONLY per BOARD.md; stubs patched at runtime in the comparison script."
+}

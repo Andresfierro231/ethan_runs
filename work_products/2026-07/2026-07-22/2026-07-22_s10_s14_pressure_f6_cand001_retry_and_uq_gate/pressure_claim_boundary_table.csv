@@ -1,0 +1,6 @@
+claim_id,status,allowed_wording,forbidden_wording,use_in_this_package
+PCB-001,stopped,The current lower-right rows fail ordinary component-K admission gates.,negative loss coefficient; admitted component K,preserved
+PCB-002,allowed_thesis_evidence,The signed residual is retained as recirculating section-effective pressure evidence.,component K; cluster K; F6; clipped K; hidden/global multiplier,preserved
+PCB-003,diagnostic_only,The no-fit transfer supports model-form motivation on train-context rows.,validation score; holdout score; external-test score; freeze/admission decision,preserved
+PCB-004,not_numerically_evaluated,No numeric F3/Shah comparison is made until an ordinary admissible F6 row exists.,hybrid beats F3/Shah; F6 fixed; F6 recorrection,preserved
+PCB-005,context_only,Gross static pressure provides hydrostatic-dominated context for basis separation.,normalize gross static rise as local irreversible loss,preserved

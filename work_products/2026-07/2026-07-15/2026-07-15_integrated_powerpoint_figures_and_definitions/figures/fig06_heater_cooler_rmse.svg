@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="650" viewBox="0 0 1080 650">
+  <rect width="1080" height="650" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <text x="52.0" y="48.0" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#111827" text-anchor="start">Heater/cooler closure: power error versus CFD-realized heat</text>
+  <text x="52.0" y="78.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" fill="#4b5563" text-anchor="start">RMSE reference = CFD-realized cooler removal or heater-to-fluid power; rows = Salt2/3/4 nominal cases.</text>
+  <text x="110.0" y="132.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#111827" text-anchor="start">Power RMSE by model form</text>
+  <line x1="110.0" y1="395.0" x2="950.0" y2="395.0" stroke="#111827" stroke-width="1.8"/>
+  <line x1="110.0" y1="150.0" x2="110.0" y2="395.0" stroke="#111827" stroke-width="1.8"/>
+  <line x1="110.0" y1="333.8" x2="950.0" y2="333.8" stroke="#d1d5db" stroke-width="1.0"/>
+  <text x="102.0" y="338.8" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end">30.4</text>
+  <line x1="110.0" y1="272.5" x2="950.0" y2="272.5" stroke="#d1d5db" stroke-width="1.0"/>
+  <text x="102.0" y="277.5" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end">60.7</text>
+  <line x1="110.0" y1="211.2" x2="950.0" y2="211.2" stroke="#d1d5db" stroke-width="1.0"/>
+  <text x="102.0" y="216.2" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end">91.1</text>
+  <line x1="110.0" y1="150.0" x2="950.0" y2="150.0" stroke="#d1d5db" stroke-width="1.0"/>
+  <text x="102.0" y="155.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="end">121.4</text>
+  <rect x="128.0" y="187.4" width="187.5" height="207.6" rx="3.0" fill="#f97316" stroke="#f97316" stroke-width="0.0"/>
+  <text x="221.8" y="179.4" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">102.9 W</text>
+  <text x="221.8" y="419.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Current</text>
+  <text x="221.8" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">cooler model</text>
+  <rect x="333.5" y="385.6" width="187.5" height="9.4" rx="3.0" fill="#16a34a" stroke="#16a34a" stroke-width="0.0"/>
+  <text x="427.2" y="377.6" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">4.64 W</text>
+  <text x="427.2" y="419.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Salt2-fit UA</text>
+  <text x="427.2" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">candidate</text>
+  <rect x="539.0" y="345.3" width="187.5" height="49.7" rx="3.0" fill="#2563eb" stroke="#2563eb" stroke-width="0.0"/>
+  <text x="632.8" y="337.3" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">24.6 W</text>
+  <text x="632.8" y="419.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Electrical</text>
+  <text x="632.8" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">heater 1:1</text>
+  <rect x="744.5" y="393.6" width="187.5" height="1.4" rx="3.0" fill="#7c3aed" stroke="#7c3aed" stroke-width="0.0"/>
+  <text x="838.2" y="385.6" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="700" fill="#111827" text-anchor="middle">0.68 W</text>
+  <text x="838.2" y="419.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">Salt2-fit eta</text>
+  <text x="838.2" y="435.0" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#111827" text-anchor="middle">candidate</text>
+  <rect x="82.0" y="470.0" width="210.0" height="86.0" rx="8.0" fill="#fff7ed" stroke="#f97316" stroke-width="2.0"/>
+  <text x="102.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#f97316" text-anchor="start">Current cooler</text>
+  <text x="102.0" y="522.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">Existing Fluid airside-HX</text>
+  <text x="102.0" y="537.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">style cooler model; not</text>
+  <text x="102.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">fitted to these powers.</text>
+  <rect x="316.0" y="470.0" width="210.0" height="86.0" rx="8.0" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.0"/>
+  <text x="336.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#16a34a" text-anchor="start">Salt2-fit UA</text>
+  <text x="336.0" y="522.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">Q_cool = UA DeltaT_bulk; one</text>
+  <text x="336.0" y="537.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">scalar fit on Salt2, scored</text>
+  <text x="336.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">on Salt3/4 without refit.</text>
+  <rect x="550.0" y="470.0" width="210.0" height="86.0" rx="8.0" fill="#eff6ff" stroke="#2563eb" stroke-width="2.0"/>
+  <text x="570.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#2563eb" text-anchor="start">Electrical heater</text>
+  <text x="570.0" y="522.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">Q_heater = P_electrical;</text>
+  <text x="570.0" y="537.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">setup 1:1 assumption compared</text>
+  <text x="570.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">to CFD heater-to-fluid power.</text>
+  <rect x="784.0" y="470.0" width="210.0" height="86.0" rx="8.0" fill="#f5f3ff" stroke="#7c3aed" stroke-width="2.0"/>
+  <text x="804.0" y="498.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="700" fill="#7c3aed" text-anchor="start">Salt2-fit eta</text>
+  <text x="804.0" y="522.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">Q_heater = eta P_electrical;</text>
+  <text x="804.0" y="537.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">one scalar fit on Salt2,</text>
+  <text x="804.0" y="552.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">scored on Salt3/4 without</text>
+  <text x="804.0" y="567.0" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="400" fill="#4b5563" text-anchor="start">refit.</text>
+  <text x="540.0" y="612.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#4b5563" text-anchor="middle">Interpretation: these are model-form clues for setup-only closures, not final admitted predictive results.</text>
+</svg>

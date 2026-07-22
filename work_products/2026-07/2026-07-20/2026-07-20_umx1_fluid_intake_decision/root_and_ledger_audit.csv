@@ -1,0 +1,4 @@
+artifact_id,campaign,location,completed_rows,accepted_rows,rejected_rows,cases,scenarios,root_gate,upcomer_segment_rows,upcomer_energy_residual_max_abs_W,tswfc2_segment_rows_with_nonzero_q_external,tswfc2_q_external_abs_sum_W,decision_note
+umx1_bracket_smoke,umx1_bracket_smoke_v1,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/umx1_bracket_smoke_v1,12,12,0,2,6,pass,552,0.0,0,0.0,UMX1 Salt3/Salt4 temperature-periodicity root blocker is cleared for smoke-level execution.
+combined_smoke,umx1_tswfc2_combined_smoke_v1,/tmp/umx1_tswfc2_combined_smoke_v1_check,2,2,0,2,1,pass,92,0.0,8,91.53635519524283,Combined UMX1 plus TSWFC2 roots are finite and accepted; TSWFC2 ledgers are nonzero.
+tswfc2_smoke,tswfc2_smoke_v1,/tmp/tswfc2_smoke_v1_check,4,4,0,2,2,pass,184,0.0,8,91.26897572539502,TSWFC2 Salt3/Salt4 smoke context also has accepted roots and nonzero TSWFC2 ledgers.

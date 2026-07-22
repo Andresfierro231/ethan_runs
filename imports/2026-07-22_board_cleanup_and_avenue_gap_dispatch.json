@@ -1,0 +1,87 @@
+{
+  "task": "TODO-BOARD-CLEANUP-AND-AVENUE-GAP-DISPATCH-2026-07-22",
+  "task_id": "TODO-BOARD-CLEANUP-AND-AVENUE-GAP-DISPATCH-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Cleaner/Writer/Reviewer",
+  "objective": "Clean stale completed Active rows and identify non-overlapping high-value thesis and 1D predictive-model work avenues.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-BOARD-CLEANUP-AND-AVENUE-GAP-DISPATCH-2026-07-22.md",
+    ".agent/journal/2026-07-22/board-cleanup-and-avenue-gap-dispatch.md",
+    "imports/2026-07-22_board_cleanup_and_avenue_gap_dispatch.json",
+    "operational_notes/07-26/22/2026-07-22_BOARD_CLEANUP_AND_AVENUE_GAP_DISPATCH.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BOARD.md active and planned sections",
+    "operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md",
+    "operational_notes/07-26/22/2026-07-22_S13_UPCOMER_EXCHANGE_TOMORROW_CONTEXT_HANDOFF.md",
+    "operational_notes/07-26/22/2026-07-22_THESIS_N1_N4_SYNTHESIS_TOMORROW_HANDOFF.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_five_best_thesis_support_analyses/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/README.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    ".agent/BLOCKERS.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "Active-section parse before cleanup",
+      "result": "24 rows, 13 rows self-reported complete."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <TASK> --json for 13 completed active rows",
+      "result": "13/13 passed before archival."
+    },
+    {
+      "command": "Active-section parse after cleanup",
+      "result": "11 rows, 0 stale complete rows after S13 immediate closeout and coordinator closeout."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-QWALL-SAME-QOI-NEIGHBOR-UQ-EXECUTION-2026-07-22 --json",
+      "result": "passed; S13 same-QOI neighbor UQ closed fail-closed with 12 target-window rows, 0 target-minus, 0 target-plus, and 0/4 same-QOI neighbor-UQ-ready labels."
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "completed during closeout."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-BOARD-CLEANUP-AND-AVENUE-GAP-DISPATCH-2026-07-22",
+      "result": "completed during closeout."
+    }
+  ],
+  "board_cleanup": {
+    "active_rows_before": 24,
+    "completed_active_rows_archived": 13,
+    "completed_during_cleanup_archived": 1,
+    "coordinator_row_archived": 1,
+    "final_active_rows": 11,
+    "final_stale_complete_active_rows": 0,
+    "new_planned_rows_added": 5
+  },
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": true,
+    "files_deleted": false,
+    "files_reverted": false,
+    "files_staged": false,
+    "commits_created": false,
+    "push_performed": false
+  }
+}

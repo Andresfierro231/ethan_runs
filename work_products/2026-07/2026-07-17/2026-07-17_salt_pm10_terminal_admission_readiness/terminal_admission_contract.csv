@@ -1,0 +1,12 @@
+required_item,contract,required_before_pm10_terminal_admission
+terminal_scheduler_state,Both `3293924` and `3295438` complete successfully before admission.,yes
+steady_window_status,Use last retained mdot/heat/T/wall-T windows; reject or label drifting windows.,yes
+U,Matched upcomer inlet/mid/outlet planes.,yes
+T,Matched planes plus wall/core samples.,yes
+wallHeatFlux,Wall-band and patch-integrated heat evidence.,yes
+Re_Pr_Ri_Gr_Ra_Gz,Derived at the same planes with documented property basis.,yes
+reverse_area_mass_fraction,Recirculation classifier for holdout diagnostics and fit blocking.,yes
+secondary_velocity_fraction,Recirculation strength proxy.,yes
+wall_core_delta_T,"Internal-Nu diagnostic, not a runtime input.",yes
+mesh_time_uncertainty,Time-window UQ now; mesh/GCI remains a final-admission blocker if absent.,yes
+runtime_leakage_audit,"No realized CFD mdot, wallHeatFlux, or fitted holdout data as predictive runtime input.",yes

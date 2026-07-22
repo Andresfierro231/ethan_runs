@@ -1,0 +1,16 @@
+{
+  "task": "AGENT-481",
+  "date": "2026-07-17",
+  "policy": "canonical_final_predictive_split_policy",
+  "final_training_rows": 4,
+  "training_support_rows": 4,
+  "holdout_testing_rows_available_now": 2,
+  "external_test_rows_blocked_pending_ledger": 1,
+  "future_holdout_rows_blocked_pending_terminal_admission": 4,
+  "new_cfd_holdout_family_proposed_not_run": 1,
+  "supersedes_old_canonical_split": "salt_2=train;salt_3=validation;salt_4=holdout",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false
+}

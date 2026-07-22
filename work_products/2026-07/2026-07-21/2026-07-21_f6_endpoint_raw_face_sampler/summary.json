@@ -1,0 +1,17 @@
+{
+  "blocked_coarse_endpoint_face_rows": 12,
+  "clipped_k": false,
+  "component_k_admission": "none",
+  "f6_fit_admission": "none",
+  "harvest_mode": true,
+  "hidden_global_multiplier": false,
+  "native_solver_outputs_mutated": false,
+  "next_action": "claim scheduler-authorized Stage A sampler row and submit generated sbatch",
+  "raw_pending_face_rows": 0,
+  "raw_sampled_face_rows": 8,
+  "recorded_job_id": "3308082",
+  "scheduler_launch_performed": false,
+  "stage_a_case_mesh_rows": 2,
+  "stage_a_endpoint_face_rows": 8,
+  "task": "TODO-F6-ENDPOINT-RAW-FACE-SAMPLER"
+}

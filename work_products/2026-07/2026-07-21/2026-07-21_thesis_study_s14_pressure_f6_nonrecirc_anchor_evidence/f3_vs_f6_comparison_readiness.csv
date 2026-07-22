@@ -1,0 +1,2 @@
+comparison_id,baseline,candidate,candidate_rows_screened,future_candidate_rows,admitted_f6_rows,comparison_status,reason,fit_performed,scientific_admission_change
+F3-VS-S14-F6,F3_shah_apparent,F6_non_upcomer_branch_pressure_residual,53,8,0,not_evaluated_no_admitted_or_ordinary_candidate,"F3 comparison requires an F6 row that passes ordinary-flow, same-QOI UQ, source/property, and endpoint gates.",false,none

@@ -1,0 +1,7 @@
+ablation_id,axis,negative_or_positive_result,finding,scientific_interpretation,candidate_freeze_allowed,source_key
+A0,runtime legality,positive_contract,"setup-only UQ/source rows exist, but are screening priors not publication intervals",model evaluation must start from legal inputs before adding physics,no,setup_only_uq
+A1,pressure,negative_admission,F6/component-K rows remain unadmitted; low-recirculation anchors exist only as evidence needs,"pressure basis error is real, but not yet a fit-safe correction",no,pressure_basis
+A2,thermal residual ownership,negative_freeze,"S12-HIAX1, passive wall, test-section source, empirical correction, and junction/stub lanes do not freeze",residual ownership is thesis-strength evidence because it prevents overclaiming,no,s12_thermal
+A3,recirculation exchange,diagnostic_positive_admission_negative,recirculation proxies and PM10 terminal rows exist; exact closed recirculation fraction and mesh/GCI remain blocked,"ordinary pipe closure is disabled, but exchange-cell coefficients are not admitted",no,recirc_onset;pm10_terminal
+A4,temperature projection,promising_diagnostic,"TP projection path improves diagnostic context, but bulk-to-TP correction is not released",pursue TP-first thermal development before TW correction,no,sensor_projection
+A5,axial mixing,negative_expansion,"AMX1 reviewed rows pass smoke/root ledgers, but zero forms are ready for Salt1-Salt4 expansion or freeze",need source-bounded exchange evidence rather than multiplier-only tuning,no,amx1_handoff

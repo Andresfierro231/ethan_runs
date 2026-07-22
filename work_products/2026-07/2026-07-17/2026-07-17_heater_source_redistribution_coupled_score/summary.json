@@ -1,0 +1,47 @@
+{
+  "counts": {
+    "background_run_contract.csv": 1,
+    "candidate_admission_review.csv": 2,
+    "coupled_delta_vs_m3.csv": 4,
+    "coupled_scorecard.csv": 27,
+    "heater_source_lambda_grid.csv": 21,
+    "probe_error_localization.csv": 459,
+    "runtime_input_audit.csv": 3,
+    "scenario_contracts.csv": 27,
+    "selected_heater_source_weights.csv": 1,
+    "source_manifest.csv": 5
+  },
+  "created_utc": "2026-07-17T21:32:53.820158+00:00",
+  "decision": {
+    "admitted_candidates": [],
+    "blocker_decision": "keep_open",
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "coupled_completed_rows": 27,
+    "coupled_status_counts": {
+      "completed": 27
+    },
+    "created_utc": "2026-07-17T21:32:53.798968+00:00",
+    "selected_lambda": "0",
+    "selection_status": "selected_from_salt2_only",
+    "task": "AGENT-511",
+    "why": "No Salt2-fit heater-source redistribution candidate has passed validation and holdout mdot, TP, TW, and all-probe gates vs M3."
+  },
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score",
+  "reuse_existing_coupled": true,
+  "run_fluid": true,
+  "selection": {
+    "heater_lambda": "0",
+    "salt2_all_probe_rmse_K": "50.20229259",
+    "salt2_mdot_abs_error_pct": "3.003481449",
+    "salt2_tw_rmse_K": "59.4281335",
+    "selected_candidate_id": "HS1_salt2_fit_heater_source_shift_p1_lam_0p00_PLUS_PB2_salt2_local_shape_passive_hA_p1_PLUS_HX_LUMPED_UA_NTU",
+    "selection_metric": "Salt2 all_probe_rmse_K; tie TW RMSE then mdot abs error",
+    "selection_source": "Salt2 grid rows only",
+    "selection_status": "selected_from_salt2_only",
+    "tw4_to_tw5_weight": "0.6",
+    "tw5_to_tw6_weight": "0.3",
+    "tw6_to_tp3_weight": "0.1"
+  },
+  "task": "AGENT-511",
+  "timeout_seconds": 273
+}

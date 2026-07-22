@@ -1,0 +1,20 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-TOPOLOGY-FORENSICS-AND-ALT-CV-2026-07-21",
+  "generated_at": "2026-07-21T18:17:33-05:00",
+  "status": "complete_fail_closed_alt_cv",
+  "case_count": 3,
+  "component_forensic_rows": 56,
+  "released_alt_cv_rows": 0,
+  "surface_extraction_allowed": false,
+  "scheduler_action": false,
+  "surface_vtk_extraction_launched": false,
+  "exchange_cell_harvest_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "threshold_relaxation": false,
+  "proxy_interface_admission": false,
+  "exchange_cell_admission": false,
+  "residual_absorbed_into_internal_Nu": false,
+  "dominance_gate": 0.75
+}

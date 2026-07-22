@@ -1,0 +1,3 @@
+script_id,path,purpose
+runner,work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/scripts/run_expanded_pressure_ladder.sh,preflight/stage/reconstruct/sample/harvest all expanded Salt station planes
+sbatch,work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/scripts/submit_expanded_pressure_ladder_8pm.sbatch,submit expanded Salt pressure ladder extraction to Slurm beginning at 2026-07-15 20:00 CDT

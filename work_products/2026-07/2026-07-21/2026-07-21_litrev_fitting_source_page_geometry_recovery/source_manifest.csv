@@ -1,0 +1,7 @@
+source_key,source_path,read_only,exists,used_for
+geometry_recovery,work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_geometry_source_gap_recovery/geometry_source_gap_recovery.csv,true,true,source-page geometry recovery evidence
+source_audit,work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_geometry_source_gap_recovery/source_page_audit_queue.csv,true,true,source-page geometry recovery evidence
+pressure_basis,work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv,true,true,source-page geometry recovery evidence
+geometry_reference,reference/geometry_reference.md,true,true,source-page geometry recovery evidence
+minor_loss_chapter,/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/chapters/06_minor_losses_quartz_transition.tex,true,true,source-page geometry recovery evidence
+minor_loss_schema,/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/schemas/minor_loss_table_schema.csv,true,true,source-page geometry recovery evidence

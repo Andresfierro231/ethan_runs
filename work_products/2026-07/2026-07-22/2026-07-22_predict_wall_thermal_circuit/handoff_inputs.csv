@@ -1,0 +1,5 @@
+handoff_id,target,needed_inputs,status
+H1,segment thermal scorecards,segment UA/resistance terms with material provenance,blocked_until_release
+H2,M3+TS,test-section quartz/source/loss lane and passive operator release,blocked_until_source_basis
+H3,S12 TP-first thermal development,bulk-to-TP projection plus wall/core exchange UQ,diagnostic_handoff_ready
+H4,Fluid runtime implementation,external Fluid board row and exact runtime fields,not_claimed_here

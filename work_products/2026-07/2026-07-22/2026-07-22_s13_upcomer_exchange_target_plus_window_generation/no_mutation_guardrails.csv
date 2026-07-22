@@ -1,0 +1,11 @@
+guardrail,value
+native_output_mutation,false
+registry_or_admission_mutation,false
+solver_launched_by_prepare_script,false
+scheduler_submission_by_prepare_script,false
+production_harvest,false
+same_qoi_uq_execution,false
+mesh_gci_uq_execution,false
+Qwall_source_property_or_coefficient_release,false
+s11_s12_s13_s15_s6_trigger,false
+residual_absorbed_into_internal_nu,false

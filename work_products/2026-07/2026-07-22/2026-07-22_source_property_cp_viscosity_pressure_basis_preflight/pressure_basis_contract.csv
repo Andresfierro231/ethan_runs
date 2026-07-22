@@ -1,0 +1,6 @@
+pressure_use,required_basis,current_basis_status,current_use,release_ready,blocked_by
+ordinary_F6_fit,static pressure endpoint pair plus velocity/dynamic basis plus Re/property mode,CAND001 terminal endpoint fields absent,closed,false,job running endpoint fields zero same-QOI UQ zero
+F3_Shah_vs_F6_comparison,ordinary admitted F6 candidate,not evaluated no ordinary candidate,closed,false,admitted F6 rows zero
+component_K,component isolation plus straight/development subtraction plus same-QOI UQ,lower-right rows fail component isolation/use policy,closed,false,reverse-flow/component isolation/UQ gates
+section_effective_pressure_residual,consistent section pressure basis and explicit diagnostic label,3 section-effective rows available,thesis evidence,true_not_admission,not a component/F6 coefficient
+pressure_recovery_diagnostic,hydrostatic-dominated decomposition with signed residual,negative signed residual rows 3,thesis evidence,true_not_admission,not a loss coefficient

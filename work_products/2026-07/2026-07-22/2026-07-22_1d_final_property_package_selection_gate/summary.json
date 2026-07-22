@@ -1,0 +1,17 @@
+{
+  "task_id": "TODO-1D-FINAL-PROPERTY-PACKAGE-SELECTION-GATE-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "property_package_selection_sensitivity_only_no_release_no_freeze",
+  "baseline_candidate_label": "jin_viscosity_parida_cp_santini_k",
+  "nominal_train_release_ready_rows": 0,
+  "nominal_train_rows_reviewed": 4,
+  "mf16_exact_field_release_ready_rows": 0,
+  "cp_J_kg_K_release_ready": false,
+  "viscosity_property_mode_release_ready": false,
+  "final_property_package_released": false,
+  "protected_scoring_performed": false,
+  "candidate_freeze_performed": false,
+  "property_lanes": 7,
+  "propagation_rows": 10,
+  "freeze_margin_rows": 6
+}

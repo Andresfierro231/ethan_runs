@@ -1,0 +1,20 @@
+{
+  "admitted_wall_candidates": 0,
+  "agent498_candidate_count": 4,
+  "agent498_coupled_rows": 8,
+  "candidate_family_rows": 3,
+  "created_utc": "2026-07-17T21:53:32.610998+00:00",
+  "freeze_decision": "do_not_build_corrected_freeze_yet",
+  "freeze_status": "blocked",
+  "guardrail": "Existing-evidence diagnostic only; no model selection on Salt3/Salt4 or external rows.",
+  "mdot_improves_temperature_regresses_rows": 8,
+  "next_candidate_ladder_rows": 5,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization",
+  "probe_localization_empty_files": 0,
+  "runtime_audit_failures": 0,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "segment_heat_placement_rows": 36,
+  "solver_action": "none",
+  "task": "AGENT-515"
+}

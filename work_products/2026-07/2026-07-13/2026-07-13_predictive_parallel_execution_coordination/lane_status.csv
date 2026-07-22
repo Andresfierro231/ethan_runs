@@ -1,0 +1,9 @@
+lane,task,agent,status_at_launch,write_scope,expected_output
+external_boundary_bridge,AGENT-297,codex,complete,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave,Fluid-ready external BC dictionary and patch plan
+hx_split_freeze,TODO-PRED-HX-FIT,codex,complete,work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit,one-scalar HX/cooler split scores
+thermal_mesh_gate,TODO-PRED-THERMAL-MESH-GATE,codex,complete,work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate,thermal QOI admission blocker classification
+hydraulic_correction,AGENT-300,Ptolemy,complete,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates,H1 localized named-loss/reset bundle ranked first; mean required resistance multiplier 2.115338371
+solve_case_confirmation,AGENT-301,Epicurus,complete_harvested,work_products/2026-07/2026-07-13/2026-07-13_forward_v0_solve_case_compute_run,Slurm job 3293960 completed 0:0; solve_case-vs-fast_scan comparison passed 6/6 rows
+sensor_map,AGENT-302,Poincare,complete,work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract,17 TP/TW labels mapped; 15 diagnostic-scoreable; TP2 and TW10 blocked
+scorecard_precursor,AGENT-303,Galileo,complete,work_products/2026-07/2026-07-13/2026-07-13_predictive_endtoend_scorecard_precursor,proxy scorecard/readiness complete; final forward-v1 claim still blocked
+

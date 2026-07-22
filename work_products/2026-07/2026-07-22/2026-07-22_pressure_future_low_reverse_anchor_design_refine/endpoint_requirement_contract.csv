@@ -1,0 +1,7 @@
+requirement_id,requirement,current_status,blocker,forbidden_shortcut
+E01,terminal_success_or_clear_failure_for_CAND001,job_3308712_running,monitor owns scheduler lane,Do not claim endpoint readiness before terminal handoff.
+E02,static_pressure_endpoint_pair,absent_for_current_CAND001_gate,endpoint fields not handed off,Do not use mixed pressure basis.
+E03,p_rgh_or_hydrostatic_correction_basis,diagnostic basis documented,no terminal endpoint fields,Do not compare static and p_rgh without correction.
+E04,velocity_area_basis,not released for F6 fit,ordinary-flow anchor absent,Do not fit component K with unknown U_ref.
+E05,RAF_RMF_ordinary_flow_flags,zero pass rows now,current evidence recirculating or blocked,Do not use recirculating upcomer as ordinary pipe.
+E06,same_QOI_UQ,zero ready rows now,mesh/time endpoint UQ absent,Do not admit F6/component K from single diagnostic row.

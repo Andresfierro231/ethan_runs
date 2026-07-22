@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-01T16:07:39-05:00",
+  "task_id": "AGENT-169",
+  "report_dir": "reports/2026-07/2026-07-01/2026-07-01_presentation_readiness_and_rom_agenda",
+  "work_dir": "work_products/2026-07-01_presentation_readiness_and_rom_agenda",
+  "paper_readiness_rows": 9,
+  "figure_rows": 8,
+  "model_form_rows": 6,
+  "coefficient_rows": 21,
+  "future_model_form_rows": 6,
+  "run_inventory_rows": 5,
+  "best_scenario": "ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1",
+  "best_energy_error_pct": 11.274319964365688,
+  "best_mass_flow_error_pct": 26.690955464130884,
+  "probe_mdot_error_kg_s": 0.00025483952391472695,
+  "major_only_mdot_error_kg_s": 0.5539232734458288,
+  "endpoint_mdot_error_kg_s": 0.48443225029948334,
+  "source_packages": [
+    "reports/2026-06/2026-06-23/2026-06-23_ethan_1d_closure_bakeoff",
+    "reports/2026-06/2026-06-23/2026-06-23_ethan_frozen_state_1d_validation",
+    "reports/2026-06/2026-06-29/2026-06-29_ethan_salt_pressure_drop_predictivity",
+    "reports/2026-06/2026-06-30/2026-06-30_claude_closure_results",
+    "reports/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation",
+    "reports/2026-07/2026-07-01/2026-07-01_model_form_comparison/README.md"
+  ]
+}

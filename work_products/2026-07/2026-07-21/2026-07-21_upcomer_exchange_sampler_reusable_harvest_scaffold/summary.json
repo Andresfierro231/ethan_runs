@@ -1,0 +1,22 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-SAMPLER-REUSABLE-HARVEST-SCAFFOLD-2026-07-21",
+  "generated_at": "2026-07-21T15:19:59-05:00",
+  "case_volume_rows": 3,
+  "ready_volume_csvs": 3,
+  "vtk_contract_rows": 12,
+  "manifest_template_rows": 3,
+  "blocker_rows": 12,
+  "script_rows": 4,
+  "guardrail_rows": 4,
+  "sampler_harvest_launched": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "exchange_cell_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "phase4b_rescore_run": false,
+  "phase5_or_s6_trigger": false
+}

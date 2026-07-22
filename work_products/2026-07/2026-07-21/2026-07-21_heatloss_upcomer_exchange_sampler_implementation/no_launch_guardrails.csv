@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,blocked,do not mutate native CFD/OpenFOAM outputs or case directories
+scheduler,blocked,"sampler design row cannot submit, cancel, requeue, or monitor jobs"
+postprocessing,blocked,"no OpenFOAM, foamPostProcess, reconstruction, or sampler execution from this row"
+admission,blocked,"no fit, model selection, exchange-cell admission, internal-Nu reopening, or scorecard trigger"
+residual_lane,pass,"pressure and energy residuals remain explicit fields, not hidden in internal Nu"

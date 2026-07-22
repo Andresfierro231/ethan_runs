@@ -1,0 +1,10 @@
+gate,status,evidence,release_allowed,missing_for_release
+setup_sign_available,pass_diagnostic,3 setup-known active source/sink families have sign conventions,False,source_property_labels_and_runtime_allowed_contract
+setup_magnitude_available,pass_diagnostic_for_active_sources,3 active families have setup q ranges,False,separate source/property release and cp basis
+runtime_legal_source_available,fail_closed,0 of 4 families are release-ready now,False,runtime_allowed_now_true
+source_property_labels_released,fail_closed,0 families have source/property released now,False,source_property_released_now_true
+cp_basis_released,fail_closed,No row-level cp/property basis is released by MF08/MF12 for source-integral formulas,False,runtime cp/property lane
+segment_mapping_released,fail_closed,"Setup patch/group labels exist, but source/property labels and formula-local placement kernels are not admitted",False,formula-local source placement and reset kernel
+passive_basis_released,fail_closed,passive/downcomer independent basis ready: False,False,passive hA/area/material/ambient/insulation basis
+same_qoi_projection_uq,fail_closed,"TP projection is still a post-solve target comparison, not a released runtime observable",False,same-QOI TP projection uncertainty and runtime-legality status
+admission_release_allowed,fail_closed,"This task is preflight only: no source/property release, no fitting, no scoring, no final score",False,separate admission/release row after all upstream gates pass

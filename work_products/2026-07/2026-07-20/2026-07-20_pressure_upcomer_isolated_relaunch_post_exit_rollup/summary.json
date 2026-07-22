@@ -1,0 +1,11 @@
+{
+  "admission_grade_candidate_rows": 0,
+  "blocked_or_diagnostic_rows": 6,
+  "date": "2026-07-20",
+  "fit_rows_released_now": 0,
+  "generated_at_utc": "2026-07-20T23:39:42.336834+00:00",
+  "inventory_rows": 6,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "task": "TODO-PRESSURE-UPCOMER-ISOLATED-RELAUNCH-POST-EXIT-ROLLUP"
+}

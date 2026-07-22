@@ -1,0 +1,15 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-CELL-VOLUME-PARSER-2026-07-21",
+  "generated_at": "2026-07-21T14:39:08-05:00",
+  "mesh_rows": 3,
+  "validation_rows": 3,
+  "production_volume_export_run": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false
+}

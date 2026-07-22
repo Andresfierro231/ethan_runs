@@ -1,0 +1,35 @@
+{
+  "decision_counts": {
+    "diagnostic_only_legacy_label_audit": 1,
+    "external_test_candidate_blocked_heat_loss_ledger": 1,
+    "holdout_thermal_candidate_closure_diagnostic_only": 2,
+    "not_admissible_failed": 2,
+    "pending_terminal_harvest": 4,
+    "sensitivity_only_needs_continuation_or_regate": 2,
+    "training_thermal_candidate_closure_diagnostic_only": 2,
+    "training_thermal_candidate_salt1_caveats": 3,
+    "validation_or_user_training_candidate": 1
+  },
+  "external_test_candidates_blocked": 1,
+  "live_3293924_rows_blocked": 4,
+  "native_cfd_outputs_mutated": false,
+  "output_counts": {
+    "bc": 18,
+    "blocked": 14,
+    "closure": 18,
+    "heat": 18,
+    "manifest": 11,
+    "master": 18,
+    "split": 18,
+    "steady": 18
+  },
+  "requested_rows": 18,
+  "scheduler_actions": "read_only_or_none",
+  "task": "AGENT-417",
+  "usable_counts": {
+    "no": 10,
+    "yes_after_split_policy_freeze": 1,
+    "yes_for_thermal_holdout_only": 2,
+    "yes_for_user_policy_thermal_training_only": 5
+  }
+}

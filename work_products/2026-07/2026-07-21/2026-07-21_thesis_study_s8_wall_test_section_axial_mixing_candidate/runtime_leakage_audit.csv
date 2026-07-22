@@ -1,0 +1,9 @@
+input_or_target,role,source_path,split_role,runtime_allowed,reason,status
+CFD_mdot,forbidden_runtime_input,not_used_by_s8_builder,all,no,Realized CFD flow rate would leak the target solution state.,pass_absent
+realized_CFD_wallHeatFlux,forbidden_runtime_input,not_used_by_s8_builder,all,no,Realized wall heat flux is a postprocessed CFD output.,pass_absent
+imposed_CFD_cooler_duty,forbidden_runtime_input,not_used_by_s8_builder,all,no,Imposed CFD cooler duty is not a setup-only predictive runtime input.,pass_absent
+realized_test_section_heat,forbidden_runtime_input,not_used_by_s8_builder,all,no,Realized test-section heat would absorb the target residual.,pass_absent
+validation_temperature,score_only_target,not_used_by_s8_builder,all,no,Validation temperatures are score-only targets.,pass_absent
+holdout_temperature,score_only_target,not_used_by_s8_builder,all,no,Holdout temperatures are score-only after freeze.,pass_absent
+external_test_temperature,score_only_target,not_used_by_s8_builder,all,no,External-test temperatures are score-only after freeze.,pass_absent
+existing_score_tables,diagnostic_evidence,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/wall_test_section_candidate_gate_scorecard.csv,validation_holdout_score_only,no,Existing score rows are used only to decide whether a candidate is already admissible; no model is tuned.,pass_score_only

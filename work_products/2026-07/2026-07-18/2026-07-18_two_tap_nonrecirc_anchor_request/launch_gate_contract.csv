@@ -1,0 +1,4 @@
+gate,requirement,status,guardrail
+task_scope,new staged-copy sampler row before any OpenFOAM postprocessing,required_future,no native-output mutation
+ordinary_flow,aggregate RAF < 0.01 and aggregate RMF < 0.01,required_future,material reverse-flow rows remain diagnostic
+same_qoi_UQ_plan,identify same endpoint/time/mesh family or declare missing_no_GCI,required_future,no borrowed GCI

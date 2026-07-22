@@ -1,0 +1,7 @@
+source_id,path,exists,use
+branch_thermal,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv,true,branch-local internal Nu gates
+downcomer_policy,work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_admission_decision.csv,true,downcomer ordinary Nu exclusion
+pressure_ladder,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv,true,branch recirculation/pressure masks
+pressure_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,true,segment pressure admission
+thermal_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/segment_thermal_model_scorecard.csv,true,segment thermal admission
+upcomer_hybrid,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/upcomer_admission_decision.csv,true,upcomer handoff target

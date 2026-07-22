@@ -1,0 +1,3 @@
+path_id,rank,decision,production_release_allowed_now,why,minimum_next_row,same_qoi_uq_required_afterward
+direct_Q_wall_W,2,blocked_longer_path,false,requires wallHeatFlux generation or recovery before Q_wall_W can be integrated,Q_wall_W wallHeatFlux source recovery or generation on trusted wall faces,true
+distinct_source_side_heat_flow_Q_source_side_W,1,smallest_remaining_path_but_not_production_ready,false,"q_net_W source-side context and sampled thermal contrasts already exist, but the QOI needs a sign/conservation/source-property contract and same-QOI UQ",source-side heat-flow equivalence contract plus same-QOI UQ prerequisite package,true

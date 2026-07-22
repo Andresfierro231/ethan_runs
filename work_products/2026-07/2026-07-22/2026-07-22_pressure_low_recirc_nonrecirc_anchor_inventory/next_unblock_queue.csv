@@ -1,0 +1,5 @@
+priority,action,current_status,allowed_now,unlock_signal,forbidden_shortcut
+1,monitor_CAND001_terminal_disposition,job 3308712 observed RUNNING in read-only prior packet,False,terminal successful source cases with required endpoint fields,"duplicate submit, harvest while running, or treat running state as terminal evidence"
+2,search_right_leg_or_test_section_low_reverse_anchor,preferred ordinary branches exist but sampled medium/fine RAF/RMF fail,True,RAF < 0.01 and RMF < 0.01 at both endpoint stations,use lower-right recirculating corner rows as ordinary F6
+3,same_QOI_mesh_time_UQ_family,requirements defined but no admissible family for current candidate pressure residual,False,numeric same-QOI UQ bound for same labels/formula/sign convention,borrow corner/upcomer UQ or mix pressure bases
+4,revisit_F3_F6_Shah_comparison,closed,False,"ordinary anchor passes endpoint, flow, UQ, source/property, and admission rows",fit F6 or component K from diagnostic residuals

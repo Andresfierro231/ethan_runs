@@ -1,0 +1,19 @@
+{
+  "all_sources_present": true,
+  "date": "2026-07-17",
+  "diagnostic_evidence_rows": 148,
+  "evidence_rollup_rows": 7,
+  "external_fluid_edit": false,
+  "fit_admitted_pressure_rows": 0,
+  "generated_index_refreshed": false,
+  "model_slot_rows": 22,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 4,
+  "runtime_audit_rows": 4,
+  "scheduler_action": false,
+  "scoreable_predictive_model_rows": 0,
+  "segment_rows": 7,
+  "task": "TODO-PREDICT-SEGMENT-PRESSURE-MODELS",
+  "train_validation_holdout_improvement_status": "not_run_no_fit_admitted_segment_pressure_model"
+}

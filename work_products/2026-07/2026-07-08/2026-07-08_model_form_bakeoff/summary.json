@@ -1,0 +1,28 @@
+{
+  "generated_at": "2026-07-08T17:47:32",
+  "task": "TODO-MODEL-FORM-BAKEOFF",
+  "observation_rows": 423,
+  "case_score_rows": 15,
+  "model_forms": [
+    "F3_shah_apparent",
+    "F5_ri_corrected",
+    "F3_hagenbach",
+    "F1",
+    "F4_leg_class"
+  ],
+  "best_mdot_model_form": "F3_shah_apparent",
+  "inputs": [
+    "work_products/2026-07-08_closure_observation_table/closure_observations.csv",
+    "work_products/2026-07-07_friction_forms_comparison/mdot_comparison.csv",
+    "work_products/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv",
+    "work_products/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07-08_postprocessor_summary_charts/tables/heat_enthalpy_residual_summary.csv"
+  ],
+  "outputs": [
+    "model_form_summary.csv",
+    "model_form_case_scores.csv",
+    "observation_use_summary.csv",
+    "README.md",
+    "summary.json"
+  ]
+}

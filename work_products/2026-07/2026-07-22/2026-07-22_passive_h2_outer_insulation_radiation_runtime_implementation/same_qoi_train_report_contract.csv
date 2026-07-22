@@ -1,0 +1,5 @@
+report_item,split_scope,same_qoi,status,forbidden_use
+mdot_model_kg_s,train_only,True,contract_required_for_later_runtime_smoke,no validation_holdout_external_scoring
+qambient_and_qhx_heat_ledger_W,train_only,True,contract_required_for_later_runtime_smoke,no numeric_q_loss_release_or_Qwall_release
+TP_TW_projection_residuals,train_only,True,contract_required_if_Fluid_patch_runs_later,no fitting_model_selection_candidate_freeze
+radiation_on_minus_off_heat_ledger_delta_W,train_only,True,must be nonzero and comparable to corrected 22-26 W target,do not call current no-op output admitted evidence

@@ -1,0 +1,5 @@
+alternative,status,evidence,candidate_reviewable,admission_allowed,next_requirement
+ordinary_upcomer_single_stream_disabled,required_guardrail,recirculation/onset gate and phase4 ordinary Nu gate emit 0 ordinary fit rows,false,false,non-recirculating or transition anchor plus same-window pressure/thermal/UQ
+throughflow_plus_recirculation_exchange_cell,preferred_science_lane_blocked,MF09 best next lane; temporal UQ exists but mesh/source/production gates fail,false,false,"same-label mesh/GCI, source-property/cp release, production same-window harvest"
+source_side_energy_residual_bridge,diagnostic_only,source-side heat finite but not source/property released and does not physically match direct Qwall,false,false,source-property conservation release without relabeling as Q_wall_W
+two_zone_stratified_mixed_convection_upcomer,design_only,wall/core contrast and recirculation proxies exist but no anchor or production zone enthalpy fields,false,false,zone enthalpy harvest and near-onset/non-recirculating anchor

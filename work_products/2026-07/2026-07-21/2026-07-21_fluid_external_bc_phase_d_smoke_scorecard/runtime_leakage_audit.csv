@@ -1,0 +1,8 @@
+audit,status,evidence,runtime_allowed
+dictionary_filter,pass,only one salt_2 train predictive upcomer ambient row copied into the smoke dictionary,True
+validation_rows_not_consumed,pass,source dictionary has 8 validation rows; smoke consumed 0,False
+holdout_rows_not_consumed,pass,source dictionary has 8 holdout rows; smoke consumed 0,False
+external_test_rows_not_consumed,pass,source dictionary has 0 external-test rows; smoke consumed 0,False
+forbidden_runtime_columns_blank_or_absent,pass,no forbidden runtime field carried a value,True
+source_paths_provenance_only,pass,source_paths retained in output ledgers but not read by the runtime smoke,True
+synthetic_trial_state_not_score_claim,pass,T_bulk=650 K and mdot=0.02 kg/s are smoke inputs for heat-path accounting only,True

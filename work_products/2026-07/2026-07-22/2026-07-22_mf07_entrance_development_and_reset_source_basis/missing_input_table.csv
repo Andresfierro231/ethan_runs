@@ -1,0 +1,6 @@
+missing_input,needed_for,current_status,consequence,next_action
+released bulk-to-TP formula,turn MF07 thermal Graetz evidence into a train-only smoke correction,not_released,MF07 cannot emit a coefficient or corrected TP prediction.,define formula and variables from source-bounded thermal-development literature/API rows before scoring.
+thermal reset status by wall/source path,decide whether local TP sees a developing thermal boundary layer after a reset,unknown_until_wall_material_or_heat_path_reset_mapped,reset/Graetz coordinates remain diagnostic context.,MF08 signed wall-flux branch gate should classify heat-source/loss sign and reset memory.
+same-QOI uncertainty for TP projection formula,uncertainty-bound bulk-to-TP offset,missing,do not admit a projection correction.,"once a formula exists, run same-QOI UQ on the projected TP offset, not just source proxies."
+source/property release for signed heat paths,runtime legality and source-bounded admission,not_released,do not use realized wallHeatFlux or target temperatures as runtime inputs.,attach setup-known Q/sign/cp/property mode with provenance.
+S13 mesh/GCI and production release,use upcomer exchange state as more than a diagnostic bridge,mesh_gci_ready_to_claim_but_not_executed,S13 bridge remains supporting evidence only.,execute separate S13 mesh/GCI gate before any production harvest/admission.

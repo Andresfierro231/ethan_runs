@@ -1,0 +1,3 @@
+gate,required_threshold,current_status,preflight_status,auto_submit
+ordinary_flow,RAF < 0.01 and RMF < 0.01,required_future,blocked_missing_new_nonrecirculating_source,false
+component_isolation,same-basis straight/development subtraction with Re/rho/mu/window/sign,blocked_current_component_k_rows,blocked_current_rows_apparent_cluster_only,false

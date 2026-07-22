@@ -1,0 +1,16 @@
+{
+  "task": "AGENT-561",
+  "date": "2026-07-20",
+  "decision": "no_blocker_register_update",
+  "blocker_register_mutated": false,
+  "reason": "AGENT-557 through AGENT-560 narrowed execution paths and cleared UMX1 root handling at smoke level, but did not admit a wall/test-section candidate, resolve upcomer onset sparsity, produce a nonrecirculating two-tap endpoint sample, pass same-QOI UQ, or admit F6/component-K rows.",
+  "reviewed_blockers": [
+    "predictive-wall-test-section-submodels",
+    "upcomer-onset-data-sparsity",
+    "two-tap-corner-lower-right-component-isolation-fails",
+    "two-tap-corner-lower-right-same-qoi-uq-missing",
+    "two-tap-corner-lower-right-material-reverse-flow",
+    "f6-friction-re-correction"
+  ],
+  "next_register_review_trigger": "Re-run only after matched-plane/high-heat evidence lands, a new setup-only wall/test-section candidate passes coupled gates, or a CAND-001 two-tap sampler produces low-reverse same-QOI endpoint evidence."
+}

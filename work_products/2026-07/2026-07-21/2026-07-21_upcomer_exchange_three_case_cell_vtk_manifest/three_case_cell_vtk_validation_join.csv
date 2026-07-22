@@ -1,0 +1,4 @@
+case_id,time_window_s,cell_contract_status,cell_vtk_validation_status,cell_lane_release,sampler_ready,remaining_blockers
+salt_2,7915,cell_lane_released_for_manifest,pass,released,false,exchange_interface_vtk;wall_vtk;source_sink_ledger;Q_wall_W
+salt_3,7618,cell_lane_released_for_manifest,pass,released,false,exchange_interface_vtk;wall_vtk;source_sink_ledger;Q_wall_W
+salt_4,10000,cell_lane_released_for_manifest,pass,released,false,exchange_interface_vtk;wall_vtk;source_sink_ledger;Q_wall_W

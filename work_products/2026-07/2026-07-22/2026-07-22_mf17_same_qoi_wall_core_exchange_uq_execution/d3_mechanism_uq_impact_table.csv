@@ -1,0 +1,3 @@
+mechanism_family,required_qois,same_qoi_temporal_uq_executed,heat_flow_match_ready_rows,mesh_gci_ready,mesh_gci_executed,source_property_release_ready,production_or_admission_allowed,interpretation
+D3-WALL-CORE-EXCHANGE-SHAPE,Q_wall_W; wall_core_bulk_temperature_contrast_K; mdot_exchange_positive_outward_proxy_kg_s,True,0,True,False,False,False,"temporal UQ supports mechanism priority, but heat-flow mismatch and source/property/mesh-GCI gates block admission"
+D3-AXIAL-MIXING-SHAPE,mdot_exchange_positive_outward_proxy_kg_s; tau_recirc_proxy_s; wall_core_bulk_temperature_contrast_K,True,0,True,False,False,False,"exchange/recirculation temporal UQ is executed, but no independent axial-mixing coefficient basis is admitted"

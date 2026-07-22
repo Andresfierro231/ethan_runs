@@ -1,0 +1,6 @@
+guard_id,status,policy,source_paths
+native_case_outputs,unchanged,no native CFD/OpenFOAM output mutation or case-directory write,tools/extract/sample_upcomer_convection_cell.py
+runtime_leakage,blocked,do not use realized CFD residuals or observed exchange state as predictive runtime inputs,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/runtime_internal_nu_audit.csv
+internal_Nu_residual,blocked,do not hide heat residual in internal Nu; residual must remain a separate attribution lane,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/missing_exchange_nu_evidence_queue.csv
+exchange_fit,blocked,"no exchange coefficient fit, no internal-Nu reopening, no model selection, no admission",work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/phase4_decision_gate.csv
+sampler_execution,not_launched,this package defines fields/windows only; implementation and execution need a new row,work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv

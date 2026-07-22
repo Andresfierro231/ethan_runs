@@ -1,0 +1,6 @@
+source_id,path,use,mutation_status
+MF16,work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/row_level_release_candidate_matrix.csv,row-level release candidate labels,read_only
+NOMINAL_PREFLIGHT,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv,nominal train source envelope audit,read_only
+CANDIDATE_CONSEQUENCES,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/candidate_lane_consequences.csv,S13 and MF12 downstream blocker context,read_only
+MF12,work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/formula_release_gap_matrix.csv,MF12 source-memory formula release blockers,read_only
+TARGETED_LITREV,work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/candidate_equation_forms.csv,candidate source-envelope and model-form context,read_only

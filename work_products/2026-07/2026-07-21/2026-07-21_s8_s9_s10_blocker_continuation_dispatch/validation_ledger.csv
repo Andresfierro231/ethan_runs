@@ -1,0 +1,5 @@
+check,expected_result
+python3.11 work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/check_dispatch_package.py,pass
+python3.11 tools/agent/finish_task.py --task-id TODO-S8-S9-S10-BLOCKER-CONTINUATION-DISPATCH-2026-07-21,pass
+python3.11 tools/docs/build_repo_index.py --check,pass
+

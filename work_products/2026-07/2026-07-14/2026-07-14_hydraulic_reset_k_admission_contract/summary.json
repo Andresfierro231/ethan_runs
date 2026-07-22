@@ -1,0 +1,25 @@
+{
+  "component_fit_admissible_rows": 0,
+  "component_k_rows": 15,
+  "component_k_status_counts": {
+    "blocked_tap_length_upper_bound": 6,
+    "diagnostic_only_coarse_no_gci": 3,
+    "diagnostic_only_recirculation_adjacent": 6
+  },
+  "corrected_q_admitted_rows": 0,
+  "f6_ready_for_bounded_test": false,
+  "generated_at_utc": "2026-07-14T17:36:29.454726+00:00",
+  "global_multiplier_exported": false,
+  "named_loss_rows_available": 33,
+  "native_solver_outputs_mutated": false,
+  "recommendation": "implement_reset_development_api_and_tap_length_extraction_before_faithful_h1; hold_f6_until_admitted_re_variation",
+  "reset_candidate_blocked_rows": 18,
+  "reset_contract_rows": 33,
+  "reset_status_counts": {
+    "candidate_blocked_api_and_mesh_admission": 18,
+    "diagnostic_only_recirculation_invalid": 12,
+    "reference_not_reset_candidate": 3
+  },
+  "tap_length_gap_rows": 15,
+  "thermal_fit_used": false
+}

@@ -1,0 +1,5 @@
+variant_id,description,emissivity,Tsur_K,changed_parameter,expected_isolated_change
+baseline,baseline AGENT-263-style emissivity and surroundings temperature,0.95,299.19,none,reference
+emissivity_low,change only emissivity from 0.95 to 0.10,0.1,299.19,emissivity,wallHeatFlux should change if emissivity enters the BC
+emissivity_zero,change only emissivity from 0.95 to 0.00,0.0,299.19,emissivity,radiative contribution should be removed if emissivity enters the BC
+tsur_high,change only Tsur from 299.19 K to 350 K,0.95,350.0,Tsur,wallHeatFlux should change if surroundings temperature enters the BC

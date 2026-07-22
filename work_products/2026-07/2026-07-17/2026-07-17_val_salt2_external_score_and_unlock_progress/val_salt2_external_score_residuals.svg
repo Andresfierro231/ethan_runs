@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="360" viewBox="0 0 920 360">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:20px;font-weight:700}.label{font-size:12px}.small{font-size:10px}</style>
+<rect x="0" y="0" width="920" height="360" fill="white"/>
+<text x="56" y="32" class="title">val_salt2 external residual status</text>
+<text x="56" y="84" class="label">policy_excluded_not_scored</text>
+<rect x="276" y="62" width="21.0" height="34" fill="#878787" opacity="0.88"/>
+<text x="307.0" y="84" class="label">2</text>
+<text x="56" y="142" class="label">prediction_missing</text>
+<rect x="276" y="120" width="620.0" height="34" fill="#b2182b" opacity="0.88"/>
+<text x="906.0" y="142" class="label">59</text>
+<text x="56" y="196" class="small">Lane counts: {'pressure_streamwise_map': 30, 'sensor_temperature': 17, 'thermal_section_and_junction': 14}</text>
+<text x="56" y="214" class="small">No admitted frozen prediction artifact was found; residuals are intentionally not fabricated.</text>
+</svg>

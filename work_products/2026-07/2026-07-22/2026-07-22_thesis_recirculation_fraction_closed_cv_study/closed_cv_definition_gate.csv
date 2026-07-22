@@ -1,0 +1,2 @@
+cv_definition,current_status,same_cv_mask_available,reverse_flow_proxy_available,exchange_tau_proxy_available,same_window_thermal_contrast_available,ri_or_onset_same_basis_available,reason
+same_mask_closed_recirc_fraction,fail_closed_not_computable,false,true,true,partial_proxy,false,"current rows are reverse/topology and exchange proxies, not one closed CV with matched volume, flow, thermal contrast, and UQ"

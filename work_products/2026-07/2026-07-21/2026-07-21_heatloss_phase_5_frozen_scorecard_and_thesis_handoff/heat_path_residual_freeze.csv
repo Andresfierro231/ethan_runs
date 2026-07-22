@@ -1,0 +1,4 @@
+heat_path,freeze_status,runtime_inputs_allowed,forbidden_runtime_inputs,final_outputs,residual_lane_status,current_blocker,thesis_claim_boundary
+internal_Nu_single_stream,not_admitted,,heat residual absorbed into internal Nu; CFD wallHeatFlux; validation temperatures,,explicit_not_hidden_in_internal_Nu,,diagnostic_or_blocked_evidence_only
+upcomer_exchange_cell,not_admitted,,CFD mdot; held-out pressure residual; validation temperatures,,explicit_not_hidden_in_internal_Nu,,diagnostic_or_blocked_evidence_only
+residual,not_admitted,,energy or heat residual used as setup field; heat residual absorbed into internal Nu,,explicit_not_hidden_in_internal_Nu,,diagnostic_or_blocked_evidence_only

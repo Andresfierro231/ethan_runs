@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="440" viewBox="0 0 940 440">
+<rect width="100%" height="100%" fill="white"/>
+<text x="470.0" y="28" text-anchor="middle" font-family="Arial" font-size="18">val_salt2 loop pressure map, p_rgh relative to loop start</text>
+<line x1="85" y1="360" x2="905" y2="360" stroke="#333"/>
+<line x1="85" y1="55" x2="85" y2="360" stroke="#333"/>
+<polyline fill="none" stroke="#aa3377" stroke-width="2" points="85.0,162.2 112.8,71.0 140.5,59.2 168.3,55.0 196.0,145.5 223.8,195.0 251.6,197.4 279.3,197.1 307.1,196.3 334.8,196.0 362.6,173.0 390.3,172.9 418.1,174.5 445.9,176.7 473.6,180.6 501.4,186.5 529.1,217.6 556.9,83.8 584.7,97.3 612.4,360.0 640.2,318.8 667.9,256.3 695.7,117.3 723.4,66.7 751.2,62.1 779.0,166.2 806.7,194.8 834.5,196.3 862.2,176.0 890.0,181.0"/>
+<circle cx="85.0" cy="162.2" r="3.5" fill="#aa3377"/>
+<text x="85.0" y="385" transform="rotate(60 85.0 385)" font-family="Arial" font-size="9">lower_leg s04</text>
+<circle cx="112.8" cy="71.0" r="3.5" fill="#aa3377"/>
+<text x="112.8" y="385" transform="rotate(60 112.8 385)" font-family="Arial" font-size="9">lower_leg s03</text>
+<circle cx="140.5" cy="59.2" r="3.5" fill="#aa3377"/>
+<text x="140.5" y="385" transform="rotate(60 140.5 385)" font-family="Arial" font-size="9">lower_leg s02</text>
+<circle cx="168.3" cy="55.0" r="3.5" fill="#aa3377"/>
+<text x="168.3" y="385" transform="rotate(60 168.3 385)" font-family="Arial" font-size="9">lower_leg s01</text>
+<circle cx="196.0" cy="145.5" r="3.5" fill="#aa3377"/>
+<text x="196.0" y="385" transform="rotate(60 196.0 385)" font-family="Arial" font-size="9">lower_leg s00</text>
+<circle cx="223.8" cy="195.0" r="3.5" fill="#aa3377"/>
+<text x="223.8" y="385" transform="rotate(60 223.8 385)" font-family="Arial" font-size="9">left_lower_leg s00</text>
+<circle cx="251.6" cy="197.4" r="3.5" fill="#aa3377"/>
+<text x="251.6" y="385" transform="rotate(60 251.6 385)" font-family="Arial" font-size="9">left_lower_leg s01</text>
+<circle cx="279.3" cy="197.1" r="3.5" fill="#aa3377"/>
+<text x="279.3" y="385" transform="rotate(60 279.3 385)" font-family="Arial" font-size="9">left_lower_leg s02</text>
+<circle cx="307.1" cy="196.3" r="3.5" fill="#aa3377"/>
+<text x="307.1" y="385" transform="rotate(60 307.1 385)" font-family="Arial" font-size="9">left_lower_leg s03</text>
+<circle cx="334.8" cy="196.0" r="3.5" fill="#aa3377"/>
+<text x="334.8" y="385" transform="rotate(60 334.8 385)" font-family="Arial" font-size="9">left_lower_leg s04</text>
+<circle cx="362.6" cy="173.0" r="3.5" fill="#aa3377"/>
+<text x="362.6" y="385" transform="rotate(60 362.6 385)" font-family="Arial" font-size="9">test_section_span s00</text>
+<circle cx="390.3" cy="172.9" r="3.5" fill="#aa3377"/>
+<text x="390.3" y="385" transform="rotate(60 390.3 385)" font-family="Arial" font-size="9">test_section_span s01</text>
+<circle cx="418.1" cy="174.5" r="3.5" fill="#aa3377"/>
+<text x="418.1" y="385" transform="rotate(60 418.1 385)" font-family="Arial" font-size="9">test_section_span s02</text>
+<circle cx="445.9" cy="176.7" r="3.5" fill="#aa3377"/>
+<text x="445.9" y="385" transform="rotate(60 445.9 385)" font-family="Arial" font-size="9">test_section_span s03</text>
+<circle cx="473.6" cy="180.6" r="3.5" fill="#aa3377"/>
+<text x="473.6" y="385" transform="rotate(60 473.6 385)" font-family="Arial" font-size="9">test_section_span s04</text>
+<circle cx="501.4" cy="186.5" r="3.5" fill="#aa3377"/>
+<text x="501.4" y="385" transform="rotate(60 501.4 385)" font-family="Arial" font-size="9">left_upper_leg s00</text>
+<circle cx="529.1" cy="217.6" r="3.5" fill="#aa3377"/>
+<text x="529.1" y="385" transform="rotate(60 529.1 385)" font-family="Arial" font-size="9">left_upper_leg s01</text>
+<circle cx="556.9" cy="83.8" r="3.5" fill="#aa3377"/>
+<text x="556.9" y="385" transform="rotate(60 556.9 385)" font-family="Arial" font-size="9">left_upper_leg s02</text>
+<circle cx="584.7" cy="97.3" r="3.5" fill="#aa3377"/>
+<text x="584.7" y="385" transform="rotate(60 584.7 385)" font-family="Arial" font-size="9">left_upper_leg s03</text>
+<circle cx="612.4" cy="360.0" r="3.5" fill="#aa3377"/>
+<text x="612.4" y="385" transform="rotate(60 612.4 385)" font-family="Arial" font-size="9">left_upper_leg s04</text>
+<circle cx="640.2" cy="318.8" r="3.5" fill="#aa3377"/>
+<text x="640.2" y="385" transform="rotate(60 640.2 385)" font-family="Arial" font-size="9">upper_leg s00</text>
+<circle cx="667.9" cy="256.3" r="3.5" fill="#aa3377"/>
+<text x="667.9" y="385" transform="rotate(60 667.9 385)" font-family="Arial" font-size="9">upper_leg s01</text>
+<circle cx="695.7" cy="117.3" r="3.5" fill="#aa3377"/>
+<text x="695.7" y="385" transform="rotate(60 695.7 385)" font-family="Arial" font-size="9">upper_leg s02</text>
+<circle cx="723.4" cy="66.7" r="3.5" fill="#aa3377"/>
+<text x="723.4" y="385" transform="rotate(60 723.4 385)" font-family="Arial" font-size="9">upper_leg s03</text>
+<circle cx="751.2" cy="62.1" r="3.5" fill="#aa3377"/>
+<text x="751.2" y="385" transform="rotate(60 751.2 385)" font-family="Arial" font-size="9">upper_leg s04</text>
+<circle cx="779.0" cy="166.2" r="3.5" fill="#aa3377"/>
+<text x="779.0" y="385" transform="rotate(60 779.0 385)" font-family="Arial" font-size="9">right_leg s00</text>
+<circle cx="806.7" cy="194.8" r="3.5" fill="#aa3377"/>
+<text x="806.7" y="385" transform="rotate(60 806.7 385)" font-family="Arial" font-size="9">right_leg s01</text>
+<circle cx="834.5" cy="196.3" r="3.5" fill="#aa3377"/>
+<text x="834.5" y="385" transform="rotate(60 834.5 385)" font-family="Arial" font-size="9">right_leg s02</text>
+<circle cx="862.2" cy="176.0" r="3.5" fill="#aa3377"/>
+<text x="862.2" y="385" transform="rotate(60 862.2 385)" font-family="Arial" font-size="9">right_leg s03</text>
+<circle cx="890.0" cy="181.0" r="3.5" fill="#aa3377"/>
+<text x="890.0" y="385" transform="rotate(60 890.0 385)" font-family="Arial" font-size="9">right_leg s04</text>
+<text x="20" y="220.0" transform="rotate(-90 20 220.0)" text-anchor="middle" font-family="Arial" font-size="12">relative p_rgh (Pa)</text>
+</svg>

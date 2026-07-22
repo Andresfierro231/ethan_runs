@@ -1,0 +1,4 @@
+priority,next_row,why,required_inputs,stop_condition
+1,TODO-MF-SIGNED-WALL-FLUX-THERMAL-DEVELOPMENT-GATE-2026-07-22,D2/D3/D4 show structured thermal-shape/source-placement evidence but no release,"bulk-to-TP projection, wall-shape, source-placement, patchwise heat ledger",source/property or runtime-temperature gate fails
+2,TODO-MF-RECIRCULATING-UPCOMER-ALTERNATIVES-GATE-2026-07-22,left lower/upper legs are recirculation-invalid for single-stream developing branches,"S13 target-plus temporal UQ, mesh/GCI gate, onset/recirculation packages",same-label mesh/GCI or production harvest remains blocked
+3,TODO-1D-AMX1-AXIAL-MIXING-FLUID-API-HANDOFF-2026-07-22,axial-mixing API handoff is useful only after source and conservation guardrails are explicit,"AMX1 dry contract, D3 wall-shape gate, conservation tests",API cannot be disabled by default or source/property labels are absent

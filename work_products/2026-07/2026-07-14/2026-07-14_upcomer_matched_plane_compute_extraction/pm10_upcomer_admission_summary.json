@@ -1,0 +1,67 @@
+{
+  "case_count": 4,
+  "recirculation_diagnostic_cases": 4,
+  "ordinary_anchor_candidates": 0,
+  "rows": [
+    {
+      "case_key": "salt2_lo10q",
+      "parsed_plane_rows": "3",
+      "max_reverse_area_fraction": "0.7944465671",
+      "max_reverse_mass_fraction": "0.5000715431",
+      "max_Ri": "217.4345548",
+      "max_secondary_velocity_fraction": "0.7447560289",
+      "admission_statuses": "diagnostic-only-recirculating",
+      "case_classification": "recirculation_diagnostic",
+      "ordinary_Nu_fit_allowed": "no",
+      "ordinary_f_D_fit_allowed": "no",
+      "component_K_fit_allowed": "no",
+      "wall_field_status": "missing_wallHeatFlux_or_wall_T_but_not_needed_for_recirculation_diagnostic",
+      "next_action": "do not promote to ordinary/onset fit; keep as PM10 recirculation diagnostic and wait for high-heat terminal harvest"
+    },
+    {
+      "case_key": "salt2_hi10q",
+      "parsed_plane_rows": "3",
+      "max_reverse_area_fraction": "0.7813144941",
+      "max_reverse_mass_fraction": "0.500075367",
+      "max_Ri": "248.2740557",
+      "max_secondary_velocity_fraction": "0.7605464991",
+      "admission_statuses": "diagnostic-only-recirculating",
+      "case_classification": "recirculation_diagnostic",
+      "ordinary_Nu_fit_allowed": "no",
+      "ordinary_f_D_fit_allowed": "no",
+      "component_K_fit_allowed": "no",
+      "wall_field_status": "missing_wallHeatFlux_or_wall_T_but_not_needed_for_recirculation_diagnostic",
+      "next_action": "do not promote to ordinary/onset fit; keep as PM10 recirculation diagnostic and wait for high-heat terminal harvest"
+    },
+    {
+      "case_key": "salt4_lo10q",
+      "parsed_plane_rows": "3",
+      "max_reverse_area_fraction": "0.7773255016",
+      "max_reverse_mass_fraction": "0.5000774656",
+      "max_Ri": "117.9248474",
+      "max_secondary_velocity_fraction": "0.7658690809",
+      "admission_statuses": "diagnostic-only-recirculating",
+      "case_classification": "recirculation_diagnostic",
+      "ordinary_Nu_fit_allowed": "no",
+      "ordinary_f_D_fit_allowed": "no",
+      "component_K_fit_allowed": "no",
+      "wall_field_status": "missing_wallHeatFlux_or_wall_T_but_not_needed_for_recirculation_diagnostic",
+      "next_action": "do not promote to ordinary/onset fit; keep as PM10 recirculation diagnostic and wait for high-heat terminal harvest"
+    },
+    {
+      "case_key": "salt4_hi10q",
+      "parsed_plane_rows": "3",
+      "max_reverse_area_fraction": "0.7718036567",
+      "max_reverse_mass_fraction": "0.5001069481",
+      "max_Ri": "245.0185386",
+      "max_secondary_velocity_fraction": "0.7631509509",
+      "admission_statuses": "diagnostic-only-recirculating",
+      "case_classification": "recirculation_diagnostic",
+      "ordinary_Nu_fit_allowed": "no",
+      "ordinary_f_D_fit_allowed": "no",
+      "component_K_fit_allowed": "no",
+      "wall_field_status": "missing_wallHeatFlux_or_wall_T_but_not_needed_for_recirculation_diagnostic",
+      "next_action": "do not promote to ordinary/onset fit; keep as PM10 recirculation diagnostic and wait for high-heat terminal harvest"
+    }
+  ]
+}

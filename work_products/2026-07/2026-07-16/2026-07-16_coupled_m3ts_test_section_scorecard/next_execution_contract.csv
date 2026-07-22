@@ -1,0 +1,4 @@
+task_step,required_input,forbidden_input,required_output,acceptance_signal
+fit,Salt2 setup-only TS1/TS2 candidate parameters from AGENT-458,"Salt3/Salt4 realized test-section loss, validation temperatures, holdout temperatures, CFD mdot",frozen candidate dictionary for test_section external-boundary/resistance-network drive,training-only scalar recorded with zero validation/holdout leakage
+coupled_score,Fluid external-boundary table support plus frozen TS1/TS2 parameters,"realized CFD wallHeatFlux, imposed CFD cooler duty, validation/holdout temperatures","Salt3/Salt4 mdot, Tmean, loop delta, TP, and TW errors versus M2/M3 baselines",candidate improves or bounds coupled errors without heat-loss gate failure
+admission,"runtime audit, heat-loss W gate, percent gate, coupled M3+TS scorecard",diagnostic replay rows as admission proof,blocker register decision,"all gates pass on validation and holdout, otherwise blocker remains open"

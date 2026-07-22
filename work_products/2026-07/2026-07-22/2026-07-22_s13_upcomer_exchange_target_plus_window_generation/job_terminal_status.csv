@@ -1,0 +1,4 @@
+case_id,job_id,job_name,state,exit_code,elapsed,end_time,target_plus_dir_exists,required_fields_present
+salt_2,3310047,s13_s2_tplus,COMPLETED,0:0,00:02:53,2026-07-22T08:06:03,true,true
+salt_3,3310046,s13_s3_tplus,COMPLETED,0:0,00:03:02,2026-07-22T08:06:12,true,true
+salt_4,3310048,s13_s4_tplus,COMPLETED,0:0,00:03:17,2026-07-22T08:06:27,true,true

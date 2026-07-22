@@ -1,0 +1,9 @@
+{
+  "admission_rows": 18,
+  "input_paths": [
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/control_volume_effective_thermal_table.csv"
+  ],
+  "ledger_rows": 207,
+  "new_openfoam_extraction_performed": false
+}

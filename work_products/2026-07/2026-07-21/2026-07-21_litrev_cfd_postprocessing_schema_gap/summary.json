@@ -1,0 +1,22 @@
+{
+  "task_id": "TODO-LITREV-CFD-POSTPROCESSING-SCHEMA-GAP",
+  "date": "2026-07-21",
+  "contract_rows_audited": 18,
+  "field_status_counts": {
+    "present": 15,
+    "missing": 3,
+    "not_applicable": 0
+  },
+  "missing_contract_ids": [
+    "CFD-08",
+    "CFD-12",
+    "CFD-17"
+  ],
+  "primary_output": "work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "postprocessing_launched": false,
+  "scientific_admission_changed": false,
+  "notes": "Present fields may still be diagnostic or partial. Admission-grade gaps are tracked in coverage_status and admission_status."
+}

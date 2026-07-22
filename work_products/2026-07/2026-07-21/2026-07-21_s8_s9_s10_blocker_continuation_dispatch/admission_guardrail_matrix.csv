@@ -1,0 +1,5 @@
+lane,allowed_now,forbidden_now,s11_effect
+thermal_residual_ownership,read-only residual-owner synthesis and fail-closed candidate gate,Fluid solve; fitting; global hA multiplier selection; validation/holdout/external scoring; source/property release; internal Nu absorption,S11 remains blocked unless exactly one runtime-legal physical candidate passes the gate
+upcomer_exchange_uq,read-only sampled-field/Qwall/UQ readiness synthesis after active S13 reduction closes,sampler launch; harvest; ordinary upcomer Nu/f_D/K; exchange-cell coefficient admission; source/property release; S15/S6 trigger,S11 remains blocked unless finite exchange QOIs and same-QOI UQ pass
+pressure_f6,read-only timeout/source/ordinary-flow/UQ gate and optional retry runbook,scheduler action; endpoint sampler; F6 fit; component K; cluster K; clipped K; hidden multiplier; mixed-basis promotion,S11 remains blocked unless endpoint fields ordinary-flow pressure basis and same-QOI UQ pass
+

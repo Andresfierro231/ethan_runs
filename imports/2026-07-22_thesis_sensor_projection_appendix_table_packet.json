@@ -1,0 +1,45 @@
+{
+  "task_id": "TODO-THESIS-SENSOR-PROJECTION-APPENDIX-TABLE-PACKET-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Writer/Reviewer/Tester",
+  "decision": "sensor_projection_appendix_ready_no_runtime_temperature_release",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/appendix_sensor_projection_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/uncertainty_caveat_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/score_table_effect_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/runtime_temperature_input_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/tp_tw_panel_caption_source_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_sensor_projection_appendix_table_packet/summary.json",
+    ".agent/status/2026-07-22_TODO-THESIS-SENSOR-PROJECTION-APPENDIX-TABLE-PACKET-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-sensor-projection-appendix-table-packet.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_qoi_projection_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_uncertainty_caveat_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/sensor_projection_operator_table.csv",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "AGENTS.md"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "external_repo_mutated": false,
+    "thesis_body_edited": false,
+    "runtime_temperature_released": false,
+    "fit_or_model_selection_released": false,
+    "coefficient_admitted": false,
+    "final_score_released": false
+  },
+  "provenance_notes": "Generated evidence packet from structured source CSV/JSON only; no native solver outputs or external thesis repo files were mutated.",
+  "task": "TODO-THESIS-SENSOR-PROJECTION-APPENDIX-TABLE-PACKET-2026-07-22",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true
+}

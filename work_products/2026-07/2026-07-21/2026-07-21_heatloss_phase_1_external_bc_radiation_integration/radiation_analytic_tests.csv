@@ -1,0 +1,6 @@
+test_id,formula,inputs,expected_result,contract_result,pass_fail,policy_implication
+rad_zero_delta,eps*sigma*A*(Ts^4-Tsur^4),eps=0.95; A=1; Ts=300 K; Tsur=300 K,0 W,0 W,pass,Predictive radiation is zero only when surface and surroundings temperatures match.
+rad_zero_emissivity,eps*sigma*A*(Ts^4-Tsur^4),eps=0; A=1; Ts=350 K; Tsur=300 K,0 W,0 W,pass,Emissivity controls predictive radiation; do not replace it with residual.
+rad_positive_loss,eps*sigma*A*(Ts^4-Tsur^4),eps=0.95; A=1; Ts=350 K; Tsur=300 K,372.029722 W,372.029722 W,pass,Hot surface with cooler surroundings gives separate predictive radiation heat loss.
+rad_linearized_h,4*eps*sigma*Tmean^3,eps=0.95; Tmean=325 K,7.396826 W/m2/K,7.396826 W/m2/K,pass,A future 1D implementation may linearize radiation when it labels the approximation.
+replay_no_double_count,wallHeatFlux_total + Qrad_extra,wallHeatFlux_runtime_allowed=true; radiation_term_allowed=false,Qrad_extra forbidden,forbidden_by_runtime_mode_matrix,pass,If CFD total wallHeatFlux is used for replay no separate radiation term may be added.

@@ -1,0 +1,10 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/trusted_wall_Q_wall_summary.csv,read direct target-window Q_wall_W rows,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/summary.json,read exact pressure/Qwall release counts,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv,read target-window mdot and thermal contrast proxy rows,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv,read target-window tau_recirc proxy rows,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/neighbor_window_requirements.csv,read S13 same-window neighbor requirements,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/mesh_gci_requirements.csv,read deferred mesh/GCI requirements,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/same_qoi_uq_matrix.csv,read prior fail-closed same-QOI UQ status,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/qoi_retained_window_inventory.csv,read cross-family retained-window inventory,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/mesh_gci_coverage_matrix.csv,read cross-family mesh/GCI blocker status,true,false,false

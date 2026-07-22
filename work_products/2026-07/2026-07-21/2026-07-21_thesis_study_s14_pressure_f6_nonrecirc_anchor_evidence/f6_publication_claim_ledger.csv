@@ -1,0 +1,5 @@
+claim_id,claim_status,claim_text,reason
+S14-CLAIM-ALLOW-001,allowed,"Current F6 evidence is useful for branch-use screening and diagnostic pressure-basis discussion, but no F6 coefficient is admitted.",0 admitted rows; diagnostic and future-candidate rows remain gate-blocked.
+S14-CLAIM-ALLOW-002,allowed,Right-leg and test-section-span straight-branch lanes remain the preferred future ordinary F6 candidates.,They are the only ordinary non-upcomer straight candidates in the legwise matrix.
+S14-CLAIM-FORBID-001,forbidden,"Do not report fitted F6, component K, cluster K, clipped K, or a hidden global multiplier from this study.",No row passes all admission gates and no fitting/model selection was performed.
+S14-CLAIM-FORBID-002,forbidden,Do not treat pressure-corner static pressure rise as negative F6 loss.,Corner rows remain hydrostatic-dominated section-effective or pressure-recovery diagnostics.

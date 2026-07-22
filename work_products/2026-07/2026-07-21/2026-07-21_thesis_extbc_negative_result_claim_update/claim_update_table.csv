@@ -1,0 +1,7 @@
+claim_id,claim_text,claim_status,evidence,allowed_use
+EXTBC-CLAIM-001,External-BC runtime dictionaries are legal setup-side inputs for ambient-wall h/Ta/Tsur/emissivity,established,Fluid external-BC dictionary plus Salt1 recovery package,method/readiness claim
+EXTBC-CLAIM-002,The external-BC path is executable on the Salt2 train case,established,F-J diagnostics baseline_root_status accepted and Phase E train solve outputs,implementation-readiness claim
+EXTBC-CLAIM-003,The path is not thermally predictive yet,established_negative_result,F-J diagnostics all-probe MAE 81.582 K and top owner heated_incline/TW5 109.094 K,scientific non-admission claim
+EXTBC-CLAIM-004,Heater/cooler/test-section source/sink setup Q provenance exists but is not runtime-admitted,established_limited,source/sink provenance recovery package,source-envelope depth without scoring
+EXTBC-CLAIM-005,Salt1 ambient-wall metadata strengthens train-envelope completeness,established_limited,Salt1 recovery restored canonical ambient-wall coverage to 16/16,train-envelope metadata claim
+EXTBC-CLAIM-006,No final predictive score or candidate freeze is released,required_guardrail,S6/S15 gates remain blocked and no source/property release exists,no-admission claim

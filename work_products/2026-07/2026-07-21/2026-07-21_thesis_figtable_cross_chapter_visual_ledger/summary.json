@@ -1,0 +1,22 @@
+{
+  "task_id": "TODO-THESIS-FIGTABLE-CROSS-CHAPTER-VISUAL-LEDGER-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "package_type": "cross_chapter_visual_ledger",
+  "ledger_rows": 16,
+  "ready_now_rows": 14,
+  "trigger_gated_rows": 2,
+  "blocked_triggers": 5,
+  "chapters_covered": [
+    "Chapter 3",
+    "Chapter 5",
+    "Chapter 6",
+    "Chapter 7",
+    "Chapter 8"
+  ],
+  "figure_regeneration": false,
+  "chapter_body_edit": false,
+  "admission_change": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxed": false
+}

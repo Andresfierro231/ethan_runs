@@ -1,0 +1,70 @@
+{
+  "contract_summary": {
+    "generated_utc": "2026-07-13T21:10:48+00:00",
+    "n_case_runtime_rows": 3,
+    "n_modes": 3,
+    "n_runtime_fields": 32,
+    "n_validation_targets": 75,
+    "n_violations": 0,
+    "source_files": {
+      "cfd_coefficient_naming_limits": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv",
+      "fluid_cases": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml",
+      "fluid_validation": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/validation_cases.csv",
+      "heat_loss_admission_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+      "litrev_campaign_index": "work_products/2026-07/2026-07-13/2026-07-13_litrev_todo_campaign_index/README.md",
+      "named_loss_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+      "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+      "property_mode_lane": "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+      "research_plan": "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md",
+      "source_envelope_gate": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+      "thermal_targets": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv"
+    },
+    "strict_status": "pass",
+    "task_id": "TODO-PRED-INPUT-CONTRACT"
+  },
+  "engine": "solve_case",
+  "generated_utc": "2026-07-13T22:28:41+00:00",
+  "hx_status": "imposed_cooler_duty_intermediate_not_predictive_hx",
+  "litrev_gate_reference_rows": 5,
+  "litrev_gate_reference_status": "pass",
+  "n_accepted_rows": 6,
+  "n_cases": 3,
+  "n_cfd_sensor_rows": 102,
+  "n_experimental_sensor_rows": 102,
+  "n_result_rows": 6,
+  "n_variants": 2,
+  "runtime_policy": "pressure-rooted solve_case; no CFD mdot or realized wallHeatFlux runtime input",
+  "sensor_source": "both",
+  "source_files": {
+    "cfd_sensor_reference": "reports/2026-07/2026-07-01/2026-07-01_local_1d_validation_refresh/cfd_sensor_reference.csv",
+    "fluid_root": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid",
+    "input_contract": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "litrev_gate_reference_audit": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_litrev_gate_reference_audit.csv",
+    "thermal_targets": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv"
+  },
+  "task_id": "TODO-PRED-FORWARD-V0",
+  "variant_summary": [
+    {
+      "engine": "solve_case",
+      "max_abs_pressure_residual_Pa": 1.430563472126778e-07,
+      "mean_abs_Tmean_error_vs_cfd_K": 34.37681342215139,
+      "mean_abs_loop_delta_error_vs_cfd_K": 4.419285040685691,
+      "mean_mdot_error_vs_cfd_kg_s": 0.007835830990370945,
+      "mean_mdot_error_vs_experimental_kg_s": 0.0047458309903709445,
+      "mean_qambient_total_W": 185.15147315074216,
+      "n_rows": 3,
+      "variant_id": "F0_current_fluid_sources"
+    },
+    {
+      "engine": "solve_case",
+      "max_abs_pressure_residual_Pa": 8.498538051071591e-08,
+      "mean_abs_Tmean_error_vs_cfd_K": 4.609645058606209,
+      "mean_abs_loop_delta_error_vs_cfd_K": 3.1269377791114454,
+      "mean_mdot_error_vs_cfd_kg_s": 0.005358220702086576,
+      "mean_mdot_error_vs_experimental_kg_s": 0.0022682207020865756,
+      "mean_qambient_total_W": 148.1513260449763,
+      "n_rows": 3,
+      "variant_id": "F1_heater_only"
+    }
+  ]
+}

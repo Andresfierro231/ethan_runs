@@ -1,0 +1,16 @@
+{
+  "admitted_submodels": [
+    "cooler_hx",
+    "heater"
+  ],
+  "blocked_submodels": [
+    "wall_test_section_passive_boundary"
+  ],
+  "date": "2026-07-16",
+  "decision": "supersede_broad_blocker_with_narrow_wall_test_section_blocker",
+  "evidence": "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md",
+  "generated_index_refresh": "required_after_blocker_register_update",
+  "new_or_remaining_blocker": "predictive-wall-test-section-submodels",
+  "original_blocker": "predictive-heater-cooler-wall-submodels",
+  "task": "AGENT-454"
+}

@@ -1,0 +1,4 @@
+item_id,recommended_item,source_csv,caption_seed,paper_use
+F1,Bar chart of train/validation/holdout absolute Tmean error by source model,heater_fraction_model_summary.csv,Split-aware heater source-contract comparison using Salt2 for any one-scalar fit and Salt3/Salt4 as held-out scores.,Results figure
+T1,"Decision table for admitted, candidate, and rejected heater source forms",heater_fraction_decision_table.csv,Heater/test-section source decisions and excluded uses under predictive runtime-input discipline.,Methods/results table
+T2,Result-intake table for paper reproducibility,result_intake_table.csv,"Provenance, split role, fitted parameters, validation targets, and overclaim boundaries for the heater-source slice.",Supplementary methods table

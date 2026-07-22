@@ -1,0 +1,14 @@
+guardrail,value
+native_solver_outputs_mutated,false
+registry_or_admission_mutated,false
+scheduler_action,false
+solver_or_postprocessing_launched,false
+Fluid_or_external_repo_mutated,false
+validation_holdout_external_scoring,false
+fitting_or_model_selection,false
+source_property_release,false
+qwall_release,false
+switching_coefficient_admission,false
+component_K_or_F6_admission,false
+final_score_claim,false
+residual_absorbed_into_internal_Nu,false

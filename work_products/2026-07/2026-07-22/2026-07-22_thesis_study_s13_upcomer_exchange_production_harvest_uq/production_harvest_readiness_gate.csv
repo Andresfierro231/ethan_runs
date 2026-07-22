@@ -1,0 +1,9 @@
+gate,status,pass,evidence,consequence
+current_coarse_exchange_qois,diagnostic_pass,True,12 current-coarse rows generated for 3 cases x 4 QOIs,usable as trend/evidence context only
+same_qoi_temporal_uq,diagnostic_pass,True,4 QOIs have same-window neighbor UQ,"temporal readiness exists, but not mesh/GCI readiness"
+same_label_mesh_gci,blocked,False,24 medium/fine rows missing; accepted same-label mesh/GCI QOIs = 0,production harvest remains forbidden
+source_property_release,blocked,False,nominal train source/property release-ready rows = 0,no candidate-specific S11 or S15 release
+pressure_energy_residual_same_window,partial_diagnostic,False,"MF09 energy residual contracts = 3, production-ready sampled rows = 0",same-window pressure/energy support is not production complete
+near_onset_nonrecirculating_anchor,blocked,False,onset anchor candidate rows = 0,ordinary upcomer closure remains disabled
+production_harvest,do_not_run,False,"mesh/GCI, source/property, and anchor gates are blocked",do not launch sampler/harvest/UQ under this row
+s11_decision,closed,False,0 exchange-cell fit-ready rows and 0 ordinary internal-Nu fit rows,S11/S15/S6 remain closed

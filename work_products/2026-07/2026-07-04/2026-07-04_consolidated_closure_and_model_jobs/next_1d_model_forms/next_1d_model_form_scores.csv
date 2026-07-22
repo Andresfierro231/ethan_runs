@@ -1,0 +1,4 @@
+model_form,source,case_count,mean_abs_mdot_error_pct,rmse_mdot_error_pct,status,interpretation
+default(mult=1),work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv,3,34.65901189539949,34.90517188523105,evaluated_prior,Prior Claude trial score; useful comparison but not a new external Fluid run.
+global_mean_mult,work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv,3,3.6615262993505056,3.7219358403392,evaluated_prior,Prior Claude trial score; useful comparison but not a new external Fluid run.
+per_leg_friction,work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv,3,9.940746345217375,9.943333879372656,evaluated_prior,Prior Claude trial score; useful comparison but not a new external Fluid run.

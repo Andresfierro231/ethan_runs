@@ -1,0 +1,10 @@
+source_path,exists,role,mutation
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,true,read_only_context,none
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,true,read_only_context,none
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/README.md,true,read_only_context,none
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,true,read_only_context,none
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,true,read_only_context,none
+operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md,true,read_only_context,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md,true,read_only_context,none
+work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/README.md,true,read_only_context,none
+work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/README.md,true,read_only_context,none

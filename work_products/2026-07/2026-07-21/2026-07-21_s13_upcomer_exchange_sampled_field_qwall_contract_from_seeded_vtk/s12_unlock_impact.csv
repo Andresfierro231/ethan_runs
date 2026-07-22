@@ -1,0 +1,4 @@
+case_id,time_window_s,current_impact,what_is_unlocked,still_blocked,s12_trigger_allowed,reason
+salt_2,7915,blocked,none for train scoring or freeze,"no S13 admitted candidate, no Q_wall_W, no source/property release, no attribution package",false,limited sampled-field extraction is diagnostic support and cannot unlock S12 train/freeze work
+salt_3,7618,blocked,none for train scoring or freeze,"no S13 admitted candidate, no Q_wall_W, no source/property release, no attribution package",false,limited sampled-field extraction is diagnostic support and cannot unlock S12 train/freeze work
+salt_4,10000,blocked,none for train scoring or freeze,"no S13 admitted candidate, no Q_wall_W, no source/property release, no attribution package",false,limited sampled-field extraction is diagnostic support and cannot unlock S12 train/freeze work

@@ -1,0 +1,29 @@
+{
+  "task": "TODO-THESIS-COMPACT-EVIDENCE-APPENDIX-PACKET-PLAN-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "compact_evidence_appendix_plan_ready_no_copy_no_latex",
+  "copy_no_copy_manifest_rows": 19,
+  "appendix_table_target_rows": 10,
+  "exclusion_rows": 8,
+  "external_copy_performed": false,
+  "latex_edit": false,
+  "manuscript_prose_written": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_postprocessing_sampler_harvest_uq_launched": false,
+  "external_fluid_edit": false,
+  "validation_holdout_external_scored": false,
+  "fitting_or_model_selection_performed": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "runtime_leakage_relaxed": false,
+  "next_board_tasks": [
+    "TODO-THESIS-EVIDENCE-PACKET-CH7-CH8-RESULTS-NEGATIVE-BLOCKED-2026-07-22",
+    "TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22",
+    "TODO-THESIS-STUDY-THERMAL-ACCOUNTING-TRACEABILITY-EVIDENCE-PACKET-2026-07-22",
+    "TODO-THESIS-STUDY-PRESSURE-BASIS-LADDER-EVIDENCE-PACKET-2026-07-22"
+  ]
+}

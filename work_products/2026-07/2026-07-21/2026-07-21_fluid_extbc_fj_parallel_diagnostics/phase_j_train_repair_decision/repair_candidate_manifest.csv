@@ -1,0 +1,2 @@
+repair_candidate_id,decision,predeclared_change_count,selected_change,reason,repair_solve_ran,validation_rows_consumed,holdout_rows_consumed,external_test_rows_consumed,freeze_or_admission
+phase_j_candidate,blocked_no_repair_candidate,0,,No deterministic legal correction was released by Phase G or Phase I; Phase H sensitivities are diagnostic and cannot be selected as fits.,False,0,0,0,False

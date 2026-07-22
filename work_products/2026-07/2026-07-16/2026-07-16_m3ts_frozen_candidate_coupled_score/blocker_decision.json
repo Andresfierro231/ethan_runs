@@ -1,0 +1,9 @@
+{
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "decision": "keep_open",
+  "evidence": "work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m3ts_coupled_scorecard.csv",
+  "generated_at": "2026-07-16T22:47:26.653576+00:00",
+  "next_required_action": "Run `python3 tools/analyze/build_coupled_m3ts_test_section_scorecard.py --run-fluid` on a compute node or sbatch wrapper, then rerun admission review.",
+  "task": "AGENT-461",
+  "why": "No candidate has both completed coupled M3+TS scoring and passed held-out heat-loss gates."
+}

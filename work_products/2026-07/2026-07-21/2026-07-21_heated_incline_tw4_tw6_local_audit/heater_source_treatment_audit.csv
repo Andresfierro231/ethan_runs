@@ -1,0 +1,6 @@
+audit_id,item,observed_status,interpretation,claim_boundary
+HIA-001,lower_leg ambient wall metadata,present_setup_known,h/Ta/Tsur/emissivity/area are finite and consistent across Salt1-Salt4,metadata is legal but insufficient to explain heated-incline source residual
+HIA-002,lower_leg heater setup Q,present_setup_known_candidate,staged 0/T contains imposed powered-segment Q values,not admitted as runtime source until source-model gate
+HIA-003,Phase E Fluid heater source row,document_only_source_sink_or_blocked,heater row exists as document-only and is not a predictive source term,current solve underpredicts TW4-TW6
+HIA-004,S7 sensor coordinates,bounded_not_exact,TW4-TW6 coordinates are approximate and score-only,coordinate uncertainty is a caveat but not enough to explain systematic underprediction
+HIA-005,S8 prior candidate history,failed_all_tested_families,TW5/TW6 fail passive wall/source selector families,do not retry same passive hA selectors as primary next step

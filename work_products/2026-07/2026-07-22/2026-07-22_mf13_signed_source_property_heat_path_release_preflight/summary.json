@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-07-22T14:49:25.537814+00:00",
+  "decision": "signed_source_property_release_preflight_fail_closed",
+  "external_test_used": false,
+  "holdout_used": false,
+  "mf12_formula_smoke_unblocked": false,
+  "no_fitting_or_model_selection": true,
+  "no_fluid_solve": true,
+  "passive_basis_ready": false,
+  "protected_metadata_rows_not_used_for_scoring": 6,
+  "release_ready_rows": 0,
+  "residual_absorbed_into_internal_nu": false,
+  "setup_known_active_source_rows": 3,
+  "source_family_rows": 4,
+  "source_property_release": false,
+  "task_id": "TODO-MF13-SIGNED-SOURCE-PROPERTY-HEAT-PATH-RELEASE-PREFLIGHT-2026-07-22",
+  "train_support_execution_evidence_only": true,
+  "validation_used": false
+}

@@ -1,0 +1,16 @@
+case_id,input_lane,status,required_input,available_input,consumer,blocking_reason
+salt_2,cell_vtk,ready,whole-mesh cell VTK with U;T;rho and 2166996 cells,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/vtk/salt_2_cell_fields.vtk,exchange sampler volume/state extraction,
+salt_2,exchange_interface_vtk,blocked,trusted main/recirculation exchange surface VTK with outward normal convention,,mdot_exchange integration,no released interface geometry source
+salt_2,wall_core_vtk,blocked,recirculation wall/core band VTK tied to the approved recirculation cell volume,,T_recirc and wall/core thermal contrast,no released recirculation region or wall/core band
+salt_2,Q_wall_W,blocked,same-window wall heat flow over the released recirculation wall band,,energy residual,wall band unavailable; static Q source/sink ledger is not a recirculation wall heat-flow measurement
+salt_2,exchange_cell_harvest,blocked,cell_vtk plus exchange_interface_vtk plus wall_core_vtk plus source/sink ledger,cell_vtk_only_or_pending,V_recirc; mdot_exchange; T_recirc; pressure_residual; energy_residual,interface/wall/Q_wall lanes are not released
+salt_3,cell_vtk,ready,whole-mesh cell VTK with U;T;rho and 2166996 cells,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_3_cell_fields.vtk,exchange sampler volume/state extraction,
+salt_3,exchange_interface_vtk,blocked,trusted main/recirculation exchange surface VTK with outward normal convention,,mdot_exchange integration,no released interface geometry source
+salt_3,wall_core_vtk,blocked,recirculation wall/core band VTK tied to the approved recirculation cell volume,,T_recirc and wall/core thermal contrast,no released recirculation region or wall/core band
+salt_3,Q_wall_W,blocked,same-window wall heat flow over the released recirculation wall band,,energy residual,wall band unavailable; static Q source/sink ledger is not a recirculation wall heat-flow measurement
+salt_3,exchange_cell_harvest,blocked,cell_vtk plus exchange_interface_vtk plus wall_core_vtk plus source/sink ledger,cell_vtk_only_or_pending,V_recirc; mdot_exchange; T_recirc; pressure_residual; energy_residual,interface/wall/Q_wall lanes are not released
+salt_4,cell_vtk,ready,whole-mesh cell VTK with U;T;rho and 2166996 cells,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_4_cell_fields.vtk,exchange sampler volume/state extraction,
+salt_4,exchange_interface_vtk,blocked,trusted main/recirculation exchange surface VTK with outward normal convention,,mdot_exchange integration,no released interface geometry source
+salt_4,wall_core_vtk,blocked,recirculation wall/core band VTK tied to the approved recirculation cell volume,,T_recirc and wall/core thermal contrast,no released recirculation region or wall/core band
+salt_4,Q_wall_W,blocked,same-window wall heat flow over the released recirculation wall band,,energy residual,wall band unavailable; static Q source/sink ledger is not a recirculation wall heat-flow measurement
+salt_4,exchange_cell_harvest,blocked,cell_vtk plus exchange_interface_vtk plus wall_core_vtk plus source/sink ledger,cell_vtk_only_or_pending,V_recirc; mdot_exchange; T_recirc; pressure_residual; energy_residual,interface/wall/Q_wall lanes are not released

@@ -1,0 +1,9 @@
+input_or_label,runtime_status,reason,permitted_use
+axial_mixing_mode,setup_only_allowed,Predeclared model-form switch; default must be disabled,Runtime config only when source/property gate allows the candidate.
+axial_mixing_multiplier,setup_only_conditional,Allowed only from predeclared source/property envelope not row target residuals,Smoke one bounded value only after evidence packet lands.
+axial_mixing_parent_segments,setup_only_allowed,Geometry/model-form selection independent of validation targets,Must be declared before solve.
+CFD_mdot,forbidden_runtime_input,forbidden runtime leakage from target CFD flow solution,Diagnostics and residual attribution only.
+realized_wallHeatFlux,forbidden_runtime_input,forbidden runtime leakage from CFD heat-flux result,Diagnostics and source-side conservation checks only.
+validation_temperatures,forbidden_runtime_input,forbidden runtime leakage from held-out or validation targets,Scoring only after candidate freeze.
+heldout_or_external_test_residuals,forbidden_runtime_input,forbidden tuning evidence under split policy,External generalization report only after validation.
+row_by_row_multiplier,forbidden_fit_input,forbidden hidden fitting of AMX1 strength to target residuals,No use unless a future explicit fitting/admission row changes policy.

@@ -1,0 +1,11 @@
+source_key,path,summary_path,exists,mutation_status
+cand001_timeout,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/summary.json,true,read_only
+low_recirc_readiness,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/summary.json,true,read_only
+same_qoi_gate,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/summary.json,true,read_only
+s14_anchor,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,true,read_only
+section_effective,work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard,work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/summary.json,true,read_only
+pressure_corner_freeze,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/summary.json,true,read_only
+negative_insert,work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_negative_k_section_effective_insert,work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_negative_k_section_effective_insert/summary.json,true,read_only
+stage_b_qa,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json,true,read_only
+static_basis,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json,true,read_only
+s5_source_split,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/summary.json,true,read_only

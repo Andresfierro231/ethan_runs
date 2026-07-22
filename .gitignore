@@ -14,6 +14,8 @@ cache/*
 # Generated figures and render outputs
 figures/*
 !figures/.gitkeep
+figures_rendered/*
+!figures_rendered/.gitkeep
 reports/**/figures/**
 reports/**/figures_rendered/**
 reports/**/raw_extraction/*wall_face_samples.csv
@@ -24,10 +26,19 @@ reports/**/all_salt_transient_timeseries.csv
 reports/**/salt_side_htc_nu_fields.csv
 reports/**/water_effective_htc_nu_fields.csv
 reports/**/raw_extraction/wall_face_geometry.csv
+reports/**/dynamic_pressure_profile_rows.csv
+reports/**/prgh_vs_dynamic_profile_rows.csv
+reports/**/salt_redevelopment_profile_rows.csv
 
-# Heavy registry aggregate products; regenerate from registered postprocessing.
-registry/**/aggregates/postprocessing.sqlite
-registry/**/aggregates/postprocessing_case_long.csv
+# Generated registry products; keep registry/case_registry.csv tracked.
+registry/_all_postprocessing_runs.csv
+registry/_all_postprocessing_runs.sqlite
+registry/**/_family_index.csv
+registry/**/_family_index.sqlite
+registry/**/aggregates/
+registry/**/aggregation_manifest.json
+registry/**/plots/
+!registry/case_registry.csv
 
 linked_cases/*
 !linked_cases/.gitkeep
@@ -36,6 +47,7 @@ linked_cases/*
 staging/modern_runs/**
 staging/render_inputs/**
 staging/render_jobs/**
+staging/s13_target_plus_window_generation_2026-07-22/**
 jadyn_runs/**/case_stage/**
 
 tmp/*
@@ -43,5 +55,74 @@ tmp/*
 
 tmp_extract/*
 
-work_products/*
+# Work products are durable evidence packages. Keep normal docs/tables/figures
+# visible, but hide raw reconstructed solver payloads and large row dumps.
+work_products/**
 !work_products/.gitkeep
+!work_products/**/
+!work_products/**/*.md
+!work_products/**/*.json
+!work_products/**/*.csv
+!work_products/**/*.svg
+!work_products/**/*.png
+!work_products/**/*.pdf
+!work_products/**/*.txt
+!work_products/**/*.yaml
+!work_products/**/*.yml
+!work_products/**/*.pptx
+work_products/**/.pytest_cache/
+work_products/**/*.pyc
+work_products/**/*.vtk
+work_products/**/*.ogv
+work_products/**/*.stl
+# Duplicated/generated figure exports can be regenerated; keep source SVG/PNG
+# and package docs visible instead of tracking large PDF fan-outs.
+work_products/**/legacy_roots/figures/
+work_products/**/legacy_roots/figures/**
+work_products/**/figures/**/pdf/*.pdf
+work_products/**/recon/
+work_products/**/recon/**
+work_products/**/repair_trial_output/recon/
+work_products/**/repair_trial_output/recon/**
+work_products/**/cell_volumes/*_cell_volumes.csv
+work_products/**/masks/*_mask.csv
+work_products/**/masks/*_cells.csv
+work_products/**/faces/*_faces.csv
+work_products/**/geometry_seed_cells.csv
+work_products/**/geometry_seed_face_lanes.csv
+work_products/**/seeded_recirc_cv_cells.csv
+work_products/**/seeded_trusted_wall_faces.csv
+work_products/**/seeded_exchange_interface_faces.csv
+work_products/**/sampled_interface_fields.csv
+work_products/**/sampled_wall_core_temperature.csv
+work_products/**/sampled_pressure_detail.csv
+work_products/**/trusted_wall_wallHeatFlux_detail.csv
+work_products/**/trusted_wall_Q_wall_detail_rows.csv
+work_products/**/salt14_postprocessing_tidy.csv
+
+# Bulky generated historical figure/deck exports kept local unless a thesis
+# selection task explicitly re-adds a specific artifact. Package docs/tables
+# remain visible where they exist.
+work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/**/figures/
+work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/**/figures/**
+work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_expanded_case_set/figures/
+work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_expanded_case_set/figures/**
+work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_user_train_scope/figures/
+work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_user_train_scope/figures/**
+work_products/2026-07/2026-07-15/2026-07-15_salt_training_testing_oscillation_steady_state/figures/
+work_products/2026-07/2026-07-15/2026-07-15_salt_training_testing_oscillation_steady_state/figures/**
+work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/**
+!work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/
+!work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/*.md
+!work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/*.csv
+!work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/*.json
+work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/**
+!work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/
+!work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/*.md
+!work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/*.csv
+!work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/*.json
+
+# Local scratch and compiled runtime payloads.
+scratchpad/*
+!scratchpad/.gitkeep
+jadyn_runs/**/runtime_libs/*.so

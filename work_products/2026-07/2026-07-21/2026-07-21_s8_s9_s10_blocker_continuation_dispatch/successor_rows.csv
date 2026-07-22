@@ -1,0 +1,5 @@
+task_id,lane,owner_status,claim_trigger,primary_decision,forbidden_shortlist
+TODO-S8-S12-THERMAL-RESIDUAL-OWNERSHIP-GATE-2026-07-21,thermal_residual_ownership,open,after passive-H2 physical-basis and active thesis writing conflicts are clear,exactly_one_train_repair_allowed|needs_more_physical_basis|fail_closed_no_s11_candidate,no Fluid solve without later exact row; no validation/holdout/external scoring; no fit; no internal Nu absorption
+TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-UQ-UNBLOCK-2026-07-21,upcomer_exchange_uq,open,after active S13 average-field reduction closes,production_harvest_ready|missing_qoi_fail_closed|same_qoi_uq_blocked,no sampler or harvest launch; no ordinary upcomer Nu/f_D/K; no exchange coefficient admission
+TODO-S10-S14-PRESSURE-F6-CAND001-RETRY-AND-UQ-GATE-2026-07-21,pressure_f6,open,after active section-effective pressure scorecard closes,retry_ready_runbook|fail_closed_source_or_physics|same_qoi_uq_blocked,no scheduler action in this row; no F6/component-K/cluster-K/clipped-K/hidden multiplier
+

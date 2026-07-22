@@ -1,0 +1,14 @@
+exists,mutation_status,source_path,use_in_this_packet
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/source_backed_passive_h2_basis_table.csv,family-level passive_H2 setup-basis rows
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/source_basis_release_gate.csv,source-basis release gates
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/q_loss_operator_contract.csv,operator and forbidden-input contract
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/summary.json,source-basis release summary
+True,read_only,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv,external boundary setup dictionary evidence
+True,read_only,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv,patch role and boundary dictionary trace
+True,read_only,work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv,heat-loss path/literature contract alignment
+True,read_only,work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/radiation_guidance_decision.json,radiation/double-counting guidance
+True,read_only,reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv,external boundary setup reference
+True,read_only,reference/geometry_reference.md,physical geometry and insulation reference
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json,train-only setup-UQ smoke summary
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/runtime_input_manifest.csv,train-only runtime input manifest
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv,train-only mdot/heat sensitivity

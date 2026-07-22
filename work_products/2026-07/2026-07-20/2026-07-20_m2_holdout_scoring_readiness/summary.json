@@ -1,0 +1,14 @@
+{
+  "blocked_score_rows": 8,
+  "date": "2026-07-20",
+  "fit_rows_added": 0,
+  "frozen_model_id": "M2_FROZEN_PREDICTION_ARTIFACT_SALT1_4_NOMINAL_2026_07_20",
+  "generated_at_utc": "2026-07-20T17:42:05.662343+00:00",
+  "holdout_predictions_created": false,
+  "model_selection_rows_added": 0,
+  "native_solver_outputs_mutated": false,
+  "queue_rows": 8,
+  "registry_mutation": "none",
+  "rows_scored_now": 0,
+  "task": "TODO-PREDICT-M2-HOLDOUT-SCORING-READINESS"
+}

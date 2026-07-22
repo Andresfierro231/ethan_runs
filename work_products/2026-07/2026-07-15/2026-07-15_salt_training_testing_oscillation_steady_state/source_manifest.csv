@@ -1,0 +1,4 @@
+kind,path
+selected_use_table,work_products/2026-07/2026-07-15/2026-07-15_salt_forward_v1_unblock/salt_training_fit_input_table.csv
+case_matrix,work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/case_bc_response_matrix.csv
+canonical_forward_v1_ledger,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/row_admission_ledger.csv

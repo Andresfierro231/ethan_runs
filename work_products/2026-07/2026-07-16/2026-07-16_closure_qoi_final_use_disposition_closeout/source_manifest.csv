@@ -1,0 +1,7 @@
+source_id,path,exists,role
+agent459_final_use_gci,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv,yes,source final-use non-upcomer GCI ledger
+agent459_branch_admission,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv,yes,branch-local admission summary
+agent459_targeted_queue,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/targeted_extraction_admission_queue.csv,yes,cooler/HX and global final-use queue
+agent468_heater_decision,work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/blocker_decision.csv,yes,heater source/sign/GCI no-admission decision
+agent469_downcomer_decision,work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/downcomer_admission_decision.csv,yes,downcomer policy no-admission decision
+blocker_register,.agent/blockers.yml,yes,current blocker ledger

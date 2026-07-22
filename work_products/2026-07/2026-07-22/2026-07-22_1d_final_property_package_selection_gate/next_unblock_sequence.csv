@@ -1,0 +1,6 @@
+step,work_package,why_it_is_next,acceptance_signal,guardrail
+1,"Row-specific strict source-envelope repair","Property release cannot be separated from source-envelope legality for candidate formulas.","Each train row has strict-pass source envelope and no mixed/outside/unknown source labels.","No protected scoring or source release from labels alone."
+2,"Candidate-specific cp/mu/k sensitivity table","cp_J_kg_K, viscosity, and k need candidate-level sensitivity before freeze.","Sensitivity table reports effect on Re, Pr, Gz, heat ledger, mdot, TP/TW for train/support rows only.","No coefficient tuning on protected targets."
+3,"Temperature/composition validity audit","Property calls need valid HITEC temperature and composition envelope.","Every candidate row has temperature/composition in-range or explicit unresolved flag.","No silent extrapolation."
+4,"Beta/rho buoyancy-basis preflight","Gr/Ra/Ri and buoyancy head need density/beta basis.","Beta rule, DeltaT basis, orientation, and same-QOI UQ status are documented.","No admitted Ri threshold without TAMU calibration."
+5,"Freeze-margin report for exactly one candidate","Protected scoring requires fixed candidate and property inputs.","One manifest fixes property equations, uncertainties, coefficients, and runtime inputs before validation/holdout/external scoring.","No post-score tuning."

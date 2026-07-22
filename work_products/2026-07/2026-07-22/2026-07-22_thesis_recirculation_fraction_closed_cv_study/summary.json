@@ -1,0 +1,15 @@
+{
+  "closed_cv_fraction_rows": 3,
+  "closed_recirc_fraction_admitted": false,
+  "decision": "closed_cv_fraction_fail_closed_current_proxies_thesis_diagnostic_only",
+  "exchange_coefficient_admitted": false,
+  "exchange_tau_proxy_rows": 3,
+  "generated_at_utc": "2026-07-22T18:16:41.939571+00:00",
+  "native_solver_outputs_mutated": false,
+  "ordinary_upcomer_closure_admitted": false,
+  "registry_mutated": false,
+  "ri_admitted": false,
+  "scheduler_action": false,
+  "task_id": "TODO-THESIS-RECIRCULATION-FRACTION-CLOSED-CV-STUDY-2026-07-22",
+  "topology_proxy_rows": 3
+}

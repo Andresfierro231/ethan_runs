@@ -1,0 +1,12 @@
+{
+  "best_diagnostic": "D4_M3_segment_offsets_min2_train",
+  "best_transfer_rmse_K": 7.940403491512912,
+  "board_rows_listed": 7,
+  "decision": "study_rows_listed_publication_readiness_pass_with_fail_closed_admission",
+  "m3_transfer_rmse_K": 17.364529309579673,
+  "publication_readiness_rows": 6,
+  "publication_ready_for_diagnostic_claims": true,
+  "ready_for_admitted_closure_claims": false,
+  "study_rows": 7,
+  "task": "TODO-DIAGNOSTIC-MODEL-FORM-PUBLICATION-READINESS-AND-STUDY-DISPATCH-2026-07-22"
+}

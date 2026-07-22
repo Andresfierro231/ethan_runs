@@ -1,0 +1,9 @@
+guardrail,status
+native_output_mutation,none
+registry_or_admission_mutation,none
+scheduler_or_solver_launch,none
+fluid_or_external_edit,none
+fit_or_model_selection,none
+protected_scoring,none
+source_property_release,none
+candidate_freeze,none

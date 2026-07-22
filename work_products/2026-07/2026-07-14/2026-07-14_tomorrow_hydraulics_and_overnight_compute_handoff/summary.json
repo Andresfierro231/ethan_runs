@@ -1,0 +1,21 @@
+{
+  "task_id": "AGENT-368",
+  "date": "2026-07-14",
+  "status": "complete",
+  "current_node": "c318-008.ls6.tacc.utexas.edu",
+  "jobs_observed": ["3293924", "3295120", "3295968", "3295438"],
+  "jobs_submitted_by_this_task": [],
+  "native_solver_outputs_mutated": false,
+  "external_fluid_code_edited": false,
+  "thermal_fit_used": false,
+  "global_multiplier_exported": false,
+  "primary_recommendation": "Do not duplicate active/pending jobs; harvest 3293924/3295438/3295968 as they finish, then run F6/H1 gates.",
+  "hydraulics_state": {
+    "tap_lengths_resolved_rows": 12,
+    "test_section_complex_blocked_rows": 3,
+    "component_cluster_k_fit_admissible_rows": 0,
+    "fluid_reset_development_api_available": true,
+    "h1_faithful_launchable": false,
+    "f6_launchable": false
+  }
+}

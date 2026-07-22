@@ -1,0 +1,7 @@
+target_id,target,source_path,status,caption_guardrail
+F01,model-form ladder table,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/model_form_summary.csv,ready,Label diagnostic and blocked candidates separately.
+F02,blocked scorecard waterfall,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/blocked_scorecard_waterfall_panel.csv,ready,Final score remains zero until freeze.
+F03,source/property release gate table,work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/release_unblock_matrix.csv,ready,Release-ready rows remain zero.
+F04,heat residual owner table,work_products/2026-07/2026-07-22/2026-07-22_heat_loss_source_inventory_material_geometry_phases/heat_path_lane_contract.csv,ready,Do not absorb residual into internal Nu.
+F05,pressure endpoint blocker table,work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/endpoint_requirement_contract.csv,ready,CAND001 terminal endpoint readiness remains gated.
+F06,reverse-flow switching design table,work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/switching_state_taxonomy.csv,ready,No switching coefficients admitted.

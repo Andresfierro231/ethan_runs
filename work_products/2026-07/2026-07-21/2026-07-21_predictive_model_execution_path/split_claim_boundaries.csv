@@ -1,0 +1,7 @@
+claim_class,row_family,fit_allowed,model_selection_allowed,score_allowed,claim_strength,required_release_gate,forbidden_use
+train_calibration,"salt1_nominal; salt2_jin_nominal; salt3_jin_nominal; salt4_nominal",yes,yes,yes,"training residual and fitted-term calibration claim","row admission plus source/property labels","none beyond standard runtime leakage"
+development_validation_support,"salt1_lo10q; salt1_hi10q; salt4_lo5q; predeclared within-training checks",limited,limited,yes,"robustness and sensitivity claim; not blind holdout","support-row admission, label preservation, and predeclared candidate family","do not present as final blind validation or external validation"
+holdout_testing,"salt2_lo5q; salt2_hi5q",no,no,yes,"frozen-model holdout score claim","final candidate frozen before release; PM5 extraction/admission as needed; source/property labels","no fitting, tuning, source-envelope relaxation, or model choice"
+external_test,val_salt2,no,no,yes,"external-style score claim","final candidate frozen; matching heat-loss/admission package; source/property labels","no training reclassification; no runtime use of external realized heat, pressure, mdot, or temperatures"
+future_holdout_external,"Salt2/Salt4 +/-10Q; PM10; new CFD",no,no,blocked_until_release,"future score-only claim","terminal harvest, row-specific admission, source/property labels, and frozen model","no use before terminal/admission release"
+

@@ -1,0 +1,6 @@
+required_label,accepted_source_columns,fallback,why
+property_mode,property_mode,AGENT-538 case aggregate if available; otherwise source_property_refresh_required,"rho/mu/cp/k mode changes Re, Pr, Gz, buoyancy, and residual interpretation."
+property_sensitivity_label,property_sensitivity_label,AGENT-538 property sensitivity label or source_property_refresh_required,prevents hiding property movement inside closure coefficients.
+source_validity_envelope_status,source_validity_envelope_status;source_overlap_status,AGENT-538 source envelope status or source_property_refresh_required,separates inside-envelope evidence from extrapolation or diagnostic use.
+source_use_category,source_use_category;source_use_categories,blocked_or_diagnostic_until_refresh,"states whether literature/CFD source is fit evidence, gate evidence, diagnostic, or reference."
+provenance_author_title,provenance_author_title;provenance;source_paths,AGENT-546 refresh-required provenance note plus source paths,keeps thesis claims traceable by author/title or exact artifact path.

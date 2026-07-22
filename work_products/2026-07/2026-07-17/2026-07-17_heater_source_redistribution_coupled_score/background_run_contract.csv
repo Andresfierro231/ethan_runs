@@ -1,0 +1,2 @@
+contract_id,timeout_seconds,command,stdout,stderr,policy
+background_srun_coupled_score,273,mkdir -p logs/2026-07-17 && srun -N1 -n1 python3 tools/analyze/build_heater_source_redistribution_coupled_score.py --run-fluid --timeout-seconds 273 > logs/2026-07-17/heater_source_redistribution_coupled_score.out 2> logs/2026-07-17/heater_source_redistribution_coupled_score.err &,logs/2026-07-17/heater_source_redistribution_coupled_score.out,logs/2026-07-17/heater_source_redistribution_coupled_score.err,submit bounded Fluid scoring in background with srun/sbatch or equivalent

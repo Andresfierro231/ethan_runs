@@ -1,0 +1,6 @@
+priority,task,owner_lane,depends_on,action,acceptance
+1,F6_PM5_ONSET_SCORECARD,repo_local_hydraulic,AGENT-406 complete,Score PM5 rows for reverse-flow/onset/F6 readiness; do not fit final residual.,Each PM5 row is observed/bracketed/extrapolated/rejected with source paths and no runtime cheat.
+2,THERMAL_SIGN_HEAT_BALANCE_GATE,repo_local_thermal,thermal admission rows,Resolve sign/heat-balance/downcomer/missing-Nu row classes.,"Every thermal QOI is fit_admissible, validation_only, diagnostic_only, or blocked."
+3,HX_UA_SETUP_ONLY_SCORECARD,external_fluid_plus_repo_scorecard,Fluid hx_ua_multiplier tests,Fit hx_ua_multiplier on Salt2 only; score Salt3/Salt4 without refit.,No CFD cooler duty at runtime; baseline multiplier 1.0 preserved.
+4,RAW_TWO_TAP_PRESSURE_ADMISSION,scratch_cfd_postprocess,AGENT-412 scheduler cleanup or no conflict,"If needed, run scratch-only two-tap extraction and admit/reject pressure terms.",Observed pressure definitions and straight-loss subtraction are explicit.
+5,FINAL_FORWARD_V1_GATE_REBUILD,repo_local_forward,"thermal, hydraulic, and HX rows admitted or blocked",Rebuild final gate from admitted rows only.,"Salt2 train, Salt3 validation, Salt4 holdout are separate; final no-go retained if any gate fails."

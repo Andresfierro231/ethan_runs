@@ -1,0 +1,5 @@
+lane,required_fields,basis_requirement,admission_use_now,notes
+throughflow_enthalpy_endpoint_pair,"T_in,T_out,mdot_throughflow,cp_basis,time_window,endpoint_labels",same time window and same control-volume cut surfaces,false,needed before residual value can be computed
+wall_heat_Q_wall_W,"Q_wall_W,wall_face_set,normal_sign,time_window,mesh_label",same S13 wall faces and no source-side relabel,false,diagnostic only until Qwall/source-property release and mesh/GCI pass
+source_side_static_bc_heat,"Q_source_side_net_static_bc_W,source_face_set,sign,time_window",source-side lane must remain separate from wall heat,false,stable partition supports model design but not coefficient fit
+storage_and_named_losses,"storage_W,other_named_losses_W,uncertainty,source_path",all non-throughflow terms explicit or residual labeled incomplete,false,prevents hidden residual absorption into internal Nu

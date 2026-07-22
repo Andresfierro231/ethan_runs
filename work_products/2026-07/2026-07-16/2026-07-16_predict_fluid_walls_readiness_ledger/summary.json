@@ -1,0 +1,62 @@
+{
+  "task": "TODO-PREDICT-FLUID-WALLS-READINESS-LEDGER",
+  "generated_at": "2026-07-16",
+  "segment_rows": 7,
+  "blocker_rows": 7,
+  "path_rows": 5,
+  "allowed_statuses": [
+    "admitted",
+    "diagnostic",
+    "missing",
+    "partial"
+  ],
+  "status_counts": {
+    "geometry_status": {
+      "admitted": 6,
+      "partial": 1
+    },
+    "material_stack_status": {
+      "partial": 6,
+      "admitted": 1
+    },
+    "pressure_model_status": {
+      "diagnostic": 7
+    },
+    "thermal_circuit_status": {
+      "diagnostic": 5,
+      "partial": 2
+    },
+    "source_sink_role_status": {
+      "partial": 7
+    },
+    "boundary_layer_state_status": {
+      "diagnostic": 6,
+      "missing": 1
+    },
+    "recirculation_flags_status": {
+      "diagnostic": 7
+    },
+    "uncertainty_status": {
+      "partial": 6,
+      "missing": 1
+    }
+  },
+  "acceptance": {
+    "machine_readable_readiness_table": "fluid_walls_segment_readiness_ledger.csv",
+    "machine_readable_blocker_table": "fluid_walls_blocker_table.csv",
+    "shortest_missing_data_path_table": "fluid_walls_shortest_missing_data_path.csv",
+    "runtime_leakage_introduced": false,
+    "native_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false
+  },
+  "outputs": [
+    "fluid_walls_segment_readiness_ledger.csv",
+    "fluid_walls_blocker_table.csv",
+    "fluid_walls_shortest_missing_data_path.csv",
+    "TOMORROW_HANDOFF.md",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ]
+}

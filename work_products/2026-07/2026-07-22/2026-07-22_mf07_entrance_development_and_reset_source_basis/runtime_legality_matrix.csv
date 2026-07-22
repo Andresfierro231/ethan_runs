@@ -1,0 +1,5 @@
+item,runtime_allowed,fit_allowed,diagnostic_allowed,reason
+reset distance and geometry labels,True,False,True,"geometry/reset labels are setup-side context, but no coefficient is released."
+signed TP residuals,False,False,True,post-solve targets are used only for residual-shape diagnosis.
+thermal Graetz correction coefficient,False,False,True,formula/source/property/same-QOI UQ are not released.
+S13 exchange proxy values,False,False,True,"temporal UQ exists, but production/mesh-GCI/source-property/admission gates remain closed."

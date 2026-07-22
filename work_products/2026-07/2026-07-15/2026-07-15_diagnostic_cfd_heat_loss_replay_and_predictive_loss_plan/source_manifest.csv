@@ -1,0 +1,11 @@
+source_id,path,exists,use
+AGENT-350 heat-loss alignment,work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv,true,forced realized wallHeatFlux B2 diagnostic replay rows
+AGENT-350 README,work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/README.md,true,method and diagnostic/predictive distinction
+AGENT-392 best-discrepancy brief,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/best_predictive_heat_loss_discrepancy_refresh/presentation_brief.md,true,presentation-ready current model discrepancy
+AGENT-392 model changes,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/best_predictive_heat_loss_discrepancy_refresh/model_change_recommendations.csv,true,physical refinement recommendations
+AGENT-392 source/sink contract,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/external_bc_thermal_profile_parity_refresh/source_sink_parity_contract.csv,true,setup versus realized source/sink runtime policy
+AGENT-402 train table,work_products/2026-07/2026-07-15/2026-07-15_salt_forward_v1_unblock/salt_training_fit_input_table.csv,true,Salt train/holdout sufficiency under user policy
+AGENT-354 val README,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/README.md,true,Jin/val lineage and admission status
+AGENT-354 val comparison,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/salt2_jin_comparison.csv,true,Jin Salt2 versus val Salt2 differences
+AGENT-354 val summary,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/summary.json,true,val package machine-readable status
+June 29 pressure report,reports/2026-06/2026-06-29/2026-06-29_ethan_salt_pressure_drop_predictivity/cfd_pressure_budget_elements.csv,true,pressure/sensor context for val_salt2

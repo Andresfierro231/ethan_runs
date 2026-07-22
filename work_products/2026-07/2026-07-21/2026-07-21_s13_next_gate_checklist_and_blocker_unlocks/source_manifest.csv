@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+tools/analyze/build_s13_next_gate_checklist_and_blocker_unlocks.py,task_output,true,false,true
+tools/analyze/test_s13_next_gate_checklist_and_blocker_unlocks.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_source_bounded_cv_rerun_from_geometry_seed,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_diagnostic_roi_average_bridge,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design,read_only_context,true,false,false
+.agent/BOARD.md,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks,task_output,true,false,true

@@ -1,0 +1,7 @@
+artifact,source_path,role,mutation_status
+"Pressure basis ladder","work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/pressure_basis_ladder.csv","basis rules and section-effective status","read_only"
+"Pressure basis preflight","work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/pressure_basis_contract.csv","pressure use and release readiness","read_only"
+"Conservative thermal equation ledger","work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/conservative_equation_ledger.csv","energy sign and heat-path lane rules","read_only"
+"Pressure failure packet","work_products/2026-07/2026-07-22/2026-07-22_thesis_pressure_f6_ordinary_basis_failure_packet/f6_component_k_gate_waterfall.csv","component K/F6 blocked evidence","read_only"
+"S10/S14 pressure claim boundaries","work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/pressure_claim_boundary_table.csv","claim boundary context","read_only"
+"This package","work_products/2026-07/2026-07-22/2026-07-22_1d_final_pressure_energy_basis_and_bc_equivalence_contract/**","new additive contract artifacts","created"

@@ -1,0 +1,13 @@
+{
+  "decision": "source_property_exact_field_recovery_fail_closed_zero_release_ready_rows",
+  "row_count": 4,
+  "release_ready_rows": 0,
+  "protected_row_release_rows": 0,
+  "guardrails": {
+    "source_property_release": false,
+    "protected_scoring": false,
+    "coefficient_admission": false,
+    "final_score": false,
+    "scheduler_action": "none"
+  }
+}

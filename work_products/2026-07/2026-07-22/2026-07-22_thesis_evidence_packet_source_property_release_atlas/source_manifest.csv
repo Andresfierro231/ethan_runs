@@ -1,0 +1,7 @@
+source_id,path,use,mutation_status
+nominal_train_release_audit,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv,nominal release row basis,read_only
+protected_row_release_audit,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/protected_row_release_audit.csv,protected release count basis,read_only
+source_family_blocker_rollup,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/source_family_blocker_rollup.csv,source-family blocker basis,read_only
+candidate_lane_consequences,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/candidate_lane_consequences.csv,candidate consequence basis,read_only
+mf13_summary,work_products/2026-07/2026-07-22/2026-07-22_mf13_signed_source_property_heat_path_release_preflight/summary.json,signed heat-path preflight context,read_only
+s12_summary,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate/summary.json,S12 source/property freeze-gate context,read_only

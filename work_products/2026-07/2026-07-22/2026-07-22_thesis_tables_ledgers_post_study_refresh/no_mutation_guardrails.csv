@@ -1,0 +1,15 @@
+guardrail,status,evidence
+compact_ledger_mutated,false,This task produced proposed deltas only
+source_index_mutated,false,This task produced update plan only
+external_papers_edit,false,No external papers path was edited
+latex_body_edited,false,No .tex or thesis body prose edit
+native_CFD_outputs_mutated,false,No native solver output mutation
+registry_mutated,false,No registry/admission state touched
+scheduler_action,false,No scheduler action
+solver_or_postprocessing_launched,false,No solver postprocessing sampler harvest or UQ launch
+source_property_release,false,Release-ready rows remain zero
+qwall_release,false,S13 Qwall/source-property release remains false
+coefficient_admission,false,No pressure/upcomer/wall-core coefficient admitted
+candidate_freeze,false,No runtime-legal candidate freeze
+final_score_claim,false,Final score remains unreleased
+runtime_leakage_relaxed,false,Forbidden runtime inputs remain forbidden

@@ -1,0 +1,33 @@
+{
+  "task": "TODO-1D-AMX1-AXIAL-MIXING-FLUID-API-HANDOFF-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "handoff_superseded_by_existing_fluid_smokes_no_new_amx1_expansion",
+  "original_dry_contract_status": "superseded_by_existing_external_fluid_smokes",
+  "current_amx1_api_root_ledger_status": "implemented_and_smoked_for_basic_forms",
+  "reviewed_campaigns": 5,
+  "reviewed_amx1_rows": 16,
+  "all_reviewed_roots_pass": true,
+  "all_reviewed_ledgers_nonzero": true,
+  "all_reviewed_ledgers_conservative": true,
+  "forms_ready_for_salt1_4_expansion": 0,
+  "forms_ready_for_candidate_freeze": 0,
+  "source_property_release": false,
+  "fit_or_model_selection_run": false,
+  "validation_holdout_external_rows_scored": 0,
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "next_primary_lane": "setup_only_wall_test_section_passive_boundary_candidates",
+  "next_conditional_amx1_lane": "new_source_evidence_before_new_fluid_form",
+  "required_before_next_amx1_external_row": [
+    "signed_local_exchange_direction",
+    "wall_core_stratification_shape_near_TW5_TW6",
+    "source_bounded_exchange_envelope",
+    "same_label_mesh_gci_for_s13_exchange_qois",
+    "paired_progression_gate"
+  ],
+  "guardrail_summary": "No new Fluid row should be claimed for AMX1 multiplier-only tuning, duplicate pairwise API work, Salt1-Salt4 expansion, fitting, model selection, candidate freeze, validation, holdout, or external-test scoring."
+}

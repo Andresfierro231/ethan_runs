@@ -1,0 +1,5 @@
+path_id,case_count,mean_abs_Tmean_error_K,max_abs_Tmean_error_K,mean_abs_loop_delta_T_error_K,max_abs_loop_delta_T_error_K,mean_abs_pressure_residual_Pa,max_abs_pressure_residual_Pa,thermal_gate_pass,pressure_is_diagnostic_not_gate,interpretation,radiation_on,best_case_count
+N0_current_fluid_rad_off,3,81.130364,94.31129,1.184152,1.309975,28.145927,34.996697,False,True,Current Fluid contract with radiation disabled; reference only.,False,1
+N1_heater_cooler_imposed_rad_off,3,4.93387,7.031594,0.149716,0.330061,32.618164,33.498607,False,True,Tests whether imposing heater and cooler setup terms together fixes the first-order thermal state.,False,1
+N2_cfd_setup_bc_plus_passive_conv_rad_off,3,22.650368,25.067664,1.013976,1.404867,24.046834,25.034694,False,True,Radiation-off hA/Ta sensitivity: setup sources/sinks plus hA/Ta convection-only external losses. Superseded as CFD parity after AGENT-277/287.,False,1
+N3_realized_wallflux_diagnostic_rad_off,3,118.919783,210.287628,0.323563,0.512091,5119.778776,15250.340104,False,True,Fixed-Q realized-wallHeatFlux diagnostic; useful for heat accounting but not a predictive boundary model.,False,1

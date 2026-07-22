@@ -1,0 +1,6 @@
+artifact,path,use
+agent406_repaired_metrics,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,primary Salt2 PM5 metric rows
+agent406_field_validation,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_vtk_field_validation.csv,required VTK field validation
+agent406_command_manifest,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/command_log_manifest.csv,repaired staged-copy command provenance
+agent406_summary,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json,repaired package summary
+july14_broken_contract,work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/README.md,known failure mode not to rerun unchanged

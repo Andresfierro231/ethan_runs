@@ -1,0 +1,4 @@
+scenario,metric,value,release_status
+global_passive_half,TW5_improvement_K,51.63369382647278,not_repair_ready
+lower_leg_passive_half,TW5_improvement_K,4.59310690807564,not_repair_ready
+runtime_operator_nominal,q_loss_W,873.2718786177952,diagnostic_smoke_only

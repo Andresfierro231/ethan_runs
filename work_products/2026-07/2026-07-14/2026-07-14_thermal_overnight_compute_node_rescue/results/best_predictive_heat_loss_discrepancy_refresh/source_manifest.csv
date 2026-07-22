@@ -1,0 +1,7 @@
+source_path,exists,row_count,sha256,role
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_results.csv,True,6,e097ebfc0150c5a57d2c384f240435e8cd96f41627c6ee6f3b5acbefe42bf834,best model solve_case results and heater/cooler totals
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_segment_states.csv,True,276,42108d92fd1f119d26d96b84407d594882eea3ee560749e05d31ef28b9b3510a,best model per-segment source/HX/ambient losses
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_vs_fast_scan_comparison.csv,True,6,221f0d773f7e8edb5fb14f6125fad2d00e48c6af8c7a29e3e091aad14d8bee2c,solve_case authority over fast_scan
+work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/section_heat_balance.csv,True,24,e56051f586d53db85b3efa6a2129db36db502f88bed095e0f757f4551a074f82,CFD imposed/realized heat by comparison leg
+work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv,True,90,00cd80f61525313346a21f5fe3601f8d152e6b0d4648b1a257eb4946db25e519,prior diagnostic heat-loss alignment context
+work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/boundary_model_task_matrix.csv,True,5,8a078e540900da3e28cf6e9db7689833a78ac52b91d789e0533965bf336fa5ab,model-change task mapping and guardrails

@@ -1,0 +1,9 @@
+capability,status,evidence_source,interpretation,next_action
+disabled_default_api,implemented_and_smoked,Salt2 and Salt1-Salt4 AMX1 smoke summaries,Defaults and finite roots are no longer the AMX1 blocker,Keep as required regression gate.
+conservative_axial_mixing_ledgers,implemented_and_smoked,Salt2 localized lower multiplier gradient clipped parent-cell summaries,AMX1 ledgers were nonzero and conservative in tested rows,Keep ledger residual checks in any future row.
+configurable_multiplier,implemented_and_smoked,lower-multiplier smoke summary,Multiplier strength can be varied but scalar reduction alone did not reverse TP/all-probe regressions,Do not retry multiplier-only tuning.
+localized_target_forms,implemented_and_smoked,localized-form and lower-multiplier summaries,Upper/lower vertical-only localization narrowed magnitude but did not pass progression,Do not expand localized pairwise forms without new source evidence.
+gradient_clip,implemented_and_smoked,gradient-clipped smoke summary,Gradient clipping reduced maximum positive core delta but still worsened all_rmse_K and tp_rmse_K,Do not expand clipped form to Salt1-Salt4.
+parent_cell_exchange,implemented_and_smoked,physics-revision smoke summary,Parent-scale exchange was a real model-form revision but performed worse than clipped pairwise result,Do not continue parent-cell AMX1 without new CFD structure evidence.
+source_property_release,closed,this packet and prior source/property gates,No AMX1 source/property label is released for fit/model selection,Require separate source/property release row before scoring.
+validation_or_holdout_scoring,closed,this packet,No validation holdout or external-test row was scored,Remain closed until candidate freeze.

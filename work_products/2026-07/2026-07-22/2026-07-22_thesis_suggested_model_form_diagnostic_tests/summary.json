@@ -1,0 +1,26 @@
+{
+  "admission_status": "diagnostic_not_admitted",
+  "best_transfer_diagnostic_id": "D4_M3_segment_offsets_min2_train",
+  "best_transfer_mean_signed_error_K": 3.486151191637737,
+  "best_transfer_rmse_K": 7.940403491512912,
+  "best_transfer_rmse_delta_vs_m3_K": -9.424125818066761,
+  "best_transfer_rmse_reduction_vs_m3_pct": 54.2722791389897,
+  "decision": "diagnostic_model_form_tests_executed_scoreboard_addendum_only",
+  "finite_input_rows": 180,
+  "input_signed_error_rows": 204,
+  "m3_transfer_rmse_K": 17.364529309579673,
+  "phase_runtime_s": {
+    "construct_forms_s": 0.00027806300204247236,
+    "load_inputs_s": 0.002694052003789693,
+    "score_forms_s": 0.003909032035153359,
+    "total_runtime_s": 0.16839051799615845,
+    "write_outputs_s": 0.16150407103123143
+  },
+  "scored_sensor_rows": 270,
+  "task": "TODO-THESIS-SUGGESTED-MODEL-FORM-DIAGNOSTIC-TESTS-2026-07-22",
+  "tested_forms": 6,
+  "total_runtime_s": 0.16839051799615845,
+  "train_rows_per_m3_form": 15,
+  "transfer_rows_per_m3_form": 30,
+  "uses_transfer_targets_for_fit": false
+}

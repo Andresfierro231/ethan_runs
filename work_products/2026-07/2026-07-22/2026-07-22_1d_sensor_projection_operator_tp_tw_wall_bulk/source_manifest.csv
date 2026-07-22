@@ -1,0 +1,6 @@
+artifact,path,use
+N4 sensor/QOI projection table,work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table,"sensor mapping, score policy, caveats"
+D2 TP/TW projection gate,work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate,bulk-to-TP correction non-release and diagnostic RMSE context
+TP/TW elevation panels,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels,elevation and segment mapping context
+signed-error shape dispatch,work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch,residual-shape context
+master model-form scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard,source path and score-only status context

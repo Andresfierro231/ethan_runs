@@ -1,0 +1,11 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_m2_score_release_decision_packet/summary.json,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_m2_score_release_decision_packet/holdout_rows_still_blocked.csv,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_salt1_support_closeout/summary.json,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_qos_retry_monitor/summary.json,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_qos_retry_monitor/qos_submit_window.csv,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_post_exit_rollup/summary.json,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_high_heat_terminal_watch_two_tap_update/summary.json,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_high_heat_terminal_watch_two_tap_update/two_tap_cand001_readiness_update.csv,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_forward_blocker_unlock_runbook/blocker_unlock_runbook.csv,yes,input_to_next_progress_blocker_analysis,read_only
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/blocker_frontier_ledger.csv,yes,input_to_next_progress_blocker_analysis,read_only

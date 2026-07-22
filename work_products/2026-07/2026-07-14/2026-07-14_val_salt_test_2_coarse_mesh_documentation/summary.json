@@ -1,0 +1,26 @@
+{
+  "admission_conclusion": "val_salt_test_2_coarse_mesh is historical/diagnostic until explicitly re-admitted; salt2_jin remains current mainline nominal evidence with thermal-drift caveat.",
+  "boundary_patch_detail_rows": 138,
+  "boundary_summary_rows": 18,
+  "canonical_display_label": "val_salt_test_2_coarse_mesh",
+  "comparison_rows": 18,
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_at": "2026-07-14T16:09:09",
+  "legacy_source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "material_property_rows": 18,
+  "native_cfd_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/README.md",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/lineage_migration_plan.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_summary.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_patch_detail.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/material_property_evidence.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/salt2_jin_comparison.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/source_manifest.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/summary.json"
+  ],
+  "registry_mutated": false,
+  "runtime_lineage": "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation",
+  "salt2_jin_comparator": "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation",
+  "task": "AGENT-354"
+}

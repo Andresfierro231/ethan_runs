@@ -1,0 +1,79 @@
+{
+  "task": "TODO-S13-MEDIUM-FINE-MESH-GCI-DISPOSITION-2026-07-22",
+  "task_id": "TODO-S13-MEDIUM-FINE-MESH-GCI-DISPOSITION-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Quantify S13 medium/fine exact-label mesh sensitivity for four exchange-cell QOIs and fail closed on formal GCI/admission without same-label coarse evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/BLOCKERS.md",
+    ".agent/STATE.md",
+    ".agent/catalog.csv",
+    ".agent/catalog.json",
+    ".agent/status/2026-07-22_TODO-S13-MEDIUM-FINE-MESH-GCI-DISPOSITION-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-medium-fine-mesh-gci-disposition.md",
+    "imports/2026-07-22_s13_medium_fine_mesh_gci_disposition.json",
+    "tools/analyze/build_s13_medium_fine_mesh_gci_disposition.py",
+    "tools/analyze/test_s13_medium_fine_mesh_gci_disposition.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "tools/README.md",
+    "tools/analyze/compute_gci.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_exact_label_qoi_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_terminal_window_reductions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/mesh_gci_unlock_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_s13_medium_fine_mesh_gci_disposition.py",
+      "result": "passed, 5 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_medium_fine_mesh_gci_disposition.py tools/analyze/test_s13_medium_fine_mesh_gci_disposition.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_s13_medium_fine_mesh_gci_disposition.py",
+      "result": "passed; generated 12 case/QOI spread rows and 4 QOI disposition rows"
+    },
+    {
+      "command": "python3 tools/docs/build_repo_index.py",
+      "result": "passed; indexed 2961 docs, 11 board rows, and 15 blockers"
+    }
+  ],
+  "outputs": {
+    "package": "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition",
+    "decision": "medium_fine_mesh_disposition_complete_formal_gci_fail_closed_no_admission",
+    "case_qoi_spread_rows": 12,
+    "qoi_summary_rows": 4,
+    "max_Q_wall_medium_fine_relative_percent_vs_fine": 0.5029174998089355,
+    "max_proxy_medium_fine_relative_percent_vs_fine": 95.49934289848039
+  },
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_action": false,
+    "solver_or_openfoam_postprocess_launched": false,
+    "sampler_or_harvest_launched": false,
+    "formal_gci_run": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "validation_holdout_external_scoring": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "generated_docs_index_refreshed": true,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "thesis_body_mutated": false,
+  "no_scorecard_outputs": true,
+  "decision": "medium_fine_mesh_disposition_complete_formal_gci_fail_closed_no_admission"
+}

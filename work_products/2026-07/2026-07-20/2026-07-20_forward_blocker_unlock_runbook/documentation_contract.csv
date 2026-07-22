@@ -1,0 +1,12 @@
+artifact,required_for,minimum_contents,validation_or_check
+.agent/status/<date>_<TASK>.md,all follow-up agents,"objective, changes made, result, validation commands/results, unresolved blockers, guardrails for native-output registry scheduler Fluid fitting model-selection admission mutations",finish_task.py verifies existence and task link
+.agent/journal/<date>/<slug>.md,all follow-up agents,"attempted, observed, inferred, caveats/contradictions, next useful actions, source paths",finish_task.py verifies existence and task link
+imports/<date>_<slug>.json,all follow-up agents,"changed_files, read_only_context, native_solver_outputs_mutated, registry_mutated, scheduler_action, external_fluid_edit, fitting/model-selection/admission flags, validation commands",finish_task.py verifies required manifest fields and changed path existence
+README.md or operational note,all durable research packages,"why the package exists, files to open first, result, outputs, guardrails, how to continue without chat logs",manual review plus source_manifest.csv
+source_manifest.csv,all research packages,"exact source paths, exists flag, role of each source, mutation status",manual review
+runtime_input_audit.csv,predictive scorecard/intake packages,"forbidden runtime input gates and evidence for pass/fail",runtime_input_lint.py plus task-specific audit
+source_property_gate_report.csv,scorecard/admission packages,"strict source/property gate output or explicit no_scorecard_outputs true manifest flag",source_property_gate.py --strict
+root_status_by_case.csv,Fluid solve packages,"case, scenario, root_status, accepted_for_validation, pressure/temperature bracket flags, rejection reason",task-specific root acceptance check
+candidate_admission_review.csv,scorecard packages,"candidate-level admission decision, blocking reasons, train/validation/holdout/release-gate status",manual review plus source_property_gate.py
+topic map update,packages that change forward/pressure state,"short dated update in operational_notes/maps/forward-predictive-model.md or pressure-and-momentum-budget.md",review diff and finish_task.py
+finish_task.py output,all follow-up agents,"finish_task: OK or documented failure with reason",python3.11 tools/agent/finish_task.py --task-id <TASK>

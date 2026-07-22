@@ -1,0 +1,10 @@
+source_id,source_path,role,mutation_status
+S6-SRC-001,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/frozen_candidate_manifest.csv,read_only_evidence,not_modified
+S6-SRC-002,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/split_role_scorecard_shell.csv,read_only_evidence,not_modified
+S6-SRC-003,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/pressure_residual_waterfall_shell.csv,read_only_evidence,not_modified
+S6-SRC-004,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/thermal_residual_waterfall_shell.csv,read_only_evidence,not_modified
+S6-SRC-005,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/runtime_leakage_audit.csv,read_only_evidence,not_modified
+S6-SRC-006,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/shortest_next_evidence_action.csv,read_only_evidence,not_modified
+S6-SRC-007,work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/blocked_scorecard_shell.csv,read_only_evidence,not_modified
+S6-SRC-008,work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/quantitative_visual_manifest.csv,read_only_evidence,not_modified
+S6-SRC-009,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/summary.json,read_only_evidence,not_modified

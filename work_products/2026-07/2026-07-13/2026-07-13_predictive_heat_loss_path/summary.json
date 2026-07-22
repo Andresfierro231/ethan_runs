@@ -1,0 +1,28 @@
+{
+  "baseline_mean_abs_Tmean_error_K": 63.745999999999995,
+  "control_volume_rows": 15,
+  "cooler_duty_mean_abs_error_reduction_K": 59.28966666666666,
+  "cooler_duty_mean_abs_error_reduction_pct": 93.00923456635188,
+  "cooler_duty_parity_mean_abs_Tmean_error_K": 4.456333333333333,
+  "cooler_hx_rows": 3,
+  "created_utc": "2026-07-13T17:39:25+00:00",
+  "fit_candidate_control_volume_rows": 0,
+  "fit_use_status_counts": {
+    "blocked": 3,
+    "diagnostic": 6,
+    "validation": 6
+  },
+  "high_backflow_interface_rows": 12,
+  "no_qr_interface_rows": 48,
+  "primary_finding": "cooler/HX duty parity remains first-order; internal Nu/profile fitting is blocked until thermal admission and uncertainty gates clear",
+  "replay_score_rows": 15,
+  "source_packages": {
+    "legacy_segment_htc_uaprime": "work_products/2026-07/2026-07-01/2026-07-01_claude_thermal_downcomer",
+    "patchwise_heat_ledger_enthalpy_interfaces": "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces",
+    "thermal_boundary_patch_role_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table",
+    "thermal_mismatch_remedy_deep_dive": "work_products/2026-07/2026-07-08/2026-07-08_thermal_mismatch_remedy_deep_dive",
+    "thermal_openfoam_interface_sampling": "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling"
+  },
+  "task_id": "AGENT-270",
+  "thermal_closure_admission_decision": "no_new_admission_changes"
+}

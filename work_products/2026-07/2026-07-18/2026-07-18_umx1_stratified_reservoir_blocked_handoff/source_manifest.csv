@@ -1,0 +1,10 @@
+source_type,path,used_for,mutation_status
+input,../cfd-modeling-tools/.agent/BOARD.md,External Fluid ownership blocker evidence,read_only
+input,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,Current UMX hook/source-row implementation shape,read_only
+input,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,Current source-row parsing behavior,read_only
+input,../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,Current UMX focused test surface,read_only
+input,work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/summary.json,AGENT-540 hook status,read_only
+input,work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/summary.json,AGENT-544 smoke stop signal,read_only
+output,work_products/2026-07/2026-07-18/2026-07-18_umx1_stratified_reservoir_blocked_handoff/,Blocked handoff package,mutated
+output,work_products/2026-07/2026-07-18/2026-07-18_umx1_stratified_reservoir_blocked_handoff/assumptions_and_decisions.csv,Assumption and decision register,mutated
+output,work_products/2026-07/2026-07-18/2026-07-18_umx1_stratified_reservoir_blocked_handoff/NEXT_SESSION_CONTEXT.md,Next-session restart context and do-not-do guardrails,mutated

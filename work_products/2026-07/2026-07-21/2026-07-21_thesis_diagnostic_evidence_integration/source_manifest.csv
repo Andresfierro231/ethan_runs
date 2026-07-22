@@ -1,0 +1,12 @@
+source_path,exists,use_in_package,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json,true,S4 counts and non-admission state,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/ordinary_closure_disable_table.csv,true,ordinary closure exclusion source rows,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/reverse_flow_onset_evidence_ledger.csv,true,RAF/RMF/SVF guard source rows,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/throughflow_recirc_variable_contract.csv,true,future exchange-variable contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv,true,upcomer exchange missing-field preflight,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/source_family_readiness.csv,false,terminal/source readiness context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv,true,energy residual owner matrix,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/phase3_release_gate.csv,true,wall/test-section negative gate,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/phase4_decision_gate.csv,true,upcomer exchange/internal-Nu decision gate,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/attempt_outcome_matrix.csv,true,pressure diagnostic outcome matrix,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/blocker_analysis.csv,true,pressure/same-QOI blocker analysis,read_only

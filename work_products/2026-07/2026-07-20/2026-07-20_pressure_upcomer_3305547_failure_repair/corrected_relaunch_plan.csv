@@ -1,0 +1,2 @@
+plan_id,case_count,policy,preflight,submit_policy,admission_policy
+isolated_one_case_relaunch,6,run each case independently so one corrupted T field does not kill all rows,bash work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/scripts/run_upcomer_matched_plane_compute.sh preflight,manual_or_separate_sbatch_after_preflight,rerun parser and admission rollup; do not fit from partial/diagnostic rows

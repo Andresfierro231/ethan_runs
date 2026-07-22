@@ -1,0 +1,2 @@
+source_task,source_path,status,completed_rows,admitted_rows,note
+AGENT-511,work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score,completed_evidence_available,27,0,Read-only imported evidence; AGENT-522 does not duplicate AGENT-511 scoring

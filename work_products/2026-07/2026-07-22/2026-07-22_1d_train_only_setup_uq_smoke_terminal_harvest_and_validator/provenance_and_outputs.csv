@@ -1,0 +1,10 @@
+artifact_role,path,observed_status
+scheduler_accounting,Slurm job 3310985,COMPLETED 0:0 elapsed 00:38:40
+run_log,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/logs/run_smoke.log,nonempty summary log
+validator_log,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/logs/test_after_smoke.log,validator OK
+baseline_output,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/baseline_root_and_qoi_smoke.csv,3 rows
+variant_output,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/one_at_a_time_setup_uq_smoke.csv,33 rows
+mdot_heat_sensitivity,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv,33 rows
+sensor_sensitivity,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_sensitivity.csv,diagnostic rows only
+residual_owner_sensitivity,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/residual_owner_sensitivity.csv,36 diagnostic_missing_cp rows
+summary,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json,train_only_setup_uq_smoke_executed_no_release_no_score

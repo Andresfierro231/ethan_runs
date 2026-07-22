@@ -1,0 +1,14 @@
+{
+  "admitted_candidates": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 12,
+  "coupled_status_counts": {
+    "completed": 12
+  },
+  "created_utc": "2026-07-17T16:21:49.494614+00:00",
+  "local_test_section_gate": "diagnostic_nonblocking_fail",
+  "pb1_static_gate": "pass",
+  "task": "AGENT-494",
+  "why": "PB1 passive-total static evidence is promising, but no PB1+cooler candidate has passed all coupled admission gates."
+}

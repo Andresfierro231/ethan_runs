@@ -1,0 +1,7 @@
+check,status,evidence
+native_solver_outputs_mutated,pass,Builder reads only completed work_products CSV/JSON/README artifacts and writes only AGENT-515 package outputs.
+scheduler_or_solver_launched,pass,"No sbatch, srun, Fluid, OpenFOAM, or postprocessing command is invoked by the builder."
+duplicate_coupled_scoring_submitted,pass,All coupled metrics are consumed from AGENT-494/498 completed tables.
+heldout_external_fit_or_tuning,pass,Salt3/Salt4 values are used only for scoring/diagnosis; val_salt2 and blind rows are not used.
+scientific_admission_state_changed,pass,Outputs are diagnostic; freeze decision remains blocked with zero admitted wall candidates.
+active_agent_overlap,pass,AGENT-511/513/514 active scopes are cited as read-only or downstream; no files in those scopes are written.

@@ -1,0 +1,4 @@
+comparison_id,baseline_variant_id,perturbation_variant_id,changed_parameter,baseline_wallHeatFlux_integral_W,perturbation_wallHeatFlux_integral_W,delta_wallHeatFlux_integral_W,baseline_wallHeatFlux_mean_W_m2,perturbation_wallHeatFlux_mean_W_m2,delta_wallHeatFlux_mean_W_m2,effect_detected
+baseline_vs_emissivity_low,baseline,emissivity_low,emissivity,7.498634340000002,-651.1440777,-658.64271204,0.2449291192349717,-21.268425448473263,-21.513354567708234,True
+baseline_vs_emissivity_zero,baseline,emissivity_zero,emissivity,7.498634340000002,-801.6461069,-809.1447412399999,0.2449291192349717,-26.184297834083246,-26.429226953318217,True
+baseline_vs_tsur_high,baseline,tsur_high,Tsur,7.498634340000002,1919.9962236,1912.4975892599998,0.2449291192349717,62.713150527321105,62.46822140808613,True

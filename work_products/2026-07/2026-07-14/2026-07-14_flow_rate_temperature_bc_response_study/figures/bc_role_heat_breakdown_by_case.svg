@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="390" viewBox="0 0 820 390">
+<!-- generated_by=AGENT-351; source=work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv -->
+<rect width="100%" height="100%" fill="#fcfcfb"/>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#111}.title{font-size:19px;font-weight:700}.lbl{font-size:11px}.legend{font-size:11px}</style>
+<text x="32" y="28" class="title">Patch-role realized wallHeatFlux by mainline Salt case</text>
+<line x1="500" x2="500" y1="48" y2="335" stroke="#bdb8ad"/>
+<text x="220" y="74" text-anchor="end" class="lbl">salt_test_2_jin_coarse_mesh</text>
+<rect x="500.0" y="58" width="196.1" height="10" fill="#12664f"><title>heater 243.519 W</title></rect>
+<rect x="390.2" y="71" width="109.8" height="10" fill="#3267a8"><title>cooler -136.351 W</title></rect>
+<rect x="449.9" y="84" width="50.1" height="10" fill="#b26a00"><title>ambient_wall -62.234 W</title></rect>
+<rect x="495.4" y="97" width="4.6" height="10" fill="#8a5a9e"><title>test_section -5.680 W</title></rect>
+<rect x="468.5" y="110" width="31.5" height="10" fill="#6d6a63"><title>junction_other -39.128 W</title></rect>
+<text x="220" y="149" text-anchor="end" class="lbl">salt_test_3_jin_coarse_mesh</text>
+<rect x="500.0" y="133" width="219.9" height="10" fill="#12664f"><title>heater 273.155 W</title></rect>
+<rect x="378.6" y="146" width="121.4" height="10" fill="#3267a8"><title>cooler -150.770 W</title></rect>
+<rect x="445.0" y="159" width="55.0" height="10" fill="#b26a00"><title>ambient_wall -68.320 W</title></rect>
+<rect x="491.5" y="172" width="8.5" height="10" fill="#8a5a9e"><title>test_section -10.545 W</title></rect>
+<rect x="465.2" y="185" width="34.8" height="10" fill="#6d6a63"><title>junction_other -43.235 W</title></rect>
+<text x="220" y="224" text-anchor="end" class="lbl">salt_test_4_jin_coarse_mesh</text>
+<rect x="500.0" y="208" width="250.0" height="10" fill="#12664f"><title>heater 310.487 W</title></rect>
+<rect x="363.7" y="221" width="136.3" height="10" fill="#3267a8"><title>cooler -169.227 W</title></rect>
+<rect x="438.9" y="234" width="61.1" height="10" fill="#b26a00"><title>ambient_wall -75.927 W</title></rect>
+<rect x="486.5" y="247" width="13.5" height="10" fill="#8a5a9e"><title>test_section -16.769 W</title></rect>
+<rect x="461.0" y="260" width="39.0" height="10" fill="#6d6a63"><title>junction_other -48.485 W</title></rect>
+<rect x="570" y="68" width="12" height="9" fill="#12664f"/>
+<text x="588" y="76" class="legend">heater</text>
+<rect x="570" y="85" width="12" height="9" fill="#3267a8"/>
+<text x="588" y="93" class="legend">cooler</text>
+<rect x="570" y="102" width="12" height="9" fill="#b26a00"/>
+<text x="588" y="110" class="legend">ambient_wall</text>
+<rect x="570" y="119" width="12" height="9" fill="#8a5a9e"/>
+<text x="588" y="127" class="legend">test_section</text>
+<rect x="570" y="136" width="12" height="9" fill="#6d6a63"/>
+<text x="588" y="144" class="legend">junction_other</text>
+</svg>

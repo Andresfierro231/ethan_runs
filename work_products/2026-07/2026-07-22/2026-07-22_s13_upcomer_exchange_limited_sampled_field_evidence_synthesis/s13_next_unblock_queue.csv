@@ -1,0 +1,6 @@
+rank,task_lane,reason,allowed_now_from_this_package,expected_decision
+1,consume_exact_pressure_Q_wall_compute_after_closeout,active exact pressure/Qwall row owns the missing production fields,false,release_or_keep_blocked_Q_wall_W_and_pressure_basis
+2,source_side_heat_flow_QOI_contract,q_net exists but cannot be renamed as Q_wall_W,false,distinct_source_side_QOI_ready_for_UQ_or_blocked
+3,same_qoi_neighbor_window_and_mesh_UQ,"production release requires same label, formula, sign, and basis",false,UQ_ready_or_fail_closed
+4,S8_S12_thermal_residual_ownership_gate,wall/test-section thermal residual ownership must be attributed before S12 freeze,false,exactly_one_train_repair_or_fail_closed
+5,hybrid_pressure_no_fit_bakeoff,pressure negative result can become thesis evidence without coefficient tuning,false,thesis_evidence_only_or_candidate_reviewable

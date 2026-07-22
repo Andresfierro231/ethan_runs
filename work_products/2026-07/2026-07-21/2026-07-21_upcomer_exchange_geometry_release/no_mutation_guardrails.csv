@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,pass_no_mutation,geometry audit reads native case dictionaries and mesh maps only
+scheduler,not_submitted,no Slurm action from geometry release row
+openfoam,not_launched,"no solver, reconstruction, foamPostProcess, foamToVTK, or sampler launch"
+admission,blocked,"no fit, score, model selection, exchange-cell admission, Phase 4B/5/S6 trigger"
+residual_lane,pass,"pressure and energy residuals remain separate lanes, not internal Nu"

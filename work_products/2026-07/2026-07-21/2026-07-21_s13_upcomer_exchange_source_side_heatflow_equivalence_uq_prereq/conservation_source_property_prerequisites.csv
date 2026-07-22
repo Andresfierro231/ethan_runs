@@ -1,0 +1,7 @@
+gate_id,gate,status,release_allowed_now,evidence,next_required
+SRC-01,distinct_qoi_label_and_formula,pass,false,Q_source_side_net_static_bc_W is defined separately from Q_wall_W using Q_source_static_bc_W - Q_sink_static_bc_W,carry this exact label/formula into same-QOI UQ rows
+SRC-02,sign_and_conservation_basis,partial,false,"positive sign convention is documented, but source/sink conservation still needs source/property release",publish source-term provenance and conservation checks for the retained windows
+SRC-03,source_property_basis,fail,false,cp/source-property basis is not released for production heat-flow closure,"release cp_J_kg_K, source validity envelope, and source use category"
+SRC-04,same_qoi_neighbor_windows,fail,false,neighbor-minus and neighbor-plus windows are missing for Q_source_side_net_static_bc_W,"generate same-label, same-formula, same-sign neighbor-window values"
+SRC-05,mesh_or_gci_basis,fail,false,accepted mesh/GCI evidence is absent for Q_source_side_net_static_bc_W,pair retained-window and neighbor-window values with accepted mesh/GCI evidence
+SRC-06,overall_source_side_release,blocked,false,"contract exists, but source/property release and same-QOI UQ remain missing",claim a compute/source row only after exact QOI/UQ inputs are ready

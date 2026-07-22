@@ -1,0 +1,10 @@
+source_id,path,exists,use
+pressure_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,true,pressure prerequisite gates
+thermal_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/segment_thermal_model_scorecard.csv,true,thermal prerequisite gates
+branch_mask,work_products/2026-07/2026-07-17/2026-07-17_branch_specific_ordinary_pipe_scorecard/ordinary_pipe_branch_mask.csv,true,ordinary-pipe exclusion mask
+upcomer_hybrid,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/upcomer_admission_decision.csv,true,hybrid prerequisite gate
+reset_contract,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/hydraulic_reset_development_contract.csv,true,hydraulic reset/development evidence
+station_development,work_products/2026-07/2026-07-08/2026-07-08_hydraulic_closure_rigor_audit/station_development_analysis.csv,true,station development diagnostics
+interface_samples,work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/combined_openfoam_interface_samples.csv,true,thermal interface and backflow evidence
+enthalpy_residuals,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv,true,thermal residual evidence
+sensor_policy,work_products/2026-07/2026-07-17/2026-07-17_sensor_tp2_restore_tw10_exclude/sensor_policy_scorecard.csv,true,TP/TW output target policy

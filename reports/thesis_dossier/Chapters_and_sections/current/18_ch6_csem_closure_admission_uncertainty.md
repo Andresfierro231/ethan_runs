@@ -22,6 +22,14 @@ provenance:
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/README.md
   - operational_notes/07-26/21/2026-07-21_THESIS_POST_S8_S10_EVIDENCE_AND_STUDY_REQUIREMENTS.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/README.md
 tags: [thesis-section, current-section, csem, admission-ledger, uncertainty, split-policy]
 related:
   - reports/thesis_dossier/Chapters_and_sections/current/14_csem_narrative_integration_plan.md
@@ -99,6 +107,9 @@ before a final frozen candidate exists.
 | S11 candidate-specific release refresh | Still trigger-gated. | Cannot run from the current S8/S9/S10 evidence because all three produced `0` S11-ready candidates. |
 | Same-QOI Phase C admission table | Complete as a negative UQ gate result. | Same-QOI Phase C adds a negative UQ gate result: `0` accepted rows and `8` blocked rows, preserving non-admission until row-matched UQ exists. |
 | S12 thermal-shape ownership candidate | Complete as a negative/blocked candidate contract. | S12 adds a new thermal-shape ownership contract, `S12-HIAX1`, but releases `0` admitted and `0` S11-ready candidates until train-only scoring and exchange-state UQ exist. |
+| S13 seeded upcomer exchange inputs | Input-ready / heat-path fail-closed. | Salt2/Salt3/Salt4 have seeded CV/interface/wall-face manifests, but sampler readiness remains `0/3`; heat-path release has `0` `Q_wall_W`, source-side, same-window thermal, or sampler/UQ release rows. |
+| S14 pressure/F6 branch-use scorecard | Complete as diagnostic non-admission. | Scores `53` pressure/F6 rows with `0` admitted, `11` diagnostic-only, `8` future-candidate, and `34` do-not-use rows. |
+| F-J and Phase H/H2 thermal attribution | Complete train-only diagnostics. | Identifies heated-incline/TW5 as dominant residual owner and shows broad passive-hA sensitivity, but releases no repair, freeze, admission, validation, holdout, or external-test score. |
 
 This table should be used as a chapter-level admission snapshot. Completed
 gates can be written as methods/results infrastructure. S8, S9, and S10 are
@@ -224,6 +235,31 @@ feature. Therefore the thesis may discuss those rows as pressure-basis,
 recirculation, and section-effective residual evidence, but not as admitted
 ordinary `component_K`, F6, or a hidden global hydraulic multiplier.
 
+The negative-K dispatch now closes the current component-K forcing path for
+these rows. The literature-supported interpretation is not that a negative
+loss coefficient has been discovered. It is that the coefficient basis is
+invalid for an ordinary one-stream component value. The sign must be preserved,
+but the name must change. The allowed claim is a section-effective pressure
+residual under recirculating endpoint planes. The forbidden claims are ordinary
+component `K`, cluster `K`, F6 recorrection, clipped `K`, and hidden/global
+hydraulic multiplier.
+
+The numeric basis for that wording is small but useful. After hydrostatic and
+kinetic correction, the available signed residuals are Salt2
+`-1.25366731683 Pa`, Salt3 `-1.84957005859 Pa`, and Salt4
+`-1.67833900273 Pa`. The no-fit bakeoff applies the Salt2 diagnostic
+`K_eff_recirc` to the Salt3/Salt4 train rows without refitting; its maximum
+transfer error is `0.47046606946166093438399 Pa`. This is a thesis-scale
+model-form stress test. It is not a validation score, a holdout score, an
+external-test result, or a freeze/admission decision.
+
+| Pressure route | Current decision | Reason |
+| --- | --- | --- |
+| Current lower-right ordinary component `K` | Stop current attempts. | Reverse flow, missing same-basis straight/developing reference, missing component isolation, and missing same-QOI UQ block the basis. |
+| Section-effective residual `Delta_p_recirc_section` | Use as thesis evidence. | Signed residual is finite after basis correction and can be carried as residual ownership. |
+| Salt2-frozen diagnostic transfer | Use as no-fit diagnostic only. | Sub-Pa transfer error on train rows, with `0` protected rows and `0` refitting. |
+| F3/Shah apparent comparison | Not numerically evaluated here. | Existing F3/F6 artifacts withhold comparison until an ordinary admissible F6 candidate exists. |
+
 The S10 study closes the current low-recirculation/F6 review as
 `negative_result_s11_still_blocked`. It reviews `11` candidate rows across
 low-recirculation pressure anchors, current pressure-corner diagnostics, and
@@ -232,6 +268,13 @@ result strengthens the hydraulic limitations chapter: the next useful
 pressure work is a new nonrecirculating or low-reverse-flow anchor with
 same-QOI uncertainty, not a clipped-K, hidden-multiplier, or mixed-basis
 pressure correction.
+
+S14 extends that decision into a broader branch-use scorecard. It scores `53`
+pressure/F6 rows and releases `0` admitted rows: `11` rows are
+diagnostic-only, `8` are future-candidate, and `34` are do-not-use. The
+preferred future ordinary-pressure lanes remain `right_leg` and
+`test_section_span`, while current F6 endpoint pairs remain diagnostic only.
+This is a stronger non-admission result, not an F6 recorrection.
 
 Same-QOI Phase C adds a negative UQ gate result to this pressure story. Its
 `0` accepted rows and `8` blocked rows mean uncertainty is visible as an
@@ -254,6 +297,16 @@ specific: `V_recirc`, `mdot_exchange`, `tau_recirc`, same-window pressure and
 thermal residual support, and same-QOI uncertainty. This is a useful thesis
 result because it converts recirculation from a qualitative caveat into a
 release gate for future hybrid upcomer modeling.
+
+S13 now gives that future hybrid lane a concrete extraction scaffold without
+changing admission status. The seeded input manifest reports Salt2/Salt3/Salt4
+as `3/3` ready for later scheduler-authorized seeded surface extraction, with
+`38880` seeded CV cells, `38880` seeded internal interface faces, and `38880`
+trusted wall faces per case. The downstream gate remains closed: sampler-ready
+rows are `0/3` because raw sampled surface fields, `Q_wall_W`, same-window
+sampler outputs, and same-QOI UQ are absent. The S13 heat-path lane release
+adds a second guard by allowing `0` sampler refresh, harvest, or UQ rows until
+the missing field and heat-path lanes exist.
 
 ## Thermal Admission Gates
 
@@ -297,6 +350,28 @@ selector. It remains a contract only: no finite train-only candidate score,
 exchange-state QOI set, same-QOI UQ, source/property release, S11 trigger, or
 final score is released.
 
+The F-J, Phase H, and H2 external-boundary diagnostics sharpen the same
+thermal admission boundary. F-J recomputes the Salt2 train/support baseline
+with all-probe RMSE `83.36187927489736 K`, TP RMSE `80.4585733904668 K`, TW
+RMSE `84.6486516564125 K`, and mdot `0.00626567502343775 kg/s`; its top
+residual owner is `heated_incline`, with maximum absolute residual
+`109.09380824932663 K`. Phase H shows that lowering all passive `hA` by half
+improves TW5 absolute residual by `51.63369382647278 K` and all-probe MAE by
+`47.133590749185956 K`, while lower-leg-only `hA` halving improves TW5 by
+only `4.59310690807564 K`. H2 therefore classifies the signal as broad
+passive-wall and source-basis evidence requiring an independent
+setup/geometry/literature passive-wall basis before repair. None of these
+train-only diagnostics admits a passive `hA` multiplier, wall/test-section
+closure, S11 candidate, freeze, or final score.
+
+The admissibility rule is therefore positive and negative at the same time.
+Phase E can be cited as a legal executable runtime path, but Phase F/G/I own
+the residual and source/sink boundaries before any repair is selected. Phase H
+can be cited as heat-path responsiveness, but the global response cannot be
+admitted as a fit. The only allowed next step is an independently sourced
+external heat-path or source/sink/redistribution candidate with a fresh runtime
+audit.
+
 **Table insertion:** Route the S8 gate status through Ch. 7 for results, but
 refer to
 `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/acceptance_gate_matrix.csv`
@@ -337,6 +412,27 @@ The current open thesis-facing blockers are:
 Resolved or superseded blockers should not be reintroduced as live limitations.
 They may be mentioned only as historical context if a section names their
 resolved status and source.
+
+## Writer Import Notes
+
+The Ch. 6 LaTeX writer should import the admission framework before importing
+any result table. The immediate main-text table candidates are:
+
+- S6 gate flow:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/s0_s11_gate_flow_table.csv`;
+- S7 sensor policy:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/sensor_overlay_table.csv`;
+- S9 exchange-QOI requirements:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/exchange_qoi_figure_contract.csv`;
+- S13 seeded heat-path fail-close:
+  `work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/heat_path_lane_table.csv`.
+
+The polish backlog for these tables lives in
+`work_products/2026-07/2026-07-21/2026-07-21_thesis_post_study_writing_refresh/figure_table_polish_backlog.csv`.
+The writer should condense wide CSVs for the main text and keep the full
+source tables as appendix material. The captions must preserve the current
+state: `0` final score values, `0` TP/TW runtime permissions, `0` ordinary
+upcomer coefficient admissions, and `0` sampler/UQ release rows from S13.
 
 ## Chapter-Ready Wording
 

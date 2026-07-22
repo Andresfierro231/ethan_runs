@@ -1,0 +1,6 @@
+gate_id,gate_family,required_condition,evidence_path,status,decision,claim_allowed,next_action
+S8-G0,coordination,S8 board row claimed with exact package and script paths.,.agent/BOARD.md,pass,study_can_run_from_existing_evidence,S8 documentation and evidence consolidation only,none
+S8-G1,runtime_leakage,No forbidden target or realized CFD quantity is used as predictive runtime input.,runtime_leakage_audit.csv,pass,runtime contract preserved,runtime-legal evidence screen,none
+S8-G2,prior_candidate_gate,At least one existing wall/test-section candidate passes validation and holdout gates.,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/wall_test_section_candidate_gate_scorecard.csv,fail,0 admitted Phase 3 candidate rows,negative_result,no S11 feed from Phase 3 rows
+S8-G3,AMX_UMX_TSWFC_smoke,Smoke/bounded AMX/UMX/TSWFC evidence produces a candidate ready for Salt1-4 freeze pathway.,smoke_family_verdicts.csv,fail,0 smoke families marked S11-ready,negative_result,revise physical form or wait for S9/source evidence
+S8-G4,S11_release,Exactly one runtime-legal candidate is admission-ready for source/property refresh.,negative_or_admission_ready_summary.csv,fail,0 S11-ready candidates,no final predictive freeze,do not claim S11 until a new candidate passes S8 gates

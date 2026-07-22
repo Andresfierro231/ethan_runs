@@ -1,0 +1,5 @@
+source_id,path,use,mutation
+phase_e_role_rows,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv,baseline external-boundary role rows,False
+phase_e_summary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json,baseline solve result,False
+fj_sensor_residuals,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/sensor_segment_residuals.csv,baseline sensor residual and owner mapping,False
+fj_summary,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/summary.json,baseline metric comparison,False

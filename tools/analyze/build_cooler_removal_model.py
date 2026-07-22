@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build AGENT-482 cooler-removal model comparison package."""
+"""Build the current cooler-removal model comparison package."""
 
 from __future__ import annotations
 
@@ -15,11 +15,11 @@ from pathlib import Path
 from typing import Any, Callable, Iterable
 
 
-TASK = "AGENT-482"
-DATE = "2026-07-17"
+TASK = "TODO-PREDICT-COOLER-REMOVAL"
+DATE = "2026-07-22"
 ROOT = Path(__file__).resolve().parents[2]
 FLUID_ROOT = (ROOT / "../cfd-modeling-tools/tamu_first_order_model/Fluid").resolve()
-OUT_REL = Path("work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model")
+OUT_REL = Path("work_products/2026-07/2026-07-22/2026-07-22_cooler_removal_model")
 OUT = ROOT / OUT_REL
 
 AGENT480_PLAN = ROOT / "operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md"
@@ -641,7 +641,7 @@ status: complete
 ---
 # Cooler Removal Model Candidate Screen
 
-This package implements the AGENT-480 cooler comparison plan for the two next
+This package implements the current cooler comparison plan for the two next
 model families: constant-UA effectiveness/NTU and segmented distributed-UA
 effectiveness/NTU.
 

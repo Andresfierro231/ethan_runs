@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-07-07T17:56:25-05:00",
+  "task": "AGENT-196",
+  "inputs": {
+    "upcomer_cell_dir": "work_products/2026-06-30_claude_upcomer_convection_cell",
+    "momentum_budget_csv": "work_products/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "htc_dir": "work_products/2026-06-30_claude_thermal_htc"
+  },
+  "outputs": {
+    "upcomer_dataset_csv": "work_products/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv",
+    "upcomer_correlation_fit_csv": "work_products/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv"
+  },
+  "counts": {
+    "n_cases": 3,
+    "n_fit_params": 2,
+    "fit_dof": 1
+  },
+  "fit": {
+    "model": "bf = a + b / Re",
+    "a": 0.0538948396315697,
+    "b": 15.930887302919988,
+    "a_se_ols": 0.0006540533914283664,
+    "b_se_ols": 0.05975423385400785,
+    "a_jk_std": 0.0008962969764972281,
+    "b_jk_std": 0.08639834302068648,
+    "sigma_hat": 0.00028149397122674135,
+    "Re_range": [
+      71.12521667906103,
+      134.88326391686644
+    ],
+    "bf_asymptote_high_Re": 0.0538948396315697
+  },
+  "onset_Re": {
+    "route_A": [
+      240.0,
+      260.0
+    ],
+    "route_B": [
+      100.0,
+      235.0
+    ],
+    "note": "Onset Re (cell turns off) is from Route A/B extrapolation, NOT from the linear fit zero-crossing (the fit predicts an asymptote bf->a>0, not bf=0). Route A ~240-260 (Nu/backflow trend). Route B ~100-235 (Ri criterion). Both bracketed from LitRev ch.14."
+  },
+  "monotone_checks": {
+    "bf_decreasing_with_Re": true,
+    "Nu_increasing_with_Re": true
+  },
+  "limitations": [
+    "3 data points only: parameter uncertainty is O(1) at 1 DOF",
+    "Coarse mesh, laminar, single time per case",
+    "Onset Re predictions are extrapolated beyond Re calibration range (68-135)",
+    "Ri_median, Ra_median from section-median of solver fields (exact Lc/DeltaT definition not audited against case setup)",
+    "All perturbation runs (3275448-3275451) still under T2 qualification gate; not admitted to correlation",
+    "Upcomer recirculation cell in UPPER upcomer (TP5/TW8/TP6) is not well captured by this single-station fit; a 2-region model may be needed"
+  ]
+}

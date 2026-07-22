@@ -1,0 +1,7 @@
+case_id,fluid_case_name,variant_id,mdot_kg_s,cfd_mdot_kg_s,mdot_ratio_model_to_cfd,required_resistance_multiplier,additional_resistance_fraction,deltaP_losses_Pa,equivalent_added_loss_at_model_root_Pa,pressure_residual_Pa,thermal_fit_used,hydraulic_only_interpretation
+salt_2,Salt 2,F0_current_fluid_sources,0.020625,0.01318,1.56487101669,2.44882129888,1.44882129888,45.0163256292,65.220611369,1.35164929214,no,increasing_hydraulic_resistance_would_reduce_mdot_toward_cfd
+salt_2,Salt 2,F1_heater_only,0.0178125,0.01318,1.35147951442,1.82649687789,0.826496877886,53.5827882521,44.2860071988,1.08047315238,no,increasing_hydraulic_resistance_would_reduce_mdot_toward_cfd
+salt_3,Salt 3,F0_current_fluid_sources,0.023125,0.01497,1.54475617902,2.38627165264,1.38627165264,45.1407580189,62.5773532201,1.59215447056,no,increasing_hydraulic_resistance_would_reduce_mdot_toward_cfd
+salt_3,Salt 3,F1_heater_only,0.020625,0.01497,1.37775551102,1.89821024815,0.898210248152,52.5299618746,47.1829500908,2.01665106391,no,increasing_hydraulic_resistance_would_reduce_mdot_toward_cfd
+salt_4,Salt 4,F0_current_fluid_sources,0.025625,0.01698,1.50912838634,2.27746848645,1.27746848645,44.7305351206,57.1418489985,0.163716294418,no,increasing_hydraulic_resistance_would_reduce_mdot_toward_cfd
+salt_4,Salt 4,F1_heater_only,0.023125,0.01698,1.36189634865,1.85476166445,0.854761664454,49.9649233291,42.7081010291,-0.933280862668,no,increasing_hydraulic_resistance_would_reduce_mdot_toward_cfd

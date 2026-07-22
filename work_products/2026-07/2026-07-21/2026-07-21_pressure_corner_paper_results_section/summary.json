@@ -1,0 +1,17 @@
+{
+  "task": "TODO-PRESSURE-CORNER-PAPER-RESULTS-SECTION",
+  "rows_written": 3,
+  "allowed_label_counts": {
+    "section_effective": 3
+  },
+  "component_k_admitted": 0,
+  "cluster_k_admitted": 0,
+  "f6_fit_rows": 0,
+  "clipped_k_rows": 0,
+  "global_multiplier_rows": 0,
+  "paper_text_files": [
+    "paper_results_section.md",
+    "caption_text.md"
+  ],
+  "claim_ledger": "table_ready_claim_ledger.csv"
+}

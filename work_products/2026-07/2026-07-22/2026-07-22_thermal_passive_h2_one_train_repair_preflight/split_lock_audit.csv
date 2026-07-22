@@ -1,0 +1,5 @@
+allowed_for_fit_or_score,allowed_for_preflight,case_id,reason,split_role
+False,True,salt_2,one predeclared train case only,train
+False,False,salt_3,locked out before freeze,validation
+False,False,salt_4,locked out before freeze,holdout
+False,False,val_salt2,external-test bucket locked out before freeze,external_test

@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-20T20:16:43-05:00",
+  "case_count": 4,
+  "conditional_model_selection_review_ready_cases": 0,
+  "blocked_missing_component_isolation_cases": 4,
+  "blocked_missing_mesh_time_uq_cases": 0,
+  "required_component_isolation_cases": 4,
+  "required_same_qoi_uq_cases": 4,
+  "fit_allowed_now": 0,
+  "model_selection_allowed_now": 0,
+  "runtime_input_allowed_now": 0,
+  "recirc_scorecard_path": "work_products/2026-07/2026-07-20/2026-07-20_pm10_recirc_hybrid_residual_scorecard/pm10_recirc_model_form_scorecard.csv",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_pm10_recirc_promotion_gate"
+}

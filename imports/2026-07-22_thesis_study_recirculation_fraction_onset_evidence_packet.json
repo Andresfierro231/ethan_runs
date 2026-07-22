@@ -1,0 +1,48 @@
+{
+  "task": "TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22",
+  "task_id": "TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Start a refreshed recirculation/onset evidence packet from improved upcomer composite figures plus S13 evidence, quantifying only defensible diagnostics and failing closed where evidence is missing.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-study-recirculation-fraction-onset-evidence-packet.md",
+    "imports/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet.json",
+    "tools/analyze/build_thesis_study_recirculation_fraction_onset_evidence_packet.py",
+    "tools/analyze/test_thesis_study_recirculation_fraction_onset_evidence_packet.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/shared_velocity_ranges.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/output_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_segmentation_case_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_component_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/onset_regime_visual_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/upcomer_exchange_cell_readiness.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/s13_exchange_trend_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_thesis_study_recirculation_fraction_onset_evidence_packet.py",
+      "result": "passed, 2 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_thesis_study_recirculation_fraction_onset_evidence_packet.py",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_launched_by_this_packet": false,
+    "solver_or_postprocess_launched": false,
+    "mesh_gci_disposition_rerun": false,
+    "coefficient_admission": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "decision": "recirculation_onset_packet_started_diagnostic_proxies_available_closed_fraction_and_ri_fail_closed"
+}

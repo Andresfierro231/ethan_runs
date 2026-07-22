@@ -1,0 +1,8 @@
+branch_id,allowed_model_form,fit_allowed_now,score_allowed_now,runtime_guardrail,admission_status
+heater_lower_leg,source-region branch-specific thermal and hydraulic diagnostics,false,false,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",blocked_source_region_gates
+downcomer_right_vertical,ordinary branch only after downcomer policy gates pass,false,false,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",blocked_downcomer_policy
+cooler_hx_branch,"setup cooler UA/effectiveness lane, not internal Nu",false,false,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",validation_only_boundary_hx_lane
+test_section_span,"test-section boundary lane, not ordinary pipe coefficient",false,false,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",blocked_test_section_boundary_and_pressure_gates
+upcomer_left_vertical,handoff to throughflow-pipe plus recirculation-cell hybrid lane,false,false,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",blocked_handoff_to_upcomer_hybrid
+junction_stub_connector,named-loss or boundary term only,false,diagnostic,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",diagnostic_only_named_loss
+lower_upper_legs,development and wall-resistance diagnostic lane,false,diagnostic,"no CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, or global multipliers",diagnostic_only_development_lane

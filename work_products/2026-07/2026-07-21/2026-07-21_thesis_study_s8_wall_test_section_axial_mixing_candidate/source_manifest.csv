@@ -1,0 +1,20 @@
+source_path,role_in_study,split_role,mutation_status,trusted_or_diagnostic,notes
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/wall_test_section_candidate_gate_scorecard.csv,phase3_scorecard,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/summary.json,phase3_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/runtime_thermal_input_audit.csv,phase3_runtime_audit,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md,blocker_audit,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_amx1_axial_mixing_dry_contract/summary.json,amx_dry_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_amx1_salt2_smoke_intake/summary.json,amx_salt2_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake/summary.json,amx_bounded_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake/case_metric_deltas.csv,amx_bounded_deltas,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_amx1_gradient_clipped_smoke_intake/summary.json,amx_gradient_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_amx1_gradient_clipped_smoke_intake/form_deltas.csv,amx_gradient_deltas,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/summary.json,amx_physics_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/form_deltas.csv,amx_physics_deltas,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/summary.json,umx_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/scenario_score_intake.csv,umx_scores,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/summary.json,tswfc2_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/coupled_delta_vs_m3.csv,tswfc2_scores,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/summary.json,s7_summary,mixed_or_not_applicable,read_only,trusted_existing_package,Used by S8 builder; no source file was mutated.
+native CFD/OpenFOAM outputs,solver_outputs,not_applicable,not_touched,not_accessed,S8 used published packages only.
+registry/admission state,global_state,not_applicable,not_touched,not_mutated,No admission state changed.

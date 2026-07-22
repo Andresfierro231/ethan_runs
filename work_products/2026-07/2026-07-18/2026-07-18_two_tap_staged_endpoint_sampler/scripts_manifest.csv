@@ -1,0 +1,6 @@
+script_id,path,purpose
+runner,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/run_two_tap_staged_endpoint_sampling.sh,stage symlinked read-only case views and run foamPostProcess cutting-plane VTK sampler
+sbatch,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/submit_two_tap_staged_endpoint_sampling.sbatch,submit the two-tap endpoint sampler to Slurm
+controlDict_salt2_mainline,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/controlDicts/salt2_mainline.controlDict,two-plane VTK function object for salt2_mainline
+controlDict_salt3_mainline,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/controlDicts/salt3_mainline.controlDict,two-plane VTK function object for salt3_mainline
+controlDict_salt4_mainline,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/scripts/controlDicts/salt4_mainline.controlDict,two-plane VTK function object for salt4_mainline

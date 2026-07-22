@@ -1,0 +1,70 @@
+{
+  "task": "TODO-BOARD-CLEANUP-2026-07-22-LATE",
+  "task_id": "TODO-BOARD-CLEANUP-2026-07-22-LATE",
+  "date": "2026-07-22",
+  "role": "Coordinator/Cleaner/Reviewer/Writer",
+  "objective": "Clean stale completed rows from live Active and Planned/Unclaimed board sections after validating closeout surfaces.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-BOARD-CLEANUP-2026-07-22-LATE.md",
+    ".agent/journal/2026-07-22/board-cleanup-2026-07-22-late.md",
+    "imports/2026-07-22_board_cleanup_2026_07_22_late.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BOARD.md live Active and Planned/Unclaimed sections",
+    "task closeout artifacts for archived rows",
+    "native CFD/OpenFOAM outputs read-only",
+    "registry/admission state read-only",
+    "scheduler state read-only",
+    "Fluid source tree read-only",
+    "external repositories read-only",
+    "thesis body/LaTeX files read-only",
+    ".agent/blockers.yml read-only"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THERMAL-PASSIVE-H2-RUNTIME-OPERATOR-SMOKE-UQ-GATE-2026-07-22 --json",
+      "result": "ok true; row archived"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-REPO-USER-GUIDE-README-TOOLING --json",
+      "result": "ok true; row archived"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-QOI-CHART-DIAGNOSTIC-EVIDENCE-ROUTING-2026-07-22 --json",
+      "result": "ok true; row archived"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-D2-SOURCE-BOUNDED-PROJECTION-HOLDOUT-EXTERNAL-SCORE-GATE-2026-07-22 --json",
+      "result": "failed; row relabeled closeout-blocked, not archived"
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "thesis_body_or_latex_mutated": false,
+    "blocker_register_source_mutated": false,
+    "generated_docs_index_refreshed": true,
+    "files_deleted": false,
+    "files_reverted": false,
+    "files_staged": false,
+    "commits_created": false,
+    "push_performed": false
+  }
+}

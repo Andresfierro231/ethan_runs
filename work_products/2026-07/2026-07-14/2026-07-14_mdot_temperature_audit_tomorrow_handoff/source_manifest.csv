@@ -1,0 +1,13 @@
+path,exists,role
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/README.md,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/paper_ready_report.md,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/summary.json,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/trend_conclusion_register.csv,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/mdot_temperature_error_correlation.csv,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/part3_test_section_error_increment.csv,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/part4_cooling_rmse_summary.csv,yes,primary_input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/part5_heating_rmse_summary.csv,yes,primary_input
+tools/analyze/build_mdot_temperature_probe_error_audit.py,yes,reproducibility_input
+tools/analyze/test_mdot_temperature_probe_error_audit.py,yes,validation_input
+.agent/BOARD.md,yes,coordination_input
+AGENTS.md,yes,protocol_input

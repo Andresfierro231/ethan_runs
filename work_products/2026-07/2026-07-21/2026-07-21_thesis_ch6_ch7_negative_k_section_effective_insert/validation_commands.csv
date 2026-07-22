@@ -1,0 +1,3 @@
+command_id,command,result,notes
+VAL-001,rg -n "negative-K|Salt2-frozen|Delta_p_recirc_section|F3/Shah|component-K forcing" reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md,pass,Confirmed thesis insertions are present in all target current files
+VAL-002,python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-CH6-CH7-NEGATIVE-K-SECTION-EFFECTIVE-INSERT-2026-07-21,pass,Validated documentation closeout

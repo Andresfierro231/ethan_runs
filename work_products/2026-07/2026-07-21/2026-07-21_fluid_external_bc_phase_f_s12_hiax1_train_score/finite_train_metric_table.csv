@@ -1,0 +1,6 @@
+candidate_id,score_source,split_role,metric_family,target_count,finite_count,mae_K,rmse_K,mean_bias_K,max_abs_K,predicted_mdot_kg_s,reference_mdot_kg_s,residual_mdot_kg_s,relative_error_pct,pressure_residual_Pa,deltaP_buoyancy_Pa,deltaP_losses_Pa
+S12-HIAX1,phase_e_train_external_boundary_full_solve,train,TP,6,5,80.24939106239617,80.4585733904668,-80.24939106239617,87.92395687812393,,,,,,,
+S12-HIAX1,phase_e_train_external_boundary_full_solve,train,TW,11,11,82.18702596558937,84.64865165641251,-82.18702596558937,109.09380824932663,,,,,,,
+S12-HIAX1,phase_e_train_external_boundary_full_solve,train,all_probe,17,16,81.5815150583415,83.36187927489736,-81.5815150583415,109.09380824932663,,,,,,,
+S12-HIAX1,phase_e_train_external_boundary_full_solve,train,mdot,1,1,,,,,0.00626567502343775,0.0168,-0.010534324976562249,-62.704315336680054,,,
+S12-HIAX1,phase_e_train_external_boundary_full_solve,train,pressure_root,1,1,,,,,,,,,-1.3016870923365786e-06,88.82170863655324,88.82170733486615

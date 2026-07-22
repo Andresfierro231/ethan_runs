@@ -1,0 +1,9 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv,read limited sampled field retained-window summary,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/summary.json,read limited extraction summary,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv,"read seeded volume, tau, and source-side q_net context",true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/sampler_proxy_manifest.csv,read proxy sampler production blockers,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk/wall_heat_integration_contract.csv,read Q_wall_W wallHeatFlux contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk/field_availability.csv,read pressure/viscosity/cp/wallHeatFlux source-basis audit,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/qoi_release_decision.csv,read same-QOI UQ release decision,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json,read same-QOI UQ status,true,false,false

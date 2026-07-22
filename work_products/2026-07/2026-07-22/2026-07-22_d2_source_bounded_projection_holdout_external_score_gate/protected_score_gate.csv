@@ -1,0 +1,8 @@
+candidate_id,frozen_manifest_exists,runtime_legal_inputs_released,source_property_cp_released,same_qoi_projection_uq_passed,protected_targets_used_for_training_or_selection,validation_score_allowed_now,holdout_score_allowed_now,external_test_score_allowed_now,current_decision
+"D2_empirical_offset",false,false,false,false,false,false,false,false,"fail_closed_empirical_diagnostic_not_scoreable"
+"MF12a_signed_graetz_probe_offset",false,false,false,false,false,false,false,false,"fail_closed_no_A_source_no_reset_release_no_same_qoi_uq"
+"MF12b_piecewise_signed_source_integral",false,false,false,false,false,false,false,false,"fail_closed_no_cp_source_property_release_no_reset_kernel"
+"MF12c_wall_profile_projection",false,false,false,false,false,false,false,false,"fail_closed_no_runtime_wall_profile_no_projection_uq"
+"MF15_wall_core_exchange_operator",false,false,false,false,false,false,false,false,"fail_closed_no_wall_profile_source_release_no_mesh_gci"
+"M5_MF04_throughflow_recirculation_exchange_cell",false,false,false,false,false,false,false,false,"fail_closed_no_s13_exact_label_production_release"
+"M6_final_frozen_candidate",false,false,false,false,false,false,false,false,"blocked_no_single_frozen_runtime_legal_candidate"

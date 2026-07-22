@@ -1,0 +1,4 @@
+claim_type,claim,source
+allowed,The four Ch3 nominal rows now have source/property labels available from the nominal-train preflight.,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv
+allowed,The four Ch3 nominal rows remain database/provenance evidence and must be treated as no-fit/no-admission rows for current thesis prose.,work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_source_property_gate_refresh/ch3_source_property_gate_resolution.csv
+forbidden,"Do not state these rows support coefficient fitting, candidate admission, model selection, protected scoring, or a final score.",work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_source_property_unblock/release_unblock_matrix.csv

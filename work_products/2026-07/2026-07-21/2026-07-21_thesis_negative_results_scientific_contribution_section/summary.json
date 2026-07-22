@@ -1,0 +1,19 @@
+{
+  "admission_state_mutated": false,
+  "blocker_register_mutated": false,
+  "closure_admissions_claimed": 0,
+  "contribution_rows": 6,
+  "created_utc": "2026-07-21T19:13:34.093665+00:00",
+  "final_score_values_claimed": 0,
+  "fit_or_model_selection_performed": false,
+  "fluid_or_external_edit": false,
+  "generated_docs_index_mutated": false,
+  "guardrail_rows": 5,
+  "native_solver_outputs_mutated": false,
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_thesis_negative_results_scientific_contribution_section",
+  "registry_mutated": false,
+  "runtime_leakage_failures": 0,
+  "scheduler_action": false,
+  "task": "TODO-THESIS-NEGATIVE-RESULTS-SCIENTIFIC-CONTRIBUTION-SECTION-2026-07-21",
+  "thesis_chapter_body_edited": false
+}

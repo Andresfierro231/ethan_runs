@@ -1,0 +1,6 @@
+source_id,source_path,mutation_status
+claim_ledger,reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,read_only
+fluid_walls_model,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,read_only
+uncertainty_chapter,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,read_only
+recirc_gate,work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/summary.json,read_only
+master_scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,read_only

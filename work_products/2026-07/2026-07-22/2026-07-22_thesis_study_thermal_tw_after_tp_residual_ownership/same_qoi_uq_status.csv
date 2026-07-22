@@ -1,0 +1,12 @@
+qoi_or_gate,status,count_or_value,production_release,admission_release,source
+TP_projection_same_qoi_labels,present_diagnostic,TP1-TP6 labels present,false,false,MF14 tp_same_qoi_projection_uq.csv
+TP_projection_quantitative_UQ,fail_closed,0 TP sensors quantitative_same_qoi_uq_ready,false,false,MF14 tp_same_qoi_projection_uq.csv
+TP_runtime_temperature_release,fail_closed,0 TP sensors runtime_temperature_allowed,false,false,MF14 tp_same_qoi_projection_uq.csv
+TW_runtime_temperature_release,fail_closed,0 TW sensors runtime_temperature_allowed,false,false,N4 sensor_runtime_input_audit.csv
+wall_core_exchange_temporal_UQ,executed_diagnostic,4 QOI labels,false,false,MF17 summary.json
+wall_core_exchange_case_temporal_rows,executed_diagnostic,12 rows,false,false,MF17 summary.json
+heat_flow_match_ready,fail_closed,0 rows,false,false,MF17 summary.json
+mesh_GCI_input_ready,ready_input_only,true,false,false,MF17 summary.json
+mesh_GCI_executed,not_executed,false,false,false,MF17 summary.json
+Qwall_production_release,fail_closed,false,false,false,MF17 summary.json
+coefficient_admission,fail_closed,false,false,false,MF17 summary.json

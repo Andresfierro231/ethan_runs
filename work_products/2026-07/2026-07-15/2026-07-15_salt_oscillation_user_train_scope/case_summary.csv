@@ -1,0 +1,13 @@
+case_key,split_role,representative_groups,steady_representative_groups,quasi_representative_groups,drifting_representative_groups,verdicts,max_rel_sem_corrected,max_drift_ratio
+salt1_hi10q,training_perturbation,3,3,0,0,steady,3.767531178e-08,0.02540427641
+salt1_jin_nominal,canonical_forward_train,3,3,0,0,steady,0.0003994482808,63.22717995
+salt1_lo10q,training_perturbation,3,3,0,0,steady,2.733180685e-08,0.2319833889
+salt1_nominal,canonical_forward_train,3,3,0,0,steady,2.226919393e-09,0.0569001657
+salt2_hi5q,holdout_perturbation,3,3,0,0,steady,6.916363251e-05,171.5530102
+salt2_jin_nominal,canonical_forward_train,3,3,0,0,steady,2.294787602e-05,81.24679239
+salt2_lo5q,holdout_perturbation,3,3,0,0,steady,6.334523564e-05,231.320506
+salt2_native_val,diagnostic_validation_comparison,3,3,0,0,steady,3.207331871e-05,108.4909749
+salt3_jin_nominal,canonical_forward_train,3,3,0,0,steady,5.475154102e-05,71.98267746
+salt4_hi5q,training_perturbation,3,3,0,0,steady,0.0006341583386,25.5808361
+salt4_lo5q,training_perturbation,3,3,0,0,steady,0.0004748105198,22.42574224
+salt4_nominal,training,3,3,0,0,steady,0.0005247165452,6.223906953

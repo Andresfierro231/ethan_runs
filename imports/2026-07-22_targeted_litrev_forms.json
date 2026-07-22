@@ -1,0 +1,47 @@
+{
+  "task": "TODO-TARGETED-LITREV-FORMS",
+  "date": "2026-07-22",
+  "objective": "Convert targeted literature review evidence into gated candidate equation forms with source, inputs, nondimensional groups, branch applicability, validity range, and exclusion criteria.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-TARGETED-LITREV-FORMS.md",
+    ".agent/journal/2026-07-22/targeted-litrev-forms.md",
+    "imports/2026-07-22_targeted_litrev_forms.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/candidate_equation_forms.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/exclusion_criteria.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/implementation_readiness_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/source_overlap_and_validity_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/next_task_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "tools/agent/finish_task.py",
+    "tools/agent/source_property_gate.py",
+    "tools/agent/runtime_input_lint.py",
+    "tools/docs/build_repo_index.py",
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/litrev_source_inventory.csv",
+    "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/untried_litrev_model_forms.csv",
+    "operational_notes/maps/literature-synthesis-and-gates.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "thesis_latex_edit": false,
+  "model_coefficients_tuned": false,
+  "formula_implemented": false,
+  "provenance_flags": {
+    "source_paths_preserved": true,
+    "native_output_guardrail_preserved": true,
+    "document_only_literature_synthesis": true
+  }
+}

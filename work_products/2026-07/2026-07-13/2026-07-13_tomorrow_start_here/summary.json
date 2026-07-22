@@ -1,0 +1,72 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-307",
+  "kind": "tomorrow_start_here",
+  "created_local": "2026-07-13T17:38:44-05:00",
+    "updated_local": "2026-07-13T17:45:20-05:00",
+  "handoff_note": "operational_notes/07-26/13/2026-07-13_TOMORROW_START_HERE.md",
+  "no_additional_launch": {
+    "decision": true,
+    "reason": "Corrected Salt-Q job 3293924 is still running; forward-v0 solve_case job 3293960 is already complete; no duplicate corrected-Q launch is needed tonight."
+  },
+  "live_jobs": [
+    {
+      "job_id": "3294001",
+      "name": "s2_coarse_T+",
+            "state": "COMPLETED",
+            "exit_code": "0:0",
+            "elapsed": "00:02:41",
+            "node": "c318-011",
+            "next_action": "read AGENT-305 before using completed coarse smoke output for thermal gate rebuild"
+    },
+    {
+      "job_id": "3293924",
+      "name": "saltq_sel_cont",
+      "state": "RUNNING",
+      "elapsed": "00:41:35",
+      "node": "c318-016",
+      "next_action": "monitor and terminal-harvest only after exit"
+    },
+    {
+      "job_id": "3292998",
+      "name": "idv01713",
+      "state": "RUNNING",
+      "elapsed": "7:34:25",
+      "node": "c318-008",
+      "next_action": "no action from this handoff"
+    }
+  ],
+  "completed_compute_evidence": [
+    {
+      "job_id": "3293960",
+      "name": "fwdv0_solve",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:07:19",
+      "evidence": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json",
+      "result": "6/6 solve_case-vs-fast_scan rows passed"
+    }
+  ],
+  "next_sequence": [
+    "Check .agent/BOARD.md and this handoff.",
+    "Monitor corrected Salt-Q job 3293924.",
+    "Read AGENT-305 before using completed Salt2 coarse thermal repair-smoke job 3294001 output.",
+    "If 3293924 is terminal, run a corrected-Q terminal harvest/admission row.",
+    "Check AGENT-308 H1 proxy status before claiming any overlapping hydraulic H1 work.",
+    "Keep thermal UA/HTC/Nu diagnostic until thermal sign/coarse/downcomer gates pass.",
+    "Use thesis dossier and topic maps for presentation continuity."
+  ],
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "new_jobs_launched_by_agent_307": false,
+  "other_active_agent_launches_observed": [
+    {
+      "task_id": "AGENT-305",
+      "job_id": "3294001",
+      "name": "s2_coarse_T+",
+      "state": "COMPLETED",
+      "exit_code": "0:0",
+      "elapsed": "00:02:41"
+    }
+  ]
+}

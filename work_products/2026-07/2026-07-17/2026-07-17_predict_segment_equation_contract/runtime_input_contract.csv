@@ -1,0 +1,7 @@
+check,status,forbidden_input,contract
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,mdot is the solved unknown and CFD mdot is target/diagnostic evidence only.
+no_realized_wallHeatFlux_runtime,pass_forbidden,realized CFD wallHeatFlux,wallHeatFlux may score heat-loss models after solve but cannot drive them at runtime.
+no_imposed_cfd_cooler_duty_runtime,pass_forbidden,imposed CFD cooler duty,cooler/HX removal must come from admitted setup-legal cooler model outputs.
+no_validation_temperature_runtime,pass_forbidden,validation TP/TW temperatures,probe temperatures are score targets only; runtime temperatures come from the model state.
+no_global_multiplier,pass_forbidden,hidden global friction or heat-loss multiplier,pressure and thermal closures must be segment-local with named model slots.
+no_recirc_single_stream_coefficients,pass_forbidden,true Nu/f_D/K fits from recirculating rows,recirculating rows require hybrid/diagnostic labels until onset and single-stream gates pass.

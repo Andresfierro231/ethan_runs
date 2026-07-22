@@ -1,0 +1,9 @@
+policy_row,value,thesis_use,claim_boundary
+sensor_count,17,TP/TW score-target inventory,post-solve score targets only
+mapped,1,exact/projected map count,mapping does not authorize runtime use
+bounded,15,bounded path-position evidence,bounded probes remain score targets
+excluded,1,excluded sensor count,excluded rows do not enter score
+tp_tw_split,TP=6; TW=11,probe-family summary,secondary to energy and branch heat parity
+runtime_permissions,0,runtime leakage audit,0 temperature runtime inputs
+fit_permissions,0,fit leakage audit,0 TP/TW fit targets
+model_selection_permissions,0,model-selection leakage audit,0 TP/TW model-selection permissions

@@ -1,0 +1,13 @@
+missing_input_reason,affected_rows,required_next_action
+CFD coefficient use remains forbidden unless separately source-bounded,16,claim a narrow source/UQ/extraction row before any release
+"ROM hierarchy supports thesis framing, not closure coefficients",20,claim a narrow source/UQ/extraction row before any release
+active equation exists but protected split cannot be used for release or fit,8,claim a narrow source/UQ/extraction row before any release
+bookkeeping equation active; coefficients still separately gated,8,claim a narrow source/UQ/extraction row before any release
+heater/cooler lanes are partial; passive/test-section source basis blocked,20,claim a narrow source/UQ/extraction row before any release
+junction/stub source-bounded split and endpoint basis are not admitted,8,claim a narrow source/UQ/extraction row before any release
+material/geometry/source-field release incomplete,20,claim a narrow source/UQ/extraction row before any release
+ordinary pipe correlations are not admitted in recirculating/source regions,16,claim a narrow source/UQ/extraction row before any release
+taxonomy exists; quantitative exchange/onset release remains blocked,20,claim a narrow source/UQ/extraction row before any release
+temperature envelope and composition/provenance still need row-specific release,20,claim a narrow source/UQ/extraction row before any release
+two-tap/source-basis and low-recirculation anchors are not admitted,12,claim a narrow source/UQ/extraction row before any release
+upcomer recirculation/exchange prevents ordinary one-stream admission,12,claim a narrow source/UQ/extraction row before any release

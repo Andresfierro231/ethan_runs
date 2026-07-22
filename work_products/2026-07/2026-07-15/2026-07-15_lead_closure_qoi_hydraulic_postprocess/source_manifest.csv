@@ -1,0 +1,6 @@
+source_id,path,exists,role
+closure_gate,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/refreshed_qoi_mesh_gate_status.csv,true,refreshed closure-QOI mesh/GCI status
+thermal_admission,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv,true,thermal/internal-Nu admission source
+agent405_hydraulic,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_admission_decisions.csv,true,AGENT-405 hydraulic status
+agent406_pm5,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,true,AGENT-406 PM5 metrics
+agent406_summary,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json,true,AGENT-406 PM5 summary

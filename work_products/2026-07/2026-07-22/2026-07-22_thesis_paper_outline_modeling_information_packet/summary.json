@@ -1,0 +1,23 @@
+{
+  "date": "2026-07-22",
+  "decision": "paper_outline_modeling_information_packet_ready_no_admission_no_external_edit",
+  "model_slot_rows": 27,
+  "equation_symbol_rows": 41,
+  "runtime_legality_rows": 13,
+  "outline_question_rows": 5,
+  "assumption_rows": 5,
+  "figure_table_rows": 8,
+  "final_score_values": 0,
+  "source_property_release_ready_rows": 0,
+  "runtime_temperature_release_rows": 0,
+  "guardrails": {
+    "thesis_body_edit": false,
+    "external_repo_edit": false,
+    "native_solver_output_mutation": false,
+    "registry_mutation": false,
+    "scheduler_action": "none",
+    "coefficient_admission": false,
+    "source_property_release": false,
+    "final_score": false
+  }
+}

@@ -1,0 +1,15 @@
+source_id,path,exists,mutation_status
+phase0,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate,True,read_only
+phase1,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration,True,read_only
+phase2,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence,True,read_only
+phase3,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score,True,read_only
+phase4,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate,True,read_only
+phase5,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff,True,read_only
+phase_h2,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution,True,read_only
+setup_source,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract,True,read_only
+n3,work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation,True,read_only
+m2,work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate,True,read_only
+mf08,work_products/2026-07/2026-07-22/2026-07-22_mf08_signed_wall_flux_developing_thermal_branches,True,read_only
+signed_wall_flux,work_products/2026-07/2026-07-22/2026-07-22_mf_signed_wall_flux_thermal_development_gate,True,read_only
+radiation_capability,work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability,True,read_only
+litrev_split,work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction,True,read_only

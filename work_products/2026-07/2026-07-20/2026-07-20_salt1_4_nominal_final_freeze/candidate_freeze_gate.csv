@@ -1,0 +1,4 @@
+freeze_id,gate,status,evidence,release_effect
+FINAL_FREEZE_SALT1_4_NOMINAL_2026_07_20,training_row_freeze,pass,4 nominal rows frozen: Salt1-4 nominal only,unblocks downstream candidate fitting on the nominal training envelope
+FINAL_FREEZE_SALT1_4_NOMINAL_2026_07_20,holdout_runtime_exclusion,pass,8 holdout/external/new-CFD rows excluded from fit and model selection,keeps perturbation/external/new-CFD rows blind until scoring/admission
+FINAL_FREEZE_SALT1_4_NOMINAL_2026_07_20,prediction_model_freeze,not_started,"no fitting, hyperparameter selection, or model scoring performed in this package",a fitted/admitted predictive model freeze still has to be produced next

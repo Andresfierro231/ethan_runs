@@ -1,0 +1,20 @@
+{
+  "task": "TODO-EXTBC-SOURCE-SINK-PROVENANCE-RECOVERY-2026-07-21",
+  "status": "complete",
+  "source_sink_rows_reviewed": 12,
+  "setup_known_candidate_rows": 12,
+  "runtime_source_sink_rows_admitted": 0,
+  "ambient_wall_rows_changed": 0,
+  "validation_rows_consumed": 0,
+  "holdout_rows_consumed": 0,
+  "external_test_rows_consumed": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "fluid_source_mutation": false,
+  "external_repo_mutation": false,
+  "fitting_or_model_selection": false,
+  "freeze_or_admission_decision": false,
+  "generated_index_refresh": false,
+  "thesis_current_file_edit": false
+}

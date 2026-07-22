@@ -1,0 +1,2 @@
+comparison,status,reason,required_unlock
+F6_to_F3_component_or_cluster_K,not_evaluated_no_ordinary_candidate,F6 has zero ordinary-flow candidates and zero same-QOI admissible mesh/UQ rows,ordinary-flow F6 candidate plus same-QOI pressure and mesh/UQ basis

@@ -1,0 +1,13 @@
+case,span,segment_wallHeatFlux_sum_W,enthalpy_change_W,wallHeatFlux_vs_enthalpy_residual_W,residual_fraction,enthalpy_change_status,residual_assignment
+Salt 2,cooling_branch,-148.7186,-61.178214,-87.540386,-1.430908,computed_but_cooler_cut_planes_only_partially_bracket_sink,segment_wall_flux_minus_segment_enthalpy_change
+Salt 2,downcomer,-23.1173,86.870405,-109.987705,-1.266112,computed_from_span_endpoint_temperatures,segment_wall_flux_minus_segment_enthalpy_change
+Salt 2,lower_leg,236.851,288.360609,-51.509609,-0.178629,computed_from_span_endpoint_temperatures,segment_wall_flux_minus_segment_enthalpy_change
+Salt 2,upcomer,-25.7603,136.677108,-162.437408,-1.188476,computed_diagnostic_only_high_recirculation,diagnostic_only_upcomer_recirculation_cell
+Salt 3,cooling_branch,-164.3403,-83.064979,-81.275321,-0.978455,computed_but_cooler_cut_planes_only_partially_bracket_sink,segment_wall_flux_minus_segment_enthalpy_change
+Salt 3,downcomer,-25.3479,110.22105,-135.56895,-1.229973,computed_from_span_endpoint_temperatures,segment_wall_flux_minus_segment_enthalpy_change
+Salt 3,lower_leg,265.8281,336.914602,-71.086502,-0.210993,computed_from_span_endpoint_temperatures,segment_wall_flux_minus_segment_enthalpy_change
+Salt 3,upcomer,-32.6189,-77.182003,44.563103,0.577377,computed_diagnostic_only_high_recirculation,diagnostic_only_upcomer_recirculation_cell
+Salt 4,cooling_branch,-184.3139,-112.529725,-71.784175,-0.637913,computed_but_cooler_cut_planes_only_partially_bracket_sink,segment_wall_flux_minus_segment_enthalpy_change
+Salt 4,downcomer,-28.1246,134.564602,-162.689202,-1.209004,computed_from_span_endpoint_temperatures,segment_wall_flux_minus_segment_enthalpy_change
+Salt 4,lower_leg,302.3316,400.569318,-98.237718,-0.245245,computed_from_span_endpoint_temperatures,segment_wall_flux_minus_segment_enthalpy_change
+Salt 4,upcomer,-41.3286,-78.010628,36.682028,0.470218,computed_diagnostic_only_high_recirculation,diagnostic_only_upcomer_recirculation_cell

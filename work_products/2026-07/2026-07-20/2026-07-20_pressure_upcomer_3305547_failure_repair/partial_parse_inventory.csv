@@ -1,0 +1,8 @@
+case_key,parsed_file,exists,parsed_rows,wall_parse_failure_rows,blocked_or_incomplete_rows,diagnostic_only_rows,parse_inventory_status
+salt2_lo10q,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt2_lo10q.csv,yes,3,0,0,3,parsed_diagnostic_only
+salt2_hi10q,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt2_hi10q.csv,yes,3,0,3,0,parsed_blocked_or_incomplete
+salt4_lo10q,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt4_lo10q.csv,yes,3,0,3,0,parsed_blocked_or_incomplete
+salt4_hi10q,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt4_hi10q.csv,yes,3,0,3,0,parsed_blocked_or_incomplete
+salt2_jin_nominal_continuation,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt2_jin_nominal_continuation.csv,no,0,0,0,0,missing_parse_output
+salt3_jin_nominal_continuation,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt3_jin_nominal_continuation.csv,no,0,0,0,0,missing_parse_output
+salt4_jin_nominal_continuation,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed/matched_plane_metrics_salt4_jin_nominal_continuation.csv,no,0,0,0,0,missing_parse_output

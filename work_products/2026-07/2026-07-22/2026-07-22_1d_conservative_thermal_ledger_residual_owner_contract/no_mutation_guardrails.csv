@@ -1,0 +1,7 @@
+guardrail,status,evidence
+native CFD/OpenFOAM outputs,not_mutated,contract-only builder writes work_products package
+scheduler/solver/sampler,not_launched,no sbatch/srun/OpenFOAM command in task
+Fluid or external repo source,not_mutated,no external path edit
+registry/admission/blocker register,not_mutated,no registry or blockers.yml edit
+fit/model selection/final scoring,not_performed,"all candidate rows are contract, diagnostic, or blocked"
+runtime leakage,pass,runtime_forbidden_audit.csv has runtime_allowed=false for all forbidden rows

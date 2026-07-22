@@ -1,0 +1,6 @@
+check_id,item,runtime_used,status
+RT-001,validation TP/TW temperatures,False,post_solve_reference_only
+RT-002,holdout/external temperatures,False,not_consumed
+RT-003,realized CFD wallHeatFlux,False,forbidden_not_used
+RT-004,CFD mdot,False,forbidden_not_used
+RT-005,hidden residual/internal Nu absorption,False,forbidden_not_used

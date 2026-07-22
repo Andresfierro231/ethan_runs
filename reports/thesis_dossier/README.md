@@ -45,7 +45,69 @@ This folder is the clean thesis front door. It should stay small:
 PowerPoint-specific outlines and decks live outside this dossier in
 `reports/powerpoint/`.
 
+Latest handoff for 2026-07-23 continuation:
+`operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md`.
+
+Latest external-writer evidence packet contract:
+`work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/README.md`.
+
 ## Open First
+
+0. `operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md`
+   - Latest thesis-wide restart note for tomorrow.
+   - Use it for current progress, useful past reports, claim boundaries,
+     board-ready next tasks, and the evidence-packet handoff order for the
+     outside writer.
+
+0.1. `work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/README.md`
+   - Current contract for preparing compact evidence packets for external
+     LaTeX writers.
+   - Use it before asking a prose-only writer to expand a chapter or before
+     copying small evidence artifacts into the LaTeX thesis repo.
+
+0.2. `operational_notes/07-26/22/2026-07-22_BOARD_NO_CODEX_LATEX_WRITING_POLICY.md`
+   - Current board policy: Codex-owned rows in `ethan_runs` should produce
+     evidence packets, analyses, assumptions/caveats, manifests, captions, and
+     writer instructions only.
+   - Full thesis prose and LaTeX chapter composition belong to the outside
+     writer or a separate manuscript workflow, not this board.
+
+0.3. `work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/README.md`
+   - Current CFD extraction methodology packet for Chapter 3/4 support.
+   - Open this before describing what CFD data are extracted or how they are
+     reduced. It includes the data dictionary, reduction-method table,
+     allowed/forbidden-use matrix, blocker/next-work table, and source
+     manifest.
+   - Claim boundary: methodology/writer-support only; no source/property
+     release, Qwall admission, production harvest, final score, or internal
+     `Nu` residual absorption.
+
+0.4. `work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/README.md`
+   - Current source/property CP, viscosity, and pressure-basis preflight.
+   - Decision:
+     `fail_closed_exact_cp_viscosity_pressure_basis_not_release_ready`.
+   - Use this when explaining why `cp_J_kg_K`, viscosity/property mode,
+     pressure basis, legal source/sink fields, and signed heat-path ownership
+     remain closed.
+
+0.5. `reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md`
+   - Current latest-litrev-to-modeling handoff for Ethan.
+   - Use it before writing or assigning model-form, source-gate,
+     pressure-ledger, heat-loss, topology/recirculation, or admission-engine
+     thesis support work.
+   - It names the fourteen Ethan-requested research threads and summarizes the
+     MF-01 through MF-06 model-form hierarchy, equations, assumptions, negative
+     lessons, unresolved blockers, and next implementation order.
+
+0.6. `work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/README.md`
+   - Current thesis-facing CFD run/QoI split chart.
+   - Use `cfd_run_qoi_split_chart_wide.csv` when a coordinator or writer needs
+     the compact run table with `mdot`, `TP1`-`TP6`, `TW1`-`TW11`,
+     `TP_mean_K`, and `TW_mean_K`.
+   - Split policy: Salt1-4 nominal are train rows; Salt2 +/-5Q and `val_salt2`
+     are protected `holdout_test` rows, with `val_salt2` preserving
+     `split_subrole=external_test`. The table is target/diagnostic evidence,
+     not a runtime-input release.
 
 1. `reports/thesis_dossier/mentor_thesis_outline.md`
    - Corrected canonical proposed master's thesis outline from July 20 advisor
@@ -118,6 +180,19 @@ PowerPoint-specific outlines and decks live outside this dossier in
    - Start-here handoff for the next thesis studies queue and rows to claim
      rather than duplicate.
 
+12. `operational_notes/07-26/21/2026-07-21_THESIS_LATEX_PARALLEL_WORKFLOW_CONTRACT.md`
+   - Historical handoff for the earlier parallel LaTeX workflow.
+   - Treat it as provenance for completed sync work, not as authorization for
+     new Codex-owned prose or LaTeX writing. New work here should produce
+     evidence packets and artifact-transfer instructions for the outside
+     writer.
+
+13. `work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/README.md`
+   - Historical cross-workspace contract for parallel LaTeX writers, artifact
+     producers, evidence reviewers, and integrators.
+   - Use only the artifact handoff schema and provenance ideas from it unless a
+     later outside-writer/papers workflow explicitly owns prose composition.
+
 12. `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_execution_documentation_package/README.md`
    - Publication-grade execution workflow, gate templates, claim/admission
      rules, validation checklist, and per-study packets for S7-S11.
@@ -164,8 +239,8 @@ The final predictive split is now:
 | --- | --- |
 | final training | `salt1_nominal`, `salt2_jin_nominal`, `salt3_jin_nominal`, `salt4_nominal` |
 | training support | `salt1_lo10q`, `salt1_hi10q`, `salt4_lo5q`, `salt4_hi5q` |
-| holdout/testing | `salt2_lo5q`, `salt2_hi5q` |
-| external test | `val_salt2`, after matching heat-loss/admission package |
+| holdout/test | `salt2_lo5q`, `salt2_hi5q`, `val_salt2` |
+| holdout/test subtype | `val_salt2` keeps `split_subrole=external_test` |
 
 Older Salt2/Salt3/Salt4 train-validation-holdout language remains dated
 method-development context only.
@@ -206,6 +281,7 @@ unless a later dated note reopens them.
 | CSEM board dispatch | `operational_notes/07-26/21/2026-07-21_THESIS_CSEM_BOARD_DISPATCH.md` | Claimable task queue and start-here instructions for chapter drafts, figure/table assembly, and trigger-gated narrative refreshes. |
 | LitRev-to-CSEM incorporation bridge | `reports/thesis_dossier/Chapters_and_sections/current/25_litrev_csem_thesis_incorporation.md` | Chapter-level bridge for importing LitRev source envelopes, pressure-corner rules, CFD postprocessing contracts, model-form hierarchy, heat-loss separation, and future-work triggers into the external CSEM dissertation. |
 | Predictive model studies roadmap | `reports/thesis_dossier/Chapters_and_sections/current/26_predictive_model_studies_roadmap.md` | Study sequence for strengthening final predictive-model claims while separating train/support, validation, holdout, and external-test evidence. |
+| CFD run/QoI split chart | `work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/README.md` | Thesis-facing CSV chart of CFD runs versus `mdot`, TP, and TW targets; groups `val_salt2` inside `holdout_test` with `external_test` subtype and preserves no-fit/no-runtime-input guardrails. |
 | Thesis research studies board dispatch | `work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/README.md` | Board-backed S0-S6 study portfolio, dependency order, and figure/table wishlist for continuing thesis writing without duplicating active S0-S3 work or overclaiming final predictive results. |
 | Thesis next studies board dispatch | `work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/README.md` | Board-backed S7-S11 and negative-results continuation plan for sensor mapping, wall/test-section candidates, upcomer onset/exchange UQ, pressure/F6 anchor UQ, and candidate-specific release refresh. |
 | Thesis study execution documentation package | `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_execution_documentation_package/README.md` | Publication-grade workflow, required artifacts, templates, claim/admission rules, and validation checklist for running S7-S11 rigorously. |

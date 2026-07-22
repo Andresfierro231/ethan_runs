@@ -1,0 +1,10 @@
+name,equation,meaning
+Pressure balance,"sum(dp_drive(mdot) - dp_loss(mdot; f_D, K)) = 0",Loop mdot is found by pressure-root solve.
+RMSE,RMSE = sqrt(mean((prediction - reference)^2)),Temperature and power model error metric.
+Mean absolute mdot error,mean(abs((mdot_pred - mdot_CFD) / mdot_CFD)) x 100%,Hydraulic error metric reported for M1/M2/M3.
+HX/cooler conductance,Q = UA DeltaT_drive,Candidate setup-only cooler/HX model form.
+Heater efficiency,Q_heater = eta P_electrical,Candidate setup-only heater model form.
+h_proxy,h_proxy = q'' / (T_wall - T_bulk),Diagnostic section-effective upcomer heat transfer proxy.
+Nusselt number,Nu = h D / k,Ordinary internal-convection label; blocked in recirculating upcomer rows.
+CLT SEM,SEM_independent = sigma / sqrt(N),Uncertainty in a mean for independent samples.
+Autocorrelation-corrected SEM,"SEM_corrected = sigma / sqrt(N_eff), with N_eff = N / tau_int",Used when oscillatory time samples are correlated.

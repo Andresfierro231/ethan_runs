@@ -1,0 +1,10 @@
+path,role,exists,mutation
+work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/source_property_release_atlas.csv,source/property family blocker atlas,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/candidate_consequence_table.csv,candidate consequence source table,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/protected_row_release_audit.csv,protected row audit,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/release_candidate_gate.csv,exact-field release candidate gate,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/candidate_lane_consequences.csv,MF16 lane consequences,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/field_release_contract.csv,field-level cp/viscosity/pressure/source contract,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/case_qoi_preflight_matrix.csv,case/QOI preflight matrix,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate/summary.json,thermal freeze gate summary,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/summary.json,S13 medium/fine mesh disposition summary,true,read_only

@@ -1,0 +1,19 @@
+{
+  "task": "TODO-HEATED-INCLINE-TW4-TW6-LOCAL-AUDIT-2026-07-21",
+  "status": "complete",
+  "sensor_rows_reviewed": 3,
+  "dominant_sensor": "TW5",
+  "dominant_phase_e_residual_K": -109.09380824932663,
+  "classification": "missing_source_term_primary_model_form_secondary",
+  "runtime_rows_admitted": 0,
+  "validation_rows_consumed": 0,
+  "holdout_rows_consumed": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "fluid_source_mutation": false,
+  "fitting_or_model_selection": false,
+  "freeze_or_admission_decision": false,
+  "generated_index_refresh": false,
+  "thesis_current_file_edit": false
+}

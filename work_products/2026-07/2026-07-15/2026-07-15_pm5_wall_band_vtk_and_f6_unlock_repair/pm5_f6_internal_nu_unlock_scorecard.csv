@@ -1,0 +1,4 @@
+gate,status,evidence,next_action
+pm5_full_plane_fields_for_f6,unlocked_for_bounded_review_not_admitted,plane_wallT_rows=12/12,run the bounded F6/Re review with split labels preserved; do not fit thermal terms
+wall_band_vtk_wallHeatFlux_for_internal_nu,unlocked_for_internal_nu_review_not_admitted,wallHeatFlux_rows=12/12,"compute internal Nu/HTC rows, then apply sign, heat-balance, recirculation, and admission gates"
+diagnostic_output_guardrail,pass,AGENT-406 writes only to diagnostic scratch/work-product paths; native CFD outputs remain read-only,downstream gates must explicitly admit these repaired rows before use in claims

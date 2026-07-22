@@ -1,0 +1,16 @@
+case_id,property_mode,mean_Re_ratio_to_replication,mean_Pr_ratio_to_replication,mean_Gz_ratio_to_replication,mean_abs_heat_residual_W,max_abs_pressure_residual_proxy_pa,admission_summary
+salt_2,jin_viscosity_cp_1560_k_060,1.2965679,0.45195475,0.58598206,41.506333,2.7755576e-16,do_not_fit_closure_before_property_choice
+salt_2,jin_viscosity_parida_cp_santini_k,1.2965679,0.45711284,0.59267067,41.506333,2.7755576e-16,do_not_fit_closure_before_property_choice
+salt_2,replication_reis_jadyn,1,1,1,41.506333,2.7755576e-16,reported_reference_mode
+salt_2,shen_celsius_comparison,1.2965679,0.4297197,0.55715158,41.506333,2.7755576e-16,do_not_fit_closure_before_property_choice
+salt_2,sohal_janz_full,1,1.082639,1.082639,41.506333,2.7755576e-16,reported_reference_mode
+salt_3,jin_viscosity_cp_1560_k_060,1.2825301,0.46349036,0.59427725,47.988467,8.8817842e-16,do_not_fit_closure_before_property_choice
+salt_3,jin_viscosity_parida_cp_santini_k,1.2825301,0.46761787,0.59958503,47.988467,8.8817842e-16,do_not_fit_closure_before_property_choice
+salt_3,replication_reis_jadyn,1,1,1,47.988467,8.8817842e-16,reported_reference_mode
+salt_3,shen_celsius_comparison,1.2825301,0.44259119,0.56745597,47.988467,8.8817842e-16,do_not_fit_closure_before_property_choice
+salt_3,sohal_janz_full,1,1.0852809,1.0852809,47.988467,8.8817842e-16,reported_reference_mode
+salt_4,jin_viscosity_cp_1560_k_060,1.2517276,0.48420493,0.60466695,55.451817,2.220446e-16,do_not_fit_closure_before_property_choice
+salt_4,jin_viscosity_parida_cp_santini_k,1.2517276,0.4866463,0.60784167,55.451817,2.220446e-16,do_not_fit_closure_before_property_choice
+salt_4,replication_reis_jadyn,1,1,1,55.451817,2.220446e-16,reported_reference_mode
+salt_4,shen_celsius_comparison,1.2517276,0.46497416,0.58046777,55.451817,2.220446e-16,do_not_fit_closure_before_property_choice
+salt_4,sohal_janz_full,1,1.0891341,1.0891341,55.451817,2.220446e-16,reported_reference_mode

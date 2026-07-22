@@ -1,0 +1,6 @@
+segment_or_family,segment_rows,setup_hA_layer_schema_present_rows,schema_ready_setup_input_rows,diagnostic_wallHeatFlux_rows,predictive_wallHeatFlux_runtime_allowed_rows,source_property_released_rows,classification,allowed_use_now,forbidden_runtime_input
+cooling_branch,6,3,3,6,0,0,mixed_schema_and_diagnostic_evidence_no_runtime_release,traceability/accounting only,realized wallHeatFlux; validation temperatures; CFD mdot; fitted passive multipliers
+downcomer,3,3,3,3,0,0,mixed_schema_and_diagnostic_evidence_no_runtime_release,traceability/accounting only,realized wallHeatFlux; validation temperatures; CFD mdot; fitted passive multipliers
+junction,3,3,3,3,0,0,mixed_schema_and_diagnostic_evidence_no_runtime_release,traceability/accounting only,realized wallHeatFlux; validation temperatures; CFD mdot; fitted passive multipliers
+lower_leg,6,6,3,6,0,0,mixed_schema_and_diagnostic_evidence_no_runtime_release,traceability/accounting only,realized wallHeatFlux; validation temperatures; CFD mdot; fitted passive multipliers
+upcomer,6,6,3,6,0,0,mixed_schema_and_diagnostic_evidence_no_runtime_release,traceability/accounting only,realized wallHeatFlux; validation temperatures; CFD mdot; fitted passive multipliers

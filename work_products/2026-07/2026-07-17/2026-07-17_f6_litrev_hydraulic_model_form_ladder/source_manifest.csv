@@ -1,0 +1,10 @@
+source_id,path,exists,role
+f6_anchor_summary,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/summary.json,yes,current anchor-first F6 state
+f6_anchor_gate,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/anchor_gate_table.csv,yes,PM5/PM10/high-heat anchor lane gates
+f6_lane_decision,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/f6_lane_decision.csv,yes,current F6 lane decision table
+f6_next_cfd_runs,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/recommended_next_cfd_runs.csv,yes,Salt3 onset-matrix recommendations
+litrev_untried_forms,reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/untried_litrev_model_forms.csv,yes,LitRev model-form backlog
+litrev_rejected_shortcuts,reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/rejected_or_demoted_litrev_shortcuts.csv,yes,LitRev guardrails and demotions
+litrev_crosswalk,reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/litrev_to_current_evidence_crosswalk.csv,yes,LitRev to current evidence crosswalk
+boundary_prereq,work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/prerequisite_gate_scorecard.csv,yes,boundary-layer prerequisite gates
+boundary_toggles,work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/development_toggle_scorecard.csv,yes,boundary-layer toggle readiness

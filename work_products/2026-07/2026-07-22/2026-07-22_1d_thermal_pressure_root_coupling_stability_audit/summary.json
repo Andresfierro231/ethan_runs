@@ -1,0 +1,19 @@
+{
+  "candidate_freeze": false,
+  "decision": "root_coupling_stability_audit_ready_dry_no_compute",
+  "f3_f6_prerequisite_fail_rows": 4,
+  "failure_mode_rows": 5,
+  "fit_or_model_selection": false,
+  "fluid_or_external_edit": false,
+  "fluid_smoke_test_rows": 5,
+  "generated_at_utc": "2026-07-22T14:54:16.920274+00:00",
+  "high_coupled_root_risk_rows": 5,
+  "native_output_mutation": false,
+  "protected_scoring": false,
+  "registry_or_admission_mutation": false,
+  "root_audit_rows": 4,
+  "scheduler_action": false,
+  "sensitivity_risk_rows": 9,
+  "source_property_release": false,
+  "task_id": "TODO-1D-THERMAL-PRESSURE-ROOT-COUPLING-STABILITY-AUDIT-2026-07-22"
+}

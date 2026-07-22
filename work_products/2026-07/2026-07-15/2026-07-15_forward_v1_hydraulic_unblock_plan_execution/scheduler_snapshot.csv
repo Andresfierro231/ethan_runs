@@ -1,0 +1,9 @@
+job_id,role,squeue_state,sacct_state,job_name,elapsed,exit_code,node_or_reason,current_interpretation,next_action
+3293924,corrected_q_solver_continuation,RUNNING,RUNNING,saltq_sel_cont,1-14:54:18,0:0,c318-016,RUNNING,wait_for_terminal_then_harvest_corrected_q
+3295438,selected_salt2_salt4_pm10q_harvester,PENDING,PENDING,saltq_s24_sel_harv,00:00,0:0,Dependency,PENDING,wait_for_dependency_after_3293924
+3295989,agent373_test_section_complex_raw_two_tap,PENDING,PENDING,hyd_stage,00:00,0:0,Dependency,PENDING,wait_for_agent373_dependency_chain
+3295990,agent373_f6_ready_to_run_gate,PENDING,PENDING,hyd_stage,00:00,0:0,Dependency,PENDING,wait_for_agent373_dependency_chain
+3295991,agent373_fluid_reset_k_diagnostic_sweep,PENDING,PENDING,hyd_stage,00:00,0:0,Dependency,PENDING,wait_for_agent373_dependency_chain
+3295901,cancelled_pm5_matched_plane_sbatch_original,,CANCELLED,upc_pm5q,00:00:00,0:0,None assigned,CANCELLED,do_not_relaunch_blindly; replacement_interactive_run_completed_but_parse_incomplete
+3295968,cancelled_pm5_matched_plane_sbatch_replacement,,CANCELLED,upc_pm5q,00:00:00,0:0,None assigned,CANCELLED,do_not_relaunch_blindly; replacement_interactive_run_completed_but_parse_incomplete
+3295120,interactive_compute_node_allocation,RUNNING,RUNNING,idv75667,21:11:47,0:0,c318-008,RUNNING,read_only_monitor_current_compute_node

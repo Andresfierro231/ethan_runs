@@ -1,0 +1,5 @@
+check,status,forbidden_input,policy
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,mdot remains solved by the coupled model; CFD mdot is score/diagnostic only.
+no_global_friction_multiplier,pass_forbidden,global friction multiplier,model slots are segment-local by contract.
+no_recirc_true_fd_or_k_fit,pass_forbidden,true f_D/K fit from recirculating rows,upcomer and recirculation-masked rows remain hybrid/diagnostic lanes.
+no_pressure_residual_as_component_k,pass_forbidden,unbracketed residual as physical K,"local K requires admitted pressure definition, tap length, straight-loss subtraction, and component bracketing."

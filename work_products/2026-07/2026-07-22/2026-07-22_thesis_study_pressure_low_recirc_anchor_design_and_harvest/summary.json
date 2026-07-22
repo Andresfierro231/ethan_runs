@@ -1,0 +1,23 @@
+{
+  "task": "TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22",
+  "generated_at": "2026-07-22T12:05:00-05:00",
+  "decision": "fail_closed_no_existing_reviewable_low_recirc_pressure_anchor_no_scheduler_launch",
+  "candidate_rows_reviewed": 36,
+  "preferred_future_ordinary_anchor_rows": 6,
+  "sampled_endpoint_ordinary_flow_pass_rows": 0,
+  "f6_fit_ready_rows_now": 0,
+  "alternate_screen_rows": 40,
+  "existing_replacement_ready_rows": 0,
+  "pm5_material_reverse_flow_rows": 12,
+  "pm10_strong_recirculation_rows": 4,
+  "same_qoi_admissible_mesh_time_uq_rows": 0,
+  "cand001_terminal_success_cases": 0,
+  "cand001_timeout_jobs": 2,
+  "section_effective_rows_preserved": 3,
+  "component_k_rows": 0,
+  "scheduler_action": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "component_K_or_F6_release": false
+}

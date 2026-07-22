@@ -1,0 +1,15 @@
+source_id,salt,fluid,case_family,row_count,friction_rows,thermal_rows,recirculation_rows,admissible_rows,rejected_rows
+salt1_jin_hiq_balq,1,salt,salt_jin,1,0,0,0,0,1
+salt1_jin_loq_balq,1,salt,salt_jin,1,0,0,0,0,1
+salt2_jin_hi5q_balq,2,salt,salt_jin,1,0,0,0,0,1
+salt2_jin_hiq_balq,2,salt,salt_jin,1,0,0,0,0,1
+salt2_jin_lo5q_balq,2,salt,salt_jin,1,0,0,0,0,1
+salt3_jin_hi5q_balq,3,salt,salt_jin,1,0,0,0,0,1
+salt3_jin_hiq_balq,3,salt,salt_jin,1,0,0,0,0,1
+salt3_jin_lo5q_balq,3,salt,salt_jin,1,0,0,0,0,1
+salt4_jin_hi5q_balq,4,salt,salt_jin,1,0,0,0,0,1
+salt4_jin_hiq_balq,4,salt,salt_jin,1,0,0,0,0,1
+salt4_jin_lo5q_balq,4,salt,salt_jin,1,0,0,0,0,1
+viscosity_screening_salt_test_2_jin_coarse_mesh,2,salt,salt_jin,24,12,3,5,16,8
+viscosity_screening_salt_test_3_jin_coarse_mesh,3,salt,salt_jin,19,12,3,5,11,8
+viscosity_screening_salt_test_4_jin_coarse_mesh,4,salt,salt_jin,24,12,3,5,16,8

@@ -1,0 +1,13 @@
+artifact,required_for,min_columns_or_sections,purpose
+README.md,all_studies,"purpose;open_first;sources;methods;results;claim_boundary;caveats;next_actions","Human start-here and publication context."
+summary.json,all_studies,"task;date;status;study_state;admitted_rows;blocked_rows;negative_result_rows;runtime_leakage_pass;native_solver_outputs_mutated;registry_mutated;external_fluid_edit","Machine-readable status and mutation flags."
+source_manifest.csv,all_studies,"source_path;role_in_study;split_role;mutation_status;trusted_or_diagnostic;notes","Exact provenance and mutation record."
+acceptance_gate_matrix.csv,all_studies,"gate_id;gate_family;required_condition;evidence_path;status;decision;claim_allowed;next_action","Pass/fail/blocked gate ledger."
+runtime_leakage_audit.csv,predictive_or_score_studies,"input_or_target;role;source_path;split_role;runtime_allowed;reason;status","Separates runtime inputs from score-only targets."
+row_inventory.csv,evidence_studies,"row_id;case_id;qoi_family;split_role;source_validity;property_label;recirculation_status;uq_status;admission_status","Study row universe and labels."
+metric_score_table.csv,candidate_score_studies,"candidate_id;case_id;split_role;metric;baseline_value;candidate_value;delta;gate_status","Candidate comparison without hidden tuning."
+blocked_or_negative_result_table.csv,blocked_or_negative_studies,"hypothesis;evidence_path;failed_gate;decision;thesis_claim;future_unlock","Publication-ready negative result ledger."
+figure_table_manifest.csv,all_studies,"item_id;kind;title;source_path;destination_chapter;claim_boundary;status","Thesis-ready figure and table routing."
+status_file,all_studies,"objective;outcome;changes_made;validation;blockers;guardrails","Agent closeout."
+journal_entry,all_studies,"attempted;observed;inferred;caveats;next_actions","Durable reasoning record."
+import_manifest,all_studies,"changed_files;read_only_context;native_solver_outputs_mutated;registry_mutated;external_fluid_edit","Provenance and mutation flags."

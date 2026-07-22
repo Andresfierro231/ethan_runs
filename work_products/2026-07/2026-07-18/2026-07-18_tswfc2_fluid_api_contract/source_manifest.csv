@@ -1,0 +1,17 @@
+source_id,path,access_mode,reason
+SRC1,AGENTS.md,read,workspace startup protocol and task documentation contract
+SRC2,.agent/BOARD.md,read_write,claimed and completed TODO-TSWFC2-DISTRIBUTED-WALL-FLUID row
+SRC3,.agent/FILE_OWNERSHIP.md,read,confirmed active conflict boundaries
+SRC4,.agent/ROLES.md,read,identified Implementer/Tester/Writer role
+SRC5,operational_notes/maps/forward-predictive-model.md,read,topic continuity for predictive model work
+SRC6,operational_notes/maps/thermal-boundary-and-radiation.md,read,thermal-boundary context for wall/test-section blocker
+SRC7,operational_notes/maps/thermal-closures-and-internal-nu.md,read,thermal-closure context for acceptance signal
+SRC8,work_products/2026-07/2026-07-18/2026-07-18_tswfc2_dry_contract/README.md,read,prior TSWFC2 dry contract
+SRC9,work_products/2026-07/2026-07-18/2026-07-18_tswfc2_dry_contract/node_geometry_contract.csv,read,node topology contract and reconciliation input
+SRC10,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/next_model_contract.csv,read,high-severity wall/test-section blocker requirement
+SRC11,../cfd-modeling-tools/.agent/BOARD.md,read_write,claimed and completed external Fluid implementation row
+SRC12,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,write,implemented TSWFC2 API and ledgers
+SRC13,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,write,implemented TSWFC2 config loading and export
+SRC14,../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,write,implemented focused contract tests
+SRC15,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,write,documented Fluid scenario contract
+SRC16,../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-18_workflow_journal.md,write,documented Fluid-side implementation session

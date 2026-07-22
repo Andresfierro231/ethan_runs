@@ -1,0 +1,8 @@
+{
+  "candidate_pass_count": 1,
+  "created_utc": "2026-07-22T18:46:15.962688+00:00",
+  "decision": "heater_eta_candidate_passes_wallflux_score_no_final_forward_admission",
+  "next_gate": "source_property_release_and_coupled_heat_ledger_score",
+  "selected_candidate": "HF2_eta_wallflux_salt2",
+  "task": "TODO-PREDICT-HEATER-FLUID-FRACTION"
+}

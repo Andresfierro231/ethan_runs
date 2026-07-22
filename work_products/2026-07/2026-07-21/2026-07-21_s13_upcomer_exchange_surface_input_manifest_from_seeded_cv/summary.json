@@ -1,0 +1,20 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SURFACE-INPUT-MANIFEST-FROM-SEEDED-CV-2026-07-21",
+  "generated_at": "2026-07-21T19:24:51-05:00",
+  "upstream_decision": "released_seeded_source_bounded_cv_surface_preflight_ready",
+  "decision": "release_surface_extraction_input_manifest_only",
+  "case_count": 3,
+  "surface_extraction_ready_rows": 3,
+  "seeded_surface_manifest_rows": 3,
+  "input_file_existence_check_rows": 24,
+  "sampler_manifest_ready_rows": 0,
+  "sampler_harvest_allowed": false,
+  "same_qoi_uq_ready": false,
+  "exchange_cell_admission_allowed": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "next_action": "claim a scheduler-authorized seeded surface extraction row; keep sampler/harvest/UQ/admission blocked until raw outputs validate"
+}

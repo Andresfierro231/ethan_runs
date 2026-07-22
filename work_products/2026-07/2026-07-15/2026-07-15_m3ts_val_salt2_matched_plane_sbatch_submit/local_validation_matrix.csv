@@ -1,0 +1,9 @@
+check_id,command,result,notes
+python_build,python3.11 tools/analyze/build_m3ts_val_salt2_sbatch_studies.py --study all,pass,Generated package and sbatch scripts locally.
+unit_tests,python3.11 -m unittest tools.analyze.test_m3ts_val_salt2_sbatch_studies,pass,4 tests passed.
+py_compile,python3.11 -m py_compile tools/analyze/build_m3ts_val_salt2_sbatch_studies.py tools/analyze/test_m3ts_val_salt2_sbatch_studies.py,pass,No syntax errors.
+sbatch_m3ts_bash_n,bash -n scripts/run_m3ts_setup_only_scorecard.sbatch,pass,Generated sbatch syntax valid.
+sbatch_val_bash_n,bash -n scripts/run_val_salt2_external_test.sbatch,pass,Generated sbatch syntax valid.
+sbatch_pm5_bash_n,bash -n scripts/run_matched_plane_onset_extraction.sbatch,pass,Generated sbatch syntax valid.
+pm5_runner_bash_n,bash -n work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/run_pm5_matched_plane_compute.sh,pass,Existing PM5 compute runner syntax valid.
+pm5_helper_preflight,python3.11 work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/scripts/pm5_matched_plane_helper.py preflight,pass,"4 cases OK; source case, mesh stations, and processor time present; plan_row_count=12."

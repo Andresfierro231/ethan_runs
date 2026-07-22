@@ -1,0 +1,11 @@
+guard_id,changed,policy
+native_output_mutation,false,read-only inventory of existing package artifacts
+registry_or_admission_mutation,false,no registry edit and no closure/model admission
+scheduler_action,false,no sbatch/srun/tmux launch
+solver_or_postprocessing_launch,false,"no OpenFOAM, ParaView, sampler, or harvest execution"
+sampled_field_extraction,false,requirements only; extraction remains a future row
+Q_wall_W_release,false,Q_wall requires future wallHeatFlux integration
+same_qoi_uq_or_admission,false,no UQ/admission/S11/S12/S13/S15/S6 trigger
+internal_Nu_residual_absorption,false,residual lane remains diagnostic and not absorbed
+Fluid_or_external_repo_mutation,false,no external repo edits
+blocker_register_mutation,false,blocker register is read-only in this row

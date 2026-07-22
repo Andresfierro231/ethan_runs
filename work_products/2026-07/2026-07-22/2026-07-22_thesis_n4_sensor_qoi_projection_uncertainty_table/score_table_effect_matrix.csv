@@ -1,0 +1,5 @@
+class,rows,score_effect
+mapped,1,included after projection gates; still score-only
+bounded,15,include as bounded/provisional score targets
+excluded,1,exclude from aggregate until model emits required state
+runtime_temperature_inputs,0,forbidden as inputs

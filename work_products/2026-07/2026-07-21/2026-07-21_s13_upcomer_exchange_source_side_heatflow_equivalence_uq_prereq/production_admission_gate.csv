@@ -1,0 +1,6 @@
+gate,status,allowed,reason
+source_side_contract_publication,pass,true,"the package may publish Q_source_side_net_static_bc_W as a distinct, nonproduction QOI contract"
+source_property_release,blocked,false,"source validity, source use category, and cp/property basis are not released"
+same_qoi_uq_execution,blocked,false,neighbor windows and mesh/GCI evidence are absent
+production_harvest,blocked,false,Q_source_side_net_static_bc_W is contracted but not source/property/UQ released
+coefficient_or_s11_s15_s6_admission,blocked,false,production evidence and UQ are absent

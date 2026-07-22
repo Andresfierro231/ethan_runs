@@ -1,0 +1,5 @@
+case_key,pm5_rows,wallHeatFlux_rows,min_Re,max_Re,max_reverse_area_fraction,f6_fit_admissible_rows,review_statuses
+salt2_hi5q,3,3,94.87281344,100.0030491,0.785845516,0,diagnostic_onset_only_recirculating_not_f6_fit
+salt2_lo5q,3,3,83.1101106,87.454516,0.7901396438,0,diagnostic_onset_only_recirculating_not_f6_fit
+salt4_hi5q,3,3,166.7382592,180.5527051,0.7762644,0,diagnostic_onset_only_recirculating_not_f6_fit
+salt4_lo5q,3,3,148.9247963,160.035202,0.7765350946,0,diagnostic_onset_only_recirculating_not_f6_fit

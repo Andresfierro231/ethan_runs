@@ -1,0 +1,19 @@
+{
+  "candidate_pass_count": 1,
+  "counts": {
+    "heater_fraction_candidate_scores.csv": 12,
+    "heater_fraction_model_summary.csv": 4,
+    "runtime_input_audit.csv": 4,
+    "source_manifest.csv": 5
+  },
+  "created_utc": "2026-07-22T18:46:15.962688+00:00",
+  "date": "2026-07-22",
+  "decision": "heater_eta_candidate_passes_wallflux_score_no_final_forward_admission",
+  "external_fluid_edit": false,
+  "native_output_mutation": false,
+  "next_gate": "source_property_release_and_coupled_heat_ledger_score",
+  "output_dir": "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model",
+  "selected_candidate": "HF2_eta_wallflux_salt2",
+  "solver_or_postprocessing_launch": false,
+  "task": "TODO-PREDICT-HEATER-FLUID-FRACTION"
+}

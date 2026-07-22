@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-06-30T13:28:02-05:00",
+  "case_dir": "tmp/2026-06-30_claude_action_items/recon_salt2_jin",
+  "time": "2431",
+  "stations": [
+    {
+      "label": "TW2",
+      "span": "lower_leg",
+      "status": "no_raw_U_output"
+    },
+    {
+      "label": "TW5",
+      "span": "right_leg",
+      "status": "no_raw_U_output"
+    },
+    {
+      "label": "TP4",
+      "span": "left_lower_leg",
+      "status": "no_raw_U_output"
+    },
+    {
+      "label": "TW9",
+      "span": "upper_leg",
+      "status": "no_raw_U_output"
+    }
+  ]
+}

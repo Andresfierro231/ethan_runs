@@ -1,0 +1,50 @@
+{
+  "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+  "mdot_samples": {
+    "mdot_pipeleg_left_04_test_section": -0.01224356054,
+    "mdot_pipeleg_lower_05_straight": -0.01224356133,
+    "mdot_pipeleg_right_02_middle": -0.0122435655,
+    "mdot_pipeleg_upper_05_cooler": -0.01224356143
+  },
+  "total_wall_heat_series_final": {
+    "time": 586.560241,
+    "value": -0.773351
+  },
+  "piv_slab_final": {
+    "time": 586.560240964,
+    "Ux": -1.89792889e-05,
+    "Uy": 0.01958545106,
+    "Uz": 1.666038086e-09,
+    "magU": 0.0195855104,
+    "T": 449.9429406
+  },
+  "temperature_probe_final": {
+    "time": 586.560241,
+    "values": [
+      449.517876,
+      442.971099,
+      440.252947,
+      447.695726,
+      448.736459,
+      450.707305
+    ]
+  },
+  "log_summary": {
+    "job_id": "3159913",
+    "source_case_path": "/scratch/09807/ethanrozak/foam_vv/runs/viscosity_screening_20260511_221340/cases/viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "nprocs": "64",
+    "start_date": "May 13 2026",
+    "start_time": "09:26:45",
+    "status": "completed",
+    "termination_reason": "normal",
+    "final_time_marker": "586.560240964s",
+    "convergence": {
+      "reached": true,
+      "iteration": 93500,
+      "dTmean": 6.62772722e-08,
+      "dTsigma": 9.93417884e-05,
+      "dUmean": 1.87097192e-06,
+      "tol": 0.0001
+    }
+  }
+}

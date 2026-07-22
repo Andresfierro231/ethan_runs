@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-06-26T09:51:41-05:00",
+  "family_scope": "salt_only",
+  "straight_friction_status": "provisional_defended",
+  "straight_friction_region_count": 2,
+  "direct_nu_status": "provisional_defended_limited_domain",
+  "direct_nu_region_count": 1,
+  "primary_ua_region_count": 4,
+  "blocked_term_count": 2,
+  "follow_on_gap_count": 5
+}

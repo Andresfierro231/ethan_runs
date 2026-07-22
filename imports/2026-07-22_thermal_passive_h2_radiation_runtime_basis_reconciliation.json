@@ -1,0 +1,50 @@
+{
+  "changed_files": [
+    "tools/analyze/build_thermal_passive_h2_radiation_runtime_basis_reconciliation.py",
+    "tools/analyze/test_thermal_passive_h2_radiation_runtime_basis_reconciliation.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_radiation_runtime_basis_reconciliation",
+    ".agent/status/2026-07-22_TODO-THERMAL-PASSIVE-H2-RADIATION-RUNTIME-BASIS-RECONCILIATION-2026-07-22.md",
+    ".agent/journal/2026-07-22/thermal-passive-h2-radiation-runtime-basis-reconciliation.md",
+    "imports/2026-07-22_thermal_passive_h2_radiation_runtime_basis_reconciliation.json"
+  ],
+  "date": "2026-07-22",
+  "decision": "passive_h2_radiation_basis_resolved_outer_insulation_surface_same_qoi_gate_diagnostic_no_release",
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T18:05:39+00:00",
+  "mutation_flags": {
+    "coefficient_admission": false,
+    "final_score_claim": false,
+    "fluid_or_external_edit": false,
+    "native_solver_outputs_mutated": false,
+    "numeric_q_loss_release": false,
+    "protected_scoring": false,
+    "qwall_release": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "solver_or_sampler_launch": false,
+    "source_property_release": false,
+    "thesis_current_or_latex_edit": false
+  },
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_one_train_repair_preflight/passive_operator_term_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/source_backed_passive_h2_basis_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_runtime_operator_smoke_uq_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_predictions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/baseline_root_and_qoi_smoke.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/one_at_a_time_setup_uq_smoke.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/heat_ledger_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/runtime_input_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json",
+    "reference/geometry_reference.md",
+    "operational_notes/maps/thermal-boundary-and-radiation.md",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "task": "TODO-THERMAL-PASSIVE-H2-RADIATION-RUNTIME-BASIS-RECONCILIATION-2026-07-22",
+  "task_id": "TODO-THERMAL-PASSIVE-H2-RADIATION-RUNTIME-BASIS-RECONCILIATION-2026-07-22"
+}

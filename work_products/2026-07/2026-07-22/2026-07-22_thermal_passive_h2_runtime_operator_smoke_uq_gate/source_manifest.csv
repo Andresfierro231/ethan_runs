@@ -1,0 +1,10 @@
+exists,mutation_status,source_path,use
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_one_train_repair_preflight/passive_operator_term_contract.csv,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_one_train_repair_preflight/summary.json,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_predictions.csv,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_sensitivity.csv,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/heat_ledger_sensitivity.csv,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/runtime_input_manifest.csv,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/summary.json,runtime operator smoke/UQ gate source
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/summary.json,runtime operator smoke/UQ gate source

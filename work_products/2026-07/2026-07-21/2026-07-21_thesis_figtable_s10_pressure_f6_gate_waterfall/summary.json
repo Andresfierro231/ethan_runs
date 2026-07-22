@@ -1,0 +1,18 @@
+{
+  "task_id": "TODO-THESIS-FIGTABLE-S10-PRESSURE-F6-GATE-WATERFALL-2026-07-21",
+  "waterfall_rows": 15,
+  "pressure_gate_rows": 8,
+  "f6_gate_rows": 7,
+  "f3_comparison_rows": 1,
+  "claim_boundary_rows": 4,
+  "admitted_rows": 0,
+  "component_k_values_published": 0,
+  "cluster_k_values_published": 0,
+  "f6_fits_performed": 0,
+  "clipped_k_rows": 0,
+  "global_multiplier_rows": 0,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "figure_or_chapter_asset_edit": false
+}

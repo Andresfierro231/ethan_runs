@@ -1,0 +1,6 @@
+gate,status,pass,reason
+ordinary_upcomer_Nu_fD_K,disabled,false,single-stream ordinary closure remains invalid for recirculating/incomplete upcomer evidence
+exchange_cell_smoke,blocked_missing_mesh_gci_source_basis,false,"throughflow-plus-recirculation is preferred but lacks same-label mesh/GCI, cp/source-property, and production energy closure"
+source_side_bridge,diagnostic_only,false,source-side heat is finite but not source/property released and must not be relabeled as Q_wall_W
+production_harvest,blocked,false,limited sampled-field package has 0 production-ready rows and mesh/GCI gate has 0 accepted same-label rows
+s11_s12_s13_s15_s6_trigger,not_triggered,false,no exchange-cell candidate is smoke-ready or admitted

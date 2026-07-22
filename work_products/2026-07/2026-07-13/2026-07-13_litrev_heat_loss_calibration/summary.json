@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-07-13T20:42:43+00:00",
+  "date": "2026-07-13",
+  "notes": [
+    "Radiation is not separated from rcExternalTemperature wallHeatFlux unless a later source/output exposes a distinct qr term."
+  ],
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration",
+  "outputs": [
+    "separated_heat_loss_ledger.csv",
+    "heat_closure_admission.csv",
+    "validation_report.json"
+  ],
+  "primary_rows": 207,
+  "source_context": {
+    "litrev_synthesis": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways",
+    "research_pathways": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv"
+  },
+  "task_id": "TODO-LITREV-HEAT-LOSS-CALIBRATION"
+}

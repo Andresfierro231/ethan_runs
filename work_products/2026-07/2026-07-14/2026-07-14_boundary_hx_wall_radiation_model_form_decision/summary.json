@@ -1,0 +1,20 @@
+{
+  "task": "AGENT-314",
+  "date": "2026-07-14",
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision",
+  "status": "complete",
+  "artifact_contract": "Compact downstream model-form decision table for boundary/HX/wall-layer/radiation choices.",
+  "main_table": "decision_table.csv",
+  "source_status_table": "source_status.csv",
+  "row_count_decision_table": 16,
+  "row_count_source_status": 16,
+  "key_decisions": [
+    "Property lane decisions are separated from friction, K, Nu, UA, HX, and radiation fitting.",
+    "Reis/Jadyn replication property mode is admitted as the replication lane; updated property sources are reference or sensitivity lanes until declared reruns.",
+    "VDI Heat Atlas and Reis solidification/failure evidence are admitted as heat-path architecture, not as one global UA.",
+    "Current CFD rcExternalTemperature radiation is embedded in realized wallHeatFlux; do not add a separate radiation term in realized-wallHeatFlux replay.",
+    "Chen et al. 2017 low-Re molten-salt mixed-convection Nu is rejected for current Salt2/3/4 active promotion because audited TAMU rows are outside or unknown.",
+    "Named pressure losses and CFD validity diagnostics are admitted method gates; universal f_D, K, and Nu names are rejected where section-effective flags apply."
+  ],
+  "index_refresh": "not_run_active_AGENT_309_owns_generated_index_files"
+}

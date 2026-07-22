@@ -1,0 +1,7 @@
+source_id,path,use,mutation
+raw_endpoint_pressure_velocity,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv,"endpoint labels, normals, summary flux, pressure, velocity, reverse metrics",read_only
+raw_endpoint_vtk_files,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_surface_file_manifest.csv,face-level POLYDATA/CELL_DATA source files for flux audit,read_only
+pressure_velocity_basis_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv,pressure residual and dynamic-head basis,read_only
+recirculation_metrics,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,aggregate RAF/RMF/SVF ordinary-gate status,read_only
+same_qoi_uq_contract,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/same_qoi_uq_sampling_contract.csv,same-QOI residual and q_ref UQ requirements,read_only
+residual_scorer_next_contract,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/next_extraction_contract.csv,face-level q_ref and nonrecirculating anchor next-step contract,read_only

@@ -1,0 +1,5 @@
+guardrail,status,reason
+scheduler_action,not_taken,timeout disposition is read-only; retry requires a separate scheduler row
+sampler_or_harvest,not_taken,zero terminal-successful CAND-001 cases and zero endpoint field rows ready
+f6_component_cluster_admission,not_taken,"ordinary-flow, same-QOI UQ, and F3 comparison gates remain closed"
+partial_processor_fields,diagnostic_only_for_runtime_failure,processor-local writes after timeout are not reconstructed terminal endpoint evidence

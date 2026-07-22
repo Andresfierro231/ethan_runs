@@ -1,0 +1,6 @@
+priority,item,allowed_action,blocked_until
+1,SVG export variants,export PDF/PNG variants from existing SVGs if thesis build needs them,not blocked
+2,caption consistency,align captions to claim ledger and current negative/admission status,not blocked
+3,file naming consistency,keep F01-F06 stable and add variants without overwriting source SVGs,not blocked
+4,quantitative overlays,add final score or admitted-coefficient overlays only after frozen scorecard/admission package,blocked_by_S11_S15_or_final_scorecard
+5,new rendered views,launch new renderer only under a separate exact scheduler/render row,blocked_by_new_row

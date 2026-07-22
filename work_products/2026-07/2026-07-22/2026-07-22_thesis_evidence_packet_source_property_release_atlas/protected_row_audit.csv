@@ -1,0 +1,6 @@
+protected_use,release_status,allowed_use,forbidden_use,source_path
+validation_rows,not_released,Score frozen candidate only after freeze,Fit/tune/model-select or release source/property values,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/protected_row_release_audit.csv
+holdout_rows,not_released,Score frozen candidate only after freeze,Fit/tune/model-select or repair source/property labels,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/protected_row_release_audit.csv
+external_test_rows,not_released,External-test score after freeze,Training or calibration input,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/protected_row_release_audit.csv
+nominal_train_rows,blocked_no_release,May become fit-eligible only after strict gates pass,Automatic fit because labels are complete,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv
+source_property_values,not_released,Context for blocked atlas only,Use in Fluid/runtime solve or candidate freeze,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/README.md

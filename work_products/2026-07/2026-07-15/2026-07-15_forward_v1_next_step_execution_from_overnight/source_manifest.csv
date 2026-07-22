@@ -1,0 +1,9 @@
+source_id,path,exists,use
+AGENT-391-summary,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/summary.json,True,Completed mdot/temperature overnight queue counts and guardrails.
+AGENT-391-cooler-bakeoff,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff,True,Setup-only cooler candidate and leakage policy.
+AGENT-391-test-section-bakeoff,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff,True,Diagnostic test-section boundary-form screen.
+AGENT-392-run-summary,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/run_summary.json,True,Thermal rescue completion state.
+AGENT-392-hx-fit,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/predictive_hx_fit_setup_only_refresh/summary.json,True,Setup-only predictive HX fit summary.
+AGENT-392-external-bc,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/external_bc_thermal_profile_parity_refresh/summary.json,True,External BC/radiation diagnostic parity summary.
+AGENT-373-readme,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/README.md,True,Hydraulic dependent-chain definition and expected outputs.
+slurm-accounting,"sacct -j 3293924,3295438,3295989,3295990,3295991,3295120,3295901",True,Live read-only scheduler/accounting snapshot.

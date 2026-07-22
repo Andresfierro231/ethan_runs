@@ -1,0 +1,2 @@
+decision_id,s11_unblocked,released_candidate_rows,released_candidate,decision,required_next_step
+S12-S11-DECISION,false,0,,thermal_shape_candidate_identified_but_not_released,finite legal score; exchange-state evidence; same-QOI UQ; source/property release

@@ -1,0 +1,31 @@
+{
+  "adoption_counts": {
+    "missing_labels": 1,
+    "ready_contract_requires_labels": 1
+  },
+  "coverage_counts": {
+    "source_or_property_gate_missing": 13,
+    "source_property_labels_available": 3
+  },
+  "date": "2026-07-18",
+  "external_fluid_edit": "none",
+  "final_scorecard_coverage_rows": 16,
+  "future_scorecard_contract_rows": 6,
+  "generated_at_utc": "2026-07-18T18:06:54+00:00",
+  "generated_index_refresh": "not_run_active_agent_owns_generated_index_paths",
+  "missing_source_property_coverage_rows": 13,
+  "native_output_mutation": "none",
+  "open_blocker_labels": 3,
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward",
+  "registry_mutation": "none",
+  "research_path_rows": 5,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "scorecard_adoption_audit_rows": 2,
+  "solver_or_postprocessing_launch": "none",
+  "source_property_label_rows": 90,
+  "source_validity_envelope_counts": {
+    "mixed_or_outside_envelope_label_required": 90
+  },
+  "task": "AGENT-538"
+}

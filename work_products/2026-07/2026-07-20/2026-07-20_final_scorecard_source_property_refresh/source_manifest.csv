@@ -1,0 +1,10 @@
+role,path,description
+input,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,July 17 final scorecard case contract
+input,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,July 17 prediction join shell
+input,work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/source_property_label_contract.csv,AGENT-538 source/property label contract
+input,work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/final_scorecard_case_coverage_audit.csv,AGENT-538 final scorecard coverage audit
+input,work_products/2026-07/2026-07-20/2026-07-20_source_property_gate_infrastructure/final_scorecard_source_property_todo.csv,AGENT-554 final scorecard source/property TODO ledger
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv,Derived conservative source/property label table
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/case_refresh_decision_matrix.csv,No-admission-change decision matrix
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/source_property_gate_after_refresh.csv,Gate findings after refresh
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/remaining_source_property_todo.csv,Remaining gate TODOs

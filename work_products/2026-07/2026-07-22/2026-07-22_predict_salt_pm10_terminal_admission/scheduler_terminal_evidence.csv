@@ -1,0 +1,4 @@
+job_id,step,job_name,state,exit_code,elapsed,start,end,nodelist,role,terminal_for_this_packet,source
+3293924,3293924,saltq_sel_cont,TIMEOUT,0:0,5-00:00:06,2026-07-13T17:03:56,2026-07-18T17:04:02,c318-016,packed Salt2/Salt4 +/-10Q solver continuation,yes_timeout_terminal,"sacct -j 3293924,3295438 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList -P on 2026-07-22"
+3293924,3293924.batch,batch,CANCELLED,0:15,5-00:00:06,2026-07-13T17:03:56,2026-07-18T17:04:02,c318-016,solver batch step cancelled by timeout,yes_timeout_step_terminal,"sacct -j 3293924,3295438 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList -P on 2026-07-22"
+3295438,3295438,saltq_s24_sel_harv,COMPLETED,0:0,00:35:41,2026-07-18T17:04:13,2026-07-18T17:39:54,c318-019,dependent Salt2/Salt4 +/-10Q harvest/postprocess job,yes_completed_terminal,"sacct -j 3293924,3295438 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList -P on 2026-07-22"

@@ -1,0 +1,9 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/seeded_surface_input_manifest.csv,case-level seeded surface/input manifest,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/surface_vtk_validation.csv,geometry VTK validation,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/released_surface_vtk_manifest.csv,geometry VTK manifest,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/field_inventory.csv,field availability input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/sampled_field_lane_table.csv,sampled lane blocker input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/qwall_contract.csv,prior Q_wall blocked contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/harvest_readiness_gate.csv,QOI readiness input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv,static source/sink context,true,false,false

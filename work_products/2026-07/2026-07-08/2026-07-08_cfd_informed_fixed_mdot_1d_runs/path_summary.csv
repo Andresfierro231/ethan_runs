@@ -1,0 +1,8 @@
+path_id,case_count,mean_abs_Tmean_error_K,max_abs_Tmean_error_K,mean_abs_loop_delta_T_error_K,max_abs_loop_delta_T_error_K,mean_abs_pressure_residual_Pa,max_abs_pressure_residual_Pa,thermal_gate_pass,pressure_is_diagnostic_not_gate,interpretation
+P0_fixed_mdot_current_1d_contract,3,63.745917,65.025914,1.075127,1.183711,30.469196,31.879001,False,True,Baseline replay; isolates thermal state from pressure-root mdot changes.
+P1_cfd_cooler_duty_only,3,4.456216,6.21919,0.140312,0.17411,31.848739,32.56781,False,True,Tests whether the cooling-jacket duty magnitude is the dominant missing sink.
+P2_heater_wallflux_no_test_source,3,34.096767,36.936956,1.68408,1.824136,21.82745,22.178806,False,True,Tests source-contract mismatch without changing the cooler model.
+P3_source_plus_test_section_sink,3,28.459379,28.67917,1.591285,1.693819,20.824318,21.499206,False,True,Tests heater wallHeatFlux plus quartz/test-section net sink while retaining internal boundary models.
+P4_cfd_cooler_plus_heater_wallflux,3,39.749277,40.875308,0.58034,0.730239,3.017342,5.666339,False,True,Combines the largest cooler correction with heater-interface heat transfer.
+P5_cfd_cooler_source_plus_test_sink,3,91.586994,179.273327,0.668789,0.867163,3359.860732,10019.232797,False,True,"Uses the preferred source/loss sign convention for the heater and quartz terms, with the caveat that current Fluid prescribed-loss semantics zero unlisted passive losses."
+P6_full_patch_ledger_prescribed,3,128.889685,168.295679,0.323564,0.512093,2537.191657,5025.160457,False,True,"Full fixed-Q patch ledger replay; useful for loop delta T, but absolute mean T is under-anchored without temperature-dependent external boundary reconstruction."

@@ -1,0 +1,12 @@
+source_role,path,used_for,mutation_status,exists_at_closeout
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/chapter_evidence_completeness_matrix.csv,section readiness and gap context,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,numerical claim values,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/README.md,CFD provenance and reference-database wording,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/cfd_legal_use_matrix.csv,runtime legality,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json,source/property release state,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch7_ch8_results_negative_blocked/summary.json,negative blocked result context,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/RUNNING.md,running train-only smoke gate,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/README.md,regime/source-envelope closure eligibility,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives/README.md,ordinary upcomer closure disablement,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_pressure_alternate_low_reverse_anchor_screen/README.md,pressure anchor blocker,read_only,true
+output,work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit,narrative coverage audit artifacts,mutated,true

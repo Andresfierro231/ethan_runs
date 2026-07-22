@@ -1,0 +1,6 @@
+gate,status,ready_for_next_stage,production_harvest_allowed_now,reason
+target_window_qoi_inventory,diagnostic_target_values_present,true,false,"target-window values exist, but target values alone are not same-QOI UQ"
+neighbor_window_uq,blocked_missing_target_minus_and_target_plus_windows,false,false,0/4 QOI labels have same-QOI neighbor-window UQ ready
+mesh_gci_uq,not_reached_neighbor_window_gate_failed,false,false,mesh/GCI gate should run only after exact neighboring windows exist
+production_harvest,do_not_run,false,false,same-QOI neighbor-window UQ is missing for all requested S13 QOI labels
+clean_fail_closed_thesis_result,ready,true,false,publish diagnostic target evidence and explicit UQ blocker without coefficient admission

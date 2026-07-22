@@ -1,0 +1,10 @@
+source_id,path,exists,used_as,mutation_status
+SRC-01,work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/README.md,true,read_only_contract_input,not_modified_by_this_task
+SRC-02,work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/conservative_equation_ledger.csv,true,read_only_contract_input,not_modified_by_this_task
+SRC-03,work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/README.md,true,read_only_contract_input,not_modified_by_this_task
+SRC-04,work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/sensor_projection_operator_table.csv,true,read_only_contract_input,not_modified_by_this_task
+SRC-05,work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/README.md,true,read_only_contract_input,not_modified_by_this_task
+SRC-06,work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/uncertainty_source_table.csv,true,read_only_contract_input,not_modified_by_this_task
+SRC-07,work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/README.md,true,read_only_contract_input,not_modified_by_this_task
+SRC-08,work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/README.md,true,read_only_contract_input,not_modified_by_this_task
+SRC-09,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/runtime_legality_audit.csv,true,read_only_contract_input,not_modified_by_this_task

@@ -1,0 +1,7 @@
+state_id,trigger,switch_effect,claim_effect,next_unlock
+FC1_missing_low_recirc_anchor,low_recirc_or_nonrecirc_anchor_admitted == false,one_stream disabled,no ordinary upcomer Nu/f_D/K/F6,admit low-recirculation/nonrecirculating anchors with same-QOI UQ and mesh/GCI
+FC2_reverse_active_no_closed_cv,reverse_flow_evidence_active == true and closed_recirc_cv_admitted == false,route to guarded signed_flow_junction_network dry fallback,"no exchange-cell coefficient, no component K/F6",recirculation-cell segmentation from validated cell VTKs
+FC3_missing_exchange_interface,closed CV exists but exchange_interface_admitted == false,throughflow_plus_recirc_exchange_cell blocked,mdot_exchange remains diagnostic/proxy only,derive internal faces between recirc cells and main-throughflow cells
+FC4_missing_wall_core_band,wall_core_band_admitted == false,Q_wall_W/T_recirc thermal contrast blocked,no wall/core thermal coefficient or Qwall release,derive wall/core band from the same recirculation CV
+FC5_missing_same_qoi_uq_or_mesh_gci,same-QOI UQ or mesh/GCI not admitted,exchange-cell architecture may be documented but not admitted,no coefficient fitting and no production harvest/admission,"complete exact-label medium/fine rows, then rerun mesh/GCI disposition"
+FC6_missing_source_property_validity,source_property_valid_for_exchange_cell == false,energy residual support blocked from release,no source-side heat-flow equivalence or cp-dependent exchange claim,candidate-specific source/property and cp validity release

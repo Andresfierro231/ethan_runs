@@ -1,0 +1,6 @@
+command_id,command,result,notes
+VAL-001,python3.11 -m py_compile tools/analyze/build_two_tap_section_effective_hybrid_pressure_scorecard.py tools/analyze/check_two_tap_section_effective_hybrid_pressure_scorecard.py tools/analyze/test_two_tap_section_effective_hybrid_pressure_scorecard.py,pass,Reran existing scorecard syntax checks
+VAL-002,python3.11 -m unittest tools.analyze.test_two_tap_section_effective_hybrid_pressure_scorecard,pass,Reran 4 existing scorecard unit tests
+VAL-003,python3.11 tools/analyze/build_two_tap_section_effective_hybrid_pressure_scorecard.py --out-dir /tmp/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard_rerun,pass,Regenerated scorecard into /tmp to avoid mutating completed read-only package
+VAL-004,python3.11 tools/analyze/check_two_tap_section_effective_hybrid_pressure_scorecard.py --out-dir /tmp/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard_rerun,pass,Checked temporary scorecard invariants
+VAL-005,python3.11 tools/agent/finish_task.py --task-id TODO-NEGATIVE-K-SECTION-EFFECTIVE-THESIS-CASE-DISPATCH-2026-07-21,pass,Validated documentation closeout

@@ -1,0 +1,4 @@
+validation_id,command,working_directory,result,notes
+VAL1,python -m py_compile tamu_loop_model_v2/solver.py tamu_loop_model_v2/config_loader.py tests/test_solver_contracts.py,../cfd-modeling-tools/tamu_first_order_model/Fluid,passed,"syntax/import compilation passed for changed Fluid files"
+VAL2,python -m pytest tests/test_solver_contracts.py -q -k 'tswfc2 or scenario_config_defaults_match_active_solver_contract',../cfd-modeling-tools/tamu_first_order_model/Fluid,passed,"4 selected tests passed; 45 deselected"
+VAL3,python -m pytest tests/test_solver_contracts.py -q,../cfd-modeling-tools/tamu_first_order_model/Fluid,interrupted,"extra broad check interrupted after 4:26; 13 tests had passed and no failure summary was printed"

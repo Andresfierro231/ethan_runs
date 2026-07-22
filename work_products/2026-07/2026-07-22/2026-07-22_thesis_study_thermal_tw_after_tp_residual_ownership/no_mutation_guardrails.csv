@@ -1,0 +1,10 @@
+guardrail,status,evidence
+native_openfoam_outputs_mutated,false,Read only published work_products summaries and compact CSVs
+registry_or_admission_mutated,false,No registry case-admission or model-admission files edited
+scheduler_action,false,No sbatch srun solver postProcess sampler harvest or UQ launch
+fluid_external_repository_mutated,false,No Fluid or external repository edits
+thesis_body_or_latex_mutated,false,No thesis body or LaTeX edits
+source_property_release_mutated,false,No cp viscosity pressure source or sink release state changed
+qwall_or_coefficient_release,false,No Qwall production release exchange coefficient wall/profile correction component admission or final score
+validation_temperature_runtime_input,false,Validation holdout and external temperatures remain score-only after freeze
+heat_residual_hidden_in_internal_nu,false,Residual owner lane remains explicit and internal Nu is not used as residual sink

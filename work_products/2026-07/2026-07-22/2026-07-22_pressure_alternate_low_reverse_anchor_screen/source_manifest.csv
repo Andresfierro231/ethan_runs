@@ -1,0 +1,5 @@
+source_id,path,mutation,role
+low_recirc_inventory,work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory,read_only,evidence source
+anchor_first,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement,read_only,evidence source
+branch_scorecard,work_products/2026-07/2026-07-17/2026-07-17_branch_specific_ordinary_pipe_scorecard,read_only,evidence source
+pm10_terminal,work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission,read_only,evidence source

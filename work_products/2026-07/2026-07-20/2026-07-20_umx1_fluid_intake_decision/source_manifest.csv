@@ -1,0 +1,10 @@
+artifact_id,path,source_type,access,notes
+fluid_board,../cfd-modeling-tools/.agent/BOARD.md,external_agent_board,read_only,External Fluid row impl-2026-07-20-fluid-umx1-tswfc2-smoke-followup was completed before this intake.
+fluid_workflow_journal,../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-20_workflow_journal.md,external_fluid_journal,read_only,Records Fluid commit 34af0397beadcd00e7d1f6520f01ff3946209aa9 and UMX1/TSWFC2 smoke finalization.
+umx1_bracket_smoke,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/umx1_bracket_smoke_v1,external_fluid_diagnostic_output,read_only,Durable UMX1 bracket smoke campaign used as primary root and score-behavior evidence.
+combined_smoke,/tmp/umx1_tswfc2_combined_smoke_v1_check,external_fluid_tmp_output,read_only,Combined UMX1 plus TSWFC2 smoke evidence; accepted roots but poor score behavior.
+tswfc2_smoke,/tmp/tswfc2_smoke_v1_check,external_fluid_tmp_output,read_only,TSWFC2 Salt3/Salt4 smoke check used only for context after AGENT-557 not-admission.
+agent_557,work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard,repo_work_product,read_only,Bounded TSWFC2 nominal scorecard decision was not_admitted_no_grid_expansion.
+agent_556,work_products/2026-07/2026-07-20/2026-07-20_forward_blocker_unlock_runbook,repo_work_product,read_only,Defines follow-up order and no-grid guardrails.
+agent_548,work_products/2026-07/2026-07-18/2026-07-18_umx1_stratified_reservoir_blocked_handoff,repo_work_product,read_only,Prior UMX1 Fluid-edit handoff and richer stratified-reservoir API contract.
+agent_544,work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer,repo_work_product,read_only,Original UMX1 smoke result that isolated Salt3/Salt4 root-bracket failures and score-behavior concerns.

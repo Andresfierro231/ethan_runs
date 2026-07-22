@@ -1,0 +1,13 @@
+source_id,case_id,fluid,turbulence_model,heater_power_W,cooling_power_W,T_init_K,nprocs,mesh_group_id,qoi_rtol,qoi_window
+viscosity_screening_salt_test_1_jin_coarse_mesh,salt_test_1_jin,hitec_salt_jin,laminar,232.3,55.58,440.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_2_jin_coarse_mesh,salt_test_2_jin,hitec_salt_jin,laminar,265.7,56.34,447.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_3_jin_coarse_mesh,salt_test_3_jin,hitec_salt_jin,laminar,297.5,60.55,459.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_4_jin_coarse_mesh,salt_test_4_jin,hitec_salt_jin,laminar,337.6,65.98,475.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_1_kirst_coarse_mesh,salt_test_1_kirst,hitec_salt_kirst,laminar,232.3,55.58,440.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_2_kirst_coarse_mesh,salt_test_2_kirst,hitec_salt_kirst,laminar,265.7,56.34,447.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_3_kirst_coarse_mesh,salt_test_3_kirst,hitec_salt_kirst,laminar,297.5,60.55,459.0,64,7ab7fb2650596980,0.0001,100
+viscosity_screening_salt_test_4_kirst_coarse_mesh,salt_test_4_kirst,hitec_salt_kirst,laminar,337.6,65.98,475.0,64,7ab7fb2650596980,0.0001,100
+val_water_test_1_coarse_mesh_laminar,water_test_1,water,laminar,58.8,26.86,314.515625,64,7ab7fb2650596980,0.0001,100
+val_water_test_2_coarse_mesh_laminar,water_test_2,water,laminar,77.6,35.63,320.26374999999996,64,7ab7fb2650596980,0.0001,100
+val_water_test_3_coarse_mesh_laminar,water_test_3,water,laminar,93.0,43.02,324.390625,64,7ab7fb2650596980,0.0001,100
+val_water_test_4_coarse_mesh_laminar,water_test_4,water,laminar,129.0,58.06,334.15375,64,7ab7fb2650596980,0.0001,100

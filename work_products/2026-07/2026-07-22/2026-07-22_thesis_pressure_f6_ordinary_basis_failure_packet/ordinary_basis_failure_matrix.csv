@@ -1,0 +1,8 @@
+failure_mode,evidence,status,allowed_thesis_claim,forbidden_claim
+hydrostatic_dominance,hydrostatic fraction of gross pressure rise is approximately 1.0004 to 1.0006 across Salt2-4,observed,Two-tap gross pressure is dominated by hydrostatic head.,The residual directly measures irreversible component loss.
+negative_signed_residual,available signed residuals are -1.25366731683 Pa -1.84957005859 Pa and -1.67833900273 Pa,negative_result,Negative residual is evidence of basis mismatch and section-effective behavior.,Negative K is a physical component coefficient.
+material_reverse_flow,RAF about 0.763078957263 and RMF about 0.49999 across lower-right rows,fail_ordinary_flow,Ordinary one-stream pressure closure is not valid for these rows.,Use these rows as ordinary F6 or pipe-friction fit evidence.
+component_isolation_missing,no admissible straight-reference/development subtraction exists,fail_component_gate,Component isolation remains unproven.,Assign residual to a single elbow/corner component.
+same_qoi_uq_missing,same_qoi_mesh_uq_admissible_rows=0,fail_uq_gate,Uncertainty is not admitted for F6/component-K release.,Publish component K/F6 values as release-ready.
+endpoint_source_missing,CAND001 terminal_success_cases=0 and endpoint_fields_ready=0,fail_source_gate,Endpoint source evidence must be recovered before ordinary route can reopen.,Compare F6 numerically against F3/Shah now.
+low_recirc_anchor_absent,36 candidate rows reviewed but sampled ordinary-flow pass rows=0,fail_anchor_gate,Future low-recirculation anchors are design targets only.,Treat inventory rows as admitted anchors.

@@ -1,0 +1,5 @@
+gate,status,pass,evidence,consequence
+current_coarse_reference_rows,diagnostic_available,True,12 current-coarse reconstructed target rows exist for four QOIs and three cases,can be audited as coarse-reference candidates
+same_label_coarse_equivalence,fail_closed_not_admitted,False,no joined contract proves geometry/time/source/property equivalence to medium/fine sampler rows,formal GCI remains blocked
+open_cv_for_diagnostics,allowed_with_explicit_residual,True,diagnostic use allowed when all open-boundary terms and residual are labeled,can continue heat-flow and exchange diagnostics
+closed_cv_for_exchange_cell_admission,required_not_satisfied,False,"no same-basis bounded energy residual, source/property release, or formal mesh/GCI",no exchange-cell coefficient fitting or admission

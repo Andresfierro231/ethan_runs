@@ -1,0 +1,23 @@
+{
+  "candidate_freeze": false,
+  "chapter_number_target_rows": 9,
+  "date": "2026-07-22",
+  "decision": "compact_numerical_claims_ledger_ready_no_recalculation_no_scoring",
+  "final_score_claim": false,
+  "fluid_or_external_edit": false,
+  "forbidden_overclaim_rows": 10,
+  "manifest_count_discrepancy_flag": true,
+  "manifest_count_discrepancy_note": "final figure import summary reports 12 figure rows while selected_figure_import_ledger.csv currently has 9 visible figure rows; keep both facts and audit before asset import",
+  "native_output_mutation": false,
+  "numerical_claim_rows": 78,
+  "registry_or_admission_mutation": false,
+  "runtime_leakage_relaxation": false,
+  "scheduler_action": false,
+  "source_manifest_rows": 22,
+  "source_number_index_rows": 22,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-COMPACT-NUMERICAL-CLAIMS-LEDGER-2026-07-22",
+  "thesis_body_or_latex_edit": false,
+  "uncertainty_admission_label_rows": 37,
+  "validation_holdout_external_scoring": false
+}

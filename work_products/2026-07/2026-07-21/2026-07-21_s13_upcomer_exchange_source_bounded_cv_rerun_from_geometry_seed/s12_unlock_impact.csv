@@ -1,0 +1,4 @@
+candidate,impact_status,reason
+S12-HIAX1,not_unlocked,geometry seed is diagnostic and does not release an exchange-cell source/sink or thermal-shape candidate
+S13-exchange-cell,not_s11_reviewable,no admitted exchange state, no production surface basis, no Q_wall_W/source-sink ledger, no same-QOI UQ
+S15-freeze,not_triggered,no single admitted runtime-legal candidate exists

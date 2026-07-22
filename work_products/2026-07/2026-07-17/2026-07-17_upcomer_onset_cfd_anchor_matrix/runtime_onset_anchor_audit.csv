@@ -1,0 +1,4 @@
+check,status,forbidden_input,policy
+no_scheduler_action,pass_forbidden,sbatch/srun/scancel,planning row only
+no_native_output_mutation,pass_forbidden,native CFD case outputs,read-only sources
+no_registry_mutation,pass_forbidden,registry/admission state,future row decides launch/admission

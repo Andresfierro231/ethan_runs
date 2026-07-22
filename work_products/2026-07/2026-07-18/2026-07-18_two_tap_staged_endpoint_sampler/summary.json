@@ -1,0 +1,20 @@
+{
+  "component_k_admitted": false,
+  "direct_patch_sampling_viable_rows": 0,
+  "endpoint_surfaces": 6,
+  "f6_fit_performed": false,
+  "fluid_or_external_repo_mutated": false,
+  "generated_at": "2026-07-18T20:27:14.426062+00:00",
+  "generated_docs_index_refreshed": false,
+  "last_harvest_job_id": "3302464",
+  "native_solver_outputs_mutated": false,
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler",
+  "preflight_failures": 0,
+  "raw_missing_rows": 0,
+  "raw_sampled_rows": 6,
+  "registry_or_admission_mutated": false,
+  "scheduler_jobs_submitted": 0,
+  "target_cases": 3,
+  "task": "TODO-TWO-TAP-STAGED-ENDPOINT-SAMPLER",
+  "tmp_dir": "tmp/2026-07-18_two_tap_staged_endpoint_sampler"
+}

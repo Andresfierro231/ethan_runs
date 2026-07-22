@@ -1,0 +1,19 @@
+{
+  "task": "TODO-S13-S14-RECIRC-CV-SEGMENTATION-PREFLIGHT-2026-07-21",
+  "generated_at": "2026-07-21T17:22:14-05:00",
+  "status": "complete_fail_closed_diagnostic_masks",
+  "case_count": 3,
+  "candidate_masks_generated": 3,
+  "released_recirc_cv_rows": 0,
+  "released_exchange_interface_rows": 0,
+  "released_wall_core_rows": 0,
+  "surface_vtk_extraction_launched": false,
+  "exchange_cell_harvest_launched": false,
+  "s14_component_k_or_f6_admitted_rows": 0,
+  "f3_shah_apparent_comparison_performed": false,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "residual_absorbed_into_internal_Nu": false
+}

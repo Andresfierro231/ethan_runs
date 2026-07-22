@@ -1,0 +1,46 @@
+{
+  "commands": {
+    "compare": "python3 /scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/build_predictive_forward_v0_solve_case_confirmation.py --package-dir /scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation --compare",
+    "fast_scan_reference": "python3 /scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/run_predictive_forward_v0_imposed_cooler.py --output-dir /scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference --strict-input-contract --sensor-source both --engine fast_scan",
+    "sbatch": "sbatch work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch",
+    "solve_case_full": "python3 /scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/run_predictive_forward_v0_imposed_cooler.py --output-dir /scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full --strict-input-contract --sensor-source both --engine solve_case"
+  },
+  "comparison_status": "pass",
+  "comparison_summary": {
+    "generated_utc": "2026-07-13T22:28:41+00:00",
+    "interpretation": "solve_case rows are authoritative; fast_scan is a proxy only where deltas stay inside the documented bands",
+    "max_abs_Tmean_delta_K": 0.005084778999957962,
+    "max_abs_loop_delta_delta_K": 0.16992313629000044,
+    "max_abs_mdot_delta_kg_s": 0.0003927565464999991,
+    "max_abs_qambient_delta_W": 1.351899999235684e-05,
+    "n_blocked_rows": 0,
+    "n_comparison_rows": 6,
+    "n_pass_rows": 6,
+    "overall_status": "pass"
+  },
+  "compute_node_requirements": {
+    "account": "ASC23046",
+    "cpus_per_task": 4,
+    "login_node_policy": "do not run solve_case full matrix on a login node",
+    "nodes": 1,
+    "partition": "NuclearEnergy",
+    "tasks": 1,
+    "walltime": "06:00:00"
+  },
+  "expected_rows": {
+    "cases": 3,
+    "cfd_sensor_rows_per_engine": 102,
+    "experimental_sensor_rows_per_engine": 102,
+    "result_rows_per_engine": 6,
+    "variants": 2
+  },
+  "generated_utc": "2026-07-13T22:28:41+00:00",
+  "job_submitted": false,
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation",
+  "source_packages": {
+    "fast_scan_completed_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler",
+    "forward_runner": "tools/analyze/run_predictive_forward_v0_imposed_cooler.py",
+    "input_contract_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract"
+  },
+  "task_id": "AGENT-293"
+}

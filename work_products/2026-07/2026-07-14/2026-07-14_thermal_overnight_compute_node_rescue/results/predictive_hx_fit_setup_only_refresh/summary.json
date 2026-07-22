@@ -1,0 +1,84 @@
+{
+  "generated_utc": "2026-07-15T12:53:10+00:00",
+  "litrev_gate_reference_status": "pass",
+  "model_forms": [
+    "HX0_fluid_predictive_airside_hx",
+    "HX1_global_qhx_multiplier_on_fluid_airside",
+    "HX2_direct_UA_multiplier_in_solver"
+  ],
+  "n_baseline_rows": 6,
+  "n_duty_score_rows": 24,
+  "n_parameter_rows": 8,
+  "n_primary_forward_accepted_rows": 6,
+  "n_primary_forward_rows": 6,
+  "n_violations": 0,
+  "primary_holdout_cases": [
+    "salt_4"
+  ],
+  "primary_score_summary": [
+    {
+      "fit_role": "train",
+      "mean_abs_Tmean_error_vs_cfd_K": 33.72333462224498,
+      "mean_abs_qhx_error_W": 0.0,
+      "mean_mdot_error_vs_cfd_kg_s": 0.007444999999999997,
+      "n_rows": 1,
+      "variant_id": "F0_current_fluid_sources"
+    },
+    {
+      "fit_role": "validation",
+      "mean_abs_Tmean_error_vs_cfd_K": 44.08002316872643,
+      "mean_abs_qhx_error_W": 12.915813364572017,
+      "mean_mdot_error_vs_cfd_kg_s": 0.008154999999999999,
+      "n_rows": 1,
+      "variant_id": "F0_current_fluid_sources"
+    },
+    {
+      "fit_role": "holdout",
+      "mean_abs_Tmean_error_vs_cfd_K": 56.89476087678332,
+      "mean_abs_qhx_error_W": 31.375950606882014,
+      "mean_mdot_error_vs_cfd_kg_s": 0.009895000000000004,
+      "n_rows": 1,
+      "variant_id": "F0_current_fluid_sources"
+    },
+    {
+      "fit_role": "train",
+      "mean_abs_Tmean_error_vs_cfd_K": 2.3218715178440448,
+      "mean_abs_qhx_error_W": 0.0,
+      "mean_mdot_error_vs_cfd_kg_s": 0.004632500000000001,
+      "n_rows": 1,
+      "variant_id": "F1_heater_only"
+    },
+    {
+      "fit_role": "validation",
+      "mean_abs_Tmean_error_vs_cfd_K": 6.533912845854559,
+      "mean_abs_qhx_error_W": 2.341475035454124,
+      "mean_mdot_error_vs_cfd_kg_s": 0.005654999999999997,
+      "n_rows": 1,
+      "variant_id": "F1_heater_only"
+    },
+    {
+      "fit_role": "holdout",
+      "mean_abs_Tmean_error_vs_cfd_K": 20.586854165900377,
+      "mean_abs_qhx_error_W": 17.510867422292023,
+      "mean_mdot_error_vs_cfd_kg_s": 0.007395000000000002,
+      "n_rows": 1,
+      "variant_id": "F1_heater_only"
+    }
+  ],
+  "primary_split_id": "declared_train_salt2_validate_salt3_holdout_salt4",
+  "primary_train_cases": [
+    "salt_2"
+  ],
+  "primary_validation_cases": [
+    "salt_3"
+  ],
+  "source_files": {
+    "fluid_solver": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "forward_v0_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler",
+    "heat_loss_admission": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+    "input_contract": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "thermal_targets": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv"
+  },
+  "strict_status": "pass",
+  "task_id": "TODO-PRED-HX-FIT"
+}

@@ -1,0 +1,28 @@
+{
+  "task": "AGENT-540",
+  "date": "2026-07-18",
+  "decision": "api_hook_implemented_no_scoring_launched",
+  "contract_status": {
+    "default_disabled_noop": true,
+    "config_loader_fields_present": true,
+    "invalid_modes_rejected": true,
+    "unknown_parent_segments_rejected": true,
+    "positive_exchange_conservative": true,
+    "marched_segment_ledger_emitted": true,
+    "solver_scoring_grid_launched": false,
+    "scientific_admission_changed": false
+  },
+  "validation": [
+    {
+      "id": "umx1_focused_unittest",
+      "result": "passed",
+      "details": "5 focused tests passed"
+    },
+    {
+      "id": "fluid_compile",
+      "result": "passed",
+      "details": "solver.py, config_loader.py, and test_solver_contracts.py compiled"
+    }
+  ],
+  "next_required_step": "new board row for UMX1 scoring contract and dry scenario matrix before any Fluid campaign"
+}

@@ -1,0 +1,36 @@
+path,kind,exists,read_or_write,notes
+imports/2026-05-29_val_salt_test_2_coarse_mesh_laminar_import.json,input,yes,read-only,Val original intake manifest.
+jadyn_runs/salt2/2026-06-01_continuation_candidate/README.md,input,yes,read-only,Val continuation rationale and source path.
+jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/case_config.yaml,input,yes,read-only,Val setup metadata.
+jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/0/T,input,yes,read-only,Val thermal boundary dictionary.
+jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/0/U,input,yes,read-only,Val velocity boundary dictionary.
+jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/0/p_rgh,input,yes,read-only,Val pressure boundary dictionary.
+jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/constant/physicalProperties,input,yes,read-only,Val material model dictionary.
+registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/case_summary.csv,input,yes,read-only,Val registry case aggregate.
+registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/wall_heat_flux_grouped.csv,input,yes,read-only,Val registry wall heat aggregate.
+imports/2026-06-02_viscosity_screening_salt_test_2_jin_coarse_mesh_import.json,input,yes,read-only,Salt2 Jin intake manifest.
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/README.md,input,yes,read-only,Salt2 Jin continuation wave context.
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/case_config.yaml,input,yes,read-only,Salt2 Jin setup metadata.
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/T,input,yes,read-only,Salt2 Jin thermal boundary dictionary.
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/U,input,yes,read-only,Salt2 Jin velocity boundary dictionary.
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/p_rgh,input,yes,read-only,Salt2 Jin pressure boundary dictionary.
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/physicalProperties,input,yes,read-only,Salt2 Jin material model dictionary.
+registry/salt2/ethan_modern_runs_staged/salt_test_2_jin/viscosity_screening_salt_test_2_jin_coarse_mesh/aggregates/case_summary.csv,input,yes,read-only,Salt2 Jin registry case aggregate.
+registry/salt2/ethan_modern_runs_staged/salt_test_2_jin/viscosity_screening_salt_test_2_jin_coarse_mesh/aggregates/wall_heat_flux_grouped.csv,input,yes,read-only,Salt2 Jin registry wall heat aggregate.
+registry/case_registry.csv,input,yes,read-only,"Global case registration state, read only."
+reports/2026-06/2026-06-04/2026-06-04_ethan_direct_validation/ethan_direct_validation_metrics.csv,input,yes,read-only,June 4 direct validation metrics.
+reports/2026-06/2026-06-29/2026-06-29_ethan_paper_case_inventory/paper_case_inventory.csv,input,yes,read-only,June 29 paper/admission inventory.
+work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_steady_state_table.csv,input,yes,read-only,July 14 steady/admission table.
+work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/case_bc_response_matrix.csv,input,yes,read-only,July 14 flow/BC response rows.
+work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/bc_semantics_and_assumptions.csv,input,yes,read-only,Radiation and BC semantics.
+work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/patch_role_bc_summary.csv,input,yes,read-only,Patch role reductions for Salt2 Jin.
+work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/salt2_jin_vs_val_comparison.csv,input,yes,read-only,Existing Salt2 Jin versus val comparison.
+operational_notes/maps/thermal-boundary-and-radiation.md,input,yes,read-only,Current radiation/rcExternalTemperature map.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/README.md,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/lineage_migration_plan.csv,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_summary.csv,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_patch_detail.csv,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/material_property_evidence.csv,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/salt2_jin_comparison.csv,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/source_manifest.csv,output,yes,written_by_builder,AGENT-354 documentation artifact.
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/summary.json,output,yes,written_by_builder,AGENT-354 documentation artifact.

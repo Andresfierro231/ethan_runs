@@ -1,0 +1,13 @@
+scoreboard_key,roster_model_form_id,present_in_master_scoreboard,present_in_training_roster,expected_location,action
+M0,M0_setup_only_baseline,True,True,master_scoreboard,covered
+M3,M3_segment_only_fluid_walls,True,True,master_scoreboard,covered
+M5/S13,M5_MF04_throughflow_recirculation_exchange_cell,True,True,master_scoreboard,covered
+MF-04,M5_MF04_throughflow_recirculation_exchange_cell,True,True,master_scoreboard,covered
+MF-02/two-tap,MF02_two_tap_section_effective_pressure,True,True,master_scoreboard,covered
+MF-01,MF01_ordinary_gated_single_stream_F6,True,True,master_scoreboard,covered
+M6/S6,M6_final_frozen_candidate,True,True,master_scoreboard,covered
+MF12,MF12_signed_source_memory_bulk_to_TP,False,True,supplement_only,covered
+MF15_wall_core,MF15_wall_core_exchange_operator,False,True,supplement_only,covered
+MF15_axial,MF15_axial_mixing_operator,False,True,supplement_only,covered
+MF07/MF08/MF10,MF07_MF08_MF10_development_reset_signed_wallflux,False,True,supplement_only,covered
+D1-D4,D1_D4_bias_correction_diagnostic_family,False,True,diagnostic_append,covered

@@ -1,0 +1,5 @@
+check,status,forbidden_input,policy
+no_realized_wall_heat_runtime,pass_forbidden,realized wallHeatFlux,diagnostic only
+no_validation_temperature_runtime,pass_forbidden,validation TP/TW temperatures,post-solve targets only
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,coupled solved output
+no_imposed_cooler_duty_runtime,pass_forbidden,imposed CFD cooler duty,unrelated setup cooler lane only

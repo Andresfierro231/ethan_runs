@@ -1,0 +1,8 @@
+guard_id,changed,policy
+native_output_mutation,false,read-only VTK/package inputs
+scheduler_action,true,task-owned Slurm job only
+OpenFOAM_solver_postprocessing,false,"no solver, foamToVTK, or native postprocessing launch"
+wallHeatFlux_Q_wall_W,false,wallHeatFlux absent and Q_wall_W not released
+sampler_harvest_uq_admission,false,"no sampler refresh, production harvest, UQ, fit, or admission"
+downstream_trigger,false,no S11/S12/S13/S15/S6 trigger
+registry_Fluid_external_blocker_generated_index,false,"no registry, Fluid, external, blocker, or generated index edit"

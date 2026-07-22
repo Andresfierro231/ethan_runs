@@ -1,0 +1,56 @@
+{
+  "generated_at": "2026-07-07T17:43:04-05:00",
+  "method": "multi-window quasi-steady curation with drift, autocorrelation, block means, oscillation envelope, and conservative temporal UQ",
+  "targets": [
+    {
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "case_dir": "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "case_dir_found": true
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "case_dir": "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "case_dir_found": true
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_dir": "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_dir_found": true
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_dir": "staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_dir_found": true
+    }
+  ],
+  "primary_window_count": 36,
+  "candidate_window_count": 144,
+  "counts_by_primary_state": {
+    "stationary": 28,
+    "moving_not_plateaued": 6,
+    "oscillatory_not_steady": 2
+  },
+  "counts_by_primary_fit_use_status": {
+    "fit_admissible": 28,
+    "diagnostic_only": 8
+  },
+  "recommendation": "admit admitted rows only; preserve independence_group_id during fitting",
+  "window_states": [
+    "moving_not_plateaued",
+    "oscillatory_not_steady",
+    "quasi_stationary",
+    "short_or_early_terminated",
+    "stationary",
+    "transient_model_only"
+  ],
+  "fit_use_statuses": [
+    "diagnostic_only",
+    "excluded_drifting",
+    "excluded_gate_pending",
+    "excluded_oscillatory",
+    "excluded_short",
+    "fit_admissible",
+    "provisional_sensitivity_only",
+    "transient_model_required"
+  ]
+}

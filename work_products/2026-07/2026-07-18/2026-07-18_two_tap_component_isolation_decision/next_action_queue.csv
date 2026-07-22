@@ -1,0 +1,2 @@
+priority,step_id,title,action,acceptance_signal,guardrail
+1,CI-NEXT-01,Preserve apparent/cluster label in final review,Carry apparent_cluster_only into separated admission review.,final review records no ordinary component-K candidate,do not clip K or tune F6

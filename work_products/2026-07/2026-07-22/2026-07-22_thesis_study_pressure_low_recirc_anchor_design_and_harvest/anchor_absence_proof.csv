@@ -1,0 +1,11 @@
+proof_item,current_count_or_status,evidence_source,why_it_blocks_admission,allowed_use,forbidden_shortcut
+candidate_rows_reviewed,36,pressure_low_recirc_nonrecirc_anchor_inventory/README.md,Inventory is broad but no row passes ordinary endpoint/UQ gates,scope of search,F6/component-K fit from inventory-only rows
+preferred_future_ordinary_anchor_rows,6,pressure_low_recirc_nonrecirc_anchor_inventory/README.md,Rows are future/preferred not admission-ready,design next compute/harvest row,current admission
+sampled_endpoint_ordinary_flow_pass_rows,0,pressure_low_recirc_nonrecirc_anchor_inventory/README.md and sampled_endpoint_ordinary_flow_gate.csv,No sampled endpoint pair passes RAF/RMF ordinary-flow limits,negative admission evidence,relax RAF/RMF limits without policy
+F6_fit_ready_rows_now,0,pressure_low_recirc_nonrecirc_anchor_inventory/README.md,No ordinary endpoint same-QOI UQ source/property row exists,block F6 fit,F3/F6/Shah numeric comparison
+existing_replacement_ready_rows,0,pressure_alternate_low_reverse_anchor_screen/README.md,Alternate screen found no existing replacement for CAND001,absence proof,relabel PM5/PM10 diagnostics as anchors
+PM5_material_reverse_flow_rows,12,pressure_alternate_low_reverse_anchor_screen/README.md,Material reverse flow disqualifies PM5 rows as ordinary anchors,onset/diagnostic evidence,ordinary-pipe F6 fit
+PM10_strong_recirculation_rows,4,pressure_alternate_low_reverse_anchor_screen/README.md,Strong recirculation and future blind/terminal status disqualify PM10 rows as ordinary anchors,recirculation/onset evidence,train/model-selection evidence
+same_QOI_admissible_UQ_rows,0,S10/S14 timeout_source_ordinary_uq_gate_matrix.csv,No same-label same-formula same-sign time/mesh UQ exists for F6 row,UQ blocker definition,production release
+CAND001_terminal_success_cases,0,S10/S14 timeout_source_ordinary_uq_gate_matrix.csv,Terminal source cases are missing after two timeouts,retry runbook basis,endpoint scoring before terminal success
+lower_right_component_K_rows,0,pressure_basis_ladder README and pressure_basis_ladder.csv,Lower-right rows are section-effective residual evidence only,thesis negative-result pressure ladder,component K clipped K or hidden multiplier

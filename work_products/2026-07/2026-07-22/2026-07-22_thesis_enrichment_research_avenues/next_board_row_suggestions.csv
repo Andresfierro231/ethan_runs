@@ -1,0 +1,5 @@
+priority,suggested_row,scope,stop_condition
+1,TODO-THESIS-LIT-SOURCE-ENVELOPE-PACKET-2026-07-22,"work_products-only literature envelope ledger; no thesis body edit",primary source/equation validity cannot be verified
+2,TODO-THESIS-UPCOMER-ONSET-EXCHANGE-DIAGRAM-PACKET-2026-07-22,"diagram/caption packet from completed S13/MF09/MF10 evidence; no admission",quantitative overlays require production harvest or mesh/GCI not yet present
+3,TODO-THESIS-FLUID-WALLS-RUNTIME-INPUT-ATLAS-PACKET-2026-07-22,"setup-vs-diagnostic runtime input atlas; no final score",would require editing current thesis chapter without exact-file row
+4,TODO-THESIS-NEGATIVE-RESULT-EVIDENCE-INDEX-2026-07-22,"cross-chapter negative-result ledger from completed evidence packets",would reinterpret diagnostic-only evidence as final score

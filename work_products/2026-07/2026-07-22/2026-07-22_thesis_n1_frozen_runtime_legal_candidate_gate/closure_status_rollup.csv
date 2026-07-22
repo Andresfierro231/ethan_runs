@@ -1,0 +1,5 @@
+closure_family,admitted_rows,diagnostic_rows,decision
+thermal,0,16,needs_more_physical_basis
+upcomer_exchange,0,4,source_side_path_executed_fail_closed_production_harvest_not_ready
+pressure_F6,0,11,pressure_F6_use_map_complete_no_admitted_score
+sensor_policy,0,17,score_targets_only_no_runtime_inputs

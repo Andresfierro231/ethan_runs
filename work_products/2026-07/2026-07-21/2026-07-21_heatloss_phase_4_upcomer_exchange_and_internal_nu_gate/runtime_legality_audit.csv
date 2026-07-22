@@ -1,0 +1,5 @@
+audit_id,runtime_input,status,policy
+forbidden_residual_runtime_input,energy or heat residual,forbidden,"residual is a target/diagnostic, not a setup input"
+forbidden_wallheatflux_runtime_input,CFD wallHeatFlux,forbidden,realized wall heat flux is diagnostic/scoring evidence only
+forbidden_cfd_mdot_runtime_input,CFD mdot,forbidden,mass flow is solved in predictive mode
+no_execution,Fluid/OpenFOAM execution,not_performed,Phase 4 consumed existing artifacts only

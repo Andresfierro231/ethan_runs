@@ -1,0 +1,23 @@
+source_id,path,use,mutation_status
+ch7_ch8_negative,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch7_ch8_results_negative_blocked/summary.json,final score zero count,read_only
+four_study_gate,work_products/2026-07/2026-07-22/2026-07-22_four_study_thesis_support_gate/summary.json,single released candidate zero count,read_only
+cfd_legal_use,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/summary.json,split/runtime status counts,read_only
+pm10_terminal,work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/summary.json,PM10 protected-score and terminal evidence status,read_only
+master_model_scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,model-form scoreboard counts,read_only
+d2_projection,work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/summary.json,TP/TW RMSE numbers,read_only
+mf12_bulk_to_tp,work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/summary.json,bulk-to-TP formula and sensor-evidence gate,read_only
+d3_wall_shape,work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/summary.json,D3 wall-shape diagnostic values,read_only
+d4_source_placement,work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/summary.json,D4 source-placement diagnostic values,read_only
+pressure_basis_summary,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,pressure gate counts and transfer residual value,read_only
+pressure_residual_values,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/section_effective_residual_values.csv,section-effective pressure residual values,read_only
+s13_target_qwall,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_same_qoi_neighbor_uq_execution/target_qoi_evidence.csv,S13 Qwall target values,read_only
+recirculation_tau_proxy,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/s13_exchange_tau_proxy_table.csv,S13 recirculation volume and tau proxies,read_only
+mf17_temporal_uq,work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/qoi_temporal_uq_execution_summary.csv,same-QOI temporal UQ summary values,read_only
+reverse_flow_topology,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/reverse_flow_topology_proxy.csv,reverse-flow topology proxy values,read_only
+thermal_accounting_summary,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/summary.json,thermal accounting counts and setup totals,read_only
+m2_passive_gate,work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/summary.json,passive hA sensitivity values,read_only
+source_property_atlas,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json,source/property release counts,read_only
+n4_sensor_projection,work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/summary.json,sensor projection and runtime temperature counts,read_only
+figtable_panels,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/summary.json,figure panel and blocked-scorecard counts,read_only
+final_figure_import_summary,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/summary.json,figure import summary counts,read_only
+selected_figure_import_ledger,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/selected_figure_import_ledger.csv,selected figure row count discrepancy evidence,read_only

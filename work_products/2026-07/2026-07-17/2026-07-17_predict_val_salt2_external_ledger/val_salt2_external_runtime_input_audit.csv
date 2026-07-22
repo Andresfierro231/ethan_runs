@@ -1,0 +1,7 @@
+check,status,policy
+val_salt2_used_for_training_fit,pass_forbidden,val_salt2 remains external-test evidence unless a later explicit reclassification package changes the split.
+wallHeatFlux_or_section_heat_as_runtime_input,pass_forbidden,"Patch, section, and junction heat are post-solve targets/diagnostics only."
+pressure_map_as_runtime_input,pass_forbidden,"Streamwise pressure rows are external-test targets and mapping diagnostics, not runtime predictors."
+sensor_temperature_as_runtime_input,pass_forbidden,TP/TW sensor rows are validation/scorecard policy targets only.
+model_selection_on_val_salt2,pass_forbidden,Do not select model form or tune parameters against val_salt2 external-test errors.
+native_solver_output_mutation,pass_no_mutation,This ledger normalizes AGENT-483/AGENT-393 artifacts and does not touch native CFD outputs.

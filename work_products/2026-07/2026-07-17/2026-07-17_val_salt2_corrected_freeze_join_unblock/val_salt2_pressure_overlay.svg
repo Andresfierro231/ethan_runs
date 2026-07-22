@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:20px;font-weight:700}.label{font-size:12px}.small{font-size:10px}.grid{stroke:#ddd;stroke-width:1}.axis{stroke:#333;stroke-width:1.2}</style>
+<rect x="0" y="0" width="100%" height="100%" fill="white"/>
+<text x="86" y="30" class="title">val_salt2 pressure target vs corrected-freeze prediction</text>
+<line x1="86" y1="468.0" x2="1040" y2="468.0" class="grid"/>
+<text x="78" y="472.0" text-anchor="end" class="label">-20000</text>
+<line x1="86" y1="385.2" x2="1040" y2="385.2" class="grid"/>
+<text x="78" y="389.2" text-anchor="end" class="label">-15000</text>
+<line x1="86" y1="302.4" x2="1040" y2="302.4" class="grid"/>
+<text x="78" y="306.4" text-anchor="end" class="label">-10000</text>
+<line x1="86" y1="219.6" x2="1040" y2="219.6" class="grid"/>
+<text x="78" y="223.6" text-anchor="end" class="label">-5000</text>
+<line x1="86" y1="136.8" x2="1040" y2="136.8" class="grid"/>
+<text x="78" y="140.8" text-anchor="end" class="label">0</text>
+<line x1="86" y1="54.0" x2="1040" y2="54.0" class="grid"/>
+<text x="78" y="58.0" text-anchor="end" class="label">5000</text>
+<line x1="86.0" y1="54" x2="86.0" y2="468" class="grid"/>
+<text x="86.0" y="510" text-anchor="middle" class="small">0</text>
+<line x1="250.5" y1="54" x2="250.5" y2="468" class="grid"/>
+<text x="250.5" y="510" text-anchor="middle" class="small">5</text>
+<line x1="415.0" y1="54" x2="415.0" y2="468" class="grid"/>
+<text x="415.0" y="510" text-anchor="middle" class="small">10</text>
+<line x1="579.4" y1="54" x2="579.4" y2="468" class="grid"/>
+<text x="579.4" y="510" text-anchor="middle" class="small">15</text>
+<line x1="743.9" y1="54" x2="743.9" y2="468" class="grid"/>
+<text x="743.9" y="510" text-anchor="middle" class="small">20</text>
+<line x1="908.4" y1="54" x2="908.4" y2="468" class="grid"/>
+<text x="908.4" y="510" text-anchor="middle" class="small">25</text>
+<line x1="1040.0" y1="54" x2="1040.0" y2="468" class="grid"/>
+<text x="1040.0" y="510" text-anchor="middle" class="small">29</text>
+<polyline points="86.0,136.8 118.9,290.9 151.8,242.7 184.7,246.7 217.6,253.9 250.5,144.8 283.4,164.3 316.3,183.6 349.2,203.0 382.1,222.5 415.0,303.4 447.9,287.6 480.8,271.9 513.7,256.3 546.6,240.6 579.4,322.7 612.3,345.6 645.2,368.3 678.1,390.9 711.0,413.6 743.9,346.6 776.8,192.7 809.7,240.0 842.6,242.2 875.5,231.7 908.4,86.1 941.3,144.0 974.2,202.3 1007.1,260.3 1040.0,318.4" fill="none" stroke="#2166ac" stroke-width="2.5"/>
+<line x1="86" y1="468" x2="1040" y2="468" class="axis"/>
+<line x1="86" y1="54" x2="86" y2="468" class="axis"/>
+<text x="86" y="542" class="small">Blue = CFD target. Red = frozen 1D prediction when available. val_salt2 remains external-score only.</text>
+<text x="376" y="88" class="label">No corrected-freeze pressure predictions joined.</text>
+</svg>

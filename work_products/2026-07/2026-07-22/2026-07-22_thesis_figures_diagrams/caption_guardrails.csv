@@ -1,0 +1,11 @@
+figure_id,caption_guardrail,required_label,forbidden_language
+F-01,State that the atlas is model architecture and admission status,conceptual / claim-controlled,validated loop model
+F-02,State that residual lanes are separate and not absorbed into internal Nu,diagnostic or blocked where applicable,corrected by Nu tuning
+F-03,State that ordinary upcomer coefficients are blocked in recirculating rows,recirculation-cell observed / coefficient blocked,ordinary pipe Nu f_D K admitted
+F-03A,State split role for each visual and keep Salt2 external/test labels visible,diagnostic CFD visual evidence,fit evidence or exchange coefficient
+F-03B,State that U_y views are qualitative vertical-flow diagnostics,diagnostic sign/magnitude visual,quantitative recirculation rate
+F-04,State val_salt2 as external-test evidence and corner K as diagnostic only,external-test / diagnostic corner K,fit-admitted junction K
+F-05,State M6 is pending until a frozen candidate exists,pending frozen candidate / blocked final score,final predictive score
+F-06,State that SAM validation is future work,SAM-facing guidance / not SAM validation,SAM validation completed
+F-07,State runtime legality and split separation before any score,blocked scorecard / no protected scoring,holdout tuned score
+F-08,State current mesh uncertainty is fail-closed and diagnostic,formal GCI blocked,formal GCI value

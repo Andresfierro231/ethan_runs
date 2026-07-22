@@ -1,0 +1,3 @@
+job_id,job_name,scheduler_state,elapsed,nodes,nodelist_or_reason,scheduler_source,case_count,latest_solver_time_s,target_end_time_s,diagnostic_use_policy
+3299610,,RUNNING_INFERRED_FROM_FOAM_LOG,,,,local_foam_log_fallback,1,11123.888758,22000.0,diagnostic_only_until_terminal_steady_window_admission
+3299620,,RUNNING_INFERRED_FROM_FOAM_LOG,,,,local_foam_log_fallback,3,11323.980315,22000.0,diagnostic_only_until_terminal_steady_window_admission

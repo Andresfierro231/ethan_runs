@@ -1,0 +1,42 @@
+{
+  "changed_files": [
+    "tools/analyze/build_passive_h2_corrected_operator_predictive_train_packet.py",
+    "tools/analyze/test_passive_h2_corrected_operator_predictive_train_packet.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-CORRECTED-OPERATOR-PREDICTIVE-TRAIN-PACKET-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-corrected-operator-predictive-train-packet.md",
+    "imports/2026-07-22_passive_h2_corrected_operator_predictive_train_packet.json",
+    ".agent/BOARD.md"
+  ],
+  "date": "2026-07-22",
+  "decision": "passive_h2_corrected_operator_predictive_train_packet_ready_runtime_row_needed_no_admission",
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T18:34:20+00:00",
+  "mutation_flags": {
+    "candidate_freeze": false,
+    "coefficient_admission": false,
+    "final_score_claim": false,
+    "fluid_or_external_edit": false,
+    "numeric_q_loss_release": false,
+    "protected_scoring": false,
+    "qwall_release": false,
+    "runtime_leakage_relaxation": false,
+    "source_property_release": false
+  },
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_corrected_radiation_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_family_corrected_radiation_operator.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/setup_output_sensitivity_context.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_radiation_runtime_basis_reconciliation/radiation_runtime_decision.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/minimal_next_actions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "task": "TODO-PASSIVE-H2-CORRECTED-OPERATOR-PREDICTIVE-TRAIN-PACKET-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-CORRECTED-OPERATOR-PREDICTIVE-TRAIN-PACKET-2026-07-22"
+}

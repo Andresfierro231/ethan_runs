@@ -1,0 +1,9 @@
+artifact,role,path,notes
+Fluid status,source,../cfd-modeling-tools/.agent/status/2026-07-20_impl-2026-07-20-fluid-amx1-localized-form-smoke.md,Fluid implementation closeout for localized-form smoke
+Fluid campaign config,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,Defines amx1_salt2_localized_form_smoke_v1
+Fluid scenario config,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,Defines baseline broad-control and localized AMX1 forms
+Fluid audit summary,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_localized_form_smoke_v1/amx1_localized_smoke_audit/amx1_localized_smoke_summary.json,Machine-readable audit verdict
+Fluid form deltas,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_localized_form_smoke_v1/amx1_localized_smoke_audit/amx1_localized_form_deltas.csv,Paired AMX1-minus-baseline deltas
+Fluid audit rows,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_localized_form_smoke_v1/amx1_localized_smoke_audit/amx1_localized_smoke_rows.csv,Root and ledger audit rows
+Fluid runtime,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_localized_form_smoke_v1/runtime/runtime_summary.csv,Campaign runtime by stage
+Prior bounded intake,context,work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake/README.md,Salt1-Salt4 comparison that motivated localized form smoke

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="840" viewBox="0 0 1280 840">
+<rect x="0" y="0" width="1280" height="840" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="230" y="34" class="title">Per-Leg Pressure Drop In 1D Friction Screens</text>
+<text x="230" y="56" class="subtitle">Stacked distributed pressure-drop contributions from the AGENT-195 1D runs</text>
+<text x="727.0" y="818" text-anchor="middle" class="label">Pa</text>
+<line x1="230.00" y1="86" x2="230.00" y2="740" class="grid"/>
+<text x="230.00" y="762" text-anchor="middle" class="tick">0</text>
+<line x1="478.50" y1="86" x2="478.50" y2="740" class="grid"/>
+<text x="478.50" y="762" text-anchor="middle" class="tick">20</text>
+<line x1="727.00" y1="86" x2="727.00" y2="740" class="grid"/>
+<text x="727.00" y="762" text-anchor="middle" class="tick">40</text>
+<line x1="975.50" y1="86" x2="975.50" y2="740" class="grid"/>
+<text x="975.50" y="762" text-anchor="middle" class="tick">60</text>
+<line x1="1224.00" y1="86" x2="1224.00" y2="740" class="grid"/>
+<text x="1224.00" y="762" text-anchor="middle" class="tick">80</text>
+<line x1="230.00" y1="86" x2="230.00" y2="740" class="axis"/>
+<line x1="230" y1="740" x2="1224" y2="740" class="axis"/>
+<text x="220" y="118.34" text-anchor="end" class="tick">Salt 2 F1</text>
+<rect x="230.00" y="101.34" width="137.77" height="26.00" fill="#C53030"/>
+<rect x="367.77" y="101.34" width="137.03" height="26.00" fill="#2878B5"/>
+<rect x="504.80" y="101.34" width="143.39" height="26.00" fill="#2F855A"/>
+<rect x="648.19" y="101.34" width="136.06" height="26.00" fill="#6B46C1"/>
+<text x="220" y="172.84" text-anchor="end" class="tick">Salt 2 F3_hagenbach</text>
+<rect x="230.00" y="155.84" width="140.60" height="26.00" fill="#C53030"/>
+<rect x="370.60" y="155.84" width="150.57" height="26.00" fill="#2878B5"/>
+<rect x="521.17" y="155.84" width="146.24" height="26.00" fill="#2F855A"/>
+<rect x="667.41" y="155.84" width="150.31" height="26.00" fill="#6B46C1"/>
+<text x="220" y="227.34" text-anchor="end" class="tick">Salt 2 F3_shah_apparent</text>
+<rect x="230.00" y="210.34" width="142.68" height="26.00" fill="#C53030"/>
+<rect x="372.68" y="210.34" width="160.15" height="26.00" fill="#2878B5"/>
+<rect x="532.83" y="210.34" width="147.92" height="26.00" fill="#2F855A"/>
+<rect x="680.75" y="210.34" width="163.42" height="26.00" fill="#6B46C1"/>
+<text x="220" y="281.84" text-anchor="end" class="tick">Salt 2 F4_leg_class</text>
+<rect x="230.00" y="264.84" width="250.66" height="26.00" fill="#C53030"/>
+<rect x="480.66" y="264.84" width="213.16" height="26.00" fill="#2878B5"/>
+<rect x="693.82" y="264.84" width="212.71" height="26.00" fill="#2F855A"/>
+<rect x="906.54" y="264.84" width="117.28" height="26.00" fill="#6B46C1"/>
+<text x="220" y="336.34" text-anchor="end" class="tick">Salt 3 F1</text>
+<rect x="230.00" y="319.34" width="129.52" height="26.00" fill="#C53030"/>
+<rect x="359.52" y="319.34" width="129.18" height="26.00" fill="#2878B5"/>
+<rect x="488.70" y="319.34" width="133.86" height="26.00" fill="#2F855A"/>
+<rect x="622.56" y="319.34" width="129.22" height="26.00" fill="#6B46C1"/>
+<text x="220" y="390.84" text-anchor="end" class="tick">Salt 3 F3_hagenbach</text>
+<rect x="230.00" y="373.84" width="133.58" height="26.00" fill="#C53030"/>
+<rect x="363.58" y="373.84" width="148.04" height="26.00" fill="#2878B5"/>
+<rect x="511.62" y="373.84" width="137.94" height="26.00" fill="#2F855A"/>
+<rect x="649.55" y="373.84" width="149.07" height="26.00" fill="#6B46C1"/>
+<text x="220" y="445.34" text-anchor="end" class="tick">Salt 3 F3_shah_apparent</text>
+<rect x="230.00" y="428.34" width="134.96" height="26.00" fill="#C53030"/>
+<rect x="364.96" y="428.34" width="154.07" height="26.00" fill="#2878B5"/>
+<rect x="519.03" y="428.34" width="138.97" height="26.00" fill="#2F855A"/>
+<rect x="658.00" y="428.34" width="159.21" height="26.00" fill="#6B46C1"/>
+<text x="220" y="499.84" text-anchor="end" class="tick">Salt 3 F4_leg_class</text>
+<rect x="230.00" y="482.84" width="234.84" height="26.00" fill="#C53030"/>
+<rect x="464.84" y="482.84" width="197.21" height="26.00" fill="#2878B5"/>
+<rect x="662.05" y="482.84" width="251.37" height="26.00" fill="#2F855A"/>
+<rect x="913.42" y="482.84" width="112.05" height="26.00" fill="#6B46C1"/>
+<text x="220" y="554.34" text-anchor="end" class="tick">Salt 4 F1</text>
+<rect x="230.00" y="537.34" width="127.66" height="26.00" fill="#C53030"/>
+<rect x="357.66" y="537.34" width="127.47" height="26.00" fill="#2878B5"/>
+<rect x="485.12" y="537.34" width="131.48" height="26.00" fill="#2F855A"/>
+<rect x="616.60" y="537.34" width="127.96" height="26.00" fill="#6B46C1"/>
+<text x="220" y="608.84" text-anchor="end" class="tick">Salt 4 F3_hagenbach</text>
+<rect x="230.00" y="591.84" width="132.98" height="26.00" fill="#C53030"/>
+<rect x="362.98" y="591.84" width="151.57" height="26.00" fill="#2878B5"/>
+<rect x="514.54" y="591.84" width="136.82" height="26.00" fill="#2F855A"/>
+<rect x="651.37" y="591.84" width="153.33" height="26.00" fill="#6B46C1"/>
+<text x="220" y="663.34" text-anchor="end" class="tick">Salt 4 F3_shah_apparent</text>
+<rect x="230.00" y="646.34" width="133.78" height="26.00" fill="#C53030"/>
+<rect x="363.78" y="646.34" width="154.07" height="26.00" fill="#2878B5"/>
+<rect x="517.84" y="646.34" width="137.29" height="26.00" fill="#2F855A"/>
+<rect x="655.13" y="646.34" width="160.35" height="26.00" fill="#6B46C1"/>
+<text x="220" y="717.84" text-anchor="end" class="tick">Salt 4 F4_leg_class</text>
+<rect x="230.00" y="700.84" width="231.47" height="26.00" fill="#C53030"/>
+<rect x="461.47" y="700.84" width="193.21" height="26.00" fill="#2878B5"/>
+<rect x="654.69" y="700.84" width="271.42" height="26.00" fill="#2F855A"/>
+<rect x="926.11" y="700.84" width="111.59" height="26.00" fill="#6B46C1"/>
+<rect x="230" y="768" width="14" height="14" fill="#C53030"/>
+<text x="250" y="780" class="legend">heater</text>
+<rect x="478" y="768" width="14" height="14" fill="#2878B5"/>
+<text x="498" y="780" class="legend">cooler</text>
+<rect x="726" y="768" width="14" height="14" fill="#2F855A"/>
+<text x="746" y="780" class="legend">downcomer</text>
+<rect x="974" y="768" width="14" height="14" fill="#6B46C1"/>
+<text x="994" y="780" class="legend">upcomer</text>
+<text x="230" y="798" class="small">Source: AGENT-195. F4 redistributes and increases loop resistance; upcomer interpretation remains complicated by recirculation</text>
+<text x="230" y="812" class="small">in the CFD evidence.</text>
+</svg>

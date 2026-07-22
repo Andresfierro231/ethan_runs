@@ -1,0 +1,5 @@
+check,status,forbidden_input,policy
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,pressure closure must be predictive
+no_global_friction_multiplier,pass_forbidden,global friction multiplier,branch-level gates only
+no_recirc_ordinary_fit,pass_forbidden,ordinary f_D/K fit on recirculating rows,upcomer routes to hybrid lane
+no_unbracketed_k,pass_forbidden,unbracketed residual as physical K,component isolation required

@@ -1,0 +1,50 @@
+{
+  "task_id": "TODO-LITREV-LATEST-MODELING-HANDOFF-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Writer",
+  "objective": "Identify Ethan-requested extra research in the latest HITEC literature review and publish a modeling handoff report in ethan_runs.",
+  "changed_files": [
+    "reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md",
+    ".agent/status/2026-07-22_TODO-LITREV-LATEST-MODELING-HANDOFF-2026-07-22.md",
+    ".agent/journal/2026-07-22/litrev-latest-modeling-handoff.md",
+    "imports/2026-07-22_litrev_latest_modeling_handoff.json",
+    "operational_notes/START_HERE_FOR_AGENTS.md",
+    "operational_notes/maps/README.md",
+    "operational_notes/maps/literature-synthesis-and-gates.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "read_only_context": [
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/ethan_literature_gap_requests.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/ethan_external_literature_request_checklist.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/ethan_model_context_inventory.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/ethan_branch_closure_gap_matrix.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/ethan_negative_model_evidence.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/notes/HITEC_PROMPT7_MODELING_DISCOVERIES_AND_NEXT_STEPS.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_model_form_hierarchy.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_active_equation_gate_matrix.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_property_gate_matrix.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_Nu_correlation_gate_matrix.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_minor_loss_K_gate_matrix.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_CFD_to_network_methodology.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_pressure_energy_accounting_rules.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_unresolved_claims.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_source_gaps.csv"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "model_coefficients_admitted": false,
+    "source_evidence_mutated": false,
+    "thesis_latex_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false
+  },
+  "validation": [
+    "python3.11 -m json.tool imports/2026-07-22_litrev_latest_modeling_handoff.json",
+    "find reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff -maxdepth 1 -type f -print",
+    "rg -n \"2026-07-22_litrev_latest_modeling_handoff\" operational_notes/START_HERE_FOR_AGENTS.md operational_notes/maps/README.md operational_notes/maps/literature-synthesis-and-gates.md operational_notes/maps/forward-predictive-model.md reports/thesis_dossier/README.md"
+  ],
+  "result": "complete"
+}

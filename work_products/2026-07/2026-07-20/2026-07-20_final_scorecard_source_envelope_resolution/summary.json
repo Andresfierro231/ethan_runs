@@ -1,0 +1,16 @@
+{
+  "candidate_rows_resolved": 4,
+  "final_fit_enabled_rows_after_policy": 0,
+  "final_model_selection_enabled_rows_after_policy": 0,
+  "historical_scorecard_rewritten": false,
+  "policy_rows": 16,
+  "resolution_decision_counts": {
+    "blocked_pending_row_specific_source_envelope": 1,
+    "demote_to_no_fit_source_envelope_blocked": 3
+  },
+  "scientific_admission_change": "none",
+  "source_envelope_evidence_detail_rows": 48,
+  "source_property_gate_candidate_rows_after_resolution": 0,
+  "source_property_gate_findings_after_resolution": 0,
+  "task": "TODO-FINAL-SCORECARD-SOURCE-ENVELOPE-RESOLUTION"
+}

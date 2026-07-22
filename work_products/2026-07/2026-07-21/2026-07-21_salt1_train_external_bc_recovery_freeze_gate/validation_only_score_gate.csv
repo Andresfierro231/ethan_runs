@@ -1,0 +1,2 @@
+stage,release_status,rows_consumed_by_this_task,fit_allowed,model_selection_allowed,model_change_allowed_after_results,required_next_artifacts,source_paths
+validation_only_score,blocked_pending_candidate_freeze,0,no,no,no,validation_score.csv;validation_residual_ownership.csv,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/scorecard_release_guardrails.csv

@@ -1,0 +1,4 @@
+target_id,artifact,caption_safe_claim,required_caveat
+FIG-HIER-01,model_hierarchy_ladder.csv,"The 1D model-form work now has a staged hierarchy from legal setup inputs through pressure, thermal, recirculation, projection, and protected holdout gates.",No row is a frozen predictive model or final score.
+TAB-HIER-01,ablation_evidence_matrix.csv,Negative ablations are scientific evidence: they identify which physical ownership paths are not yet legally admissible.,Diagnostic results must not be promoted to runtime inputs.
+TAB-HIER-02,freeze_prerequisite_gate_table.csv,"The rigorous path remains train-only full solve, attribution, freeze, validation, holdout, external-test.",Protected rows stay untouched until freeze.

@@ -1,0 +1,9 @@
+source_path,use,mutation_status
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/summary.json,D3 diagnostic decision and metrics,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/candidate_gate.csv,candidate mechanism rows and gate status,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/same_qoi_uq_requirement_table.csv,same-QOI triplet/UQ readiness,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/s12_s13_evidence_crosswalk.csv,S12/S13 blockers and support,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/wall_shape_case_summary.csv,existing case metrics reused read-only,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/summary.json,TP projection gate context: same_qoi_tp_projection_uq_fail_closed_no_runtime_temperature_release,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/summary.json,runtime temperature release context,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf13_signed_source_property_heat_path_release_preflight/summary.json,source/property release context,read_only

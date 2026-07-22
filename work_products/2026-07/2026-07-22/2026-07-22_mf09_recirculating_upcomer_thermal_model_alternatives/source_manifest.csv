@@ -1,0 +1,10 @@
+source_id,source_path,used_files,mutation_status
+exact_qwall,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute,summary.json;trusted_wall_Q_wall_summary.csv;downstream_gate.csv,read_only
+target_plus_harvest,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest,summary.json,read_only
+temporal_uq,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus,summary.json;same_qoi_temporal_uq_summary.csv;heat_flow_match_diagnostics.csv,read_only
+mesh_gci_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate,summary.json;qwall_exchange_mesh_gci_gate_matrix.csv;missing_mesh_family_blocker_table.csv,read_only
+limited_sampled,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis,summary.json;s13_exchange_trend_table.csv,read_only
+source_side,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate,summary.json;production_readiness_gate.csv,read_only
+onset_sparsity,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress,summary.json;hybrid_upcomer_model_contract.csv;evidence_gap_queue.csv,read_only
+heatloss_phase4,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate,summary.json;phase4_release_gate.csv;heat_path_modeling_contract.csv,read_only
+mf_entrance_gate,work_products/2026-07/2026-07-22/2026-07-22_mf_entrance_development_reset_gate,summary.json;successor_implementation_queue.csv,read_only

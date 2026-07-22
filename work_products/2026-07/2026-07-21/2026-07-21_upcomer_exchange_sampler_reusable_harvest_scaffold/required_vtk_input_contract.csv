@@ -1,0 +1,13 @@
+case_id,time_window_s,input_role,required_fields,path,current_status,blocking_for_harvest,release_condition
+salt_2,7915,cell_vtk,U;T;rho;cellId_or_same_order_with_volume_csv;optional_mu;optional_recircMask,,blocked_missing_same_window_cell_vtk,true,surface/source-generation or extraction row emits same-window exchange-cell VTK
+salt_2,7915,exchange_interface_vtk,U;rho;polygon_area;explicit_interface_normal_sign,,blocked_missing_named_exchange_interface_vtk,true,named interface geometry and normal sign convention are published
+salt_2,7915,wall_vtk,T;polygon_area;optional_wallHeatFlux_for_diagnostic_energy_residual,,blocked_missing_wall_core_vtk,true,wall/core surface definition and sample output are published
+salt_2,7915,source_sink_ledger,Q_source_W;Q_sink_W;cp_J_kg_K;sign_convention;source_paths,,blocked_missing_same_window_source_sink_ledger,true,same-window source/sink extractor publishes ledger rows
+salt_3,7618,cell_vtk,U;T;rho;cellId_or_same_order_with_volume_csv;optional_mu;optional_recircMask,,blocked_missing_same_window_cell_vtk,true,surface/source-generation or extraction row emits same-window exchange-cell VTK
+salt_3,7618,exchange_interface_vtk,U;rho;polygon_area;explicit_interface_normal_sign,,blocked_missing_named_exchange_interface_vtk,true,named interface geometry and normal sign convention are published
+salt_3,7618,wall_vtk,T;polygon_area;optional_wallHeatFlux_for_diagnostic_energy_residual,,blocked_missing_wall_core_vtk,true,wall/core surface definition and sample output are published
+salt_3,7618,source_sink_ledger,Q_source_W;Q_sink_W;cp_J_kg_K;sign_convention;source_paths,,blocked_missing_same_window_source_sink_ledger,true,same-window source/sink extractor publishes ledger rows
+salt_4,10000,cell_vtk,U;T;rho;cellId_or_same_order_with_volume_csv;optional_mu;optional_recircMask,,blocked_missing_same_window_cell_vtk,true,surface/source-generation or extraction row emits same-window exchange-cell VTK
+salt_4,10000,exchange_interface_vtk,U;rho;polygon_area;explicit_interface_normal_sign,,blocked_missing_named_exchange_interface_vtk,true,named interface geometry and normal sign convention are published
+salt_4,10000,wall_vtk,T;polygon_area;optional_wallHeatFlux_for_diagnostic_energy_residual,,blocked_missing_wall_core_vtk,true,wall/core surface definition and sample output are published
+salt_4,10000,source_sink_ledger,Q_source_W;Q_sink_W;cp_J_kg_K;sign_convention;source_paths,,blocked_missing_same_window_source_sink_ledger,true,same-window source/sink extractor publishes ledger rows

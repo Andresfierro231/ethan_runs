@@ -1,0 +1,4 @@
+guard_id,status,policy
+native_outputs,pass,no native CFD/OpenFOAM outputs mutated
+admission,pass,"no CV, exchange-cell, S11, S12, S15, or S6 admission"
+thresholds,pass,no threshold relaxation or new mask rule admitted

@@ -1,0 +1,23 @@
+{
+  "baseline_all_mae_K": 81.5815150583415,
+  "baseline_all_rmse_K": 83.36187927489736,
+  "corrected_all_mae_K": 7.2808975996294265,
+  "corrected_all_rmse_K": 12.808105478110905,
+  "date": "2026-07-21",
+  "delta_all_mae_K": -74.30061745871207,
+  "empirical_train_fit": true,
+  "excluded_rows": 1,
+  "external_fluid_edit": false,
+  "external_test_rows_scored": 0,
+  "fit_for_physics_admission": false,
+  "fluid_solve_run": false,
+  "freeze_or_admission_decision": false,
+  "holdout_rows_scored": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "status": "complete",
+  "task_id": "TODO-FLUID-EMPIRICAL-LEG-BIAS-CORRECTION-DIAGNOSTIC-2026-07-21",
+  "train_fit_rows": 16,
+  "validation_rows_scored": 0
+}

@@ -1,0 +1,6 @@
+priority,study,entry_condition,deliverable,do_not_do
+P1,frozen_model_val_salt2_external_score,Predictive model frozen and no active split-policy reclassification.,"Join model predictions to pressure, heat, and numeric TP/TW targets; report residuals only.",Do not tune or select model form from val_salt2 errors.
+P2,junction_stub_geometry_metadata_completion,Need coefficient-ready named-loss model beyond diagnostics.,Add val_salt2 area/temperature-drive metadata comparable to Salt2/3/4 mainline buckets.,Do not fit a junction heat-loss coefficient from realized wallHeatFlux alone.
+P3,corner_K_repaired_extraction,Pressure basis and local tap design accepted.,"New corner extraction with non-recirculating taps, local straight reference, and mesh/GCI.",Do not use current negative centerline-subtracted K rows for tuning.
+P4,PM10_terminal_holdout_admission,Jobs 3293924 and 3295438 terminal and harvested.,PM10 terminal admission and PM5-pattern diagnostics on staged copies.,Do not perform terminal admission while jobs are live or pending.
+P5,recirculation_onset_classifier,AGENT-495 completes or releases its active scope.,Consume AGENT-495 classifier package; avoid duplicate implementation in AGENT-496.,Do not overlap active AGENT-495 upcomer-onset paths.

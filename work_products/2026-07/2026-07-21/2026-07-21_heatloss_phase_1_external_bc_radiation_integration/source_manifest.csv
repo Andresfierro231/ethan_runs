@@ -1,0 +1,12 @@
+source_path,used_for,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_0_baseline_release_gate/heat_path_release_gate.csv,baseline heat-path release gate,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv,heat-path runtime and forbidden-input contract,read_only
+work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv,prior 24-row external boundary dictionary,read_only
+work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv,patch-level boundary fields and role schema,read_only
+work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv,patch role area/heat context,read_only
+work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv,segment-equivalent reduction inputs,read_only
+work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/cfd_emissivity_by_run.csv,case-level rcExternalTemperature radiation metadata,read_only
+reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv,external BC setup narrative/source inventory,read_only
+operational_notes/maps/thermal-boundary-and-radiation.md,radiation/external-boundary current state,read_only
+operational_notes/maps/forward-predictive-model.md,forward-predictive ordering,read_only
+.agent/BOARD.md,task scope and open blocker rows,read_only

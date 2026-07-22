@@ -1,0 +1,12 @@
+source_id,path,exists,use
+AGENT-391 cooler scores,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_model_scores.csv,true,setup-only cooler closure and imposed-cooler diagnostic rows
+AGENT-391 cooler summary,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_rmse_summary_with_leakage_policy.csv,true,candidate leakage policy and RMSE/MAE cross-check
+AGENT-391 test-section ledger,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff/test_section_model_result_ledger.csv,true,negative-source compatibility diagnostic rows
+AGENT-392 HX primary scores,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/predictive_hx_fit_setup_only_refresh/hx_primary_forward_scores.csv,true,F1+HX1 setup-only HX candidate scores
+AGENT-392 HX violations,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/predictive_hx_fit_setup_only_refresh/violations.csv,true,runtime-input audit violation count
+AGENT-392 external parity decisions,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/external_bc_thermal_profile_parity_refresh/admission_decision_table.csv,true,realized wallHeatFlux replay and radiation policy
+AGENT-392 heat-loss discrepancy,work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/results/best_predictive_heat_loss_discrepancy_refresh/best_predictive_leg_heat_loss_discrepancy.csv,true,leg-by-leg realized heat-loss diagnostic rows
+AGENT-319 internal-Nu gate,.agent/journal/2026-07-14/thermal-admission-internal-nu-final-gate.md,true,zero fit-admissible thermal/internal-Nu rows
+AGENT-330 upcomer admissibility,.agent/journal/2026-07-14/upcomer-recirculation-internal-nu-admissibility.md,true,recirculation/onset blockers and coefficient guardrails
+AGENT-404 PM5 parser summary,work_products/2026-07/2026-07-15/2026-07-15_pm5_matched_plane_parser_repair/summary.json,true,wallHeatFlux still missing for internal-Nu/F6
+AGENT-403 plan closeout,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_plan_implementation_closeout/README.md,true,final forward-v1 still blocked; candidate lanes only

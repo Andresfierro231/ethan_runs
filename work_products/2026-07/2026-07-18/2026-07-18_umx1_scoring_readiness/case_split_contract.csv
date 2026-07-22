@@ -1,0 +1,8 @@
+case_id,fluid,role,selection_use,score_use,release_status,guardrail,source_basis
+Salt 1,salt,nominal_train,fit_and_model_select,score_train,ready_for_future_smoke,no holdout/blind residual may tune UMX1,canonical final split policy and UMX1 handoff
+Salt 2,salt,nominal_train,fit_and_model_select,score_train,ready_for_future_smoke,no holdout/blind residual may tune UMX1,canonical final split policy and UMX1 handoff
+Salt 4,salt,nominal_train,fit_and_model_select,score_train,ready_for_future_smoke,no holdout/blind residual may tune UMX1,canonical final split policy and UMX1 handoff
+Salt 3,salt,nominal_holdout,forbidden_for_selection,score_holdout,ready_after_train_parameter_declared,may not choose multiplier bounds roots exclusions or fallback policy,canonical final split policy and UMX1 handoff
+Salt 2 -5Q,salt,perturbation_blind,forbidden_for_selection,score_blind,blocked_until_adapter_and_release_gate,score only after frozen UMX1 candidate exists,canonical final split policy and source/property carryforward
+Salt 2 +5Q,salt,perturbation_blind,forbidden_for_selection,score_blind,blocked_until_adapter_and_release_gate,score only after frozen UMX1 candidate exists,canonical final split policy and source/property carryforward
+val_salt2,salt,external_blind,forbidden_for_selection,score_external_blind,blocked_until_adapter_and_release_gate,external test only and never training/model selection,canonical final split policy and val_salt2 external ledger

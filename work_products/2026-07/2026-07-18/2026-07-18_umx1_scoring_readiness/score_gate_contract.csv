@@ -1,0 +1,9 @@
+gate_id,gate_order,metric_or_check,pass_rule,failure_action,blocker_attacked
+G1_runtime_legality,1,runtime_input_audit,all forbidden inputs remain validation-only,stop before running or scoring,predictive-wall-test-section-submodels
+G2_root_acceptance,2,root_status_by_case,all nominal train rows accepted not merely finite,stop expansion and report root blocker,predictive-wall-test-section-submodels
+G3_energy_conservation,3,upcomer_exchange_reservoir_energy_residual_W,near-zero residual for every exchanged segment,stop before probe interpretation,predictive-wall-test-section-submodels
+G4_train_score,4,nominal train mdot TP TW all_probe,selected train candidate no worse than M3 and best prior wall/source candidate,do not holdout score if train gate fails,predictive-wall-test-section-submodels
+G5_salt3_holdout,5,Salt3 mdot TP TW all_probe,no worse than M3 and best prior wall/source candidate without retuning,non-admit and keep UMX1 diagnostic,predictive-wall-test-section-submodels
+G6_probe_localization,6,upcomer/test_section probe deltas,localized residuals improve without new cooler/test-section compensation,non-admit and route to TSWFC2 if localization fails,predictive-wall-test-section-submodels
+G7_blind_release,7,Salt2 +/-5Q and val_salt2 scorecards,run only after frozen candidate and adapters exist,hold blind release closed,upcomer-onset-data-sparsity
+G8_admission_review,8,candidate_admission_review,all gates pass and no policy leakage,admit only in a later explicit admission row,both

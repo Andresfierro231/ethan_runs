@@ -1,0 +1,43 @@
+{
+  "task_id": "TODO-PRED-VALIDATION-SPLIT",
+  "created_local": "2026-07-13T16:37:38-05:00",
+  "role": "Coordinator / Writer",
+  "decision": "Lock Salt2 as train, Salt3 as validation, Salt4 as holdout; keep Salt1 diagnostic-only and corrected-Q/low-heat rows blocked until row-specific admission.",
+  "row_assignment_counts": {
+    "train": 1,
+    "validation": 1,
+    "holdout": 1,
+    "diagnostic-only": 1,
+    "blocked": 19
+  },
+  "current_fit_permission": {
+    "max_fitted_thermal_parameters": 1,
+    "training_rows": [
+      "salt_2"
+    ],
+    "initial_fit_response": "cooler_or_jacket_heat_response",
+    "blocked_fit_responses": [
+      "internal_HTC_Nu_UA_effective",
+      "passive_external_wall_loss_or_hA",
+      "test_section_net_heat_response",
+      "cfd_mdot_kg_s",
+      "cfd_Tmean_loop_delta_Tmin_Tmax",
+      "TP_TW_experimental_or_CFD_sensors",
+      "pressure_residual_or_pressure_terms",
+      "corrected_Q_sensitivity_slope",
+      "low_heat_extrapolation_response"
+    ]
+  },
+  "source_evidence": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/case_runtime_inputs_forward_v0.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/validation_target_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/uncertainty_readiness.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/README.md",
+    "work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/all_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/admission_decision_table.csv",
+    "imports/2026-06-23_ethan_cfd_freeze_checkpoint.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false
+}

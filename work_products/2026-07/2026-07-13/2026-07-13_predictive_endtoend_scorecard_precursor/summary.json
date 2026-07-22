@@ -1,0 +1,93 @@
+{
+  "task_id": "AGENT-303",
+  "date": "2026-07-13",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_endtoend_scorecard_precursor",
+  "purpose": "Forward-v1 readiness and end-to-end scorecard precursor assembled from completed predictive lanes without new thermal fitting.",
+  "overall_status": "precursor_complete_forward_v1_not_ready",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "new_thermal_fitting_performed": false,
+  "score_status": {
+    "can_score_now": [
+      "strict input-contract pass/fail",
+      "train/validation/holdout assignment",
+      "fast_scan proxy forward-v0 and HX1 guardrailed rows",
+      "hydraulic mdot residual blocker",
+      "external-boundary dictionary readiness",
+      "thermal mesh gate blocker",
+      "passive wall residual attribution",
+      "ranked hydraulic correction candidates",
+      "partial provisional sensor-map scoring policy"
+    ],
+    "blocked_or_pending": [
+      "authoritative full solve_case comparison from running Slurm job 3293960",
+      "TP2 and TW10 sensor exclusions plus exact sensor-coordinate evidence",
+      "hydraulic correction forward rerun",
+      "thermal UA/HTC/Nu fit admission",
+      "external Fluid API implementation"
+    ]
+  },
+  "row_counts": {
+    "readiness_lanes": 11,
+    "split_scorecard_rows": 6,
+    "residual_attribution_rows": 6,
+    "blocker_rows": 7,
+    "source_manifest_rows": 17
+  },
+  "split": {
+    "train": ["salt_2"],
+    "validation": ["salt_3"],
+    "holdout": ["salt_4"],
+    "diagnostic_only": ["salt1_nominal"],
+    "blocked_families": ["corrected-Q", "low-heat"]
+  },
+  "guardrailed_score_snapshot": {
+    "F1_heater_only": {
+      "train_abs_qhx_error_W": 0.0,
+      "validation_abs_qhx_error_W": 2.341475035,
+      "holdout_abs_qhx_error_W": 17.510867422,
+      "train_Tmean_error_vs_cfd_K": 2.321871518,
+      "validation_Tmean_error_vs_cfd_K": 6.533912846,
+      "holdout_Tmean_error_vs_cfd_K": 20.586854166,
+      "mean_mdot_error_vs_cfd_pct_from_hydraulic_gate": 36.371045803
+    },
+    "F0_current_fluid_sources": {
+      "train_abs_qhx_error_W": 0.0,
+      "validation_abs_qhx_error_W": 12.915813365,
+      "holdout_abs_qhx_error_W": 31.375950607,
+      "train_Tmean_error_vs_cfd_K": 33.723334622,
+      "validation_Tmean_error_vs_cfd_K": 44.080023169,
+      "holdout_Tmean_error_vs_cfd_K": 56.894760877,
+      "mean_mdot_error_vs_cfd_pct_from_hydraulic_gate": 53.958519402
+    }
+  },
+  "blocking_decisions": [
+    "Do not claim end-to-end forward-v1 readiness while mdot is overpredicted for every Salt row.",
+    "Do not treat fast_scan proxy rows as authoritative until solve_case_full job 3293960 is harvested and compared.",
+    "Do not include TP2 or TW10 in current forward-v0 sensor score claims; use only the 15 provisionally diagnostic-scoreable sensors after solve.",
+    "Do not fit thermal UA/HTC/Nu or passive wall corrections from the thermal mesh gate; fit_admissible_count is zero.",
+    "Do not treat the AGENT-300 H1 hydraulic candidate as admitted closure until a bounded forward rerun is completed."
+  ],
+  "outputs": [
+    "README.md",
+    "readiness_lanes.csv",
+    "split_scorecard_precursor.csv",
+    "residual_attribution_precursor.csv",
+    "blockers.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "source_artifacts": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_primary_forward_scores.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/decision_summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_forward_v0_solve_case_compute_run/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/summary.json"
+  ]
+}

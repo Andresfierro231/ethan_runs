@@ -1,0 +1,73 @@
+{
+  "task": "TODO-WORKTREE-TRIM-STAGE-COMMIT-PUSH-2026-07-22",
+  "task_id": "TODO-WORKTREE-TRIM-STAGE-COMMIT-PUSH-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Cleaner / Reviewer",
+  "created_at": "2026-07-22T14:03:13-0500",
+  "objective": "Trim the staged push set, add scoped ignore rules for approved bulky generated artifacts, clean validated board rows, and prepare the remaining non-junk files for commit and push.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".gitignore",
+    ".agent/status/2026-07-22_TODO-WORKTREE-TRIM-STAGE-COMMIT-PUSH-2026-07-22.md",
+    ".agent/journal/2026-07-22/worktree-trim-stage-commit-push.md",
+    "imports/2026-07-22_worktree_trim_stage_commit_push.json"
+  ],
+  "read_only_context": [
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "staged git index path list",
+    "user-approved bulky generated artifact package list",
+    "active board rows and task scopes",
+    "tools/agent/finish_task.py validation results"
+  ],
+  "cleanup_actions": [
+    {
+      "path": "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/**/figures/**",
+      "classification": "safe generated artifact",
+      "action": "ignored and unstaged; package docs/tables kept visible"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation*/figures/**",
+      "classification": "safe generated artifact",
+      "action": "ignored and unstaged; package docs/tables kept visible"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/**",
+      "classification": "safe generated artifact",
+      "action": "ignored except package docs/tables/manifests"
+    },
+    {
+      "path": "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/**",
+      "classification": "safe generated artifact",
+      "action": "ignored except package docs/tables/manifests"
+    }
+  ],
+  "staging_summary": {
+    "previous_staged_files": 8111,
+    "previous_staged_mib": 252.07,
+    "post_trim_staged_files_before_closeout_refresh": 7652,
+    "post_trim_staged_mib_before_closeout_refresh": 63.54
+  },
+  "left_unstaged": [
+    "active S13 throughflow endpoint preflight outputs",
+    "active thesis LaTeX evidence batch transfer outputs",
+    "active thesis figures/diagrams outputs and plan file",
+    "D2/H2 fig/table extension output because finish_task validation failed",
+    "predictive strongest-direction runtime contract because no board row exists and finish_task validation failed"
+  ],
+  "mutation_flags": {
+    "deleted_files": false,
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_external_repo_mutated": false,
+    "thesis_body_latex_mutated": false,
+    "gitignore_mutated": true,
+    "board_mutated": true,
+    "git_index_mutated": true
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false
+}

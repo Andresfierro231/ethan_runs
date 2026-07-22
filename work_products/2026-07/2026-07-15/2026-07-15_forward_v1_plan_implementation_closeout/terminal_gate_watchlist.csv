@@ -1,0 +1,6 @@
+job_id,gate,state,dependency,elapsed,node_or_reason,admission_action,notes
+3293924,corrected_q_continuation,RUNNING,,1-14:54:18,c318-016,read_only_monitor_until_terminal,corrected-Q continuation must finish before selected harvester can run.
+3295438,corrected_q_selected_harvest,PENDING,,00:00,Dependency,read_only_monitor_until_terminal,harvester must finish before corrected-Q admission refresh.
+3295989,hydraulic_raw_two_tap,PENDING,,00:00,Dependency,read_only_monitor_until_terminal,first AGENT-373 hydraulic stage.
+3295990,hydraulic_f6_gate,PENDING,,00:00,Dependency,read_only_monitor_until_terminal,second AGENT-373 hydraulic stage.
+3295991,hydraulic_reset_k_sweep,PENDING,,00:00,Dependency,read_only_monitor_until_terminal,third AGENT-373 hydraulic stage.

@@ -1,0 +1,7 @@
+source_id,source_path,role,mutation_status
+S10-SRC-001,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_gate_review.csv,read_only_evidence,not_modified
+S10-SRC-002,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/gate_rollup.csv,read_only_evidence,not_modified
+S10-SRC-003,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f6_candidate_admission_decision.csv,read_only_evidence,not_modified
+S10-SRC-004,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv,read_only_evidence,not_modified
+S10-SRC-005,work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table/same_qoi_uq_admission_table.csv,read_only_evidence,not_modified
+S10-SRC-006,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/pressure_residual_waterfall_shell.csv,read_only_evidence,not_modified

@@ -1,0 +1,11 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_upcomer_exchange_sampler_compute_execution.py,task_output,true,false,true
+tools/extract/test_build_upcomer_exchange_sampler_compute_execution.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/case_time_window_queue.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_design/exchange_sampler_required_schema.csv,read_only_context,true,false,false
+tools/extract/sample_upcomer_exchange_cell.py,read_only_context,true,false,false
+tools/extract/sample_upcomer_matched_plane_metrics.py,read_only_context,true,false,false
+tmp/2026-06-30_claude_action_items/recon_salt2_of13/7915,read_only_context,true,true,false
+tmp/2026-06-30_claude_action_items/recon_salt3_of13/7618,read_only_context,true,true,false
+tmp/2026-06-30_claude_action_items/recon_salt4_of13/10000,read_only_context,true,true,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_compute_execution,task_output,true,false,false

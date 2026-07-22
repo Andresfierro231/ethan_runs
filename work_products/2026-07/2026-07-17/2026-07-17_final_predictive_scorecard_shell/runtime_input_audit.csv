@@ -1,0 +1,7 @@
+audit_item,status,details
+blind_fit_model_selection_exclusion,pass,bad_rows=0
+prediction_rows_no_runtime_target_input,pass,bad_rows=0
+no_solver_or_postprocessor_launch,pass,builder reads existing CSV/JSON evidence only
+future_rows_blocked_before_terminal_or_run_admission,pass,future partitions use explicit release gates
+no_scientific_admission_change,pass,shell records current blockers and placeholders only
+source_property_labels_present_before_fit_or_admission_language,pass,bad_rows=0

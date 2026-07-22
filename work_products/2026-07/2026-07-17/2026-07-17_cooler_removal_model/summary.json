@@ -1,0 +1,15 @@
+{
+  "candidate_count": 4,
+  "coupled_rows": 12,
+  "coupled_status_counts": {
+    "completed": 12
+  },
+  "created_utc": "2026-07-17T13:57:05.686646+00:00",
+  "duty_rows": 12,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+  "run_fluid": true,
+  "segmented_profile_rows": 336,
+  "selected_current_candidate": "HX_LUMPED_UA_NTU",
+  "task": "AGENT-482",
+  "timeout_seconds": 180
+}

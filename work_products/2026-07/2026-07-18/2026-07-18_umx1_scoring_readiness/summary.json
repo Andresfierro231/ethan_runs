@@ -1,0 +1,26 @@
+{
+  "task": "AGENT-543",
+  "date": "2026-07-18",
+  "decision": "umx1_scoring_readiness_contract_complete_no_run",
+  "current_source_of_truth": "AGENT-540 confirms Fluid UMX1 API hook exists; AGENT-537/AGENT-539 no-hook blocking statements are superseded for hook existence only.",
+  "contract_status": {
+    "case_split_declared": true,
+    "candidate_grid_declared": true,
+    "runtime_input_audit_declared": true,
+    "score_gates_declared": true,
+    "probe_localization_declared": true,
+    "next_run_contract_declared": true,
+    "fluid_source_mutated": false,
+    "solver_or_scoring_grid_launched": false,
+    "scheduler_action": "none",
+    "scientific_admission_changed": false
+  },
+  "candidate_grid": {
+    "parameter": "upcomer_exchange_multiplier",
+    "values": [0.0, 0.005, 0.01, 0.02, 0.05, 0.1],
+    "selection_rows": ["Salt 1", "Salt 2", "Salt 4"],
+    "holdout_rows": ["Salt 3"],
+    "blind_rows": ["Salt 2 -5Q", "Salt 2 +5Q", "val_salt2"]
+  },
+  "next_required_step": "new execution row may create Fluid scenarios and run a tiny UMX1 smoke only after claiming Fluid execution/output paths"
+}

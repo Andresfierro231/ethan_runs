@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-09T15:46:04+00:00",
+  "task": "AGENT-219",
+  "output_dir": "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package",
+  "figures": [
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/figures/minor_loss_k_apparent_vs_local.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/figures/minor_loss_separation_phi.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/figures/fixed_mdot_thermal_replay_error.svg",
+    "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/figures/t13_re_sweep_plan.svg"
+  ],
+  "slide_outline": "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/slide_outline_with_speaker_notes.md",
+  "slide6_thermal_analysis": "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/slide6_thermal_replay_analysis.md",
+  "missing_figures_note": "work_products/2026-07/2026-07-08/2026-07-08_tomorrow_presentation_package/missing_and_nice_to_have_figures.md",
+  "source_count": 16,
+  "interpretation_boundary": "communication package only; no new CFD extraction or closure fit"
+}

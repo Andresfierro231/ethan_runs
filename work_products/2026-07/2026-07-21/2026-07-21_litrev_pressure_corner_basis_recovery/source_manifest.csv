@@ -1,0 +1,13 @@
+source_path,use,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv,LitRev pressure-corner rules PC-01 through PC-10,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv,CFD decomposition and coefficient naming contract,read_only
+work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv,"gross static, p_rgh, hydrostatic, kinetic, dynamic-pressure terms",read_only
+work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,RAF/RMF/SVF recirculation gates,read_only
+work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv,separated admission review gates,read_only
+work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv,component versus apparent-cluster decision,read_only
+work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv,same-QOI mesh/time uncertainty status,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/straight_development_subtraction_ledger.csv,straight/developing subtraction availability,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_admission_repair/split_decision.csv,latest lower-right admission split decision,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/recirc_pressure_basis_table.csv,section-effective residual contract,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/pair_pressure_loss_qois.csv,current endpoint-harvest guardrail; F6 remains non-admitted,read_only
+operational_notes/maps/pressure-and-momentum-budget.md,topic-map continuity and pressure-corner status,read_only

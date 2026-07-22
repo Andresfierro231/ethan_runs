@@ -1,0 +1,6 @@
+gate,status,allowed,reason,forbidden_actions
+sampled_surface_field_extraction,next_best_task,true,"geometry VTKs, whole-mesh cell VTKs, recirc masks, face lists, and normal convention now define the extraction contract",do not call the result a harvest; do not fit or admit coefficients
+sampler_manifest_refresh,blocked_until_sampled_fields_and_Q_wall,false,surface VTKs are geometry-only and Q_wall_W remains unreleased,do not mark sampler_ready=true from geometry-only surfaces
+exchange_cell_harvest,blocked,false,"mdot_exchange, T_recirc, Q_wall_W, pressure residual, and energy residual support are not harvested",no production harvest or scheduler launch from this contract package
+same_window_uq,blocked,false,same-window UQ must be on exact exchange QOIs after diagnostic reductions exist,no strong claim or S11/S15 release before exact-QOI UQ
+coefficient_or_model_admission,blocked,false,"no coefficient fitting, source/property release, or model selection has been performed",no S11/S12/S13/S15/S6 trigger; no residual absorption into internal Nu

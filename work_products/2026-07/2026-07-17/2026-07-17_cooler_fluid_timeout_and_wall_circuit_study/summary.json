@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "case_thermal_circuit_inputs.csv": 3,
+    "fluid_timeout_diagnosis.csv": 4,
+    "source_manifest.csv": 5,
+    "thermal_circuit_methodology.csv": 4,
+    "wall_circuit_candidate_scores.csv": 18,
+    "wall_circuit_candidate_summary.csv": 6
+  },
+  "created_utc": "2026-07-17T13:58:01.137255+00:00",
+  "decision": {
+    "best_wall_circuit_candidate": "PB1_total_hA_heater_power_drive_p1",
+    "best_wall_circuit_status": "static_screen_promising_not_admitted",
+    "blocker_decision": "keep_open",
+    "cooler_rerun_has_completed_rows": true,
+    "cooler_timeout_diagnosis": "45 s was too short for Fluid solve_case; 180 s completed this rerun, and posthoc elapsed_s supports a larger future production bound.",
+    "created_utc": "2026-07-17T13:58:01.091432+00:00",
+    "task": "AGENT-492",
+    "why": "The passive-total hA/heater-power circuit can be promoted to coupled scoring if it passes static rows, but blocker closure still requires coupled mdot/TP/TW and local test-section review."
+  },
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study",
+  "task": "AGENT-492"
+}

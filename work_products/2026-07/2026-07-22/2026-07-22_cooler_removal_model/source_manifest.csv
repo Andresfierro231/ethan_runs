@@ -1,0 +1,6 @@
+source_path,use
+operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md,"governing plan, gates, guardrails"
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_model_scores.csv,constant-UA fixed-mdot duty regression and Salt2 fit target
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff/cooler_rmse_summary_with_leakage_policy.csv,prior RMSE comparison context
+work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_coupled_scorecard.csv,coupled M3+TS comparator thresholds
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid,"read-only Fluid source path, not executed in default build"

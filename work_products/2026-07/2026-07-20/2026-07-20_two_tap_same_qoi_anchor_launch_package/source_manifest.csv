@@ -1,0 +1,6 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirculating_same_qoi_anchor_request_refresh/anchor_request.csv,yes,anchor request,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirculating_same_qoi_anchor_request_refresh/sampling_contract.csv,yes,same-QOI sampling contract,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirculating_same_qoi_anchor_request_refresh/uq_requirements.csv,yes,UQ requirements,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirculating_same_qoi_anchor_request_refresh/launch_gate.csv,yes,launch gates,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/component_k_decision.csv,yes,current component-K decision,read_only

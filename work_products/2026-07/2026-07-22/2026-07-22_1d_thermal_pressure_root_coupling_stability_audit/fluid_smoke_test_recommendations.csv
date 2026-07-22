@@ -1,0 +1,6 @@
+smoke_id,scope,check,pass_condition
+SMOKE-ROOT-01,train_rows_only,positive mdot bracket has finite pressure residual endpoints and at least one sign change,"finite bracket, deterministic root, no protected-row access"
+SMOKE-ROOT-02,train_rows_only,one-at-a-time setup perturbations keep mdot finite and sign-consistent,"no NaN/Inf, no negative-flow branch switch unless explicitly modeled"
+SMOKE-ROOT-03,train_rows_only,heater/cooler/external-loss perturbations keep TP/TW projections finite,finite projected TP/TW; excluded sensors remain excluded
+SMOKE-ROOT-04,train_rows_only,"runtime input manifest contains no realized CFD mdot, wallHeatFlux, total_Q, validation TP/TW, or protected score rows",runtime legality audit passes before any candidate freeze
+SMOKE-ROOT-05,train_rows_only,F6/component-K terms are disabled unless an admitted low-recirculation row exists,ordinary-flow prerequisite table remains enforced

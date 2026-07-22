@@ -1,0 +1,25 @@
+{
+  "matrix_rows": 9,
+  "no_scheduler_action": true,
+  "proposed_rows": 11,
+  "required_outputs": [
+    "U",
+    "T",
+    "wallHeatFlux",
+    "Re",
+    "Pr",
+    "Ri",
+    "Gr",
+    "Ra",
+    "Gz",
+    "wall_core_deltaT",
+    "reverse_area_fraction",
+    "reverse_mass_fraction",
+    "secondary_velocity_fraction",
+    "steady_window_status",
+    "mesh_time_uncertainty"
+  ],
+  "salt_anchor": "salt3_jin",
+  "sentinel_rows": 2,
+  "task": "AGENT-478"
+}

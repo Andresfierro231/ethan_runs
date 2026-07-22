@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-20",
+  "fit_or_model_selection_changed": false,
+  "follow_on_artifact_emitted": false,
+  "frozen_model_id": "M2_FROZEN_PREDICTION_ARTIFACT_SALT1_4_NOMINAL_2026_07_20",
+  "generated_at_utc": "2026-07-20T17:41:57.386843+00:00",
+  "holdout_scoring_unblocked": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "salt1_cooler_hx_projection_status": "blocked_missing_supported_scorecard_row",
+  "salt1_gap_status": "closed_blocked_nonfabricated",
+  "salt1_heater_projection_status": "supported",
+  "task": "TODO-PREDICT-SALT1-4-M2-SALT1-SUPPORT-CLOSEOUT"
+}

@@ -1,0 +1,21 @@
+{
+  "admitted_rows": 0,
+  "clipped_k_rows": 0,
+  "cluster_k_admitted_rows": 0,
+  "component_k_admitted_rows": 0,
+  "f6_fit_performed_rows": 0,
+  "gap_rows": 83,
+  "global_multiplier_applied_by_this_task_rows": 0,
+  "guardrail": "existing-artifact synthesis only; rows lacking neighboring windows or GCI remain blocked/diagnostic; no coefficient admission",
+  "rows": 83,
+  "source_families": [
+    "f6_endpoint_face_uq_execution",
+    "f6_endpoint_pair_same_qoi_uq_preflight",
+    "pm10_upcomer_same_qoi_uq_preflight",
+    "pressure_corner_basis_recovery",
+    "thermal_mesh_gate",
+    "thermal_row_admission_ledger",
+    "two_tap_face_qref_uq_progress"
+  ],
+  "task": "TODO-LITREV-SAME-QOI-UQ-EXECUTION"
+}

@@ -1,0 +1,6 @@
+gate,before_status,new_evidence,after_status,reason
+final_forward_v1,blocked_no_go_final_forward_v1_not_admitted,AGENT-391 completed repo-local diagnostics; scheduler CFD-derived gates remain pending,blocked_no_go_final_forward_v1_not_admitted,"hydraulic PM5/F6, corrected-Q harvest, setup-only HX admission, and sensor policy gates are not all admitted"
+corrected_q_pm10q_harvest,pending,3293924=RUNNING on c318-016; 3295438=PENDING on Dependency,blocked_wait_for_terminal_or_dependency,do not duplicate corrected-Q solver/harvester
+setup_only_cooler_hx,missing_setup_only_outputs,AGENT-391 cooler bakeoff rows=13,diagnostic_available_not_admitted,"consume bakeoff, but do not call imposed CFD duty predictive"
+external_bc_thermal_rescue,recommended_lightweight_study,AGENT-392 stage rows=8; all_recorded_exit0=True,partial_or_in_progress_diagnostic,"use completed stage logs, but keep diagnostic until admitted by gate"
+sensor_map_policy,blocked_policy_missing,AGENT-391 sensor rows=204,policy_table_built_by_agent393,sensor targets remain post-solve only

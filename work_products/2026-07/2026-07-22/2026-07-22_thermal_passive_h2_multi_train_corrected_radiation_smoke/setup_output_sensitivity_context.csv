@@ -1,0 +1,16 @@
+admission_or_score,case_id,delta_mdot_model_kg_s,delta_qambient_total_W,delta_qhx_total_W,fit_or_model_selection,input_family,level,max_abs_TP_delta_K,max_abs_TW_delta_K,runtime_observed_temperature_used,runtime_wallHeatFlux_used
+False,salt_2,-8.361857489999971e-05,0.23955596600001172,-0.23955554940000212,False,ambient_temperature,ambient_minus_2K,1.04479602478,1.05793070313,False,False
+False,salt_2,8.33710822999989e-05,-0.2398801409999578,0.2398793696999988,False,ambient_temperature,ambient_plus_2K,1.04572959508,1.05877874108,False,False
+False,salt_2,0.0005258308031000011,-1.8801377879999848,1.8803841442000007,False,external_convection_hA,external_hA_0p5,8.18921800136,8.16122584613,False,False
+False,salt_2,-0.0008117096097999994,2.8459699370000067,-2.846594618200001,False,external_convection_hA,external_hA_2p0,12.4703209333,12.3897355489,False,False
+False,salt_2,0.0,0.0,0.0,False,radiation,radiation_on,0.0,0.0,False,False
+False,salt_3,-7.87234514e-05,0.2342264709999995,-0.2342253826000018,False,ambient_temperature,ambient_minus_2K,1.01499934028,1.02701158127,False,False
+False,salt_3,7.846046999999967e-05,-0.23454353199997513,0.23454220360000022,False,ambient_temperature,ambient_plus_2K,1.01592072994,1.0278671579,False,False
+False,salt_3,0.0005183385079,-1.9522480069999801,1.9525074677999967,False,external_convection_hA,external_hA_0p5,8.45466097112,8.42421946681,False,False
+False,salt_3,-0.0008028223272000014,2.956376105000004,-2.957024170000004,False,external_convection_hA,external_hA_2p0,12.8820288894,12.7975107687,False,False
+False,salt_3,0.0,0.0,0.0,False,radiation,radiation_on,0.0,0.0,False,False
+False,salt_4,-7.242691950000088e-05,0.22817527300003349,-0.22817320689999576,False,ambient_temperature,ambient_minus_2K,0.9810818975,0.992052496171,False,False
+False,salt_4,7.216146369999968e-05,-0.22847916699998905,0.2284772268000026,False,ambient_temperature,ambient_plus_2K,0.981972641456,0.992894770869,False,False
+False,salt_4,0.0005021341498000001,-2.0386922689999665,2.038965574599999,False,external_convection_hA,external_hA_0p5,8.76613148761,8.73477719719,False,False
+False,salt_4,-0.0007783372660000003,3.084865762999982,-3.0855393554000017,False,external_convection_hA,external_hA_2p0,13.3481655437,13.2595988219,False,False
+False,salt_4,0.0,0.0,0.0,False,radiation,radiation_on,0.0,0.0,False,False

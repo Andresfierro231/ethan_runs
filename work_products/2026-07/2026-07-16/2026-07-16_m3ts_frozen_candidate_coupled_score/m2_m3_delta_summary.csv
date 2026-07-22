@@ -1,0 +1,7 @@
+candidate_id,case_id,split_role,m3ts_mdot_abs_error_pct,m3_mdot_abs_error_pct,m3ts_all_probe_rmse_K,m3_all_probe_rmse_K,mdot_delta_vs_m3_pct,all_probe_delta_vs_m3_K,score_gate
+M3TS_R0_role_table_unscaled,salt_3,validation,nan,nan,,,,,fail
+M3TS_R0_role_table_unscaled,salt_4,holdout,nan,nan,,,,,fail
+M3TS_R1_salt2_fit_test_section_coverage,salt_3,validation,nan,nan,,,,,fail
+M3TS_R1_salt2_fit_test_section_coverage,salt_4,holdout,nan,nan,,,,,fail
+M3TS_R2_resistance_network_role_table,salt_3,validation,nan,nan,,,,,fail
+M3TS_R2_resistance_network_role_table,salt_4,holdout,nan,nan,,,,,fail

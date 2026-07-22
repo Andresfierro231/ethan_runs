@@ -1,0 +1,14 @@
+path,producer,required_for_validation,notes
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_candidate_definitions.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_case_split_contract.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_scenario_contracts.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_runtime_input_audit.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_smoke_results.csv,build_umx1_dry_smoke_scorer.py,true,Smoke output after --run-smoke
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_root_status_by_case.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_segment_ledger.csv,build_umx1_dry_smoke_scorer.py,true,Smoke output after --run-smoke
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_conservation_ledger.csv,build_umx1_dry_smoke_scorer.py,true,Smoke output after --run-smoke
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_probe_smoke_score.csv,build_umx1_dry_smoke_scorer.py,true,Smoke output after --run-smoke
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_no_admission_review.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/source_manifest.csv,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/summary.json,build_umx1_dry_smoke_scorer.py,true,Dry contract output
+work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/README.md,build_umx1_dry_smoke_scorer.py,true,Dry contract output

@@ -1,0 +1,20 @@
+{
+  "broad_figure_copy": false,
+  "candidate_freeze": false,
+  "copy_now_rows": 0,
+  "date": "2026-07-22",
+  "decision": "final_figure_import_ledger_ready_manifest_only_no_asset_copy",
+  "external_papers_repo_edit": false,
+  "figure_asset_copy_now": false,
+  "figure_rows": 12,
+  "final_score": "not_performed",
+  "fluid_or_external_edit": false,
+  "missing_regeneration_rows": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "selected_existing_asset_rows": 12,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-EVIDENCE-PACKET-FINAL-FIGURE-IMPORT-LEDGER-2026-07-22",
+  "validation_holdout_external_scoring": false
+}

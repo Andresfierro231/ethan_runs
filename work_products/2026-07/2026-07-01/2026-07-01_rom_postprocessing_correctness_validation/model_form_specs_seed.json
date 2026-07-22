@@ -1,0 +1,78 @@
+[
+  {
+    "model_id": "darcy_laminar_multiplier_by_span",
+    "target_quantity": "apparent_darcy_f",
+    "functional_form": "f_D = C_span * 64/Re",
+    "features_used": [
+      "Re",
+      "span"
+    ],
+    "domain_guards": [
+      "clean_through_flow",
+      "buoyancy_corrected_loss_required"
+    ]
+  },
+  {
+    "model_id": "darcy_power_law_by_span",
+    "target_quantity": "apparent_darcy_f",
+    "functional_form": "f_D = a_span * Re**b_span",
+    "features_used": [
+      "Re",
+      "span"
+    ],
+    "domain_guards": [
+      "minimum_three_physical_cases",
+      "no_recirculation"
+    ]
+  },
+  {
+    "model_id": "segment_constant_uaprime",
+    "target_quantity": "uaprime_wmk",
+    "functional_form": "UA'_segment = constant",
+    "features_used": [
+      "segment"
+    ],
+    "domain_guards": [
+      "computed_T_bulk",
+      "coarse_mesh_flag_until_GCI"
+    ]
+  },
+  {
+    "model_id": "segment_uaprime_power_law",
+    "target_quantity": "uaprime_wmk",
+    "functional_form": "UA' = a_segment * Re**b_segment",
+    "features_used": [
+      "Re",
+      "segment"
+    ],
+    "domain_guards": [
+      "independent_Re_span_required",
+      "mesh_GCI_required_for_publication"
+    ]
+  },
+  {
+    "model_id": "upcomer_recirculation_onset",
+    "target_quantity": "backflow_area_fraction",
+    "functional_form": "bf = bf_max / (1 + (Ri_crit/Ri_streamwise)**k)",
+    "features_used": [
+      "Ri_streamwise",
+      "station_region"
+    ],
+    "domain_guards": [
+      "cell_off_points_required",
+      "median_Ri_not_mean_Ri"
+    ]
+  },
+  {
+    "model_id": "bend_minor_loss_constant_K",
+    "target_quantity": "minor_loss_K",
+    "functional_form": "K_feature = constant",
+    "features_used": [
+      "feature_class"
+    ],
+    "domain_guards": [
+      "two_tap_total_pressure_loss",
+      "straight_friction_removed"
+    ]
+  }
+]

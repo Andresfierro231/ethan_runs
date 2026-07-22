@@ -1,155 +1,254 @@
 # ethan_runs
 
-`ethan_runs/` is the local intake and preprocessing workspace for Ethan's
-large high-fidelity CFD cases. It is not the canonical publication home for
-cross-model comparison results.
+`ethan_runs/` is a heavy-data intake, preprocessing, and evidence-packaging
+workspace for Ethan-provided CFD cases. It is built for scientific provenance:
+every useful result should be traceable back to source case paths, import
+manifests, board rows, journals, and generated work products.
 
-## Role
+This is not a small library and it is not the canonical paper repository. The
+canonical cross-model publication home is usually
+`../cfd-modeling-tools/cross_model_comparison`; this workspace prepares,
+audits, and packages the CFD evidence that can later be published there.
 
-- Stage or reference large local case folders without mutating native outputs.
-- Build explicit import manifests and local provenance records.
-- Extract inventory, quantities of interest, and first-pass validation inputs.
-- Generate field-visualization artifacts through PyVista/VTK or ParaView
-  `pvpython` when the local runtime supports them.
-- Publish canonical comparison-ready artifacts into
-  `../cfd-modeling-tools/cross_model_comparison`.
+## Who This Guide Is For
 
-## Workflow
+Use this README if you are:
 
-1. Make the source case reachable on the local machine.
-2. If the source lives elsewhere, sync it into `staging/`.
-3. Register the case into `registry/case_registry.csv`.
-4. Build an import manifest in `imports/`.
-5. Extract inventory and QoI tables into `work_products/`.
-6. Prepare a render input under `staging/render_inputs/`.
-7. Attempt PyVista/VTK or ParaView field figures into `figures_rendered/`.
-8. Write a reusable Slurm render job into `staging/render_jobs/` when direct rendering skips.
-9. Join the case against the canonical 1D reference contract.
-10. Publish a campaign package into
-   `../cfd-modeling-tools/cross_model_comparison`.
+- a new GitHub user trying to understand what the repository contains;
+- an agent picking up a board task without chat history;
+- a researcher looking for current CFD admission, blocker, or thesis evidence;
+- a developer maintaining intake, extraction, analysis, publication, or agent
+  tooling.
 
-## Local-first intake rule
+You do not need to understand the full CFD campaign before doing safe local
+discovery. You do need to respect the board, provenance, and HPC rules before
+editing or launching work.
 
-- Symlinks in `linked_cases/` are convenience handles only.
-- Provenance lives in manifests, journals, checkpoints, and published reports.
-- Remote paths are not treated as analysis-ready until staged locally.
+## What This Repo Is
+
+- Intake state: `imports/`, `registry/`, `config/`.
+- Source/staging convenience: `staging/`, `jadyn_runs/`, `linked_cases/`.
+- Reproducible helpers: `tools/agent`, `tools/analyze`, `tools/extract`,
+  `tools/intake`, `tools/publish`, `tools/docs`.
+- Durable generated evidence: `work_products/`, `reports/`, `figures*`.
+- Coordination and state: `.agent/BOARD.md`, `.agent/STATE.md`,
+  `.agent/BLOCKERS.md`, `.agent/journal/`, `.agent/status/`.
+- Topic maps and handoffs: `operational_notes/`.
+
+## What This Repo Is Not
+
+- It is not a place to mutate native solver outputs.
+- It is not a place to run heavy CFD or full postprocessing on login nodes.
+- It is not a place to fit or tune predictive models from validation, holdout,
+  external-test temperatures, CFD `mdot`, realized `wallHeatFlux`, or imposed
+  CFD cooler duty.
+- It is not self-contained without local data. Many source cases live on TACC
+  filesystems or other local mounts and may not exist on a public clone.
+
+## First Hour Walkthrough
+
+Start from the repo root.
+
+```bash
+pwd
+rg --files | head -80
+sed -n '1,220p' AGENTS.md
+sed -n '1,220p' operational_notes/START_HERE_FOR_AGENTS.md
+python3.11 tools/agent/board_dashboard.py --limit 20
+sed -n '1,180p' .agent/STATE.md
+sed -n '1,180p' .agent/BLOCKERS.md
+```
+
+Check tooling without touching scientific data:
+
+```bash
+python3.11 -m pytest tools/agent
+python3.11 -m unittest tools.docs.test_repo_tool_inventory
+python3.11 tools/docs/build_repo_tool_inventory.py
+python3.11 tools/docs/build_repo_index.py --check
+```
+
+If `pytest` is unavailable, use the standard-library path:
+
+```bash
+python3.11 -m unittest discover tools/agent
+```
+
+Before editing a task:
+
+```bash
+python3.11 tools/agent/preflight_task.py --task-id <TASK_ID>
+```
+
+Before closing a task:
+
+```bash
+python3.11 tools/agent/finish_task.py --task-id <TASK_ID>
+```
+
+## Environment Prerequisites
+
+- Linux shell on the workspace filesystem.
+- Python `3.11` for most current agent and analysis tooling.
+- `rg` for fast file and text search.
+- TACC/Slurm commands (`sbatch`, `squeue`, `sacct`, `srun`) only when the board
+  row authorizes scheduler work.
+- OpenFOAM/ParaView/PyVista only for rows that explicitly involve solver,
+  postprocessing, reconstruction, rendering, or field extraction.
+
+Do not assume external data paths, HPC modules, or solver environments exist in
+a fresh clone. Read the package README and source manifests first.
+
+## Directory Map
+
+| Path | Purpose |
+| --- | --- |
+| `.agent/` | Board, ownership, status, journals, blockers, generated current state, and agent tools contract. |
+| `config/` | Shared workspace and QOI configuration. Treat as coordinated shared state. |
+| `imports/` | Dated provenance manifests. These explain what changed, what was read, and which mutation guardrails were preserved. |
+| `registry/` | Case registry. Update only under assigned intake/registry rows. |
+| `tools/` | Reusable intake, extraction, analysis, publishing, docs, and coordination helpers. |
+| `work_products/` | Generated packages, usually task-scoped and reproducible from scripts. |
+| `reports/` | Durable reports, thesis dossiers, and report-facing packages. |
+| `operational_notes/` | Dated handoffs and living topic maps. |
+| `reference/` | Shared factual references such as geometry and naming truth. |
+| `jadyn_runs/` | Campaign workspaces and staged/relaunched cases. Read local instructions first. |
+| `staging/` | Local staged copies and render inputs. Inspect before touching. |
+| `linked_cases/` | Convenience symlinks only; never cite as provenance. |
+| `figures/`, `figures_rendered/` | Generated figure outputs. Prefer regeneration over manual edits. |
+| `tmp/`, `tmp_extract/`, `cache/` | Scratch or generated material. Do not broad-delete without a cleanup row and dry-run. |
+
+## User Guide
+
+The full guide lives in `docs/repo_user_guide/`:
+
+- `quickstart.md`: beginner-safe first steps and commands.
+- `repo_organization.md`: how the repository is organized.
+- `tool_index.md`: generated inventory of every helper under `tools/`.
+- `tool_inventory.csv`: machine-readable tool inventory.
+- `data_and_provenance.md`: manifests, registry, native outputs, and work products.
+- `agent_workflow.md`: board claiming, closeout, and handoff rules.
+- `hpc_and_background_jobs.md`: Slurm, `srun`, `tmux`, and monitor-agent policy.
+- `common_tasks.md`: concrete workflows for common work.
+- `troubleshooting.md`: common failure modes and safe checks.
+- `glossary.md`: repo and research terms.
+
+Regenerate the tool index after adding, removing, or renaming helpers:
+
+```bash
+python3.11 tools/docs/build_repo_tool_inventory.py
+```
+
+## Current State and Blockers
+
+Generated files are authoritative for current state:
+
+- `.agent/STATE.md`
+- `.agent/BLOCKERS.md`
+- `.agent/catalog.csv`
+- `.agent/catalog.json`
+
+Regenerate/check the index only when no active row owns the generated index
+files, or when your row explicitly allows it:
+
+```bash
+python3.11 tools/docs/build_repo_index.py --check
+```
+
+Open blockers currently live in `.agent/blockers.yml` and render into
+`.agent/BLOCKERS.md`. Do not scatter new blocker status across journals without
+updating the blocker register under an assigned row.
+
+## Provenance Rules
+
+- Native CFD/OpenFOAM outputs are read-only unless a board row explicitly grants
+  a controlled staged-copy or postprocessing action.
+- `linked_cases/` symlinks are convenience handles, not provenance.
+- Every durable task should leave a status file, journal entry, import manifest,
+  and package README or operational note.
+- Claims should cite exact repo paths, not chat history.
+- Registry/admission/source-property/scoring changes require explicit board
+  scope.
+
+## HPC and Background Compute
+
+Use the scheduler/session tool that matches the work lifetime:
+
+- `sbatch`: durable long-running or overnight work from a login node.
+- `srun`: compute work inside an allocation.
+- `tmux`: keep an interactive launcher alive; it does not allocate resources.
+
+Never run expensive solver, rendering, full-case extraction, or convergence
+work directly on a login node. Long jobs need a principal row and a monitor row:
+the principal launches and documents; the monitor checks state without
+submitting duplicates or harvesting unless explicitly assigned.
+
+Get the policy checklist with:
+
+```bash
+python3.11 tools/agent/background_compute_helper.py --duration long --openfoam --persistent
+```
+
+## Primary Entrypoints
+
+Read `tools/README.md` and `docs/repo_user_guide/tool_index.md` before running
+tools. Representative entrypoints:
+
+```bash
+python3.11 tools/agent/board_dashboard.py
+python3.11 tools/agent/preflight_task.py --task-id <TASK_ID>
+python3.11 tools/agent/finish_task.py --task-id <TASK_ID>
+python3.11 tools/intake/register_case.py --source-path <case-dir>
+python3.11 tools/intake/build_import_manifest.py --source-id <source-id>
+python3.11 tools/extract/extract_case_inventory.py --source-id <source-id>
+python3.11 tools/extract/extract_qoi_table.py --source-id <source-id>
+python3.11 tools/publish/build_cross_model_join.py --source-id <source-id>
+python3.11 tools/publish/publish_cross_model_campaign.py --source-id <source-id>
+python3.11 tools/run_registered_pipeline.py --source-id <source-id>
+```
+
+Many analysis builders are package-specific. Do not run them as generic
+maintenance commands; open the matching board row, package README, and test
+first.
 
 ## Run Classification
 
-- Continuation runs are the primary Ethan run family when they exist for a
-  case. Repo-level documentation should surface continuation packages as the
-  main runs rather than older parent warmup jobs.
-- Kirst runs are not valid current mainline inputs for this repo. Keep them
-  only as historical or provenance-bearing artifacts unless a later dated note
-  explicitly restores them.
-- Perturbation runs remain useful, but they belong in a separate
-  sensitivity/correlation-support group. Do not label them as main runs,
-  nominal runs, or the default paper-facing set.
+- Continuation runs are the current mainline Ethan run family when they exist.
+- Kirst runs are historical unless a later dated note explicitly re-admits them.
+- Perturbation runs belong in sensitivity or testing groups, not nominal
+  baseline groups.
+- Final predictive training currently spans admitted Salt1-4 nominal rows;
+  holdout/testing comes from perturbation, external, and new-CFD rows after
+  their own admission gates.
 
-## Milestone-one case
+## Safe Local Discovery Commands
 
-The initial scaffold targets
-`/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar`
-for `salt_test_2`.
+Read-only:
 
-## Primary entrypoints
+```bash
+pwd
+rg --files
+rg -n "TODO-REPO-USER-GUIDE" .agent/BOARD.md
+sed -n '1,160p' .agent/BLOCKERS.md
+python3.11 tools/agent/board_dashboard.py --limit 20
+python3.11 tools/docs/build_repo_index.py --check
+```
 
-- `python tools/intake/register_case.py --source-path <case-dir>`
-- `python tools/intake/build_import_manifest.py --source-id <source-id>`
-- `python tools/extract/extract_case_inventory.py --source-id <source-id>`
-- `python tools/extract/extract_qoi_table.py --source-id <source-id>`
-- `python tools/extract/prepare_render_input.py --source-id <source-id> --format auto`
-- `python tools/extract/render_field_figures.py --source-id <source-id> --backend auto`
-- `python tools/extract/write_render_job.py --source-id <source-id>`
-- `python tools/publish/build_cross_model_join.py --source-id <source-id>`
-- `python tools/publish/publish_cross_model_campaign.py --source-id <source-id>`
-- `python tools/run_registered_pipeline.py --source-id <source-id>`
+Mutating or potentially heavy, only under assigned scope:
 
-## ParaView Render Accounting
+```bash
+sbatch <script.sbatch>
+srun -N1 <command>
+python3.11 tools/intake/register_case.py --source-path <case-dir>
+python3.11 tools/extract/render_field_figures.py --source-id <source-id> --backend auto
+python3.11 tools/run_registered_pipeline.py --source-id <source-id>
+```
 
-ParaView `pvbatch` still sometimes exits with a post-write `ExitCode=11`
-segfault after successfully writing outputs. The current trusted Slurm pattern
-is to treat the raw ParaView exit code as advisory, then validate the expected
-`status.json` files and only fail the batch job if those durable outputs are
-missing or invalid.
+## Keeping This Guide Current
 
-See:
-
-- `tools/extract/2026-06-15_paraview_field_render_workflow.md`
-- `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
-
-## Download Results To A Laptop
-
-Use `tools/publish/download_results_to_laptop.sh` from a local machine, not
-through Slurm and not from an LS6 compute node. The minimum useful payload for
-local ParaView viewing is usually:
-
-- `staging/render_inputs/<source_id>/reconstructed_case`
-- `work_products/<source_id>` for lightweight metadata
-
-The helper also pulls shared report packages plus `figures/png`, `figures/svg`,
-and `figures/pdf`. Representative reconstructed-case payloads in this workspace
-are about `1.7G` to `2.5G` per case.
-
-See:
-
-- `tools/publish/download_results_to_laptop.sh`
-- `operational_notes/06-26/22/2026-06-22_paraview_download_and_slurm_accounting.md`
-
-## Codex Batch Job Submission
-
-Use `tools/analyze/submit_codex_board_queue_sbatch.sh` when you want to launch
-the bounded Codex queue-resume harness on Slurm.
-
-Requirements:
-
-- Run the submission from a login node, not a compute node.
-- Make sure `codex` and `sbatch` are both on `PATH`, or pass `--codex-bin`.
-- Review the live queue state in `.agent/BOARD.md` first; by default the script
-  asserts the expected bounded-slice board state before it submits anything.
-
-Typical flow:
-
-1. Dry run first:
-   `bash tools/analyze/submit_codex_board_queue_sbatch.sh --dry-run`
-2. Inspect the emitted job directory under `tmp/slurm_codex_board_jobs/`.
-3. Submit for real:
-   `bash tools/analyze/submit_codex_board_queue_sbatch.sh`
-4. Monitor the job:
-   `squeue -j <jobid>` and `sacct -j <jobid>`
-5. Inspect the emitted logs after completion:
-   `tmp/slurm_codex_board_jobs/<timestamp>_codex_ethan_queue_resume/`
-
-Key emitted artifacts:
-
-- `prompt.md`: exact bounded prompt sent to Codex
-- `codex_ethan_queue_resume.sbatch`: generated Slurm script
-- `board-snapshot.txt`: board snapshot captured at submit time
-- `board-assertion.txt`: pre-submit assertion result
-- `slurm-<jobid>.out` and `slurm-<jobid>.err`: scheduler stdout/stderr
-- `codex-events.jsonl` and `codex-last-message.txt`: Codex execution logs
-
-## Agent/User Start Here
-
-New agents and new users should open
-`operational_notes/START_HERE_FOR_AGENTS.md` before starting work. It links the
-board protocol, generated state files, topic maps, background compute policy,
-and the `tools/agent/` preflight/finish/lint helpers.
-
-Important flags:
-
-- `--dry-run`: emit prompt and sbatch script without submitting
-- `--allow-stale-board`: bypass the default board-state assertion
-- `--job-dir PATH`: force a specific output directory for emitted artifacts
-- `--model MODEL`: override the default Codex model for the batch run
-
-## Current status
-
-- `val_salt_test_2_coarse_mesh_laminar` is registered, extracted, joined to the
-  canonical 1D contract, and published.
-- Validation metrics are derived from solver logs plus `postProcessing/` outputs.
-- Decomposed-case rendering still requires a compatible runtime or a reconstructed
-  staging copy, but the workspace now emits a reusable Slurm render job.
-- Only one accessible Ethan case was found under the readable project scratch tree
-  on 2026-05-29, so multi-case execution remains externally blocked by source
-  availability rather than missing workflow code.
+When a workflow changes, update the nearest guide page and regenerate
+`docs/repo_user_guide/tool_index.md` with
+`tools/docs/build_repo_tool_inventory.py`. For significant documentation
+sessions, close out with a status, journal, import manifest, and
+`finish_task.py`, then regenerate the repo index only if the active board scope
+allows generated index edits.

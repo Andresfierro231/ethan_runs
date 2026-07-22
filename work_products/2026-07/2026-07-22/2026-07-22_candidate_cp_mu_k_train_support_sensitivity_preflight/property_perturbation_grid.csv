@@ -1,0 +1,11 @@
+perturbation_id,parameter,relative_factor,Re_multiplier,Pr_multiplier,Gz_multiplier,source_deltaT_multiplier,wall_conduction_resistance_multiplier,allowed_split,interpretation
+cp_minus_5pct,cp_J_kg_K,0.95,1.0,0.95,0.95,1.0526315789473684,1.0,train_support_only,Lower cp reduces Pr/Gz and increases source temperature rise for fixed mdot and source power.
+cp_nominal,cp_J_kg_K,1.0,1.0,1.0,1.0,1.0,1.0,train_support_only,Nominal Parida cp family label only; no numeric release.
+cp_plus_5pct,cp_J_kg_K,1.05,1.0,1.05,1.05,0.9523809523809523,1.0,train_support_only,Higher cp raises Pr/Gz and reduces source temperature rise for fixed mdot and source power.
+mu_minus_5pct,viscosity_mu,0.95,1.0526315789473684,0.95,1.0,1.0,1.0,train_support_only,Lower viscosity increases Re but lowers Pr; fixed-flow Gz product is unchanged by mu alone.
+mu_nominal,viscosity_mu,1.0,1.0,1.0,1.0,1.0,1.0,train_support_only,Nominal Jin viscosity family label only; no numeric release.
+mu_plus_5pct,viscosity_mu,1.05,0.9523809523809523,1.05,1.0,1.0,1.0,train_support_only,Higher viscosity lowers Re and raises Pr; hydraulic mdot impact direction is lower mdot for viscous-dominated pressure paths.
+k_minus_5pct,thermal_conductivity_k,0.95,1.0,1.0526315789473684,1.0526315789473684,1.0,1.0526315789473684,train_support_only,Lower k raises Pr/Gz and increases wall/layer conduction resistance.
+k_nominal,thermal_conductivity_k,1.0,1.0,1.0,1.0,1.0,1.0,train_support_only,Nominal Santini k family label only; no numeric release.
+k_plus_5pct,thermal_conductivity_k,1.05,1.0,0.9523809523809523,0.9523809523809523,1.0,0.9523809523809523,train_support_only,Higher k lowers Pr/Gz and reduces wall/layer conduction resistance.
+cp_mu_k_corners,cp_mu_k,0.95_to_1.05,derived_by_product_rules,derived_by_product_rules,derived_by_product_rules,derived_by_cp_rule,derived_by_k_rule,train_support_only,Use only after a task-owned runner emits a full factorial table; not a protected score or release.

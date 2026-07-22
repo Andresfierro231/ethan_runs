@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-07-20T19:29:49-05:00",
+  "case_count": 4,
+  "plane_feature_rows": 12,
+  "feature_summary_rows": 4,
+  "residual_join_rows": 4,
+  "residual_target_available_cases": 4,
+  "residual_target_missing_cases": 0,
+  "model_score_rows": 16,
+  "blocker_rows": 12,
+  "ordinary_pipe_fit_allowed_rows": 0,
+  "fit_allowed_now": 0,
+  "model_selection_allowed_now": 0,
+  "runtime_input_allowed_now": 0,
+  "recirculation_lane": "recirculating_upcomer_effective",
+  "feature_matrix_path": "work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission/pm10_recirculation_feature_matrix.csv",
+  "anchor_admission_path": "work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission/pm10_recirculation_anchor_admission.csv",
+  "hybrid_contract_path": "work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_pm10_recirc_hybrid_residual_scorecard"
+}

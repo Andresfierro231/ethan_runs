@@ -1,0 +1,5 @@
+priority,gate,launch_now,reason,forbidden
+0,TODO-FLUID-EXTERNAL-BC-DICT,only_with_external_Fluid_ownership,"S1 contract and handoff are complete, but first-class Fluid/API source support remains open.",no external Fluid edit without separate external board row and exact-file ownership
+1,TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE,yes_repo_local_after_claim,Phase 0/1/2 heat-loss evidence is complete and can feed a narrow setup-only candidate score.,"no realized wallHeatFlux, CFD mdot, imposed CFD cooler duty, realized test-section heat, or validation temperatures at runtime"
+2,TODO-HEATLOSS-PHASE-4-UPCOMER-EXCHANGE-AND-INTERNAL-NU-GATE,after_or_in_parallel_with_phase3_if_scope_separate,Upcomer/internal-Nu rows remain diagnostic until recirculation/exchange evidence gates pass.,no ordinary upcomer Nu/fD/K fit from current recirculating rows
+3,TODO-HEATLOSS-PHASE-5-FROZEN-SCORECARD-AND-THESIS-HANDOFF,no_trigger_gated,Final frozen scorecard remains blocked until a runtime-legal candidate is admitted.,no holdout/external tuning and no final accuracy claim before freeze

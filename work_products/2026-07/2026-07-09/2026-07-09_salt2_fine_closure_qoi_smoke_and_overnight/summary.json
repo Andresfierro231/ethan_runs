@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-07-09T16:40:06-05:00",
+  "task": "AGENT-239",
+  "profile_source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "mesh_stations": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json",
+  "source_cases": [
+    {
+      "mesh_level": "medium",
+      "source_case_id": "viscosity_screening_salt_test_2_jin_medium_mesh",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "latest_time_s": "518",
+      "processor_dir": "processors64",
+      "role": "smoke_full_pipeline_before_fine",
+      "exists": true
+    },
+    {
+      "mesh_level": "fine",
+      "source_case_id": "viscosity_screening_salt_test_2_jin_fine_mesh",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "latest_time_s": "399",
+      "processor_dir": "processors128",
+      "role": "overnight_target",
+      "exists": true
+    }
+  ],
+  "policy": {
+    "source_cases_read_only": true,
+    "closure_observations_updated": false,
+    "registry_updated": false,
+    "runner_requires_compute_node": true
+  },
+  "entrypoints": {
+    "driver": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/run_refined_closure_qoi.sh",
+    "smoke": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/launch_smoke_srun.sh",
+    "overnight": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/launch_overnight_srun.sh",
+    "smoke_then_overnight": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/scripts/launch_smoke_then_overnight_srun.sh"
+  }
+}

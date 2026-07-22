@@ -1,0 +1,35 @@
+{
+  "admission_status": "diagnostic_station_pressure_ladder_not_fit_admitted",
+  "branch_average_output": "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/salt2_branch_average_pressure_map.csv",
+  "branch_rows": 6,
+  "case_key": "salt2_mainline",
+  "created_utc": "2026-07-16T21:17:47.720539+00:00",
+  "lower_leg_mapping": {
+    "cfd_span": "lower_leg",
+    "flow_order": "lower_leg__s04 -> lower_leg__s00",
+    "one_d_segment": "heated_incline",
+    "physical_location": "heater"
+  },
+  "right_leg_mapping": {
+    "cfd_span": "right_leg",
+    "flow_order": "right_leg__s00 -> right_leg__s04",
+    "one_d_segment": "right_vertical",
+    "physical_location": "downcomer"
+  },
+  "source": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv",
+  "station_output": "work_products/2026-07/2026-07-16/2026-07-16_salt2_streamwise_pressure_1d_map/salt2_streamwise_pressure_1d_map.csv",
+  "station_rows": 30,
+  "task": "AGENT-456",
+  "time_s": "7915",
+  "upper_leg_mapping": {
+    "cfd_span": "upper_leg",
+    "one_d_segments": [
+      "top_horizontal_inlet",
+      "cooled_incline_pre_hx",
+      "cooled_incline_hx_active",
+      "cooled_incline_post_hx",
+      "top_horizontal_exit"
+    ],
+    "physical_location": "cooled leg"
+  }
+}

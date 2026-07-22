@@ -1,0 +1,8 @@
+question,answer,evidence,claim_allowed,claim_forbidden,next_gate
+What is D2?,Train-residual TP/TW QOI-projection diagnostic offsets,MF-D2 README and runtime_legality_matrix.csv,D2 tests projection/development signal,D2 is a released runtime correction,source-bounded projection formula
+Does D2 improve transfer metrics?,Yes diagnostic transfer RMSE improves from 17.3645293096 K to 10.5253939442 K,d2_score_improvement_summary.csv,D2 is promising diagnostic evidence,D2 proves predictive validation,freeze-gated candidate scoring only after release
+Has D2 been tested on validation rows?,No new validation scoring; validation not used except prior transfer context,MF14 split_claim_matrix.csv,State validation remains untested for D2 as a frozen model,claim validation pass,separate frozen-candidate score row
+Has D2 been tested on holdout rows?,No,MF14 split_claim_matrix.csv,State holdout not used,claim holdout score or tune from holdout,separate frozen-candidate score row
+Has D2 been tested on external-test rows?,No,MF14 split_claim_matrix.csv,State external-test not used,claim external generalization,separate frozen-candidate score row
+Can D2 be used at runtime?,No runtime temperature or correction release,MF14 no_mutation_guardrails.csv and D2 runtime_legality_matrix.csv,Use as diagnostic model-form ordering,insert empirical offsets into runtime model,source-bounded correction plus UQ and release labels
+What should happen next?,Build source-bounded bulk-to-TP projection and same-QOI UQ before any protected score,MF14 projection_release_gate and D2 next_analysis_plan.csv,Prioritize TP projection then TW residual ownership,hide TW residual in internal Nu,candidate-specific source/property/split refresh

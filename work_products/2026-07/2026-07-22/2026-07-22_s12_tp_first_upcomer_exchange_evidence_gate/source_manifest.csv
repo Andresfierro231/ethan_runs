@@ -1,0 +1,10 @@
+source_path,used_read_only,native_output
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/finite_train_metric_table.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_s12_thermal_residual_candidate_disposition_and_thesis_panels/candidate_disposition_table.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/s13_exchange_trend_table.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/s13_sampled_field_gate_matrix.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/production_readiness_gate.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/source_property_conservation_release.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/same_qoi_uq_matrix.csv,True,False
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/downstream_gate.csv,True,False
+work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch/signed_error_shape_metrics.csv,True,False

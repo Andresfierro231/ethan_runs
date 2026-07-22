@@ -1,0 +1,12 @@
+source_id,path,exists,use
+segment_contract,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_equation_contract/downstream_gate_contract.csv,true,downstream gate contract
+pressure_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,true,segment pressure gates
+thermal_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/segment_thermal_model_scorecard.csv,true,segment thermal gates
+upcomer_hybrid,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/upcomer_admission_decision.csv,true,upcomer hybrid gate
+branch_mask,work_products/2026-07/2026-07-17/2026-07-17_branch_specific_ordinary_pipe_scorecard/ordinary_pipe_branch_mask.csv,true,ordinary branch mask
+development_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/prerequisite_gate_scorecard.csv,true,boundary-layer gate
+sensor_policy,work_products/2026-07/2026-07-17/2026-07-17_sensor_tp2_restore_tw10_exclude/sensor_policy_scorecard.csv,true,TP/TW target policy
+split_policy,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv,true,final split policy
+previous_m3ts_score,work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m3ts_coupled_scorecard.csv,true,prior coupled attempt scores
+previous_m3ts_admission,work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m3ts_admission_review.csv,true,prior candidate admission review
+previous_m3_delta,work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m2_m3_delta_summary.csv,true,M2/M3 comparator deltas

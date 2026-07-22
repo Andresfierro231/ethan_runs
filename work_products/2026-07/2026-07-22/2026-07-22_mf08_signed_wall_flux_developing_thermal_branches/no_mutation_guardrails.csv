@@ -1,0 +1,14 @@
+guardrail,performed
+fluid_solve,False
+scheduler_action,False
+solver_postprocessing_sampler_harvest_uq_launch,False
+native_output_mutation,False
+registry_or_admission_mutation,False
+fluid_or_external_edit,False
+validation_holdout_external_scoring,False
+fitting_tuning_model_selection,False
+source_property_release,False
+coefficient_admission,False
+final_score_claim,False
+realized_wallHeatFlux_runtime_input,False
+residual_internal_nu_absorption,False

@@ -1,0 +1,5 @@
+audit_id,status,policy,source_paths
+wallHeatFlux_predictive_runtime,pass_forbidden,forbidden predictive wallHeatFlux runtime input; diagnostic evidence only,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv
+qr_absence,pass_recorded_absent,forbidden inference from emissivity or residual; qr is absent in cited outputs,operational_notes/maps/thermal-boundary-and-radiation.md
+storage_absence,pass_recorded_absent,forbidden steady storage tuning from residual,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv
+model_scoring,not_performed,Phase 2 improves evidence only; no fitting/model selection/admission,work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv

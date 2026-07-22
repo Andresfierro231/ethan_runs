@@ -1,0 +1,4 @@
+dependency,observed_state,decision,allowed_now,forbidden_now
+CAND001_job_3308712,RUNNING,endpoint_readiness_not_claimed,false,No harvest no endpoint readiness no F6 fit no duplicate scheduler launch.
+AGENT_519_monitor_lane,active_read_only_owner,respect_existing_monitor,true,Do not submit cancel requeue or duplicate monitor work.
+future_anchor_design,parallel_design_only,complete_no_launch,true,No native-output mutation or registry/admission mutation.

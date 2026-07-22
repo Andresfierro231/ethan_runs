@@ -1,0 +1,5 @@
+prediction_source_segment,runtime_input,uses_train_residual_fit,uses_validation_holdout_targets,uses_native_realized_wallHeatFlux,source_property_released_now,independent_geometry_released_now,runtime_legal_now,decision
+heated_incline,setup heater redistribution plus passive lower_leg,False,False,False,False,False,False,fail_closed_not_runtime_legal
+left_lower_vertical,test-section/upcomer source placement plus passive upcomer,False,False,False,False,False,False,fail_closed_not_runtime_legal
+left_upper_vertical,upper upcomer wall/core exchange or passive upcomer,False,False,False,False,False,False,fail_closed_not_runtime_legal
+right_vertical,passive downcomer wall heat path,False,False,False,False,False,False,fail_closed_not_runtime_legal

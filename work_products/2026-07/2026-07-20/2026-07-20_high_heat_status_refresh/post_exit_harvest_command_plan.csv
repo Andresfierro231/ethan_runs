@@ -1,0 +1,3 @@
+condition,action,fit_use
+job_terminal_completed,run terminal harvest/readiness package before any admission,forbidden_until_terminal_steady_window_pass
+job_failed_or_timeout,triage solver logs; classify diagnostic or repair before relaunch,forbidden

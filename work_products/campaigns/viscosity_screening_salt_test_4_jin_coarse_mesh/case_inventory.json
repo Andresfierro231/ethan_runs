@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-06-01T17:35:26-05:00",
+  "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "case_id": "salt_test_4_jin",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "fluid": "hitec_salt_jin",
+  "turbulence_model": "laminar",
+  "nprocs": 64,
+  "scale_to_meters": 0.001,
+  "walltime": "120:00:00",
+  "top_level_entries": [
+    ".stage_complete",
+    "0",
+    "case_config.yaml",
+    "constant",
+    "dynamicCode",
+    "logs",
+    "postProcessing",
+    "processors64",
+    "system"
+  ],
+  "core_case_paths": {
+    "zero_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh/0",
+    "constant_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh/constant",
+    "system_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh/system",
+    "post_processing_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh/postProcessing"
+  },
+  "operating_point": {
+    "heater_power_W": 337.6,
+    "cooling_power_W": 65.98,
+    "T_init_K": 475.0
+  },
+  "mesh_summary": {
+    "mesh_group_id": "7ab7fb2650596980",
+    "kernel_factor": 0.7,
+    "kernel_blend": 0.5,
+    "core_ratio": 0.64,
+    "first_cell_size": 0.225,
+    "bulk_cell_size": 1.125
+  },
+  "convergence_summary": {
+    "enabled": true,
+    "check_interval": 100,
+    "min_iterations": 500,
+    "qoi_rtol": 0.0001,
+    "qoi_window": 100
+  }
+}

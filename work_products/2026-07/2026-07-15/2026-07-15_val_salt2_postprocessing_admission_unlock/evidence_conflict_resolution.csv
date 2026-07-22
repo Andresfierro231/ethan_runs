@@ -1,0 +1,3 @@
+case_key,display_label,evidence_source,observed_label,mdot_verdict,heat_verdict,interpretation,resolution
+salt2_native_val,val_salt_test_2_coarse_mesh,work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/all_timeseries_case_rollup.csv,not_found,,,older table used diagnostic heat-drift wording; refreshed AGENT-422 gate applies magnitude thresholds to existing terminal wallHeatFlux and mdot tails,superseded_for_val_salt2_external_test_admission
+salt2_native_val,val_salt_test_2_coarse_mesh,work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/terminal_steady_state_evidence.csv,steady,,,AGENT-417 already carried val_salt2 as steady but blocked it for missing section heat-loss ledger,confirmed_and_ledger_added

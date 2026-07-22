@@ -1,0 +1,9 @@
+qoi_or_state,property_dependency,expected_direction_or_formula,requires_before_execution,release_status_now,guardrail
+Re,mu,Re_multiplier = 1 / mu_factor,velocity basis and property mode provenance,preflight_ready_no_release,Do not admit friction or Nu coefficients from sensitivity alone.
+Pr,cp_mu_k,Pr_multiplier = cp_factor * mu_factor / k_factor,row-specific cp/mu/k validity,preflight_ready_no_release,Do not use protected targets to choose property mode.
+Gz,cp_k,Gz_multiplier = cp_factor / k_factor for fixed flow basis,reset distance and source envelope,preflight_ready_no_release,Do not silently use unknown reset/source labels.
+mdot,mu_and_pressure_basis,direction: higher mu raises viscous loss and tends to lower mdot,terminal pressure endpoint readiness for CAND001 and pressure basis release,gated,Do not fit component K or F6 while endpoint fields are absent.
+TP_projection,cp_k_source_memory,source integral scales with 1/(mdot*cp); development coordinate shifts with Gz,strict source envelope and same-QOI TP UQ,gated,Do not use validation or holdout TP to select coefficients.
+TW_projection,k_wall_material_cp,wall resistance scales with 1/k; storage with cp,material geometry release and wall/profile basis,gated,Do not collapse wall/contact/passive residual into internal Nu.
+heat_ledger,cp_source_power_storage,enthalpy and storage terms require cp and mass/volume ownership,source/property release and material/source inventory,gated,Keep heater cooler passive radiation storage and residual lanes separate.
+residual_owner,all_lanes,explicit output after declared paths only,heat-path source inventory and material geometry,preflight_ready_no_closure,Never hide missing heat residual in internal Nu or a global multiplier.

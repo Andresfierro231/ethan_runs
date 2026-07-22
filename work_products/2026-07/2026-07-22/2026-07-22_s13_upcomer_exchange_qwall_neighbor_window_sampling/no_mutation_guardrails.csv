@@ -1,0 +1,10 @@
+guard_id,changed,policy
+native_output_mutation,false,processors64 fields read only
+scheduler_action,false,no scheduler action
+OpenFOAM_solver_postprocessing,false,no solver or postProcess
+sampler_harvest_uq_launch,false,"no sampler, harvest, or UQ execution"
+registry_or_admission_mutation,false,no registry/admission edit
+Q_wall_W_relabel_or_production_release,false,neighbor Qwall sampled only for UQ prerequisite
+source_side_relabel_as_Q_wall,false,forbidden
+S11_S12_S13_S15_S6_trigger,false,forbidden
+residual_absorbed_into_internal_Nu,false,forbidden

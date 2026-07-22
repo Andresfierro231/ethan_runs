@@ -1,0 +1,4 @@
+case_id,split_group,tw_rows,m3_tw_rmse_K,d3_tw_rmse_K,d3_minus_m3_tw_rmse_K,m3_error_slope_K_per_sensor_index,d3_error_slope_K_per_sensor_index,d3_reduced_abs_error_rows
+salt_2,train,10,20.9549296419,8.68463207433,-12.2702975675,2.38209902083,5.15139638498e-12,9
+salt_3,transfer,10,19.3315846151,9.33875871489,-9.99282590018,2.49033589067,0.108236869836,6
+salt_4,transfer,10,18.6225154705,10.2317345598,-8.39078091077,2.64617730612,0.264078285284,5

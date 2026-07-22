@@ -1,0 +1,7 @@
+quantity,equation,source_or_basis,assumption,implication
+Re,Re = rho * U_bulk * D_h / mu,existing upcomer correlation dataset,Use the dataset's Re_upcomer for regime position; do not recompute properties in this packet.,Current admitted rows span Re 71.1-134.9 only.
+Pr,Pr = cp * mu / k,existing upcomer correlation dataset,Property-mode effects are upstream inputs; this packet does not mix property lanes.,Pr decreases across Salt2-4 but does not create a non-recirculating point.
+Gr_proxy,Gr_proxy = Ra_median / Pr_median,prior onset package convention,"Proxy is used for documentation only, not threshold fitting.","Useful for thesis explanation of buoyancy scale, not a closure coefficient."
+Ri_median,Ri_median = median local buoyancy/inertia indicator from source reduction,existing upcomer correlation dataset,Use the source median rather than mean to avoid near-zero velocity domination.,"All current points have Ri_median >= 1, so ordinary single-stream pipe friction remains invalid."
+backflow_fraction,backflow_fraction = reverse-flow count / sampled upcomer count,AGENT-196 reduced upcomer evidence,"Backflow fraction is a regime diagnostic, not a volumetric recirculation fraction.","All current points exceed 0.10, so no ordinary-pipe anchor exists."
+onset_fit,bf = a + b / Re,upcomer_correlation_fit.csv,Positive fitted asymptote means zero-backflow crossing is not a valid direct threshold.,"Route A/B onset estimates remain extrapolated brackets, not calibrated closure rules."

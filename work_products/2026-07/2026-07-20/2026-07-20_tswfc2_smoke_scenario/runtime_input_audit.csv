@@ -1,0 +1,10 @@
+gate_id,status,evidence,guardrail
+predictive_mode,pass,predictive_airside_hx,"smoke must use predictive_airside_hx, not imposed HX duty"
+no_imposed_qhx,pass,,imposed_qhx_W is forbidden for this smoke runtime
+no_validation_record_runtime,pass,False,validation measurements are not runtime inputs
+no_3d_source_profile,pass,False,3D source profiles are out of scope for this smoke
+no_3d_segment_losses,pass,False,3D segment-loss replay is out of scope for this smoke
+no_3d_contract_case_id,pass,,no 3D contract case ID should be active
+tswfc2_mode,pass,distributed_wall_fluid_nodes_v1,TSWFC2 distributed node mode must be enabled
+four_node_rows,pass,4,bounded smoke requires exactly four TSWFC2 rows
+bounded_node_fields,pass,,"node rows should contain only setup conductance, ambient, span, role, and drive fields"

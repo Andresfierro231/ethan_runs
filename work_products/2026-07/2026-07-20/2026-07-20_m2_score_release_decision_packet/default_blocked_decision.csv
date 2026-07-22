@@ -1,0 +1,2 @@
+decision_id,decision,holdout_rows_scored_now,fit_rows_added,model_selection_rows_added,reason
+m2_default_score_release,blocked_missing_salt1_cooler_hx,0,0,0,No numeric Salt1 cooler/HX projection exists

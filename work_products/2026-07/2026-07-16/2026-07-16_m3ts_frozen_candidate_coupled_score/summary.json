@@ -1,0 +1,20 @@
+{
+  "admission_counts": {
+    "not_admitted": 3
+  },
+  "admission_rows": 3,
+  "admitted_candidates": 0,
+  "blocker_decision": "keep_open",
+  "coupled_rows": 9,
+  "coupled_status_counts": {
+    "timeout_after_45s": 9
+  },
+  "external_fluid_mutated": false,
+  "generated_at": "2026-07-16T22:50:03+00:00",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "run_fluid": true,
+  "scheduler_action_taken": false,
+  "task": "AGENT-470",
+  "timeout_seconds": 45
+}

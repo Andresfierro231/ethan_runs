@@ -1,0 +1,4 @@
+source_path,source_type,use,mutation
+work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/README.md,completed_prior_panel_package,baseline N2 diagnostic package,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_neighbor_window_sampling/same_qoi_neighbor_window_rows.csv,completed_neighbor_sampling_table,target-minus and target rows for panel addendum,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_neighbor_window_sampling/same_qoi_uq_matrix.csv,completed_neighbor_uq_matrix,same-QOI UQ blocker table,read_only

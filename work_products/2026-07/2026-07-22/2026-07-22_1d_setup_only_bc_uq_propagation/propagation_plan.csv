@@ -1,0 +1,6 @@
+stage,action,inputs_varied,outputs_recorded,admission_or_score_allowed,acceptance
+P0,freeze runtime input set,only rows in uncertainty_source_table with runtime_allowed not false,runtime input manifest; split labels; source/property labels,false,no forbidden runtime field appears in model execution inputs
+P1,one-at-a-time screening,UQ01-UQ09 individually,"mdot_model, segment heat terms, R_s owner rows, TP/TW projections",false,finite root and finite projected QOIs on train rows only
+P2,low-order interaction screen,heater_source_fraction x passive hA; cooler UA x pressure terms; radiation x passive hA,interaction signs and dominance labels,false,"interactions reported as sensitivity, not selected multipliers"
+P3,candidate-specific UQ after release,only one source/property released candidate plus setup priors,same-QOI train uncertainty envelope,blocked_until_release,separate row releases exactly one candidate before protected scoring
+P4,protected-row propagation after freeze,frozen prior set only,validation/holdout/external scores and intervals,only_after_frozen_runtime_legal_candidate,no model selection or tuning from protected-row outcomes

@@ -1,0 +1,9 @@
+order,item,target_chapter,source_path,status,primary_guardrail
+1,Motivation and contribution,Ch. 1,reports/thesis_dossier/Chapters_and_sections/current/15_ch1_csem_motivation_and_contribution.md,ready,"CFD is high-fidelity reference, not experimental validation"
+2,CFD evidence/database,Ch. 3,reports/thesis_dossier/Chapters_and_sections/current/16_ch3_csem_cfd_evidence_database.md,ready,"CFD reductions are diagnostic unless separately admitted"
+3,Steady fluid+walls model form,Ch. 5,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,ready,"Model slots are not admitted coefficients"
+4,Closure admission and uncertainty,Ch. 6,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,ready,"Runtime leakage rules travel with every predictive claim"
+5,Pressure thermal predictive results,Ch. 7,reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,ready_partial,"Final predictive scores remain blocked by frozen-candidate status"
+6,Limitations SAM relevance conclusions,Ch. 8,reports/thesis_dossier/Chapters_and_sections/current/20_ch8_csem_sam_limitations_conclusions.md,ready,"SAM relevance is closure-discipline transfer, not validation"
+7,LitRev CSEM incorporation,Ch. 2/4/5/6/7/8/9,reports/thesis_dossier/Chapters_and_sections/current/25_litrev_csem_thesis_incorporation.md,ready,"Literature model forms are source-envelope gates, not TAMU admissions"
+8,Figure table incorporation package,All chapters,reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md,ready,"Captions must carry diagnostic/admission caveats"

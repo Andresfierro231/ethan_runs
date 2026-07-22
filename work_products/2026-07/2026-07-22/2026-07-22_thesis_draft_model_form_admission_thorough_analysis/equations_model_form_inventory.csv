@@ -1,0 +1,7 @@
+model_form,equation_or_role,current_use,admission_status,primary_blocker
+M0_setup_only_baseline,setup-only pressure/thermal lower bound,diagnostic train/support context,not_admitted,source/property release and candidate freeze absent
+M3_segment_only_fluid_walls,segment energy balance plus current wall/source assumptions,legacy diagnostic comparator,not_admitted,heat residual/source-property ownership unresolved
+MF12_signed_source_memory_bulk_to_TP,T_TP = T_bulk + signed source/reset/Graetz projection,high-value formula preflight,not_admitted,cp/source envelope and same-QOI TP UQ missing
+M5_MF04_exchange_cell,throughflow plus recirculation exchange cell,high-value future candidate,not_admitted,S13 formal GCI/source-property/Qwall release missing
+MF01_F6_pressure,ordinary gated single-stream pressure coefficient,future pressure candidate,not_admitted,CAND001 endpoint readiness and low-recirculation anchor absent
+M6_final_frozen_candidate,single frozen runtime-legal candidate,not created,blocked,all runtime/source/property/UQ/freeze gates incomplete

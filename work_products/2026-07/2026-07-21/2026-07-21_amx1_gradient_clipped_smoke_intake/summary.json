@@ -1,0 +1,39 @@
+{
+  "task": "AGENT-573",
+  "date": "2026-07-21",
+  "external_fluid_task": "impl-2026-07-21-fluid-amx1-gradient-clipped-smoke",
+  "fluid_campaign": "amx1_salt2_gradient_clipped_smoke_v1",
+  "audit_decision": "gradient_clipped_smoke_complete_diagnostic_only",
+  "progression": "gradient_clipped_forms_need_revision_before_salt1_4",
+  "rows_scanned": 3,
+  "baseline_rows": 1,
+  "amx1_rows": 2,
+  "manifest_rows_ok": "3/3",
+  "all_roots_pass": true,
+  "amx1_ledgers_nonzero": true,
+  "amx1_ledgers_conservative": true,
+  "forms_ready_for_separate_salt1_4_bounded_comparison": [],
+  "closest_form": {
+    "form_label": "upper_vertical_only_m010_clip0050",
+    "form_target": "upper_vertical_only",
+    "multiplier_code": "m010",
+    "axial_mixing_multiplier": 0.01,
+    "clip_code": "clip0050",
+    "axial_mixing_gradient_clip_K": 0.05,
+    "max_positive_core_delta_K": 0.00005769407099620594,
+    "worsened_core_metrics": ["all_rmse_K", "tp_rmse_K"]
+  },
+  "runtime": {
+    "total_duration_s": 303.77009,
+    "solve_duration_s": 284.528675,
+    "max_scenario_duration_s": 113.542427
+  },
+  "next_action": "Do not expand current clipped AMX1; revise physical AMX1 form or prioritize wall/test-section/passive-boundary setup-only candidates.",
+  "score_grid_run": false,
+  "salt1_4_expansion_run": false,
+  "fit_or_model_selection_run": false,
+  "scientific_admission_change": "none",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none"
+}

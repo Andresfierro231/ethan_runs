@@ -1,0 +1,7 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv,read diagnostic average proxy metrics,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/missing_gate_matrix.csv,read missing production gates,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk/sampler_refresh_gate.csv,read sampled-field/Qwall contract gate,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/released_surface_vtk_manifest.csv,read geometry VTK manifest,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/sampler_input_gap_matrix.csv,read prior sampler preflight,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json,read UQ status,true,false,false

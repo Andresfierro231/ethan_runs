@@ -1,0 +1,5 @@
+downstream_gate,status,candidate_count,reason,required_before_reopen
+S11 candidate source/property refresh,closed,0,no runtime-legal S13 candidate has post-sampler same-label mesh/GCI evidence,"one exact-label exchange-cell candidate with terminal QOI rows, source/property basis, split permissions, and UQ"
+S12 thermal-shape candidate,not_advanced_by_this_row,0,S13 diagnostic exchange evidence does not release a thermal-shape closure,runtime-legal wall/test-section/source-property candidate outside realized wallHeatFlux
+S13 exchange-cell admission,fail_closed,0,post-sampler exact-label QOI rows=0,repair sampler face-area vectors and produce finite coarse/medium/fine same-label rows
+S15 freeze and S6 final score,closed,0,S12/S13/S14 have not released exactly one runtime-legal candidate,successful S11 source/property refresh for exactly one predeclared candidate

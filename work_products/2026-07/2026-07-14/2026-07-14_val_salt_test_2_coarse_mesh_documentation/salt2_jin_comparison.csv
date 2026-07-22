@@ -1,0 +1,19 @@
+comparison_axis,salt2_jin,val_salt_test_2_coarse_mesh,interpretation
+canonical_display_label,salt2_jin,val_salt_test_2_coarse_mesh,Use user-requested val display label in new reports; preserve val_salt_test_2_coarse_mesh_laminar source_id and continuation path.
+lineage,Modern Jin Salt2 continuation from the June 18 convergence/Jin envelope wave.,Continuation of older external/native val_salt_test_2_coarse_mesh_laminar source under jadyn_runs/salt2/2026-06-01_continuation_candidate.,Distinct lineages; do not collapse val into salt2_jin.
+source_owner,ethan_modern_runs_staged,native_2d_cfd_external,Different intake families and owners in registry/import manifests.
+fluid_label,hitec_salt_jin,hitec_salt,Jin uses hitec_salt_jin; val uses hitec_salt with otherwise similar coefficient evidence.
+T_init_K,447.0,451.5,Val starts 4.5 K warmer in case_config.
+mesh_group_id,7ab7fb2650596980,7ab7fb2650596980,Same mesh group id; mesh sameness does not imply lineage sameness.
+heater_and_test_section_inputs_W,heater 265.7 plus test-section 37,heater 265.7 plus test-section 37,Both use three 88.5666667 W heater patches and one 37 W test-section patch.
+cooler_fixed_Q_W,-136.350740 total across upper reducer/cooler/reducer,-136.350740 total across upper reducer/cooler/reducer,Both impose the same fixed cooler branch Q in 0/T; metadata cooler h differs and is not the live cooler Q knob.
+insulation_layer_difference,0.03556 m outer insulation layer on many Jin ambient walls,0.04191 m outer insulation layer on many val ambient walls,Boundary dictionaries show different insulation thicknesses; this is a physical BC difference.
+metadata_cooler_h_W_m2K,29.81733062574886,28.57706637639941,"Recorded metadata differs, but 0/T cooler patches are fixed-Q externalTemperature."
+mdot_consensus_kg_s_registry,0.01316160563,0.01361622898,Registry aggregate mdot values show val has the higher available mdot.
+latest_total_Q_postProc_W_registry,0.362005,0.193062,"Both aggregates have small residual total_Q values; this is diagnostic, not admission by itself."
+direct_validation_run_status,terminated,running,June 4 direct validation saw Jin terminated and val running; later docs still treat val as diagnostic/context.
+current_steady_status,hydraulic_stationary_heat_drifting,mixed:not steady (drifting);steady,Salt2 Jin is hydraulic-stationary with thermal heat-drift caveat in the current steady table. Val appears as diagnostic context with mixed drift/steady evidence in the flow/BC study.
+admission_or_use,current_mainline_nominal_evidence,blocked,Salt2 Jin is current mainline nominal evidence; val is blocked/diagnostic until re-admitted.
+possible_uses,current Salt2 mainline comparison/training anchor with thermal drift caveat,"historical/diagnostic validation-coarse-mesh context, BC/property comparison, migration-label target; not training without admission","Use val to document provenance and compare setup, not to silently expand fit data."
+paper_inventory_class,paper-grade,blocked,June 29 inventory classifies Salt2 Jin as paper-grade and Salt2 Val as blocked.
+registry_postprocessing_paths,registry/salt2/ethan_modern_runs_staged/salt_test_2_jin/viscosity_screening_salt_test_2_jin_coarse_mesh/aggregates/case_summary.csv,registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/case_summary.csv,Both have registry aggregates; aggregation is not admission.

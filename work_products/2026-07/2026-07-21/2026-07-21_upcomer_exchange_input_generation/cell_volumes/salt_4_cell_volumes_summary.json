@@ -1,0 +1,12 @@
+{
+  "n_points": 2268735,
+  "n_faces": 6598756,
+  "n_internal_faces": 6403220,
+  "n_cells": 2166996,
+  "negative_volume_cells": 0,
+  "zero_or_negative_volume_cells": 0,
+  "min_raw_volume_m3": 4.5933433980785856e-11,
+  "max_raw_volume_m3": 2.174557363392314e-09,
+  "sum_raw_volume_m3": 0.00161405483215429,
+  "algorithm": "streaming_faces_owner_neighbour"
+}

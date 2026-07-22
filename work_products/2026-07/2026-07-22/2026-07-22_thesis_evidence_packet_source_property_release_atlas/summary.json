@@ -1,0 +1,21 @@
+{
+  "atlas_rows": 11,
+  "candidate_freeze": false,
+  "date": "2026-07-22",
+  "decision": "source_property_release_atlas_ready_no_release_no_freeze",
+  "final_score": "not_performed",
+  "fluid_or_external_edit": false,
+  "labels_complete_rows": 4,
+  "mf13_decision": "signed_source_property_release_preflight_fail_closed",
+  "native_output_mutation": false,
+  "nominal_train_rows": 4,
+  "protected_rows_released": 0,
+  "registry_or_admission_mutation": false,
+  "release_ready_rows": 0,
+  "residual_absorbed_into_internal_nu": false,
+  "s12_decision": "fail_closed_no_runtime_legal_thermal_candidate_to_freeze",
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-EVIDENCE-PACKET-SOURCE-PROPERTY-RELEASE-ATLAS-2026-07-22",
+  "validation_holdout_external_scoring": false
+}

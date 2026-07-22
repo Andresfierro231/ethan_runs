@@ -1,0 +1,16 @@
+required_output,source_type,extraction_location_or_method,why_required,required_for_acceptance
+U,native field,sample on upcomer inlet/mid/outlet planes and segment centerlines,"velocity vector, throughflow, reverse mask, secondary velocity",yes
+T,native field,same planes plus core/wall-band samples,bulk/core temperature and wall-core Delta T,yes
+wallHeatFlux,wall field/function object,patch-integrated and local wall-band extraction,source/sink ledger and wall heat-balance gate,yes
+Re,derived,rho*U_bulk*D_h/mu(T_bulk),throughflow regime coordinate,yes
+Pr,derived,mu(T_bulk)*Cp(T_bulk)/k(T_bulk),thermal property coordinate,yes
+Ri,derived,Gr/Re^2 using documented characteristic length,mixed-convection/onset coordinate,yes
+Gr,derived,g*beta*DeltaT*L^3/nu^2,buoyancy coordinate,yes
+Ra,derived,Gr*Pr,buoyancy-thermal coordinate,yes
+Gz,derived,Re*Pr*D_h/x_from_reset,thermal development coordinate,yes
+wall_core_deltaT,derived,T_wall_band - T_core on each matched plane,cell-driving thermal contrast,yes
+reverse_area_fraction,derived from U dot n,area fraction with local reverse axial velocity,cell/onset classifier,yes
+reverse_mass_fraction,derived from rho U dot n,reverse mass flux / total absolute mass flux,material backflow classifier,yes
+secondary_velocity_fraction,derived from U,mean transverse speed / mean axial speed on plane,recirculation-cell strength proxy,yes
+steady_window_status,time-window analysis,"last retained windows for mdot, heat residual, T probes, wall T",admission gate for terminal or quasi-steady use,yes
+mesh_time_uncertainty,mesh/time plan,coarse pilot; medium/fine endpoints; window uncertainty rows,do not fit coefficients without uncertainty bounds,yes

@@ -1,0 +1,9 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/openfoam_cell_volumes.py,task_output,true,false,true
+tools/extract/test_openfoam_cell_volumes.py,task_output,true,false,true
+tools/extract/sample_upcomer_exchange_cell.py,task_output,true,false,true
+tools/extract/test_sample_upcomer_exchange_cell.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_volume_parser,task_output,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh,read_only_context,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh,read_only_context,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh,read_only_context,true,true,false

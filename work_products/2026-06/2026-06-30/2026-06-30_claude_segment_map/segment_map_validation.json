@@ -1,0 +1,362 @@
+{
+  "generated_at": "2026-06-30T14:12:51-05:00",
+  "canonical_cfd_spans": {
+    "lower_leg": "HEATED leg (bottom leg of the physical loop); carries the heater BC. This is 'heated_incline'. Do NOT confuse with left_lower_leg.",
+    "right_leg": "DOWNCOMER (the descending return leg).",
+    "left_lower_leg": "Upcomer section 1 of 3 (lower part of the riser); spans TP3->TP4.",
+    "test_section_span": "Upcomer section 2 of 3 (the test section); spans TP4->TP5.",
+    "left_upper_leg": "Upcomer section 3 of 3 (upper part of the riser); spans TP5->TP6.",
+    "upper_leg": "Top leg; carries the cooler (pipeleg_upper_05_cooler)."
+  },
+  "name_aliases": {
+    "test_section": {
+      "maps_to": "test_section_span",
+      "confidence": "confident",
+      "why": "Both name the TP4->TP5 test-section leg."
+    },
+    "test_section_span": {
+      "maps_to": "test_section_span",
+      "confidence": "confident",
+      "why": "Canonical."
+    },
+    "left_lower_vertical": {
+      "maps_to": "left_lower_leg",
+      "confidence": "confident",
+      "why": "Nu-fit branch name for the TP3->TP4 left lower vertical leg."
+    },
+    "left_lower_leg": {
+      "maps_to": "left_lower_leg",
+      "confidence": "confident",
+      "why": "Canonical."
+    },
+    "left_upper_leg": {
+      "maps_to": "left_upper_leg",
+      "confidence": "confident",
+      "why": "Canonical."
+    },
+    "lower_leg": {
+      "maps_to": "lower_leg",
+      "confidence": "confident",
+      "why": "Canonical right-vertical heated leg; beware the misleading 'lower' token."
+    },
+    "right_leg": {
+      "maps_to": "right_leg",
+      "confidence": "confident",
+      "why": "Canonical."
+    },
+    "upper_leg": {
+      "maps_to": "upper_leg",
+      "confidence": "confident",
+      "why": "Canonical."
+    },
+    "heated_incline": {
+      "maps_to": "lower_leg",
+      "confidence": "confident",
+      "why": "Owner-confirmed: heated_incline IS lower_leg (the heated bottom leg). WARNING: do NOT confuse with left_lower_leg, which is part of the upcomer."
+    },
+    "upcomer": {
+      "maps_to": [
+        "left_lower_leg",
+        "test_section_span",
+        "left_upper_leg"
+      ],
+      "confidence": "confident",
+      "why": "Owner-confirmed: the upcomer (riser) is the composite of left_lower_leg + test_section_span + left_upper_leg, analyzed both per-section and all-together."
+    },
+    "downcomer": {
+      "maps_to": "right_leg",
+      "confidence": "confident",
+      "why": "Owner-confirmed: the downcomer is the right_leg."
+    },
+    "all_segments": {
+      "maps_to": "*",
+      "confidence": "bucket",
+      "why": "Applies to every span (material branch)."
+    },
+    "all_features": {
+      "maps_to": "features",
+      "confidence": "bucket",
+      "why": "Feature set, not a span."
+    },
+    "lower_leg_heater": {
+      "maps_to": "lower_leg",
+      "confidence": "confident",
+      "why": "Heater BC on lower_leg."
+    },
+    "cooler_sink_bucket": {
+      "maps_to": "upper_leg",
+      "confidence": "confident",
+      "why": "Cooler on upper_leg."
+    },
+    "features": {
+      "maps_to": "residual_bucket",
+      "confidence": "bucket",
+      "why": "Lumped feature set (bends/fittings)."
+    },
+    "cooler_return": {
+      "maps_to": "residual_bucket",
+      "confidence": "bucket",
+      "why": "Cooler-return remainder."
+    },
+    "reducers": {
+      "maps_to": "residual_bucket",
+      "confidence": "bucket",
+      "why": "Reducer/expansion remainder."
+    },
+    "corners": {
+      "maps_to": "residual_bucket",
+      "confidence": "bucket",
+      "why": "Corner remainder."
+    },
+    "unsupported_walls": {
+      "maps_to": "residual_bucket",
+      "confidence": "bucket",
+      "why": "Thermally unsupported walls."
+    },
+    "cooler_vicinity": {
+      "maps_to": "residual_bucket",
+      "confidence": "bucket",
+      "why": "Cooler-vicinity thermal remainder."
+    }
+  },
+  "closure_dir": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/ethan_cfd_informed_salt_v2",
+  "findings": [
+    {
+      "artifact": "straight_friction_fit.json",
+      "field": "admitted_parent_segments",
+      "token": "heated_incline",
+      "status": "resolved",
+      "maps_to": "lower_leg",
+      "why": "Owner-confirmed: heated_incline IS lower_leg (the heated bottom leg). WARNING: do NOT confuse with left_lower_leg, which is part of the upcomer."
+    },
+    {
+      "artifact": "straight_friction_fit.json",
+      "field": "admitted_parent_segments",
+      "token": "test_section",
+      "status": "resolved",
+      "maps_to": "test_section_span",
+      "why": "Both name the TP4->TP5 test-section leg."
+    },
+    {
+      "artifact": "direct_nu_fit.json",
+      "field": "admitted_parent_segments",
+      "token": "left_lower_vertical",
+      "status": "resolved",
+      "maps_to": "left_lower_leg",
+      "why": "Nu-fit branch name for the TP3->TP4 left lower vertical leg."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[salt_material_branch]",
+      "token": "all_segments",
+      "status": "resolved_bucket",
+      "maps_to": "*",
+      "why": "Applies to every span (material branch)."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[straight_friction_class_aware_re_power_law]",
+      "token": "lower_leg",
+      "status": "resolved",
+      "maps_to": "lower_leg",
+      "why": "Canonical right-vertical heated leg; beware the misleading 'lower' token."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[straight_friction_class_aware_re_power_law]",
+      "token": "test_section_span",
+      "status": "resolved",
+      "maps_to": "test_section_span",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[left_lower_leg_nu_branch_aware_re_power_law]",
+      "token": "left_lower_leg",
+      "status": "resolved",
+      "maps_to": "left_lower_leg",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[primary_ua_profile_library]",
+      "token": "left_lower_leg",
+      "status": "resolved",
+      "maps_to": "left_lower_leg",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[primary_ua_profile_library]",
+      "token": "test_section_span",
+      "status": "resolved",
+      "maps_to": "test_section_span",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[primary_ua_profile_library]",
+      "token": "left_upper_leg",
+      "status": "resolved",
+      "maps_to": "left_upper_leg",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[primary_ua_profile_library]",
+      "token": "upcomer",
+      "status": "resolved",
+      "maps_to": [
+        "left_lower_leg",
+        "test_section_span",
+        "left_upper_leg"
+      ],
+      "why": "Owner-confirmed: the upcomer (riser) is the composite of left_lower_leg + test_section_span + left_upper_leg, analyzed both per-section and all-together."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[secondary_htc_profile_library]",
+      "token": "left_lower_leg",
+      "status": "resolved",
+      "maps_to": "left_lower_leg",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[secondary_htc_profile_library]",
+      "token": "test_section_span",
+      "status": "resolved",
+      "maps_to": "test_section_span",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[secondary_htc_profile_library]",
+      "token": "left_upper_leg",
+      "status": "resolved",
+      "maps_to": "left_upper_leg",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[secondary_htc_profile_library]",
+      "token": "upcomer",
+      "status": "resolved",
+      "maps_to": [
+        "left_lower_leg",
+        "test_section_span",
+        "left_upper_leg"
+      ],
+      "why": "Owner-confirmed: the upcomer (riser) is the composite of left_lower_leg + test_section_span + left_upper_leg, analyzed both per-section and all-together."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[heater_boundary_input]",
+      "token": "lower_leg_heater",
+      "status": "resolved",
+      "maps_to": "lower_leg",
+      "why": "Heater BC on lower_leg."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[cooler_boundary_input]",
+      "token": "cooler_sink_bucket",
+      "status": "resolved",
+      "maps_to": "upper_leg",
+      "why": "Cooler on upper_leg."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[feature_keff_individual]",
+      "token": "all_features",
+      "status": "resolved_bucket",
+      "maps_to": "features",
+      "why": "Feature set, not a span."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[hydraulic_residual_bucket]",
+      "token": "features",
+      "status": "resolved_bucket",
+      "maps_to": "residual_bucket",
+      "why": "Lumped feature set (bends/fittings)."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[hydraulic_residual_bucket]",
+      "token": "right_leg",
+      "status": "resolved",
+      "maps_to": "right_leg",
+      "why": "Canonical."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[hydraulic_residual_bucket]",
+      "token": "cooler_return",
+      "status": "resolved_bucket",
+      "maps_to": "residual_bucket",
+      "why": "Cooler-return remainder."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[hydraulic_residual_bucket]",
+      "token": "reducers",
+      "status": "resolved_bucket",
+      "maps_to": "residual_bucket",
+      "why": "Reducer/expansion remainder."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[hydraulic_residual_bucket]",
+      "token": "corners",
+      "status": "resolved_bucket",
+      "maps_to": "residual_bucket",
+      "why": "Corner remainder."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[thermal_residual_bucket]",
+      "token": "unsupported_walls",
+      "status": "resolved_bucket",
+      "maps_to": "residual_bucket",
+      "why": "Thermally unsupported walls."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[thermal_residual_bucket]",
+      "token": "cooler_vicinity",
+      "status": "resolved_bucket",
+      "maps_to": "residual_bucket",
+      "why": "Cooler-vicinity thermal remainder."
+    },
+    {
+      "artifact": "one_d_closure_map.csv",
+      "field": "target_region[thermal_residual_bucket]",
+      "token": "right_leg",
+      "status": "resolved",
+      "maps_to": "right_leg",
+      "why": "Canonical."
+    }
+  ],
+  "summary": {
+    "total_tokens": 26,
+    "unresolved": 0,
+    "provisional_confirm": 0
+  },
+  "composite_groups": {
+    "upcomer": [
+      "left_lower_leg",
+      "test_section_span",
+      "left_upper_leg"
+    ],
+    "downcomer": [
+      "right_leg"
+    ]
+  },
+  "open_questions_for_domain_expert": [],
+  "owner_confirmations_2026_06_30": [
+    "heated_incline = lower_leg (heated bottom leg); NOT left_lower_leg.",
+    "upcomer = left_lower_leg + test_section_span + left_upper_leg (riser; per-section and aggregate).",
+    "downcomer = right_leg."
+  ]
+}

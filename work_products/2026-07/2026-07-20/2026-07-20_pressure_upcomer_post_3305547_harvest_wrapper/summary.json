@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-20",
+  "fit_admitted_rows": 0,
+  "fit_or_model_selection_changed": false,
+  "generated_at_utc": "2026-07-20T17:42:20.737736+00:00",
+  "job_id": "3305547",
+  "native_solver_outputs_mutated": false,
+  "parse_ready_rows": 1,
+  "parse_status_rows": 9,
+  "registry_mutation": "none",
+  "rollup_rows": 36,
+  "scheduler_state": "unknown_unavailable",
+  "task": "TODO-PRESSURE-UPCOMER-POST-3305547-HARVEST-WRAPPER"
+}

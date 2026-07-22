@@ -1,0 +1,19 @@
+{
+  "task_id": "TODO-LITREV-FITTING-GEOMETRY-SOURCE-GAP-RECOVERY",
+  "date": "2026-07-21",
+  "recovery_rows": 10,
+  "location_rows": 10,
+  "source_audit_rows": 5,
+  "all_rows_no_coefficient_admission": true,
+  "contains_numeric_coefficient_columns": false,
+  "pressure_corner_recovery_consumed": true,
+  "guardrails": [
+    "no native CFD/OpenFOAM mutation",
+    "no registry/admission mutation",
+    "no scheduler action",
+    "no solver/postprocessing launch",
+    "no Fluid or external edit",
+    "no source coefficient import",
+    "no F6 fit or component coefficient admission"
+  ]
+}

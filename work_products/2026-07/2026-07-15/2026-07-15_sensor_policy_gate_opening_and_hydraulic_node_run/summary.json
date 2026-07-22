@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-15",
+  "external_cfd_modeling_tools_mutated": false,
+  "f6_gate_admission": "blocked_not_admitted",
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "final_hydraulic_residual_attribution": "provisional_not_final",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "local_openfoam_postprocessing_launched_by_agent405": false,
+  "native_solver_outputs_mutated": false,
+  "openfoam_solver_launched": false,
+  "pm5_metric_rows": 12,
+  "pm5_pressure_onset_status": "partial_not_final",
+  "pm5_wallHeatFlux_rows": 0,
+  "raw_two_tap_admission": "blocked_preflight_only",
+  "raw_two_tap_rows": 3,
+  "registry_or_admission_state_mutated": false,
+  "reset_k_admission": "diagnostic_admitted_component_separation_only",
+  "reset_k_rows": 128,
+  "scheduler_mutated": false,
+  "task": "AGENT-405"
+}

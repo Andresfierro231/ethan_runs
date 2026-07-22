@@ -1,0 +1,11 @@
+path,role,exists,notes
+work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission/pm10_upcomer_anchor_classification.csv,read_only_input,true,Lateral/latest PM10 matched-plane classification used for validation decision
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/partial_parse_inventory.csv,read_only_input,true,Older partial parse inventory reconciled here
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/remaining_case_relaunch_queue.csv,read_only_input,true,Older relaunch queue used only for conditional future inventory repair contract
+work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger_pm10_resolved.csv,read_only_input,true,Upcomer anchor ledger showing PM10 diagnostic use
+work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/README.md,generated_output,true,Package README
+work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/pm10_validation_use_ledger.csv,generated_output,true,PM10 validation allowed/forbidden use
+work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/pm10_parse_repair_decision.csv,generated_output,true,Parse repair reconciliation and no-relaunch decision
+work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/pm10_next_use_contract.csv,generated_output,true,Future PM10 use gates
+work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/source_manifest.csv,generated_output,true,This manifest
+work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger/summary.json,generated_output,true,Machine-readable summary

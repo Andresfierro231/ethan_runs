@@ -1,0 +1,19 @@
+{
+  "f6_decision": "next_bounded_candidate_after_admission_preconditions",
+  "generated_utc": "2026-07-14T17:18:24.450132+00:00",
+  "global_friction_multiplier_exported": false,
+  "h1_decision": "retire_current_h1_as_proxy_only",
+  "h1_reason": "aggregate H1 improves mdot but localized fixed-K-only scoring fails and reset/development is not first-class/admitted",
+  "native_solver_outputs_mutated": false,
+  "next_hydraulic_candidate": "F6_phi_re",
+  "outputs": [
+    "h1_faithful_implementation_gap_table.csv",
+    "f6_candidate_decision_table.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "recommended_next_run_or_edit": "Do not launch another H1 fixed-K run; implement/admit reset/development before H1 revival, otherwise run a bounded F6 screen only after corrected-Q or equivalent Re-variation rows are admitted.",
+  "task_id": "AGENT-333",
+  "thermal_fit_used": false
+}

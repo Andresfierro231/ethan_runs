@@ -1,0 +1,4 @@
+allowed_next_state,decision,decision_axis,reason,release_allowed
+radiation_implemented_but_separately_tested_with_source_backed_runtime_state,resolved_to_outer_insulation_surface,radiation_surface_basis,"source-backed insulation layers place the radiating surface near ambient; radiation must use outer insulation surface, not inner wall/fluid/pipe state",False
+keep Fluid radiation switch out of H2 coefficient/source_property release until separately executable,not_admitted_zero_output_delta,existing_model_radiation_on_variant,"existing Fluid train-only radiation_on variant has identical mdot, heat ledger, and projected temperatures to nominal",False
+source_property_release_gate_deferred,diagnostic_train_only_same_qoi_gate_complete_no_release,passive_H2_disposition,"basis mismatch resolved, but no source/property release or model radiation switch admission exists",False

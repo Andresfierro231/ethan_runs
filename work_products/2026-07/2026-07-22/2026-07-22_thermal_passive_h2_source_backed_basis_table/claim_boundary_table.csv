@@ -1,0 +1,9 @@
+claim,reason,value
+setup_dictionary_source_basis_release,5 passive family rows have setup h/area/ambient/layer/radiation source basis,True
+source_property_release,source/property mutation remains outside this row,False
+Qwall_release,numeric Qwall/q-loss remains closed,False
+repair_run,this row is a release gate only,False
+candidate_freeze,freeze requires a later predeclared one-train repair preflight,False
+protected_scoring,no validation/holdout/external rows scored or tuned,False
+global_multiplier,global passive hA multiplier remains inadmissible,False
+residual_absorbed_into_internal_Nu,thermal residual ownership remains external/source-sink,False

@@ -1,0 +1,5 @@
+target_id,chapter,purpose,source_output
+TABLE-CFD-LEGAL-USE-MATRIX,Ch3/Ch6,Define allowed and forbidden uses of CFD artifacts by evidence class.,cfd_legal_use_matrix.csv
+TABLE-CASE-SPLIT-LEGAL-USE,Ch4/Ch6,Preserve train/support/holdout/external separation.,case_split_legal_use_table.csv
+TABLE-RUNTIME-FORBIDDEN-INPUTS,Ch5/Ch6,Show runtime legality bans for predictive candidates.,runtime_forbidden_input_bans.csv
+TABLE-WRITER-CLAIM-BOUNDARY,Ch7/Ch8,Provide exact safe/unsafe language for negative and blocked results.,writer_claim_boundary.csv

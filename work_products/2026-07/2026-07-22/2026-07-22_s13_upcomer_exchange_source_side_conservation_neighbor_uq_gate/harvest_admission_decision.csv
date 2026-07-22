@@ -1,0 +1,3 @@
+decision_id,decision,allowed_now,reason,next_row
+S13_production_harvest,do_not_run,false,"production gate did not release heat-flow, pressure/energy residual support, or same-QOI UQ","source/property and neighbor-window generation for exact source-side QOI, or consume completed exact-Qwall row if it lands"
+S13_clean_negative_result,available_if_no_new_inputs_land,true,current retained-window evidence supports a documented blocked/diagnostic result without overclaiming,thesis evidence synthesis can cite this fail-closed gate

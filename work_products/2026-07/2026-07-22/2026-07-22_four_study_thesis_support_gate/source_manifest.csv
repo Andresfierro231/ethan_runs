@@ -1,0 +1,11 @@
+source_id,source_path,consumed_files,mutation_status,provenance_role
+passive_physical,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis,summary.json,read_only,input_evidence
+passive_source_enrichment,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment,summary.json,read_only,input_evidence
+source_residual_decomp,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp,summary.json,read_only,input_evidence
+s13_unblock,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock,summary.json,read_only,input_evidence
+s13_source_side_prereq,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq,summary.json,read_only,input_evidence
+s13_exact_qwall,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute,summary.json;trusted_wall_Q_wall_summary.csv,read_only,input_evidence
+s13_limited_evidence,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis,summary.json,read_only,input_evidence
+predictive_final_starter,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter,summary.json,read_only,input_evidence
+s6_frozen_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard,summary.json,read_only,input_evidence
+source_residual_tw4_tw6_focus,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/tw4_tw6_focus.csv,tw4_tw6_focus.csv,read_only,local residual response evidence

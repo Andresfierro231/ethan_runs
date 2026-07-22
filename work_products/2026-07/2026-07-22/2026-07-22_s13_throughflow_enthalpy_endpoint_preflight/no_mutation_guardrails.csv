@@ -1,0 +1,11 @@
+guardrail,status
+native_solver_outputs_mutated,False
+registry_or_admission_mutated,False
+scheduler_action,False
+solver_postprocessing_sampler_harvest_uq_launched,False
+source_property_or_Qwall_release,False
+residual_value_released,False
+coefficient_admission_or_candidate_freeze,False
+protected_or_final_score,False
+hidden_multiplier_or_internal_Nu_absorption,False
+endpoint_proxy_substitution,False

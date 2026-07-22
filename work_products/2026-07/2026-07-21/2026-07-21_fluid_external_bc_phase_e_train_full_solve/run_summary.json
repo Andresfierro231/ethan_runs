@@ -1,0 +1,123 @@
+{
+  "failure_matrix": [
+    {
+      "action": "Phase C summary exists and is complete.",
+      "failure_or_blocker": "",
+      "stage": "phase_c_gate",
+      "status": "pass"
+    },
+    {
+      "action": "Phase D smoke summary exists and is complete.",
+      "failure_or_blocker": "",
+      "stage": "phase_d_gate",
+      "status": "pass"
+    },
+    {
+      "action": "Train/support rows filtered before parser load.",
+      "failure_or_blocker": "",
+      "stage": "dictionary_filter",
+      "status": "pass"
+    },
+    {
+      "action": "External Fluid parser loaded filtered dictionary.",
+      "failure_or_blocker": "",
+      "stage": "parser_load",
+      "status": "pass"
+    },
+    {
+      "action": "Predictive passive rows converted through explicit segment map.",
+      "failure_or_blocker": "",
+      "stage": "role_row_conversion",
+      "status": "pass"
+    },
+    {
+      "action": "Use as train execution evidence only; no tuning or admission.",
+      "failure_or_blocker": "",
+      "stage": "full_fluid_solve",
+      "status": "pass"
+    },
+    {
+      "action": "Post-solve Salt 2 train reference residuals emitted.",
+      "failure_or_blocker": "",
+      "stage": "thermal_residual_attribution",
+      "status": "pass"
+    },
+    {
+      "action": "Requires a later frozen-candidate row.",
+      "failure_or_blocker": "validation/holdout/external-test scoring forbidden in Phase E",
+      "stage": "validation_holdout_external_score",
+      "status": "not_run_by_policy"
+    },
+    {
+      "action": "Use downstream attribution-freeze row after reviewing this package.",
+      "failure_or_blocker": "freeze/admission decision forbidden in this narrow Phase E row",
+      "stage": "freeze_or_admission_decision",
+      "status": "not_run_by_policy"
+    }
+  ],
+  "segment_map": {
+    "cooling_branch:ambient_wall": [
+      "top_horizontal_inlet",
+      "cooled_incline_pre_hx",
+      "cooled_incline_post_hx",
+      "top_horizontal_exit"
+    ],
+    "downcomer:ambient_wall": [
+      "right_vertical"
+    ],
+    "junction:junction_other": [
+      "top_horizontal_inlet",
+      "top_horizontal_exit",
+      "bottom_horizontal_inlet",
+      "bottom_horizontal_exit"
+    ],
+    "lower_leg:ambient_wall": [
+      "heated_incline"
+    ],
+    "upcomer:ambient_wall": [
+      "left_lower_vertical",
+      "left_upper_vertical"
+    ]
+  },
+  "summary": {
+    "blocker_register_change": false,
+    "case_id": "salt_2",
+    "date": "2026-07-21",
+    "document_only_rows_selected": 3,
+    "external_repo_mutation": false,
+    "external_test_rows_consumed": 0,
+    "final_predictive_admission": false,
+    "fit_or_model_selection": false,
+    "fluid_case_name": "Salt 2",
+    "freeze_or_admission_decision": false,
+    "full_solver_launch": "local Fluid 1D solve_case only",
+    "generated_index_refresh": false,
+    "holdout_rows_consumed": 0,
+    "max_abs_temperature_residual_K": 109.09380824932663,
+    "mdot_kg_s": 0.00626567502343775,
+    "mdot_residual_kg_s_post_solve_only": -0.010534324976562249,
+    "native_output_mutation": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "post_solve_train_reference_join": true,
+    "predictive_role_rows": 12,
+    "pressure_residual_Pa": -1.3016870923365786e-06,
+    "qambient_total_W": 288.37885218645016,
+    "qhx_total_W": 14.312904798460508,
+    "reference_mdot_kg_s_post_solve_only": 0.0168,
+    "registry_or_admission_mutation": false,
+    "root_rejection_reason": "",
+    "root_status": "accepted",
+    "scheduler_action": false,
+    "selected_train_support_rows": 8,
+    "solve_attempted": true,
+    "solve_exception": "",
+    "solve_succeeded_without_exception": true,
+    "source_dictionary_rows": 24,
+    "status": "complete",
+    "task_id": "TODO-FLUID-EXTERNAL-BC-PHASE-E-TRAIN-FULL-SOLVE-2026-07-21",
+    "temperature_periodicity_error_K": 4.201831416139612e-08,
+    "tp_mean_abs_residual_K": 80.24939106239617,
+    "tw_mean_abs_residual_K": 82.18702596558934,
+    "validation_rows_consumed": 0
+  }
+}

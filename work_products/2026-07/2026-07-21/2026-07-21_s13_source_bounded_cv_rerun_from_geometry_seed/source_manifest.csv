@@ -1,0 +1,16 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_s13_source_bounded_cv_rerun_from_geometry_seed.py,task-owned builder,true,false,true
+tools/extract/test_s13_source_bounded_cv_rerun_from_geometry_seed.py,task-owned test,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_case_summary.csv,read seed release summary,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_surface_contract.csv,read seed surface lanes,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_patch_classification.csv,read seed boundary classes,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/downstream_release_gate.csv,read seed downstream gate,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/release_decision.csv,read prior source-bounded CV failure,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_roi_patch_alignment_audit/summary.json,read ROI/patch alignment audit,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/alternate_cv_release_gate.csv,read alternate-CV forensics,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/interface_geometry_contract.csv,read original geometry contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction/summary.json,read surface disposition state,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/sampler_input_gap_matrix.csv,read sampler gap matrix,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv,read static source context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/qoi_release_decision.csv,read UQ design state,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_source_bounded_cv_rerun_from_geometry_seed,generated task-owned package,true,false,true

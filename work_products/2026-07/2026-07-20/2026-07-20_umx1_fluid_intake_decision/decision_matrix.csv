@@ -1,0 +1,7 @@
+question,status,evidence,decision
+Did the external Fluid row complete?,pass,Board row impl-2026-07-20-fluid-umx1-tswfc2-smoke-followup is completed and Fluid journal records UMX1/TSWFC2 smoke finalization at commit 34af0397beadcd00e7d1f6520f01ff3946209aa9,consume artifacts read-only.
+Is the UMX1 Salt3/Salt4 root blocker still active?,no,umx1_bracket_smoke_v1 completed 12 rows with 12 accepted and 0 rejected,root-handling blocker cleared at smoke level.
+Are UMX1 exchange variants scorecard-ready?,no,Best exchange radiation-on all-sensor RMSE is 70.2428 K versus 69.6935 K for the radiation-on baseline; radiation-off rows are much worse,do not run a UMX1 grid or admission scorecard from these exchange variants.
+Does UMX1 plus TSWFC2 interaction rescue the blocker?,no,Combined UMX1 plus TSWFC2 smoke accepted 2 rows but mean all-sensor RMSE is 97.9908 K,do not combine these forms for admission without a new physical model.
+Is AGENT-557 TSWFC2 superseding UMX1?,no,AGENT-557 TSWFC2 solved Salt1-4 but failed source/property and numerical coupled gates,UMX1 remains a research lane but not an admitted or grid-ready lane.
+What is the next unlocked progress path?,open,Root barrier is removed but score behavior remains wrong; source/property and onset/stratification evidence remain sparse,prepare a new physical candidate or source/property/onset package before another scoring grid.

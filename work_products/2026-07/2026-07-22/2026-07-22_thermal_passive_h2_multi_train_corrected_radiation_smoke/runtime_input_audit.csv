@@ -1,0 +1,9 @@
+forbidden_input,released_to_runtime,runtime_item,status
+False,True,case_specific_hA_area_Ta_Tsur_emissivity_layers,allowed_setup_input
+False,True,model_predicted_wall_state,allowed_model_output
+True,False,realized_CFD_wallHeatFlux,forbidden
+True,False,validation_temperature,forbidden
+True,False,CFD_mdot,forbidden
+True,False,Qwall,forbidden
+True,False,global_fitted_multiplier,forbidden
+True,False,internal_Nu_residual_absorption,forbidden

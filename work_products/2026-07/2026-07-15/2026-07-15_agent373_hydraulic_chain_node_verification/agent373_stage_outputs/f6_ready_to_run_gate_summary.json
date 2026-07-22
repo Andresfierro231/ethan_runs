@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-07-15T14:38:53.411364+00:00",
+  "dependency_stage": "",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "output": "f6_ready_to_run_gate.csv",
+  "rows": 4,
+  "slurm_job_id": "3295120",
+  "stage": "f6_ready_to_run_gate",
+  "status": "completed_gate_refresh_not_ready_unless_new_evidence_lands"
+}

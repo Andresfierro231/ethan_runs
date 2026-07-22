@@ -1,0 +1,36 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/caption_bank.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/ch6_appendix_ch8_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/scientific_discussion.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/score_table_effect_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_qoi_projection_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_uncertainty_caveat_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/summary.json",
+    ".agent/status/2026-07-22_TODO-THESIS-N4-SENSOR-QOI-PROJECTION-UNCERTAINTY-TABLE-2026-07-21.md",
+    ".agent/journal/2026-07-22/thesis-n4-sensor-qoi-projection-uncertainty-table.md",
+    "imports/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table.json"
+  ],
+  "date": "2026-07-22",
+  "decision": "sensor_projection_uncertainty_table_complete_no_runtime_temperature_release",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard"
+  ],
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task": "TODO-THESIS-N4-SENSOR-QOI-PROJECTION-UNCERTAINTY-TABLE-2026-07-21",
+  "task_id": "TODO-THESIS-N4-SENSOR-QOI-PROJECTION-UNCERTAINTY-TABLE-2026-07-21",
+  "thesis_current_file_edit": false,
+  "validation_holdout_external_rows_scored": 0
+}

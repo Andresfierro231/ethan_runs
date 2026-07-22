@@ -1,0 +1,39 @@
+{
+  "task": "AGENT-296",
+  "generated_at": "2026-07-13",
+  "status": "complete",
+  "purpose": "Consolidate parallel-agent progress and propose the next maximum-progress plan for the predictive 1D heat-loss path.",
+  "current_split": {
+    "train": "salt_2",
+    "validation": "salt_3",
+    "holdout": "salt_4",
+    "diagnostic_only": ["salt1_nominal"],
+    "blocked": ["corrected-Q", "low-heat"]
+  },
+  "established": [
+    "predictive input contract passes",
+    "forward-v0 imposed-cooler and heater-only fast-scan is executable",
+    "hydraulic gate shows mdot overprediction before thermal fitting",
+    "heater-only source contract is the next unfitted source model",
+    "split-aware HX one-scalar scoring exists",
+    "wall-shell E1/E2 mappings run but remain diagnostic"
+  ],
+  "blocking_order": [
+    "full solve_case confirmation",
+    "hydraulic correction",
+    "one-scalar HX/cooler correction",
+    "forward-v1 split score",
+    "external BC dictionary",
+    "thermal mesh/sign admission",
+    "sensor map",
+    "corrected-Q and low-heat admission"
+  ],
+  "parallel_lanes": 7,
+  "files": [
+    "README.md",
+    "parallel_agent_plan.csv",
+    "decision_gate_table.csv",
+    "summary.json"
+  ]
+}
+

@@ -1,0 +1,11 @@
+heat_path,segment_family,current_status,runtime_policy,release_gate,not_allowed_as_runtime_input
+heater_to_salt_efficiency,heater,"setup source traceable, release not ready",allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+cooler_or_jacket_removal,cooler_jacket,"setup model lane exists, no final release",allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+test_section_source_loss,test_section,"partial response, no release",allowed only after source-bounded release,blocked,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+passive_external_convection,passive_wall,"source-backed setup rows exist, no numeric q-loss release",allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+radiation,passive_wall,"policy/source basis exists, no numeric release",allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+wall_conduction_contact,wall_stack,partial setup fields missing,allowed only after source-bounded release,blocked,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+insulation_or_quartz,wall_stack,candidate not admitted,allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+storage,storage,steady runtime lane not released,allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+recirculation_exchange,recirculation,diagnostic only,allowed only after source-bounded release,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"
+unknown_residual,residual,output-only owner,never a runtime closure,review,"realized wallHeatFlux, validation temperature, heldout target, global hA multiplier, hidden Nu correction"

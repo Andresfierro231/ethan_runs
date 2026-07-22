@@ -1,0 +1,16 @@
+source_path,exists,role
+work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_pressure_thermal_sensor_targets.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/val_salt2_sensor_numeric_join.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/external_score_readiness.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/junction_stub_cross_case_audit.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/junction_stub_trend_summary.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/pressure_corner_k_unlock_contract.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/summary.json,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard/coupled_candidate_gate_scorecard.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard/unresolved_blocker_queue.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/segment_thermal_model_scorecard.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/live_job_status.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/summary.json,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/blocker_decision.json,True,read_only_input

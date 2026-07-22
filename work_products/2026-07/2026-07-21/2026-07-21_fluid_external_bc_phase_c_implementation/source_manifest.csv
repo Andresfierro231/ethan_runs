@@ -1,0 +1,12 @@
+path,role,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,input_contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/parser_api_contract.md,input_contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/unit_test_matrix.csv,input_contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/segment_mapping_contract.csv,input_contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_c_dirty_worktree_audit/README.md,dirty_worktree_context,read_only
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py,implementation,added
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,implementation,modified
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,runtime_validation,modified
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,documentation,modified
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py,test,added
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,existing_runtime_tests,preexisting_dirty_validated

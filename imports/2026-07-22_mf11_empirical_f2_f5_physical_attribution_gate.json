@@ -1,0 +1,53 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/empirical_f2_f5_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/physical_attribution_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/coefficient_to_physics_plausibility.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/assumptions_caveats_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/contradiction_log.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate/no_mutation_guardrails.csv",
+    ".agent/status/2026-07-22_TODO-MF11-EMPIRICAL-F2-F5-PHYSICAL-ATTRIBUTION-GATE-2026-07-22.md",
+    ".agent/journal/2026-07-22/mf11-empirical-f2-f5-physical-attribution-gate.md",
+    "imports/2026-07-22_mf11_empirical_f2_f5_physical_attribution_gate.json",
+    "tools/analyze/build_mf11_empirical_f2_f5_physical_attribution_gate.py",
+    "tools/analyze/test_mf11_empirical_f2_f5_physical_attribution_gate.py",
+    ".agent/BOARD.md"
+  ],
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T14:04:10.220341+00:00",
+  "mutation_flags": {
+    "coefficient_admission": false,
+    "final_score_claim": false,
+    "new_fitting_tuning_model_selection": false,
+    "protected_scoring": false,
+    "residual_internal_nu_absorption": false,
+    "source_property_release": false
+  },
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/model_family_publication_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf07_entrance_development_and_reset_source_basis/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf08_signed_wall_flux_developing_thermal_branches/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/summary.json",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files",
+    "thesis current/LaTeX files"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "task": "TODO-MF11-EMPIRICAL-F2-F5-PHYSICAL-ATTRIBUTION-GATE-2026-07-22"
+}

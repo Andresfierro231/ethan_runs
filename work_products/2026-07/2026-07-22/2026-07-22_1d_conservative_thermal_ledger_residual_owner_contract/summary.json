@@ -1,0 +1,31 @@
+{
+  "candidate_admission_rows": 0,
+  "counts": {
+    "allowed_rows": 10,
+    "equation_rows": 12,
+    "forbidden_rows": 8,
+    "guardrail_rows": 6,
+    "handoff_rows": 5,
+    "missing_rows": 7,
+    "owner_rows": 8,
+    "source_rows": 12
+  },
+  "decision": "contract_ready_no_candidate_release_no_runtime_leakage",
+  "external_repo_mutated": false,
+  "final_score_values": 0,
+  "fluid_mutated": false,
+  "generated_at_utc": "2026-07-22T14:30:47.473520+00:00",
+  "native_output_mutated": false,
+  "next_recommended_tasks": [
+    "TODO-1D-SENSOR-PROJECTION-OPERATOR-TP-TW-WALL-BULK-2026-07-22",
+    "TODO-1D-SETUP-ONLY-BC-UQ-PROPAGATION-2026-07-22",
+    "source/property release preflight only after a narrow source-bounded candidate exists"
+  ],
+  "registry_mutated": false,
+  "runtime_forbidden_inputs_all_blocked": true,
+  "scheduler_or_sampler_launched": false,
+  "solver_launched": false,
+  "source_property_release_rows": 0,
+  "task_id": "TODO-1D-CONSERVATIVE-THERMAL-LEDGER-RESIDUAL-OWNER-CONTRACT-2026-07-22",
+  "validation_errors": []
+}

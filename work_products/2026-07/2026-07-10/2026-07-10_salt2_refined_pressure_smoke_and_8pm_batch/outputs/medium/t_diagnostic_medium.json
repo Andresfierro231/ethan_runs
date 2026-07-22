@@ -1,0 +1,10 @@
+{
+  "level": "medium",
+  "source_T": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh/processors64/518/T",
+  "numeric_token_count": 10410605,
+  "finite_count": 10410605,
+  "plausible_250_1500K_count": 8628511,
+  "nonfinite_count": 0,
+  "nonfinite_examples": [],
+  "thermal_status": "blocked_reconstructed_T_path_not_used_in_pressure_lane"
+}

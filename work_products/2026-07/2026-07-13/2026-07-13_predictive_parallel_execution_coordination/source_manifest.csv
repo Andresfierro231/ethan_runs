@@ -1,0 +1,8 @@
+artifact_id,path,status,role
+solve_case_comparison,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_vs_fast_scan_comparison.csv,present,authoritative comparison
+solve_case_summary,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json,present,authoritative comparison summary
+hydraulic_candidates,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/decision_summary.json,present,phase 2 hydraulic candidate
+sensor_contract,work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/summary.json,present,sensor scoring contract
+scorecard_precursor,work_products/2026-07/2026-07-13/2026-07-13_predictive_endtoend_scorecard_precursor/summary.json,present_stale,historical precursor
+external_bc_bridge,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/summary.json,present,external boundary bridge
+thermal_mesh_gate,work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/summary.json,present,thermal fit blocker

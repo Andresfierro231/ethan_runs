@@ -1,0 +1,108 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-AVERAGE-FIELD-THERMAL-REDUCTION-2026-07-21",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-AVERAGE-FIELD-THERMAL-REDUCTION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Compute diagnostic average seeded-CV field and thermal reductions from existing S13 whole-mesh cell VTK and interface topology evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-AVERAGE-FIELD-THERMAL-REDUCTION-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-average-field-thermal-reduction.md",
+    "imports/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction.json",
+    "tools/analyze/build_s13_upcomer_exchange_average_field_thermal_reduction.py",
+    "tools/analyze/test_s13_upcomer_exchange_average_field_thermal_reduction.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design",
+    "native CFD/OpenFOAM polyMesh topology",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files",
+    "thesis current files"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/summary.json",
+    "wide_metrics": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv",
+    "average_field": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/average_field_reduction.csv",
+    "interface_proxy": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/interface_proxy_reduction.csv",
+    "thermal_proxy": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/thermal_proxy_reduction.csv"
+  },
+  "result": {
+    "decision": "diagnostic_average_proxy_complete_sampler_harvest_blocked",
+    "case_count": 3,
+    "average_field_rows": 3,
+    "interface_proxy_rows": 3,
+    "thermal_proxy_rows": 3,
+    "sampler_ready_rows": 0,
+    "admission_ready_rows": 0,
+    "same_qoi_uq_released": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_upcomer_exchange_average_field_thermal_reduction.py tools/analyze/test_s13_upcomer_exchange_average_field_thermal_reduction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_upcomer_exchange_average_field_thermal_reduction",
+      "result": "passed: 5 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_s13_upcomer_exchange_average_field_thermal_reduction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction --strict",
+      "result": "passed: candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-AVERAGE-FIELD-THERMAL-REDUCTION-2026-07-21",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK (15 entries)"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "openfoam_solver_or_postprocessing_launched": false,
+  "surface_extraction_launched": false,
+  "field_sampling_launched": false,
+  "sampler_or_harvest_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "downstream_trigger": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "residual_absorbed_into_internal_Nu": false
+}

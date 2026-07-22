@@ -1,0 +1,5 @@
+gate,criterion,status,evidence,next_action
+f6_ready_to_run_gate,admitted_re_variation_training_rows,blocked_or_unproven,"corrected-Q rows exist, but no independent F6/Re training expansion is admitted here",harvest matched pressure/upcomer evidence and apply the perturbation split policy before F6 scoring
+f6_ready_to_run_gate,matched_pressure_upcomer_available,blocked_or_pending,this stage does not mutate or wait on external matched-plane extraction outputs,rerun gate after matched-plane job outputs are harvested
+f6_ready_to_run_gate,thermal_fitting_excluded,pass,hydraulic gate artifacts only; no thermal term fitting,keep F6 acceptance pressure-loss-primary with mdot as guardrail
+f6_ready_to_run_gate,available_source_summaries,informational,"present=hyd_tap,pm5_delta,forward_gate,fluid_api; missing=","use newly landed summaries, if any, in tomorrow's rerun"

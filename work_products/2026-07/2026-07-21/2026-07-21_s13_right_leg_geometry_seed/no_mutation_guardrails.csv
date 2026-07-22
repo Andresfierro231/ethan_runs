@@ -1,0 +1,4 @@
+guard_id,status,policy
+native_outputs,pass,read-only polyMesh/cell-volume/mask inputs only
+admission,pass,"no exchange-cell coefficient, S11, S12, S13, S15, or S6 admission"
+scheduler,pass,"no scheduler action, sampler, harvest, or surface extraction"

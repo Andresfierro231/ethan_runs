@@ -1,0 +1,11 @@
+source_id,path,exists,role
+pm10_upcomer_anchor_classification,work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission/pm10_upcomer_anchor_classification.csv,true,current PM10 regime labels and upcomer feature aggregates
+upcomer_feature_scorecard,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/recirculation_feature_scorecard.csv,true,PM5 recirculation features used for UH1 dry severity rows
+upcomer_hybrid_contract,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/hybrid_model_candidate_contract.csv,true,prior lane definitions and forbidden labels
+upcomer_frozen_candidate,work_products/2026-07/2026-07-17/2026-07-17_upcomer_hybrid_frozen_candidate_score/frozen_candidate_definition.csv,true,UH1 frozen candidate provenance
+corner_section_contract,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/section_effective_model_contract.csv,true,CR1 section-effective formula provenance
+corner_residual_scorecard,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/recirc_residual_scorecard.csv,true,current corner residual diagnostic rows
+corner_qref_audit,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/q_ref_orientation_audit.csv,true,q_ref trust and orientation evidence
+umx1_decision,work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/decision_matrix.csv,true,ROX1/UMX1 blocked decision provenance
+umx1_scenarios,work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/scenario_score_intake.csv,true,current UMX1 score behavior
+onset_anchor_design,work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_anchor_design/README.md,true,future anchor path provenance

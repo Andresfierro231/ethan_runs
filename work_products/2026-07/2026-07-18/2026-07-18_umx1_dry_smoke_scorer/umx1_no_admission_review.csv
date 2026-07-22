@@ -1,0 +1,6 @@
+gate_id,status,blocks_expansion,blocks_admission,evidence,next_action
+runtime_legality,pass,false,true,180 runtime audit rows; forbidden runtime fields absent.,eligible_for_smoke_review_only
+accepted_roots,fail_or_not_run,true,true,3/9 root rows pass.,stop_before_grid
+conservation_residual,pass,false,true,9/9 conservation rows pass.,eligible_for_bounded_followup_only
+split_discipline,pass,false,true,Salt2/Salt3/Salt4 nominal executable; Salt1 explicitly blocked pending schema promotion.,promote Salt1 schema before final-training admission work
+scientific_admission,not_admitted_smoke_only,true,true,"This task is a smoke scorer only; no fitting, tuning, model selection, or admission.",open a separate scored-grid/admission row only after reviewing smoke artifacts

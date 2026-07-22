@@ -1,0 +1,5 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/downstream_surface_vtk_inputs.csv,geometry_downstream_inputs,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction/downstream_manifest_fragment.csv,surface_manifest_fragment,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/case_vtk_input_manifest.template.csv,scaffold_manifest_template,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/scripts/validate_exchange_case_inputs.py,scaffold_validator,true,false,false

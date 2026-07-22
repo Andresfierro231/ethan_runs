@@ -1,0 +1,3 @@
+script_path,role,submit_status,guardrail,expected_outputs
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_compute_execution/scripts/run_upcomer_exchange_sampler_compute.sh,preflight_only_future_compute_scaffold,not_submitted,exits before OpenFOAM until cellVolume export is implemented,queued_cases.for_future_execution.txt
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_compute_execution/scripts/submit_upcomer_exchange_sampler_compute.sbatch,future_scheduler_submission_template,not_submitted,do not submit until a new board row authorizes scheduler action,logs/slurm-<jobid>.out; logs/slurm-<jobid>.err

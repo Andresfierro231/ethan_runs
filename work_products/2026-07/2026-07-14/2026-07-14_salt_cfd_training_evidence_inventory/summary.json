@@ -1,0 +1,65 @@
+{
+  "actions_needed_rows": 7,
+  "admission_verdict_counts": {
+    "diagnostic-only": 8,
+    "fit-admissible": 1,
+    "holdout-only": 1,
+    "not-admissible": 4,
+    "pending-terminal-harvest": 4,
+    "sensitivity-only": 6,
+    "validation-only": 1
+  },
+  "bc_role_rows": 52,
+  "candidate_rows": 25,
+  "corrected_q_rows": 14,
+  "corrected_q_rows_admitted_now": 0,
+  "excluded_or_diagnostic_rows": 12,
+  "generated_at": "2026-07-14T12:42:35-05:00",
+  "live_corrected_q_job": {
+    "job_evidence": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out",
+    "job_id": "3293924",
+    "job_state": "RUNNING",
+    "scheduler_checked_at": "",
+    "scheduler_detail": "state inferred from prior live gate if sacct is unavailable"
+  },
+  "native_solver_outputs_mutated": false,
+  "onset_current_re_max": "134.883",
+  "onset_current_re_min": "71.125",
+  "onset_existing_bracket_available": false,
+  "onset_re_targets": [
+    150,
+    200,
+    250
+  ],
+  "required_outputs": [
+    "salt_cfd_candidate_inventory.csv",
+    "corrected_q_perturbation_status.csv",
+    "steady_state_admission_matrix.csv",
+    "bc_role_label_inventory.csv",
+    "recommended_salt_split.csv",
+    "run_actions_needed.csv",
+    "upcomer_onset_candidate_cases.csv",
+    "excluded_or_diagnostic_salt_runs.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "run_state_counts": {
+    "completed": 6,
+    "failed": 4,
+    "running": 4,
+    "stopped": 11
+  },
+  "task": "AGENT-334/AGENT-340",
+  "upcomer_onset_candidate_rows": 23,
+  "usable_holdout_now": [
+    "salt4_jin_nominal_continuation"
+  ],
+  "usable_training_now": [
+    "salt2_jin_nominal_continuation"
+  ],
+  "usable_validation_now": [
+    "salt3_jin_nominal_continuation"
+  ],
+  "water_rows_included": 0
+}

@@ -1,0 +1,9 @@
+candidate_id,case_id,split_role,candidate_mdot_abs_error_pct,m3_mdot_abs_error_pct,candidate_all_probe_rmse_K,m3_all_probe_rmse_K,candidate_tw_rmse_K,m3_tw_rmse_K,mdot_delta_vs_m3_pct,all_probe_delta_vs_m3_K,tw_delta_vs_m3_K,score_gate
+PB2_salt2_local_shape_passive_hA_p1_PLUS_HX_LUMPED_UA_NTU,salt_3,validation,0.2116485545,15.857,53.2089137,17.749,61.72786766,19.332,-15.64535145,35.4599137,42.39586766,fail
+PB2_salt2_local_shape_passive_hA_p1_PLUS_HX_LUMPED_UA_NTU,salt_4,holdout,6.773371783,19.626,60.08764296,16.971,67.34208999,18.623,-12.85262822,43.11664296,48.71908999,fail
+PB2_salt2_local_shape_passive_hA_p1_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_3,validation,0.2058591887,15.857,53.219608,17.749,61.74322425,19.332,-15.65114081,35.470608,42.41122425,fail
+PB2_salt2_local_shape_passive_hA_p1_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_4,holdout,6.768843426,19.626,60.09406786,16.971,67.35279409,18.623,-12.85715657,43.12306786,48.72979409,fail
+PB3_upcomer_test_section_attenuated_shape_p1_PLUS_HX_LUMPED_UA_NTU,salt_3,validation,4.555906177,15.857,53.7640509,17.749,63.83522797,19.332,-11.30109382,36.0150509,44.50322797,fail
+PB3_upcomer_test_section_attenuated_shape_p1_PLUS_HX_LUMPED_UA_NTU,salt_4,holdout,2.119948915,19.626,58.22289604,16.971,67.2998088,18.623,-17.50605109,41.25189604,48.6768088,fail
+PB3_upcomer_test_section_attenuated_shape_p1_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_3,validation,4.561680063,15.857,53.77876758,17.749,63.85454535,19.332,-11.29531994,36.02976758,44.52254535,fail
+PB3_upcomer_test_section_attenuated_shape_p1_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_4,holdout,2.11544901,19.626,58.23296237,16.971,67.31440384,18.623,-17.51055099,41.26196237,48.69140384,fail

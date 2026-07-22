@@ -1,0 +1,7 @@
+checked_at_cdt,job_id,job_name,state,partition,elapsed,time_limit,nodes,node_or_reason,submit,start,end,notes
+2026-07-09 07:41:25 CDT,3275448,corr_saltq_g1,RUNNING,NuclearEnergy,4-21:14:38,5-00:00:00,1,c318-017,2026-07-04T10:26:46,2026-07-04T10:26:47,Unknown,Corrected Salt parent; packed steps still active; expected walltime near 2026-07-09 10:26:47 CDT.
+2026-07-09 07:41:25 CDT,3275449,corr_saltq_g2,RUNNING,NuclearEnergy,4-21:04:50,5-00:00:00,1,c318-011,2026-07-04T10:26:47,2026-07-04T10:36:35,Unknown,Corrected Salt parent; packed steps still active; expected walltime near 2026-07-09 10:36:35 CDT.
+2026-07-09 07:41:25 CDT,3275560,corr_saltq_salt4_all,RUNNING,NuclearEnergy,4-19:19:35,5-00:00:00,1,c318-018,2026-07-04T12:21:49,2026-07-04T12:21:50,Unknown,Corrected Salt4 replacement parent; expected walltime near 2026-07-09 12:21:50 CDT.
+2026-07-09 07:41:25 CDT,3280969,saltq_gate_after,PENDING,NuclearEnergy,0:00,01:30:00,1,Dependency,2026-07-07T20:02:34,Unknown,Unknown,Dependent gate has not fired; no stdout/stderr exists yet.
+2026-07-09 07:41:25 CDT,3282992,salt1_nom_cont,RUNNING,NuclearEnergy,18:19:43,5-00:00:00,1,c318-016,2026-07-08T13:14:15,2026-07-08T13:21:42,Unknown,Salt1 nominal continuation is running; not admitted closure evidence.
+2026-07-09 07:41:25 CDT,3285548,idv43192,RUNNING,NuclearEnergy-dev,12:50,4-04:00:00,1,c318-008,2026-07-09T07:28:34,2026-07-09T07:28:35,Unknown,Current interactive allocation.

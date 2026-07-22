@@ -1,0 +1,149 @@
+{
+  "scenario": "predictive_airside_ins_1.0in_rad_1",
+  "span_to_parents": {
+    "lower_leg": [
+      "heated_incline"
+    ],
+    "upper_leg": [
+      "cooled_incline_pre_hx",
+      "cooled_incline_hx_active",
+      "cooled_incline_post_hx"
+    ],
+    "right_leg": [
+      "right_vertical"
+    ],
+    "left_lower_leg": [
+      "left_lower_vertical"
+    ],
+    "left_upper_leg": [
+      "left_upper_vertical"
+    ],
+    "test_section_span": [
+      "test_section"
+    ]
+  },
+  "per_case_multipliers": {
+    "2": {
+      "by_parent": {
+        "heated_incline": 2.665588431030625,
+        "right_vertical": 2.194077200921516,
+        "left_lower_vertical": 1.5512184718037778,
+        "test_section": 1.4627570614045844,
+        "left_upper_vertical": 1.0368826444445471,
+        "cooled_incline_pre_hx": 2.2333782606997006,
+        "cooled_incline_hx_active": 2.2333782606997006,
+        "cooled_incline_post_hx": 2.2333782606997006
+      },
+      "mean": 1.8573170117174584
+    },
+    "3": {
+      "by_parent": {
+        "heated_incline": 2.7153993031738257,
+        "right_vertical": 2.7216709529237395,
+        "left_lower_vertical": 1.7872441542261426,
+        "test_section": 1.193009680361188,
+        "left_upper_vertical": 0.9055847821600383,
+        "cooled_incline_pre_hx": 2.297502780755604,
+        "cooled_incline_hx_active": 2.297502780755604,
+        "cooled_incline_post_hx": 2.297502780755604
+      },
+      "mean": 1.9367352756000897
+    },
+    "4": {
+      "by_parent": {
+        "heated_incline": 2.8787623579322377,
+        "right_vertical": 3.2588818745476877,
+        "left_lower_vertical": 2.20917141717455,
+        "test_section": 1.0030682976897352,
+        "left_upper_vertical": 0.8208669519429626,
+        "cooled_incline_pre_hx": 2.3804306565171482,
+        "cooled_incline_hx_active": 2.3804306565171482,
+        "cooled_incline_post_hx": 2.3804306565171482
+      },
+      "mean": 2.0918635926340534
+    }
+  },
+  "rows": [
+    {
+      "salt": 2,
+      "form": "default(mult=1)",
+      "mean_mult": 1.8573170117174584,
+      "pred_mdot": 0.017105637669666017,
+      "cfd_mdot": 0.01318354663,
+      "pct_err": 29.74989317928341,
+      "Re": 217.30441328188311
+    },
+    {
+      "salt": 2,
+      "form": "global_mean_mult",
+      "mean_mult": 1.8573170117174584,
+      "pred_mdot": 0.012576755543386345,
+      "cfd_mdot": 0.01318354663,
+      "pct_err": -4.602639211157813,
+      "Re": 162.51671804354703
+    },
+    {
+      "salt": 2,
+      "form": "per_leg_friction",
+      "mean_mult": 1.8573170117174584,
+      "pred_mdot": 0.01189636257650172,
+      "cfd_mdot": 0.01318354663,
+      "pct_err": -9.76356430954027,
+      "Re": 154.26827429098543
+    },
+    {
+      "salt": 3,
+      "form": "default(mult=1)",
+      "mean_mult": 1.9367352756000897,
+      "pred_mdot": 0.020108733381844303,
+      "cfd_mdot": 0.01496689828,
+      "pct_err": 34.35471402057463,
+      "Re": 308.79461545941496
+    },
+    {
+      "salt": 3,
+      "form": "global_mean_mult",
+      "mean_mult": 1.9367352756000897,
+      "pred_mdot": 0.01447896435078946,
+      "cfd_mdot": 0.01496689828,
+      "pct_err": -3.2600871608953,
+      "Re": 225.8761648154605
+    },
+    {
+      "salt": 3,
+      "form": "per_leg_friction",
+      "mean_mult": 1.9367352756000897,
+      "pred_mdot": 0.013500478452184314,
+      "cfd_mdot": 0.01496689828,
+      "pct_err": -9.7977536853794,
+      "Re": 211.43812015622612
+    },
+    {
+      "salt": 4,
+      "form": "default(mult=1)",
+      "mean_mult": 2.0918635926340534,
+      "pred_mdot": 0.023756879589009468,
+      "cfd_mdot": 0.01698467657,
+      "pct_err": 39.87242848634043,
+      "Re": 437.7770065531293
+    },
+    {
+      "salt": 4,
+      "form": "global_mean_mult",
+      "mean_mult": 2.0918635926340534,
+      "pred_mdot": 0.016454440015466795,
+      "cfd_mdot": 0.01698467657,
+      "pct_err": -3.1218525259984036,
+      "Re": 307.5711869017962
+    },
+    {
+      "salt": 4,
+      "form": "per_leg_friction",
+      "mean_mult": 2.0918635926340534,
+      "pred_mdot": 0.015241892318128513,
+      "cfd_mdot": 0.01698467657,
+      "pct_err": -10.260921040732459,
+      "Re": 285.92262723327883
+    }
+  ]
+}

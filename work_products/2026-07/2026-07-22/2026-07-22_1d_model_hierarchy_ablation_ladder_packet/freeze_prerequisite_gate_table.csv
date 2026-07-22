@@ -1,0 +1,7 @@
+gate,current_state,required_before_freeze,release_allowed_now
+train_only_full_solve,not_performed_in_this_packet,run setup-only/legal candidate on train rows only,no
+attribution,partial_diagnostic_attribution_only,attribute mdot/TP/TW/all-probe/residual errors to legal model terms,no
+source_property_release,blocked,independent source/property/Qwall release with conservation and same-QOI UQ,no
+same_qoi_uq,partial_temporal_support_only,same-label mesh/GCI and same-window target-minus/target/target-plus QOIs,no
+freeze,no_candidate_frozen,"complete train-only solve, attribution, runtime legality, and UQ gates",no
+validation_holdout_external_test,protected,only after independent freeze,no

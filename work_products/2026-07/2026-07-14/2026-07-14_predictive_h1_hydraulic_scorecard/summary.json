@@ -1,0 +1,60 @@
+{
+  "comparison_engine": "fast_scan_baseline_vs_fast_scan_h1_proxy",
+  "diagnostic_case_ids": [
+    "salt_3",
+    "salt_4"
+  ],
+  "external_fluid_modified": false,
+  "generated_utc": "2026-07-14T16:12:35+00:00",
+  "h1_proxy_not_faithful_localized_closure": true,
+  "n_scorecard_rows": 6,
+  "n_term_boundary_rows": 8,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "h1_hydraulic_scorecard.csv",
+    "h1_variant_decision_summary.csv",
+    "hydraulic_term_boundary.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "overall_decision": "unblocks_forward_v1_scorecard_refresh_as_diagnostic_proxy_not_final_closure",
+  "publication_closure_allowed": false,
+  "task_id": "AGENT-310",
+  "thermal_fit_used": false,
+  "train_case_id": "salt_2",
+  "variant_decisions": {
+    "F0_current_fluid_sources": {
+      "all_h1_rows_overpredict_cfd": "true",
+      "base_variant_id": "F0_current_fluid_sources",
+      "forward_v1_scoring_decision": "unblocks_forward_v1_scorecard_refresh_as_diagnostic_proxy_not_final_closure",
+      "h1_variant_id": "F0_current_fluid_sources_H1_proxy",
+      "holdout_h1_abs_mdot_error_pct": 15.945229681978798,
+      "mean_baseline_abs_mdot_error_kg_s": 0.008081666666666668,
+      "mean_baseline_abs_mdot_error_pct": 53.95851940178469,
+      "mean_h1_abs_mdot_error_kg_s": 0.0029774999999999997,
+      "mean_h1_abs_mdot_error_pct": 20.19903010254357,
+      "mean_mdot_error_reduction_pct": 62.79740847904521,
+      "movement_gate": "pass_directional_screen",
+      "n_rows": 3,
+      "train_h1_abs_mdot_error_pct": 25.6638846737481,
+      "validation_h1_abs_mdot_error_pct": 18.987975951903806
+    },
+    "F1_heater_only": {
+      "all_h1_rows_overpredict_cfd": "true",
+      "base_variant_id": "F1_heater_only",
+      "forward_v1_scoring_decision": "unblocks_forward_v1_scorecard_refresh_as_diagnostic_proxy_not_final_closure",
+      "h1_variant_id": "F1_heater_only_H1_proxy",
+      "holdout_h1_abs_mdot_error_pct": 12.26442873969376,
+      "mean_baseline_abs_mdot_error_kg_s": 0.005477500000000001,
+      "mean_baseline_abs_mdot_error_pct": 36.371045802776365,
+      "mean_h1_abs_mdot_error_kg_s": 0.0021441666666666666,
+      "mean_h1_abs_mdot_error_pct": 14.41906863248294,
+      "mean_mdot_error_reduction_pct": 60.28803801744832,
+      "movement_gate": "pass_directional_screen",
+      "n_rows": 3,
+      "train_h1_abs_mdot_error_pct": 16.179817905918057,
+      "validation_h1_abs_mdot_error_pct": 14.812959251837004
+    }
+  }
+}

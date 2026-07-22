@@ -1,0 +1,6 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_frozen_prediction_artifact/candidate_model_freeze.json,yes,source M2 artifact,read_only
+work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_frozen_prediction_artifact/train_row_predictions.csv,yes,train-row support status,read_only
+work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_salt1_support_closeout/summary.json,yes,Salt1 closeout,read_only
+work_products/2026-07/2026-07-20/2026-07-20_m2_holdout_scoring_readiness/scoring_row_queue.csv,yes,queued blind rows,read_only
+work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv,yes,cooler/HX scorecard,read_only

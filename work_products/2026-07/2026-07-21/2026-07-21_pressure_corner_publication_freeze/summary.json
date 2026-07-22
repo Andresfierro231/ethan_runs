@@ -1,0 +1,14 @@
+{
+  "canonical_artifact": "canonical_pressure_corner_result.csv",
+  "clipped_k_rows": 0,
+  "component_k_admitted_rows": 0,
+  "f6_fit_rows": 0,
+  "figure_data_artifact": "pressure_corner_figure_data.csv",
+  "frozen_rows": 3,
+  "generated_utc": "2026-07-21T15:46:52.899891+00:00",
+  "global_multiplier_used": false,
+  "label_counts": {
+    "section_effective": 3
+  },
+  "task": "TODO-PRESSURE-CORNER-PUBLICATION-FREEZE-2026-07-21"
+}

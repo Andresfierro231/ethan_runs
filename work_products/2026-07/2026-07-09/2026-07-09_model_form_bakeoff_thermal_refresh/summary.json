@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-07-09T17:58:16",
+  "task": "AGENT-247",
+  "observation_rows": 1032,
+  "case_score_rows": 15,
+  "model_forms": [
+    "F3_shah_apparent",
+    "F5_ri_corrected",
+    "F3_hagenbach",
+    "F1",
+    "F4_leg_class"
+  ],
+  "best_mdot_model_form": "F3_shah_apparent",
+  "recirculation_flagged_observation_rows": 291,
+  "radiation_present_observation_rows": 0,
+  "inputs": [
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv"
+  ],
+  "outputs": [
+    "model_form_summary.csv",
+    "model_form_case_scores.csv",
+    "observation_use_summary.csv",
+    "observation_quality_summary.csv",
+    "README.md",
+    "summary.json"
+  ]
+}

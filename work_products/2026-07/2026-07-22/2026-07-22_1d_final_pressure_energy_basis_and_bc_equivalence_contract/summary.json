@@ -1,0 +1,16 @@
+{
+  "task_id": "TODO-1D-FINAL-PRESSURE-ENERGY-BASIS-AND-BC-EQUIVALENCE-CONTRACT-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "pressure_energy_bc_contract_ready_no_component_k_or_nu_admission",
+  "pressure_basis_rows": 9,
+  "bc_equivalence_rows": 10,
+  "pressure_admission_guardrail_rows": 6,
+  "scorecard_handoff_rows": 5,
+  "component_k_admitted_rows": 0,
+  "f6_admitted_rows": 0,
+  "clipped_k_rows": 0,
+  "protected_scoring_performed": false,
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "residual_absorbed_into_internal_Nu": false
+}

@@ -1,0 +1,7 @@
+audit_row,chapter_file,required_text,present_after_edit
+ADDENDUM-AUDIT-01,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,external-boundary dictionaries are now a runtime setup interface,true
+ADDENDUM-AUDIT-02,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,Predictive Runtime Contract,true
+ADDENDUM-AUDIT-03,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,Same-QOI Phase C adds a negative UQ gate result,true
+ADDENDUM-AUDIT-04,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,S12 adds a new thermal-shape ownership contract,true
+ADDENDUM-AUDIT-05,reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,runtime-legal external thermal input smoke,true
+ADDENDUM-AUDIT-06,reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,"train-only full solve, attribution, freeze, validation, holdout, and external-test",true

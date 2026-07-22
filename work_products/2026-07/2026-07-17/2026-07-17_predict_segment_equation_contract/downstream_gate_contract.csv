@@ -1,0 +1,5 @@
+downstream_task,required_input,gate,may_start_after_this_package
+TODO-PREDICT-SEGMENT-PRESSURE-MODELS,segment_equation_contract.csv;pressure_model_slots.csv;runtime_input_contract.csv,"pressure scorecard must separate buoyancy drive, distributed friction, development/reset, local K, apparent junction loss, and recirculation labels",yes
+TODO-PREDICT-SEGMENT-THERMAL-MODELS,segment_equation_contract.csv;thermal_model_slots.csv;runtime_input_contract.csv,"thermal scorecard must keep heater, cooler, passive wall, test-section, radiation, and junction residual ownership separate",yes
+TODO-PREDICT-COUPLED-SEGMENT-M3TS-SCORECARD,completed segment pressure and thermal scorecards,coupled root solve must preserve train/validation/holdout split and runtime leakage rules,no
+TODO-PREDICT-BOUNDARY-LAYER-DEVELOPMENT-SCORECARD,segment_equation_contract.csv plus pressure/thermal segment rows,toggle entrance/reset/Graetz/development effects by segment without hidden global multiplier,yes

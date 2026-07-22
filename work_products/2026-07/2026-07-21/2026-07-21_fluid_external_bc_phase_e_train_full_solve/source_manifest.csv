@@ -1,0 +1,8 @@
+artifact,path,use,mutation
+external BC runtime dictionary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,read-only source dictionary,False
+filtered train dictionary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/phase_e_train_external_boundary_dictionary.csv,generated package-local input to Fluid parser,True
+Phase B segment mapping contract,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/segment_mapping_contract.csv,read-only mapping source of truth,False
+Phase C implementation summary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_c_implementation/summary.json,read-only gate evidence,False
+Phase D smoke summary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/summary.json,read-only gate evidence,False
+Fluid external boundary API,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py,read-only import,False
+Fluid solver,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read-only local 1D solve,False

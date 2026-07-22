@@ -1,0 +1,5 @@
+source_type,path,harvest_package,harvest_task,harvest_job_id,description
+station_pressure_ladder,work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv,AGENT-445_pressure_ladder_unlock_sbatch,AGENT-445,3297860,Mainline Salt2/Salt3/Salt4 pressure ladder harvest.
+station_pressure_ladder,work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/station_pressure_ladder.csv,AGENT-447_expanded_salt_pressure_ladder_8pm_sbatch,AGENT-447,3297863,Expanded Salt1/Salt2/Salt4 perturbation and validation pressure ladder harvest.
+geometry_label_reference,reference/geometry_reference.md,,,,"Authoritative CFD span labels, physical locations, and flow-order guardrails."
+fluid_1d_geometry,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/outputs_tamu_loop_v2_resumable/geometry/loop_segments.csv,,,,Fluid 1D segment names and lengths used for mapping labels.

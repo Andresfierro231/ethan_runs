@@ -1,0 +1,6 @@
+gate,requirement,status,evidence
+score_target_only,TP/TW temperature rows are joined after solve for scoring or diagnostics only.,pass,work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv
+runtime_temperature_forbidden,"Validation, holdout, and external target temperatures are forbidden runtime inputs.",pass,work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv;work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/split_role_scorecard_shell.csv
+fit_and_selection_forbidden,TP/TW target rows cannot tune coefficients or choose model forms.,pass,work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv
+claim_priority,Sensor-temperature error tables remain secondary to energy and branch-heat parity claims.,pass,work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv;work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/split_role_scorecard_shell.csv
+tw10_exclusion,TW10 stays outside aggregate scoring until an active heat-exchanger shell state exists.,pass,work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv

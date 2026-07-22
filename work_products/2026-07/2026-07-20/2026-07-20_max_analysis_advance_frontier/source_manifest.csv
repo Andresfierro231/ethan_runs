@@ -1,0 +1,23 @@
+path,role,exists,notes
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,read_only_input,true,Final scorecard shell after source_property policy
+work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_policy_integration/README.md,read_only_input,true,Policy integration closeout
+work_products/2026-07/2026-07-20/2026-07-20_m2_scoring_gate_resolver/README.md,read_only_input,true,M2 scoring stop condition
+work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_salt1_support_closeout/README.md,read_only_input,true,Salt1 support closeout
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/summary.json,read_only_input,true,PM10 matched_plane failure repair summary
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/partial_parse_inventory.csv,read_only_input,true,PM10 partial parse state
+work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission/pm10_upcomer_anchor_classification.csv,read_only_input,true,PM10 closure use classification
+work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger_pm10_resolved.csv,read_only_input,true,Upcomer anchor ledger with PM10 rows
+work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,read_only_input,true,High_heat source case readiness
+work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_anchor_design/README.md,read_only_input,true,Upcomer next sequence
+work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/README.md,read_only_input,true,F6/two_tap nonrecirc staging
+work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/README.md,read_only_input,true,TSWFC2 no_grid decision
+work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/README.md,read_only_input,true,UMX1 no_grid decision
+.agent/blockers.yml,read_only_input,true,Current blocker register
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/README.md,generated_output,true,Task closeout README
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/blocker_frontier_ledger.csv,generated_output,true,Current blocker frontier and actions
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/high_heat_scheduler_snapshot.csv,generated_output,true,Read_only scheduler snapshot
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/high_heat_next_action_decision.csv,generated_output,true,High_heat monitor_harvest gate
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/pm10_closure_use_decision.csv,generated_output,true,PM10 diagnostic_or_incomplete decision
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/scorecard_go_no_go_sequence.csv,generated_output,true,Scorecard continuation gates
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/bounded_candidate_design_queue.csv,generated_output,true,Bounded analysis queue
+work_products/2026-07/2026-07-20/2026-07-20_max_analysis_advance_frontier/summary.json,generated_output,true,Machine_readable summary

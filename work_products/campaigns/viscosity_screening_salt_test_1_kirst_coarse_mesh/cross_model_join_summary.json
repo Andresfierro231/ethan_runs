@@ -1,0 +1,20 @@
+{
+  "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+  "case_id": "salt_test_1_kirst",
+  "matched_test_id": "salt_test_1",
+  "case_variant_label": "kirst",
+  "ethan_two_d_mdot_mean_abs_kgs": 0.010932096545,
+  "reference_two_d_mdot_full_kgs": 0.014724,
+  "ethan_minus_reference_two_d_mdot_kgs": -0.0037919034549999987,
+  "ethan_two_d_q_external_loss_w": 9.48783,
+  "reference_two_d_q_external_loss_w": 62.782,
+  "ethan_minus_reference_two_d_q_w": -53.294169999999994,
+  "reference_one_d_stage1_mdot_kg_s": 0.0144069660307394,
+  "reference_one_d_stage1_qambient_total_w": 238.6783445584983,
+  "reference_one_d_stage2_mdot_kg_s": 0.0101793414102455,
+  "reference_one_d_stage2_qambient_total_w": 136.06960425552023,
+  "ethan_validation_status": "derived_postprocessing_available",
+  "ethan_render_status": "",
+  "ethan_run_status": "completed",
+  "ethan_convergence_reached": true
+}

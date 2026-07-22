@@ -1,0 +1,6 @@
+case_id,current_use_in_this_preflight,source_split_label_observed,protected_scoring_allowed,property_sensitivity_allowed,source_inventory_allowed,notes
+salt_1,train_support_nominal_context,train,false,true,true,Nominal row can be used for train/support diagnostic preflight only.
+salt_2,train_support_nominal_context,train,false,true,true,Nominal row can be used for train/support diagnostic preflight only.
+salt_3,support_metadata_only_validation_label_conflict,validation,false,true,true,Source inventory labels this as validation; this package does not score it and treats it only as support/context until split policy is reconciled for the candidate.
+salt_4,support_metadata_only_holdout_label_conflict,holdout,false,true,true,Source inventory labels this as holdout; this package does not score it and treats it only as support/context until split policy is reconciled for the candidate.
+validation_holdout_external_rows,excluded,protected_or_external,false,false,false,No protected row is consumed for fitting model selection property release or candidate freeze.

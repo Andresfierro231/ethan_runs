@@ -1,0 +1,7 @@
+lane,legal_status,owned_quantities,forbidden_promotion,next_gate
+wall_heat_path,diagnostic_only,Q_wall_W and wall/source heat ledgers,forbidden realized wallHeatFlux as runtime input,active same-label sampler and post-sampler GCI/source-property gate
+source_setup_terms,document_only_until_candidate_release,heater cooler test-section setup sources/sinks,forbidden broad release into any candidate without source/property gate,candidate-specific runtime contract and release row
+cooler_HX_sink,document_only_until_candidate_release,cooler/HX sink metadata and setup rows,forbidden imposed CFD cooler duty replay as runtime input,HX/source-property release row
+storage_or_transient,not_current_runtime_model,storage residual diagnostics if present,forbidden transient/storage claim in steady 1D model,explicit transient model only in future task
+residual_owner,diagnostic_only,unexplained thermal/pressure residuals,forbidden residual absorption into internal Nu or F6,source-bounded model-form candidate and train-only gate
+pressure_basis,diagnostic_or_section_effective_only,p/p_rgh/head and section-effective residuals,forbidden component-K or F6 promotion without gates,CAND001 terminal source and same-QOI endpoint/UQ row

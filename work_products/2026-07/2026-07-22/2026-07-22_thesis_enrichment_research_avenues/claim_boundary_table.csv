@@ -1,0 +1,6 @@
+claim_area,allowed_claim,forbidden_claim
+literature_source_envelopes,Equations and validity ranges can motivate candidate model forms,Do not claim literature forms are calibrated or admitted for TAMU without source/property/UQ gates
+upcomer_exchange,Throughflow-plus-recirculation is the preferred diagnostic science lane,Do not admit exchange-cell coefficients or ordinary upcomer Nu/f_D/K
+fluid_walls_runtime_inputs,Setup-known inputs can be separated from CFD diagnostic fields,Do not use realized CFD wallHeatFlux mdot cooler duty or validation temperatures as runtime inputs
+negative_results,Blocked gates and diagnostic-only results are thesis contributions when source-backed,Do not publish final score values from blocked shells
+SAM_relevance,CSEM evidence can explain where reduced-order system codes need closure support,Do not claim SAM validation or calibration from this CFD/1D evidence alone

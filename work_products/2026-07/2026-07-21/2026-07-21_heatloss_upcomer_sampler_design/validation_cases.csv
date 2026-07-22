@@ -1,0 +1,6 @@
+test_id,test_type,expected,blocks_if_fail
+schema_required_fields,unit,all required output fields and field groups present,sampler implementation cannot start
+dry_run_no_values,unit,dry-run matrix emits schema_defined_no_value_emitted and launch_allowed=false,design package accidentally acts like extraction
+same_window_join,future_execution,case/time/source path must match the approved queue before extraction,no sampler launch
+residual_lane_guard,unit_and_future_execution,energy_residual_W cannot set internal Nu or score/admission flags,no Phase 4B rescore
+same_qoi_uq_guard,future_execution,score_allowed_now remains false without same-label same-window UQ,no scorecard use

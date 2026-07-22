@@ -1,0 +1,5 @@
+gate,status,evidence,release_allowed,next_required
+lower_right_two_tap_component_K,closed_section_effective_only,3 section-effective rows; 0 component-K rows,False,none for component-K; keep as Delta_p_recirc_section diagnostic evidence
+ordinary_low_recirc_anchor,blocked,4 low-recirc candidates but 0 ordinary candidate pairs ready,False,terminal source case plus finite endpoint fields with RAF/RMF below 0.01
+same_qoi_pressure_uq,blocked,0 same-QOI admissible mesh/UQ rows,False,same-label same-formula same-sign mesh/time UQ family for the same pressure residual QOI
+F3_F6_Shah_numeric_comparison,closed,0 admitted F6 rows; released=False,False,"at least one ordinary anchor with endpoint, UQ, source/property, and split-safe admission gates"

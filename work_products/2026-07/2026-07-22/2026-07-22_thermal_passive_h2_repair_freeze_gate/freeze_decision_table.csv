@@ -1,0 +1,10 @@
+decision_axis,status,value_or_count,interpretation
+candidate_count,pass,1,PASSIVE-H2-CAND001 is the only candidate to carry forward
+source_basis_release,pass,5,Setup-dictionary passive external-boundary basis is source-backed
+runtime_legality,partial_pass,setup_basis_only,Runtime setup basis is legal but numeric q-loss and wallHeatFlux remain forbidden
+train_only_repair_result,missing,0,No train-only repair run was executed in this row
+source_property_release,blocked,0,No source/property release-ready rows
+residual_owner,blocked,0,No single runtime-legal TW-after-TP residual owner identified
+protected_scoring,blocked,0,No validation/holdout/external scoring allowed
+candidate_freeze,blocked,0,No freeze is allowed from this row
+final_score,blocked,0,No final score is allowed from this row

@@ -1,0 +1,11 @@
+source_path,use
+.agent/BOARD.md,Live task board and row status source
+.agent/BLOCKERS.md,Current blocker state and guardrails
+reports/thesis_dossier/README.md,Thesis front-door story and figure/table leads
+reports/thesis_dossier/Chapters_and_sections/current/README.md,Current chapter/section index
+reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md,Existing conceptual figure plan
+reports/thesis_dossier/figures/README.md,Existing initial SVG set and figure claim boundaries
+work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/README.md,S7-S11 and negative-results study queue
+work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/next_study_portfolio.csv,Study-to-output mapping
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/README.md,Blocked S6 scorecard shell status
+work_products/2026-07/2026-07-21/2026-07-21_thesis_predictive_study_figure_table_package/README.md,Existing predictive-study visual package

@@ -1,0 +1,12 @@
+{
+  "admitted_candidates": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 6,
+  "coupled_status_counts": {
+    "completed": 6
+  },
+  "created_utc": "2026-07-17T22:17:45.547721+00:00",
+  "task": "AGENT-526",
+  "why": "No test-section wall/fluid series-coupling candidate has passed validation and holdout mdot, TP, TW, and all-probe gates vs M3."
+}

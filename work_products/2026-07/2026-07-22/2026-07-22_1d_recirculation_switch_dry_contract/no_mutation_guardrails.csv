@@ -1,0 +1,8 @@
+guardrail,status
+native_solver_outputs_mutated,false
+registry_or_admission_state_mutated,false
+scheduler_action,false
+solver_postprocessing_sampler_harvest_uq_launched,false
+coefficient_fitting_or_admission,false
+source_property_or_qwall_release,false
+ordinary_Nu_fD_K_F6_claims_in_recirc_upcomer,false

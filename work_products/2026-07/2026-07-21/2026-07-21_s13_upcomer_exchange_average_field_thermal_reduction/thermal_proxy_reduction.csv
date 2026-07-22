@@ -1,0 +1,4 @@
+case_id,time_window_s,diagnostic_basis,seeded_cv_volume_m3,q_source_W,q_sink_W,q_net_W,delta_T_core_minus_seed_K,tau_recirc_proxy_s,hA_source_side_proxy_W_K,Q_wall_W_released,energy_residual_ready,same_qoi_uq_ready,sampler_ready,admission_allowed,release_status
+salt_2,7915,diagnostic_average_proxy_not_production_harvest,1.19084663056e-05,302.7,136.350739906,166.349260094,0.146416414127,868.807159089,1136.13805588,false,false,false,false,false,diagnostic_average_proxy_only
+salt_3,7618,diagnostic_average_proxy_not_production_harvest,1.19084663056e-05,334.5,150.769638674,183.730361326,0.158496473136,547.838912867,1159.20788451,false,false,false,false,false,diagnostic_average_proxy_only
+salt_4,10000,diagnostic_average_proxy_not_production_harvest,1.19084663056e-05,374.599999999,169.226815037,205.373184962,0.172378686086,301.390653047,1191.40706792,false,false,false,false,false,diagnostic_average_proxy_only

@@ -1,0 +1,13 @@
+guardrail,value
+native_solver_outputs_mutated,false
+registry_or_admission_mutated,false
+scheduler_action,false
+solver_postprocessing_sampler_harvest_uq_launched,false
+fluid_or_external_repo_edited,false
+thesis_latex_edited,false
+source_property_release,false
+qwall_release,false
+candidate_freeze,false
+validation_holdout_external_scoring,false
+coefficient_admission,false
+final_score_claim,false

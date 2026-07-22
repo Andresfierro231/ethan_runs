@@ -1,0 +1,7 @@
+artifact,role,mutation_status,path
+case_contract_interpretation.csv,source,read_only,work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_contract_interpretation.csv
+case_heat_ledger.csv,diagnostic_context,read_only,work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_heat_ledger.csv
+candidate_parameters.csv,source,read_only,work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/candidate_parameters.csv
+recommended_model.csv,source,read_only,work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/recommended_model.csv
+boundary_model_task_matrix.csv,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/boundary_model_task_matrix.csv
+README.md,context,read_only,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md

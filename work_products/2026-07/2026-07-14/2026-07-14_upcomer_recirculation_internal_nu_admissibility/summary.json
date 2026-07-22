@@ -1,0 +1,24 @@
+{
+  "task": "AGENT-330",
+  "status": "complete",
+  "decision": "no_internal_Nu_fit_admissible_today",
+  "n_onset_rows": 3,
+  "n_naming_rows": 21,
+  "re_min": 71.12521667906103,
+  "re_max": 134.88326391686644,
+  "backflow_min": 0.171875,
+  "backflow_max": 0.2777777777777778,
+  "ri_min": 1.4979865399999999,
+  "ri_max": 2.6337849550000003,
+  "recirculation_rule": "single-stream Nu/f_D/K invalid under material backflow, Ri>=1, reverse-flow proxy, or recirculation flag",
+  "fit_admissible_internal_nu_rows": 0,
+  "outputs": [
+    "upcomer_recirculation_onset_conditions.csv",
+    "coefficient_naming_rules_for_recirculation.csv",
+    "blocked_missing_metrics.csv",
+    "source_manifest.csv",
+    "README.md",
+    "summary.json"
+  ],
+  "generated_at": "2026-07-14T12:02:59"
+}

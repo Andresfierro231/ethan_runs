@@ -1,0 +1,15 @@
+guardrail,status
+external_papers_edit,false
+thesis_body_latex_edit,false
+raw_cfd_native_copy,false
+native_output_mutation,false
+registry_admission_mutation,false
+scheduler_action,false
+solver_postprocessing_launch,false
+source_property_release,false
+qwall_release,false
+coefficient_admission,false
+candidate_freeze,false
+protected_score_claim,false
+final_score_claim,false
+runtime_leakage_relaxed,false

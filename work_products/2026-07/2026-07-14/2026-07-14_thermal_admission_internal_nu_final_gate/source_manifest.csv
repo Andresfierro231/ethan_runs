@@ -1,0 +1,4 @@
+artifact,role,mutation_status,path
+thermal_admission_table,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv
+sign_convention_table,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/sign_convention_table.csv
+thermal_admission_internal_nu_final_gate,generated,new_artifact,work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/thermal_admission_internal_nu_final_gate.csv

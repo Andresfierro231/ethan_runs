@@ -1,0 +1,18 @@
+{
+  "decision_rows": 4,
+  "generated_at": "2026-07-08T18:16:04",
+  "loop_closure_rows": 3,
+  "minor_loss_rows": 15,
+  "openfoam_extraction_run": false,
+  "openfoam_note": "Existing section-mean and recirculation artifacts were sufficient for this first synthesis; raw extraction remains a documented blocker for closure-grade K/profile metrics.",
+  "pressure_span_rows": 18,
+  "recirculation_rows": 9,
+  "source_ids": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "station_development_rows": 18,
+  "task_id": "AGENT-223",
+  "uncertainty_rows": 108
+}

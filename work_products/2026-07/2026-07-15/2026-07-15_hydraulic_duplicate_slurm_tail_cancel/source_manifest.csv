@@ -1,0 +1,8 @@
+artifact,source_type,path,used_for,mutation
+scheduler_before_after.csv,scheduler_command,"squeue -j 3295989,3295990,3295991",before and after queue visibility,read_only_then_cancel_action
+scheduler_before_after.csv,scheduler_command,"sacct -j 3295989,3295990,3295991 --format=JobID,JobName,Partition,State,Elapsed,ExitCode,Submit,Start,End,NodeList -P",before pending and after cancelled accounting state,read_only_then_cancel_action
+scheduler_cancel,scheduler_command,"scancel 3295989 3295990 3295991",removed redundant pending Slurm jobs,scheduler_mutation
+agent405_status,file,.agent/status/2026-07-15_AGENT-405.md,proof local safe equivalent stages already ran,read_only
+agent405_journal,file,.agent/journal/2026-07-15/sensor-policy-gate-opening-and-hydraulic-node-run.md,local run timing and interpretation,read_only
+agent373_manifest,file,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/slurm_dependency_tail_manifest.csv,original submitted chain and stage mapping,read_only
+agent405_readme,file,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/README.md,local replacement package entry point,read_only

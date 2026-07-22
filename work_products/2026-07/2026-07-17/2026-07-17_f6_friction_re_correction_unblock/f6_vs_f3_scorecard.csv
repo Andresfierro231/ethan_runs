@@ -1,0 +1,3 @@
+model_lane,production_baseline,candidate_rows,scoreable_rows,validation_holdout_status,hidden_global_multiplier_status,decision,reason
+ordinary_F6_single_stream,F3_shah_apparent,0,0,not_scoreable_no_admitted_ordinary_rows,not_used,do_not_promote,No non-recirculating fit-admissible pressure rows exist in the current PM5 evidence.
+recirculation_modeled_F6_onset,F3_shah_apparent,12,0,not_scoreable_missing_hybrid_pressure_delta_uncertainty_and_split_scores,forbidden_by_contract,do_not_promote,"Material-recirculation rows support regime diagnostics and future hybrid design, but not an admitted predictive closure today."

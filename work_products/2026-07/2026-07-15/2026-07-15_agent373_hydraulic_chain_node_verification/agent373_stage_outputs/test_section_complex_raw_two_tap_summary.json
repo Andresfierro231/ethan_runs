@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-07-15T14:38:47.305209+00:00",
+  "dependency_stage": "",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "output": "test_section_complex_raw_two_tap_status.csv",
+  "rows": 3,
+  "slurm_job_id": "3295120",
+  "stage": "test_section_complex_raw_two_tap",
+  "status": "completed_safe_preflight_blocked_for_native_mutation_guard"
+}

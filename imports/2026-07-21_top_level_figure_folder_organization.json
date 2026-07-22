@@ -1,0 +1,62 @@
+{
+  "task": "TODO-TOP-LEVEL-FIGURE-FOLDER-ORGANIZATION-2026-07-21",
+  "created_at": "2026-07-21T19:10:00-05:00",
+  "role": "Cleaner/Figures/Writer",
+  "objective": "Organize top-level generated figure folders under a dated work-products package while preserving compatibility for existing references.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-TOP-LEVEL-FIGURE-FOLDER-ORGANIZATION-2026-07-21.md",
+    ".agent/journal/2026-07-21/top-level-figure-folder-organization.md",
+    "imports/2026-07-21_top_level_figure_folder_organization.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/pre_move_figures_file_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/pre_move_root_figures_rendered_file_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/post_move_figures_symlink_resolution_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/post_move_root_figures_rendered_symlink_resolution_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/legacy_roots/figures",
+    "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/legacy_roots/figures_rendered",
+    "figures",
+    "figures_rendered"
+  ],
+  "read_only_context": [
+    ".agent/CLEANUP_POLICY.md",
+    ".agent/FILE_OWNERSHIP.md",
+    "imports/2026-06-15_paraview_cell_association_refresh.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_val_salt2_upcomer_y_velocity_arrow_views/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_val_salt2_upcomer_orthogonal_arrow_views/README.md",
+    "native CFD/OpenFOAM source outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external repositories"
+  ],
+  "relocations": [
+    {
+      "old_path": "figures",
+      "new_physical_path": "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/legacy_roots/figures",
+      "root_compatibility_symlink": true,
+      "pre_move_file_count": 659,
+      "post_move_symlink_resolution_file_count": 659,
+      "size_after_move": "2.1G"
+    },
+    {
+      "old_path": "figures_rendered",
+      "new_physical_path": "work_products/2026-07/2026-07-21/2026-07-21_top_level_figure_folder_organization/legacy_roots/figures_rendered",
+      "root_compatibility_symlink": true,
+      "pre_move_file_count": 2,
+      "post_move_symlink_resolution_file_count": 2,
+      "size_after_move": "44K"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "fluid_external_mutated": false,
+  "openfoam_solver_or_harvest_launched": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_or_admission_changed": false,
+  "final_predictive_score_claimed": false,
+  "runtime_leakage_guardrails_relaxed": false,
+  "figure_pixels_edited": false,
+  "notes": "Root paths remain as symlinks for compatibility; physical generated figure data now lives under the dated work-products organization package."
+}

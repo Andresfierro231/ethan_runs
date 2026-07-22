@@ -1,0 +1,18 @@
+{
+  "admitted_publication_gci_rows": 0,
+  "blocker_decision": "resolved_by_final_use_disposition",
+  "disposition_counts": {
+    "excluded_boundary_residual": 3,
+    "excluded_branch_gate_failed": 10
+  },
+  "excluded_rows": 13,
+  "external_fluid_mutated": false,
+  "final_use_rows_reviewed": 13,
+  "generated_at": "2026-07-16T22:52:28+00:00",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "retained_extraction_required_rows": 0,
+  "scheduler_action_taken": false,
+  "source_package": "work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout",
+  "task": "AGENT-474"
+}

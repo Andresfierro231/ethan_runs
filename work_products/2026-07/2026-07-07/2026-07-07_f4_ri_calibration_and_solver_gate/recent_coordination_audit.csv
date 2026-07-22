@@ -1,0 +1,52 @@
+path,mtime_iso,size_bytes,observation
+../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,,,external Fluid git status: M
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-29_practical_reduced_order_broadened_v1_practical-reduced-order-broadened-v2_campaign_checkpoint.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-29_test_section_diameter_refresh_report_v1.md,,,external Fluid git status: M
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-29_workflow_journal.md,,,external Fluid git status: M
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_baseline_internal_losses_predictive-validation-baseline-v2_campaign_checkpoint.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_baseline_internal_losses_salt-promoted-internal_campaign_checkpoint.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_ethan_cfd_informed_salt_v2_ethan-cfd-informed-salt-v2_campaign_checkpoint.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_ethan_forced_losses_predictive-validation-ethan-v2_campaign_checkpoint.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_ethan_forced_losses_salt-promoted-ethan_campaign_checkpoint.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_morning_todo.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_salt_promoted_property_matrix_v2_promoted_salt_property_campaign.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-06/2026-06-30_workflow_journal.md,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/results/run_registry.csv,,,external Fluid git status: M
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py,,,external Fluid git status: ??
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/materials.py,,,external Fluid git status: M
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,,,external Fluid git status: M
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_friction_closures.py,,,external Fluid git status: ??
+.agent/BOARD.md,2026-07-07T17:37:25,182699,modified within last 120 minutes at package build time
+.agent/status/2026-07-07_AGENT-190.md,2026-07-07T16:49:21,3663,modified within last 120 minutes at package build time
+.agent/status/2026-07-07_AGENT-191.md,2026-07-07T17:06:46,4939,modified within last 120 minutes at package build time
+operational_notes/07-26/07/2026-07-07_cfd_postprocessing_closure_rigor_deep_dive.md,2026-07-07T17:05:37,38052,modified within last 120 minutes at package build time
+tools/analyze/__pycache__/build_f4_ri_calibration_and_solver_gate.cpython-311.pyc,2026-07-07T17:43:05,52703,modified within last 120 minutes at package build time
+tools/analyze/__pycache__/build_time_window_quasi_steady_observations.cpython-39.pyc,2026-07-07T17:43:03,24996,modified within last 120 minutes at package build time
+tools/analyze/__pycache__/test_build_f4_ri_calibration_and_solver_gate.cpython-311.pyc,2026-07-07T17:43:05,5367,modified within last 120 minutes at package build time
+tools/analyze/__pycache__/test_time_window_quasi_steady_observations.cpython-39-pytest-6.2.5.pyc,2026-07-07T17:42:01,10635,modified within last 120 minutes at package build time
+tools/analyze/build_f4_ri_calibration_and_solver_gate.py,2026-07-07T17:42:58,40539,modified within last 120 minutes at package build time
+tools/analyze/build_time_window_quasi_steady_observations.py,2026-07-07T17:42:54,33373,modified within last 120 minutes at package build time
+tools/analyze/test_build_f4_ri_calibration_and_solver_gate.py,2026-07-07T17:37:03,1676,modified within last 120 minutes at package build time
+tools/analyze/test_time_window_quasi_steady_observations.py,2026-07-07T17:41:48,4758,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/README.md,2026-07-07T17:42:09,8193,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/admitted_evidence_freeze.csv,2026-07-07T17:42:08,7242,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/admitted_evidence_freeze.json,2026-07-07T17:42:09,14413,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/corrected_salt_gate_monitor_snapshot.csv,2026-07-07T17:42:09,2986,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/corrected_salt_gate_monitor_snapshot.json,2026-07-07T17:42:09,8669,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/corrected_salt_gate_monitor_snapshot.md,2026-07-07T17:42:09,3139,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/f4_candidate_fit_report.md,2026-07-07T17:42:09,952,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/f4_candidate_fit_summary.json,2026-07-07T17:42:09,3019,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/f4_ri_calibration_table.csv,2026-07-07T17:42:09,31189,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/f4_ri_calibration_table.json,2026-07-07T17:42:09,51774,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/model_comparison_f1_f3_f4_f5.csv,2026-07-07T17:42:09,19901,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/model_comparison_f1_f3_f4_f5.json,2026-07-07T17:42:09,44978,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/model_comparison_f1_f3_f4_f5.md,2026-07-07T17:42:09,2783,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/recent_coordination_audit.csv,2026-07-07T17:42:09,6322,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/recent_coordination_audit.json,2026-07-07T17:42:09,9723,modified within last 120 minutes at package build time
+work_products/2026-07-07_f4_ri_calibration_and_solver_gate/ri_definition_audit.md,2026-07-07T17:42:09,1648,modified within last 120 minutes at package build time
+work_products/2026-07-07_time_window_quasi_steady_contract/README.md,2026-07-07T16:49:23,1386,modified within last 120 minutes at package build time
+work_products/2026-07-07_time_window_quasi_steady_uq/README.md,2026-07-07T17:43:04,1692,modified within last 120 minutes at package build time
+work_products/2026-07-07_time_window_quasi_steady_uq/excluded_or_provisional_windows.csv,2026-07-07T17:43:04,13577,modified within last 120 minutes at package build time
+work_products/2026-07-07_time_window_quasi_steady_uq/quasi_steady_observations.csv,2026-07-07T17:43:04,61689,modified within last 120 minutes at package build time
+work_products/2026-07-07_time_window_quasi_steady_uq/run_window_summary.json,2026-07-07T17:43:04,1978,modified within last 120 minutes at package build time
+work_products/2026-07-07_time_window_quasi_steady_uq/window_diagnostics.csv,2026-07-07T17:43:04,245019,modified within last 120 minutes at package build time

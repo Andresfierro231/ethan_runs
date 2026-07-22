@@ -1,0 +1,3 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/post_exit_parse_rollup_contract.csv,yes,expected parse contract,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed,yes,parsed output directory,read_only

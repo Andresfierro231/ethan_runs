@@ -1,0 +1,4 @@
+gate,status,effect_on_s12,evidence,next_action
+s13_seed_source_bounded_cv_geometry,pass,permits surface/source preflight only,work_products/2026-07/2026-07-21/2026-07-21_s13_source_bounded_cv_rerun_from_geometry_seed/seed_cv_release_decision.csv,claim separate surface/source manifest refresh row
+s13_sampler_manifest_refresh,blocked,still blocks S12-HIAX1 until exchange-state QOIs release,work_products/2026-07/2026-07-21/2026-07-21_s13_source_bounded_cv_rerun_from_geometry_seed/seed_cv_downstream_gate.csv,"publish surface VTKs, Q_wall_W/source release, same-window thermal fields, and same-QOI UQ before harvest"
+s12_hiax1_implementation,blocked,no Fluid implementation unlock from geometry-only release,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/s12_unlock_gate.csv,wait for harvested exchange-state QOIs and UQ

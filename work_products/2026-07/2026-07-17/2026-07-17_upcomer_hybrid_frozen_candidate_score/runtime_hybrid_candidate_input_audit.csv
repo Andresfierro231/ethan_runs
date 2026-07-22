@@ -1,0 +1,5 @@
+check,status,forbidden_input,policy
+no_ordinary_labels,pass_forbidden,single-stream Nu/f_D/K labels,hybrid lane only
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,solved output
+no_realized_wall_heat_runtime,pass_forbidden,realized wallHeatFlux,diagnostic only
+no_validation_temperature_runtime,pass_forbidden,validation TP/TW temperatures,post-solve target

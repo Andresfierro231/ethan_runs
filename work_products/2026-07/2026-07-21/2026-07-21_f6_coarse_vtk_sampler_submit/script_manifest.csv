@@ -1,0 +1,3 @@
+script_path,script_role,auto_submit,guardrail
+work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/run_stage_b_f6_coarse_vtk_sampler.sh,stage_b_coarse_staged_reconstructed_sampler,false,run only inside scheduler allocation
+work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/scripts/submit_stage_b_f6_coarse_vtk_sampler.sbatch,single_allowed_stage_b_submission,false_until_scheduler_command,submit once; no duplicate submission without new board row

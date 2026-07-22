@@ -1,0 +1,20 @@
+{
+  "task_id": "TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22",
+  "generated_at": "2026-07-22T09:47:45-05:00",
+  "status": "complete",
+  "decision": "recirculation_onset_packet_started_diagnostic_proxies_available_closed_fraction_and_ri_fail_closed",
+  "velocity_figure_rows": 3,
+  "reverse_topology_rows": 3,
+  "onset_proxy_rows": 3,
+  "exchange_tau_rows": 3,
+  "same_qoi_temporal_uq_rows": 4,
+  "closed_recirc_fraction_admitted": false,
+  "ri_admitted": false,
+  "medium_fine_exact_label_rows_available_now": false,
+  "mesh_gci_disposition_allowed_now": false,
+  "ordinary_upcomer_closure_admitted": false,
+  "exchange_cell_coefficient_admitted": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_launch_by_this_packet": false
+}

@@ -1,0 +1,68 @@
+{
+  "task": "TODO-S13-NEXT-GATE-CHECKLIST-AND-BLOCKER-UNLOCKS-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Reviewer / Writer / Tester",
+  "objective": "Publish a read-only S13 next-gate checklist, geometry evidence summary, blocker unlock queue, and heat-path alignment guardrails.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-NEXT-GATE-CHECKLIST-AND-BLOCKER-UNLOCKS-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-next-gate-checklist-and-blocker-unlocks.md",
+    "imports/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks.json",
+    "tools/analyze/build_s13_next_gate_checklist_and_blocker_unlocks.py",
+    "tools/analyze/test_s13_next_gate_checklist_and_blocker_unlocks.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/next_gate_checklist.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/s13_geometry_evidence_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/blocker_unlock_queue.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/heat_path_alignment_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_next_gate_checklist_and_blocker_unlocks/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_source_bounded_cv_rerun_from_geometry_seed/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_diagnostic_roi_average_bridge/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_next_gate_checklist_and_blocker_unlocks.py tools/analyze/test_s13_next_gate_checklist_and_blocker_unlocks.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_next_gate_checklist_and_blocker_unlocks",
+      "result": "passed: 4 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_s13_next_gate_checklist_and_blocker_unlocks.py",
+      "result": "generated package"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "native_solver_output_mutation": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "surface_extraction_launched": false,
+  "sampler_or_harvest_launched": false,
+  "same_qoi_uq_run": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "blocker_register_mutation": false,
+  "generated_index_refresh": false,
+  "coefficient_admission": false,
+  "s11_s12_s15_s6_trigger": false,
+  "residual_absorbed_into_internal_nu": false
+}

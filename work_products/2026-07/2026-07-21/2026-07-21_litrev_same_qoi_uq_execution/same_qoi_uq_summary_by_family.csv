@@ -1,0 +1,8 @@
+source_family,rows,section_effective_rows,pressure_recovery_rows,diagnostic_rows,admitted_rows,blocked_or_fail_rows,diagnostic_or_candidate_rows
+f6_endpoint_face_uq_execution,20,0,0,20,0,20,0
+f6_endpoint_pair_same_qoi_uq_preflight,6,0,0,6,0,6,0
+pm10_upcomer_same_qoi_uq_preflight,4,0,0,4,0,0,4
+pressure_corner_basis_recovery,3,3,0,0,0,3,0
+thermal_mesh_gate,7,0,0,7,0,7,0
+thermal_row_admission_ledger,40,0,0,40,0,3,37
+two_tap_face_qref_uq_progress,3,3,0,0,0,3,0

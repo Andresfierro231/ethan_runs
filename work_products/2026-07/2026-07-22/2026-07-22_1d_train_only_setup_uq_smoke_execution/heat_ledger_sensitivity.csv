@@ -1,0 +1,7 @@
+case,execution_status,max_abs_segment_residual_R_s_W,mdot_model_kg_s,qambient_total_W,qhx_total_W,residual_owner_label,segment_Q_ambient_sum_W,segment_Q_hx_sum_W,segment_Q_source_sum_W,variant_id
+Salt 2,completed,0.02850202,0.02211762,248.80712,53.893275,segment_energy_residual_check,248.80712,53.893275,302.7,V00_baseline
+Salt 3,completed,0.031948166,0.024312849,276.61895,57.881454,segment_energy_residual_check,276.61895,57.881454,334.5,V00_baseline
+Salt 4,completed,0.036282767,0.026865651,311.81494,62.785478,segment_energy_residual_check,311.81494,62.785478,374.6,V00_baseline
+Salt 2,post_solve_projection_audit,0.02850202,0.02211762,248.80712,53.893275,segment_energy_residual_check,248.80712,53.893275,302.7,V08_sensor_projection_audit
+Salt 3,post_solve_projection_audit,0.031948166,0.024312849,276.61895,57.881454,segment_energy_residual_check,276.61895,57.881454,334.5,V08_sensor_projection_audit
+Salt 4,post_solve_projection_audit,0.036282767,0.026865651,311.81494,62.785478,segment_energy_residual_check,311.81494,62.785478,374.6,V08_sensor_projection_audit

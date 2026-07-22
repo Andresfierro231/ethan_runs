@@ -1,0 +1,11 @@
+input_or_artifact,status,reason,allowed_use
+setup_heater_power,allowed_setup_input,known setup/source term,thermal accounting and future runtime model input if candidate-specific contract permits
+setup_cooler_or_hx_metadata,allowed_setup_input,known setup/sink metadata,thermal accounting and future runtime model input if candidate-specific contract permits
+ambient_boundary_metadata,allowed_setup_input,external boundary setup metadata,thermal accounting and future runtime model input if candidate-specific contract permits
+material_property_label,allowed_after_release,property mode must pass release gate before candidate freeze,source/property atlas only for now
+CFD_mdot,forbidden_runtime_input,forbidden target CFD flow result,diagnostic residual attribution only
+realized_wallHeatFlux,forbidden_runtime_input,forbidden realized CFD wall heat flux,diagnostic heat-path and source-side conservation checks only
+validation_temperatures,forbidden_runtime_input,forbidden protected or validation target temperatures,score-only after freeze
+holdout_or_external_test_residuals,forbidden_runtime_input,forbidden protected scoring evidence,external generalization only after validation
+global_hA_multiplier_from_residual,forbidden_fit_input,forbidden hidden fit/tuning from train residual shape,negative diagnostic evidence only
+row_by_row_axial_mixing_multiplier,forbidden_fit_input,forbidden coefficient tuning from row residuals,not allowed for freeze

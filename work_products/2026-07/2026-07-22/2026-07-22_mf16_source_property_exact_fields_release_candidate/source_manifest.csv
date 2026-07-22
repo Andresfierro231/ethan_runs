@@ -1,0 +1,6 @@
+source_path,use,mutation_status
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv,nominal row source/property release status,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/s11_s15_blocker_matrix.csv,release and freeze blockers,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/candidate_lane_consequences.csv,candidate-lane consequences,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf13_signed_source_property_heat_path_release_preflight/signed_heat_path_release_preflight.csv,q_setup sign/magnitude and runtime source status,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf15_runtime_wall_profile_basis_gate/runtime_operator_requirement_matrix.csv,wall/profile conservation and runtime-use requirements,read_only

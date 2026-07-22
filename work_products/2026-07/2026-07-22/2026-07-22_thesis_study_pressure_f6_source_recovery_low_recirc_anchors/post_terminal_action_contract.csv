@@ -1,0 +1,6 @@
+step,trigger,allowed_action,required_output,forbidden_action
+1,job 3308712 terminal in sacct,claim terminal disposition/readiness board row,terminal state table with exit codes elapsed times and per-step status,do not harvest or score in the monitor row
+2,terminal success and source cases available,verify steady-state drift and source path completeness,source-readiness table with source paths and terminal windows,do not treat timeout partials as F6 evidence
+3,source readiness passes,claim staged-copy endpoint sampler row,raw endpoint pressure velocity field manifest and same-window contract,do not mutate native outputs or launch without row authorization
+4,endpoint rows exist,run same-QOI time/mesh UQ gate,UQ table for static pressure velocity dynamic pressure and low-recirculation mask,do not borrow unrelated mesh/GCI rows
+5,UQ and source/property gates pass,run train-only F6 review package,F3/Shah-vs-F6 comparison and residual ownership table using train rows only,do not score validation holdout or external rows before freeze

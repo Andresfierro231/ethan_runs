@@ -1,0 +1,25 @@
+{
+  "core_station_gate_counts": {
+    "pass": 3
+  },
+  "decision": "not_admitted_downcomer_policy_failed",
+  "external_fluid_mutated": false,
+  "gci_gate_counts": {
+    "fail": 4
+  },
+  "gci_rows": 4,
+  "generated_at": "2026-07-16T22:47:26+00:00",
+  "interface_recirc_gate_counts": {
+    "fail": 3
+  },
+  "native_solver_outputs_mutated": false,
+  "ordinary_nu_fit_admitted": 0,
+  "recirculation_rows": 3,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "sign_enthalpy_rows": 3,
+  "sign_gate_counts": {
+    "fail": 3
+  },
+  "task": "AGENT-469"
+}

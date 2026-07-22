@@ -1,0 +1,13 @@
+case_key,plane_location,representative_time_s,resampled_vtk,cell_field_count,has_rho,has_Re,has_Pr,has_Ri,has_Gr,has_Ra,missing_fields,validation_status
+salt2_lo5q,upcomer_inlet,10275,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt2_lo5q/postProcessing/upcomerMatchedPlaneSurfaces/10275/plane_upcomer_inlet.vtk,9,True,True,True,True,True,True,,pass
+salt2_lo5q,upcomer_mid,10275,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt2_lo5q/postProcessing/upcomerMatchedPlaneSurfaces/10275/plane_upcomer_mid.vtk,9,True,True,True,True,True,True,,pass
+salt2_lo5q,upcomer_outlet,10275,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt2_lo5q/postProcessing/upcomerMatchedPlaneSurfaces/10275/plane_upcomer_outlet.vtk,9,True,True,True,True,True,True,,pass
+salt2_hi5q,upcomer_inlet,9780,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt2_hi5q/postProcessing/upcomerMatchedPlaneSurfaces/9780/plane_upcomer_inlet.vtk,9,True,True,True,True,True,True,,pass
+salt2_hi5q,upcomer_mid,9780,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt2_hi5q/postProcessing/upcomerMatchedPlaneSurfaces/9780/plane_upcomer_mid.vtk,9,True,True,True,True,True,True,,pass
+salt2_hi5q,upcomer_outlet,9780,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt2_hi5q/postProcessing/upcomerMatchedPlaneSurfaces/9780/plane_upcomer_outlet.vtk,9,True,True,True,True,True,True,,pass
+salt4_lo5q,upcomer_inlet,11695,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_lo5q/postProcessing/upcomerMatchedPlaneSurfaces/11695/plane_upcomer_inlet.vtk,9,True,True,True,True,True,True,,pass
+salt4_lo5q,upcomer_mid,11695,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_lo5q/postProcessing/upcomerMatchedPlaneSurfaces/11695/plane_upcomer_mid.vtk,9,True,True,True,True,True,True,,pass
+salt4_lo5q,upcomer_outlet,11695,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_lo5q/postProcessing/upcomerMatchedPlaneSurfaces/11695/plane_upcomer_outlet.vtk,9,True,True,True,True,True,True,,pass
+salt4_hi5q,upcomer_inlet,11399,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_hi5q/postProcessing/upcomerMatchedPlaneSurfaces/11399/plane_upcomer_inlet.vtk,9,True,True,True,True,True,True,,pass
+salt4_hi5q,upcomer_mid,11399,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_hi5q/postProcessing/upcomerMatchedPlaneSurfaces/11399/plane_upcomer_mid.vtk,9,True,True,True,True,True,True,,pass
+salt4_hi5q,upcomer_outlet,11399,tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_hi5q/postProcessing/upcomerMatchedPlaneSurfaces/11399/plane_upcomer_outlet.vtk,9,True,True,True,True,True,True,,pass

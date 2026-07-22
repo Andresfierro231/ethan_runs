@@ -1,0 +1,43 @@
+{
+  "task": "TODO-THESIS-LATEX-CH5-WRITE-AND-NUMERICAL-STUDY-DISPATCH-2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-LATEX-CH5-WRITE-AND-NUMERICAL-STUDY-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-latex-ch5-write-and-numerical-study-dispatch.md",
+    "imports/2026-07-21_thesis_latex_ch5_write_and_numerical_study_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_THESIS_LATEX_CH5_WRITE_AND_NUMERICAL_STUDY_DISPATCH.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_numerical_studies_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/promote_papers_ch5_active.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/apply_papers_ch5_latex_sync.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/close_papers_ch5_latex_sync.py",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/status/csem-latex-ch5-model-form-sync-2026-07-21.md",
+    "../papers/.agent/journal/2026-07-21/csem-latex-ch5-model-form-sync-2026-07-21.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/chapters/05_coupled_fluid_walls_model.tex",
+    "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.aux",
+    "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.fdb_latexmk",
+    "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.fls",
+    "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.log",
+    "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.out",
+    "../papers/UTexas_Research/csem-Masters_dissertation/masterthesis.pdf"
+  ],
+  "read_only_context": [
+    "../papers/UTexas_Research/csem-Masters_dissertation/AGENTS.md",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/FILE_OWNERSHIP.md",
+    "../papers/.agent/ROLES.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/latex_sync_contract.csv",
+    "operational_notes/07-26/21/2026-07-21_THESIS_LATEX_TOMORROW_HANDOFF.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "actual_latex_mutated": true,
+  "external_papers_workspace_mutated": true,
+  "closure_admission_mutated": false,
+  "runtime_leakage_rules_changed": false
+}

@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-07-15T23:14:42.542222+00:00",
+  "harvested_adjacent_parsed_rows": 192,
+  "harvested_adjacent_rows": 192,
+  "harvested_station_parsed_rows": 240,
+  "harvested_station_rows": 240,
+  "last_harvest_at": "2026-07-16T04:27:44.063902+00:00",
+  "last_harvest_job_id": "3297863",
+  "native_solver_outputs_mutated": false,
+  "preflight_failures": 0,
+  "preflight_rows": 8,
+  "registry_or_admission_mutated": false,
+  "related_agent445_job_id": "3297860",
+  "submitted_begin_time": "2026-07-15T20:00:00",
+  "submitted_job_id": "3297863",
+  "submitted_job_state": "SUBMITTED_BEGIN_2026-07-15T20:00:00",
+  "task": "AGENT-447"
+}

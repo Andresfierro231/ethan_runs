@@ -1,0 +1,5 @@
+decision_id,case_count,admission_status,next_action,runtime_guardrail
+optional_forced_flow_feasibility,1,design_only_not_launched,claim separate scheduler/staging row before any case launch,no expensive CFD launched in this planning row
+sentinel_cell_max,1,design_only_not_launched,claim separate scheduler/staging row before any case launch,no expensive CFD launched in this planning row
+sentinel_cell_off,1,design_only_not_launched,claim separate scheduler/staging row before any case launch,no expensive CFD launched in this planning row
+small_q_x_insulation_matrix,9,design_only_not_launched,claim separate scheduler/staging row before any case launch,no expensive CFD launched in this planning row

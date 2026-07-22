@@ -1,0 +1,21 @@
+{
+  "admission_decision": "external_test_validation_candidate_unlocked",
+  "bc_contract_rows": 36,
+  "case_key": "salt2_native_val",
+  "display_label": "val_salt_test_2_coarse_mesh",
+  "latest_time_s": 8602.0,
+  "latest_total_Q_postProc_W": 0.193062,
+  "max_abs_heat_linear_drift_W": 0.013287199533563616,
+  "max_relative_mdot_linear_drift": 7.950900708700645e-05,
+  "mdot_consensus_kg_s": 0.01361622898,
+  "native_cfd_outputs_mutated": false,
+  "registry_state_mutated": false,
+  "scheduler_actions": "none",
+  "section_ledger_rows": 14,
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "steady_state_label": "steady",
+  "task": "AGENT-422",
+  "usable_now": "yes_external_test_validation",
+  "window_seconds": 300.0,
+  "window_start_s": 8302.0
+}

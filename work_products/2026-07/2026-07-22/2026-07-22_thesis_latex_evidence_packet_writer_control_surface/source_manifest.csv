@@ -1,0 +1,9 @@
+source_path,staged_as,mutation_status,notes
+work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/chapter_evidence_completeness_matrix.csv,chapter_evidence_completeness_matrix.csv,copied_read_only,32 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,compact_numerical_claims_ledger.csv,copied_read_only,78 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/chapter_number_targets.csv,chapter_number_targets.csv,copied_read_only,9 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/forbidden_overclaim_matrix.csv,forbidden_overclaim_matrix.csv,copied_read_only,10 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/uncertainty_admission_labels.csv,uncertainty_admission_labels.csv,copied_read_only,37 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/source_number_index.csv,source_number_index.csv,copied_read_only,22 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_matrix_ledger_study_dispatch/source_packet_routing.csv,source_packet_routing.csv,copied_read_only,7 data rows plus header
+work_products/2026-07/2026-07-22/2026-07-22_thesis_matrix_ledger_study_dispatch/writer_use_protocol.md,writer_use_protocol.md,copied_read_only,Protocol copied exactly

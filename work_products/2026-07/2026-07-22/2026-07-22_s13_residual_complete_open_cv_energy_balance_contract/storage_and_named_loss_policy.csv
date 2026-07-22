@@ -1,0 +1,4 @@
+term,default_status,zero_allowed_if,forbidden_use
+Q_storage_W,missing_not_zero,time-window drift and same-window UQ prove storage is negligible,tuning steady residuals or hiding heat in internal Nu
+Q_other_named_losses_W,missing_not_zero,owner-lane manifest proves no additional loss/source path exists,"collapsing wall, radiation, cooler, contact, storage, or residual into internal Nu"
+R_E,not_computed_until_complete,all same-basis terms exist and residual is within same-QOI UQ,declaring closure from Q_wall/source partition alone

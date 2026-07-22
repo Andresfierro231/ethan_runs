@@ -1,0 +1,4 @@
+case_id,time_window_s,interface_area_m2,mdot_exchange_net_proxy_kg_s,tau_recirc_proxy_s,source_side_q_net_W,evidence_role,production_harvest_allowed
+salt_2,7915,0.0623473180949,-1.47315450054e-06,868.807159089,166.349260094,diagnostic_thesis_evidence_only,false
+salt_3,7618,0.0623473180949,-3.65924508308e-06,547.838912867,183.730361326,diagnostic_thesis_evidence_only,false
+salt_4,10000,0.0623473180949,2.79583272034e-06,301.390653047,205.373184962,diagnostic_thesis_evidence_only,false

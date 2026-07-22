@@ -1,0 +1,5 @@
+item,runtime_allowed,fit_allowed,diagnostic_allowed,reason
+TP bulk projection target,False,False,True,TP/TW rows remain post-solve comparison targets only.
+D2 TP/TW offsets,False,False,True,Offsets were constructed from train residuals for diagnostic transfer only.
+thermal-development bulk-to-TP correction,False,False,True,"Promising but missing source-bounded formula, same-QOI uncertainty, and release labels."
+TW wall/boundary correction after TP,False,False,True,TW should be interpreted after the TP projection layer is bounded.

@@ -1,0 +1,6 @@
+priority,next_study,why,success_signal
+1,signed_source_property_heat_path_release_preflight,"MF12a/MF12b cannot be written as runtime formulas until q_setup, cp, source placement, and sign conventions are released","source/property rows for cooler, heater, test-section, and passive/downcomer families are released or fail closed with exact missing fields"
+2,same_qoi_tp_projection_uq,"D2 improves TP strongly, but the TP projection itself is still a post-solve target comparison, not a released runtime observable",TP projection uncertainty table with same-QOI labels and runtime-legality status
+3,runtime_wall_profile_basis_for_tp_projection,D3 wall-shape signal suggests a wall/core profile contribution to TP/TW residuals,source-bounded wall-profile model or explicit fail-closed wall-profile gap table
+4,train_only_mf12_formula_smoke_after_release,Only after the source and projection gates pass should a train/support smoke run compare MF12 formulas,train/support metrics and runtime-leakage audit; validation/holdout/external rows not used
+5,tw_after_tp_residual_ownership,"Once TP projection is separated, TW residual can be attributed to wall/source/axial mixing rather than bulk thermal error",TW residual-owner table after subtracting released or diagnostic TP projection

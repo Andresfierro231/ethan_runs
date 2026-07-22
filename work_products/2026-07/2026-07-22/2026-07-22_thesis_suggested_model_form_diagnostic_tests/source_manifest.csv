@@ -1,0 +1,5 @@
+path,used,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/signed_sensor_errors.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch/model_form_error_reduction_targets.csv,True,read_only

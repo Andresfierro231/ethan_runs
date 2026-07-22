@@ -1,0 +1,15 @@
+{
+  "date": "2026-07-20",
+  "fitting_performed": false,
+  "freeze_gate_pass": true,
+  "freeze_id": "FINAL_FREEZE_SALT1_4_NOMINAL_2026_07_20",
+  "generated_at_utc": "2026-07-20T15:55:07.307757+00:00",
+  "holdout_excluded_rows": 8,
+  "holdout_exclusion_pass": true,
+  "native_solver_outputs_mutated": false,
+  "next_required_action": "fit_or_select_candidate_model_using_only_final_freeze_manifest_rows",
+  "nominal_rows_frozen": 4,
+  "prediction_model_freeze_created": false,
+  "salt1_schema_parity_closed": true,
+  "task": "TODO-PREDICT-SALT1-4-NOMINAL-FINAL-FREEZE"
+}

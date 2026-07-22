@@ -1,0 +1,2 @@
+candidate_id,decision,retry_row_recommended,launch_allowed_in_this_task,sampler_allowed_now,f6_scoring_allowed_now,reason,alternative
+CAND-001,write_scheduler_safe_retry_runbook_no_launch,true,false,false,false,prior high-heat/no-recirculation attempts timed out before terminal source evidence; current endpoint/source/UQ gates remain closed,CAND-002 corrected +/-10Q fallback terminal-readiness audit if CAND-001 compute is deferred

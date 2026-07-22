@@ -1,0 +1,5 @@
+case,case_id,scenario,root_status,root_rejection_reason,accepted_for_validation,pressure_root_bracketed,temperature_root_bracketed,temperature_periodicity_error_K,mdot_kg_s,qhx_total_W,qambient_total_W
+Salt 1,salt_1,tswfc2_smoke_salt2_four_node_v1,accepted,,True,True,True,1.247713043994736e-09,0.019690419543584803,49.628045902034124,219.67233978043257
+Salt 2,salt_2,tswfc2_smoke_salt2_four_node_v1,accepted,,True,True,True,8.847109711496159e-10,0.0221909170412141,54.298684928642835,248.401721404496
+Salt 3,salt_3,tswfc2_smoke_salt2_four_node_v1,accepted,,True,True,True,-1.8533228285377845e-09,0.02440139973612717,58.43700819936592,276.06342224508677
+Salt 4,salt_4,tswfc2_smoke_salt2_four_node_v1,accepted,,True,True,True,-1.5938894648570567e-09,0.026964136779488168,63.524601028831114,311.0758651523839

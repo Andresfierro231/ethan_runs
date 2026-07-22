@@ -1,0 +1,22 @@
+{
+  "task": "TODO-S8-S12-THERMAL-RESIDUAL-OWNERSHIP-GATE-2026-07-21",
+  "status": "complete",
+  "decision": "needs_more_physical_basis",
+  "evidence_families_reviewed": 5,
+  "basis_rows": 16,
+  "candidate_count_released": 0,
+  "s11_unblocked": false,
+  "s15_unblocked": false,
+  "s6_unblocked": false,
+  "fluid_solve_run": false,
+  "validation_rows_scored": 0,
+  "holdout_rows_scored": 0,
+  "external_test_rows_scored": 0,
+  "fit_or_model_selection": false,
+  "source_property_release": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "residual_absorbed_into_internal_nu": false
+}

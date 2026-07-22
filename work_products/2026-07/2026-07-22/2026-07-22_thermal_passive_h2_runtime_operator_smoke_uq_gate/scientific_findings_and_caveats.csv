@@ -1,0 +1,5 @@
+evidence,finding,finding_id,interpretation,release_status
+operator_smoke_rows=40; operator_family_rows=5; runtime leakage flags false,The passive_H2 runtime operator is executable without forbidden runtime inputs.,F01,"The row passes as a smoke/UQ gate, not as a heat-loss release.",smoke_pass_no_release
+nominal_conv=216.779 W; nominal_rad=656.493 W,The diagnostic operator is radiation dominated at the current predicted wall states.,F02,Radiation/runtime-basis semantics need a follow-up before any numeric passive q-loss release.,diagnostic_only
+radiation rows in mdot/heat and TP/TW sensitivity are zero; local operator radiation_off delta is large.,"The model radiation_on setup-UQ variant does not move mdot, heat ledger, or TP/TW in the existing smoke.",F03,Do not claim radiation implementation admission; treat radiation as a targeted follow-up.,blocked_for_radiation_admission
+max_abs_delta_mdot=0.000933618 kg/s; max_abs_delta_qambient=7.18208 W,"Existing setup-UQ still provides useful mdot, TP/TW, and heat-ledger sensitivity context.",F04,"Use these as train-only support evidence only, with no scoring or fitting.",supporting_uq_only

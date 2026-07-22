@@ -2,8 +2,8 @@
 provenance:
   - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/summary.json
   - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/dominant_thermal_residual_owners.csv
-  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_h_heatloss_network_sensitivity/sensitivity_matrix.csv
-tags: [forward-model, external-bc, thermal-residual, runtime-leakage]
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/repair_candidate_manifest.csv
+tags: [journal, fluid, external-bc, train-support, diagnostics, no-admission]
 related:
   - .agent/status/2026-07-21_TODO-FLUID-EXTBC-FJ-PARALLEL-DIAGNOSTICS-2026-07-21.md
   - imports/2026-07-21_fluid_extbc_fj_parallel_diagnostics.json
@@ -12,71 +12,47 @@ date: 2026-07-21
 role: Forward-pred/Thermal-modeling/Implementer/Tester/Writer
 type: journal
 status: complete
+supersedes: []
+superseded_by:
 ---
 # Fluid External-BC F-J Parallel Diagnostics
 
 ## Attempted
 
-Claimed a single non-overlapping F-J task row and implemented a task-local
-builder/checker under
-`work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/`.
-The builder uses completed Phase E as the baseline, recomputed a local
-validation-provenance table for segment-level attribution, and wrote F/G/H/I/J
-subpackages.
-
-The original Phase H implementation attempted the full foreground sensitivity
-matrix. The first non-baseline perturbation exceeded practical foreground
-runtime and had to be interrupted. A signal-based timeout guard also did not
-interrupt the Fluid call promptly. The final implementation therefore records
-non-baseline sensitivity rows as blocked for a separate compute-safe row rather
-than leaving the agent in an unbounded login-node solve.
+Validated the completed F-J train/support diagnostics package. The package
+recomputes or loads the Phase E Salt2 baseline, decomposes thermal residuals by
+segment/source role, audits external-BC dictionary coverage, evaluates bounded
+heat-loss sensitivities, checks runtime source/sink admissibility, and decides
+whether a one-change train repair can be run.
 
 ## Observed
 
-Phase E baseline remains executable and pressure-balanced:
-`mdot=0.006265675 kg/s`, pressure residual `-1.301687e-06 Pa`, and accepted
-root. Temperature residuals remain large: all-probe MAE `81.582 K`, TP MAE
-`80.249 K`, TW MAE `82.187 K`, max absolute error `109.094 K`.
-
-The dominant residual owner is `heated_incline` with dominant sensor `TW5`.
-The lower-leg ambient-wall source-family row has the same top residual
-ownership. Downcomer/right-vertical and cooling/junction top-exit rows are the
-next major owners.
-
-Phase G confirms Salt1 is missing from the current external-BC dictionary
-(`8` expected rows missing), while Salt2/Salt3/Salt4 dictionary rows exist.
-Document-only source/sink rows are present (`9`) but not runtime-admitted.
-Unit/sign checks on present rows pass.
-
-Phase I admits no source/sink runtime input. The current heater/cooler/test
-section rows trace to diagnostic CFD wallHeatFlux paths and remain forbidden.
+The train/support baseline remains finite but thermally poor: all-probe RMSE is
+about `83.36 K`. The largest residual owner is `heated_incline`, with a maximum
+absolute residual of about `109.09 K`. The dictionary audit has no unit/sign
+failures, but Salt1 expected rows are still absent. Phase H ran only diagnostic
+sensitivity rows; most sensitivity rows are blocked by policy. Phase I admits
+no runtime source/sink rows. Phase J therefore correctly stops at
+`blocked_no_repair_candidate` and does not run a repair solve.
 
 ## Inferred
 
-The Phase E result is useful as a train-only diagnostic baseline, but it is not
-a predictive temperature candidate. The evidence points first to heated-incline
-thermal ownership and source/sink admissibility, not to a final scorecard.
+The next predictive-model work should target the heated-incline wall/test
+section residual owner with train/support diagnostics. The current evidence
+does not justify candidate freeze, final scoring, validation/holdout/external
+evaluation, or a hidden residual repair term.
 
-Because Phase H perturbation solves did not complete safely in foreground, the
-next rigorous sensitivity step should be a separately claimed compute-safe row
-that runs each predeclared perturbation in an isolated subprocess or scheduler
-job with hard wall-clock limits and partial-result flushing.
+## Contradictions Or Caveats
 
-## Caveats
-
-The Phase F provenance table uses a recomputed Phase E-style local Fluid
-baseline generated before the interrupted sensitivity attempts. This is a
-post-solve train reference join and is not a validation/holdout/external score.
-
-The Phase H matrix is a disposition matrix, not a completed sensitivity
-scorecard. It records exactly which perturbations should run next and why they
-were not completed in this foreground package.
+The package is useful for residual ownership and runtime legality, not for
+model selection. It intentionally consumes no validation, holdout, or external
+test rows.
 
 ## Next Useful Actions
 
-Claim a compute-safe Phase H follow-up row that runs one sensitivity at a time
-with subprocess timeout, per-row output flushing, and no branch-on-score
-selection. Prioritize `lower_leg_hA_scale_0.5/2.0`, then global hA scale, then
-ambient drive perturbations. Do not run Phase J repair until Phase G releases a
-deterministic mapping/unit/sign correction or Phase I releases one setup-known
-source/sink field.
+1. Open a narrow train/support diagnostic row for heated-incline TW5/TW6,
+   axial-mixing, or upcomer-stratification mechanisms.
+2. Keep source/sink runtime inputs denied unless a future source/property row
+   explicitly admits them.
+3. Defer freeze/admission and final predictive scoring until source/property,
+   uncertainty, and split-role gates pass.

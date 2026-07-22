@@ -1,0 +1,7 @@
+basis_step,current_evidence,status,compatible_with_F6_now,allowed_use,forbidden_use,next_requirement
+gross_static_pressure_rise,Salt2/Salt3/Salt4 gross rises about 3 kPa,available_context,false,show hydrostatic dominance context,local loss coefficient target,do same-basis endpoint decomposition
+hydrostatic_head,hydrostatic fraction of gross approximately 1.0 for all rows,dominant_owner,false,pressure basis ladder and dominant owner,hide residual in component K,retain hydrostatic correction explicitly
+kinetic_correction,finite small negative kinetic terms exist for all rows,available_separate_term,false,basis decomposition,absorb kinetic term into K/F6,keep same endpoint basis
+straight_developing_reference,blocked_missing_same_basis_reference,missing_blocks_component_k,false,admission blocker,infer irreversible component loss without reference,generate same-basis straight/developing reference or fail closed
+section_effective_residual,Salt2/Salt3/Salt4 residuals negative and small relative to gross rise,diagnostic_section_effective_only,false,thesis evidence for throughflow-plus-recirculation pressure term,component K cluster K F6 fit clipped K hidden multiplier,admit only separate section-effective model after gates
+ordinary_F6_endpoint_basis,endpoint fields ready zero and ordinary candidate pairs zero,blocked,false,next harvest target,current F6 fit,terminal source plus finite endpoint p/p_rgh/U/rho/T/area/normal RAF/RMF/SVF

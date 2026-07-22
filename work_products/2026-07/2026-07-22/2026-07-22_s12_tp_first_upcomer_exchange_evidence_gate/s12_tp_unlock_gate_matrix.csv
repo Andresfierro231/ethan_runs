@@ -1,0 +1,9 @@
+gate,status,production_ready,blocks_s12_freeze,evidence,next_action
+tp_priority_declared,pass,False,False,User priority shifted from TW-dominant residual repair to TP-first thermal-level/exchange evidence.,Use TP as the primary S12 continuation QOI.
+finite_s12_hiax1_train_tp_context,pass_diagnostic,False,True,TP train RMSE = 80.4585733904668 K; candidate disposition = not_frozen.,Do not freeze; use only as train-only stress signal.
+finite_exchange_proxy_rows,pass_diagnostic,False,True,"3 retained-window rows have finite mdot_exchange proxy, tau proxy, wall/core T, and source-side q.",Convert proxies into production-harvested QOIs before promotion.
+exact_pressure_and_qwall_target_window,partial_release,False,True,exact pressure released=True; Q_wall_W released=True; production sampler refresh remains separate.,Join exact pressure/Qwall to exchange rows without relabeling source-side Q as wall heat flux.
+source_property_conservation_release,fail,False,True,0 source/property-release rows allowed out of 3.,"Release cp, property mode, source validity envelope, source use category, pressure/enthalpy basis, and energy residual equation."
+same_qoi_uq,fail,False,True,0 same-QOI UQ-ready rows out of 4.,Run same-label target-minus/target-plus and mesh/GCI UQ after exact QOI contract.
+production_harvest,blocked,False,True,"target-window heat-flow basis exists, but same-QOI UQ and residual/source-property release are missing",Claim a production-harvest row only after source/property and same-QOI UQ are ready.
+validation_holdout_external_scoring,not_consumed,False,False,This package consumes existing train/diagnostic evidence only and performs no protected split scoring.,Keep protected splits closed until a frozen runtime-legal S12 candidate exists.

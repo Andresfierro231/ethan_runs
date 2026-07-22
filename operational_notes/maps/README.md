@@ -38,6 +38,7 @@ old doc.
 | Geometry & mesh truth | `geometry-and-mesh-truth.md` | #geometry #mesh-truth |
 | Thermal boundary & radiation | `thermal-boundary-and-radiation.md` | #thermal-parity #rcExternalTemperature #radiation |
 | Literature synthesis & gates | `literature-synthesis-and-gates.md` | #litrev-synthesis #closure-ledger |
+| Latest LitRev modeling handoff | `../../reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md` | #litrev-synthesis #model-forms #source-gates |
 | Thesis and weekly presentation dossier | `../../reports/thesis_dossier/README.md` | #thesis-dossier #weekly-presentation #thesis-source |
 | Project mission & scientific questions | `../07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md` | #mission #scientific-questions #coordination |
 | Agent operations & repo efficiency | `agent-operations.md` | #agent-operations #coordination #tooling |
@@ -54,6 +55,7 @@ old doc.
 
 - `operational_notes/07-26/13/2026-07-13_external_report_research_index_and_blocker_audit.md`
 - `operational_notes/07-26/14/2026-07-14_PROJECT_MISSION_AND_SCIENTIFIC_QUESTIONS.md`
+- `reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md`
 - `reports/thesis_dossier/README.md`
 - `.agent/STATE.md`
 - `.agent/BLOCKERS.md`

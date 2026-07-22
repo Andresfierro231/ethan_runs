@@ -1,0 +1,7 @@
+guard_id,status,policy
+native_outputs,read_only,no CFD/OpenFOAM output mutation or OpenFOAM postprocessing launch
+scheduler,not_used,checklist builder is lightweight and does not submit sbatch/srun
+sampler_harvest,not_launched,"surface/input, Q_wall/source, and UQ gates must pass first"
+admission,blocked,"no coefficient, S11, S12, S15, or S6 trigger from geometry-only or diagnostic rows"
+internal_Nu,protected,heat residual must remain separate; do not absorb it into internal Nu
+external_repos,read_only,no Fluid or external repository edits

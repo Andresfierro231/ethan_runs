@@ -1,0 +1,8 @@
+source_id,case_label,physical_case,property_model,branch,segment,re_effective,pr_effective,nu_effective,htc_effective_w_m2_k
+val_salt_test_2_coarse_mesh_laminar,Salt 2 Val,Salt 2,val,left_lower_leg,left_lower_leg,102.75164352549643,20.60722428812114,4.230616665159522,104.4579128869769
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2 Jin,Salt 2,jin,left_lower_leg,left_lower_leg,92.46458400423055,22.060551020049957,3.9243500348142626,96.69312883691161
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2 Kirst,Salt 2,kirst,left_lower_leg,left_lower_leg,76.09578330560107,24.93228517155973,3.1465036613965633,77.51253363455604
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,Salt 3,jin,left_lower_leg,left_lower_leg,122.20861112776016,18.837256419710666,5.090273089410228,126.07875770540457
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,Salt 3,kirst,left_lower_leg,left_lower_leg,100.41970549495453,21.43822530740568,4.1526168448897165,102.88348887215926
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,Salt 4,jin,left_lower_leg,left_lower_leg,165.23372157328848,15.742972844558459,6.761028035533995,168.76486418265512
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,Salt 4,kirst,left_lower_leg,left_lower_leg,133.32263038511107,18.221026163745595,5.297303743555994,132.26796490726883

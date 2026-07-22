@@ -1,0 +1,12 @@
+{
+  "job_id": "3297845",
+  "job_name": "cqp_stage",
+  "submit_host": "login3.ls6.tacc.utexas.edu",
+  "submit_time_local": "2026-07-15T17:45:00-05:00",
+  "submit_command": "ssh login3.ls6.tacc.utexas.edu 'cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/sbatch_staged_closure_qoi_pressure.sh'",
+  "initial_squeue_state": "PD",
+  "initial_squeue_reason": "Priority",
+  "account": "ASC23046",
+  "partition": "NuclearEnergy",
+  "native_outputs_mutated": false
+}

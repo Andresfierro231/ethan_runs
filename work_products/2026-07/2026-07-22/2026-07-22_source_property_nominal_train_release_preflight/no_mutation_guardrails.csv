@@ -1,0 +1,15 @@
+guardrail,value
+native_solver_outputs_mutated,False
+registry_mutated,False
+scheduler_action,False
+external_fluid_edit,False
+validation_holdout_external_scoring,False
+fitting_or_model_selection_performed,False
+source_property_release,False
+protected_row_release,False
+candidate_freeze,False
+coefficient_admission,False
+s11_s12_s13_s15_s6_trigger,False
+blocker_register_change,False
+generated_index_refresh,False
+residual_absorbed_into_internal_nu,False

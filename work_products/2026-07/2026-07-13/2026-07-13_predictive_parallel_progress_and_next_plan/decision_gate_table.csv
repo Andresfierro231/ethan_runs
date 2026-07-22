@@ -1,0 +1,12 @@
+gate,required_before,pass_condition,current_status,next_owner
+runtime_input_contract,any predictive score,"all runtime inputs are physical setup/calibrated parameters; validation targets and diagnostic CFD evidence excluded",pass,"none"
+validation_split,any fitted correction,"salt_2 train salt_3 validation salt_4 holdout; corrected-Q and low-heat blocked until admission",pass,"none"
+full_solve_case_confirmation,forward-v1 confidence,"solve_case results agree with or explain fast_scan residuals for mdot pressure and thermal proxies",pending,"Agent A"
+hydraulic_correction_gate,thermal fitting,"mdot/pressure residual correction is evaluated using fit-safe pressure rows without changing thermal terms",open,"Agent B"
+hx_one_scalar_gate,HX/cooler predictive use,"one global or family scalar trained only on salt_2 and scored on salt_3/salt_4 without refit",partial,"Agent C"
+external_bc_dictionary,predictive wall-boundary claim,"h Ta Tsur emissivity layers and drive selectors represented without fixed realized wallFlux or double radiation",open,"Agent D"
+thermal_mesh_sign_gate,internal Nu UA HTC fitting,"thermal QOIs pass sign heat-balance mesh-family and downcomer policy checks",open,"Agent E"
+sensor_map_gate,TP/TW score claim,"sensor coordinates/path mapping and uncertainty are documented; sensor temperatures remain validation targets",open,"Agent F"
+corrected_q_admission,corrected-Q validation,"row-specific latest/terminal gate admits symmetric rows; no training use unless split is revised",blocked,"AGENT-290/AGENT-261 style followon"
+low_heat_admission,low-heat extrapolation claim,"exact source path source contract and input contract are requalified",blocked,"future admission agent"
+

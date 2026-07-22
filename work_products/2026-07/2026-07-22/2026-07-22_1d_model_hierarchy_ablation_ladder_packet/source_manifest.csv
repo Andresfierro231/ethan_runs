@@ -1,0 +1,9 @@
+source_key,path,exists,read_only
+master_scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,true,yes
+setup_only_uq,work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/summary.json,true,yes
+s12_thermal,work_products/2026-07/2026-07-22/2026-07-22_s12_thermal_residual_candidate_disposition_and_thesis_panels/summary.json,true,yes
+pressure_basis,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,true,yes
+recirc_onset,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/summary.json,true,yes
+pm10_terminal,work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/summary.json,true,yes
+sensor_projection,work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/summary.json,true,yes
+amx1_handoff,work_products/2026-07/2026-07-22/2026-07-22_1d_amx1_axial_mixing_fluid_api_handoff/summary.json,true,yes

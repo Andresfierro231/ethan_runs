@@ -1,0 +1,6 @@
+source_type,path,used_for,mutation_status
+input,work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation,UMX1 API contract and guardrails,read_only
+input,work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract,runtime input contract and executable Salt2-4 rows,read_only
+input,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv,canonical split discipline and Salt1 blocker,read_only
+input,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid,read-only Fluid solve_case import,read_only
+output,work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer,UMX1 dry/smoke scorer package,mutated

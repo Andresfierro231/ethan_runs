@@ -1,0 +1,6 @@
+source_id,path,use
+AGENT-393,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution,"sensor, hydraulic, PM5 decision, and gate delta inputs"
+AGENT-394,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_next_step_execution_from_overnight,overnight intake and action queue
+AGENT-401,work_products/2026-07/2026-07-15/2026-07-15_active_row_cleanup_and_forward_work_readiness,active-row/readiness guardrails
+AGENT-402,work_products/2026-07/2026-07-15/2026-07-15_salt_forward_v1_unblock,salt training/HX/sensor action inputs
+AGENT-404-status,.agent/status/2026-07-15_AGENT-404.md,active PM5 parser repair claim

@@ -1,0 +1,5 @@
+source_id,path,use
+test_section_setup_hA_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,setup-only hA/geometry and Salt2 train scoring target; Salt3/Salt4 targets scoring only
+test_section_boundary_form_bakeoff,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff/test_section_model_result_ledger.csv,diagnostic M3/negative-source/prescribed-loss comparison
+test_section_probe_summary,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff/test_section_temperature_probe_summary.csv,diagnostic TP/TW RMSE for boundary-form bakeoff modes
+m2_m3_case_mode_matrix,work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv,existing M2/M3 mdot and temperature error comparison

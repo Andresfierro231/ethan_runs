@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-17",
+  "diagnostic_blocked_rows": 3,
+  "external_fluid_edit": "none",
+  "extractor_rows": 3,
+  "gate_fail_rows": 15,
+  "generated_at_utc": "2026-07-17T21:44:36+00:00",
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "missing_endpoint_pressure_rows": 3,
+  "native_output_mutation": "none",
+  "negative_K_local_rows": 3,
+  "ordinary_admitted_rows": 0,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_extractor",
+  "queue_rows": 5,
+  "registry_mutation": "none",
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "solver_or_postprocessing_launched": "none",
+  "source_rows": 8,
+  "task": "AGENT-530"
+}

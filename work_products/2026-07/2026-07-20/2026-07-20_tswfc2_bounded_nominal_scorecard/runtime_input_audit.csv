@@ -1,0 +1,9 @@
+gate_id,status,evidence,guardrail
+predictive_mode,pass,predictive_airside_hx,setup-only forward prediction runtime inputs
+no_imposed_qhx,pass,,setup-only forward prediction runtime inputs
+no_3d_source_profile,pass,False,setup-only forward prediction runtime inputs
+no_3d_segment_losses,pass,False,setup-only forward prediction runtime inputs
+no_3d_contract_case_id,pass,,setup-only forward prediction runtime inputs
+tswfc2_distributed_mode,pass,distributed_wall_fluid_nodes_v1,setup-only forward prediction runtime inputs
+exact_four_tswfc2_nodes,pass,4,setup-only forward prediction runtime inputs
+validation_records_not_runtime_inputs,pass,validation loaded only after solve_case returns,setup-only forward prediction runtime inputs

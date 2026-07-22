@@ -1,0 +1,20 @@
+{
+  "bulk_to_tp_correction_release": false,
+  "coefficient_admission": false,
+  "created_utc": "2026-07-22T14:55:32.983223+00:00",
+  "d2_transfer_tp_rmse_K_read_only": 4.38159298515,
+  "decision": "same_qoi_tp_projection_uq_fail_closed_no_runtime_temperature_release",
+  "m3_transfer_tp_rmse_K_read_only": 13.5673279702,
+  "n4_runtime_temperature_allowed_rows": 0,
+  "new_validation_holdout_external_scoring": false,
+  "projection_operator_bulk_to_tp_released": false,
+  "quantitative_same_qoi_uq_ready_rows": 0,
+  "residual_absorbed_into_internal_nu": false,
+  "runtime_temperature_allowed_rows": 0,
+  "runtime_temperature_input_release": false,
+  "same_qoi_label_rows": 6,
+  "same_qoi_projection_release_ready_rows": 0,
+  "source_property_release": false,
+  "task_id": "TODO-MF14-SAME-QOI-TP-PROJECTION-UQ-GATE-2026-07-22",
+  "tp_rows": 6
+}

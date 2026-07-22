@@ -1,0 +1,12 @@
+{
+  "admitted_candidates": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 24,
+  "coupled_status_counts": {
+    "completed": 24
+  },
+  "created_utc": "2026-07-17T21:36:03.335865+00:00",
+  "task": "AGENT-522",
+  "why": "No wall thermal-circuit candidate has passed validation and holdout mdot, TP, TW, and all-probe gates vs M3."
+}

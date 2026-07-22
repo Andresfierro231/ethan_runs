@@ -1,0 +1,13 @@
+gate_id,current_state,required_for_freeze,evidence,next_action
+baseline_contract_ready,pass,yes,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/baseline_model_contract.csv,use as starting point for later model-specific rows
+source_property_fit_release,fail,yes,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,fit_allowed_after_source_property_gate=0
+corrected_split_freeze_exists,fail,all blind/current holdout/external rows,AGENT-499 found no corrected Salt1-4 nominal freeze,Create admitted final freeze from Salt1-4 nominal only after model candidate admission.
+candidate_admitted,fail,all rows,AGENT-498/499 report 0 admitted wall/test-section/coupled candidates,Resolve wall/test-section/source-placement/axial-mixing blockers before freeze.
+blind_rows_excluded_from_fit,pass,holdout/external integrity,"case partition contract sets fit/model_selection no for Salt2 +/-5Q, val_salt2, PM10, and new CFD",Keep this invariant in any future scorer.
+pm10_terminal_admission,fail_live_or_pending_jobs,future +/-10Q rows,PM10 watch rows remain blocked by live/pending jobs in the cited readiness package,Monitor/admit after terminal state in a separate task.
+new_cfd_admission,fail_not_run,future new CFD row,Salt3 Q x insulation matrix is proposed and not admitted,Run/admit new CFD before adding it to scoring.
+stage_external_bc_dictionary,next_repo_local_contract,yes,work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv,Refresh external BC dictionary coverage against fluid+walls roles before Fluid edits.
+stage_pressure_source_envelope,next_hydraulic_gate,yes,work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv,Run pressure basis/recovery/source-envelope audit before F6 or K fitting.
+stage_heat_loss_network,next_thermal_gate,yes,work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv,Align heat-loss network and wall/test-section candidate contracts before coupled grids.
+stage_recirculation_guard,next_hybrid_gate,yes,work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv,Build single-stream disable table and throughflow-plus-recirculation interface.
+stage_final_scorecard,blocked_until_candidate_freeze,yes,work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv,Join predictions only after an admitted frozen candidate exists.

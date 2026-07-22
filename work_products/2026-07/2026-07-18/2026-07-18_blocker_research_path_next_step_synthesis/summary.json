@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-18",
+  "external_fluid_edit": "none",
+  "generated_at_utc": "2026-07-18T18:59:57+00:00",
+  "generated_index_refresh": "not_run_synthesis_package_only",
+  "native_output_mutation": "none",
+  "next_step_policy_counts": {
+    "design task no scheduler; future launch requires separate row": 1,
+    "no scheduler": 1,
+    "no scheduler or solver until API contract exists": 1,
+    "no solver in contract task": 1,
+    "scheduler/postprocessing only in a separately claimed row": 1
+  },
+  "next_steps": 5,
+  "open_blocker_ids": [
+    "f6-friction-re-correction",
+    "predictive-wall-test-section-submodels",
+    "upcomer-onset-data-sparsity"
+  ],
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis",
+  "registry_mutation": "none",
+  "research_paths": 6,
+  "resolved_or_superseded_blockers_excluded": 8,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "solver_or_postprocessing_launch": "none",
+  "task": "AGENT-539",
+  "top_next_step": "NS1_fluid_umx1_api_row",
+  "umx1_grid_status": "blocked_no_real_hook",
+  "verified_open_blockers": 3
+}

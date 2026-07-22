@@ -1,0 +1,12 @@
+{
+  "admitted_candidates": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 9,
+  "coupled_status_counts": {
+    "completed": 9
+  },
+  "created_utc": "2026-07-17T21:47:21.117103+00:00",
+  "task": "AGENT-513",
+  "why": "No wall-temperature-drive candidate has passed validation and holdout mdot, all-probe, and TW gates vs M3."
+}

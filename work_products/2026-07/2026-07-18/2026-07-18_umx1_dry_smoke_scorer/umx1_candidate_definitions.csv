@@ -1,0 +1,4 @@
+candidate_id,upcomer_mixing_mode,upcomer_exchange_multiplier,upcomer_exchange_parent_segments,candidate_role,fit_allowed,model_selection_allowed,admission_status,notes
+UMX1_disabled_baseline,disabled,0,left_lower_vertical;test_section;left_upper_vertical,no_op_baseline_contract_check,false,false,not_admitted_smoke_only,Verifies AGENT-540 no-op default path.
+UMX1_exchange_0p01,energy_conserving_exchange_v1,0.01,left_lower_vertical;test_section;left_upper_vertical,low_exchange_smoke,false,false,not_admitted_smoke_only,"Predeclared smoke point, not selected from residuals."
+UMX1_exchange_0p05,energy_conserving_exchange_v1,0.05,left_lower_vertical;test_section;left_upper_vertical,higher_exchange_smoke,false,false,not_admitted_smoke_only,"Predeclared smoke point, not selected from residuals."

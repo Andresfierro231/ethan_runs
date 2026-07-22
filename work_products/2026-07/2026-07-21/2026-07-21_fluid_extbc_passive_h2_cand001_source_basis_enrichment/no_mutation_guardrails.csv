@@ -1,0 +1,13 @@
+guardrail,value
+fluid_solve_run,false
+native_output_mutation,false
+registry_or_admission_mutation,false
+scheduler_action,false
+external_fluid_edit,false
+validation_holdout_external_scoring,false
+fit_or_model_selection,false
+global_hA_multiplier_selection,false
+repair_execution,false
+source_property_release,false
+s11_s15_s6_trigger,false
+residual_absorbed_into_internal_nu,false

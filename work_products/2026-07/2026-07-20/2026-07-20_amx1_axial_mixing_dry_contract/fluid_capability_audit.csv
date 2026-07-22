@@ -1,0 +1,8 @@
+capability,current_state,evidence,impact,next_action
+upcomer_exchange,available,ScenarioConfig includes upcomer_mixing_mode and upcomer_exchange_multiplier; validator accepts energy_conserving_exchange_v1,UMX1 exchange can run but AGENT-558 found exchange-only score behavior not ready,Use only as optional AMX1b component after AMX1a smoke.
+distributed_wall_fluid_nodes,available,ScenarioConfig includes test_section_wall_fluid_mode and validator accepts distributed_wall_fluid_nodes_v1,TSWFC2 smoke and bounded scorecard can run but AGENT-557 did not admit candidate,Do not repeat without new physics.
+axial_mixing_mode,missing,no ScenarioConfig field and no validator accepted axial mixing mode,AMX1a cannot be represented in current Fluid scenarios,Add disabled-by-default axial_mixing_mode with accepted value segment_diffusion_v1.
+axial_mixing_multiplier,missing,no ScenarioConfig field or config-loader serialization,No bounded scalar can be passed through YAML/API,Add nonnegative scalar default 0.0 and serialize in config loader outputs.
+axial_mixing_parent_segments,missing,no ScenarioConfig field or target validation,Cannot constrain exchange to upcomer/test-section bridge,Add list field defaulting to empty or documented AMX1 parent segments.
+axial_mixing_ledgers,missing,no segment ledger columns for axial pairwise exchange,Smoke cannot verify nonzero conservative AMX1 action,Add pairwise and net/residual ledger fields.
+salt2_smoke_scenario,blocked_by_missing_api,scenario YAML would be rejected today because axial_mixing_mode is unsupported,Smoke would not test AMX1 physics,Claim separate Fluid row then run Salt2 smoke only.

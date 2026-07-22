@@ -1,0 +1,60 @@
+{
+  "generated_at": "2026-07-08T15:14:26",
+  "task": "TODO-PATCHWISE-HEAT-LEDGER",
+  "rows": 24,
+  "source_ids": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "patch_groups": {
+    "ambient_wall": 12,
+    "cooler": 3,
+    "heater": 3,
+    "junction_other": 3,
+    "test_section": 3
+  },
+  "aggregate_wall_flux": {
+    "viscosity_screening_salt_test_2_jin_coarse_mesh": {
+      "heater_imposed_duty_W": 265.7,
+      "heater_input_W": 243.519,
+      "heater_imposed_minus_wallHeatFlux_W": 22.181,
+      "cooler_imposed_duty_W": -136.351,
+      "cooler_removal_W": -136.351,
+      "test_section_wallHeatFlux_W": -5.68,
+      "net_wallHeatFlux_W": 0.127,
+      "net_fraction_of_heater": 0.000519,
+      "max_abs_segment_enthalpy_residual_W": 162.437
+    },
+    "viscosity_screening_salt_test_3_jin_coarse_mesh": {
+      "heater_imposed_duty_W": 297.5,
+      "heater_input_W": 273.155,
+      "heater_imposed_minus_wallHeatFlux_W": 24.345,
+      "cooler_imposed_duty_W": -150.77,
+      "cooler_removal_W": -150.77,
+      "test_section_wallHeatFlux_W": -10.545,
+      "net_wallHeatFlux_W": 0.286,
+      "net_fraction_of_heater": 0.001048,
+      "max_abs_segment_enthalpy_residual_W": 135.569
+    },
+    "viscosity_screening_salt_test_4_jin_coarse_mesh": {
+      "heater_imposed_duty_W": 337.6,
+      "heater_input_W": 310.487,
+      "heater_imposed_minus_wallHeatFlux_W": 27.113,
+      "cooler_imposed_duty_W": -169.227,
+      "cooler_removal_W": -169.227,
+      "test_section_wallHeatFlux_W": -16.769,
+      "net_wallHeatFlux_W": 0.079,
+      "net_fraction_of_heater": 0.000255,
+      "max_abs_segment_enthalpy_residual_W": 162.689
+    }
+  },
+  "validation_errors": [],
+  "validation_passed": true,
+  "limitations": [
+    "junction rows are not bracketed by endpoint enthalpy segments",
+    "upcomer enthalpy residuals are diagnostic only because endpoint recirculation fractions are high",
+    "specified-Q boundary rows without layer/h metadata do not expose a complete external resistance sub-stack",
+    "surface emissivity boundary metadata exists, but radiation is absent unless OpenFOAM exposes a qr output term"
+  ]
+}

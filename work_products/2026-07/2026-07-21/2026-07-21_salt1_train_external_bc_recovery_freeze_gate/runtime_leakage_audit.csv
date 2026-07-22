@@ -1,0 +1,5 @@
+audit_id,rows_checked,status,evidence,runtime_allowed
+salt1_setup_fields_recovered,4,pass,Salt1 ambient-wall rows expose setup h/Ta/Tsur/emissivity fields,true
+predictive_wallheatflux_value_exclusion,19,pass,runtime dictionary contains policy/source paths but no realized heat-flux value column,false
+validation_holdout_external_exclusion,28,pass,this package emits train-only coverage and consumes 0 validation/holdout/external-test rows,false
+source_sink_document_only,9,pass,heater/cooler/test-section rows remain document-only unless later source-model admission releases them,document_only

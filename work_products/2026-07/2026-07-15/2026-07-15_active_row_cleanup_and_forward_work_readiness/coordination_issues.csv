@@ -1,0 +1,5 @@
+issue_id,severity,issue_type,affected_tasks,evidence,recommended_resolution
+missing_status_AGENT-394_2,medium,active_row_missing_status,AGENT-394,.agent/status/2026-07-15_AGENT-394.md,Create/locate status file or mark row complete if work already landed.
+missing_status_AGENT-305_77,medium,active_row_missing_status,AGENT-305,.agent/status/2026-07-15_AGENT-305.md,Create/locate status file or mark row complete if work already landed.
+missing_status_AGENT-266_112,medium,active_row_missing_status,AGENT-266,.agent/status/2026-07-15_AGENT-266.md,Create/locate status file or mark row complete if work already landed.
+completed_rows_still_in_active,medium,board_hygiene,AGENT-401;AGENT-393;AGENT-402;AGENT-392;AGENT-391;AGENT-375;AGENT-374;AGENT-372;AGENT-371;AGENT-390;AGENT-369;AGENT-370;AGENT-368;AGENT-367;AGENT-366;AGENT-364;AGENT-365;AGENT-362;AGENT-361;AGENT-360,172 active-table rows have non-active board status,Move completed rows out of Active during board cleanup; do not infer active ownership from them.

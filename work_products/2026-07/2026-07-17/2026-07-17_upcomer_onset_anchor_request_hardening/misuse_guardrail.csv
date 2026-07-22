@@ -1,0 +1,5 @@
+guardrail_id,forbidden_until,allowed_current_label,reason
+ordinary_Nu_fit,blocked_until_backflow_le_0p02_Ri_lt_0p30_same_window_fields_and_mesh_time_UQ,blocked_no_current_rows,AGENT-495 found zero current ordinary-fit rows and zero non-recirculating/transition anchors
+ordinary_f_D_fit,blocked_until_backflow_le_0p02_Ri_lt_0p30_same_window_fields_and_mesh_time_UQ,blocked_no_current_rows,pressure evidence must share window and section state with onset metrics and low-reverse-flow gate
+component_K_fit,blocked_until_backflow_le_0p02_Ri_lt_0p30_same_window_fields_and_mesh_time_UQ,blocked_no_current_rows,"component K requires pressure basis, straight-loss subtraction, non-recirculating flow, and uncertainty gates"
+transition_anchor_use,never_as_ordinary_fit_without_low_reverse_gate,onset_bracket_or_regime_classifier_only,0.02_to_0.10 reverse-flow band is useful for onset but not ordinary single-stream coefficients

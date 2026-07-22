@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,pass_read_only,read validated task-owned VTK exports only
+surface_extraction,blocked,no interface or wall VTK extraction from diagnostic masks
+harvest,blocked,no exchange-cell harvest until a face-closed recirculation volume and surface lanes exist
+pressure_f6,blocked_no_admission,S14 remains diagnostic/future-candidate only; no component K or F6 fit
+residual_lane,pass,do not absorb pressure or energy residual into internal Nu

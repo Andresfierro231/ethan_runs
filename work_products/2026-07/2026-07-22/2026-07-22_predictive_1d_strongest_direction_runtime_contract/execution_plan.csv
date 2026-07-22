@@ -1,0 +1,5 @@
+order,row_to_claim,purpose,acceptance,may_run_now_from_this_packet,reason
+1,TODO-PASSIVE-H2-OUTER-INSULATION-RADIATION-RUNTIME-IMPLEMENTATION-2026-07-22,implement segment-local outer insulation convection/radiation operator,analytic tests pass and radiation-enabled heat ledger moves on train-context cases,False,requires separate external/runtime path claim
+2,TODO-SOURCE-PROPERTY-ROW-SPECIFIC-RELEASE-REPAIR-2026-07-22,repair strict source/property provenance for candidate rows,nonzero release-ready rows without source/property leakage into runtime,False,current release-ready count remains zero
+3,TODO-S13-THROUGHFLOW-ENTHALPY-ENDPOINT-CP-HARVEST-PREFLIGHT-2026-07-22,make open-CV residual computable on a same-basis window,"endpoint masks, signed flow, bulk temperatures, cp basis, storage/named loss lanes are all explicit",False,sampler/harvest launch is outside this row
+4,TODO-P1D-BULK-CV-H2-TRAIN-ONLY-CANDIDATE-SMOKE-2026-07-22,run the first one-candidate train-only smoke after prerequisites pass,"same-QOI train-only report with no protected score, no fit, no coefficient admission",False,blocked until rows 1-3 pass

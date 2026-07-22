@@ -1,0 +1,7 @@
+input_family,variant_rows,max_abs_delta_mdot_model_kg_s,max_abs_delta_qambient_total_W,max_abs_delta_qhx_total_W,max_abs_sensor_delta_K,interpretation
+pressure_loss_terms,6,0.00106461721522,0.0092877311323,0.00930078303718,0.207676645367,largest mdot sensitivity; thermal impact small in this smoke
+external_convection_hA,6,0.000811709609816,3.0848657635,3.08553935547,13.3481655437,large TP/TW projection sensitivity; candidate freeze still blocked by source/property and residual-owner gates
+heater_source_fraction,6,0.000798990389862,0.0404252192851,0.0403385553055,2.07400025969,source placement affects sensors more than net heat ledger in this smoke
+cooler_hx_strength,6,0.0000517742330668,8.41895002511,8.41904417812,38.0198797419,dominant temperature projection sensitivity but no cooler-duty runtime release
+ambient_temperature,6,0.0000836185749,0.239880140681,0.239879369761,1.05877874108,small setup boundary sensitivity
+radiation,3,0,0,0,0,no effect in this smoke configuration

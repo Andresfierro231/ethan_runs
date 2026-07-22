@@ -1,0 +1,8 @@
+artifact,path,role,mutation_status
+heat_flow_match_diagnostics,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/heat_flow_match_diagnostics.csv,direct Qwall/source-side heat-flow and mdot*DeltaT scale,read_only
+same_qoi_temporal_uq_summary,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv,temporal UQ support for exact QOI labels,read_only
+medium_fine_mesh_disposition,work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/qoi_mesh_disposition_summary.csv,Qwall mesh stability and proxy instability,read_only
+open_cv_contract,work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/open_cv_use_policy.csv,open CV and averaged-value policy,read_only
+source_side_qoi_contract,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/source_side_qoi_contract.csv,source-side heat-flow label and sign convention,read_only
+cp_property_preflight,work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/field_release_contract.csv,cp/property release status for enthalpy residual,read_only
+thermal_accounting_ledger,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/thermal_accounting_traceability_ledger.csv,residual owner and heat-path policy context,read_only

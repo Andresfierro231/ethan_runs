@@ -1,0 +1,23 @@
+{
+  "admission_state_mutated": false,
+  "created_utc": "2026-07-21T17:12:41.150538+00:00",
+  "external_fluid_edit": false,
+  "external_repositories_mutated": false,
+  "fitting_or_model_selection_performed": false,
+  "generated_index_refreshed": false,
+  "heat_path_owner_rows": 7,
+  "internal_nu_residual_absorption_rows": 0,
+  "junction_family_rows": 4,
+  "missing_field_rows": 5,
+  "native_solver_outputs_mutated": false,
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_litrev_split_junction_storage_radiation_extraction",
+  "qr_admitted_rows": 0,
+  "registry_mutated": false,
+  "runtime_guardrail_rows": 4,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "split_readiness_rows": 12,
+  "staged_copy_or_extraction_launched": false,
+  "storage_admitted_rows": 0,
+  "task": "TODO-LITREV-SPLIT-JUNCTION-STORAGE-RADIATION-EXTRACTION"
+}

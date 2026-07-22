@@ -1,0 +1,6 @@
+blocker_id,missing_evidence,request_output,minimum_acceptance,status_after_this_package
+upcomer-onset-data-sparsity,non-recirculating upcomer anchor,target_re_thermal_drive_matrix.csv,candidate with RAF/RMF/backflow <=0.02 and Ri_median<0.30 after uncertainty,request_defined_not_unblocked
+upcomer-onset-data-sparsity,near-onset transition bracket,target_re_thermal_drive_matrix.csv;pm5_pm10_extraction_request.csv,rows inside or bracketing 0.02-0.10 reverse metric band,request_defined_not_unblocked
+upcomer-onset-data-sparsity,same-window wall/bulk and heat fields,same_window_field_request.csv,T_wall/T_bulk/wallHeatFlux/patch heat totals share the same retained window as RAF/RMF/Re/Ri,request_defined_not_unblocked
+upcomer-onset-data-sparsity,mesh/time uncertainty for onset metrics,mesh_time_uncertainty_requirements.csv,classification-stable mesh family and time-window uncertainty beside every onset metric,request_defined_not_unblocked
+corner-pressure-and-junction-heat-diagnostic,"separate pressure drop and heat-loss ledgers for upcomer, corners, junctions, and stubs",same_window_field_request.csv;pm5_pm10_extraction_request.csv,PM5-PM10 pressure map plus patch heat ledgers with conservation residual,request_defined_not_unblocked

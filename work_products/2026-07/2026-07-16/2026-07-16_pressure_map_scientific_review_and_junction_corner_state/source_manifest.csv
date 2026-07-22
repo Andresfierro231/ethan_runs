@@ -1,0 +1,9 @@
+source_type,path,use
+pressure_branch_map,work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_branch_average_pressure_map.csv,AGENT-457 branch pressure map reviewed
+pressure_station_map,work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv,AGENT-457 station pressure map reviewed
+pressure_admission,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv,AGENT-449 admission/recirculation/straight-loss state
+heat_loss_role,work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_role.csv,Salt2-4 heat-loss role accounting including junction_other
+heat_loss_segment,work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv,Salt2 segment-level realized-wallflux junction evidence
+corner_minor_loss,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,two-tap corner pressure drop/K evidence
+minor_loss_separation,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_separation/minor_loss_separation.csv,minor-loss contribution to phi by span
+geometry_reference,reference/geometry_reference.md,authoritative span naming and flow directions

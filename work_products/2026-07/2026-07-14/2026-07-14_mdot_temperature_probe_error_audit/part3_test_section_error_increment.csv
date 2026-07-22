@@ -1,0 +1,19 @@
+case_id,metric,part2_value,part3_value,increment_part3_minus_part2,interpretation
+salt_2,mdot_error_kg_s,0.00135125,0.00197625,0.000625,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_2,Tmean_error_K,-23.9082959608,-18.3405626168,5.56773334399,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_2,loop_delta_error_K,-1.55721973878,-2.05754475644,-0.500325017654,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_2,TP_rmse_K,20.9977644603,15.6490991249,-5.34866533538,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_2,TW_rmse_K,25.8373342636,20.9549296417,-4.88240462197,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_2,all_rmse_K,24.3313364206,19.3486645189,-4.98267190166,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_3,mdot_error_kg_s,0.00143625,0.00237375,0.0009375,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_3,Tmean_error_K,-26.7926891551,-16.9201174292,9.87257172585,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_3,loop_delta_error_K,-1.70650875862,-2.38066705784,-0.674158299216,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_3,TP_rmse_K,23.5973356863,14.0600104586,-9.53732522776,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_3,TW_rmse_K,27.8147944027,19.3315846149,-8.48320978777,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_3,all_rmse_K,26.4837045925,17.7492180254,-8.73448656702,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_4,mdot_error_kg_s,0.00192625,0.0033325,0.00140625,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_4,Tmean_error_K,-30.4032513165,-15.5100226135,14.8932287029,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_4,loop_delta_error_K,-1.9274621001,-2.79165447383,-0.864192373726,Error introduced or removed by omitting the CFD test-section net heat term.
+salt_4,TP_rmse_K,27.5357216333,13.0560668814,-14.4796547519,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_4,TW_rmse_K,31.3059199003,18.6225154707,-12.6834044295,Sensor RMSE change when the CFD test-section heat term is omitted.
+salt_4,all_rmse_K,30.10170099,16.9711229969,-13.1305779931,Sensor RMSE change when the CFD test-section heat term is omitted.

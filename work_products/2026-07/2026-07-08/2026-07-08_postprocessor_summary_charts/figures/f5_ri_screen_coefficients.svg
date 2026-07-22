@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="600" viewBox="0 0 920 600">
+<rect x="0" y="0" width="920" height="600" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="90" y="34" class="title">F5 Ri-Corrected Friction Candidate Screen</text>
+<text x="90" y="56" class="subtitle">Fitted coefficients were deactivated because the 3-point forced-intercept fit was poorer than a mean model</text>
+<text x="18" y="278.0" class="label" transform="rotate(-90 18 278.0)">coefficient c in phi = 1 + c Ri_streamwise</text>
+<line x1="90" y1="470.00" x2="880" y2="470.00" class="grid"/>
+<text x="82" y="474.00" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="342.00" x2="880" y2="342.00" class="grid"/>
+<text x="82" y="346.00" text-anchor="end" class="tick">0.5</text>
+<line x1="90" y1="214.00" x2="880" y2="214.00" class="grid"/>
+<text x="82" y="218.00" text-anchor="end" class="tick">1</text>
+<line x1="90" y1="86.00" x2="880" y2="86.00" class="grid"/>
+<text x="82" y="90.00" text-anchor="end" class="tick">1.5</text>
+<line x1="90" y1="470.00" x2="880" y2="470.00" class="axis"/>
+<line x1="90" y1="86" x2="90" y2="470" class="axis"/>
+<rect x="126.97" y="92.85" width="56.41" height="377.15" fill="#D97706"/>
+<rect x="194.12" y="470.00" width="56.41" height="0.00" fill="#2878B5"/>
+<text x="188.75" y="498" text-anchor="middle" class="tick">heater</text>
+<rect x="324.47" y="314.44" width="56.41" height="155.56" fill="#D97706"/>
+<rect x="391.62" y="470.00" width="56.41" height="0.00" fill="#2878B5"/>
+<text x="386.25" y="498" text-anchor="middle" class="tick">cooler</text>
+<rect x="521.97" y="285.31" width="56.41" height="184.69" fill="#D97706"/>
+<rect x="589.12" y="470.00" width="56.41" height="0.00" fill="#2878B5"/>
+<text x="583.75" y="498" text-anchor="middle" class="tick">downcomer</text>
+<rect x="719.47" y="470.00" width="56.41" height="0.00" fill="#D97706"/>
+<rect x="786.62" y="470.00" width="56.41" height="0.00" fill="#2878B5"/>
+<text x="781.25" y="498" text-anchor="middle" class="tick">upcomer</text>
+<rect x="90" y="524" width="14" height="14" fill="#D97706"/>
+<text x="110" y="536" class="legend">c_fitted</text>
+<rect x="260" y="524" width="14" height="14" fill="#2878B5"/>
+<text x="280" y="536" class="legend">c_active</text>
+<text x="90" y="564" class="small">Source: AGENT-200 F5 screen. Upcomer excluded; active coefficients are zero, so F5 currently equals F3 Shah apparent.</text>
+</svg>

@@ -1,0 +1,2 @@
+source_package,decision,nominal_rows_reviewed,label_complete_rows,strict_source_envelope_pass_rows,source_property_release_rows,s13_mf12_admission_rows,current_interpretation
+work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery,strict_source_envelope_recovery_fail_closed_zero_release_rows,4,4,0,0,0,Source-envelope repair is not unlocked; all cp/mu/k sensitivity remains train/support preflight only.

@@ -1,0 +1,45 @@
+{
+  "current_aggregate": {
+    "aggregate_policy": "current_policy_excludes_tp2_tw10",
+    "excluded_sensors": "TP2,TW10",
+    "included_sensors": "TP1,TP3,TP4,TP5,TP6,TW1,TW11,TW2,TW3,TW4,TW5,TW6,TW7,TW8,TW9",
+    "interpretation": "Baseline current policy: TP2 and TW10 excluded from aggregate TP/TW score.",
+    "mae_K": 151.7249661948562,
+    "max_abs_error_K": 234.42965607875152,
+    "mean_error_K": -106.33653380571783,
+    "n_compared_rows": 45,
+    "rmse_K": 163.5887589218957,
+    "sensor_count": 15,
+    "tp_count": 5,
+    "tw_count": 10
+  },
+  "execute_fluid": true,
+  "final_decision": "TP2 is validation-only 1D evidence after finite-row gates pass; TW10 remains blocked; final forward-v1 remains a separate admission question.",
+  "gate_status": {
+    "TP2_finite_prediction_before_aggregate": "pass",
+    "TP2_runtime_input_forbidden": "pass",
+    "TP2_source_segment_named": "pass",
+    "TW10_excluded_until_active_hx_shell_state": "pass"
+  },
+  "generated_at_utc": "2026-07-16T21:57:43.641096+00:00",
+  "restored_aggregate": {
+    "aggregate_policy": "restored_policy_includes_tp2_excludes_tw10",
+    "excluded_sensors": "TW10",
+    "included_sensors": "TP1,TP2,TP3,TP4,TP5,TP6,TW1,TW11,TW2,TW3,TW4,TW5,TW6,TW7,TW8,TW9",
+    "interpretation": "Restored policy: TP2 included only after finite/projection/runtime/fit gates pass; TW10 remains excluded.",
+    "mae_K": 151.8378054139176,
+    "max_abs_error_K": 234.42965607875152,
+    "mean_error_K": -106.59360710905482,
+    "n_compared_rows": 48,
+    "rmse_K": 163.7606479786714,
+    "sensor_count": 16,
+    "tp_count": 6,
+    "tw_count": 10
+  },
+  "task": "AGENT-463",
+  "tp2_canonical_segment": "right_downcomer_bottom_horizontal_junction",
+  "tp2_finite_rows": 3,
+  "tp2_fluid_parent_fraction": 0.0,
+  "tp2_fluid_parent_segment": "right_vertical@end_or_bottom_horizontal_inlet@start",
+  "tp2_rows": 3
+}

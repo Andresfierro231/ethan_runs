@@ -1,0 +1,4 @@
+requirement_id,status,required_before_release,detail
+explicit_policy_approval,missing,yes,Approve M2_CORE_3ROW_SUPPORTED_SCORE_READY in writing before blind scoring.
+salt1_unsupported_context_disclosure,prepared_not_approved,yes,Scorecard must state Salt1 train-row cooler/HX remains unsupported.
+no_fit_or_selection_change,pass,yes,Exception may score only; it must not alter fitting or candidate selection.

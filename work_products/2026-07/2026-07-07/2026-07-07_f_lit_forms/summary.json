@@ -1,0 +1,54 @@
+{
+  "generated_at": "2026-07-07",
+  "task": "AGENT-186",
+  "role": "Implementer",
+  "owner": "claude",
+  "purpose": "Add Shah (1978) apparent friction factor form to TAMU loop closure library and quantify differences vs existing forms at TAMU conditions",
+  "forms_added": ["F3_shah_apparent"],
+  "forms_compared": ["F1", "F3_hagenbach", "F3_shah_apparent"],
+  "source_file_edited": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+  "citation_F3_shah_apparent": {
+    "author": "Shah, R.K.",
+    "year": 1978,
+    "title": "A correlation for laminar hydrodynamic entry length solutions for circular and noncircular ducts",
+    "journal": "ASME Journal of Fluids Engineering",
+    "volume": 100,
+    "pages": "177-179",
+    "equation": "Eq. 15, circular tube row"
+  },
+  "formula_constants": {
+    "C1_fanning": 3.44,
+    "Cinf_fanning": 16.0,
+    "C_hag": 0.244,
+    "D_fit": 0.000212,
+    "source": "Shah (1978) Eq. 15, circular tube, uniform inlet velocity"
+  },
+  "tamu_re_range": [60, 120],
+  "tamu_l_range_m": [0.1, 0.8],
+  "tamu_x_plus_range": [0.038, 0.606],
+  "reference_conditions": {
+    "D_m": 0.022,
+    "rho_kg_m3": 1950,
+    "v_m_s": 0.015,
+    "comment": "mainline Salt 2/3/4 Jin nominal conditions"
+  },
+  "key_finding": "At TAMU loop conditions (x+ = 0.04-0.6), F3_shah_apparent gives 28-99% more total pressure drop than F3_hagenbach. Difference is largest for short segments at high Re (x+ < 0.06) and smallest for long segments at low Re (x+ > 0.5). Hagenbach underestimates total ΔP in the developing region because it captures only the asymptotic momentum defect (K_inf=1.33), not the enhanced distributed friction during profile development.",
+  "recommendation": "F3_shah_apparent is more physically complete for TAMU loop segments with x+ < 0.2. For x+ > 0.5, F1 (64/Re) is sufficient within ~5%. Buoyancy correction (F4, AGENT-187) is needed for heated/cooled legs.",
+  "outputs": {
+    "comparison_csv": "work_products/2026-07-07_f_lit_forms/f_lit_comparison_tamu_conditions.csv",
+    "comparison_script": "work_products/2026-07-07_f_lit_forms/f_lit_comparison.py",
+    "friction_closures_py": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py"
+  },
+  "open_questions_for_user": [
+    "Should F3_shah_apparent be set as the solver default instead of F1?",
+    "Re-compute x+ for test section with D_h=0.021 m (quartz tube bore)?",
+    "Implement Muzychka & Yovanovich (2009) for cross-validation once paper is available?"
+  ],
+  "limitations": [
+    "No GCI bounds on segment lengths (T6 blocked)",
+    "Isothermal assumption only; F4 buoyancy correction needed for heated/cooled legs",
+    "Shah correlation most accurate for x+ < 0.2; slight overestimate for x+ > 0.3",
+    "Assumes uniform (flat) inlet velocity profile; bends may distort this",
+    "Muzychka & Yovanovich (2009) not implemented — constants not verified from primary source"
+  ]
+}

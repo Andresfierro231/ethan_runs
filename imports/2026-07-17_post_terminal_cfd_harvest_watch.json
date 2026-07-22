@@ -12,8 +12,10 @@
     "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/README.md",
     "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/live_scheduler_snapshot.csv",
     "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/scheduler_refresh_2026-07-21.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/scheduler_refresh_2026-07-22.csv",
     "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/terminal_admission_trigger_matrix.csv",
     "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/terminal_trigger_refresh_2026-07-21.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/terminal_trigger_refresh_2026-07-22.csv",
     "work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/source_manifest.csv"
   ],
   "native_solver_outputs_mutated": false,
@@ -36,6 +38,41 @@
       "command": "sacct -j 3293924,3295438,3299610,3299620,3300966 --format=JobID,JobName%30,State,Elapsed,ExitCode",
       "result": "pass",
       "action": "read_only"
+    },
+    {
+      "command": "squeue -j 3299610,3299620,3307441 -o '%i|%j|%T|%M|%l|%D|%R'",
+      "result": "pass: 3307441 running; 3299610 and 3299620 absent from queue",
+      "action": "read_only"
+    },
+    {
+      "command": "sacct -j 3299610,3299620,3307441 --format JobID,JobName,Partition,Account,State,Elapsed,ExitCode -P",
+      "result": "pass: 3299610 and 3299620 TIMEOUT; 3307441 RUNNING",
+      "action": "read_only"
+    },
+    {
+      "command": "squeue -j 3308712,3307441",
+      "result": "pass: 3308712 and 3307441 RUNNING",
+      "action": "read_only"
+    },
+    {
+      "command": "sacct -j 3308712,3307441,3299610,3299620 --format=JobID,JobName%34,State,ExitCode,Elapsed,Timelimit,NodeList%30",
+      "result": "pass: 3299610 and 3299620 TIMEOUT; 3307441 and 3308712 RUNNING",
+      "action": "read_only"
+    },
+    {
+      "command": "squeue -j 3307441,3308712,3310179 -o '%i|%j|%T|%M|%l|%D|%R'",
+      "result": "pass after stopping malformed unquoted format attempt: 3307441 and 3308712 RUNNING; 3310179 absent from live queue after completion",
+      "action": "read_only"
+    },
+    {
+      "command": "sacct -j 3307441,3308712,3310179 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList",
+      "result": "pass: 3307441 and 3308712 RUNNING; 3310179 COMPLETED 0:0 but S13 package fail-closed with exact_label_qoi_rows=0",
+      "action": "read_only"
+    },
+    {
+      "command": "sacct -j 3307441,3308712 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList -P",
+      "result": "pass at 2026-07-22T12:52:05-0500: 3307441 and 3308712 both RUNNING, no terminal-success trigger",
+      "action": "read_only"
     }
   ],
   "monitor_jobs": [
@@ -43,7 +80,8 @@
     "3295438",
     "3299610",
     "3299620",
-    "3307441"
+    "3307441",
+    "3308712"
   ],
   "context_only_jobs": [
     "3300966"

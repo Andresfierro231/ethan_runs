@@ -1,0 +1,2 @@
+decision_id,submit_status,scheduler_action,openfoam_launch,reason,release_condition,script
+surface_source_generation_submit_gate,not_submitted_fail_closed,false,false,"cell_vtk, exchange_interface_vtk, and wall_vtk geometry contracts remain blocked","approve exact cell-region/cellId, exchange-interface, and wall/core geometry before sbatch",work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/scripts/run_surface_source_generation.sh

@@ -1,0 +1,6 @@
+milestone_id,sequence,name,required_packets,exit_criterion,unlocks
+M1,1,Thermal admission review complete,A1.1;A1.2,Thermal rows have fit/validation/blocked decisions and no sign/heat-balance ambiguity.,A1.3;A2.2
+M2,2,Hydraulic correction candidate faithful or rejected,A2.1;A3.1,H1/F6 decision is scored under train/validation/holdout without thermal fitting.,forward-v1 bounded candidate
+M3,3,Setup-only thermal boundary candidate,A2.2;A2.3,Forward path has first-class setup-only boundary inputs or documented API patch plan.,forward-v1 scorecard refresh
+M4,4,Recirculation and corrected-Q evidence expansion,A3.2;A3.3,Upcomer onset remains explicitly observed/bracketed/extrapolated with admitted row status.,broader validation and thesis uncertainty statements
+M5,5,Forward-v1 readiness review,M1;M2;M3,"Scorecard can run without violating predictive input, mesh/admission, or split gates.",thesis-strength forward-model claim if metrics pass

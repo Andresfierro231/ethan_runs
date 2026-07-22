@@ -1,0 +1,25 @@
+{
+  "active_agent413_mutated": false,
+  "counts": {
+    "f6_protocol_rows": 4,
+    "f6_rows": 12,
+    "internal_nu_protocol_rows": 4,
+    "internal_nu_rows": 12,
+    "refresh_rows": 6,
+    "source_rows": 8
+  },
+  "created_utc": "2026-07-15T14:04:07.431410+00:00",
+  "date": "2026-07-15",
+  "external_fluid_modified": false,
+  "f6_fit_candidate_rows": 0,
+  "internal_nu_fit_candidate_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "pm5_f6_unlocked_for_review_not_admitted": true,
+  "pm5_internal_nu_unlocked_for_review_not_admitted": true,
+  "pm5_rows": 12,
+  "pm5_wallHeatFlux_rows": 12,
+  "registry_or_admission_mutated": false,
+  "scheduler_jobs_launched": false,
+  "stale_downstream_rows": 4,
+  "task": "AGENT-414"
+}

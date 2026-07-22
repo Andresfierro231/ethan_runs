@@ -1,0 +1,11 @@
+input_id,input_name,runtime_status,required_release,allowed_use,provenance_requirement,not_allowed_as
+A01,setup_heater_power,conditionally_allowed,source/property gate for distribution or efficiency,heater source term,setup boundary dictionary or experiment setup record,backsolved heat from wallHeatFlux
+A02,declared_heater_source_distribution,conditionally_allowed,train-only decomposition and source/property release,spatial heater allocation,declared source-mode contract,fit to validation residuals
+A03,setup_cooler_hx_geometry_and_UA_or_effectiveness,allowed_after_setup_model_release,setup-only BC UQ and source/property labels,predictive cooler removal,setup-known HX model inputs,imposed CFD cooler duty
+A04,ambient_temperature,allowed,setup metadata,external convection/radiation boundary drive,setup or boundary dictionary,validation sensor temperature
+A05,external_convection_h_and_area,allowed_when_declared,segment/patch coverage and source-property labels,passive wall heat exchange,external BC dictionary or setup model,global hA fitted to protected residuals
+A06,emissivity_Tsur_area_view_factor,allowed_when_radiation_model_declared,radiation capability and no-double-count audit,predictive radiative exchange,setup fields and declared view-factor approximation,extra term on realized wallHeatFlux replay
+A07,wall_and_layer_geometry_materials,allowed_when_setup_fields_complete,material/geometry provenance,"wall, insulation, quartz, or contact resistance",geometry/material setup fields,heldout-temperature backsolve
+A08,fluid_properties,allowed_with_property_mode_label,property-mode/source envelope label,"cp, rho, mu, k, Pr in 1D equations",declared property law and range,case-specific correction tuned to scores
+A09,geometry_and_segment_lengths,allowed,geometry manifest,"areas, volumes, hydraulic diameter, elevation, path length",geometry reference,post-hoc effective length selected by score
+A10,solved_model_mdot_and_temperatures,allowed_as_model_outputs_coupled_back_into_equations,root stability and runtime-leakage audit,enthalpy transport and heat-transfer drives,computed by the 1D model from setup inputs,CFD mdot or validation temperatures

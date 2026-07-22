@@ -1,0 +1,15 @@
+source_key,path,exists,mutation_status
+four_study_gate,work_products/2026-07/2026-07-22/2026-07-22_four_study_thesis_support_gate/summary.json,True,read_only
+s13_limited_evidence,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/summary.json,True,read_only
+s13_source_side_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/summary.json,True,read_only
+s13_exact_qwall,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/summary.json,True,read_only
+reduced_dof_transfer,work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/summary.json,True,read_only
+passive_physical,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/summary.json,True,read_only
+passive_source,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment/summary.json,True,read_only
+source_residual_decomp,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/summary.json,True,read_only
+cand001_timeout,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/summary.json,True,read_only
+hybrid_pressure,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/summary.json,True,read_only
+f6_same_qoi,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/summary.json,True,read_only
+sensor_map,work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract/summary.json,True,read_only
+negative_results,work_products/2026-07/2026-07-21/2026-07-21_thesis_negative_results_scientific_contribution_section/summary.json,True,read_only
+predictive_path_status,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_predictive_path_status_set/summary.json,True,read_only

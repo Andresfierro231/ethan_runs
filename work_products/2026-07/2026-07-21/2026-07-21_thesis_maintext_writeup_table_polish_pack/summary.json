@@ -1,0 +1,19 @@
+{
+  "task": "TODO-THESIS-MAINTEXT-WRITEUP-TABLE-POLISH-PACK-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "s6_gate_rows": 12,
+  "s7_sensor_rows": 17,
+  "s9_exchange_rows": 6,
+  "s10_pressure_rows": 15,
+  "s13_heat_rows": 7,
+  "s14_scorecard_rows": 53,
+  "h2_response_rows": 7,
+  "main_text_tables": 8,
+  "writeup_sections": 6,
+  "latex_import_rows": 8,
+  "runtime_leakage_relaxed": false,
+  "closure_admission": false,
+  "final_score_claim": false,
+  "native_outputs_mutated": false
+}

@@ -1,0 +1,6 @@
+screen_family,rows,RAF_or_RMF_evidence,ordinary_flow_pass,disposition,claim_boundary
+sampled_salt2_right_leg,4,RAF 0.366956605252 to 0.384647044082; RMF about 0.5,0,fail ordinary-flow gate,diagnostic only no F6 fit
+sampled_salt2_test_section_span,4,RAF 0.63109751584 to 0.635638538588; RMF about 0.5,0,fail ordinary-flow gate,diagnostic only no F6 fit
+PM5_rows,12,RAF roughly 0.3692928784 to 0.7901396438; RMF about 0.5,0,material reverse-flow diagnostic,do not promote PM5 to ordinary anchor
+PM10_rows,4,RAF roughly 0.7718036567 to 0.7944465671; RMF about 0.5,0,strong recirculation plus future blind status,recirculation/onset evidence only
+future_design_rows,11,not yet measured,0,reverse flow unverified and endpoint missing,no launch or admission from design-only row

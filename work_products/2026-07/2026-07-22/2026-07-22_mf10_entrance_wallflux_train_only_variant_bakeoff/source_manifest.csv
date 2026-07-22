@@ -1,0 +1,6 @@
+source_id,source_path,mutation_status
+mf07,work_products/2026-07/2026-07-22/2026-07-22_mf07_entrance_development_and_reset_source_basis,read_only
+mf08,work_products/2026-07/2026-07-22/2026-07-22_mf08_signed_wall_flux_developing_thermal_branches,read_only
+mf09,work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives,read_only
+scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard,read_only
+source_property,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight,read_only

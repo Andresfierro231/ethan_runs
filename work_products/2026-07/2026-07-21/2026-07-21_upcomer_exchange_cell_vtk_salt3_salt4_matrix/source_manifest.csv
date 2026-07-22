@@ -1,0 +1,11 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_upcomer_exchange_cell_vtk_salt3_salt4_matrix.py,task_output,true,false,true
+tools/extract/test_build_upcomer_exchange_cell_vtk_salt3_salt4_matrix.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_geometry_release,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_source_field_audit,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix,task_output,true,false,true
+tmp/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix,task_output,true,false,true
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation,read_only_context,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation,read_only_context,true,true,false

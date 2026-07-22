@@ -1,0 +1,10 @@
+{
+  "case_count": 4,
+  "job_count": 2,
+  "native_output_mutation": "none",
+  "required_output_count": 15,
+  "running_not_terminal_count": 4,
+  "scheduler_action": "read_only_status_check",
+  "task": "AGENT-485",
+  "terminal_ready_count": 0
+}

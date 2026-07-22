@@ -1,0 +1,2 @@
+case_id,band_id,released,wall_basis,core_basis,thermal_reduction_allowed,blocking_reason
+salt_4,seeded_right_leg_wall_core_band,true,trusted right-leg wall patches pipeleg_right_01_lower/02_middle/03_upper,internal seed/core interface faces adjacent to non-seed cells,false,

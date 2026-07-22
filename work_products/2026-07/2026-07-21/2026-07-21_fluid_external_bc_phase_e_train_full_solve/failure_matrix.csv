@@ -1,0 +1,10 @@
+stage,status,failure_or_blocker,action
+phase_c_gate,pass,,Phase C summary exists and is complete.
+phase_d_gate,pass,,Phase D smoke summary exists and is complete.
+dictionary_filter,pass,,Train/support rows filtered before parser load.
+parser_load,pass,,External Fluid parser loaded filtered dictionary.
+role_row_conversion,pass,,Predictive passive rows converted through explicit segment map.
+full_fluid_solve,pass,,Use as train execution evidence only; no tuning or admission.
+thermal_residual_attribution,pass,,Post-solve Salt 2 train reference residuals emitted.
+validation_holdout_external_score,not_run_by_policy,validation/holdout/external-test scoring forbidden in Phase E,Requires a later frozen-candidate row.
+freeze_or_admission_decision,not_run_by_policy,freeze/admission decision forbidden in this narrow Phase E row,Use downstream attribution-freeze row after reviewing this package.

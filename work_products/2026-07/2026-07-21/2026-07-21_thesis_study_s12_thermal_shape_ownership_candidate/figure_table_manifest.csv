@@ -1,0 +1,4 @@
+artifact_id,artifact,file,thesis_destination,ready_status,caption_claim
+S12-FIG-01,tw5_tw6_residual_ownership_table,residual_quantification.csv,Chapter 7 thermal negative-results and next-candidate evidence,ready_table,Dominant TW5/TW6 residuals point away from passive wall/test-section selectors and toward a heated-incline/exchange-shape owner.
+S12-FIG-02,heat_path_ownership_waterfall,heat_path_ownership_waterfall.csv,Chapter 6 admission/uncertainty gate,ready_table,"The residual is quantified and reassigned as a candidate-discovery signal, not as an internal-Nu fit term."
+S12-TAB-01,thermal_shape_admission_gate_matrix,admission_gate_matrix.csv,Chapter 6 S11 gate discussion,ready_table_negative_result,"S12 identifies a better physical owner but releases zero S11-ready candidates because scoring, exchange-state, same-QOI UQ, and source/property gates fail."

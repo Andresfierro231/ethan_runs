@@ -1,0 +1,38 @@
+label,meaning,claim_ids,writer_instruction
+blocked_no_final_score,No final score exists because candidate freeze/admission gates are not satisfied,NUM-001;NUM-076,Write as a blocked result and methodological discipline rather than a missing result
+blocked_no_single_released_candidate,No single runtime-legal candidate is released for freeze review,NUM-002,Use this to explain why the thesis reports diagnostics and gates before final scoring
+writer_support_ready,Context packet is ready for prose or tables without new calculation,NUM-003;NUM-010,Use freely as documentation/provenance support with source paths
+split_boundary_ready,Case split policy is documented and usable,NUM-004,Use to frame train/support/holdout/external-test discipline
+runtime_leakage_guardrail,Rows document forbidden predictive runtime inputs,NUM-005;NUM-055,Use in methods and admission chapters as a positive workflow contribution
+future_holdout_diagnostic_only,Rows are available only for future blind-holdout planning,NUM-006;NUM-008,Do not use for fitting model selection or current protected score
+protected_score_blocked,Protected rows or score are explicitly not released,NUM-007;NUM-066,Use as a guardrail and scorecard blocker
+diagnostic_support,Rows consolidate evidence but are not admitted closures,NUM-009,Use as a map of current model forms
+diagnostic_context,Rows provide baseline or comparison context only,NUM-011;NUM-012;NUM-015;NUM-017,Use to compare patterns and motivate mechanisms without admission language
+diagnostic_no_correction_release,Projection signal exists but correction is not released,NUM-014;NUM-016,Use to justify next model-form layer only
+diagnostic_projection_signal,Bulk-to-probe signal exists but needs source-bounded release,NUM-018,Do not promote to runtime correction
+blocked_no_correction_release,Formula candidates exist but are not released,NUM-019,Use in blocked-until-more-work list
+runtime_temperature_forbidden,Validation temperatures are score-only and forbidden at runtime,NUM-020;NUM-071,State explicitly in Chapter 6
+diagnostic_not_admitted,Empirical or mechanism signal exists but is not admitted,NUM-021;NUM-022;NUM-023;NUM-025;NUM-026;NUM-027,Use as results evidence with no closure-admission verbs
+blocked_no_candidate_release,Gate has zero candidate-ready rows,NUM-024,Use in final scorecard blocker sequence
+blocked_no_source_bounded_candidate,Source-bounded candidate is missing,NUM-028,Use to motivate independent source/property and geometry studies
+pressure_diagnostic_negative,Pressure rows support a negative result and basis ladder,NUM-029,Use in negative-results contribution
+pressure_admission_blocked,Pressure closure is not admitted,NUM-030;NUM-031,Do not fit or admit K/F6
+not_admitted_for_component_K_or_F6,Section-effective pressure residual only,NUM-033;NUM-034;NUM-035,Use as pressure-basis evidence not coefficient evidence
+proxy_not_closed_fraction,Reverse-flow or volume proxy exists but closed recirculation fraction is not admitted,NUM-036;NUM-041;NUM-048;NUM-049;NUM-050,Use with recirculation figures and explicit caveat
+proxy_not_admitted_closure,Proxy supports mechanism but not coefficient admission,NUM-037,Do not build pressure closure from it
+S13_Qwall_diagnostic_only,Trusted-wall Qwall values exist as diagnostics only,NUM-038;NUM-039;NUM-040,Do not release as runtime heat source
+diagnostic_current_coarse_proxy,S13 proxy uses current coarse sampled fields,NUM-042;NUM-043;NUM-044,State medium/fine mesh-GCI is pending
+UQ_temporal_only_no_mesh_GCI,Temporal UQ executed but mesh/GCI and admission remain closed,NUM-045;NUM-046,Use to distinguish progress from admission
+blocked_mesh_GCI_source_property,Production use is blocked by mesh/GCI and source-property gates,NUM-047,Use as a next-study requirement
+accounting_context_only,Setup or heat-path values are accounting context only,NUM-051;NUM-056;NUM-057;NUM-058,Do not treat as runtime release
+setup_metadata_not_runtime_release,Setup rows are documented but not released as runtime model inputs,NUM-052,Use in model-form methods and admission ledger
+diagnostic_only_for_traceability,Realized heat values support traceability only,NUM-053,Do not use realized CFD heat values in prediction
+blocked_source_property,Source/property fields are missing or unreleased,NUM-054;NUM-063;NUM-064;NUM-065,Use in blocked work and limitations
+thermal_passive_blocked,Passive-wall evidence is not an admitted repair,NUM-059,Use in thermal negative results
+diagnostic_negative_result,Diagnostic result rules out a simple repair or closure,NUM-032;NUM-060;NUM-061;NUM-062,Use as scientific negative result
+sensor_score_only,Sensors are target/projection metadata only,NUM-067;NUM-069,Do not use sensors as runtime inputs
+coordinate_uncertainty_bounded,Sensor placement is bounded/provisional,NUM-068,Use cautious segment/projection wording
+excluded_score_target,Sensor is excluded from aggregate score,NUM-070,State the model does not emit the required state
+figure_support_no_admission,Figure exists for communication but does not imply closure,NUM-072;NUM-073;NUM-074;NUM-075,Caption with explicit diagnostic language
+manifest_only_no_asset_copy,Figure import manifest exists but no assets were copied,NUM-077,Use to queue later thesis-repo import
+manifest_count_discrepancy,Summary and selected-ledger row counts differ,NUM-078,Audit before relying on total selected figure count

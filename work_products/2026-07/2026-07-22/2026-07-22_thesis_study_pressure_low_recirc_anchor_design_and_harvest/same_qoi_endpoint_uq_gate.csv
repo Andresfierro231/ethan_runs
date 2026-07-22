@@ -1,0 +1,7 @@
+gate,status,observed,blocks,next_action,source
+CAND001_terminal_success,fail,terminal_success_cases=0; timeout_jobs=2,raw endpoint evidence and sampler release,future scheduler-safe retry row may recover terminal source cases,S10/S14 timeout_source_ordinary_uq_gate_matrix.csv
+endpoint_fields,fail,endpoint_fields_ready=0; required_rows=15,F6 component-K cluster-K evidence,after terminal success sample finite p p_rgh U rho T face area face normal and derived deltas/corrections/RAF/RMF/SVF,S10/S14 endpoint_field_requirement_table.csv
+ordinary_flow,fail,ordinary_candidate_pairs=0; S14 admitted_rows=0,ordinary F6 and component-K labels,require RAF < 0.01 and RMF < 0.01 for any ordinary F6 row,S10/S14 timeout_source_ordinary_uq_gate_matrix.csv
+same_qoi_mesh_time_uq,fail,same_qoi_mesh_uq_admissible_rows=0,F6 review release and F3-vs-F6 comparison,same-label same-formula same-sign mesh/time UQ after endpoint rows exist,S10/S14 timeout_source_ordinary_uq_gate_matrix.csv
+source_property_split_refresh,blocked,fit_allowed_rows=0,S11/S15/S6 trigger,only after exactly one pressure candidate is admission-worthy,S10/S14 timeout_source_ordinary_uq_gate_matrix.csv
+component_K_or_F6_admission,closed,component_K_rows=0; F6_fit_rows=0,all F3/F6/Shah comparisons,separate admission row after all upstream gates pass,pressure basis ladder and anchor inventory packages

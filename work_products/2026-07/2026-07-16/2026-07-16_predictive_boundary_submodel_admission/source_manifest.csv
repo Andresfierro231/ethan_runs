@@ -1,0 +1,8 @@
+source_id,path,use
+AGENT390_heater_scalar,work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_scalar_candidates.csv,eta_heater scalar and runtime audit
+AGENT390_heater_split,work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_split_scores.csv,heater split and setup-power context
+AGENT360_heater_errors,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/part5_heating_rmse_summary.csv,heater per-split W-error score rows
+AGENT424_model_errors,work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/heater_cooler_model_form_errors.csv,consolidated heater/cooler model-form synthesis
+AGENT438_hx_scorecard,work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/setup_only_hx_boundary_scorecard.csv,cooler/HX setup-only W-error rows
+AGENT418_external_boundary,work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/fluid_variant_contract.csv,wall/passive external-boundary API availability
+AGENT423_test_section,work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/diagnostic_test_section_negative_source_rows.csv,test-section non-admission evidence

@@ -1,0 +1,7 @@
+guard_id,changed,policy
+native_output_mutation,false,native OpenFOAM processor files read only
+registry_admission_mutation,false,"no registry, coefficient, or admission state edited"
+solver_or_postprocess,false,no solver or OpenFOAM postProcess command is run by this script
+scheduler_execution,true,heavy sampling mode requested; slurm_job_id=3311146_1
+production_harvest,false,outputs are task-scoped diagnostic exact-label rows only
+proxy_substitution,false,endpoint/probe/profile rows are not substituted for exact labels

@@ -1,0 +1,6 @@
+source_id,source_path,role,mutation_status
+S9FIG-SRC-001,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/onset_anchor_ledger.csv,read_only_evidence,not_modified
+S9FIG-SRC-002,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/exchange_qoi_contract.csv,read_only_evidence,not_modified
+S9FIG-SRC-003,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/same_window_uq_requirements.csv,read_only_evidence,not_modified
+S9FIG-SRC-004,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/near_onset_gap_table.csv,read_only_evidence,not_modified
+S9FIG-SRC-005,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/summary.json,read_only_evidence,not_modified

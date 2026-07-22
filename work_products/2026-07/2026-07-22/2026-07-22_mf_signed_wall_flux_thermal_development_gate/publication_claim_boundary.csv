@@ -1,0 +1,7 @@
+claim,allowed,basis
+signed thermal-development is worth pursuing,True,MF07/MF08 diagnostic support
+a bulk-to-TP correction is released,False,MF07 release gates failed
+wallHeatFlux can be a runtime input,False,MF08 explicit forbidden gate
+upcomer exchange candidate is reviewable,False,MF09 same-label mesh/GCI and source gates fail
+TW should be corrected before TP,False,D2/MF07 support TP-first ordering
+internal Nu may absorb the residual,False,all source packages preserve this guardrail

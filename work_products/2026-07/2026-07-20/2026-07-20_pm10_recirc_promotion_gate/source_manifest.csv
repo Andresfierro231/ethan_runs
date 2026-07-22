@@ -1,0 +1,4 @@
+source_id,path,exists,role
+pm10_recirc_model_form_scorecard,work_products/2026-07/2026-07-20/2026-07-20_pm10_recirc_hybrid_residual_scorecard/pm10_recirc_model_form_scorecard.csv,true,residual-weighted recirculation ranking
+pm10_component_isolation_gate,work_products/2026-07/2026-07-20/2026-07-20_pm10_pressure_component_isolation/pm10_component_isolation_gate.csv,true,component isolation status
+pm10_uq_gate,work_products/2026-07/2026-07-20/2026-07-20_pm10_same_qoi_uq_preflight/pm10_uq_gate.csv,true,same-QOI mesh/time UQ status

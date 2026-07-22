@@ -1,0 +1,7 @@
+missing_item,applies_to,evidence_needed,why_needed,blocks
+row_specific_branch_source_envelope,Salt1 nominal train,branch-specific nondimensional values and matching source envelope labels,Current Salt1 label is partial not row-specific,source/property release and S11/S15
+strict_source_envelope_pass,Salt2 Salt3 Salt4 nominal train,row-specific Re Pr Gr Ri Gz L/D/BC/property-mode comparison to primary source bounds,Current labels are mixed outside or unknown,source/property release and freeze
+same_label_medium_fine_rows,S13 four QOIs,nonempty medium and fine exact-label QOI rows from repaired sampler,Current prior sampler had zero terminal QOI rows,mesh/GCI and production harvest
+same_mask_energy_terms,S13 exchange-cell energy residual,Q_wall_W exchange mdot residence-time wall/core/bulk contrast on same wall/interface/bulk masks,Energy residual must use same masks as exchange terms,same-mask CV residual and exchange-cell smoke
+source_memory_temperature_basis,MF12 source-memory temperature,sign-aware source runtime basis and released formula source envelope,MF12 is diagnostic-only and ready_for_train_only_smoke is false,S13+MF12 smoke admission
+candidate_freeze_contract,S13 plus MF12 combined path,one runtime-legal train candidate with source/property and UQ gates passed,Validation and holdout must not be touched before freeze,S15/S6/final scoring

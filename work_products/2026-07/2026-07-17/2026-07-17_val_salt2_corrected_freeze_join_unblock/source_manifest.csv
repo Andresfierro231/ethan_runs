@@ -1,0 +1,14 @@
+source_path,exists,role
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_prediction_join_contract.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/summary.json,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/README.md,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/summary.json,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/candidate_freeze_manifest.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/admission_gate_review.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/summary.json,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/candidate_admission_review.csv,True,read_only_input
+.agent/status/2026-07-17_AGENT-498.md,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/junction_heat_coefficient_readiness.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/corner_k_unlock_gate.csv,True,read_only_input
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/pm10_holdout_admission_watch.csv,True,read_only_input

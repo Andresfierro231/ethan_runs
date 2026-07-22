@@ -1,0 +1,2 @@
+decision,status,evidence,required_next_run,fields_required,admission_effect
+do_not_blindly_relaunch_cancelled_pm5,accepted,AGENT-404 metric_rows=12; incomplete_cases=salt2_hi5q;salt4_hi5q;salt4_lo5q; repaired_cases=salt2_lo5q,targeted_resampling_not_old_sbatch_replay,U;rho;T;Re;Pr;Ri;Gr;Ra;wallHeatFlux,F6/onset and internal-Nu remain blocked until resampled fields and wallHeatFlux exist.

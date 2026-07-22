@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="650" viewBox="0 0 1040 650">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32" y="42" font-family="Arial, sans-serif" font-size="24" font-weight="700" fill="#1d2329">S13 Production Harvest Readiness</text>
+<text x="32" y="68" font-family="Arial, sans-serif" font-size="14" fill="#46515c">Existing evidence supports diagnostic current-coarse trends only; production/admission gates remain closed.</text>
+<rect x="32" y="100" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="124" r="10" fill="#2d7f5e"/>
+<text x="82" y="120" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">current_coarse_exchange_qois</text>
+<text x="82" y="139" font-family="Arial, sans-serif" font-size="13" fill="#46515c">diagnostic_pass: usable as trend/evidence context only</text>
+<rect x="32" y="170" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="194" r="10" fill="#2d7f5e"/>
+<text x="82" y="190" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">same_qoi_temporal_uq</text>
+<text x="82" y="209" font-family="Arial, sans-serif" font-size="13" fill="#46515c">diagnostic_pass: temporal readiness exists, but not mesh/GCI readiness</text>
+<rect x="32" y="240" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="264" r="10" fill="#b34040"/>
+<text x="82" y="260" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">same_label_mesh_gci</text>
+<text x="82" y="279" font-family="Arial, sans-serif" font-size="13" fill="#46515c">blocked: production harvest remains forbidden</text>
+<rect x="32" y="310" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="334" r="10" fill="#b34040"/>
+<text x="82" y="330" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">source_property_release</text>
+<text x="82" y="349" font-family="Arial, sans-serif" font-size="13" fill="#46515c">blocked: no candidate-specific S11 or S15 release</text>
+<rect x="32" y="380" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="404" r="10" fill="#c28720"/>
+<text x="82" y="400" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">pressure_energy_residual_same_window</text>
+<text x="82" y="419" font-family="Arial, sans-serif" font-size="13" fill="#46515c">partial_diagnostic: same-window pressure/energy support is not production complete</text>
+<rect x="32" y="450" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="474" r="10" fill="#b34040"/>
+<text x="82" y="470" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">near_onset_nonrecirculating_anchor</text>
+<text x="82" y="489" font-family="Arial, sans-serif" font-size="13" fill="#46515c">blocked: ordinary upcomer closure remains disabled</text>
+<rect x="32" y="520" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="544" r="10" fill="#6d4c8d"/>
+<text x="82" y="540" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">production_harvest</text>
+<text x="82" y="559" font-family="Arial, sans-serif" font-size="13" fill="#46515c">do_not_run: do not launch sampler/harvest/UQ under this row</text>
+<rect x="32" y="590" width="976" height="48" rx="4" fill="#f7f8f9" stroke="#d5dadd"/>
+<circle cx="58" cy="614" r="10" fill="#555555"/>
+<text x="82" y="610" font-family="Arial, sans-serif" font-size="15" font-weight="700" fill="#1d2329">s11_decision</text>
+<text x="82" y="629" font-family="Arial, sans-serif" font-size="13" fill="#46515c">closed: S11/S15/S6 remain closed</text>
+</svg>

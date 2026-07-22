@@ -1,0 +1,6 @@
+item_id,statement,impact
+no_new_fit,"MF11 reads frozen empirical tables and completed gates only; it performs no fitting, tuning, or model selection.",keeps F2/F5 attribution separate from coefficient admission
+diagnostic_not_closure,"F2/F5 coefficients are discrepancy coordinates, not physical closures.",prevents using empirical transfer performance as publication evidence of a released model
+multiple_physics_nonidentifiability,F2/F5 can be explained by several unresolved physics families at once.,supports physical hypotheses but not unique attribution
+protected_scoring_boundary,"No validation, holdout, or external-test rows are newly scored here.",MF11 is a read-only synthesis gate
+residual_policy,Thermal residuals remain explicitly named and are not absorbed into internal Nu.,keeps future source/property and exchange-cell tests scientifically auditable

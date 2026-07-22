@@ -1,0 +1,4 @@
+trend,interpretation
+junction_loss_vs_power,Salt2-4 junction/stub heat loss increases monotonically 39.128 -> 48.485 W as imposed heater power increases 265.7 -> 337.6 W.
+junction_fraction_of_heater,"Junction loss fraction of imposed heater is nearly flat: 0.147, 0.145, 0.144. This suggests a structurally persistent local heat path rather than a one-case anomaly."
+junction_flux,"Junction/stub heat flux magnitude rises 921.1 -> 1141.4 W/m2 over Salt2-4, consistent with higher local temperatures driving external losses."

@@ -1,0 +1,7 @@
+guardrail,status
+solver/UQ execution,not_launched
+scheduler/sampler,not_launched
+native CFD/OpenFOAM outputs,not_mutated
+Fluid/external repositories,not_mutated
+registry/admission/blocker register,not_mutated
+"source/property release, final score, candidate freeze",not_performed

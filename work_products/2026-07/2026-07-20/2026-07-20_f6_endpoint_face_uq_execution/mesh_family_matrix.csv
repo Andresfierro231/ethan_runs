@@ -1,0 +1,7 @@
+case_id,branch,available_mesh_levels,eligible_same_qoi_mesh_members,mesh_family_status,gci_acceptance_requirement,fit_use_before_pass
+salt_2,right_leg,coarse;medium;fine,3,ready_for_salt2_same_qoi_mesh_sampler,declared h ratios plus same retained-window provenance plus monotonic/asymptotic convergence,forbidden
+salt_2,test_section_span,coarse;medium;fine,3,ready_for_salt2_same_qoi_mesh_sampler,declared h ratios plus same retained-window provenance plus monotonic/asymptotic convergence,forbidden
+salt_3,right_leg,coarse,1,blocked_missing_medium_fine_same_qoi_members,declared h ratios plus same retained-window provenance plus monotonic/asymptotic convergence,forbidden
+salt_3,test_section_span,coarse,1,blocked_missing_medium_fine_same_qoi_members,declared h ratios plus same retained-window provenance plus monotonic/asymptotic convergence,forbidden
+salt_4,right_leg,coarse,1,blocked_missing_medium_fine_same_qoi_members,declared h ratios plus same retained-window provenance plus monotonic/asymptotic convergence,forbidden
+salt_4,test_section_span,coarse,1,blocked_missing_medium_fine_same_qoi_members,declared h ratios plus same retained-window provenance plus monotonic/asymptotic convergence,forbidden

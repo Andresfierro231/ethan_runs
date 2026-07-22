@@ -1,0 +1,5 @@
+source_id,path,description,access
+forward_v0_results,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv,baseline forward-v0 mdot rows for comparison,read_only
+h1_proxy_k_source,work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_k_source.csv,Salt2 train K source rows used to build localized fixed-K map,read_only
+fluid_localized_hook,work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/README.md,existing Fluid localized_fixed_k_by_segment hook evidence,read_only
+final_forward_v1_gate,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md,current no-go final forward-v1 decision boundary,read_only

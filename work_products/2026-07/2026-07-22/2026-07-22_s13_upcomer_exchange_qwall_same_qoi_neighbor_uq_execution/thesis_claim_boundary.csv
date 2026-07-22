@@ -1,0 +1,5 @@
+claim_id,claim_text,claim_allowed,claim_role,supporting_artifact
+S13-QWALL-UQ-C1,"Target-window S13 QOI evidence exists for Q_wall_W, positive exchange mdot proxy, tau_recirc proxy, and wall/core/bulk thermal contrast across Salt2/Salt3/Salt4.",true,diagnostic_thesis_evidence,target_qoi_evidence.csv
+S13-QWALL-UQ-C2,Exact same-label target-minus and target-plus neighbor windows are missing for all four requested S13 QOI labels.,true,fail_closed_uncertainty_result,neighbor_window_inventory.csv
+S13-QWALL-UQ-X1,"S13 production harvest, exchange coefficient admission, or same-QOI UQ is released.",false,forbidden_overclaim,production_readiness_gate.csv
+S13-QWALL-UQ-X2,The source-side heat-flow fallback is equivalent to direct Q_wall_W for admission.,false,forbidden_overclaim,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/source_property_conservation_release.csv

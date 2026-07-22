@@ -1,0 +1,6 @@
+evidence_item,admission_status,allowed_use,not_allowed_use,reason
+TP2 restored 1D sensor target,validation-only,post-solve TP/TW aggregate scoring only,runtime input; fit target; closure calibration,Finite TP2 rows are required before aggregate use; projection is explicit and target-only.
+Other scoreable TP/TW labels,validation-only,post-solve diagnostic scorecard comparison,runtime input; fit target; sensor-wise correction,Existing policy keeps all TP/TW temperatures target-only.
+AGENT-360 replay model rows consumed here,diagnostic-only,evidence that TP2 projection emits finite 1D predictions,final forward-v1 thesis-strength closure claim,The replay modes still consume CFD heat ledgers or other non-final runtime shortcuts.
+TW10 cooling-jacket shell surrogate,blocked,reported as excluded,aggregate TP/TW score until active-HX shell-state model exists,Current 1D model does not emit the active-HX shell-state temperature.
+Final predictive forward-v1 model,blocked,none from this TP2 package alone,claim final forward-v1 is admitted,This package resolves TP2 scoring evidence only; broader hydraulic/thermal gates remain separate.

@@ -1,0 +1,10 @@
+gate_id,gate_name,current_status,pass_fail,reason,next_action
+G01,candidate_family_named,MF12_signed_source_memory_bulk_to_TP,pass,MF12 is listed in the model-form roster as a high-value thermal projection candidate,Use this candidate label for train/support sensitivity only.
+G02,property_family_named,jin_viscosity_parida_cp_santini_k,pass,Current property package gate names this as the baseline family,Keep sensitivity-only label until release.
+G03,strict_source_envelope,0 strict-pass rows,fail,Strict row-specific source-envelope recovery failed closed,Repair row-specific source envelope before source/property release or freeze.
+G04,cp_release,release-ready false,fail,cp_J_kg_K is required but no exact release row is ready,Publish row-specific cp source path and split permission.
+G05,mu_release,release-ready false,fail,viscosity/property mode release-ready rows are zero,Publish case/QOI property provenance and pressure/velocity basis.
+G06,k_release,release-ready false,fail,k label is present but not candidate-specific released,Complete material geometry and k sensitivity release gate.
+G07,protected_split_exclusion,enforced,pass,This package excludes validation/holdout/external scoring,Continue to keep protected rows score-only after freeze.
+G08,pressure_endpoint_readiness,job_3308712_running,blocked,CAND001 terminal endpoint fields are not handed off and monitor row owns scheduler state,Wait for AGENT-519 or terminal handoff before endpoint readiness.
+G09,execution_decision,preflight_only,fail_closed_no_execution,At least one release blocker fails and pressure endpoint is gated,Do not run final property fit or candidate freeze.

@@ -1,0 +1,6 @@
+candidate_id,metric_family,split_role,finite_count,primary_value,unit,use_class,tp_first_interpretation
+S12-HIAX1,TP,train,5,80.4585733904668,K,train_only_context_not_candidate_freeze,"S12-HIAX1 has finite train metrics, but the TP error is too large and too under-gated for promotion."
+S12-HIAX1,TW,train,11,84.64865165641251,K,train_only_context_not_candidate_freeze,supporting train-only context
+S12-HIAX1,all_probe,train,16,83.36187927489736,K,train_only_context_not_candidate_freeze,supporting train-only context
+S12-HIAX1,mdot,train,1,-0.010534324976562249,kg/s residual,train_only_context_not_candidate_freeze,supporting train-only context
+S12-HIAX1,pressure_root,train,1,-1.3016870923365786e-06,Pa residual,train_only_context_not_candidate_freeze,supporting train-only context

@@ -1,0 +1,16 @@
+{
+  "task": "AGENT-412",
+  "created_at": "2026-07-15T09:23:00-05:00",
+  "cancelled_jobs": [
+    "3295989",
+    "3295990",
+    "3295991"
+  ],
+  "reason": "AGENT-405 already ran the safe equivalent hydraulic diagnostic stages locally on c318-008, so the dependency-held Slurm tail was redundant.",
+  "before_state": "PENDING Dependency; NodeList None assigned; elapsed 00:00:00",
+  "after_state": "CANCELLED by 890970; elapsed 00:00:00; no node assigned",
+  "native_cfd_outputs_mutated": false,
+  "openfoam_launched": false,
+  "new_jobs_submitted": false,
+  "scheduler_action": "scancel 3295989 3295990 3295991"
+}

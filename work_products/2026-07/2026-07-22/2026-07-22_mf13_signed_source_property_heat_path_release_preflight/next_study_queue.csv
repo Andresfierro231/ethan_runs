@@ -1,0 +1,6 @@
+priority,next_study,why,success_signal,current_status_after_mf13
+1,same_qoi_tp_projection_uq,"MF13 leaves source/property release closed, but TP projection UQ is still independently required before any predictive TP formula claim",same-QOI TP projection uncertainty table with runtime-legality status and no protected scoring,next
+2,runtime_wall_profile_basis_for_tp_projection,D3 wall-shape signal can explain part of TP/TW discrepancy only if a runtime-legal wall/profile basis exists,source-bounded wall-profile model or fail-closed wall-profile gap table,pending
+3,source_property_label_release_candidate_after_exact_fields,MF13 identified exact fields needed for q_setup/cp/source placement; a separate row must find or reject them,heater/cooler/test-section/passive rows released by an explicit contract or fail closed with source-path evidence,pending
+4,train_only_mf12_formula_smoke_after_release,Formula execution is only legitimate after source/property and projection gates pass,train/support-only metrics and runtime-leakage audit; validation/holdout/external rows not used,blocked_by_release_gates
+5,tw_after_tp_residual_ownership,TW ownership should be decomposed after TP projection and source terms are separated,TW residual-owner table after subtracting released or diagnostic TP projection,pending

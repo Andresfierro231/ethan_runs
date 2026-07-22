@@ -1,0 +1,6 @@
+target_id,artifact_type,title_or_caption,source_table,claim_boundary
+FIG-S12-FREEZE-001,table,Thermal source/property freeze gate matrix,candidate_freeze_gate_matrix.csv,Shows no thermal candidate can freeze under current runtime/source/property gates
+FIG-S12-FREEZE-002,table,Heat-path residual ownership and blocker table,heat_path_residual_owner_table.csv,Attribution evidence only; no coefficient admission
+FIG-S12-FREEZE-003,table,Runtime-forbidden input audit,runtime_leakage_audit.csv,Defines what cannot enter predictive runtime
+FIG-S12-FREEZE-004,table,Split and uncertainty permission table,split_uq_permission_table.csv,Shows protected rows remain unscored before freeze
+FIG-S12-FREEZE-005,caption,Thesis negative freeze-gate result,README.md,No validation score or external generalization claim

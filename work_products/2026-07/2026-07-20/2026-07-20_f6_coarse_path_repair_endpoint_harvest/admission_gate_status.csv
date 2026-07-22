@@ -1,0 +1,7 @@
+gate,status,evidence,admission_effect
+coarse_retained_source_path,pass,Salt2/Salt3/Salt4 retained OF13 recon paths found under tmp/2026-06-30_claude_action_items,unblocks launch preflight source-path blocker only
+endpoint_face_metrics,diagnostic_proxy,20/20 endpoint raw XY planes harvested with count proxy,does not admit ordinary F6 without true face-area weighting
+ordinary_reverse_flow,diagnostic_only,5/10 endpoint pairs pass count-proxy RAF/RMF thresholds,blocks ordinary F6 promotion until true RAF/RMF
+same_qoi_time_uq,blocked,no two-sided retained-window endpoint face family harvested,blocks F6 fit admission
+same_qoi_mesh_uq,blocked,Salt2 triplet exists only as count-proxy pressure/recirculation diagnostics; r21/r32 and true face areas missing,blocks F6 fit admission
+scientific_admission,closed,no fit/admission row claimed,F6 fit and component-K admission remain none

@@ -1,0 +1,5 @@
+decision_id,source_segment_id,physical_role,old_status,new_provenance_status,runtime_allowed_now,why_not_runtime_admitted,next_required_gate
+REC-001,lower_leg,heater,forbidden_realized_cfd_only,setup_known_candidate,false,setup Q exists but Fluid source/sink runtime contract and source-property split release are not admitted,source-model API plus train-only split/source-property gate
+REC-002,cooling_branch,cooler,forbidden_realized_cfd_only,setup_known_candidate,false,cooler Q_loss exists in setup but cooler representation needs explicit imposed-operation/source model separation from realized CFD heat removal,source-model API plus cooler operating envelope review
+REC-003,upcomer,test_section,forbidden_realized_cfd_only,setup_known_candidate,false,test-section Q exists in setup but remains source/sink row not admitted as predictive runtime input,source-model API plus train-only split/source-property gate
+REC-004,ambient_wall,ambient_wall,already_setup_known,unchanged_setup_known,true,ambient-wall h/Ta/Tsur/emissivity rows are already legal setup metadata,none for metadata completeness

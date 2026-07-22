@@ -1,0 +1,14 @@
+runtime_item,allowed_as_predictive_runtime_input,current_status,writer_rule
+Geometry,yes,setup_known,Allowed if source/provenance and segment mapping are named.
+Property mode,yes,setup_or_preselected,Allowed only when property lane is stated before fitting/scoring.
+Heater setup inputs,yes,setup_known_or_admitted,Allowed when setup-facing; do not substitute row-realized heat unless admitted.
+Cooler/HX setup inputs,yes,setup_known_or_admitted,Allowed when setup-facing; imposed CFD cooler duty from scored row is forbidden.
+External boundary dictionary,yes,setup_known_or_candidate,"Allowed when h, Ta, Tsur, emissivity, resistance, and drive selector are setup-facing or admitted."
+Admitted closure coefficients,yes,only_if_admitted_for_scope,Allowed only within the row/QOI/scope of admission.
+CFD mass flow,no,target_or_score_or_diagnostic_context,Do not use CFD mdot to run a claimed predictive model for the scored row.
+Realized CFD wallHeatFlux,no,target_or_diagnostic_context,Do not use as predictive runtime boundary condition; it can diagnose heat-path residuals.
+Imposed CFD cooler duty from scored row,no,target_or_diagnostic_context,Do not use as hidden runtime input for prediction.
+Validation TP/TW or branch temperatures,no,score_target_or_diagnostic_context,"Sensors are post-solve comparisons, not model inputs."
+Holdout/external-test rows,no_score_only,protected,"May score a frozen model; cannot fit, tune, or select model form."
+Row-local pressure or heat targets,no,target,Cannot drive the same row being claimed predictive.
+S13 exchange QOIs,no_currently_blocked,diagnostic_temporal_uq_but_missing_mesh_gci,Do not use V_recirc/mdot_exchange/tau_recirc/Qwall as runtime inputs until production/source/UQ gates admit them.

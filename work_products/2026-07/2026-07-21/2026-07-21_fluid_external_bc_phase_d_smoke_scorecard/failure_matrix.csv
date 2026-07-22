@@ -1,0 +1,8 @@
+stage,status,failure_or_blocker,action
+phase_c_gate,pass,,Phase D can proceed only after Phase C implementation closeout.
+parser_load,pass,,Dictionary parser loaded the filtered train row.
+role_row_conversion,pass,,Keep explicit segment map; no implicit mapping.
+solver_contract_validation,pass,,Role row accepted by Fluid solver external-boundary guard.
+heat_path_accounting,pass,,Use only as smoke evidence until a full scenario solve is separately claimed.
+full_predictive_solve,not_run_by_policy,Phase D board row forbids solver/postprocessing launch.,Needs a separate Fluid Phase F or scorecard row.
+validation_holdout_external_score,not_run_by_policy,"Heldout scoring, external-test scoring, fitting, and final admission are forbidden in Phase D.",Use this package only as runtime-path evidence.

@@ -1,0 +1,10 @@
+gate,status,admitted_rows,blocking,reason
+segment_equation_contract,available,4,false,pressure/thermal runtime contracts exist
+segment_pressure_models,blocked,0,true,zero scoreable predictive pressure model rows
+segment_thermal_models,partial,2,true,heater/cooler setup admitted but test-section/upcomer/wall lanes blocked
+upcomer_hybrid,diagnostic_only,1,true,hybrid lane lacks predictive calibration
+branch_specific_ordinary_pipe,blocked,0,true,zero ordinary aggregate branches included
+boundary_layer_development,diagnostic_only,3,true,zero executable development ablation rows
+sensor_policy,validation_only,16,false,post-solve targets are available but runtime temperatures are forbidden
+final_split_policy,available,10,false,Salt1-4 final training/support policy is available
+previous_m3ts_candidates,not_admitted,0,true,frozen M3+TS candidates failed coupled/heat gates

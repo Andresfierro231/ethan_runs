@@ -1,0 +1,5 @@
+path_or_model,current_status,can_use_in_thesis,can_use_for_fitting,can_use_for_freeze,reason
+S13 exchange-cell evidence,diagnostic_supported_by_medium_fine_exact_label_rows,true,false,false,exact-label medium/fine rows quantify mesh sensitivity but do not satisfy same-label coarse/medium/fine GCI
+ordinary upcomer Nu/f_D/K closure,disabled,true,false,false,recirculation/exchange-cell behavior is not ordinary one-throughflow pipe evidence
+source/property release,not_reached,true,false,false,mesh/GCI and heat-flow match gates remain fail-closed
+validation/holdout/external scoring,forbidden_now,true,false,false,no frozen runtime-legal candidate was admitted from this packet

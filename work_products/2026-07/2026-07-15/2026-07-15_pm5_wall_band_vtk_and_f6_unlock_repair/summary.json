@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-07-15T13:55:50.910376+00:00",
+  "date": "2026-07-15",
+  "external_fluid_modified": false,
+  "f6_unlocked_for_review_not_admitted": true,
+  "field_set": [
+    "U",
+    "T",
+    "rho",
+    "p_rgh",
+    "Re",
+    "Pr",
+    "Ri",
+    "Gr",
+    "Ra",
+    "wallHeatFlux"
+  ],
+  "internal_nu_unlocked_for_review_not_admitted": true,
+  "metric_status_counts": {
+    "complete_with_wallHeatFlux": 12
+  },
+  "native_solver_outputs_mutated": false,
+  "openfoam_postprocessing_launched_in_agent406_scratch": true,
+  "parsed_metric_rows": 12,
+  "plane_wallT_rows": 12,
+  "requested_cases": [
+    "salt2_lo5q",
+    "salt2_hi5q",
+    "salt4_lo5q",
+    "salt4_hi5q"
+  ],
+  "scheduler_jobs_launched": false,
+  "scratch_dir": "tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair",
+  "task": "AGENT-406",
+  "vtk_validation_fail_rows": 0,
+  "vtk_validation_rows": 12,
+  "wallHeatFlux_rows": 12,
+  "work_product_dir": "work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair"
+}

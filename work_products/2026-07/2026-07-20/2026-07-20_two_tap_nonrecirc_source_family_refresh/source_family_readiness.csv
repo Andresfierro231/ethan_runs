@@ -1,0 +1,4 @@
+candidate_id,request_id,source_family,selection_status,readiness_status,launch_allowed_now,high_heat_running_jobs,high_heat_terminal_jobs,fallback
+CAND-001,NR-CLR-01,Salt4 high-heat/no-recirculation probes,preferred_conditional_source_family,terminal_gated_running,false,2,0,CAND-002 if high-heat terminal review does not provide a usable low-reverse source
+CAND-002,NR-CLR-01,secondary same-topology source family,secondary_conditional_source_family,fallback_hold_until_CAND_001_fails_terminal_review,false,2,0,CAND-003 only after an alternate feature/source screening package
+CAND-003,NR-ALT-01,alternate two-tap feature,deferred_no_current_source_case,deferred_no_source_case,false,2,0,no ordinary two-tap anchor; keep current rows diagnostic

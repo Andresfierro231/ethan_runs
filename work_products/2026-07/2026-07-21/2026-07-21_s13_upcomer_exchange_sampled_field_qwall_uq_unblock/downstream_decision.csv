@@ -1,0 +1,5 @@
+gate,status,allowed,reason
+post_extraction_unblock_decision,fail_closed_with_next_path,true,the row may publish the source-side path decision without running harvest/UQ/admission
+production_harvest,blocked,false,no Q_wall_W or contracted source-side heat-flow QOI has same-QOI UQ
+same_qoi_uq_execution,next_row_required,false,UQ must be claimed as a separate row on exact QOI labels/formula/sign/basis
+S11_S15_S6_or_coefficient_admission,blocked,false,production evidence and UQ are absent

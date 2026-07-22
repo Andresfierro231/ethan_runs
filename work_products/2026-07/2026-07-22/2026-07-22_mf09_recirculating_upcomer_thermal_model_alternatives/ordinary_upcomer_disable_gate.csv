@@ -1,0 +1,5 @@
+disabled_item,disabled_now,why,unlock_condition
+ordinary_upcomer_Nu_correction,true,single-stream heat-transfer state is not defensible in a recirculating upcomer,validated nonrecirculating or low-recirculation anchor with same-QOI UQ and mesh/GCI
+ordinary_upcomer_f_D_or_component_K,true,pressure reductions are support evidence only and no component K/F6 model is admitted,S14 pressure/F6 anchor and mesh/GCI/UQ evidence before any component claim
+source_side_heat_as_Q_wall_substitute,true,source-side lane exceeds direct Q_wall_W by about 143-177 W across Salt2-Salt4,source/property validity plus exact CV membership and same-QOI UQ
+exchange_cell_coefficient_fit,true,current mdot*DeltaT proxy would require cp from roughly 2.15e6 to 6.05e6 J/kg/K for Q_wall alone,production T_recirc/T_core/cp harvest with mesh/GCI and temporal UQ

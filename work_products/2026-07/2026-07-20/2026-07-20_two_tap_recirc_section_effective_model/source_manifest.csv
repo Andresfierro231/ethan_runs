@@ -1,0 +1,10 @@
+source_id,path,use,mutation
+pressure_velocity_basis_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv,"raw static, p_rgh, hydrostatic, velocity, kinetic, and diagnostic K evidence",read_only
+endpoint_recirculation_metrics,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,RAF/RMF/SVF reverse-flow gates and recirculation labels,read_only
+component_isolation_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv,apparent-cluster-only component isolation blocker,read_only
+same_qoi_uncertainty_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv,missing same-label/same-formula mesh/time UQ state,read_only
+final_gate_review,work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv,ordinary component-K rejection and gate summary,read_only
+f6_legwise_pressure_residual_contract,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_pressure_residual_contract.csv,term order for endpoint pressure residual review,read_only
+upcomer_recirc_pressure_closure_contract,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/upcomer_recirc_pressure_closure_contract.csv,existing throughflow-plus-recirculation pressure lane contract,read_only
+hybrid_1d_model_contract,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv,recirculating effective-lane label and forbidden ordinary coefficient policy,read_only
+two_tap_nonrecirc_anchor_plan,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/summary.json,separate non-recirculating anchor lane and no-launch decision,read_only

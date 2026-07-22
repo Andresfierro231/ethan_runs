@@ -1,0 +1,5 @@
+contract,required_before_execution,status_after_this_task,step_id
+"A separate execution row is required; do not launch scheduler, solver, sampler, or Fluid mutation from this dry preflight row.",claim separate execution row,required,N01
+"Inputs may include source-backed hA, area, Ta, Tsur, emissivity, layers, declared setup fields, and model-solved state only.",runtime input manifest,drafted,N02
+"Do not use realized wallHeatFlux, validation temperatures, holdout/external temperatures, CFD mdot, Qwall, imposed CFD cooler duty, or hidden multiplier.",forbidden input audit,pass,N03
+"Next run may report train-only residual movement and runtime cleanliness only; it may not freeze, validate, score, or release source/property values.",output interpretation,predeclared,N04

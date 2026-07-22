@@ -1,0 +1,12 @@
+split_or_action,status,evidence,release_or_admission,guardrail
+train_support,diagnostic evidence only,MF14 split_claim_matrix.csv,false,No model selection or release from D2
+validation,not used,MF14 split_claim_matrix.csv,false,Existing transfer values are read-only prior context
+holdout,not used,MF14 split_claim_matrix.csv,false,No holdout tuning or score
+external_test,not used,MF14 split_claim_matrix.csv,false,No external-test scoring
+new_validation_scoring,false,MF14 no_mutation_guardrails.csv,false,No protected scoring occurred
+new_holdout_scoring,false,MF14 no_mutation_guardrails.csv,false,No protected scoring occurred
+external_test_scoring,false,MF14 no_mutation_guardrails.csv,false,No protected scoring occurred
+runtime_temperature_input_release,false,MF14 no_mutation_guardrails.csv,false,TP/TW temperatures remain score-only
+bulk_to_TP_correction_release,false,MF14 no_mutation_guardrails.csv,false,D2 offsets are empirical diagnostic offsets
+source_property_release,false,MF14 no_mutation_guardrails.csv,false,No source/property release
+coefficient_admission,false,D2 and MF14 guardrails,false,No admitted correction coefficient

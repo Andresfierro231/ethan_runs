@@ -1,0 +1,12 @@
+lane,runtime_inputs_after_release,forbidden_inputs,outputs,current_blocker
+internal_Nu,fluid properties flow basis geometry and salt-side boundary condition only,heater/cooler/passive/radiation/storage/residual corrections; validation temperatures; realized wallHeatFlux,salt-side convection coefficient or Nu uncertainty,no admitted source/property and flow/regime gate for final candidate
+wall_conduction,wall/layer k thickness area contact model and solved wall states,back-solved protected residual contact coefficient,wall conduction heat rate and wall temperature drop,material geometry release incomplete
+insulation_quartz,insulation/quartz k thickness coverage exposed area and source adjacency,realized wallHeatFlux or heldout TP/TW residual as source,lane heat loss and resistance uncertainty,segment material/source release incomplete
+external_convection,h_ext Ta area coverage drive selector solved surface temperature,global hA multiplier chosen by protected score,convective passive heat loss,source-backed h/area/wall-state mapping incomplete
+radiation,emissivity Tsur area view factor solved surface temperature,double-count with CFD wallHeatFlux replay or tuned emissivity from protected score,radiative passive heat loss,radiation semantics/source fields not released
+jacket_cooler,setup HX/jacket geometry coolant or ambient state UA/effectiveness basis,imposed CFD cooler duty or realized cooler wallHeatFlux,predictive cooler/jacket sink,setup-only cooler model not released
+heater_source,setup heater power source distribution and heater-to-salt efficiency prior,realized heater wallHeatFlux or hidden Nu correction,predictive heater source to salt,eta/source distribution not released
+test_section_source,setup test-section power quartz/layer geometry exposed area and source distribution,legacy residual shortcut or validation temperature tuning,predictive test-section source/loss lane,test-section source/loss ownership incomplete
+storage,rho cp volume mass dTdt time-window metadata,steady residual fitted as storage,transient storage term,future transient lane only
+recirculation_exchange,interface geometry normals wall/core band cp mdot_exchange tau_recirc Q_wall_W after release,ordinary upcomer Nu/fD/K under recirculation,exchange-cell heat path and residence support,S13 mesh/GCI source/property release incomplete
+residual,declared-lane sum and uncertainty only,runtime residual closure hidden multiplier or internal Nu absorption,explicit unowned residual,requires new physical owner evidence before closure

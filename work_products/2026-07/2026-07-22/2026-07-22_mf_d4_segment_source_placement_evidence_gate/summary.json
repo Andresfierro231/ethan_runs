@@ -1,0 +1,13 @@
+{
+  "admission_status": "fail_closed_not_admitted",
+  "candidate_rows": 4,
+  "d4_transfer_mean_signed_error_K": 3.48615119164,
+  "d4_transfer_rmse_K": 7.94040349151,
+  "d4_transfer_rmse_reduction_pct": 54.272279139,
+  "decision": "d4_segment_signal_explained_as_empirical_upper_bound_no_source_bounded_candidate",
+  "publication_use": "diagnostic_segment_source_placement_priority_only",
+  "segment_rows": 8,
+  "source_bounded_candidate_ready_rows": 0,
+  "target_segments": 4,
+  "task": "TODO-MF-D4-SEGMENT-SOURCE-PLACEMENT-EVIDENCE-GATE-2026-07-22"
+}

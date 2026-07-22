@@ -1,0 +1,6 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/topology_cv_case_summary.csv,read topology release decision,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/alternate_cv_release_gate.csv,read alternate topology forensics,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/sampler_input_gap_matrix.csv,read sampler gap matrix,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_interface_wall_source_recovery/interface_wall_source_release_gate.csv,read interface/wall/source recovery gate,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition,generated task-owned package,true,false,true

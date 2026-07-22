@@ -1,0 +1,4 @@
+step_id,next_step,trigger,acceptance,guardrail
+PF6-READINESS-NEXT-001,Monitor high-heat CAND-001 terminal status.,3299620 terminal and 3299610 timeout disposition complete,all selected source cases either terminal-successful or explicitly fail-closed,read-only monitor or separately claimed scheduler row only
+PF6-READINESS-NEXT-002,Claim staged-copy endpoint sampler only if CAND-001 or fallback terminal readiness passes.,at least one terminal-ready source case with endpoint labels and source fields,"finite p, p_rgh, U, rho, T, face area, normals, RAF/RMF/SVF on same retained window",no native source-output mutation and no fit during harvest
+PF6-READINESS-NEXT-003,Run same-QOI mesh/time UQ and F3 comparison only after ordinary-flow pass.,RAF < 0.01 and RMF < 0.01 for candidate endpoint pair,accepted same-QOI UQ plus comparison against F3_shah_apparent,"no clipped K, no hidden global multiplier, no mixed-basis promotion"

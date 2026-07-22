@@ -1,0 +1,7 @@
+prerequisite,observed,required_minimum,pass,consequence
+same_qoi_temporal_uq,4,4,true,supporting evidence only
+same_label_mesh_gci,0,4,false,blocks production harvest/admission
+source_property_cp_release,0,1,false,blocks production harvest/admission
+limited_sampled_production_ready,0,1,false,blocks production harvest/admission
+exchange_cell_fit_ready,0,1,false,blocks production harvest/admission
+train_only_smoke_ready,0,1,false,blocks production harvest/admission

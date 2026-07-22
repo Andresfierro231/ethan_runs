@@ -1,0 +1,5 @@
+source_path,use,mutation
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/predicted_heat_ledger_delta.csv,corrected train-row radiation and full passive heat-ledger deltas,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_corrected_radiation_summary.csv,casewise convection/radiation split and baseline context,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/summary.json,setup/source-basis guardrails and release status,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_radiation_runtime_basis_reconciliation/summary.json,negative no-op runtime observation and radiation-basis reconciliation,read_only

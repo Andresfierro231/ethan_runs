@@ -51,14 +51,23 @@ Start with
 and
 `work_products/2026-07/2026-07-14/2026-07-14_salt_training_testing_evidence_rollup/`.
 
-2026-07-17 final predictive split update: AGENT-481 makes Salt1-4 nominal rows
-the final training/calibration envelope. Testing/holdout comes from
-perturbation, external, and new-CFD rows: Salt2 +/-5Q are holdout/testing after
-PM5 matched-plane extraction repair; `val_salt2` is external-test only after a
-matching heat-loss/admission package; Salt2/Salt4 +/-10Q remain blocked until
-`3293924` and `3295438` finish and terminal admission lands; the AGENT-478
-Salt3 Q x insulation matrix is the new-CFD holdout/onset design. Source:
+2026-07-17 final predictive split update, amended 2026-07-22: AGENT-481 makes
+Salt1-4 nominal rows the final training/calibration envelope. The protected
+`holdout_test` bucket now contains perturbation, external, and new-CFD rows:
+Salt2 +/-5Q are holdout/testing after PM5 matched-plane extraction repair, and
+`val_salt2` is grouped into `holdout_test` with `split_subrole=external_test`.
+Salt2/Salt4 +/-10Q remain blocked until `3293924` and `3295438` finish and
+terminal admission lands; the AGENT-478 Salt3 Q x insulation matrix is the
+new-CFD holdout/onset design. Source:
 `work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/`.
+
+2026-07-22 thesis CFD run/QoI split chart:
+`work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/`
+is the compact CSV source for thesis run/QoI tables. It publishes a wide chart
+with seven CFD rows, four train rows, three `holdout_test` rows, and one
+external-test subtype row. Use it for `mdot`, `TP1`-`TP6`, `TW1`-`TW11`,
+`TP_mean_K`, and `TW_mean_K` targets, but not as runtime inputs for the 1D
+predictive model.
 
 ## CFD-to-1D Postprocessing Schema Contract
 
@@ -88,6 +97,19 @@ coverage check. The linter is intentionally conservative; passing it does not
 replace scientific admission, and failing it means the missing schema lane must
 be documented before the row is used.
 
+2026-07-22 CFD extraction methodology packet:
+`work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/`
+summarizes exactly what is extracted from CFD for thesis methodology: source
+paths/time windows, geometry masks, `p`/`p_rgh`, trusted-wall `wallHeatFlux` and
+`Q_wall_W`, interface `U/T/rho`, wall/core/bulk temperature contrasts,
+source/property labels, heat-path ledgers, same-QOI UQ gates, and split/admission
+permissions. It also adds planned board row
+`TODO-SOURCE-PROPERTY-CP-VISCOSITY-PRESSURE-BASIS-PREFLIGHT-2026-07-22` for the
+remaining `cp_J_kg_K`, viscosity/property-mode, pressure-basis, legal source/sink,
+and signed heat-path preflight. No source/property value, Qwall admission,
+production harvest, or internal-Nu residual absorption is released by the
+methodology packet.
+
 ## Trusted results
 
 - **Mainline baseline** — Salt2/3/4 Jin continuations stationary in flow and gross
@@ -109,11 +131,15 @@ be documented before the row is used.
   `operational_notes/07-26/14/2026-07-14_SALT_TRAINING_TESTING_EVIDENCE_ROLLOUT.md`
   `work_products/2026-07/2026-07-14/2026-07-14_salt_training_testing_evidence_rollup/salt_training_testing_case_use_table.csv`
 - **Canonical final predictive split (2026-07-17)** — Final training spans
-  Salt1-4 nominal rows. Holdout/testing is supplied by Salt2 +/-5Q, external
-  val_salt2, selected +/-10Q after terminal admission, and new CFD rows after
-  run/admission. This supersedes old final-score language that reserved Salt4
-  nominal as the untouched holdout.
+  Salt1-4 nominal rows. Holdout/testing is supplied by Salt2 +/-5Q, `val_salt2`
+  as an external-test subtype, selected +/-10Q after terminal admission, and new
+  CFD rows after run/admission. This supersedes old final-score language that
+  reserved Salt4 nominal as the untouched holdout.
   `work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/`
+- **Thesis CFD run/QoI split chart (2026-07-22)** — Seven-row thesis-facing
+  `mdot`, TP, and TW target chart with `val_salt2` grouped inside
+  `holdout_test` while preserving `split_subrole=external_test`.
+  `work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/`
 
 ## Open / in-progress / blocked
 

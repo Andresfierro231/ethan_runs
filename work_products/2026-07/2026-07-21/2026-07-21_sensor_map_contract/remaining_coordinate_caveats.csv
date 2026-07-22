@@ -1,0 +1,4 @@
+caveat_id,sensors,reason,next_allowed_action
+CAVEAT-001,"TP1;TP3;TP4;TP5;TP6;TW4;TW5;TW6;TW9;TW11",approximate working placements are not exact experimental measurements,keep bounded unless exact instrument-coordinate provenance lands
+CAVEAT-002,"TW1;TW2;TW3;TW7;TW8",mixed provenance is directionally useful but not exact,keep source-backed direction labels but no runtime use
+CAVEAT-003,TW10,current active model has no heat-exchanger shell state,exclude until a shell-state model is explicitly admitted

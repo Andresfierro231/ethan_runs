@@ -1,0 +1,8 @@
+phase_dependency,required_output,provider_row,consumer_phase,release_status,release_note
+heat_path_contract,heat_path_release_gate.csv,TODO-HEATLOSS-PHASE-0-BASELINE-RELEASE-GATE,all_later_phases,released,"Phase 0 freezes lane names runtime inputs forbidden inputs and blockers."
+external_bc_schema,external_bc_dictionary_contract.csv,TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION,phase_3_wall_test_section_scoring,blocked_pending_phase_1,"Wall/test-section candidates must wait for executable external BC and radiation semantics."
+radiation_policy,radiation_semantics_audit.csv,TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION,phase_3_wall_test_section_scoring,blocked_pending_phase_1,"Predictive radiation and CFD replay wallHeatFlux policies must be separated before scoring."
+split_heat_evidence,split_heat_loss_readiness_table,TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE,phase_3_and_phase_4,blocked_pending_phase_2,"Do not infer qr or storage from residual; missing fields must remain explicit blockers."
+wall_test_section_candidate_score,narrow_candidate_scorecard,TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE,phase_5_final_scorecard,blocked_pending_phase_3,"No final heat-loss candidate until wall/test-section score passes runtime and validation gates."
+upcomer_exchange_gate,exchange_cell_and_Nu_reopening_table,TODO-HEATLOSS-PHASE-4-UPCOMER-EXCHANGE-AND-INTERNAL-NU-GATE,phase_5_final_scorecard,blocked_pending_phase_4,"Default remains zero internal-Nu fit rows unless recirculation/source/UQ gates pass."
+final_scorecard,frozen_heat_loss_scorecard,TODO-HEATLOSS-PHASE-5-FROZEN-SCORECARD-AND-THESIS-HANDOFF,thesis_handoff,trigger_gated,"Final claims require a runtime-legal frozen candidate or a documented negative result."

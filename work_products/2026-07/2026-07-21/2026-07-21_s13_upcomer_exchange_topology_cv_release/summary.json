@@ -1,0 +1,19 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-TOPOLOGY-CV-RELEASE-2026-07-21",
+  "generated_at": "2026-07-21T17:58:11-05:00",
+  "status": "complete_fail_closed_topology",
+  "case_count": 3,
+  "released_topology_cv_rows": 0,
+  "released_exchange_interface_rows": 0,
+  "released_wall_core_rows": 0,
+  "surface_extraction_allowed": false,
+  "scheduler_action": false,
+  "surface_vtk_extraction_launched": false,
+  "exchange_cell_harvest_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "exchange_cell_admission": false,
+  "residual_absorbed_into_internal_Nu": false,
+  "dominance_gate": 0.75
+}

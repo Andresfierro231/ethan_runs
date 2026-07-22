@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-07-13T10:54:45",
+  "task": "AGENT-263",
+  "patch_rows": 207,
+  "source_ids": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "role_counts": {
+    "ambient_wall": 63,
+    "cooler": 9,
+    "heater": 9,
+    "junction_other": 87,
+    "test_section": 3,
+    "zero_gradient_ncc_connector": 36
+  },
+  "bc_type_counts": {
+    "externalTemperature": 30,
+    "rcExternalTemperature": 108,
+    "zeroGradient": 69
+  },
+  "validation_passed": true,
+  "validation_errors": [],
+  "outputs": {
+    "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "role_summary": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv",
+    "segment_reduction_inputs": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv"
+  }
+}

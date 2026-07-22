@@ -1,0 +1,11 @@
+source_id,path,exists,role
+source_overlap_flags,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv,True,read-only source
+branch_source_envelope,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv,True,read-only source
+property_mode_matrix,work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_mode_matrix.csv,True,read-only source
+property_sensitivity_summary,work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv,True,read-only source
+agent521_contract,work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv,True,read-only source
+agent521_branch_summary,work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/branch_gate_carryforward_summary.csv,True,read-only source
+agent521_source_crosswalk,work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/source_gate_crosswalk.csv,True,read-only source
+final_shell_case_partition,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,True,read-only source
+final_shell_prediction_join,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,True,read-only source
+blocker_register,.agent/blockers.yml,True,read-only source

@@ -1,0 +1,17 @@
+{
+  "centerline_blocked_rows": 3,
+  "centerline_resolved_rows": 12,
+  "component_fit_admissible_rows": 0,
+  "external_fluid_modified": false,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "forward_v1_admitted": false,
+  "generated_at_utc": "2026-07-14T22:28:42+00:00",
+  "h1_faithful_launchable": false,
+  "independent_training_expansion_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "pm5_closure_fit_admissible_terminal_gate_rows": 4,
+  "pm5_harvest_rows": 4,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "task": "AGENT-362"
+}

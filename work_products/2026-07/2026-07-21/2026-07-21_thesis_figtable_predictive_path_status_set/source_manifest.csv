@@ -1,0 +1,7 @@
+source_id,path,use,read_only
+S6_VIS,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/blocked_scorecard_visual_table.csv,blocked scorecard visual rows,true
+S6_FLOW,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/s0_s11_gate_flow_table.csv,S0-S11 gate-flow status,true
+ADDENDUM_CLAIMS,work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration/claim_boundary_ledger.csv,claim boundary rows,true
+ADDENDUM_BLOCKERS,work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration/blocked_unlock_table.csv,blocked unlock rows,true
+VISUAL_LEDGER,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/cross_chapter_visual_ledger.csv,chapter visual routing,true
+S12_SUMMARY,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/summary.json,S12 named-contract status,true

@@ -1,0 +1,16 @@
+{
+  "case_count": 3,
+  "case_keys": [
+    "salt4_jin_q0500w_no_recirc_probe",
+    "salt4_jin_q1000w_no_recirc_probe",
+    "salt4_jin_q1500w_no_recirc_probe"
+  ],
+  "cooler_policy": "scale three fixed cooler/sink Q patches by target/337.6",
+  "runtime_policy": "explicit integer restart, general timeFormat, timePrecision 6, diagnostic-only convergenceMonitor",
+  "target_heater_powers_W": [
+    500.0,
+    1000.0,
+    1500.0
+  ],
+  "task": "AGENT-475"
+}

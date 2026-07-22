@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_output_mutation,false,read polyMesh and prior masks only
+scheduler_action,false,topology release is local metadata/mesh parsing only
+surface_vtk_extraction,false,no surface VTKs are generated in this row
+sampler_or_harvest_launch,false,topology release must pass before sampler work
+residual_absorbed_into_internal_Nu,false,energy residual and Q_wall_W remain separate lanes

@@ -1,0 +1,4 @@
+case_id,slurm_job_or_step,recorded_stop_state,terminal_state_recorded,decision_from_agent280,scheduler_review,source
+salt1_nominal,3282992.0,CANCELLED by user after user said normal Salt1 is done,yes,steady_runtime_stop_not_yet_closure_admission,terminal_recorded_from_agent280,AGENT-280 final_window_metrics.csv
+salt1_lo10q,3288671.0,CANCELLED by user after user said Salt1 -10Q can stop,yes,steady_runtime_stop_not_closure_fit_priority,terminal_recorded_from_agent280,AGENT-280 final_window_metrics.csv
+salt1_hi10q,3288671.1,CANCELLED to free one packed slot after flatness check,yes,steady_runtime_stop_not_closure_fit_priority,terminal_recorded_from_agent280,AGENT-280 final_window_metrics.csv

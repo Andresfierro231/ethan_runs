@@ -1,0 +1,6 @@
+source_path,use,mutation_status
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv,QOI-level executed temporal UQ,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_case_rows.csv,case-level target-minus/target/target-plus triplets,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/heat_flow_match_diagnostics.csv,heat-flow mismatch caveat,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/production_readiness_gate.csv,production/admission boundary,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/summary.json,source/property serial blocker,read_only

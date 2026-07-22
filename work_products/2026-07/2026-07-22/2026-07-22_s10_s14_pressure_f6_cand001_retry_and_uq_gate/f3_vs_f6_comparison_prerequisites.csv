@@ -1,0 +1,2 @@
+comparison_id,baseline,candidate,status_now,admitted_f6_rows,required_before_comparison,fit_performed,reason
+F3-VS-S14-F6,F3_shah_apparent,F6_non_upcomer_branch_pressure_residual,not_evaluated_no_admitted_or_ordinary_candidate,0,ordinary-flow pass; finite endpoint fields; same-QOI UQ; source/property labels; frozen split-safe candidate,false,"F3 comparison requires an F6 row that passes ordinary-flow, same-QOI UQ, source/property, and endpoint gates."

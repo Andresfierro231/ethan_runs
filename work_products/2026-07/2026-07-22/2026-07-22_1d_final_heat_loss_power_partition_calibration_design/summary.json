@@ -1,0 +1,21 @@
+{
+  "task_id": "TODO-1D-FINAL-HEAT-LOSS-POWER-PARTITION-CALIBRATION-DESIGN-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "heat_loss_power_partition_design_ready_no_calibration_no_release",
+  "heater_setup_total_W": 1133.1,
+  "cooler_setup_total_W": -449.96244353013935,
+  "test_section_setup_total_W": 148.0,
+  "diagnostic_nominal_passive_operator_W": 873.2718786177952,
+  "diagnostic_nominal_passive_convective_W": 216.7791447688486,
+  "diagnostic_nominal_passive_radiative_W": 656.4927338489465,
+  "largest_passive_sensitivity_delta_W": 656.4927338489466,
+  "measurement_input_rows": 10,
+  "calibration_sequence_rows": 7,
+  "double_counting_checks": 8,
+  "figure_table_targets": 6,
+  "calibration_performed": false,
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "protected_scoring": false,
+  "residual_absorbed_into_internal_Nu": false
+}

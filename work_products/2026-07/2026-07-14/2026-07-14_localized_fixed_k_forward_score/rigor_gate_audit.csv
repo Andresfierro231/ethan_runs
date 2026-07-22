@@ -1,0 +1,8 @@
+gate_id,gate,status,evidence,failure_action
+R1,Provenance completeness,pass,localized_fixed_k_source.csv includes source_path for every included K row,block publication/admission claim
+R2,No native CFD mutation,pass,package reads prior CSV/JSON artifacts and Fluid API only,stop and create separate repair/staging row
+R5,Predictive input discipline,pass,"runtime flags for CFD mdot, realized wallHeatFlux, and validation temperatures are false on all score rows","label replay/diagnostic, not predictive"
+R6,Locked split,pass,"Salt2=train, Salt3=validation, Salt4=holdout in localized_fixed_k_scorecard.csv",do not report final forward-v1 score
+R8,No global hydraulic fudge,pass,uses localized_fixed_k_by_segment keys instead of k_90deg aggregate or global major_loss_multiplier,demote to diagnostic screen
+R10,Documentation closeout,pass,"status, journal, import manifest, README, summary, source manifest, and tests produced",task incomplete
+FWD,Final forward-v1 admission,blocked,final_claim_blocked=true; cooler remains imposed and reset/redevelopment is not implemented,keep final forward-v1 no-go until setup-only boundary and reset semantics land

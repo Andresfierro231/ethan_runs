@@ -1,0 +1,23 @@
+{
+  "task": "AGENT-264",
+  "generated_at": "2026-07-13T10:54:46",
+  "emissivity_Tsur_affect_heat_flux": "yes",
+  "effect_basis": "compiled_library_symbols_and_strings_plus_admitted_case_metadata",
+  "custom_source_available": false,
+  "source_formula_status": "custom_source_not_found; exact source formula not quoted",
+  "formula_inference": "rcExternalTemperature has updateCoeffs, emissivity/Tsur dictionary handling, OpenFOAM sigma linkage, and radial/resistance symbols; radiation is therefore part of the boundary heat-flux calculation, but the contribution is not separately exported in current outputs.",
+  "all_admitted_rc_patches_have_emissivity_and_Tsur": true,
+  "separable_radiation_output_available": "no",
+  "parity_radiation_mode": "inseparable",
+  "one_d_parity_instruction": "For realized-wallHeatFlux diagnostic replay, do not add a separate 1D radiation term on top of CFD wallHeatFlux. For external-BC parity mode, treat radiation as inseparable inside the rcExternalTemperature equivalent unless a future OpenFOAM output or source audit exposes a separate qr/radiation heat term.",
+  "microcase_run": "not_run",
+  "microcase_reason": "compiled binary evidence was sufficient to answer effect direction; no solver output mutation or job submission was needed",
+  "evidence_ids": [
+    "custom_source_probe",
+    "compiled_library_strings",
+    "compiled_library_symbols",
+    "stock_externalTemperature_reference",
+    "admitted_case_dictionary_fields",
+    "no_exported_radiation_ledger"
+  ]
+}

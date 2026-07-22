@@ -1,0 +1,4 @@
+case_id,split_role,passive_hA_W_K,passive_target_loss_W,test_section_hA_W_K,test_section_target_loss_W,heater_source_W_setup,cooler_sink_W_setup,passive_role_count,source_path
+salt_2,train,1.101116243,107.04209274799999,0.091720624,5.679836082,265.7,136.350739906,6,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv
+salt_3,validation,1.1213662,122.09943016199999,0.092924361,10.54504039,297.5,150.769638673,6,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv
+salt_4,holdout,1.1498636480000002,141.18101844,0.094435365,16.76868551,337.6,169.226815038,6,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv

@@ -1,0 +1,16 @@
+guardrail,status,evidence
+native_CFD_outputs_mutated,false,This task only created coordination/evidence-routing files under work_products and edited .agent/BOARD.md additively
+registry_mutated,false,No registry paths in scope
+scheduler_action,false,No sbatch srun squeue sacct or solver job action performed
+solver_or_postprocessing_launched,false,No OpenFOAM or postprocessing command launched
+Fluid_or_external_source_mutated,false,No Fluid source or external repository files edited
+latex_body_edited,false,No .tex file edited
+raw_CFD_import_to_latex,false,Transfer rows request compact evidence only
+broad_figure_tree_copy,false,Figure import count audit remains prerequisite before binary asset copy
+source_property_release,false,Source/property release rows remain zero unless later task changes them
+Qwall_release,false,S13 upcomer packet remains diagnostic and fail-closed
+coefficient_admission,false,No component-K F6 Nu f_D K exchange coefficient or wall/core coefficient admitted
+candidate_freeze,false,No frozen runtime-legal candidate produced
+final_score_claim,false,No protected or final predictive score released
+runtime_leakage_relaxed,false,CFD mdot realized wallHeatFlux imposed cooler duty validation temperatures holdout and external-test data remain forbidden predictive runtime inputs
+

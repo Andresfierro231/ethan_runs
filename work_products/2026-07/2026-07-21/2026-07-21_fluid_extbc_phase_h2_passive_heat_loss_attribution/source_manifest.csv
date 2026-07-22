@@ -1,0 +1,7 @@
+source_path,use,mutation
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv,passive external role rows and hA/area/unit audit,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/heat_path_ledger.csv,baseline segment heat-loss ledger,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/sensitivity_metrics.csv,Phase H residual and heat-total response,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/sensor_delta.csv,TW5 and per-sensor response deltas,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv,setup-known source/sink coupling metadata,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/failure_classification.csv,heated-incline failure interpretation context,read_only_context

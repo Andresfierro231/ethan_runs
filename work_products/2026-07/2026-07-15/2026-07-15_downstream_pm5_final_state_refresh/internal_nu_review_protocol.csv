@@ -1,0 +1,5 @@
+step_id,stage,action,acceptance,stop_condition,output
+NU-01,input_lock,"Use AGENT-406 wall-band VTK/metrics with wallHeatFlux, wall T, bulk T, and PM5 recirculation fields.",12/12 wallHeatFlux rows available.,Any missing wallHeatFlux/Tbulk/Twall row.,internal_nu_pm5_row_readiness.csv
+NU-02,sign_and_energy_gate,Compute h_proxy=q''/(Twall-Tbulk); review sign convention and heat-balance consistency before Nu.,Positive interpretable h under documented sign convention and non-small delta-T.,"Non-positive h, small delta-T, or heat-balance mismatch.",sign/heat-balance decision table
+NU-03,recirculation_gate,Separate section-effective diagnostic Nu from fitted single-stream Nu.,Fit rows must be non-recirculating; recirculating rows stay diagnostic/section-effective only.,All PM5 rows recirculate.,diagnostic-vs-fit Nu classification
+NU-04,property_and_uncertainty_gate,"Apply k(T), D_h, mesh/time uncertainty, and downcomer/upcomer policy before admitting any Nu.","Admitted row has sign, heat balance, recirculation, mesh/time, and property policy passed.",Any gate fails.,internal-Nu admission update

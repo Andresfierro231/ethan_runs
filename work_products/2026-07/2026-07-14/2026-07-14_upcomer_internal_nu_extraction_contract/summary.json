@@ -1,0 +1,22 @@
+{
+  "task": "AGENT-339",
+  "status": "complete",
+  "decision": "contract_only_current_fit_admissible_upcomer_Nu_rows_remain_zero",
+  "n_extraction_rows": 45,
+  "n_admission_rows": 4,
+  "planes": [
+    "upcomer_inlet",
+    "upcomer_mid",
+    "upcomer_outlet"
+  ],
+  "fit_reopen_minimum": "at least three admitted fit_admissible_Nu upcomer rows including one ordinary-pipe anchor and one near-transition_or_higher_Re row",
+  "outputs": [
+    "upcomer_extraction_contract.csv",
+    "upcomer_nu_admission_criteria.csv",
+    "coefficient_naming_policy.md",
+    "source_manifest.csv",
+    "README.md",
+    "summary.json"
+  ],
+  "generated_at": "2026-07-14T12:37:51"
+}

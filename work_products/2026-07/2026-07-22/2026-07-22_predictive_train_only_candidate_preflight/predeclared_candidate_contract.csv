@@ -1,0 +1,18 @@
+field,value
+candidate_id,MF18_bulk_integral_residual_owner_setup_candidate
+purpose,shortest physical candidate contract for future Salt1-4 nominal train-only execution
+hydraulic_equation,"R_P = DeltaP_drive_setup(T,rho) - sum_i DeltaP_i(mdot; geometry,rho,mu) - DeltaP_recirc_attribution; solve R_P=0 for mdot"
+thermal_equation,"mdot cp (T_out_j - T_in_j) = q_setup_j - q_cooler_j - q_passive_H2_j - q_wall_partition_j + q_exchange_attribution_j + R_E_j"
+bulk_partition_equation,"q_wall_partition_total = phi_wall * Q_source_setup_legal_total; phi_wall is a future train-only scalar only after source/Q release gates pass"
+passive_h2_equation,"q_passive_H2 uses corrected outer-insulation conduction plus exterior convection/radiation to Ta/Tsur after runtime implementation proves nonzero heat-ledger movement"
+sensor_projection,project solved segment fluid and wall states to TP/TW sensor elevations with no observed target temperatures as runtime inputs
+pressure_residual_output,"R_P by loop and by branch/section; no hidden pressure multiplier"
+thermal_residual_output,"R_E by segment, heat-path family, TP/TW projection group, and residual owner"
+heat_ledger_output,"heater/setup source, cooler/HX, passive ambient/radiation, wall partition, exchange attribution, storage_or_residual"
+maximum_train_parameters_predeclared,1
+train_parameter_names,phi_wall_shared_bulk_partition_only_after_release
+parameters_admitted_now,0
+coefficients_fitted_now,0
+candidate_frozen_now,false
+execution_row_opened_now,false
+why_no_execution_row,"source/property release-ready rows, S13 formal GCI-ready rows, passive numeric q-loss release rows, and MF17 heat-flow match-ready rows are all zero"

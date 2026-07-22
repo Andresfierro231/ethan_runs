@@ -1,0 +1,12 @@
+guardrail,value
+native_output_mutation,false
+registry_or_admission_mutation,false
+scheduler_action,false
+solver_sampler_harvest_uq_launched,false
+thesis_current_file_edit,false
+Q_wall_W_release_or_relabel,false
+source_property_release,false
+coefficient_admission,false
+s11_s12_s13_s15_s6_trigger,false
+blocker_register_change,false
+residual_absorbed_into_internal_nu,false

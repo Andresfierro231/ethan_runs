@@ -1,0 +1,6 @@
+input_family,runtime_allowed,release_status,reason
+CFD mdot,no,blocked,"forbidden runtime input: observed flow solution, not setup-known input"
+realized wallHeatFlux or total_Q,no,blocked,forbidden runtime input: post-solve heat-path evidence would leak targets
+cooler duty or realized heat removal,no,blocked,forbidden runtime input: not released as setup-only source/property
+validation/holdout/external temperatures,no,blocked,forbidden runtime input: protected targets cannot tune or drive prediction
+row-specific source envelope labels,label_only,blocked,labels are complete but strict-pass release is not complete

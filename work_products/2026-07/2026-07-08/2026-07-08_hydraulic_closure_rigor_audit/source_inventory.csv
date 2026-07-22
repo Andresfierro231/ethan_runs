@@ -1,0 +1,12 @@
+path,exists,kind,role
+work_products/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,True,file,input
+work_products/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,True,file,input
+work_products/2026-07-07_time_window_quasi_steady_uq/quasi_steady_observations.csv,True,file,input
+work_products/2026-07-01_claude_section_mean_pressure,True,directory,input
+work_products/2026-06-30_claude_upcomer_convection_cell,True,directory,input
+work_products/2026-06-30_claude_downcomer_recirculation/downcomer_recirculation.csv,True,file,input
+work_products/2026-07-01_claude_segment_friction/segment_friction.csv,True,file,input
+work_products/2026-07-01_claude_momentum_budget/momentum_budget.csv,True,file,input
+work_products/2026-07-08_closure_observation_table/closure_observations.csv,True,file,input
+work_products/2026-07-08_upcomer_onset/upcomer_onset_regime_table.csv,True,file,input
+work_products/2026-07/2026-07-08/2026-07-08_hydraulic_closure_rigor_audit,True,directory,output

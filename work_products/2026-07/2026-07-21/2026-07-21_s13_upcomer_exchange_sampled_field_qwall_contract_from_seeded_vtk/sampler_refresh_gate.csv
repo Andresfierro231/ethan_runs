@@ -1,0 +1,5 @@
+gate,status,allowed,reason,forbidden_actions
+limited_scheduler_sampled_field_extraction,open_limited,true,released geometry VTKs and whole-mesh U/T/rho support are present for interface and wall-temperature sampling only,"do not label output sampler_ready, production_harvest_ready, Q_wall_W_ready, or admitted"
+Q_wall_W_extraction,blocked,false,no wallHeatFlux source field is released,do not substitute q_net_W or source/sink totals for Q_wall_W
+sampler_manifest_refresh,blocked,false,"pressure, viscosity, cp, Q_wall_W, and sampled fields are not complete",do not mark sampler_ready=true
+production_harvest_or_same_qoi_uq,blocked,false,exact harvested exchange QOIs do not exist yet,"no harvest, UQ, coefficient fit, or S11/S12/S15/S6 trigger"

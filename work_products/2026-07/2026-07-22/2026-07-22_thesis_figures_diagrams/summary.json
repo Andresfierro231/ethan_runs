@@ -1,0 +1,16 @@
+{
+  "task": "TODO-THESIS-FIGURES-DIAGRAMS",
+  "decision": "figure_set_ready_for_claim_controlled_use_no_new_science",
+  "current_svg_ready_rows": 6,
+  "external_visual_candidate_rows": 2,
+  "pending_panel_rows": 2,
+  "new_science": false,
+  "active_figtable_packet_mutated": false,
+  "outputs": [
+    "figure_readiness_matrix.csv",
+    "caption_guardrails.csv",
+    "source_manifest.csv",
+    "README.md",
+    "summary.json"
+  ]
+}

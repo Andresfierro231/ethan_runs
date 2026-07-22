@@ -1,0 +1,47 @@
+{
+  "task_id": "TODO-THESIS-CH6-CH7-NEGATIVE-K-SECTION-EFFECTIVE-INSERT-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Writer/Reviewer",
+  "status": "complete",
+  "objective": "Insert the negative-K / section-effective pressure result into the current thesis dossier without admitting a pressure closure.",
+  "target_files": [
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md"
+  ],
+  "key_values": {
+    "salt2_signed_residual_pa": "-1.25366731683",
+    "salt3_signed_residual_pa": "-1.84957005859",
+    "salt4_signed_residual_pa": "-1.67833900273",
+    "salt2_frozen_transfer_max_error_pa": "0.47046606946166093438399",
+    "validation_rows_consumed": 0,
+    "holdout_rows_consumed": 0,
+    "external_test_rows_consumed": 0
+  },
+  "allowed_claims": [
+    "current lower-right rows are diagnostic section-effective pressure evidence",
+    "ordinary component-K attempts are stopped for current rows",
+    "Delta_p_recirc_section is motivated as a residual ownership term"
+  ],
+  "forbidden_claims": [
+    "ordinary component K admission",
+    "cluster K admission",
+    "F6 recorrection or admission",
+    "clipped K",
+    "hidden/global pressure multiplier",
+    "hybrid pressure route beats F3/Shah",
+    "freeze/admission or protected split score"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "validation_holdout_external_scored": false,
+    "fitting_or_model_selection_performed": false,
+    "closure_admitted": false,
+    "blocker_register_mutated": false,
+    "generated_index_refreshed": false
+  }
+}

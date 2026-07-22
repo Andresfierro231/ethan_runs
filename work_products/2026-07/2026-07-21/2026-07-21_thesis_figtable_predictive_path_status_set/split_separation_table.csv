@@ -1,0 +1,5 @@
+split_role,rows,allowed_use_now,forbidden_use,current_release
+final_training,Salt1-4 nominal only after row-specific gates pass,train-only full solve and attribution for a predeclared candidate,claim blind performance,candidate_not_frozen
+development_validation,predeclared support/validation rows,diagnostic stress check after train-only solve,model selection unless predeclared as training support,score_only_or_blocked
+holdout_testing,Salt2 +/-5Q,none before freeze,"fit, tune, or select",protected_until_freeze
+external_test,val_salt2,context only,back-propagate residuals into model,protected_until_freeze

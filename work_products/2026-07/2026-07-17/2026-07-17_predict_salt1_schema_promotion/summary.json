@@ -1,0 +1,28 @@
+{
+  "all_cases_promoted": [
+    "salt1_hi10q",
+    "salt1_lo10q",
+    "salt1_nominal"
+  ],
+  "all_sources_present": true,
+  "bc_contract_rows": 21,
+  "branch_pressure_rows": 18,
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "heat_ledger_rows": 18,
+  "native_solver_outputs_mutated": false,
+  "promoted_cases": 3,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 5,
+  "runtime_audit_rows": 5,
+  "scheduler_action": false,
+  "sensor_target_rows": 51,
+  "split_role_counts": {
+    "final_training": 1,
+    "training_support": 2
+  },
+  "streamwise_pressure_rows": 90,
+  "task": "TODO-PREDICT-SALT1-SCHEMA-PROMOTION",
+  "thermal_score_rows": 18
+}

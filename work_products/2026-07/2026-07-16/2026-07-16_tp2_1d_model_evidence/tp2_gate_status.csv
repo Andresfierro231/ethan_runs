@@ -1,0 +1,5 @@
+gate,status,detail
+TP2_source_segment_named,pass,"Fluid parent=right_vertical; accepted endpoint parents=bottom_horizontal_inlet,right_vertical; canonical scorecard segment=right_downcomer_bottom_horizontal_junction."
+TP2_runtime_input_forbidden,pass,TP2 remains post-solve validation-only evidence; no runtime temperature input or fit target path is enabled.
+TP2_finite_prediction_before_aggregate,pass,3 of 3 TP2 rows have finite predicted/target/error values.
+TW10_excluded_until_active_hx_shell_state,pass,TW10 remains excluded because the active-HX shell-state target is not emitted by the 1D model.

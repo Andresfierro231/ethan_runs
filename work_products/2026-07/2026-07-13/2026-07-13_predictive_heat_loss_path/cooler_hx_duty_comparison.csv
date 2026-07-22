@@ -1,0 +1,4 @@
+case_id,baseline_1d_qhx_total_W,cfd_cooler_imposed_abs_W,cfd_cooler_realized_abs_W,cfd_cooler_realized_minus_imposed_abs_W,cooler_extra_removal_vs_baseline_1d_W,baseline_Tmean_error_K,cfd_cooler_duty_Tmean_error_K,Tmean_abs_error_reduction_K,Tmean_abs_error_reduction_pct,cooler_duty_mismatch_class
+salt_2,46.292,136.351,136.351,9.4e-08,90.0587,62.226,6.219,56.007,90.0058,first_order_external_hx_boundary_error
+salt_3,49.663,150.77,150.77,-3e-09,101.107,63.986,4.453,59.533,93.0407,first_order_external_hx_boundary_error
+salt_4,53.472,169.227,169.227,-1.268e-06,115.755,65.026,2.697,62.329,95.8524,first_order_external_hx_boundary_error

@@ -1,0 +1,10 @@
+input_family,mdot_effect_rank,tp_effect_rank,tw_effect_rank,dominant_pathway,first_screen_design,scientific_status
+heater_source_fraction,low_to_medium,high,high,local heated-incline TP/TW and lower-leg enthalpy,one_at_a_time_train_only,high; screening only until released/frozen
+cooler_hx_strength,high,high,medium,mdot and cooled branch/top-loop temperatures,one_at_a_time_train_only,high; screening only until released/frozen
+ambient_temperature,low_to_medium,medium,medium,external heat losses and wall temperatures,one_at_a_time_train_only,medium; screening only until released/frozen
+external_convection_hA,low_to_medium,medium,high,TW residual owner and passive wall losses,one_at_a_time_train_only,high; screening only until released/frozen
+radiation,low_to_medium,medium,medium,TW surface temperatures and external-loss split,one_at_a_time_train_only,medium; screening only until released/frozen
+wall_layer_materials,low_to_medium,medium,medium,TW wall-state projection and test-section path,one_at_a_time_train_only,medium; screening only until released/frozen
+fluid_property_mode,high,medium,medium,"mdot, Re/Pr, enthalpy transport",one_at_a_time_train_only,medium; screening only until released/frozen
+pressure_loss_terms,high,medium,medium,mdot and coupled heat transport,one_at_a_time_train_only,medium; screening only until released/frozen
+sensor_projection,low_to_medium,high,high,reported TP/TW errors,one_at_a_time_train_only,high_for_score_low_for_runtime; screening only until released/frozen

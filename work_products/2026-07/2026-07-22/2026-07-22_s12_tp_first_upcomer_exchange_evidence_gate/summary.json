@@ -1,0 +1,21 @@
+{
+  "task_id": "TODO-S12-TP-FIRST-UPCOMER-EXCHANGE-EVIDENCE-GATE-2026-07-22",
+  "generated_at": "2026-07-22T07:57:51-05:00",
+  "decision": "tp_first_s12_exchange_continuation_diagnostic_only",
+  "tp_priority_rows": 3,
+  "train_context_rows": 5,
+  "exchange_evidence_rows": 3,
+  "unlock_gate_rows": 8,
+  "next_queue_rows": 4,
+  "m3_tp_rmse_below_tw_rmse_all_cases": true,
+  "production_ready_rows": 0,
+  "s12_freeze_allowed": false,
+  "source_property_or_qwall_release": false,
+  "protected_split_scoring": false,
+  "final_score_values": 0,
+  "scheduler_action": false,
+  "native_output_mutation": false,
+  "fluid_or_external_repo_mutation": false,
+  "residual_absorbed_into_internal_nu": false,
+  "figure_svg": "work_products/2026-07/2026-07-22/2026-07-22_s12_tp_first_upcomer_exchange_evidence_gate/figures/svg/s12_tp_first_exchange_status.svg"
+}

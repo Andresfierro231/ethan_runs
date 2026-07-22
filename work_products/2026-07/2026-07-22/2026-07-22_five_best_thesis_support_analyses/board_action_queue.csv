@@ -1,0 +1,6 @@
+rank,recommended_task,claim_status,trigger,output_needed
+1,do_not_duplicate_active_S13_rows,wait,active S13 exact/source-side rows close or are archived,S13 closeout summaries and Qwall/source-side UQ decision
+2,TODO-THESIS-N2-UPCOMER-EXCHANGE-QWALL-UQ-PAPER-PANELS-2026-07-21,claim_after_S13_closeout,S13 diagnostic evidence remains complete and production gate remains blocked or passes,upcomer exchange panel/caption package with no ordinary-closure admission
+3,TODO-THESIS-N3-THERMAL-RESIDUAL-OWNER-TRAIN-ABLATION-2026-07-21,claimable_if_no_active_conflict,thermal residual-owner and passive-source packages remain complete,train-only ablation table separating physics lanes from empirical diagnostics
+4,TODO-THESIS-N4-SENSOR-QOI-PROJECTION-UNCERTAINTY-TABLE-2026-07-21,claimable_if_no_active_sensor_conflict,sensor-map contract remains complete,sensor/QOI projection and runtime-temperature prohibition table
+5,TODO-S10-S14-PRESSURE-F6-CAND001-RETRY-AND-UQ-GATE-2026-07-21,defer_until_pressure_rows_close,pressure/F6 active rows close and CAND001 terminal readiness is refreshed,retry/no-retry gate; no scheduler action unless later exact row is claimed

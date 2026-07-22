@@ -1,0 +1,12 @@
+source_path,role,exists,mutation
+work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv,branch source-envelope and signed heat direction,True,read_only
+work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,reset distance and x/D basis,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_developing_branch_gate.csv,single-stream developing-flow admissibility gate,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_branch_summary.csv,span-level developing-flow summary,True,read_only
+work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/development_toggle_scorecard.csv,boundary-layer development scorecard,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/tp_projection_thermal_development_evidence.csv,D2 TP projection handoff,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/d2_score_improvement_summary.csv,D2 train TP offset magnitude,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv,signed TP residuals,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s12_tp_first_upcomer_exchange_evidence_gate/s12_tp_exchange_evidence_table.csv,S13/S12 TP exchange evidence,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv,S13 same-QOI temporal UQ summary,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/heat_flow_match_diagnostics.csv,S13 heat-flow match diagnostic,True,read_only

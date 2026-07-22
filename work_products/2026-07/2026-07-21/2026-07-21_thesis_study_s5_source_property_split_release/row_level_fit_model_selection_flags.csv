@@ -1,0 +1,7 @@
+flag_group,row_count,fit_allowed_rows,model_selection_allowed_rows,score_allowed_rows,dominant_gate_status,interpretation
+all_scorecard_partition_rows,16,0,0,12,mixed_source_property_and_split_blocks,No current final scorecard partition row may fit or select a model.
+source_property_blocked_training_rows,4,0,0,4,blocked_source_envelope_not_strict_or_row_specific,Nominal training envelope exists but source/property release is still closed.
+diagnostic_support_rows,4,0,0,0,blocked_diagnostic_support_no_fit,Support rows remain diagnostic and excluded from final score.
+current_blind_rows,3,0,0,3,blocked_holdout_or_external_score_only_no_fit,Blind rows are protected from fitting and model selection.
+future_rows,5,0,0,5,blocked_future_placeholder_no_fit,Future rows require terminal/run/admission and freeze before scoring.
+enforced_fit_admission_candidates,1110,0,0,0,blocked_until_source_property_labels_and_gate_are_available,Historical candidate rows are label-complete in the enforced view but still not release-allowed.

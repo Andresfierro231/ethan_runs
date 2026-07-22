@@ -1,0 +1,15 @@
+exists,mutation_status,source_path,use_in_this_packet
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/source_backed_passive_h2_basis_table.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/q_loss_operator_contract.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_evidence_recovery/summary.json,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_evidence_recovery/passive_h2_family_evidence_recovery_matrix.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_evidence_recovery/passive_h2_missing_evidence_after_recovery.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/summary.json,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/exactly_one_candidate_gate.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/train_only_repair_prerequisites.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/runtime_legality_audit.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/scenario_matrix.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/runtime_input_manifest.csv,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json,preflight source evidence
+True,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/summary.json,preflight source evidence

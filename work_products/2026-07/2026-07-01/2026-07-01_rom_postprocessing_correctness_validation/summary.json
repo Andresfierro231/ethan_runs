@@ -1,0 +1,69 @@
+{
+  "generated_at": "2026-07-01T15:23:09-05:00",
+  "task": "AGENT-165",
+  "no_openfoam_run": true,
+  "inputs": {
+    "geometry_dir": "work_products/2026-07-01_claude_mesh_centerlines",
+    "section_dir": "work_products/2026-07-01_claude_section_mean_pressure",
+    "friction_json": "work_products/2026-07-01_claude_segment_friction/segment_friction.json",
+    "thermal_dir": "work_products/2026-06-30_claude_thermal_htc"
+  },
+  "outputs": {
+    "geometry_reference_csv": "work_products/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv",
+    "pressure_friction_audit_csv": "work_products/2026-07-01_rom_postprocessing_correctness_validation/pressure_friction_audit.csv",
+    "thermal_sign_identity_audit_csv": "work_products/2026-07-01_rom_postprocessing_correctness_validation/thermal_sign_identity_audit.csv",
+    "closure_observations_csv": "work_products/2026-07-01_rom_postprocessing_correctness_validation/closure_observations.csv",
+    "model_form_specs_seed_json": "work_products/2026-07-01_rom_postprocessing_correctness_validation/model_form_specs_seed.json",
+    "resistance_taxonomy_catalog_json": "work_products/2026-07-01_rom_postprocessing_correctness_validation/resistance_taxonomy_catalog.json",
+    "report_readme": "reports/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/README.md"
+  },
+  "counts": {
+    "geometry_rows": 90,
+    "pressure_rows": 36,
+    "thermal_rows": 9,
+    "closure_observation_rows": 333,
+    "model_form_specs": 6,
+    "resistance_taxonomy_classes": 8
+  },
+  "taxonomy_counts": {
+    "pressure_resistance_class": {
+      "buoyancy_contaminated_apparent_resistance": 12,
+      "distributed_wall_friction_candidate": 6,
+      "reversible_acceleration_area_change_diagnostic": 18
+    },
+    "pressure_closure_admissibility": {
+      "admissible_after_recirculation_and_GCI_checks": 6,
+      "diagnostic_only_not_fit": 18,
+      "not_admissible_until_buoyancy_corrected": 12
+    },
+    "thermal_resistance_class": {
+      "recirculation_cell_effective_thermal_resistance": 3,
+      "thermal_resistance_UAprime": 3,
+      "thermal_resistance_unavailable": 3
+    },
+    "thermal_nu_admissibility": {
+      "direct_or_diagnostic_with_domain_guard": 3,
+      "not_admissible": 3,
+      "not_directly_admitted": 3
+    },
+    "observation_resistance_class": {
+      "(blank)": 27,
+      "buoyancy_contaminated_apparent_resistance": 12,
+      "distributed_wall_friction_candidate": 6,
+      "geometry_support": 162,
+      "minor_loss_or_development_region": 108,
+      "reversible_acceleration_area_change_diagnostic": 18
+    },
+    "observation_thermal_resistance_class": {
+      "(blank)": 306,
+      "recirculation_cell_effective_thermal_resistance": 9,
+      "thermal_resistance_UAprime": 9,
+      "thermal_resistance_unavailable": 9
+    }
+  },
+  "limitations": [
+    "Pressure rows are not buoyancy-corrected yet.",
+    "Thermal rows are coarse-mesh and need GCI before publication-grade coefficients.",
+    "This package is an audit layer, not a closure-bundle refresh."
+  ]
+}

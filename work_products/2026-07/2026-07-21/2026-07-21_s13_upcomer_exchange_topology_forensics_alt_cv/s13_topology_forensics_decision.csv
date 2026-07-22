@@ -1,0 +1,2 @@
+decision_id,s13_topology_unblocked,released_case_rows,required_case_rows,surface_extraction_allowed,sampler_or_harvest_allowed,decision,reason,next_task
+S13-topology-forensics-alt-cv,false,0,3,false,false,fail_closed_no_admissible_alt_cv,no conservative wall-adjacent face-connected alternate CV releases all three cases under existing gates,review ROI/patch alignment before any surface or sampler work

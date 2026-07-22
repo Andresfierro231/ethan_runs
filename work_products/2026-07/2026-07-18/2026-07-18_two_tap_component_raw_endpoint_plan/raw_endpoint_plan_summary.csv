@@ -1,0 +1,9 @@
+category,count,interpretation
+target_rows,3,Salt2/Salt3/Salt4 corner_lower_right feature rows.
+endpoint_surface_rows,6,Two endpoint surfaces per target row.
+basis_field_rows,8,"Pressure, velocity, correction, and K output contract fields."
+recirculation_contract_rows,3,Same-window RAF/RMF/SVF requirements.
+same_qoi_uncertainty_rows,3,Same-QOI mesh/time uncertainty requirements.
+launch_gate_rows,7,Future staged-copy readiness and no-admission guardrails.
+sampling_jobs_launched,0,This task emits a contract only.
+ordinary_admissions,0,No F6 or component-K coefficient admitted.

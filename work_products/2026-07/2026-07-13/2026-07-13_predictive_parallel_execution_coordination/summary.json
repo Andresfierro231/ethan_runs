@@ -1,0 +1,36 @@
+{
+  "external_fluid_modified": false,
+  "generated_utc": "2026-07-13T22:38:54+00:00",
+  "h1_rerun_status": "not_executed_candidate_ready",
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "forward_v1_integration_summary.csv",
+    "solve_case_vs_fast_scan.csv",
+    "hydraulic_H1_screening_scores.csv",
+    "h1_feasibility_notes.csv",
+    "sensor_score_provisional.csv",
+    "forward_v1_decision_table.csv",
+    "next_phase_task_queue.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "overall_status": "phase_1_integrated_phase_2_ready_with_blockers",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_parallel_execution_coordination",
+  "row_counts": {
+    "decision_rows": 5,
+    "h1_feasibility_rows": 3,
+    "h1_screening_rows": 6,
+    "integration_rows": 6,
+    "manifest_rows": 7,
+    "queue_rows": 4,
+    "sensor_score_rows": 204
+  },
+  "sensor_rows_included_current": 120,
+  "sensor_rows_total": 204,
+  "solve_case_comparison_rows": 6,
+  "solve_case_pass_rows": 6,
+  "solve_case_status": "pass",
+  "task_id": "AGENT-299",
+  "thermal_fit_admitted": false
+}

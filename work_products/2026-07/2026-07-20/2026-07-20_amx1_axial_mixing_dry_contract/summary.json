@@ -1,0 +1,29 @@
+{
+  "task": "AGENT-565",
+  "date": "2026-07-20",
+  "result": "amx1_dry_contract_and_capability_audit_complete",
+  "decision": "fluid_patch_required_before_smoke",
+  "blocker_addressed": "predictive-wall-test-section-submodels",
+  "current_blocker_state": "still_high_no_admitted_setup_only_wall_test_section_passive_boundary_candidate",
+  "recommended_next_agent": "external Fluid implementer row for disabled-by-default AMX1 axial_mixing_mode and ledgers",
+  "first_post_patch_action": "Salt2 smoke only using AMX1a disabled baseline plus one low bounded multiplier",
+  "score_grid_run": false,
+  "fluid_smoke_run": false,
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "package_files": [
+    "README.md",
+    "source_manifest.csv",
+    "amx1_candidate_ladder.csv",
+    "amx1_dry_contract.csv",
+    "fluid_capability_audit.csv",
+    "fluid_patch_contract.csv",
+    "runtime_input_audit.csv",
+    "source_property_release_plan.csv",
+    "scenario_contract_stub.yaml",
+    "smoke_readiness_decision.json"
+  ]
+}

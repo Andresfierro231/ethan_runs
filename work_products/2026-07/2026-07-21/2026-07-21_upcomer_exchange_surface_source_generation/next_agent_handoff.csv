@@ -1,0 +1,4 @@
+sequence,work_package,objective,entry_condition,forbidden_action
+1,geometry_release,"approve cell-region/cellId basis, exchange-interface plane, and wall/core band",surface_extraction_contract.csv blocked rows resolved,do not substitute representative upcomer outlet proxy for exchange interface
+2,scheduler_surface_generation,run task-owned staged OpenFOAM sampling after geometry release,run script preflight exits 0 under a new scheduler-authorized row,do not write VTK or postProcessing outputs into native case directories
+3,diagnostic_sampler_execution,run sample_upcomer_exchange_cell.py with ready volume/source/surface lanes,cell/interface/wall VTK and source/sink/Q_wall ledgers exist,"do not fit, score, or admit exchange-cell coefficients"

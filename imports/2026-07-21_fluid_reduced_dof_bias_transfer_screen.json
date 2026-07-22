@@ -1,0 +1,85 @@
+{
+  "task": "TODO-FLUID-REDUCED-DOF-BIAS-TRANSFER-SCREEN-2026-07-21",
+  "task_id": "TODO-FLUID-REDUCED-DOF-BIAS-TRANSFER-SCREEN-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Build a reduced-degree-of-freedom empirical temperature bias/correction transfer screen with train/support-only fitting and frozen transfer scoring.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-REDUCED-DOF-BIAS-TRANSFER-SCREEN-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-reduced-dof-bias-transfer-screen.md",
+    "imports/2026-07-21_fluid_reduced_dof_bias_transfer_screen.json",
+    "tools/analyze/build_fluid_reduced_dof_bias_transfer_screen.py",
+    "tools/analyze/test_fluid_reduced_dof_bias_transfer_screen.py",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/fit_and_transfer_sensor_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/model_family_dof_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_metric_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/explanation_hypothesis_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_property_gate_todo.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/README.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_split_contract.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_1/validation_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_2/validation_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_3/validation_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_4/validation_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/README.md"
+  ],
+  "validation": [
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile tools/analyze/build_fluid_reduced_dof_bias_transfer_screen.py tools/analyze/test_fluid_reduced_dof_bias_transfer_screen.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/build_fluid_reduced_dof_bias_transfer_screen.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/test_fluid_reduced_dof_bias_transfer_screen.py",
+      "result": "Reduced-DOF bias transfer screen checks passed."
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/fit_and_transfer_sensor_rows.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/model_family_dof_ledger.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_metric_scorecard.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_runtime_leakage_audit.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/explanation_hypothesis_ledger.csv work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_manifest.csv --warn --todo-out work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_property_gate_todo.csv",
+      "result": "completed with expected SOURCE_PROPERTY_GATE_WARNING and wrote source_property_gate_todo.csv"
+    }
+  ],
+  "summary": {
+    "fit_rows": 32,
+    "transfer_rows": 32,
+    "external_test_rows_scored": 0,
+    "best_train_family": "F2_global_affine",
+    "best_train_corrected_mae_K": 8.501469998140214,
+    "best_transfer_family": "F5_thermal_family_offset_shared_multiplier",
+    "best_transfer_baseline_mae_K": 106.12166567949048,
+    "best_transfer_corrected_mae_K": 13.324482852092467
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": false,
+    "external_fluid_repo_edited": false,
+    "external_test_rows_scored": 0,
+    "coefficient_refit_after_transfer_scoring": false,
+    "model_selection_from_transfer": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false
+  }
+}

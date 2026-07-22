@@ -1,0 +1,6 @@
+metric,value
+active_rows_before,240
+moved_to_archived_complete,236
+active_rows_after,5
+terminal_closeouts,"AGENT-305,AGENT-344,AGENT-357,AGENT-448"
+followup_completed_rows_moved,AGENT-449;AGENT-451

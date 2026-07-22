@@ -1,0 +1,18 @@
+path,role_in_package,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/segment_mapping_contract.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/README.md,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/heat_path_ledger.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/runtime_leakage_audit.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/external_bc_segment_role_audit.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/negative_freeze_decision.csv,read evidence or runtime contract,read_only
+operational_notes/07-26/17/2026-07-17_CANONICAL_FINAL_PREDICTIVE_SPLIT_POLICY.md,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/metric_contract.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/freeze_readiness_matrix.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/residual_lane_readiness.csv,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/scorecard_release_guardrails.csv,read evidence or runtime contract,read_only
+.agent/BLOCKERS.md,read evidence or runtime contract,read_only
+cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py,read evidence or runtime contract,read_only
+work_products/2026-07/2026-07-21/2026-07-21_train_only_external_bc_attribution_freeze_gate,generated task-owned package,modified

@@ -1,0 +1,6 @@
+source_id,source_path,access,purpose
+coarse_path_uq_repair,work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_path_uq_repair,read_only,Stage B endpoint matrix and static-p blocker
+stage_a_raw_face_sampler,work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler,read_only,"endpoint coordinates, normals, and parser pattern"
+repaired_salt2_coarse,tmp/2026-06-30_claude_action_items/recon_salt2_of13,read_only,Stage B coarse sampling source
+repaired_salt3_coarse,tmp/2026-06-30_claude_action_items/recon_salt3_of13,read_only,Stage B coarse sampling source
+repaired_salt4_coarse,tmp/2026-06-30_claude_action_items/recon_salt4_of13,read_only,Stage B coarse sampling source

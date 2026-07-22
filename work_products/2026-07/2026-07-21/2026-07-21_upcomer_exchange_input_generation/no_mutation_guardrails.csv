@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,pass_no_mutation,read native polyMesh only; write generated outputs under task work_product
+scheduler,allowed_cell_volume_sbatch_only,only task-owned cell-volume export sbatch may be submitted
+openfoam,blocked,"no OpenFOAM solver, reconstructPar, foamPostProcess, or surface sampling in this row"
+admission,blocked,"no fit, score, model selection, exchange-cell admission, or Phase 4B/5/S6 trigger"
+residual_lane,pass,pressure and energy residuals stay explicit and are not hidden in internal Nu

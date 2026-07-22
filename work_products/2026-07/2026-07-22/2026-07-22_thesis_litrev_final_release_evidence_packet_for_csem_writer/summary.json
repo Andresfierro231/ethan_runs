@@ -1,0 +1,20 @@
+{
+  "task_id": "TODO-THESIS-LITREV-FINAL-RELEASE-EVIDENCE-PACKET-FOR-CSEM-WRITER-2026-07-22",
+  "decision": "litrev_final_release_csem_writer_packet_complete_no_admission_no_external_edit",
+  "claim_inventory_rows": 6,
+  "case_segment_admission_rows": 5,
+  "unresolved_claim_rows": 4,
+  "runtime_leakage_rows": 5,
+  "allowed_forbidden_claim_rows": 4,
+  "figure_table_rows": 5,
+  "external_papers_edit": false,
+  "thesis_body_latex_edit": false,
+  "new_science": false,
+  "admission_or_release": false,
+  "protected_scoring": false,
+  "fitting_or_model_selection": false,
+  "final_score_claim": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false
+}

@@ -1,0 +1,9 @@
+observable_family,fit_use_status,validation_use_status,mesh_status,row_count
+pressure,fit_target,validation_target,coarse_no_gci,36
+pressure,not_fit_apparent_or_residual,validation_diagnostic,coarse_no_gci,120
+pressure,not_fit_recirculation,validation_target,coarse_no_gci,78
+pressure,validation_only,validation_target,coarse_no_gci,108
+thermal,fit_feature,validation_target,coarse_no_gci,21
+thermal,fit_target,validation_target,coarse_no_gci,9
+thermal,not_fit_thermal_caveat,validation_diagnostic,coarse_no_gci,36
+thermal,validation_only,validation_target,coarse_no_gci,15

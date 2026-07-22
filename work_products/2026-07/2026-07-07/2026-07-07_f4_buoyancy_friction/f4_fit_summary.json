@@ -1,0 +1,132 @@
+{
+  "generated_by": "run_f4_calibration.py",
+  "task": "AGENT-187",
+  "date": "2026-07-07",
+  "admitted_cases": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "excluded_cases": [
+    "viscosity_screening_salt_test_1_jin_coarse_mesh"
+  ],
+  "fit_model": "f_corrected_over_flam = a + b / Re",
+  "validity_range_Re": "~60 to ~135 (Salt 2-4 Jin mainline)",
+  "warning": "Ri-correction not yet implemented. These fits are data-driven multipliers only, valid in the Salt 2-4 operating range. Do not extrapolate to Re > 200.",
+  "leg_class_fits": {
+    "heater": {
+      "a": 3.113314,
+      "b": -31.8183,
+      "r2": 0.8764,
+      "rmse": 0.03201,
+      "n_points": 3,
+      "Re_min": 67.99763118266802,
+      "Re_max": 122.6024614073759,
+      "Re_points": [
+        68.0,
+        90.2,
+        122.6
+      ],
+      "y_points": [
+        2.66559,
+        2.7154,
+        2.87876
+      ],
+      "sources": [
+        "salt_2:lower_leg",
+        "salt_3:lower_leg",
+        "salt_4:lower_leg"
+      ]
+    },
+    "downcomer": {
+      "a": 4.361424,
+      "b": -134.0506,
+      "r2": 0.991,
+      "rmse": 0.04119,
+      "n_points": 3,
+      "Re_min": 61.15899206065987,
+      "Re_max": 117.99501141241286,
+      "Re_points": [
+        61.16,
+        84.75,
+        118.0
+      ],
+      "y_points": [
+        2.19408,
+        2.72167,
+        3.25888
+      ],
+      "sources": [
+        "salt_2:right_leg",
+        "salt_3:right_leg",
+        "salt_4:right_leg"
+      ]
+    },
+    "upcomer": {
+      "a": 1.548087,
+      "b": -19.6165,
+      "r2": 0.0151,
+      "rmse": 0.43125,
+      "n_points": 9,
+      "Re_min": 66.64763746835195,
+      "Re_max": 134.88326391686644,
+      "Re_points": [
+        71.13,
+        68.8,
+        66.65,
+        96.77,
+        91.05,
+        88.44,
+        134.88,
+        123.66,
+        119.83
+      ],
+      "y_points": [
+        1.55122,
+        1.46276,
+        1.03688,
+        1.78724,
+        1.19301,
+        0.90558,
+        2.20917,
+        1.00307,
+        0.82087
+      ],
+      "sources": [
+        "salt_2:left_lower_leg",
+        "salt_2:test_section_span",
+        "salt_2:left_upper_leg",
+        "salt_3:left_lower_leg",
+        "salt_3:test_section_span",
+        "salt_3:left_upper_leg",
+        "salt_4:left_lower_leg",
+        "salt_4:test_section_span",
+        "salt_4:left_upper_leg"
+      ]
+    },
+    "cooler": {
+      "a": 2.549138,
+      "b": -20.1248,
+      "r2": 0.9812,
+      "rmse": 0.00826,
+      "n_points": 3,
+      "Re_min": 62.705232933531015,
+      "Re_max": 114.87772115689725,
+      "Re_points": [
+        62.71,
+        83.86,
+        114.88
+      ],
+      "y_points": [
+        2.23338,
+        2.2975,
+        2.38043
+      ],
+      "sources": [
+        "salt_2:upper_leg",
+        "salt_3:upper_leg",
+        "salt_4:upper_leg"
+      ]
+    }
+  }
+}

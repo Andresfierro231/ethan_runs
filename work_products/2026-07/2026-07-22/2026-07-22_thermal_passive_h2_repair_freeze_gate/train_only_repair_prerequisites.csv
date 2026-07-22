@@ -1,0 +1,9 @@
+prerequisite_id,status,evidence,next_action
+P01_candidate_named,pass,PASSIVE-H2-CAND001 is the single named passive candidate,Use exact candidate id in separate repair preflight row
+P02_source_basis,pass,5/5 source-backed setup-basis families release-ready,Carry setup hA/area/Ta/Tsur/emissivity/layers only
+P03_numeric_q_loss_release,blocked,0 numeric q-loss release rows,Do not release q-loss before runtime operator execution
+P04_source_property_release,blocked,source-property release atlas release-ready rows 0,Run candidate-specific source/property refresh only after repair evidence exists
+P05_repair_execution,blocked_this_row,repair_run_allowed_this_row False,Claim separate one-train repair execution row if desired
+P06_residual_owner,blocked,TW-after-TP decision fail_closed_no_single_runtime_legal_tw_after_tp_owner,Keep residual explicit and diagnostic
+P07_protected_scoring,blocked_until_freeze,validation/holdout/external scoring rows 0,Do not score protected rows before freeze
+P08_freeze,blocked,candidate_freeze_allowed_now False,Freeze only after train-only repair plus source/property/split gates pass

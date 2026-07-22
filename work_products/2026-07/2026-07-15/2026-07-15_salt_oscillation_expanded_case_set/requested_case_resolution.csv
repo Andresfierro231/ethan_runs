@@ -1,0 +1,6 @@
+requested,status,resolved_case_key,postprocessing,note
+salt2_jin_nominal,resolved,salt2_jin,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh/postProcessing,canonical forward-v1 train row; keep separate from broader July 15 thermal-training table
+salt3_jin_nominal,resolved,salt3_jin,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh/postProcessing,canonical forward-v1 validation row; not a fit row after model choice
+salt2_native_val,resolved,salt_test_2,/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar/postProcessing,historical/native val_salt2 comparison; do not mix with Salt2 Jin train row
+salt1_jin_reference_not_val,resolved,salt1_jin,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_jin_coarse_mesh/postProcessing,included because user asked for Salt1 val; no val_salt_test_1 case was found
+val_salt_test_1 / salt1_val,not_found,,,No val_salt_test_1* directory or case-matrix row was found; Salt1 Jin reference is included as diagnostic context only.

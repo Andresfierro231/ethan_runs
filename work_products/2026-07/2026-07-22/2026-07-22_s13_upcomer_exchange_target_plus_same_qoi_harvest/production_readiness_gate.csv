@@ -1,0 +1,6 @@
+gate,status,ready_for_next_stage,production_harvest_allowed_now,reason
+target_plus_generation,complete,true,false,staged target-plus windows exist for Salt2/Salt3/Salt4
+target_plus_same_qoi_harvest,complete,true,false,4/4 QOI labels have complete target-minus/target/target-plus support
+same_qoi_neighbor_uq_execution,ready_not_executed,true,false,claim separate same-QOI UQ execution row before mesh/GCI or production harvest
+mesh_gci_uq,not_reached_same_qoi_uq_not_executed,false,false,mesh/GCI waits for same-QOI neighbor UQ execution result
+production_harvest,do_not_run,false,false,"target-plus availability is solved, but UQ gates are still not executed"

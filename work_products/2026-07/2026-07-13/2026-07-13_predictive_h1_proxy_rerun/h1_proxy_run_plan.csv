@@ -1,0 +1,7 @@
+case_id,variant_id,base_variant_id,engine,minor_loss_total_fixed_K,h1_proxy_label,runtime_policy
+salt_2,F0_current_fluid_sources_H1_proxy,F0_current_fluid_sources,fast_scan_h1_proxy,40.6383688647,screen_only_not_publication_closure,"no CFD mdot, no sensor targets, no thermal fitting; K trained from Salt2 named-loss table only"
+salt_2,F1_heater_only_H1_proxy,F1_heater_only,fast_scan_h1_proxy,40.6383688647,screen_only_not_publication_closure,"no CFD mdot, no sensor targets, no thermal fitting; K trained from Salt2 named-loss table only"
+salt_3,F0_current_fluid_sources_H1_proxy,F0_current_fluid_sources,fast_scan_h1_proxy,40.6383688647,screen_only_not_publication_closure,"no CFD mdot, no sensor targets, no thermal fitting; K trained from Salt2 named-loss table only"
+salt_3,F1_heater_only_H1_proxy,F1_heater_only,fast_scan_h1_proxy,40.6383688647,screen_only_not_publication_closure,"no CFD mdot, no sensor targets, no thermal fitting; K trained from Salt2 named-loss table only"
+salt_4,F0_current_fluid_sources_H1_proxy,F0_current_fluid_sources,fast_scan_h1_proxy,40.6383688647,screen_only_not_publication_closure,"no CFD mdot, no sensor targets, no thermal fitting; K trained from Salt2 named-loss table only"
+salt_4,F1_heater_only_H1_proxy,F1_heater_only,fast_scan_h1_proxy,40.6383688647,screen_only_not_publication_closure,"no CFD mdot, no sensor targets, no thermal fitting; K trained from Salt2 named-loss table only"

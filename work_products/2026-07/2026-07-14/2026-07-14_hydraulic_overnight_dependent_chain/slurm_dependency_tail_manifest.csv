@@ -1,0 +1,7 @@
+stage_order,stage,job_id,job_name,dependency,slurm_state,action,status,notes
+0,older_less_restrictive_test_section_complex_raw_two_tap,3295985,hyd_tap_raw,afterany:3295120,CANCELLED,cancelled,retired_duplicate,"Cancelled because it did not wait for existing corrected-Q dependency harvester 3295438."
+0,older_less_restrictive_f6_ready_to_run_gate,3295986,hyd_f6_gate,afterok:3295985,CANCELLED,cancelled,retired_duplicate,"Cancelled with older less-restrictive chain."
+0,older_less_restrictive_fluid_reset_k_diagnostic_sweep,3295987,hyd_reset_k,afterok:3295986,CANCELLED,cancelled,retired_duplicate,"Cancelled with older less-restrictive chain."
+1,test_section_complex_raw_two_tap,3295989,hyd_stage,afterany:3295120;afterany:3295438,PENDING,submitted,active_corrected_chain,"First tail job waits for both active node allocation 3295120 and corrected-Q harvester 3295438."
+2,f6_ready_to_run_gate,3295990,hyd_stage,afterok:3295989,PENDING,submitted,active_corrected_chain,"Second tail job runs only if stage 1 exits successfully."
+3,fluid_reset_k_diagnostic_sweep,3295991,hyd_stage,afterok:3295990,PENDING,submitted,active_corrected_chain,"Third tail job runs only if stage 2 exits successfully."

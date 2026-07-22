@@ -1,0 +1,7 @@
+field_group,required_fields,status,use_now,blocker
+geometry_area_coverage,"segment length, wetted/external area, insulation/quartz coverage, jacket active length",incomplete,requirements ledger,row-specific material/geometry release not complete
+heater_source,"setup power, deposition distribution, heater-to-fluid efficiency label",traceable_not_released,diagnostic source lane,source/property release rows remain zero
+cooler_jacket,"coolant/ambient state, jacket geometry, UA/effectiveness assumptions",model_design_only,future setup-only model lane,no released cooler setup model
+wall_layers,"wall k, thickness, contact resistance, layer continuity",partial,material gap table,same-QOI UQ and material provenance missing
+radiation_external,"emissivity, surroundings temperature, view factor, external convection h",policy_ready_not_numeric_release,diagnostic sensitivity,numeric passive heat-loss release false
+storage,"solid/fluid volumes, rho cp, window dT/dt",future_transient_lane,not steady closure,steady thesis runtime contract

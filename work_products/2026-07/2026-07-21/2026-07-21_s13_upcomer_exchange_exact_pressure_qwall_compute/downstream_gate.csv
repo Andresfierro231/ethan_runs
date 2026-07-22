@@ -1,0 +1,6 @@
+gate,status,allowed,reason
+exact_pressure_basis,released,true,target-window p and p_rgh sampled/reduced from native fields through cellProcAddressing
+Q_wall_W,released,true,trusted-wall wallHeatFlux integrated only on seeded trusted wall faces with full face coverage
+production_sampler_manifest_refresh,eligible_next_review_not_run,false,"this row releases inputs only; sampler manifest, production harvest, and UQ require a separate row"
+same_qoi_uq,blocked,false,"same-window target QOIs are now available, but neighbor-window and mesh/GCI same-QOI UQ are not executed here"
+internal_Nu_residual_absorption,forbidden,false,Q_wall_W is carried as a separate heat path; no residual is hidden in internal Nu

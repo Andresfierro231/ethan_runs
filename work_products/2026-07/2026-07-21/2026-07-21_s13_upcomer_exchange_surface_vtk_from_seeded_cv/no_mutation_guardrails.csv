@@ -1,0 +1,10 @@
+guardrail,changed
+native_output_mutation,false
+registry_or_admission_mutation,false
+scheduler_action,false
+openfoam_solver_or_postprocessing_launch,false
+sampler_or_harvest_launch,false
+fluid_or_external_repo_mutation,false
+fit_model_selection_or_admission,false
+s11_s12_s13_s15_s6_trigger,false
+residual_absorbed_into_internal_Nu,false

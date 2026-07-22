@@ -1,0 +1,52 @@
+{
+  "task": "TODO-THERMAL-PASSIVE-H2-REPAIR-FREEZE-GATE-2026-07-22",
+  "task_id": "TODO-THERMAL-PASSIVE-H2-REPAIR-FREEZE-GATE-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Thermal-modeling / Forward-pred / Tester / Writer / Reviewer",
+  "summary": "Closed PASSIVE-H2 repair-freeze gate: one candidate is reviewable for a separate train-only repair preflight, but no repair execution or freeze is allowed now.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THERMAL-PASSIVE-H2-REPAIR-FREEZE-GATE-2026-07-22.md",
+    ".agent/journal/2026-07-22/thermal-passive-h2-repair-freeze-gate.md",
+    "imports/2026-07-22_thermal_passive_h2_repair_freeze_gate.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/passive_h2_repair_freeze_preflight.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/passive_h2_source_release_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/q_loss_operator_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/summary.json",
+    "Fluid source tree",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/summary.json",
+    "exactly_one_candidate_gate": "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/exactly_one_candidate_gate.csv",
+    "runtime_legality_audit": "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/runtime_legality_audit.csv",
+    "train_only_repair_prerequisites": "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/train_only_repair_prerequisites.csv",
+    "freeze_decision_table": "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate/freeze_decision_table.csv"
+  },
+  "decision": "passive_h2_repair_freeze_gate_reviewable_for_separate_train_only_preflight_not_freeze",
+  "candidate_id": "PASSIVE-H2-CAND001",
+  "source_basis_release_ready_rows": 5,
+  "source_property_release_ready_rows": 0,
+  "repair_run_executed": false,
+  "candidate_freeze_allowed_now": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "candidate_freeze": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxation": false,
+  "no_scorecard_outputs": true
+}

@@ -1,0 +1,2 @@
+candidate_family,decision,s11_reviewable,repair_execution_allowed,source_property_release_allowed,closure_admission_allowed,reason,next_source_basis_work
+M2_plus_passive_wall_test_section,no_repair_now_no_s11_candidate,False,False,False,False,No candidate has independent source-bounded basis plus finite score/readiness; strongest response is broad train-only passive hA sensitivity.,ambient/geometry/insulation/material/area/literature hA release before any solve

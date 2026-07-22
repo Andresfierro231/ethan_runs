@@ -1,0 +1,5 @@
+qoi_name,retained_window_status,neighbor_minus_status,neighbor_plus_status,same_formula_sign_basis_required,mesh_or_gci_status,source_property_status,uq_release_allowed_now,production_use_allowed_now,next_required_action
+Q_source_side_net_static_bc_W,retained_window_source_context_ready_distinct_qoi_contract,missing,missing,true,missing,needs_source_property_release,false,false,generate same-QOI neighbor windows and accepted mesh/GCI evidence before production use
+mdot_exchange_positive_outward_proxy_kg_s,retained_window_proxy_ready,missing,missing,true,missing,not_applicable_or_missing,false,false,generate same-QOI neighbor windows and accepted mesh/GCI evidence before production use
+tau_recirc_proxy_s,retained_window_proxy_ready,missing,missing,true,missing,not_applicable_or_missing,false,false,generate same-QOI neighbor windows and accepted mesh/GCI evidence before production use
+wall_core_bulk_temperature_contrast_K,retained_window_sampled_ready,missing,missing,true,missing,not_applicable_or_missing,false,false,generate same-QOI neighbor windows and accepted mesh/GCI evidence before production use

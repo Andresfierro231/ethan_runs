@@ -1,0 +1,15 @@
+{
+  "admitted_lanes": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 67,
+  "coupled_status_counts": {
+    "completed": 67
+  },
+  "created_utc": "2026-07-17T22:08:09.849665+00:00",
+  "run_fluid": true,
+  "selected_lambda": "1",
+  "selection_status": "diagnostic_selected_from_salt1_salt2_salt4_finite_rows_with_root_rejections",
+  "task": "AGENT-529",
+  "why": "This package corrects the train/holdout split for the heater-source redistribution screen. The predictive-wall-test-section-submodels blocker remains open until blind PM5Q/val_salt2 adapters exist and the PB2/Salt1 boundary contract is repaired."
+}

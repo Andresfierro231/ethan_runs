@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-09T17:58:17",
+  "task": "AGENT-247",
+  "source_observation_table": "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+  "detail_rows": 66,
+  "thesis_evidence_rows": 9,
+  "admission_verdict_counts": {
+    "validation_only_defensible_cv_reviewed": 6,
+    "validation_only_not_bracketed": 3,
+    "validation_only_partial_bracket": 6,
+    "validation_only_recirc_contaminated": 21,
+    "validation_only_sampled_interface_no_residual": 30
+  },
+  "overall_admission_counts": {
+    "validation_only_defensible_cv_reviewed": 3,
+    "validation_only_recirc_contaminated": 6
+  },
+  "recirculation_detail_rows": 21,
+  "radiation_present_detail_rows": 0,
+  "fit_eligible_detail_rows": 0,
+  "outputs": [
+    "thermal_control_volume_admission.csv",
+    "thermal_thesis_evidence_table.csv",
+    "README.md",
+    "summary.json"
+  ]
+}

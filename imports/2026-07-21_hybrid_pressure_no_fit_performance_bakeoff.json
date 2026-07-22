@@ -1,0 +1,37 @@
+{
+  "task": "TODO-HYBRID-PRESSURE-NO-FIT-PERFORMANCE-BAKEOFF-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/cfd-pp/Tester/Writer",
+  "objective": "Build a no-fit train-only bakeoff for the section-effective hybrid pressure route without coefficient tuning or protected split scoring.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-HYBRID-PRESSURE-NO-FIT-PERFORMANCE-BAKEOFF-2026-07-21.md",
+    ".agent/journal/2026-07-21/hybrid-pressure-no-fit-performance-bakeoff.md",
+    "imports/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff.json",
+    "tools/analyze/build_hybrid_pressure_no_fit_performance_bakeoff.py",
+    "tools/analyze/check_hybrid_pressure_no_fit_performance_bakeoff.py",
+    "tools/analyze/test_hybrid_pressure_no_fit_performance_bakeoff.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/no_fit_performance_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/residual_ownership_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/baseline_comparison_provenance.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/split_role_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/candidate_reviewability_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/section_effective_pressure_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/three_level_score.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/f3_shah_apparent_comparison_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f3_vs_f6_comparison_readiness.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_notes": "All numeric outputs come from existing CSV/JSON artifacts. No native solver outputs, registry state, scheduler state, Fluid source, or protected split rows were touched."
+}

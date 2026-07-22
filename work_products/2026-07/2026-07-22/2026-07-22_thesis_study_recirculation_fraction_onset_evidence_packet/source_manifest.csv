@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/shared_velocity_ranges.csv,common velocity color/scale range,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/output_manifest.csv,velocity figure file manifest,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/y_velocity_side_z_status.json,y-velocity render status,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_status.json,velocity-magnitude render status,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_segmentation_case_summary.csv,validated cell-VTK reverse-flow topology preflight,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_component_summary.csv,reverse-flow component fragmentation evidence,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/onset_regime_visual_table.csv,onset visual and recirculation-proxy rows,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/upcomer_exchange_cell_readiness.csv,ordinary closure disable and exchange-cell blocker rows,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/s13_exchange_trend_table.csv,S13 current-coarse exchange/tau diagnostic proxies,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv,same-QOI temporal UQ for current coarse S13 rows,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/same_label_mesh_family_generated_rows.csv,current coarse exact-label rows and mesh/GCI block,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/sampling_command_contract.csv,medium/fine terminal sampler contract,true,false,false

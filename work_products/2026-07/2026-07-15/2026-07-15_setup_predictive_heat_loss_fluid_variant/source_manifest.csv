@@ -1,0 +1,6 @@
+source_id,path,exists,use
+Fluid solver,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,true,active external-boundary heat-loss implementation
+Fluid config loader,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,true,scenario YAML parsing and scenario_records export
+Fluid solver tests,../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,true,focused contract tests for setup-only heat-loss variant
+Fluid README,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,true,scenario contract documentation
+AGENT-410 plan,work_products/2026-07/2026-07-15/2026-07-15_diagnostic_cfd_heat_loss_replay_and_predictive_loss_plan/predictive_heat_loss_variant_plan.csv,true,requested implementation plan

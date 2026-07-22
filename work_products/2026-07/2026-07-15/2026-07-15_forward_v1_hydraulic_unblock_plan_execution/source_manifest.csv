@@ -1,0 +1,9 @@
+path,exists
+work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/summary.json,true
+work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/summary.json,true
+work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/summary.json,true
+work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/submission_status.csv,true
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/summary.json,true
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/agent360_refresh/sensor_level_errors.csv,true
+work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/stage_status.csv,true
+work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/slurm_dependency_tail_manifest.csv,true

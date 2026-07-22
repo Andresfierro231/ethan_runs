@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_upcomer_exchange_input_generation.py,task_output,true,false,true
+tools/extract/test_build_upcomer_exchange_input_generation.py,task_output,true,false,true
+tools/extract/openfoam_cell_volumes.py,read_only_context,true,false,false
+tools/extract/sample_upcomer_exchange_cell.py,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_volume_parser,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_volume_export_sbatch,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_compute_execution,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_sampler_implementation,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation,task_output,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh,read_only_context,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh,read_only_context,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh,read_only_context,true,true,false

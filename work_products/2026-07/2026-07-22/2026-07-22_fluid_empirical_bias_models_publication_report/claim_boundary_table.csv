@@ -1,0 +1,9 @@
+claim,allowed_status,reason,source
+large_systematic_temperature_discrepancy_exists,allowed,"Baseline transfer MAE is 106.121666 K and simple frozen corrections reduce it strongly.",work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv
+low_dof_empirical_correction_transfers_directionally,allowed,"F1-F5 all reduce Salt3/Salt4 score-only transfer MAE without refit.",work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv
+F2_global_affine_is_best_publication_diagnostic_model,allowed_with_caveat,"F2 is nearly as accurate as F5 on transfer rows with only two degrees of freedom.",work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/model_family_dof_ledger.csv
+empirical_coefficients_are_physical_closures,forbidden,"Coefficients are discrepancy parameters and source/property gates remain blocked.",work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_property_gate_todo.csv
+final_predictive_model_is_admitted,forbidden,"No final candidate is admitted and source TSWFC2 candidate remains not_admitted_no_grid_expansion.",work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/README.md
+external_test_generalization_is_demonstrated,forbidden,"No compatible external-test sensor-level row was scored; val_salt2 remains unscored here.",work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_runtime_leakage_audit.csv
+residual_can_be_absorbed_into_internal_Nu,forbidden,"The correction is a residual/discrepancy layer, not an internal heat-transfer closure.",work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md
+

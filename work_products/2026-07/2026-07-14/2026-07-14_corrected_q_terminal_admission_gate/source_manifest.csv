@@ -1,0 +1,6 @@
+artifact,role,mutation_status,path
+sacct_3293924,source,read_only,scheduler:sacct -j 3293924
+squeue_3293924,source,read_only,scheduler:squeue -j 3293924
+slurm_stdout_tail,source,read_only,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out
+slurm_stderr_tail,source,read_only,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err
+scheduler_snapshot,generated,new_artifact,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/scheduler_snapshot.csv

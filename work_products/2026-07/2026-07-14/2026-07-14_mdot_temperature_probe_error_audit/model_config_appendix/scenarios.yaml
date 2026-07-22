@@ -1,0 +1,668 @@
+scenario_groups:
+  - name: baseline_predictive_matrix
+    type: sweep_matrix
+    base_name_template: "predictive_airside_ins_{insulation_thickness_in:.1f}in_rad_{radiation_on_int}"
+    dimensions:
+      insulation_thickness_in: [0.0, 1.0, 2.0, 3.0]
+      radiation_on: [false, true]
+    fields:
+      ambient_temperature_K: 300.0
+      model_mode: predictive_airside_hx
+      air_counterflow: true
+      max_outer_iterations: 80
+      mdot_search_lower_kg_s: 1.0e-5
+      mdot_search_upper_kg_s: 0.2
+  - name: baseline_specials
+    type: explicit_list
+    scenarios:
+      - name: adiabatic_all_heat_to_hx
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 0.0
+        radiation_on: false
+        model_mode: adiabatic
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+  - name: practical_reduced_order_narrow_v1
+    type: explicit_list
+    scenarios:
+      - name: practical_reduced_order_baseline_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: practical_reduced_order_descriptor_mid_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+      - name: practical_reduced_order_combined_mid_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: practical_reduced_order_baseline_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: practical_reduced_order_descriptor_mid_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+      - name: practical_reduced_order_combined_mid_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+  - name: practical_reduced_order_broadened_v1
+    type: explicit_list
+    scenarios:
+      - name: practical_reduced_order_broad_baseline_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: practical_reduced_order_broad_baseline_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: practical_reduced_order_broad_descriptor_low_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.20
+        profile_descriptor_friction_gain: 0.10
+      - name: practical_reduced_order_broad_descriptor_mid_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+      - name: practical_reduced_order_broad_descriptor_high_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.50
+        profile_descriptor_friction_gain: 0.20
+      - name: practical_reduced_order_broad_descriptor_low_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.20
+        profile_descriptor_friction_gain: 0.10
+      - name: practical_reduced_order_broad_descriptor_mid_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+      - name: practical_reduced_order_broad_descriptor_high_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.50
+        profile_descriptor_friction_gain: 0.20
+      - name: practical_reduced_order_broad_combined_mid_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: practical_reduced_order_broad_combined_high_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.50
+        profile_descriptor_friction_gain: 0.20
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: practical_reduced_order_broad_combined_mid_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: practical_reduced_order_broad_combined_high_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: default_2d
+        profile_descriptor_htc_gain: 0.50
+        profile_descriptor_friction_gain: 0.20
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+  - name: ethan_cfd_informed_salt_v1
+    type: explicit_list
+    scenarios:
+      - name: ethan_cfd_informed_salt_baseline_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: ethan_cfd_informed_salt_v1
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: ethan_cfd_informed_salt_baseline_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: ethan_cfd_informed_salt_hybrid_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: ethan_cfd_informed_salt_v1
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: ethan_cfd_informed_salt_baseline_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: ethan_cfd_informed_salt_hybrid_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: ethan_cfd_informed_salt_v1
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+  - name: ethan_cfd_informed_salt_v2
+    type: explicit_list
+    scenarios:
+      - name: ethan_cfd_informed_salt_v2_baseline_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: ethan_cfd_informed_salt_v2_hybrid_ins_1.0in_rad_0
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: false
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: ethan_cfd_informed_salt_v2
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: ethan_cfd_informed_salt_v2_baseline_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: ethan_cfd_informed_salt_v2_hybrid_ins_1.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 1.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: ethan_cfd_informed_salt_v2
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50
+      - name: ethan_cfd_informed_salt_v2_baseline_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+      - name: ethan_cfd_informed_salt_v2_hybrid_ins_2.0in_rad_1
+        ambient_temperature_K: 300.0
+        insulation_thickness_in: 2.0
+        radiation_on: true
+        model_mode: predictive_airside_hx
+        air_counterflow: true
+        max_outer_iterations: 80
+        mdot_search_lower_kg_s: 1.0e-5
+        mdot_search_upper_kg_s: 0.2
+        internal_htc_mode: per_parent_multiplier
+        internal_htc_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.05
+          left_upper_vertical: 1.05
+        profile_descriptor_mode: ethan_cfd_informed_salt_v2
+        profile_descriptor_htc_gain: 0.35
+        profile_descriptor_friction_gain: 0.15
+        outer_closure_mode: per_parent_multiplier
+        outer_conv_multiplier_by_parent_segment:
+          heated_incline: 1.25
+          left_lower_vertical: 1.15
+          test_section: 1.10
+          left_upper_vertical: 1.15
+        outer_rad_multiplier_by_parent_segment:
+          heated_incline: 1.10
+          left_lower_vertical: 1.05
+          test_section: 1.00
+          left_upper_vertical: 1.05
+        outer_insulation_multiplier_by_parent_segment:
+          heated_incline: 0.85
+          left_lower_vertical: 0.90
+          test_section: 0.95
+          left_upper_vertical: 0.90
+          right_vertical: 1.40
+          cooled_incline_pre_hx: 1.50
+          cooled_incline_post_hx: 1.50

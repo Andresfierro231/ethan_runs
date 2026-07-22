@@ -1,0 +1,37 @@
+{
+  "admitted_rows": 0,
+  "clipped_k_rows": 0,
+  "cluster_k_admitted_rows": 0,
+  "component_k_admitted_rows": 0,
+  "created_utc": "2026-07-21T21:20:54.342029+00:00",
+  "current_f6_endpoint_pair_rows": 10,
+  "date": "2026-07-21",
+  "decision": "Use current F6 evidence for diagnostic branch screening only; do not use it for admitted F6/component-K scoring until ordinary-flow and same-QOI UQ gates pass.",
+  "f6_fit_rows": 0,
+  "fitting_or_model_selection": false,
+  "fluid_or_external_repo_edited": false,
+  "generated_index_mutation": false,
+  "hidden_global_multiplier_rows": 0,
+  "legwise_inventory_rows": 36,
+  "low_recirc_anchor_rows": 4,
+  "native_solver_outputs_mutated": false,
+  "next_action": "Refresh terminal low-recirculation source readiness or run a separately claimed sampler/UQ row before any F3-vs-F6 scoring release.",
+  "preferred_future_branches": [
+    "right_leg",
+    "test_section_span"
+  ],
+  "pressure_corner_rows": 3,
+  "registry_or_admission_mutated": false,
+  "s11_unblocked": false,
+  "scheduler_action_taken": false,
+  "scorecard_rows": 53,
+  "solver_or_sampler_or_harvest_launch": false,
+  "status": "complete",
+  "study_state": "pressure_F6_use_map_complete_no_admitted_score",
+  "task": "TODO-THESIS-STUDY-S14-PRESSURE-F6-NONRECIRC-ANCHOR-EVIDENCE-2026-07-21",
+  "use_label_counts": {
+    "diagnostic_only": 11,
+    "do_not_use": 34,
+    "future_candidate": 8
+  }
+}

@@ -1,0 +1,18 @@
+artifact_role,path,used_for,mutation
+input_contract,work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/summary.json,strict runtime-input status,read_only
+input_contract,work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/violations.csv,strict violation check,read_only
+forward_v0,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/summary.json,fast_scan bridge status and variant summaries,read_only
+forward_v0,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv,row-level proxy context,read_only
+validation_split,work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv,train validation holdout assignment,read_only
+hx_fit,work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_primary_forward_scores.csv,split-aware HX and thermal score rows,read_only
+hydraulic_gate,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/summary.json,hydraulic blocker status,read_only
+hydraulic_gate,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/forward_v0_hydraulic_residuals.csv,mdot overprediction evidence,read_only
+external_bc_wave,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/summary.json,external-boundary readiness,read_only
+external_bc_wave,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/hx_validation_guardrail_scorecard.csv,scorecard precursor rows,read_only
+external_bc_wave,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/boundary_mode_scorecard.csv,passive wall residual attribution,read_only
+thermal_mesh_gate,work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/summary.json,thermal mesh blocker status,read_only
+thermal_mesh_gate,work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/thermal_mesh_gate_qois.csv,thermal QOI admission counts,read_only
+solve_case_confirmation,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/summary.json,full solve_case pending state,read_only
+solve_case_compute,work_products/2026-07/2026-07-13/2026-07-13_forward_v0_solve_case_compute_run/summary.json,Slurm job 3293960 submitted/running state,read_only
+hydraulic_candidates,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/decision_summary.json,ranked hydraulic correction candidates,read_only
+sensor_map,work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/summary.json,partial provisional sensor score status,read_only

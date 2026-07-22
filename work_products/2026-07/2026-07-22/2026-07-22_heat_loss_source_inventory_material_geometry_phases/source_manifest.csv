@@ -1,0 +1,8 @@
+source_id,source_path,exists,use
+heat_loss_design,work_products/2026-07/2026-07-22/2026-07-22_1d_final_heat_loss_power_partition_calibration_design,True,read-only context
+thermal_accounting,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet,True,read-only context
+passive_h2_basis,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table,True,read-only context
+passive_h2_runtime_operator,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_runtime_operator_smoke_uq_gate,True,read-only context
+passive_h2_corrected_radiation,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke,True,read-only context
+pressure_energy_bc,work_products/2026-07/2026-07-22/2026-07-22_1d_final_pressure_energy_basis_and_bc_equivalence_contract,True,read-only context
+source_property_atlas,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas,True,read-only context

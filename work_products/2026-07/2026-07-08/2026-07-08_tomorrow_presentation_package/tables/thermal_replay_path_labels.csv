@@ -1,0 +1,8 @@
+path,interpretation
+P0,Baseline replay; isolates thermal state from pressure-root mdot changes.
+P1,Tests whether the cooling-jacket duty magnitude is the dominant missing sink.
+P2,Tests source-contract mismatch without changing the cooler model.
+P3,Tests heater wallHeatFlux plus quartz/test-section net sink while retaining internal boundary models.
+P4,Combines the largest cooler correction with heater-interface heat transfer.
+P5,"Uses the preferred source/loss sign convention for the heater and quartz terms, with the caveat that current Fluid prescribed-loss semantics zero unlisted passive losses."
+P6,"Full fixed-Q patch ledger replay; useful for loop delta T, but absolute mean T is under-anchored without temperature-dependent external boundary reconstruction."

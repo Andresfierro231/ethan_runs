@@ -1,0 +1,20 @@
+source_path,access_mode,why_read,key_finding
+AGENTS.md,read,repo startup protocol,Task requires assigned board row and durable closeout artifacts.
+.agent/BOARD.md,read,task row and Phase C row,Phase B owned by codex-bg-fluid-b; Phase C still trigger-gated and needs exact external paths.
+.agent/FILE_OWNERSHIP.md,read,allowed write boundaries,Shared files require task-scoped edits only.
+.agent/ROLES.md,read,role definitions,This task is Writer/Tester preflight with Coordinator boundary notes.
+.agent/DOC_FRONTMATTER_SCHEMA.md,read,frontmatter contract,New durable docs should include provenance/tags/related.
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/README.md,read,repo-local external BC contract,Runtime dictionary has 24 rows and no external Fluid edit.
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,read,runtime dictionary source,Contains predictive passive external rows and document-only source/sink rows.
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_handoff_stubs.csv,read,Fluid handoff stubs,Names ExternalBoundaryRecord and mode policy expectations.
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/runtime_leakage_audit.csv,read,guardrail evidence,Existing contract passes heat-flux/temperature/radiation/residual leakage checks.
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/README.md,read,radiation semantics,Replay wallHeatFlux and predictive radiation/convection must be mutually exclusive.
+../cfd-modeling-tools/AGENTS.md,read,external repo instructions,Reduced-order Fluid is a secondary track and must preserve provenance.
+../cfd-modeling-tools/tamu_first_order_model/AGENTS.md,read,reduced-order instructions,Fluid and Ethan solvers are separate workflows.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/AGENTS.override.md,read,Fluid local instructions,Coordination belongs to outer cfd-modeling-tools board; prefer narrow tests.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/README.md,read,Fluid directory guide,Current source is tamu_loop_model_v2 with configs/tests/results split.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,read,Fluid solver API docs,Existing external_boundary_table path and role rows are documented.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,read,parser/config loader surface,Existing loader parses inline external_boundary_role_rows but no CSV dictionary parser.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read,solver/runtime surface,Existing solver has external_boundary_table role-row loss path; needs validation and lane hardening.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,read,test surface,Existing tests cover inline role rows and parent mappings; file-facing parser tests are missing.
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/geometry.py,read,Fluid parent segment names,Canonical parent segments include left_lower_vertical/test_section/left_upper_vertical/right_vertical/heated_incline and cooling branch pieces.

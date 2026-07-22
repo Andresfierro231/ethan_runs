@@ -1,0 +1,16 @@
+required_output,source_type,extraction_location_or_method,why_required,required_for_acceptance,admission_role
+U,native field,sample on upcomer inlet/mid/outlet planes and segment centerlines,"velocity vector, throughflow, reverse mask, secondary velocity",yes,required_before_hybrid_fit_admission
+T,native field,same planes plus core/wall-band samples,bulk/core temperature and wall-core Delta T,yes,required_before_hybrid_fit_admission
+wallHeatFlux,wall field/function object,patch-integrated and local wall-band extraction,source/sink ledger and wall heat-balance gate,yes,required_before_hybrid_fit_admission
+Re,derived,rho*U_bulk*D_h/mu(T_bulk),throughflow regime coordinate,yes,required_before_hybrid_fit_admission
+Pr,derived,mu(T_bulk)*Cp(T_bulk)/k(T_bulk),thermal property coordinate,yes,required_before_hybrid_fit_admission
+Ri,derived,Gr/Re^2 using documented characteristic length,mixed-convection/onset coordinate,yes,required_before_hybrid_fit_admission
+Gr,derived,g*beta*DeltaT*L^3/nu^2,buoyancy coordinate,yes,required_before_hybrid_fit_admission
+Ra,derived,Gr*Pr,buoyancy-thermal coordinate,yes,required_before_hybrid_fit_admission
+Gz,derived,Re*Pr*D_h/x_from_reset,thermal development coordinate,yes,required_before_hybrid_fit_admission
+wall_core_deltaT,derived,T_wall_band - T_core on each matched plane,cell-driving thermal contrast,yes,required_before_hybrid_fit_admission
+reverse_area_fraction,derived from U dot n,area fraction with local reverse axial velocity,cell/onset classifier,yes,required_before_hybrid_fit_admission
+reverse_mass_fraction,derived from rho U dot n,reverse mass flux / total absolute mass flux,material backflow classifier,yes,required_before_hybrid_fit_admission
+secondary_velocity_fraction,derived from U,mean transverse speed / mean axial speed on plane,recirculation-cell strength proxy,yes,required_before_hybrid_fit_admission
+steady_window_status,time-window analysis,"last retained windows for mdot, heat residual, T probes, wall T",admission gate for terminal or quasi-steady use,yes,required_before_hybrid_fit_admission
+mesh_time_uncertainty,mesh/time plan,coarse pilot; medium/fine endpoints; window uncertainty rows,do not fit coefficients without uncertainty bounds,yes,required_before_hybrid_fit_admission

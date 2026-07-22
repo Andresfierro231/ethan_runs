@@ -1,0 +1,6 @@
+blocker,before_stage_b,after_stage_b,evidence,next_action
+coarse_vtk_output_missing,blocked,resolved,work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/summary.json,use harvested coarse diagnostics in QA/gate package
+ordinary_flow,fail_material_RAF_RMF,fail_reinforced_by_coarse_RAF_RMF,work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_pair_diagnostics.csv,search low-recirculation anchor only in separate S10 row
+coarse_static_p_basis,blocked_missing_static_p,blocked_missing_static_p,work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit/coarse_static_pressure_blocker.csv,claim TODO-F6-STATIC-P-BASIS-RECONSTRUCTION-AUDIT if pressure basis is pursued
+same_qoi_mesh_uq,blocked,blocked,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/summary.json,do not run GCI/admission until pressure basis and ordinary-flow gates pass
+f3_comparison,not_evaluated_no_ordinary_candidate,not_evaluated_no_ordinary_candidate,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv,evaluate only after an F6 ordinary candidate clears pressure/UQ gates

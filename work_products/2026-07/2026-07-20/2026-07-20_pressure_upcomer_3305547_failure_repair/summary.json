@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-20",
+  "fit_admitted_rows": 0,
+  "fit_or_model_selection_changed": false,
+  "generated_at_utc": "2026-07-20T18:13:52.273761+00:00",
+  "job_id": "3305547",
+  "job_state": "FAILED",
+  "native_solver_outputs_mutated": false,
+  "parsed_case_count": 4,
+  "partial_admission_review_rows": 3,
+  "registry_mutation": "none",
+  "relaunch_needed_cases": 6,
+  "task": "TODO-PRESSURE-UPCOMER-3305547-FAILURE-REPAIR"
+}

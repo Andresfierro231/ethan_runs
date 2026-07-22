@@ -1,0 +1,13 @@
+source_id,case_label,physical_case,property_model,segment,re_effective,apparent_darcy_f,laminar_ref_darcy_f_64_over_Re,excess_loss_factor_fapp_over_flam
+viscosity_screening_salt_test_2_jin_coarse_mesh,Salt 2 Jin,Salt 2,jin,test_section_span,97.54143211575995,46.163210316366786,0.6561314367831534,70.35665070811625
+viscosity_screening_salt_test_2_kirst_coarse_mesh,Salt 2 Kirst,Salt 2,kirst,test_section_span,80.34651277493121,53.573765793842185,0.7965498164093132,67.25726965243928
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,Salt 2,val,lower_leg,92.58857161606477,2.7248192153153044,0.6912300177325076,3.9419862352820387
+val_salt_test_2_coarse_mesh_laminar,Salt 2 val,Salt 2,val,test_section_span,108.36043512934887,42.36576072197514,0.5906214747440224,71.7308166627985
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,Salt 3,jin,lower_leg,110.26437941689072,2.182920658319686,0.5804231642027111,3.7609123704051677
+viscosity_screening_salt_test_3_jin_coarse_mesh,Salt 3 Jin,Salt 3,jin,test_section_span,128.73775331586128,35.23147986216345,0.49713466602896517,70.86908692887394
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,Salt 3,kirst,lower_leg,91.26909353295369,2.5230015434682858,0.7012231361418322,3.598000997728023
+viscosity_screening_salt_test_3_kirst_coarse_mesh,Salt 3 Kirst,Salt 3,kirst,test_section_span,105.91769377715526,40.522781179988066,0.6042427635806754,67.06374262532259
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,Salt 4,jin,lower_leg,150.19205488780372,1.6636004069258814,0.42612107576402225,3.9040556816935092
+viscosity_screening_salt_test_4_jin_coarse_mesh,Salt 4 Jin,Salt 4,jin,test_section_span,173.73605749616746,26.714861457611974,0.3683748838459271,72.52085478440347
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,Salt 4,kirst,lower_leg,121.56502531923894,1.846950237665355,0.5264672123575935,3.508196131330676
+viscosity_screening_salt_test_4_kirst_coarse_mesh,Salt 4 Kirst,Salt 4,kirst,test_section_span,140.40213430161438,30.66803329834763,0.45583352645134334,67.2790207800154

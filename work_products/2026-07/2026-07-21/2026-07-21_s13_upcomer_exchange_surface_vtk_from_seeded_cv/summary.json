@@ -1,0 +1,20 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SURFACE-VTK-FROM-SEEDED-CV-2026-07-21",
+  "generated_at": "2026-07-21T19:23:12-05:00",
+  "package": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+  "case_count": 3,
+  "surface_vtk_rows": 6,
+  "validated_surface_vtk_rows": 6,
+  "geometry_only_surface_vtk_released": true,
+  "sampled_fields_present": false,
+  "Q_wall_W_released": false,
+  "sampler_ready_rows": 0,
+  "sampler_or_harvest_allowed": false,
+  "same_qoi_uq_ready": false,
+  "exchange_cell_coefficient_admission": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "openfoam_solver_or_postprocessing_launch": false
+}

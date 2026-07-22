@@ -1,0 +1,7 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/summary.json,read seeded surface/input manifest decision,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/seeded_exchange_interface_faces.csv,read seeded face list,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/seeded_trusted_wall_faces.csv,read seeded face list,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh,read salt_2 native polyMesh topology,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh,read salt_3 native polyMesh topology,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh,read salt_4 native polyMesh topology,true,true,false

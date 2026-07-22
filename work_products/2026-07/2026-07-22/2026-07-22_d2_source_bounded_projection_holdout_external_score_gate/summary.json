@@ -1,0 +1,33 @@
+{
+  "task_id": "TODO-D2-SOURCE-BOUNDED-PROJECTION-HOLDOUT-EXTERNAL-SCORE-GATE-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "fail_closed_d2_not_protected_scoreable_source_bounded_successors_not_frozen",
+  "d2_current_role": "diagnostic_prior_only",
+  "d2_validation_scored": false,
+  "d2_holdout_scored": false,
+  "d2_external_test_scored": false,
+  "runtime_use_allowed": false,
+  "admission_allowed": false,
+  "candidate_frozen_manifest_exists": false,
+  "source_property_cp_release_ready": false,
+  "same_qoi_projection_uq_released": false,
+  "protected_score_allowed_now": false,
+  "model_families_documented": [
+    "D2_empirical_offset",
+    "MF12a_signed_graetz_probe_offset",
+    "MF12b_piecewise_signed_source_integral",
+    "MF12c_wall_profile_projection",
+    "MF15_wall_core_exchange_operator",
+    "M5_MF04_throughflow_recirculation_exchange_cell"
+  ],
+  "guardrails": {
+    "validation_holdout_external_scoring": false,
+    "fitting_or_model_selection": false,
+    "source_property_release": false,
+    "candidate_freeze": false,
+    "coefficient_admission": false,
+    "scheduler_action": false,
+    "native_output_mutation": false,
+    "residual_absorbed_into_internal_Nu": false
+  }
+}

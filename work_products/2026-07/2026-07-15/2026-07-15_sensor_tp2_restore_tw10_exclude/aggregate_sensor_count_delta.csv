@@ -1,0 +1,3 @@
+metric,tp_count,tw_count,total_count,rmse_impact_status,reason
+aggregate_sensor_count_current,5,10,15,baseline_current_policy,Current AGENT-405 policy excludes TP2 and TW10.
+aggregate_sensor_count_after_tp2_gates,6,10,16,pending_finite_tp2_prediction_rows,TP2 changes aggregate from 5 TP + 10 TW to 6 TP + 10 TW only after projection/source-segment/finite-row gates pass; TW10 remains excluded.

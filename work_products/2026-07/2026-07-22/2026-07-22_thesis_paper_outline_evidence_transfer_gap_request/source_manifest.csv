@@ -1,0 +1,13 @@
+source_path,role_in_this_packet,read_or_write,mutation_status,notes
+.agent/BOARD.md,board truth and destination for new task rows,read_write,mutated_additive_only,Added one active task row and seven planned/unclaimed rows; no other active task row changed
+work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/chapter_evidence_completeness_matrix.csv,chapter readiness and gaps,read_only,not_mutated,32 section rows used for routing
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,numerical claim control,read_only,not_mutated,78 claim rows available; this task did not edit the ledger
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/chapter_number_targets.csv,chapter routing for numbers,read_only,not_mutated,Used for target chapter mapping
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/forbidden_overclaim_matrix.csv,claim bans,read_only,not_mutated,Used to enforce runtime-leakage and admission boundaries
+work_products/2026-07/2026-07-22/2026-07-22_thesis_matrix_ledger_study_dispatch/latex_repo_transfer_queue.csv,stale prior transfer queue,read_only,not_mutated,Compared against current board; stale S13 pressure and source/property statuses superseded in this packet
+work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet,completed S13 packet,read_only,not_mutated,Now transfer-ready as diagnostic fail-closed evidence
+work_products/2026-07/2026-07-22/2026-07-22_thesis_pressure_f6_ordinary_basis_failure_packet,completed pressure packet,read_only,not_mutated,Now transfer-ready as pressure negative-result evidence
+work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study,completed source/property packet,read_only,not_mutated,Now transfer-ready as Ch6/Ch8 blocked-release evidence
+../papers/UTexas_Research/csem-Masters_dissertation/evidence,external thesis evidence directory listing,read_only,not_mutated,Only listed existing evidence files; no external edit
+native CFD/OpenFOAM outputs,provenance context only,read_only,not_mutated,No native output opened broadly or mutated
+

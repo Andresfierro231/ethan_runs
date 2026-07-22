@@ -1,0 +1,4 @@
+audit_id,gate,checked_scope,forbidden_runtime_input,allowed_status,source_path
+freeze_membership_only_nominals,pass,final_freeze_manifest,perturbation/external/new-CFD rows,only Salt1-4 nominal rows included for fit/model selection,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv
+no_blind_target_leakage,pass,holdout_exclusion_audit,PM5/PM10/val_salt2/new-CFD target evidence,all excluded from fitting and model selection,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv
+salt1_schema_runtime_guardrails,pass,Salt1 promoted schema package,"CFD mdot, realized wallHeatFlux, pressure targets, validation temperatures",runtime-input guardrail rows all pass in Salt1 schema-promotion package,work_products/2026-07/2026-07-17/2026-07-17_predict_salt1_schema_promotion/runtime_input_audit.csv

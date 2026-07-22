@@ -1,0 +1,29 @@
+{
+  "task": "TODO-PRESSURE-FUTURE-LOW-REVERSE-ANCHOR-DESIGN-REFINE-2026-07-22",
+  "task_id": "TODO-PRESSURE-FUTURE-LOW-REVERSE-ANCHOR-DESIGN-REFINE-2026-07-22",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PRESSURE-FUTURE-LOW-REVERSE-ANCHOR-DESIGN-REFINE-2026-07-22.md",
+    ".agent/journal/2026-07-22/pressure-future-low-reverse-anchor-design-refine.md",
+    "imports/2026-07-22_pressure_future_low_reverse_anchor_design_refine.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/future_anchor_design_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/endpoint_requirement_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/cand001_dependency_state.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/scheduler_safe_runbook_skeleton.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/release_decision.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_alternate_low_reverse_anchor_screen/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_pressure_energy_basis_and_bc_equivalence_contract/pressure_energy_basis_contract.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true
+}

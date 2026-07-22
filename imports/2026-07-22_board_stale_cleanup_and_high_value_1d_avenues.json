@@ -1,0 +1,88 @@
+{
+  "task": "TODO-BOARD-STALE-CLEANUP-AND-HIGH-VALUE-1D-AVENUES-2026-07-22",
+  "task_id": "TODO-BOARD-STALE-CLEANUP-AND-HIGH-VALUE-1D-AVENUES-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Cleaner/Writer/Reviewer",
+  "objective": "Clean stale completed board rows and add highest-value non-overlapping research avenues for the predictive 1D model and thesis.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-BOARD-STALE-CLEANUP-AND-HIGH-VALUE-1D-AVENUES-2026-07-22.md",
+    ".agent/journal/2026-07-22/board-stale-cleanup-and-high-value-1d-avenues.md",
+    "imports/2026-07-22_board_stale_cleanup_and_high_value_1d_avenues.json",
+    "operational_notes/07-26/22/2026-07-22_BOARD_STALE_CLEANUP_AND_HIGH_VALUE_1D_AVENUES.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BOARD.md active and planned sections",
+    "operational_notes/maps/forward-predictive-model.md",
+    "operational_notes/07-26/22/2026-07-22_BOARD_CLEANUP_AND_AVENUE_GAP_DISPATCH.md",
+    ".agent/BLOCKERS.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <ACTIVE_COMPLETE_TASK> --json",
+      "result": "28 completed Active rows passed before archival."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <PLANNED_COMPLETE_TASK> --json",
+      "result": "34/51 completed Planned rows passed; 17 legacy complete rows had current-schema closeout gaps and were archived as historical stale queue entries."
+    },
+    {
+      "command": "Board parse after rewrite",
+      "result": "Final live board parse: Active 16 rows, 0 complete-status rows; Planned/Unclaimed 24 rows, 0 complete-status rows."
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "completed during closeout."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-BOARD-STALE-CLEANUP-AND-HIGH-VALUE-1D-AVENUES-2026-07-22",
+      "result": "completed during closeout."
+    }
+  ],
+  "board_cleanup": {
+    "active_completed_rows_archived": 28,
+    "coordinator_row_archived": 1,
+    "planned_completed_rows_archived": 51,
+    "planned_completed_finish_task_ok": 34,
+    "planned_legacy_completed_validator_gaps": 17,
+    "active_closeout_fix_needed_rows": 0,
+    "final_active_rows": 16,
+    "final_planned_rows": 24,
+    "new_planned_rows_added": 6
+  },
+  "new_research_avenues": [
+    "TODO-1D-CONSERVATIVE-THERMAL-LEDGER-RESIDUAL-OWNER-CONTRACT-2026-07-22",
+    "TODO-1D-SENSOR-PROJECTION-OPERATOR-TP-TW-WALL-BULK-2026-07-22",
+    "TODO-1D-REGIME-MAP-NONDIMENSIONAL-CLOSURE-ELIGIBILITY-2026-07-22",
+    "TODO-1D-SETUP-ONLY-BC-UQ-PROPAGATION-2026-07-22",
+    "TODO-1D-MODEL-HIERARCHY-ABLATION-LADDER-PACKET-2026-07-22",
+    "TODO-1D-THERMAL-PRESSURE-ROOT-COUPLING-STABILITY-AUDIT-2026-07-22"
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "thesis_body_or_latex_mutated": false,
+    "blocker_register_source_mutated": false,
+    "generated_docs_index_refreshed": true,
+    "files_deleted": false,
+    "files_reverted": false,
+    "files_staged": false,
+    "commits_created": false,
+    "push_performed": false
+  }
+}

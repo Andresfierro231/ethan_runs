@@ -1,0 +1,13 @@
+{
+  "boundary_api_finalized": false,
+  "external_fluid_modified": true,
+  "fluid_tests_passed": [
+    "tests.test_solver_contracts.SolverContractTests.test_minor_losses_default_has_no_localized_fixed_k",
+    "tests.test_solver_contracts.SolverContractTests.test_minor_losses_support_direct_and_parent_localized_fixed_k"
+  ],
+  "localized_fixed_k_hook_added": true,
+  "localized_h1_final_closure_admitted": false,
+  "native_solver_outputs_mutated": false,
+  "reset_redevelopment_implemented": false,
+  "task": "AGENT-326"
+}

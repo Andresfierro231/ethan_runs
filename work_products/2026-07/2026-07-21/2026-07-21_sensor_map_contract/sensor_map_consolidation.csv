@@ -1,0 +1,9 @@
+item,value,evidence,decision
+sensors_reviewed,17,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv,complete
+one_d_path_rows,17,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/one_d_path_position_map.csv,complete
+mapped_sensors,1,TP2 projected from native CFD junction evidence,score_only_available
+bounded_sensors,15,provisional or mixed-provenance coordinate basis,diagnostic_bounds_only
+excluded_sensors,1,TW10 excluded because active heat-exchanger shell state is absent,do_not_score
+runtime_temperature_inputs_allowed,0,score_only_target_policy.csv,forbidden
+fit_permissions_allowed,0,score_only_target_policy.csv,forbidden
+model_selection_permissions_allowed,0,score_only_target_policy.csv,forbidden

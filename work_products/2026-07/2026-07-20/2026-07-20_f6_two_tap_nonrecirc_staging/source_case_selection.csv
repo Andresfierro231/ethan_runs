@@ -1,0 +1,4 @@
+selection_rank,candidate_id,request_id,source_family,current_state,staging_decision,launch_allowed_in_this_row,next_precondition,fallback
+1,CAND-001,NR-CLR-01,Salt4 high-heat/no-recirculation probes,preferred but source cases still terminal-gated,stage_contract_only,false,all selected source cases terminal successful plus fresh staged-copy sampler row claims scope,CAND-002 only after CAND-001 source-family readiness fails
+2,CAND-002,NR-CLR-01,secondary same-topology source family,conditional fallback,hold,false,terminal/admission refresh and low-reverse rationale,no ordinary anchor if same-topology low-reverse evidence is unavailable
+3,CAND-003,NR-ALT-01,alternate two-tap feature,not currently sourced,defer,false,exact mesh-station labels and low-reverse evidence identified first,keep current corner_lower_right rows diagnostic

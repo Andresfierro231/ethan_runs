@@ -1,0 +1,29 @@
+{
+  "F6_rows_admitted_or_fit": 0,
+  "allowed_label_counts": {
+    "section_effective": 3
+  },
+  "analysis": "The later evidence confirms the publication freeze rather than changing it. Pressure basis is decomposed well enough for the diagnostic residual, but velocity/qref basis, straight/developing reference, component isolation, recirculation, source-envelope geometry, and same-QOI uncertainty still block component or cluster coefficient use.",
+  "clipped_K_rows": 0,
+  "cluster_K_rows_admitted": 0,
+  "component_K_rows_admitted": 0,
+  "created": "2026-07-21",
+  "gate_rows": 24,
+  "gate_status_counts": {
+    "blocked": 12,
+    "diagnostic": 3,
+    "fail": 6,
+    "pass": 3
+  },
+  "global_multiplier_rows": 0,
+  "input_baseline": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+  "model_use_decision": "retain_section_effective_pressure_recovery_diagnostic_only",
+  "next_useful_actions": [
+    "harvest nonrecirculating same-topology anchor before ordinary component_K review",
+    "complete same-QOI time and mesh uncertainty for the exact pressure residual",
+    "recover bend radius/part/source-envelope fields for the lower-right corner",
+    "keep F6 endpoint pressure-delta evidence separate from component or cluster rows"
+  ],
+  "rows_reviewed": 3,
+  "task_id": "TODO-PRESSURE-CORNER-COMPARISON-ADMISSION-REVIEW"
+}

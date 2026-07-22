@@ -1,0 +1,7 @@
+gate_id,gate,status,reason
+R01,runtime_input_lint,pass_by_contract,forbidden runtime fields are listed and blocked
+R02,source_property_release,blocked,this row defines UQ propagation only
+R03,candidate_admission,blocked,no frozen runtime-legal candidate exists
+R04,protected_scoring,blocked,UQ plan must run only after freeze
+R05,compute_launch,not_launched,contract/runbook only; no solver or sampler
+R06,publication_interval,not_ready,"ranges are screening priors, not final UQ intervals"

@@ -1,0 +1,8 @@
+path,role,exists,mutation
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/same_qoi_neighbor_window_rows.csv,complete target-minus/target/target-plus same-QOI table,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/same_qoi_neighbor_triplet_matrix.csv,target-plus harvest triplet readiness matrix,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/summary.json,target-plus harvest summary,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/case_heatflow_equivalence_basis.csv,source-side static heat-flow comparison,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_same_qoi_neighbor_uq_execution/summary.json,historical pre-target-plus fail-closed UQ context,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/mesh_gci_requirements.csv,S13 UQ design mesh/GCI requirements,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/mesh_gci_coverage_matrix.csv,cross-family mesh/GCI evidence matrix,true,read_only

@@ -1,0 +1,9 @@
+claim_id,claim_value,source_path,allowed_use,forbidden_overclaim
+N01,0 admitted final candidates,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,State final predictive model remains blocked,Do not report final validation score.
+N02,0 final score values,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,Use in freeze-discipline discussion,Do not fill scorecard post hoc.
+N03,D2 TP RMSE 4.38159298515 K,work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit/narrative_question_coverage_matrix.csv,Diagnostic evidence that TP projection can improve,Do not call D2 protected-score validated.
+N04,D2 TW RMSE 12.5130610954 K,work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit/narrative_question_coverage_matrix.csv,Shows TW remains unresolved after TP projection,Do not hide TW residual in Nu.
+N05,M3 TP RMSE 13.5673279702 K,work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit/narrative_question_coverage_matrix.csv,Legacy comparator context,Do not treat M3 as final predictive model.
+N06,M3 TW RMSE 18.980361511 K,work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit/narrative_question_coverage_matrix.csv,Legacy comparator context,Do not claim wall closure admission.
+N07,0 source/property release-ready rows,work_products/2026-07/2026-07-22/2026-07-22_litrev_final_case_by_segment_admission_engine/summary.json,Use as primary admission blocker,Do not release cp/mu/k or source coefficients.
+N08,0 case-segment admitted rows,work_products/2026-07/2026-07-22/2026-07-22_litrev_final_case_by_segment_admission_engine/summary.json,Use as admission-engine result,Do not trigger S11/S15/S6.

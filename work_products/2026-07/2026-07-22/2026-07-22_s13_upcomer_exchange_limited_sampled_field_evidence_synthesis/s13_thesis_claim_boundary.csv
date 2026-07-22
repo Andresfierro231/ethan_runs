@@ -1,0 +1,5 @@
+claim_id,claim_text,claim_allowed,claim_role,supporting_artifact
+S13-C1,"Limited sampled-field extraction produced finite interface U/T/rho and wall/core temperature diagnostics for Salt2, Salt3, and Salt4.",true,diagnostic_thesis_evidence,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv
+S13-C2,"The source-side heat-flow path is the smallest remaining unblock path, but it must remain a distinct QOI.",true,next_step_decision,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/qwall_or_source_side_path_decision.csv
+S13-X1,"The S13 exchange coefficient, Q_wall_W, production harvest, and source/property release are admitted.",false,forbidden_overclaim,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/downstream_decision.csv
+S13-X2,The S13 diagnostic rows may trigger S11/S12/S13/S15/S6 scoring or freeze.,false,forbidden_downstream_trigger,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/no_mutation_guardrails.csv

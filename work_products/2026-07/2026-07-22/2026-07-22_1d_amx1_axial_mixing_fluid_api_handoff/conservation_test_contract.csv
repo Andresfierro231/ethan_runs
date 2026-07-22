@@ -1,0 +1,7 @@
+test_id,test_scope,required_assertion,current_evidence,next_use
+AMX1-ROOT-001,Fluid smoke roots,All tested rows must end with finite accepted pressure and temperature roots,All reviewed AMX1 smoke summaries passed roots,Required in every future AMX1 smoke.
+AMX1-LEDGER-001,Axial mixing ledger,AMX1 rows must have nonzero axial mixing ledgers when enabled,All reviewed AMX1 smoke summaries reported nonzero ledgers,Required before any residual comparison.
+AMX1-CONS-001,Energy conservation,Axial mixing pair or parent-cell terms must sum to near-zero net residual,All reviewed AMX1 smoke summaries reported conservative ledgers,Required before any residual comparison.
+AMX1-NOOP-001,Disabled default,Disabled AMX1 baseline must remain a strict no-op relative to baseline config,Original dry contract and smoke designs include disabled baselines,Required for regression safety.
+AMX1-PROG-001,Progression gate,Enabled AMX1 must not worsen mdot TP TW or all-probe metrics versus disabled baseline,No reviewed AMX1 form passed this gate,Blocks Salt1-Salt4 expansion and candidate freeze.
+AMX1-SPLIT-001,Split policy,Validation holdout and external-test rows must remain unscored before freeze,No reviewed AMX1 intake used protected scoring,Required before any future candidate freeze.

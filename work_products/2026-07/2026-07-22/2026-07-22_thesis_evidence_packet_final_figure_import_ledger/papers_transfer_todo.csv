@@ -1,0 +1,6 @@
+todo_id,exact_future_action,required_permission,guardrail
+PAPER-FIG-01,Claim a papers-board artifact-transfer row with exact target figure paths,separate papers-board row,No external repo edit from this row.
+PAPER-FIG-02,Copy only selected figure files from selected_figure_import_ledger.csv,separate papers-board row,No broad generated tree copy.
+PAPER-FIG-03,Create caption/source sidecar CSV in thesis evidence directory,separate papers-board row,Preserve claim boundaries.
+PAPER-FIG-04,Run thesis build or figure-reference check after transfer,separate papers-board row,Do not edit chapter prose unless separately claimed.
+PAPER-FIG-05,Record copy provenance and sizes in papers journal,separate papers-board row,Keep native CFD and raw sampled fields out.

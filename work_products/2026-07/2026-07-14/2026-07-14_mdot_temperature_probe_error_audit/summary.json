@@ -1,0 +1,17 @@
+{
+  "case_rows": 4,
+  "correlation_rows": 21,
+  "date": "2026-07-14",
+  "execute_fluid": true,
+  "executed_model_rows": 12,
+  "external_cfd_modeling_tools_mutated": false,
+  "generated_at": "2026-07-14T17:38:57",
+  "heat_score_rows": 23,
+  "model_modes": 4,
+  "model_result_rows": 16,
+  "native_cfd_outputs_mutated": false,
+  "salt1_policy": "diagnostic_context_only_blocked_for_cfd_heat_flux_modes",
+  "sensor_error_rows": 204,
+  "task": "AGENT-360",
+  "trend_rows": 6
+}

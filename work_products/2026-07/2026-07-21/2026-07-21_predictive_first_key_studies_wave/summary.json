@@ -1,0 +1,15 @@
+{
+  "completed_study_rows": 4,
+  "component_k_admitted_rows": 0,
+  "date": "2026-07-21",
+  "f6_admitted_rows": 0,
+  "final_freeze_exists": false,
+  "fluid_edit": false,
+  "generated_at_utc": "2026-07-21T16:19:08.684221+00:00",
+  "model_scoring_or_admission": false,
+  "native_output_mutation": false,
+  "open_implementation_gates": 3,
+  "runtime_or_split_leakage_failures": 0,
+  "task": "TODO-PRED-FIRST-KEY-STUDIES-WAVE-2026-07-21",
+  "wave_rows": 4
+}

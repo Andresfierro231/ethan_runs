@@ -1,0 +1,81 @@
+{
+  "task": "TODO-GITIGNORE-WORKPRODUCTS-SELECTIVE-IGNORE-HANDOFF-2026-07-21",
+  "task_id": "TODO-GITIGNORE-WORKPRODUCTS-SELECTIVE-IGNORE-HANDOFF-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Cleaner/Coordinator/Writer",
+  "objective": "Document the selective work_products gitignore policy, progress, validation, and next steps for tomorrow.",
+  "changed_files": [
+    ".gitignore",
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-GITIGNORE-WORKPRODUCTS-SELECTIVE-IGNORE-HANDOFF-2026-07-21.md",
+    ".agent/journal/2026-07-21/gitignore-workproducts-selective-ignore-handoff.md",
+    "imports/2026-07-21_gitignore_workproducts_selective_ignore_handoff.json",
+    "operational_notes/07-26/21/2026-07-21_GITIGNORE_WORKPRODUCTS_SELECTIVE_IGNORE_HANDOFF.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/DOC_FRONTMATTER_SCHEMA.md",
+    "git status --short",
+    "find work_products -type f | wc -l",
+    "du -sh work_products",
+    "git ls-files -o --exclude-standard work_products | wc -l",
+    "git ls-files -o --exclude-standard work_products | xargs -r du -h | sort -h | tail -40",
+    "git check-ignore -v representative work_products docs, summaries, generated PDFs, and raw sampled CSVs"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "work_products_content_mutated": false,
+  "files_deleted": false,
+  "files_moved": false,
+  "files_reverted": false,
+  "files_staged": false,
+  "commits_created": false,
+  "push_performed": false,
+  "validation": [
+    {
+      "command": "find work_products -type f | wc -l",
+      "result": "8117 files observed before targeted gitignore filtering."
+    },
+    {
+      "command": "du -sh work_products",
+      "result": "about 40G; tree includes heavy reconstructed solver and generated render payloads."
+    },
+    {
+      "command": "git ls-files -o --exclude-standard work_products | wc -l",
+      "result": "5830 visible untracked files after selective filtering."
+    },
+    {
+      "command": "git ls-files -o --exclude-standard work_products | xargs -r du -h | sort -h | tail -40",
+      "result": "largest visible files were mostly 1.3M to 5.2M SVG/CSV/PPTX artifacts after generated PDF fan-outs were ignored."
+    },
+    {
+      "command": "git check-ignore -v representative work_products paths",
+      "result": "README.md, summary.json, and small CSV summaries are visible; generated PDFs, raw sampled field CSV dumps, sampled pressure detail rows, and trusted-wall wallHeatFlux detail rows are ignored by targeted rules."
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_docs_index_refreshed": false,
+    "work_products_content_mutated": false,
+    "files_deleted": false,
+    "files_reverted": false,
+    "git_clean_run": false
+  },
+  "next_steps": [
+    "Review .gitignore as a standalone cleanup/documentation commit candidate.",
+    "Inspect visible work_products packages before staging any package content.",
+    "Use git check-ignore -v for any surprising visible or hidden artifact.",
+    "Add narrow generator-specific ignore rules if new large generated families appear."
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "counts": {
+    "background_run_contract.csv": 1,
+    "candidate_definitions.csv": 6,
+    "coupled_admission_review.csv": 4,
+    "coupled_delta_vs_m3.csv": 8,
+    "coupled_scorecard.csv": 12,
+    "runtime_input_audit.csv": 3,
+    "scenario_contracts.csv": 12,
+    "source_manifest.csv": 5,
+    "static_component_scorecard.csv": 9,
+    "static_component_summary.csv": 3
+  },
+  "created_utc": "2026-07-17T16:21:49.515571+00:00",
+  "decision": {
+    "admitted_candidates": [],
+    "blocker_decision": "keep_open",
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "coupled_completed_rows": 12,
+    "coupled_status_counts": {
+      "completed": 12
+    },
+    "created_utc": "2026-07-17T16:21:49.494614+00:00",
+    "local_test_section_gate": "diagnostic_nonblocking_fail",
+    "pb1_static_gate": "pass",
+    "task": "AGENT-494",
+    "why": "PB1 passive-total static evidence is promising, but no PB1+cooler candidate has passed all coupled admission gates."
+  },
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission",
+  "reuse_existing_coupled": true,
+  "run_fluid": true,
+  "task": "AGENT-494",
+  "timeout_seconds": 273
+}

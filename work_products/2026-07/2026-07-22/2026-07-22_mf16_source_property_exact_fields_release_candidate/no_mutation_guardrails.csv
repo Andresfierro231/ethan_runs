@@ -1,0 +1,9 @@
+guardrail,occurred
+source/property release,False
+candidate freeze,False
+S11/S12/S13/S15/S6 trigger,False
+validation/holdout/external scoring,False
+fitting/tuning/model selection,False
+Fluid solve or scheduler action,False
+native output or registry mutation,False
+residual absorbed into internal Nu,False

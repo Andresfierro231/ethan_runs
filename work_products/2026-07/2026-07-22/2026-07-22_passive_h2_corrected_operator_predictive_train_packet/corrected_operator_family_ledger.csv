@@ -1,0 +1,16 @@
+admission_or_score,candidate_id,case_id,corrected_q_conv_W,corrected_q_rad_W,corrected_q_total_W,external_bc_split_role,recommended_fluid_mapping,runtime_CFD_mdot_used,runtime_Qwall_used,runtime_validation_temperature_used,runtime_wallHeatFlux_used,source_family
+False,PASSIVE-H2-CAND001,salt_2,2.361281124736732,3.6834856725999807,6.044766797336713,train,segment_local_external_boundary_term,False,False,False,False,cooling_branch
+False,PASSIVE-H2-CAND001,salt_2,4.102733410752723,7.597849845410605,11.700583256163327,train,segment_local_external_boundary_term,False,False,False,False,downcomer
+False,PASSIVE-H2-CAND001,salt_2,5.039594373952839,3.2145573261026192,8.254151700055457,train,segment_local_external_boundary_term,False,False,False,False,junction
+False,PASSIVE-H2-CAND001,salt_2,1.1949104539493762,1.9142841458272672,3.1091945997766435,train,segment_local_external_boundary_term,False,False,False,False,lower_leg
+False,PASSIVE-H2-CAND001,salt_2,3.5035453487461887,5.995074658228262,9.49862000697445,train,segment_local_external_boundary_term,False,False,False,False,upcomer
+False,PASSIVE-H2-CAND001,salt_3,2.5412246770609928,3.937616398853876,6.478841075914868,validation,segment_local_external_boundary_term,False,False,False,False,cooling_branch
+False,PASSIVE-H2-CAND001,salt_3,4.421767482380754,8.123014791084321,12.544782273465074,validation,segment_local_external_boundary_term,False,False,False,False,downcomer
+False,PASSIVE-H2-CAND001,salt_3,5.416311517130563,3.4222764345687775,8.83858795169934,validation,segment_local_external_boundary_term,False,False,False,False,junction
+False,PASSIVE-H2-CAND001,salt_3,1.2869356940907988,2.0442457664683014,3.3311814605591,validation,segment_local_external_boundary_term,False,False,False,False,lower_leg
+False,PASSIVE-H2-CAND001,salt_3,3.7685647558507114,6.40046724491019,10.1690320007609,validation,segment_local_external_boundary_term,False,False,False,False,upcomer
+False,PASSIVE-H2-CAND001,salt_4,2.7728654415544103,4.228044620539731,7.000910062094142,holdout,segment_local_external_boundary_term,False,False,False,False,cooling_branch
+False,PASSIVE-H2-CAND001,salt_4,4.837375071994569,8.721793631744296,13.559168703738866,holdout,segment_local_external_boundary_term,False,False,False,False,downcomer
+False,PASSIVE-H2-CAND001,salt_4,5.893259657183468,3.6493663996356105,9.542626056819078,holdout,segment_local_external_boundary_term,False,False,False,False,junction
+False,PASSIVE-H2-CAND001,salt_4,1.4056285582618941,2.1924562878175102,3.5980848460794044,holdout,segment_local_external_boundary_term,False,False,False,False,lower_leg
+False,PASSIVE-H2-CAND001,salt_4,4.114832068435363,6.861436953660907,10.97626902209627,holdout,segment_local_external_boundary_term,False,False,False,False,upcomer

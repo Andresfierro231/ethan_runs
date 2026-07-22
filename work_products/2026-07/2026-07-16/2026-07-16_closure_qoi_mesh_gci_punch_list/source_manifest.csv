@@ -1,0 +1,11 @@
+path,exists,row_count
+work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/refreshed_qoi_mesh_gate_status.csv,yes,25
+work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv,yes,16
+work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_admission_decisions.csv,yes,25
+work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_gci_results.csv,yes,14
+work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv,yes,3
+work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv,yes,90
+work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/adjacent_pressure_ladder.csv,yes,72
+work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/station_pressure_ladder.csv,yes,240
+work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/adjacent_pressure_ladder.csv,yes,192
+.agent/blockers.yml,yes,

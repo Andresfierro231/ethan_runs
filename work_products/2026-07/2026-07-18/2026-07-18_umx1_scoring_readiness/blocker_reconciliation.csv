@@ -1,0 +1,5 @@
+source_task,prior_statement,current_status,action_in_AGENT_543
+AGENT-537,Fluid lacks a real upcomer mixing/stratification hook,superseded_by_AGENT_540,record AGENT-540 as current hook source of truth
+AGENT-539,UMX1 score grid blocked until Fluid exposes real hook,superseded_by_AGENT_540_for_hook_existence,convert blocker from API existence to split-legal scoring readiness
+AGENT-540,Fluid has UMX1 API hook and no scoring launched,current_source_of_truth,define dry scoring contract without Fluid execution
+AGENT-541,TSWFC2 remains secondary while UMX1 is API-unblocked,current_fallback_path,keep TSWFC2 fallback if UMX1 dry gates or later smoke fail

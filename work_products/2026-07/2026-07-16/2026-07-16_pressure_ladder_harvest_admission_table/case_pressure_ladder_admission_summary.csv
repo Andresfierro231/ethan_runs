@@ -1,0 +1,12 @@
+case_key,split_role,branch_rows,orientation_candidate_rows,recirc_mask_blocked_rows,pressure_definition_conflict_rows,true_f_D_or_K_fit_admitted_rows,case_admission_status,next_use
+salt1_hi10q,training_perturbation,6,0,6,0,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt1_lo10q,training_perturbation,6,0,6,0,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt1_nominal,training,6,0,6,0,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt2_hi5q,holdout_perturbation,6,0,6,2,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt2_lo5q,holdout_perturbation,6,0,6,2,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt2_mainline,training,6,0,6,2,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt3_mainline,validation_or_training_by_declared_scorecard,6,0,6,4,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt4_hi5q,training_perturbation,6,0,6,4,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt4_lo5q,training_perturbation,6,0,6,4,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+salt4_mainline,holdout_or_training_by_declared_scorecard,6,0,6,4,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs
+val_salt2,external_validation,6,0,6,2,0,no_true_fit_rows_admitted,use harvested ladders for admission screening; do not launch duplicate ladder jobs

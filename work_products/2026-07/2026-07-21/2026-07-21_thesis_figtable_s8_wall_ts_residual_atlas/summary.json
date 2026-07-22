@@ -1,0 +1,20 @@
+{
+  "task_id": "TODO-THESIS-FIGTABLE-S8-WALL-TS-RESIDUAL-ATLAS-2026-07-21",
+  "atlas_rows": 2,
+  "candidate_comparison_rows": 15,
+  "heat_path_rows": 6,
+  "claim_boundary_rows": 3,
+  "gate_waterfall_rows": 5,
+  "runtime_caption_rows": 8,
+  "figure_table_manifest_rows": 5,
+  "svg_rendered_rows": 2,
+  "render_status": "svg_tables_rendered",
+  "admitted_candidate_rows": 0,
+  "s11_ready_candidates": 0,
+  "final_score_values": 0,
+  "runtime_leakage_pass": true,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "figure_or_chapter_asset_edit": false
+}

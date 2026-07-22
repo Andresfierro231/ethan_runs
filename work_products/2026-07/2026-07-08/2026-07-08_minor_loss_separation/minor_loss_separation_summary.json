@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-07-08",
+  "task": "AGENT-210",
+  "analysis": "minor_loss_separation",
+  "assumption": "cut_planes_in_straight_sections_not_bends",
+  "attribution_method": "50_50_adjacent_corners",
+  "leg_class_summary": {
+    "upcomer": {
+      "mean_phi_original": 0.7584,
+      "mean_phi_pipe_only": 0.6001,
+      "mean_reduction_pct": 20.9,
+      "mean_minor_fraction_pct": 22.7,
+      "n_points": 6
+    },
+    "heater": {
+      "mean_phi_original": 1.8135,
+      "mean_phi_pipe_only": 1.635,
+      "mean_reduction_pct": 9.8,
+      "mean_minor_fraction_pct": 9.9,
+      "n_points": 3
+    },
+    "downcomer": {
+      "mean_phi_original": 1.8112,
+      "mean_phi_pipe_only": 1.6514,
+      "mean_reduction_pct": 8.8,
+      "mean_minor_fraction_pct": 8.9,
+      "n_points": 3
+    },
+    "cooler": {
+      "mean_phi_original": 1.5352,
+      "mean_phi_pipe_only": 1.3906,
+      "mean_reduction_pct": 9.4,
+      "mean_minor_fraction_pct": 9.4,
+      "n_points": 3
+    }
+  }
+}

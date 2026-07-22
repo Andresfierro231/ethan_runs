@@ -1,0 +1,20 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SOURCE-BOUNDED-CV-DEFINITION-2026-07-21",
+  "generated_at": "2026-07-21T18:21:38-05:00",
+  "decision": "complete_fail_closed_source_bounded_cv_not_released",
+  "case_count": 3,
+  "released_case_count": 0,
+  "s13_sampler_ready": false,
+  "s12_hiax1_unlocked": false,
+  "s11_s15_s6_trigger": false,
+  "surface_extraction_allowed": false,
+  "sampler_or_harvest_allowed": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "blocking_cases": [
+    "salt_2",
+    "salt_3",
+    "salt_4"
+  ]
+}

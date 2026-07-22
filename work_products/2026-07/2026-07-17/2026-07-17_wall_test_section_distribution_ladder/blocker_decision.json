@@ -1,0 +1,12 @@
+{
+  "admitted_candidates": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 12,
+  "coupled_status_counts": {
+    "completed": 12
+  },
+  "created_utc": "2026-07-17T21:00:16.621175+00:00",
+  "task": "AGENT-498",
+  "why": "No local wall/test-section distribution candidate has passed validation and holdout mdot, all-probe, and TW gates vs M3."
+}

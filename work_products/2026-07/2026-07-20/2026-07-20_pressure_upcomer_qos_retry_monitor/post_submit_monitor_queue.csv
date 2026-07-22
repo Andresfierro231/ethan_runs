@@ -1,0 +1,7 @@
+case_key,array_job_id,array_index,monitor_status,post_exit_action
+salt2_hi10q,,0,pending_submission,run isolated relaunch post-exit rollup after terminal state
+salt2_jin_nominal_continuation,,1,pending_submission,run isolated relaunch post-exit rollup after terminal state
+salt3_jin_nominal_continuation,,2,pending_submission,run isolated relaunch post-exit rollup after terminal state
+salt4_hi10q,,3,pending_submission,run isolated relaunch post-exit rollup after terminal state
+salt4_jin_nominal_continuation,,4,pending_submission,run isolated relaunch post-exit rollup after terminal state
+salt4_lo10q,,5,pending_submission,run isolated relaunch post-exit rollup after terminal state

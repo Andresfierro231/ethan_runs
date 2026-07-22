@@ -1,0 +1,15 @@
+source_path,exists,role
+work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_steady_state_table.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_compact_lineage_table.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/steady_state_admission_matrix.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/bc_role_label_inventory.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/recommended_salt_split.csv,True,input evidence
+work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/METHODOLOGY.md,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/stopped_salt2_salt4_pm5q/harvest_job_manifest.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/stopped_salt2_salt4_pm5q/status_table/selected_corrected_q_status_table.csv,True,input evidence
+work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/stopped_salt2_salt4_pm5q/aggregate_registered_postprocessing.log,True,input evidence
+registry/_all_postprocessing_runs.csv,True,input evidence
+jadyn_runs/modern_runs/2026-06-19_ethan_blocker_and_1d_followon_wave/campaign_manifest.csv,True,input evidence
+jadyn_runs/salt2/2026-06-01_continuation_candidate/README.md,True,input evidence
+work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/all_timeseries_case_rollup.csv,True,input evidence

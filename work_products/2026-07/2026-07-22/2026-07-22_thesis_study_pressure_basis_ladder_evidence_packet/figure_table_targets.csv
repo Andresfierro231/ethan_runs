@@ -1,0 +1,5 @@
+target,artifact,use
+Chapter 6 pressure admission methods table,pressure_basis_ladder.csv,Define pressure-basis terms and gate status.
+Chapter 7 negative-result table,section_effective_residual_values.csv,Show exact signed residuals and failed component-K gates.
+Appendix pressure claim boundary,thesis_pressure_claim_boundary.csv,Prevent external prose from promoting diagnostic rows to closures.
+Appendix pressure gate matrix,pressure_non_admission_gate_matrix.csv,"List endpoint, ordinary-flow, UQ, F3/F6, and source/property blockers."

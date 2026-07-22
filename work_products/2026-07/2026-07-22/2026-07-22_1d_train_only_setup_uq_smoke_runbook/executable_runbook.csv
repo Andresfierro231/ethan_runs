@@ -1,0 +1,8 @@
+step_id,step_name,where,command_or_action,expected_artifact,failure_action
+S00,claim_execution_row,.agent/BOARD.md,create a separate execution row before running Fluid or scheduler work,active execution task with exact allowed paths,do not run
+S01,freeze_runtime_manifest,compute or local preflight,write runtime input manifest from setup-only fields and variation matrix,runtime_input_manifest.csv,stop if any forbidden field appears
+S02,train_only_baseline_smoke,compute node if Fluid execution is nontrivial,run nominal setup-only train rows and record finite root/bracket status,baseline_root_and_qoi_smoke.csv,stop before sensitivity variants
+S03,one_at_a_time_variants,compute node,"run V01-V08 one at a time, skipping unsupported capabilities with reason",one_at_a_time_setup_uq_smoke.csv,record failure mode and continue only if root failures are isolated
+S04,heat_ledger_and_sensor_projection,postprocess output tables,"emit mdot, TP/TW projections, heat terms, R_s, and owner labels",qoi_output_contract.csv; heat_ledger_sensitivity.csv,mark row diagnostic-incomplete
+S05,split_guardrail_review,local validation,verify train-only and no validation/holdout/external tuning,split_guardrail_audit.csv,invalidate smoke result
+S06,decision_closeout,task package,"write sensitivity ranking, blockers, no-release decision, status, journal, import manifest",README.md; summary.json; finish_task OK,do not advertise result as complete

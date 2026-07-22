@@ -1,0 +1,12 @@
+field,value,status
+mdot_kg_s,0.0221909170412141,pass
+velocity_main_m_s,0.03074185728389117,pass
+start_temperature_K,548.9790179720221,pass
+end_temperature_K,548.9790179729068,pass
+temperature_periodicity_error_K,8.847109711496159e-10,pass
+qhx_total_W,54.298684928642835,pass
+qambient_total_W,248.401721404496,pass
+predicted_air_outlet_temperature_K,379.3049026767276,pass
+pressure_residual_Pa,5.145547987694954e-09,pass
+deltaP_buoyancy_Pa,31.165742927211795,pass
+deltaP_losses_Pa,31.165742932357343,pass

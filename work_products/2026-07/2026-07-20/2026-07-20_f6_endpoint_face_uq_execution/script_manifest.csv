@@ -1,0 +1,4 @@
+script_path,script_role,auto_submit,guardrail
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/scripts/sample_f6_endpoint_faces.py,sampler_or_launch_helper,false,generated only; not executed by builder
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/scripts/run_f6_endpoint_faces.sh,sampler_or_launch_helper,false,generated only; not executed by builder
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/scripts/sbatch_f6_endpoint_faces.sh,sampler_or_launch_helper,false,generated only; not executed by builder

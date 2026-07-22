@@ -1,0 +1,7 @@
+case_id,feature,candidate_source,same_endpoint_labels,same_formula,same_sign_convention,mesh_family_member,time_family_member,eligible_for_same_qoi_UQ,reason
+salt_2,corner_lower_right,harvested_nominal_endpoint_pair,true,true,true,nominal_only,target_window_only,false,single harvested target row cannot establish mesh/time uncertainty
+salt_2,corner_lower_right,prior_centerline_component_table,false,false,false,not_same_qoi,not_same_qoi,false,prior row uses proxy pressure/tap-length basis and cannot supply same-QOI UQ
+salt_3,corner_lower_right,harvested_nominal_endpoint_pair,true,true,true,nominal_only,target_window_only,false,single harvested target row cannot establish mesh/time uncertainty
+salt_3,corner_lower_right,prior_centerline_component_table,false,false,false,not_same_qoi,not_same_qoi,false,prior row uses proxy pressure/tap-length basis and cannot supply same-QOI UQ
+salt_4,corner_lower_right,harvested_nominal_endpoint_pair,true,true,true,nominal_only,target_window_only,false,single harvested target row cannot establish mesh/time uncertainty
+salt_4,corner_lower_right,prior_centerline_component_table,false,false,false,not_same_qoi,not_same_qoi,false,prior row uses proxy pressure/tap-length basis and cannot supply same-QOI UQ

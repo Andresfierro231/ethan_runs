@@ -1,0 +1,16 @@
+{
+  "basis_resolved_pairs": 3,
+  "component_k_admitted": false,
+  "f6_fit_performed": false,
+  "feature_pairs": 3,
+  "generated_at": "2026-07-18T20:43:37.766133+00:00",
+  "generated_docs_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "ordinary_component_k_candidates": 0,
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit",
+  "recirculation_fail_pairs": 3,
+  "recirculation_pass_pairs": 0,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": "none",
+  "task": "TODO-TWO-TAP-PRESSURE-BASIS-RECIRC-AUDIT"
+}

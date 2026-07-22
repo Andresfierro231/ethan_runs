@@ -1,0 +1,9 @@
+forbidden_input,runtime_allowed,diagnostic_allowed,diagnostic_use,failure_if_used_at_runtime,leakage_check_status
+realized CFD wallHeatFlux,false,true,"wall-flux sign, source/sink recovery, residual ownership, validation comparison",leaks CFD solution heat flux into predictive model,pass
+CFD mdot,false,true,post-solve comparison and historical pressure/thermal audit,turns forward prediction into replay,pass
+imposed CFD cooler duty,false,true,cooler boundary diagnosis and parity context,bypasses predictive HX/cooler model,pass
+validation temperatures,false,true,score calculation after frozen runtime prediction,uses target sensors to construct the prediction,pass
+holdout temperatures,false,true,protected score calculation only,invalidates holdout/external claims,pass
+realized test-section heat,false,true,test-section source/loss diagnosis,imports CFD outcome instead of setup source model,pass
+hidden global multiplier,false,false,none,absorbs multiple physical owners and blocks publication interpretation,pass
+final heat residual as closure input,false,true,owner label and blocker pointer after calculation,creates a closure from the error being explained,pass

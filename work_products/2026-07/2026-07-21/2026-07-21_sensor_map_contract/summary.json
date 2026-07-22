@@ -1,0 +1,19 @@
+{
+  "task": "TODO-PRED-SENSOR-MAP",
+  "date": "2026-07-21",
+  "status": "complete",
+  "sensors_reviewed": 17,
+  "mapped": 1,
+  "bounded": 15,
+  "excluded": 1,
+  "runtime_temperature_inputs_allowed": 0,
+  "fit_permissions_allowed": 0,
+  "model_selection_permissions_allowed": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launch": false,
+  "fluid_or_external_edit": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxed": false
+}

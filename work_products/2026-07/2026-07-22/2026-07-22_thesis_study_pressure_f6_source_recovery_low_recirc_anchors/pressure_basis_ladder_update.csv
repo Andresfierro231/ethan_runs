@@ -1,0 +1,6 @@
+ladder_level,status,key_count_or_number,interpretation,allowed_claim,forbidden_claim
+section_effective_pressure_residual,available_diagnostic,3 section-effective rows and Salt2-frozen transfer max abs error 0.47046606946166093438399 Pa,usable as thesis evidence for section-effective pressure recovery,hybrid section-effective residual motivates pressure model form,component K or F6 admission
+current_f6_endpoint_pairs,diagnostic_only,10 current endpoint pair rows,finite/reconstructed pressure evidence exists but ordinary-flow and UQ gates block admission,screen branches and plan anchors,F6 fit or F3/F6 numeric comparison
+low_recirc_anchor_candidates,blocked_pending_terminal,4 low-recirc anchor rows in S14 map and CAND001 running,physically relevant lane but terminal/source fields absent,monitor CAND001 to terminal state,harvest or score while running
+CAND001_terminal_recovery,active_monitor_only,job 3308712 running at read-only check,timeout was not physics rejection but terminal success is absent,continue monitor-only no duplicate submit,treat running job as terminal evidence
+ordinary_f6_admission,closed,0 admitted F6 rows and 0 ordinary candidate pairs,no ordinary F6 basis exists now,explicit non-admission,component-K/F6/cluster-K/clipped-K/global multiplier release

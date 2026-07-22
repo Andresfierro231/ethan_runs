@@ -1,0 +1,3 @@
+comparison,lower_leg_TW5_abs_residual_improvement_K,global_passive_TW5_abs_residual_improvement_K,global_to_lower_response_ratio,interpretation,repair_implication
+lower_leg_hA_scale_0.5_vs_global_passive_hA_scale_0.5,4.59310690807564,51.63369382647278,11.241561509419686,"dominant response is broad/global, not localized lower-leg source-bounded evidence",do_not_admit_global_multiplier; seek source-bounded wall/core exchange or source-placement evidence
+ambient_drive_delta_+15K,,13.472549886792422,,ambient drive can move residual but remains train-only diagnostic without source release,requires ambient/geometry/insulation/literature provenance before execution

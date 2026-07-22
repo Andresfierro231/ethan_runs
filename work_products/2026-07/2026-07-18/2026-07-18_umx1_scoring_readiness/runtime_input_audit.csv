@@ -1,0 +1,13 @@
+input_family,allowed_at_runtime,allowed_use,forbidden_use,decision
+tracked_case_heater_power,true,predictive operating input,none,allow
+tracked_case_test_section_power,true,active heating contract input when declared by case,none,allow
+ambient_conditions,true,predictive boundary input,none,allow
+insulation_assumption,true,predictive setup input,none,allow
+air_side_boundary_conditions,true,predictive HX boundary input,none,allow
+upcomer_exchange_multiplier,true,predeclared candidate scalar only,posthoc tuning from holdout/blind residuals,allow_with_guardrail
+upcomer_reservoir_heat_sources,true,setup/provenance routing only,realized wallHeatFlux or measured probe fitting,allow_with_guardrail
+measured_TP_TW,false,validation target only,Fluid runtime input or model selection from holdout/blind rows,forbid
+measured_mass_flow,false,validation target only,Fluid runtime input or root forcing,forbid
+measured_cooler_duty,false,validation target only,imposed cooler sink in predictive UMX1 runtime,forbid
+CFD_wallHeatFlux,false,diagnostic evidence only,reservoir source or heat-loss fitting input,forbid
+holdout_or_blind_probe_residuals,false,score only after frozen train choice,choosing multiplier bounds roots exclusions or fallback policy,forbid

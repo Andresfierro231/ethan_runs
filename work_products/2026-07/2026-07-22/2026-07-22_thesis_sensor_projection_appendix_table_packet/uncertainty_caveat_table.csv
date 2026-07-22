@@ -1,0 +1,18 @@
+sensor,kind,acceptance_class,coordinate_claim_level,uncertainty_caveat,publication_effect
+TP1,TP,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TP2,TP,mapped,projected_from_native_cfd_junction_evidence,Projected onto the 1D bottom-horizontal/right-downcomer junction for validation-only scoring; not a runtime input or fit target.,use segment/projection language; avoid exact-coordinate claims
+TP3,TP,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TP4,TP,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TP5,TP,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TP6,TP,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW1,TW,bounded,mixed_provenance_not_exact,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW2,TW,bounded,mixed_provenance_not_exact,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW3,TW,bounded,mixed_provenance_not_exact,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW4,TW,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW5,TW,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW6,TW,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW7,TW,bounded,mixed_provenance_not_exact,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW8,TW,bounded,mixed_provenance_not_exact,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW9,TW,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims
+TW10,TW,excluded,excluded_shell_surrogate,excluded because active HX shell state is absent,use segment/projection language; avoid exact-coordinate claims
+TW11,TW,bounded,not_exact_measurement,Approximate initial placement only; not an exact experimental measurement.,use segment/projection language; avoid exact-coordinate claims

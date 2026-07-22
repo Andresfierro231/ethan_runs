@@ -1,0 +1,13 @@
+source_id,path,used_for,mutation_status
+mf12_bulk_to_tp,work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/README.md,bulk-to-TP formula decision and key RMSE values,not_mutated
+mf12_release_matrix,work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/formula_release_gap_matrix.csv,source/UQ/admission fail-closed rows,not_mutated
+mf14_tp_uq,work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/tp_same_qoi_projection_uq.csv,TP same-QOI runtime and UQ status,not_mutated
+mf15_wall_profile,work_products/2026-07/2026-07-22/2026-07-22_mf15_runtime_wall_profile_basis_gate/wall_profile_release_gate.csv,wall/profile runtime release gates,not_mutated
+mf17_wall_core_uq,work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/summary.json,wall/core same-QOI UQ execution and no-admission status,not_mutated
+d2_tp_tw,work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/tp_tw_residual_separation.csv,TP/TW residual separation values,not_mutated
+d3_wall_shape,work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/candidate_gate.csv,wall/core axial-mixing sensor-projection candidates,not_mutated
+d4_source_placement,work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/source_bounded_candidate_gate.csv,source-placement candidate evidence and blockers,not_mutated
+source_property_preflight,work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/field_release_contract.csv,cp viscosity pressure source/sink release status,not_mutated
+thermal_accounting,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/thermal_accounting_traceability_ledger.csv,heat-path lane ownership,not_mutated
+s12_disposition,work_products/2026-07/2026-07-22/2026-07-22_s12_thermal_residual_candidate_disposition_and_thesis_panels/candidate_disposition_table.csv,S12 downstream freeze/score consequence,not_mutated
+n4_sensor_audit,work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_runtime_input_audit.csv,runtime temperature ban,not_mutated

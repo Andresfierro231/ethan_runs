@@ -1,0 +1,10 @@
+guardrail,occurred
+scheduler/solver/sampler/UQ launched,False
+active medium/fine sampler mutation,False
+Qwall production release,False
+source/property release,False
+coefficient admission,False
+validation/holdout/external scoring,False
+fitting/tuning/model selection,False
+native output or registry mutation,False
+residual absorbed into internal Nu,False

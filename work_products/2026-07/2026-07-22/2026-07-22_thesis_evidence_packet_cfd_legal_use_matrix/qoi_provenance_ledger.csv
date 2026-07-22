@@ -1,0 +1,9 @@
+qoi_or_artifact,units,source_family,legal_use,runtime_or_admission_restriction
+retained_window,s,case package summary and table_salt_case_matrix,Case provenance and averaging window.,Not a runtime model input.
+Q_wall_W / grouped heat,W,field_transport_streamwise/grouped heat comparisons and thesis thermal packets,Heat-path target and owner diagnosis.,Forbidden as predictive runtime source.
+shear_based_Darcy_f,dimensionless,representative_transport_profiles,Hydraulic redistribution diagnostic.,Not admitted f_D for recirculating or ungated rows.
+direct_dpdx_wall_registered,Pa m^-1,representative_transport_profiles,Pressure-basis diagnostic.,Not component K/F6 admission.
+effective_UA_prime,W m^-1 K^-1,field_transport_branch_thermal_comparison and representative thermal summaries,Effective thermal redistribution diagnostic.,Not local HTC truth everywhere.
+effective_thermal_resistance,K m W^-1,representative transport and branch thermal summaries,Effective resistance comparison.,QC-masked diagnostic only.
+TP_TW_temperatures,K or degC depending source table,sensor/score packages and thesis claim ledger,Score targets and projection checks.,Never predictive runtime inputs.
+upcomer_velocity_arrows,m s^-1 visual scale,rendered velocity figure packages,Recirculation visual/model-form evidence.,No runtime velocity input or exchange coefficient.

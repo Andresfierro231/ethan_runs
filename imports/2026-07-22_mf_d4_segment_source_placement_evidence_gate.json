@@ -1,0 +1,46 @@
+{
+  "task": "TODO-MF-D4-SEGMENT-SOURCE-PLACEMENT-EVIDENCE-GATE-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Thermal-modeling / Forward-pred / Tester / Writer / Reviewer",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-MF-D4-SEGMENT-SOURCE-PLACEMENT-EVIDENCE-GATE-2026-07-22.md",
+    ".agent/journal/2026-07-22/mf-d4-segment-source-placement-evidence-gate.md",
+    "imports/2026-07-22_mf_d4_segment_source_placement_evidence_gate.json",
+    "tools/analyze/build_mf_d4_segment_source_placement_evidence_gate.py",
+    "tools/analyze/test_mf_d4_segment_source_placement_evidence_gate.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/segment_residual_map.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/independent_source_heat_path_evidence.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/runtime_legality_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/source_bounded_candidate_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/publication_claim_boundary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/setup_known_source_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment/source_basis_coverage.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/expected_q_loss_envelope.csv"
+  ],
+  "mutation_flags": {
+    "native_cfd_openfoam_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_or_solver_or_sampler_or_uq": false,
+    "fluid_or_external_repositories": false,
+    "thesis_current_or_latex_files": false,
+    "new_fitting_or_scoring_or_admission": false,
+    "source_property_release": false
+  },
+  "validation": [
+    "python3.11 tools/analyze/build_mf_d4_segment_source_placement_evidence_gate.py",
+    "python3.11 tools/analyze/test_mf_d4_segment_source_placement_evidence_gate.py"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "adjacent_pair_rows": 264,
+  "agent445_adjacent_rows": 72,
+  "agent447_adjacent_rows": 192,
+  "branch_rows": 66,
+  "case_rows": 11,
+  "final_decision": "pressure_ladders_harvested_integrated_no_true_fd_or_k_fit_admitted",
+  "generated_at_utc": "2026-07-16T20:37:07.141886+00:00",
+  "no_duplicate_jobs": true,
+  "orientation_candidate_branch_rows": 0,
+  "pressure_definition_conflict_branch_rows": 24,
+  "recirc_mask_blocked_branch_rows": 66,
+  "station_rows": 330,
+  "task": "AGENT-449",
+  "true_fit_rows": 0
+}

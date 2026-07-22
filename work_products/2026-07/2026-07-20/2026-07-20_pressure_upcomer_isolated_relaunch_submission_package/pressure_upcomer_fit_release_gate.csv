@@ -1,0 +1,7 @@
+case_key,fit_release_status,fit_or_model_selection_use_now,release_condition
+salt2_hi10q,blocked_pending_post_exit_parse_and_admission,false,all matched-plane and wall-band gates pass after relaunch
+salt2_jin_nominal_continuation,blocked_pending_post_exit_parse_and_admission,false,all matched-plane and wall-band gates pass after relaunch
+salt3_jin_nominal_continuation,blocked_pending_post_exit_parse_and_admission,false,all matched-plane and wall-band gates pass after relaunch
+salt4_hi10q,blocked_pending_post_exit_parse_and_admission,false,all matched-plane and wall-band gates pass after relaunch
+salt4_jin_nominal_continuation,blocked_pending_post_exit_parse_and_admission,false,all matched-plane and wall-band gates pass after relaunch
+salt4_lo10q,blocked_pending_post_exit_parse_and_admission,false,all matched-plane and wall-band gates pass after relaunch

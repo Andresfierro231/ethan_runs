@@ -1,0 +1,18 @@
+{
+  "component_k_admitted": false,
+  "decision": "no_launch_from_this_row",
+  "f6_fit_performed": false,
+  "future_sampler_allowed_only_after": [
+    "fresh board row claims staged-copy cfd-pp scope",
+    "source cases are terminal successful or explicitly launchable under a new row",
+    "preflight can compute aggregate RAF < 0.01 and RMF < 0.01",
+    "same-QOI UQ family plan is declared or diagnostic-only status is accepted"
+  ],
+  "guardrail": "planning package only; raw samples require a later staged-copy sampler row",
+  "native_outputs_mutated": false,
+  "preferred_candidate_id": "CAND-001",
+  "preferred_request_id": "NR-CLR-01",
+  "preferred_source_family": "Salt4 high-heat/no-recirculation probes",
+  "scheduler_launch_performed": false,
+  "task": "TODO-TWO-TAP-NONRECIRC-ANCHOR-PLAN"
+}

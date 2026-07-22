@@ -1,0 +1,14 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/summary.json,read geometry seed decision,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_case_summary.csv,read seed case summary,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_surface_contract.csv,read seed surface contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/release_decision.csv,read previous fail-closed source-bounded decision,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/sampler_input_gap_matrix.csv,read sampler blockers,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json,read UQ blockers,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed,generated task-owned package,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/masks/salt_2_right_leg_geometry_seed_cells.csv,read salt_2 geometry seed mask,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh,read salt_2 native polyMesh topology,true,true,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/masks/salt_3_right_leg_geometry_seed_cells.csv,read salt_3 geometry seed mask,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh,read salt_3 native polyMesh topology,true,true,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/masks/salt_4_right_leg_geometry_seed_cells.csv,read salt_4 geometry seed mask,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh,read salt_4 native polyMesh topology,true,true,false

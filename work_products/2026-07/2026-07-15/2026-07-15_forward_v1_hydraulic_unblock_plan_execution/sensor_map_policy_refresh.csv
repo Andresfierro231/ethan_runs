@@ -1,0 +1,18 @@
+sensor,kind,observed_rows,source_segments,admission_use_classes,mean_abs_error_K,max_abs_error_K,policy,runtime_input_allowed,next_action
+TP1,TP,12,top_horizontal_exit,holdout_candidate;train_candidate;validation_candidate,93.9119,225.827,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TP2,TP,12,,holdout_candidate;train_candidate;validation_candidate,,,coordinate_upgrade_needed,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TP3,TP,12,left_lower_vertical,holdout_candidate;train_candidate;validation_candidate,82.1219,201.982,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TP4,TP,12,left_lower_vertical,holdout_candidate;train_candidate;validation_candidate,83.8843,203.5,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TP5,TP,12,test_section,holdout_candidate;train_candidate;validation_candidate,84.9397,203.974,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TP6,TP,12,left_upper_vertical,holdout_candidate;train_candidate;validation_candidate,86.8774,206.787,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW1,TW,12,right_vertical,holdout_candidate;train_candidate;validation_candidate,109.265,244.914,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW10,TW,12,,holdout_candidate;train_candidate;validation_candidate,,,coordinate_upgrade_needed,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW11,TW,12,cooled_incline_post_hx,holdout_candidate;train_candidate;validation_candidate,87.4612,212.819,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW2,TW,12,right_vertical,holdout_candidate;train_candidate;validation_candidate,105.761,241.003,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW3,TW,12,right_vertical,holdout_candidate;train_candidate;validation_candidate,86.8782,217.949,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW4,TW,12,heated_incline,holdout_candidate;train_candidate;validation_candidate,84.5857,210.39,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW5,TW,12,heated_incline,holdout_candidate;train_candidate;validation_candidate,82.3004,202.917,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW6,TW,12,heated_incline,holdout_candidate;train_candidate;validation_candidate,80.0987,197.11,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW7,TW,12,left_lower_vertical,holdout_candidate;train_candidate;validation_candidate,85.9911,205.841,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW8,TW,12,left_upper_vertical,holdout_candidate;train_candidate;validation_candidate,86.0692,204.831,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs
+TW9,TW,12,cooled_incline_pre_hx,holdout_candidate;train_candidate;validation_candidate,74.3144,189.401,scoreable_large_residual_review,false,use for validation/scorecard only; do not use TP/TW as model inputs

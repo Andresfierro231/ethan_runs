@@ -1,0 +1,10 @@
+source_path,role,mutation_status
+reports/thesis_dossier/Chapters_and_sections/current/15_ch1_csem_motivation_and_contribution.md,current motivation evidence,read_only
+reports/thesis_dossier/Chapters_and_sections/current/01_modeling_approach.md,current modeling/reduction evidence,read_only
+reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md,figure and 2D-axisymmetric claim boundary evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/README.md,matched upcomer velocity evidence,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/README.md,recirculation/onset fail-closed status,read_only
+work_products/2026-07/2026-07-22/2026-07-22_1d_recirculation_switch_dry_contract/README.md,1D guarded recirculation switch status,read_only
+../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/rom_to_1d_motivation_outline.md,transferred thesis evidence outline,mutated_added
+../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/rom_to_1d_motivation_claim_boundaries.csv,transferred claim boundaries,mutated_added
+

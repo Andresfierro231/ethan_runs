@@ -1,0 +1,12 @@
+guardrail,value
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_action,False
+fluid_or_external_edit,False
+external_papers_repo_edit,False
+broad_figure_copy,False
+figure_asset_copy_now,False
+validation_holdout_external_scoring,False
+source_property_release,False
+candidate_freeze,False
+final_score,not_performed

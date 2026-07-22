@@ -1,0 +1,7 @@
+model_or_gate,split_group,sensor_kind,finite_rows,rmse_K,mae_K,mean_signed_error_K,max_abs_error_K,interpretation,use_class,source
+M3_as_is,transfer,TP,10,13.5673279702,13.0082192398,-13.0082192398,20.514600244,baseline bulk/TP projection residual before D2 correction,diagnostic_only,mf_d2_tp_tw_qoi_projection_gate/tp_tw_residual_separation.csv
+D2_M3_sensor_kind_offsets,transfer,TP,10,4.38159298515,3.98548007646,2.0832034533,6.6916415221,TP projection signal substantially improves transfer TP residual,diagnostic_only,mf_d2_tp_tw_qoi_projection_gate/tp_tw_residual_separation.csv
+M3_as_is,transfer,TW,20,18.980361511,14.975001499,-14.5935869695,39.250746372,baseline TW residual before TP/TW separation,diagnostic_only,mf_d2_tp_tw_qoi_projection_gate/tp_tw_residual_separation.csv
+D2_M3_sensor_kind_offsets,transfer,TW,20,12.5130610954,10.7783602268,3.04882854937,21.6083308531,TW residual remains after TP projection separation and needs owner attribution,diagnostic_only,mf_d2_tp_tw_qoi_projection_gate/tp_tw_residual_separation.csv
+MF12_bulk_to_TP_formula,train,TP,5,n/a,n/a,-15.091423,n/a,train TP direction signal exists but source/property and UQ gates fail,diagnostic_only_needs_source_basis,mf12_bulk_to_tp_formula_gate/README.md
+MF12_D2_vs_M3_transfer,transfer,TP,10,4.38159298515,n/a,n/a,n/a,D2 TP RMSE improves versus M3 TP RMSE 13.5673279702 K but no runtime formula released,diagnostic_only_needs_source_basis,mf12_bulk_to_tp_formula_gate/README.md

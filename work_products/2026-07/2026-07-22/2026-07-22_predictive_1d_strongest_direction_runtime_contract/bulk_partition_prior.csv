@@ -1,0 +1,3 @@
+metric,case_count,min,max,mean,range,population_std,coefficient_of_variation,stability_status,qwall_medium_fine_max_spread_percent,qwall_temporal_max_relative_percent,claim_boundary
+F_wall_Qwall_over_source,3,0.13693697990467257,0.13896146612096516,0.13795119734031702,0.002024486216292587,0.0008264977531314,0.005991232907478733,stable_diagnostic_candidate,0.5029174998089355,0.00364554244946,diagnostic bulk-integral partition only; no coefficient fit or admission
+F_remaining_after_wall,3,0.8610385338790348,0.8630630200953274,0.862048802659683,0.002024486216292587,0.0008264977531314,0.0009587598179840895,stable_diagnostic_remainder,0.5029174998089355,0.00364554244946,"remainder is an explicit residual/throughflow/storage lane, not an internal Nu adjustment"

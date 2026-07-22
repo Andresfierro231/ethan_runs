@@ -1,0 +1,5 @@
+gate_id,gate,required_before_runtime_use,current_status
+GATE-001,source_model_api_contract,Fluid must accept setup-known source/sink rows without realized CFD wallHeatFlux,missing
+GATE-002,train_only_source_property_release,Salt1/Salt2 train rows must release source/property labels before fit or freeze,missing
+GATE-003,protected_split_audit,Salt3/Salt4 rows remain validation/holdout provenance only until frozen-candidate scoring,blocked
+GATE-004,thermal_effect_test,source inclusion must improve train residuals without absorbing residuals into hidden terms,not_run

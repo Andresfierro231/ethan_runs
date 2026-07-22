@@ -1,0 +1,15 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-SAME-LABEL-SAMPLING-2026-07-22",
+  "generated_at": "2026-07-22T09:27:58-05:00",
+  "decision": "medium_fine_runs_exist_exact_s13_rows_absent_sampling_contract_ready",
+  "source_run_inventory_rows": 6,
+  "source_runs_available": 6,
+  "sampling_need_rows": 24,
+  "terminal_sampling_ready_rows": 24,
+  "exact_contract_window_ready_rows": 0,
+  "existing_exact_s13_medium_fine_rows": 0,
+  "mesh_gci_ready_now": false,
+  "scheduler_or_sampler_launched": false,
+  "production_harvest_allowed": false,
+  "admission_allowed": false
+}

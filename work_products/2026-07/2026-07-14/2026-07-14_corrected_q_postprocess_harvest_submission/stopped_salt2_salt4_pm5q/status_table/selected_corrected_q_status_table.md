@@ -1,0 +1,10 @@
+# Selected Corrected Salt Q Status Table
+
+Rows are sourced from `registry/case_registry.csv`; gate/status fields are joined from the completed 3280969 Salt-Q gate and minimal continuation plan. `Latest registered timestep` is scanned from each registered case root, while `Latest log time` is parsed from recent `logs/log.foamRun*` tails when present. Short row names omit the historical `corrected` staging suffix; source keys remain in CSV outputs for provenance. Current coordinator policy admits converged/stationary terminal-window perturbation rows to closure fitting.
+
+| Row       | Gate latest time | Latest registered timestep | Latest log time | Post-restart advance so far | Status                                                                                                                                 |
+| --------- | ---------------- | -------------------------- | --------------- | --------------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
+| Salt2 -5Q | 10275.911 s      | 10275.000 s                | 10275.911 s     | 2360.911 s = 39m 21s        | Converged terminal window; closure-fit admissible under current coordinator policy. Former too_short gate context is not an exclusion. |
+| Salt2 +5Q | 9780.591 s       | 9780.000 s                 | 9780.591 s      | 1865.591 s = 31m 06s        | Converged terminal window; closure-fit admissible under current coordinator policy. Former too_short gate context is not an exclusion. |
+| Salt4 -5Q | 11695.222 s      | 11695.000 s                | 11695.222 s     | 1695.222 s = 28m 15s        | Converged terminal window; closure-fit admissible under current coordinator policy. Former too_short gate context is not an exclusion. |
+| Salt4 +5Q | 11399.188 s      | 11399.000 s                | 11399.188 s     | 1399.188 s = 23m 19s        | Converged terminal window; closure-fit admissible under current coordinator policy. Former too_short gate context is not an exclusion. |

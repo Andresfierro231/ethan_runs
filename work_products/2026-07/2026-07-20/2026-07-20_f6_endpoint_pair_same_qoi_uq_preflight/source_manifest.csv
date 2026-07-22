@@ -1,0 +1,9 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv,yes,clean endpoint station geometry,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/non_upcomer_f6_candidate_matrix.csv,yes,ordinary branch candidates,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/same_qoi_uq_requirements.csv,yes,same-QOI requirements,read_only
+work_products/2026-07/2026-07-01/2026-07-01_claude_section_mean_pressure/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.csv,yes,Salt2 coarse section pressure,read_only
+work_products/2026-07/2026-07-01/2026-07-01_claude_section_mean_pressure/section_mean_pressure_viscosity_screening_salt_test_3_jin_coarse_mesh.csv,yes,Salt3 coarse section pressure,read_only
+work_products/2026-07/2026-07-01/2026-07-01_claude_section_mean_pressure/section_mean_pressure_viscosity_screening_salt_test_4_jin_coarse_mesh.csv,yes,Salt4 coarse section pressure,read_only
+work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/medium/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.csv,yes,Salt2 medium section pressure,read_only
+work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/fine/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.csv,yes,Salt2 fine section pressure,read_only

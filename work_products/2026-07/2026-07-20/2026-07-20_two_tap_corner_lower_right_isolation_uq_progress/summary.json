@@ -1,0 +1,14 @@
+{
+  "apparent_cluster_loss_rows": 3,
+  "case_count": 3,
+  "component_k_admitted_rows": 0,
+  "date": "2026-07-20",
+  "f6_fit_performed": false,
+  "feature": "corner_lower_right",
+  "generated_at_utc": "2026-07-20T16:40:46.647943+00:00",
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "same_qoi_mesh_uq_pass_rows": 0,
+  "same_qoi_time_uq_pass_rows": 0,
+  "task": "TODO-TWO-TAP-CORNER-LOWER-RIGHT-ISOLATION-UQ-PROGRESS"
+}

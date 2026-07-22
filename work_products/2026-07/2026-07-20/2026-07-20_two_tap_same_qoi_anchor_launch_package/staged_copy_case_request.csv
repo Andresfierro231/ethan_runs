@@ -1,0 +1,2 @@
+request_id,feature,endpoint_pair,source_case_status,staged_copy_status,required_operating_point,auto_submit,next_action,source_path
+NR-CLR-SAME-QOI-2026-07-20,corner_lower_right,lower_leg__s04->right_leg__s00,missing_named_nonrecirculating_source_case,blocked,nonrecirculating RAF < 0.01 and RMF < 0.01 at both endpoint planes,false,identify or create source case before sbatch generation,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirculating_same_qoi_anchor_request_refresh/anchor_request.csv

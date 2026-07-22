@@ -1,0 +1,14 @@
+term,advisor_definition,presentation_use
+M1,Diagnostic replay using the full CFD segment heat ledger while solving loop pressure for mdot.,Upper-bound diagnostic for how much realized CFD heat information can explain.
+M1b,Thermal isolation replay using full CFD segment heat ledger and fixed CFD mdot.,Diagnostic only; it cannot be used as a predictive runtime model.
+M2,"Diagnostic replay using CFD heater, test-section net heat, and cooler terms while solving pressure for mdot.",Best current mdot diagnostic subset; still not setup-only predictive.
+M3,Diagnostic replay using only CFD heater and cooler terms while solving pressure for mdot.,Best current temperature RMSE subset; mdot worsens relative to M2.
+PM5,Pressure-matched +/-5Q diagnostic upcomer rows used to examine recirculation and wall heat transfer behavior.,"Diagnostic evidence source, not an admitted Nu/f_D/K fit set."
+F6,Candidate hydraulic/friction correction scorecard built from admissibility-gated Re variation evidence.,Current F6 fit has zero admitted rows; final hydraulic residual remains blocked.
+h_proxy,Section-effective heat transfer proxy q''/(T_wall - T_bulk).,Diagnostic only in recirculating upcomer flow.
+Nu,Nusselt number h D / k for ordinary single-stream internal convection.,Invalid as a fitted label in the current recirculating Salt2-4 upcomer regime.
+f_D,Darcy friction factor in a pipe-flow pressure-loss model.,Not fit-admissible for current recirculating upcomer evidence.
+K,Minor or component loss coefficient in a hydraulic pressure-loss model.,Needs ordinary/transition anchor rows before fitting.
+UA,Overall conductance used in Q = UA DeltaT heat-exchanger models.,Near-term setup-only cooler/HX closure target.
+SEM,Standard error of the mean; sigma/sqrt(N) for independent samples.,"Steady-state mean uncertainty metric, with autocorrelation correction when samples are correlated."
+H1,Legacy shorthand from older hydraulic/heat-loss task names; avoid using it without spelling out the physical quantity.,"Replace with explicit phrases such as pressure residual, heat-loss model, or h_proxy."

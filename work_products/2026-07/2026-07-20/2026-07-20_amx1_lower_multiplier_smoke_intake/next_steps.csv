@@ -1,0 +1,4 @@
+priority,next_step,reason,guardrail
+1,Implement disabled-by-default gradient-clipped AMX1 localized exchange,Lower multipliers shrink but do not remove Salt2 TP/all-probe regressions,No broad grid; keep first run Salt2-only
+2,Smoke upper/lower vertical-only m010 with the clip active,upper_vertical_only_m010 is closest and lower_vertical_only_m010 is nearly tied,Require finite roots and nonzero conservative ledgers before paired deltas matter
+3,Run a separate Salt1-Salt4 bounded comparison only after Salt2 core deltas are nonpositive,No current form clears mdot plus TP plus TW plus all-probe gates,No score grid or admission change without split/source/runtime gates

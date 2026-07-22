@@ -1,0 +1,6 @@
+item,status,effect_on_mf10
+MF07,diagnostic_only,hydraulic-development-only variant not smoke-ready
+MF08,needs_source_basis_sign_aware_development_promising_diagnostic_only,signed wall-flux variants need source basis
+MF09,blocked_missing_mesh_gci_source_basis,exchange-cell variant blocked by mesh/GCI/source basis
+source_property,nominal_train_source_property_release_not_ready_no_protected_release,0 release-ready rows; no Fluid smoke
+scoreboard,master_scoreboard_complete_no_new_scoring_or_admission,"existing numeric context only, not new scoring"

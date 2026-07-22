@@ -1,0 +1,47 @@
+{
+  "external_fluid_modified": false,
+  "forward_v0_variant_summary": {
+    "F0_current_fluid_sources": {
+      "all_mdot_overpredicted": true,
+      "max_abs_pressure_residual_Pa": 1.59215447056,
+      "mean_mdot_error_vs_cfd_kg_s": 0.008081666666666668,
+      "mean_mdot_error_vs_cfd_pct": 53.958519401784685,
+      "n_rows": 3,
+      "variant_id": "F0_current_fluid_sources"
+    },
+    "F1_heater_only": {
+      "all_mdot_overpredicted": true,
+      "max_abs_pressure_residual_Pa": 2.01665106391,
+      "mean_mdot_error_vs_cfd_kg_s": 0.005477500000000001,
+      "mean_mdot_error_vs_cfd_pct": 36.371045802776365,
+      "n_rows": 3,
+      "variant_id": "F1_heater_only"
+    }
+  },
+  "generated_utc": "2026-07-13T21:43:16+00:00",
+  "hydraulic_gate_status": "blocked_for_thermal_claim_mdot_overpredicted",
+  "hydraulic_tuning_recommendation": "tune friction/minor-loss/profile terms before thermal parameters; train only on fit-safe rows",
+  "momentum_corrected_fit_safe_spans": [
+    "left_lower_leg",
+    "left_upper_leg",
+    "lower_leg",
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "n_fit_gate_rows": 12,
+  "n_forward_v0_residual_rows": 6,
+  "native_solver_outputs_mutated": false,
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate",
+  "pressure_gradient_fit_safe_spans": [
+    "left_lower_leg",
+    "left_upper_leg"
+  ],
+  "source_files": {
+    "agent_262_pressure_package": "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison",
+    "agent_284_closure_qoi_gci_package": "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci",
+    "forward_v0_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler"
+  },
+  "task_id": "TODO-PRED-HYDRAULIC-GATE",
+  "thermal_closure_status": "blocked"
+}

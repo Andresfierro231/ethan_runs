@@ -1,0 +1,9 @@
+guardrail,value
+external_papers_edit,False
+thesis_body_latex_edit,False
+native_solver_outputs_mutated,False
+registry_or_admission_mutated,False
+scheduler_action,False
+source_property_or_qwall_release,False
+coefficient_admission,False
+final_score_claim,False

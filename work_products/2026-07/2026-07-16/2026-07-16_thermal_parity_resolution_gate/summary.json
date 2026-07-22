@@ -1,0 +1,30 @@
+{
+  "blocker_decision": "resolved",
+  "can_update_blocker_register": true,
+  "external_fluid_modified": false,
+  "generated_at": "2026-07-16T20:41:21+00:00",
+  "internal_nu_fit_allowed_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/residual_owner_resolution_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/thermal_row_admission_gate.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/litrev_methodology_crosswalk.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/predictive_thermal_continuation_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/blocker_resolution_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/summary.json"
+  ],
+  "registry_mutated": false,
+  "residual_owner_failures": 0,
+  "residual_owner_rows": 7,
+  "runtime_legality_gate": "pass",
+  "scheduler_action": false,
+  "setup_only_hx_gate": "pass",
+  "task": "AGENT-452",
+  "thermal_review_class_counts": {
+    "blocked": 5,
+    "validation_only": 11
+  },
+  "thermal_rows_reviewed": 16
+}

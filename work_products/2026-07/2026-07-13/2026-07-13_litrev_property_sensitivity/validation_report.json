@@ -1,0 +1,16 @@
+{
+  "full_1d_rerun_performed": false,
+  "input_paths": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/control_volume_effective_thermal_table.csv"
+  ],
+  "property_modes": [
+    "replication_reis_jadyn",
+    "sohal_janz_full",
+    "jin_viscosity_parida_cp_santini_k",
+    "jin_viscosity_cp_1560_k_060",
+    "shen_celsius_comparison"
+  ],
+  "rows": 90,
+  "summary_rows": 15
+}

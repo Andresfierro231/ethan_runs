@@ -1,0 +1,4 @@
+case_id,job_name,sbatch_script,staged_case,restart_time_s,target_plus_time_s,walltime,ntasks,partition,account
+salt_2,s13_s2_tplus,staging/s13_target_plus_window_generation_2026-07-22/jobs/s13_s2_tplus.sbatch,staging/s13_target_plus_window_generation_2026-07-22/salt_2/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation,7915,7916,02:00:00,64,NuclearEnergy,ASC23046
+salt_3,s13_s3_tplus,staging/s13_target_plus_window_generation_2026-07-22/jobs/s13_s3_tplus.sbatch,staging/s13_target_plus_window_generation_2026-07-22/salt_3/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation,7618,7619,02:00:00,64,NuclearEnergy,ASC23046
+salt_4,s13_s4_tplus,staging/s13_target_plus_window_generation_2026-07-22/jobs/s13_s4_tplus.sbatch,staging/s13_target_plus_window_generation_2026-07-22/salt_4/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation,10000,10001,02:00:00,64,NuclearEnergy,ASC23046

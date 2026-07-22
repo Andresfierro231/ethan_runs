@@ -1,0 +1,4 @@
+artifact,paper_use,claim_boundary
+passive_heat_path_source_basis_table.csv,explain why plausible passive path is not yet source-released,diagnostic gate; no repair/admission
+local_vs_global_cold_bias_interpretation.csv,show global response dominates local lower-leg hA perturbation,"train-only sensitivity, not fitted coefficient"
+repair_no_repair_gate.csv,cite no S11-reviewable M2+ candidate,no final score or source/property release

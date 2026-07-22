@@ -1,0 +1,6 @@
+gate,status,evidence,admission_effect
+clean_endpoint_pair,pass,s03->s01 selected for right_leg and test_section_span across Salt2/Salt3/Salt4,unblocks endpoint-definition blocker only
+same_qoi_pressure_delta,partial,coarse Salt2/Salt3/Salt4 and Salt2 medium/fine section-pressure deltas computed with same labels/formula/sign,diagnostic pressure basis only; raw p/U/flux contract still incomplete
+same_qoi_mesh_uq,partial_diagnostic_salt2_only,2 diagnostic mesh-spread rows,not GCI; no F6 fit admission
+same_qoi_time_uq,blocked,6 rows lack same-QOI neighboring-window family,blocks F6 fit admission
+ordinary_reverse_flow,blocked,section tables do not provide RAF/RMF face-level reverse-flow metrics,blocks ordinary F6 promotion

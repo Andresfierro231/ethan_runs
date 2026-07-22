@@ -1,0 +1,6 @@
+evidence_id,artifact,claim_supported
+EV-001,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/summary.json,executable but not predictive
+EV-002,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/dominant_thermal_residual_owners.csv,heated-incline/TW5 residual ownership
+EV-003,work_products/2026-07/2026-07-21/2026-07-21_salt1_train_external_bc_recovery_freeze_gate/segment_heat_path_coverage.csv,Salt1 ambient-wall train-envelope completion
+EV-004,work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv,setup-side source/sink provenance
+EV-005,work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/failure_classification.csv,TW5/TW6 missing-source-first classification

@@ -1,0 +1,4 @@
+case_id,time_window_s,selected_cell_count,seeded_cv_cell_count,interface_face_count,trusted_wall_face_count,seeded_cv_p_volume_avg_Pa,seeded_cv_p_rgh_volume_avg_Pa,interface_seed_p_area_avg_Pa,interface_seed_p_rgh_area_avg_Pa,interface_core_p_area_avg_Pa,interface_core_p_rgh_area_avg_Pa,trusted_wall_owner_p_area_avg_Pa,trusted_wall_owner_p_rgh_area_avg_Pa,pressure_basis_released,release_status
+salt_2,7915,77760,38880,38880,38880,-4406.11529286,4.41077749743,-4406.11530611,4.40237767754,-4406.11531968,4.16129216588,-4406.11530631,4.40225647368,true,exact_target_window_pressure_reduced
+salt_3,7618,77760,38880,38880,38880,-4382.06970755,7.8135289978,-4382.06973389,7.80807888369,-4382.06981641,7.55010008801,-4382.06973429,7.80799869681,true,exact_target_window_pressure_reduced
+salt_4,10000,77760,38880,38880,38880,-4355.53428483,10.3872692763,-4355.53431807,10.3830648731,-4355.53432044,10.099839735,-4355.53431857,10.383002184,true,exact_target_window_pressure_reduced

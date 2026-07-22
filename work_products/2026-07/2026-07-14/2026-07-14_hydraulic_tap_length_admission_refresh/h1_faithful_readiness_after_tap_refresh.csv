@@ -1,0 +1,4 @@
+gate_id,current_status,evidence_count,admitted_count,blocking_gap,next_action
+H1_component_cluster_K,blocked,15,0,no fit-admissible component/cluster K rows after tap-length refresh,Require mesh-family/GCI pressure evidence and keep recirculation rows diagnostic.
+H1_reset_development,blocked,see AGENT-338 reset contract,0,first-class reset/development Fluid API is not implemented in this repo-local slice,Claim external Fluid reset/development API row before any H1 faithful rerun.
+H1_faithful_rerun,not_launchable,15,0,local K and reset/development terms are not admitted,Do not launch H1; produce blocked gate until HYD-RESET-API and mesh/GCI admission exist.

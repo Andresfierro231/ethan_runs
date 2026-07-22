@@ -1,0 +1,9 @@
+input_or_action,runtime_role,used_by_m0,status,reason
+setup_geometry_and_case_identity,allowed_schema_input,True,pass_schema_only,"Case keys, partitions, metric IDs, and required prediction fields are scorecard schema, not protected target values."
+property_mode_label,allowed_label_only,True,pass_label_only,Property mode and source-envelope labels are copied as provenance/gates; no property coefficient is fit.
+CFD_mdot,forbidden_runtime_input,False,pass_absent,No CFD mass-flow value is used to generate a prediction.
+realized_CFD_wallHeatFlux,forbidden_runtime_input,False,pass_absent,No realized wall heat-flux value is used as a predictor.
+imposed_CFD_cooler_duty,forbidden_runtime_input,False,pass_absent,No imposed cooler duty is used as a setup-only prediction term.
+validation_holdout_external_temperatures,forbidden_runtime_input,False,pass_absent,Target temperatures are not consumed; M0 emits missing rows rather than residuals.
+scored_pressure_losses_or_protected_residuals,forbidden_runtime_input,False,pass_absent,"No scored pressure loss, target residual, or hidden multiplier is used."
+Fluid_or_OpenFOAM_solver,not_launched,False,pass_not_run,This package is a read-only scorecard-shell baseline; no solver was launched.

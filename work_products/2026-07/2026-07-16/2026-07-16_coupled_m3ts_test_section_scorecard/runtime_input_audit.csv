@@ -1,0 +1,4 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_fluid_role_rows_implemented,pass,Fluid tests/test_solver_contracts.py external_boundary role-row tests,none
+R2_runtime_inputs,pass,scenario rows use setup hA/h/area/Ta/Tsur/emissivity/drive selectors and admitted heater/HX only,realized wallHeatFlux; CFD mdot; validation temperatures; imposed CFD cooler duty
+R3_coupled_score,pass,Fluid solve_case completed for all M3+TS candidate/case rows,not applicable

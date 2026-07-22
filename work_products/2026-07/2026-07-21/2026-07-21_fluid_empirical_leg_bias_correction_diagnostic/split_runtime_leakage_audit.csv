@@ -1,0 +1,4 @@
+audit_item,status,detail,claim_boundary
+runtime_inputs,pass,model consumes only Phase E post-solve train diagnostic predicted/reference rows for empirical fitting; not a runtime predictive model,train-only empirical diagnostic; not physics admission; no Fluid solve; no validation/holdout/external-test scoring; no freeze/admission
+protected_splits,pass,"validation, holdout, and external-test rows scored: 0/0/0",train-only empirical diagnostic; not physics admission; no Fluid solve; no validation/holdout/external-test scoring; no freeze/admission
+admission,pass,coefficients are diagnostic empirical residual ownership only; no freeze/admission/source-property release,train-only empirical diagnostic; not physics admission; no Fluid solve; no validation/holdout/external-test scoring; no freeze/admission

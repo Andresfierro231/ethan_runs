@@ -1,0 +1,31 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-288",
+  "package": "work_products/2026-07/2026-07-13/2026-07-13_litrev_todo_campaign_index",
+  "implemented_rows": [
+    "TODO-LITREV-SOURCE-ENVELOPE",
+    "TODO-LITREV-PROPERTY-SENSITIVITY",
+    "TODO-LITREV-HEAT-LOSS-CALIBRATION",
+    "TODO-LITREV-CFD-VALIDITY-DIAGNOSTICS",
+    "TODO-LITREV-RESET-NAMED-LOSSES"
+  ],
+  "packages": {
+    "source_envelope": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope",
+    "property_sensitivity": "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity",
+    "heat_loss_calibration": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration",
+    "cfd_validity_diagnostics": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics",
+    "reset_named_losses": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses"
+  },
+  "guardrails": [
+    "No source-bounded correlation is active unless envelope overlap is inside and other gates allow use.",
+    "No closure fitting should proceed before property sensitivity is declared.",
+    "No global friction multiplier is recommended.",
+    "Internal Nu must not absorb external heat-loss terms.",
+    "CFD coefficients must be named section-effective or diagnostic when single-stream assumptions fail."
+  ],
+  "validation": [
+    "Five direct Python tests passed.",
+    "Five builders generated dated packages.",
+    "All generated summary.json and validation_report.json files parsed successfully."
+  ]
+}

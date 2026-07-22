@@ -1,0 +1,7 @@
+guardrail,status
+native CFD/OpenFOAM outputs,not_mutated
+scheduler/solver/sampler,not_launched
+Fluid/external repositories,not_mutated
+registry/admission/blocker register,not_mutated
+fit/model selection/coefficient admission,not_performed
+source/property release,not_performed

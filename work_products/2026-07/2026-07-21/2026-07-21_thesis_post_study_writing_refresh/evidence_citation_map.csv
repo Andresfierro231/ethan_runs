@@ -1,0 +1,7 @@
+evidence_id,source_path,claim_supported,use_boundary
+EVID-001,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json,Phase E runtime path and train-only solve status,no validation/holdout/external score claim
+EVID-002,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/dominant_thermal_residual_owners.csv,Phase F dominant heated-incline/TW5 residual owner,diagnostic ownership only
+EVID-003,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/missing_case_rows.csv,Phase G dictionary completeness and Salt1 missing-row boundary,metadata boundary only
+EVID-004,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/runtime_input_decision_table.csv,Phase I source/sink runtime non-admission,no source/sink runtime release
+EVID-005,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/owner_delta.csv,Phase H train-only sensitivity response,no fitted multiplier or repair admission
+EVID-006,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv,H2 broad passive-hA response and physical-basis need,no global passive-hA fit

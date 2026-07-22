@@ -1,0 +1,5 @@
+audit_id,gate,evidence,forbidden_runtime_input
+HFA1_split_fit_policy,pass,HF2 fits eta on Salt2 only; Salt3/Salt4 wallHeatFlux values are score targets only.,validation_or_holdout_realized_wallHeatFlux
+HFA2_no_cfd_mdot,pass,No mdot column is consumed by the heater fraction predictor.,CFD_mdot
+HFA3_no_temperature_tuning,pass,HF2 uses setup heater power and one Salt2 eta; no validation temperatures are used.,validation_or_holdout_temperature
+HFA4_realized_eta_upper_bound,fail_for_admission,HF3 consumes per-case realized wallHeatFlux and is retained only as a diagnostic upper bound.,per_case_realized_wallHeatFlux

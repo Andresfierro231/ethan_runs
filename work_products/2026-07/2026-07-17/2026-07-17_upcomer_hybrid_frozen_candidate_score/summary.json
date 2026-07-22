@@ -1,0 +1,16 @@
+{
+  "all_sources_present": true,
+  "blocked_score_gates": 6,
+  "candidate_admitted_rows": 0,
+  "candidate_rows": 1,
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "input_contract_rows": 18,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 4,
+  "runtime_audit_rows": 4,
+  "scheduler_action": false,
+  "task": "TODO-UPCOMER-HYBRID-FROZEN-CANDIDATE-SCORE"
+}

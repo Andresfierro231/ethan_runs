@@ -1,0 +1,10 @@
+item_id,artifact_type,proposed_title,primary_source,ready_state,caption_guardrail
+PV-01,diagram,S0-S6 predictive study gate flow,stage_gate_flow_diagram.md,ready,Do not imply S6 has passed.
+PV-02,table,Baseline control surface and S0-S3 claim ledger,../2026-07-21_thesis_s0_s3_first_wave_writing_integration/publication_claim_ledger.csv,ready,No final predictive accuracy.
+PV-03,table,Split-use permissions by row family,../2026-07-21_thesis_study_s5_source_property_split_release/split_use_permissions.csv,ready,Holdout/external/support rows never fit or select.
+PV-04,heatmap,External-BC setup coverage,../2026-07-21_predictive_first_key_studies_wave/external_bc_completion_matrix.csv,ready,Do not fill unavailable setup fields from CFD response values.
+PV-05,table_or_waterfall,Heat-path residual ownership,../2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv,ready,Do not hide heat residual in internal Nu.
+PV-06,table_or_waterfall,Pressure source-envelope and non-admission,../2026-07-21_pressure_corner_same_qoi_scientific_synthesis/attempt_outcome_matrix.csv,ready,No component K, clipped K, F6, or hidden multiplier admission.
+PV-07,map_or_table,Recirculation guard and ordinary-closure disable map,../2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/ordinary_closure_disable_table.csv,ready,Current recirculating rows are diagnostic and ordinary closures are disabled.
+PV-08,table,Source/property release ledger,../2026-07-21_thesis_study_s5_source_property_split_release/source_property_release_ledger.csv,ready,Nonblank labels are not release permission.
+PV-09,table,Blocked final scorecard shell,blocked_scorecard_shell.csv,blocked_shell_ready,No final scores until a predeclared frozen candidate exists.

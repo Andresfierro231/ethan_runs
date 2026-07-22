@@ -1,0 +1,7 @@
+finite_sensor_delta_rows,fit_allowed,input_family,interpretation,level,max_abs_delta_prediction_K,mean_abs_delta_prediction_K,model_selection_allowed,runtime_temperature_allowed,sensor_group
+5,False,external_convection_hA,existing train-only projection sensitivity; not observed-temperature runtime input,external_hA_0p5,8.18921800136,8.071587152932,False,False,TP
+11,False,external_convection_hA,existing train-only projection sensitivity; not observed-temperature runtime input,external_hA_0p5,8.16122584613,8.069747844893636,False,False,TW
+5,False,external_convection_hA,existing train-only projection sensitivity; not observed-temperature runtime input,external_hA_2p0,12.4703209333,12.236820228460001,False,False,TP
+11,False,external_convection_hA,existing train-only projection sensitivity; not observed-temperature runtime input,external_hA_2p0,12.3897355489,12.211636893418182,False,False,TW
+5,False,radiation,existing train-only projection sensitivity; not observed-temperature runtime input,radiation_on,0.0,0.0,False,False,TP
+11,False,radiation,existing train-only projection sensitivity; not observed-temperature runtime input,radiation_on,0.0,0.0,False,False,TW

@@ -1,0 +1,15 @@
+{
+  "task": "AGENT-424",
+  "generated": "2026-07-15",
+  "case_rows": 4,
+  "mode_rows": 4,
+  "case_mode_error_rows": 9,
+  "heater_cooler_model_form_rows": 7,
+  "source_rows": 5,
+  "headline": {
+    "best_combined_diagnostic_mode": "M2_cfd_heater_test_section_cooler_pressure_root",
+    "lowest_temperature_rmse_mode": "M3_cfd_heater_cooler_pressure_root",
+    "full_heat_ledger_mode_warning": "M1 remains high-error despite realized segment heat ledger"
+  },
+  "guardrail": "CFD-realized wallHeatFlux, imposed CFD cooler duty, and CFD mdot runtime consumption are diagnostic, not final setup-only prediction."
+}

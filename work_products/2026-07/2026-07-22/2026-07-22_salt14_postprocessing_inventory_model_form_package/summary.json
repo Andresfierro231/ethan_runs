@@ -1,0 +1,15 @@
+{
+  "task_id": "TODO-SALT14-POSTPROCESSING-INVENTORY-MODEL-FORM-PACKAGE-2026-07-22",
+  "generated_at": "2026-07-22T10:43:25-05:00",
+  "source_count": 23,
+  "parsed_source_count": 23,
+  "tidy_rows": 1405596,
+  "window_stat_rows": 16353,
+  "case_delta_rows": 110,
+  "use_case_rows": 2,
+  "profile_mode": "latest",
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "runtime_forbidden_inputs_released": false,
+  "decision": "postprocessing_inventory_published_diagnostic_only_no_runtime_release"
+}

@@ -1,0 +1,5 @@
+gate,status,allowed,reason
+sampler_manifest_refresh,blocked,false,average proxy is not sampled-surface production evidence and Q_wall_W/UQ remain absent
+production_harvest,blocked,false,no production sampler-ready rows or same-QOI UQ
+s12_evidence_use,diagnostic_context_only,true,average proxy can inform S12 negative/diagnostic discussion but not release a candidate
+coefficient_or_downstream_trigger,blocked,false,diagnostic average proxy is nonadmissible

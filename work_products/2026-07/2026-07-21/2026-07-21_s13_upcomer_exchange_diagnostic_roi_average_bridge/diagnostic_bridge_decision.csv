@@ -1,0 +1,2 @@
+decision_id,diagnostic_rows,production_harvest_allowed,s11_candidate_released,coefficient_admission_allowed,decision,reason
+S13-diagnostic-roi-average-bridge,3,false,false,false,diagnostic_proxy_values_available_not_admissible,"average proxy values are available for trend discussion, but known topology/wall/UQ gates remain failed"

@@ -1,0 +1,7 @@
+assumption_id,assumption,evidence_or_reason,risk_if_wrong
+raw_rows_trusted,"Six harvested endpoint rows are trusted as raw diagnostic evidence, not admission evidence.",sampler summary has raw_sampled_rows=6 and raw_missing_rows=0,would overstate closure readiness or mix diagnostic rows into admitted coefficients
+sign_convention,Pressure delta is retained as downstream minus upstream for basis accounting.,pressure_velocity_basis_audit.csv sign convention,would overstate closure readiness or mix diagnostic rows into admitted coefficients
+recirculation_threshold,Ordinary component-K requires aggregate RAF < 0.01 and aggregate RMF < 0.01.,recirculation_metric_contract.csv,would overstate closure readiness or mix diagnostic rows into admitted coefficients
+no_f6_component_k,No F6 fit or component-K admission may be emitted by these packages.,user/repo guardrail,would overstate closure readiness or mix diagnostic rows into admitted coefficients
+anchor_need,Future ordinary evidence requires non-recirculating anchors or explicit recirculation-modeled diagnostic policy.,gate decision table,would overstate closure readiness or mix diagnostic rows into admitted coefficients
+request_not_launch,This package defines future work and launches no scheduler jobs.,repo guardrail,would overstate closure readiness or mix diagnostic rows into admitted coefficients

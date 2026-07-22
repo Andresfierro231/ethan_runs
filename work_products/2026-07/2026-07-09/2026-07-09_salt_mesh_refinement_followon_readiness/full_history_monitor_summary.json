@@ -1,0 +1,19 @@
+{
+  "coverage_row_count": 54,
+  "generated_at": "2026-07-09T10:42:32-05:00",
+  "generated_files": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_full_history_monitor_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_postprocessing_family_coverage.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/full_history_monitor_README.md"
+  ],
+  "monitor_row_count": 90,
+  "output_dir": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness",
+  "series_verdict_counts": {
+    "derived_composite": 6,
+    "drifting_or_oscillatory": 6,
+    "quasi_stationary": 4,
+    "stationary": 74
+  },
+  "source_tree_read_only": true,
+  "task_id": "AGENT-231"
+}

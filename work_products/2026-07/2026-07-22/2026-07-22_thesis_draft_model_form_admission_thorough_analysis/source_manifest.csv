@@ -1,0 +1,6 @@
+path,role,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit/narrative_question_coverage_matrix.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/model_form_training_roster.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/model_form_summary.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_thesis_draft_model_form_admission_thorough_analysis/README.md,created,mutated_by_task

@@ -1,0 +1,41 @@
+{
+  "task": "TODO-MF10-ENTRANCE-WALLFLUX-TRAIN-ONLY-VARIANT-BAKEOFF-2026-07-22",
+  "generated_at_utc": "2026-07-22T14:05:57.992942+00:00",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/variant_bakeoff_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/train_support_metric_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/residual_owner_delta_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/assumption_provenance_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/production_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/next_step_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/source_manifest.csv",
+    ".agent/status/2026-07-22_TODO-MF10-ENTRANCE-WALLFLUX-TRAIN-ONLY-VARIANT-BAKEOFF-2026-07-22.md",
+    ".agent/journal/2026-07-22/mf10-entrance-wallflux-train-only-variant-bakeoff.md",
+    "imports/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff.json",
+    "tools/analyze/build_mf10_entrance_wallflux_train_only_variant_bakeoff.py",
+    "tools/analyze/test_mf10_entrance_wallflux_train_only_variant_bakeoff.py",
+    ".agent/BOARD.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf07_entrance_development_and_reset_source_basis",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf08_signed_wall_flux_developing_thermal_branches",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "scheduler_action": "none",
+  "mutation_flags": {
+    "new_scoring": false,
+    "protected_row_tuning": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "final_score": false,
+    "residual_absorbed_into_internal_nu": false
+  }
+}

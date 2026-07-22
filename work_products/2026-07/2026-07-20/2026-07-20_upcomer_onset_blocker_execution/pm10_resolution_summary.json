@@ -1,0 +1,8 @@
+{
+  "source_ledger": "work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger.csv",
+  "resolved_ledger": "work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger_pm10_resolved.csv",
+  "pm10_cases": 4,
+  "pm10_recirculation_diagnostic_cases": 4,
+  "pm10_ordinary_anchor_candidates": 0,
+  "high_heat_gate": "still_wait_for_3299610_3299620_terminal_or_failure"
+}

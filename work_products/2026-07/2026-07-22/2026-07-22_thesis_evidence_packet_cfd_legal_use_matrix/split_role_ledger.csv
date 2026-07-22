@@ -1,0 +1,8 @@
+split_role,rows_or_artifacts,legal_use,forbidden_use
+final training,salt1_nominal; salt2_jin_nominal; salt3_jin_nominal; salt4_nominal,May fit/calibrate admitted final model terms only after source/property and quantity-level gates pass.,Cannot use forbidden runtime CFD outputs or fit non-admitted coefficients.
+training support,salt1_lo10q; salt1_hi10q; salt4_lo5q; salt4_hi5q,May support sensitivity and trend checks with labels preserved.,Cannot be silently converted into final training or protected scoring data.
+holdout/testing,salt2_lo5q; salt2_hi5q,May score a frozen runtime-legal model.,"No fitting, tuning, model selection, or source choice."
+external test,val_salt2,External score/context after matching heat-loss and admission packages.,"No training, tuning, or model selection; Salt2 validation visual remains external/test context."
+future holdout candidates,Salt2/Salt4 +/-10Q,Candidate scoring rows after terminal harvest and admission.,No current final score or source/property release.
+diagnostic/reference,3D Salt-family paper figures/tables and current thesis evidence packets,"Motivation, model-form selection, residual ownership, negative results, and limitations.",No predictive closure admission by artifact presence alone.
+context-only/future,Water readiness and blocked/missing fields,Scope limits and future-work ordering.,No Salt-versus-Water law and no inferred missing values.

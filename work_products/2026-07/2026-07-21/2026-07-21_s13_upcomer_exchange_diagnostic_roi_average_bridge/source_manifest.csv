@@ -1,0 +1,14 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_s13_upcomer_exchange_diagnostic_roi_average_bridge.py,task_output,true,false,true
+tools/extract/test_s13_upcomer_exchange_diagnostic_roi_average_bridge.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_segmentation_case_summary.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/topology_cv_case_summary.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_diagnostic_roi_average_bridge,task_output,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/vtk/salt_2_cell_fields.vtk,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_3_cell_fields.vtk,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_4_cell_fields.vtk,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/masks/salt_2_right_leg_reverse_flow_candidate_mask.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/masks/salt_3_right_leg_reverse_flow_candidate_mask.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/masks/salt_4_right_leg_reverse_flow_candidate_mask.csv,read_only_context,true,false,false

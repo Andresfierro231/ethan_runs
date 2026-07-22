@@ -1,0 +1,32 @@
+{
+  "task": "TODO-THESIS-NEXT-STUDIES-BOARD-DISPATCH-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "board_rows_added": [
+    "TODO-THESIS-NEXT-STUDIES-BOARD-DISPATCH-2026-07-21",
+    "TODO-THESIS-STUDY-S7-SENSOR-MAP-TP-TW-CONTRACT-2026-07-21",
+    "TODO-THESIS-STUDY-S8-WALL-TEST-SECTION-AXIAL-MIXING-CANDIDATE-2026-07-21",
+    "TODO-THESIS-STUDY-S9-UPCOMER-ONSET-ANCHOR-EXCHANGE-UQ-2026-07-21",
+    "TODO-THESIS-STUDY-S10-PRESSURE-F6-LOW-RECIRC-ANCHOR-UQ-2026-07-21",
+    "TODO-THESIS-STUDY-S11-CANDIDATE-SOURCE-PROPERTY-REFRESH-2026-07-21",
+    "TODO-THESIS-NEGATIVE-RESULTS-SCIENTIFIC-CONTRIBUTION-SECTION-2026-07-21"
+  ],
+  "existing_rows_to_claim_not_duplicate": [
+    "TODO-PRED-SENSOR-MAP",
+    "TODO-THESIS-STUDY-S6-FROZEN-CANDIDATE-SCORECARD-2026-07-21",
+    "TODO-THESIS-FIGURES-DIAGRAMS"
+  ],
+  "primary_sequence": [
+    "S7",
+    "S8",
+    "S9 and S10 as evidence permits",
+    "S11 only after an admission-worthy candidate exists",
+    "S6 only after a frozen runtime-legal candidate is predeclared"
+  ],
+  "final_predictive_accuracy_claimed": false,
+  "closure_admission_changed": false,
+  "native_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action_taken": false,
+  "fluid_or_external_repo_mutated": false
+}

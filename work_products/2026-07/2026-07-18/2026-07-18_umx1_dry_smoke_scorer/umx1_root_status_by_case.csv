@@ -1,0 +1,10 @@
+case_id,candidate_id,engine,root_status,accepted_for_validation,pressure_residual_Pa,temperature_periodicity_error_K,root_gate_status,notes
+salt_2,UMX1_disabled_baseline,fast_scan,fast_scan_bracketed_pressure_root,true,-0.631679967803,-4.6702552936e-10,pass,Accepted pressure and temperature roots required for smoke expansion.
+salt_2,UMX1_exchange_0p01,fast_scan,fast_scan_bracketed_pressure_root,true,-0.663069956409,-1.75987224793e-10,pass,Accepted pressure and temperature roots required for smoke expansion.
+salt_2,UMX1_exchange_0p05,fast_scan,fast_scan_bracketed_pressure_root,true,-0.779476816067,-1.53590917762e-10,pass,Accepted pressure and temperature roots required for smoke expansion.
+salt_3,UMX1_disabled_baseline,fast_scan,fast_scan_bracketed_pressure_root,false,1.0540899166,0.817781028106,fail,Accepted pressure and temperature roots required for smoke expansion.
+salt_3,UMX1_exchange_0p01,fast_scan,fast_scan_bracketed_pressure_root,false,1.12813445949,0.836372864608,fail,Accepted pressure and temperature roots required for smoke expansion.
+salt_3,UMX1_exchange_0p05,fast_scan,fast_scan_bracketed_pressure_root,false,1.38974579489,0.903265465818,fail,Accepted pressure and temperature roots required for smoke expansion.
+salt_4,UMX1_disabled_baseline,fast_scan,fast_scan_bracketed_pressure_root,false,-0.402688807575,2.02500412902,fail,Accepted pressure and temperature roots required for smoke expansion.
+salt_4,UMX1_exchange_0p01,fast_scan,fast_scan_bracketed_pressure_root,false,-0.328611837877,2.04360024164,fail,Accepted pressure and temperature roots required for smoke expansion.
+salt_4,UMX1_exchange_0p05,fast_scan,fast_scan_bracketed_pressure_root,false,-0.0668860423286,2.11050804908,fail,Accepted pressure and temperature roots required for smoke expansion.

@@ -1,0 +1,41 @@
+{
+  "task": "TODO-PREDICTIVE-SOURCE-PROPERTY-EXACT-FIELD-RECOVERY-SALT14-2026-07-22",
+  "task_id": "TODO-PREDICTIVE-SOURCE-PROPERTY-EXACT-FIELD-RECOVERY-SALT14-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Forward-pred / Thermal-modeling / Hydraulics / Reviewer / Tester / Writer",
+  "decision": "source_property_exact_field_recovery_fail_closed_zero_release_ready_rows",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/fail_closed_replacement_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/forbidden_input_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/salt14_row_specific_release_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/summary.json",
+    ".agent/status/2026-07-22_TODO-PREDICTIVE-SOURCE-PROPERTY-EXACT-FIELD-RECOVERY-SALT14-2026-07-22.md",
+    ".agent/journal/2026-07-22/predictive-source-property-exact-field-recovery-salt14.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/row_level_release_candidate_matrix.csv",
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "external_repo_mutated": false,
+    "thesis_body_edited": false,
+    "source_property_released": false,
+    "coefficient_admitted": false,
+    "final_score_released": false
+  },
+  "provenance_notes": "Generated from compact source packages only; no native CFD, registry, scheduler, Fluid, external repo, or thesis body files were mutated."
+}

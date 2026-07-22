@@ -1,0 +1,6 @@
+requirement_id,requirement,minimum_condition,current_status,reason_or_evidence
+R1,Declared split artifact exists before fitting.,CSV under predictive_validation_split package or explicit --validation-split path.,blocked,no declared predictive validation-split artifact found
+R2,Training and held-out rows are disjoint.,No case_id appears as both training and heldout.,not_evaluated,split rows are unavailable
+R3,At least two training rows and one held-out row for a one-parameter HX fit.,n_train >= 2 and n_heldout >= 1.,not_evaluated,no declared predictive validation-split artifact found
+R4,Runtime target hygiene is preserved.,"No imposed_cooler_duty_W, CFD mdot, CFD temperatures, sensors, or realized CFD wallHeatFlux at runtime.",pass,enforced by required_runtime_inputs.csv and test_predictive_hx_fit.py
+R5,"Held-out scoring reports mdot, Tmean, loop delta, and cooler residual separately.",scorecard generated after split with no parameter refit.,blocked,this package is protocol-only until validation split is declared

@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-07-13T20:42:43+00:00",
+  "date": "2026-07-13",
+  "notes": [
+    "This is a first-order postprocessing sensitivity, not a full pressure-rooted 1D rerun."
+  ],
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity",
+  "outputs": [
+    "property_mode_matrix.csv",
+    "property_sensitivity_summary.csv",
+    "validation_report.json"
+  ],
+  "primary_rows": 90,
+  "source_context": {
+    "litrev_synthesis": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways",
+    "research_pathways": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv"
+  },
+  "task_id": "TODO-LITREV-PROPERTY-SENSITIVITY"
+}

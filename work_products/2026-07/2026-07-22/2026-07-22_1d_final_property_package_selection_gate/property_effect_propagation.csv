@@ -1,0 +1,11 @@
+downstream_quantity,depends_on_property_lanes,current_use,release_status,scientific_risk_if_ignored
+"Re","rho, mu, velocity basis, D_h","diagnostic coordinate","blocked_for_admission","Friction, entrance, and pressure-ladder decisions can be biased if viscosity or velocity basis changes."
+"Pr","cp, mu, k","diagnostic coordinate","blocked_for_admission","Thermal-development and bulk-to-TP models can shift because Pr enters Gz and Nu correlations."
+"Gr","rho/beta, mu or nu, wall-bulk DeltaT, orientation","mixed-convection screen only","blocked_for_admission","Buoyancy importance can be misclassified if beta or DeltaT basis is not released."
+"Ra","Gr, Pr","diagnostic regime coordinate","blocked_for_admission","Natural/mixed-convection interpretation becomes overclaimed without property and DeltaT release."
+"Ri","Gr, Re","caution flag only","blocked_for_admission","Reverse-flow or mixed-convection switches cannot use Ri thresholds until same-basis UQ exists."
+"Gz","Re, Pr, reset distance","bulk-to-TP promise screen","blocked_for_admission","Thermal-development projection can be overfit if reset/Gz is not source-bounded."
+"buoyancy_head","rho(T), beta, elevation/orientation, DeltaT","future pressure-energy lane","blocked_for_admission","Pressure residual can be misassigned to K/F6 instead of density/buoyancy."
+"storage","rho, cp, volume, dT/dt","residual-owner bookkeeping","blocked_for_admission","Transient or retained-window drift could be hidden as heat residual if cp/mass ownership is missing."
+"heat_loss_residual","cp, mdot, source/sink, wall/material properties","residual-owner bookkeeping","blocked_for_admission","Missing heat can be incorrectly absorbed into internal Nu unless property/source lanes are explicit."
+"MF12_bulk_to_TP_projection","cp, mu, k, Re, Pr, Gz, source sign","source-bounded successor design","blocked_for_admission","D2-like empirical offsets could be mistaken for a released projection model."

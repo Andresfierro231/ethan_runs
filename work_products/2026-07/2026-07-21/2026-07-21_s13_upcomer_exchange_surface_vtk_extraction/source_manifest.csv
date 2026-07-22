@@ -1,0 +1,5 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/README.md,geometry_readme,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/downstream_surface_vtk_inputs.csv,downstream_surface_vtk_inputs,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/interface_geometry_contract.csv,interface_geometry_contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/wall_core_band_contract.csv,wall_core_band_contract,true,false,false

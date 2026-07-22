@@ -1,0 +1,2 @@
+task_id,generated_at,source_count,parsed_source_count,tidy_rows,window_stat_rows,case_delta_rows,use_case_rows,profile_mode,native_solver_outputs_mutated,registry_or_admission_mutated,runtime_forbidden_inputs_released,decision
+TODO-SALT14-POSTPROCESSING-INVENTORY-MODEL-FORM-PACKAGE-2026-07-22,2026-07-22T10:43:25-05:00,23,23,1405596,16353,110,2,latest,False,False,False,postprocessing_inventory_published_diagnostic_only_no_runtime_release

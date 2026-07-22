@@ -1,0 +1,8 @@
+split_or_gate,current_policy,reason,allowed_now,forbidden_now
+train,Use only train/setup/runtime-legal evidence for construction and candidate selection.,Avoid leakage from validation/holdout/external targets.,Diagnostic synthesis and predeclared train-only gates.,"validation, holdout, or external scoring"
+support_validation,Score-only after frozen candidate manifest exists.,Prevents post-score tuning and rescue model selection.,No new score values now.,Any tuning/model selection based on support rows
+holdout,Protected score-only after candidate freeze.,Holdout must remain a single-use evaluation set.,No holdout score now.,D2/M2/M3/MF12/MF15/MF16 holdout scoring now
+external_test,Protected external-test only after candidate freeze.,External-test rows are not source/property release or fitting inputs.,No external score now.,Using external Salt rows to choose model form or coefficients
+S11_candidate_source_property_refresh,Trigger-gated after exactly one admission-worthy physical candidate exists.,It is a candidate-specific release row not a search process.,No S11 work now.,Opening S11 from diagnostic-only forms
+S15_score_release,Trigger-gated after S11 releases exactly one frozen runtime-legal candidate.,It gates final scoring discipline.,No S15 work now.,Final score claim before freeze
+S6_final_scorecard,Closed until S15 opens with frozen manifest.,Final scorecard cannot be a blocker-burndown or diagnostic artifact.,No S6 score values now.,Any final score or final-candidate claim

@@ -1,0 +1,3 @@
+job_id,case_group,sacct_state,squeue_state,elapsed_at_check,checked_at_utc,read_only_conclusion,next_action,source_paths
+3299610,salt4_jin_q3x_no_recirc_probe,RUNNING,RUNNING,3-19:35:03,2026-07-20T18:20:16Z,not_terminal_no_harvest,monitor_until_terminal_then_harvest_under_new_task,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/live_job_status.csv
+3299620,salt4_jin_q0500w_q1000w_q1500w_no_recirc_probe_pack,RUNNING,RUNNING,3-19:20:14,2026-07-20T18:20:16Z,not_terminal_no_harvest,monitor_until_terminal_then_harvest_under_new_task,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/live_job_status.csv

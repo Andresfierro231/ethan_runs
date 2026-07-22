@@ -1,0 +1,23 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SOURCE-SIDE-HEATFLOW-EQUIVALENCE-UQ-PREREQ-2026-07-21",
+  "status": "complete",
+  "decision": "contract_defined_same_qoi_uq_prereq_blocked_no_production_release",
+  "case_count": 3,
+  "source_side_contract_rows": 1,
+  "case_heatflow_rows": 3,
+  "same_qoi_requirement_rows": 4,
+  "Q_source_side_net_static_bc_W_defined": true,
+  "Q_wall_W_released": false,
+  "source_side_relabel_as_Q_wall": false,
+  "source_property_release": false,
+  "same_qoi_uq_executed": false,
+  "same_qoi_uq_release_allowed": false,
+  "production_harvest_allowed": false,
+  "coefficient_admission_allowed": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_sampler_harvest_uq_launched": false,
+  "residual_absorbed_into_internal_nu": false
+}

@@ -1,0 +1,23 @@
+{
+  "agent373_stage_logic_rerun": true,
+  "agent373_stage_output_dir": "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/agent373_stage_outputs",
+  "created_utc": "2026-07-15T14:40:49.240718+00:00",
+  "date": "2026-07-15",
+  "external_fluid_modified": false,
+  "f6_fit_admitted_rows": 0,
+  "f6_review_rows": 12,
+  "final_hydraulic_residual_status": "blocked_not_final",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "native_solver_outputs_mutated": false,
+  "pm5_rows": 12,
+  "pm5_wallHeatFlux_rows": 12,
+  "raw_two_tap_diagnostic_admitted_rows": 3,
+  "raw_two_tap_fit_admitted_rows": 0,
+  "raw_two_tap_rows": 3,
+  "registry_or_admission_mutated": false,
+  "reset_k_diagnostic_admitted_rows": 128,
+  "reset_k_rows": 128,
+  "scheduler_jobs_launched": false,
+  "task": "AGENT-421",
+  "work_product_dir": "work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification"
+}

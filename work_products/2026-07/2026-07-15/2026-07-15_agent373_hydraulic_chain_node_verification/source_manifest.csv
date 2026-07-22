@@ -1,0 +1,6 @@
+source_id,path,exists,role
+agent373_script,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/hydraulic_overnight_chain.py,true,rerun stage logic
+agent409_raw_two_tap,work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap_test_section_complex.csv,true,scratch OpenFOAM raw two-tap evidence
+agent406_pm5,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,true,PM5 matched pressure/upcomer evidence
+agent414_f6,work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv,true,F6 readiness admission review
+agent405_prior,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_admission_decisions.csv,true,prior AGENT-373 safe equivalent admission table

@@ -1,0 +1,6 @@
+source_id,path,role
+agent338_reset_contract,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/README.md,identified first-class reset/development API gap
+agent349_tap_refresh,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/README.md,local K admission status after tap refresh
+fluid_solver,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,external Fluid API implementation
+fluid_config_loader,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,minor-loss preset parser implementation
+fluid_solver_contract_tests,../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,external contract test coverage

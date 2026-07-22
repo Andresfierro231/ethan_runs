@@ -1,0 +1,6 @@
+gate,status,pass,evidence,consequence
+canonical_medium_fine_exact_label_rows,pass,True,canonical split rerun aggregate has medium/fine exact-label terminal rows,diagnostic medium/fine and candidate triplet reconciliation can be reported
+current_coarse_candidate_rows,diagnostic_pass,True,12 current-coarse candidate rows exist from completed mesh-family generation package,candidate coarse/medium/fine comparisons can be computed but not admitted
+coarse_equivalence_contract,fail_closed_not_admitted,False,completed coarse-equivalence contract admits 0 current-coarse rows,formal GCI and production/admission remain closed
+formal_gci,not_run,False,"coarse member is a non-admitted reference candidate, not an accepted same-label mesh member","no GCI uncertainty bound, no S13 release, no coefficient fitting"
+qwall_heat_flow_path,diagnostic_continue_only,False,"Q_wall_W medium/fine spread is low, but source/property/Qwall release and accepted mesh family remain closed","use Q_wall_W in thesis as diagnostic evidence, not as an admitted closure target"

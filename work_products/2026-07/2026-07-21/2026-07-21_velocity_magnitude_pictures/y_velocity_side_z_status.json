@@ -1,0 +1,512 @@
+{
+  "generated_at": "2026-07-21T18:46:52-05:00",
+  "output_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z",
+  "source_ids": [
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_1_jin_coarse_mesh"
+  ],
+  "components": [
+    "upcomer"
+  ],
+  "requested_array_association": "cells",
+  "max_glyph_points": 900,
+  "image_resolution": [
+    3600,
+    2400
+  ],
+  "camera_scale_factor": 0.32,
+  "glyph_scale_multiplier": 0.22,
+  "base_opacity": 0.12,
+  "velocity_mode": "y_component",
+  "shared_velocity_range_requested": true,
+  "shared_velocity_range": {
+    "shared_velocity_range": true,
+    "velocity_mode": "y_component",
+    "color_range": [
+      -0.07702504843473434,
+      0.07702504843473434
+    ],
+    "scale_range": [
+      0.0,
+      0.07702504843473434
+    ],
+    "reference_span": 0.44822875372000004
+  },
+  "view_preset": "side_z",
+  "output_suffix": "side_z",
+  "image_count": 4,
+  "rendered_count": 4,
+  "failed_count": 0,
+  "results": [
+    {
+      "generated_at": "2026-07-21T18:46:23-05:00",
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_id": "salt_test_4_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "component": "upcomer",
+      "case_entry": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/render_inputs/viscosity_screening_salt_test_4_jin_coarse_mesh/reconstructed_case/viscosity_screening_salt_test_4_jin_coarse_mesh.foam",
+      "case_type": "Reconstructed Case",
+      "last_time": 2082.0,
+      "requested_array_association": "cells",
+      "resolved_array_association": "POINTS",
+      "component_patch_names": [
+        "pipeleg_left_07_lower",
+        "pipeleg_left_06_connector",
+        "ncc_pipeleg_left_07_lower_end",
+        "ncc_pipeleg_left_06_connector_start",
+        "pipeleg_left_05_fitting",
+        "pipeleg_left_04_test_section",
+        "pipeleg_left_03_fitting",
+        "ncc_pipeleg_left_05_fitting_end",
+        "ncc_pipeleg_left_03_fitting_start",
+        "pipeleg_left_02_connector",
+        "pipeleg_left_01_upper",
+        "ncc_pipeleg_left_02_connector_end",
+        "ncc_pipeleg_left_01_upper_start"
+      ],
+      "component_patch_bounds": [
+        -0.011049,
+        0.011049,
+        0.01755775,
+        0.93195775,
+        -0.011049,
+        0.011049
+      ],
+      "component_clip_bounds": [
+        -0.013049,
+        0.013049,
+        -0.028162250000000003,
+        0.97767775,
+        -0.01269999984651804,
+        0.01269999984651804
+      ],
+      "clipped_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "input_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "slice_origin": [
+        0.0,
+        0.47475775610655546,
+        0.0
+      ],
+      "velocity_mode": "y_component",
+      "velocity_title": "y-velocity component arrows",
+      "scalar_array": "U_y",
+      "scale_array": "abs_U_y",
+      "vector_array": "U_y_vector",
+      "view_preset": "side_z",
+      "view_label": "side view, normal to z",
+      "slice_axis": "z",
+      "camera_axis": "z",
+      "camera_sign": -1.0,
+      "camera_view_up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "output_suffix": "side_z",
+      "glyph_mode": "Uniform Spatial Distribution (Bounds Based)",
+      "maximum_number_of_sample_points": 900,
+      "glyph_seed": 10339,
+      "scale_factor": 1.2802371153580712,
+      "camera_scale_factor": 0.32,
+      "base_opacity": 0.12,
+      "image_resolution": [
+        3600,
+        2400
+      ],
+      "color_range": [
+        -0.07702504843473434,
+        0.07702504843473434
+      ],
+      "scale_range": [
+        0.0,
+        0.07702504843473434
+      ],
+      "local_color_range": [
+        -0.07702504843473434,
+        0.07702504843473434
+      ],
+      "local_scale_range": [
+        5.994498231132184e-10,
+        0.07702504843473434
+      ],
+      "shared_velocity_range": true,
+      "shared_reference_span": 0.44822875372000004,
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/png/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.png",
+      "png_exists": true,
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/svg/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.svg",
+      "svg_exported": true,
+      "svg_reason": "",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_4_jin_coarse_mesh/upcomer/pdf/viscosity_screening_salt_test_4_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.pdf",
+      "pdf_exported": true,
+      "pdf_reason": "",
+      "status": "rendered"
+    },
+    {
+      "generated_at": "2026-07-21T18:46:33-05:00",
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_id": "salt_test_3_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "component": "upcomer",
+      "case_entry": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/render_inputs/viscosity_screening_salt_test_3_jin_coarse_mesh/reconstructed_case/viscosity_screening_salt_test_3_jin_coarse_mesh.foam",
+      "case_type": "Reconstructed Case",
+      "last_time": 2514.0,
+      "requested_array_association": "cells",
+      "resolved_array_association": "POINTS",
+      "component_patch_names": [
+        "pipeleg_left_07_lower",
+        "pipeleg_left_06_connector",
+        "ncc_pipeleg_left_07_lower_end",
+        "ncc_pipeleg_left_06_connector_start",
+        "pipeleg_left_05_fitting",
+        "pipeleg_left_04_test_section",
+        "pipeleg_left_03_fitting",
+        "ncc_pipeleg_left_05_fitting_end",
+        "ncc_pipeleg_left_03_fitting_start",
+        "pipeleg_left_02_connector",
+        "pipeleg_left_01_upper",
+        "ncc_pipeleg_left_02_connector_end",
+        "ncc_pipeleg_left_01_upper_start"
+      ],
+      "component_patch_bounds": [
+        -0.011049,
+        0.011049,
+        0.01755775,
+        0.93195775,
+        -0.011049,
+        0.011049
+      ],
+      "component_clip_bounds": [
+        -0.013049,
+        0.013049,
+        -0.028162250000000003,
+        0.97767775,
+        -0.01269999984651804,
+        0.01269999984651804
+      ],
+      "clipped_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "input_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "slice_origin": [
+        0.0,
+        0.47475775610655546,
+        0.0
+      ],
+      "velocity_mode": "y_component",
+      "velocity_title": "y-velocity component arrows",
+      "scalar_array": "U_y",
+      "scale_array": "abs_U_y",
+      "vector_array": "U_y_vector",
+      "view_preset": "side_z",
+      "view_label": "side view, normal to z",
+      "slice_axis": "z",
+      "camera_axis": "z",
+      "camera_sign": -1.0,
+      "camera_view_up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "output_suffix": "side_z",
+      "glyph_mode": "Uniform Spatial Distribution (Bounds Based)",
+      "maximum_number_of_sample_points": 900,
+      "glyph_seed": 10339,
+      "scale_factor": 1.2802371153580712,
+      "camera_scale_factor": 0.32,
+      "base_opacity": 0.12,
+      "image_resolution": [
+        3600,
+        2400
+      ],
+      "color_range": [
+        -0.07702504843473434,
+        0.07702504843473434
+      ],
+      "scale_range": [
+        0.0,
+        0.07702504843473434
+      ],
+      "local_color_range": [
+        -0.07167503237724304,
+        0.07167503237724304
+      ],
+      "local_scale_range": [
+        6.884823267050422e-10,
+        0.07167503237724304
+      ],
+      "shared_velocity_range": true,
+      "shared_reference_span": 0.44822875372000004,
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_3_jin_coarse_mesh/upcomer/png/viscosity_screening_salt_test_3_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.png",
+      "png_exists": true,
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_3_jin_coarse_mesh/upcomer/svg/viscosity_screening_salt_test_3_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.svg",
+      "svg_exported": true,
+      "svg_reason": "",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_3_jin_coarse_mesh/upcomer/pdf/viscosity_screening_salt_test_3_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.pdf",
+      "pdf_exported": true,
+      "pdf_reason": "",
+      "status": "rendered"
+    },
+    {
+      "generated_at": "2026-07-21T18:46:43-05:00",
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "case_id": "salt_test_2",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar",
+      "component": "upcomer",
+      "case_entry": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/render_inputs/val_salt_test_2_coarse_mesh_laminar/reconstructed_case/val_salt_test_2_coarse_mesh_laminar.foam",
+      "case_type": "Reconstructed Case",
+      "last_time": 1724.0,
+      "requested_array_association": "cells",
+      "resolved_array_association": "POINTS",
+      "component_patch_names": [
+        "pipeleg_left_07_lower",
+        "pipeleg_left_06_connector",
+        "ncc_pipeleg_left_07_lower_end",
+        "ncc_pipeleg_left_06_connector_start",
+        "pipeleg_left_05_fitting",
+        "pipeleg_left_04_test_section",
+        "pipeleg_left_03_fitting",
+        "ncc_pipeleg_left_05_fitting_end",
+        "ncc_pipeleg_left_03_fitting_start",
+        "pipeleg_left_02_connector",
+        "pipeleg_left_01_upper",
+        "ncc_pipeleg_left_02_connector_end",
+        "ncc_pipeleg_left_01_upper_start"
+      ],
+      "component_patch_bounds": [
+        -0.011049,
+        0.011049,
+        0.01755775,
+        0.93195775,
+        -0.011049,
+        0.011049
+      ],
+      "component_clip_bounds": [
+        -0.013049,
+        0.013049,
+        -0.028162250000000003,
+        0.97767775,
+        -0.01269999984651804,
+        0.01269999984651804
+      ],
+      "clipped_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "input_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "slice_origin": [
+        0.0,
+        0.47475775610655546,
+        0.0
+      ],
+      "velocity_mode": "y_component",
+      "velocity_title": "y-velocity component arrows",
+      "scalar_array": "U_y",
+      "scale_array": "abs_U_y",
+      "vector_array": "U_y_vector",
+      "view_preset": "side_z",
+      "view_label": "side view, normal to z",
+      "slice_axis": "z",
+      "camera_axis": "z",
+      "camera_sign": -1.0,
+      "camera_view_up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "output_suffix": "side_z",
+      "glyph_mode": "Uniform Spatial Distribution (Bounds Based)",
+      "maximum_number_of_sample_points": 900,
+      "glyph_seed": 10339,
+      "scale_factor": 1.2802371153580712,
+      "camera_scale_factor": 0.32,
+      "base_opacity": 0.12,
+      "image_resolution": [
+        3600,
+        2400
+      ],
+      "color_range": [
+        -0.07702504843473434,
+        0.07702504843473434
+      ],
+      "scale_range": [
+        0.0,
+        0.07702504843473434
+      ],
+      "local_color_range": [
+        -0.0686238631606102,
+        0.0686238631606102
+      ],
+      "local_scale_range": [
+        3.5753022764595244e-10,
+        0.0686238631606102
+      ],
+      "shared_velocity_range": true,
+      "shared_reference_span": 0.44822875372000004,
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/val_salt_test_2_coarse_mesh_laminar/upcomer/png/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_z.png",
+      "png_exists": true,
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_z.svg",
+      "svg_exported": true,
+      "svg_reason": "",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/val_salt_test_2_coarse_mesh_laminar/upcomer/pdf/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_z.pdf",
+      "pdf_exported": true,
+      "pdf_reason": "",
+      "status": "rendered"
+    },
+    {
+      "generated_at": "2026-07-21T18:46:52-05:00",
+      "source_id": "viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "case_id": "salt_test_1_jin",
+      "source_root": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_jin_coarse_mesh",
+      "component": "upcomer",
+      "case_entry": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/render_inputs/viscosity_screening_salt_test_1_jin_coarse_mesh/reconstructed_case/viscosity_screening_salt_test_1_jin_coarse_mesh.foam",
+      "case_type": "Reconstructed Case",
+      "last_time": 3229.0,
+      "requested_array_association": "cells",
+      "resolved_array_association": "POINTS",
+      "component_patch_names": [
+        "pipeleg_left_07_lower",
+        "pipeleg_left_06_connector",
+        "ncc_pipeleg_left_07_lower_end",
+        "ncc_pipeleg_left_06_connector_start",
+        "pipeleg_left_05_fitting",
+        "pipeleg_left_04_test_section",
+        "pipeleg_left_03_fitting",
+        "ncc_pipeleg_left_05_fitting_end",
+        "ncc_pipeleg_left_03_fitting_start",
+        "pipeleg_left_02_connector",
+        "pipeleg_left_01_upper",
+        "ncc_pipeleg_left_02_connector_end",
+        "ncc_pipeleg_left_01_upper_start"
+      ],
+      "component_patch_bounds": [
+        -0.011049,
+        0.011049,
+        0.01755775,
+        0.93195775,
+        -0.011049,
+        0.011049
+      ],
+      "component_clip_bounds": [
+        -0.013049,
+        0.013049,
+        -0.028162250000000003,
+        0.97767775,
+        -0.01269999984651804,
+        0.01269999984651804
+      ],
+      "clipped_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "input_bounds": [
+        -0.01304900087416172,
+        0.01304900087416172,
+        -0.02816225029528141,
+        0.9776777625083923,
+        -0.011112499982118607,
+        0.011112499982118607
+      ],
+      "slice_origin": [
+        0.0,
+        0.47475775610655546,
+        0.0
+      ],
+      "velocity_mode": "y_component",
+      "velocity_title": "y-velocity component arrows",
+      "scalar_array": "U_y",
+      "scale_array": "abs_U_y",
+      "vector_array": "U_y_vector",
+      "view_preset": "side_z",
+      "view_label": "side view, normal to z",
+      "slice_axis": "z",
+      "camera_axis": "z",
+      "camera_sign": -1.0,
+      "camera_view_up": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "output_suffix": "side_z",
+      "glyph_mode": "Uniform Spatial Distribution (Bounds Based)",
+      "maximum_number_of_sample_points": 900,
+      "glyph_seed": 10339,
+      "scale_factor": 1.2802371153580712,
+      "camera_scale_factor": 0.32,
+      "base_opacity": 0.12,
+      "image_resolution": [
+        3600,
+        2400
+      ],
+      "color_range": [
+        -0.07702504843473434,
+        0.07702504843473434
+      ],
+      "scale_range": [
+        0.0,
+        0.07702504843473434
+      ],
+      "local_color_range": [
+        -0.0676477923989296,
+        0.0676477923989296
+      ],
+      "local_scale_range": [
+        1.0161160801658298e-10,
+        0.0676477923989296
+      ],
+      "shared_velocity_range": true,
+      "shared_reference_span": 0.44822875372000004,
+      "png_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_1_jin_coarse_mesh/upcomer/png/viscosity_screening_salt_test_1_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.png",
+      "png_exists": true,
+      "svg_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_1_jin_coarse_mesh/upcomer/svg/viscosity_screening_salt_test_1_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.svg",
+      "svg_exported": true,
+      "svg_reason": "",
+      "pdf_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z/viscosity_screening_salt_test_1_jin_coarse_mesh/upcomer/pdf/viscosity_screening_salt_test_1_jin_coarse_mesh_upcomer_velocity_y_component_arrows_side_z.pdf",
+      "pdf_exported": true,
+      "pdf_reason": "",
+      "status": "rendered"
+    }
+  ]
+}

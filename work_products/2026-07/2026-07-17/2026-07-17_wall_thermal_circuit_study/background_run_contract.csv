@@ -1,0 +1,2 @@
+contract_id,timeout_seconds,parallel_workers,command,stdout_pattern,stderr_pattern,policy
+parallel_sbatch_coupled_score,273,8,sbatch work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/ag522_wall_circuit.sbatch,logs/2026-07-17/ag522_wall_circuit.%j.out,logs/2026-07-17/ag522_wall_circuit.%j.err,submit one bounded compute-node job; use read-only monitor every 2 minutes

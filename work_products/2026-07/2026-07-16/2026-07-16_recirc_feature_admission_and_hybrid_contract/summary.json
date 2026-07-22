@@ -1,0 +1,14 @@
+{
+  "contract_rows": 4,
+  "decision_rows": 3,
+  "feature_rows": 42,
+  "generated_at": "2026-07-16T22:25:44+00:00",
+  "hybrid_lane_contract": "published",
+  "ordinary_coefficient_claim": "not_admitted",
+  "queue_rows": 10,
+  "recirculating_lane_rows": 42,
+  "runtime_or_native_mutation": "none",
+  "single_stream_allowed_rows": 0,
+  "source_rows": 9,
+  "task": "AGENT-467"
+}

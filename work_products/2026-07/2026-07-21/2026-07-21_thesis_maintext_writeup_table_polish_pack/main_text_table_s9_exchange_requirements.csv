@@ -1,0 +1,7 @@
+qoi,model_role,current_status,existing_rows,new_sampling_needed,admission_now,claim_boundary
+V_recirc,recirculation control-volume size for exchange-state ODE or algebraic residence model,missing_V_recirc,0,yes,false,requirement row only; no exchange-cell coefficient admission
+mdot_exchange,mass exchange rate between throughflow and recirculating cell,missing_mdot_exchange,0,yes,false,requirement row only; no exchange-cell coefficient admission
+tau_recirc,"recirculation residence time, derived only after V_recirc and mdot_exchange are admitted",missing_tau_recirc,0,yes,false,requirement row only; no exchange-cell coefficient admission
+wall_core_delta_T,thermal coupling state between wall/core and recirculation cell,missing_wall_core_delta_T,6,yes,false,requirement row only; no exchange-cell coefficient admission
+pressure_residual,same-window pressure residual after straight/reference subtraction,not_cleared_for_admission,0,yes,false,requirement row only; no exchange-cell coefficient admission
+energy_residual,diagnostic energy residual; not a coefficient fit target by itself,available_existing_diagnostic,27,no,false,requirement row only; no exchange-cell coefficient admission

@@ -1,0 +1,2 @@
+candidate_id,candidate_family,source_basis_release_ready_rows,total_source_families,exactly_one_candidate_named,repair_preflight_claimable_next,repair_run_allowed_this_row,candidate_freeze_allowed_now,decision,reason
+PASSIVE-H2-CAND001,setup_dictionary_passive_external_boundary_basis,5,5,true,true,false,false,reviewable_for_separate_one_train_repair_preflight_not_freeze,Independent setup-basis families are source-backed but no numeric q-loss/source-property release or train-only repair score exists.

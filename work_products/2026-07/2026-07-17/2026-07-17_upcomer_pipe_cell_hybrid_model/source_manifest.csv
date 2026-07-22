@@ -1,0 +1,9 @@
+source_id,path,exists,use
+hybrid_contract,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv,true,existing hybrid lane policy
+feature_admission,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/recirculation_feature_admission_table.csv,true,recirculation feature admission evidence
+pm5_metrics,work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_holdout_metrics.csv,true,same-window RAF/RMF/SVF/Ri/Gz/wall-bulk features
+pm5_admission,work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_admission_table.csv,true,PM5 fit-forbidden admission table
+onset_classification,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/upcomer_onset_classification.csv,true,onset blocker state
+f6_candidates,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_candidate_inventory.csv,true,F6 ordinary-vs-hybrid candidate inventory
+thermal_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/segment_thermal_model_scorecard.csv,true,thermal upcomer gate
+pressure_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,true,pressure upcomer gate

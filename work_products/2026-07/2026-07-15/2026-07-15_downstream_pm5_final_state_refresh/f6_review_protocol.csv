@@ -1,0 +1,5 @@
+step_id,stage,action,acceptance,stop_condition,output
+F6-01,input_lock,Use AGENT-406 final resampled_pm5_matched_plane_metrics.csv only.,12/12 complete_with_wallHeatFlux and VTK validation fail rows = 0.,Any missing U/rho/T/Re/Pr/Ri/Gr/Ra row.,f6_pm5_row_readiness.csv
+F6-02,quality_gate,"Classify recirculation, secondary-flow, and mixed-convection thresholds before fitting phi(Re).","Fit rows must be non-recirculating, stable, and split-labeled; diagnostic rows may inform onset only.",All rows are recirculating or diagnostic-only.,fit candidate count and diagnostic-only count
+F6-03,bounded_fit_if_candidates_exist,Fit phi(Re)=1+a/Re^b only on allowed training rows; preserve holdout labels.,Improves per-pressure-row residuals without worsening mdot guardrail; no global friction multiplier.,No fit-admissible pressure rows or validation worsens.,F6 bounded scorecard
+F6-04,admission_decision,"Decide screen-only, diagnostic-onset-only, or admitted bounded closure.",Train/holdout split honored; pressure residual primary; mdot secondary guardrail; no thermal fitting.,Pressure evidence remains recirculating/coarse-only/unadmitted.,hydraulic admission update

@@ -1,0 +1,5 @@
+gate,decision,allowed,condition
+next_executable_row,open_limited_scheduler_sampled_field_extraction,true,sample interface U/T/rho and wall/core T only; report missing wallHeatFlux/p/mu/cp separately
+Q_wall_W_release,blocked,false,requires same-window wallHeatFlux on trusted_wall faces
+sampler_refresh,blocked,false,requires sampled fields plus Q_wall_W/cp/pressure/viscosity contract completion
+production_harvest_UQ_admission,blocked,false,requires harvested exact QOIs and same-window UQ; no admission from this contract

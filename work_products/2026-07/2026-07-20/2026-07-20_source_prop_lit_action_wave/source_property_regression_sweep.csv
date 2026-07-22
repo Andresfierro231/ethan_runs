@@ -1,0 +1,10 @@
+artifact,scan_scope,gate_observation,release_observation,next_step
+final_scorecard_shell_after_policy,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell,strict_gate_clean_zero_candidate_rows,"fit_allowed_after_source_property_gate=0 and model_selection_allowed_after_source_property_gate=0",Keep as current scorecard guardrail
+final_scorecard_source_property_refresh,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh,warned_before_policy_resolution,"remaining source/property TODO rows were expected before demotion policy integration",Use resolution policy before any scorecard regeneration
+final_scorecard_source_envelope_resolution,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution,policy_demotes_blocked_rows,"Salt1 partial and Salt2-Salt4 mixed/outside rows remain no-fit",Use as canonical release policy
+pm10_validation_repair_ledger,work_products/2026-07/2026-07-20/2026-07-20_pm10_validation_repair_ledger,strict_gate_clean_zero_candidate_rows,"PM10 released for recirculation diagnostics only",No relaunch for validation use
+amx1_axial_mixing_dry_contract,work_products/2026-07/2026-07-20/2026-07-20_amx1_axial_mixing_dry_contract,strict_gate_clean_zero_candidate_rows,"AMX1 multiplier envelope blocked",Resolve multiplier envelope before scorecard
+amx1_salt1_4_bounded_comparison_intake,work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake,strict_gate_clean_zero_candidate_rows,"AMX1 remains diagnostic because temperature metrics worsen",Revise form before expansion
+amx1_localized_form_smoke_intake,work_products/2026-07/2026-07-20/2026-07-20_amx1_localized_form_smoke_intake,strict_gate_clean_zero_candidate_rows,"Localized forms are smoke diagnostics only",Try one lower-multiplier or gradient-clipped bounded follow-up after gates
+source_prop_lit_action_wave,work_products/2026-07/2026-07-20/2026-07-20_source_prop_lit_action_wave,strict_gate_clean_zero_candidate_rows,"Seven ledgers created; zero fit/model-selection rows released",Use as next source/property/literature action handoff
+

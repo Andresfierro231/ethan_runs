@@ -1,0 +1,49 @@
+{
+  "cases_total": 52,
+  "cases_unique": 47,
+  "duplicates": 5,
+  "generated_at": "2026-07-09T17:46:19",
+  "outputs": {
+    "cross_case_summary": "steady_state_summary.csv",
+    "data_disclosure": "DATA_DISCLOSURE.md",
+    "inventory": "case_inventory.csv",
+    "methodology": "METHODOLOGY.md",
+    "per_case_dir": "cases/<slug>/"
+  },
+  "representative_rows": 415,
+  "reusable_modules": [
+    "tools/analyze/openfoam_timeseries.py",
+    "tools/analyze/timeseries_stats.py",
+    "tools/analyze/svg_timeseries_chart.py"
+  ],
+  "series_rows": 2577,
+  "task": "AGENT-244",
+  "verdict_counts": {
+    "not_steady": 37,
+    "quasi": 11,
+    "steady": 367
+  },
+  "verdict_counts_by_group": {
+    "heat": {
+      "not_steady": 35,
+      "quasi": 5,
+      "steady": 6
+    },
+    "mdot": {
+      "not_steady": 2,
+      "quasi": 5,
+      "steady": 40
+    },
+    "temperature": {
+      "not_steady": 0,
+      "quasi": 1,
+      "steady": 275
+    },
+    "wall_temperature": {
+      "not_steady": 0,
+      "quasi": 0,
+      "steady": 46
+    }
+  },
+  "window_seconds": 300.0
+}

@@ -1,0 +1,4 @@
+source_type,path,use
+pressure_ladder_station_values,work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv,Salt2 mean p and p_rgh station values at time 7915 s
+1d_fluid_segment_geometry,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/outputs_tamu_loop_v2_resumable/geometry/loop_segments.csv,Authoritative Fluid 1D segment names and lengths
+geometry_label_reference,reference/geometry_reference.md,"CFD span labels, physical locations, and lower/right leg flow-order guardrails"

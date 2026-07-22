@@ -1,0 +1,7 @@
+path,role,exists,mutation
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/summary.json,thermal accounting totals,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/summary.json,TW-after-TP residual ownership,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/summary.json,D2 TP/TW projection,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/summary.json,D3 wall-shape signal,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/summary.json,D4 segment-source placement,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/summary.json,passive hA repair gate,true,read_only

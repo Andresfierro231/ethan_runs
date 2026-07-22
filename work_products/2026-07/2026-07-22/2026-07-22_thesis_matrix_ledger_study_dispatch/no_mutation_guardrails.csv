@@ -1,0 +1,12 @@
+guardrail,status
+native_CFD_OpenFOAM_outputs_mutated,false
+registry_or_admission_mutated,false
+scheduler_action,false
+solver_postprocessing_sampler_harvest_UQ_launch,false
+Fluid_or_external_repo_edit,false
+thesis_body_or_LaTeX_edit,false
+validation_holdout_external_scoring,false
+fitting_tuning_model_selection,false
+source_property_Qwall_or_coefficient_release,false
+candidate_freeze_or_final_score,false
+runtime_leakage_relaxation,false

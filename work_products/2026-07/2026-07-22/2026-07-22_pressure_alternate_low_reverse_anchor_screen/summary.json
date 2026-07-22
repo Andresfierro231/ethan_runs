@@ -1,0 +1,27 @@
+{
+  "task_id": "TODO-PRESSURE-ALTERNATE-LOW-REVERSE-ANCHOR-SCREEN-2026-07-22",
+  "generated_at": "2026-07-22T10:35:17-05:00",
+  "decision": "pressure_alternate_anchor_screen_complete_existing_replacement_not_found",
+  "screen_rows": 40,
+  "existing_evidence_rows": 29,
+  "future_design_rows": 11,
+  "rows_by_family": {
+    "branch_scorecard_mask": 7,
+    "future_onset_anchor_design": 11,
+    "pm10_terminal_recirculation_diagnostic": 4,
+    "pm5_recirculation_diagnostic": 12,
+    "preferred_inventory_slot": 6
+  },
+  "existing_replacement_ready_rows": 0,
+  "component_K_or_F6_release_rows": 0,
+  "admissible_comparison_allowed_rows": 0,
+  "pm10_strong_recirculation_rows": 4,
+  "pm5_material_reverse_flow_rows": 12,
+  "same_qoi_uq_ready_rows": 0,
+  "scheduler_query_or_action": false,
+  "solver_postprocessing_sampler_harvest_uq_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "candidate_freeze": false
+}

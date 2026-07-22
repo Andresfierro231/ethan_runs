@@ -1,0 +1,11 @@
+audit_item,policy,status,evidence
+final_training_set,Salt1-4 nominal only,pass,wrapper_has_no_solver_or_fit_entrypoints
+salt2_pm5q_holdout,fit/model-selection forbidden; score only after freeze,pass,wrapper_has_no_solver_or_fit_entrypoints
+val_salt2_external,training/runtime input forbidden; score only after freeze,pass,wrapper_has_no_solver_or_fit_entrypoints
+pm10_future_rows,blocked until terminal admission,pass,wrapper_has_no_solver_or_fit_entrypoints
+new_cfd_future_rows,blocked until run and admission,pass,wrapper_has_no_solver_or_fit_entrypoints
+cfd_mdot,CFD mdot is not a runtime input,pass,wrapper_has_no_solver_or_fit_entrypoints
+realized_wallHeatFlux,realized CFD wallHeatFlux is target/diagnostic only,pass,wrapper_has_no_solver_or_fit_entrypoints
+validation_temperatures,TP/TW validation temperatures are not runtime inputs,pass,wrapper_has_no_solver_or_fit_entrypoints
+hidden_global_multipliers,no hidden global friction/heat multiplier admitted here,pass,wrapper_has_no_solver_or_fit_entrypoints
+native_outputs,builder reads CSV/JSON evidence only and does not mutate solver outputs,pass,wrapper_has_no_solver_or_fit_entrypoints

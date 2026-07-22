@@ -1,0 +1,4 @@
+step,command_type,exact_action,expected_outputs,scheduler,stop_condition
+1,preflight_only,construct endpoint face-mask manifest for the same S13 open CV and target windows,"endpoint mask IDs, area vectors, normal sign convention, case/time mapping",no_launch_from_this_row,stop if endpoint masks cannot be tied to the residual-complete open CV
+2,future_compute_row,"sample rho, U, T on inlet/outlet endpoint faces at Salt2/Salt3/Salt4 target windows","mdot_in, mdot_out, continuity mismatch, T_in_bulk, T_out_bulk",use_sbatch_if_extract_exceeds_5_minutes,stop before residual values if cp/source-property release is still false
+3,future_release_gate,join endpoint enthalpy rows to row-specific cp_J_kg_K/source-property evidence and storage/named-loss owner rows,"same-basis residual input ledger, not residual-fitted Nu",no_solver_launch,"stop if any row uses protected temperatures, native mass-flow monitor values as predictive inputs, or a hidden residual multiplier"

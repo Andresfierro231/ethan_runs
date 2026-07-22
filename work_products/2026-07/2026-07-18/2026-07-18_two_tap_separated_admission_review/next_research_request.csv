@@ -1,0 +1,2 @@
+priority,request_id,title,reason,target_acceptance,guardrail
+1,NR-ANCHOR-REQUEST,Define non-recirculating anchor request,current harvested rows are diagnostic only,aggregate RAF < 0.01 and RMF < 0.01 with same endpoint fields and same-QOI UQ plan,request only; no scheduler launch in this review

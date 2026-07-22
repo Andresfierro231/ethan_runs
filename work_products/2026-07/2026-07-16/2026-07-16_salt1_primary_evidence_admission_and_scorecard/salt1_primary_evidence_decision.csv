@@ -1,0 +1,4 @@
+case_id,run_key,recommended_evidence_status,recommended_use,reason,caveat
+salt1_nominal,salt1_jin_nominal_continuation_corrected,admitted,primary_closure_evidence_with_provenance,stationary terminal monitors and diagnostic-only convergence monitor,preserve cancellation provenance and perturbed-Q labels; do not treat as clean endTime completion
+salt1_lo10q,salt1_jin_lo10q_corrected,admitted,primary_closure_evidence_with_provenance,stationary terminal monitors and diagnostic-only convergence monitor,preserve cancellation provenance and perturbed-Q labels; do not treat as clean endTime completion
+salt1_hi10q,salt1_jin_hi10q_corrected,admitted,primary_closure_evidence_with_provenance,stationary terminal monitors and diagnostic-only convergence monitor,preserve cancellation provenance and perturbed-Q labels; do not treat as clean endTime completion

@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-07-07",
+  "sources": {
+    "live_monitor_csv": "work_products/2026-07-07_corrected_salt_live_monitor/overnight_decision_snapshot_2026-07-07/live_salt_sanity_monitor.csv",
+    "squeue_observation": "squeue -u $USER run in repo on 2026-07-07",
+    "sacct_observation": "sacct -j 3275448,3275449,3275450,3275451,3275560,3279638,3279646 --format=JobID,JobName,Partition,State,Elapsed,Start,End,ExitCode -P"
+  },
+  "scheduler": {
+    "running_jobs": [
+      {"job_id": "3275448", "name": "corr_saltq_g1", "partition": "NuclearEnergy", "state": "RUNNING"},
+      {"job_id": "3275449", "name": "corr_saltq_g2", "partition": "NuclearEnergy", "state": "RUNNING"},
+      {"job_id": "3275560", "name": "corr_saltq_salt4_all", "partition": "NuclearEnergy", "state": "RUNNING"}
+    ],
+    "canceled_jobs": [
+      {"job_id": "3275450", "name": "corr_saltq_g3", "partition": "NuclearEnergy", "state": "CANCELLED"},
+      {"job_id": "3275451", "name": "corr_saltq_g4", "partition": "NuclearEnergy", "state": "CANCELLED"}
+    ],
+    "canceled_gate_jobs": [
+      {"job_id": "3279638", "name": "saltq_gate_after", "partition": "NuclearEnergy", "state": "CANCELLED", "dependency": "afterany:3275448:3275449:3275560"},
+      {"job_id": "3279646", "name": "saltq_gate_0707", "partition": "NuclearEnergy", "state": "CANCELLED", "dependency": "afterany:3275448:3275449:3275560"}
+    ]
+  },
+  "submission_attempts": [
+    {
+      "case_group": "corr_saltq_g1",
+      "parent_job_id": "3275448",
+      "requested_walltime": "120:00:00",
+      "result": "blocked",
+      "reason": "sbatch rejected the job because project ASC23046 had 4633 SUs remaining and 4688 SUs already requested by running/waiting jobs."
+    }
+  ],
+  "recommendation": {
+    "do_not_submit_duplicate_for_running_jobs": true,
+    "continuation_submission_status": "blocked_by_project_balance",
+    "premature_gate_jobs_canceled": ["3279638", "3279646"],
+    "prepare_dependency_gated_continuations": ["3275448", "3275449", "3275560"],
+    "targeted_replacement_if_needed": ["salt3_jin_hi5q_corrected", "salt3_jin_hi10q_corrected"],
+    "hold_without_coordinator_review": ["salt1_jin_lo10q_corrected", "salt1_jin_hi10q_corrected"],
+    "reason": "Running corrected Salt jobs have advanced only about 16-30% of their target extension and still have roughly 4.3-5.0 ks simulated time remaining; Salt3 high-Q rows came from a canceled job with fatal markers and only about 20 s advance."
+  }
+}

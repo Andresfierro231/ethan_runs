@@ -1,0 +1,23 @@
+{
+  "branch_gate_rows": 18,
+  "contract_rows": 6,
+  "date": "2026-07-17",
+  "decision_counts": {
+    "diagnostic_or_section_effective_only": 12,
+    "single_stream_candidate_but_thermal_fit_blocked": 6
+  },
+  "external_fluid_edit": "none",
+  "generated_at_utc": "2026-07-17T21:09:49+00:00",
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "guardrail_rows": 5,
+  "native_output_mutation": "none",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger",
+  "registry_mutation": "none",
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "section_effective_or_diagnostic_rows": 12,
+  "single_stream_plausible_rows": 6,
+  "source_crosswalk_rows": 6,
+  "source_rows": 12,
+  "task": "AGENT-521"
+}

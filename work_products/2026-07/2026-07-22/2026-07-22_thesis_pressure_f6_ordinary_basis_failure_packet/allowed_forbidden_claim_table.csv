@@ -1,0 +1,8 @@
+claim,status,required_wording
+Lower-right rows provide section-effective pressure residual evidence,allowed,"Allowed: lower-right two-tap rows are section-effective diagnostics showing hydrostatic dominance and ordinary-basis failure."
+Negative residuals support the need for hybrid pressure modeling,allowed,"Allowed: negative signed residuals are evidence that throughflow-plus-recirculation or section-effective modeling is needed before component K/F6 extraction."
+Component K is admitted from lower-right rows,forbidden,"Forbidden: component isolation, ordinary-flow, and same-QOI UQ gates fail."
+F6 is admitted or fit-ready,forbidden,"Forbidden: ordinary candidate pairs, same-QOI UQ, endpoint source fields, and source/property release rows are zero."
+F6 is numerically better or worse than F3/Shah,forbidden,"Forbidden: F3/F6 comparison is not evaluated because no F6 ordinary candidate is admitted."
+Negative K is a physical loss coefficient,forbidden,"Forbidden: negative K is an artifact of basis mismatch and recirculating section behavior, not a component coefficient."
+Clipped K or hidden multiplier fixes pressure,forbidden,"Forbidden: no clipped K, global multiplier, or residual absorption is admitted."

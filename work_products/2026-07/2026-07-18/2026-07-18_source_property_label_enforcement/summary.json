@@ -1,0 +1,31 @@
+{
+  "acceptance_signal_met": true,
+  "enforced_fit_or_admission_allowed_rows": 0,
+  "enforced_fit_or_admission_blocked_rows": 1110,
+  "enforced_fit_or_admission_rows_missing_labels": 0,
+  "external_fluid_edit": false,
+  "fit_or_admission_candidate_rows": 1110,
+  "generated_at": "2026-07-18T20:47:32+00:00",
+  "native_solver_outputs_mutated": false,
+  "original_fit_or_admission_rows_missing_labels": 1028,
+  "registry_mutated": false,
+  "required_labels": [
+    "property_mode",
+    "property_sensitivity_label",
+    "source_validity_envelope_status",
+    "source_use_category",
+    "provenance_author_title"
+  ],
+  "scan_scope": "work_products/2026-07/2026-07-13 through 2026-07-18 CSV scorecard/admission/fit/gate artifacts",
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "scorecard_artifacts_scanned": 735,
+  "scorecard_rows_scanned": 12384,
+  "source_paths": [
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/source_property_label_contract.csv",
+    "work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/final_scorecard_case_coverage_audit.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell"
+  ],
+  "task": "AGENT-546"
+}

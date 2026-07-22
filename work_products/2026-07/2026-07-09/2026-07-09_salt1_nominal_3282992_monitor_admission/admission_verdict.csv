@@ -1,0 +1,2 @@
+checked_at,case_key,job_id,current_state,terminal_evidence_available,live_health,admission_verdict,closure_fit_use,next_required_evidence
+2026-07-09T16:30:41-05:00,salt1_jin_nominal_continuation_corrected,3282992,RUNNING,no,healthy_in_progress,no_not_admitted_while_running,excluded,"Wait for job exit; then require clean sacct exit, no fatal/monitor-stop failure, final write/sample availability, terminal operating-point time-window gate, and same rigor bar used for Salt2/3/4 before Salt1 nominal can enter any nominal closure fit."

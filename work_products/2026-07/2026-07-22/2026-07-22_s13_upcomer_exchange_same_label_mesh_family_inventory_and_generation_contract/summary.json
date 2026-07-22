@@ -1,0 +1,14 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAME-LABEL-MESH-FAMILY-INVENTORY-AND-GENERATION-CONTRACT-2026-07-22",
+  "generated_at": "2026-07-22T08:51:57-05:00",
+  "decision": "same_label_mesh_family_absent_generation_contract_ready",
+  "qoi_label_count": 4,
+  "temporal_uq_complete_qois": 4,
+  "total_exact_label_artifact_hits": 24,
+  "same_label_mesh_family_rows": 0,
+  "accepted_same_label_mesh_gci_rows": 0,
+  "generation_contract_rows": 4,
+  "next_compute_contract_ready": true,
+  "production_harvest_allowed": false,
+  "admission_allowed": false
+}

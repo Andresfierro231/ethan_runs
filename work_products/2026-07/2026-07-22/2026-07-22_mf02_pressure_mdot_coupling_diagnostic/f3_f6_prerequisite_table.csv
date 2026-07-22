@@ -1,0 +1,6 @@
+gate,current_count,required_status,current_status,reason
+terminal_source_success,0,greater_than_zero_for_candidate_family,fail,CAND001 terminal source evidence is still pending/retry-only.
+endpoint_fields_ready,0,pressure_velocity_density_fields_available,fail,No endpoint-field package exists for new low-recirculation pressure candidate.
+ordinary_flow_candidate_pairs,0,RAF/RMF/SVF ordinary-flow gate pass,fail,Existing lower-right rows fail material reverse-flow gate.
+same_qoi_mesh_time_UQ,0,same-label same-formula UQ admissible,fail,No same-QOI mesh/time UQ family is admitted for F6/component-K.
+F3_comparison,0,compare after admitted ordinary F6 row exists,not_evaluated,F3 comparison requires a reviewable F6/component row; none exists.

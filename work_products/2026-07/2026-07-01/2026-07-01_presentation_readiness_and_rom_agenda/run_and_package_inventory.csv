@@ -1,0 +1,6 @@
+run_or_package,type,current_use,status,source
+mainline Salt 2/3/4 Jin continuations,CFD reference,closure-grade thermal and pressure context,usable_with_coarse_mesh_caveat,reports/2026-06/2026-06-30/2026-06-30_claude_closure_results/README.md
+Salt 1 Jin,CFD reference,provisional only,excluded_from_closure_grade,reports/2026-06/2026-06-30/2026-06-30_claude_closure_results/README.md
+Q/insulation perturbation runs,sensitivity data,not admitted,false_steady,.agent/status/2026-07-01_AGENT-166.md
+true-steady insulation variants,new CFD runs,future upcomer/insulation correlation support,running,.agent/status/2026-07-01_AGENT-164.md
+scaling study jobs,compute performance,postponed,not submitted/resubmission deferred per user note,operational_notes/2026-07-01_scaling_study_resume_later.md

@@ -1,0 +1,5 @@
+junction_family,case_rows,total_patch_count_across_cases,sum_wallHeatFlux_diagnostic_W_across_cases,sum_area_m2_across_cases,admission_status,next_evidence_action
+lower_left,3,24,-36.096055,0.035155034,diagnostic_family_split_only,direct named junction/stub sampling before admitted target use
+lower_right,3,24,-36.096055,0.035155034,diagnostic_family_split_only,direct named junction/stub sampling before admitted target use
+upper_left,3,15,-22.560034,0.021971897,diagnostic_family_split_only,direct named junction/stub sampling before admitted target use
+upper_right,3,24,-36.096055,0.035155034,diagnostic_family_split_only,direct named junction/stub sampling before admitted target use

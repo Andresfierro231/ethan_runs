@@ -1,0 +1,15 @@
+{
+  "all_blockers_have_next_unblock_artifact": true,
+  "all_blockers_have_plain_language_why": true,
+  "blocker_count": 7,
+  "external_fluid_modified": false,
+  "generated_at_utc": "2026-07-14T22:50:11+00:00",
+  "missing_primary_docs": 0,
+  "missing_supporting_docs": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "scientific_admission_state_changed": false,
+  "sufficient_rows": 7,
+  "task": "AGENT-371"
+}

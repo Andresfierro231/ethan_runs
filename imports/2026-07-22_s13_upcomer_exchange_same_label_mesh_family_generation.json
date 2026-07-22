@@ -1,0 +1,53 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/local_candidate_scan.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/qoi_mesh_level_preflight_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/same_label_mesh_family_generated_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/required_mesh_level_gap_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/rejected_related_mesh_evidence.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/generation_input_preflight.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/compute_node_command_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/mesh_gci_generation_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/compute_handoff.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/production_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/no_mutation_guardrails.csv",
+    ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-SAME-LABEL-MESH-FAMILY-GENERATION-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-upcomer-exchange-same-label-mesh-family-generation.md",
+    "imports/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation.json",
+    "tools/analyze/build_s13_upcomer_exchange_same_label_mesh_family_generation.py",
+    "tools/analyze/test_s13_upcomer_exchange_same_label_mesh_family_generation.py",
+    ".agent/BOARD.md"
+  ],
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T09:25:19-05:00",
+  "mutation_flags": {
+    "admission": false,
+    "coefficient_admission": false,
+    "mesh_gci_computed": false,
+    "production_harvest": false,
+    "proxy_substitution_for_exact_labels": false,
+    "scheduler_or_sampler_launched": false,
+    "source_property_or_qwall_release": false
+  },
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_three_case_cell_vtk_manifest",
+    "staged/native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files",
+    "thesis current files"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SAME-LABEL-MESH-FAMILY-GENERATION-2026-07-22"
+}

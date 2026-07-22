@@ -1,0 +1,9 @@
+source_id,path,exists,role,mutation_status
+raw_plan_readme,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/README.md,True,read-only roadmap input,not_mutated
+target_feature_taps,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/target_feature_taps.csv,True,read-only roadmap input,not_mutated
+pressure_surface_sampling_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/pressure_surface_sampling_contract.csv,True,read-only roadmap input,not_mutated
+basis_field_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/basis_field_contract.csv,True,read-only roadmap input,not_mutated
+recirculation_metric_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/recirculation_metric_contract.csv,True,read-only roadmap input,not_mutated
+same_qoi_uncertainty_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/same_qoi_uncertainty_contract.csv,True,read-only roadmap input,not_mutated
+launch_readiness_gate,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/launch_readiness_gate.csv,True,read-only roadmap input,not_mutated
+raw_endpoint_summary,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/summary.json,True,read-only roadmap input,not_mutated

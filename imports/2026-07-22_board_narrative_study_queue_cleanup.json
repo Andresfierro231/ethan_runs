@@ -1,0 +1,79 @@
+{
+  "task": "TODO-BOARD-NARRATIVE-STUDY-QUEUE-CLEANUP-2026-07-22",
+  "task_id": "TODO-BOARD-NARRATIVE-STUDY-QUEUE-CLEANUP-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Cleaner/Reviewer/Writer",
+  "objective": "Clean completed stale locks from live Active and Planned/Unclaimed board sections after validating closeout surfaces.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-BOARD-NARRATIVE-STUDY-QUEUE-CLEANUP-2026-07-22.md",
+    ".agent/journal/2026-07-22/board-narrative-study-queue-cleanup.md",
+    "imports/2026-07-22_board_narrative_study_queue_cleanup.json",
+    "operational_notes/07-26/22/2026-07-22_BOARD_NARRATIVE_STUDY_QUEUE_CLEANUP.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BOARD.md live Active and Planned/Unclaimed sections",
+    "task closeout artifacts for archived rows",
+    "native CFD/OpenFOAM outputs read-only",
+    "registry/admission state read-only",
+    "scheduler state read-only",
+    "Fluid source tree read-only",
+    "external repositories read-only",
+    "thesis body/LaTeX files read-only",
+    ".agent/blockers.yml read-only"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <TASK> --json",
+      "result": "22 pre-existing completed live rows passed before archival."
+    },
+    {
+      "command": "live board parse after cleanup",
+      "result": "Active rows 11, Planned/Unclaimed rows 15, completed rows in live sections 0."
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "completed during closeout."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-BOARD-NARRATIVE-STUDY-QUEUE-CLEANUP-2026-07-22",
+      "result": "completed during closeout."
+    }
+  ],
+  "board_cleanup": {
+    "pre_existing_completed_live_rows_validated": 22,
+    "active_completed_rows_archived": 15,
+    "planned_completed_rows_archived": 8,
+    "final_active_rows": 11,
+    "final_planned_rows": 15,
+    "final_completed_rows_in_live_sections": 0
+  },
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "thesis_body_or_latex_mutated": false,
+    "blocker_register_source_mutated": false,
+    "generated_docs_index_refreshed": true,
+    "files_deleted": false,
+    "files_reverted": false,
+    "files_staged": false,
+    "commits_created": false,
+    "push_performed": false
+  }
+}

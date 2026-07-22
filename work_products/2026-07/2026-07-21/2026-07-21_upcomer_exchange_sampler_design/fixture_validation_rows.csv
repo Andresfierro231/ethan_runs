@@ -1,0 +1,3 @@
+fixture_id,metric,value,expected,status,basis
+unit_fixture_contract,schema_field_count,10,10,pass,"dry schema includes exchange-state, property-ratio, pressure, and energy fields"
+unit_fixture_contract,compute_execution_allowed_from_design,false,false,pass,design package has no launch path

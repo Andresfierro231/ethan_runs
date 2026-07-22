@@ -1,0 +1,9 @@
+baseline_qambient_total_W,baseline_qhx_total_W,diagnostic_delta_vs_baseline_qambient_W,diagnostic_passive_operator_q_total_W,heat_ledger_release,interpretation,residual_absorption_into_internal_Nu,scenario_id
+248.80712,53.893275,624.4647586177953,873.2718786177952,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,nominal
+248.80712,53.893275,516.0751862333709,764.8823062333709,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,hA_0p5
+248.80712,53.893275,841.243903386644,1090.051023386644,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,hA_2p0
+248.80712,53.893275,628.8843648009786,877.6914848009785,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,ambient_minus_2K
+248.80712,53.893275,619.9974732040334,868.8045932040334,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,ambient_plus_2K
+248.80712,53.893275,610.7639425203295,859.5710625203295,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,wall_state_minus_2K
+248.80712,53.893275,638.303433638228,887.110553638228,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,wall_state_plus_2K
+248.80712,53.893275,-32.0279752311514,216.7791447688486,False,diagnostic comparison only; no heat-ledger replacement or model admission,False,radiation_off

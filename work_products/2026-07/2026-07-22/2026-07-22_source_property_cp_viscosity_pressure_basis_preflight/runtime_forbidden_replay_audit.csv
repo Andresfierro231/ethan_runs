@@ -1,0 +1,9 @@
+field_or_action,status,reason,allowed_use
+CFD_mdot,forbidden_runtime_input,forbidden target flow solution replay,diagnostic residual attribution only
+realized_wallHeatFlux,forbidden_runtime_input,forbidden realized CFD wall heat flux replay,diagnostic heat-path/source-side conservation only
+imposed_CFD_cooler_duty,forbidden_runtime_input,forbidden cooler-duty replay as predictive sink,diagnostic accounting only unless setup/HX model release occurs
+validation_temperatures,forbidden_runtime_input,forbidden protected temperature targets,score-only after freeze
+holdout_or_external_residuals,forbidden_runtime_input,forbidden protected evidence for tuning,external generalization only after validation
+missing_heat_residual_into_internal_Nu,forbidden_model_action,forbidden residual absorption into internal Nu,document residual owner and source-bounded blocker
+negative_pressure_residual_into_component_K,forbidden_model_action,forbidden forcing section-effective pressure recovery into component K,section-effective thesis evidence only
+row_by_row_property_or_multiplier_fit,forbidden_fit_action,forbidden hidden fitting/model selection,only after explicit candidate freeze/release row permits train fitting

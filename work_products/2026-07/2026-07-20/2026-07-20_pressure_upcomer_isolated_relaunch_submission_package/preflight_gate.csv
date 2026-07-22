@@ -1,0 +1,7 @@
+case_key,preflight_status,failed_checks,runner_exists,of_env_exists,time_present,source_or_recon_time_available,mesh_stations_path,mesh_stations_exists
+salt2_hi10q,pass,,true,true,true,true,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json,true
+salt2_jin_nominal_continuation,pass,,true,true,true,true,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json,true
+salt3_jin_nominal_continuation,pass,,true,true,true,true,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_3_jin_coarse_mesh/mesh_stations.json,true
+salt4_hi10q,pass,,true,true,true,true,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_4_jin_coarse_mesh/mesh_stations.json,true
+salt4_jin_nominal_continuation,pass,,true,true,true,true,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_4_jin_coarse_mesh/mesh_stations.json,true
+salt4_lo10q,pass,,true,true,true,true,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_4_jin_coarse_mesh/mesh_stations.json,true

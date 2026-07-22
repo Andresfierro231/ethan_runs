@@ -1,0 +1,8 @@
+item_id,type,statement,rationale,can_change_when
+task_id_collision,decision,Do not use AGENT-547 for UMX1 because it is already active for F6 pressure planning,The current board assigns AGENT-547 to a different active task,A later coordinator assigns a different unique ID
+fluid_ownership,decision,Do not edit Fluid in AGENT-548,The external Fluid board has an in-progress TSWFC2 row claiming the exact target files,The TSWFC2 row completes or releases the files
+source_sign,assumption,Positive Q_W means heat into the UMX reservoir,Matches the planned reservoir energy update and keeps source sign explicit,Fluid implementer records a different sign convention before coding
+convective_sign,assumption,Convective reservoir source is hA_W_K times Ta_K minus T_reservoir_K,This makes heat enter from a hotter setup reservoir/environment and leave to a cooler one,Fluid implementer documents a more specific physical reservoir boundary
+admission_policy,decision,All UMX1S outputs remain not_admitted_smoke_only,AGENT-544 failed roots and probe behavior; new API needs smoke evidence first,A separate admission row is claimed after accepted roots and score gates pass
+candidate_freeze,decision,Freeze UMX1S candidates before smoke,Prevents tuning to validation residuals,Only a new predeclared task may change the grid
+runtime_inputs,decision,Forbid CFD mdot realized CFD wallHeatFlux imposed CFD cooler duty and validation TP/TW at runtime,Preserves forward-predictive legality,Never within UMX1 forward-predictive scoring

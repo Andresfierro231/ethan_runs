@@ -1,0 +1,5 @@
+check,status,forbidden_input,policy
+no_single_stream_labels_for_recirc,pass_forbidden,single-stream Nu/f_D/K labels on recirculating rows,Current upcomer rows are hybrid/diagnostic only.
+no_runtime_cfd_mdot,pass_forbidden,CFD mdot,mdot remains a coupled solved output.
+no_runtime_realized_wall_heat,pass_forbidden,realized wallHeatFlux,wall heat and h_proxy are diagnostics until a setup-only predictive term is admitted.
+no_global_multiplier,pass_forbidden,global friction or heat-transfer multiplier,recirculation effects must remain a named upcomer lane.

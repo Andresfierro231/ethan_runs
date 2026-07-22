@@ -1,0 +1,6 @@
+contradiction_id,observation,why_it_does_not_admit,resolution
+F2_transfers_but_not_physical,F2 global affine reduces transfer MAE strongly with only two degrees of freedom.,global scale/offset is not a source-bounded heat-transfer law or runtime-legal source property,use as discrepancy coordinate and motivate source-basis tests
+F5_best_transfer_but_high_DOF,F5 has the lowest transfer MAE among reduced-DOF empirical models.,"thermal-family offsets plus multiplier can hide source placement, wall flux, mixing, and sensor projection simultaneously",treat as upper diagnostic bound; forbid hidden-fit interpretation
+D3_D4_transfer_reductions_are_large,D3/D4 diagnostic gates reduce transfer RMSE by roughly half.,both remain diagnostic and have zero candidate/source-bounded release rows,"use them to rank physical owner tests, not as corrections"
+MF08_signs_exist_but_no_source_release,Setup-known signed heat exchange is physically meaningful.,source/property release is blocked and realized wallHeatFlux is forbidden as runtime input,assemble source-basis evidence before train-only smoke
+MF09_exchange_cell_best_lane_but_blocked,Exchange-cell model is the most physical recirculating-upcomer alternative.,"same-label mesh/GCI, source/property, cp, and production same-window harvest are missing",complete same-label mesh-family generation and source-property gate

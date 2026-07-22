@@ -1,0 +1,20 @@
+{
+  "agent264_decision": "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_implementation_audit/radiation_parity_decision.json",
+  "binary_probe_rows": 2,
+  "command": "tools/analyze/build_rc_external_temperature_publication_evidence.py --strict",
+  "cwd": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "delta_rows": 3,
+  "ethan_runs_git_revision": "99df9cfa507e9f84cbdbddb7605269e1a209a282",
+  "evidence_class": "microcase_confirmed",
+  "generated_utc": "2026-07-13T18:17:07+00:00",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "microcase_matrix_rows": 4,
+  "microcase_run_rows": 4,
+  "of13_env": "tools/ofenv/of13_env.sh",
+  "platform": "Linux-4.18.0-372.26.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "python": "3.9.7",
+  "rcwall_library": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/libRCWallBC.so",
+  "room_heating_tutorial": "/work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13/source/OpenFOAM-13/tutorials/fluid/roomHeating",
+  "source_probe_rows": 7,
+  "task": "AGENT-277"
+}

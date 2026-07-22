@@ -1,0 +1,7 @@
+source_id,path,exists,use
+pressure_summary,work_products/2026-07/2026-07-17/2026-07-17_pressure_branch_admission_narrowing/summary.json,true,pressure gate delta
+test_section_summary,work_products/2026-07/2026-07-17/2026-07-17_test_section_passive_loss_admission_repair/summary.json,true,test-section gate delta
+upcomer_summary,work_products/2026-07/2026-07-17/2026-07-17_upcomer_hybrid_frozen_candidate_score/summary.json,true,hybrid gate delta
+onset_summary,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/summary.json,true,anchor launch state
+boundary_summary,work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/summary.json,true,current boundary ablation state
+coupled_summary,work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard/summary.json,true,current final forward-v1 state

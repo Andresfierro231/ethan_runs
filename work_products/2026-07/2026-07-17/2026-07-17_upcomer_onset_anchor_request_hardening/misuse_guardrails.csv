@@ -1,0 +1,6 @@
+guardrail_id,forbidden_use,required_alternative
+no_recirc_nu_fd_k_fit,"ordinary upcomer Nu, f_D, or corner K fitting from rows with RAF/RMF/backflow above non-recirculating gates",use diagnostic recirculation-modeled closure or wait for admitted non-recirculating/transition anchors
+no_window_mixing,"combine wall temperature, bulk temperature, pressure, and reverse metrics from different time windows","key every extracted value by case_key, mesh_id, window_id, plane_set, and station definition"
+no_hidden_junction_loss,hide junction/stub heat loss in a single upcomer heat-transfer multiplier,"report upcomer wall, junction, corner, and stub heat branches separately for 1D mapping"
+no_design_target_as_evidence,treat design target Re or thermal-drive bands as measured CFD evidence,compute actual same-window Re/Pr/Ri/Gr/Ra/Gz from extracted fields
+no_scientific_admission_change,promote rows to training/main evidence from this request package alone,run a future admission package after postprocessed outputs and uncertainty rows exist

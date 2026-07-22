@@ -1,0 +1,4 @@
+case_id,recirc_mask_status,wall_core_status,q_wall_w_status,required_next_input,blocking_reason
+salt_2,blocked_fragmented_velocity_topology,blocked,blocked,wall-face adjacency for the released recirculation control volume plus area-weighting convention,wall/core band cannot be released from a diagnostic mask
+salt_3,blocked_fragmented_velocity_topology,blocked,blocked,wall-face adjacency for the released recirculation control volume plus area-weighting convention,wall/core band cannot be released from a diagnostic mask
+salt_4,blocked_fragmented_velocity_topology,blocked,blocked,wall-face adjacency for the released recirculation control volume plus area-weighting convention,wall/core band cannot be released from a diagnostic mask

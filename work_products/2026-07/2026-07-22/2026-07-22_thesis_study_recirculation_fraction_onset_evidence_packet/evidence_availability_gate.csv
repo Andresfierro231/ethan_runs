@@ -1,0 +1,9 @@
+evidence_item,available_rows,status,use_allowed,fail_closed_reason
+improved upcomer composite figures,3,available_diagnostic,caption_and_visual_context_only,
+max downward y-velocity visual bound,3,available_visual_bound,"quote as common-render bound, not exact per-cell extrema",
+reverse-flow candidate fraction,3,available_proxy,reverse-candidate topology proxy only,
+closed recirculation fraction,0,blocked,false,validated cell-VTK segmentation reports fragmented velocity topology; no closed defensible recirculation volume admitted
+S13 exchange/tau proxies,3,available_diagnostic,"diagnostic current-coarse proxy with same-QOI temporal UQ, no coefficient fit",
+same-QOI temporal UQ,4,available_current_coarse,temporal stability support only,
+medium/fine exact-label rows,0,pending_scheduler_sampler,false,scheduler-authorized sampler must produce exact-label medium/fine rows before mesh/GCI disposition
+Richardson number for S13 onset packet,0,blocked,false,"no same-window, same-CV property/temperature/velocity-length basis found in the S13 evidence sources opened for this packet"

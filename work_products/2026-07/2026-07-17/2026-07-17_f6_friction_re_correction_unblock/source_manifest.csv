@@ -1,0 +1,9 @@
+source_id,path,exists,role
+f6_onset_scorecard,work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv,True,row-level PM5 F6/onset candidate evidence
+f6_fit_candidate_table,work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_fit_candidate_table.csv,True,prior fit-candidate conclusion
+f6_status_scorecard,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/f6_status_scorecard.csv,True,current blocker status input
+recirculation_feature_admission_table,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/recirculation_feature_admission_table.csv,True,hybrid/recirculation lane row labels
+hybrid_1d_model_contract,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv,True,allowed and forbidden model labels
+recirculation_next_extraction_queue,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/next_extraction_queue.csv,True,existing extraction queue to extend
+recirculation_cfd_run_matrix,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv,True,follow-on CFD anchor design
+recirculation_required_output_contract,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/required_output_contract.csv,True,required extraction features for future anchors

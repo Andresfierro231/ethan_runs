@@ -1,0 +1,8 @@
+rank,next_task,reason,can_start_now
+1,TODO-THESIS-OUTLINE-EVIDENCE-COMPLETENESS-MATRIX-2026-07-22,"Highest leverage for external writer; uses completed packets only.",true
+2,TODO-THESIS-COMPACT-NUMERICAL-CLAIMS-LEDGER-2026-07-22,"Prevents prose overclaiming and avoids uploading large source trees.",true
+3,TODO-THESIS-STUDY-THERMAL-TW-AFTER-TP-RESIDUAL-OWNERSHIP-2026-07-22,"Most direct response to current thermal blocker after D2/MF12/MF15 evidence.",true
+4,TODO-THESIS-CH3-CFD-PROVENANCE-QOI-COMPACT-PACKET-2026-07-22,"Important Ch3 appendix, but should wait for active Salt14 inventory.",false
+5,TODO-THESIS-STUDY-UPCOMER-ONSET-ANCHOR-DESIGN-AND-RECIRC-FRACTION-UQ-2026-07-22,"Important for recirculation figures and single-stream disable claims; coordinate with S13.",true
+6,TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22,"Important but higher risk because it may need scheduler/source recovery.",true
+7,TODO-THESIS-STUDY-S13-UPCOMER-EXCHANGE-POST-SAMPLER-GCI-PRODUCTION-HARVEST-2026-07-22,"High scientific value, but blocked until active exact-label sampler closes.",false

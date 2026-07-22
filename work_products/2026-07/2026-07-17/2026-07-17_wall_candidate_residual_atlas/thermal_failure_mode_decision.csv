@@ -1,0 +1,7 @@
+candidate_family,evidence_state,rows_reviewed,mean_mdot_delta_vs_m3_pct,mean_tw_delta_vs_m3_K,mean_all_probe_delta_vs_m3_K,top_regressing_segments,failure_mode,recommended_action
+PB1_passive_total,pending_or_partial,0,,,,,total_or_static_distribution_not_sufficient,Do not repeat passive-total or Salt2-shaped wall distribution variants.
+PB2_salt2_shape,completed,4,-14.251569,45.563994,39.292558,,total_or_static_distribution_not_sufficient,Do not repeat passive-total or Salt2-shaped wall distribution variants.
+PB3_attenuated_shape,completed,4,-14.403254,46.598496,38.639669,,total_or_static_distribution_not_sufficient,Do not repeat passive-total or Salt2-shaped wall distribution variants.
+WTD1_pipe_outer_wall_drive,completed,4,-14.45386,45.569745,39.206471,heated_incline:4;cooled_incline_pre_hx:2;left_upper_vertical:2;cooled_incline_post_hx:2;top_horizontal_exit:2,wall_temperature_drive_not_sufficient,Drive selector alone does not fix the thermal field; prioritize source placement or explicit wall/fluid coupling.
+WTD2_outer_surface_drive,completed,2,9.8879837,92.484777,78.825628,left_lower_vertical:3;left_upper_vertical:3;cooled_incline_pre_hx:2;test_section:2;cooled_incline_post_hx:2,wall_temperature_drive_wrong_direction,Do not pursue outer-surface-drive variant without a new physical reason.
+HS1_heater_source_redistribution,pending_or_live_no_completed_rows,1,,,,,pending_heater_source_scoring,Wait for live AGENT-511 job 3300966 or rerun the bounded AGENT-511 command only if no live job remains.

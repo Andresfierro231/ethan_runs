@@ -1,0 +1,4 @@
+source_id,source_path,access,purpose
+stage_a_harvest_qa,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa,read_only,medium/fine face and pair QA
+stage_b_coarse_vtk_sampler_submit,work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit,read_only,coarse VTK face and pair diagnostics
+f6_same_qoi_uq_and_admission_gate,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate,read_only,previous gate status and F3 comparison state

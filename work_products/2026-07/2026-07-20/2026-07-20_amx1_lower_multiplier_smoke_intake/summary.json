@@ -1,0 +1,37 @@
+{
+  "task": "AGENT-572",
+  "date": "2026-07-20",
+  "external_fluid_task": "impl-2026-07-20-fluid-amx1-lower-multiplier-smoke",
+  "fluid_campaign": "amx1_salt2_lower_multiplier_smoke_v2",
+  "audit_decision": "lower_multiplier_smoke_complete_diagnostic_only",
+  "progression": "lower_multiplier_forms_need_gradient_clipping_before_salt1_4",
+  "rows_scanned": 7,
+  "baseline_rows": 1,
+  "amx1_rows": 6,
+  "manifest_rows_ok": "7/7",
+  "all_roots_pass": true,
+  "amx1_ledgers_nonzero": true,
+  "amx1_ledgers_conservative": true,
+  "forms_ready_for_separate_salt1_4_bounded_comparison": [],
+  "closest_form": {
+    "form_label": "upper_vertical_only_m010",
+    "form_target": "upper_vertical_only",
+    "multiplier_code": "m010",
+    "axial_mixing_multiplier": 0.01,
+    "max_positive_core_delta_K": 0.00019863866604197256,
+    "worsened_core_metrics": ["all_rmse_K", "tp_rmse_K"]
+  },
+  "runtime": {
+    "total_duration_s": 755.5354629999999,
+    "solve_duration_s": 731.341217,
+    "max_scenario_duration_s": 113.182292
+  },
+  "next_action": "Implement disabled-by-default gradient-clipped AMX1 localized exchange and smoke Salt2 only.",
+  "score_grid_run": false,
+  "salt1_4_expansion_run": false,
+  "fit_or_model_selection_run": false,
+  "scientific_admission_change": "none",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none"
+}

@@ -1,0 +1,39 @@
+{
+  "task": "TODO-MF-RECIRCULATING-UPCOMER-ALTERNATIVES-GATE-2026-07-22",
+  "generated_at_utc": "2026-07-22T14:17:27.579688+00:00",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/alternatives_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/onset_data_sparsity_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/production_harvest_prerequisites.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/no_admission_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/source_manifest.csv",
+    ".agent/status/2026-07-22_TODO-MF-RECIRCULATING-UPCOMER-ALTERNATIVES-GATE-2026-07-22.md",
+    ".agent/journal/2026-07-22/mf-recirculating-upcomer-alternatives-gate.md",
+    "imports/2026-07-22_mf_recirc_upcomer_alternatives_gate.json",
+    "tools/analyze/build_mf_recirc_upcomer_alternatives_gate.py",
+    "tools/analyze/test_mf_recirc_upcomer_alternatives_gate.py",
+    ".agent/BOARD.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus",
+    "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress",
+    "work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "scheduler_action": "none",
+  "mutation_flags": {
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "ordinary_upcomer_closure_admission": false,
+    "production_harvest": false,
+    "protected_scoring": false,
+    "residual_absorbed_into_internal_nu": false
+  }
+}

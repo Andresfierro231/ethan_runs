@@ -1,0 +1,10 @@
+source_path,exists,role,mutation_status
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_smoke_scenario/summary.json,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_forward_blocker_unlock_runbook/next_agent_contracts.csv,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/cross_candidate_residual_matrix.csv,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,True,read_only_input,not_mutated
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/reporting.py,True,read_only_input,not_mutated

@@ -1,0 +1,10 @@
+input_family,mdot_effect_rank,tp_effect_rank,tw_effect_rank,dominant_pathway,coupled_root_risk,recommended_smoke,admission_or_score_allowed
+heater_source_fraction,low_to_medium,high,high,local heated-incline TP/TW and lower-leg enthalpy,high,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+cooler_hx_strength,high,high,medium,mdot and cooled branch/top-loop temperatures,high,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+ambient_temperature,low_to_medium,medium,medium,external heat losses and wall temperatures,medium,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+external_convection_hA,low_to_medium,medium,high,TW residual owner and passive wall losses,medium,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+radiation,low_to_medium,medium,medium,TW surface temperatures and external-loss split,medium,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+wall_layer_materials,low_to_medium,medium,medium,TW wall-state projection and test-section path,medium,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+fluid_property_mode,high,medium,medium,"mdot, Re/Pr, enthalpy transport",high,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+pressure_loss_terms,high,medium,medium,mdot and coupled heat transport,high,one_at_a_time_train_only_finite_root_and_finite_QOI,no
+sensor_projection,low_to_medium,high,high,reported TP/TW errors,high,one_at_a_time_train_only_finite_root_and_finite_QOI,no

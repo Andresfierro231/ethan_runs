@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="620" viewBox="0 0 920 620">
+<rect x="0" y="0" width="920" height="620" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="86" y="34" class="title">Upcomer Backflow Fraction Versus Re</text>
+<text x="86" y="56" class="subtitle">Three admitted Salt Jin points; onset estimates remain extrapolated</text>
+<line x1="86.00" y1="84" x2="86.00" y2="528" class="grid"/>
+<text x="86.00" y="550" text-anchor="middle" class="tick">60</text>
+<line x1="244.40" y1="84" x2="244.40" y2="528" class="grid"/>
+<text x="244.40" y="550" text-anchor="middle" class="tick">80</text>
+<line x1="402.80" y1="84" x2="402.80" y2="528" class="grid"/>
+<text x="402.80" y="550" text-anchor="middle" class="tick">100</text>
+<line x1="561.20" y1="84" x2="561.20" y2="528" class="grid"/>
+<text x="561.20" y="550" text-anchor="middle" class="tick">120</text>
+<line x1="719.60" y1="84" x2="719.60" y2="528" class="grid"/>
+<text x="719.60" y="550" text-anchor="middle" class="tick">140</text>
+<line x1="878.00" y1="84" x2="878.00" y2="528" class="grid"/>
+<text x="878.00" y="550" text-anchor="middle" class="tick">160</text>
+<line x1="86" y1="528.00" x2="878" y2="528.00" class="grid"/>
+<text x="78" y="532.00" text-anchor="end" class="tick">15</text>
+<line x1="86" y1="380.00" x2="878" y2="380.00" class="grid"/>
+<text x="78" y="384.00" text-anchor="end" class="tick">20</text>
+<line x1="86" y1="232.00" x2="878" y2="232.00" class="grid"/>
+<text x="78" y="236.00" text-anchor="end" class="tick">25</text>
+<line x1="86" y1="84.00" x2="878" y2="84.00" class="grid"/>
+<text x="78" y="88.00" text-anchor="end" class="tick">30</text>
+<line x1="86" y1="528" x2="878" y2="528" class="axis"/>
+<line x1="86" y1="84" x2="86" y2="528" class="axis"/>
+<text x="482.0" y="582" text-anchor="middle" class="label">Re_upcomer</text>
+<text x="18" y="306.0" class="label" transform="rotate(-90 18 306.0)">Backflow fraction (%)</text>
+<polyline points="174.11,149.48 679.08,462.87" fill="none" stroke="#D97706" stroke-width="2.4"/>
+<circle cx="174.11" cy="149.78" r="6" fill="#2878B5" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="182.11" y="141.78" class="small">Salt 2</text>
+<circle cx="377.22" cy="324.50" r="6" fill="#2878B5" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="385.22" y="316.50" class="small">Salt 3</text>
+<circle cx="679.08" cy="463.25" r="6" fill="#2878B5" stroke="#FFFFFF" stroke-width="1.5"/>
+<text x="687.08" y="455.25" class="small">Salt 4</text>
+<text x="86" y="598" class="small">Source: AGENT-196. The lower-upcomer trend decreases with Re, but persistent recirculation keeps the upcomer out</text>
+<text x="86" y="612" class="small">of ordinary single-stream pipe-friction fitting.</text>
+</svg>

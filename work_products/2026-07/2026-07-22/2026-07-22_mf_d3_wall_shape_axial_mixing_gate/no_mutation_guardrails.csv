@@ -1,0 +1,8 @@
+guardrail,mutation
+native CFD/OpenFOAM outputs,False
+registry/admission state,False
+scheduler/solver/sampler/harvest/UQ,False
+Fluid or external source trees,False
+thesis current/LaTeX files,False
+fitting/tuning/model selection,False
+runtime temperature input release,False

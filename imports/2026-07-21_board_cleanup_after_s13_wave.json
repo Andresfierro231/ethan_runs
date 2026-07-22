@@ -1,0 +1,42 @@
+{
+  "task": "AGENT-581",
+  "task_id": "AGENT-581",
+  "date": "2026-07-21",
+  "role": "Coordinator/Cleaner/Writer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_AGENT-581.md",
+    ".agent/journal/2026-07-21/board-cleanup-after-s13-wave.md",
+    "imports/2026-07-21_board_cleanup_after_s13_wave.json",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md active rows not reporting STATUS: COMPLETE",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "scheduler state",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register source"
+  ],
+  "cleanup_summary": {
+    "completed_rows_archived": 22,
+    "active_rows_remaining": 11,
+    "completed_rows_remaining_in_active": 0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_repo_mutated": false,
+  "blocker_register_source_mutated": false,
+  "generated_index_refreshed": true,
+  "deleted_files": [],
+  "staged_or_committed": false,
+  "no_scorecard_outputs": true
+}

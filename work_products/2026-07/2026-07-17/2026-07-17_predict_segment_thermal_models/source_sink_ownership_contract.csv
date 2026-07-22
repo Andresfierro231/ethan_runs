@@ -1,0 +1,8 @@
+loop_region,source_sink_owner,internal_nu_absorption_allowed,runtime_realized_wall_heat_allowed,runtime_imposed_cfd_cooler_duty_allowed,notes
+heater,setup heater power or admitted heater efficiency,false,false,false,Use admitted scalar heater boundary/source model; do not absorb residual heat into internal Nu.
+cooler_HX,"setup cooler removal model, not imposed CFD cooler duty",false,false,false,Use setup-only cooler removal model lane; keep coupled score as pending review evidence.
+downcomer,named passive/source-sink boundary or validation diagnostic,false,false,false,"Passive wall evidence may validate heat balance, but ordinary internal-Nu residual fits are not admitted."
+upcomer,"hybrid wall-core exchange and recirculation cell, pending calibration",false,false,false,Use upcomer hybrid lane only; current recirculating rows cannot admit ordinary internal Nu.
+test_section,unadmitted passive test-section loss candidate,false,false,false,No test-section passive loss candidate is admitted; TS rows remain validation-only diagnostics.
+junction_stub_connector,named passive/source-sink boundary or validation diagnostic,false,false,false,"Use junction/stub/connector thermal rows as named source-sink diagnostics, not pipe heat-transfer coefficients."
+lower_upper_legs,named passive/source-sink boundary or validation diagnostic,false,false,false,"Use lower/upper leg thermal evidence to test development and wall resistance, not as a hidden multiplier."

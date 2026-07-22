@@ -1,0 +1,7 @@
+candidate_id,case_id,split_role,candidate_mdot_abs_error_pct,m3_mdot_abs_error_pct,candidate_all_probe_rmse_K,m3_all_probe_rmse_K,candidate_tw_rmse_K,m3_tw_rmse_K,mdot_delta_vs_m3_pct,all_probe_delta_vs_m3_K,tw_delta_vs_m3_K,score_gate
+WTD1_upcomer_test_section_pipe_outer_wall_drive_PLUS_HX_LUMPED_UA_NTU,salt_3,validation,0.08342334352,15.857,53.1857048,17.749,61.79278965,19.332,-15.77357666,35.4367048,42.46078965,fail
+WTD1_upcomer_test_section_pipe_outer_wall_drive_PLUS_HX_LUMPED_UA_NTU,salt_4,holdout,6.491223997,19.626,59.93848325,16.971,67.28846388,18.623,-13.134776,42.96748325,48.66546388,fail
+WTD1_upcomer_test_section_pipe_outer_wall_drive_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_3,validation,0.08921958908,15.857,53.19661178,17.749,61.80836066,19.332,-15.76778041,35.44761178,42.47636066,fail
+WTD1_upcomer_test_section_pipe_outer_wall_drive_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_4,holdout,6.486691148,19.626,59.94508557,16.971,67.29936533,18.623,-13.13930885,42.97408557,48.67636533,fail
+WTD2_upcomer_test_section_outer_surface_drive_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_3,validation,31.73867939,15.857,97.19417564,17.749,112.0092842,19.332,15.88167939,79.44517564,92.6772842,fail
+WTD2_upcomer_test_section_outer_surface_drive_PLUS_HX_SEGMENTED_UA_NTU_N16,salt_4,holdout,23.52028802,19.626,95.17708023,16.971,110.9152694,18.623,3.89428802,78.20608023,92.2922694,fail

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" role="img" aria-labelledby="title desc">
+  <title id="title">Pressure anchor admission gate waterfall</title>
+  <desc id="desc">All current pressure F6/component-K admission gates are closed because no low-recirculation ordinary anchor is reviewable.</desc>
+  <rect width="1100" height="600" fill="#f6f7f4"/>
+  <text x="50" y="54" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f2a2e">Pressure low-recirculation anchor gate</text>
+  <text x="50" y="87" font-family="Arial, sans-serif" font-size="15" fill="#45565c">Inventory reviewed 36 rows and alternate screen reviewed 40 rows; existing replacement-ready anchors: 0.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="135" width="135" height="58" rx="4" fill="#2f7d68"/>
+    <text x="92" y="168" font-size="14" font-weight="700" fill="#ffffff">Inventory</text>
+    <text x="92" y="185" font-size="12" fill="#ffffff">36 rows</text>
+    <rect x="235" y="135" width="150" height="58" rx="4" fill="#8f4638"/>
+    <text x="253" y="168" font-size="14" font-weight="700" fill="#ffffff">Ordinary flow</text>
+    <text x="270" y="185" font-size="12" fill="#ffffff">0 pass rows</text>
+    <rect x="415" y="135" width="145" height="58" rx="4" fill="#8f4638"/>
+    <text x="438" y="168" font-size="14" font-weight="700" fill="#ffffff">Endpoints</text>
+    <text x="438" y="185" font-size="12" fill="#ffffff">fields not ready</text>
+    <rect x="590" y="135" width="145" height="58" rx="4" fill="#8f4638"/>
+    <text x="624" y="168" font-size="14" font-weight="700" fill="#ffffff">UQ</text>
+    <text x="615" y="185" font-size="12" fill="#ffffff">0 rows ready</text>
+    <rect x="765" y="135" width="145" height="58" rx="4" fill="#8f4638"/>
+    <text x="791" y="168" font-size="14" font-weight="700" fill="#ffffff">Basis</text>
+    <text x="783" y="185" font-size="12" fill="#ffffff">section-only</text>
+    <rect x="940" y="135" width="90" height="58" rx="4" fill="#8f4638"/>
+    <text x="958" y="168" font-size="14" font-weight="700" fill="#ffffff">F6/K</text>
+    <text x="965" y="185" font-size="12" fill="#ffffff">closed</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#1f2a2e">
+    <text x="70" y="255" font-weight="700">Absence proof</text>
+    <text x="70" y="291">Sampled Salt2 right-leg/test-section endpoint rows fail RAF/RMF ordinary-flow limits: RAF up to 0.6356 and RMF about 0.5 versus 0.01 limits.</text>
+    <text x="70" y="327">PM5 rows are material reverse-flow diagnostics; PM10 rows are strong-recirculation future blind terminal evidence, not ordinary anchors.</text>
+    <text x="70" y="363">Lower-right two-tap rows remain section-effective pressure residual evidence with 0 component-K rows.</text>
+    <text x="70" y="399">CAND-001 is retryable as source recovery only: terminal success cases 0, timeout jobs 2, endpoint fields ready 0.</text>
+  </g>
+  <rect x="70" y="475" width="960" height="68" rx="4" fill="#ffffff" stroke="#c7d0d3"/>
+  <text x="92" y="503" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2a2e">Decision</text>
+  <text x="92" y="528" font-family="Arial, sans-serif" font-size="14" fill="#1f2a2e">Fail closed: no component K, F6, clipped K, Shah comparison, hidden multiplier, scheduler launch, or protected score from current evidence.</text>
+</svg>

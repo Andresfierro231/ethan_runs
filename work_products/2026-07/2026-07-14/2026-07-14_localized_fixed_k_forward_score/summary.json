@@ -1,0 +1,81 @@
+{
+  "engine": "fast_scan_localized_fixed_k",
+  "external_fluid_modified": false,
+  "f1_mean_localized_abs_mdot_error_kg_s": 0.0058941666666666665,
+  "f1_mean_mdot_error_reduction_pct": -6.78058041768375,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "generated_utc": "2026-07-14T17:07:05+00:00",
+  "global_friction_multiplier_exported": false,
+  "localized_fixed_k_keys": [
+    "lower_leg",
+    "right_leg",
+    "upper_leg"
+  ],
+  "localized_fixed_k_total": 40.63836886467,
+  "n_cases": 3,
+  "n_localized_k_rows": 3,
+  "n_result_rows": 6,
+  "n_variants": 2,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "localized_fixed_k_source.csv",
+    "localized_fixed_k_scorecard.csv",
+    "localized_fixed_k_variant_summary.csv",
+    "rigor_gate_audit.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "overall_status": "localized_fixed_k_score_complete_diagnostic_only",
+  "reset_redevelopment_implemented": false,
+  "rigor_gate_status": {
+    "FWD": "blocked",
+    "R1": "pass",
+    "R10": "pass",
+    "R2": "pass",
+    "R5": "pass",
+    "R6": "pass",
+    "R8": "pass"
+  },
+  "runtime_uses_cfd_mdot": false,
+  "runtime_uses_imposed_cooler_duty": true,
+  "runtime_uses_realized_cfd_wallheatflux": false,
+  "runtime_uses_validation_temperatures": false,
+  "setup_only_boundary_hx_final": false,
+  "task_id": "AGENT-328",
+  "thermal_fit_used": false,
+  "variant_summary": [
+    {
+      "all_localized_rows_overpredict_cfd": "true",
+      "base_variant_id": "F0_current_fluid_sources",
+      "forward_v1_scoring_decision": "diagnostic_only_failed_directional_screen",
+      "holdout_localized_abs_mdot_error_pct": 58.27444051825681,
+      "localized_variant_id": "F0_current_fluid_sources_localized_fixed_K",
+      "mean_baseline_abs_mdot_error_kg_s": 0.008081666666666668,
+      "mean_baseline_abs_mdot_error_pct": 53.95851940178469,
+      "mean_localized_abs_mdot_error_kg_s": 0.008915000000000001,
+      "mean_localized_abs_mdot_error_pct": 59.19573116335258,
+      "mean_mdot_error_reduction_pct": -9.929081535135296,
+      "movement_gate": "fail_directional_screen",
+      "n_rows": 3,
+      "train_localized_abs_mdot_error_pct": 56.487101669195724,
+      "validation_localized_abs_mdot_error_pct": 62.82565130260521
+    },
+    {
+      "all_localized_rows_overpredict_cfd": "true",
+      "base_variant_id": "F1_heater_only",
+      "forward_v1_scoring_decision": "diagnostic_only_failed_directional_screen",
+      "holdout_localized_abs_mdot_error_pct": 43.551236749116626,
+      "localized_variant_id": "F1_heater_only_localized_fixed_K",
+      "mean_baseline_abs_mdot_error_kg_s": 0.005477500000000001,
+      "mean_baseline_abs_mdot_error_pct": 36.371045802776365,
+      "mean_localized_abs_mdot_error_kg_s": 0.0058941666666666665,
+      "mean_localized_abs_mdot_error_pct": 38.82491309763306,
+      "mean_mdot_error_reduction_pct": -6.78058041768375,
+      "movement_gate": "fail_directional_screen",
+      "n_rows": 3,
+      "train_localized_abs_mdot_error_pct": 35.14795144157816,
+      "validation_localized_abs_mdot_error_pct": 37.77555110220439
+    }
+  ]
+}

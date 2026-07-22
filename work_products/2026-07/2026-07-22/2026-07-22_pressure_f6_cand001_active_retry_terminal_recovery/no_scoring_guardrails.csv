@@ -1,0 +1,7 @@
+guardrail,allowed,reason
+new_scheduler_submission_in_this_task,False,existing active retry job is the source recovery attempt
+F6_scoring_now,False,terminal source evidence and endpoint fields are still missing
+component_K_or_cluster_K_admission,False,ordinary-flow and same-QOI UQ gates remain closed
+clipped_K_or_global_multiplier,False,explicitly prohibited pressure basis shortcuts
+native_output_mutation,False,CFD outputs are read-only provenance
+registry_or_admission_mutation,False,this is a monitor/documentation package only

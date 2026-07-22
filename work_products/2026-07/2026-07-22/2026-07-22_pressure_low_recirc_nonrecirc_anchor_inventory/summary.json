@@ -1,0 +1,30 @@
+{
+  "task_id": "TODO-PRESSURE-LOW-RECIRC-NONRECIRC-ANCHOR-INVENTORY-2026-07-22",
+  "generated_at": "2026-07-22T10:13:53-05:00",
+  "decision": "pressure_anchor_inventory_ready_no_f6_revisit_yet",
+  "candidate_rows_reviewed": 36,
+  "preferred_future_anchor_rows": 6,
+  "candidate_rows_by_bucket": {
+    "blocked_missing_endpoint": 6,
+    "excluded_component_or_junction": 18,
+    "excluded_recirculation": 6,
+    "ordinary_f6_candidate": 6
+  },
+  "sampled_endpoint_rows_reviewed": 8,
+  "sampled_endpoint_ordinary_flow_pass_rows": 0,
+  "sampled_endpoint_ordinary_flow_fail_rows": 8,
+  "f6_fit_ready_rows": 0,
+  "same_qoi_uq_ready_rows": 0,
+  "endpoint_pair_ready_rows": 3,
+  "source_property_label_available_rows": 36,
+  "lower_right_section_effective_rows_preserved": 3,
+  "component_k_admitted_rows": 0,
+  "f6_fit_rows": 0,
+  "f3_f6_shah_numeric_comparison_released": false,
+  "scheduler_action": false,
+  "solver_postprocessing_sampler_harvest_uq_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "candidate_freeze": false
+}

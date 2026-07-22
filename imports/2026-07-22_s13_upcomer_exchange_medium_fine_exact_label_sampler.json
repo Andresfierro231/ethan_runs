@@ -1,0 +1,68 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-EXACT-LABEL-SAMPLER-2026-07-22",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-EXACT-LABEL-SAMPLER-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Submit and monitor the scheduler-authorized S13 medium/fine exact-label sampler for the four S13 QOIs.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-EXACT-LABEL-SAMPLER-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-upcomer-exchange-medium-fine-exact-label-sampler.md",
+    "imports/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler.json",
+    "tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/sampling_command_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract/generation_contract.csv",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/"
+  ],
+  "scheduler": {
+    "submit_host": "login3",
+    "job_id": "3310179",
+    "job_name": "s13_mf_sampler",
+    "last_observed_state": "COMPLETED 0:0 at 2026-07-22T10:40:19; package decision partial_or_failed_sampling_fail_closed",
+    "last_observed_node": "c318-019",
+    "confirmed_process": "python3.11 tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py --execute --job-id 3310179",
+    "stdout": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/logs/slurm-3310179.out",
+    "stderr": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/logs/slurm-3310179.err"
+  },
+  "duplicate_step_cleanup": {
+    "allocation_step": "3307325.2",
+    "action": "killed accidental duplicate local srun wrapper to prevent same-package result clobbering",
+    "intended_batch_job_cancelled": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m pytest tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+      "result": "passed, 4 tests"
+    },
+    {
+      "command": "squeue -j 3310179",
+      "result": "running on c318-019 at last check"
+    },
+    {
+      "command": "sacct -j 3310179 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList",
+      "result": "passed; job 3310179 and batch step COMPLETED with exit code 0:0 on c318-019"
+    },
+    {
+      "command": "python3.11 -m json.tool work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/summary.json",
+      "result": "passed; exact_label_qoi_rows=0, sampling_error_rows=6, decision partial_or_failed_sampling_fail_closed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "solver_or_postprocess_launched": false,
+    "scheduler_job_submitted": true,
+    "production_harvest": false,
+    "mesh_gci_disposition_rerun": false,
+    "coefficient_admission": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "submitted Slurm job 3310179 through login3",
+  "external_fluid_edit": false,
+  "status": "complete_fail_closed"
+}

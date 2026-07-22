@@ -1,0 +1,28 @@
+{
+  "contract_rows": 24,
+  "driver_thermal_compare": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-02_overnight/driver_thermal_compare.json",
+  "generated_utc": "2026-07-08T18:34:07+00:00",
+  "patch_groups": {
+    "ambient_wall": 12,
+    "cooler": 3,
+    "heater": 3,
+    "junction_other": 3,
+    "test_section": 3
+  },
+  "patchwise_heat_ledger": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv",
+  "prior_1d_Tmean_error_K_range": [
+    61.95,
+    66.201
+  ],
+  "replay_gates": {
+    "bakeoff_requires_stage": "replay_04_thermal_iteration_gate",
+    "loop_delta_T_abs_gate_K": 1.0,
+    "mdot_hold_rel_gate": 0.05,
+    "mean_T_abs_gate_K": 2.0
+  },
+  "span_endpoint_temperatures": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-08_span_endpoint_temperatures/span_endpoint_temperatures.csv",
+  "span_residual_rows": 15,
+  "target_rows": 3,
+  "thermal_contract_label": "cfd_salt_1p4in_layer_present_surface_emissivity_bc_metadata_present_no_qr_field",
+  "validation_errors": []
+}

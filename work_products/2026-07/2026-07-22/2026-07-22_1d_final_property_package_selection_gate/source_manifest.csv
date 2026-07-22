@@ -1,0 +1,8 @@
+artifact,source_path,role,mutation_status
+"Source/property release atlas","work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/source_property_release_atlas.csv","release-ready status and source/property families","read_only"
+"CP/viscosity/pressure basis preflight","work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/field_release_contract.csv","required field and blocker evidence","read_only"
+"Nominal train release audit","work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv","nominal row property labels and release decisions","read_only"
+"MF16 exact-field release matrix","work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/exact_field_release_matrix.csv","exact cp/property release blocker evidence","read_only"
+"Regime formula validity table","work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/formula_validity_table.csv","Re/Pr/Gr/Ra/Ri/Gz equation and use status","read_only"
+"Setup UQ sensitivity summary","work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/sensitivity_family_summary.csv","train-only sensitivity context","read_only"
+"This package","work_products/2026-07/2026-07-22/2026-07-22_1d_final_property_package_selection_gate/**","new additive property-package gate","created"

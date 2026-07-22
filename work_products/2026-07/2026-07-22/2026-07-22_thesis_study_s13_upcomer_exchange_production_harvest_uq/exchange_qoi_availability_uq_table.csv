@@ -1,0 +1,5 @@
+qoi_label,current_coarse_case_rows,finite_current_coarse_values,same_qoi_temporal_uq_case_rows,same_qoi_temporal_uq_complete,same_label_medium_fine_missing_rows,same_label_mesh_gci_ready,production_harvest_allowed,scientific_use_now,primary_blocker,value_context
+Q_wall_W,3,3,3,True,6,False,False,diagnostic_current_coarse_temporal_context_only,missing medium/fine same-label mesh-family rows for accepted GCI,23.1161370708; 25.3465488205; 28.1231837021
+mdot_exchange_positive_outward_proxy_kg_s,3,3,3,True,6,False,False,diagnostic_current_coarse_temporal_context_only,missing medium/fine same-label mesh-family rows for accepted GCI,2.68592194714e-05; 4.23665968058e-05; 7.65896288069e-05
+tau_recirc_proxy_s,3,3,3,True,6,False,False,diagnostic_current_coarse_temporal_context_only,missing medium/fine same-label mesh-family rows for accepted GCI,868.807159089; 547.838912867; 301.390653047
+wall_core_bulk_temperature_contrast_K,3,3,3,True,6,False,False,diagnostic_current_coarse_temporal_context_only,missing medium/fine same-label mesh-family rows for accepted GCI,-0.142156641269; -0.154280008347; -0.17053292931

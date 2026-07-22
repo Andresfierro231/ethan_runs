@@ -1,0 +1,19 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-SAMPLER-COMPUTE-EXECUTION-2026-07-21",
+  "generated_at": "2026-07-21T14:06:25-05:00",
+  "case_rows": 3,
+  "primary_ready_rows": 3,
+  "blocking_gap": [
+    "cellVolume"
+  ],
+  "field_gap_rows": 39,
+  "decision_status": "not_submitted_blocked",
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false
+}

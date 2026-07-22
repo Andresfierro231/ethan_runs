@@ -1,0 +1,7 @@
+source_id,path,use,mutation
+raw_endpoint_rows,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv,six sampled endpoint rows,read_only
+pressure_basis_recirc_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/gate_decision_table.csv,current gate state,read_only
+basis_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/basis_field_contract.csv,component isolation formulas and guardrails,read_only
+same_qoi_uq_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/same_qoi_uncertainty_contract.csv,same-QOI UQ acceptance,read_only
+centerline_reference,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv,prior centerline straight-reference evidence,read_only
+roadmap,work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/next_step_queue.csv,planned task ordering,read_only

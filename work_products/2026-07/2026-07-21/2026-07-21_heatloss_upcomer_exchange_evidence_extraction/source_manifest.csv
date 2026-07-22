@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/exchange_cell_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/upcomer_exchange_cell_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/missing_exchange_nu_evidence_queue.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/phase4_decision_gate.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/runtime_internal_nu_audit.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/blocker_delta_next_actions.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/cfd_evidence_requirements.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/required_exchange_qoi_coverage.csv,read_only_input,true,false,false
+tools/extract/sample_upcomer_convection_cell.py,read_only_input,true,false,false

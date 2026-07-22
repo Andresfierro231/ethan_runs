@@ -1,0 +1,35 @@
+{
+  "generated_at": "2026-06-22T09:56:39-05:00",
+  "source_id": "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+  "backend": "paraview_osmesa_5_13",
+  "status": "rendered",
+  "reason": "Rendered with paraview_osmesa_5_13:pvbatch.",
+  "candidate_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/render_inputs/viscosity_screening_salt_test_1_kirst_coarse_mesh/reconstructed_case/viscosity_screening_salt_test_1_kirst_coarse_mesh.foam",
+  "outputs": [
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/figures_rendered/viscosity_screening_salt_test_1_kirst_coarse_mesh/overview.png"
+  ],
+  "bounds": [
+    -0.04493875056505203,
+    0.9324581027030945,
+    -0.31378334760665894,
+    1.1194732189178467,
+    -0.01269999984651804,
+    0.01269999984651804
+  ],
+  "camera_position": [
+    0.4437596760690212,
+    0.40284493565559387,
+    -3.3517343097695056
+  ],
+  "camera_focal_point": [
+    0.4437596760690212,
+    0.40284493565559387,
+    0.0
+  ],
+  "camera_view_up": [
+    0.0,
+    1.0,
+    0.0
+  ],
+  "camera_parallel_scale": 0.8674926734918998
+}

@@ -1,0 +1,11 @@
+input_or_target,role,source_path,split_role,runtime_allowed,reason,status
+CFD_mdot,forbidden_runtime_input,TBD,TBD,no,"Realized CFD flow rate would leak target solution state",not_started
+realized_CFD_wallHeatFlux,forbidden_runtime_input,TBD,TBD,no,"Realized wall heat flux is a postprocessed CFD output",not_started
+imposed_CFD_cooler_duty,forbidden_runtime_input,TBD,TBD,no,"Imposed CFD cooler duty is not available as predictive runtime state",not_started
+realized_test_section_heat,forbidden_runtime_input,TBD,TBD,no,"Realized test-section heat would absorb the target residual",not_started
+validation_temperature,score_only_target,TBD,validation,no,"Validation temperatures score predictions but do not drive runtime",not_started
+holdout_temperature,score_only_target,TBD,holdout,no,"Holdout temperatures are unavailable until frozen scoring",not_started
+external_test_temperature,score_only_target,TBD,external_test,no,"External-test temperatures are unavailable until frozen scoring",not_started
+setup_geometry,allowed_setup_input,TBD,TBD,yes,"Geometry is known before prediction",not_started
+setup_boundary_condition,allowed_setup_input,TBD,TBD,yes,"Setup boundary condition is allowed only when available before prediction",not_started
+literature_or_training_parameter,conditional_runtime_input,TBD,train_or_literature,conditional,"Allowed only when fitted or selected without holdout/external/future leakage",not_started

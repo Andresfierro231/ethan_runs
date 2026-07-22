@@ -1,0 +1,9 @@
+rule_id,rule_name,required_evidence,current_status,pass_fail,forbidden_if_fail
+R01,source_envelope,strict row-specific source envelope and source-use label,strict source-envelope pass rows are zero,fail,No source/property release or candidate freeze.
+R02,property_basis,candidate-specific cp/mu/k property mode and validity interval,cp/mu/k release-ready false,fail,No released Re/Pr/Gz or enthalpy coefficient.
+R03,topology_basis,segment topology labels for ordinary reversal recirculation and exchange,S13/topology labels diagnostic only,fail,No ordinary upcomer Nu/fD/K/F6 admission.
+R04,pressure_basis,static/p_rgh endpoint basis velocity basis and same-QOI pressure UQ,CAND001 endpoint readiness blocked by running job,fail,No F6 or component-K fit.
+R05,thermal_heat_path,heater cooler test-section passive radiation wall storage residual lanes separated,lanes separated but material/source releases incomplete,fail,No residual absorption into internal Nu.
+R06,same_qoi_uq,mesh/time/same-window UQ for the same QOIs used by the candidate,partial diagnostic only,fail,No production harvest or final score.
+R07,split_freeze,train/support-only fit with frozen manifest before protected scoring,no frozen runtime-legal candidate,fail,No validation/holdout/external score.
+R08,runtime_legality,no CFD mdot realized wallHeatFlux imposed cooler duty or validation temperatures as inputs,guardrail defined,pass,Runtime leakage remains forbidden.

@@ -1,0 +1,9 @@
+prediction_source_segment,target_gate_segment,train_rows,transfer_rows,d4_mean_correction_K,m3_transfer_rmse_K,d4_transfer_rmse_K,d4_minus_m3_transfer_rmse_K,m3_transfer_mean_signed_error_K,d4_transfer_mean_signed_error_K,d4_transfer_mae_K,interpretation
+cooled_incline_post_hx,False,1,2,16.7920845769,12.95459661,4.0789788028,-8.87561780716,-12.897672344,3.89441223293,3.89441223293,non_target_or_global_fallback_segment
+cooled_incline_pre_hx,False,1,2,16.7920845769,2.1384694799,18.7241717183,16.5857022384,1.9070726475,18.6991572244,18.6991572244,non_target_or_global_fallback_segment
+heated_incline,True,3,6,11.2569883681,7.53519680825,4.50414418711,-3.03105262114,-7.2493484875,4.00763988058,4.00763988058,warming_correction; transfer_improved; needs_independent_source_evidence
+left_lower_vertical,True,3,6,12.7272805634,11.3318736644,2.7731801507,-8.55869351373,-11.1062414995,1.62103906393,2.44784259831,warming_correction; transfer_improved; needs_independent_source_evidence
+left_upper_vertical,True,2,4,16.1742732272,13.7021686422,2.56097100575,-11.1411976364,-13.6883420112,2.48593121595,2.48593121595,warming_correction; transfer_improved; needs_independent_source_evidence
+right_vertical,True,3,6,30.599847404,30.9731702232,12.2403000669,-18.7328701562,-28.5273152843,2.07253211965,10.5610618644,warming_correction; transfer_improved; needs_independent_source_evidence
+test_section,False,1,2,16.7920845769,12.1273549626,4.71308651114,-7.4142684515,-12.11385211,4.67823246693,4.67823246693,non_target_or_global_fallback_segment
+top_horizontal_exit,False,1,2,16.7920845769,19.858335319,3.12709831318,-16.7312370059,-19.847114251,-3.05502967407,3.05502967407,non_target_or_global_fallback_segment

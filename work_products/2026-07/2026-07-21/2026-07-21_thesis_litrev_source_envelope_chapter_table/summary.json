@@ -1,0 +1,15 @@
+{
+  "task": "TODO-THESIS-LITREV-SOURCE-ENVELOPE-CHAPTER-TABLE-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "chapter_ready_rows": 13,
+  "chapter_placement_rows": 5,
+  "claim_boundary_rows": 5,
+  "thesis_body_edit": false,
+  "external_papers_edit": false,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "fit_or_model_selection": false,
+  "closure_admission": false,
+  "runtime_leakage_relaxed": false
+}

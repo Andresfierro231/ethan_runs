@@ -1,0 +1,6 @@
+audit_id,evidence,status
+train_only_scope,"Only Salt 2, Salt 3, and Salt 4 Fluid config cases are eligible in this execution package.",pass
+runtime_input_lint,Runtime manifest contains no forbidden input marked as used.,pass
+protected_scoring,"No validation, holdout, external-test, or measured-temperature score was computed.",pass
+admission_release,"No source/property release, Qwall release, candidate freeze, coefficient admission, or final score emitted.",pass
+execution_completeness,Budget-skipped rows: 36.,incomplete

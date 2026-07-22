@@ -1,0 +1,9 @@
+source_id,path_or_command,role,read_write_status
+SRC-001,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/summary.json,Phase B exact-file summary,read-only
+SRC-002,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/external_file_manifest.csv,Phase C exact external file list,read-only
+SRC-003,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/unit_test_matrix.csv,required test matrix,read-only
+SRC-004,git -C ../cfd-modeling-tools status --short,external dirty worktree inventory,read-only command
+SRC-005,git -C ../cfd-modeling-tools diff --stat -- named Phase C files,dirty diff size,read-only command
+SRC-006,rg -n external_boundary... named Phase C files,current symbol inventory,read-only command
+SRC-007,squeue -j 3299610,3299620,3307441,current scheduler snapshot,read-only command
+SRC-008,sacct -j 3299610,3299620,3307441,current accounting snapshot,read-only command

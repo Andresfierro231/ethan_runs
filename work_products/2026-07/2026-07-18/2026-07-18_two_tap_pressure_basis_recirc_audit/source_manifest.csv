@@ -1,0 +1,5 @@
+source_id,path,use,mutation
+harvested_raw_endpoint_rows,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv,primary six sampled endpoint rows,read_only
+basis_field_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/basis_field_contract.csv,basis formulas and gate meanings,read_only
+recirculation_metric_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/recirculation_metric_contract.csv,RAF/RMF/SVF ordinary acceptance,read_only
+roadmap_next_steps,work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap/next_step_queue.csv,downstream task ordering,read_only

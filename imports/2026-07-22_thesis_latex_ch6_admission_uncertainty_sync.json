@@ -1,0 +1,49 @@
+{
+  "task": "TODO-THESIS-LATEX-CH6-ADMISSION-UNCERTAINTY-SYNC-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Writer/Reviewer",
+  "objective": "Promote and implement the papers Chapter 6 admission/uncertainty LaTeX sync from existing evidence only.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-LATEX-CH6-ADMISSION-UNCERTAINTY-SYNC-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-latex-ch6-admission-uncertainty-sync.md",
+    "imports/2026-07-22_thesis_latex_ch6_admission_uncertainty_sync.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/promote_papers_ch6_active.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/apply_papers_ch6_latex_sync.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/close_papers_ch6_latex_sync.py"
+  ],
+  "external_changed_files": [
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/status/csem-latex-ch6-admission-uncertainty-sync-2026-07-21.md",
+    "../papers/.agent/journal/2026-07-21/csem-latex-ch6-admission-uncertainty-sync-2026-07-21.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/chapters/06_closure_admission_uncertainty.tex"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "reports/thesis_dossier/Outline.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "../papers/.agent/BOARD.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/chapters/06_closure_admission_uncertainty.tex",
+    "../papers/UTexas_Research/csem-Masters_dissertation/scripts/check_guardrails.sh",
+    "../papers/UTexas_Research/csem-Masters_dissertation/scripts/build_thesis.sh"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_papers_edit": true,
+  "latex_edit": true,
+  "validation_holdout_external_scored": false,
+  "fitting_or_model_selection_performed": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "final_predictive_score_claimed": false,
+  "sam_validation_claimed": false,
+  "runtime_leakage_relaxed": false,
+  "provenance_notes": "External papers edits were limited to the active papers board row, Chapter 6 LaTeX, and papers-side status/journal closeout. Chapter 6 uses existing dossier and completed study evidence only."
+}

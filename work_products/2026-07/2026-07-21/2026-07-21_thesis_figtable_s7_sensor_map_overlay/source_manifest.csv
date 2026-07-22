@@ -1,0 +1,6 @@
+source_id,source_path,role,mutation_status
+S7-SRC-001,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv,read_only_evidence,not_modified
+S7-SRC-002,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/one_d_path_position_map.csv,read_only_evidence,not_modified
+S7-SRC-003,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/bounded_or_excluded_sensor_rationale.csv,read_only_evidence,not_modified
+S7-SRC-004,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/score_only_target_policy.csv,read_only_evidence,not_modified
+S7-SRC-005,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/runtime_leakage_audit.csv,read_only_evidence,not_modified

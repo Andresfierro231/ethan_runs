@@ -1,0 +1,7 @@
+audit,status,evidence,runtime_allowed
+train_support_filter,pass,"selected_rows=8 for case_id=salt_2; split_roles=['support', 'train', 'train_support', 'training_support']",True
+validation_rows_not_consumed,pass,source dictionary has 8 validation rows; Phase E consumed 0,False
+holdout_rows_not_consumed,pass,source dictionary has 8 holdout rows; Phase E consumed 0,False
+external_test_rows_not_consumed,pass,source dictionary has 0 external-test rows; Phase E consumed 0,False
+forbidden_runtime_columns_blank_or_absent,pass,no forbidden runtime field carried a value,True
+post_solve_train_reference_residuals,pass,Salt 2 measured mdot/TP/TW are joined only after solve for train residual attribution; not passed to solve_case,False

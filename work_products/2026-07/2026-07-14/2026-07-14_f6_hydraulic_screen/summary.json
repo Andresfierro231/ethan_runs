@@ -1,0 +1,26 @@
+{
+  "best_existing_candidate": "localized named losses plus reset/development sensitivity",
+  "diagnostic_momentum_rows": 6,
+  "f6_blocker_status": "open",
+  "f6_code_available": true,
+  "f6_decision": "screen_only_keep_blocker_open",
+  "generated_utc": "2026-07-14T16:44:27.151173+00:00",
+  "global_friction_multiplier_exported": false,
+  "h1_decision": "unblocks_forward_v1_diagnostic_scorecard_only",
+  "h1_mean_baseline_mdot_error_kg_s": 0.005477500000000001,
+  "h1_mean_error_reduction_pct": 60.28803801743334,
+  "h1_mean_mdot_error_kg_s": 0.0021441666666666666,
+  "native_solver_outputs_mutated": false,
+  "output_dir": "work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen",
+  "outputs": [
+    "f6_evidence_rows.csv",
+    "f6_hydraulic_scorecard.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "publication_ready_gci_rows": 0,
+  "raw_fit_safe_training_rows": 2,
+  "task_id": "AGENT-318",
+  "thermal_fit_used": false
+}

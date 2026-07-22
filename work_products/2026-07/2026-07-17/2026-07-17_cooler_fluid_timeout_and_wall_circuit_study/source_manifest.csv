@@ -1,0 +1,6 @@
+source_id,path,use
+agent480_plan,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md,cooler and split/legal-input guardrails
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,cooler rerun scorecard and timeout evidence
+agent458_test_section,work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model,prior TS1/TS2 static screen context
+agent461_m3ts,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard,coupled M3+TS admission context
+setup_equivalents,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,"setup hA, active source/sink, passive loss scoring targets"

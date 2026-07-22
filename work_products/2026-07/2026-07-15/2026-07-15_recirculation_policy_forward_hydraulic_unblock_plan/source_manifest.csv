@@ -1,0 +1,12 @@
+source_path,exists,use_in_agent419
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/README.md,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/raw_two_tap_test_section_complex.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/closure_qoi_failed_gate_matrix.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/internal_nu_reopen_status.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/README.md,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/row_admission_ledger.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/internal_nu_pm5_row_readiness.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/final_hydraulic_residual_attribution.csv,yes,read_only_input

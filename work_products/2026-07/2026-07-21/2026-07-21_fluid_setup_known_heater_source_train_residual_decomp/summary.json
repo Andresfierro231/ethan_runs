@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-21",
+  "decision": "source_lane_partial_improvement_model_form_still_needed",
+  "external_fluid_mutation": false,
+  "external_test_rows_consumed": 0,
+  "fit_or_model_selection": false,
+  "freeze_or_admission_decision": false,
+  "holdout_rows_consumed": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "root_status": "accepted",
+  "s11_trigger": false,
+  "s15_trigger": false,
+  "s6_trigger": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "status": "complete",
+  "task_id": "TODO-FLUID-SETUP-KNOWN-HEATER-SOURCE-TRAIN-RESIDUAL-DECOMP-2026-07-21",
+  "validation_rows_consumed": 0,
+  "worker_status": "pass"
+}

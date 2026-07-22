@@ -1,0 +1,9 @@
+path,role,exists
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json,PM5 repaired wall-band/plane final summary,true
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,primary PM5 metrics with wallHeatFlux and Re/Pr/Ri/Gr/Ra,true
+work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/pm5_f6_admission_readiness.csv,prior PM5 admission-readiness review,true
+work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/thermal_internal_nu_admission_review.csv,segment sign/heat-balance/internal-Nu gate evidence,true
+work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/remaining_blocker_execution_sequence.csv,remaining forward-v1 blocker execution sequence,true
+work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv,downstream F6 PM5 row readiness,true
+work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/internal_nu_pm5_row_readiness.csv,downstream internal-Nu h_proxy readiness,true
+work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/hydraulic_admission_final_decisions.csv,final hydraulic residual diagnostic lane verification,true

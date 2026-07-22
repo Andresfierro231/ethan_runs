@@ -1,0 +1,7 @@
+lane,plausibility_class,status,publication_language
+baseline,reference_only,evidence_only,baseline is comparator
+external_boundary,plausible_but_incomplete,fail_closed,negative freeze; missing ambient wall rows
+passive_wall,plausible_needs_source_basis,evidence_only,0 source families released
+test_section_source,partial_local_response,evidence_only,partial improvement and worsening both observed
+junction_stub,unresolved,fail_closed,no independent source/property basis
+empirical_diagnostic,diagnostic_not_physical_closure,evidence_only,fit is not physics admission and transfer was not used for model selection

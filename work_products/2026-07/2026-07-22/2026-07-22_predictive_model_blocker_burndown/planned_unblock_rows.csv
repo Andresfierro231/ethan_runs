@@ -1,0 +1,5 @@
+task_id,priority,purpose,expected_unlock,guardrail
+TODO-PREDICTIVE-SOURCE-PROPERTY-EXACT-FIELD-RECOVERY-SALT14-2026-07-22,HIGH,Recover or fail-close Salt1-4 nominal exact source/property fields,opens train-only coefficient discovery if release-ready rows become nonzero,no fitting protected scoring or release without explicit gate
+TODO-S13-SAME-LABEL-COARSE-GCI-UNLOCK-2026-07-22,HIGH,Produce same-label coarse evidence or strict coarse-equivalence alternative for S13 QOIs,unblocks M5/MF04 Qwall/exchange UQ decision,no proxy substitution no Qwall relabel no admission
+TODO-PASSIVE-H2-EXTBC-SPLIT-CONFLICT-RESOLUTION-2026-07-22,HIGH,Resolve external-BC split conflicts from PASSIVE-H2 corrected radiation smoke,decides whether PASSIVE-H2-CAND001 can enter candidate preflight,no global multiplier no realized wallHeatFlux runtime use
+TODO-PREDICTIVE-TRAIN-ONLY-CANDIDATE-PREFLIGHT-2026-07-22,HIGH,Predeclare one small candidate family after source/property and physics gates,prepares train-only run/freeze without touching protected rows,no candidate freeze or scoring inside preflight

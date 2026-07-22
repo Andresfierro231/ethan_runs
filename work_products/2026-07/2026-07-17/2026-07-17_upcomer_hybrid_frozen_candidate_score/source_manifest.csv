@@ -1,0 +1,7 @@
+source_id,path,exists,use
+hybrid_contract,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/hybrid_model_candidate_contract.csv,true,hybrid candidate lanes
+feature_scorecard,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/recirculation_feature_scorecard.csv,true,current recirculation features
+upcomer_decision,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/upcomer_admission_decision.csv,true,current admission decisions
+onset_matrix,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/upcomer_onset_anchor_matrix.csv,true,anchor matrix design
+required_outputs,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/required_output_contract.csv,true,hybrid input requirements
+coupled_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard/admission_status_scorecard.csv,true,final coupled admission status

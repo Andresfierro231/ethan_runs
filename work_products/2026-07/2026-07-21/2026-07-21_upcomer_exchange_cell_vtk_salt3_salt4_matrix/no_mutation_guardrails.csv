@@ -1,0 +1,5 @@
+guard_id,status,policy
+native_outputs,pass_task_local_stage_only,copy/link into tmp and write VTK under work product only
+scope,salt3_salt4_cell_vtk_only,"no Salt2 rewrite, interface VTK, wall VTK, Q_wall, or sampler harvest"
+admission,blocked,"no fit, score, model selection, exchange-cell admission, Phase 4B/5/S6 trigger"
+residual_lane,pass,no residual absorption into internal Nu

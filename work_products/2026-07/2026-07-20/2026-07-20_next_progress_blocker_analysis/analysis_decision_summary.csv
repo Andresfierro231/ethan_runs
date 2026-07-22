@@ -1,0 +1,2 @@
+decision_id,best_next_move,second_move,third_move,reason,fit_rows_added_now,holdout_rows_scored_now,admitted_rows_now
+next_progress_default,m2_salt1_cooler_hx_resolution,pressure_upcomer_qos_retry_after_submit_window_clears,high_heat_terminal_harvest_after_jobs_exit,M2 has no scheduler dependency and blocks all holdout scoring; pressure/upcomer and two-tap evidence are waiting on scheduler/terminal conditions.,0,0,0

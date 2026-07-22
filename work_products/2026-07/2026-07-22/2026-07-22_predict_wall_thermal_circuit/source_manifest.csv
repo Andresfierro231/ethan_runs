@@ -1,0 +1,6 @@
+source_id,path,use
+material_geometry,work_products/2026-07/2026-07-22/2026-07-22_heat_loss_source_inventory_material_geometry_phases/material_geometry_phase_table.csv,material/geometry readiness by component
+heat_paths,work_products/2026-07/2026-07-22/2026-07-22_heat_loss_source_inventory_material_geometry_phases/source_inventory_by_heat_path.csv,heat-path release policy
+passive_h2,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_corrected_radiation_summary.csv,outer-surface convection/radiation diagnostic magnitudes
+prior_wall_study,work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/summary.json,prior coupled wall-circuit study context
+geometry_reference,reference/geometry_reference.md,segment/test-section geometry naming

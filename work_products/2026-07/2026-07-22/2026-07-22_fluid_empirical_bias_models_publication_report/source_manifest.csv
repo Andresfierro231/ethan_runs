@@ -1,0 +1,11 @@
+source_path,use,mutation
+work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/README.md,prior per-leg affine diagnostic context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/leg_bias_correction_coefficients.csv,per-leg coefficient caveats,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/corrected_train_residual_metrics.csv,train-only upper-bound metrics,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/README.md,reduced-DOF package context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/model_family_dof_ledger.csv,model family definitions and DOF,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv,frozen coefficient values,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv,train and transfer headline metrics,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_runtime_leakage_audit.csv,split and runtime leakage caveats,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_property_gate_todo.csv,source/property blocker caveats,read_only
+work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/README.md,source candidate non-admission context,read_only

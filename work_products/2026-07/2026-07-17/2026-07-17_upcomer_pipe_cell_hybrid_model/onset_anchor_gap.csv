@@ -1,0 +1,4 @@
+gap_id,status,needed,why_needed
+ordinary_transition_anchors,missing,same-window ordinary/transition anchor cases such as Re 150/200/250 with low and rising RAF/RMF,calibrate onset probability and keep recirculation penalty separate from ordinary pipe coefficients
+split_scored_hybrid_penalty,missing,"train/validation/holdout mdot, TP/TW, Tmean, and loop-dT score for a frozen hybrid penalty form",promote the hybrid lane from diagnostic contract to predictive closure
+mesh_time_uncertainty,missing,mesh/time uncertainty on RAF/RMF/SVF and wall-core Delta T,prevent a coarse-only recirculation feature from becoming an overfit closure

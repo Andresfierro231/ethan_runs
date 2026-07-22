@@ -1,0 +1,15 @@
+{
+  "admitted_candidate_rows": 0,
+  "all_sources_present": true,
+  "candidate_class_rows": 7,
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "missing_requirement_rows": 4,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 4,
+  "runtime_audit_rows": 4,
+  "scheduler_action": false,
+  "task": "TODO-TEST-SECTION-PASSIVE-LOSS-ADMISSION-REPAIR"
+}

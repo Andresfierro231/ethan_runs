@@ -1,0 +1,13 @@
+{
+  "task": "TODO-LITREV-FITTING-SOURCE-PAGE-GEOMETRY-RECOVERY",
+  "date": "2026-07-21",
+  "facility_geometry_rows": 10,
+  "source_validity_rows": 5,
+  "feature_blocker_rows": 10,
+  "pressure_basis_rows_consumed": 460,
+  "all_rows_no_coefficient_admission": true,
+  "numeric_coefficient_columns_present": false,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "admission_change": false
+}

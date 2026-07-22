@@ -1,0 +1,4 @@
+job_id,state,name,elapsed,node_or_reason,time_limit,next_action
+3299610,RUNNING,salt4_q3x_probe,4-21:00:27,c318-017,5-00:00:00,monitor soon under AGENT-519; do not harvest from Fluid audit
+3299620,RUNNING,salt4_heat_pack,4-20:45:38,c318-018,5-00:00:00,monitor soon under AGENT-519; do not harvest from Fluid audit
+3307441,RUNNING,saltq_sel36_cont,05:41:39,c318-020,1-12:00:00,monitor under AGENT-519; create separate harvest row only after terminal success

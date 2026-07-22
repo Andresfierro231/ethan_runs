@@ -1,0 +1,8 @@
+scope,case,root_gate_pass,amx1_active_segments,ledger_abs_sum_W,ledger_total_net_W,ledger_max_abs_residual_W,runtime_s
+AMX1,Salt 1,true,46,6.49416285436,-2.77555756156e-16,0.0,
+AMX1,Salt 2,true,46,8.08855833147,5.55111512313e-17,0.0,
+AMX1,Salt 3,true,46,9.62186593715,1.11022302463e-16,0.0,
+AMX1,Salt 4,true,46,11.560622541,-1.11022302463e-16,0.0,
+campaign,total,,,,,,753.931202
+campaign,solve,,,,,,726.891243
+campaign,max_scenario,,,,,,477.721667

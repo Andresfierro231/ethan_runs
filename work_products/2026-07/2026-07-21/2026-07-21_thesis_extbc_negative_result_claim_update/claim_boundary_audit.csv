@@ -1,0 +1,6 @@
+boundary_id,forbidden_claim,status,reason
+BOUND-001,final predictive accuracy,blocked,no frozen candidate and no final score release
+BOUND-002,external-BC thermal admission,blocked,large train residuals and no source/sink runtime release
+BOUND-003,heater/cooler source runtime admission,blocked,setup provenance recovered but API/source-property gates not passed
+BOUND-004,validation_or_holdout_score,blocked,validation/holdout/external rows consumed 0/0/0
+BOUND-005,residual absorption into hidden multiplier,blocked,explicitly forbidden by source/sink and heated-incline audits

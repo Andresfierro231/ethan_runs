@@ -1,0 +1,19 @@
+task_id,role,owner,status,watch_tables,gate_update_reason
+AGENT-325,Implementer / Tester / Writer,codex,RUNNING 2026-07-14T11:42:18-05:00.,T01;T02;T03;T08,watch_for_future_gate_result
+AGENT-324,Implementer / Tester / Writer,codex,RUNNING 2026-07-14T11:42:00-05:00.,T01;T02;T07;T08,watch_for_future_gate_result
+AGENT-323,Coordinator / Implementer / Tester / Writer,codex,COMPLETE 2026-07-14T12:00:00-05:00.,T01;T02;T04;T05;T08,completed_gate_candidate_check_outputs
+AGENT-322,Implementer / Tester / Writer,codex,COMPLETE 2026-07-14T11:42:00-05:00.,T01;T02;T07;T08,completed_gate_candidate_check_outputs
+AGENT-318,Implementer / Tester / Writer,codex,RUNNING 2026-07-14T11:34:01-05:00.,T01;T02;T04;T05;T08,watch_for_future_gate_result
+AGENT-317,Coordinator / Integrator / Writer,codex,RUNNING 2026-07-14T11:45:00-05:00.,T01;T02;T03;T05;T08,watch_for_future_gate_result
+AGENT-318,Implementer / Tester / Writer,codex,RUNNING 2026-07-14T11:45:00-05:00.,T01;T02;T03;T04;T05;T08,watch_for_future_gate_result
+AGENT-319,Implementer / Tester / Writer,codex,COMPLETE 2026-07-14T11:45:00-05:00.,T02;T03;T08,completed_gate_candidate_check_outputs
+AGENT-320,Coordinator / Writer,codex,RUNNING 2026-07-14T11:45:00-05:00.,T02;T06;T08,watch_for_future_gate_result
+AGENT-321,Implementer / Tester / Writer,codex,COMPLETE 2026-07-14T11:45:00-05:00.,T02;T03;T04;T05;T06;T08,completed_gate_candidate_check_outputs
+AGENT-316,Coordinator / Writer,codex,COMPLETE 2026-07-14.,T01;T02;T05;T08,completed_gate_candidate_check_outputs
+AGENT-313,Coordinator / Writer,codex,COMPLETE 2026-07-14T11:16:09-05:00.,T02;T06;T08,completed_gate_candidate_check_outputs
+AGENT-314,Coordinator / Writer,codex,COMPLETE 2026-07-14T11:18:30-05:00.,T01;T02;T04;T05;T08,completed_gate_candidate_check_outputs
+AGENT-315,Implementer / Tester / Writer,codex,COMPLETE 2026-07-14T11:16:00-05:00.,T01;T02;T03;T04;T08,completed_gate_candidate_check_outputs
+AGENT-311,Writer,codex,COMPLETE 2026-07-14T11:16:00-05:00.,T01;T02;T08,completed_gate_candidate_check_outputs
+AGENT-310,Implementer / Tester / Writer,codex,COMPLETE 2026-07-14T11:15:23-05:00.,T01;T02;T03;T04;T05;T08,completed_gate_candidate_check_outputs
+AGENT-309,Coordinator / Implementer / Tester / Writer,codex,COMPLETE 2026-07-14.,T01;T02;T08,completed_gate_candidate_check_outputs
+AGENT-305,Coordinator / Implementer / Tester / Writer,codex,SUBMITTED/RUNNING 2026-07-13.,T01;T02;T08,watch_for_future_gate_result

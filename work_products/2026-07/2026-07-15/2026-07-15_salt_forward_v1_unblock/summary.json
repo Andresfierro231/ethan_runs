@@ -1,0 +1,63 @@
+{
+  "task": "AGENT-402",
+  "generated_at": "2026-07-15T07:52:40-05:00",
+  "native_cfd_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "new_solver_or_postprocessing_jobs_submitted": false,
+  "corrected_q_live_job": {
+    "job_id": "3293924",
+    "state": "RUNNING",
+    "elapsed": "1-14:48:44"
+  },
+  "dependent_harvester": {
+    "job_id": "3295438",
+    "state": "PENDING",
+    "blocker": "Dependency"
+  },
+  "pm5_status": {
+    "batch_jobs_cancelled": ["3295901", "3295968"],
+    "completed_interactive_run": "interactive_3295120_retry2",
+    "parsed_csv_count": 4,
+    "parsed_metric_row_count": 12,
+    "admitted_metric_row_count": 0,
+    "metric_status": "incomplete",
+    "quality_flag": "blocked-missing-field",
+    "next_action": "Fix sampled-field contract before rerun; plane files need U/rho/T and wall files need T plus wallHeatFlux."
+  },
+  "salt_training_use_now": {
+    "thermal_training_rows": 6,
+    "holdout_rows": 2,
+    "training_display_labels": [
+      "salt1_jin_nominal_continuation_corrected",
+      "salt1_jin_lo10q_corrected",
+      "salt1_jin_hi10q_corrected",
+      "salt4_jin",
+      "salt4_jin_lo5q_corrected",
+      "salt4_jin_hi5q_corrected"
+    ],
+    "holdout_display_labels": [
+      "salt2_jin_lo5q_corrected",
+      "salt2_jin_hi5q_corrected"
+    ]
+  },
+  "setup_only_cooler_best_current_candidate": {
+    "model_form": "salt2_fit_constant_UA_bulk_drive",
+    "all_non_salt1_rmse_W": 4.63756559107,
+    "validation_abs_error_W": 2.86910400386,
+    "holdout_abs_error_W": 7.50261861283,
+    "runtime_leakage_class": "candidate_no_realized_cfd_cooler_runtime"
+  },
+  "agent392_thermal_rescue": {
+    "overall_status": "complete",
+    "stage_count": 8,
+    "failed_stage_count": 0,
+    "setup_only_hx_fit_exit_code": 0,
+    "setup_only_hx_tests_exit_code": 0
+  },
+  "sensor_policy": {
+    "runtime_sensor_temperature_allowed": false,
+    "sensor_error_rows_available": 204,
+    "provisional_diagnostic_score_allowed_sensors": 15,
+    "blocked_sensors": ["TP2", "TW10"]
+  }
+}

@@ -1,0 +1,2 @@
+task,blocker_id,decision,why,admitted_candidates,evidence,generated_at
+AGENT-470,predictive-wall-test-section-submodels,keep_open,"No frozen M3+TS candidate passed runtime, held-out heat-loss, and coupled-score gates.",[],work_products/2026-07/2026-07-16/2026-07-16_m3ts_frozen_candidate_coupled_score/m3ts_admission_review.csv,2026-07-16T22:50:03+00:00

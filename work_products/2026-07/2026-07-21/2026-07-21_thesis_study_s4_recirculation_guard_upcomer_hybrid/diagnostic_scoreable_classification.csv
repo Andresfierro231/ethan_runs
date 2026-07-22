@@ -1,0 +1,5 @@
+classification_id,evidence_family,rows_reviewed,scoreable_now,ordinary_closure_allowed,future_model_lane,claim_ready_statement
+S4-CLASS-001,mainline_upcomer_recirculation,3,false,false,throughflow_recirc_exchange_cell_after_missing_fields,Mainline upcomer rows show recirculation diagnostics and disable ordinary one-stream closures.
+S4-CLASS-002,matched_plane_reverse_flow,42,false,false,sampler_gated_exchange_state,"Matched-plane rows are diagnostic field evidence, not coefficient or score rows."
+S4-CLASS-003,ordinary_single_stream_branches,90,false,false,branch_specific_after_all_gates_pass,"No ordinary branch row currently passes source, recirculation, sign/heat, and same-QOI gates together."
+S4-CLASS-004,exchange_cell_variables,11,false,false,admitted_V_recirc_mdot_exchange_tau_recirc_same_QOI_UQ,"Exchange-cell variables are defined, but current values are missing or diagnostic only."

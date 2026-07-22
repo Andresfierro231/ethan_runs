@@ -1,0 +1,6 @@
+source_id,path,exists,use
+setup_candidates,work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv,true,existing setup-only candidate scores
+blocker_decision,work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/blocker_decision.json,true,existing blocker decision
+boundary_scorecard,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/wall_test_section_scorecard.csv,true,API hook and boundary state
+thermal_slots,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/thermal_model_slot_admission.csv,true,segment thermal test-section slots
+coupled_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard/prerequisite_gate_matrix.csv,true,final coupled prerequisite state

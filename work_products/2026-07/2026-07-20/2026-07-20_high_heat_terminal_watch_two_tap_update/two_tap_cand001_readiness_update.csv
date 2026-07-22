@@ -1,0 +1,2 @@
+candidate_id,source_family,readiness_status,launch_allowed_now,component_k_status,next_action
+CAND-001,Salt4 high-heat/no-recirculation probes,terminal_gated_running,false,blocked_current_rows_diagnostic_only,continue monitoring high-heat jobs

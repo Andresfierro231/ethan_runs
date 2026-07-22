@@ -1,0 +1,8 @@
+model_family,form,dof,fit_rows,transfer_rows,train_support_mae_K,transfer_baseline_mae_K,transfer_corrected_mae_K,publication_role
+F0_null_baseline,T_c = T_1D,0,0,32,88.74990007346516,106.12166567949048,106.12166567949048,baseline_only
+F1_global_offset,T_c = T_1D + b,1,32,32,12.349545324105238,106.12166567949048,19.06139771204093,lowest_dof_discrepancy_model
+F2_global_affine,T_c = a*T_1D + b,2,32,32,8.501469998140214,106.12166567949048,13.873168817512036,recommended_publication_diagnostic_model
+F3_sensor_kind_offset,T_c = T_1D + b_sensor_kind,2,32,32,12.370866938190717,106.12166567949048,19.14668416838287,bulk_wall_bias_screen
+F4_thermal_family_offset,T_c = T_1D + b_thermal_family,3,32,32,11.562922509695655,106.12166567949048,17.5142732526239,heat_path_bias_screen
+F5_thermal_family_offset_shared_multiplier,T_c = a*T_1D + b_thermal_family,4,32,32,9.014439851283136,106.12166567949048,13.324482852092467,upper_reduced_dof_diagnostic_bound
+

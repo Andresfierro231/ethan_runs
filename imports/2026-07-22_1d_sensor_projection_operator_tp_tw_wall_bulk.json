@@ -1,0 +1,51 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-SENSOR-PROJECTION-OPERATOR-TP-TW-WALL-BULK-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-sensor-projection-operator-tp-tw-wall-bulk.md",
+    "imports/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk.json",
+    "tools/analyze/build_1d_sensor_projection_operator_tp_tw_wall_bulk.py",
+    "tools/analyze/test_1d_sensor_projection_operator_tp_tw_wall_bulk.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/sensor_projection_operator_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/runtime_legality_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/writer_ready_projection_equations.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/bulk_to_tp_release_status.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/figures/svg/1d_sensor_projection_operator_map.svg"
+  ],
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T14:29:10Z",
+  "mutation_flags": {
+    "S11_S12_S13_S15_S6_trigger": false,
+    "admission": false,
+    "coefficient_admission": false,
+    "final_score": false,
+    "residual_absorbed_into_internal_nu": false,
+    "runtime_temperature_release": false,
+    "scheduler_or_sampler_launched": false,
+    "source_property_release": false,
+    "validation_holdout_external_scoring": false
+  },
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files",
+    "thesis current/LaTeX files"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "task": "TODO-1D-SENSOR-PROJECTION-OPERATOR-TP-TW-WALL-BULK-2026-07-22"
+}

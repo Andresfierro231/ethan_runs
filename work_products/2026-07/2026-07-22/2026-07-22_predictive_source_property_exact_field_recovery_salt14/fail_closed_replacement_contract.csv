@@ -1,0 +1,2 @@
+replacement_contract_id,condition,training_status,allowed_next_use,forbidden_next_use,required_evidence
+RPL-SOURCE-PROP-001,release_ready rows remain zero,diagnostic_train_context_only,predeclare candidate equations and run sensitivity only after row-specific strict source envelope and property sensitivity pass,"no fitting, protected scoring, coefficient admission, source/property release, candidate freeze, or final score",row-specific setup q/source terms; cp/mu/k property mode; source envelope strict pass; wall/profile conservation; provenance labels

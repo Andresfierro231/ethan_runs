@@ -1,0 +1,25 @@
+{
+  "task_id": "AGENT-283",
+  "generated_at": "2026-07-13T14:10:39-05:00",
+  "input": "work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/final_window_metrics.csv",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review",
+  "target_cases": [
+    "salt1_nominal",
+    "salt1_lo10q",
+    "salt1_hi10q"
+  ],
+  "excluded_cases": {
+    "salt4_hi10q": "not steady in AGENT-280; continued in packed job 3293441"
+  },
+  "thresholds": {
+    "max_mdot_relative_drift": 5e-06,
+    "max_total_Q_abs_drift_W": 1e-09,
+    "max_temperature_abs_drift_K": 1e-09
+  },
+  "decision_counts": {
+    "excluded_not_steady_or_live": 1,
+    "terminal_harvest_complete_context_only": 3
+  },
+  "terminal_harvest_complete_context_only_count": 3,
+  "native_solver_outputs_mutated": false
+}

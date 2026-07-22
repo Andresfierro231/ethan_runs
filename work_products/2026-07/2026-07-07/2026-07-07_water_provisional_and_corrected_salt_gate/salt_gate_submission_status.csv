@@ -1,0 +1,6 @@
+job_id,job_name,state,relationship,notes
+3275448,corr_saltq_g1,RUNNING,parent_live_corrected_salt,"Still running at 2026-07-07 morning check; replacement gate depends on afterany."
+3275449,corr_saltq_g2,RUNNING,parent_live_corrected_salt,"Still running at 2026-07-07 morning check; replacement gate depends on afterany."
+3275560,corr_saltq_salt4_all,RUNNING,parent_live_corrected_salt,"Still running at 2026-07-07 morning check; replacement gate depends on afterany."
+3278453,saltq_gate_after,CANCELLED,old_gate_job,"July 6 dependency-gated job was canceled before producing outputs."
+3279646,saltq_gate_0707,PENDING,new_gate_job,"Submitted 2026-07-07 via login3 with dependency afterany:3275448:3275449:3275560."

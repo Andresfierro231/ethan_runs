@@ -1,0 +1,23 @@
+{
+  "task": "TODO-THESIS-STUDY-UPCOMER-ONSET-ANCHOR-DESIGN-AND-RECIRC-FRACTION-UQ-2026-07-22",
+  "generated_at": "2026-07-22T12:30:00-05:00",
+  "decision": "diagnostic_onset_evidence_ready_closed_fraction_and_admission_fail_closed",
+  "case_rows": 3,
+  "reverse_candidate_fraction_range": [0.157702688614, 0.162167108784],
+  "largest_component_fraction_of_right_leg_roi_range": [0.0831431649426, 0.0860171209471],
+  "max_downward_velocity_visual_bound_m_s": 0.0770250484347,
+  "s13_exchange_tau_proxy_rows": 3,
+  "tau_recirc_proxy_s_range": [301.390653047, 868.807159089],
+  "temporal_uq_executed_qoi_labels": 4,
+  "accepted_same_label_mesh_gci_qois": 0,
+  "closed_recirc_fraction_claim_allowed": false,
+  "same_cv_Ri_available": false,
+  "production_harvest_allowed": false,
+  "coefficient_admission_allowed": false,
+  "ordinary_upcomer_closure_allowed": false,
+  "scheduler_action": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "active_s13_sampler_mutated": false
+}

@@ -1,0 +1,6 @@
+failure_mode,detect_by,action
+preflight_failed,runtime_preflight overall_ok false,inspect patch audit; repair staging logic; no automatic resubmit
+solver_crash,FOAM FATAL or Slurm nonzero exit,record failed phase and first fatal stack; decide repair separately
+running_too_long,running without retained-window movement,monitor latest Time and window drift; do not cancel without explicit decision
+drifting_terminal_window,terminal but mdot/heat/T windows drift,classify diagnostic only; continue or rerun only after admission review
+terminal_success,scheduler completed and logs have final written times,claim extraction task and harvest required QoIs

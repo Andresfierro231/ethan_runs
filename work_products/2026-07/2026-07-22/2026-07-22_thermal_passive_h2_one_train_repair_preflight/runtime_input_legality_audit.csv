@@ -1,0 +1,10 @@
+audit_item,count,evidence,runtime_use_this_row,status
+allowed_setup_inputs,9,Setup-UQ runtime manifest marks setup families runtime legal for train-only use.,dry_contract_only,pass
+forbidden_runtime_fields,9,Forbidden runtime fields remain locked and are not converted into inputs.,not_allowed,pass
+hA_area_Ta_Tsur_emissivity_layers,,source-backed basis table has 5/5 source families release-ready,allowed_for_separate_train_only_repair_preflight,source_backed_setup_basis
+q_loss_operator,,q_loss_operator_contract rows 5,allowed_as_future runtime operator using setup basis and runtime state,operator_only
+realized_wallHeatFlux,,forbidden runtime audit rows 7 and Qwall release rows 0,not_allowed,forbidden_runtime_input
+validation_temperatures,,validation/holdout/external scoring rows 0,not_allowed,forbidden_runtime_input
+global_multiplier,,preflight says global_fitted_multiplier_allowed False,not_allowed,forbidden_hidden_fit
+internal_Nu_residual_absorption,,TW-after-TP package and PASSIVE-H2 preflight both forbid residual absorption,not_allowed,forbidden_closure_shortcut
+protected_split_rows,,source-property atlas protected rows released 0,score_only_after_freeze,protected

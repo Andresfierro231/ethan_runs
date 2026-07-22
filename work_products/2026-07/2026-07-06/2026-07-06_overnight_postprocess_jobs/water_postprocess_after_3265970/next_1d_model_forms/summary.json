@@ -1,0 +1,173 @@
+{
+  "generated_at": "2026-07-06T19:26:38-05:00",
+  "inputs": {
+    "closure_table": "work_products/2026-07-06_overnight_postprocess_jobs/water_postprocess_after_3265970/consolidated_closure_table/consolidated_closure_table.csv",
+    "prior_perleg": "work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv",
+    "prior_ladder": "work_products/2026-07-04_incremental_model_form_comparison/incremental_model_form_ladder.csv"
+  },
+  "scores": [
+    {
+      "model_form": "default(mult=1)",
+      "source": "work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv",
+      "case_count": 3,
+      "mean_abs_mdot_error_pct": 34.65901189539949,
+      "rmse_mdot_error_pct": 34.90517188523105,
+      "status": "evaluated_prior",
+      "interpretation": "Prior Claude trial score; useful comparison but not a new external Fluid run."
+    },
+    {
+      "model_form": "global_mean_mult",
+      "source": "work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv",
+      "case_count": 3,
+      "mean_abs_mdot_error_pct": 3.6615262993505056,
+      "rmse_mdot_error_pct": 3.7219358403392,
+      "status": "evaluated_prior",
+      "interpretation": "Prior Claude trial score; useful comparison but not a new external Fluid run."
+    },
+    {
+      "model_form": "per_leg_friction",
+      "source": "work_products/2026-07-01_claude_1d_predictivity_trial/perleg_vs_global_mdot.csv",
+      "case_count": 3,
+      "mean_abs_mdot_error_pct": 9.940746345217375,
+      "rmse_mdot_error_pct": 9.943333879372656,
+      "status": "evaluated_prior",
+      "interpretation": "Prior Claude trial score; useful comparison but not a new external Fluid run."
+    }
+  ],
+  "re_screen": [
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "left_lower_leg",
+      "pressure_method": "section_mean_static_gradient",
+      "point_count": 3,
+      "fit_status": "screen_only_needs_more_true_steady_cfd",
+      "a_prefactor": 21.0118909003391,
+      "b_exponent": -0.578255092461863,
+      "r2_log_space": 0.9882695030308707,
+      "re_min": 71.12521667906103,
+      "re_max": 134.88326391686644
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "left_lower_leg",
+      "pressure_method": "section_mean_total_pressure_gradient",
+      "point_count": 3,
+      "fit_status": "screen_only_needs_more_true_steady_cfd",
+      "a_prefactor": 19.932957854033997,
+      "b_exponent": -0.5644553659304715,
+      "r2_log_space": 0.987457459300244,
+      "re_min": 71.12521667906103,
+      "re_max": 134.88326391686644
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "left_upper_leg",
+      "pressure_method": "section_mean_static_gradient",
+      "point_count": 3,
+      "fit_status": "screen_only_needs_more_true_steady_cfd",
+      "a_prefactor": 169.0784369293458,
+      "b_exponent": -1.0419105018217893,
+      "r2_log_space": 0.9901985168968727,
+      "re_min": 66.64763746835195,
+      "re_max": 119.83306251141927
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "left_upper_leg",
+      "pressure_method": "section_mean_total_pressure_gradient",
+      "point_count": 3,
+      "fit_status": "screen_only_needs_more_true_steady_cfd",
+      "a_prefactor": 167.55963690280097,
+      "b_exponent": -1.0393962009785251,
+      "r2_log_space": 0.9901142751674092,
+      "re_min": 66.64763746835195,
+      "re_max": 119.83306251141927
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "lower_leg",
+      "pressure_method": "section_mean_static_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "lower_leg",
+      "pressure_method": "section_mean_total_pressure_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "right_leg",
+      "pressure_method": "section_mean_static_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "right_leg",
+      "pressure_method": "section_mean_total_pressure_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "test_section_span",
+      "pressure_method": "section_mean_static_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "test_section_span",
+      "pressure_method": "section_mean_total_pressure_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "upper_leg",
+      "pressure_method": "section_mean_static_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    },
+    {
+      "model_form": "per_leg_f_of_Re_power_law",
+      "span": "upper_leg",
+      "pressure_method": "section_mean_total_pressure_gradient",
+      "point_count": 0,
+      "fit_status": "insufficient_true_steady_points"
+    }
+  ],
+  "backlog": [
+    {
+      "candidate_id": "N1",
+      "model_form": "per_leg_friction_multiplier",
+      "job_action": "evaluate_from_existing_prior_perleg_trial",
+      "ready_state": "ready_now_from_existing_salt_nominal",
+      "blocker": "needs integration into canonical model-form runner before becoming the default fit."
+    },
+    {
+      "candidate_id": "N2",
+      "model_form": "per_leg_f_of_Re_power_law",
+      "job_action": "screen_loglog_f_vs_Re_by_span",
+      "ready_state": "screen_only",
+      "blocker": "Only 4 span/method groups have enough positive Salt nominal points; false-steady perturbations excluded."
+    },
+    {
+      "candidate_id": "N3",
+      "model_form": "thermal_UA_prime_term",
+      "job_action": "stage_for_next_external_or_local_rom_fit",
+      "ready_state": "partial_ready",
+      "blocker": "Salt nominal UA'/HTC exists; Water and uncertainty treatment still pending."
+    },
+    {
+      "candidate_id": "N4",
+      "model_form": "water_family_validation_axis",
+      "job_action": "wait_for_dependent_water_postprocess",
+      "ready_state": "blocked_on_3265970",
+      "blocker": "Water continuation job must exit and be frozen before admission."
+    }
+  ]
+}

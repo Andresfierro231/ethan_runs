@@ -1,0 +1,9 @@
+owner_family,allowed_evidence,not_allowed_evidence,promotion_requirement,current_status
+heater_source_residual,setup Q provenance; train-only decomposition; imposed-realized diagnostic gap,validation temperature fit; realized heater wallHeatFlux as runtime input,source/property release plus same-QOI UQ,not_released
+cooler_residual,setup HX/UA/effectiveness model and post-score cooler comparison,imposed CFD cooler duty as boundary input,setup-only BC UQ,guarded_setup_model_only
+passive_wall_residual,external BC setup fields; passive wall sensitivity; wall/ambient geometry,global hA multiplier selected by protected score,source-bounded physical field completion and UQ,diagnostic_strong_not_released
+test_section_source_or_loss_residual,setup test-section Q; quartz/layer geometry; train-only response,realized test-section heat as runtime input,narrow source-basis row and same-QOI UQ,partial_response_not_released
+junction_stub_residual,bracketed junction control-volume ledger,unbracketed residual assigned to another closure,junction surfaces and source/sink inventory,blocked_unbracketed
+storage_residual,same-time wall/fluid energy and time derivative audit,steady score tuning,transient/storage model row,future_lane_only
+recirculation_or_mixing_residual,same-label exchange/source field with mesh/time UQ,single-stream Nu/f_D/K fit under recirculation,ordinary/onset source family or accepted S13 same-QOI UQ,diagnostic_only
+unknown_residual,explicit residual after all terms are evaluated,runtime residual closure or hidden multiplier,new physically bounded owner evidence,output_only

@@ -1,0 +1,7 @@
+boundary_id,claim_boundary,status,reason
+BOUND-001,no_final_predictive_accuracy,pass,no frozen candidate or final score was produced
+BOUND-002,no_validation_holdout_external_scoring,pass,Phase E/F/G/I/H evidence is train/support diagnostic only
+BOUND-003,no_global_passive_hA_fit,pass,Phase H/H2 response is physical-basis evidence not a fitted multiplier
+BOUND-004,no_source_sink_runtime_admission,pass,Phase I admits 0 source/sink runtime rows
+BOUND-005,no_internal_Nu_residual_absorption,pass,residual ownership remains external heat-path/source/redistribution evidence
+BOUND-006,no_runtime_leakage_relaxation,pass,forbidden realized CFD response fields remain score/diagnostic only

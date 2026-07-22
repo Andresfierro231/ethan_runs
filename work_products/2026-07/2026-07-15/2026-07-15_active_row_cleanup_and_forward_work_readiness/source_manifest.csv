@@ -1,0 +1,3 @@
+source_path,exists,use
+.agent/BOARD.md,true,active row parsing
+.agent/BLOCKERS.md,true,blocker context

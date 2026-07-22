@@ -1,0 +1,34 @@
+branch_id,missing_gate,priority,action
+heater_lower_leg,geometry_length_normalization,medium,publish centerline length/tap-distance normalization for this branch
+heater_lower_leg,straight_loss_subtraction,medium,separate distributed straight loss before local coefficient fitting
+heater_lower_leg,component_isolation,medium,bracket component pressure drop independently of neighboring spans
+heater_lower_leg,recirculation_mask,medium,prove low-recirculation validity or route to hybrid/named-loss lane
+heater_lower_leg,mesh_gci,medium,provide same-QOI mesh/GCI or uncertainty basis
+cooler_upper_leg,geometry_length_normalization,medium,publish centerline length/tap-distance normalization for this branch
+cooler_upper_leg,straight_loss_subtraction,medium,separate distributed straight loss before local coefficient fitting
+cooler_upper_leg,component_isolation,medium,bracket component pressure drop independently of neighboring spans
+cooler_upper_leg,recirculation_mask,medium,prove low-recirculation validity or route to hybrid/named-loss lane
+cooler_upper_leg,mesh_gci,medium,provide same-QOI mesh/GCI or uncertainty basis
+downcomer_right_leg,geometry_length_normalization,medium,publish centerline length/tap-distance normalization for this branch
+downcomer_right_leg,straight_loss_subtraction,medium,separate distributed straight loss before local coefficient fitting
+downcomer_right_leg,component_isolation,medium,bracket component pressure drop independently of neighboring spans
+downcomer_right_leg,recirculation_mask,medium,prove low-recirculation validity or route to hybrid/named-loss lane
+downcomer_right_leg,mesh_gci,medium,provide same-QOI mesh/GCI or uncertainty basis
+lower_upper_legs,geometry_length_normalization,high,publish centerline length/tap-distance normalization for this branch
+lower_upper_legs,straight_loss_subtraction,high,separate distributed straight loss before local coefficient fitting
+lower_upper_legs,component_isolation,high,bracket component pressure drop independently of neighboring spans
+lower_upper_legs,recirculation_mask,high,prove low-recirculation validity or route to hybrid/named-loss lane
+lower_upper_legs,mesh_gci,high,provide same-QOI mesh/GCI or uncertainty basis
+test_section_span,geometry_length_normalization,medium,publish centerline length/tap-distance normalization for this branch
+test_section_span,straight_loss_subtraction,medium,separate distributed straight loss before local coefficient fitting
+test_section_span,component_isolation,medium,bracket component pressure drop independently of neighboring spans
+test_section_span,recirculation_mask,medium,prove low-recirculation validity or route to hybrid/named-loss lane
+test_section_span,mesh_gci,medium,provide same-QOI mesh/GCI or uncertainty basis
+upcomer_left_vertical,geometry_length_normalization,medium,publish centerline length/tap-distance normalization for this branch
+upcomer_left_vertical,straight_loss_subtraction,medium,separate distributed straight loss before local coefficient fitting
+upcomer_left_vertical,component_isolation,medium,bracket component pressure drop independently of neighboring spans
+upcomer_left_vertical,recirculation_mask,medium,prove low-recirculation validity or route to hybrid/named-loss lane
+upcomer_left_vertical,mesh_gci,medium,provide same-QOI mesh/GCI or uncertainty basis
+junction_stub_connector,pressure_definition,medium,admit raw/static/p_rgh pressure definition for coefficient use
+junction_stub_connector,component_isolation,medium,bracket component pressure drop independently of neighboring spans
+junction_stub_connector,mesh_gci,medium,provide same-QOI mesh/GCI or uncertainty basis

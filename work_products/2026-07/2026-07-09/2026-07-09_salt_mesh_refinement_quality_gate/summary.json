@@ -1,0 +1,34 @@
+{
+  "catalog_count": 24,
+  "closure_observations_updated": false,
+  "endpoint_summary_count": 48,
+  "gate_verdict_counts": {
+    "admitted_for_gci_input": 2,
+    "historical_kirst_only": 12,
+    "inventory_only": 6,
+    "partial_needs_coarse_reconciliation": 2,
+    "partial_needs_continuation": 2
+  },
+  "gci_candidate_count": 10,
+  "gci_triplet_status_counts": {
+    "partial_needs_coarse_reconciliation": 5,
+    "partial_needs_continuation_or_gate": 5
+  },
+  "generated_at": "2026-07-09T09:24:45-05:00",
+  "generated_files": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_case_catalog.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_quality_gate.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/endpoint_postprocessing_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/gci_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/closure_observation_update_recommendations.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/summary.json"
+  ],
+  "input_inventory": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_discovery/mesh_case_inventory.csv",
+  "output_dir": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate",
+  "quality_gate_count": 24,
+  "registry_updated": false,
+  "source_tree_read_only": true,
+  "staging_updated": false,
+  "task_id": "AGENT-228"
+}

@@ -1,0 +1,5 @@
+gate,status,pass,reason
+train_only_bakeoff_execution,blocked,false,0 smoke-ready variants
+candidate_for_source_property_audit,not_ready,false,source-property preflight has 0 release-ready rows
+diagnostic_only,selected,true,existing evidence supports only a dry matrix
+reject_model_family,not_selected,false,development/exchange lanes remain plausible but under-specified

@@ -1,0 +1,16 @@
+required_output,source_type,method,why_required,required_before_scientific_admission
+U,native field,sample upcomer inlet/mid/outlet planes plus centerline spans,"velocity vector, throughflow, reverse mask, secondary velocity",yes
+T,native field,same matched planes plus wall-band/core samples,bulk/core temperature and wall-core Delta T,yes
+wallHeatFlux,native wall field/function output,patch-integrated and wall-band extraction,source/sink ledger and heat-balance gate,yes
+Re,derived,rho*U_bulk*D_h/mu(T_bulk),throughflow coordinate,yes
+Pr,derived,mu(T_bulk)*Cp(T_bulk)/k(T_bulk),property coordinate,yes
+Ri,derived,Gr/Re^2 with documented characteristic length,mixed-convection coordinate,yes
+Gr,derived,g*beta*DeltaT*L^3/nu^2,buoyancy coordinate,yes
+Ra,derived,Gr*Pr,thermal-buoyancy coordinate,yes
+Gz,derived,Re*Pr*D_h/x_from_reset,development coordinate,yes
+wall_core_deltaT,derived,T_wall_band - T_core on each plane,cell-driving thermal contrast,yes
+reverse_area_fraction,derived from U dot n,area fraction with local reverse axial velocity,recirculation classifier,yes
+reverse_mass_fraction,derived from rho U dot n,reverse mass flux / total absolute mass flux,material backflow classifier,yes
+secondary_velocity_fraction,derived from U,transverse speed / axial speed on plane,recirculation strength proxy,yes
+steady_window_status,time-window analysis,"last retained mdot, heat residual, T, wall-T windows",admission gate,yes
+mesh_time_uncertainty,uncertainty plan,time-window UQ now; mesh/GCI after endpoint selection,coefficient-fit guardrail,yes

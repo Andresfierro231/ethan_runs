@@ -1,0 +1,9 @@
+source_path,role,mutation_status,notes
+.agent/BOARD.md,task_scope,read_only_except_own_row,Task row claimed and closed.
+reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,changed_output,mutated,Polished Ch. 6 prose and table insertion callouts.
+reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,changed_output,mutated,Polished Ch. 7 prose and table insertion callouts.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/README.md,source_evidence,read_only,S6 blocked scorecard shell.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/README.md,source_evidence,read_only,S7 sensor overlay and runtime caveat tables.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md,source_evidence,read_only,S8 negative candidate review.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/README.md,source_evidence,read_only,S10 pressure/F6 non-admission figure/table package.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/README.md,source_evidence,read_only,Cross-chapter visual routing ledger.

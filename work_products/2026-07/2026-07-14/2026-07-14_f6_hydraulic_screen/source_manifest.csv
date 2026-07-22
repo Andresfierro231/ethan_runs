@@ -1,0 +1,5 @@
+source_id,path,role
+hydraulic_fit_safety_gate,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/hydraulic_fit_safety_gate.csv,fit-safe and diagnostic hydraulic evidence boundaries
+candidate_rankings,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/candidate_rankings.csv,H1/H2/H3/H4 candidate separation and global multiplier rejection
+h1_hydraulic_scorecard,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/h1_hydraulic_scorecard.csv,hydraulic-only mdot movement without thermal fitting
+fluid_friction_closures,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py,checks whether F6_phi_re implementation exists

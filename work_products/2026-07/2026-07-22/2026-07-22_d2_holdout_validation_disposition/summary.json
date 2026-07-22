@@ -1,0 +1,20 @@
+{
+  "task": "TODO-D2-HOLDOUT-VALIDATION-DISPOSITION-2026-07-22",
+  "generated_at": "2026-07-22T12:45:00-05:00",
+  "decision": "d2_promising_diagnostic_transfer_not_holdout_or_validation_tested",
+  "m3_transfer_rmse_K": 17.3645293096,
+  "d2_transfer_rmse_K": 10.5253939442,
+  "rmse_reduction_pct": 39.3856651307,
+  "d2_transfer_tp_rmse_K": 4.38159298515,
+  "d2_transfer_tw_rmse_K": 12.5130610954,
+  "validation_scored": false,
+  "holdout_scored": false,
+  "external_test_scored": false,
+  "runtime_use_allowed": false,
+  "admission_allowed": false,
+  "source_property_release": false,
+  "scheduler_action": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "residual_absorbed_into_internal_Nu": false
+}

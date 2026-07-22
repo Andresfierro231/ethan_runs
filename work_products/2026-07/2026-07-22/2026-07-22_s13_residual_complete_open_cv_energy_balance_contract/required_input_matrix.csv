@@ -1,0 +1,7 @@
+input_label,unit,formula_or_definition,current_status,release_ready,next_required_action
+Q_source_side_net_static_bc_W,W,source-side heat-flow QOI kept distinct from Q_wall_W,diagnostic_equivalence_exists_release_not_admitted,false,same-window source/property release review
+Q_wall_W,W,wall heat-flow integral on trusted wall/core band,no_release,false,same-label mesh/GCI or admitted equivalence plus source/property release
+H_throughflow_net_W,W,mdot_throughflow_kg_s * cp_J_kg_K * (T_out_bulk_K - T_in_bulk_K),missing_same_basis_endpoint_harvest,false,derive endpoint masks and harvest mdot/T_bulk on the same window
+cp_J_kg_K,J/kg/K,row-specific cp basis used in throughflow and exchange enthalpy terms,required for enthalpy/source balance,false,row-specific source/property provenance and split-permission release
+Q_storage_W,W,time-window storage term for the open CV,missing_not_zero,false,prove negligible storage by drift/UQ or keep explicit missing lane
+Q_other_named_losses_W,W,all named non-wall source/sink/loss owner lanes in the open CV,missing_owner_manifest,false,inventory named loss/source lanes; do not hide residual in internal Nu

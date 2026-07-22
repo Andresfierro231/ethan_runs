@@ -1,0 +1,5 @@
+leg_class,n_points,c_fitted,R2,RMSE_phi,phi_mean,c_active,fit_quality,note
+heater,3,1.473233,-74.5727,0.1612,1.8135,0.0,poor_set_to_mean,R2<0; Ri trend not monotone across 3 pts; phi nearly constant (range 1.79-1.84); forced-intercept OLS worse than mean model
+cooler,3,0.607650,-27.5042,0.1016,1.5352,0.0,poor_set_to_mean,R2<0; phi weakly decreasing with Ri (opposite to fit direction); forced-intercept OLS worse than mean model
+downcomer,3,0.721452,-4.2989,0.4958,1.8112,0.0,poor_set_to_mean,R2<0; large phi spread (1.54-2.07) across 3 pts; some Ri trend but noisy; forced-intercept OLS worse than mean model
+upcomer,0,0.0,NA,NA,NA,0.0,excluded,Upcomer excluded: recirculation cell invalidates single-stream entry assumption (AGENT-191 finding)

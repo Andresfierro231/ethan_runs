@@ -1,0 +1,5 @@
+sequence,task,objective,entry_condition,forbidden_action
+1,cell_volume_export,add a trusted same-cell VTK cellVolume source or tested mesh-volume parser,dry exchange-cell schema and current readiness package are open,do not infer V_recirc from planar reverse fractions
+2,scheduler_authorized_sampler_launch,stage scratch cases and generate cell/interface/wall VTK rows for the three queued windows,cellVolume export exists and scripts are updated to call the real sampler,do not run OpenFOAM or sampling on the login node
+3,exchange_residual_harvest,"assemble R_mu, R_rho, V_recirc, mdot_exchange, T_recirc, pressure residual, and energy residual rows",VTK outputs exist or terminal source-field failures are recorded,do not fit coefficients or admit ordinary upcomer closures
+4,same_qoi_uq_then_claim_review,pair exchange-cell QOIs with same-window/time/mesh uncertainty before any scoring claim,sample rows exist and QOI formulas are frozen,do not trigger Phase 4B/5/S6 scorecard updates without UQ status

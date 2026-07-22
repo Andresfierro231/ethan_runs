@@ -1,0 +1,5 @@
+claim_type,claim,source
+allowed,release-ready source/property rows remain zero across current lanes,work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/summary.json
+allowed,"the minimum next gates are row-specific source envelopes, exact property release, same-mask energy residuals, and candidate-specific review",work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/release_unblock_matrix.csv
+forbidden,"source/property release, candidate freeze, protected scoring, or final score",work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/no_mutation_guardrails.csv
+forbidden,"validation, holdout, or external rows used for fitting",work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/protected_runtime_legality_table.csv

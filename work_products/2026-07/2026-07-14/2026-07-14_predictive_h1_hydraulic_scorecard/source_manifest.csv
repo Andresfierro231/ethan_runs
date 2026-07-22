@@ -1,0 +1,10 @@
+source_key,path,used_for,mutation_status
+h1_proxy_results,work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/h1_proxy_results.csv,H1 proxy mdot rows,read_only
+h1_proxy_summary,work_products/2026-07/2026-07-13/2026-07-13_predictive_h1_proxy_rerun/summary.json,H1 proxy guardrails,read_only
+hydraulic_gate_residuals,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/forward_v0_hydraulic_residuals.csv,baseline fast_scan mdot rows,read_only
+hydraulic_fit_safety_gate,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/hydraulic_fit_safety_gate.csv,fit-safe friction and pressure guardrails,read_only
+validation_split,work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv,train validation holdout boundary,read_only
+named_pressure_loss_table,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv,named loss classes and K source,read_only
+reset_distance_map,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,reset and development diagnostics,read_only
+candidate_rankings,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/candidate_rankings.csv,H1 candidate rationale,read_only
+solve_case_confirmation,work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json,forward-v0 solve_case boundary context,read_only

@@ -1,0 +1,20 @@
+{
+  "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+  "case_id": "salt_test_4_jin",
+  "matched_test_id": "salt_test_4",
+  "case_variant_label": "jin",
+  "ethan_two_d_mdot_mean_abs_kgs": 0.016985141185,
+  "reference_two_d_mdot_full_kgs": 0.014724,
+  "ethan_minus_reference_two_d_mdot_kgs": 0.002261141185000001,
+  "ethan_two_d_q_external_loss_w": 0.37241,
+  "reference_two_d_q_external_loss_w": 59.2215,
+  "ethan_minus_reference_two_d_q_w": -58.84909,
+  "reference_one_d_stage1_mdot_kg_s": 0.0124675663450566,
+  "reference_one_d_stage1_qambient_total_w": 349.68750271609116,
+  "reference_one_d_stage2_mdot_kg_s": 0.0125849033235583,
+  "reference_one_d_stage2_qambient_total_w": 356.0579006471355,
+  "ethan_validation_status": "derived_postprocessing_available",
+  "ethan_render_status": "",
+  "ethan_run_status": "terminated",
+  "ethan_convergence_reached": false
+}

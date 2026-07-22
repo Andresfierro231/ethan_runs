@@ -1,0 +1,9 @@
+metric_id,metric,definition_or_role,required_inputs,current_status,fit_allowed_now
+M01,F_A,area fraction carrying reverse or exchange-direction flow,interface or section mask area vectors and signed velocity,diagnostic_or_missing,false
+M02,F_m,mass-flow fraction in reverse or exchange lane,signed flux integration and cp/property basis,diagnostic_or_missing,false
+M03,stratification_index,wall/core or upper/lower temperature separation,same-window thermal fields and wall/core bands,diagnostic_or_missing,false
+M04,velocity_recovery,recovery from reverse-flow zone to ordinary throughflow,upstream/downstream velocity planes and topology labels,missing,false
+M05,pressure_gradient_recovery,signed pressure-gradient recovery over candidate span,static/p_rgh endpoint basis and elevation correction,blocked_by_CAND001,false
+M06,topology_label_truth,truth label for one_stream signed_network or exchange_cell,mesh/field evidence plus held-out topology audit,partial,false
+M07,false_positive_rate,ordinary case incorrectly switched to recirculation,low-recirculation/nonrecirculating anchors,missing,false
+M08,false_negative_rate,recirculating case incorrectly treated as ordinary,S13/topology labels and held-out recirculating cases,partial,false

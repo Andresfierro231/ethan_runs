@@ -1,0 +1,13 @@
+qoi_label,mesh_level,candidate_artifact_count,csv_rows_with_label_and_level,strict_same_label_mesh_rows,admissible_for_mesh_gci_now,decision,reason
+Q_wall_W,coarse,11,43,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+Q_wall_W,medium,11,11,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+Q_wall_W,fine,41,63,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+mdot_exchange_positive_outward_proxy_kg_s,coarse,6,6,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+mdot_exchange_positive_outward_proxy_kg_s,medium,6,6,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+mdot_exchange_positive_outward_proxy_kg_s,fine,10,6,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+tau_recirc_proxy_s,coarse,6,5,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+tau_recirc_proxy_s,medium,6,5,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+tau_recirc_proxy_s,fine,8,5,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+wall_core_bulk_temperature_contrast_K,coarse,7,5,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+wall_core_bulk_temperature_contrast_K,medium,7,5,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns
+wall_core_bulk_temperature_contrast_K,fine,11,5,0,false,missing_strict_same_label_mesh_level_row,local hits are target/temporal/context rows or lack explicit mesh-level/value/basis columns

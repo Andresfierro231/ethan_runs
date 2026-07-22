@@ -1,0 +1,8 @@
+guardrail,mutation
+native CFD/OpenFOAM outputs,False
+registry/admission state,False
+scheduler/solver/sampler/UQ,False
+Fluid or external source trees,False
+thesis current/LaTeX files,False
+canonical master scoreboard in-place edit,False
+validation/holdout target use for fitting,False

@@ -1,0 +1,29 @@
+{
+  "generated_at": "2026-07-14T16:30:57-05:00",
+  "holdout_now_count": 2,
+  "matched_pressure_upcomer_pm5_blocker": "current matched-plane runner does not include harvested +/-5Q case roots and readiness table does not mark them runnable-now",
+  "matched_pressure_upcomer_pm5_submitted": false,
+  "native_solver_outputs_mutated": false,
+  "required_outputs": [
+    "salt1_training_admission_package.csv",
+    "pm5_perturbed_q_split_override.csv",
+    "salt_training_split_override.csv",
+    "legacy_perturbation_label_audit.csv",
+    "salt3_hiq_hiins_documentation.csv",
+    "matched_pressure_upcomer_workflow_readiness.csv",
+    "more_training_data_todo.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "salt1_training_rows_admitted_or_conditional": 3,
+  "split_role_counts": {
+    "holdout": 2,
+    "training": 4,
+    "training_perturbation": 1,
+    "training_perturbation_candidate": 1
+  },
+  "task": "AGENT-355",
+  "total_rows": 32,
+  "training_now_count": 5
+}

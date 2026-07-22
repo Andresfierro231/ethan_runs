@@ -1,0 +1,9 @@
+case_id,segment_or_lane,candidate_family,required_rules,current_failed_rules,admission_decision,current_blocker
+salt_1,lower_leg_heater,MF12_or_M3_successor,R01;R02;R05;R06;R07,R01;R02;R05;R06;R07,fail_closed,Source/property and heat-path release not ready.
+salt_1,cooling_branch,setup_cooler_or_M3_successor,R01;R02;R04;R05;R06;R07,R01;R02;R04;R05;R06;R07,fail_closed,Cooler setup model and pressure/property release not ready.
+salt_1,upcomer_test_section,MF12_or_M5_exchange,R01;R02;R03;R05;R06;R07,R01;R02;R03;R05;R06;R07,fail_closed,Recirculation/source and material geometry gates incomplete.
+salt_2,lower_leg_heater,MF12_or_M3_successor,R01;R02;R05;R06;R07,R01;R02;R05;R06;R07,fail_closed,Train-context evidence only; source/property release absent.
+salt_2,upcomer_exchange,M5_MF04_exchange_cell,R01;R02;R03;R05;R06;R07,R01;R02;R03;R05;R06;R07,fail_closed,S13 same-label formal GCI and source/property release absent.
+salt_3,upcomer_exchange,M5_MF04_exchange_cell,R01;R02;R03;R05;R06;R07,R01;R02;R03;R05;R06;R07,fail_closed,Split conflict and exchange-cell release blockers.
+salt_4,pressure_endpoint,MF01_or_F6_candidate,R01;R02;R04;R06;R07,R01;R02;R04;R06;R07,fail_closed,CAND001 endpoint readiness not terminal.
+all_cases,final_candidate,M6_final_frozen_candidate,R01;R02;R03;R04;R05;R06;R07,R01;R02;R03;R04;R05;R06;R07,fail_closed,No frozen runtime-legal candidate exists.

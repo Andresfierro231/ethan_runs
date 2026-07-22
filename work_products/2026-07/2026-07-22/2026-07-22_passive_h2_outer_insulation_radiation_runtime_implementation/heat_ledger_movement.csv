@@ -1,0 +1,4 @@
+case_id,scenario_id,baseline_qambient_total_W,prior_current_model_radiation_on_delta_W,contract_radiation_off_delta_W,contract_radiation_on_delta_W,contract_full_passive_operator_delta_W,radiation_on_heat_ledger_movement_nonzero,movement_fraction_of_baseline_qambient,protected_scoring,admission_or_score
+salt_2,salt_2__V00__nominal,256.393763167,0.0,0.0,22.4052516482,38.6073163603,True,0.08738610242081146,False,False
+salt_3,salt_3__V00__nominal,284.756460812,0.0,0.0,23.9276206359,41.3624247624,True,0.0840283678468767,False,False
+salt_4,salt_4__V00__nominal,320.69240018,0.0,0.0,25.6530978934,44.6770586908,True,0.07999284635058188,False,False

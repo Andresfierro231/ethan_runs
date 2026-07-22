@@ -1,0 +1,8 @@
+source_id,path,used_for,mutation_status
+d2_readme,work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/README.md,D2 decision and main result,not_mutated
+d2_metrics,work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/d2_score_improvement_summary.csv,D2 transfer metrics,not_mutated
+d2_runtime,work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/runtime_legality_matrix.csv,runtime legality,not_mutated
+mf14_split,work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/split_claim_matrix.csv,validation/holdout/external use status,not_mutated
+mf14_reuse,work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/d2_reuse_boundary.csv,allowed D2 reuse boundary,not_mutated
+mf14_guardrails,work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/no_mutation_guardrails.csv,no new scoring/release status,not_mutated
+tw_after_tp,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/README.md,post-D2 TW residual disposition,not_mutated

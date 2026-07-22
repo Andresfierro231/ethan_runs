@@ -1,0 +1,7 @@
+candidate_family,runtime_clean,source_property_release_ready,residual_owner_explainable,uncertainty_ready,train_only_smoke_ready,freeze_ready,primary_blocker,decision
+M0_setup_only_baseline,true,false,false,false,false,false,no numerical predictions and no release-ready source/property rows,blocked_not_candidate
+M2_passive_wall_test_section_source_bounded_repair,true,false,true,false,false,false,source-bounded passive heat-path evidence not released and S11-reviewable candidates are zero,fail_closed
+D3_wall_shape_axial_mixing_signal,true,false,true,false,false,false,diagnostic wall-shape transfer is not a setup-only physical model and production use is not allowed,diagnostic_only
+AMX1_axial_mixing,true,false,true,false,false,false,tested forms passed roots/ledgers but all freeze candidates failed progression,fail_closed_no_expansion
+S13_upcomer_exchange_cell,true,false,true,false,false,false,same-label mesh/GCI and cp/source-property release are missing,blocked_pending_s13_mesh_gci
+thermal_accounting_ledger,true,false,true,false,false,false,traceability is not a predictive model candidate by itself,document_only

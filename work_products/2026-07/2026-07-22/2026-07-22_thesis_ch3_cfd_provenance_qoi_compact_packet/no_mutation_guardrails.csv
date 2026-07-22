@@ -1,0 +1,9 @@
+guardrail,status,evidence
+native_openfoam_outputs_mutated,false,Only published work_products summaries and compact CSVs were read
+registry_or_admission_mutated,false,No registry case-admission or model-admission files were edited
+scheduler_action,false,No sbatch srun solver postProcess or long-running job was launched
+fluid_external_repository_mutated,false,No external Fluid or thesis source repository was edited
+source_property_release_mutated,false,No cp viscosity pressure source or sink release state was changed
+runtime_forbidden_inputs_released,false,Realized CFD mdot wallHeatFlux cooler duty temperatures and residuals remain forbidden runtime inputs
+heat_residual_hidden_in_internal_nu,false,Residual lane is explicitly preserved separate from internal Nu
+native_data_copied,false,No native OpenFOAM trees or broad generated trees were copied into this package

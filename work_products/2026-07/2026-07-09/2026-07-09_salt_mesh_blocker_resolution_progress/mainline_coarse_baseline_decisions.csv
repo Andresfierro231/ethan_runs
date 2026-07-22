@@ -1,0 +1,3 @@
+case_id,core_quantity_count,core_aligned_count,core_blocked_count,baseline_decision,recommended_next_action
+salt_test_2_jin,6,6,0,mainline_coarse_can_replace_external_for_endpoint_monitor_gci,recompute endpoint monitor GCI using mainline coarse and external medium/fine
+salt_test_4_jin,6,6,0,mainline_coarse_can_replace_external_for_endpoint_monitor_gci,recompute endpoint monitor GCI using mainline coarse and external medium/fine

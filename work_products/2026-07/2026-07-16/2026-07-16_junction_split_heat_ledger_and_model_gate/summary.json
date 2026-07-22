@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-07-16T22:52:23.753091+00:00",
+  "junction_split_case_count": 3,
+  "junction_split_cases": [
+    "salt2_mainline",
+    "salt3_mainline",
+    "salt4_mainline"
+  ],
+  "junction_split_patch_rows": 87,
+  "outputs": {
+    "case_admission": "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/case_heat_ledger_admission.csv",
+    "heat_ledger": "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_heat_ledger.csv",
+    "model_gate": "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/model_update_gate.csv",
+    "patch_ledger": "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_patch_ledger.csv",
+    "report": "work_products/2026-07/2026-07-16/2026-07-16_junction_split_heat_ledger_and_model_gate/junction_split_heat_ledger_and_model_gate.md"
+  },
+  "overall_ready_for_fluid_model_edit": "fail",
+  "pressure_cases_covered": 11,
+  "task": "AGENT-473"
+}

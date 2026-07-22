@@ -1,0 +1,22 @@
+{
+  "task": "TODO-THESIS-S0-S3-FIRST-WAVE-WRITING-INTEGRATION-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "source_package": "work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave",
+  "integrated_studies": ["S0", "S1", "S2", "S3"],
+  "publication_claim_rows": 4,
+  "figure_table_contract_rows": 8,
+  "consistency_checks": 8,
+  "consistency_check_failures": 0,
+  "runtime_or_split_leakage_failures": 0,
+  "fit_enabled_final_rows": 0,
+  "final_freeze_exists": false,
+  "component_k_admitted_rows": 0,
+  "f6_admitted_rows": 0,
+  "model_scoring_or_admission": false,
+  "fluid_edit": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "generated_index_refresh": false
+}

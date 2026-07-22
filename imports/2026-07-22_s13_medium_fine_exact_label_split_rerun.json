@@ -1,0 +1,104 @@
+{
+  "task": "TODO-S13-MEDIUM-FINE-EXACT-LABEL-SPLIT-RERUN-2026-07-22",
+  "task_id": "TODO-S13-MEDIUM-FINE-EXACT-LABEL-SPLIT-RERUN-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Run the repaired S13 medium/fine exact-label sampler as isolated case/mesh jobs after smoke passed, aggregate exact-label QOI rows, and report mesh/GCI unlock status without running mesh/GCI.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-MEDIUM-FINE-EXACT-LABEL-SPLIT-RERUN-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-medium-fine-exact-label-split-rerun.md",
+    ".agent/BLOCKERS.md",
+    ".agent/STATE.md",
+    ".agent/catalog.csv",
+    ".agent/catalog.json",
+    "imports/2026-07-22_s13_medium_fine_exact_label_split_rerun.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun"
+  ],
+  "read_only_context": [
+    "tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_face_area_repair/smoke_salt2_medium_one_window/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/sampling_command_contract.csv",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine"
+  ],
+  "validation": [
+    {
+      "command": "bash -n work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/run_split_exact_label_sampler.sbatch",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m pytest tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+      "result": "passed, 9 tests"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregate_split_outputs.py",
+      "result": "passed; 72 exact-label QOI rows, 18 terminal-window reductions"
+    },
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregate_split_outputs.py",
+      "result": "passed"
+    }
+  ],
+  "scheduler_jobs": [
+    {
+      "job_id": "3311146_0",
+      "case_id": "salt_2",
+      "mesh_level": "medium",
+      "result": "COMPLETED 0:0"
+    },
+    {
+      "job_id": "3311146_1",
+      "case_id": "salt_2",
+      "mesh_level": "fine",
+      "result": "COMPLETED 0:0"
+    },
+    {
+      "job_id": "3311146_2",
+      "case_id": "salt_3",
+      "mesh_level": "medium",
+      "result": "COMPLETED 0:0"
+    },
+    {
+      "job_id": "3311146_3",
+      "case_id": "salt_3",
+      "mesh_level": "fine",
+      "result": "COMPLETED 0:0"
+    },
+    {
+      "job_id": "3311146_4",
+      "case_id": "salt_4",
+      "mesh_level": "medium",
+      "result": "COMPLETED 0:0"
+    },
+    {
+      "job_id": "3311146_5",
+      "case_id": "salt_4",
+      "mesh_level": "fine",
+      "result": "COMPLETED 0:0"
+    }
+  ],
+  "duplicate_scheduler_jobs": [
+    {
+      "job_id": "3311175",
+      "reason": "duplicate submission after canonical array 3311146 was already running",
+      "result": "CANCELLED; split_runs output is partial and noncanonical"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_action": true,
+    "solver_or_openfoam_postprocess_launched": false,
+    "mesh_gci_disposition_rerun": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "canonical Slurm array 3311146 completed all six case-mesh elements; duplicate array 3311175 canceled",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "decision": "split_exact_label_rows_complete_mesh_gci_disposition_unlocked_no_admission"
+}

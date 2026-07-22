@@ -1,0 +1,40 @@
+{
+  "task": "TODO-PASSIVE-H2-EXTBC-SPLIT-CONFLICT-RESOLUTION-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-EXTBC-SPLIT-CONFLICT-RESOLUTION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Thermal-modeling / Forward-pred / Reviewer / Tester / Writer",
+  "decision": "passive_h2_extbc_split_conflicts_resolved_fail_closed_train_context_only",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_extbc_split_conflict_resolution/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_extbc_split_conflict_resolution/case_level_extbc_conflict_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_extbc_split_conflict_resolution/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_extbc_split_conflict_resolution/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_extbc_split_conflict_resolution/summary.json",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-EXTBC-SPLIT-CONFLICT-RESOLUTION-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-extbc-split-conflict-resolution.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/split_scope_audit.csv",
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "external_repo_mutated": false,
+    "thesis_body_edited": false,
+    "source_property_released": false,
+    "coefficient_admitted": false,
+    "final_score_released": false
+  },
+  "provenance_notes": "Generated from compact source packages only; no native CFD, registry, scheduler, Fluid, external repo, or thesis body files were mutated."
+}

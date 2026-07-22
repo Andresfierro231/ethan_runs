@@ -1,0 +1,78 @@
+{
+  "created_local": "2026-07-13T17:21:58-0500",
+  "task_id": "AGENT-301",
+  "kind": "solve_case_compute_submission_record",
+  "source_harness_task": "AGENT-293",
+  "source_harness_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation",
+  "prepared_sbatch": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch",
+  "direct_sbatch_attempt": {
+    "host": "c318-008.ls6.tacc.utexas.edu",
+    "submitted": false,
+    "reason": "sbatch is unavailable on compute nodes in this shell and prints: NOTIFICATION: sbatch not available on compute nodes. Use a login node."
+  },
+  "submission": {
+    "submitted": true,
+    "command": "ssh login3 \"cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch\"",
+    "submit_host": "login3",
+    "slurm_job_id": "3293960",
+    "slurm_output": "Submitted batch job 3293960"
+  },
+  "initial_scheduler_state": {
+    "observed_local": "2026-07-13T17:21:58-0500",
+    "state": "RUNNING",
+    "job_name": "fwdv0_solve",
+    "partition": "NuclearEnergy",
+    "account": "ASC23046",
+    "node": "c318-011",
+    "elapsed_squeue": "0:09",
+    "elapsed_sacct": "00:00:09",
+    "exit_code_sacct": "0:0"
+  },
+  "latest_scheduler_state": {
+    "observed_local": "2026-07-13T17:24:41-0500",
+    "state": "RUNNING",
+    "node": "c318-011",
+    "elapsed_squeue": "3:18",
+    "elapsed_sacct": "00:03:18",
+    "exit_code_sacct": "0:0",
+    "observed_outputs": [
+      "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_results.csv",
+      "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/logs/solve_case_full.log"
+    ],
+    "solve_case_full_log_tail": "empty"
+  },
+  "compute_node_requirements": {
+    "account": "ASC23046",
+    "partition": "NuclearEnergy",
+    "nodes": 1,
+    "tasks": 1,
+    "cpus_per_task": 4,
+    "walltime": "06:00:00"
+  },
+  "expected_result_package": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation",
+  "expected_outputs": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_results.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_vs_fast_scan_comparison.csv"
+  ],
+  "monitor_commands": [
+    "ssh login3 \"squeue -j 3293960\"",
+    "ssh login3 \"sacct -j 3293960 --format=JobID,JobName,Partition,Account,State,Elapsed,ExitCode,NodeList%20 -X\"",
+    "tail -40 work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/logs/solve_case_full.log",
+    "tail -40 work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/logs/comparison.log"
+  ],
+  "validation_commands": [
+    "hostname",
+    "which sbatch",
+    "squeue -u $USER",
+    "bash -n work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sh",
+    "bash -n work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/scripts/run_forward_v0_solve_case_confirmation.sbatch",
+    "ssh login3 \"squeue -j 3293960\"",
+    "ssh login3 \"sacct -j 3293960 --format=JobID,JobName,Partition,Account,State,Elapsed,ExitCode,NodeList%20 -X\""
+  ],
+  "native_solver_outputs_modified": false,
+  "external_fluid_modified": false,
+  "registry_modified": false,
+  "status": "submitted_running"
+}

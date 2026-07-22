@@ -1,0 +1,8 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/validation_report.csv,Salt2 validated cell VTK source,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/validation_report.csv,Salt3/Salt4 validated cell VTK source,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_geometry_release/cell_vtk_contract.csv,cell lane release contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes,cell volume package context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv,static source/sink context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/case_vtk_input_manifest.template.csv,sampler manifest template,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/required_vtk_input_contract.csv,sampler required input contract,true,false,false

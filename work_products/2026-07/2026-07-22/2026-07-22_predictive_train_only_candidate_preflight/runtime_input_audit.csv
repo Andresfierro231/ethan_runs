@@ -1,0 +1,15 @@
+input_family,allowed_as_runtime_input_now,status,reason
+geometry_and_segment_lengths,true,allowed_setup_input,setup-defined geometry is runtime legal
+material_properties_mode,true,allowed_label_only,jin_viscosity_parida_cp_santini_k label may be documented but row-specific release is not complete
+ambient_temperature_and_surroundings,true,allowed_setup_input,setup/environment inputs are legal if not inferred from scored target residuals
+heater_setup_power,true,allowed_if_setup_known,requires row-specific setup source provenance before coefficient execution
+cooler_or_hx_setup_metadata,true,allowed_if_imposed_by_experiment,imposed setup metadata may be runtime legal but post-solve realized duty is forbidden
+corrected_passive_h2_operator,false,pending_runtime_implementation,operator basis is promising but current runtime radiation_on is no-op and numeric q-loss is unreleased
+bulk_partition_phi_wall,false,pending_train_release,future train-only coefficient only after legal source/Q basis exists
+recirculation_or_exchange_observed_cfd_fields,false,forbidden_runtime_input,post-solve CFD velocity/exchange fields cannot be runtime inputs
+realized_wallHeatFlux,false,forbidden_runtime_input,realized CFD wall heat flux would leak target physics
+Q_wall_W,false,forbidden_until_release,S13 Qwall release and formal mesh/GCI remain fail-closed
+CFD_mdot,false,forbidden_runtime_input,mdot is a prediction target/output
+observed_TP_TW,false,forbidden_runtime_input,probe temperatures are score/diagnostic targets only
+validation_holdout_external_targets,false,forbidden_before_freeze,protected targets cannot drive preflight or coefficient discovery
+hidden_global_multiplier,false,forbidden_model_form,residual hiding is not an admissible physics explanation

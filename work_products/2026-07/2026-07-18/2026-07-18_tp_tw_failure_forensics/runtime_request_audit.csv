@@ -1,0 +1,6 @@
+audit_item,status,evidence
+solver_or_postprocessing_launch,pass,builder reads existing CSV/markdown/json only
+scheduler_action,pass,no sbatch/srun/squeue/sacct action requested
+native_output_mutation,pass,all CFD/OpenFOAM/native outputs are read-only and untouched
+runtime_forbidden_inputs,pass,"no candidate runtime was executed; matrix forbids CFD mdot, wallHeatFlux, imposed cooler duty, and validation temperatures"
+scientific_admission_change,pass,all existing families remain not_admitted and blocker remains open

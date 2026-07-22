@@ -1,0 +1,8 @@
+artifact_id,path,role,access_mode,key_fields_or_lines,used_for
+fluid_status,../cfd-modeling-tools/.agent/status/2026-07-20_impl-2026-07-20-fluid-amx1-axial-mixing-smoke.md,external Fluid closeout,read_only,decision pass_smoke_only and validation commands,implementation provenance
+fluid_smoke_summary,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_smoke_v1/amx1_smoke_audit/amx1_smoke_summary.json,AMX1 smoke audit,read_only,rows_scanned=2 amx1_rows=1 all_roots_pass=true ledgers_nonzero=true ledgers_conservative=true,smoke verdict
+fluid_smoke_rows,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_smoke_v1/amx1_smoke_audit/amx1_smoke_rows.csv,AMX1 row-level smoke audit,read_only,root and ledger gates by scenario,row metrics
+fluid_master_summary,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_smoke_v1/analysis/master_summary.csv,Fluid aggregate metrics,read_only,Salt2 baseline and AMX1 rows with mdot and TP/TW metrics,diagnostic deltas only
+fluid_runtime_summary,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_smoke_v1/runtime/runtime_summary.csv,Fluid runtime audit,read_only,baseline row 58.222304 s AMX1 row 111.057331 s total 191.398239 s,runtime gate
+agent_565_contract,work_products/2026-07/2026-07-20/2026-07-20_amx1_axial_mixing_dry_contract/README.md,AMX1 dry contract,read_only,Fluid patch required before smoke and Salt2 smoke-only guardrail,contract source
+forward_map,operational_notes/maps/forward-predictive-model.md,current forward predictive map,read_write_additive,AMX1 dry contract and smoke outcome,map update target

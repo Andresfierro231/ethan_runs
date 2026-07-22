@@ -1,0 +1,29 @@
+{
+  "generated_at_utc": "2026-07-17T20:52:44.699260+00:00",
+  "missing_or_blocked_score_rows": 4,
+  "model_form_ids": [
+    "M0",
+    "M1",
+    "M2",
+    "M3",
+    "M4"
+  ],
+  "model_forms": 5,
+  "native_output_mutation": "none",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff",
+  "runtime_audit_failures": 0,
+  "runtime_audit_rows": 5,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "score_rows": 5,
+  "score_rows_with_any_numeric": 4,
+  "score_status_counts": {
+    "diagnostic_legacy_numeric_context_not_predictive": 1,
+    "legacy_numeric_context_final_prediction_missing": 1,
+    "partial_boundary_score_prediction_missing_for_full_model": 1,
+    "prediction_missing_diagnostic_junction_evidence_available": 1,
+    "prediction_missing_not_run": 1
+  },
+  "split_guardrail": "Salt1-4 nominal training; Salt2 +/-5Q and val_salt2 score-only; future rows only after terminal/run admission.",
+  "task": "TODO-THESIS-ENDPOINT-MODEL-FORM-BAKEOFF"
+}

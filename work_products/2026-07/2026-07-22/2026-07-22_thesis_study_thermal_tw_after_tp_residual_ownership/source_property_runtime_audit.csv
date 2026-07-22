@@ -1,0 +1,9 @@
+gate_or_field,current_status,release_ready,evidence,blocking_gap,guardrail
+cp_J_kg_K,required but exact release row not ready,false,source/property CP viscosity pressure preflight field_release_contract.csv,MF16 exact-field release-ready rows zero,Do not compute source-integral heat paths without released row-specific cp basis
+viscosity_or_property_mode,labels exist but not release-ready,false,source/property CP viscosity pressure preflight field_release_contract.csv,nominal train release-ready rows zero,Do not admit Re/Nu/friction changes without case/QOI property provenance
+signed_source_runtime_release,fail_closed,false,MF13 source_property_release_gate.csv,0 of 4 source families release-ready now,Do not release setup source/sink terms broadly without candidate-specific contract
+wall_profile_or_tp_projection_uq,fail_closed,false,MF12 formula_release_gap_matrix.csv and MF14 tp_same_qoi_projection_uq.csv,same-QOI TP projection UQ and runtime wall/profile source basis not released,Do not turn TP/TW temperatures into runtime inputs
+runtime_temperature_release,fail_closed,false,N4 sensor_runtime_input_audit.csv,all TP/TW runtime_temperature_allowed values false,Validation temperatures are score-only after freeze
+passive_basis_released,fail_closed,false,MF13 source_property_release_gate.csv and passive H2 README,passive/downcomer independent basis ready false and passive rows release-ready zero,Do not use wallHeatFlux-derived passive hA as runtime source
+Q_wall_W_production_release,diagnostic only,false,MF17 summary.json,same-label mesh/GCI and source/property release absent,Do not use realized Q_wall_W as heat-loss input
+internal_Nu_residual_absorption,forbidden,false,thermal accounting ledger and runtime forbidden replay audit,missing heat cannot be absorbed into internal Nu,Keep residual owner lane separate

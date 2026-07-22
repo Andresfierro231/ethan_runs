@@ -1,0 +1,20 @@
+{
+  "can_train_salt1_to_salt4_and_test_other_cfd_now": "not_as_thesis_strength_generalization_without_more_admitted_external_tests",
+  "case_count": 3,
+  "date": "2026-07-15",
+  "external_cfd_modeling_tools_mutated": false,
+  "forced_replay_path_id": "B2_realized_wallflux_roles",
+  "forced_replay_rows": 15,
+  "forced_replay_status_counts": {
+    "diagnostic_only_not_predictive": 15
+  },
+  "jin_vs_val_salt2_report_exists": true,
+  "max_forced_replay_abs_segment_net_residual_W": "0",
+  "native_cfd_outputs_mutated": false,
+  "predictive_rows_admitted_from_forced_replay": 0,
+  "predictive_variant_plan_steps": 7,
+  "registry_or_admission_state_mutated": false,
+  "scheduler_mutated": false,
+  "task": "AGENT-410",
+  "val_salt2_current_heat_loss_test_status": "not_yet_section_heat_loss_admitted"
+}

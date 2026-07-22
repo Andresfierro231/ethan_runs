@@ -1,0 +1,29 @@
+{
+  "task_id": "TODO-1D-RECIRCULATION-SWITCH-DRY-CONTRACT-2026-07-22",
+  "generated_at": "2026-07-22T10:34:38-05:00",
+  "decision": "dry_recirculation_switch_contract_ready_no_coefficients_no_admission",
+  "switch_outputs": [
+    "one_stream",
+    "signed_flow_junction_network",
+    "throughflow_plus_recirc_exchange_cell"
+  ],
+  "case_rows": 3,
+  "current_case_selected_lane_counts": {
+    "signed_flow_junction_network": 3
+  },
+  "ordinary_one_stream_upcomer_claims_allowed": false,
+  "ordinary_Nu_fD_K_F6_claim_rows_allowed": 0,
+  "exchange_cell_coefficient_fit_allowed": false,
+  "exchange_cell_admission_allowed": false,
+  "one_stream_current_allowed_cases": 0,
+  "throughflow_exchange_cell_current_allowed_cases": 0,
+  "evidence_backed_not_coefficient_backed": true,
+  "mesh_gci_rerun": false,
+  "scheduler_action": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "l3_hierarchy_evidence_state": "recirculation_onset_packet_started_diagnostic_proxies_available_closed_fraction_and_ri_fail_closed",
+  "l3_hierarchy_next_gate": "same-window V_recirc, mdot_exchange, tau_recirc, Ri, Qwall, pressure residual, mesh/GCI"
+}

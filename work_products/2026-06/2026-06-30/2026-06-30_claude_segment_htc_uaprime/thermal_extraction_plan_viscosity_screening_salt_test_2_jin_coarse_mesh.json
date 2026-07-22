@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-06-30T15:27:19-05:00",
+  "mode": "dry-run",
+  "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "case_dir": "tmp/2026-06-30_claude_action_items/recon_salt2_of13",
+  "time": "7915",
+  "T_available": true,
+  "blocker_B1_active": false,
+  "blocker_B1": "T carries custom BC rcExternalTemperature/libRCWallBC.so; cannot reconstruct with OF v12 on LS6",
+  "property_model_ok": true,
+  "wallheatflux_found": true,
+  "segment_map": {
+    "lower_leg": [
+      "lower_leg"
+    ],
+    "upcomer": [
+      "left_lower_leg",
+      "test_section_span",
+      "left_upper_leg"
+    ],
+    "downcomer": [
+      "right_leg"
+    ]
+  },
+  "thermally_blocked_segments": [
+    "downcomer"
+  ],
+  "nu_direct_admitted_spans": [
+    "left_lower_leg"
+  ],
+  "bulk_T_definition": "enthalpy-flux-weighted mixed mean: int rho*u_n*cp(T)*T dA / int rho*u_n*cp(T) dA",
+  "input_problems": []
+}

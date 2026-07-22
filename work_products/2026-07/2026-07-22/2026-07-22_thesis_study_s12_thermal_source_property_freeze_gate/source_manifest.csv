@@ -1,0 +1,11 @@
+source_id,path,role,used_for
+SRC-001,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/summary.json,thermal_accounting_counts,heat-path rows setup source/sink counts runtime leakage flags
+SRC-002,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/thermal_accounting_traceability_ledger.csv,heat_path_ledger,source/sink residual owner policy and heat-path state
+SRC-003,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/summary.json,source_property_gate,nominal train release readiness and protected-row closure
+SRC-004,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/candidate_lane_consequences.csv,candidate_consequences,source/property lane consequences for freeze candidates
+SRC-005,work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/summary.json,m2_gate,passive wall/test-section source-bounded repair readiness
+SRC-006,work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/residual_owner_gate.csv,m2_residual_owner,residual ownership and M2 no-freeze evidence
+SRC-007,work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/summary.json,d3_gate,wall-shape diagnostic and production-use status
+SRC-008,work_products/2026-07/2026-07-22/2026-07-22_1d_amx1_axial_mixing_fluid_api_handoff/summary.json,amx1_stop_go,AMX1 current API/smoke status and no-expansion decision
+SRC-009,work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/summary.json,ledger_contract,conservative equation owner and runtime-forbidden input status
+SRC-010,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,master_scoreboard,no new scoring/admission context and recommended model-form status

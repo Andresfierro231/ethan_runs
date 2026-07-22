@@ -1,0 +1,5 @@
+target_file,local_artifact,copy_now
+evidence/ch07_upcomer_exchange/mesh_level_terminal_qoi_table.csv,work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_s13_mesh_gci_upcomer/mesh_level_terminal_qoi_table.csv,false
+evidence/ch07_upcomer_exchange/medium_fine_delta_table.csv,work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_s13_mesh_gci_upcomer/medium_fine_delta_table.csv,false
+evidence/ch07_upcomer_exchange/gci_disposition_table.csv,work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_s13_mesh_gci_upcomer/gci_disposition_table.csv,false
+evidence/ch07_upcomer_exchange/allowed_forbidden_claim_table.csv,work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_s13_mesh_gci_upcomer/allowed_forbidden_claim_table.csv,false

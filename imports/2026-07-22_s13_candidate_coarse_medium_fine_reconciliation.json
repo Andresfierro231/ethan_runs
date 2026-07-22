@@ -1,0 +1,70 @@
+{
+  "task": "TODO-S13-CANDIDATE-COARSE-MEDIUM-FINE-RECONCILIATION-2026-07-22",
+  "task_id": "TODO-S13-CANDIDATE-COARSE-MEDIUM-FINE-RECONCILIATION-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Reconcile S13 current-coarse candidate rows with canonical medium/fine exact-label rows and fail closed on formal GCI/admission unless coarse equivalence is admitted.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-CANDIDATE-COARSE-MEDIUM-FINE-RECONCILIATION-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-candidate-coarse-medium-fine-reconciliation.md",
+    "imports/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation.json",
+    "tools/analyze/build_s13_candidate_coarse_medium_fine_reconciliation.py",
+    "tools/analyze/test_s13_candidate_coarse_medium_fine_reconciliation.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/AGENTS.override.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_exact_label_qoi_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_terminal_window_reductions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/qoi_mesh_disposition_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/same_label_mesh_family_generated_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/coarse_basis_resolution.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/auditable_coarse_equivalence_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/summary.json"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_s13_candidate_coarse_medium_fine_reconciliation.py",
+      "result": "passed; generated 12 candidate triplet rows and 4 QOI summary rows"
+    },
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_s13_candidate_coarse_medium_fine_reconciliation.py",
+      "result": "passed, 5 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_candidate_coarse_medium_fine_reconciliation.py tools/analyze/test_s13_candidate_coarse_medium_fine_reconciliation.py",
+      "result": "passed"
+    }
+  ],
+  "outputs": {
+    "package": "work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation",
+    "decision": "candidate_triplets_quantified_formal_gci_fail_closed_coarse_equivalence_not_admitted",
+    "candidate_triplet_rows": 12,
+    "qoi_summary_rows": 4,
+    "coarse_equivalence_admitted_rows": 0,
+    "max_Q_wall_candidate_coarse_fine_relative_percent_vs_fine": 1.5759092529218661,
+    "max_proxy_candidate_coarse_fine_relative_percent_vs_fine": 304.85360007488
+  },
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_action": false,
+    "solver_or_openfoam_postprocess_launched": false,
+    "sampler_or_harvest_or_uq_launched": false,
+    "formal_gci_run": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "validation_holdout_external_scoring": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "thesis_body_mutated": false,
+  "decision": "candidate_triplets_quantified_formal_gci_fail_closed_coarse_equivalence_not_admitted"
+}

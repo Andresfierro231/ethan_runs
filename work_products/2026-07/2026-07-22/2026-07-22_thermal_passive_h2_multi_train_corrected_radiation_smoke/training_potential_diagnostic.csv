@@ -1,0 +1,4 @@
+admission_status,assessment,evidence,predictive_model_implication,status
+diagnostic_only_no_release,radiation_high_concern,corrected_total_range_W=38.6073..44.6771; corrected_total_fraction_of_qambient_max=0.150578,corrected passive operator is physically plausible enough for further train-context testing,substantially_resolved_for_operator_basis
+no_fit_no_score_no_freeze,multi_train_signal,"cases=salt_2,salt_3,salt_4; max_TP_sensitivity_K=13.3482; max_TW_sensitivity_K=13.2596","heat-path parameters can move model outputs, so PASSIVE-H2 has development potential",supporting_train_context
+protected_scoring_closed,split_conflict,external_bc_split_conflict_cases=2,Salt3/4 can be used only as setup-UQ train-context diagnostics unless split policy is reconciled,guarded

@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-15T22:48:59.682431+00:00",
+  "harvested_rows": 3,
+  "last_harvest_at": "2026-07-15T22:53:11.809117+00:00",
+  "last_harvest_job_id": "3297845",
+  "native_solver_outputs_mutated": false,
+  "preflight_failures": 0,
+  "preflight_rows": 3,
+  "registry_or_admission_mutated": false,
+  "sbatch_scripts": 2,
+  "submitted_job_id": "3297845",
+  "submitted_job_name": "cqp_stage",
+  "submitted_job_state": "COMPLETED",
+  "submitted_sbatch_script": "scripts/sbatch_staged_closure_qoi_pressure.sh",
+  "task": "AGENT-440"
+}

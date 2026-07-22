@@ -1,0 +1,103 @@
+{
+  "task": "TODO-THESIS-LATEX-EVIDENCE-PACKET-IMPORT-2026-07-22",
+  "task_id": "TODO-THESIS-LATEX-EVIDENCE-PACKET-IMPORT-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Writer/Reviewer/Integrator",
+  "status": "complete",
+  "objective": "Import compact evidence artifacts into the CSEM thesis repo for external-writer use without rewriting thesis prose.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-LATEX-EVIDENCE-PACKET-IMPORT-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-latex-evidence-packet-import.md",
+    "imports/2026-07-22_thesis_latex_evidence_packet_import.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/promote_papers_artifact_import_active.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/apply_papers_evidence_packet_import.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/close_papers_artifact_import.py",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/status/csem-latex-artifact-import-2026-07-21.md",
+    "../papers/.agent/journal/2026-07-21/csem-latex-artifact-import-2026-07-21.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/README.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/writer_guardrails.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/packet_contract/README.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/packet_contract/evidence_packet_schema.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/packet_contract/chapter_evidence_packet_queue.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/README.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/source_path_ledger.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/equations_definitions_ledger.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/claim_boundary_ledger.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/figure_table_targets.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/external_writer_brief.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/study_dispatch_matrix.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/compact_import_manifest.csv"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/evidence_packet_schema.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/chapter_evidence_packet_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/source_path_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/equations_definitions_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/claim_boundary_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/figure_table_targets.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/external_writer_brief.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_evidence_manifest_for_latex_repo/compact_import_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_dispatch_matrix_for_board/study_dispatch_matrix.csv",
+    "../papers/UTexas_Research/csem-Masters_dissertation/scripts/check_guardrails.sh",
+    "../papers/UTexas_Research/csem-Masters_dissertation/scripts/build_thesis.sh"
+  ],
+  "external_papers_edit": true,
+  "thesis_evidence_directory_import": true,
+  "latex_chapter_body_edit": false,
+  "raw_cfd_import": false,
+  "native_solver_outputs_mutated": false,
+  "native_output_mutation": false,
+  "registry_mutated": false,
+  "registry_mutation": false,
+  "admission_mutation": false,
+  "scheduler_action": false,
+  "scheduler_mutation": false,
+  "external_fluid_edit": false,
+  "fluid_source_mutation": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "runtime_leakage_rule_relaxed": false,
+  "validation_holdout_external_tuning": false,
+  "generated_index_refreshed": false,
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/*.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/promote_papers_artifact_import_active.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/apply_papers_evidence_packet_import.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_import/close_papers_artifact_import.py",
+      "result": "pass"
+    },
+    {
+      "command": "git -C ../papers/UTexas_Research/csem-Masters_dissertation diff --check -- evidence",
+      "result": "pass"
+    },
+    {
+      "command": "cd ../papers/UTexas_Research/csem-Masters_dissertation && scripts/check_guardrails.sh",
+      "result": "pass"
+    },
+    {
+      "command": "cd ../papers/UTexas_Research/csem-Masters_dissertation && scripts/build_thesis.sh",
+      "result": "pass"
+    }
+  ],
+  "next_recommended_task": "Create and import a Chapter 7/Chapter 8 results evidence packet for pressure non-admission, thermal heat-path attribution, recirculation evidence, negative results, and blocked/admitted scorecard status.",
+  "provenance_notes": "Imported compact evidence for external writer use only. No thesis chapter prose/body rewrite, no raw CFD import, and no diagnostic evidence promoted to predictive closure."
+}

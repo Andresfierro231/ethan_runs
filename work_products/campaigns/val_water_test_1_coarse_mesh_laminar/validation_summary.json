@@ -1,0 +1,50 @@
+{
+  "source_id": "val_water_test_1_coarse_mesh_laminar",
+  "mdot_samples": {
+    "mdot_pipeleg_left_04_test_section": -0.006506397531,
+    "mdot_pipeleg_lower_05_straight": -0.00650629072,
+    "mdot_pipeleg_right_02_middle": -0.006506380752,
+    "mdot_pipeleg_upper_05_cooler": -0.006506444204
+  },
+  "total_wall_heat_series_final": {
+    "time": 5274.0,
+    "value": 0.204109
+  },
+  "piv_slab_final": {
+    "time": 3195.0,
+    "Ux": 7.285152849e-05,
+    "Uy": 0.02422550778,
+    "Uz": -0.000233140297,
+    "magU": 0.02423363451,
+    "T": 315.6026837
+  },
+  "temperature_probe_final": {
+    "time": 3195.0,
+    "values": [
+      315.264002,
+      314.064843,
+      315.279592,
+      315.567128,
+      315.782003,
+      315.692957
+    ]
+  },
+  "log_summary": {
+    "job_id": "3188049",
+    "source_case_path": "/scratch/09807/ethanrozak/foam_vv/runs/water_screening_20260520_184545/cases/val_water_test_1_coarse_mesh_laminar",
+    "nprocs": "64",
+    "start_date": "May 26 2026",
+    "start_time": "14:55:22",
+    "status": "terminated",
+    "termination_reason": "15 (Terminated)",
+    "final_time_marker": "5274.208955224s",
+    "convergence": {
+      "reached": false,
+      "iteration": "",
+      "dTmean": "",
+      "dTsigma": "",
+      "dUmean": "",
+      "tol": ""
+    }
+  }
+}

@@ -1,0 +1,10 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s8_wall_ts_residual_atlas/tw5_tw6_residual_atlas.csv,dominant TW5/TW6 residual atlas,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/summary.json,S8 negative candidate summary,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/m3_prior_candidate_comparison.csv,prior candidate comparison,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/runtime_leakage_audit.csv,runtime leakage guardrail,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/wall_test_section_candidate_gate_scorecard.csv,wall/test-section candidate gate evidence,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/runtime_internal_nu_audit.csv,internal Nu residual guardrail,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/residual_equation_contract.md,exchange-cell residual contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/exchange_qoi_contract.csv,missing exchange QOI contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/summary.json,blocked final scorecard shell,true,false,false

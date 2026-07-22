@@ -1,0 +1,16 @@
+number_label,value_with_units,source_paths,use_caveat
+Salt-family case count,9 cases,../papers/UTexas_Research/3d_analysis/sections/02_dataset_and_case_selection.tex,All nine Salt-family rows support the family-wide trend layer.
+Salt2 validation retained window,8598-8602 s,../papers/UTexas_Research/3d_analysis/sections/02_dataset_and_case_selection.tex; ../papers/UTexas_Research/3d_analysis/tables/table_salt_case_matrix.tex,Continuation-aware retained-window caveat must stay attached.
+Salt2 test-section intended-transfer burden,356.963-360.257 W,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,"Grouped intended-transfer evidence, not predictive runtime wall flux."
+Salt2 left-lower-leg parasitic burden,56.726-58.897 W,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Grouped parasitic-loss classification depends on thermal-role metadata.
+Salt4 test-section intended-transfer burden,460.490-460.569 W,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Salt-only promoted evidence.
+Salt4 left-lower-leg parasitic burden,71.811-71.954 W,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Grouped diagnostic heat-path evidence.
+Salt-family parasitic-to-intended ratio,0.156-0.165,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,"Supports heat-accounting topology stability, not a universal law."
+Safe-branch usable fraction range,0.941-1.000,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Support-gated safe-branch evidence.
+Promoted Salt2/Salt4 case-averaged safe-branch usable fraction,0.962,../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Applies to promoted Salt2 and Salt4 rows.
+Salt2 safe-branch mean UA prime order,"8.983, 7.995, 6.311 W m^-1 K^-1",../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Validation to Jin to Kirst ordering; effective diagnostic only.
+Salt4 mean safe-branch UA prime order,"13.049, 11.164 W m^-1 K^-1",../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex,Jin to Kirst ordering; effective diagnostic only.
+Matched Salt2 lower-leg Darcy friction means,"0.892, 0.995, 1.211",../papers/UTexas_Research/3d_analysis/sections/05_salt2_mechanism_results.tex,"Hydraulic diagnostic, not admitted f_D closure."
+Matched Salt2 upper-leg pressure-gradient means,"59.256, 60.989, 62.984 Pa m^-1",../papers/UTexas_Research/3d_analysis/sections/05_salt2_mechanism_results.tex,Wall-registered direct pressure-gradient diagnostic.
+Matched Salt2 test-section UA prime order,"10.667, 8.827, 6.747 W m^-1 K^-1",../papers/UTexas_Research/3d_analysis/sections/05_salt2_mechanism_results.tex,"Effective transport diagnostic, not unrestricted local HTC."
+Current pressure coefficient admissions,0 admitted,reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,Claim ledger states pressure/F6 paths remain diagnostic/non-admitted.

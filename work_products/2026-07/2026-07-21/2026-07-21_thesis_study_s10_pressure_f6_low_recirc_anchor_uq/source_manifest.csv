@@ -1,0 +1,25 @@
+source_path,role_in_study,mutation_status,trusted_or_diagnostic,notes
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/summary.json,low_recirc_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv,low_recirc_candidate_preflight,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_case_readiness.csv,low_recirc_source_readiness,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/endpoint_field_availability.csv,low_recirc_endpoint_fields,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv,low_recirc_anchor_decision,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/summary.json,f6_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/endpoint_pair_qa.csv,f6_pair_qa,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/medium_fine_consistency.csv,f6_medium_fine,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_f6_stage_a_harvest_qa/qa_gate_status.csv,f6_gate_status,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/summary.json,s10_fig_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv,s10_waterfall,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/f3_shah_apparent_comparison_table.csv,s10_f3_comparison,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/claim_boundary_ledger.csv,s10_claim_boundary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/summary.json,pressure_freeze_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,pressure_canonical,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/summary.json,pressure_review_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_comparison_matrix.csv,pressure_review_matrix,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_gate_review.csv,pressure_gate_review,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/summary.json,same_qoi_b_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/phase_c_input_table.csv,same_qoi_b_phase_c,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/summary.json,s5_summary,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/source_property_release_ledger.csv,s5_release_ledger,read_only,trusted_existing_package,S10 consumed this artifact as existing evidence only.
+native CFD/OpenFOAM outputs,solver_outputs,not_touched,not_accessed,No solver output was sampled or mutated by S10.
+registry/admission/scheduler state,global_state,not_mutated,read_only_context,"No registry, admission, scheduler, Fluid, external, blocker, or generated-index state changed."

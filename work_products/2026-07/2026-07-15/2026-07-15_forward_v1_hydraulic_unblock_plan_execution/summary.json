@@ -1,0 +1,23 @@
+{
+  "counts": {
+    "forward": 5,
+    "hydraulic": 5,
+    "pm5": 3,
+    "scheduler": 8,
+    "sensor": 17,
+    "source": 8
+  },
+  "created_utc": "2026-07-15T12:57:58.633306+00:00",
+  "date": "2026-07-15",
+  "external_fluid_modified": false,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "native_solver_outputs_mutated": false,
+  "recommended_next_action": "repair_pm5_matched_plane_field_extraction_parser_then_refresh_f6_onset_gate",
+  "scheduler_jobs_launched": false,
+  "scheduler_meta": {
+    "direct_shell_snapshot_applied": "true",
+    "direct_shell_snapshot_local_time": "2026-07-15T07:57:58-05:00",
+    "python_subprocess_note": "Initial in-script squeue/sacct calls were sandbox-limited; scheduler_snapshot.csv was patched from direct shell squeue/sacct output."
+  },
+  "task": "AGENT-393"
+}

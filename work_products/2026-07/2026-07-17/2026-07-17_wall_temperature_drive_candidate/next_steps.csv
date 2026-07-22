@@ -1,0 +1,3 @@
+priority,action,rationale,owner_lane
+1,move_to_heater_source_redistribution_and_explicit_wall_fluid_coupling,Wall-state drive completed but did not pass mdot/all-probe/TW gates; the next physics lane should separate heater/source placement from passive loss and add explicit test-section wall/fluid coupling or upcomer mixing.,forward_predictive_wall_test_section
+2,do_not_close_predictive_wall_test_section_submodels_without_coupled_temperature_shape_pass,"The blocker is specifically all-probe/TW field shape, not passive-total heat or runtime legality alone.",admission_policy

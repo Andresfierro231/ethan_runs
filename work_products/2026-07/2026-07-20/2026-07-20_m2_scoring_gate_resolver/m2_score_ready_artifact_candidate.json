@@ -1,0 +1,27 @@
+{
+  "admitted_terms": [
+    {
+      "fitted_scalar": "0.9897032903",
+      "model_form": "salt2_fit_constant_heater_efficiency",
+      "source_path": "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/heater_scorecard.csv",
+      "term_id": "heater"
+    },
+    {
+      "model_form": "salt2_fit_constant_UA_bulk_drive",
+      "prediction_source": "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv",
+      "term_id": "cooler_hx"
+    }
+  ],
+  "blind_rows_used_for_fit": 0,
+  "blocked_reason": "Salt1 cooler/HX support is missing and no 3-row score-ready exception is granted",
+  "candidate_status": "blocked_missing_salt1_cooler_hx",
+  "date": "2026-07-20",
+  "generated_at_utc": "2026-07-20T18:12:43.555132+00:00",
+  "holdout_rows_scored": 0,
+  "model_family": "M2",
+  "native_solver_outputs_mutated": false,
+  "score_ready": false,
+  "score_ready_exception_granted": false,
+  "source_frozen_model_id": "M2_FROZEN_PREDICTION_ARTIFACT_SALT1_4_NOMINAL_2026_07_20",
+  "task": "TODO-PREDICT-M2-SCORING-GATE-RESOLVER"
+}

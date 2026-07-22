@@ -1,0 +1,32 @@
+{
+  "generated_at": "2026-07-14T17:32:22-05:00",
+  "native_solver_outputs_mutated": false,
+  "pm5_job_id": "3295901",
+  "pm5_parsed_files_present": 0,
+  "pm5_sacct_state": "PENDING",
+  "pm5_squeue_reason": "Priority",
+  "pm5_squeue_state": "PENDING",
+  "required_outputs": [
+    "salt1_terminal_patch_bc_role_table.csv",
+    "salt1_terminal_bc_role_summary.csv",
+    "salt1_training_admission_update.csv",
+    "pm5_upcomer_job_harvest_status.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "salt1_case_count": 3,
+  "salt1_hi10q_conflict_removed": true,
+  "salt1_hi10q_use_now_for_training": true,
+  "salt1_patch_rows": 207,
+  "salt1_role_counts": {
+    "cooler_HX_removal": 3,
+    "cooler_or_reducer_removal": 6,
+    "heater_source": 9,
+    "heater_source_test_section": 3,
+    "passive_wall_externalTemperature": 21,
+    "passive_wall_rcExternalTemperature": 96,
+    "thermal_constraint_or_coupled_wall": 69
+  },
+  "task": "AGENT-363"
+}

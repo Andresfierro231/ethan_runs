@@ -1,0 +1,6 @@
+priority,task,entry_condition,deliverable,do_not_do
+P1,corrected_split_freeze_runner,admitted wall/test-section/cooler candidate exists under Salt1-4 nominal training split,"Frozen prediction CSV matching AGENT-500 join contract for pressure, heat, and sensors.",Do not tune or select candidates from val_salt2 residuals.
+P2,val_salt2_prediction_join,Frozen prediction CSV exists and carries prediction_model_id.,"Residual scorecard, lane metrics, and overlay figures.",Do not include TP2 or TW10 in aggregate sensor score.
+P3,junction_metadata_completion,Need junction heat coefficient review beyond diagnostics.,Comparable area and wall-to-ambient drive metadata for val_salt2 and perturbation buckets.,Do not fit coefficients from realized wallHeatFlux alone.
+P4,corner_k_repaired_extraction,Pressure basis and tap design approved.,"Branch orientation, straight subtraction, recirculation mask, component isolation, and mesh/GCI gates.",Do not reuse current negative centerline-subtracted K rows for tuning.
+P5,pm10_terminal_admission_after_jobs,PM10 solver/harvest jobs terminal and harvested.,PM10 terminal admission and PM5-pattern diagnostics.,Do not submit duplicate jobs or perform terminal admission while jobs are live/pending.

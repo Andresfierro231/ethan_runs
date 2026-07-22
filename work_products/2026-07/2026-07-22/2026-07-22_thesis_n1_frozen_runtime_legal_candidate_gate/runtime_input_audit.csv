@@ -1,0 +1,6 @@
+input_or_output,evidence_status,runtime_input_allowed,fit_or_selection_allowed,reason
+predeclared geometry/topology,available_from_prior_packages,true,false,setup/source geometry may define model structure but cannot score a candidate alone
+exact target-window Q_wall_W,released_rows=3,false,false,CFD target-window evidence is publication/diagnostic input until same-QOI UQ and production gates pass
+Q_source_side_net_static_bc_W,Q_source_side_net_static_bc_W,false,false,"source-side QOI is defined but conservation, neighbor-window, and UQ release gates fail closed"
+runtime TP/TW temperatures,runtime_temperature_inputs_allowed=0,false,false,temperatures remain post-solve score targets only
+F6/component-K/cluster-K pressure closures,admitted_rows=0,false,false,ordinary-flow and same-QOI UQ gates are not passed

@@ -1,0 +1,6 @@
+sequence,next_step,instruction,allowed_now
+1,release_face_closed_recirc_cv,Use source-bounded geometry/topology evidence to release all three Salt recirculation CVs together.,false
+2,release_exchange_interface_and_normals,"Only after CV release, emit conservative interface face set and normal convention.",false
+3,release_wall_core_band_and_qwall,"Only after wall adjacency release, integrate or fail-close same-window Q_wall_W.",false
+4,rerun_sampler_manifest_preflight,Populate interface/wall/normals and require scaffold validator pass.,false
+5,run_s13_production_harvest_only_after_preflight_passes,Use scheduler only in a new harvest row after all gates pass.,false

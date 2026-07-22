@@ -1,0 +1,3 @@
+gate,status,fit_admissible_rows_today,diagnostic_rows_available,evidence,reopen_condition
+true_internal_nu_fit,closed_zero_fit_admissible_rows,0,28,Thermal admission table remains zero fit-eligible; PM5 rows are recirculation/onset diagnostics.,"Matched wall/plane rows with wallHeatFlux, low reverse/secondary flow, accepted heat-balance residual, and mesh/GCI admitted triplet."
+Nu_section_effective_upcomer_diagnostic,partial_diagnostic_possible_not_fit_nu,0,12,12/12 PM5 rows include wallHeatFlux.,May label section-effective diagnostics; do not use as single-stream fit Nu.

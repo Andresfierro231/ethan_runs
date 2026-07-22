@@ -1,0 +1,56 @@
+{
+  "task": "TODO-THESIS-EVIDENCE-PACKET-FINAL-FIGURE-IMPORT-LEDGER-2026-07-22",
+  "task_id": "TODO-THESIS-EVIDENCE-PACKET-FINAL-FIGURE-IMPORT-LEDGER-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Writer / Reviewer",
+  "summary": "Built a manifest-only final thesis figure import ledger with 12 selected existing assets, caption claim boundaries, color consistency requirements, and papers transfer instructions. No assets were copied.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-EVIDENCE-PACKET-FINAL-FIGURE-IMPORT-LEDGER-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-evidence-packet-final-figure-import-ledger.md",
+    "imports/2026-07-22_thesis_evidence_packet_final_figure_import_ledger.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_figure_asset_selection/figure_candidate_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_figure_asset_selection/copy_decision_table.csv",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md",
+    "selected figure SVG and PNG source paths",
+    "external papers repository",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/summary.json",
+    "figure_candidate_ledger": "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/figure_candidate_ledger.csv",
+    "final_import_manifest": "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/final_import_manifest.csv",
+    "caption_source_ledger": "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/caption_source_ledger.csv",
+    "papers_board_transfer_instructions": "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/papers_board_transfer_instructions.md",
+    "readme": "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/README.md"
+  },
+  "decision": "final_figure_import_ledger_ready_manifest_only_no_asset_copy",
+  "figure_rows": 12,
+  "selected_existing_asset_rows": 12,
+  "missing_regeneration_rows": 0,
+  "copy_now_rows": 0,
+  "broad_figure_copy": false,
+  "figure_asset_copy_now": false,
+  "external_papers_repo_edit": false,
+  "validation_holdout_external_scoring": false,
+  "final_score": "not_performed",
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "scheduler_action": false,
+  "validation": [
+    "python3.11 -m json.tool work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/summary.json",
+    "python3.11 -c <figure source existence and copy-now validation>",
+    "python3.11 -m json.tool imports/2026-07-22_thesis_evidence_packet_final_figure_import_ledger.json"
+  ],
+  "no_scorecard_outputs": true
+}

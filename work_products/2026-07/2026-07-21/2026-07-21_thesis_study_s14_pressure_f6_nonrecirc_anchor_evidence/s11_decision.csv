@@ -1,0 +1,2 @@
+decision_id,s11_unblocked,released_candidate_rows,component_k_admission,cluster_k_admission,f6_fit_admission,decision,required_next_step
+S14-S11-DECISION,false,0,none,none,none,pressure_F6_remains_diagnostic_no_S11_release,terminal low-recirculation harvest or same-QOI UQ plus ordinary-flow evidence before any F6 scoring release

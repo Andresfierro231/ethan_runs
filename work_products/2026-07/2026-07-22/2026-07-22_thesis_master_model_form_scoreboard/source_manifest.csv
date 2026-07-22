@@ -1,0 +1,15 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_scores.csv,M0-M4 aggregate model-form scores,true,false,false
+work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_contracts.csv,M0-M4 contracts,true,false,false
+work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_failure_modes.csv,M0-M4 failure modes,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,MF-01-MF-06 source-envelope candidates,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_litrev_csem_incorporation/model_form_thesis_ladder.csv,MF thesis ladder,true,false,false
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/agent360_refresh/sensor_level_errors.csv,individual legacy signed TP/TW sensor errors,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/summary.json,S6 blocked final scorecard shell,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/summary.json,S13 average-field thermal reduction,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/summary.json,S13 Qwall/UQ unblock gate,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/s13_exchange_trend_table.csv,S13 limited sampled-field evidence synthesis,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,S14 pressure/F6 branch-use scorecard,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/summary.json,two-tap section-effective pressure scorecard,true,false,false
+reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,thesis claim ledger,true,false,false
+reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md,model-form endpoint strategy,true,false,false

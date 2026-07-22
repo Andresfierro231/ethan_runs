@@ -1,0 +1,21 @@
+{
+  "task_id": "AGENT-325",
+  "generated_at": "2026-07-14T11:47:07",
+  "cadence_policy": "daily_plus_gate_triggered",
+  "native_solver_outputs_mutated": false,
+  "external_fluid_modified": false,
+  "registry_or_admission_state_modified": false,
+  "generated_index_refreshed": false,
+  "n_table_contracts": 8,
+  "n_gate_events": 6,
+  "n_daily_steps": 5,
+  "n_watch_rows": 18,
+  "outputs": [
+    "README.md",
+    "active_result_watchlist.csv",
+    "daily_refresh_checklist.csv",
+    "gate_trigger_matrix.csv",
+    "summary.json",
+    "table_update_contract.csv"
+  ]
+}

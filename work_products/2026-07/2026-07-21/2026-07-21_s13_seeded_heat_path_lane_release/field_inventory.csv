@@ -1,0 +1,4 @@
+case_id,time_window_s,cell_vtk,cell_vtk_exists,cell_data_fields,point_data_fields,has_cellID,has_U,has_T,has_rho,has_pressure_basis,has_mu_basis,has_wallHeatFlux,inventory_status
+salt_2,7915,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/vtk/salt_2_cell_fields.vtk,true,T;U;cellID;rho,T;U;rho,true,true,true,true,false,false,false,cell_fields_support_partial_reduction_pressure_mu_wallflux_missing
+salt_3,7618,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_3_cell_fields.vtk,true,T;U;cellID;rho,,true,true,true,true,false,false,false,cell_fields_support_partial_reduction_pressure_mu_wallflux_missing
+salt_4,10000,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_4_cell_fields.vtk,true,T;U;cellID;rho,,true,true,true,true,false,false,false,cell_fields_support_partial_reduction_pressure_mu_wallflux_missing

@@ -1,0 +1,10 @@
+artifact,path,used_as,read_only
+umx1_api_package,work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/README.md,current UMX1 API contract,true
+umx1_api_summary,work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/summary.json,current hook and validation status,true
+blocker_synthesis,work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis/README.md,stale blocked-until-hook context,true
+blocker_next_steps,work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis/next_steps_queue.csv,ordered blocker plan context,true
+tswfc2_contract,work_products/2026-07/2026-07-18/2026-07-18_tswfc2_dry_contract/README.md,fallback wall/test-section lane,true
+tp_tw_next_model_contract,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/next_model_contract.csv,UMX1 split and gate source,true
+weekend_handoff,operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md,original UMX1 research path,true
+fluid_solver,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read-only API evidence,true
+fluid_tests,../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,read-only contract test evidence,true

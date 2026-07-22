@@ -1,0 +1,19 @@
+{
+  "task_id": "TODO-LITREV-FITTING-INVENTORY-SOURCE-ENVELOPE",
+  "date": "2026-07-21",
+  "inventory_rows": 10,
+  "source_family_rows": 9,
+  "gap_queue_rows": 10,
+  "no_coefficient_admission_rows": 10,
+  "all_inventory_rows_no_coefficient_admission": true,
+  "contains_numeric_K_values": false,
+  "guardrails": [
+    "no native CFD/OpenFOAM mutation",
+    "no registry mutation",
+    "no scheduler action",
+    "no Fluid edit",
+    "no source coefficient import",
+    "no component K admission",
+    "no F6 fitting"
+  ]
+}

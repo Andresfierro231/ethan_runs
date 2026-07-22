@@ -1,0 +1,8 @@
+artifact,path,use
+raw_endpoint_plan,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan,exact target/tap/field contract
+blocker_roadmap,work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap,research path and next-step ordering
+mesh_centerlines_root,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines,station coordinates and cutting-plane normals
+openfoam_env,tools/ofenv/of13_env.sh,compute-node foamPostProcess runtime
+salt2_mainline,jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation,read-only source fields at time 7915
+salt3_mainline,jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation,read-only source fields at time 7618
+salt4_mainline,jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation,read-only source fields at time 10000

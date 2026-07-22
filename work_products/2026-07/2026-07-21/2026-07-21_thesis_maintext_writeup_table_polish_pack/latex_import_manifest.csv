@@ -1,0 +1,9 @@
+chapter,artifact,writer_action,claim_boundary
+Ch5/Ch7,upcomer_physics_subsection.md,import as explanatory subsection beside matched upcomer figure,diagnostic visual evidence
+Ch6,main_text_table_s6_gate_flow.csv,format as compact gate-flow table or figure,0 final score values
+Ch6,main_text_table_s7_sensor_policy.csv,format as score-only sensor policy table,0 runtime/fit/model-selection permissions
+Ch6/Ch7,main_text_table_s9_exchange_requirements.csv,pair with F03 upcomer schematic,"requirements only, no exchange-cell coefficient"
+Ch7,negative_results_scientific_contribution.md,use as bridge from diagnostics to blocked scorecard,negative result is not admission
+Ch7,pressure_f6_sidebar.md,insert as pressure/F6 sidebar,"no component K, F6, clipped K, or hidden multiplier"
+Ch7,thermal_attribution_subsection.md,insert as passive heat-loss attribution result,train-only diagnostic
+Ch8,blocked_scorecard_and_future_work_figure.md,render mermaid or redraw as thesis flowchart,"future-work path, no final score"

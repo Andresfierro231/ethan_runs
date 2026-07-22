@@ -1,0 +1,11 @@
+gate_id,gate_family,required_condition,evidence_path,status,decision,claim_allowed,next_action
+G0_board_scope,coordination,"Task row claimed with exact allowed edit paths and read-only context",TBD,not_started,TBD,no,"Claim row before edits"
+G1_source_manifest,provenance,"Every input source has exact path and mutation status",TBD,not_started,TBD,no,"Populate source_manifest.csv"
+G2_split_roles,split_policy,"Every row has train/support/holdout/external/future/diagnostic role",TBD,not_started,TBD,no,"Populate row_inventory.csv"
+G3_runtime_leakage,runtime_contract,"Forbidden predictive runtime inputs are absent",TBD,not_started,TBD,no,"Populate runtime_leakage_audit.csv"
+G4_source_property,source_property,"Source-validity and property-sensitivity labels are present when claims depend on them",TBD,not_started,TBD,no,"Populate row inventory or S11 release ledger"
+G5_same_qoi_uq,uncertainty,"Same-QOI uncertainty is accepted or explicitly blocked",TBD,not_started,TBD,no,"Link same-QOI UQ evidence or block"
+G6_metric_comparison,scoring,"Candidate compared to required baseline on predeclared metrics",TBD,not_started,TBD,no,"Populate metric_score_table.csv"
+G7_admission_decision,admission,"Result is admission_ready negative_result or blocked_with_exact_next_action",TBD,not_started,TBD,no,"Write decision section"
+G8_thesis_claim,writing,"Allowed thesis claim is stated with caveats and destination chapter",TBD,not_started,TBD,no,"Populate figure_table_manifest.csv and README"
+G9_closeout,agent_closeout,"Status journal import manifest and finish_task validation complete",TBD,not_started,TBD,no,"Run closeout checks"

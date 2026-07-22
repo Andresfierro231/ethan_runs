@@ -1,0 +1,5 @@
+candidate_id,source_validity,property_sensitivity,split_consequence,release_status,next_required
+S12-HIAX1,architecture_supported_not_parameterized,not_run,train_support_only_until finite candidate and S11 source/property refresh,not_released,S13 exchange QOIs and same-QOI UQ
+PASSIVE-H2-CAND001,needs_more_source,not_run,no train repair run allowed,not_released,independent geometry ambient insulation and literature hA source release
+SETUP-KNOWN-HEATER-SOURCE,setup_known_source_lane_executable,not_run,diagnostic train-only residual decomposition,not_released,new physical model form; source lane alone worsens TW4/TW5
+EMPIRICAL-LEG-BIAS,no_physical_source,not_applicable,diagnostic-only; cannot freeze or score,not_released,convert diagnostic pattern into source-backed candidate

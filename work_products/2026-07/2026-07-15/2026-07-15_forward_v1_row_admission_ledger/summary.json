@@ -1,0 +1,26 @@
+{
+  "admission_class_counts": {
+    "blocked_empty_fit_set": 1,
+    "diagnostic_replay": 18,
+    "diagnostic_upper_bound": 6,
+    "not_admitted": 0,
+    "predictive_candidate": 6
+  },
+  "date": "2026-07-15",
+  "external_cfd_modeling_tools_mutated": false,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "hx_candidate_rows": 6,
+  "imposed_cooler_status": "diagnostic_upper_bound_not_predictive",
+  "internal_nu_admitted_rows": 0,
+  "internal_nu_status": "blocked_empty_fit_set",
+  "ledger_rows": 31,
+  "native_cfd_outputs_mutated": false,
+  "preferred_setup_legal_hx_candidate": "salt2_fit_constant_UA_bulk_drive",
+  "registry_or_admission_state_mutated": false,
+  "runtime_input_audit_violations": 0,
+  "scheduler_mutated": false,
+  "source_count": 11,
+  "task": "AGENT-407",
+  "test_section_negative_source_status": "diagnostic_replay_not_physical_bc_proof",
+  "wallHeatFlux_replay_status": "diagnostic_only_not_predictive_runtime"
+}

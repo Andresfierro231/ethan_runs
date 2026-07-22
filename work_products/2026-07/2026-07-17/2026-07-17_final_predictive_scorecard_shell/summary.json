@@ -1,0 +1,43 @@
+{
+  "current_blind_case_keys": [
+    "salt2_lo5q",
+    "salt2_hi5q",
+    "val_salt2"
+  ],
+  "current_blind_cases": 3,
+  "excluded_support_cases": 4,
+  "fit_allowed_after_source_property_gate": 0,
+  "freeze_status": "FINAL_FREEZE_TBD_not_created",
+  "future_test_case_keys": [
+    "salt2_lo10q",
+    "salt2_hi10q",
+    "salt4_lo10q",
+    "salt4_hi10q",
+    "salt3_q_insulation_matrix"
+  ],
+  "future_test_cases": 5,
+  "generated_at_utc": "2026-07-20T18:09:55.902516+00:00",
+  "guardrail": "Holdout/external/future rows are score-only and never fit/model-selection inputs; source/property blocked rows cannot fit/select.",
+  "holdout_release_gate_rows": 8,
+  "label_propagation_task": "TODO-FINAL-SCORECARD-POLICY-INTEGRATION",
+  "metric_contract_rows": 7,
+  "model_selection_allowed_after_source_property_gate": 0,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell",
+  "prediction_placeholder_rows": 79,
+  "runtime_audit_failures": 0,
+  "runtime_audit_rows": 6,
+  "scientific_admission_change": "none",
+  "score_status": "shell_ready_no_final_scores",
+  "source_property_blocked_case_rows": 16,
+  "source_property_gate_failures": 0,
+  "source_property_label_gate_rows": 2,
+  "source_property_label_policy": "final_source_envelope_resolution_policy_required_before_fit_or_model_selection",
+  "task": "AGENT-509",
+  "training_case_keys": [
+    "salt1_nominal",
+    "salt2_jin_nominal",
+    "salt3_jin_nominal",
+    "salt4_nominal"
+  ],
+  "training_cases": 4
+}

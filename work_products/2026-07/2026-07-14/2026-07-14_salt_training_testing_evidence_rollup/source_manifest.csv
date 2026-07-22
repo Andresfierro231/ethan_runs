@@ -1,0 +1,9 @@
+artifact,role,path,notes
+salt_training_testing_case_use_table.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_training_testing_evidence_rollup/salt_training_testing_case_use_table.csv,Future-agent compact use table.
+next_agent_action_contract.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_training_testing_evidence_rollup/next_agent_action_contract.csv,Action contract for follow-on agents.
+SALT_TRAINING_TESTING_EVIDENCE_ROLLOUT.md,generated_operational_note,operational_notes/07-26/14/2026-07-14_SALT_TRAINING_TESTING_EVIDENCE_ROLLOUT.md,Main future-agent start-here note.
+salt1_training_admission_update.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_training_admission_update.csv,Salt1 conflict resolution and split update.
+salt1_terminal_patch_bc_role_table.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_patch_bc_role_table.csv,Patch-complete Salt1 terminal BC table.
+pm5_perturbed_q_split_override.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/pm5_perturbed_q_split_override.csv,Salt2 holdout and Salt4 training +/-5Q policy.
+pm5_upcomer_job_harvest_status.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/pm5_upcomer_job_harvest_status.csv,Earlier snapshot showed job 3295901 pending and parsed files absent; later accounting in this AGENT-369 turn showed CANCELLED before running.
+legacy_perturbation_label_audit.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_salt_training_promotion_and_legacy_perturbation_audit/legacy_perturbation_label_audit.csv,Legacy balq/hiins caution evidence.

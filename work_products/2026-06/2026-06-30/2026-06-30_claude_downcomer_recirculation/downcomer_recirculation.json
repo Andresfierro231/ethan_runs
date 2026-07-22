@@ -1,0 +1,251 @@
+{
+  "generated_at": "2026-06-30T16:11:50-05:00",
+  "metric_def": "backflow_area_fraction, recirculation_intensity, flow_alignment on single-leg-masked (r<leg_radius) right_leg cross sections; identical defs to sample_upcomer_convection_cell.py for direct branch comparison.",
+  "nondim_note": "convcell FO covered only upcomer spans; right_leg has no per-section Ra/Ri/Re. Re-run convcell with right_leg added for the buoyancy screen.",
+  "confidence": "coarse mesh, laminar, single time per case; section-mean / velocity-field metric only; SEED evidence for closure-TYPE decision, not a fitted law.",
+  "cases": [
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "case_dir": "tmp/2026-06-30_claude_action_items/recon_salt2_of13",
+      "time": "7915",
+      "downcomer_labels": [
+        "TW4",
+        "TW5",
+        "TW6"
+      ],
+      "context_labels": [
+        "TP2",
+        "TP3"
+      ],
+      "stations": [
+        {
+          "label": "TP2",
+          "span": "lower_leg",
+          "status": "analyzed",
+          "n_masked": 1506,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.8983876043539973,
+          "u_bulk_m_s": 0.007482497485184204,
+          "rho_section_mean_kg_m3": 1963.2214773970784,
+          "T_section_mean_k": 440.6809693094289,
+          "nondim_available": false
+        },
+        {
+          "label": "TW4",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 648,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9924036024825308,
+          "u_bulk_m_s": 0.013681951487561267,
+          "rho_section_mean_kg_m3": 1957.1280334722221,
+          "T_section_mean_k": 448.8088120601852,
+          "nondim_available": false
+        },
+        {
+          "label": "TW5",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 576,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.99039988569346,
+          "u_bulk_m_s": 0.013904507395287057,
+          "rho_section_mean_kg_m3": 1954.1073696354167,
+          "T_section_mean_k": 452.8379755277777,
+          "nondim_available": false
+        },
+        {
+          "label": "TW6",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 648,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9906557372336445,
+          "u_bulk_m_s": 0.014033838108701123,
+          "rho_section_mean_kg_m3": 1951.866709521605,
+          "T_section_mean_k": 455.82671805864203,
+          "nondim_available": false
+        },
+        {
+          "label": "TP3",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 1042,
+          "backflow_area_fraction": 0.4990403071017274,
+          "recirculation_intensity": 0.03644749208969758,
+          "flow_alignment": 0.8971511898611693,
+          "u_bulk_m_s": 0.009205534652139316,
+          "rho_section_mean_kg_m3": 1961.0599690019194,
+          "T_section_mean_k": 443.5641336909789,
+          "nondim_available": false
+        }
+      ]
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_dir": "tmp/2026-06-30_claude_action_items/recon_salt3_of13",
+      "time": "7618",
+      "downcomer_labels": [
+        "TW4",
+        "TW5",
+        "TW6"
+      ],
+      "context_labels": [
+        "TP2",
+        "TP3"
+      ],
+      "stations": [
+        {
+          "label": "TP2",
+          "span": "lower_leg",
+          "status": "analyzed",
+          "n_masked": 1506,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9226638640539094,
+          "u_bulk_m_s": 0.008933716272254604,
+          "rho_section_mean_kg_m3": 1953.4812126892432,
+          "T_section_mean_k": 453.6731855564409,
+          "nondim_available": false
+        },
+        {
+          "label": "TW4",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 648,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9922755490229902,
+          "u_bulk_m_s": 0.015588062481123825,
+          "rho_section_mean_kg_m3": 1947.4645339351853,
+          "T_section_mean_k": 461.6986342993828,
+          "nondim_available": false
+        },
+        {
+          "label": "TW5",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 576,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9914979615756111,
+          "u_bulk_m_s": 0.01580082764021206,
+          "rho_section_mean_kg_m3": 1944.4177539062503,
+          "T_section_mean_k": 465.7626334184028,
+          "nondim_available": false
+        },
+        {
+          "label": "TW6",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 648,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9904891572861731,
+          "u_bulk_m_s": 0.016010487530218297,
+          "rho_section_mean_kg_m3": 1942.1298561265432,
+          "T_section_mean_k": 468.8143842546296,
+          "nondim_available": false
+        },
+        {
+          "label": "TP3",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 1042,
+          "backflow_area_fraction": 0.4932821497120921,
+          "recirculation_intensity": 0.03407452483566309,
+          "flow_alignment": 0.8995951636002237,
+          "u_bulk_m_s": 0.01050420339270763,
+          "rho_section_mean_kg_m3": 1951.35722987524,
+          "T_section_mean_k": 456.5062959702495,
+          "nondim_available": false
+        }
+      ]
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_dir": "tmp/2026-06-30_claude_action_items/recon_salt4_of13",
+      "time": "10000",
+      "downcomer_labels": [
+        "TW4",
+        "TW5",
+        "TW6"
+      ],
+      "context_labels": [
+        "TP2",
+        "TP3"
+      ],
+      "stations": [
+        {
+          "label": "TP2",
+          "span": "lower_leg",
+          "status": "analyzed",
+          "n_masked": 1506,
+          "backflow_area_fraction": 0.05245683930942895,
+          "recirculation_intensity": 0.0013504118165626744,
+          "flow_alignment": 0.9026392754449811,
+          "u_bulk_m_s": 0.010080739036001988,
+          "rho_section_mean_kg_m3": 1942.1201778486056,
+          "T_section_mean_k": 468.8272936699867,
+          "nondim_available": false
+        },
+        {
+          "label": "TW4",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 648,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9922647418713084,
+          "u_bulk_m_s": 0.017992773927464758,
+          "rho_section_mean_kg_m3": 1935.5474340895064,
+          "T_section_mean_k": 477.59445878858014,
+          "nondim_available": false
+        },
+        {
+          "label": "TW5",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 576,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.9914614367332937,
+          "u_bulk_m_s": 0.018156466391142503,
+          "rho_section_mean_kg_m3": 1932.7509236284725,
+          "T_section_mean_k": 481.32463169791663,
+          "nondim_available": false
+        },
+        {
+          "label": "TW6",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 648,
+          "backflow_area_fraction": 0.0,
+          "recirculation_intensity": -0.0,
+          "flow_alignment": 0.990431252394991,
+          "u_bulk_m_s": 0.01837575908700491,
+          "rho_section_mean_kg_m3": 1930.538010817901,
+          "T_section_mean_k": 484.27636281018516,
+          "nondim_available": false
+        },
+        {
+          "label": "TP3",
+          "span": "right_leg",
+          "status": "analyzed",
+          "n_masked": 1042,
+          "backflow_area_fraction": 0.491362763915547,
+          "recirculation_intensity": 0.03158914532655521,
+          "flow_alignment": 0.8979079858735457,
+          "u_bulk_m_s": 0.012003041614804344,
+          "rho_section_mean_kg_m3": 1939.740673119002,
+          "T_section_mean_k": 472.00123646545103,
+          "nondim_available": false
+        }
+      ]
+    }
+  ]
+}

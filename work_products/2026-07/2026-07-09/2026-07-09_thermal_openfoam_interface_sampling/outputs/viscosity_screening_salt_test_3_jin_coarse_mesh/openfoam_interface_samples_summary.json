@@ -1,0 +1,12 @@
+{
+  "generated_at": "2026-07-09T16:45:36-05:00",
+  "case_id": "salt_3",
+  "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+  "time_s": "7618",
+  "sample_rows": 16,
+  "ok_rows": 16,
+  "missing_rows": 0,
+  "radiation_output_terms": [
+    "absent_no_qr_output"
+  ]
+}

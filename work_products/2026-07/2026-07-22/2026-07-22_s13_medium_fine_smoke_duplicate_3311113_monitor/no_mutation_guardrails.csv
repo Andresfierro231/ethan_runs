@@ -1,0 +1,9 @@
+guard_id,changed,policy
+native_output_mutation,false,native OpenFOAM processor files were not modified
+registry_admission_mutation,false,no registry coefficient or admission state was edited
+solver_or_postprocess,false,no solver or OpenFOAM postProcess command was launched
+new_scheduler_submission,false,no new scheduler job was submitted by this monitor
+duplicate_scheduler_cancel,true,duplicate job 3311113 was cancelled after canonical job 3311109 completed
+production_harvest,false,no production harvest was performed
+source_property_or_qwall_release,false,no source property or Qwall release was performed
+proxy_substitution,false,no endpoint probe profile or proxy rows were substituted for exact labels

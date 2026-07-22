@@ -1,0 +1,23 @@
+{
+  "component_k_admitted_count": 0,
+  "date": "2026-07-20",
+  "f6_fit_performed_count": 0,
+  "face_flux_row_count": 6,
+  "face_level_qref_extracted": true,
+  "generated_utc": "2026-07-20T18:10:59+00:00",
+  "ordinary_component_k_allowed_now": false,
+  "outputs": [
+    "README.md",
+    "face_level_qref_flux_audit.csv",
+    "residual_uq_progress.csv",
+    "pressure_f6_two_tap_progress.csv",
+    "paper_qref_uq_progress_note.md",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "q_ref_rejected_row_count": 6,
+  "residual_uq_progress_row_count": 3,
+  "same_qoi_uq_complete": false,
+  "scheduler_launch_performed": false,
+  "task": "TODO-TWO-TAP-FACE-QREF-UQ-PROGRESS"
+}

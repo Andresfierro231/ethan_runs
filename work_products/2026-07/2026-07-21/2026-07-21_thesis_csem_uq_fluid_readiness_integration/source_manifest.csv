@@ -1,0 +1,11 @@
+source_key,path,exists,use,mutation
+same_qoi_phase_c,work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table/summary.json,True,primary evidence summary,False
+fluid_phase_c,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_c_implementation/summary.json,True,primary evidence summary,False
+fluid_phase_d,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/summary.json,True,primary evidence summary,False
+s8_wall_ts,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s8_wall_ts_residual_atlas/summary.json,True,primary evidence summary,False
+s9_upcomer,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/summary.json,True,primary evidence summary,False
+s10_pressure,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/summary.json,True,primary evidence summary,False
+s10_figtable,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/summary.json,True,primary evidence summary,False
+ch5,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,True,read-only chapter insertion target,False
+ch6,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,True,read-only chapter insertion target,False
+ch7,reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,True,read-only chapter insertion target,False

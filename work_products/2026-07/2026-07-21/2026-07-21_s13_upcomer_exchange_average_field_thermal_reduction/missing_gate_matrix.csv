@@ -1,0 +1,8 @@
+gate,status,blocking_reason,diagnostic_average_proxy_allows_progress
+pressure_basis,blocked,p_or_p_rgh missing from cell VTK field inventory,true
+mu_or_nu_basis,blocked,mu/nu/nut missing from cell VTK field inventory,true
+wallHeatFlux_Q_wall_W,blocked,wallHeatFlux and Q_wall_W integration absent,true
+cp_property_basis,blocked,cp_J_kg_K not released,true
+same_qoi_uq,blocked,same-QOI UQ absent for reduced exchange QOIs,false
+production_sampler_harvest,blocked,sampler-ready rows remain zero,false
+coefficient_admission,blocked,fit/admission forbidden for diagnostic average proxy,false

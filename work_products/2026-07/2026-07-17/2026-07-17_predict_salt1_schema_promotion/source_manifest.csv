@@ -1,0 +1,10 @@
+source_id,path,exists,use
+split_policy,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv,yes,canonical final role and fit/score policy
+salt1_fixture,work_products/2026-07/2026-07-16/2026-07-16_salt1_durable_test_data_and_thesis_story/salt1_primary_closure_cases.csv,yes,admitted Salt1 fixture rows
+salt1_terminal_summary,work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_terminal_summary.csv,yes,terminal drift/verdict evidence
+salt1_patch_bc,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_patch_bc_role_table.csv,yes,patch-level BC/source/material roles
+salt1_role_summary,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_bc_role_summary.csv,yes,case-role setup Q reductions
+streamwise_pressure,work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv,yes,Salt1 station pressure targets
+branch_pressure,work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_branch_average_pressure_map.csv,yes,Salt1 branch pressure summaries
+sensor_policy,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/sensor_map_policy_refresh.csv,yes,TP/TW runtime and score policy
+tp2_projection,work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_projected_sensor_registry.csv,yes,TP2 restored projection metadata

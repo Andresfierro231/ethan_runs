@@ -1,0 +1,11 @@
+job_id,job_name,partition,state,elapsed,exit_code,submit,start,end,node_list,interpretation
+3293924,saltq_sel_cont,NuclearEnergy,RUNNING,1-15:26:54,0:0,2026-07-13T17:03:55,2026-07-13T17:03:56,Unknown,c318-016,parent corrected-Q selected continuation still live
+3293924.batch,batch,,RUNNING,1-15:26:54,0:0,2026-07-13T17:03:56,2026-07-13T17:03:56,Unknown,c318-016,batch shell still live
+3293924.0,foamRun,,RUNNING,1-15:26:31,0:0,2026-07-13T17:04:19,2026-07-13T17:04:19,Unknown,c318-016,salt2_lo10q solver step live
+3293924.1,foamRun,,RUNNING,1-15:26:31,0:0,2026-07-13T17:04:19,2026-07-13T17:04:19,Unknown,c318-016,salt2_hi10q solver step live
+3293924.2,foamRun,,RUNNING,1-15:26:31,0:0,2026-07-13T17:04:19,2026-07-13T17:04:19,Unknown,c318-016,salt4_lo10q solver step live
+3293924.3,foamRun,,RUNNING,1-15:26:31,0:0,2026-07-13T17:04:19,2026-07-13T17:04:19,Unknown,c318-016,salt4_hi10q solver step live
+3295438,saltq_s24_sel_harv,NuclearEnergy,PENDING,00:00:00,0:0,2026-07-14T13:39:11,Unknown,Unknown,None assigned,dependency-held selected +/-10Q harvester afterany:3293924
+3295989,hyd_stage,NuclearEnergy-dev,PENDING,00:00:00,0:0,2026-07-14T17:56:40,Unknown,Unknown,None assigned,dependency-held downstream hydraulics stage
+3295990,hyd_stage,NuclearEnergy-dev,PENDING,00:00:00,0:0,2026-07-14T17:56:46,Unknown,Unknown,None assigned,dependency-held downstream hydraulics stage
+3295991,hyd_stage,NuclearEnergy-dev,PENDING,00:00:00,0:0,2026-07-14T17:56:53,Unknown,Unknown,None assigned,dependency-held downstream hydraulics stage

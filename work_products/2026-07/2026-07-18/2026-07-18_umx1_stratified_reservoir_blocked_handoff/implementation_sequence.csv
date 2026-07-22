@@ -1,0 +1,11 @@
+step_id,phase,action,acceptance_check,guardrail
+1,coordination,Wait for external TSWFC2 Fluid row to complete or be released,No in-progress row owns the target Fluid files,Do not override active file ownership
+2,coordination,Claim a new unique Ethan row and matching external Fluid row for UMX1 stratified reservoir edits,Preflight passes in both boards,No overlapping active task scopes
+3,fluid_api,Add active source-row evaluation behind existing UMX exchange mode,Default disabled and empty-source scenarios are unchanged,No validation targets or CFD runtime fields
+4,fluid_api,Add source validation for row target/source forms,Invalid rows fail before solving,No silent fallback for malformed source rows
+5,fluid_api,Update segment state and dataframe ledger fields,All new fields present and finite/defaulted,Conservation residual remains explicit
+6,fluid_tests,Add focused unit tests for defaults source forms invalid rows and conservation,Focused tests pass,No full campaign
+7,docs,Update Fluid README and daily Fluid journal,Docs describe sign convention and supported row schema,No admission claim
+8,ethan_dry,Create a new UMX1S dry/smoke scorer package with frozen candidates,Dry audit passes before any solve,No tools/analyze edit unless row explicitly claims it
+9,smoke,Run only bounded Salt2/Salt3/Salt4 smoke after dry/unit gates pass,Smoke outputs contain roots conservation and probes,No OpenFOAM and no grid expansion
+10,closeout,Write status journal import manifest map update and finish_task,finish_task OK,No generated index refresh unless row claims it

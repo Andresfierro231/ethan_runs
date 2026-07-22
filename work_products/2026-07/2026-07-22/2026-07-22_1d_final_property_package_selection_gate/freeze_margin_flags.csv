@@ -1,0 +1,7 @@
+candidate_or_lane,property_freeze_margin_needed,current_margin_status,freeze_allowed_now,blocked_by,minimum_release_before_freeze
+"M0_setup_only_baseline","mu/rho for pressure root; cp/k for energy sensitivity","not_quantified",false,"No final property package release and no candidate-specific property perturbation.","Train/support-only property perturbation table with fixed candidate inputs."
+"M3_segment_only_fluid_walls","cp/mu/k/rho/beta for thermal and pressure coupling","not_quantified",false,"Source/property release and thermal residual ownership remain blocked.","Candidate-specific property sensitivity plus residual-owner gate."
+"MF12_bulk_to_TP_projection","cp/mu/k through Pr/Gz and signed source integral","not_quantified",false,"cp_J_kg_K and reset/Gz release incomplete.","cp/property release and same-QOI TP projection UQ."
+"MF15_wall_core_exchange","k, wall/layer properties, cp, mu","not_quantified",false,"Runtime wall/profile basis and wall/material release are not ready.","Wall/profile conservation gate and property perturbation."
+"M5_recirculation_exchange_cell","cp, rho, mu for exchange enthalpy and residence metrics","not_quantified",false,"S13 production/source-property release and same-label mesh/GCI incomplete.","Exact-label source/property and same-mask energy residual."
+"F6_pressure_or_component_K","rho, mu, pressure/velocity basis","not_quantified",false,"Endpoint pressure basis and ordinary-flow anchors incomplete.","Pressure/velocity basis release plus low-recirculation anchor."

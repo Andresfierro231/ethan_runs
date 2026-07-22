@@ -1,0 +1,5 @@
+requirement_id,requirement,status,evidence
+R1,analytic layer/radiation tests pass,pass_repo_local,analytic_layer_radiation_test.csv
+R2,radiation_on changes heat ledger,contract_pass_external_runtime_patch_still_needed,heat_ledger_movement.csv
+R3,runtime inputs remain legal,pass_contract,runtime_input_contract.csv
+R4,same-QOI train-only reporting contract,pass_contract,same_qoi_train_report_contract.csv

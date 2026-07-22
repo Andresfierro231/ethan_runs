@@ -1,0 +1,3 @@
+comparison,delta_train_all_sensor_mae_K,interpretation,residual_owner_status
+M3_minus_M2_existing_numeric_context,-9.881756195,"existing M3 context improves all-sensor MAE versus M2, but this is not a new MF10 score or source release",diagnostic_only
+new_development_variants,,no new residual-owner deltas computed because source/property gates fail,blocked_before_execution

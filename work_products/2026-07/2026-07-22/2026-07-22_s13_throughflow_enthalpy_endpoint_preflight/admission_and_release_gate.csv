@@ -1,0 +1,4 @@
+gate,pass_now,reason
+same_basis_residual,False,"0 case rows have endpoint mdot, endpoint T_bulk, cp release, storage/loss bounds, and same-QOI UQ together"
+production_harvest,False,"sampler proxy is nonproduction and lacks Q_wall_W, pressure, cp, sampled surface fields, and same-QOI UQ"
+coefficient_admission,False,"preflight emits contracts only; no residual values, no fitting, no final score"

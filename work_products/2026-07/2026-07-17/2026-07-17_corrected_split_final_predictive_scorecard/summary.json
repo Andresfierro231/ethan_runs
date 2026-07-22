@@ -1,0 +1,36 @@
+{
+  "blind_case_keys": [
+    "salt2_lo5q",
+    "salt2_hi5q",
+    "val_salt2"
+  ],
+  "blind_cases": 3,
+  "blind_rows": 12,
+  "candidate_count": 4,
+  "corrected_split_role_counts": {
+    "blind_external_val_salt2": 1,
+    "blind_holdout_salt2_pm5q": 2,
+    "final_training": 4,
+    "future_blind_holdout_blocked_terminal_admission": 4,
+    "future_new_cfd_blocked_run_and_admission": 1,
+    "support_diagnostic_not_final_training": 4
+  },
+  "decision": "no_final_candidate_admitted_missing_corrected_salt1_4_nominal_freeze",
+  "final_admitted_candidates": 0,
+  "final_training_case_keys": [
+    "salt1_nominal",
+    "salt2_jin_nominal",
+    "salt3_jin_nominal",
+    "salt4_nominal"
+  ],
+  "final_training_cases": 4,
+  "future_blocked_rows": 5,
+  "generated_at_utc": "2026-07-17T20:07:19.313477+00:00",
+  "guardrail": "Salt2 +/-5Q, val_salt2, PM10, and new CFD are not fit/model-selection inputs.",
+  "legacy_coupled_rows": 12,
+  "missing_salt1_rows": 4,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard",
+  "runtime_audit_failures": 0,
+  "runtime_audit_rows": 10,
+  "task": "AGENT-499"
+}

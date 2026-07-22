@@ -1,0 +1,5 @@
+split_id,split_role,train_cases,validation_cases,holdout_cases,split_policy,notes
+declared_train_salt2_validate_salt3_holdout_salt4,primary,salt_2,salt_3,salt_4,"train Salt 2 only, use Salt 3 for model-selection validation, and reserve Salt 4 as holdout",Matches TODO-PRED-VALIDATION-SPLIT admission_split_table.csv; one scalar thermal response only.
+loo_validate_salt_2,sensitivity,salt_3;salt_4,salt_2,,leave-one-out duty-only sensitivity,Scores duty prediction without rerunning the forward thermal solve for every split.
+loo_validate_salt_3,sensitivity,salt_2;salt_4,salt_3,,leave-one-out duty-only sensitivity,Scores duty prediction without rerunning the forward thermal solve for every split.
+loo_validate_salt_4,sensitivity,salt_2;salt_3,salt_4,,leave-one-out duty-only sensitivity,Scores duty prediction without rerunning the forward thermal solve for every split.

@@ -1,0 +1,3 @@
+script_id,path,purpose,job_name,partition,time_limit
+runner,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/run_staged_closure_qoi_raw_pressure.sh,stage copies and run reconstructPar/foamPostProcess raw pressure surfaces,,,
+sbatch,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/scripts/submit_staged_closure_qoi_raw_pressure.sbatch,,closure_qoi_p,NuclearEnergy,04:00:00

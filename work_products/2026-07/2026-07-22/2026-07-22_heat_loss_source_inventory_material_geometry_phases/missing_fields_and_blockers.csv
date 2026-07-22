@@ -1,0 +1,9 @@
+blocker_id,blocker,affected_lanes,severity,unlock_path,current_decision
+B01,candidate_specific_source_property_release_rows_zero,heater_source;cooler_or_jacket;test_section_source;passive_external_convection;radiation;recirculation_exchange,high,Repair strict source envelope and publish cp/mu/k source paths,blocks_release
+B02,material_geometry_fields_incomplete,wall_conduction;contact_resistance;insulation;quartz;external_convection;radiation,high,Build segmentwise material geometry ledger from setup/provenance not residual,blocks_calibration
+B03,numeric_passive_heat_loss_not_released,passive_external_convection;radiation,high,Release source-backed h/area/emissivity/Tsur and wall-state contract before numeric use,blocks_runtime_use
+B04,cooler_HX_setup_model_not_released,cooler_or_jacket,high,Develop setup-only UA/effectiveness model without imposed CFD duty,blocks_runtime_use
+B05,S13_Qwall_exchange_not_production_released,recirculation_exchange,high,Complete same-label mesh/GCI and source/property gates before exchange-cell training,blocks_exchange_release
+B06,CAND001_pressure_endpoint_running,pressure_basis;viscosity_mu,medium,Wait for terminal handoff and endpoint readiness row,blocks_pressure_endpoint_readiness
+B07,storage_no_transient_model,storage,medium,Open future transient/storage row with time-window dTdt evidence,future_lane_only
+B08,unknown_residual_no_physical_owner,unknown_residual,high,Keep residual explicit until new physical owner evidence lands,output_only

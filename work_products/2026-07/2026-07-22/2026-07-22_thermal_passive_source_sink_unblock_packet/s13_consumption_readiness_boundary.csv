@@ -1,0 +1,3 @@
+qoi_family,current_evidence,consume_as,runtime_release_allowed_now,production_harvest_allowed_now,same_qoi_uq_ready,admission_allowed,next_unblock_action,forbidden_shortcut
+S13-DIRECT-QWALL,3 exact target-window Q_wall_W rows,diagnostic sampled-field evidence,False,False,False,False,wait for same-QOI UQ and production-harvest gate under S13-owned rows,do not relabel direct Qwall as source/property release or runtime wallHeatFlux input
+S13-SOURCE-SIDE-EQUIVALENT,source-side conservation rows exist in separate packages but are not Q_wall_W release,source-side diagnostic consistency evidence,False,False,False,False,require same-QOI source-side conservation UQ and explicit non-relabel policy,do not use source-side static-boundary Q as realized wall heat flux

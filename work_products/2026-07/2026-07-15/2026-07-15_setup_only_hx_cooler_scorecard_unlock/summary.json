@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-15",
+  "decision_rows": 2,
+  "final_forward_v1_state": "blocked_no_go_final_forward_v1_not_admitted",
+  "final_hx_lane_state": "advanced_as_setup_only_candidate_input_not_final_forward_v1",
+  "generated_utc": "2026-07-15T22:38:52.094675+00:00",
+  "next_executable_artifact": "bounded_hydraulic_pressure_scorecard_on_admitted_rows",
+  "output_dir": "work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock",
+  "preferred_agent438_decision": "advance_setup_only_hx_candidate_to_final_gate_inputs_not_final_forward_v1",
+  "preferred_candidate": "salt2_fit_constant_UA_bulk_drive",
+  "preferred_holdout_abs_error_W": "7.502618613",
+  "preferred_validation_abs_error_W": "2.869104004",
+  "remaining_unlock_rows": 5,
+  "runtime_audit_rows": 5,
+  "runtime_gate_counts": {
+    "pass": 4,
+    "pass_for_setup_implementation; not_a_new_run": 1
+  },
+  "score_error_gate_counts": {
+    "fail": 1,
+    "not_scored_for_generalization": 2,
+    "pass": 3
+  },
+  "scorecard_rows": 6,
+  "source_manifest_rows": 11,
+  "task": "AGENT-438"
+}

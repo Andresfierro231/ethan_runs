@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="680" viewBox="0 0 1180 680">
+<rect x="0" y="0" width="1180" height="680" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="90" y="34" class="title">1D mdot Error By Friction Form</text>
+<text x="90" y="56" class="subtitle">Matched-insulation diagnostic from AGENT-195; mdot is not the only score while thermal state is mismatched</text>
+<text x="18" y="318.0" class="label" transform="rotate(-90 18 318.0)">mdot error (%)</text>
+<line x1="90" y1="550.00" x2="1140" y2="550.00" class="grid"/>
+<text x="82" y="554.00" text-anchor="end" class="tick">-40</text>
+<line x1="90" y1="395.33" x2="1140" y2="395.33" class="grid"/>
+<text x="82" y="399.33" text-anchor="end" class="tick">-20</text>
+<line x1="90" y1="240.67" x2="1140" y2="240.67" class="grid"/>
+<text x="82" y="244.67" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="86.00" x2="1140" y2="86.00" class="grid"/>
+<text x="82" y="90.00" text-anchor="end" class="tick">20</text>
+<line x1="90" y1="240.67" x2="1140" y2="240.67" class="axis"/>
+<line x1="90" y1="86" x2="90" y2="550" class="axis"/>
+<rect x="150.76" y="165.63" width="49.98" height="75.04" fill="#6B7280"/>
+<rect x="210.26" y="213.61" width="49.98" height="27.06" fill="#0F766E"/>
+<rect x="269.76" y="240.67" width="49.98" height="7.17" fill="#2878B5"/>
+<rect x="329.26" y="240.67" width="49.98" height="179.30" fill="#D97706"/>
+<text x="265.0" y="578" text-anchor="middle" class="tick">Salt 2</text>
+<rect x="500.76" y="115.27" width="49.98" height="125.40" fill="#6B7280"/>
+<rect x="560.26" y="188.93" width="49.98" height="51.74" fill="#0F766E"/>
+<rect x="619.76" y="214.91" width="49.98" height="25.76" fill="#2878B5"/>
+<rect x="679.26" y="240.67" width="49.98" height="182.29" fill="#D97706"/>
+<text x="615.0" y="578" text-anchor="middle" class="tick">Salt 3</text>
+<rect x="850.76" y="101.68" width="49.98" height="138.98" fill="#6B7280"/>
+<rect x="910.26" y="196.70" width="49.98" height="43.96" fill="#0F766E"/>
+<rect x="969.76" y="211.69" width="49.98" height="28.98" fill="#2878B5"/>
+<rect x="1029.26" y="240.67" width="49.98" height="190.68" fill="#D97706"/>
+<text x="965.0" y="578" text-anchor="middle" class="tick">Salt 4</text>
+<rect x="90" y="604" width="14" height="14" fill="#6B7280"/>
+<text x="110" y="616" class="legend">F1</text>
+<rect x="260" y="604" width="14" height="14" fill="#0F766E"/>
+<text x="280" y="616" class="legend">F3_hagenbach</text>
+<rect x="430" y="604" width="14" height="14" fill="#2878B5"/>
+<text x="450" y="616" class="legend">F3_shah_apparent</text>
+<rect x="600" y="604" width="14" height="14" fill="#D97706"/>
+<text x="620" y="616" class="legend">F4_leg_class</text>
+<text x="90" y="644" class="small">Source: AGENT-195 mdot comparison. F3 Shah apparent is the best current mdot screen; F4 leg-class over-stiffens the loop in this</text>
+<text x="90" y="658" class="small">setup.</text>
+</svg>

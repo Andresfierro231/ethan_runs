@@ -1,0 +1,24 @@
+{
+  "task": "TODO-THESIS-RECIRCULATION-FRACTION-CLOSED-CV-STUDY-2026-07-22",
+  "task_id": "TODO-THESIS-RECIRCULATION-FRACTION-CLOSED-CV-STUDY-2026-07-22",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-RECIRCULATION-FRACTION-CLOSED-CV-STUDY-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-recirculation-fraction-closed-cv-study.md",
+    "imports/2026-07-22_thesis_recirculation_fraction_closed_cv_study.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_recirculation_fraction_closed_cv_study"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "decision": "closed_cv_fraction_fail_closed_current_proxies_thesis_diagnostic_only"
+}

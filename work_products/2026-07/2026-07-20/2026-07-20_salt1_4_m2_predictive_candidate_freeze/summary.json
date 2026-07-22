@@ -1,0 +1,17 @@
+{
+  "admitted_predictive_terms": 2,
+  "blocked_or_diagnostic_terms": 4,
+  "candidate_freeze_created": true,
+  "candidate_freeze_id": "M2_CANDIDATE_FREEZE_SALT1_4_NOMINAL_2026_07_20",
+  "date": "2026-07-20",
+  "generated_at_utc": "2026-07-20T16:27:21.207713+00:00",
+  "holdout_predictions_created": false,
+  "holdout_rows_used_for_fit": 0,
+  "model_family": "M2",
+  "model_form_name": "admitted_heater_cooler_boundary_model",
+  "model_selection_rows_outside_nominal_freeze": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "task": "TODO-PREDICT-SALT1-4-M2-CANDIDATE-FREEZE",
+  "training_rows": 4
+}

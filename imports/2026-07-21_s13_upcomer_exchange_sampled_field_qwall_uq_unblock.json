@@ -1,0 +1,116 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-UQ-UNBLOCK-2026-07-21",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-UQ-UNBLOCK-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/cfd-pp/Implementer/Tester/Writer/Reviewer",
+  "objective": "Decide the post-extraction S13 production path to Q_wall_W or a documented source-side heat-flow equivalent plus same-QOI UQ.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-UQ-UNBLOCK-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-sampled-field-qwall-uq-unblock.md",
+    "imports/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock.json",
+    "tools/analyze/build_s13_upcomer_exchange_sampled_field_qwall_uq_unblock.py",
+    "tools/analyze/test_s13_upcomer_exchange_sampled_field_qwall_uq_unblock.py",
+    ".agent/STATE.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/BLOCKERS.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files",
+    "thesis current files"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/summary.json",
+    "production_readiness_table": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/production_readiness_table.csv",
+    "blocker_unlock_matrix": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/blocker_unlock_matrix.csv",
+    "same_qoi_uq_prerequisite_table": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/same_qoi_uq_prerequisite_table.csv",
+    "source_basis_audit": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/source_basis_audit.csv",
+    "path_decision": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/qwall_or_source_side_path_decision.csv"
+  },
+  "result": {
+    "decision": "source_side_equivalent_is_smallest_remaining_path_but_production_blocked",
+    "case_count": 3,
+    "source_side_contract_ready_rows": 3,
+    "Q_wall_W_ready_rows": 0,
+    "same_qoi_uq_ready_rows": 0,
+    "production_harvest_ready_rows": 0,
+    "admission_allowed_rows": 0,
+    "recommended_next_row": "source-side heat-flow equivalence contract plus same-QOI UQ prerequisite package",
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_s13_upcomer_exchange_sampled_field_qwall_uq_unblock.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_upcomer_exchange_sampled_field_qwall_uq_unblock.py tools/analyze/test_s13_upcomer_exchange_sampled_field_qwall_uq_unblock.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_upcomer_exchange_sampled_field_qwall_uq_unblock",
+      "result": "passed: 4 tests"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock --strict",
+      "result": "passed: candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-UQ-UNBLOCK-2026-07-21",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "passed: indexed 2492 docs; 30 board rows; 15 blockers"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK (15 entries)"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "openfoam_solver_or_postprocessing_launched": false,
+  "surface_extraction_launched": false,
+  "field_sampling_launched": false,
+  "sampler_or_harvest_launched": false,
+  "same_qoi_uq_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "Q_wall_W_release": false,
+  "source_side_relabel_as_Q_wall": false,
+  "production_harvest": false,
+  "same_qoi_uq_release": false,
+  "downstream_trigger": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": true,
+  "residual_absorbed_into_internal_Nu": false
+}

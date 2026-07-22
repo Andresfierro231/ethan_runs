@@ -1,0 +1,4 @@
+item,status,implementation_path,scientific_label,guardrail
+faithful_localized_H1,requires_external_fluid_implementation,../cfd-modeling-tools Fluid solver/config support for named localized hydraulic loss and reset metadata,candidate_physics_rerun_not_yet_available,do not collapse named component/cluster/branch losses into a publication closure without explicit Fluid support
+ethan_runs_only_H1_proxy,possible_but_downgraded_screen,new task-scoped runner could pass aggregate MinorLosses/fixed-K values into existing Fluid APIs,screen_only_not_publication_closure,label as directionality test; preserve named-loss ledger separately; no thermal fitting
+global_loop_multiplier,rejected_except_math_baseline,do not export as model correction,diagnostic_baseline_only,"would hide localized pressure recovery, reset, feature loss, and recirculation invalidity"

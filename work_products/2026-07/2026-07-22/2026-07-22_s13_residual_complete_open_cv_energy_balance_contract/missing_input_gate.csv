@@ -1,0 +1,6 @@
+missing_input_or_gate,current_status,needed_for,pass_now,next_artifact
+row_specific_cp_property_release,required for enthalpy/source balance,same-basis throughflow enthalpy term,false,source/property exact-field recovery or candidate-specific release row
+throughflow_enthalpy_endpoints,not_released_for_same_basis_open_cv_residual,mdot_throughflow*cp*DeltaT_throughflow,false,same-window endpoint sampler/harvest manifest
+storage_and_other_named_losses,named_in_equation_but_not_bounded,residual-complete open CV,false,storage/source/loss lane inventory with uncertainty
+same_label_mesh_GCI_or_admitted_equivalence,formal_gci_ready_rows_zero,candidate-grade S13 exchange evidence,false,same-label coarse/GCI unlock or terminal no-GCI routing
+source_property_Qwall_release,no_release,source-bounded residual/candidate use,false,candidate-specific source/property release review

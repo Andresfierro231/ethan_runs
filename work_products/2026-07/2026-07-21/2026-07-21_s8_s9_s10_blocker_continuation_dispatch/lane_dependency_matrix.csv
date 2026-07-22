@@ -1,0 +1,5 @@
+lane,consume_first,wait_for_active_row,required_inputs,blocked_until
+thermal_residual_ownership,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/README.md,none,completed S8/S12/H/H2/setup-known/heated-incline/F-J evidence,one residual owner can be predeclared without fitting or protected-row scoring
+upcomer_exchange_uq,work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md,TODO-S13-UPCOMER-EXCHANGE-AVERAGE-FIELD-THERMAL-REDUCTION-2026-07-21,seeded geometry/surface/cell/average-field packages plus sampled-field and Qwall contract,finite V_recirc/mdot_exchange/tau_recirc/thermal contrast/Qwall-or-source-side equivalent/same-QOI UQ exist
+pressure_f6,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/README.md,TODO-TWO-TAP-SECTION-EFFECTIVE-HYBRID-PRESSURE-SCORECARD-2026-07-21,S10/S14/source-readiness/CAND001 timeout/F6 Stage B/same-QOI UQ evidence,ordinary-flow endpoint rows and same-QOI UQ pass or a retry-ready scheduler runbook is justified
+

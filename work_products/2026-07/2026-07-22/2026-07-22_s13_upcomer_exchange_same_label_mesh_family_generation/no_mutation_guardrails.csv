@@ -1,0 +1,11 @@
+guardrail,status
+native_output_mutation,false
+registry_or_admission_mutation,false
+scheduler_submission_cancel_or_requeue,false
+solver_postprocessing_sampler_harvest_or_uq_launch,false
+mesh_gci_computation,false
+qwall_source_property_or_coefficient_release,false
+production_harvest,false
+s11_s12_s13_s15_s6_trigger,false
+exact_label_replaced_with_proxy,false
+residual_absorbed_into_internal_nu,false

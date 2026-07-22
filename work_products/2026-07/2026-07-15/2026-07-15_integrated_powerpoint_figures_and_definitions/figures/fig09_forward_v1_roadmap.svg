@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560">
+  <rect width="1080" height="560" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <text x="52.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#111827" text-anchor="start">Roadmap from diagnostic replay to final forward-v1</text>
+  <circle cx="108.0" cy="156.0" r="26.0" fill="#16a34a" stroke="#16a34a" stroke-width="2.0"/>
+  <text x="108.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">1</text>
+  <rect x="146.0" y="120.0" width="235.0" height="110.0" rx="8.0" fill="#ffffff" stroke="#16a34a" stroke-width="2.4"/>
+  <text x="165.0" y="154.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">Setup-only HX scorecard</text>
+  <text x="165.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">Use UA/cooler candidates</text>
+  <text x="165.0" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">without runtime CFD leakage.</text>
+  <line x1="381.0" y1="175.0" x2="398.0" y2="175.0" stroke="#111827" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <circle cx="428.0" cy="156.0" r="26.0" fill="#16a34a" stroke="#16a34a" stroke-width="2.0"/>
+  <text x="428.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">2</text>
+  <rect x="466.0" y="120.0" width="235.0" height="110.0" rx="8.0" fill="#ffffff" stroke="#16a34a" stroke-width="2.4"/>
+  <text x="485.0" y="154.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">Heater setup model</text>
+  <text x="485.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">Score eta P_electrical on</text>
+  <text x="485.0" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">validation/holdout.</text>
+  <line x1="701.0" y1="175.0" x2="718.0" y2="175.0" stroke="#111827" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <circle cx="748.0" cy="156.0" r="26.0" fill="#f97316" stroke="#f97316" stroke-width="2.0"/>
+  <text x="748.0" y="165.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">3</text>
+  <rect x="786.0" y="120.0" width="235.0" height="110.0" rx="8.0" fill="#ffffff" stroke="#f97316" stroke-width="2.4"/>
+  <text x="805.0" y="154.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">Distributed test-section boundary</text>
+  <text x="805.0" y="186.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">Replace compatibility sink</text>
+  <text x="805.0" y="203.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">with physical segment heat</text>
+  <text x="805.0" y="220.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">loss.</text>
+  <circle cx="108.0" cy="346.0" r="26.0" fill="#f97316" stroke="#f97316" stroke-width="2.0"/>
+  <text x="108.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">4</text>
+  <rect x="146.0" y="310.0" width="235.0" height="110.0" rx="8.0" fill="#ffffff" stroke="#f97316" stroke-width="2.4"/>
+  <text x="165.0" y="344.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">Matched plane extraction</text>
+  <text x="165.0" y="376.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">Get admission-grade upcomer</text>
+  <text x="165.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">planes and wall bands.</text>
+  <line x1="381.0" y1="365.0" x2="398.0" y2="365.0" stroke="#111827" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <circle cx="428.0" cy="346.0" r="26.0" fill="#f97316" stroke="#f97316" stroke-width="2.0"/>
+  <text x="428.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">5</text>
+  <rect x="466.0" y="310.0" width="235.0" height="110.0" rx="8.0" fill="#ffffff" stroke="#f97316" stroke-width="2.4"/>
+  <text x="485.0" y="344.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">Re 150/200/250 anchors</text>
+  <text x="485.0" y="376.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">Bracket</text>
+  <text x="485.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">ordinary-to-recirculating</text>
+  <text x="485.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">onset.</text>
+  <line x1="701.0" y1="365.0" x2="718.0" y2="365.0" stroke="#111827" stroke-width="2.2" marker-end="url(#arrow)"/>
+  <circle cx="748.0" cy="346.0" r="26.0" fill="#dc2626" stroke="#dc2626" stroke-width="2.0"/>
+  <text x="748.0" y="355.0" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="700" fill="#ffffff" text-anchor="middle">6</text>
+  <rect x="786.0" y="310.0" width="235.0" height="110.0" rx="8.0" fill="#ffffff" stroke="#dc2626" stroke-width="2.4"/>
+  <text x="805.0" y="344.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#111827" text-anchor="start">Final forward-v1 gate</text>
+  <text x="805.0" y="376.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">Only after</text>
+  <text x="805.0" y="393.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">split/runtime/heat-balance</text>
+  <text x="805.0" y="410.0" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#4b5563" text-anchor="start">gates pass.</text>
+  <text x="540.0" y="505.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="600" fill="#4b5563" text-anchor="middle">Color meaning: green = ready to score, orange = build/admit next, red = still blocked.</text>
+</svg>

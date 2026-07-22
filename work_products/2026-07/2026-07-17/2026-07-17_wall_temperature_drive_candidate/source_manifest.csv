@@ -1,0 +1,9 @@
+source_id,path,use
+agent507_closeout,work_products/2026-07/2026-07-17/2026-07-17_wall_passive_test_section_admission_closeout,blocker status and next-physics motivation
+agent498_distribution_ladder,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder,PB2 Salt2 shape and coupled scoring helper baseline
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,HX alpha_UA and segmented HX adapter
+agent461_m3,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv,M3 mdot/TP/TW/all-probe comparator gates
+agent_m3_sensor_baseline,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv,M3 probe-level comparator
+setup_external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,setup hA/Ta/Tsur/emissivity role rows
+wall_layer_drive_mapping,work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv,score-only wall proxy audit fields
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read-only Fluid solve_case execution and drive-selector implementation

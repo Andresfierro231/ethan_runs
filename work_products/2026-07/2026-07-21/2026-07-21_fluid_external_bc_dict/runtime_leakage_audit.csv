@@ -1,0 +1,5 @@
+audit_id,rows_checked,status,forbidden_runtime_inputs,evidence
+predictive_heat_flux_exclusion,15,pass,forbidden: realized wall heat flux; imposed cooler duty; heat residual,runtime dictionary carries policy labels but no diagnostic heat-flux value column
+validation_temperature_exclusion,24,pass,forbidden: validation temperatures; TP/TW score targets,temperature fields are setup ambient/surroundings only
+radiation_double_count_exclusion,24,pass,forbidden: replay total heat plus separate predictive radiation,mode table makes predictive/replay mutually exclusive
+residual_absorption_exclusion,24,pass,forbidden: heat residual as boundary field or internal Nu correction,residual policy is explicit on every runtime dictionary row

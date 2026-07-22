@@ -1,0 +1,22 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/sampling_command_contract.csv,completed medium/fine terminal sampling command contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/trusted_wall_Q_wall_summary.csv,current-coarse exact Q_wall context,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_face_area_repair/preflight,task-owned generated package,true,false,true
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh,read-only medium/fine source case root,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh/processors64,read-only collated processor field directory,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh/constant/polyMesh,read-only mesh geometry source,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh,read-only medium/fine source case root,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh/processors128,read-only collated processor field directory,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh/constant/polyMesh,read-only mesh geometry source,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_3_jin_medium_mesh,read-only medium/fine source case root,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_3_jin_medium_mesh/processors64,read-only collated processor field directory,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_3_jin_medium_mesh/constant/polyMesh,read-only mesh geometry source,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_3_jin_fine_mesh,read-only medium/fine source case root,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_3_jin_fine_mesh/processors128,read-only collated processor field directory,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_3_jin_fine_mesh/constant/polyMesh,read-only mesh geometry source,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_4_jin_medium_mesh,read-only medium/fine source case root,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_4_jin_medium_mesh/processors64,read-only collated processor field directory,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_4_jin_medium_mesh/constant/polyMesh,read-only mesh geometry source,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_4_jin_fine_mesh,read-only medium/fine source case root,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_4_jin_fine_mesh/processors128,read-only collated processor field directory,true,true,false
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_4_jin_fine_mesh/constant/polyMesh,read-only mesh geometry source,true,true,false

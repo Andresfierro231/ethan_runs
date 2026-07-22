@@ -1,0 +1,7 @@
+case_id,time_window_s,target,current_impact,what_is_unlocked,still_blocked,trigger_allowed
+salt_2,7915,S13,opens_limited_sampled_field_extraction_only,scheduler-authorized diagnostic extraction for U/T/rho/T-wall fields from seeded geometry,"Q_wall_W, pressure residual, R_mu, cp, production harvest, same-QOI UQ, coefficient admission",false
+salt_3,7618,S13,opens_limited_sampled_field_extraction_only,scheduler-authorized diagnostic extraction for U/T/rho/T-wall fields from seeded geometry,"Q_wall_W, pressure residual, R_mu, cp, production harvest, same-QOI UQ, coefficient admission",false
+salt_4,10000,S13,opens_limited_sampled_field_extraction_only,scheduler-authorized diagnostic extraction for U/T/rho/T-wall fields from seeded geometry,"Q_wall_W, pressure residual, R_mu, cp, production harvest, same-QOI UQ, coefficient admission",false
+salt_2,7915,S12,blocked,none for train scoring or freeze,"no S13 admitted candidate, no Q_wall_W, no source/property release, no attribution package",false
+salt_3,7618,S12,blocked,none for train scoring or freeze,"no S13 admitted candidate, no Q_wall_W, no source/property release, no attribution package",false
+salt_4,10000,S12,blocked,none for train scoring or freeze,"no S13 admitted candidate, no Q_wall_W, no source/property release, no attribution package",false

@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-07T17:57:13-05:00",
+  "task": "AGENT-194",
+  "inputs": {
+    "wallHeatFlux_dat": "jadyn_runs/modern_runs/2026-06-18_*/runs/salt{2,3,4}_jin/case_stage/*_continuation/postProcessing/wallHeatFlux/*/wallHeatFlux.dat",
+    "htc_csv": "work_products/2026-06-30_claude_thermal_htc/segment_htc_uaprime_*.csv",
+    "mdot_surfaceFieldValue": "postProcessing/mdot_pipeleg_lower_05_straight/*/surfaceFieldValue.dat",
+    "bc_types": "0/T from each continuation case"
+  },
+  "outputs": {
+    "ledger_csv": "work_products/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.csv",
+    "ledger_json": "work_products/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.json",
+    "readme": "work_products/2026-07-07_heat_source_sink_ledger/README.md",
+    "summary_json": "work_products/2026-07-07_heat_source_sink_ledger/summary.json"
+  },
+  "counts": {
+    "source_ids": 3,
+    "ledger_rows": 24,
+    "patch_groups": 5
+  },
+  "source_ids": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "patch_groups": [
+    "ambient_wall",
+    "cooler",
+    "heater",
+    "junction_other",
+    "test_section"
+  ],
+  "aggregate_check": {
+    "viscosity_screening_salt_test_2_jin_coarse_mesh": {
+      "heater_sum_W": 243.519,
+      "net_sum_all_groups_W": 0.127,
+      "passes_01pct_gate": true
+    },
+    "viscosity_screening_salt_test_3_jin_coarse_mesh": {
+      "heater_sum_W": 273.155,
+      "net_sum_all_groups_W": 0.286,
+      "passes_01pct_gate": false
+    },
+    "viscosity_screening_salt_test_4_jin_coarse_mesh": {
+      "heater_sum_W": 310.487,
+      "net_sum_all_groups_W": 0.079,
+      "passes_01pct_gate": true
+    }
+  },
+  "limitations": [
+    "enthalpy_change_W is NaN: HTC CSV provides only a single mid-span T_bulk, not separate inlet/outlet",
+    "residual_W and residual_fraction are NaN for the same reason",
+    "Resistance network (fluid convection → wall conduction → external h) is NOT decomposed",
+    "Salt 1 excluded (weakly converged; see CLAUDE.md §6)",
+    "Junction patch BC types are mixed (rcExternalTemperature + externalTemperature); grouped as junction_other",
+    "radiation_present = False; no qr term in these cases",
+    "wallHeatFlux sign: positive = into fluid (heater convention)"
+  ]
+}

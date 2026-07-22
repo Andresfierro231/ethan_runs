@@ -1,0 +1,31 @@
+{
+  "best_train_corrected_mae_K": 8.501469998140214,
+  "best_train_family": "F2_global_affine",
+  "best_transfer_baseline_mae_K": 106.12166567949048,
+  "best_transfer_corrected_mae_K": 13.324482852092467,
+  "best_transfer_family": "F5_thermal_family_offset_shared_multiplier",
+  "coefficient_refit_after_transfer_scoring": false,
+  "date": "2026-07-21",
+  "external_fluid_edit": false,
+  "external_test_rows_scored": 0,
+  "families_scored": [
+    "F0_null_baseline",
+    "F1_global_offset",
+    "F2_global_affine",
+    "F3_sensor_kind_offset",
+    "F4_thermal_family_offset",
+    "F5_thermal_family_offset_shared_multiplier"
+  ],
+  "final_predictive_admission": false,
+  "fit_rows": 32,
+  "fluid_solve_run": false,
+  "model_selection_from_transfer": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "source_candidate": "tswfc2_smoke_salt2_four_node_v1",
+  "source_candidate_admission": "not_admitted_no_grid_expansion",
+  "status": "complete",
+  "task_id": "TODO-FLUID-REDUCED-DOF-BIAS-TRANSFER-SCREEN-2026-07-21",
+  "transfer_rows": 32
+}

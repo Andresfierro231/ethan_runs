@@ -1,0 +1,7 @@
+blocker_id,covered,area_ids,packet_ids,coverage_note
+closure-qoi-mesh-gci,yes,A1;A2,A1.1;A1.2;A1.3;A3.2,covered_by_actionable_packets
+thermal-cfd-1d-parity,yes,A1;A2,A1.1;A2.2,covered_by_actionable_packets
+predictive-heater-cooler-wall-submodels,yes,A2;A3,A2.1;A2.2;A2.3,covered_by_actionable_packets
+upcomer-onset-data-sparsity,yes,A1;A3,A3.2;A3.3,covered_by_actionable_packets
+fluid-external-boundary-api-gap,yes,A2;A3,A2.3,covered_by_actionable_packets
+f6-friction-re-correction,yes,A3,A2.1;A3.1;A3.3,covered_by_actionable_packets

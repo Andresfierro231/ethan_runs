@@ -1,0 +1,12 @@
+{
+  "tool": "derive_streamwise_momentum_budget.py",
+  "generated_at": "2026-07-09T16:53:41-05:00",
+  "method": "bulk streamwise momentum budget from section-mean p_rgh/rho/u; friction driver = d(p_rgh)/ds + gh*d(rho)/ds (- inertia); gh = g.x = -9.81*y (g verified in constant/g). Isothermal legs reduce to legacy d(p_rgh)/ds friction (consistency check).",
+  "cases": [
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "section_json": "work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/outputs/fine/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.json",
+      "legs": []
+    }
+  ]
+}

@@ -1,0 +1,434 @@
+{
+  "generated_at": "2026-06-30T14:11:48-05:00",
+  "scope_note": "Paper fits use Salt Jin only; Kirst/val are sensitivity context.",
+  "laminar_reference": "Darcy f_lam = 64/Re (fully-developed laminar circular pipe).",
+  "friction_per_case": [
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "case_label": "Salt 2 Jin",
+      "physical_case": "Salt 2",
+      "property_model": "jin",
+      "segment": "test_section_span",
+      "re_effective": 97.54143211575995,
+      "apparent_darcy_f": 46.163210316366786,
+      "laminar_ref_darcy_f_64_over_Re": 0.6561314367831534,
+      "excess_loss_factor_fapp_over_flam": 70.35665070811625
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "case_label": "Salt 2 Kirst",
+      "physical_case": "Salt 2",
+      "property_model": "kirst",
+      "segment": "test_section_span",
+      "re_effective": 80.34651277493121,
+      "apparent_darcy_f": 53.573765793842185,
+      "laminar_ref_darcy_f_64_over_Re": 0.7965498164093132,
+      "excess_loss_factor_fapp_over_flam": 67.25726965243928
+    },
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "case_label": "Salt 2 val",
+      "physical_case": "Salt 2",
+      "property_model": "val",
+      "segment": "lower_leg",
+      "re_effective": 92.58857161606477,
+      "apparent_darcy_f": 2.7248192153153044,
+      "laminar_ref_darcy_f_64_over_Re": 0.6912300177325076,
+      "excess_loss_factor_fapp_over_flam": 3.9419862352820387
+    },
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "case_label": "Salt 2 val",
+      "physical_case": "Salt 2",
+      "property_model": "val",
+      "segment": "test_section_span",
+      "re_effective": 108.36043512934887,
+      "apparent_darcy_f": 42.36576072197514,
+      "laminar_ref_darcy_f_64_over_Re": 0.5906214747440224,
+      "excess_loss_factor_fapp_over_flam": 71.7308166627985
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_label": "Salt 3 Jin",
+      "physical_case": "Salt 3",
+      "property_model": "jin",
+      "segment": "lower_leg",
+      "re_effective": 110.26437941689072,
+      "apparent_darcy_f": 2.182920658319686,
+      "laminar_ref_darcy_f_64_over_Re": 0.5804231642027111,
+      "excess_loss_factor_fapp_over_flam": 3.7609123704051677
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_label": "Salt 3 Jin",
+      "physical_case": "Salt 3",
+      "property_model": "jin",
+      "segment": "test_section_span",
+      "re_effective": 128.73775331586128,
+      "apparent_darcy_f": 35.23147986216345,
+      "laminar_ref_darcy_f_64_over_Re": 0.49713466602896517,
+      "excess_loss_factor_fapp_over_flam": 70.86908692887394
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "case_label": "Salt 3 Kirst",
+      "physical_case": "Salt 3",
+      "property_model": "kirst",
+      "segment": "lower_leg",
+      "re_effective": 91.26909353295369,
+      "apparent_darcy_f": 2.5230015434682858,
+      "laminar_ref_darcy_f_64_over_Re": 0.7012231361418322,
+      "excess_loss_factor_fapp_over_flam": 3.598000997728023
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "case_label": "Salt 3 Kirst",
+      "physical_case": "Salt 3",
+      "property_model": "kirst",
+      "segment": "test_section_span",
+      "re_effective": 105.91769377715526,
+      "apparent_darcy_f": 40.522781179988066,
+      "laminar_ref_darcy_f_64_over_Re": 0.6042427635806754,
+      "excess_loss_factor_fapp_over_flam": 67.06374262532259
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_label": "Salt 4 Jin",
+      "physical_case": "Salt 4",
+      "property_model": "jin",
+      "segment": "lower_leg",
+      "re_effective": 150.19205488780372,
+      "apparent_darcy_f": 1.6636004069258814,
+      "laminar_ref_darcy_f_64_over_Re": 0.42612107576402225,
+      "excess_loss_factor_fapp_over_flam": 3.9040556816935092
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_label": "Salt 4 Jin",
+      "physical_case": "Salt 4",
+      "property_model": "jin",
+      "segment": "test_section_span",
+      "re_effective": 173.73605749616746,
+      "apparent_darcy_f": 26.714861457611974,
+      "laminar_ref_darcy_f_64_over_Re": 0.3683748838459271,
+      "excess_loss_factor_fapp_over_flam": 72.52085478440347
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "case_label": "Salt 4 Kirst",
+      "physical_case": "Salt 4",
+      "property_model": "kirst",
+      "segment": "lower_leg",
+      "re_effective": 121.56502531923894,
+      "apparent_darcy_f": 1.846950237665355,
+      "laminar_ref_darcy_f_64_over_Re": 0.5264672123575935,
+      "excess_loss_factor_fapp_over_flam": 3.508196131330676
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "case_label": "Salt 4 Kirst",
+      "physical_case": "Salt 4",
+      "property_model": "kirst",
+      "segment": "test_section_span",
+      "re_effective": 140.40213430161438,
+      "apparent_darcy_f": 30.66803329834763,
+      "laminar_ref_darcy_f_64_over_Re": 0.45583352645134334,
+      "excess_loss_factor_fapp_over_flam": 67.2790207800154
+    }
+  ],
+  "friction_property_axis_spread": [
+    {
+      "physical_case": "Salt 2",
+      "segment": "test_section_span",
+      "value_key": "apparent_darcy_f",
+      "re_jin": 97.54143211575995,
+      "re_kirst": 80.34651277493121,
+      "re_property_spread_pct": 19.332304222632615,
+      "value_jin": 46.163210316366786,
+      "value_kirst": 53.573765793842185,
+      "value_property_spread_pct": 14.86019682266437
+    },
+    {
+      "physical_case": "Salt 3",
+      "segment": "lower_leg",
+      "value_key": "apparent_darcy_f",
+      "re_jin": 110.26437941689072,
+      "re_kirst": 91.26909353295369,
+      "re_property_spread_pct": 18.850750305547887,
+      "value_jin": 2.182920658319686,
+      "value_kirst": 2.5230015434682858,
+      "value_property_spread_pct": 14.453315229877326
+    },
+    {
+      "physical_case": "Salt 3",
+      "segment": "test_section_span",
+      "value_key": "apparent_darcy_f",
+      "re_jin": 128.73775331586128,
+      "re_kirst": 105.91769377715526,
+      "re_property_spread_pct": 19.449844289922005,
+      "value_jin": 35.23147986216345,
+      "value_kirst": 40.522781179988066,
+      "value_property_spread_pct": 13.969646710382165
+    },
+    {
+      "physical_case": "Salt 4",
+      "segment": "lower_leg",
+      "value_key": "apparent_darcy_f",
+      "re_jin": 150.19205488780372,
+      "re_kirst": 121.56502531923894,
+      "re_property_spread_pct": 21.06810210556781,
+      "value_jin": 1.6636004069258814,
+      "value_kirst": 1.846950237665355,
+      "value_property_spread_pct": 10.445645102540466
+    },
+    {
+      "physical_case": "Salt 4",
+      "segment": "test_section_span",
+      "value_key": "apparent_darcy_f",
+      "re_jin": 173.73605749616746,
+      "re_kirst": 140.40213430161438,
+      "re_property_spread_pct": 21.222458182360022,
+      "value_jin": 26.714861457611974,
+      "value_kirst": 30.66803329834763,
+      "value_property_spread_pct": 13.778223833244635
+    }
+  ],
+  "friction_fits": {
+    "jin_only": {
+      "lower_leg": {
+        "status": "fit",
+        "form": "y = a * Re^b  (log-linear)",
+        "a": 136.33100540721478,
+        "b": -0.8791253958267378,
+        "log_a": 4.915085791976205,
+        "r2_logspace": 1.0,
+        "overfit_flag": "interpolation_not_fit_dof<=0",
+        "n_points": 2,
+        "n_free_params": 2,
+        "dof": 0,
+        "re_min": 110.26437941689072,
+        "re_max": 150.19205488780372,
+        "re_span_ratio": 1.3621085583763484,
+        "n_physical_cases": 2,
+        "segment": "lower_leg"
+      },
+      "test_section_span": {
+        "status": "fit",
+        "form": "y = a * Re^b  (log-linear)",
+        "a": 3526.4655853885406,
+        "b": -0.947190844936545,
+        "log_a": 8.168051397742978,
+        "r2_logspace": 0.9997621525411478,
+        "overfit_flag": "saturated_fit_dof=1_R2_uninformative",
+        "n_points": 3,
+        "n_free_params": 2,
+        "dof": 1,
+        "re_min": 97.54143211575995,
+        "re_max": 173.73605749616746,
+        "re_span_ratio": 1.7811513910312642,
+        "n_physical_cases": 3,
+        "segment": "test_section_span"
+      }
+    },
+    "all_salt": {
+      "lower_leg": {
+        "status": "fit",
+        "form": "y = a * Re^b  (log-linear)",
+        "a": 207.52480237084768,
+        "b": -0.9697755660938977,
+        "log_a": 5.335250862025733,
+        "r2_logspace": 0.9410148521079472,
+        "overfit_flag": "ok",
+        "n_points": 5,
+        "n_free_params": 2,
+        "dof": 3,
+        "re_min": 91.26909353295369,
+        "re_max": 150.19205488780372,
+        "re_span_ratio": 1.6455959961251863,
+        "n_physical_cases": 3,
+        "segment": "lower_leg"
+      },
+      "test_section_span": {
+        "status": "fit",
+        "form": "y = a * Re^b  (log-linear)",
+        "a": 3316.5707425104706,
+        "b": -0.9381029346095631,
+        "log_a": 8.106686619210144,
+        "r2_logspace": 0.9848628779523456,
+        "overfit_flag": "ok",
+        "n_points": 7,
+        "n_free_params": 2,
+        "dof": 5,
+        "re_min": 80.34651277493121,
+        "re_max": 173.73605749616746,
+        "re_span_ratio": 2.1623347609726578,
+        "n_physical_cases": 3,
+        "segment": "test_section_span"
+      }
+    }
+  },
+  "thermal_per_case": [
+    {
+      "source_id": "val_salt_test_2_coarse_mesh_laminar",
+      "case_label": "Salt 2 Val",
+      "physical_case": "Salt 2",
+      "property_model": "val",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 102.75164352549643,
+      "pr_effective": 20.60722428812114,
+      "nu_effective": 4.230616665159522,
+      "htc_effective_w_m2_k": 104.4579128869769
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "case_label": "Salt 2 Jin",
+      "physical_case": "Salt 2",
+      "property_model": "jin",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 92.46458400423055,
+      "pr_effective": 22.060551020049957,
+      "nu_effective": 3.9243500348142626,
+      "htc_effective_w_m2_k": 96.69312883691161
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+      "case_label": "Salt 2 Kirst",
+      "physical_case": "Salt 2",
+      "property_model": "kirst",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 76.09578330560107,
+      "pr_effective": 24.93228517155973,
+      "nu_effective": 3.1465036613965633,
+      "htc_effective_w_m2_k": 77.51253363455604
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "case_label": "Salt 3 Jin",
+      "physical_case": "Salt 3",
+      "property_model": "jin",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 122.20861112776016,
+      "pr_effective": 18.837256419710666,
+      "nu_effective": 5.090273089410228,
+      "htc_effective_w_m2_k": 126.07875770540457
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+      "case_label": "Salt 3 Kirst",
+      "physical_case": "Salt 3",
+      "property_model": "kirst",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 100.41970549495453,
+      "pr_effective": 21.43822530740568,
+      "nu_effective": 4.1526168448897165,
+      "htc_effective_w_m2_k": 102.88348887215926
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh",
+      "case_label": "Salt 4 Jin",
+      "physical_case": "Salt 4",
+      "property_model": "jin",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 165.23372157328848,
+      "pr_effective": 15.742972844558459,
+      "nu_effective": 6.761028035533995,
+      "htc_effective_w_m2_k": 168.76486418265512
+    },
+    {
+      "source_id": "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+      "case_label": "Salt 4 Kirst",
+      "physical_case": "Salt 4",
+      "property_model": "kirst",
+      "branch": "left_lower_leg",
+      "segment": "left_lower_leg",
+      "re_effective": 133.32263038511107,
+      "pr_effective": 18.221026163745595,
+      "nu_effective": 5.297303743555994,
+      "htc_effective_w_m2_k": 132.26796490726883
+    }
+  ],
+  "thermal_property_axis_spread": [
+    {
+      "physical_case": "Salt 2",
+      "segment": "left_lower_leg",
+      "value_key": "nu_effective",
+      "re_jin": 92.46458400423055,
+      "re_kirst": 76.09578330560107,
+      "re_property_spread_pct": 19.42188541692235,
+      "value_jin": 3.9243500348142626,
+      "value_kirst": 3.1465036613965633,
+      "value_property_spread_pct": 22.001484031115975
+    },
+    {
+      "physical_case": "Salt 3",
+      "segment": "left_lower_leg",
+      "value_key": "nu_effective",
+      "re_jin": 122.20861112776016,
+      "re_kirst": 100.41970549495453,
+      "re_property_spread_pct": 19.574244609441134,
+      "value_jin": 5.090273089410228,
+      "value_kirst": 4.1526168448897165,
+      "value_property_spread_pct": 20.289243974244723
+    },
+    {
+      "physical_case": "Salt 4",
+      "segment": "left_lower_leg",
+      "value_key": "nu_effective",
+      "re_jin": 165.23372157328848,
+      "re_kirst": 133.32263038511107,
+      "re_property_spread_pct": 21.376930002563707,
+      "value_jin": 6.761028035533995,
+      "value_kirst": 5.297303743555994,
+      "value_property_spread_pct": 24.277392906309043
+    }
+  ],
+  "nusselt_fits": {
+    "jin_only": {
+      "status": "fit",
+      "form": "y = a * Re^b  (log-linear)",
+      "a": 0.056404984076474575,
+      "b": 0.9370761074785203,
+      "log_a": -2.875197754232277,
+      "r2_logspace": 0.9999934298146551,
+      "overfit_flag": "saturated_fit_dof=1_R2_uninformative",
+      "n_points": 3,
+      "n_free_params": 2,
+      "dof": 1,
+      "re_min": 92.46458400423055,
+      "re_max": 165.23372157328848,
+      "re_span_ratio": 1.7869947002165556,
+      "n_physical_cases": 3
+    },
+    "all_salt": {
+      "status": "fit",
+      "form": "y = a * Re^b  (log-linear)",
+      "a": 0.04957488130650919,
+      "b": 0.9607621732507656,
+      "log_a": -3.0042709987998357,
+      "r2_logspace": 0.9951026511580999,
+      "overfit_flag": "ok",
+      "n_points": 7,
+      "n_free_params": 2,
+      "dof": 5,
+      "re_min": 76.09578330560107,
+      "re_max": 165.23372157328848,
+      "re_span_ratio": 2.171391296541478,
+      "n_physical_cases": 3
+    }
+  },
+  "pr_relevance": {
+    "status": "assessed",
+    "pr_min": 15.742972844558459,
+    "pr_max": 24.93228517155973,
+    "pr_spread_ratio": 1.5837088342674457,
+    "logRe_logPr_correlation": -0.9975088850762465,
+    "collinearity_note": "log Re and log Pr are nearly collinear (|corr|~1.00); with laminar salt, mu drives both, so Pr cannot be identified as an independent Nu regressor from this data. Nu(Re) and Nu(Re,Pr) are not distinguishable here.",
+    "reOnly_residual_vs_logPr_correlation": -0.04259325124937813
+  }
+}

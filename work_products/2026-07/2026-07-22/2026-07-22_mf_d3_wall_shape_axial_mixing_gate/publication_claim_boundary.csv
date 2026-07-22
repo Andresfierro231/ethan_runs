@@ -1,0 +1,4 @@
+claim,allowed,forbidden,basis
+D3 wall-index correction is a useful thermal-shape diagnostic,True,Do not claim an admitted wall/core exchange or axial-mixing closure.,D3 improves transfer RMSE but remains residual-trained.
+S13 triplet-ready QOIs are relevant to D3 wall-shape follow-up,True,"Do not claim same-QOI UQ, mesh/GCI UQ, production harvest, or source/property release has occurred.",same_qoi_uq_requirement_table.csv
+D3 is ready as runtime-legal source-bounded study,False,No D3 runtime coefficient or correction may enter the model.,candidate_gate.csv

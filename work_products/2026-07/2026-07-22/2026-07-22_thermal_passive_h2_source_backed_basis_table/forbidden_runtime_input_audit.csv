@@ -1,0 +1,8 @@
+input_or_claim,present_in_readonly_sources,reason,released_to_runtime
+wallHeatFlux,True,diagnostic/provenance only,False
+validation_temperature,False,protected scoring remains closed,False
+CFD_mdot,False,not needed for setup-basis release,False
+Qwall,False,numeric q-loss remains unreleased,False
+source_property,False,no source/property mutation or admission,False
+global_fitted_multiplier,False,not an admissible closure,False
+internal_Nu_residual_absorption,False,thermal residual ownership remains external/source-sink,False

@@ -1,0 +1,11 @@
+{
+  "task": "TODO-LITREV-GATED-SINGLE-STREAM-DEVELOPING-BRANCH",
+  "date": "2026-07-21",
+  "gate_rows": 90,
+  "branch_summary_rows": 6,
+  "allowed_precheck_only_rows": 60,
+  "admitted_rows": 0,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "admission_change": false
+}

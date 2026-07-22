@@ -1,0 +1,5 @@
+requested,status,resolved_case_key,postprocessing,note
+salt1_jin_nominal,resolved,salt1_jin,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_1_jin_coarse_mesh/postProcessing,user-requested forward train label; does not mutate registry/admission state
+salt2_jin_nominal,resolved,salt2_jin,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_2_jin_coarse_mesh/postProcessing,canonical/user-requested forward train label; keep distinct from native val_salt2
+salt3_jin_nominal,resolved,salt3_jin,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/modern_runs/2026-06-01_full_extractable_batch/salt/viscosity_screening_salt_test_3_jin_coarse_mesh/postProcessing,user-requested forward train label; older ledgers may still call Salt3 validation
+salt2_native_val,resolved,salt_test_2,/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar/postProcessing,native val_salt2 comparison; do not mix with Salt2 Jin train row

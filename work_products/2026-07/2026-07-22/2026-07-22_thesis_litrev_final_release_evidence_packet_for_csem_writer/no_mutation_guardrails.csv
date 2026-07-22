@@ -1,0 +1,10 @@
+guardrail,value
+external_papers_edit,False
+thesis_body_latex_edit,False
+new_science,False
+admission_or_release,False
+protected_scoring,False
+fitting_or_model_selection,False
+native_solver_outputs_mutated,False
+registry_or_admission_mutated,False
+scheduler_action,False

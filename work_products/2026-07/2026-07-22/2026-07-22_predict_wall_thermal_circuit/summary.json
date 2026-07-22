@@ -1,0 +1,18 @@
+{
+  "blocked_release_rows": 2,
+  "component_status_counts": {
+    "blocked_by_exchange_state": 1,
+    "junction_blocked": 1,
+    "partial_setup_model_lane": 1,
+    "unresolved": 26
+  },
+  "created_utc": "2026-07-22T18:46:15+00:00",
+  "decision": "wall_thermal_circuit_contract_ready_no_numeric_release",
+  "final_score_rows": 0,
+  "numeric_q_loss_release_rows": 0,
+  "output_dir": "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit",
+  "passive_operator_rows": 3,
+  "release_gate_rows": 10,
+  "segment_component_rows": 29,
+  "task": "TODO-PREDICT-WALL-THERMAL-CIRCUIT"
+}

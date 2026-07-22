@@ -1,0 +1,3 @@
+source_family,nominal_train_rows,labels_complete_rows,release_ready_rows,release_status,missing_or_blocking_evidence,next_action
+salt1_branch_source_envelope,1,1,0,blocked,missing row-specific Salt1 branch source-envelope evidence,"row-specific strict-pass source-envelope evidence, then candidate-specific S11/S15 release gate"
+salt2_3_4_mixed_source_envelope,3,3,0,blocked,mixed/outside/unknown source-envelope evidence prevents strict source pass,"row-specific strict-pass source-envelope evidence, then candidate-specific S11/S15 release gate"

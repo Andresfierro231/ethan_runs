@@ -1,0 +1,6 @@
+artifact,optional_render,chapter_target,thesis_use,claim_boundary
+tw5_tw6_residual_atlas.csv,tw5_tw6_delta_bar.svg,Chapter 7,TW5/TW6 residual atlas table and optional bar figure,"score-only residual target, not runtime input or admitted closure"
+m3_prior_candidate_comparison_table.csv,none,Chapter 7,M3/prior-candidate comparison table,failure-localization evidence only
+s8_gate_waterfall.csv,s8_gate_waterfall.svg,Chapter 6,S8 gate waterfall and admission-boundary figure,"negative no-S11 decision, zero final score values"
+runtime_leakage_caption_table.csv,none,Chapter 5,runtime-input guardrail caption source,forbidden target and realized CFD quantities stay non-runtime
+negative_admission_ready_caption_bank.md,none,Chapters 5/6/7,"caption text for atlas, comparison, gate, and runtime panels",diagnostic negative-result wording only

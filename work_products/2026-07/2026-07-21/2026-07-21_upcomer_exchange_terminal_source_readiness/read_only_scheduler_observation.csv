@@ -1,0 +1,5 @@
+job_id,job_name,observed_state,observed_elapsed,node_or_reason,time_limit,role,readiness_effect
+3307441,saltq_sel36_cont,RUNNING,03:04:04,c318-020,1-12:00:00,latest_corrected_Q_live_continuation,live_running_wait_terminal
+3299610,salt4_q3x_probe,RUNNING,4-18:22:52,c318-017,5-00:00:00,high_heat_terminal_gated,live_running_wait_terminal
+3299620,salt4_heat_pack,RUNNING,4-18:08:03,c318-018,5-00:00:00,high_heat_terminal_gated,live_running_wait_terminal
+3295438,saltq_s24_sel_harv,COMPLETED,00:35:41,completed_2026-07-18T17:39:54,not_applicable,older_corrected_Q_dependent_harvester,completed_but_superseded_by_3307441_latest_continuation

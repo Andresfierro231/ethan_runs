@@ -1,0 +1,11 @@
+artifact,source_path,role,mutation_status
+"D2 disposition README","work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/README.md","read-only evidence for D2 protected-score status","read_only"
+"D2 metric summary","work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/d2_metric_summary.csv","read-only diagnostic transfer metrics","read_only"
+"MF12 formula candidates","work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/candidate_bulk_to_tp_formulas.csv","read-only source-bounded successor definitions","read_only"
+"MF14 split matrix","work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/split_claim_matrix.csv","read-only split permission evidence","read_only"
+"MF14 guardrails","work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/no_mutation_guardrails.csv","read-only no-scoring guardrails","read_only"
+"Training roster gate","work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/trainability_gate.csv","read-only frozen-candidate gate evidence","read_only"
+"Model-form training roster","work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/model_form_training_roster.csv","read-only model family roster","read_only"
+"Field release contract","work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/field_release_contract.csv","read-only source/property blocker evidence","read_only"
+"TW-after-TP residual owner package","work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/README.md","read-only wall/core residual ownership evidence","read_only"
+"This package","work_products/2026-07/2026-07-22/2026-07-22_d2_source_bounded_projection_holdout_external_score_gate/**","new additive protected-score gate artifacts","created"

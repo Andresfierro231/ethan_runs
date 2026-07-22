@@ -1,0 +1,8 @@
+validation_id,command_or_check,expected_result,when_to_run
+ethan_preflight,python3.11 tools/agent/preflight_task.py --task-id <NEW_TASK_ID>,Passes with explicit external Fluid edit scope,Before edits
+fluid_unit_umx,cd ../cfd-modeling-tools/tamu_first_order_model/Fluid && python -m pytest tests/test_solver_contracts.py -q -k 'umx1 or scenario_config_defaults_match_active_solver_contract',Passes focused UMX/default tests,After Fluid edits
+fluid_compile,cd ../cfd-modeling-tools/tamu_first_order_model/Fluid && python -m py_compile tamu_loop_model_v2/solver.py tamu_loop_model_v2/config_loader.py tests/test_solver_contracts.py,Passes,After Fluid edits
+dry_contract,python3.11 <new_ethan_umx1s_scorer.py> --dry-only,Writes candidate split scenario runtime audit package,After Fluid tests
+dry_validate,python3.11 <new_ethan_umx1s_scorer.py> --validate-existing,Passes dry package validation,Before smoke
+smoke_validate,python3.11 <new_ethan_umx1s_scorer.py> --validate-existing --allow-failed-smoke,Passes and preserves failed roots as no-admission evidence,After bounded smoke
+finish_task,python3.11 tools/agent/finish_task.py --task-id <NEW_TASK_ID>,Passes,Before final closeout

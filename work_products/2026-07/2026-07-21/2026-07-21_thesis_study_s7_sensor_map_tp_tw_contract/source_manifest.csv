@@ -1,0 +1,8 @@
+source_path,role,rows_used,mutation
+work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv,primary sensor scoring policy,17,read_only
+work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_projected_sensor_registry.csv,provisional coordinate and TP2 projection evidence,17,read_only
+jadyn_runs/salt2/2026-06-01_continuation_candidate/tp_tw_probe_locations.csv,staged native TP/TW probe-coordinate file used for centroid cross-checks,50,read_only
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv,1D segment/fraction evidence for scoreable sensors,204,read_only
+work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_sensor_level_evidence.csv,TP2 projection and finite-score evidence,3,read_only
+work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/sensor_policy_gate_evidence.csv,sensor-level policy gate evidence,17,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/split_role_scorecard_shell.csv,final scorecard split-role guardrail carried into S7,16,read_only

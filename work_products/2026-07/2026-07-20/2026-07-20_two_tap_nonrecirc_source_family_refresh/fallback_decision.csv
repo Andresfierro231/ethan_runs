@@ -1,0 +1,2 @@
+decision_id,current_preferred,fallback_now,fallback_condition,component_k_status,current_rows_use
+two_tap_nonrecirc_fallback,CAND-001,none,CAND-001 terminal review fails to provide low-reverse same-topology source,blocked_current_rows_diagnostic_only,apparent_cluster_loss_only

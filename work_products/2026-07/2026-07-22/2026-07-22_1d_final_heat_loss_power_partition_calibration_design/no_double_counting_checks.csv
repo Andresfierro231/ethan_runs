@@ -1,0 +1,9 @@
+check_id,risk,required_check,fail_condition,current_status
+"DC01","radiation double counted with CFD wallHeatFlux","Replay mode using CFD wallHeatFlux must not add separate radiation; predictive mode must not use realized wallHeatFlux.","radiation added on top of realized wallHeatFlux replay","guardrail_defined"
+"DC02","cooler duty copied as runtime sink","Cooler/HX removal must come from setup UA/effectiveness or admitted model, not imposed CFD duty.","imposed CFD cooler duty used in runtime model","blocked_guarded"
+"DC03","passive hA global multiplier absorbs residual","External hA/UA must be source-backed by geometry/setup/literature and not selected from protected residual.","global hA scale chosen because it improves TP/TW","blocked_guarded"
+"DC04","internal Nu absorbs heat-path residual","Internal Nu must receive only salt-side convection physics, not heater/cooler/passive/storage/wall residuals.","missing heat residual appears as Nu coefficient or hidden multiplier","blocked_guarded"
+"DC05","test-section source/loss relabeled as passive residual","Test-section source, quartz/layer loss, and external passive loss must have separate lanes.","37 W or realized test-section heat is silently moved into passive wall loss","guardrail_defined"
+"DC06","storage used in steady score","Storage is excluded from current steady runtime unless a transient/storage row is admitted.","storage term tuned to reduce steady residual","future_lane_only"
+"DC07","recirculation exchange treated as ordinary upcomer Nu","S13 exchange/recirculation lanes must stay separate from ordinary single-stream closure.","ordinary Nu/f_D/K fit on recirculating upcomer rows","blocked_guarded"
+"DC08","protected temperatures tune source partition","Validation/holdout/external TP/TW cannot choose source partition or residual owner.","protected temperatures used to pick eta_h, UA, hA, or residual owner","blocked_guarded"

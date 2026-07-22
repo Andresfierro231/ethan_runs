@@ -1,0 +1,8 @@
+gate,status,evidence,requirement
+salt2_4_junction_patch_split_available,pass,split cases=salt2_mainline;salt3_mainline;salt4_mainline,Required to localize aggregate junction/stub heat for mainline salt cases.
+split_rows_close_to_agent462_aggregate,pass,max closure error W=7.105427357601002e-15,Patch split must sum back to the AGENT-462 aggregate heat audit.
+all_pressure_mapped_cases_have_junction_split_heat,fail,Only Salt2/Salt3/Salt4 mainline have admitted split ledgers.,Needed before broad trend claims across perturbation and external validation cases.
+val_salt2_patch_split_available,fail,val_salt2 has aggregate section ledger only.,Needed for independent external validation of localized junction losses.
+pressure_corner_k_fit_admitted,fail,pressure admitted fit rows=0; low-recirc branch rows=0,Needed before turning corner pressure diagnostics into component K factors.
+runtime_setup_only_inputs_available_for_mainline_split,pass,Salt2-4 split rows include setup BC metadata and wall-shell temperature proxies; realized heat remains target only.,"Allows a future candidate model form, but not immediate production admission."
+overall_ready_for_fluid_model_edit,fail,"Mainline Salt2-4 split is usable, but val_salt2 and perturbation split ledgers are missing and pressure K remains diagnostic.",Do not edit Fluid model in this task; create a follow-on model task after split validation coverage exists.

@@ -1,0 +1,9 @@
+guardrail,value
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_action,False
+solver_postprocessing_sampler_harvest_uq_launched,False
+fitting_or_model_selection,False
+component_K_or_F6_admission,False
+F3_F6_Shah_numeric_comparison_released,False
+lower_right_component_K_promotion,False

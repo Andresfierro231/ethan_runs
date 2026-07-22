@@ -1,0 +1,10 @@
+source_id,path,exists,use
+segment_plan,operational_notes/07-26/15/2026-07-15_segment_resolved_pressure_thermal_modeling_plan.md,true,expanded segment pressure/thermal equation policy
+m3ts_requirement,operational_notes/07-26/15/2026-07-15_m3_successor_test_section_heat_loss_requirement.md,true,test-section heat-loss successor requirement
+pressure_term_ledger,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,true,pressure term provenance and target rows
+patchwise_heat_ledger,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv,true,source/sink ownership and wallHeatFlux caveats
+enthalpy_interface_ledger,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv,true,segment heat residual and interface evidence
+predictive_input_contract,work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/runtime_input_contract.csv,true,runtime forbidden input precedent
+recirculation_policy,work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan/coefficient_label_admission_policy.csv,true,coefficient label admission policy
+salt1_schema_promotion,work_products/2026-07/2026-07-17/2026-07-17_predict_salt1_schema_promotion/salt1_split_ready_manifest.csv,true,Salt1 final-training schema rows
+salt2_pm5_val_readiness,work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/fluid_walls_readiness_ledger.csv,true,fluid+walls readiness rows for holdout/external evidence

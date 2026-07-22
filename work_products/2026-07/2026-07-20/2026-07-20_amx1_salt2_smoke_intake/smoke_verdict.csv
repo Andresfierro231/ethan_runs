@@ -1,0 +1,3 @@
+case,scenario,is_amx1,root_status,accepted_for_validation,temperature_root_bracketed,temperature_periodicity_error_K,mdot_kg_s,axial_mixing_active_segments,axial_mixing_ledger_abs_sum_W,axial_mixing_total_net_W,axial_mixing_max_abs_residual_W,root_gate_pass,ledger_gate_pass,smoke_gate_pass
+Salt 2,amx1_salt2_baseline_ins_1.0in_rad_1,false,accepted,true,true,-4.622393134923186e-09,0.0202587059469083,0,0.0,0.0,0.0,true,true,true
+Salt 2,amx1_salt2_low_axial_mixing_ins_1.0in_rad_1,true,accepted,true,true,-1.8580976757220922e-09,0.020238015156203,46,8.08855832584099,5.551115123125783e-17,0.0,true,true,true

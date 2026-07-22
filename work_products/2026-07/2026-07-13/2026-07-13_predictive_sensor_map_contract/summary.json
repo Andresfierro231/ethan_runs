@@ -1,0 +1,34 @@
+{
+  "blocked_sensor_scores": [
+    "TP2",
+    "TW10"
+  ],
+  "generated_at": "2026-07-13T22:27:32.111159+00:00",
+  "n_currently_blocked_sensor_scores": 2,
+  "n_provisional_diagnostic_score_allowed": 15,
+  "n_sensors": 17,
+  "primary_outputs": {
+    "native_cfd_probe_family_contract": "native_cfd_probe_family_contract.csv",
+    "runtime_target_policy": "runtime_target_policy.csv",
+    "sensor_map_blockers": "sensor_map_blockers.csv",
+    "sensor_map_contract": "sensor_map_contract.csv"
+  },
+  "role": "Writer / Implementer",
+  "runtime_sensor_temperature_allowed": false,
+  "sensor_temperature_score_claim": "partial_provisional_only",
+  "source_paths": {
+    "fluid_ethan_probe_doc": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/ethan_probe_location_reference.md",
+    "fluid_provisional_sensor_doc": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/provisional_sensor_locations.md",
+    "fluid_provisional_sensor_registry": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/provisional_sensor_locations.csv",
+    "fluid_sensor_status": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/sensor_location_status.md",
+    "fluid_validation_cases": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/validation_cases.csv",
+    "forward_v0_cfd": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_sensor_predictions_cfd.csv",
+    "forward_v0_experimental": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_sensor_predictions_experimental.csv",
+    "input_contract": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract/validation_target_contract.csv",
+    "native_channel_csv": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/cross_model_comparison/campaigns/2026-05-29_ethan_salt_test_2_v1/data/ethan_sensor_channel_summary.csv",
+    "native_probe_csv": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/cross_model_comparison/campaigns/2026-05-29_ethan_salt_test_2_v1/data/ethan_sensor_probe_locations.csv",
+    "native_report": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/cross_model_comparison/campaigns/2026-05-29_ethan_salt_test_2_v1/reports/sensor_location_reference.md",
+    "validation_split": "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/response_variable_contract.csv"
+  },
+  "task": "AGENT-302"
+}

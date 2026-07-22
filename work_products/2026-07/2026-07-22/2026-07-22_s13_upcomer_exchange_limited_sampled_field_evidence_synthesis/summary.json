@@ -1,0 +1,23 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-LIMITED-SAMPLED-FIELD-EVIDENCE-SYNTHESIS-2026-07-22",
+  "generated_at": "2026-07-21T20:37:29-05:00",
+  "decision": "diagnostic_only_thesis_ready_production_harvest_blocked",
+  "case_count": 3,
+  "finite_exchange_rows": 3,
+  "diagnostic_ready_gate_rows": 15,
+  "production_ready_gate_rows": 0,
+  "blocked_production_gate_rows": 15,
+  "production_harvest_allowed_rows": 0,
+  "coefficient_admission_allowed_rows": 0,
+  "thesis_current_file_edit": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_sampler_harvest_uq_launched": false,
+  "source_property_release": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "residual_absorbed_into_internal_nu": false,
+  "figure_svg": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/figures/svg/s13_predictive_path_status.svg"
+}

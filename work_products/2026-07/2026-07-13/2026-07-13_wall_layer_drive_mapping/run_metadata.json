@@ -1,0 +1,21 @@
+{
+  "task_id": "TODO-PRED-WALL-LAYER",
+  "generated_at": "2026-07-13T21:45:52+00:00",
+  "host": "c318-008.ls6.tacc.utexas.edu",
+  "platform": "Linux-4.18.0-372.26.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "git_rev": "99df9cf",
+  "source_paths": {
+    "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "segment_reductions": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/segment_reduction_inputs.csv",
+    "radiation_guidance": "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance",
+    "thermal_contract": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/cfd_thermal_boundary_contract.csv",
+    "span_heat_residuals": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/span_heat_residuals.csv",
+    "interface_temperature_samples": "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_temperature_samples.csv",
+    "wall_shell_temperatures": "work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/segment_wall_shell_temperatures.csv"
+  },
+  "drive_rows": 24,
+  "replay_rows": 72,
+  "e0_executable_rows": 18,
+  "blocked_rows": 21,
+  "radiation_conclusion": "emissivity and Tsur affect CFD wallHeatFlux; radiation is embedded/inseparable in total wallHeatFlux"
+}

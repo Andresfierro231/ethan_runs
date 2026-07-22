@@ -1,0 +1,11 @@
+source_id,path,exists,role
+tp_tw_summary,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/summary.json,True,read-only synthesis input
+tp_tw_candidates,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/candidate_family_gate_matrix.csv,True,read-only synthesis input
+tp_tw_requirements,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/physics_requirement_matrix.csv,True,read-only synthesis input
+tp_tw_next_contract,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/next_model_contract.csv,True,read-only synthesis input
+blocker_synthesis,work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis/research_paths.csv,True,read-only synthesis input
+source_property_summary,work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/summary.json,True,read-only synthesis input
+tswfc1_readme,work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/README.md,True,read-only synthesis input
+tswfc1_admission,work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/candidate_admission_review.csv,True,read-only synthesis input
+wall_audit,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md,True,read-only synthesis input
+wall_failure_modes,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/invariant_failure_modes.csv,True,read-only synthesis input

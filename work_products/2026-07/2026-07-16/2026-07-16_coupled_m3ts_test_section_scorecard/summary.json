@@ -1,0 +1,22 @@
+{
+  "counts": {
+    "m2_m3_comparators.csv": 6,
+    "m3ts_coupled_scorecard.csv": 9,
+    "m3ts_heat_loss_gate.csv": 6,
+    "m3ts_role_boundary_scenarios.csv": 9,
+    "runtime_input_audit.csv": 3,
+    "source_manifest.csv": 6
+  },
+  "date": "2026-07-16",
+  "decision": {
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "decision": "keep_open",
+    "evidence": "work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m3ts_coupled_scorecard.csv",
+    "generated_at": "2026-07-16T23:24:59.720529+00:00",
+    "next_required_action": "Adjudicate coupled mdot/TP/TW thresholds, then improve the predictive test-section/cooler heat-loss model before rerunning admission.",
+    "task": "AGENT-461",
+    "why": "Fluid solves completed, but no candidate has both an admitted coupled gate and held-out heat-loss gates."
+  },
+  "run_fluid": true,
+  "task": "AGENT-461"
+}

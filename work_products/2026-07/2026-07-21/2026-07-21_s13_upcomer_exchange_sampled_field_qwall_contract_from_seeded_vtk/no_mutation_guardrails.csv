@@ -1,0 +1,9 @@
+guard_id,changed,policy
+native_output_mutation,false,read-only package/manifests only
+scheduler_action,false,no sbatch/srun/tmux launch
+solver_or_postprocessing,false,"no OpenFOAM, sampler, or postprocessing execution"
+field_sampling,false,contract only; sampled-field extraction remains a later row
+registry_or_admission,false,no registry mutation and no coefficient/model admission
+Fluid_or_external_repo,false,no external edits
+S11_S12_S13_S15_S6_trigger,false,all candidate/freeze/score triggers remain closed
+internal_Nu_residual_absorption,false,no residual absorption into internal Nu

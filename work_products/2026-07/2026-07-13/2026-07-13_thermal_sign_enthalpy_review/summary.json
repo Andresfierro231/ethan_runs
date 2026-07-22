@@ -1,0 +1,16 @@
+{
+  "task_id": "AGENT-305",
+  "generated_at": "2026-07-13T17:38:04-05:00",
+  "native_solver_outputs_mutated": false,
+  "thermal_qoi_source": "work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/thermal_mesh_gate_qois.csv",
+  "enthalpy_source": "work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_thermal_sign_enthalpy_review",
+  "review_row_count": 3,
+  "blocker_row_count": 10,
+  "fit_admissible_count": 0,
+  "admission_verdict_counts": {
+    "blocked_diagnostic_only": 3
+  },
+  "overall_status": "thermal_sign_enthalpy_review_blocks_closure_admission",
+  "next_recommended_action": "run Salt2 coarse thermal repair smoke, then rebuild thermal mesh/sign gates with coarse/medium/fine evidence"
+}

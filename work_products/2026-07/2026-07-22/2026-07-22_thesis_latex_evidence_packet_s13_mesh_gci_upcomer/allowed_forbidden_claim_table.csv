@@ -1,0 +1,5 @@
+claim_type,claim,source
+allowed,S13 medium/fine exact-label rows quantify exchange-cell mesh sensitivity,work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet/medium_fine_delta_table.csv
+allowed,formal GCI remains fail-closed because the same-label coarse member is missing,work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet/gci_disposition_table.csv
+forbidden,Qwall/source-property release or exchange coefficient admission,work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet/summary.json
+forbidden,ordinary upcomer Nu/f_D/K closure from recirculating exchange evidence,work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet/s13_predictive_path_status.csv

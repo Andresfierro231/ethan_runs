@@ -1,0 +1,4 @@
+sequence,work_package,objective,entry_condition,forbidden_action
+1,whole_mesh_cell_vtk_extraction,generate Salt2/Salt3/Salt4 whole-mesh cell VTKs with U/T/rho in task-owned staged cases,cell_vtk_contract.csv release_status is released_for_scheduler_cell_vtk_extraction,do not write VTK/postProcessing outputs into native case directories
+2,exchange_interface_source_definition,"supply trusted main/recirculation exchange interface point, normal, area/sign basis, and source path",facezone_candidate_audit.csv has no released exchange interface,do not use upcomer outlet proxy or loop mass-flow planes as the exchange interface
+3,wall_core_band_definition,define wall/core band tied to the recirculation region before wall VTK or Q_wall_W extraction,recirculation-region definition or approved geometric band exists,do not compute energy residual with static source/sink ledger alone

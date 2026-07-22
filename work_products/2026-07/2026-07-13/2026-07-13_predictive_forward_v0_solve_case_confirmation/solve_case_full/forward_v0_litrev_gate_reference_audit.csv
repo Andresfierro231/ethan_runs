@@ -1,0 +1,6 @@
+gate_name,runtime_contract_field,contract_class,required_before_scoring,gate_source_path,source_exists,scoring_admission_status,notes
+source_envelope_gate,source_envelope_gate,blocked_closure_gate,true,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv,true,pass,explicit lit-rev gate reference present
+property_mode_lane,property_mode_lane,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv,true,pass,explicit lit-rev gate reference present
+named_loss_table,named_loss_table,blocked_closure_gate,true,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv,true,pass,explicit lit-rev gate reference present
+heat_loss_admission_table,heat_loss_admission_table,blocked_closure_gate,true,work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv,true,pass,explicit lit-rev gate reference present
+cfd_coefficient_naming_limits,cfd_coefficient_naming_limits,diagnostic_cfd_evidence,true,work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv,true,pass,explicit lit-rev gate reference present

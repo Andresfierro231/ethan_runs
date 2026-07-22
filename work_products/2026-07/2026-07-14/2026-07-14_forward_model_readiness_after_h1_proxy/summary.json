@@ -1,0 +1,35 @@
+{
+  "blocked_sensors": [
+    "TP2",
+    "TW10"
+  ],
+  "external_fluid_modified": false,
+  "final_forward_v1_status": "blocked_not_final",
+  "generated_utc": "2026-07-14T16:15:55+00:00",
+  "h1_f1_mean_mdot_error_vs_cfd_kg_s": 0.0021441666666666666,
+  "h1_proxy_score_status": "screen_only_not_final_forward_v1",
+  "input_contract_violations": 0,
+  "n_blockers": 5,
+  "n_gate_rows": 12,
+  "n_readiness_lanes": 6,
+  "n_residual_rows": 6,
+  "n_split_rows": 3,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "readiness_lanes_after_h1_proxy.csv",
+    "train_validation_holdout_guardrail.csv",
+    "residual_attribution_after_h1_proxy.csv",
+    "input_contract_gate_readiness.csv",
+    "blockers_to_final_forward_v1.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "sensor_scoreable": 15,
+  "solve_case_comparison_rows": 6,
+  "solve_case_pass_rows": 6,
+  "solve_case_status": "pass",
+  "task_id": "AGENT-315",
+  "thermal_fit_admissible_rows": 0,
+  "thermal_publication_gci_rows": 0
+}

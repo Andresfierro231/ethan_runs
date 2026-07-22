@@ -1,0 +1,53 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-SAME-LABEL-SAMPLING-2026-07-22",
+  "generated_at_utc": "2026-07-22T09:27:58-05:00",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-SAME-LABEL-SAMPLING-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-upcomer-exchange-medium-fine-same-label-sampling.md",
+    "imports/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling.json",
+    "tools/analyze/build_s13_upcomer_exchange_medium_fine_same_label_sampling.py",
+    "tools/analyze/test_s13_upcomer_exchange_medium_fine_same_label_sampling.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/medium_fine_source_run_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/existing_postprocessing_reuse_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/s13_exact_label_sampling_need_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/sampling_command_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/mesh_gci_readiness_after_medium_fine_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine",
+    "staged/native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files",
+    "thesis current files"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs": false,
+    "registry": false,
+    "admission": false,
+    "scheduler_or_sampler_launched": false,
+    "solver_or_postprocessing_launched": false,
+    "mesh_gci_computed": false,
+    "production_harvest": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "proxy_substitution_for_exact_labels": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false
+}

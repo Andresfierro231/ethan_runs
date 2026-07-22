@@ -1,0 +1,10 @@
+artifact,role,path
+forward_v1_gate_refresh,source,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/README.md
+blocker_documentation_audit,source,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_blocker_documentation_audit/README.md
+thermal_parity_handoff,source,operational_notes/07-26/14/2026-07-14_TOMORROW_THERMAL_PARITY_AND_OVERNIGHT_STUDY_HANDOFF.md
+hydraulics_handoff,source,operational_notes/07-26/14/2026-07-14_TOMORROW_HYDRAULICS_AND_OVERNIGHT_COMPUTE_HANDOFF.md
+salt_training_rollout,source,operational_notes/07-26/14/2026-07-14_SALT_TRAINING_TESTING_EVIDENCE_ROLLOUT.md
+heater_fraction_methods,source,work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/README.md
+agent371_status,source,.agent/status/2026-07-14_AGENT-371.md
+board,source,.agent/BOARD.md
+scheduler_snapshot,observed,squeue and sacct read-only inspection on 2026-07-14 evening

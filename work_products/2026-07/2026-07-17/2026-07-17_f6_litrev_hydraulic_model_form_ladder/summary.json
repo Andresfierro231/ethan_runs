@@ -1,0 +1,21 @@
+{
+  "anchor_tree_rows": 6,
+  "blocked_pending_terminal_rows": 8,
+  "boundary_layer_executable_rows": 0,
+  "crosswalk_rows": 12,
+  "date": "2026-07-17",
+  "forbidden_shortcut_rows": 6,
+  "generated_at_utc": "2026-07-17T20:44:40+00:00",
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "ladder_rows": 11,
+  "native_output_mutation": "none",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder",
+  "pm5_ordinary_anchor_rows": 0,
+  "pm5_recirculation_diagnostic_rows": 12,
+  "production_closure": "F3_shah_apparent",
+  "promotion_allowed": "no",
+  "registry_mutation": "none",
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "task": "AGENT-512"
+}

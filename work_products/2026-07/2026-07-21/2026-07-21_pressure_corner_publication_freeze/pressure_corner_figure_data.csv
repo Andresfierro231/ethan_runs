@@ -1,0 +1,16 @@
+case_key,feature,endpoint_pair,term,value_pa,plot_group,note
+salt2_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,gross_static_pressure_rise,3068.71676838,observed,observed gross static pressure rise
+salt2_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,hydrostatic,3070.02756052,decomposition,hydrostatic head contribution
+salt2_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,kinetic,-0.0571248231704,decomposition,bulk kinetic correction
+salt2_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,straight_developing,0,decomposition,blocked_missing_same_basis_reference
+salt2_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,available_residual,-1.25366731683,decomposition,signed residual after available corrections
+salt3_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,gross_static_pressure_rise,3052.95434711,observed,observed gross static pressure rise
+salt3_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,hydrostatic,3054.87624963,decomposition,hydrostatic head contribution
+salt3_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,kinetic,-0.0723324614108,decomposition,bulk kinetic correction
+salt3_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,straight_developing,0,decomposition,blocked_missing_same_basis_reference
+salt3_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,available_residual,-1.84957005859,decomposition,signed residual after available corrections
+salt4_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,gross_static_pressure_rise,3035.09893979,observed,observed gross static pressure rise
+salt4_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,hydrostatic,3036.87536792,decomposition,hydrostatic head contribution
+salt4_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,kinetic,-0.0980891272662,decomposition,bulk kinetic correction
+salt4_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,straight_developing,0,decomposition,blocked_missing_same_basis_reference
+salt4_mainline,corner_lower_right,lower_leg__s04->right_leg__s00,available_residual,-1.67833900273,decomposition,signed residual after available corrections

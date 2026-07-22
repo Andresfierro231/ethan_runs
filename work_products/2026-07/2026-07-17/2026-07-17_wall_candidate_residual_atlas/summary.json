@@ -1,0 +1,19 @@
+{
+  "agent511_completed_rows": 0,
+  "agent511_state": "pending_or_live_no_completed_rows",
+  "completed_candidate_gate_rows": 14,
+  "created_utc": "2026-07-17T21:05:08.064099+00:00",
+  "failure_mode_rows": 6,
+  "freeze_decision": "do_not_build_corrected_freeze_yet",
+  "freeze_status": "blocked",
+  "next_decision": "complete_heater_source_redistribution_scoring_first",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_residual_atlas",
+  "pending_candidate_gate_rows": 1,
+  "probe_residual_rows": 102,
+  "role_segment_rows": 60,
+  "runtime_audit_failures": 0,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "solver_action": "none",
+  "task": "AGENT-520"
+}

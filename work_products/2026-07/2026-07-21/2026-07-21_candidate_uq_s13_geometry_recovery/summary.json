@@ -1,0 +1,22 @@
+{
+  "task": "TODO-CANDIDATE-UQ-S13-GEOMETRY-RECOVERY-2026-07-21",
+  "generated_at": "2026-07-21T17:16:44",
+  "candidate_rows": 6,
+  "qoi_prerequisite_rows": 16,
+  "uq_admitted_rows": 0,
+  "geometry_source_rows_reviewed": 33,
+  "geometry_release_rows": 0,
+  "geometry_recovery_counts": {
+    "do_not_use": 15,
+    "needs_manual_geometry_definition": 18
+  },
+  "sampler_manifest_case_rows": 3,
+  "sampler_ready_rows": 0,
+  "s11_unblocked": false,
+  "native_solver_output_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "sampler_or_harvest_launched": false,
+  "fluid_or_external_repo_mutated": false,
+  "fit_or_model_selection_performed": false
+}

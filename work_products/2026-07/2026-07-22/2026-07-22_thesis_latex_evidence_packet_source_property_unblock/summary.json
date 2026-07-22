@@ -1,0 +1,14 @@
+{
+  "candidate_freeze": false,
+  "candidate_release_path_rows": 6,
+  "copied_table_count": 6,
+  "decision": "latex_source_property_unblock_evidence_packet_staged_no_external_mutation",
+  "external_thesis_repo_mutated": false,
+  "generated_at_utc": "2026-07-22T18:16:42.162660+00:00",
+  "protected_rows_released": 0,
+  "protected_runtime_rows": 1,
+  "release_unblock_rows": 15,
+  "source_property_release_ready_rows": 0,
+  "task_id": "TODO-THESIS-LATEX-EVIDENCE-PACKET-SOURCE-PROPERTY-UNBLOCK-2026-07-22",
+  "thesis_body_edit": false
+}

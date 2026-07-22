@@ -1,0 +1,12 @@
+{
+  "task": "TODO-LITREV-MATCHED-PLANE-RECIRC-FIELD-HARVEST",
+  "date": "2026-07-21",
+  "harvest_rows": 53,
+  "readiness_rows": 5,
+  "rows_with_complete_RAF_RMF_SVF": 15,
+  "pressure_only_blocked_rows": 12,
+  "terminal_gated_rows": 2,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "admission_change": false
+}

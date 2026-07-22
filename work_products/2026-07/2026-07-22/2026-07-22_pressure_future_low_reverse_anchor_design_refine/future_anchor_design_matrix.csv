@@ -1,0 +1,5 @@
+design_id,target_topology,target_case_family,required_fields,pass_criteria,why_useful,launch_now
+PFA01,low_reverse_right_leg,high_heat_or_low_recirculation_salt_candidate,static_p p_rgh elevation U area rho mu endpoint planes RAF RMF,RAF/RMF ordinary-flow pass and endpoint fields terminal,Separates ordinary pressure loss from recirculating upcomer artifacts,false
+PFA02,nonrecirculating_lower_leg,heater_leg_anchor_candidate,pressure endpoints straight/developing subtraction velocity basis property mode,positive loss coefficient after corrections and same-QOI UQ,Provides ordinary anchor for F6 without upcomer recirculation,false
+PFA03,low_reverse_test_section_span,quartz_test_section_candidate,pressure endpoints source/thermal state topology label,ordinary-flow pass and no strong recirculation,Tests whether test-section span can support non-upcomer pressure basis,false
+PFA04,paired_pressure_thermal_anchor,future_setup_Q_variant,pressure endpoint plus same-window TP/TW/heat ledger,endpoint and thermal QOIs share window and split policy,Supports coupled pressure-energy model without hidden multipliers,false

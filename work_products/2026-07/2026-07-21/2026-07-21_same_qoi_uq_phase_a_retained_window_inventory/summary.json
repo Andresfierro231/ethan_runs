@@ -1,0 +1,33 @@
+{
+  "task": "TODO-SAME-QOI-UQ-PHASE-A-RETAINED-WINDOW-INVENTORY-2026-07-21",
+  "date": "2026-07-21",
+  "inventory_rows": 12,
+  "dispatch_candidate_families_covered": [
+    "pressure",
+    "recirculation",
+    "thermal",
+    "heat_loss",
+    "same-QOI admission"
+  ],
+  "retained_time_status_counts": {
+    "present": 4,
+    "partial": 3,
+    "missing": 2,
+    "not_applicable": 2,
+    "mixed": 1
+  },
+  "neighbor_window_status_counts": {
+    "missing_or_blocked": 12
+  },
+  "same_qoi_rows_reviewed_from_prior_execution": 83,
+  "newly_admitted_uq_rows": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "fluid_or_external_edit": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false,
+  "generated_index_refresh": false,
+  "recommended_next_phase": "Phase B mesh/GCI evidence matrix after this inventory"
+}

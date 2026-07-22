@@ -1,0 +1,4 @@
+residual_component,current_attribution,admitted_input,evidence,math_or_theory,result_after_agent409,limitation
+test_section_complex_pressure_drop,diagnostic_unassigned,none_fit_admitted,Three reduced-pressure diagnostic rows parsed.,Connector two-tap pressure loss must be admitted before subtracting adjacent distributed loss.,improved_from_preflight_to_diagnostic,No component K fit; no mesh/GCI.
+pm5_upcomer_recirculation_pressure_onset,diagnostic_pressure_onset_evidence_landed,none_final,12 AGENT-406 PM5 rows.,Reverse fractions and Ri/Re/Pr indicate mixed/recirculating conditions.,cited_read_only,Does not reopen true internal-Nu fit.
+final_hydraulic_residual,not_final,diagnostic reset-K only,Raw two-tap diagnostic only; PM5 diagnostic only; F6 not final.,Final attribution requires observed pressure residual magnitudes.,still_blocked_for_right_reasons,Cannot assign final numeric residual magnitudes yet.

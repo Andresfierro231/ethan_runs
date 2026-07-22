@@ -1,0 +1,10 @@
+source_id,path,use,mutation
+anchor_request,work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/nonrecirculating_anchor_request.csv,defines NR-CLR-01 and NR-ALT-01,read_only
+launch_gate_contract,work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/launch_gate_contract.csv,future launch and UQ guardrails,read_only
+final_gate_review,work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv,current diagnostic-only admission state,read_only
+recirculation_metrics,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,current reverse-flow blocker values,read_only
+f6_legwise_inventory,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_anchor_inventory.csv,ordinary straight/component slot status and F6 separation,read_only
+high_heat_readiness,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,future no-recirculation source-case candidates,read_only
+pm10_readiness,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv,secondary corrected-Q source-case candidates,read_only
+two_tap_handoff,operational_notes/07-26/18/2026-07-18_TWO_TAP_NEXT_CONTEXT_AND_STEPS.md,next-task contract and guardrails,read_only
+blocker_register,.agent/blockers.yml,authoritative open two-tap blockers,read_only

@@ -1,0 +1,4 @@
+risk_id,observed_state,action_taken,decision,reason,next_guardrail
+duplicate_jobs_same_output_package,both_jobs_completed,false,no_cancellation_needed_after_terminal_completion,both Slurm jobs reached COMPLETED before monitor decision; no running duplicate remained to cancel,do not resubmit until sampler repair row writes vectors and uses isolated output or job lock
+same_output_overwrite_risk,final_package_timestamps_from_completed_jobs,false,risk_real_but_terminal_state_fail_closed,both jobs wrote the same package and final current summary is fail-closed; no usable terminal rows were produced,repair row should write to clean output package or remove stale fail-closed outputs before rerun
+usable_output_risk,zero_terminal_qoi_rows,false,no_admission_or_mesh_gci,no exact-label terminal QOI rows exist,keep S13 mesh/GCI and production gates closed

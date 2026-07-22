@@ -1,0 +1,5 @@
+claim,status,basis
+D2 proves a released correction.,forbidden,D2 is train-only empirical diagnostic evidence.
+Thermal development is worth the next analysis.,allowed,"TP transfer error drops strongly under a TP/TW projection split, and developing-flow/reset evidence exists as a source path."
+"Correct TP first, then use TW residuals for wall/boundary physics.",allowed,TP behaves like a bulk/projection QOI; TW remains larger after D2 and requires wall response analysis.
+Internal Nu should absorb the residual.,forbidden,"Projection, source, wall, and UQ gates must be resolved before any internal heat-transfer admission."

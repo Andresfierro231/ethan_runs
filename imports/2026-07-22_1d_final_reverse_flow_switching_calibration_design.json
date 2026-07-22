@@ -1,0 +1,29 @@
+{
+  "task": "TODO-1D-FINAL-REVERSE-FLOW-SWITCHING-CALIBRATION-DESIGN-2026-07-22",
+  "task_id": "TODO-1D-FINAL-REVERSE-FLOW-SWITCHING-CALIBRATION-DESIGN-2026-07-22",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-FINAL-REVERSE-FLOW-SWITCHING-CALIBRATION-DESIGN-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-final-reverse-flow-switching-calibration-design.md",
+    "imports/2026-07-22_1d_final_reverse_flow_switching_calibration_design.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/switching_state_taxonomy.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/calibration_metric_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/missing_input_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/activation_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/future_execution_plan.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_recirculation_switch_dry_contract/recirculation_switch_lane_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_final_uc01_uc08_thesis_gap_crosswalk/uc01_uc08_thesis_gap_crosswalk.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true
+}

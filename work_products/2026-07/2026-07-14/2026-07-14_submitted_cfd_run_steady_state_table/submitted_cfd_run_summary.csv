@@ -1,0 +1,36 @@
+fluid_family,variant,steady_or_needs_continuation,row_count
+salt1,corrected_q,steady,1
+salt1,hi10q,steady,1
+salt1,legacy_perturbation,not run,1
+salt1,legacy_perturbation,steady,1
+salt1,lo10q,steady,1
+salt1,nominal_or_continuation,steady,2
+salt1,other,steady,2
+salt2,hi10q,needs continuation,1
+salt2,hi5q,needs continuation,1
+salt2,legacy_perturbation,needs continuation,5
+salt2,lo10q,needs continuation,1
+salt2,lo5q,needs continuation,1
+salt2,nominal_or_continuation,needs continuation,1
+salt2,other,needs continuation,4
+salt3,hi10q,needs continuation,1
+salt3,hi5q,needs continuation,1
+salt3,legacy_perturbation,needs continuation,4
+salt3,legacy_perturbation,not run,1
+salt3,lo10q,needs continuation,1
+salt3,lo5q,needs continuation,1
+salt3,nominal_or_continuation,needs continuation,1
+salt3,other,needs continuation,1
+salt4,hi10q,needs continuation,1
+salt4,hi5q,needs continuation,1
+salt4,legacy_perturbation,needs continuation,1
+salt4,legacy_perturbation,not run,1
+salt4,legacy_perturbation,steady,4
+salt4,lo10q,needs continuation,1
+salt4,lo5q,needs continuation,1
+salt4,nominal_or_continuation,steady,1
+salt4,other,needs continuation,1
+water1,water_continuation,needs continuation,1
+water2,water_continuation,needs continuation,1
+water3,water_continuation,needs continuation,1
+water4,water_continuation,steady,1

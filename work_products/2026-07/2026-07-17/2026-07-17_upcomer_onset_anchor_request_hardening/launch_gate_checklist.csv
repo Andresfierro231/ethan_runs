@@ -1,0 +1,6 @@
+gate_id,required_action_before_launch,pass_condition,this_package_status
+no_duplicate_jobs,"query live and recent scheduler state for equivalent case_key, parent, Q, insulation, mesh, and restart time",no active duplicate and no completed equivalent artifact already postprocessed,request_only_no_scheduler_action
+separate_execution_board_row,claim a new board row with allowed staging/scheduler paths and exact case list,board row permits staging and scheduler mutation,launch_forbidden
+source_case_readiness,"verify parent continuation fields, heat ledger, property model, boundary mutations, and restart provenance",source manifest names exact native case path and copied staging path,not_checked_here
+postprocessing_contract_first,"install or stage PM5/PM10, wall-band, pressure, heat, and uncertainty extractors before expensive runtime",dry-run extractor schema matches this package's CSV contracts,contract_defined_here
+cost_and_mesh_plan,separate pilot/discovery runs from admission mesh/time rows,candidate discovery may be coarse; admitted anchors must carry mesh/time uncertainty,requirements_defined_here

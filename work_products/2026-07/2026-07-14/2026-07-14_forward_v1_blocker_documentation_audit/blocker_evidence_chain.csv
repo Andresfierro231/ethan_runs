@@ -1,0 +1,24 @@
+blocker_id,read_order,artifact_path,artifact_status,read_for
+fluid_reset_development_api,1,work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/README.md,exists,primary why-blocked decision
+fluid_reset_development_api,2,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/README.md,exists,supporting evidence/guardrails
+fluid_reset_development_api,3,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_gate_checklist_refreshed.csv,exists,supporting evidence/guardrails
+hydraulic_h1_pressure_evidence,1,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/README.md,exists,primary why-blocked decision
+hydraulic_h1_pressure_evidence,2,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/README.md,exists,supporting evidence/guardrails
+hydraulic_h1_pressure_evidence,3,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/README.md,exists,supporting evidence/guardrails
+pm5_matched_pressure_upcomer_metrics,1,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/README.md,exists,primary why-blocked decision
+pm5_matched_pressure_upcomer_metrics,2,work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/README.md,exists,supporting evidence/guardrails
+pm5_matched_pressure_upcomer_metrics,3,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/README.md,exists,supporting evidence/guardrails
+perturbation_split_policy,1,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/README.md,exists,primary why-blocked decision
+perturbation_split_policy,2,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/README.md,exists,supporting evidence/guardrails
+perturbation_split_policy,3,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/perturbation_split_policy_next.csv,exists,supporting evidence/guardrails
+thermal_internal_nu,1,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/internal_nu_dependency_blockers.csv,exists,primary why-blocked decision
+thermal_internal_nu,2,work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md,exists,supporting evidence/guardrails
+thermal_internal_nu,3,work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md,exists,supporting evidence/guardrails
+thermal_internal_nu,4,work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/README.md,exists,supporting evidence/guardrails
+boundary_hx_wall_radiation,1,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/README.md,exists,primary why-blocked decision
+boundary_hx_wall_radiation,2,work_products/2026-07/2026-07-14/2026-07-14_best_predictive_heat_loss_discrepancy/README.md,exists,supporting evidence/guardrails
+boundary_hx_wall_radiation,3,work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md,exists,supporting evidence/guardrails
+boundary_hx_wall_radiation,4,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_gate_checklist_refreshed.csv,exists,supporting evidence/guardrails
+sensor_map_policy,1,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/README.md,exists,primary why-blocked decision
+sensor_map_policy,2,work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/README.md,exists,supporting evidence/guardrails
+sensor_map_policy,3,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/forward_v1_gate_checklist_refreshed.csv,exists,supporting evidence/guardrails

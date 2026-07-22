@@ -1,0 +1,6 @@
+guardrail,status,evidence
+open_cv_diagnostic_allowed,true,explicit residual with uncertainty and named unclosed terms
+coefficient_admission_allowed,false,closed or residual-complete CV plus source/property and UQ gates required
+formal_gci_ready,false,blocked_coarse_equivalence_not_admitted
+Qwall_source_property_release,false,no_release
+residual_absorption_into_internal_Nu,false,"residual remains explicit missing lane, not a fitted Nu multiplier"

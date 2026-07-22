@@ -1,0 +1,7 @@
+priority,can_start_now,task,outcome
+1,True,claim/finish H2 runtime implementation row,nonzero train-only radiation lane or fail-closed runtime no-op repair
+2,True,S13 throughflow endpoint/cp/property residual-input harvest preflight,same-basis open-CV residual inputs or explicit missing-field table
+3,True,source/property exact request execution,row-specific strict-pass release rows or explicit replacement contract
+4,False,S13 same-label coarse evidence harvest/design,admitted coarse equivalence or durable no-GCI negative result
+5,False,MF18 Salt1-4 train-only execution,train residual table only
+6,False,S11/S15/S6 freeze and protected score,one frozen runtime-legal scorecard

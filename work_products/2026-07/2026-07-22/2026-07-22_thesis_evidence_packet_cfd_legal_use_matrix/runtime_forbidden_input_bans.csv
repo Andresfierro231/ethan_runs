@@ -1,0 +1,7 @@
+forbidden_input,runtime_use_allowed,source_basis,reason
+CFD_mdot,no,work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/runtime_input_audit.csv,forbidden runtime input: mass flow from CFD is an observed result and would leak the target solution.
+realized_CFD_wallHeatFlux,no,work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/runtime_input_audit.csv,"forbidden runtime input: realized wall flux is post-solve evidence, not setup-known heat input."
+imposed_CFD_cooler_duty,no,work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/runtime_input_audit.csv,forbidden runtime input: cooler duty is not a released setup-only predictor for candidate scoring.
+validation_holdout_external_temperatures,no,work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/runtime_input_audit.csv,forbidden runtime input: target temperatures are score targets and cannot drive predictions.
+protected_holdout_or_external_residuals,no,work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/runtime_input_audit.csv,forbidden runtime input: protected residuals cannot be used for tuning or hidden multipliers.
+exact_target_window_Q_wall_W,no,work_products/2026-07/2026-07-22/2026-07-22_thesis_n1_frozen_runtime_legal_candidate_gate/runtime_input_audit.csv,forbidden runtime input: target-window wall heat is diagnostic until same-QOI UQ and production gates pass.

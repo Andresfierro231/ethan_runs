@@ -1,0 +1,43 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SOURCE-BOUNDED-CV-RERUN-FROM-GEOMETRY-SEED-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Rerun S13 source-bounded CV release using the completed geometry-backed right-leg seed.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-SOURCE-BOUNDED-CV-RERUN-FROM-GEOMETRY-SEED-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-source-bounded-cv-rerun-from-geometry-seed.md",
+    "imports/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed.json",
+    "tools/extract/build_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed.py",
+    "tools/extract/test_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed"
+  ],
+  "read_only_context": [
+    "completed S13 right-leg geometry seed package",
+    "completed S13 source-bounded CV definition package",
+    "completed S13 ROI/topology packages",
+    "S13 sampler/UQ/surface packages",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "generated docs index files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "openfoam_solver_or_postprocessing_launched": false,
+  "surface_extraction_launched": false,
+  "sampler_or_harvest_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "fitting_or_model_selection": false,
+  "exchange_cell_admission": false,
+  "downstream_trigger": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "residual_absorbed_into_internal_Nu": false
+}

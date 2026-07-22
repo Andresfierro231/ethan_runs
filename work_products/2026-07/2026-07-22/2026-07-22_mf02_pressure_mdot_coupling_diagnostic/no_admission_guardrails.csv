@@ -1,0 +1,9 @@
+guardrail,allowed
+component_K_admission,False
+F6_fit_or_scoring,False
+cluster_K_or_clipped_K,False
+hidden_global_multiplier,False
+mixed_basis_promotion,False
+mdot_prediction_from_pressure_residual,False
+solver_scheduler_sampler_launch,False
+source_property_release_or_admission,False

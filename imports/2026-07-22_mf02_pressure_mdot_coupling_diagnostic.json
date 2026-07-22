@@ -1,0 +1,52 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/pressure_residual_basis_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/mdot_sensitivity_coupling_estimate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/lower_right_non_admission_restatement.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/f3_f6_prerequisite_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/candidate_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/no_admission_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/no_fit_performance_context.csv",
+    ".agent/status/2026-07-22_TODO-MF02-PRESSURE-MDOT-COUPLING-DIAGNOSTIC-2026-07-22.md",
+    ".agent/journal/2026-07-22/mf02-pressure-mdot-coupling-diagnostic.md",
+    "imports/2026-07-22_mf02_pressure_mdot_coupling_diagnostic.json",
+    "tools/analyze/build_mf02_pressure_mdot_coupling_diagnostic.py",
+    "tools/analyze/test_mf02_pressure_mdot_coupling_diagnostic.py",
+    ".agent/BOARD.md"
+  ],
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T13:28:51.811248+00:00",
+  "mutation_flags": {
+    "component_k_or_f6_admission": false,
+    "fitting_tuning_model_selection": false,
+    "fluid_or_external_edit": false,
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "solver_scheduler_sampler_launch": false,
+    "source_property_release": false
+  },
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/section_effective_pressure_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/hybrid_pressure_term_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/no_fit_performance_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f6_candidate_admission_decision.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/f3_vs_f6_comparison_prerequisites.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/lower_right_negative_result_classification.csv",
+    ".agent/BLOCKERS.md",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files",
+    "thesis current/LaTeX files"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "task": "TODO-MF02-PRESSURE-MDOT-COUPLING-DIAGNOSTIC-2026-07-22"
+}

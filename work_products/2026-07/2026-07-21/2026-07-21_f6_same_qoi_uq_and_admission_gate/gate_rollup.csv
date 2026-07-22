@@ -1,0 +1,8 @@
+gate,status,reason
+raw_face_sampling,pass,Stage A sampled 8/8 endpoint faces with finite fields
+ordinary_flow,fail,all current endpoint pairs fail RAF/RMF ordinary-flow threshold
+coarse_static_pressure_basis,blocked,repaired coarse reconstructions lack static p
+same_qoi_mesh_uq,blocked,no F6 same-QOI mesh/UQ row is admissible
+historical_same_qoi_context,diagnostic,litrev same-QOI package has 0 admitted rows overall
+f3_comparison,not_evaluated_no_ordinary_candidate,F3 comparison is not meaningful until an F6 ordinary candidate clears UQ gates
+admission,closed,no component_K or cluster_K row passed ordinary-flow and same-QOI UQ gates

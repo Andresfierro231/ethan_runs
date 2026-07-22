@@ -1,0 +1,4 @@
+source_id,path,use,mutation
+recirc_section_effective_model,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/recirc_pressure_basis_table.csv,diagnostic residual and K_eff basis,False
+pressure_corner_publication_freeze,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,canonical section-effective result and publication labels,False
+throughflow_recirc_exchange_cell_contract,work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/residual_equation_contract.md,hybrid residual equation boundary,False

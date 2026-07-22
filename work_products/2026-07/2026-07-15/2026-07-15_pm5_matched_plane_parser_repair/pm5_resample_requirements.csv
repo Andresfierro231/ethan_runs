@@ -1,0 +1,5 @@
+case_key,rows,repaired_plane_wallT_rows,missing_plane_field_rows,missing_wallHeatFlux_rows,required_action
+salt2_hi5q,3,0,3,3,resample planes with rho/Re/Pr/Ri/Gr/Ra plus U/T at representative time
+salt2_lo5q,3,3,0,3,repair wallHeatFlux generation/sampling for wall band
+salt4_hi5q,3,0,3,3,resample planes with rho/Re/Pr/Ri/Gr/Ra plus U/T at representative time
+salt4_lo5q,3,0,3,3,resample planes with rho/Re/Pr/Ri/Gr/Ra plus U/T at representative time

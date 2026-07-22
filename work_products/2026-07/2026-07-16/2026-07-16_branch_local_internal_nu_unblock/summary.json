@@ -1,0 +1,22 @@
+{
+  "blocker_decision": "not_resolved",
+  "branch_count": 5,
+  "branch_decision_counts": {
+    "blocked_downcomer_policy_and_mesh": 1,
+    "blocked_source_sign_heat_balance_mesh": 1,
+    "boundary_hx_lane_not_internal_nu_fit": 1,
+    "hybrid_onset_diagnostic_not_single_stream": 1,
+    "not_fit_target_or_manual_review": 1
+  },
+  "external_fluid_mutated": false,
+  "final_use_gci_rows": 13,
+  "fit_admissible_internal_nu_rows": 0,
+  "generated_at": "2026-07-16T21:54:12+00:00",
+  "internal_nu_candidate_rows": 32,
+  "native_solver_outputs_mutated": false,
+  "publication_ready_final_use_gci_rows": 0,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "targeted_queue_rows": 5,
+  "task": "AGENT-459"
+}

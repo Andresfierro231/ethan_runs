@@ -1,0 +1,11 @@
+role,path
+predictive_burndown,work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown
+s13_reconciliation,work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation
+s13_bulk_partition,work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility
+s13_residual_contract,work_products/2026-07/2026-07-22/2026-07-22_s13_residual_complete_open_cv_energy_balance_contract
+passive_h2,work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet
+source_property_exact,work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14
+source_property_nominal,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight
+property_sensitivity,work_products/2026-07/2026-07-22/2026-07-22_candidate_cp_mu_k_train_support_sensitivity_preflight
+pressure_failure,work_products/2026-07/2026-07-22/2026-07-22_thesis_pressure_f6_ordinary_basis_failure_packet
+train_only_uq,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator

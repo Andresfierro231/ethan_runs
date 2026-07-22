@@ -1,0 +1,4 @@
+case_id,feature,missing_artifact,decision,required_to_resolve,guardrail
+salt_2,corner_lower_right,same_qoi_mesh_time_uncertainty,missing_no_GCI_diagnostic_only,repeat exact endpoint contract over valid same-label same-formula mesh/time family members,diagnostic_only_until_same_qoi_UQ_exists
+salt_3,corner_lower_right,same_qoi_mesh_time_uncertainty,missing_no_GCI_diagnostic_only,repeat exact endpoint contract over valid same-label same-formula mesh/time family members,diagnostic_only_until_same_qoi_UQ_exists
+salt_4,corner_lower_right,same_qoi_mesh_time_uncertainty,missing_no_GCI_diagnostic_only,repeat exact endpoint contract over valid same-label same-formula mesh/time family members,diagnostic_only_until_same_qoi_UQ_exists

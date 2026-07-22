@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-07-16T21:54:40.822319+00:00",
+  "heat_audit_case_count": 4,
+  "heat_audit_cases": [
+    "salt2_mainline",
+    "salt3_mainline",
+    "salt4_mainline",
+    "val_salt2"
+  ],
+  "outputs": {
+    "all_cases_static_plot": "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_loop_all_cases_static_p.svg",
+    "heat_audit_csv": "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/cfd_heat_audit_by_run.csv",
+    "heat_audit_svg": "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/cfd_heat_audit_by_run.svg",
+    "mainline_p_rgh_plot": "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_loop_mainline_p_rgh.svg",
+    "mainline_static_plot": "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/pressure_loop_mainline_static_p.svg",
+    "recommendations": "work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_and_modeling_recommendations.md"
+  },
+  "plot_count": 3,
+  "pressure_cases_plotted": 11,
+  "pressure_cases_without_comparable_heat_audit": [
+    "salt1_hi10q",
+    "salt1_lo10q",
+    "salt1_nominal",
+    "salt2_hi5q",
+    "salt2_lo5q",
+    "salt4_hi5q",
+    "salt4_lo5q"
+  ],
+  "pressure_station_rows": 330,
+  "salt2_4_junction_loss_W": {
+    "salt2_mainline": 39.128349537,
+    "salt3_mainline": 43.234690515,
+    "salt4_mainline": 48.485215891
+  },
+  "task": "AGENT-462"
+}

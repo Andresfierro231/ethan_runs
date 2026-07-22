@@ -1,0 +1,18 @@
+{
+  "blocked_terminal_review_rows": 0,
+  "case_count": 4,
+  "fit_admitted_rows": 0,
+  "future_holdout_scoring_rows": 4,
+  "generated_at_utc": "2026-07-21T01:16:58.108557+00:00",
+  "harvest_job_id": "3295438",
+  "harvest_job_state": "COMPLETED",
+  "model_fitting_performed": "no",
+  "native_output_mutation": "none",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification",
+  "pressure_upcomer_fit_admitted_rows": 0,
+  "registry_mutation": "none",
+  "scheduler_source": "local_evidence_only",
+  "solver_job_id": "3293924",
+  "solver_job_state": "TIMEOUT",
+  "task": "TODO-PREDICT-SALT-PM10-TERMINAL-ADMISSION"
+}

@@ -1,0 +1,12 @@
+guardrail,occurred
+new validation scoring,False
+new holdout scoring,False
+external-test scoring,False
+fitting/tuning/model selection,False
+runtime temperature input release,False
+wall-profile correction release,False
+source/property release,False
+coefficient admission,False
+Fluid solve or scheduler action,False
+native output or registry mutation,False
+residual absorbed into internal Nu,False

@@ -1,0 +1,5 @@
+candidate_id,model_form,job_action,ready_state,blocker
+N1,per_leg_friction_multiplier,evaluate_from_existing_prior_perleg_trial,ready_now_from_existing_salt_nominal,needs integration into canonical model-form runner before becoming the default fit.
+N2,per_leg_f_of_Re_power_law,screen_loglog_f_vs_Re_by_span,screen_only,Only 4 span/method groups have enough positive Salt nominal points; false-steady perturbations excluded.
+N3,thermal_UA_prime_term,stage_for_next_external_or_local_rom_fit,partial_ready,Salt nominal UA'/HTC exists; Water and uncertainty treatment still pending.
+N4,water_family_validation_axis,wait_for_dependent_water_postprocess,blocked_on_3265970,Water continuation job must exit and be frozen before admission.

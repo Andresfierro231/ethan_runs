@@ -1,0 +1,78 @@
+{
+  "contract_summary": {
+    "generated_utc": "2026-07-13T21:10:48+00:00",
+    "n_case_runtime_rows": 3,
+    "n_modes": 3,
+    "n_runtime_fields": 32,
+    "n_validation_targets": 75,
+    "n_violations": 0,
+    "source_files": {
+      "cfd_coefficient_naming_limits": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv",
+      "fluid_cases": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml",
+      "fluid_validation": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/validation_cases.csv",
+      "heat_loss_admission_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+      "litrev_campaign_index": "work_products/2026-07/2026-07-13/2026-07-13_litrev_todo_campaign_index/README.md",
+      "named_loss_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+      "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+      "property_mode_lane": "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+      "research_plan": "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md",
+      "source_envelope_gate": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+      "thermal_targets": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv"
+    },
+    "strict_status": "pass",
+    "task_id": "TODO-PRED-INPUT-CONTRACT"
+  },
+  "engine": "fast_scan_h1_proxy",
+  "external_fluid_modified": false,
+  "generated_utc": "2026-07-13T22:46:57+00:00",
+  "k_source_policy": "salt2_train_finite_fit_target_K_local_sum",
+  "minor_loss_total_fixed_K": 40.63836886473942,
+  "n_accepted_rows": 6,
+  "n_cases": 3,
+  "n_k_included_rows": 3,
+  "n_k_source_rows": 33,
+  "n_result_rows": 6,
+  "n_variants": 2,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "h1_proxy_run_plan.csv",
+    "h1_proxy_results.csv",
+    "h1_proxy_variant_summary.csv",
+    "h1_proxy_k_source.csv",
+    "summary.json"
+  ],
+  "overall_status": "h1_proxy_screen_complete_not_publication_closure",
+  "publication_closure_allowed": false,
+  "source_files": {
+    "agent_299_h1_feasibility": "work_products/2026-07/2026-07-13/2026-07-13_predictive_parallel_execution_coordination/h1_feasibility_notes.csv",
+    "forward_v0_runner": "tools/analyze/run_predictive_forward_v0_imposed_cooler.py",
+    "named_pressure_loss_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv"
+  },
+  "task_id": "AGENT-308",
+  "thermal_fit_used": false,
+  "variant_summary": [
+    {
+      "engine": "fast_scan_h1_proxy",
+      "max_abs_pressure_residual_Pa": 2.1355668699983426,
+      "mean_abs_Tmean_error_vs_cfd_K": 34.445322953133406,
+      "mean_abs_loop_delta_error_vs_cfd_K": 2.335558012164665,
+      "mean_mdot_error_vs_cfd_kg_s": 0.0029775000000000023,
+      "mean_mdot_error_vs_experimental_kg_s": -0.00011249999999999802,
+      "mean_qambient_total_W": 185.15168749411473,
+      "n_rows": 3,
+      "variant_id": "F0_current_fluid_sources_H1_proxy"
+    },
+    {
+      "engine": "fast_scan_h1_proxy",
+      "max_abs_pressure_residual_Pa": 2.1142657982555377,
+      "mean_abs_Tmean_error_vs_cfd_K": 4.632658877211536,
+      "mean_abs_loop_delta_error_vs_cfd_K": 1.4588356868926098,
+      "mean_mdot_error_vs_cfd_kg_s": 0.002144166666666668,
+      "mean_mdot_error_vs_experimental_kg_s": -0.0009458333333333321,
+      "mean_qambient_total_W": 148.15144777394025,
+      "n_rows": 3,
+      "variant_id": "F1_heater_only_H1_proxy"
+    }
+  ]
+}

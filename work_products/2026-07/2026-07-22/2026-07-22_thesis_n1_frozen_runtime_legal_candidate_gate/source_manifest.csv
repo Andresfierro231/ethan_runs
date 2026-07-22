@@ -1,0 +1,10 @@
+source_key,path,summary_path,exists,mutation_status
+four_study_gate,work_products/2026-07/2026-07-22/2026-07-22_four_study_thesis_support_gate,work_products/2026-07/2026-07-22/2026-07-22_four_study_thesis_support_gate/summary.json,true,read_only
+five_best,work_products/2026-07/2026-07-22/2026-07-22_five_best_thesis_support_analyses,work_products/2026-07/2026-07-22/2026-07-22_five_best_thesis_support_analyses/summary.json,true,read_only
+s8_s12,work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate,work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/summary.json,true,read_only
+s13_source_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/summary.json,true,read_only
+s13_exact_qwall,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/summary.json,true,read_only
+s13_limited,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/summary.json,true,read_only
+s14_f6,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,true,read_only
+s6_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/summary.json,true,read_only
+sensor_contract,work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract,work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract/summary.json,true,read_only

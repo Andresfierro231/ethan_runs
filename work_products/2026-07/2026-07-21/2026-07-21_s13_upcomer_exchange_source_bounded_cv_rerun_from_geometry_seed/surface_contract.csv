@@ -1,0 +1,10 @@
+case_id,surface_lane,release_status,face_count,area_m2,normal_convention,consumer
+salt_2,trusted_wall_faces,geometry_seed_ready,38880,0.063435001093,OpenFOAM boundary owner-side wall orientation,diagnostic geometry seed only
+salt_2,internal_seed_core_interface,geometry_seed_ready,38880,0.0623473180949,positive outward from seed toward adjacent non-seed cell,diagnostic geometry seed only
+salt_2,production_exchange_interface,blocked,0,0,not_released,requires admitted exchange-state CV
+salt_3,trusted_wall_faces,geometry_seed_ready,38880,0.063435001093,OpenFOAM boundary owner-side wall orientation,diagnostic geometry seed only
+salt_3,internal_seed_core_interface,geometry_seed_ready,38880,0.0623473180949,positive outward from seed toward adjacent non-seed cell,diagnostic geometry seed only
+salt_3,production_exchange_interface,blocked,0,0,not_released,requires admitted exchange-state CV
+salt_4,trusted_wall_faces,geometry_seed_ready,38880,0.063435001093,OpenFOAM boundary owner-side wall orientation,diagnostic geometry seed only
+salt_4,internal_seed_core_interface,geometry_seed_ready,38880,0.0623473180949,positive outward from seed toward adjacent non-seed cell,diagnostic geometry seed only
+salt_4,production_exchange_interface,blocked,0,0,not_released,requires admitted exchange-state CV

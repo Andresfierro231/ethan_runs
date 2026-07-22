@@ -1,0 +1,3 @@
+priority,next_step,success_signal
+1,recover independent ambient_area_insulation_contact_layer_basis,PASSIVE-H2 source family has setup-only source basis
+2,keep realized wallHeatFlux out of runtime inputs,diagnostic/provenance row remains separated from predictive boundary source

@@ -1,0 +1,2 @@
+decision_id,status,submitted,scheduler_action,reason,release_condition,next_task
+upcomer_exchange_sampler_submission,not_submitted_blocked,false,false,missing trusted cellVolume export for all queued windows,cellVolume exists in same cell VTK as U/T/rho or parser computes tested mesh cell volumes; wall heat-flux diagnostic generation remains scheduler-only and scoring/support-only,implement_cell_volume_export_then_submit_exchange_sampler

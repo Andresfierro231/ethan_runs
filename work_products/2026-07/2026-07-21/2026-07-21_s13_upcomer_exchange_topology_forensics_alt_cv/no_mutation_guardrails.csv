@@ -1,0 +1,8 @@
+guard_id,status,policy
+native_output_mutation,false,read-only polyMesh access; no OpenFOAM output writes
+scheduler_action,false,local topology/CSV analysis only
+surface_vtk_extraction,false,surface extraction remains downstream and gated
+sampler_or_harvest_launch,false,no sampler or production harvest in forensics row
+threshold_relaxation,false,dominance/wall/interface/escape gates are unchanged
+proxy_interface_admission,false,no loop-mdot or outlet proxy substituted for exchange interface
+residual_absorbed_into_internal_Nu,false,"heat residual, Q_wall_W, and internal Nu remain separate lanes"

@@ -1,0 +1,10 @@
+source_id,path,exists,use,mutation_status
+f6_named_slots,work_products/2026-07/2026-07-17/2026-07-17_f6_nonrecirculating_pressure_anchor_plan/named_pressure_anchor_slots.csv,True,read-only input,not_mutated
+f6_pressure_plan,work_products/2026-07/2026-07-17/2026-07-17_f6_nonrecirculating_pressure_anchor_plan/f6_pressure_anchor_plan.csv,True,read-only input,not_mutated
+f6_next_queue,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/next_extraction_queue.csv,True,read-only input,not_mutated
+two_tap_target_taps,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/target_feature_taps.csv,True,read-only input,not_mutated
+raw_endpoint_harvest,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv,True,read-only input,not_mutated
+pressure_velocity_basis_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv,True,read-only input,not_mutated
+endpoint_recirculation_metrics,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,True,read-only input,not_mutated
+pressure_gate_decisions,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/gate_decision_table.csv,True,read-only input,not_mutated
+source_property_labels,work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/source_property_label_contract.csv,True,read-only input,not_mutated

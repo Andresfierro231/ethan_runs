@@ -1,0 +1,7 @@
+model_form_id,transfer_rmse_K,transfer_mean_signed_error_K,delta_vs_M3_RMSE_K,reduction_vs_M3_pct,interpretation,score_use
+M2_as_is,28.3504762873,-26.3434552938,10.9859469777,-63.26659814283826,legacy comparator or no improvement,diagnostic_support_only_not_protected_score
+M3_as_is,17.3645293096,-14.0651310596,0.0,0.0,legacy comparator or no improvement,diagnostic_support_only_not_protected_score
+D1_M3_global_bias_offset_train,10.5420700958,2.72695351733,-6.822459213800002,39.28962940578065,shape residual improves legacy transfer diagnostic,diagnostic_support_only_not_protected_score
+D2_M3_sensor_kind_offsets_train,10.5253939442,2.72695351733,-6.839135365400002,39.38566513069247,shape residual improves legacy transfer diagnostic,diagnostic_support_only_not_protected_score
+D3_M3_wall_linear_shape_train,8.38846755024,2.72695351733,-8.976061759360002,51.69193819954322,shape residual improves legacy transfer diagnostic,diagnostic_support_only_not_protected_score
+D4_M3_segment_offsets_min2_train,7.94040349151,3.48615119164,-9.424125818090001,54.272279139060004,shape residual improves legacy transfer diagnostic,diagnostic_support_only_not_protected_score

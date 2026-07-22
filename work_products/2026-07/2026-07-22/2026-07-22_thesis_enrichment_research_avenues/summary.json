@@ -1,0 +1,22 @@
+{
+  "task_id": "TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES",
+  "generated_at_utc": "2026-07-22T14:20:00+00:00",
+  "decision": "package_only_prioritization_complete",
+  "avenue_rows": 5,
+  "allowed_now_rows": 4,
+  "trigger_gated_rows": 1,
+  "suggested_board_rows": 4,
+  "thesis_body_edit": false,
+  "external_repo_edit": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_sampler_harvest_uq_launched": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "final_score_claim": false,
+  "generated_index_refresh": false,
+  "residual_absorbed_into_internal_nu": false
+}

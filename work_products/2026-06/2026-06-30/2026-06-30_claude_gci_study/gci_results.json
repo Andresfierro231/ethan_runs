@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-06-30T14:48:48-05:00",
+  "method": "Roache GCI (1994/1998); ASME V&V20-2009 \u00a77.5; 3-grid study.",
+  "safety_factor": 1.25,
+  "disclosure": "GCI assumes the three solutions are in the asymptotic range. asymptotic_range_ratio (~1.0 wanted) and verdict are reported so the user can judge whether that assumption holds.",
+  "results": [
+    {
+      "qoi_name": "mdot_loop",
+      "coarse_f3": 0.041,
+      "medium_f2": 0.0405,
+      "fine_f1": 0.0403,
+      "r21": 2.0,
+      "r32": 2.0,
+      "safety_factor": 1.25,
+      "convergence_ratio_R": 0.39999999999999725,
+      "verdict": "monotonic_convergence",
+      "order_status": "ok",
+      "observed_order_p": 1.3219280948873724,
+      "order_iterations": 0,
+      "difference_sign_s": 1.0,
+      "f_exact_richardson": 0.04016666666666667,
+      "e_approx_fine_e_a21": 0.004962779156327513,
+      "e_approx_coarse_e_a32": 0.012345679012345689,
+      "gci_fine_pct": 0.41356492969395464,
+      "gci_coarse_pct": 1.028806584362129,
+      "asymptotic_range_ratio": 0.9950617283950618,
+      "gci_trustworthy": true,
+      "gci_note": "GCI assumes solutions are in the asymptotic range; asymptotic_range_ratio (=0.995, want ~1.0) and verdict (=monotonic_convergence) disclose whether that holds."
+    }
+  ]
+}

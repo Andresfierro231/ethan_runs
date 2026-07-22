@@ -1,0 +1,4 @@
+contract_id,formula,sign_convention,required_inputs,status
+H_throughflow_net_W,H_throughflow_net_W = mdot_throughflow_kg_s * cp_J_kg_K * (T_out_bulk_K - T_in_bulk_K),positive when throughflow gains sensible enthalpy from inlet to outlet,mdot_throughflow_kg_s; cp_J_kg_K; T_in_bulk_K; T_out_bulk_K; endpoint_face_masks; time_window_s,blocked_until_endpoint_masks_cp_and_bulk_temperatures_exist
+T_bulk_endpoint_K,T_bulk = sum(rho * U_dot_n * T) / sum(rho * U_dot_n),weights use endpoint normal aligned to throughflow convention; report positive/negative flux separately,face-centered U; rho; T or EOS T(rho); endpoint normals; endpoint masks,formula_defined_no_same_cv_endpoint_samples
+mass_continuity_support,mdot_continuity_mismatch = mdot_outlet - mdot_inlet,both endpoint mdot values reported in positive throughflow direction,signed endpoint mdot values and endpoint areas/masks,required_before_residual_value_release

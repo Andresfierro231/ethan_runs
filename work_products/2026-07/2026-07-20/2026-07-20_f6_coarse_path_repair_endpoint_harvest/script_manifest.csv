@@ -1,0 +1,2 @@
+script_path,script_role,auto_submit
+work_products/2026-07/2026-07-20/2026-07-20_f6_coarse_path_repair_endpoint_harvest/scripts/run_repair_endpoint_harvest.sh,local_rebuild_and_test_no_scheduler,false

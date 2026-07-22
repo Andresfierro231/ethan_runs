@@ -1,0 +1,6 @@
+stage,scenario_name,duration_s,n_rows,gate_status,notes
+prepare,,0.251353,0,informational,runner preparation
+solve_scenario,amx1_salt2_baseline_ins_1.0in_rad_1,58.222304,1,pass_smoke_runtime_baseline,baseline row completed
+solve_scenario,amx1_salt2_low_axial_mixing_ins_1.0in_rad_1,111.057331,1,pass_smoke_runtime_watch,AMX1 row completed but runtime is material for future Salt1-4 screening
+finalize,,21.840727,2,pass,aggregate finalize completed
+total,amx1_salt2_smoke_v1,191.398239,2,pass_smoke_runtime_watch,total elapsed is acceptable for smoke but must remain a gate before broader comparison

@@ -1,0 +1,30 @@
+{
+  "all_current_h_inside_engineering_range": true,
+  "all_current_q_inside_engineering_range": true,
+  "all_passive_rows_wallHeatFlux_provenance": true,
+  "date": "2026-07-21",
+  "external_fluid_edit": false,
+  "external_test_rows_scored": 0,
+  "families": [
+    "junction",
+    "downcomer",
+    "upcomer",
+    "cooling_branch",
+    "lower_leg"
+  ],
+  "fit_or_model_selection": false,
+  "fluid_solve_run": false,
+  "freeze_or_admission_decision": false,
+  "gate_decision": "needs_more_source",
+  "global_multiplier_admitted": false,
+  "holdout_rows_scored": 0,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "repair_executed": false,
+  "repair_run_allowed_now": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "status": "complete",
+  "task_id": "TODO-FLUID-EXTBC-PASSIVE-H2-CAND001-PHYSICAL-BASIS-2026-07-21",
+  "validation_rows_scored": 0
+}

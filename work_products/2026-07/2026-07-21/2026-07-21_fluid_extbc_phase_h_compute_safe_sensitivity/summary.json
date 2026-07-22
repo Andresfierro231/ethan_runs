@@ -1,0 +1,31 @@
+{
+  "blocker_register_change": false,
+  "completed_sensitivities": 6,
+  "date": "2026-07-21",
+  "external_repo_mutation": false,
+  "external_test_rows_consumed": 0,
+  "failed_sensitivities": 0,
+  "final_predictive_admission": false,
+  "fit_or_model_selection": false,
+  "fluid_source_mutation": false,
+  "freeze_or_admission_decision": false,
+  "generated_index_refresh": false,
+  "holdout_rows_consumed": 0,
+  "native_output_mutation": false,
+  "openfoam_solver_or_postprocessing_launch": false,
+  "owner_response_counts": {
+    "improves": 3,
+    "worsens": 3
+  },
+  "post_solve_train_reference_join": true,
+  "registry_or_admission_mutation": false,
+  "repair_run": false,
+  "requested_sensitivities": 6,
+  "scheduler_action": false,
+  "status": "complete",
+  "task_id": "TODO-FLUID-EXTBC-PHASE-H-COMPUTE-SAFE-SENSITIVITY-2026-07-21",
+  "thesis_current_file_edit": false,
+  "timeout_seconds": 90,
+  "timeout_sensitivities": 0,
+  "validation_rows_consumed": 0
+}

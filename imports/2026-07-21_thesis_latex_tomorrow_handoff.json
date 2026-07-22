@@ -1,0 +1,24 @@
+{
+  "task": "TODO-THESIS-LATEX-TOMORROW-HANDOFF-2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-LATEX-TOMORROW-HANDOFF-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-latex-tomorrow-handoff.md",
+    "imports/2026-07-21_thesis_latex_tomorrow_handoff.json",
+    "operational_notes/07-26/21/2026-07-21_THESIS_LATEX_TOMORROW_HANDOFF.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/README.md"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/21/2026-07-21_THESIS_LATEX_PARALLEL_WORKFLOW_CONTRACT.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/latex_sync_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/artifact_handoff_schema.json",
+    "../papers/.agent/BOARD.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "latex_chapter_edit": false,
+  "external_repo_mutated": false
+}

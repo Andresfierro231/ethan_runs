@@ -1,0 +1,10 @@
+source_id,path,use,mutation_status
+SRC-001,work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/section_effective_pressure_scorecard.csv,section-effective values and failed gates,read_only
+SRC-002,work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/hybrid_pressure_term_contract.csv,Delta_p_recirc_section term contract,read_only
+SRC-003,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/no_fit_performance_table.csv,no-fit diagnostic transfer result,read_only
+SRC-004,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/residual_ownership_table.csv,residual owner wording,read_only
+SRC-005,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/candidate_reviewability_decision.csv,candidate reviewability boundary,read_only
+SRC-006,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/timeout_source_ordinary_uq_gate_matrix.csv,F6 non-admission gates,read_only
+SRC-007,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/f3_vs_f6_comparison_prerequisites.csv,F3/F6 comparison status,read_only
+SRC-008,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/summary.json,source/property release blocker,read_only
+SRC-009,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,S14 pressure use-map counts,read_only

@@ -1,0 +1,21 @@
+{
+  "admission_rules": 7,
+  "blocker_rows": 7,
+  "blocking_rows": 4,
+  "date": "2026-07-18",
+  "external_fluid_edit": "none",
+  "generated_at_utc": "2026-07-18T18:58:31+00:00",
+  "generated_index_refresh": "not_run_active_agent_owns_generated_index_paths",
+  "native_output_mutation": "none",
+  "next_steps": 7,
+  "ordinary_admissions": 0,
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_two_tap_blocker_roadmap",
+  "registry_mutation": "none",
+  "research_paths": 6,
+  "sampling_jobs_launched": 0,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "solver_or_postprocessing_launched": "none",
+  "source_rows": 8,
+  "task": "TODO-TWO-TAP-BLOCKER-ROADMAP"
+}

@@ -363,6 +363,18 @@ admissions, clipped-K rows, or hidden multipliers exist.
   F6 fits, 0 component-K admissions, 0 clipped-K rows, and 0 hidden
   multipliers. →
   `work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/`
+- **Negative-K section-effective thesis case dispatch** — SUCCESS as the
+  current start-here for the lower-right corner negative-result route, not as
+  coefficient admission. It consolidates the LitRev pressure-basis rule, basis
+  recovery audit, publication freeze, and section-effective hybrid scorecard
+  into one thesis-facing case: stop current component-K attempts, preserve the
+  signed negative residual, publish the result as section-effective pressure
+  evidence, and use it to motivate `Delta_p_recirc_section`. The rerun
+  scorecard evidence remains diagnostic only: Salt2/Salt3/Salt4 residuals
+  `-1.25366731683/-1.84957005859/-1.67833900273 Pa`, Salt2-frozen transfer max
+  error `0.47046606946166093438399 Pa`, and 0 component-K, cluster-K, F6,
+  clipped-K, hidden-multiplier, validation, holdout, or external-test rows. →
+  `work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/`
 
 ## Key artifacts (canonical)
 - Momentum-budget output (de-buoyed f per span): `work_products/2026-07/2026-07-01/2026-07-01_claude_momentum_budget/`
@@ -400,6 +412,7 @@ admissions, clipped-K rows, or hidden multipliers exist.
 - Pressure/F6/two-tap blocker unlock next steps: `work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/`
 - F6 non-upcomer branch modeling analysis: `work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/`
 - F6 endpoint raw-face sampler unblock: `work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/`
+- Negative-K section-effective thesis case dispatch: `work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/`
 
 ## Related
 - `operational_notes/maps/README.md` — MOC index

@@ -1,0 +1,2 @@
+lane_id,candidate_id,case_id,split_role,heater_lambda,candidate_mdot_abs_error_pct,m3_mdot_abs_error_pct,candidate_tp_rmse_K,m3_tp_rmse_K,candidate_tw_rmse_K,m3_tw_rmse_K,candidate_all_probe_rmse_K,m3_all_probe_rmse_K,mdot_delta_vs_m3_pct,tp_delta_vs_m3_K,tw_delta_vs_m3_K,all_probe_delta_vs_m3_K,score_gate
+HS1_BASELINE_LOSO_SALT124,HS1_BASELINE_LOSO_SALT124_heater_source_lam_1p00_PLUS_HX_LUMPED_UA_NTU,salt_3,nominal_holdout_loso,1,30.92596836,15.857,69.56949053,14.06,129.2719346,19.332,114.0238829,17.749,15.06896836,55.50949053,109.9399346,96.2748829,fail

@@ -1,0 +1,9 @@
+source_id,path,use
+agent511_heater_source,work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score,read-only active/pending heater-source redistribution evidence
+agent513_wall_temperature_drive,work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate,completed wall-temperature-drive failure mode
+agent498_wall_distribution_ladder,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder,PB2 base wall distribution and AGENT-498 failure localization
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,HX alpha_UA and segmented HX adapter
+agent461_m3,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv,M3 mdot/TP/TW/all-probe comparator gates
+m3_sensor_baseline,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv,M3 probe-level comparator
+setup_external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,setup-only external boundary role rows
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read-only Fluid solve_case execution

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="520" viewBox="0 0 820 520">
+<rect width="100%" height="100%" fill="white"/>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#111827}.title{font-size:22px;font-weight:700}.small{font-size:11px;fill:#4B5563}.axis{stroke:#374151}.grid{stroke:#E5E7EB}</style>
+<text x="40" y="35" class="title">Upcomer Recirculation Onset Regime</text>
+<text x="40" y="55" class="small">Observed Salt 2/3/4 points remain in recirculation-cell regime; onset band is extrapolated.</text>
+<line x1="80" x2="730" y1="390.0" y2="390.0" class="grid"/>
+<text x="35" y="394.0" class="small">0.0</text>
+<line x1="80" x2="730" y1="293.030303030303" y2="293.030303030303" class="grid"/>
+<text x="35" y="297.030303030303" class="small">0.1</text>
+<line x1="80" x2="730" y1="196.060606060606" y2="196.060606060606" class="grid"/>
+<text x="35" y="200.060606060606" class="small">0.2</text>
+<line x1="80" x2="730" y1="99.09090909090907" y2="99.09090909090907" class="grid"/>
+<text x="35" y="103.09090909090907" class="small">0.3</text>
+<line x1="123.1771083862867" x2="123.1771083862867" y1="70" y2="390" class="grid"/>
+<text x="113.1771083862867" y="410" class="small">75</text>
+<line x1="200.97491500342943" x2="200.97491500342943" y1="70" y2="390" class="grid"/>
+<text x="190.97491500342943" y="410" class="small">100</text>
+<line x1="356.5705282377149" x2="356.5705282377149" y1="70" y2="390" class="grid"/>
+<text x="346.5705282377149" y="410" class="small">150</text>
+<line x1="512.1661414720004" x2="512.1661414720004" y1="70" y2="390" class="grid"/>
+<text x="502.1661414720004" y="410" class="small">200</text>
+<line x1="667.7617547062858" x2="667.7617547062858" y1="70" y2="390" class="grid"/>
+<text x="657.7617547062858" y="410" class="small">250</text>
+<line x1="80" x2="730" y1="390" y2="390" class="axis"/>
+<line x1="80" x2="80" y1="70" y2="390" class="axis"/>
+<rect x="200.97491500342943" y="70" width="497.90596234971343" height="320" fill="#FDE68A" opacity="0.25"/>
+<text x="216.534476326858" y="88" class="small">onset bracket</text>
+<circle cx="111.1191226468571" cy="120.6397306397306" r="7" fill="#D97706"/>
+<text x="120.1191226468571" y="112.6397306397306" class="small">salt_2_jin</text>
+<circle cx="190.92420614015765" cy="177.87878787878785" r="7" fill="#D97706"/>
+<text x="199.92420614015765" y="169.87878787878785" class="small">salt_3_jin</text>
+<circle cx="309.52857181859457" cy="223.33333333333331" r="7" fill="#D97706"/>
+<text x="318.52857181859457" y="215.33333333333331" class="small">salt_4_jin</text>
+<text x="365.0" y="475" class="small">Re_upcomer</text>
+<text x="20" y="250" class="small" transform="rotate(-90 20,250)">backflow fraction</text>
+<text x="40" y="485" class="small">Source: AGENT-196 upcomer dataset and fit. Mesh/GCI and corrected-Q perturbation conclusions remain work in progress.</text>
+</svg>

@@ -1,0 +1,51 @@
+{
+  "task": "AGENT-571",
+  "date": "2026-07-20",
+  "title": "Source/property/literature action wave",
+  "decision": "seven_bounded_source_property_literature_ledgers_created_no_release",
+  "actions_completed": [
+    "Salt1 row-specific branch source-envelope blocker ledger",
+    "AMX1 multiplier source-envelope blocker ledger",
+    "PM10/PM5/val_salt2 score-only source/property labels",
+    "Salt2-Salt4 source-envelope strict reclassification attempt",
+    "Thesis literature source-envelope table",
+    "Property-mode sensitivity ledger",
+    "Source/property regression sweep"
+  ],
+  "ledger_count": 7,
+  "rows_by_ledger": {
+    "salt1_branch_source_envelope.csv": 5,
+    "amx1_multiplier_source_envelope.csv": 5,
+    "score_only_source_property_labels.csv": 9,
+    "salt2_4_source_envelope_reclassification.csv": 3,
+    "thesis_literature_source_envelope_table.csv": 6,
+    "property_mode_sensitivity_ledger.csv": 5,
+    "source_property_regression_sweep.csv": 8
+  },
+  "salt1_fit_or_model_selection_rows_released": 0,
+  "salt2_to_salt4_strict_reclassifications": 0,
+  "amx1_fit_or_model_selection_rows_released": 0,
+  "pm10_rows_released_for_recirc_validation_only": 4,
+  "pm5_or_external_rows_released_for_fit": 0,
+  "final_scorecard_regenerated": false,
+  "fit_or_model_selection_run": false,
+  "score_grid_run": false,
+  "scientific_admission_change": "none",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": "none",
+  "external_fluid_edit": false,
+  "tools_analyze_edit": false,
+  "tools_agent_edit": false,
+  "map_edit": false,
+  "blocker_register_mutated": false,
+  "next_steps": [
+    "Build Salt1 branch-level source-envelope rows if Salt1 fit/model-selection is still desired.",
+    "Resolve AMX1 multiplier envelope and choose exactly one bounded follow-up candidate after gates pass.",
+    "Keep PM10 as recirculation validation only; do not repair toward fit/admission without a separate gate-changing task.",
+    "Use the literature table in thesis prose as validity-boundary evidence, not as fit-release evidence.",
+    "Run source_property_gate, runtime_input_lint, split_policy_lint, and finish_task on any future scorecard-like package."
+  ]
+}
+

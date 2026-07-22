@@ -1,0 +1,4 @@
+case_id,reverse_candidate_cells,geometry_seed_cells,reverse_flow_seed_cells,reverse_flow_occupancy_fraction,diagnostic_only,selection_authority
+salt_2,136140,38880,0,0,true,none_reverse_flow_does_not_control_geometry_seed_release
+salt_3,138382,38880,6,0.000154320987654,true,none_reverse_flow_does_not_control_geometry_seed_release
+salt_4,139994,38880,15,0.000385802469136,true,none_reverse_flow_does_not_control_geometry_seed_release

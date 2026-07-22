@@ -1,0 +1,5 @@
+physical_junction_bucket,case_count,mainline_case_count,val_salt2_present,mean_fraction_of_case_junction_loss,std_fraction_of_case_junction_loss,mean_loss_positive_W,val_salt2_fraction,trend_interpretation,model_admission,next_action
+lower_left,4,3,yes,0.198946679026,0.00207806158841,8.54916627875,0.1993088073350925,stable_secondary_bucket,diagnostic_named_loss_only,Add geometry/area/temperature-drive metadata for val_salt2 before coefficient fitting.
+lower_right,4,3,yes,0.194804709834,0.00129120715446,8.36831651625,0.1956690513386786,stable_secondary_bucket,diagnostic_named_loss_only,Add geometry/area/temperature-drive metadata for val_salt2 before coefficient fitting.
+upper_left,4,3,yes,0.244631289268,0.00337911117129,10.497652175,0.2427781398106499,stable_secondary_bucket,diagnostic_named_loss_only,Add geometry/area/temperature-drive metadata for val_salt2 before coefficient fitting.
+upper_right,4,3,yes,0.361617321872,0.000489850140511,15.528450658,0.36224400151557895,dominant_bucket_consistent,diagnostic_named_loss_only,Add geometry/area/temperature-drive metadata for val_salt2 before coefficient fitting.

@@ -1,0 +1,22 @@
+{
+  "task": "TODO-THESIS-LATEX-EVIDENCE-PACKET-SOURCE-PROPERTY-UNBLOCK-2026-07-22",
+  "task_id": "TODO-THESIS-LATEX-EVIDENCE-PACKET-SOURCE-PROPERTY-UNBLOCK-2026-07-22",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-LATEX-EVIDENCE-PACKET-SOURCE-PROPERTY-UNBLOCK-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-latex-evidence-packet-source-property-unblock.md",
+    "imports/2026-07-22_thesis_latex_evidence_packet_source_property_unblock.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_source_property_unblock"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "decision": "latex_source_property_unblock_evidence_packet_staged_no_external_mutation"
+}

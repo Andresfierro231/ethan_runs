@@ -1,0 +1,5 @@
+candidate_id,source_family,cases_or_steps,current_state,terminal_success_cases,endpoint_fields_ready,ordinary_candidate_pairs,same_qoi_uq_ready,recovery_decision,next_allowed_action
+CAND-001,Salt4 high-heat/no-recirculation probes,4 active retry case rows under job 3308712,RUNNING,0,0,0,0,monitor_only_no_harvest,wait for terminal scheduler state then claim terminal disposition/readiness row
+CAND-002,corrected +/-10Q fallback,4 terminal candidates in older readiness packages,not_refreshed_in_this_row,0,0,0,0,fallback_only_after_cand001_fails_source_family,use only if CAND001 fails source-family readiness
+CAND-003,component_or_junction_diagnostic_slots,18 diagnostic slots,not_ordinary_f6_candidate,0,0,0,0,do_not_use_for_f6,keep out of F6/component-K admission
+CAND-004,current Salt2/Salt3/Salt4 endpoint rows,current harvested endpoint evidence,diagnostic_only,0,0,0,0,do_not_use_for_f6,keep section-effective or diagnostic only

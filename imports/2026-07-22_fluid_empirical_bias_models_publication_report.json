@@ -1,0 +1,75 @@
+{
+  "task": "TODO-FLUID-EMPIRICAL-BIAS-MODELS-PUBLICATION-REPORT-2026-07-22",
+  "task_id": "TODO-FLUID-EMPIRICAL-BIAS-MODELS-PUBLICATION-REPORT-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Writer/Reviewer/Tester",
+  "objective": "Write a rigorous numerical-scientific report explaining the empirical temperature bias/correction models, assumptions, caveats, and follow-on discrepancy studies.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-FLUID-EMPIRICAL-BIAS-MODELS-PUBLICATION-REPORT-2026-07-22.md",
+    ".agent/journal/2026-07-22/fluid-empirical-bias-models-publication-report.md",
+    "imports/2026-07-22_fluid_empirical_bias_models_publication_report.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/model_family_publication_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/follow_on_studies.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/leg_bias_correction_coefficients.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/corrected_train_residual_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/model_family_dof_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/source_property_gate_todo.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/README.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -c \"import csv, pathlib; ...\"",
+      "result": "all report CSVs parsed: model_family_publication_table=6 rows, claim_boundary_table=7 rows, follow_on_studies=6 rows, source_manifest=10 rows"
+    },
+    {
+      "command": "wc -l work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/README.md",
+      "result": "report.md 304 lines; README.md 36 lines"
+    },
+    {
+      "command": "rg -n \"admitted|admission|external-test|source/property|forbidden|diagnostic\" work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md",
+      "result": "claim-boundary and caveat language present"
+    }
+  ],
+  "summary": {
+    "report_lines": 304,
+    "model_family_rows": 6,
+    "claim_boundary_rows": 7,
+    "follow_on_study_rows": 6,
+    "recommended_publication_diagnostic_model": "F2_global_affine",
+    "best_reduced_dof_transfer_model": "F5_thermal_family_offset_shared_multiplier",
+    "external_test_rows_scored": 0,
+    "new_fit_or_score_run": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "solver_postprocessing_sampler_harvest_uq_launch": false,
+    "fluid_or_external_edit": false,
+    "thesis_current_file_edit": false,
+    "new_validation_holdout_external_test_scoring": false,
+    "new_fitting_tuning_model_selection": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "final_predictive_admission": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "residual_absorbed_into_internal_nu": false
+  }
+}

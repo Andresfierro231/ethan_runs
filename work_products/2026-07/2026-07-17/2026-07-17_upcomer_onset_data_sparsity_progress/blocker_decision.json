@@ -1,0 +1,20 @@
+{
+  "anchor_candidate_rows": 0,
+  "blocker_id": "upcomer-onset-data-sparsity",
+  "classification_counts": {
+    "not_admissible_missing_same_window_fields": 32,
+    "recirculation_diagnostic": 36
+  },
+  "created_utc": "2026-07-17T15:59:09+00:00",
+  "current_rows_are_fit_evidence": false,
+  "decision": "keep_open",
+  "next_unlock_sequence": [
+    "harvest or design near-onset Re points",
+    "obtain a non-recirculating or bounded transition anchor",
+    "extract same-window wall/bulk Delta-T, pressure, wallHeatFlux, and onset metrics",
+    "add mesh/time uncertainty before any closure promotion"
+  ],
+  "ordinary_fit_rows": 0,
+  "task": "AGENT-495",
+  "why": "Current upcomer/test-section evidence remains recirculation diagnostics or incomplete queued evidence; there are no non-recirculating/transition anchors with same-window pressure, thermal, and uncertainty fields."
+}

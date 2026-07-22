@@ -1,0 +1,13 @@
+{
+  "command": [
+    "python3.11",
+    "tools/analyze/build_salt2_coarse_thermal_repair_smoke.py",
+    "--output-dir",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_salt2_coarse_thermal_repair_smoke",
+    "--reconstruct-timeout-s",
+    "7200",
+    "--foam-timeout-s",
+    "3600"
+  ],
+  "native_solver_outputs_mutated": false
+}

@@ -1,0 +1,35 @@
+{
+  "task": "AGENT-564",
+  "date": "2026-07-20",
+  "generated_at_utc": "2026-07-20T18:20:16Z",
+  "decision": "advance_high_heat_monitor_then_bounded_candidate_design",
+  "final_scorecard_fit_allowed_after_source_property_gate": 0,
+  "final_scorecard_model_selection_allowed_after_source_property_gate": 0,
+  "todo_pred_endtoend_score_status": "blocked_for_final_fit_or_selection_unless_reframed_score_only_diagnostic",
+  "pm10_closure_use": "diagnostic_or_incomplete_no_anchor_release",
+  "pm10_fit_or_model_selection_released": false,
+  "high_heat_jobs": {
+    "3299610": {
+      "case_group": "salt4_jin_q3x_no_recirc_probe",
+      "state": "RUNNING",
+      "next_action": "monitor_until_terminal"
+    },
+    "3299620": {
+      "case_group": "salt4_jin_q0500w_q1000w_q1500w_no_recirc_probe_pack",
+      "state": "RUNNING",
+      "next_action": "monitor_until_terminal"
+    }
+  },
+  "highest_leverage_next_task": "high_heat_terminal_monitor_or_harvest",
+  "secondary_next_task": "bounded_wall_test_section_or_axial_mixing_candidate_design",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none_read_only_inspection_only",
+  "solver_or_postprocessing_launched": "none",
+  "external_fluid_edit": false,
+  "tools_analyze_edit": false,
+  "fit_or_model_selection_run": false,
+  "score_grid_run": false,
+  "scientific_admission_change": "none",
+  "blocker_register_mutated": false
+}

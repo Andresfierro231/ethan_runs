@@ -1,0 +1,12 @@
+source_key,path,exists,role_in_package
+pressure_ledger,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,True,Primary pressure decomposition table for admitted Salt 2/3/4 spans.
+pressure_readme,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/README.md,True,"Pressure equations, sign convention, and caveats."
+heat_ledger,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv,True,Primary patchwise heat source/sink table for admitted Salt 2/3/4 rows.
+heat_readme,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/README.md,True,"Heat sign convention, wall-flux/enthalpy boundary, and caveats."
+observations,work_products/2026-07/2026-07-08/2026-07-08_closure_observation_table/closure_observations.csv,True,Canonical observation/admission schema summary.
+friction_mdot,work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv,True,AGENT-195 1D friction-form mdot and per-leg pressure-drop comparison.
+f5_fit,work_products/2026-07/2026-07-07/2026-07-07_f5_ri_corrected/f5_fit_summary.csv,True,AGENT-200 Ri-corrected F5 candidate-screen coefficients.
+f5_mdot,work_products/2026-07/2026-07-07/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv,True,AGENT-200 confirmation that F5 currently equals F3 Shah apparent.
+upcomer_dataset,work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv,True,AGENT-196 upcomer recirculation/regime dataset.
+upcomer_fit,work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv,True,AGENT-196 three-point backflow trend and onset caveats.
+corrected_salt_monitor,work_products/2026-07/2026-07-07/2026-07-07_corrected_salt_live_monitor/live_salt_sanity_monitor.csv,True,"AGENT-181 live corrected-Salt status monitor; status-only, not closure evidence."

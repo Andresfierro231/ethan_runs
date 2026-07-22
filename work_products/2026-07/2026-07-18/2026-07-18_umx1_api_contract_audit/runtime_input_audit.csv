@@ -1,0 +1,4 @@
+gate_id,gate,evidence,forbidden_runtime_inputs
+static_fluid_audit_only,pass,builder reads source files as text/AST; does not import Fluid or call solve_case,CFD mdot;realized CFD wallHeatFlux;imposed CFD cooler duty;realized test-section heat;validation/holdout/external-test temperatures
+fluid_external_read_only,pass,no writes under ../cfd-modeling-tools; no Fluid journal/output updates,external source mutation
+solver_launch,pass,"no solver, OpenFOAM, scheduler, or Fluid scoring command is part of this package",solver/postprocessing launch

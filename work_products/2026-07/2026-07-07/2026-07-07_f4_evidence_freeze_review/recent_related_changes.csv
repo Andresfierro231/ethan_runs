@@ -1,0 +1,12 @@
+path,change_status,last_two_hour_relevance,review_note
+".agent/BOARD.md","modified","coordination","Active rows include AGENT-185/186/187 and existing AGENT-188; AGENT-189 added for this review."
+".agent/status/2026-07-07_AGENT-187.md","new/recent","F4 implementation status","Reports calibration table plus external friction_closures.py implementation complete."
+".agent/journal/2026-07-07/implementer-f4-buoyancy-friction.md","new/recent","F4 implementation journal","Documents inputs, fit form, coefficients, and limitations."
+"work_products/2026-07-07_f4_buoyancy_friction/README.md","new/recent","F4 package documentation","States current F4 is data-driven and not Ri-corrected."
+"work_products/2026-07-07_f4_buoyancy_friction/f4_calibration_dataset.csv","new/recent","F4 calibration table","18 rows from mainline Salt 2/3/4 Jin only."
+"work_products/2026-07-07_f4_buoyancy_friction/f4_fit_summary.json","new/recent","F4 coefficients","Machine-readable a+b/Re coefficients; no Ri columns."
+"work_products/2026-07-07_f_lit_forms/README.md","new/recent","literature friction forms","AGENT-186 literature form package; relevant to F3/F4 comparison context."
+"work_products/2026-07-07_collect_salt_status_verification/direction_check_verification.csv","new/recent","corrected Salt direction check","AGENT-185 verification; does not override special-scrutiny closure hold."
+"../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py","untracked/recent external","solver-library implementation","Contains F4_leg_class; outside AGENT-189 write scope."
+"../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_friction_closures.py","untracked/recent external","tests","Appears as untracked external test file; outside AGENT-189 write scope."
+"../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py","modified external","solver integration context","Modified before this task; AGENT-189 did not inspect/alter the diff beyond F4 grep."

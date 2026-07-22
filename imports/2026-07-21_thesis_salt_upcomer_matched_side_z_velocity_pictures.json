@@ -1,0 +1,149 @@
+{
+  "task": "TODO-THESIS-SALT-UPCOMER-MATCHED-SIDE-Z-VELOCITY-PICTURES-2026-07-21",
+  "created_at": "2026-07-21T19:05:00-05:00",
+  "updated_at": "2026-07-21T22:30:00-05:00",
+  "role": "Figures/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Render and document matched side_z upcomer y-component and resultant velocity arrow pictures for four representative Salt cases with shared ranges.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-SALT-UPCOMER-MATCHED-SIDE-Z-VELOCITY-PICTURES-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-salt-upcomer-matched-side-z-velocity-pictures.md",
+    "imports/2026-07-21_thesis_salt_upcomer_matched_side_z_velocity_pictures.json",
+    "tools/extract/render_branch_velocity_arrow_images.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_thesis_analysis.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/output_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/shared_velocity_ranges.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/scripts/render_salt_upcomer_matched_side_z_velocity_pictures.sbatch",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/scripts/rebuild_review_composites.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/velocity_magnitude_side_z",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/velocity_magnitude_side_z_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/y_velocity_side_z_trimmed_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/velocity_magnitude_side_z_trimmed_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/review_composite_layout_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/logs/pvbatch_y_velocity_side_z_3308857.log",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/logs/pvbatch_velocity_magnitude_side_z_3308857.log",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/logs/render_salt_upcomer_matched_side_z_velocity_pictures_3308857.out",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/logs/render_salt_upcomer_matched_side_z_velocity_pictures_3308857.err",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/y_velocity_side_z_status.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_status.json"
+  ],
+  "read_only_context": [
+    "figures/figures_rendered/paraview_velocity_y_arrows/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_z.svg",
+    "figures/figures_rendered/paraview_velocity_arrows_orthogonal/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_magnitude_arrows_side_z.svg",
+    "staging/render_inputs/viscosity_screening_salt_test_1_jin_coarse_mesh/**",
+    "staging/render_inputs/val_salt_test_2_coarse_mesh_laminar/**",
+    "staging/render_inputs/viscosity_screening_salt_test_3_jin_coarse_mesh/**",
+    "staging/render_inputs/viscosity_screening_salt_test_4_jin_coarse_mesh/**",
+    "native CFD/OpenFOAM source outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external repositories"
+  ],
+  "source_ids": [
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "val_salt_test_2_coarse_mesh_laminar",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "component": "upcomer",
+  "view_preset": "side_z",
+  "velocity_families": [
+    {
+      "family": "y_velocity_side_z",
+      "velocity_mode": "y_component",
+      "color_range_m_per_s": [
+        -0.07702504843473434,
+        0.07702504843473434
+      ],
+      "scale_range_m_per_s": [
+        0.0,
+        0.07702504843473434
+      ]
+    },
+    {
+      "family": "velocity_magnitude_side_z",
+      "velocity_mode": "magnitude",
+      "color_range_m_per_s": [
+        0.0,
+        0.07704159866519554
+      ],
+      "scale_range_m_per_s": [
+        0.0,
+        0.07704159866519554
+      ]
+    }
+  ],
+  "primary_artifact_count": 24,
+  "primary_artifact_formats": [
+    "png",
+    "svg",
+    "pdf"
+  ],
+  "preview_composites": [
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/y_velocity_side_z_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/velocity_magnitude_side_z_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/y_velocity_side_z_trimmed_composite_labeled.png",
+    "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/velocity_magnitude_side_z_trimmed_composite_labeled.png"
+  ],
+  "preview_composite_refresh": {
+    "script": "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/scripts/rebuild_review_composites.py",
+    "manifest": "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/review_composite_layout_manifest.csv",
+    "source": "existing rendered PNG panels only",
+    "outputs_rebuilt": 4,
+    "layout_changes": [
+      "tighter left-white-edge crop",
+      "single far-right shared scalar bar",
+      "closer inter-panel spacing",
+      "large Salt labels above each upcomer",
+      "visually thicker raster upcomer crops",
+      "exact-source maximum downward U_y annotation"
+    ],
+    "metric_source": "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/y_velocity_side_z_status.json",
+    "max_downward_U_y_m_per_s": {
+      "Salt1": 0.0676477923989296,
+      "Salt2": 0.0686238631606102,
+      "Salt3": 0.07167503237724304,
+      "Salt4": 0.07702504843473434
+    },
+    "recirculation_fraction_or_Ri_annotation": "not_used_because_available_RAF_Ri_evidence_is_related_matched_plane_diagnostic_evidence_not_exact_four_source_render_metric_table",
+    "scheduler_action": "none"
+  },
+  "thesis_analysis": {
+    "path": "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_thesis_analysis.md",
+    "figure": "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/velocity_magnitude_side_z_composite_labeled.png",
+    "contains": [
+      "thesis-ready caption",
+      "exact rendered-source velocity-extrema table",
+      "physical explanation of upward throughflow plus localized downward motion",
+      "suggested thesis paragraph",
+      "diagnostic claim boundaries"
+    ],
+    "evidence_sources": [
+      "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/y_velocity_side_z_status.json",
+      "work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_status.json",
+      "work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/recirculation_feature_scorecard.csv",
+      "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/onset_anchor_ledger.csv",
+      "reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md"
+    ],
+    "diagnostic_only": true,
+    "ordinary_upcomer_coefficients_admitted": false,
+    "exchange_cell_coefficient_admitted": false,
+    "same_qoi_uq_accepted": false
+  },
+  "slurm_job_id": "3308857",
+  "scheduler_action": "task-owned ParaView/OSMesa render job only",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "fluid_external_mutated": false,
+  "openfoam_solver_or_harvest_launched": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_or_admission_changed": false,
+  "final_predictive_score_claimed": false,
+  "runtime_leakage_guardrails_relaxed": false,
+  "diagnostic_only": true,
+  "notes": "Matched side_z upcomer panels are diagnostic CFD visualization evidence only. The magnitude ParaView invocation returned a post-export rc=255 signal-11 message after writing valid artifacts; wrapper validation and Slurm completion passed."
+}

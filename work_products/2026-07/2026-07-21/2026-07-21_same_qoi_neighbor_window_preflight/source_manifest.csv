@@ -1,0 +1,7 @@
+path,role,exists,native_solver_output,mutated
+tools/analyze/build_same_qoi_neighbor_window_preflight.py,task_output,true,false,true
+tools/analyze/test_same_qoi_neighbor_window_preflight.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_neighbor_window_preflight,task_output,true,false,true

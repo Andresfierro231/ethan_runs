@@ -1,0 +1,5 @@
+source_id,source_path,access,purpose
+stage_a_endpoint_raw_face_sampler,work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler,read_only,Stage A coordinates and sampled p/p_rgh/rho validation rows
+stage_b_coarse_vtk_sampler_submit,work_products/2026-07/2026-07-21/2026-07-21_f6_coarse_vtk_sampler_submit,read_only,Stage B coarse coordinates and sampled p_rgh/rho rows
+stage_a_b_harvest_qa_gate_refresh,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh,read_only,combined face and pair QA gate state
+pressure_momentum_budget_map,operational_notes/maps/pressure-and-momentum-budget.md,read_only,pressure-basis interpretation context

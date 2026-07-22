@@ -1,0 +1,10 @@
+source_type,path,used_for,mutation_status
+input,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/README.md,"Requirement context: UMX1 prioritized before another wall/test-section grid.",read_only
+input,work_products/2026-07/2026-07-18/2026-07-18_umx1_api_contract_audit/no_solver_api_contract.csv,"Field and validation contract requested by AGENT-537.",read_only
+input,work_products/2026-07/2026-07-18/2026-07-18_tswfc2_dry_contract/README.md,"Secondary candidate-family boundary for next-step sequencing.",read_only
+input,operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md,"Launch guardrail context before further Fluid grids.",read_only
+output,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,"UMX1 config parsing and scenario-record export.",mutated
+output,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,"UMX1 field and no-admission documentation.",mutated
+output,../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,"Focused UMX1 contract tests.",mutated
+output,../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-18_workflow_journal.md,"Fluid-side handoff note.",mutated
+output,work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation/,"Ethan-side implementation package.",mutated

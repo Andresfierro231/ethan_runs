@@ -1,0 +1,6 @@
+check,status,detail
+no_fitting,pass,no F6/F3/pressure coefficient fitted or exported
+no_scheduler_action,pass,no sbatch/srun/scancel/scontrol action
+no_native_output_mutation,pass,native CFD/OpenFOAM outputs read-only
+no_registry_or_admission_mutation,pass,registry and scientific admission state unchanged
+no_AGENT_511_collision,pass,AGENT-511 Fluid scoring outputs used only as read-only conflict context; no Fluid edits

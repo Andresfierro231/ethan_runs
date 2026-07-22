@@ -1,0 +1,3 @@
+job_id,case_or_pack,heater_inputs_W,insulation_mode,current_use,handoff_source
+3299610,salt4_q3x_no_recirc_probe,1012.8,baseline,live high-Q nominal-insulation context; do not duplicate,.agent/status/2026-07-16_AGENT-471.md
+3299620,salt4_q0500w/salt4_q1000w/salt4_q1500w,500;1000;1500,baseline,live high-Q nominal-insulation bracket; use results before deciding whether Salt3 matrix levels need adjustment,.agent/status/2026-07-16_AGENT-475.md

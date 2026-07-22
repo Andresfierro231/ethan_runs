@@ -1,0 +1,4 @@
+case_id,time_window_s,geometry_vtk_ready,average_U_T_rho_ready,source_sink_context_ready,Q_wall_W_ready,pressure_basis_ready,cp_ready,same_qoi_uq_ready,production_sampler_ready,throughflow_endpoint_harvest_ready,residual_value_release_allowed,blocker
+salt_2,7915,true,true,true,false,false,false,false,false,False,False,"production blocked by missing Q_wall_W, pressure basis, cp, sampled surface fields, and same-QOI UQ"
+salt_3,7618,true,true,true,false,false,false,false,false,False,False,"production blocked by missing Q_wall_W, pressure basis, cp, sampled surface fields, and same-QOI UQ"
+salt_4,10000,true,true,true,false,false,false,false,false,False,False,"production blocked by missing Q_wall_W, pressure basis, cp, sampled surface fields, and same-QOI UQ"

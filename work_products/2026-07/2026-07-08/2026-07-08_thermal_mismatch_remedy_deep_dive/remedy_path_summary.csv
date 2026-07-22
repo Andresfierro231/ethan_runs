@@ -1,0 +1,6 @@
+path_id,mean_abs_Tmean_error_K,mean_abs_loop_delta_T_error_K,max_abs_Tmean_error_K,max_abs_loop_delta_T_error_K,passes_thermal_gate,interpretation
+P0_fixed_mdot_current_1d_contract,63.746,1.075,65.026,1.184,False,Baseline fixed-mdot replay; isolates thermal state from pressure root search.
+P1_cfd_cooler_duty_only,4.456,0.14,6.219,0.174,False,Tests whether the cooling-jacket duty magnitude is the dominant missing sink.
+P2_heater_wallflux_no_test_source,34.097,1.684,36.937,1.824,False,Tests heat-source contract mismatch without changing cooler model.
+P3_source_plus_test_section_sink,28.459,1.591,28.679,1.694,False,Tests the quartz/test-section role as a net sink without disabling the internal ambient-loss model.
+P4_full_patch_ledger_prescribed,138.064,0.324,194.853,0.512,False,"Fixed-Q full-ledger replay; loop delta T is informative, but absolute mean T is under-anchored without temperature-dependent boundary losses."

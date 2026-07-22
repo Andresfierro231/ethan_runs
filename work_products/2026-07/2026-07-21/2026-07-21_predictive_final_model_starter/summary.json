@@ -1,0 +1,22 @@
+{
+  "baseline_contract_rows": 3,
+  "decision": "starter_implemented_final_freeze_still_blocked",
+  "fit_allowed_after_source_property_gate": 0,
+  "fluid_source_mutation": false,
+  "freeze_blocking_gate_rows": 5,
+  "freeze_readiness_rows": 12,
+  "generated_at_utc": "2026-07-21T15:45:37.909005+00:00",
+  "model_selection_allowed_after_source_property_gate": 0,
+  "native_output_mutation": false,
+  "new_admissions": 0,
+  "next_study_queue_rows": 6,
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter",
+  "prediction_placeholder_rows": 79,
+  "registry_mutation": false,
+  "residual_lane_readiness_rows": 11,
+  "runtime_split_gate_failures": 0,
+  "runtime_split_gate_rows": 8,
+  "scorecard_release_guardrail_rows": 13,
+  "solver_or_scheduler_actions": 0,
+  "task": "TODO-PRED-FINAL-MODEL-STARTER-IMPLEMENTATION-2026-07-21"
+}

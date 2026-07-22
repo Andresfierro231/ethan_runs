@@ -1,0 +1,44 @@
+{
+  "task": "TODO-S13-MEDIUM-FINE-SMOKE-DUPLICATE-3311113-MONITOR-2026-07-22",
+  "task_id": "TODO-S13-MEDIUM-FINE-SMOKE-DUPLICATE-3311113-MONITOR-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Scheduler Monitor / cfd-pp / Reviewer / Writer",
+  "objective": "Adjudicate unexpected duplicate S13 one-case/window smoke job 3311113 after canonical job 3311109 completed.",
+  "summary": "Cancelled duplicate smoke job 3311113 and preserved canonical job 3311109 as the usable task-scoped smoke output.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-MEDIUM-FINE-SMOKE-DUPLICATE-3311113-MONITOR-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-medium-fine-smoke-duplicate-3311113-monitor.md",
+    "imports/2026-07-22_s13_medium_fine_smoke_duplicate_3311113_monitor.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_smoke_duplicate_3311113_monitor"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_face_area_repair/smoke_salt2_medium_one_window/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_face_area_repair/salt2_medium_one_window_smoke",
+    "scheduler state for jobs 3311109 and 3311113",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree"
+  ],
+  "decision": "duplicate_smoke_cancelled_after_canonical_smoke_completed",
+  "canonical_job_id": "3311109",
+  "duplicate_job_id": "3311113",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "cancelled duplicate job 3311113",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "new_scheduler_submission_performed": false,
+    "duplicate_scheduler_cancel_performed": true,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "solver_or_openfoam_postprocess_launched": false,
+    "production_harvest_allowed": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "final_score_claim": false,
+    "s11_s12_s13_s15_s6_triggered": false,
+    "proxy_substitution": false
+  }
+}

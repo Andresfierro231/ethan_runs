@@ -1,0 +1,6 @@
+case_id,input_fixture,expected_status,assertion,evidence
+schema_required_fields,fluid_external_boundary_runtime_dictionary.csv,pass,all runtime dictionary rows contain required fields and explicit mode selectors,rows=24;required_fields=18
+predictive_passive_external_rows,fluid_external_boundary_runtime_dictionary.csv,pass,passive external rows expose setup h/Ta/Tsur/emissivity fields without diagnostic heat flux,predictive_rows=15
+source_sink_document_only_rows,fluid_external_boundary_runtime_dictionary.csv,pass,heater/cooler/test-section source-sink rows are labeled document-only and not passive external fits,document_only_rows=9
+no_double_counted_radiation,allowed_runtime_mode_table.csv,pass,predictive radiation and replay total boundary heat are mutually exclusive modes,predictive computes radiation from emissivity/Tsur; replay forbids extra convection/radiation
+no_residual_field_fill,fluid_external_boundary_runtime_dictionary.csv,pass,"missing h/Ta/Tsur/emissivity/layer fields remain blank or blocked, never inferred from heat residual",residual_policy forbids heat residual field fill for every row

@@ -1,0 +1,33 @@
+{
+  "acceptance_signal_met": true,
+  "admission_review_eligible_rows": 0,
+  "baseline_for_future_admission_review": "F3_shah_apparent",
+  "component_k_admitted": "false",
+  "finite_raw_endpoint_feature_pairs": 3,
+  "fit_performed": "false",
+  "generated_at": "2026-07-18T20:55:41+00:00",
+  "hidden_global_multiplier_used": "false",
+  "leg_class_counts": {
+    "blocked_missing_endpoint": 6,
+    "component_or_junction_diagnostic": 18,
+    "ordinary_straight_candidate": 6,
+    "recirculating_non_upcomer_diagnostic": 6
+  },
+  "legwise_anchor_inventory_rows": 36,
+  "material_reverse_flow_endpoint_pairs": 3,
+  "material_reverse_flow_rows": 24,
+  "native_solver_outputs_mutated": "false",
+  "ordinary_f6_fit_eligible_rows": 0,
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan",
+  "required_source_property_labels": [
+    "property_mode",
+    "property_sensitivity_label",
+    "source_validity_envelope_status",
+    "source_use_category",
+    "provenance_author_title"
+  ],
+  "rows_missing_required_source_property_labels": [],
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "task": "AGENT-547"
+}

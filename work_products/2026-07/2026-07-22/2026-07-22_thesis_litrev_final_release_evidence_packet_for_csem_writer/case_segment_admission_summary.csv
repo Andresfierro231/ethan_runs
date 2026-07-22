@@ -1,0 +1,6 @@
+model_or_segment,status,can_train_now,can_score_validation_now,reason
+M0_setup_only_baseline,diagnostic_lower_bound,False,False,source/property and setup-UQ gates still closed
+MF01_ordinary_gated_single_stream_F6,future_candidate_only,False,False,ordinary-flow endpoint and same-QOI UQ gates not passed
+MF12_signed_source_memory_bulk_to_TP,diagnostic_formula_lane,False,False,runtime legal q_setup/cp/source envelope not released
+M5_MF04_throughflow_recirculation_exchange_cell,high_value_fail_closed,False,False,S13 same-label mesh/GCI and Qwall/source release blocked
+pressure_two_tap_corner_rows,section_effective_diagnostic,False,False,"reverse-flow, component isolation, and same-QOI UQ gates not passed"

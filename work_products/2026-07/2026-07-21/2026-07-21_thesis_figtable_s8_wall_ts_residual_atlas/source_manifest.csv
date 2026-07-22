@@ -1,0 +1,9 @@
+source_id,source_path,role,mutation_status
+S8-SRC-001,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/tw5_tw6_residual_focus.csv,read_only_evidence,not_modified
+S8-SRC-002,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/m3_prior_candidate_comparison.csv,read_only_evidence,not_modified
+S8-SRC-003,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/heat_path_ownership_and_gate_matrix.csv,read_only_evidence,not_modified
+S8-SRC-004,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/negative_or_admission_ready_summary.csv,read_only_evidence,not_modified
+S8-SRC-005,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/acceptance_gate_matrix.csv,read_only_evidence,not_modified
+S8-SRC-006,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/runtime_leakage_audit.csv,read_only_evidence,not_modified
+S8-SRC-007,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/summary.json,read_only_evidence,not_modified
+S8-SRC-008,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/blocked_scorecard_visual_table.csv,read_only_evidence,not_modified

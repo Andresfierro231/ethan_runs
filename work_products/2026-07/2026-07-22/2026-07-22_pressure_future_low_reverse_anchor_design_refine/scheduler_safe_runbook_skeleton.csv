@@ -1,0 +1,6 @@
+step,action,when_allowed,required_record,stop_condition
+1,wait_for_CAND001_terminal_handoff,after AGENT-519 or scheduler terminal state clears ownership,job id state exit code node log path,Stop if job still running.
+2,run endpoint readiness gate,after terminal source paths exist,field paths p/p_rgh/U area basis time window,Stop if endpoint fields absent.
+3,decide retry_or_future_anchor,after endpoint readiness fail or physics fail,reason for failure and source paths,Stop before scheduler launch from this row.
+4,open separate launch row,only if design is approved and paths are exact,sbatch command resources logs monitor row,No launch without new board row.
+5,post_terminal_same_QOI_UQ,after terminal endpoints and field windows exist,QOI list split policy UQ method,Stop before F6/component-K admission.

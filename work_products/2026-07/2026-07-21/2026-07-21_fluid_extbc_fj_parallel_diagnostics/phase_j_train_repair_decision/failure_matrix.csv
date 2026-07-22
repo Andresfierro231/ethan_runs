@@ -1,0 +1,7 @@
+stage,status,failure_or_blocker
+phase_f_gate,pass,
+phase_g_gate,pass,
+phase_i_gate,pass,
+repair_candidate_selection,blocked,No deterministic legal correction was released by Phase G or Phase I; Phase H sensitivities are diagnostic and cannot be selected as fits.
+repair_solve,not_run_by_policy,no deterministic legal correction
+freeze_or_admission,not_run_by_policy,forbidden in F-J diagnostics

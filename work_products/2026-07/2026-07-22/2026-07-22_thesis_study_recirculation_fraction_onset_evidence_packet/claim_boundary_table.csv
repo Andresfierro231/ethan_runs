@@ -1,0 +1,5 @@
+claim_type,claim_text,basis,limit
+allowed,The current Salt2/Salt3/Salt4 upcomer evidence supports a recirculation/onset diagnostic narrative.,"common-range velocity figures, reverse-flow topology proxy, and S13 current-coarse exchange/tau rows",diagnostic and thesis-evidence use only
+allowed_with_caveat,Current-coarse S13 exchange/tau proxies vary across Salt2 to Salt4 and have same-QOI temporal UQ support.,s13_exchange_trend_table plus same_qoi_temporal_uq_summary,no mesh/GCI disposition until exact-label medium/fine rows exist
+forbidden,A closed recirculation fraction has been measured for Salt2/Salt3/Salt4.,segmentation preflight is fragmented,must wait for closed or defensible recirculation-volume mask
+forbidden,"Ordinary upcomer Nu, f_D, component K/F6, or exchange-cell coefficients are admitted.",ordinary closure and exchange-cell admission gates remain closed,requires same-label mesh/GCI and coefficient-specific UQ/admission package

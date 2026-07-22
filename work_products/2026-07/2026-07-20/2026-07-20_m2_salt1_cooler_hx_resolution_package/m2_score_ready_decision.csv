@@ -1,0 +1,2 @@
+frozen_model_id,decision,holdout_score_release,holdout_rows_scored_now,fit_rows_added,model_selection_rows_added,reason
+M2_FROZEN_PREDICTION_ARTIFACT_SALT1_4_NOMINAL_2026_07_20,blocked_missing_salt1_cooler_hx,false,0,0,0,No real Salt1 cooler/HX support found

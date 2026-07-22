@@ -1,0 +1,61 @@
+{
+  "task": "TODO-LITREV-FINAL-RELEASE-TASK-DISPATCH-2026-07-22",
+  "task_id": "TODO-LITREV-FINAL-RELEASE-TASK-DISPATCH-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator",
+  "objective": "Dispatch LitRev final-release lessons into board-ready 1D predictive model and thesis tasks.",
+  "status": "complete",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-LITREV-FINAL-RELEASE-TASK-DISPATCH-2026-07-22.md",
+    ".agent/journal/2026-07-22/litrev-final-release-task-dispatch.md",
+    "imports/2026-07-22_litrev_final_release_task_dispatch.json",
+    "operational_notes/07-26/22/2026-07-22_LITREV_FINAL_RELEASE_TASK_DISPATCH.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/AGENTS.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/CHANGELOG.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/UNRESOLVED_CLAIMS.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/reports/HITEC_FINAL_RELEASE_COMPILE_AND_QA_NOTES.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/reports/HITEC_FINAL_RELEASE_RED_TEAM_QA.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/notes/HITEC_PROMPT7_MODELING_DISCOVERIES_AND_NEXT_STEPS.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/README.md",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_source_validity_envelope.csv",
+    "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_unresolved_claims.csv"
+  ],
+  "external_source_revision": {
+    "path": "../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL",
+    "git_short_sha": "a0b1205"
+  },
+  "mutation_flags": {
+    "native_openfoam_outputs": false,
+    "registry_or_admission": false,
+    "scheduler": false,
+    "fluid_or_external_repo": false,
+    "thesis_body_or_latex": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "final_score": false,
+    "protected_scoring": false
+  },
+  "validation": {
+    "stale_row_finish_task_checks": "twelve stale completed live rows passed finish_task.py --json before archival",
+    "planned_active_row_hygiene": "one row marked STATUS: ACTIVE was moved from Planned/Unclaimed to Active without changing scope, owner, or goal text",
+    "docs_index": "python3.11 tools/docs/build_repo_index.py completed after board and docs edits"
+  }
+}

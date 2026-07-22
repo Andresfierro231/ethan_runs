@@ -1,0 +1,13 @@
+source_path,exists,description,usage
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/candidate_admission_review.csv,yes,AGENT-498 candidate admission review,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/coupled_delta_vs_m3.csv,yes,AGENT-498 held-out deltas versus M3,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/coupled_scorecard.csv,yes,AGENT-498 coupled candidate scorecard,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_shape_regression_audit.csv,yes,AGENT-494 PB1 shape regression evidence copied into AGENT-498,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_delta_vs_m3.csv,yes,AGENT-498 per-probe delta export,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_error_localization.csv,yes,AGENT-498 per-probe localization export,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/role_segment_error_summary.csv,yes,AGENT-498 role/segment summary export,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/segment_heat_placement_audit.csv,yes,AGENT-498 segment heat-placement audit,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/summary.json,yes,AGENT-498 package summary,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/summary.json,yes,AGENT-499 corrected-split final scorecard summary,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,yes,AGENT-509 final predictive scorecard shell summary,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_val_salt2_corrected_freeze_join_unblock/corrected_freeze_source_audit.csv,yes,AGENT-508 val_salt2 corrected-freeze source audit,read_only_existing_evidence

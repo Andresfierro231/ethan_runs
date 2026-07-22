@@ -1,0 +1,5 @@
+source_id,source_path,access,purpose
+f6_endpoint_face_uq_execution,work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution,read_only,sampling matrix and launch preflight
+f6_endpoint_pair_same_qoi_uq_preflight,work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight,read_only,endpoint pair and raw field contract
+native_stage_a_medium,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh,read_only,future staged-copy sampler source
+native_stage_a_fine,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh,read_only,future staged-copy sampler source

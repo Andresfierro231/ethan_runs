@@ -1,0 +1,42 @@
+{
+  "candidate_freeze": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PREDICT-WALL-THERMAL-CIRCUIT.md",
+    ".agent/journal/2026-07-22/predict-wall-thermal-circuit.md",
+    "imports/2026-07-22_predict_wall_thermal_circuit.json",
+    "tools/analyze/build_wall_thermal_circuit_model.py",
+    "tools/analyze/test_wall_thermal_circuit_model.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/handoff_inputs.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/passive_operator_context.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/release_gate_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/segment_wall_circuit_components.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_wall_thermal_circuit/summary.json"
+  ],
+  "coefficient_admission": false,
+  "date": "2026-07-22",
+  "decision": "wall_thermal_circuit_contract_ready_no_numeric_release",
+  "external_fluid_edit": false,
+  "external_papers_edit": false,
+  "final_score_claim": false,
+  "native_solver_outputs_mutated": false,
+  "protected_score_claim": false,
+  "qwall_release": false,
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md"
+  ],
+  "registry_mutated": false,
+  "role": "Implementer / Tester / Writer",
+  "runtime_leakage_relaxed": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "source_property_release": false,
+  "task": "TODO-PREDICT-WALL-THERMAL-CIRCUIT",
+  "task_id": "TODO-PREDICT-WALL-THERMAL-CIRCUIT",
+  "thesis_body_edit": false
+}

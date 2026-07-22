@@ -1,0 +1,4 @@
+case_key,row,july10_latest_registered_timestep_s,july13_latest_registered_timestep_s,delta_registered_timestep_s,july10_latest_log_time_s,july13_latest_log_time_s,delta_log_time_s,meaningful_advance,admission_change
+salt1_jin_lo10q_corrected,Salt1 -10Q,6544.000,8013.000,1469.000,6544.688,8013.299,1468.611,yes_written_and_log,no
+salt1_jin_hi10q_corrected,Salt1 +10Q,4166.000,5548.000,1382.000,4166.873,5548.994,1382.121,yes_written_and_log,no
+salt4_jin_hi10q_corrected,Salt4 +10Q,11537.000,12607.000,1070.000,11537.723,11540.098,2.375,yes_written_only_log_tail_not_meaningful,no

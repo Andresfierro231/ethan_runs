@@ -1,0 +1,25 @@
+{
+  "analytic_test_count": 5,
+  "analytic_tests_failed": 0,
+  "case_count": 3,
+  "date": "2026-07-21",
+  "explicit_unavailable_rows": 3,
+  "fluid_edit": false,
+  "generated_at_utc": "2026-07-21T16:03:01.229037+00:00",
+  "model_scoring_or_admission": false,
+  "native_output_mutation": false,
+  "next_phase": "TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE",
+  "predictive_wallHeatFlux_runtime_allowed_rows": 0,
+  "registry_mutation": false,
+  "runtime_modes": [
+    "predictive",
+    "replay",
+    "diagnostic_sensitivity",
+    "blocked_missing_fields"
+  ],
+  "scheduler_action": false,
+  "schema_field_count": 16,
+  "segment_role_rows": 24,
+  "status": "complete",
+  "task_id": "TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION"
+}

@@ -1,0 +1,7 @@
+qoi_family,minimum_now,closure_promotion_requirement,allowed_interim_use,blocked_use
+reverse_flow_metrics,retained-window sensitivity on RAF/RMF/SVF for each admitted anchor,Same-QOI mesh/time family or documented GCI/repeat status on RAF/RMF/SVF,regime classification and launch/no-launch decisions,ordinary Nu/f_D/K fit or component-K admission
+regime_coordinates,property provenance and time-window sensitivity on Re/Ri/Gz,Same case family evaluated across retained time and mesh/reconstruction levels,onset bracketing and hybrid-model validity boundary,continuous transition coefficient tuning
+thermal_drive,wall_bulk or wall_core Delta T on retained window,Same-window thermal-drive uncertainty and heat-ledger residual uncertainty,UMX1 stratification model-form selection,thermal closure coefficient admission
+pressure_terms,finite pressure-basis terms with diagnostic/admitted label,Same-QOI pressure uncertainty and basis-separated pressure residual,section-effective pressure diagnosis,F6 fit or ordinary component-K admission
+heat_balance,source/sink residual on retained window,Mesh/time sensitivity for heat-ledger residual used in any closure claim,guardrail for extraction quality,absorbing residual into hidden heat source or wall multiplier
+anchor_classification,explicit labels recirculating; transition; ordinary-like; missing,At least one ordinary-like or transition anchor plus one recirculating-side anchor with same-window QOIs,deciding whether to launch next sentinel or matrix,declaring upcomer-onset-data-sparsity resolved

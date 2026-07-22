@@ -1,0 +1,9 @@
+guardrail,value
+native_solver_output_mutated,false
+registry_or_admission_mutated,false
+scheduler_action,false
+sampler_or_harvest_launched,false
+fluid_or_external_repo_mutated,false
+fit_model_selection_or_closure_admission,false
+s11_or_s15_triggered,false
+residual_absorbed_into_internal_Nu,false

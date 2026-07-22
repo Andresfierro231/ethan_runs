@@ -1,0 +1,17 @@
+source_path,exists,use,mutation_allowed
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/candidate_bulk_to_tp_formulas.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf15_runtime_wall_profile_basis_gate/runtime_operator_requirement_matrix.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/summary.json,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/summary.json,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf07_entrance_development_and_reset_source_basis/candidate_gate.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf08_signed_wall_flux_developing_thermal_branches/candidate_gate.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff/variant_bakeoff_matrix.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_1d_recirculation_switch_dry_contract/recirculation_switch_lane_contract.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/split_and_runtime_guardrails.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/model_form_scoreboard_append.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/repair_no_repair_gate.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/summary.json,True,read_only_context,False
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,True,read_only_context,False

@@ -1,0 +1,13 @@
+path,role,mutation_status,notes
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv,read_only_context,not_mutated,Literature-derived pressure basis and negative-K naming rules
+work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv,read_only_context,not_mutated,Basis decomposition and section-effective labels for current corner rows
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,read_only_context,not_mutated,Frozen canonical corner result
+work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/section_effective_pressure_scorecard.csv,read_only_context,not_mutated,Section-effective residual values
+work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/three_level_score.csv,read_only_context,not_mutated,No-refit diagnostic model performance rows
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/README.md,created,mutated,Package index and decision
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/case_memo.md,created,mutated,Thesis-facing reasoning memo
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/evidence_ledger.csv,created,mutated,Claim-to-source evidence table
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/board_task_proposals.csv,created,mutated,Board tasks proposed by this dispatch
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/model_performance_summary.csv,created,mutated,No-fit model performance summary
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/validation_commands.csv,created,mutated,Validation command ledger
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/summary.json,created,mutated,Machine-readable summary

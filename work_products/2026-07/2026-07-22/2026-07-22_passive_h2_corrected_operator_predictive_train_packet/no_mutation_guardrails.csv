@@ -1,0 +1,16 @@
+guardrail,pass,value
+native_solver_outputs_mutated,True,False
+registry_mutated,True,False
+scheduler_action,True,False
+solver_or_sampler_launch,True,False
+fluid_or_external_edit,True,False
+thesis_current_or_latex_edit,True,False
+source_property_release,True,False
+numeric_q_loss_release,True,False
+qwall_release,True,False
+coefficient_admission,True,False
+candidate_freeze,True,False
+protected_scoring,True,False
+final_score_claim,True,False
+runtime_leakage_relaxation,True,False
+residual_absorption_into_internal_Nu,True,False

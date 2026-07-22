@@ -1,0 +1,12 @@
+{
+  "task": "TODO-LITREV-SIGNED-FLOW-JUNCTION-FEASIBILITY",
+  "date": "2026-07-21",
+  "feasibility_rows": 4,
+  "mf03_candidate_rows": 0,
+  "mf03_deferred_rows": 2,
+  "mf03_no_go_rows": 2,
+  "main_decision": "no current signed-flow junction implementation; defer facility/junction rows and route local exchange to MF04",
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "admission_change": false
+}

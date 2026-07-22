@@ -1,0 +1,33 @@
+{
+  "admission_only_count": 6,
+  "admitted_only_candidate_count": 0,
+  "blocker_register_mutated": false,
+  "bucket_counts": {
+    "downcomer_policy_blocked": 1,
+    "gci_failed_no_resolution_without_reextract_or_remesh": 14,
+    "missing_triplet_extraction_or_reconciliation_required": 5,
+    "thermal_admission_review_required": 5
+  },
+  "classification_counts": {
+    "blocked-downcomer-policy": 1,
+    "blocked-missing-triplet": 5,
+    "blocked-sign-review": 5,
+    "non-monotone/oscillatory": 14
+  },
+  "extraction_queue_count": 19,
+  "generated_at": "2026-07-16T20:38:27.878046+00:00",
+  "generated_indexes_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "pressure_diagnostics": {
+    "adjacent_pressure_rows": 264,
+    "pressure_admission_note": "July 15 pressure rows are coarse diagnostic evidence; all station rows remain recirculation-contaminated by RAF proxy.",
+    "raw_two_tap_rows": 3,
+    "station_pressure_rows": 330,
+    "station_reverse_area_fraction_max": 0.85,
+    "station_reverse_area_fraction_min": 0.2222222222,
+    "station_rows_with_reverse_area_fraction_ge_0p20": 330,
+    "station_rows_with_reverse_area_fraction_lt_0p01": 0
+  },
+  "qoi_row_count": 25,
+  "task": "AGENT-450"
+}

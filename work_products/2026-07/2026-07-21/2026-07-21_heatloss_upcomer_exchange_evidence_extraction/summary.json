@@ -1,0 +1,37 @@
+{
+  "any_fit_allowed_now": false,
+  "any_score_allowed_now": false,
+  "blocker_register_change": false,
+  "built_at_utc": "2026-07-21T17:12:10.386511+00:00",
+  "case_time_window_rows": 3,
+  "closure_admission_change": false,
+  "external_repo_edit": false,
+  "extraction_contract_rows": 21,
+  "fitting_or_model_selection": false,
+  "fluid_edit": false,
+  "generated_index_refresh": false,
+  "guardrail_rows": 5,
+  "handoff_rows": 4,
+  "mainline_cases": [
+    "salt_2",
+    "salt_3",
+    "salt_4"
+  ],
+  "native_output_mutation": false,
+  "no_scorecard_outputs": true,
+  "registry_mutation": false,
+  "required_field_groups": [
+    "local_reverse_flow",
+    "recirculation_volume",
+    "exchange_rate",
+    "thermal_state",
+    "pressure_basis",
+    "wall_source_terms",
+    "same_qoi_uq"
+  ],
+  "residual_absorbed_into_internal_Nu": false,
+  "sampler_field_group_rows": 7,
+  "scheduler_mutation": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "task": "TODO-HEATLOSS-UPCOMER-EXCHANGE-EVIDENCE-EXTRACTION"
+}

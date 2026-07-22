@@ -1,0 +1,16 @@
+input_class,input_label,runtime_status,definition,basis,guardrail
+setup_known_geometry,segment_id,runtime_allowed,predeclared upcomer/branch/section identifier,setup/case metadata,not a CFD result
+setup_known_geometry,hydraulic_diameter_m,runtime_allowed,geometry-known characteristic length,geometry source,must not be tuned from residuals
+setup_known_geometry,segment_length_m,runtime_allowed,geometry-known axial/span length,geometry source,must not be inferred from validation fit
+setup_known_geometry,orientation_and_gravity_vector,runtime_allowed,declared buoyancy direction basis,setup/case metadata,fixed before validation
+setup_known_geometry,wall_core_band_mask_label,future_allowed_after_admission,identifier for admitted wall/core band,recirc CV plus mesh face masks,blocked until wall/core band is derived from same volume
+source_property,heater_cooler_test_section_source_terms,runtime_allowed_after_source_property_gate,setup-known source/sink ledger labels,source/property release gate,no source-side Q as Q_wall substitute
+source_property,rho_mu_cp_k_beta_property_model_labels,runtime_allowed_after_source_property_gate,fluid property model and evaluation basis,source/property gate,same-window property basis required for Ri and energy residuals
+predictive_indicator,reverse_flow_indicator_predictive,future_allowed_after_calibration,setup-predictive regime/onset indicator,future low-recirc/onset study,"current CFD reverse fraction is evidence label only, not runtime input"
+predictive_indicator,low_recirc_anchor_admitted,runtime_allowed_as_gate_state,boolean admission state from independent anchors,pressure/onset anchor inventory,required for one_stream
+predictive_indicator,closed_recirc_cv_available,runtime_allowed_as_gate_state,boolean admission state for CV,cell VTK segmentation package,required for exchange-cell lane
+predictive_indicator,exchange_interface_available,runtime_allowed_as_gate_state,boolean admission state for interface faces,derived from recirc CV,required for exchange-cell lane
+predictive_indicator,wall_core_band_available,runtime_allowed_as_gate_state,boolean admission state for wall/core faces,derived from recirc CV,required for Q_wall/T_recirc contrast
+diagnostic_forbidden_runtime,realized_CFD_velocity_field,forbidden_runtime_input,may support evidence labels only,CFD harvest,would leak validation state into predictive switch
+diagnostic_forbidden_runtime,realized_CFD_wallHeatFlux,forbidden_runtime_input,may support diagnostic Qwall evidence only,CFD harvest,not a predictive input
+diagnostic_forbidden_runtime,validation_temperature_targets,forbidden_runtime_input,score/diagnostic only,experimental/validation targets,not a runtime switch input

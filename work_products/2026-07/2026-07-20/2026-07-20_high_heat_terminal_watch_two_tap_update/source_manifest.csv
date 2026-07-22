@@ -1,0 +1,3 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_high_heat_status_refresh/updated_live_job_status.csv,yes,prior high-heat status,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_source_family_refresh/source_family_readiness.csv,yes,two-tap source-family state,read_only

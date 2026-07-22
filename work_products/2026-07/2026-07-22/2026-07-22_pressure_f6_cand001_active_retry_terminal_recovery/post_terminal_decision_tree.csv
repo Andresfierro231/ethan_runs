@@ -1,0 +1,6 @@
+event,next_allowed_row,allowed_action,forbidden_action
+3308712_success_and_cases_terminal,terminal_disposition_and_steady_state_readiness,"read solver logs, confirm terminal times, evaluate steady-state drift and endpoint field presence","F6 scoring, component-K admission, sampler launch without a new exact scope"
+3308712_timeout_or_failed,timeout_disposition_or_CAND002_fallback_gate,"classify timeout/failure and decide no-retry, adjusted retry, or CAND002 fallback",silent resubmit or treating partial fields as terminal evidence
+terminal_but_not_steady,steady_state_extension_gate,"document drift, decide whether further scheduler time has scientific value",endpoint harvest as if steady
+terminal_steady_but_RAF_RMF_SVF_nonordinary,diagnostic_pressure_source_package,record as section-effective/recovery/diagnostic evidence,ordinary component-K/F6 coefficient review
+terminal_steady_low_recirculation_and_endpoint_fields_present,endpoint_field_harvest_readiness_then_same_QOI_UQ_gate,claim a sampler/readiness row for endpoint fields and hydrostatic/kinetic/recovery decomposition,F6 admission before same-QOI mesh/time UQ and F3 comparison

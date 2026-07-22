@@ -1,0 +1,39 @@
+{
+  "generated_at": "2026-07-07T17:43:57-05:00",
+  "method": "multi-window quasi-steady curation with drift, autocorrelation, block means, oscillation envelope, and conservative temporal UQ",
+  "targets": [
+    {
+      "source_id": "salt1_jin_hi10q_corrected",
+      "case_dir": "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt1_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation",
+      "case_dir_found": true
+    }
+  ],
+  "primary_window_count": 9,
+  "candidate_window_count": 36,
+  "counts_by_primary_state": {
+    "stationary": 9
+  },
+  "counts_by_primary_fit_use_status": {
+    "excluded_gate_pending": 7,
+    "diagnostic_only": 2
+  },
+  "recommendation": "hold/investigate: coordinator review required for special-gate rows",
+  "window_states": [
+    "moving_not_plateaued",
+    "oscillatory_not_steady",
+    "quasi_stationary",
+    "short_or_early_terminated",
+    "stationary",
+    "transient_model_only"
+  ],
+  "fit_use_statuses": [
+    "diagnostic_only",
+    "excluded_drifting",
+    "excluded_gate_pending",
+    "excluded_oscillatory",
+    "excluded_short",
+    "fit_admissible",
+    "provisional_sensitivity_only",
+    "transient_model_required"
+  ]
+}

@@ -1,0 +1,7 @@
+source_key,source_path,read_only,exists
+model_forms,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,true,true
+source_inventory,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/litrev_source_inventory.csv,true,true
+facility_geometry,work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_source_page_geometry_recovery/facility_geometry_recovery.csv,true,true
+recirc_harvest,work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,true,true
+single_stream_gate,work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_branch_summary.csv,true,true
+exchange_contract,work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/model_interface_contract.csv,true,true

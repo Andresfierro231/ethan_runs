@@ -1,0 +1,5 @@
+rank,lane,expected_unlock_value,dependency_risk,scheduler_dependency,immediate_actionability,recommended_next_action,why_ranked_here
+1,m2_salt1_cooler_hx_resolution,very_high,medium,none,high,complete source audit for row-specific Salt1 cooler/HX support or record final no-release decision,only lane that can unblock holdout scoring without waiting on running jobs
+2,pressure_upcomer_qos_retry,high,high,QOS submit pressure,medium,rerun QOS retry monitor; submit relaunch when active submit-pressure jobs are zero,"preflight is clean, but evidence production is blocked outside analysis code"
+3,high_heat_post_exit_harvest,high,high,running jobs 3299610/3299620,medium,keep terminal watch and prepare harvest classification for timeout or completion,"could unlock low-reverse source family for two-tap, but terminal evidence has not landed"
+4,two_tap_component_k_repair,medium,high,depends on high-heat or successor source,low,maintain diagnostic apparent-cluster path; do not launch component-K until low-reverse same-QOI source exists,current rows cannot be repaired into clean component-K evidence without new source data

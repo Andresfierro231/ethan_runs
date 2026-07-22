@@ -1,0 +1,4 @@
+dependency_lane,owning_task,status,this_package_action,known_state,source_path
+upcomer_onset_recirculation_classifier,AGENT-495,active_external_to_AGENT_496,read_only_dependency_no_overlap,AGENT-487 found 12/12 PM5 rows recirculation diagnostics and 0 ordinary scoreable rows.,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/summary.json
+PM10_terminal_admission,AGENT-493_complete_readiness_only,blocked_live_jobs,do_not_extract_until_terminal,4/4 PM10 cases blocked by live or non-terminal jobs.,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/summary.json
+F6_production_closure,AGENT-487,keep_open_narrowed,keep_F3_shah_apparent_until_new_anchors,0 ordinary F6 scoreable rows; 0 hybrid scoreable rows.,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/summary.json

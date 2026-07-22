@@ -1,0 +1,7 @@
+gate,allowed,status,evidence,next_action
+local_unit_regression,true,passed,"python3.11 -m unittest tools.extract.test_s13_upcomer_exchange_medium_fine_exact_label_sampler: 7 tests OK",none
+fresh_slurm_rerun,true,ready_requires_separate_scheduler_row,current source writes and requires face area vector columns,claim scheduler-authorized rerun row and submit existing sbatch or regenerated wrapper
+reuse_completed_sampler_outputs,false,blocked_fail_closed,"completed output has exact_label_qoi_rows=0 and generated face CSVs without vector columns",do not reuse old QOI/gate outputs
+mesh_gci,false,blocked_until_fresh_exact_label_rows,"medium_fine_exact_label_qoi_rows.csv has zero rows",rerun sampler first
+production_harvest,false,blocked_until_mesh_gci,"same_label_mesh_gci_ready=false",do not harvest
+admission_or_release,false,blocked_no_candidate_no_qwall_release,"no exact medium/fine QOI rows and no accepted mesh/GCI",do not trigger S11/S12/S13/S15/S6

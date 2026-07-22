@@ -1,0 +1,33 @@
+{
+  "task_id": "AGENT-261",
+  "generated_at": "2026-07-13T10:59:49-0500",
+  "source_script": "tools/analyze/build_registry_corrected_q_status_table.py",
+  "command": "python3.11 tools/analyze/build_registry_corrected_q_status_table.py --strict-registry --output-dir work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh",
+  "comparison_baseline": "work_products/2026-07/2026-07-10/2026-07-10_registry_corrected_q_status_table/corrected_q_latest_timesteps.csv",
+  "strict_registry": "passed",
+  "selected_rows": [
+    {
+      "case_key": "salt1_jin_lo10q_corrected",
+      "row": "Salt1 -10Q",
+      "delta_registered_timestep_s": 1469.0,
+      "delta_log_time_s": 1468.611,
+      "meaningful_advance": "yes_written_and_log"
+    },
+    {
+      "case_key": "salt1_jin_hi10q_corrected",
+      "row": "Salt1 +10Q",
+      "delta_registered_timestep_s": 1382.0,
+      "delta_log_time_s": 1382.121,
+      "meaningful_advance": "yes_written_and_log"
+    },
+    {
+      "case_key": "salt4_jin_hi10q_corrected",
+      "row": "Salt4 +10Q",
+      "delta_registered_timestep_s": 1070.0,
+      "delta_log_time_s": 2.375,
+      "meaningful_advance": "yes_written_only_log_tail_not_meaningful"
+    }
+  ],
+  "admission_changes": "none",
+  "interpretation": "Salt1 corrected rows advanced meaningfully in both written timestep and parsed log time. Salt4 +10Q advanced meaningfully by written timestep, but the parsed latest log time advanced only 2.375 s, so log-tail evidence should not be used as terminal/admission evidence."
+}

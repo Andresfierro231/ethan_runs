@@ -1,0 +1,17 @@
+{
+  "anchor_decision_rows": 2,
+  "candidate_rows": 4,
+  "clipped_k": false,
+  "cluster_k_admitted": false,
+  "component_k_admitted": false,
+  "endpoint_field_rows": 15,
+  "f6_fit_performed": false,
+  "global_multiplier_applied": false,
+  "ordinary_component_k_review_queued": false,
+  "preferred_candidate_id": "CAND-001",
+  "recommended_next_action": "refresh terminal state for high-heat CAND-001, then claim exact staged-copy sampler only if terminal successful",
+  "sampler_launch_performed": false,
+  "source_case_rows": 4,
+  "task": "TODO-PRESSURE-CORNER-LOW-RECIRC-ANCHOR-HARVEST",
+  "terminal_ready_cases": 0
+}

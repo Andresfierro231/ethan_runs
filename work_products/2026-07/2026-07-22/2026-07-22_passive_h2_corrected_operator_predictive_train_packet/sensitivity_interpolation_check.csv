@@ -1,0 +1,4 @@
+case_id,corrected_radiation_W,current_radiation_on_is_noop,interpolation_usable_for_scoring,max_existing_hA_TP_delta_K,max_existing_hA_TW_delta_K,max_existing_hA_qambient_delta_W,reason
+salt_2,22.405251648168736,True,False,12.4703209333,12.3897355489,2.8459699370000067,"existing hA smoke proves passive boundary can move QOIs, but corrected radiation target exceeds hA delta and current radiation_on is zero; run real Fluid implementation"
+salt_3,23.927620635885464,True,False,12.8820288894,12.7975107687,2.956376105000004,"existing hA smoke proves passive boundary can move QOIs, but corrected radiation target exceeds hA delta and current radiation_on is zero; run real Fluid implementation"
+salt_4,25.653097893398055,True,False,13.3481655437,13.2595988219,3.084865762999982,"existing hA smoke proves passive boundary can move QOIs, but corrected radiation target exceeds hA delta and current radiation_on is zero; run real Fluid implementation"

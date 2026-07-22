@@ -1,0 +1,13 @@
+source_id,path,exists,role
+source_overlap_flags,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv,True,read-only carryforward source
+branch_source_envelope,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv,True,read-only carryforward source
+property_mode_matrix,work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_mode_matrix.csv,True,read-only carryforward source
+property_sensitivity_summary,work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv,True,read-only carryforward source
+reset_distance_map,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,True,read-only carryforward source
+named_pressure_loss_table,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv,True,read-only carryforward source
+heat_closure_admission,work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv,True,read-only carryforward source
+separated_heat_loss_ledger,work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/separated_heat_loss_ledger.csv,True,read-only carryforward source
+cfd_single_stream_validity,work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/cfd_single_stream_validity.csv,True,read-only carryforward source
+coefficient_naming_limits,work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv,True,read-only carryforward source
+study_priority_matrix,work_products/2026-07/2026-07-17/2026-07-17_research_studies_roadmap_and_today_start/study_priority_matrix.csv,True,read-only carryforward source
+today_start_ledger,work_products/2026-07/2026-07-17/2026-07-17_research_studies_roadmap_and_today_start/today_start_ledger.csv,True,read-only carryforward source

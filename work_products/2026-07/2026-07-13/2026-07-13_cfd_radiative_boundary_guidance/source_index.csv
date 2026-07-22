@@ -1,0 +1,6 @@
+source_id,source_path,role
+AGENT-263_patch_role_table,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv,"authoritative per-run patch names, roles, emissivity, Ta, Tsur, h, wall/layer metadata, and wallHeatFlux"
+AGENT-277_microcase_decision,work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/publication_evidence_decision.json,publication evidence decision: emissivity/Tsur affect wallHeatFlux; radiation inseparable from total wallHeatFlux
+AGENT-277_microcase_deltas,work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/wallHeatFlux_delta_summary.csv,OF13 microcase final-time wallHeatFlux deltas when only emissivity or Tsur changes
+external_boundary_reference,reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md,human-readable authoritative CFD setup and boundary-condition description
+repo_decisions,.agent/DECISIONS.md,agent-facing policy for CFD wallHeatFlux and 1D radiation handling

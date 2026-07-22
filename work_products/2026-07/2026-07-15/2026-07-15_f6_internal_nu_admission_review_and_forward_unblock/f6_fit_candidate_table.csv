@@ -1,0 +1,2 @@
+candidate_id,case_key,case_role,span,status,why_not_final,next_gate,source
+none_current_pm5,corrected_pm5_salt2_salt4,mixed_training_holdout,upcomer_matched_planes,zero_fit_candidates,"All 12 PM5 rows fail single-stream F6 fit gates, primarily material reverse flow and strong mixed-convection Ri.",Use current rows for pressure/onset diagnostics only; obtain non-recirculating or explicitly recirculation-modeled pressure evidence before F6 fitting.,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv

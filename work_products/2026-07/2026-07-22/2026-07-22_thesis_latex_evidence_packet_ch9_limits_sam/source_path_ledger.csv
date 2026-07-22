@@ -1,0 +1,6 @@
+source_id,source_path,evidence_role,target_section
+sam_interpretation,reports/thesis_dossier/Chapters_and_sections/current/11_sam_facing_interpretation.md,SAM-facing claim boundaries and transfer ledger,Ch9 SAM/CSEM relevance
+limits_conclusions,reports/thesis_dossier/Chapters_and_sections/current/20_ch8_csem_sam_limitations_conclusions.md,Limitations/future-work/conclusion evidence,Ch9 limitations and conclusion
+claim_ledger,reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,Claim IDs CL-01 through CL-30 and caveats,Ch9 claim control
+ch7_ch8_packet,work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch7_ch8_results/README.md,Current results and blocked-scorecard facts,Ch9 limitations evidence basis
+study_dispatch_matrix,work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/scientific_study_dispatch_matrix.csv,Highest-value future studies and guardrails,Ch9 future work

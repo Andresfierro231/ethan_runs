@@ -1,0 +1,16 @@
+source_path,exists,role,mutation_status
+.agent/BLOCKERS.md,yes,current generated blocker state,read_only
+.agent/blockers.yml,yes,canonical blocker register,read_only
+.agent/BOARD.md,yes,current Ethan task ownership,own_row_only
+../cfd-modeling-tools/.agent/BOARD.md,yes,external Fluid task status,read_only
+operational_notes/07-26/20/2026-07-20_FORWARD_PREDICTIVE_BLOCKERS_AND_NEXT_STEPS.md,yes,forward blocker handoff,read_only
+operational_notes/maps/forward-predictive-model.md,yes,forward topic map,additive_update
+work_products/2026-07/2026-07-20/2026-07-20_tswfc2_smoke_scenario/summary.json,yes,TSWFC2 Salt 2 smoke evidence,read_only
+work_products/2026-07/2026-07-20/2026-07-20_source_property_gate_infrastructure/README.md,yes,source/property gate tooling evidence,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/README.md,yes,two-tap nonrecirc anchor planning evidence,read_only
+work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/next_model_contract.csv,yes,next model contract evidence,read_only
+work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/physics_requirement_matrix.csv,yes,physics requirement evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md,yes,wall/test-section blocker audit,read_only
+work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/README.md,yes,failed TSWFC1 wall/fluid candidate evidence,read_only
+tools/agent/source_property_gate.py,yes,strict scorecard label gate,read_only
+tools/agent/finish_task.py,yes,closeout validator,read_only

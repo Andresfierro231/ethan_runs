@@ -1,0 +1,32 @@
+{
+  "candidate_admission_rows": 0,
+  "component_k_or_f6_fit_rows": 0,
+  "counts": {
+    "admitted_rows": 0,
+    "decision_rows": 5,
+    "formula_rows": 8,
+    "guardrail_rows": 6,
+    "manifest_rows": 10,
+    "overlap_rows": 7,
+    "regime_rows": 18
+  },
+  "decision": "regime_map_ready_fail_closed_no_closure_admission",
+  "exchange_cell_admitted_rows": 0,
+  "external_repo_mutated": false,
+  "fluid_mutated": false,
+  "generated_at_utc": "2026-07-22T15:16:52.597295+00:00",
+  "internal_nu_fit_rows": 0,
+  "native_output_mutated": false,
+  "next_recommended_tasks": [
+    "post-sampler same-label S13 GCI production harvest after sampler closes",
+    "source/property release atlas or preflight before candidate freeze",
+    "use this packet in model hierarchy and thesis evidence packets"
+  ],
+  "ordinary_single_stream_fit_rows": 0,
+  "registry_mutated": false,
+  "scheduler_or_sampler_launched": false,
+  "solver_launched": false,
+  "source_property_release_rows": 0,
+  "task_id": "TODO-1D-REGIME-MAP-NONDIMENSIONAL-CLOSURE-ELIGIBILITY-2026-07-22",
+  "validation_errors": []
+}

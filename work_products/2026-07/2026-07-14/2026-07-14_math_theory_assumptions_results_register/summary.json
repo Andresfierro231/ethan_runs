@@ -1,0 +1,18 @@
+{
+  "external_fluid_modified": false,
+  "generated_utc": "2026-07-14T16:41:27+00:00",
+  "n_assumptions": 7,
+  "n_equations": 16,
+  "n_evidence_hooks": 6,
+  "n_result_fields": 17,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "equation_register.csv",
+    "assumption_register.csv",
+    "result_intake_contract.csv",
+    "current_evidence_hooks.csv",
+    "summary.json"
+  ],
+  "task_id": "AGENT-322"
+}

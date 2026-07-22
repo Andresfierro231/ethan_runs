@@ -1,0 +1,5 @@
+source_id,source_path,exists,source_role,mutation
+slurm_submission_log.csv,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/slurm_submission_log.csv,yes,3305547 submission log,read_only
+candidate_readiness_matrix.csv,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/candidate_readiness_matrix.csv,yes,pressure/upcomer candidate matrix,read_only
+matched_plane_metrics_admission.csv,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/matched_plane_metrics_admission.csv,yes,prior admission rollup,read_only
+2026-07-20_pressure_upcomer_matched_plane_relaunch_package,tmp/2026-07-20_pressure_upcomer_matched_plane_relaunch_package,yes,local reconstruction/postProcessing scratch,read_only

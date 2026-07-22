@@ -1,0 +1,23 @@
+{
+  "task_id": "TODO-THESIS-FIGTABLE-S6-BLOCKED-SCORECARD-SHELL-2026-07-21",
+  "gate_flow_rows": 12,
+  "blocked_visual_rows": 6,
+  "split_role_rows": 16,
+  "frozen_placeholder_rows": 1,
+  "partition_counts": {
+    "train_nominal": 4,
+    "excluded_support_diagnostic": 4,
+    "blind_holdout_pm5q": 2,
+    "blind_external_val_salt2": 1,
+    "future_holdout_pm10": 4,
+    "future_external_new_cfd": 1
+  },
+  "final_score_values_released": 0,
+  "fit_allowed_rows": 0,
+  "model_selection_allowed_rows": 0,
+  "protected_rows_with_score_values": 0,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "figure_or_chapter_asset_edit": false
+}

@@ -1,0 +1,6 @@
+reason_id,evidence,source_path,ordinary_nu_f_d_k_allowed
+recirculation_invalid_single_stream,current rows belong to recirculating_upcomer_effective lane or incomplete anchor rows,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/hybrid_upcomer_model_contract.csv,false
+ordinary_internal_nu_gate_zero_rows,phase4 ordinary_internal_nu_fit_rows=0,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/summary.json,false
+same_label_mesh_gci_missing,accepted_same_label_mesh_gci_qois=0/4,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/summary.json,false
+source_property_cp_energy_closure_missing,source-side and cp/property lanes are not conservation released,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate/production_readiness_gate.csv,false
+residual_absorption_forbidden,heat-path contract requires residual to remain separately named,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/heat_path_modeling_contract.csv,false

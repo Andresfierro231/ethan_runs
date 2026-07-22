@@ -1,0 +1,9 @@
+source_id,path_or_artifact,read_only_context_used,mutation_status,notes
+salt14_readme,work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/README.md,postProcessing inventory decision outputs and guardrails,not_mutated,published package only
+salt14_summary,work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/summary.csv,source counts tidy rows window-stat rows decision flags,not_mutated,published compact summary only
+salt14_manifest,work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_inventory_manifest.csv,source roots parsed rows profile coverage and mutation flags,not_mutated,read-only citation of compact manifest
+cfd_legal_matrix,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/cfd_legal_use_matrix.csv,evidence classes and allowed/forbidden use labels,not_mutated,published legal-use package
+case_split_table,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/case_split_legal_use_table.csv,case split role and score permissions,not_mutated,published split table
+cfd_methodology_readme,work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/README.md,CFD extraction definitions sign conventions and blockers,not_mutated,published methodology package
+cfd_methodology_dictionary,work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/extracted_data_dictionary.csv,field dictionary and heat-path guardrails,not_mutated,published methodology package
+cfd_methodology_methods,work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/reduction_method_table.csv,reduction method sequence,not_mutated,published methodology package

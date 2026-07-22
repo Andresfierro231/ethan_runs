@@ -1,0 +1,5 @@
+path,role
+work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/case_provenance_table.csv,read_only_stale_ch3_case_table
+work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/source_property_gate_todo.csv,read_only_warning_handoff
+work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv,read_only_label_refresh_and_demotion_source
+work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_source_property_unblock/release_unblock_matrix.csv,read_only_allowed_forbidden_claim_context

@@ -1,0 +1,5 @@
+equation_id,applies_to,form,admission_requirements
+darcy_weisbach_segment,ordinary_pipe_candidate_branches,Delta_p_f = f_D * (L/D_h) * (rho * U_bulk^2 / 2),"low recirculation, branch-local pressure definition, tap orientation, straight-loss isolation, mesh/GCI, time-window provenance"
+localized_or_named_loss,junction_stub_connector_or_feature_rows,Delta_p_K = K_local * (rho * U_bulk^2 / 2),subtract adjacent straight loss and prevent recirculation/onset rows from becoming ordinary-pipe fits
+internal_convection,ordinary_thermal_branch_rows_only,"Nu = h * D_h / k, with h = q'' / (T_wall - T_bulk)","positive/interpretable sign, wallHeatFlux/enthalpy heat-balance closure, low RAF/RMF, no residual absorption, mesh/time-window admission"
+upcomer_section_effective,recirculating_upcomer_diagnostic_lane,Nu_section_effective_upcomer_diagnostic = diagnostic h_proxy * D_h / k when sign is interpretable,"diagnostic/validation only; never train ordinary Nu, f_D, or K from material recirculation rows"

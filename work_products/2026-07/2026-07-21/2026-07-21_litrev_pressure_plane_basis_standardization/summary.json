@@ -1,0 +1,22 @@
+{
+  "task": "TODO-LITREV-PRESSURE-PLANE-BASIS-STANDARDIZATION",
+  "ledger_rows": 460,
+  "rows_by_source_family": {
+    "f6_endpoint_candidate": 20,
+    "high_heat_live_jobs": 1,
+    "latest_corrected_Q_live_continuation": 1,
+    "pm10_upcomer_matched_plane_target": 12,
+    "pressure_corner_basis_recovery": 3,
+    "pressure_ladder_branch_screen": 66,
+    "pressure_term_ledger": 18,
+    "streamwise_station_pressure_map": 330,
+    "two_tap_face_level_qref": 6,
+    "two_tap_raw_endpoint_pair": 3
+  },
+  "next_queue_rows": 6,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "postprocessing_launch": false,
+  "admission_change": false,
+  "main_result": "Pressure plane/basis metadata is now standardized across current station, branch, pressure-term, two-tap, F6-candidate, and PM10/upcomer sources. The largest remaining gaps are unit normals, signed/absolute face flux, same-QOI UQ, and terminal-gated latest/high-heat matched-plane fields."
+}

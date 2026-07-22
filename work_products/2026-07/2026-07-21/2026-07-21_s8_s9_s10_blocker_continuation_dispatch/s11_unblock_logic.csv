@@ -1,0 +1,6 @@
+source_lane,minimum_s11_unblock_condition,current_dispatch_state
+thermal_residual_ownership,exactly one setup-known runtime-legal physical repair is predeclared and passes source/property/split/runtime leakage checks,blocked; successor row must decide from existing evidence first
+upcomer_exchange_uq,finite V_recirc mdot_exchange tau_recirc same-window thermal contrast pressure/energy support and same-QOI UQ pass for one exchange-cell candidate,blocked; active average-field reduction must close before UQ unblock row
+pressure_f6,one CAND001 or other low-recirculation endpoint pair passes source readiness ordinary-flow pressure basis component isolation and same-QOI UQ,blocked; CAND001 timeout disposition supports retry planning only
+global_rule,no S11 row may start from diagnostic-only or negative rows,active
+

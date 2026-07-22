@@ -1,0 +1,2 @@
+candidate_id,active_retry_job_id,active_retry_seen_running_at_snapshot,active_retry_state_at_snapshot,new_submit_allowed,cancel_or_requeue_allowed,monitor_allowed,reason,required_before_any_future_submit
+CAND-001,3308712,True,RUNNING,False,False,True,A separate relaunch job already exists for the four CAND001 source cases; duplicate submission would confuse provenance and spend compute without adding independent evidence.,terminal_accounting_of_3308712;failure_mode_classification;new_board_row;explicit_nonduplicate_case_scope

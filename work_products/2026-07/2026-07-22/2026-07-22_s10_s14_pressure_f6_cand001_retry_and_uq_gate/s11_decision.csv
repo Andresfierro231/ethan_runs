@@ -1,0 +1,2 @@
+decision_id,s11_unblocked,s15_or_s6_trigger,candidate_released,reason,next_allowed_row
+S10-S14-S11-001,false,false,false,"CAND-001 has retryable terminal-source failure, but no ordinary-flow, same-QOI UQ, or source/property-admitted pressure candidate",separate CAND-001 scheduler retry row or CAND-002 terminal-readiness audit

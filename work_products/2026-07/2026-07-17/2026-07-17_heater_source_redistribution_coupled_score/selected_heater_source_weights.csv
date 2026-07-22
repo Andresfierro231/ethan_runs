@@ -1,0 +1,2 @@
+selection_status,heater_lambda,selected_candidate_id,selection_metric,salt2_all_probe_rmse_K,salt2_tw_rmse_K,salt2_mdot_abs_error_pct,tw4_to_tw5_weight,tw5_to_tw6_weight,tw6_to_tp3_weight,selection_source
+selected_from_salt2_only,0,HS1_salt2_fit_heater_source_shift_p1_lam_0p00_PLUS_PB2_salt2_local_shape_passive_hA_p1_PLUS_HX_LUMPED_UA_NTU,Salt2 all_probe_rmse_K; tie TW RMSE then mdot abs error,50.20229259,59.4281335,3.003481449,0.6,0.3,0.1,Salt2 grid rows only

@@ -1,0 +1,13 @@
+source_path,role,exists,mutation
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/qoi_retained_window_inventory.csv,Phase A retained-window inventory,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,prior 83-row same-QOI execution table,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/same_qoi_uq_required_outputs.csv,same-QOI required output contract,true,read_only
+work_products/2026-06/2026-06-30/2026-06-30_claude_gci_study/gci_results.csv,mesh/GCI evidence source: global_loop_gci,true,read_only
+work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/thermal_mesh_gate_qois.csv,mesh/GCI evidence source: thermal_mesh_gate,true,read_only
+work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_mesh_gate_qois.csv,mesh/GCI evidence source: thermal_mesh_refresh,true,read_only
+work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci/closure_qoi_gci_results.csv,mesh/GCI evidence source: closure_qoi_mesh_gci,true,read_only
+work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv,mesh/GCI evidence source: closure_qoi_resolution,true,read_only
+work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/closure_qoi_blocker_punch_list.csv,mesh/GCI evidence source: closure_qoi_punch,true,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_mesh_uq.csv,mesh/GCI evidence source: f6_endpoint_face,true,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_mesh_uq_diagnostic.csv,mesh/GCI evidence source: f6_endpoint_pair,true,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/same_qoi_mesh_uq.csv,mesh/GCI evidence source: two_tap_corner,true,read_only

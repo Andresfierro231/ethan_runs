@@ -1,0 +1,8 @@
+path,role
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_extraction_contract.csv,metric/formula contract
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_nu_admission_criteria.csv,admission criteria
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/upcomer_onset_candidate_cases.csv,admitted/candidate Salt case source table
+tools/extract/sample_upcomer_convection_cell.py,nearest vector/nondim sampler
+tools/extract/sample_physical_segment_interface_temperatures.py,nearest compute-node plane planner
+tools/extract/sample_span_endpoint_temperatures.py,nearest existing bulk-T raw parser
+tools/extract/sample_segment_htc_uaprime.py,nearest wall T/wallHeatFlux sign parser

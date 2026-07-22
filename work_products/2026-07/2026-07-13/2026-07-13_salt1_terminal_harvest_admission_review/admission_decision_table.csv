@@ -1,0 +1,5 @@
+case_id,slurm_job_or_step,terminal_state_recorded,postprocessing_status,stationarity_label,admission_decision,closure_fit_admission,recommended_use
+salt1_nominal,3282992.0,yes,harvest_inputs_present,terminal_window_stationary_cancelled,terminal_harvest_complete_context_only,not_changed_by_this_review,use as terminal steady-state context; closure-fit admission still needs Salt1 policy
+salt1_lo10q,3288671.0,yes,harvest_inputs_present,terminal_window_stationary_cancelled,terminal_harvest_complete_context_only,not_changed_by_this_review,use as terminal steady-state context; closure-fit admission still needs Salt1 policy
+salt1_hi10q,3288671.1,yes,harvest_inputs_present,terminal_window_stationary_cancelled,terminal_harvest_complete_context_only,not_changed_by_this_review,use as terminal steady-state context; closure-fit admission still needs Salt1 policy
+salt4_hi10q,,,,,excluded_not_steady_or_live,not_changed_by_this_review,not steady in AGENT-280; continued in packed job 3293441

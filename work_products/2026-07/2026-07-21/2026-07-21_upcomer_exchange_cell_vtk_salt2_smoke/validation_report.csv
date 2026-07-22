@@ -1,0 +1,2 @@
+case_id,time_window_s,cell_vtk,expected_cells,observed_cells,required_fields,observed_fields,validation_status,blocking_reason
+salt_2,7915,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/vtk/salt_2_cell_fields.vtk,2166996,2166996,U;T;rho,T;U;cellID;rho,pass,

@@ -1,0 +1,5 @@
+audit,status,rows_consumed
+validation_rows_not_consumed,pass,0
+holdout_rows_not_consumed,pass,0
+external_test_rows_not_consumed,pass,0
+repair_solve_not_run_without_legal_candidate,pass,0

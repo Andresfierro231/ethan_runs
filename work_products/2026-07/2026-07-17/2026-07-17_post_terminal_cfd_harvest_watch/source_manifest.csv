@@ -1,0 +1,10 @@
+source_type,path_or_command,purpose,access_mode
+operational_note,operational_notes/07-26/15/2026-07-15_TOMORROW_START_HERE.md,live-job and corrected-Q no-duplicate handoff,read_only
+work_product,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/terminal_status_refresh.csv,high-heat and corrected-Q terminal-readiness context,read_only
+work_product,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,high-heat harvest watch context,read_only
+scheduler_command,squeue -u $(whoami),current queue state,read_only
+scheduler_command,"sacct -j 3293924,3295438,3299610,3299620,3300966 --format=JobID,JobName%30,State,Elapsed,ExitCode",current accounting state,read_only
+scheduler_command,"squeue -j 3299610,3299620,3307441 -o '%i|%j|%T|%M|%l|%R'",2026-07-21 targeted queue refresh,read_only
+scheduler_command,"sacct -j 3299610,3299620,3307441 --format=JobID,JobName%32,State,ExitCode,Elapsed,NodeList -P",2026-07-21 targeted accounting refresh,read_only
+work_product,work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/scheduler_refresh_2026-07-21.csv,2026-07-21 watch snapshot,read_only
+work_product,work_products/2026-07/2026-07-17/2026-07-17_post_terminal_cfd_harvest_watch/terminal_trigger_refresh_2026-07-21.csv,2026-07-21 trigger refresh,read_only

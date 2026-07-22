@@ -1,0 +1,5 @@
+model_or_evidence,evidence_family,candidate_rows,pressure_residual_status,validation_holdout_status,decision,reason
+F3_shah_apparent,production_baseline,,baseline_to_beat,current_production,keep,No F6 lane has passed admission or shown split-safe residual improvement.
+ordinary_F6_single_stream,PM5/current,0,not_scoreable_zero_low_reverse_anchors,not_scoreable,do_not_promote,Ordinary F6 requires non-recirculating pressure anchors; current PM5 rows fail reverse-flow gates.
+recirculation_modeled_closure,PM5/current,12,missing_explicit_residual_movement,not_scoreable_missing_features_and_UQ,do_not_promote,"Material recirculation rows may inform a named closure later, but lack residual, thermal, and uncertainty evidence."
+PM10_and_high_heat_follow_on,future_harvest,8,blocked_or_unknown_pending_harvest_rows=8,not_admitted,wait,Terminal harvest and full output-contract postprocessing must precede scoring.

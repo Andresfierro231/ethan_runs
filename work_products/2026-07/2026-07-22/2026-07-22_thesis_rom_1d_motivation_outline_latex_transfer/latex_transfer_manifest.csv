@@ -1,0 +1,4 @@
+target,artifact,copy_status,external_edit
+Chapter 1 motivation,motivation_outline.csv,local_only_staged,False
+Chapter 4 reduction methodology,claim_boundary.csv,local_only_staged,False
+Writer brief,writer_brief.md,local_only_staged,False

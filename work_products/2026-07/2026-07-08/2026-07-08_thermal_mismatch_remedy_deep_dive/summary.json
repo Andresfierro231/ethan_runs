@@ -1,0 +1,10 @@
+{
+  "best_path_by_mean_abs_Tmean_error": "P1_cfd_cooler_duty_only",
+  "contract": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-08_thermal_boundary_contract/cfd_thermal_boundary_contract.csv",
+  "energy_defect_rows": 3,
+  "fixed_mdot_replay_rows": 15,
+  "generated_utc": "2026-07-08T19:38:10+00:00",
+  "heater_rows": 3,
+  "targets": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+  "thermal_gate_paths": []
+}

@@ -1,0 +1,66 @@
+{
+  "failed_stage_count": 0,
+  "failed_stage_ids": [],
+  "generated_utc": "2026-07-15T12:53:14.807712+00:00",
+  "overall_status": "complete",
+  "stage_count": 8,
+  "stages": [
+    {
+      "end_iso": "2026-07-15T07:50:34-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/external_bc_refresh.log",
+      "stage_id": "external_bc_refresh",
+      "start_iso": "2026-07-15T07:50:32-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:50:34-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/external_bc_tests.log",
+      "stage_id": "external_bc_tests",
+      "start_iso": "2026-07-15T07:50:34-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:53:10-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/setup_only_hx_fit.log",
+      "stage_id": "setup_only_hx_fit",
+      "start_iso": "2026-07-15T07:50:34-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:53:11-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/setup_only_hx_tests.log",
+      "stage_id": "setup_only_hx_tests",
+      "start_iso": "2026-07-15T07:53:10-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:53:12-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/heater_fraction_refresh.log",
+      "stage_id": "heater_fraction_refresh",
+      "start_iso": "2026-07-15T07:53:11-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:53:12-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/heater_fraction_tests.log",
+      "stage_id": "heater_fraction_tests",
+      "start_iso": "2026-07-15T07:53:12-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:53:14-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/heat_loss_discrepancy_refresh.log",
+      "stage_id": "heat_loss_discrepancy_refresh",
+      "start_iso": "2026-07-15T07:53:12-05:00"
+    },
+    {
+      "end_iso": "2026-07-15T07:53:14-05:00",
+      "exit_code": "0",
+      "log_path": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/logs/heat_loss_discrepancy_tests.log",
+      "stage_id": "heat_loss_discrepancy_tests",
+      "start_iso": "2026-07-15T07:53:14-05:00"
+    }
+  ],
+  "status_csv": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_thermal_overnight_compute_node_rescue/stage_status.csv"
+}

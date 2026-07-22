@@ -1,0 +1,12 @@
+source_id,path,exists,size_bytes,sha256_16,role
+SRC-01,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv,True,204735,f738a9da5ab3763e,patch_level_external_boundary_contract
+SRC-02,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv,True,2545,db33f5b17b3d4142,role_level_area_heat_summary
+SRC-03,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv,True,19915,a083dbd56292311b,segment_equivalent_external_boundary_dictionary
+SRC-04,work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv,True,19588,50de39e856486a92,thermal_profile_drive_inputs
+SRC-05,work_products/2026-07/2026-07-14/2026-07-14_best_predictive_heat_loss_discrepancy/best_predictive_leg_heat_loss_discrepancy.csv,True,14551,0129f57eb69bc057,best_predictive_leg_heat_loss_discrepancy
+SRC-06,work_products/2026-07/2026-07-14/2026-07-14_best_predictive_heat_loss_discrepancy/best_predictive_case_heat_loss_summary.csv,True,1363,81b3d9b81f536598,best_predictive_case_summary
+SRC-07,work_products/2026-07/2026-07-14/2026-07-14_best_predictive_heat_loss_discrepancy/model_change_recommendations.csv,True,4583,674d06a319f66a2e,prior_model_change_recommendations
+SRC-08,work_products/2026-07/2026-07-14/2026-07-14_3d_1d_heat_loss_alignment/heat_loss_alignment_by_segment.csv,True,68808,00cd80f615253133,diagnostic_heat_loss_alignment
+SRC-09,operational_notes/maps/thermal-boundary-and-radiation.md,True,6920,554ee45f45a61d57,radiation_and_double_counting_policy
+SRC-10,operational_notes/maps/forward-predictive-model.md,True,12385,e3aec8cd731600c1,predictive_model_status
+SRC-11,work_products/2026-07/2026-07-14/2026-07-14_fluid_api_localized_loss_external_bc_bridge/README.md,True,3063,ebcaa01723cfe514,external_boundary_api_availability

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="440" viewBox="0 0 980 440">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="28" font-family="Arial" font-size="18" font-weight="700">AGENT-498 candidate deltas versus M3</text>
+<line x1="80" y1="281.33333333333337" x2="900" y2="281.33333333333337" stroke="#333" stroke-width="1"/>
+<text x="18" y="286.3" font-family="Arial" font-size="12">0</text>
+<circle cx="119.2" cy="333.5" r="5" fill="#2f6f8f"><title>PB2_salt2_shape salt_3 mdot: -15.6</title></circle>
+<circle cx="131.2" cy="163.1" r="5" fill="#c44e52"><title>PB2_salt2_shape salt_3 all: 35.5</title></circle>
+<circle cx="143.2" cy="140.0" r="5" fill="#dd8452"><title>PB2_salt2_shape salt_3 TW: 42.4</title></circle>
+<text x="131.2" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 131.2,378)">P2 salt2 shape salt_3</text>
+<circle cx="221.8" cy="324.2" r="5" fill="#2f6f8f"><title>PB2_salt2_shape salt_4 mdot: -12.9</title></circle>
+<circle cx="233.8" cy="137.6" r="5" fill="#c44e52"><title>PB2_salt2_shape salt_4 all: 43.1</title></circle>
+<circle cx="245.8" cy="118.9" r="5" fill="#dd8452"><title>PB2_salt2_shape salt_4 TW: 48.7</title></circle>
+<text x="233.8" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 233.8,378)">P2 salt2 shape salt_4</text>
+<circle cx="324.2" cy="333.5" r="5" fill="#2f6f8f"><title>PB2_salt2_shape salt_3 mdot: -15.7</title></circle>
+<circle cx="336.2" cy="163.1" r="5" fill="#c44e52"><title>PB2_salt2_shape salt_3 all: 35.5</title></circle>
+<circle cx="348.2" cy="140.0" r="5" fill="#dd8452"><title>PB2_salt2_shape salt_3 TW: 42.4</title></circle>
+<text x="336.2" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 336.2,378)">P2 salt2 shape salt_3</text>
+<circle cx="426.8" cy="324.2" r="5" fill="#2f6f8f"><title>PB2_salt2_shape salt_4 mdot: -12.9</title></circle>
+<circle cx="438.8" cy="137.6" r="5" fill="#c44e52"><title>PB2_salt2_shape salt_4 all: 43.1</title></circle>
+<circle cx="450.8" cy="118.9" r="5" fill="#dd8452"><title>PB2_salt2_shape salt_4 TW: 48.7</title></circle>
+<text x="438.8" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 438.8,378)">P2 salt2 shape salt_4</text>
+<circle cx="529.2" cy="319.0" r="5" fill="#2f6f8f"><title>PB3_attenuated_shape salt_3 mdot: -11.3</title></circle>
+<circle cx="541.2" cy="161.3" r="5" fill="#c44e52"><title>PB3_attenuated_shape salt_3 all: 36</title></circle>
+<circle cx="553.2" cy="133.0" r="5" fill="#dd8452"><title>PB3_attenuated_shape salt_3 TW: 44.5</title></circle>
+<text x="541.2" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 541.2,378)">P3 attenuated shape salt_3</text>
+<circle cx="631.8" cy="339.7" r="5" fill="#2f6f8f"><title>PB3_attenuated_shape salt_4 mdot: -17.5</title></circle>
+<circle cx="643.8" cy="143.8" r="5" fill="#c44e52"><title>PB3_attenuated_shape salt_4 all: 41.3</title></circle>
+<circle cx="655.8" cy="119.1" r="5" fill="#dd8452"><title>PB3_attenuated_shape salt_4 TW: 48.7</title></circle>
+<text x="643.8" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 643.8,378)">P3 attenuated shape salt_4</text>
+<circle cx="734.2" cy="319.0" r="5" fill="#2f6f8f"><title>PB3_attenuated_shape salt_3 mdot: -11.3</title></circle>
+<circle cx="746.2" cy="161.2" r="5" fill="#c44e52"><title>PB3_attenuated_shape salt_3 all: 36</title></circle>
+<circle cx="758.2" cy="132.9" r="5" fill="#dd8452"><title>PB3_attenuated_shape salt_3 TW: 44.5</title></circle>
+<text x="746.2" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 746.2,378)">P3 attenuated shape salt_3</text>
+<circle cx="836.8" cy="339.7" r="5" fill="#2f6f8f"><title>PB3_attenuated_shape salt_4 mdot: -17.5</title></circle>
+<circle cx="848.8" cy="143.8" r="5" fill="#c44e52"><title>PB3_attenuated_shape salt_4 all: 41.3</title></circle>
+<circle cx="860.8" cy="119.0" r="5" fill="#dd8452"><title>PB3_attenuated_shape salt_4 TW: 48.7</title></circle>
+<text x="848.8" y="378" font-family="Arial" font-size="10" text-anchor="middle" transform="rotate(45 848.8,378)">P3 attenuated shape salt_4</text>
+<circle cx="660" cy="24" r="5" fill="#2f6f8f"/>
+<text x="672" y="28" font-family="Arial" font-size="12">mdot delta pct</text>
+<circle cx="660" cy="42" r="5" fill="#c44e52"/>
+<text x="672" y="46" font-family="Arial" font-size="12">all-probe delta K</text>
+<circle cx="660" cy="60" r="5" fill="#dd8452"/>
+<text x="672" y="64" font-family="Arial" font-size="12">TW delta K</text>
+<text x="28" y="414" font-family="Arial" font-size="12">Negative mdot deltas improve flow; positive temperature deltas mean candidate is worse than M3.</text>
+</svg>

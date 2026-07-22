@@ -1,0 +1,5 @@
+integration_point,required_update,guardrail,evidence
+final_admission_scorecard,"include salt1_nominal, salt1_lo10q, and salt1_hi10q as admitted rows",do not demote Salt1 to diagnostic/context-only unless a newer dated gate overturns AGENT-448,work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/final_admission_status_scorecard.csv
+closure_regression_tests,load tools/analyze/test_data/salt1_primary_closure_cases.csv or assert equivalent rows,"tests must check admitted status, no suspicious drift, diagnostic-only convergence monitor, no FOAM FATAL",tools/analyze/test_data/salt1_primary_closure_cases.csv
+thesis_story,present Salt1 as confident primary evidence with provenance caveat,separate admitted Salt1 evidence from still-diagnostic hydraulic/mesh/internal-Nu coefficient claims,reports/thesis_dossier/2026-07-16_salt1_confident_use_and_forward_scorecard_story.md
+future_test_split,"keep Salt1 q-ratio labels visible: nominal 1.00, lo10q 0.90, hi10q 1.10",do not merge perturbed-Q rows into nominal baselines or hide q-ratio labels,tools/analyze/test_data/salt1_primary_closure_cases.csv

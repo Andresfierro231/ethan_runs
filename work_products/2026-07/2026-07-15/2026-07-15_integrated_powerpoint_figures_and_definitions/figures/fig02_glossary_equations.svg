@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560">
+  <rect width="1080" height="560" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <text x="48.0" y="50.0" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#111827" text-anchor="start">Define the shorthand before the results</text>
+  <rect x="40.0" y="82.0" width="470.0" height="430.0" rx="8.0" fill="#f8fafc" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="70.0" y="120.0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Model modes and evidence labels</text>
+  <text x="72.0" y="158.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">M1</text>
+  <text x="132.0" y="158.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Full CFD heat ledger + pressure solve;</text>
+  <text x="132.0" y="177.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">diagnostic upper bound.</text>
+  <text x="72.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">M1b</text>
+  <text x="132.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Full CFD heat ledger + fixed CFD mdot;</text>
+  <text x="132.0" y="234.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">thermal diagnostic.</text>
+  <text x="72.0" y="272.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">M2</text>
+  <text x="132.0" y="272.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">CFD heater + test-section + cooler; best</text>
+  <text x="132.0" y="291.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">current mdot diagnostic.</text>
+  <text x="72.0" y="329.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">M3</text>
+  <text x="132.0" y="329.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">CFD heater + cooler only; best current</text>
+  <text x="132.0" y="348.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">TP/TW RMSE diagnostic.</text>
+  <text x="72.0" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">PM5/F6</text>
+  <text x="132.0" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Pressure-matched upcomer evidence /</text>
+  <text x="132.0" y="405.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">candidate friction scorecard.</text>
+  <text x="72.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#2563eb" text-anchor="start">H1</text>
+  <text x="132.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Legacy shorthand; spell out pressure</text>
+  <text x="132.0" y="462.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">residual or heat-loss term.</text>
+  <rect x="560.0" y="82.0" width="480.0" height="430.0" rx="8.0" fill="#f8fafc" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="590.0" y="120.0" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#111827" text-anchor="start">Equations and modeling assumptions</text>
+  <text x="592.0" y="158.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#16a34a" text-anchor="start">Pressure root</text>
+  <text x="742.0" y="158.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">sum(dp_drive - dp_loss) = 0</text>
+  <text x="592.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#16a34a" text-anchor="start">HX / cooler</text>
+  <text x="742.0" y="215.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Q = UA DeltaT_drive</text>
+  <text x="592.0" y="272.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#16a34a" text-anchor="start">Heater</text>
+  <text x="742.0" y="272.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Q_heater = eta P_electrical</text>
+  <text x="592.0" y="329.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#16a34a" text-anchor="start">h_proxy</text>
+  <text x="742.0" y="329.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">q'' / (T_wall - T_bulk)</text>
+  <text x="592.0" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#16a34a" text-anchor="start">Nu</text>
+  <text x="742.0" y="386.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">h D / k; blocked for</text>
+  <text x="742.0" y="405.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">recirculating upcomer fits</text>
+  <text x="592.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#16a34a" text-anchor="start">Mean uncertainty</text>
+  <text x="742.0" y="443.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">SEM = sigma/sqrt(N); use N_eff</text>
+  <text x="742.0" y="462.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">if autocorrelated</text>
+</svg>

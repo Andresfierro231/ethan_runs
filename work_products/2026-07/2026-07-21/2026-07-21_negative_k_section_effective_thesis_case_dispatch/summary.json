@@ -1,0 +1,25 @@
+{
+  "task_id": "TODO-NEGATIVE-K-SECTION-EFFECTIVE-THESIS-CASE-DISPATCH-2026-07-21",
+  "status": "complete",
+  "decision": "stop_current_component_K_attempts_publish_section_effective_negative_result",
+  "current_corner_rows": 3,
+  "section_effective_rows": 3,
+  "component_k_admitted_rows": 0,
+  "cluster_k_admitted_rows": 0,
+  "f6_fit_rows": 0,
+  "clipped_k_rows": 0,
+  "hidden_global_multiplier_rows": 0,
+  "validation_rows_consumed": 0,
+  "holdout_rows_consumed": 0,
+  "external_test_rows_consumed": 0,
+  "salt2_residual_pa": "-1.25366731683",
+  "salt3_residual_pa": "-1.84957005859",
+  "salt4_residual_pa": "-1.67833900273",
+  "salt2_frozen_max_abs_error_pa": "0.47046606946166093438399",
+  "salt2_frozen_max_abs_error_percent_gross_static": "0.01550084787332213673792019733",
+  "board_successor_rows_added": [
+    "TODO-THESIS-CH6-CH7-NEGATIVE-K-SECTION-EFFECTIVE-INSERT-2026-07-21",
+    "TODO-HYBRID-PRESSURE-NO-FIT-PERFORMANCE-BAKEOFF-2026-07-21"
+  ],
+  "s11_s15_s6_trigger": false
+}

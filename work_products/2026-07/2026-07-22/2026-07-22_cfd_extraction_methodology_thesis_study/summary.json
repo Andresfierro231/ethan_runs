@@ -1,0 +1,17 @@
+{
+  "task_id": "TODO-CFD-EXTRACTION-METHODOLOGY-THESIS-STUDY-2026-07-22",
+  "decision": "methodology_packet_ready_no_new_release",
+  "extracted_data_dictionary_rows": 12,
+  "reduction_method_rows": 10,
+  "allowed_forbidden_use_rows": 11,
+  "blocker_next_work_rows": 7,
+  "source_manifest_rows": 17,
+  "source_property_cp_basis_board_row_exists": true,
+  "source_property_cp_basis_board_row": "TODO-SOURCE-PROPERTY-CP-VISCOSITY-PRESSURE-BASIS-PREFLIGHT-2026-07-22",
+  "native_outputs_mutated": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "candidate_admission": false,
+  "latex_body_edit": false,
+  "residual_absorbed_into_internal_Nu": false
+}

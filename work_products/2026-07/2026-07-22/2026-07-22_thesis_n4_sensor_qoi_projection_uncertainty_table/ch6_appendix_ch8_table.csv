@@ -1,0 +1,3 @@
+target_location,claim,evidence,limitation
+Chapter 6 or appendix,"TP/TW sensors are post-solve QOI targets with mapped, bounded, or excluded status.",17 sensors; mapped=1; bounded=15; excluded=1,no runtime temperature input release
+Chapter 8 scorecard context,"Sensor projection uncertainty affects score interpretation, not model runtime inputs.",master scoreboard signed rows=204,no new protected scoring beyond closed summaries

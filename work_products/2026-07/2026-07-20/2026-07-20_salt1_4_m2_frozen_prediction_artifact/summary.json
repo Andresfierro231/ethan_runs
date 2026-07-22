@@ -1,0 +1,15 @@
+{
+  "blind_rows_used_for_fit": 0,
+  "date": "2026-07-20",
+  "frozen_model_id": "M2_FROZEN_PREDICTION_ARTIFACT_SALT1_4_NOMINAL_2026_07_20",
+  "frozen_prediction_artifact_created": true,
+  "generated_at_utc": "2026-07-20T16:40:46.542704+00:00",
+  "holdout_rows_scored": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "rows_missing_supported_scorecard": 1,
+  "rows_with_full_admitted_boundary_predictions": 3,
+  "source_candidate_freeze_id": "M2_CANDIDATE_FREEZE_SALT1_4_NOMINAL_2026_07_20",
+  "task": "TODO-PREDICT-SALT1-4-M2-FROZEN-PREDICTION-ARTIFACT",
+  "train_rows": 4
+}

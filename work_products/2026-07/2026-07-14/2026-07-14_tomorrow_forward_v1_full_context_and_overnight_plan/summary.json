@@ -1,0 +1,25 @@
+{
+  "task": "AGENT-374",
+  "date": "2026-07-14",
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "current_node": "c318-008.ls6.tacc.utexas.edu",
+  "current_split": "salt_2=train;salt_3=validation;salt_4=holdout",
+  "scheduler_snapshot_rows": 5,
+  "overnight_recommendation_rows": 6,
+  "progress_context_rows": 7,
+  "recommended_new_lightweight_studies": [
+    "external_boundary_table_fluid_rerun",
+    "setup_only_cooler_hx_replacement_screen",
+    "sensor_map_policy_refresh"
+  ],
+  "do_not_duplicate_active_work": [
+    "AGENT-373 hydraulic dependent chain",
+    "3293924 corrected-Q continuation",
+    "3295438 dependency harvester"
+  ],
+  "pm5_job_3295901_current_state": "CANCELLED before running",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "external_fluid_modified": false
+}

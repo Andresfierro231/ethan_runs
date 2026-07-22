@@ -1,0 +1,9 @@
+guardrail,status,evidence
+native_openfoam_outputs_mutated,false,Read only published work_products summaries and compact CSVs
+registry_or_admission_mutated,false,No registry case-admission or model-admission files edited
+scheduler_action,false,No sbatch srun solver postProcess sampler harvest UQ launch or scheduler query/action
+fluid_external_repository_mutated,false,No Fluid or external repository edits
+source_property_release_mutated,false,No viscosity property pressure or split release state changed
+component_K_or_F6_release,false,No component K F6 Shah clipped K hidden multiplier or final score
+protected_scoring_or_model_selection,false,No holdout external PM10 or protected rows used for fit/model selection
+native_data_copied,false,No native OpenFOAM trees or broad generated trees copied

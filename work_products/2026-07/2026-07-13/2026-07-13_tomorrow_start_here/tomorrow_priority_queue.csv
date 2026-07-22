@@ -1,0 +1,9 @@
+rank,task,why,next_action,acceptance,blocked_by
+1,Check AGENT-305 and AGENT-306,"Both rows are active and their expected outputs were absent at this handoff","Open board and status/journal/import files; avoid overlapping scopes","Know whether overnight/corrected-Q handoffs completed","active agents may still be writing"
+2,Monitor corrected-Q job 3293924,"Four corrected-Q foamRun substeps are running","Use squeue/sacct until terminal; then harvest latest times","Terminal scheduler state recorded; no admission changes","job still running"
+3,Rerun corrected-Q strict table after terminal,"Need post-exit latest-time evidence","python3 tools/analyze/build_registry_corrected_q_status_table.py --strict-registry","Updated table compares against July 10/13 state","3293924 terminal state"
+4,Inspect AGENT-305 thermal outputs,"Thermal closure remains blocked but coarse/sign work may unlock next checks","Open AGENT-305 package if present; rerun thermal mesh gate only if inputs complete","QOIs classified; no premature closure admission","AGENT-305 output availability"
+5,H1 hydraulic rerun,"Main predictive blocker is mdot overprediction","Implement/rerun H1_localized_named_loss_and_reset_bundle without thermal fitting","Salt2/Salt3/Salt4 mdot errors under locked split; thermal_fit_used=false","implementation path for named-loss/reset injection"
+6,External Fluid API row,"Repo-local external BC bridge is ready but Fluid source was not edited","Claim external write scope or create patch package","external_boundary_table tested for h Ta Tsur emissivity layers and no double radiation","external repo write permissions"
+7,Forward-v1 scorecard refresh,"Scorecard precursor exists but final claim is blocked","Refresh after H1 rerun and current sensor/external decisions","Train/validation/holdout scorecard with blockers separated","H1 rerun and active gates"
+

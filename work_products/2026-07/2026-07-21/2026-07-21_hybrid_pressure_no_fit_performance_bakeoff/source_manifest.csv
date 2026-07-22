@@ -1,0 +1,7 @@
+path,use,mutation
+work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/section_effective_pressure_scorecard.csv,section-effective residual inputs,False
+work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/three_level_score.csv,no-fit score levels,False
+work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/summary.json,non-admission guardrails,False
+work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv,F3/Shah baseline comparison status,False
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/f3_shah_apparent_comparison_table.csv,thesis figure/table F3 status,False
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f3_vs_f6_comparison_readiness.csv,S14 F3-vs-F6 readiness,False

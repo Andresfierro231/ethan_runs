@@ -1,0 +1,11 @@
+source_id,path,role,exists,mutated
+s8,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/summary.json,read-only S8 negative result,True,False
+s12,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/candidate_contract.csv,read-only S12 candidate contract,True,False
+s12_gates,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/admission_gate_matrix.csv,read-only S12 gate matrix,True,False
+h2,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/repair_candidate_predeclaration_gate.csv,read-only Phase H2 predeclaration,True,False
+passive,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/repair_gate.csv,read-only passive-H2 physical-basis gate,True,False
+source,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/tw4_tw6_focus.csv,read-only setup-known source residual focus,True,False
+empirical,work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/corrected_train_residual_metrics.csv,read-only empirical diagnostic,True,False
+incline,work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/failure_classification.csv,read-only heated-incline audit,True,False
+phase_e,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/README.md,read-only external-BC train solve context,True,False
+phase_fj,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md,read-only residual decomposition context,True,False

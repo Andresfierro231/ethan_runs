@@ -1,0 +1,5 @@
+source_id,path,use
+AGENT-373-script,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_overnight_dependent_chain/hydraulic_overnight_chain.py,direct local diagnostic stage execution
+AGENT-405-hydraulic-node-outputs,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_node_run_outputs,landed raw/F6/reset-K outputs
+AGENT-404-pm5,work_products/2026-07/2026-07-15/2026-07-15_pm5_matched_plane_parser_repair,PM5 parser repair and resampling requirements
+AGENT-393-sensor-hydraulic,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution,prior hydraulic/sensor policy context

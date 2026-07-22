@@ -1,0 +1,2 @@
+blocker_id,decision,resolved_by,resolved_on,admitted_rows,excluded_rows,retained_extraction_required_rows,criteria_passed,criteria_failed,scientific_interpretation
+closure-qoi-mesh-gci,resolved_by_final_use_disposition,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_final_use_disposition_closeout,2026-07-16,0,13,0,all_final_use_rows_admitted_or_explicitly_excluded,,Closure-QOI mesh/GCI blocker is removed by disposition: no current final-use non-upcomer row still requires extraction before closeout.

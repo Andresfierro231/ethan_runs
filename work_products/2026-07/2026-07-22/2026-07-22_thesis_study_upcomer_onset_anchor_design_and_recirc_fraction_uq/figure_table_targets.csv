@@ -1,0 +1,7 @@
+target_id,target_type,title,source_file,claim_supported,caption_guardrail
+T_UP_1,table,Recirculation-fraction definition contract,recirculation_fraction_definition_contract.csv,Defines proxy vs closed-fraction metrics,Do not call proxy a closed recirculation fraction
+T_UP_2,table,Diagnostic onset evidence table,diagnostic_onset_evidence_table.csv,Salt2-4 reverse topology and exchange/tau proxy trends,Diagnostic only no coefficient admission
+T_UP_3,table,Nondimensional regime context,nondimensional_regime_context.csv,Re/Pr/Ri/Ra/Gz context for onset design,Regime map is not closure fit
+T_UP_4,table,Same-QOI UQ and mesh gate,same_qoi_uq_mesh_gate.csv,Temporal UQ exists but mesh/GCI/production remains closed,Mesh input readiness is not admission
+T_UP_5,table,Future anchor design matrix,future_anchor_design_matrix.csv,Exact additional evidence needed for onset map,No scheduler launch from this row
+F_UP_1,figure,Upcomer onset evidence gate,figures/svg/upcomer_onset_evidence_gate.svg,Diagnostic evidence exists but closed fraction/admission fail closed,Keep ordinary closure disabled

@@ -1,0 +1,23 @@
+{
+  "task": "TODO-F6-STAGE-A-SAMPLER-MONITOR",
+  "job_id": "3308082",
+  "job_name": "f6_face_sA",
+  "terminal_state": "COMPLETED",
+  "exit_code": "0:0",
+  "node": "c318-012",
+  "elapsed": "00:12:57",
+  "start": "2026-07-21T12:44:35",
+  "end": "2026-07-21T12:57:32",
+  "expected_vtk_surfaces": 8,
+  "present_vtk_surfaces": 8,
+  "scheduler_submit_performed": false,
+  "scheduler_cancel_requeue_performed": false,
+  "harvest_performed_by_monitor": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "f6_fit_admission": "none",
+  "component_k_admission": "none",
+  "clipped_k": false,
+  "hidden_global_multiplier": false,
+  "next_task": "TODO-F6-STAGE-A-HARVEST-QA"
+}

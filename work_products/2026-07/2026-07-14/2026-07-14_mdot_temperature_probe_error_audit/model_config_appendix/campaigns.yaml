@@ -1,0 +1,177 @@
+minor_loss_presets:
+  baseline_minor_losses: {}
+  # AGENT-168 (2026-07-01): mesh-corrected CFD closures from this session's
+  # bend minor-loss (T7) + de-buoyed momentum-budget friction (T1b) packages.
+  # k_90deg = mean of the 4 CFD corner K (Salt 2/3/4 avg ~10.7); k_20deg=0 so
+  # total_fixed_k = 4*k_90deg ~= sum of the 4 CFD corner K. major_loss_multiplier
+  # = mean of the 6 CFD leg f/f_lam ratios (~1.96).
+  # CAVEAT (documented in journal): the CFD corner K are normalized on a very low
+  # LOCAL fitting-interface dynamic head, so applied on the 1D main-line q_ref they
+  # overweight minor losses ~5-8x vs the actual CFD corner ΔP (which is only ~4-5%
+  # of the CFD loss budget). Use with the friction multiplier as the trusted term;
+  # treat the bend-K as an upper bound only. Per-case values live in
+  # ethan_runs/work_products/2026-07-01_claude_1d_predictivity_trial/.
+  ethan_cfd_2026_07_01:
+    major_loss_multiplier: 1.96
+    k_90deg: 10.7
+    n_90deg: 4
+    k_20deg: 0.0
+    n_20deg: 4
+    include_test_section_diameter_change: false
+  zero_minor_losses:
+    k_90deg: 0.0
+    n_90deg: 4
+    k_20deg: 0.0
+    n_20deg: 4
+    include_test_section_diameter_change: false
+  zero_major_zero_minor_losses:
+    major_loss_multiplier: 0.0
+    k_90deg: 0.0
+    n_90deg: 4
+    k_20deg: 0.0
+    n_20deg: 4
+    include_test_section_diameter_change: false
+
+campaigns:
+  - name: baseline
+    description: Default mixed-fluid baseline campaign for the resumable Fluid workflow.
+    output_root: outputs_tamu_loop_v2_resumable
+    output_label: baseline
+    comparison_group: default
+    case_selector:
+      include_fluids: [salt, water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: baseline_minor_losses
+  - name: ethan_cfd_closures_salt_2026_07_01
+    description: Dated 2026-07-01 salt-only predictivity trial (AGENT-168) that injects this session's mesh-corrected CFD hydraulic closures (per-corner bend K + de-buoyed per-leg friction) as the ethan_cfd_2026_07_01 minor-loss preset. Diagnostic only; see ethan_runs work_products/2026-07-01_claude_1d_predictivity_trial for the predictivity table, verdict, and caveats.
+    output_root: results/diagnostics/ethan_cfd_closures_salt_2026_07_01
+    output_label: ethan-cfd-closures-salt-2026-07-01
+    comparison_group: ethan_cfd_closure_predictivity
+    case_selector:
+      include_fluids: [salt]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: ethan_cfd_2026_07_01
+  - name: zero_minor_losses
+    description: Diagnostic campaign with all fixed minor losses disabled.
+    output_root: results/diagnostics/outputs_tamu_loop_v2_zero_minor_losses
+    output_label: zero-minor-losses
+    comparison_group: minor_loss_diagnostics
+    case_selector:
+      include_fluids: [salt, water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: zero_minor_losses
+  - name: zero_major_zero_minor_losses
+    description: Diagnostic campaign with distributed friction and fixed minor losses disabled.
+    output_root: results/diagnostics/outputs_tamu_loop_v2_zero_major_zero_minor_losses
+    output_label: zero-major-zero-minor-losses
+    comparison_group: minor_loss_diagnostics
+    case_selector:
+      include_fluids: [salt, water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: zero_major_zero_minor_losses
+  - name: baseline_internal_losses
+    description: Validation campaign using the internal Fluid ambient-loss model with measured mdot and velocity targets carried in the tracked validation registry.
+    output_root: results/diagnostics/validation_baseline_internal_losses
+    output_label: baseline-internal-losses
+    comparison_group: ethan_forced_validation
+    ambient_loss_model: internal_model
+    case_selector:
+      include_fluids: [salt, water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+      exclude_scenario_names: [adiabatic_all_heat_to_hx]
+    minor_loss_preset: baseline_minor_losses
+  - name: baseline_current_contract_remediation_v1
+    description: Dated 2026-05-28 remediation campaign that rebuilds the old resumable baseline family under the current predictive_airside_hx contract without overwriting outputs_tamu_loop_v2_resumable. Salt cases retain 37 W test-section heating; water cases must remain at 0 W test-section heating.
+    output_root: results/diagnostics/predictive_validation_resumable_current_contract_v1
+    output_label: predictive-validation-resumable-current-contract-v1
+    comparison_group: current_contract_baseline_remediation
+    case_selector:
+      include_fluids: [salt, water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: baseline_minor_losses
+  - name: water_current_contract_local_v1
+    description: Dated 2026-05-28 local compute-node water-only rerun campaign that preserves the current predictive_airside_hx contract, keeps water test_section_power_W at 0.0 W, and exists separately from the queued mixed-fluid remediation root.
+    output_root: results/diagnostics/predictive_validation_water_current_contract_local_v1
+    output_label: predictive-validation-water-current-contract-local-v1
+    comparison_group: current_contract_water_local
+    case_selector:
+      include_fluids: [water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: baseline_minor_losses
+  - name: salt_current_contract_array_v1
+    description: Dated 2026-05-28 salt-only current-contract Slurm remediation campaign. This replaces the old mixed-fluid queue intent because the full water matrix already completed locally under predictive_validation_water_current_contract_local_v1. Salt cases retain heater power plus 37 W through the quartz test section.
+    output_root: results/diagnostics/predictive_validation_salt_current_contract_array_v1
+    output_label: predictive-validation-salt-current-contract-array-v1
+    comparison_group: current_contract_salt_array
+    case_selector:
+      include_fluids: [salt]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+    minor_loss_preset: baseline_minor_losses
+  - name: practical_reduced_order_narrow_v1
+    description: Dated 2026-06-05 salt-only narrow reduced-order closure campaign that promotes the current 2D-informed internal HTC, descriptor, and passive outer-loss priors into a small practical 1D sweep.
+    output_root: results/diagnostics/practical_reduced_order_narrow_v1
+    output_label: practical-reduced-order-narrow-v1
+    comparison_group: practical_reduced_order_narrow
+    case_selector:
+      include_fluids: [salt]
+    scenario_selector:
+      groups: [practical_reduced_order_narrow_v1]
+    minor_loss_preset: baseline_minor_losses
+  - name: practical_reduced_order_broadened_v1
+    description: Dated 2026-06-05 salt-only broadened reduced-order closure campaign centered on the radiation-on descriptor and combined branches at 1.0 in and 2.0 in insulation.
+    output_root: results/diagnostics/practical_reduced_order_broadened_v1
+    output_label: practical-reduced-order-broadened-v1
+    comparison_group: practical_reduced_order_broadened
+    case_selector:
+      include_fluids: [salt]
+    scenario_selector:
+      groups: [practical_reduced_order_broadened_v1]
+    minor_loss_preset: baseline_minor_losses
+  - name: ethan_cfd_informed_salt_v1
+    description: Dated 2026-06-19 salt-only opt-in hybrid reduced-order campaign that snapshots the Ethan CFD-informed 1D implementation spec, including the tracked descriptor bundle, closure tables, and safe-subset outer-loss priors.
+    output_root: results/diagnostics/ethan_cfd_informed_salt_v1
+    output_label: ethan-cfd-informed-salt-v1
+    comparison_group: ethan_cfd_informed_salt_v1
+    case_selector:
+      include_fluids: [salt]
+    scenario_selector:
+      groups: [ethan_cfd_informed_salt_v1]
+    minor_loss_preset: baseline_minor_losses
+  - name: ethan_cfd_informed_salt_v2
+    description: Dated 2026-06-29 salt-only parallel refresh campaign that preserves the legacy v1 bundle while pointing new readable Ethan CFD-informed runs at the tracked v2 static contract.
+    output_root: results/diagnostics/ethan_cfd_informed_salt_v2
+    output_label: ethan-cfd-informed-salt-v2
+    comparison_group: ethan_cfd_informed_salt_v2
+    case_selector:
+      include_fluids: [salt]
+    scenario_selector:
+      groups: [ethan_cfd_informed_salt_v2]
+    minor_loss_preset: baseline_minor_losses
+  - name: ethan_forced_losses
+    description: Validation campaign using Ethan-derived prescribed segment losses in place of the internal Fluid ambient-loss model.
+    output_root: results/diagnostics/validation_ethan_forced_losses
+    output_label: ethan-forced-losses
+    comparison_group: ethan_forced_validation
+    ambient_loss_model: external_prescribed_segment_loss
+    external_segment_loss_table: validation_data/ethan_coupling/fluid_segment_losses.csv
+    reference_files:
+      validation_table: validation_data/validation_cases.csv
+      ethan_coupling_readme: validation_data/ethan_coupling/README.md
+      ethan_mapping: validation_data/ethan_coupling/ethan_to_fluid_mapping.csv
+      ethan_raw_losses: validation_data/ethan_coupling/ethan_raw_segment_losses.csv
+      ethan_mapped_losses: validation_data/ethan_coupling/fluid_segment_losses.csv
+      validation_readme: validation_data/README.md
+    case_selector:
+      include_fluids: [salt, water]
+    scenario_selector:
+      groups: [baseline_predictive_matrix, baseline_specials]
+      exclude_scenario_names: [adiabatic_all_heat_to_hx]
+    minor_loss_preset: baseline_minor_losses

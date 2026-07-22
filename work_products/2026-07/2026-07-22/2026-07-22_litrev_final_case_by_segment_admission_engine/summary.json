@@ -1,0 +1,24 @@
+{
+  "case_segment_rows": 18,
+  "closure_family_admitted_rows": 0,
+  "closure_status_counts": {
+    "unresolved": 18
+  },
+  "coefficient_admission": false,
+  "counts": {
+    "case_segment_admission_matrix.csv": 18,
+    "closure_family_decisions.csv": 5,
+    "litrev_final_source_register.csv": 11,
+    "missing_input_ledger.csv": 7,
+    "source_manifest.csv": 15
+  },
+  "created_utc": "2026-07-22T18:47:07.132420+00:00",
+  "date": "2026-07-22",
+  "decision": "case_by_segment_admission_engine_fail_closed_no_coefficients_admitted",
+  "litrev_sources_recorded": 11,
+  "native_output_mutation": false,
+  "output_dir": "work_products/2026-07/2026-07-22/2026-07-22_litrev_final_case_by_segment_admission_engine",
+  "solver_or_postprocessing_launch": false,
+  "source_property_release": false,
+  "task": "TODO-LITREV-FINAL-CASE-BY-SEGMENT-ADMISSION-ENGINE-2026-07-22"
+}

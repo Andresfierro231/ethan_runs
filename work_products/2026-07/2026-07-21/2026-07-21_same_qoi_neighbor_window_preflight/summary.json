@@ -1,0 +1,19 @@
+{
+  "task": "TODO-SAME-QOI-NEIGHBOR-WINDOW-PREFLIGHT-2026-07-21",
+  "generated_at": "2026-07-21T16:16:50-05:00",
+  "status": "complete",
+  "qoi_rows": 12,
+  "accepted_rows": 0,
+  "compute_needed_rows": 12,
+  "p1_rows": 4,
+  "p2_rows": 4,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launch": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "same_qoi_or_coefficient_admission": false,
+  "invented_gci": false,
+  "mixed_basis_promotion": false,
+  "generated_index_refresh": false
+}

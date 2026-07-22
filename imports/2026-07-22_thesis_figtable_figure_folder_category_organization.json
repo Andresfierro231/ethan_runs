@@ -1,0 +1,73 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-FIGURE-FOLDER-CATEGORY-ORGANIZATION-2026-07-22",
+  "task_id": "TODO-THESIS-FIGTABLE-FIGURE-FOLDER-CATEGORY-ORGANIZATION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Figures / Implementer / Tester / Writer / Reviewer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-FIGTABLE-FIGURE-FOLDER-CATEGORY-ORGANIZATION-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-figtable-figure-folder-category-organization.md",
+    "imports/2026-07-22_thesis_figtable_figure_folder_category_organization.json",
+    "tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/caption_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/progress/svg/model_form_ladder_no_admission.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/progress/png/model_form_ladder_no_admission.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/progress/svg/blocked_scorecard_waterfall.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/progress/png/blocked_scorecard_waterfall.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/tp_vs_elevation/svg/m3_tp_temperature_vs_elevation_salt_2.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/tp_vs_elevation/png/m3_tp_temperature_vs_elevation_salt_2.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/tp_tw_vs_elevation/svg/m3_tp_tw_temperature_vs_elevation_salt_2.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/tp_tw_vs_elevation/png/m3_tp_tw_temperature_vs_elevation_salt_2.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/diagnostics/svg/m3_signed_sensor_error_shape.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/diagnostics/png/m3_signed_sensor_error_shape.png"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_TP_TW_vs_elevation/plot.py",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_sensor_predictions_experimental.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/signed_sensor_errors.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "provenance_flags": {
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_action": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "validation_holdout_external_new_scoring": false,
+    "fitting_or_model_selection": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "s11_s12_s13_s15_s6_trigger": false,
+    "thesis_current_file_edit": false,
+    "blocker_register_change": false,
+    "fluid_source_edit": false,
+    "external_repo_edit": false
+  },
+  "result": {
+    "decision": "thesis_figure_panels_ready_no_closure_admission",
+    "figure_panels": 9,
+    "progress_figure_panels": 2,
+    "tp_vs_elevation_figure_panels": 3,
+    "tp_tw_vs_elevation_figure_panels": 3,
+    "diagnostic_figure_panels": 1,
+    "legacy_flat_figure_paths_retained": 0,
+    "final_score_values": 0
+  }
+}

@@ -1,0 +1,2 @@
+gate_id,gate_status,details,train_candidate_rows,strict_pass_rows,blocked_or_demoted_rows,allowed_interpretation,source_paths
+source_property_fit_release,fail,fail,4,0,4,source/property attribution only; no fit release by this task,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/freeze_readiness_matrix.csv;work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scorecard_source_property_resolution_policy.csv

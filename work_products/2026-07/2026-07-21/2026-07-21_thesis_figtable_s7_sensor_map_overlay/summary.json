@@ -1,0 +1,21 @@
+{
+  "task_id": "TODO-THESIS-FIGTABLE-S7-SENSOR-MAP-OVERLAY-2026-07-21",
+  "sensor_overlay_rows": 17,
+  "bounded_excluded_rows": 17,
+  "runtime_caveat_rows": 5,
+  "acceptance_counts": {
+    "bounded": 15,
+    "mapped": 1,
+    "excluded": 1
+  },
+  "mapped_rows": 1,
+  "bounded_rows": 15,
+  "excluded_rows": 1,
+  "runtime_temperature_allowed_rows": 0,
+  "fit_allowed_rows": 0,
+  "model_selection_allowed_rows": 0,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "figure_or_chapter_asset_edit": false
+}

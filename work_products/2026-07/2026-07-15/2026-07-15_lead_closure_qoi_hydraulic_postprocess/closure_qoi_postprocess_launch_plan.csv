@@ -1,0 +1,5 @@
+gate_status,row_count,launchable_by_agent409_now,scratch_only_command,native_outputs_mutated,rationale
+blocked_missing_triplet,6,conditional,work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/scripts/run_staged_raw_two_tap.sh,false,Missing numeric QoIs may be repairable from staged scratch extraction.
+blocked_non_monotone_or_oscillatory,16,no,,false,"Policy, sign, or convergence failure is not solved by relaunch alone."
+blocked_sign_or_semantics_review,3,no,,false,"Policy, sign, or convergence failure is not solved by relaunch alone."
+hydraulic_test_section_complex_raw_two_tap,3,yes,work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/scripts/run_staged_raw_two_tap.sh,false,AGENT-405 was preflight-only; AGENT-409 provides scratch runner and diagnostic harvest.

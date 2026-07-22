@@ -1,0 +1,53 @@
+{
+  "task": "TODO-LITREV-TRANSIENT-ROM-PARKING-LOT",
+  "task_id": "TODO-LITREV-TRANSIENT-ROM-PARKING-LOT",
+  "generated_at_utc": "2026-07-22T14:58:00Z",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-LITREV-TRANSIENT-ROM-PARKING-LOT.md",
+    ".agent/journal/2026-07-22/litrev-transient-rom-parking-lot.md",
+    "imports/2026-07-22_litrev_transient_rom_parking_lot.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/parking_lot_trigger_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/parking_lot_note.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/litrev_source_inventory.csv",
+    "reports/2026-07/2026-07-01/2026-07-01_rom_model_form_fits_and_1p4_boundary/summary.json",
+    "reports/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/summary.json",
+    "work_products/2026-07/2026-07-15/2026-07-15_salt_training_testing_oscillation_steady_state/summary.json",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid and external repositories",
+    "generated docs index files"
+  ],
+  "mutation_flags": {
+    "code_edits": false,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "external_fluid_edit": false,
+    "fitting_or_tuning": false,
+    "candidate_admission": false,
+    "generated_index_refresh": false
+  },
+  "output_contract": {
+    "lanes_parked": 2,
+    "mf05_status": "future_only",
+    "mf06_status": "future_only",
+    "admission_or_implementation": false
+  },
+  "validation": [
+    "python3.11 -m json.tool work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/summary.json",
+    "wc -l work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/parking_lot_trigger_table.csv work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/source_manifest.csv work_products/2026-07/2026-07-22/2026-07-22_litrev_transient_rom_parking_lot/no_mutation_guardrails.csv"
+  ]
+}

@@ -1,0 +1,2 @@
+case_id,fluid_case_name,split_role,owner_lane,root_status,root_rejection_reason,accepted_for_validation_flag_from_fluid,pressure_root_bracketed,temperature_root_bracketed,mdot_kg_s,deltaP_buoyancy_Pa,deltaP_losses_Pa,pressure_residual_Pa,claim_boundary
+salt_2,Salt 2,train,pressure_model,accepted,,True,True,True,0.00626567502343775,88.82170863655324,88.82170733486615,-1.3016870923365786e-06,"train execution residual only, not pressure closure admission"

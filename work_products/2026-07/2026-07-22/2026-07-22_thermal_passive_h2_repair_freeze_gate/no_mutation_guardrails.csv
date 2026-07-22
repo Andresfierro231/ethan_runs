@@ -1,0 +1,15 @@
+guardrail,status,evidence
+no_repair_execution,pass,No solver or repair run launched
+no_scheduler_action,pass,This row did not submit cancel requeue or modify scheduler jobs
+no_fluid_edit,pass,Fluid source tree read-only
+no_native_output_mutation,pass,Native CFD/OpenFOAM outputs read-only
+no_registry_mutation,pass,Registry/admission state read-only
+no_validation_holdout_external_scoring,pass,Protected scoring rows 0
+no_fitting_model_selection,pass,No fitting or model selection performed
+no_source_property_release,pass,Source/property release-ready rows 0
+no_qwall_release,pass,Qwall release rows 0
+no_coefficient_admission,pass,Coefficient admission rows 0
+no_candidate_freeze,pass,Candidate freeze rows 0
+no_final_score,pass,Final score rows 0
+no_runtime_wallHeatFlux_release,pass,Realized wallHeatFlux remains forbidden
+no_residual_absorption_internal_Nu,pass,Residual remains explicit

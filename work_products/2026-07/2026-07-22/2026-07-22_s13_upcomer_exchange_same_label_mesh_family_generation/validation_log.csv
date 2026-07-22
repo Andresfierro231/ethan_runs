@@ -1,0 +1,6 @@
+check,status,observed,requirement
+qoi_label_count,pass,4,four S13 exact QOI labels
+temporal_uq_complete,pass,4,all four labels have completed same-QOI temporal UQ
+same_label_mesh_family_absent,pass,0,fail closed unless exact same-label mesh family exists
+generation_not_launched,pass,false,this board row is preflight/contract only
+production_and_admission_closed,pass,"production=false,admission=false",no production harvest or admission before same-label mesh/GCI

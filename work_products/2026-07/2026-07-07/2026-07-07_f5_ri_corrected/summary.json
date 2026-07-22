@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-07T00:00:00-05:00",
+  "task": "AGENT-200",
+  "owner": "claude",
+  "purpose": "F5_ri_corrected friction closure candidate screen: 3-point OLS per leg class, forced intercept=1",
+  "scope": "Salt 2/3/4 Jin mainline operating points, non-upcomer spans only",
+  "inputs": {
+    "calibration_csv": "work_products/2026-07-07_f4_ri_calibration_and_solver_gate/f4_ri_calibration_table.csv",
+    "reference_mdot_csv": "work_products/2026-07-07_friction_forms_comparison/mdot_comparison.csv",
+    "friction_closures_py": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+    "solver_py": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  },
+  "outputs": {
+    "fit_summary": "work_products/2026-07-07_f5_ri_corrected/f5_fit_summary.csv",
+    "mdot_comparison": "work_products/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv",
+    "comparison_script": "work_products/2026-07-07_f5_ri_corrected/run_f5_mdot_comparison.py"
+  },
+  "counts": {
+    "calibration_rows_admitted": 9,
+    "calibration_rows_upcomer_excluded": 9,
+    "leg_classes_fit": 3,
+    "leg_classes_poor_r2": 3,
+    "new_tests": 9
+  },
+  "fit_results": {
+    "heater":    {"c_fitted": 1.473233, "c_active": 0.0, "R2": -74.5727, "phi_mean": 1.8135, "fit_quality": "poor_set_to_mean"},
+    "cooler":    {"c_fitted": 0.607650, "c_active": 0.0, "R2": -27.5042, "phi_mean": 1.5352, "fit_quality": "poor_set_to_mean"},
+    "downcomer": {"c_fitted": 0.721452, "c_active": 0.0, "R2": -4.2989,  "phi_mean": 1.8112, "fit_quality": "poor_set_to_mean"}
+  },
+  "mdot_errors_pct": {
+    "salt_2_F3_shah": -0.9272,
+    "salt_2_F5":      -0.9272,
+    "salt_3_F3_shah": 3.3312,
+    "salt_3_F5":      3.3312,
+    "salt_4_F3_shah": 3.7474,
+    "salt_4_F5":      3.7474
+  },
+  "key_finding": "F5 ≡ F3_shah_apparent (c=0 for all classes; R²<0 for all). Ri correction does not improve on F3_shah with 3-point OLS and forced intercept.",
+  "limitations": [
+    "3-point OLS → 0 DOF → out-of-sample uncertainty O(1)",
+    "Ri_streamwise from CFD not self-consistent with 1D solver T_wall/T_bulk",
+    "Forced intercept phi=1 severely constrains fit with only 3 points",
+    "No independent validation data (all points used for fitting)",
+    "Upcomer excluded: recirculation invalidates single-stream entry assumption",
+    "Re-fit when corrected Q-perturbation data requalified (AGENT-181 gate)"
+  ]
+}

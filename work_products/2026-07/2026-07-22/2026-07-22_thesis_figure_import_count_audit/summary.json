@@ -1,0 +1,20 @@
+{
+  "date": "2026-07-22",
+  "decision": "authoritative_figure_count_12_legacy_selected_count_9_resolved_no_copy_with_verified_path_corrections",
+  "authoritative_current_figure_count": 12,
+  "visible_selected_legacy_count": 9,
+  "verified_source_paths_existing": 12,
+  "ledger_paths_stale_corrected": 5,
+  "copy_now_count": 0,
+  "legacy_rows_mapped_to_current": 7,
+  "legacy_only_not_in_current": 2,
+  "current_only_not_visible_in_legacy": 5,
+  "guardrails": {
+    "thesis_body_edit": false,
+    "binary_asset_copy": false,
+    "native_solver_output_mutation": false,
+    "registry_mutation": false,
+    "scheduler_mutation": false,
+    "science_admission_change": false
+  }
+}

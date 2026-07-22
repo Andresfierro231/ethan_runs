@@ -1,0 +1,5 @@
+source_id,source_path,exists,source_role,mutation
+raw_endpoint_pressure_velocity,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv,yes,raw endpoint pressure/velocity/reverse-flow evidence,read_only
+component_isolation_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv,yes,component-isolation decision,read_only
+same_qoi_uncertainty_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv,yes,same-QOI uncertainty audit,read_only
+final_gate_review,work_products/2026-07/2026-07-18/2026-07-18_two_tap_separated_admission_review/final_gate_review.csv,yes,separated final admission gate,read_only

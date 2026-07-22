@@ -1,0 +1,6 @@
+label,path,role
+setup_bc_model_error_report,work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report,M2/M3 diagnostic comparators
+setup_only_hx_scorecard,work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock,setup-only HX candidate
+val_salt2_unlock,work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock,external-test evidence
+fluid_setup_variant,work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant,setup-only Fluid hooks
+pm5_matched_plane_unlock,work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock,matched-plane extraction script and case list

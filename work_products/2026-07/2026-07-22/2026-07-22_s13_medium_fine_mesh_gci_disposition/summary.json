@@ -1,0 +1,30 @@
+{
+  "Qwall_release": false,
+  "admission_allowed": false,
+  "case_qoi_spread_rows": 12,
+  "coefficient_admission": false,
+  "decision": "medium_fine_mesh_disposition_complete_formal_gci_fail_closed_no_admission",
+  "formal_gci_run": false,
+  "formal_gci_status": "blocked_missing_same_label_coarse_member",
+  "generated_at": "2026-07-22T17:28:52.842734+00:00",
+  "max_Q_wall_medium_fine_relative_percent_vs_fine": 0.5029174998089355,
+  "max_proxy_medium_fine_relative_percent_vs_fine": 95.49934289848039,
+  "native_solver_outputs_mutated": false,
+  "production_harvest_allowed": false,
+  "proxy_substitution": false,
+  "qoi_labels": [
+    "Q_wall_W",
+    "mdot_exchange_positive_outward_proxy_kg_s",
+    "tau_recirc_proxy_s",
+    "wall_core_bulk_temperature_contrast_K"
+  ],
+  "qoi_summary_rows": 4,
+  "registry_or_admission_mutated": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "same_label_coarse_rows_exist": false,
+  "same_label_medium_fine_rows_exist": true,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "source_split_decision": "split_exact_label_rows_complete_mesh_gci_disposition_unlocked_no_admission",
+  "validation_holdout_external_scoring": false
+}

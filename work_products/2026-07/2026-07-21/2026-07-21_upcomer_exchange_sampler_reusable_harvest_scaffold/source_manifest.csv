@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_upcomer_exchange_sampler_reusable_harvest_scaffold.py,task_output,true,false,true
+tools/extract/test_build_upcomer_exchange_sampler_reusable_harvest_scaffold.py,task_output,true,false,true
+tools/extract/sample_upcomer_exchange_cell.py,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/input_generation_ledger.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/surface_and_ledger_blockers.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_design/exchange_sampler_required_schema.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_compute_execution/README.md,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/README.md,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/scripts/harvest_one_exchange_case.sh,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/scripts/harvest_exchange_case_matrix.sh,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/scripts/validate_exchange_case_inputs.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/scripts/check_exchange_outputs.py,task_output,true,false,true

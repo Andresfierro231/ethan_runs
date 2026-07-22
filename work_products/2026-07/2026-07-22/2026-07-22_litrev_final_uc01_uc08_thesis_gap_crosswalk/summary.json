@@ -1,0 +1,14 @@
+{
+  "decision": "uc01_uc08_crosswalk_ready_all_unresolved_no_final_scores",
+  "uc_rows": 8,
+  "critical_rows": 4,
+  "high_rows": 4,
+  "final_predictive_scores": 0,
+  "guardrails": {
+    "thesis_body_edit": false,
+    "external_repo_edit": false,
+    "new_science": false,
+    "admission": false,
+    "protected_scoring": false
+  }
+}

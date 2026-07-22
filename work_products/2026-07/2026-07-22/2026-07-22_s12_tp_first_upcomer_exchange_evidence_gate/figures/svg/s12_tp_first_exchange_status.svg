@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="360" viewBox="0 0 900 360">
+<rect width="900" height="360" fill="#ffffff"/>
+<text x="40" y="42" font-family="Arial" font-size="24" fill="#111">S12 TP-first context: M3 TP vs TW RMSE</text>
+<text x="40" y="70" font-family="Arial" font-size="13" fill="#444">TP is the priority QOI; S12 remains diagnostic until exchange/source/UQ gates pass.</text>
+<text x="40" y="128" font-family="Arial" font-size="15" fill="#111">salt_2</text>
+<rect x="130" y="110" width="418.21" height="20" fill="#2f6f9f"/>
+<text x="558.21" y="125" font-family="Arial" font-size="12" fill="#111">TP 15.65 K</text>
+<rect x="130" y="136" width="560.00" height="20" fill="#b25d2a"/>
+<text x="700.00" y="151" font-family="Arial" font-size="12" fill="#111">TW 20.95 K</text>
+<text x="40" y="200" font-family="Arial" font-size="15" fill="#111">salt_3</text>
+<rect x="130" y="182" width="375.74" height="20" fill="#2f6f9f"/>
+<text x="515.74" y="197" font-family="Arial" font-size="12" fill="#111">TP 14.06 K</text>
+<rect x="130" y="208" width="516.62" height="20" fill="#b25d2a"/>
+<text x="656.62" y="223" font-family="Arial" font-size="12" fill="#111">TW 19.33 K</text>
+<text x="40" y="272" font-family="Arial" font-size="15" fill="#111">salt_4</text>
+<rect x="130" y="254" width="348.91" height="20" fill="#2f6f9f"/>
+<text x="488.91" y="269" font-family="Arial" font-size="12" fill="#111">TP 13.06 K</text>
+<rect x="130" y="280" width="497.67" height="20" fill="#b25d2a"/>
+<text x="637.67" y="295" font-family="Arial" font-size="12" fill="#111">TW 18.62 K</text>
+<text x="40" y="330" font-family="Arial" font-size="12" fill="#555">No freeze, final score, source/property release, protected split scoring, or residual absorption into internal Nu.</text>
+</svg>

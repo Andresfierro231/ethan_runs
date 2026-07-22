@@ -1,0 +1,9 @@
+source_id,path,exists,role
+ag523_readiness,work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/named_pressure_readiness.csv,True,read-only contract source
+ag523_queue,work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/next_pressure_extraction_queue.csv,True,read-only contract source
+minor_loss_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,True,read-only contract source
+tap_centerline_lengths,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/tap_centerline_length_table.csv,True,read-only contract source
+component_k_recomputed,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv,True,read-only contract source
+raw_pressure_two_tap_harvest,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv,True,read-only contract source
+corner_k_gate_matrix,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv,True,read-only contract source
+corner_next_queue,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/next_pressure_evidence_queue.csv,True,read-only contract source

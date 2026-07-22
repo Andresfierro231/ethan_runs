@@ -1,0 +1,4 @@
+item_id,kind,title,source_path,destination_chapter,claim_boundary,status
+S8-T1,table,Wall/test-section candidate gate summary,m3_prior_candidate_comparison.csv,Chapter 7 results; Chapter 6 admission/uncertainty,diagnostic and negative-result evidence only; no admitted closure coefficient,ready_now
+S8-T2,table,AMX/UMX/TSWFC smoke verdicts,smoke_family_verdicts.csv,Chapter 7 predictive-model path,"smoke/bounded evidence, not final scorecard",ready_now
+S8-F1,figure,TW5/TW6 wall/test-section residual atlas,TODO-THESIS-FIGTABLE-S8-WALL-TS-RESIDUAL-ATLAS-2026-07-21,Chapter 7,figure row should render from this package and blocker-audit evidence,ready_for_figtable_row

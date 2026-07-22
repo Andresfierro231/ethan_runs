@@ -1,0 +1,4 @@
+decision_id,question,decision,reason
+HPB-DECISION-001,Can the current hybrid term be used as thesis evidence?,yes_thesis_evidence,No-fit scorecard quantifies a signed section-effective residual and Salt2-frozen diagnostic transfer without protected rows.
+HPB-DECISION-002,Is the current hybrid term candidate-reviewable for freeze/admission?,no_thesis_evidence_only,"Current rows fail component isolation, reverse-flow, same-QOI UQ, and F3/Shah numeric comparison readiness gates."
+HPB-DECISION-003,Can F3/Shah be beaten numerically from current evidence?,not_evaluated,Existing F3/Shah artifacts explicitly withhold comparison until an ordinary admissible F6 candidate exists.

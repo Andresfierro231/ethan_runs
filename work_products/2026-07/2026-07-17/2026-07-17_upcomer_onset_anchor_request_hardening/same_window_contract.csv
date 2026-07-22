@@ -1,0 +1,8 @@
+contract_id,field_group,source_fields,same_window_rule,required_for_request_acceptance,failure_label
+window_identity,retained_time_window_id,all derived metrics,same start/end time and saved-time set must be recorded,yes,blocked_missing_same_window_window_identity
+thermal_drive,wall_bulk_deltaT_or_wall_core_deltaT,T field and wall-band/core/bulk samples,same planes and retained window as RAF/RMF/SVF,yes,blocked_missing_same_window_thermal_drive
+reverse_flow,RAF_RMF_SVF,U field,same plane normals and retained window as Re/Ri/Gz,yes,blocked_missing_same_window_reverse_flow
+regime_coordinates,Re_Pr_Ri_Gr_Ra_Gz,U/T/properties/elevation/reset distance,same property lane and characteristic lengths documented,yes,blocked_missing_same_window_regime_coordinates
+pressure,pressure_metrics,admitted pressure basis or diagnostic pressure with label,same retained window and section definition as onset evidence,yes,blocked_missing_same_window_pressure
+heat_balance,heat_ledger_wallHeatFlux_sources_sinks,wallHeatFlux plus setup source/sink audit,same retained window; signed residual recorded,yes,blocked_missing_same_window_heat_balance
+uncertainty,time_window_uncertainty,window sensitivity or terminal/quasi-steady classification,same QOI set as requested anchor outputs,yes,blocked_missing_same_window_uncertainty

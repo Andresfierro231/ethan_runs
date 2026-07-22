@@ -1,0 +1,6 @@
+check,status,forbidden_input,policy
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,mdot must be solved by coupled model
+no_validation_temperature_runtime,pass_forbidden,validation TP/TW temperatures,post-solve score targets only
+no_realized_wall_heat_runtime,pass_forbidden,realized wallHeatFlux,diagnostic evidence only
+no_imposed_cfd_cooler_duty_runtime,pass_forbidden,imposed CFD cooler duty,cooler model must use setup-only admitted terms
+no_global_multiplier,pass_forbidden,global friction/thermal multiplier,segment-local terms only

@@ -1,0 +1,31 @@
+{
+  "admitted_rows_with_mdot": 3,
+  "case_rows": 56,
+  "corrected_pm5_overlay_rows": 4,
+  "date": "2026-07-14",
+  "external_cfd_modeling_tools_mutated": false,
+  "false_steady_rows": 14,
+  "figures": [
+    "figures/mdot_vs_probe_temperature.svg",
+    "figures/mdot_vs_initial_temperature.svg",
+    "figures/mdot_vs_heater_power.svg",
+    "figures/mdot_vs_cooler_power.svg",
+    "figures/mdot_vs_area_weighted_external_h.svg",
+    "figures/q_perturbation_expected_vs_observed_mdot_move.svg",
+    "figures/bc_role_heat_breakdown_by_case.svg"
+  ],
+  "generated_at": "2026-07-14T17:00:00",
+  "native_cfd_outputs_mutated": false,
+  "paper_conclusion_rows": 6,
+  "paper_hardened_by": "AGENT-359",
+  "paper_outputs": [
+    "paper_ready_analysis.md",
+    "paper_conclusions.csv",
+    "trend_correlation_analysis.csv",
+    "corrected_q_pm5_response_overlay.csv"
+  ],
+  "patch_role_rows": 18,
+  "response_summary_rows": 16,
+  "task": "AGENT-351",
+  "terminal_harvested_split_pending_rows": 4
+}

@@ -1,0 +1,5 @@
+case_id,split_role,lower_leg_ambient_h_W_m2K,lower_leg_ambient_area_m2,lower_leg_ambient_hA_W_K,Ta_K,Tsur_K,emissivity,heater_setup_Q_total_W,ambient_bc_status,source_status
+salt_1,train,3.9157485517,0.016563778042,0.06486630561029023,299.10999999999996,299.10999999999996,0.95,232.30000000000004,setup_known_ambient_wall_recovered,setup_known_candidate_not_runtime_admitted
+salt_2,train,3.945999179,0.016563776,0.06536064649713991,299.19,299.19,0.95,265.7,setup_known_ambient_wall_present,setup_known_candidate_not_runtime_admitted
+salt_3,validation,4.023408039,0.016563776,0.06664260772186246,299.78999999999996,299.78999999999996,0.95,297.5,setup_known_ambient_wall_present,protected_split_provenance_only
+salt_4,holdout,4.129743128,0.016563776,0.06840337623616253,299.96999999999997,299.96999999999997,0.95,337.59999999999997,setup_known_ambient_wall_present,protected_split_provenance_only

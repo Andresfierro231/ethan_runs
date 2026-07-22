@@ -1,0 +1,16 @@
+case_id,patch_name,classification,face_count,area_m2,trusted_patch,seed_boundary_role
+salt_2,ncc_pipeleg_right_01_lower_start,classified_ncc_cap,48,1.30232571146e-05,false,cap
+salt_2,ncc_pipeleg_right_03_upper_end,classified_ncc_cap,48,1.30232571146e-05,false,cap
+salt_2,pipeleg_right_01_lower,trusted_right_leg_wall,12960,0.0211450003657,true,wall
+salt_2,pipeleg_right_02_middle,trusted_right_leg_wall,12960,0.021145000363,true,wall
+salt_2,pipeleg_right_03_upper,trusted_right_leg_wall,12960,0.0211450003644,true,wall
+salt_3,ncc_pipeleg_right_01_lower_start,classified_ncc_cap,48,1.30232571146e-05,false,cap
+salt_3,ncc_pipeleg_right_03_upper_end,classified_ncc_cap,48,1.30232571146e-05,false,cap
+salt_3,pipeleg_right_01_lower,trusted_right_leg_wall,12960,0.0211450003657,true,wall
+salt_3,pipeleg_right_02_middle,trusted_right_leg_wall,12960,0.021145000363,true,wall
+salt_3,pipeleg_right_03_upper,trusted_right_leg_wall,12960,0.0211450003644,true,wall
+salt_4,ncc_pipeleg_right_01_lower_start,classified_ncc_cap,48,1.30232571146e-05,false,cap
+salt_4,ncc_pipeleg_right_03_upper_end,classified_ncc_cap,48,1.30232571146e-05,false,cap
+salt_4,pipeleg_right_01_lower,trusted_right_leg_wall,12960,0.0211450003657,true,wall
+salt_4,pipeleg_right_02_middle,trusted_right_leg_wall,12960,0.021145000363,true,wall
+salt_4,pipeleg_right_03_upper,trusted_right_leg_wall,12960,0.0211450003644,true,wall

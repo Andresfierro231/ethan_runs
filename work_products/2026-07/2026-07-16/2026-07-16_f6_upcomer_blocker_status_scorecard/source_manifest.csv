@@ -1,0 +1,6 @@
+source_id,path,exists,role
+f6_onset_scorecard,work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv,yes,row-level PM5 F6/onset diagnostic scorecard
+f6_fit_candidate_table,work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_fit_candidate_table.csv,yes,current F6 fit candidate status
+pm5_f6_admission_readiness,work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/pm5_f6_admission_readiness.csv,yes,PM5 readiness input from blocker wave
+upcomer_onset_evidence_status,work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/upcomer_onset_evidence_status.csv,yes,current onset evidence points
+upcomer_next_evidence_requirements,work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/next_evidence_requirements.csv,yes,missing evidence requirements

@@ -1,0 +1,3 @@
+priority,next_step,why,success_signal,allowed_now
+1,monitor_existing_s13_pressure_or_terminal_source_jobs,no existing low-reverse ordinary-flow anchor is replacement-ready,finite endpoint pair with RAF/RMF ordinary-flow pass and same-QOI UQ,true
+2,do_not_fit_F6_or_component_K_from_failed_rows,replacement-ready rows = 0,continue fail-closed pressure narrative until exact anchor lands,true

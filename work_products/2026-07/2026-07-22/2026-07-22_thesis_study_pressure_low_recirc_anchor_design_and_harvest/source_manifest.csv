@@ -1,0 +1,12 @@
+source_id,path,used_for,mutation_status
+anchor_inventory_readme,work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/README.md,key counts and decision,not_mutated
+anchor_inventory_gate,work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/anchor_inventory_gate.csv,candidate span inventory and preferred future anchors,not_mutated
+sampled_endpoint_gate,work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/sampled_endpoint_ordinary_flow_gate.csv,RAF/RMF ordinary-flow failures,not_mutated
+alternate_screen_readme,work_products/2026-07/2026-07-22/2026-07-22_pressure_alternate_low_reverse_anchor_screen/README.md,alternate screen counts and decision,not_mutated
+alternate_screen,work_products/2026-07/2026-07-22/2026-07-22_pressure_alternate_low_reverse_anchor_screen/alternate_anchor_screen.csv,existing/future replacement readiness,not_mutated
+disqualification_matrix,work_products/2026-07/2026-07-22/2026-07-22_pressure_alternate_low_reverse_anchor_screen/disqualification_matrix.csv,blocker counts and forbidden shortcuts,not_mutated
+pressure_basis_ladder,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/pressure_basis_ladder.csv,pressure-basis compatibility,not_mutated
+s10_s14_readme,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/README.md,CAND001 retry decision and no-admission boundary,not_mutated
+timeout_gate_matrix,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/timeout_source_ordinary_uq_gate_matrix.csv,terminal endpoint ordinary-flow UQ gates,not_mutated
+endpoint_field_requirements,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/endpoint_field_requirement_table.csv,minimum harvest fields,not_mutated
+scheduler_runbook,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/scheduler_safe_retry_runbook.md,future scheduler-row requirements,not_mutated

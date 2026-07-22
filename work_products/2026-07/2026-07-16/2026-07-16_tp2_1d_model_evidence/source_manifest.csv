@@ -1,0 +1,7 @@
+path,role
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/docs/provisional_sensor_locations.csv,input Fluid provisional sensor registry
+work_products/2026-07/2026-07-15/2026-07-15_sensor_tp2_restore_tw10_exclude/sensor_tp2_tw10_policy_refresh.csv,input TP2/TW10 policy
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv,baseline TP/TW score output
+work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_projected_sensor_registry.csv,generated projected TP2 registry
+work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_sensor_level_evidence.csv,generated TP2 finite-row evidence
+work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/aggregate_rmse_before_after.csv,generated aggregate score impact

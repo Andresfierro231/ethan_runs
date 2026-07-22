@@ -1,0 +1,14 @@
+source_path,use,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/runtime_mode_matrix.csv,Read runtime-mode guardrails for predictive/replay semantics.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/heat_path_evidence_matrix.csv,Read split heat-path evidence and diagnostic target status.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv,"Read residual owner routing, especially upcomer Phase 4 handoff.",read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv,Read explicit qr/storage missing-field state.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/candidate_admission_review.csv,Read wall-circuit admission decisions.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/coupled_delta_vs_m3.csv,Read mdot/TP/TW/all-probe deltas versus M3.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/probe_delta_vs_m3.csv,Read TW5/TW6 and probe-level failure localization.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/runtime_input_audit.csv,Read prior wall-circuit runtime input audit.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_test_section_passive_loss_admission_repair/test_section_candidate_class_admission.csv,Read test-section passive-loss class admission results.,read_only
+work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv,Read setup-only heat-loss candidate q-loss scores.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/thermal_model_slot_admission.csv,Read segment thermal slot admission status.,read_only
+work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/wall_test_section_scorecard.csv,Read boundary submodel wall/test-section status.,read_only
+work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/summary.json,Read source/property enforcement summary.,read_only

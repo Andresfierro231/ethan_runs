@@ -1,0 +1,12 @@
+source_id,path,use,mutation_status
+SRC-001,work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/README.md,negative-K dispatch summary,read_only
+SRC-002,work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/case_memo.md,chapter-ready negative result framing,read_only
+SRC-003,work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/evidence_ledger.csv,residual values and route counts,read_only
+SRC-004,work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/model_performance_summary.csv,diagnostic transfer summary,read_only
+SRC-005,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/README.md,no-fit bakeoff interpretation,read_only
+SRC-006,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/no_fit_performance_table.csv,Salt2-frozen max error and protected-row count,read_only
+SRC-007,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/residual_ownership_table.csv,pressure residual ownership evidence,read_only
+SRC-008,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/baseline_comparison_provenance.csv,F3/Shah nonnumeric status,read_only
+SRC-009,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,Chapter 6 insertion target,mutated_documentation_only
+SRC-010,reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,Chapter 7 insertion target,mutated_documentation_only
+SRC-011,reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md,figure/table ledger insertion target,mutated_documentation_only

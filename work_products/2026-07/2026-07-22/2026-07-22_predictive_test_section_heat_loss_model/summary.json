@@ -1,0 +1,26 @@
+{
+  "counts": {
+    "end_to_end_diagnostic_comparison.csv": 15,
+    "runtime_input_audit.csv": 6,
+    "setup_candidate_summary.csv": 5,
+    "setup_loss_candidates.csv": 15,
+    "source_manifest.csv": 4
+  },
+  "date": "2026-07-22",
+  "decision": {
+    "admitted_candidate_count": 0,
+    "best_setup_only_physical_candidates": [
+      "TS1_salt2_fit_hA_constant_drive_deltaT",
+      "TS2_salt2_fit_constant_loss_W"
+    ],
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "decision": "keep_open",
+    "evidence": "work_products/2026-07/2026-07-22/2026-07-22_predictive_test_section_heat_loss_model/setup_candidate_summary.csv",
+    "generated_at": "2026-07-22T18:46:15.981047+00:00",
+    "next_required_action": "Run or implement solver-coupled M3+TS with segment external-boundary/resistance-network drive and score mdot plus TP/TW on Salt3/Salt4.",
+    "task": "TODO-PREDICT-TEST-SECTION-HEAT-LOSS",
+    "why": "No setup-only physical test-section candidate is admitted: Salt2-fit hA/constant-loss forms underpredict held-out heat loss and no solver-coupled M3+TS score exists for them."
+  },
+  "output_dir": "work_products/2026-07/2026-07-22/2026-07-22_predictive_test_section_heat_loss_model",
+  "task": "TODO-PREDICT-TEST-SECTION-HEAT-LOSS"
+}

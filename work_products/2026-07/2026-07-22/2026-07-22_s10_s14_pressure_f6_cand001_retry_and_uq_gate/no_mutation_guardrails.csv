@@ -1,0 +1,17 @@
+guardrail,value,status,reason
+native_output_mutation,false,pass,gate/runbook only; no launch or admission
+registry_or_admission_mutation,false,pass,gate/runbook only; no launch or admission
+scheduler_action,false,pass,gate/runbook only; no launch or admission
+solver_or_postprocessing_or_sampler_launched,false,pass,gate/runbook only; no launch or admission
+validation_holdout_external_rows_scored,0,pass,gate/runbook only; no launch or admission
+fitting_or_model_selection,false,pass,gate/runbook only; no launch or admission
+f6_fit_performed,false,pass,gate/runbook only; no launch or admission
+component_k_admitted,false,pass,gate/runbook only; no launch or admission
+cluster_k_admitted,false,pass,gate/runbook only; no launch or admission
+clipped_k,false,pass,gate/runbook only; no launch or admission
+hidden_global_multiplier,false,pass,gate/runbook only; no launch or admission
+s11_s15_s6_trigger,false,pass,gate/runbook only; no launch or admission
+fluid_or_external_repo_edited,false,pass,gate/runbook only; no launch or admission
+thesis_current_file_edit,false,pass,gate/runbook only; no launch or admission
+blocker_register_change,false,pass,gate/runbook only; no launch or admission
+mixed_basis_promotion,false,pass,gate/runbook only; no launch or admission

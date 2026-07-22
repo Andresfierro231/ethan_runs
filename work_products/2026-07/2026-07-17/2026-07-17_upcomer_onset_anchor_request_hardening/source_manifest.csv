@@ -1,0 +1,8 @@
+source_id,path,exists,use
+prior_anchor_matrix,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/upcomer_onset_anchor_matrix.csv,true,completed design-only upcomer onset anchor matrix
+prior_required_outputs,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/required_output_contract.csv,true,prior required-output contract and admission roles
+evidence_gap_queue,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/evidence_gap_queue.csv,true,open blocker requirements for upcomer-onset-data-sparsity
+anchor_inventory,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/anchor_inventory.csv,true,observed recirculating rows and current Re/Ri/reverse metrics
+same_window_gaps,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress/same_window_field_gap_table.csv,true,missing same-window field audit
+recirc_required_outputs,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/required_output_contract.csv,true,recirculation anchor field contract
+recirc_proposed_matrix,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv,true,original anchor case design provenance

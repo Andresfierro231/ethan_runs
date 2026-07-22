@@ -1,0 +1,6 @@
+claim,allowed,basis
+Direct target-window Q_wall_W exists for Salt2/Salt3/Salt4,true,prior exact-pressure/Qwall package and N2 package
+Target-minus adjacent rows now exist for four requested S13 QOIs,true,12 sampled target-minus rows
+Same-QOI neighbor-window UQ is complete,false,0 target-plus rows; latest stored target directories
+Move to mesh/GCI UQ or production harvest,false,neighbor-window UQ gate failed closed
+Admit an ordinary or exchange-cell coefficient,false,no same-QOI UQ-ready labels and no production harvest release

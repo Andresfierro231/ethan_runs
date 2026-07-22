@@ -1,0 +1,6 @@
+path,role,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_1d_recirculation_switch_dry_contract/recirculation_switch_lane_contract.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_litrev_final_uc01_uc08_thesis_gap_crosswalk/uc01_uc08_thesis_gap_crosswalk.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation/summary.json,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/summary.json,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_1d_final_reverse_flow_switching_calibration_design/README.md,created,mutated_by_task

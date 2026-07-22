@@ -1,0 +1,81 @@
+{
+  "task": "TODO-MF17-SAME-QOI-WALL-CORE-EXCHANGE-UQ-EXECUTION-2026-07-22",
+  "date": "2026-07-22",
+  "generated_at": "2026-07-22T10:24:00-05:00",
+  "role": "Hydraulics / Thermal-modeling / Uncertainty / Forward-pred / Implementer / Tester / Writer / Reviewer",
+  "objective": "Synthesize executed same-QOI temporal UQ for Qwall, exchange, recirculation, and wall-core contrast triplets.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    "tools/analyze/build_mf17_same_qoi_wall_core_exchange_uq_execution.py",
+    "tools/analyze/test_mf17_same_qoi_wall_core_exchange_uq_execution.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/case_triplet_temporal_uq_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/qoi_temporal_uq_execution_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/d3_mechanism_uq_impact_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/heat_flow_match_caveat.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/production_admission_boundary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/next_study_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/thesis_wall_core_exchange_uq_insert.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/source_manifest.csv",
+    ".agent/status/2026-07-22_TODO-MF17-SAME-QOI-WALL-CORE-EXCHANGE-UQ-EXECUTION-2026-07-22.md",
+    ".agent/journal/2026-07-22/mf17-same-qoi-wall-core-exchange-uq-execution.md",
+    "operational_notes/07-26/22/2026-07-22_MF17_SAME_QOI_WALL_CORE_EXCHANGE_UQ_EXECUTION.md",
+    "imports/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_same_qoi_neighbor_uq_execution/**",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf15_runtime_wall_profile_basis_gate/**",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/**",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files",
+    "thesis current/LaTeX files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "scientific_result": {
+    "decision": "same_qoi_wall_core_exchange_temporal_uq_executed_no_admission",
+    "qoi_label_count": 4,
+    "case_temporal_uq_rows": 12,
+    "same_qoi_temporal_uq_executed_qois": 4,
+    "mesh_gci_gate_input_ready": true,
+    "mesh_gci_uq_executed": false,
+    "heat_flow_match_ready_rows": 0,
+    "production_harvest_allowed": false,
+    "admission_allowed": false,
+    "coefficient_admission": false,
+    "source_property_release": false,
+    "qwall_production_release": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_mf17_same_qoi_wall_core_exchange_uq_execution",
+      "result": "pass_5_tests"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_mf16_source_property_exact_fields_release_candidate tools.analyze.test_mf17_same_qoi_wall_core_exchange_uq_execution",
+      "result": "pass_10_tests"
+    }
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_action": false,
+    "sampler_or_harvest_launched": false,
+    "active_medium_fine_sampler_mutated": false,
+    "fluid_or_external_repo_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_index_refreshed": false,
+    "thesis_current_or_latex_mutated": false
+  }
+}

@@ -10,6 +10,9 @@ provenance:
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_enrichment_writing_pass/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/README.md
 tags: [thesis-section, current-section, csem, fluid-walls, model-form]
 related:
   - reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md
@@ -96,6 +99,35 @@ coefficients. The future throughflow-plus-recirculation lane remains a variable
 contract: `V_recirc`, `mdot_exchange`, `tau_recirc`, `T_main/T_recirc`,
 same-window pressure/thermal residuals, and same-QOI uncertainty must exist
 before an exchange cell can be calibrated or scored.
+
+## Seeded Exchange-CV Path
+
+The next upcomer model-form step is now more concrete than a qualitative
+recirculation caveat. The S13 seeded surface/input manifest releases an
+input-ready exchange-CV scaffold for Salt2, Salt3, and Salt4: each case has
+`38880` seeded CV cells, `38880` seeded internal interface faces, `38880`
+trusted wall faces, a released wall/core band, a released normal convention,
+an existing cell VTK, an existing cell-volume CSV, and static source/sink
+context. This is enough to define where later sampled exchange variables will
+attach in the `fluid+walls` architecture.
+
+The scaffold is still not sampler readiness or closure admission. The manifest
+reports `0/3` sampler-manifest-ready rows because raw sampled interface/wall
+VTKs, `Q_wall_W`, same-window sampler outputs, and same-QOI uncertainty remain
+absent. The follow-on S13 heat-path lane release also fail-closes the current
+source-side release: it records `6` heat-path lanes and upstream surface VTK
+validation, but `0` `Q_wall_W` release rows, `0` source-side heat-path release
+rows, `0` same-window thermal release rows, and `0` sampler
+refresh/harvest/UQ allowed rows. The model-form conclusion is therefore a
+clean interface, not an admitted exchange cell.
+
+The matched Salt upcomer velocity figures should be paired with this scaffold.
+The four-case `side_z` image package supplies both signed `U_y` arrows and
+resultant `|U|` arrows using common color and glyph ranges. It shows why the
+upcomer needs a throughflow-plus-exchange lane and why ordinary single-stream
+upcomer `Nu`, `f_D`, or `K` language remains disabled. The visual evidence is
+diagnostic only; it may motivate the exchange-CV architecture but may not be
+used as a runtime input or coefficient.
 
 ## Fluid Energy Balance
 
@@ -260,6 +292,7 @@ Use the thesis diagram package as follows:
 | `F01_fluid_walls_loop_segment_atlas.svg` | Open the chapter after the model definition. |
 | `F02_segment_local_ledger_inset.svg` | Place near the pressure and thermal equations. |
 | `F03_upcomer_hybrid_schematic.svg` | Reference when explaining recirculation flags and blocked ordinary upcomer coefficients. |
+| Matched Salt `side_z` upcomer velocity panels | Place immediately after the seeded exchange-CV path, or pair with `F03` as the CFD visual companion. Use the dated work-product package path and caption as diagnostic model-form evidence only. |
 
 ## Chapter-Ready Wording
 

@@ -1,0 +1,24 @@
+{
+  "class_counts": {
+    "current_recirculation_diagnostic": 12,
+    "pending_ordinary_anchor_candidate": 8
+  },
+  "current_ordinary_anchor_rows": 0,
+  "current_recirculation_diagnostic_rows": 12,
+  "external_fluid_edit": false,
+  "f6_friction_re_correction_status": "open_narrowed_by_anchor_plan",
+  "fitting_performed": false,
+  "gate_rows": 5,
+  "named_ordinary_slot_candidates": 6,
+  "named_pressure_slot_rows": 33,
+  "native_solver_outputs_mutated": false,
+  "next_action_rows": 4,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_f6_nonrecirculating_pressure_anchor_plan",
+  "pending_anchor_candidate_rows": 8,
+  "pm5_current_rows": 12,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 5,
+  "scheduler_action": false,
+  "scientific_admission_change": "none",
+  "task": "TODO-F6-NONRECIRC-PRESSURE-ANCHOR-PLAN"
+}

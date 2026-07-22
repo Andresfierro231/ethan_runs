@@ -1,0 +1,21 @@
+{
+  "external_fluid_mutated": false,
+  "f6_blocker_decision": "keep_open",
+  "f6_decision_counts": {
+    "diagnostic_only_keep_f3_production": 12
+  },
+  "f6_fit_admissible_rows": 0,
+  "f6_rows": 12,
+  "generated_at": "2026-07-16T21:54:12+00:00",
+  "native_solver_outputs_mutated": false,
+  "queue_rows": 5,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "task": "AGENT-464",
+  "upcomer_blocker_decision": "keep_open",
+  "upcomer_classification_counts": {
+    "observed_recirculation_only": 3
+  },
+  "upcomer_points": 3,
+  "upcomer_single_stream_fit_rows": 0
+}

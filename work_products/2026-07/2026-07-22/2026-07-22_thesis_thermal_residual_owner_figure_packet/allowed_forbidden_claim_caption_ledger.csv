@@ -1,0 +1,5 @@
+artifact,allowed_claim,forbidden_claim
+residual_owner_waterfall.csv,"thermal residual ownership is split across TP projection, wall shape, source placement, and passive loss evidence",thermal closure is admitted
+heat_path_source_sink_table.csv,setup/source-sink values are documented and diagnostic,realized heat losses are runtime inputs
+d2_d3_d4_diagnostic_rmse_table.csv,diagnostic RMSE reductions motivate model-form work,D2/D3/D4 are frozen predictive candidates
+passive_hA_sensitivity_panel.csv,passive hA perturbations move residuals,global hA multiplier is selected or fitted

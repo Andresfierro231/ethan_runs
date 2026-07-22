@@ -1,0 +1,7 @@
+artifact,role,mutation_status,path
+README.md,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/README.md
+sign_radiation_nu_policy.csv,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/sign_radiation_nu_policy.csv
+README.md,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/README.md
+blocked_missing_metrics.csv,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv
+README.md,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md
+decision_table.csv,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/decision_table.csv

@@ -1,0 +1,10 @@
+source_id,path,role,key_evidence
+S1,work_products/2026-07/2026-07-20/2026-07-20_amx1_axial_mixing_dry_contract/README.md,prior_contract,Original AMX1 API handoff required disabled defaults validators conservative adjacent-pair exchange ledgers config round-trip docs and focused tests.
+S2,work_products/2026-07/2026-07-20/2026-07-20_amx1_axial_mixing_dry_contract/fluid_patch_contract.csv,prior_contract_detail,Exact external Fluid patch steps requested by the dry contract.
+S3,work_products/2026-07/2026-07-20/2026-07-20_amx1_salt1_4_bounded_comparison_intake/summary.json,tested_form_performance,Salt1-Salt4 bounded AMX1 comparison was diagnostic-only and worsened core temperature metrics.
+S4,work_products/2026-07/2026-07-20/2026-07-20_amx1_localized_form_smoke_intake/summary.json,tested_form_performance,Salt2 localized upper/lower forms were runtime-clean but no form was ready for Salt1-Salt4 expansion.
+S5,work_products/2026-07/2026-07-20/2026-07-20_amx1_lower_multiplier_smoke_intake/summary.json,tested_form_performance,Salt2 lower-multiplier rows were runtime-clean but all AMX1 rows worsened all-probe and TP RMSE.
+S6,work_products/2026-07/2026-07-21/2026-07-21_amx1_gradient_clipped_smoke_intake/summary.json,tested_form_performance,Gradient clipping reduced regression magnitude but did not pass paired progression gates.
+S7,work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/summary.json,tested_form_performance,Parent-cell physics revision was runtime-clean but still worsened all-probe and TP RMSE.
+S8,operational_notes/maps/forward-predictive-model.md,current_map,Current map says not to expand AMX1 without new source evidence and to shift priority after failed parent-cell revision.
+S9,work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/README.md,current_blocker_gate,D3 remains diagnostic wall-shape signal only; S13 same-QOI evidence is not yet admitted.

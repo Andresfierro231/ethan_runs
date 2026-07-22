@@ -1,0 +1,12 @@
+source_path,use,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv,Read heat-loss residual ownership and upcomer residuals.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/phase3_release_gate.csv,Read negative wall/test-section score-gate result.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_3_wall_test_section_model_score/phase4_handoff_queue.csv,Read Phase 4 handoff queue.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,Read matched-plane RAF/RMF/SVF and missing-field state.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv,Read terminal/sampling readiness by source family.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/cfd_evidence_requirements.csv,Read exchange-cell evidence requirements.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_gated_single_stream_developing_branch/single_stream_developing_branch_gate.csv,Read ordinary single-stream reopening candidates.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/recirculation_feature_scorecard.csv,Read recirculation feature and wall/bulk drive diagnostics.,read_only
+work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/upcomer_admission_decision.csv,Read upcomer ordinary/hybrid admission decisions.,read_only
+work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_anchor_design/admission_gate_contract.csv,Read anchor/onset gate status.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,Read same-QOI UQ admission status.,read_only

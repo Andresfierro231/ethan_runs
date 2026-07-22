@@ -1,0 +1,28 @@
+{
+  "admission_decision_rows": 8,
+  "assumption_rows": 10,
+  "blocker_rows": 6,
+  "date": "2026-07-14",
+  "decision": "current_fit_admissible_internal_Nu_rows_remain_zero",
+  "fit_admissible_internal_nu_rows": 0,
+  "generated_at": "2026-07-14T14:00:14",
+  "next_action_rows": 7,
+  "open_blockers_covered": [
+    "closure-qoi-mesh-gci",
+    "thermal-cfd-1d-parity",
+    "predictive-heater-cooler-wall-submodels",
+    "upcomer-onset-data-sparsity",
+    "fluid-external-boundary-api-gap",
+    "f6-friction-re-correction"
+  ],
+  "outputs": [
+    "README.md",
+    "assumptions_methods_process.csv",
+    "blocker_progress_matrix.csv",
+    "admission_decision_table.csv",
+    "next_workstream_actions.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "task": "AGENT-345"
+}

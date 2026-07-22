@@ -1,0 +1,6 @@
+item_id,statement,impact
+sign_convention,Positive setup Q or source flux heats the fluid; negative setup Q or source flux cools the fluid.,prevents mislabeling cooler/passive loss as an internal Nu correction with the wrong sign
+setup_Q_not_runtime_release,Setup-known Q values are evidence for sign and magnitude envelopes only; runtime source/property release remains blocked.,"no train smoke, validation, holdout, or admission can be claimed from this gate"
+wallHeatFlux_forbidden,Realized CFD wallHeatFlux is a diagnostic output and remains forbidden as a runtime input.,prevents leakage from target fields into a predictive 1D model
+D2_D3_D4_are_diagnostic,D2/D3/D4 support missing thermal-development/source-placement structure but do not release a correction.,"direction-of-effect can be documented, but no F6/F3/scored closure follows here"
+upcomer_guard,Upcomer/test-section heat must be handled with recirculation and source-side guards.,ordinary single-stream upcomer Nu/f_D/K remains disabled until MF09-type evidence passes

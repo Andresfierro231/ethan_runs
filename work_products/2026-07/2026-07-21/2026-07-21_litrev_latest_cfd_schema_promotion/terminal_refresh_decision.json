@@ -1,0 +1,16 @@
+{
+  "task": "TODO-LITREV-LATEST-CFD-SCHEMA-PROMOTION",
+  "snapshot_time": "2026-07-21T11:43:00-05:00",
+  "scheduler_rows": 3,
+  "source_case_rows": 9,
+  "running_jobs": 3,
+  "terminal_ready_jobs": 0,
+  "terminal_ready_cases": 0,
+  "cand001_sampler_release": false,
+  "latest_schema_promotion_release": false,
+  "pm10_superseded_context_rows": 1,
+  "admission_changed": false,
+  "solver_or_sampler_launched": false,
+  "native_outputs_mutated": false,
+  "recommended_next_action": "wait for 3299610/3299620/3307441 terminal state; then claim exact harvest/sampler rows only after success"
+}

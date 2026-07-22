@@ -1,0 +1,7 @@
+artifact,role,mutation,notes
+work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/source_sink_admissibility_matrix.csv,read_only_input,false,parent forbidden/source-sink state
+work_products/2026-07/2026-07-21/2026-07-21_salt1_train_external_bc_recovery_freeze_gate/document_only_source_sink_rows.csv,read_only_input,false,document-only rows and source paths
+jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/0/T,read_only_input,false,setup Q and external BC metadata
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/T,read_only_input,false,setup Q and external BC metadata
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/0/T,read_only_input,false,setup Q and external BC metadata
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/0/T,read_only_input,false,setup Q and external BC metadata

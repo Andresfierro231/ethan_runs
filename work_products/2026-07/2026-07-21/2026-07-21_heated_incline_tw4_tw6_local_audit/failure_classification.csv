@@ -1,0 +1,7 @@
+candidate_failure_mode,classification,evidence,decision
+mapping_issue,secondary_caveat,TW4-TW6 coordinates are bounded/not exact,not primary because residual is systematic and heated-incline-local
+unit_or_area_issue,not_primary,area/h/emissivity/Ta/Tsur are finite and internally consistent across Salt1-Salt4,no evidence of unit flip or area-order error
+missing_source_term,primary,heater setup Q exists but heater source is document-only in Fluid runtime path,highest-priority next implementation gate
+external_bc_metadata_issue,not_primary_for_ambient_wall,ambient wall metadata is present and legal,current ambient-only path remains thermally weak
+model_form_issue,secondary_primary_after_source_gate,S8 candidate families failed and TW5/TW6 require energy-conserving stratification/exchange treatment,test after legal source-term inclusion
+inconclusive,false,current evidence supports missing source first and model form second,no broad tuning or admission

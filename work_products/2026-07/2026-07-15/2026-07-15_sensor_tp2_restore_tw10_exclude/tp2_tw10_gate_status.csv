@@ -1,0 +1,5 @@
+gate,status,detail
+TP2_source_segment_named,pass,right_downcomer_bottom_horizontal_junction
+TP2_runtime_input_forbidden,pass,TP2 remains validation/scoring target only.
+TP2_finite_prediction_before_aggregate,pending,Aggregate promotion requires finite prediction rows from the scoring model.
+TW10_excluded_until_active_hx_shell_state,pass,TW10 is a cooling-jacket shell surrogate; current 1D model does not emit the required active-HX shell temperature.

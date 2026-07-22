@@ -1,0 +1,31 @@
+{
+  "task": "TODO-THESIS-COORDINATOR-CFD-METHODOLOGY-NOTICE-2026-07-22",
+  "task_id": "TODO-THESIS-COORDINATOR-CFD-METHODOLOGY-NOTICE-2026-07-22",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-COORDINATOR-CFD-METHODOLOGY-NOTICE-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-coordinator-cfd-methodology-notice.md",
+    "imports/2026-07-22_thesis_coordinator_cfd_methodology_notice.json",
+    "operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md",
+    "reports/thesis_dossier/README.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_gap_board_refresh/README.md",
+    ".agent/BOARD.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_admission_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_repo_mutated": false,
+  "thesis_latex_body_mutated": false,
+  "source_property_release": false,
+  "qwall_release_or_admission": false,
+  "candidate_admission": false,
+  "generated_index_refreshed": false
+}

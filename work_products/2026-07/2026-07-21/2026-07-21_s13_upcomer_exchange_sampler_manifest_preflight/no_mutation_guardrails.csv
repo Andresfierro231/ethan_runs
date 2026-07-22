@@ -1,0 +1,7 @@
+guard_id,status,policy
+native_solver_output_mutated,false,read existing task-owned artifacts only
+registry_or_admission_mutated,false,readiness package does not update registry/admission
+scheduler_action,false,"no sbatch, srun, solver, sampler, or harvest launch"
+production_harvest_launched,false,harvest decision remains do_not_run
+exchange_cell_admission,false,no exchange-cell coefficient or S11 admission claim
+residual_absorbed_into_internal_Nu,false,thermal residual remains outside internal Nu

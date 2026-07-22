@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build AGENT-458 predictive test-section heat-loss admission package."""
+"""Build the current predictive test-section heat-loss admission package."""
 
 from __future__ import annotations
 
@@ -11,10 +11,10 @@ from pathlib import Path
 from typing import Any, Iterable
 
 
-TASK = "AGENT-458"
-DATE = "2026-07-16"
+TASK = "TODO-PREDICT-TEST-SECTION-HEAT-LOSS"
+DATE = "2026-07-22"
 ROOT = Path(__file__).resolve().parents[2]
-OUT_REL = Path("work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model")
+OUT_REL = Path("work_products/2026-07/2026-07-22/2026-07-22_predictive_test_section_heat_loss_model")
 OUT = ROOT / OUT_REL
 
 PARITY = ROOT / "work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study"
@@ -456,7 +456,7 @@ related:
 
 # Predictive Test-Section Heat-Loss Model Admission
 
-AGENT-458 implements the first setup-only test-section heat-loss admission screen for `TODO-PREDICT-TEST-SECTION-HEAT-LOSS`.
+This package implements the current setup-only test-section heat-loss admission screen for `TODO-PREDICT-TEST-SECTION-HEAT-LOSS`.
 
 ## Decision
 

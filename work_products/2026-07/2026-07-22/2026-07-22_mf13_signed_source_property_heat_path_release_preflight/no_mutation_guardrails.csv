@@ -1,0 +1,12 @@
+guardrail,occurred
+Fluid solve launched,False
+scheduler action,False
+native CFD/OpenFOAM output mutation,False
+registry/admission mutation,False
+source/property release,False
+Qwall release,False
+validation scoring,False
+holdout scoring,False
+external-test scoring,False
+fitting/tuning/model selection,False
+residual absorbed into internal Nu,False

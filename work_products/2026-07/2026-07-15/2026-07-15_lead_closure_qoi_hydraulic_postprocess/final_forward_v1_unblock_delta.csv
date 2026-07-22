@@ -1,0 +1,3 @@
+model_or_gate,before_agent409,after_agent409,delta,why
+forward_v1_final,blocked_no_go_final_forward_v1_not_admitted,blocked_no_go_final_forward_v1_not_admitted,diagnostic_evidence_added_no_fit_admission,Closure-QOI mesh/GCI has no publication-ready row and internal-Nu remains zero fit-admissible.
+hydraulic_test_section_complex,preflight_only_blocked,diagnostic_reduced_pressure_two_tap_rows_landed,3 diagnostic rows parsed,"Useful for pressure-scale audit, not enough for universal K fitting."

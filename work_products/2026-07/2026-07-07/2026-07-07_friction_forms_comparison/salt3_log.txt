@@ -1,0 +1,7 @@
+[Salt 3] ins=0.30 in  CFD mdot=0.014977 kg/s
+  F1                      mdot=0.017406  err=+16.21%  T=467.3 K  dp_tot=42.0 Pa
+  *** VERIFY PASS: F1 err=+16.215% (ref=+16.215%, delta=0.000%)
+  F3_hagenbach            mdot=0.015979  err=+6.69%  T=467.3 K  dp_tot=45.8 Pa
+  F3_shah_apparent        mdot=0.015476  err=+3.33%  T=467.4 K  dp_tot=47.3 Pa
+  F4_leg_class            mdot=0.011447  err=-23.57%  T=467.6 K  dp_tot=64.0 Pa
+[Salt 3] Wrote /scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-07_friction_forms_comparison/partial_salt_3.csv

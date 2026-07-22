@@ -1,0 +1,10 @@
+artifact,path,use
+agent483_patch_heat_ledger,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_patch_heat_ledger.csv,primary val_salt2 patch heat external targets
+agent483_section_reconciliation,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_section_reconciliation.csv,section heat and closure residuals
+agent483_junction_split,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_junction_split_heat_ledger.csv,junction/stub heat split targets
+agent483_training_gate,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_training_admission_gate.csv,external-test policy guardrail
+agent483_pressure_map,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/val_salt2_pressure_map.csv,streamwise pressure map target rows
+agent483_corner_k_table,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/pressure_corner_k_admission_table.csv,"pressure corner K remains diagnostic, not admitted"
+agent483_summary,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock/summary.json,row counts and residual summary
+agent393_sensor_policy,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_hydraulic_unblock_plan_execution/sensor_map_policy_refresh.csv,TP/TW score/validation policy rows
+agent393_closeout,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_plan_implementation_closeout/verified_artifacts.csv,sensor policy provenance verification

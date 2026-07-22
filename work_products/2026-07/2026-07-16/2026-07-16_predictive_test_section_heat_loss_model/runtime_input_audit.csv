@@ -1,0 +1,7 @@
+audit_id,gate,applies_to,observed_state,forbidden_runtime_input
+R1_setup_inputs_for_TS1_TS2,pass,TS1_salt2_fit_hA_constant_drive_deltaT;TS2_salt2_fit_constant_loss_W,Candidates use setup hA/area/h/Ta/Tsur/emissivity and a Salt2-trained scalar only for prediction.,"validation/holdout temperatures, realized CFD wallHeatFlux, CFD mdot"
+R2_training_target_is_not_runtime_input,pass,TS1_salt2_fit_hA_constant_drive_deltaT;TS2_salt2_fit_constant_loss_W,Salt2 realized external loss is used only to fit one scalar on the training split; Salt3/Salt4 realized losses are scoring targets only.,validation/holdout realized external loss
+R3_zero_test_section_is_baseline_only,pass_with_admission_exclusion,TS0_no_test_section_loss,The no-loss form has existing M3 diagnostic scores but cannot remove a blocker whose requirement is a physical test-section heat-loss model.,none
+R4_legacy_source_not_passive_loss,fail_for_admission,TS3_legacy_37W_source_as_loss,"The 37 W value is documented as an imposed source, not an admitted passive loss model.",misclassified imposed CFD source
+R5_realized_loss_upper_bound_is_leakage,fail_for_admission,TS4_realized_external_loss_upper_bound,Using realized external loss reproduces targets by definition and is retained only as an upper-bound diagnostic.,realized CFD test-section heat loss
+R6_no_solver_coupled_candidate_run_yet,incomplete_for_admission,TS1_salt2_fit_hA_constant_drive_deltaT;TS2_salt2_fit_constant_loss_W,No existing Fluid/1D run couples these predicted test-section losses into an M3+TS mdot/TP/TW scorecard.,not applicable

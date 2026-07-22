@@ -1,0 +1,10 @@
+candidate_input,field_allowed,runtime_decision,allowed_value_source,claim_boundary
+cooling_branch:cooler,False,forbidden,,no source/sink runtime admission from Phase I
+lower_leg:heater,False,forbidden,,no source/sink runtime admission from Phase I
+upcomer:test_section,False,forbidden,,no source/sink runtime admission from Phase I
+cooling_branch:cooler,False,forbidden,,no source/sink runtime admission from Phase I
+lower_leg:heater,False,forbidden,,no source/sink runtime admission from Phase I
+upcomer:test_section,False,forbidden,,no source/sink runtime admission from Phase I
+cooling_branch:cooler,False,forbidden,,no source/sink runtime admission from Phase I
+lower_leg:heater,False,forbidden,,no source/sink runtime admission from Phase I
+upcomer:test_section,False,forbidden,,no source/sink runtime admission from Phase I

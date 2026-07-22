@@ -1,0 +1,22 @@
+{
+  "allowed_runtime_mode_rows": 4,
+  "blocker_register_mutated": false,
+  "closure_admission_changed": false,
+  "document_only_source_sink_rows": 9,
+  "external_fluid_edit": false,
+  "fitting_or_model_selection_performed": false,
+  "fluid_handoff_stub_rows": 3,
+  "generated_at_utc": "2026-07-21T17:06:50.388319+00:00",
+  "generated_docs_index_mutated": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "predictive_passive_external_rows": 15,
+  "registry_or_admission_mutated": false,
+  "runtime_dictionary_rows": 24,
+  "runtime_leakage_audit_rows": 4,
+  "scheduler_action": false,
+  "schema_rows": 18,
+  "solver_or_postprocessing_launched": false,
+  "task": "TODO-FLUID-EXTERNAL-BC-DICT",
+  "validation_case_rows": 5
+}

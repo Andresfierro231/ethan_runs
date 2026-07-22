@@ -1,0 +1,7 @@
+source_id,path,use
+setup_external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,role rows and parent external-boundary setup maps
+agent458_static_screen,work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv,held-out heat-loss gate carry-forward
+m2_m3_comparators,work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/case_mode_error_matrix.csv,diagnostic M2/M3 mdot and temperature comparator rows
+fluid_contract,work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/fluid_variant_contract.csv,baseline external-boundary API evidence
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,role-local external-boundary implementation
+fluid_tests,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,role-row and external-boundary contract validation

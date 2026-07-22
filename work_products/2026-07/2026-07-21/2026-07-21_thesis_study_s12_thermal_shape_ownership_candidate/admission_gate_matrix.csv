@@ -1,0 +1,7 @@
+gate_id,gate,candidate_id,status,evidence,blocks_s11,required_next
+S12-G1,residual_owner_identified,S12-HIAX1,pass,TW5/TW6 residual atlas points away from passive selectors and toward heated-incline/upcomer exchange thermal shape.,false,none
+S12-G2,runtime_legality,S12-HIAX1,pass_contract_only,"Contract forbids CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, and residual fill.",false,preserve in implementation
+S12-G3,finite_candidate_score,S12-HIAX1,fail,No full M3+candidate score exists for mdot/TP/TW/all-probe/residual effects.,true,implement a legal setup/scoring row after source fields exist
+S12-G4,exchange_state_evidence,S12-HIAX1,fail,"V_recirc, mdot_exchange, tau_recirc, paired thermal state, pressure residual, and energy residual are not harvested/admitted.",true,S13 geometry/sampler/UQ prerequisites
+S12-G5,same_qoi_uq,S12-HIAX1,fail,Same-QOI neighboring-window and mesh/GCI evidence are absent for this candidate.,true,same-QOI UQ package after finite candidate score
+S12-G6,source_property_release,S12-HIAX1,fail,"Architecture is source-backed but no source-bounded coefficient, property sensitivity, or split release exists.",true,S11 only after one scored candidate exists

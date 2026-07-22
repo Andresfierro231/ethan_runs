@@ -1,0 +1,14 @@
+guardrail,value,status,reason
+native_output_mutation,false,pass,task is synthesis-only
+registry_or_admission_mutation,false,pass,task is synthesis-only
+scheduler_action,false,pass,task is synthesis-only
+solver_sampler_harvest_uq_launched,false,pass,task is synthesis-only
+Fluid_or_external_repo_mutation,false,pass,task is synthesis-only
+thesis_current_file_edit,false,pass,task is synthesis-only
+validation_holdout_external_rows_scored,0,pass,task is synthesis-only
+fitting_or_model_selection,false,pass,task is synthesis-only
+source_property_release,false,pass,task is synthesis-only
+coefficient_admission_allowed,false,pass,task is synthesis-only
+s11_s12_s13_s15_s6_trigger,false,pass,task is synthesis-only
+runtime_temperature_input_release,false,pass,task is synthesis-only
+residual_absorbed_into_internal_nu,false,pass,task is synthesis-only

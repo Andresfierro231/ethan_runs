@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-15T23:10:01.920545+00:00",
+  "m3ts_rows": 3,
+  "matched_plane_preflight_failures": 0,
+  "matched_plane_preflight_rows": 4,
+  "recommended_dependency": "afterok:3295438",
+  "sbatch_scripts": 3,
+  "study": "m3ts",
+  "task": "AGENT-439",
+  "val_salt2_rows": 1
+}

@@ -1,0 +1,22 @@
+{
+  "ablation_rows": 6,
+  "candidate_freeze_allowed": false,
+  "decision": "hierarchy_ablation_ladder_ready_no_freeze_no_score",
+  "figure_caption_target_rows": 3,
+  "final_predictive_score_values": 0,
+  "fit_or_model_selection": false,
+  "fluid_or_external_edit": false,
+  "freeze_gate_rows": 6,
+  "generated_at_utc": "2026-07-22T14:50:28.756725+00:00",
+  "hierarchy_rows": 7,
+  "native_output_mutation": false,
+  "recommended_next_executable_unlock": "pressure_ladder_streamwise_maps_or_physical_bulk_to_TP_offset_proof_after_exact_row_claim",
+  "registry_or_admission_mutation": false,
+  "residual_absorbed_into_internal_nu": false,
+  "scheduler_action": false,
+  "source_manifest_rows": 8,
+  "source_property_release": false,
+  "task_id": "TODO-1D-MODEL-HIERARCHY-ABLATION-LADDER-PACKET-2026-07-22",
+  "thesis_current_or_latex_edit": false,
+  "validation_holdout_external_scoring": false
+}

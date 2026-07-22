@@ -1,0 +1,5 @@
+priority,next_action,allowed_row,blocked_by,acceptance_signal
+1,Close active S13 source-side conservation/neighbour/UQ gate from existing evidence,TODO-S13-UPCOMER-EXCHANGE-SOURCE-SIDE-CONSERVATION-NEIGHBOR-UQ-GATE-2026-07-22,same-QOI UQ/source-property prerequisites,release or fail-close source-side equivalent without relabeling it as Q_wall_W
+2,"If S13 production prerequisites pass, claim production harvest/UQ row",TODO-THESIS-STUDY-S13-UPCOMER-EXCHANGE-PRODUCTION-HARVEST-UQ-2026-07-21,production_harvest_allowed=false in current packages,"same-window harvest and same-QOI UQ table, or explicit fail-closed S13 decision"
+3,Turn passive physical-basis diagnostics into a source-family release candidate,new exact passive source release row after enrichment blockers are resolved,wallHeatFlux provenance and ambient/area/insulation source basis not released,families_released>0 and no global hA multiplier or validation leakage
+4,Run S15 only after exactly one S12/S13/S14 candidate is released,TODO-THESIS-STUDY-S15-CANDIDATE-FREEZE-SOURCE-PROPERTY-SCORE-RELEASE-2026-07-21,candidate_released_count=0,candidate freeze/no-freeze with protected split roles preserved

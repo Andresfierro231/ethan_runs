@@ -1,0 +1,7 @@
+blocker_id,previous_status,agent413_status,evidence_delta,next_resolution_condition
+closure-qoi-mesh-gci,open,open_refined,"thermal rows reviewed=16, fit_admissible=0","admit sign/heat-balance/source rows, then rerun publication GCI only on admitted triplets"
+thermal-cfd-1d-parity,open,open_refined,internal-Nu residual absorption remains forbidden; boundary lanes stay separate,setup-only heater/HX/wall boundary scorecards pass validation/holdout without runtime CFD duty
+predictive-heater-cooler-wall-submodels,open,open_narrowed,Fluid hx_ua_multiplier hook implemented; external-boundary dictionary hook already existed,Salt2-trained HX scalar and boundary dictionaries score Salt3/Salt4 without refit
+upcomer-onset-data-sparsity,open,open_narrowed,PM5 review-ready rows=12/12,F6/onset scorecard consumes PM5 rows and classifies onset as observed/bracketed/extrapolated
+fluid-external-boundary-api-gap,open,partially_resolved_recast,external-boundary dictionaries are present; direct predictive HX UA multiplier added in Fluid,run Fluid setup-only HX/external-boundary scorecard and preserve backward-compatible tests
+f6-friction-re-correction,open,open_ready_for_scorecard,PM5 fields now support bounded F6/onset review; final residual still awaits admitted pressure evidence,F6/Re candidate improves validation/holdout without hidden global multiplier

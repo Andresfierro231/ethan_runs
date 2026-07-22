@@ -1,0 +1,6 @@
+source_role,path,job_id,use
+nominal Salt2/Salt3/Salt4 pressure ladder harvest,work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/adjacent_pressure_ladder.csv,3297860,read-only branch orientation and straight-loss screen
+expanded Salt1/Salt2+/-5Q/Salt4+/-5Q/val_salt2 pressure ladder harvest,work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/adjacent_pressure_ladder.csv,3297863,read-only branch orientation and straight-loss screen
+recirculation policy evidence,work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan/current_evidence_recirculation_classification.csv,,recirculation mask policy and upcomer hybrid lane context
+prior branch ordinary-pipe scorecard,work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/branch_specific_fit_mask.csv,,ordinary-pipe/upcomer exclusion continuity
+raw two-tap pressure harvest context,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv,3297845,context only; pressure ladder supersedes two isolated taps for orientation screening

@@ -1,0 +1,30 @@
+{
+  "blocker_decision": "not_resolved",
+  "candidate_admission_counts": {
+    "blocked_or_diagnostic_nonfit": 7,
+    "hybrid_recirculation_lane_only": 35,
+    "validation_only_nonfit": 5,
+    "waiting_on_branch_rows": 3
+  },
+  "candidate_row_count": 50,
+  "external_fluid_mutated": false,
+  "fit_admissible_internal_nu_rows": 0,
+  "generated_at": "2026-07-16T21:20:34+00:00",
+  "mesh_final_use_counts": {
+    "blocked_pending_downcomer_policy": 1,
+    "blocked_pending_same_qoi_triplet_reconciliation": 1,
+    "blocked_pending_sign_heat_balance_source_admission": 2,
+    "diagnostic_only_upcomer_hybrid_lane": 12,
+    "not_publication_gci_current_triplet_exclude_or_reextract": 9
+  },
+  "mesh_gci_row_count": 25,
+  "native_solver_outputs_mutated": false,
+  "publication_ready_mesh_gci_rows": 0,
+  "recirculation_threshold": 0.2,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "task": "AGENT-455",
+  "test_section_parent_leg": "upcomer_left_vertical",
+  "unresolved_mesh_or_admission_rows": 13,
+  "upcomer_single_stream_exclusion_rows": 27
+}

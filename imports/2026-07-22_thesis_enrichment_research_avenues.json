@@ -1,0 +1,38 @@
+{
+  "task": "TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES",
+  "generated_at_utc": "2026-07-22T14:20:00+00:00",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/avenue_priority_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/trigger_and_blocker_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/next_board_row_suggestions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_enrichment_research_avenues/summary.json",
+    ".agent/status/2026-07-22_TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES.md",
+    ".agent/journal/2026-07-22/thesis-enrichment-research-avenues.md",
+    "imports/2026-07-22_thesis_enrichment_research_avenues.json",
+    ".agent/BOARD.md"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_recirc_upcomer_alternatives_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "scheduler_action": "none",
+  "mutation_flags": {
+    "thesis_body_edit": false,
+    "external_repo_edit": false,
+    "validation_holdout_external_scoring": false,
+    "fitting_model_selection": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "final_score_claim": false,
+    "residual_absorbed_into_internal_nu": false
+  }
+}

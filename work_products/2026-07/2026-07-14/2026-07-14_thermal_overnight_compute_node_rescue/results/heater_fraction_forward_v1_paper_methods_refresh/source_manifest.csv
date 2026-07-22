@@ -1,0 +1,9 @@
+source_path,exists,use
+work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_contract_interpretation.csv,true,input
+work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_heat_ledger.csv,true,input
+work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/candidate_parameters.csv,true,input
+work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/recommended_model.csv,true,input
+work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix/boundary_model_task_matrix.csv,true,input
+work_products/2026-07/2026-07-14/2026-07-14_forward_v1_gate_refresh_after_fluid_api_and_audits/summary.json,true,input
+work_products/2026-07/2026-07-14/2026-07-14_math_theory_assumptions_results_register/equation_register.csv,true,input
+work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/model_result_ledger.csv,true,input

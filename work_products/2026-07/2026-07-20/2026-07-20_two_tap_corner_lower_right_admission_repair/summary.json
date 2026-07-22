@@ -1,0 +1,16 @@
+{
+  "case_count": 3,
+  "component_isolation_pass_rows": 0,
+  "component_k_admitted_rows": 0,
+  "date": "2026-07-20",
+  "f6_fit_performed": false,
+  "feature": "corner_lower_right",
+  "generated_at_utc": "2026-07-20T16:27:21.261174+00:00",
+  "native_solver_outputs_mutated": false,
+  "ordinary_component_k_candidates": 0,
+  "registry_mutation": "none",
+  "reverse_flow_pass_rows": 0,
+  "same_qoi_uq_pass_rows": 0,
+  "split_decision": "diagnostic_only_apparent_cluster_recirculation_blocked_missing_UQ",
+  "task": "TODO-TWO-TAP-CORNER-LOWER-RIGHT-ADMISSION-REPAIR"
+}

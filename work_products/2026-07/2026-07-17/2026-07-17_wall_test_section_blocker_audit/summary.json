@@ -1,0 +1,17 @@
+{
+  "admission_sanity_rows": 17,
+  "admitted_candidates": 0,
+  "blocker_status_after_audit": "open",
+  "created_utc": "2026-07-17T21:54:27.037552+00:00",
+  "cross_candidate_rows": 34,
+  "failure_mode_rows": 22,
+  "next_lane_decision": "axial_mixing_candidate_next_after_AGENTS526",
+  "out_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit",
+  "probe_rows": 969,
+  "role_segment_rows": 300,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "scoreable_source_segment_mismatches": 0,
+  "sensor_audit_rows": 153,
+  "task": "AGENT-531"
+}

@@ -1,0 +1,74 @@
+{
+  "task": "TODO-BOARD-STABLE-STALE-ROW-CLEANUP-2026-07-22",
+  "task_id": "TODO-BOARD-STABLE-STALE-ROW-CLEANUP-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Cleaner/Reviewer/Writer",
+  "objective": "Clean stale completed rows from Active and Planned without science, compute, admission, or external mutations.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-BOARD-STABLE-STALE-ROW-CLEANUP-2026-07-22.md",
+    ".agent/journal/2026-07-22/board-stable-stale-row-cleanup.md",
+    "imports/2026-07-22_board_stable_stale_row_cleanup.json",
+    "operational_notes/07-26/22/2026-07-22_BOARD_STABLE_STALE_ROW_CLEANUP.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BOARD.md active and planned sections"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <ACTIVE_COMPLETE_TASK> --json",
+      "result": "21/21 initial completed Active candidates passed before archival; final archive contains 24 after additional rows completed during cleanup."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id <PLANNED_COMPLETE_TASK> --json",
+      "result": "17/17 initial completed Planned candidates passed before archival; final archive contains 20 after additional rows completed during cleanup."
+    },
+    {
+      "command": "Board parse after rewrite",
+      "result": "Active 14 rows, 0 stale complete rows, 1 closeout-fix row; Planned/Unclaimed 17 rows, 0 stale complete rows."
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "completed during closeout."
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-BOARD-STABLE-STALE-ROW-CLEANUP-2026-07-22",
+      "result": "completed during closeout."
+    }
+  ],
+  "board_cleanup": {
+    "active_completed_rows_archived": 24,
+    "planned_completed_rows_archived": 20,
+    "active_closeout_fix_needed_rows": 1,
+    "final_active_rows": 14,
+    "final_planned_rows": 17,
+    "new_rows_added": 0
+  },
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repos_mutated": false,
+    "thesis_body_or_latex_mutated": false,
+    "blocker_register_source_mutated": false,
+    "generated_docs_index_refreshed": true,
+    "files_deleted": false,
+    "files_reverted": false,
+    "files_staged": false,
+    "commits_created": false,
+    "push_performed": false
+  }
+}

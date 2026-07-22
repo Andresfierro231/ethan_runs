@@ -1,0 +1,18 @@
+field_name,required,units_or_allowed_values,description,why_required
+task_id,yes,AGENT-* or TODO-*,Board task that produced the result.,Prevents orphaned evidence.
+case_id,yes,salt_2; salt_3; salt_4; explicit corrected-Q key; diagnostic key,Canonical row/case identifier.,"Needed for split, admission, and provenance joins."
+split_role,yes,train; validation; holdout; diagnostic-only; blocked; not_in_split,Fit/score role for the row.,Prevents accidental refit on validation or holdout rows.
+model_mode,yes,diagnostic_fixed_mdot; forward_v0_imposed_cooler; h1_proxy; predictive_hx; final_forward_v1; other_explicit,Execution or interpretation mode.,Separates predictive modes from diagnostic replays.
+runtime_inputs,yes,semicolon-delimited field names,Fields consumed before solve.,Audits CFD target leakage.
+forbidden_runtime_inputs_used,yes,true; false,"Whether CFD mdot, realized wallHeatFlux, or targets influenced runtime solve.",Hard predictive input gate.
+property_mode,yes,replication_reis_jadyn; declared sensitivity/reference lane,Property lane for rho/mu/cp/k.,"Properties materially affect Re, Pr, Gz, buoyancy, and heat residuals."
+equation_ids,yes,IDs from equation_register.csv,Math forms used by the row.,Makes theory traceable.
+fitted_parameters,yes,names and values or none,"Any K, UA, eta, hA, Nu, friction, or correction parameters.",Separates trained terms from setup inputs.
+fit_source_rows,yes,case IDs or none,Rows used to fit each parameter.,Enforces train/validation/holdout discipline.
+admission_status,yes,fit-admissible; validation-only; diagnostic-only; blocked; failed,Allowed use of the result.,Prevents overclaiming.
+mdot_error_kg_s,for scorecards,kg/s,Predicted minus reference mdot after solve.,Primary hydraulic score.
+temperature_error_K,for thermal/sensor scorecards,K,Predicted minus reference temperature after solve.,Primary thermal score.
+heat_residual_W,for thermal/boundary rows,W,Unclosed heat residual after declared source/sink terms.,Separates internal Nu from boundary/source errors.
+uncertainty_status,yes,publication-ready; diagnostic; missing-triplet; oscillatory; time-gated; not_applicable,Mesh/time/UQ readiness.,Thesis claims need uncertainty status.
+source_paths,yes,semicolon-delimited repo paths,Exact source artifacts.,Provenance and reproducibility.
+do_not_claim,yes,plain text,Explicit overclaim boundary.,Keeps presentation/thesis wording safe.

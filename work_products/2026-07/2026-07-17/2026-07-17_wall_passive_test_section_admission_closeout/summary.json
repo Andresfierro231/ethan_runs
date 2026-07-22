@@ -1,0 +1,17 @@
+{
+  "admission_change": "none",
+  "admitted_candidate_rows": 0,
+  "candidate_rows_reviewed": 8,
+  "coupled_completed_rows_reviewed": 24,
+  "created_utc": "2026-07-17T20:34:57.396594+00:00",
+  "decision": "keep_predictive_wall_test_section_submodels_open",
+  "local_distribution_admitted_candidates": 0,
+  "local_distribution_candidates": 4,
+  "local_test_section_rows_reviewed": 20,
+  "pb1_admitted_candidates": 0,
+  "pb1_coupled_candidates": 4,
+  "plain_language_answer": "PB1_total_hA_heater_power_drive_p1 has already been scored in coupled M3+TS+cooler form, and local test-section/distribution behavior has been assessed separately. The blocker stays open: PB1/PB2/PB3 improve mdot but fail temperature-field gates, and TS6/TS7 fail local test-section heat gates.",
+  "primary_remaining_blocker": "local_wall_temperature_source_placement_or_upcomer_mixing_physics",
+  "runtime_blocker": "no",
+  "task": "AGENT-507"
+}

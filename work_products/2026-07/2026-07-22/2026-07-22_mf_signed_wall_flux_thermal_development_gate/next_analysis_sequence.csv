@@ -1,0 +1,5 @@
+priority,next_analysis,why,exit_condition
+1,same-label S13 mesh-family generation/GCI or explicit fail-close,MF09 exchange-cell path is blocked by same-label mesh/GCI and production harvest readiness.,accepted same-label mesh/GCI rows or documented impossibility
+2,signed source/property heat-path release preflight,"MF08 sign convention exists, but no source/property release exists for any signed branch.",branch-level source/property release table with no runtime leakage
+3,bulk-to-TP formula gate,"MF07 shows TP projection promise, but no formula and same-QOI TP UQ exist.",released diagnostic formula or fail-closed missing-input table
+4,TW-after-TP residual-owner table,D3/D4 support wall-shape/source-placement only after TP is not carrying bulk residual.,TW owner table with no internal-Nu absorption

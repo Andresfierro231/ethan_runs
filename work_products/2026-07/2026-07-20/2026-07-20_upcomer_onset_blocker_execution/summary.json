@@ -1,0 +1,22 @@
+{
+  "current_diagnostic_rows": 3,
+  "date": "2026-07-20",
+  "decision": "monitor_high_heat_prepare_launches_run_pm10_matched_plane_admission_next",
+  "generated_at": "2026-07-20T20:16:59-05:00",
+  "high_heat_rows": 4,
+  "launch_queue_rows": 11,
+  "ordinary_upcomer_fit_rows_now": 0,
+  "outputs": [
+    "scheduler_status.csv",
+    "upcomer_anchor_admission_ledger.csv",
+    "launch_preflight_queue.csv",
+    "blocker_resolution_queue.csv",
+    "source_manifest.csv",
+    "README.md",
+    "summary.json"
+  ],
+  "pm10_rows": 4,
+  "scheduler_checked": false,
+  "status": "execution_package_ready",
+  "task": "AGENT-UPCOMER-ONSET-EXECUTION"
+}

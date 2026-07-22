@@ -1,0 +1,6 @@
+closure_family,current_status,evidence,why_disabled,next_reopen_condition
+ordinary_upcomer_Nu,disabled,Salt2-4 right-leg reverse topology and regime-map recirculation evidence,recirculation invalidates single-stream heat-transfer interpretation,same-window low-recirculation or nonrecirculating anchor plus source/property and same-QOI UQ
+ordinary_upcomer_f_D,disabled,reverse-flow topology and pressure/low-recirc anchor fail-closed packages,ordinary pipe friction assumes single-stream throughflow,ordinary-flow endpoint pairs with RAF < 0.01 and RMF < 0.01 plus UQ
+ordinary_upcomer_K_or_F6,disabled,pressure anchor absence proof and 0 F6 fit-ready rows,no admissible low-reverse pressure anchor exists,terminal endpoint fields plus ordinary-flow and same-QOI UQ pass
+exchange_cell_coefficient,not_admitted,S13 exchange/tau current-coarse proxies finite but production closed,current-coarse proxies lack accepted medium/fine mesh/GCI and source/property release,post-sampler mesh/GCI production harvest plus split-safe candidate gate
+signed_flow_junction_network,dry_contract_only,recirculation switch contract routes Salt2-4 to guarded signed-flow network,no admitted coefficients or source/property release,source-bounded signed-flow candidate with same-QOI pressure/thermal support

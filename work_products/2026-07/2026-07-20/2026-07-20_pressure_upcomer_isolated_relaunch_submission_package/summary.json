@@ -1,0 +1,14 @@
+{
+  "case_count": 6,
+  "date": "2026-07-20",
+  "expected_case_count": 6,
+  "expected_cases_present": true,
+  "fit_rows_released_now": 0,
+  "generated_at_utc": "2026-07-20T21:32:54.446970+00:00",
+  "native_solver_outputs_mutated": false,
+  "preflight_pass_rows": 6,
+  "registry_mutation": "none",
+  "submit_allowed": true,
+  "submit_status": "submit_attempt_blocked_by_QOSMaxSubmitJobPerUserLimit",
+  "task": "TODO-PRESSURE-UPCOMER-ISOLATED-RELAUNCH-SUBMISSION-PACKAGE"
+}

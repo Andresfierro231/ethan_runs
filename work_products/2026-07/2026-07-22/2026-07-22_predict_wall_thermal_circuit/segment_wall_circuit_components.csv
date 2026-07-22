@@ -1,0 +1,30 @@
+segment_id,physical_scope,thermal_component,material_geometry_status,runtime_allowed_now,required_release_or_handoff,diagnostic_evidence_allowed
+heater_lower_leg,steel pipe plus heater boundary,internal convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+heater_lower_leg,steel pipe plus heater boundary,steel conduction,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+heater_lower_leg,steel pipe plus heater boundary,insulation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+heater_lower_leg,steel pipe plus heater boundary,external convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+heater_lower_leg,steel pipe plus heater boundary,radiation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+cooler_hx_branch,steel pipe plus jacket/HX,internal convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+cooler_hx_branch,steel pipe plus jacket/HX,steel conduction,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+cooler_hx_branch,steel pipe plus jacket/HX,cooler jacket UA,partial_setup_model_lane,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+cooler_hx_branch,steel pipe plus jacket/HX,external balance,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+downcomer_right_vertical,insulated steel pipe,internal convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+downcomer_right_vertical,insulated steel pipe,steel conduction,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+downcomer_right_vertical,insulated steel pipe,insulation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+downcomer_right_vertical,insulated steel pipe,external convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+downcomer_right_vertical,insulated steel pipe,radiation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+upcomer_left_vertical,insulated steel pipe with recirculation caveat,internal convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+upcomer_left_vertical,insulated steel pipe with recirculation caveat,steel conduction,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+upcomer_left_vertical,insulated steel pipe with recirculation caveat,insulation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+upcomer_left_vertical,insulated steel pipe with recirculation caveat,external convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+upcomer_left_vertical,insulated steel pipe with recirculation caveat,radiation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+upcomer_left_vertical,insulated steel pipe with recirculation caveat,recirculation exchange flag,blocked_by_exchange_state,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+test_section_quartz_span,bare quartz test section,internal convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+test_section_quartz_span,bare quartz test section,quartz conduction,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+test_section_quartz_span,bare quartz test section,external convection,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+test_section_quartz_span,bare quartz test section,radiation,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+test_section_quartz_span,bare quartz test section,test-section source/loss,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+junction_stub_connector,3D connector/stub region,named loss,junction_blocked,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+junction_stub_connector,3D connector/stub region,contact/conduction,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+junction_stub_connector,3D connector/stub region,external loss,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only
+junction_stub_connector,3D connector/stub region,residual owner,unresolved,false,source-bounded release or separate extraction required,wallHeatFlux and sampled fields post-prediction only

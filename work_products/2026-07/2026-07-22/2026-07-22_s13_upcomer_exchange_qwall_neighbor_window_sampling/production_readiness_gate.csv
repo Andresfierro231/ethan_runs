@@ -1,0 +1,6 @@
+gate,status,ready_for_next_stage,production_harvest_allowed_now,reason
+target_minus_sampling,complete,true,false,immediately preceding native time was sampled for all cases and requested QOIs
+target_plus_sampling,blocked_missing_later_time_directories,false,false,retained target times are the latest stored time directories for Salt2/Salt3/Salt4
+same_qoi_neighbor_uq,blocked,false,false,0/4 QOI labels have complete target-minus/target/target-plus support
+mesh_gci_uq,not_reached_target_plus_missing,false,false,mesh/GCI should wait until the same-QOI neighbor-window gate has complete rows
+production_harvest,do_not_run,false,false,same-QOI UQ remains incomplete

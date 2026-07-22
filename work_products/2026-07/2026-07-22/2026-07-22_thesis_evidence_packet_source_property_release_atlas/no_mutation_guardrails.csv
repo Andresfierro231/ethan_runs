@@ -1,0 +1,10 @@
+guardrail,value
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_action,False
+fluid_or_external_edit,False
+validation_holdout_external_scoring,False
+source_property_release,False
+protected_row_release,False
+candidate_freeze,False
+residual_absorbed_into_internal_nu,False

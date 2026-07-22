@@ -1,0 +1,8 @@
+check_id,runtime_input,status,used_by_contract,evidence
+RT-001,realized CFD wallHeatFlux,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only
+RT-002,CFD mdot,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only
+RT-003,validation temperatures,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only
+RT-004,holdout temperatures,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only
+RT-005,external-test temperatures,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only
+RT-006,imposed cooler duty replay,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only
+RT-007,hidden heat residual,forbidden,False,contract uses setup-known heater Q and predeclared solver source distribution only

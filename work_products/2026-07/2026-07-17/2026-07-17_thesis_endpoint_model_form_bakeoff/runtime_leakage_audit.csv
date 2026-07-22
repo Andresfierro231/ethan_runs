@@ -1,0 +1,6 @@
+audit_item,status,details
+predictive_forms_forbid_realized_cfd_outputs,pass,bad_rows=0
+locked_split_holdout_not_fit_or_selected,pass,case contracts inherited from AGENT-499/509 keep Salt2 +/-5Q and val_salt2 score-only
+missing_scores_are_explicit,pass,bad_rows=0
+no_solver_or_postprocessing_launch,pass,builder reads existing CSV/JSON/Markdown evidence only
+diagnostic_labels_preserved,pass,M1 marked diagnostic; M4 pressure/junction coefficients marked diagnostic/zero admitted

@@ -1,0 +1,4 @@
+comparison,from_model,to_model,mean_group_rmse_before_K,mean_group_rmse_after_K,mean_group_rmse_delta_K,mean_group_rmse_reduction_pct,interpretation
+M1_to_M2,M1,M2,158.48476999311254,26.181478391088774,-132.30329160202376,83.48012973598247,thermal_boundary_and_segment_model_reduces_error
+M2_to_M3,M2,M3,26.181478391088774,16.94570103203358,-9.235777359055195,35.275996340217056,thermal_boundary_and_segment_model_reduces_error
+M1_to_M3,M1,M3,158.48476999311254,16.94570103203358,-141.53906896107895,89.3076785657259,thermal_boundary_and_segment_model_reduces_error

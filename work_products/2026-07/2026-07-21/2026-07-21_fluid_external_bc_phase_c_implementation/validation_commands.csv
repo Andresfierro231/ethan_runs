@@ -1,0 +1,5 @@
+command,working_directory,result
+env PYTHONDONTWRITEBYTECODE=1 python3.11 -m pytest -q -p no:cacheprovider tests/test_external_boundary_contract.py,../cfd-modeling-tools/tamu_first_order_model/Fluid,"PASS: 7 passed, 6 subtests passed in 0.69s"
+env PYTHONDONTWRITEBYTECODE=1 python3.11 -m pytest -q -p no:cacheprovider tests/test_solver_contracts.py,../cfd-modeling-tools/tamu_first_order_model/Fluid,"INTERRUPTED by agent after 0 failures and 34 passed in 500.70s; full broad suite was too long for interactive closeout"
+env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile tamu_loop_model_v2/external_boundary.py tamu_loop_model_v2/config_loader.py tamu_loop_model_v2/solver.py tests/test_external_boundary_contract.py,../cfd-modeling-tools/tamu_first_order_model/Fluid,PASS
+env PYTHONDONTWRITEBYTECODE=1 python3.11 -c "from tamu_loop_model_v2.external_boundary import ExternalBoundaryRecord, load_external_boundary_dictionary; from tamu_loop_model_v2.config_loader import load_scenario_groups; from tamu_loop_model_v2.solver import _validate_external_boundary_contract; print('imports ok')",../cfd-modeling-tools/tamu_first_order_model/Fluid,PASS

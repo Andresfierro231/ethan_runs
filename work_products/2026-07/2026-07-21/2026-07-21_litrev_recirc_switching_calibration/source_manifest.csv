@@ -1,0 +1,7 @@
+source_id,path,role
+litrev_model_forms,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,read_only_model_form_contract
+litrev_cfd_contract,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv,read_only_definition_source
+recirc_harvest,work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,read_only_current_evidence
+same_qoi_uq,work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,read_only_uncertainty_gate
+geometry_gap,work_products/2026-07/2026-07-21/2026-07-21_litrev_fitting_geometry_source_gap_recovery/geometry_source_gap_recovery.csv,read_only_recovery_source_envelope_gate
+blockers,.agent/BLOCKERS.md,read_only_blocker_register_render

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="32" y="42" font-family="Arial, sans-serif" font-size="23" font-weight="700" fill="#1f252b">1D Sensor Projection Operator</text>
+<text x="32" y="68" font-family="Arial, sans-serif" font-size="14" fill="#4b5663">Maps 1D bulk and wall states to TP/TW observations for score-only comparison.</text>
+<rect x="55" y="108" width="220" height="96" rx="4" fill="#f7f8f9" stroke="#d7dde2"/>
+<circle cx="83" cy="140" r="11" fill="#2d6f9f"/>
+<text x="103" y="146" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f252b">bulk_fluid_projection</text>
+<text x="103" y="174" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#2d6f9f">6</text>
+<rect x="325" y="108" width="220" height="96" rx="4" fill="#f7f8f9" stroke="#d7dde2"/>
+<circle cx="353" cy="140" r="11" fill="#b96b25"/>
+<text x="373" y="146" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f252b">wall_state_projection</text>
+<text x="373" y="174" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#b96b25">10</text>
+<rect x="595" y="108" width="220" height="96" rx="4" fill="#f7f8f9" stroke="#d7dde2"/>
+<circle cx="623" cy="140" r="11" fill="#777777"/>
+<text x="643" y="146" font-family="Arial, sans-serif" font-size="14" font-weight="700" fill="#1f252b">excluded_no_projection</text>
+<text x="643" y="174" font-family="Arial, sans-serif" font-size="26" font-weight="700" fill="#777777">1</text>
+<circle cx="48" cy="250" r="5" fill="#2f3b45"/>
+<text x="65" y="255" font-family="Arial, sans-serif" font-size="15" fill="#2f3b45">TP: project from 1D bulk/fluid temperature at mapped segment/fraction.</text>
+<circle cx="48" cy="284" r="5" fill="#2f3b45"/>
+<text x="65" y="289" font-family="Arial, sans-serif" font-size="15" fill="#2f3b45">TW: project from 1D wall temperature at mapped segment/fraction.</text>
+<circle cx="48" cy="318" r="5" fill="#2f3b45"/>
+<text x="65" y="323" font-family="Arial, sans-serif" font-size="15" fill="#2f3b45">TW10: excluded until active-HX shell state is emitted.</text>
+<circle cx="48" cy="352" r="5" fill="#2f3b45"/>
+<text x="65" y="357" font-family="Arial, sans-serif" font-size="15" fill="#2f3b45">All observed TP/TW temperatures remain score-only; no runtime temperature release.</text>
+</svg>

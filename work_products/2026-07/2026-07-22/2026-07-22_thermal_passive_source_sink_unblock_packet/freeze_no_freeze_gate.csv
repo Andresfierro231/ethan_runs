@@ -1,0 +1,5 @@
+candidate_or_lane,basis,diagnostic_evidence_available,source_property_released,qwall_or_equivalent_released,same_qoi_uq_ready,production_or_repair_allowed,candidate_released,freeze_decision,blocking_reason,current_action
+PASSIVE-H2-CAND001,external passive heat path,true,false,false,false,false,false,no_freeze,source basis enriched but no source/property release or repair,top candidate for next freeze/no-freeze revisit after source-basis release
+KNOWN-HEATER-SOURCE-RESIDUAL-LANE,known heater source/sink decomposition,true,false,false,false,false,false,no_freeze,partial train-only improvement; model form still needed,hold as supporting lane
+S13-DIRECT-QWALL,trusted-wall wallHeatFlux integration,true,false,true,false,false,false,no_freeze,"Q_wall_W released, but same-QOI UQ/production harvest remain blocked",hold as supporting lane
+S13-SOURCE-SIDE-EQUIVALENT,Q_source_side_net_static_bc_W,true,false,false,false,false,false,no_freeze,same-QOI UQ prerequisite not executed; no production release,hold as supporting lane

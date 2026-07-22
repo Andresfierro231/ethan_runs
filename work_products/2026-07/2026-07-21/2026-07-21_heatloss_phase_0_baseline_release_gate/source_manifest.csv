@@ -1,0 +1,9 @@
+source_path,used_for,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/README.md,heat-path contract narrative,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv,base heat-path rows and guardrails,read_only
+operational_notes/07-26/21/2026-07-21_HEATLOSS_PHASED_PROGRESS_PLAN.md,phase sequence and acceptance signals,read_only
+work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv,heater/cooler/wall-test-section admission state,read_only
+work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/thermal_model_slot_admission.csv,segment thermal slot status and no-Nu-residual guardrail,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/README.md,final scorecard blocked state and split policy,read_only
+operational_notes/maps/thermal-boundary-and-radiation.md,radiation/external boundary state and no double-counting rule,read_only
+operational_notes/maps/forward-predictive-model.md,forward runtime input guardrails,read_only

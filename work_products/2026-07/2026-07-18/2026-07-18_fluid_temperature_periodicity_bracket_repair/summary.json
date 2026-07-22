@@ -1,0 +1,12 @@
+{
+  "admission_status": "not_admitted_audit_only",
+  "current_bound_already_bracketed_rows": 3,
+  "fluid_source_edit_status": "deferred_active_external_solver_owner",
+  "generated_at": "2026-07-18T21:01:07.829278+00:00",
+  "no_bracket_before_hard_ceiling_rows": 0,
+  "prior_context_rows": 43,
+  "status": "audit_complete",
+  "task_id": "TODO-FLUID-TEMP-PERIODICITY-BRACKET-REPAIR",
+  "umx1_rows_audited": 9,
+  "upper_bound_recovered_rows": 6
+}

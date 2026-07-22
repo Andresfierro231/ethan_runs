@@ -1,0 +1,21 @@
+{
+  "clipped_k": false,
+  "cluster_k_admission": "none",
+  "component_k_admission": "none",
+  "f6_fit_admission": "none",
+  "harvest_mode": true,
+  "hidden_global_multiplier": false,
+  "native_solver_outputs_mutated": false,
+  "next_task": "claim_stage_b_harvest_QA_and_admission_gate_refresh",
+  "pair_rows": 6,
+  "raw_pending_face_rows": 0,
+  "raw_sampled_face_rows": 12,
+  "recorded_job_id": "3308382",
+  "registry_mutated": false,
+  "scheduler_launch_performed": true,
+  "stage_b_case_rows": 3,
+  "stage_b_endpoint_face_rows": 12,
+  "static_p_missing_endpoint_rows": 12,
+  "static_pressure_reconstruction_performed": false,
+  "task": "TODO-F6-COARSE-VTK-SAMPLER-SUBMIT"
+}

@@ -1,0 +1,5 @@
+priority,task,analysis,why_next,done_when
+1,MF08 signed heat-path thermal-development source basis,"separate heated, cooled, passive, and piecewise reset-memory branches",MF07 shows thermal development is plausible but not explained by a single signed-source rule.,signed source table says ready_for_train_only_smoke or fail-closed
+2,MF09 recirculating upcomer thermal alternatives,"compare guarded single-stream exclusion, exchange cell, two-zone stratification, and energy residual bridge",recirculation invalidates ordinary single-stream development in the left/upcomer path.,one upcomer alternative becomes smoke-ready or all remain diagnostic-only
+3,MF10 train/support-only predeclared bakeoff,run only variants released by MF07/MF08/MF09 source-basis gates,a bakeoff before source-basis release would be an empirical fit path.,"candidate_for_source_property_audit, diagnostic_only, or reject_model_family"
+4,TW-after-TP residual ownership,subtract defended TP projection before wall/source/axial-mixing attribution,TW should not absorb the bulk-to-TP residual.,TW residual owner table with no internal-Nu absorption

@@ -1,0 +1,5 @@
+gate,status,scorecard_effect,protected_rows_touched,reason
+S8/S12 thermal residual owner,needs_more_physical_basis,no thermal repair candidate released,0,needs more physical basis before repair or admission
+S13 exchange/Qwall/UQ,source_side_path_executed_fail_closed_production_harvest_not_ready,Qwall evidence can be cited but no production candidate can be scored,0,"conservation, neighbor-window, and same-QOI UQ gates fail closed"
+S14 pressure/F6,pressure_F6_use_map_complete_no_admitted_score,diagnostic branch screening only,0,0 admitted rows and 0 fits
+S6 frozen scorecard,blocked_scorecard_shell_no_frozen_candidate,final score table remains a shell,0,no single released runtime-legal candidate

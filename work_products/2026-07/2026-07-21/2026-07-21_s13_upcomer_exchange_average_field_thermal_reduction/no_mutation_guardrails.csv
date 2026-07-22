@@ -1,0 +1,8 @@
+guard_id,changed,policy
+native_output_mutation,false,read-only native and package inputs
+registry_or_admission_mutation,false,no registry/admission edit
+scheduler_action,false,local parser only
+solver_postprocessing_surface_field_sampling,false,no OpenFOAM/sampler extraction
+sampler_harvest_uq,false,sampler/harvest/UQ remain blocked
+coefficient_or_model_selection,false,no fit/model selection/admission
+residual_absorbed_into_internal_Nu,false,residual remains explicit and non-fitted

@@ -1,0 +1,8 @@
+field_id,missing_or_incomplete_field,needed_for,current_status,scientific_risk_if_missing,next_owner_gate
+M01,segment-resolved external h_ext and coverage,passive wall external convection,partial dictionary/context only,global passive hA can mimic several residual owners,external BC dictionary plus setup-only BC UQ
+M02,radiation view-factor or declared approximation,separate predictive radiation term,emissivity/Tsur evidence exists but separate 1D release remains open,radiation may be double-counted or hidden in passive convection,radiation capability/no-double-count audit
+M03,segment-local wall/layer/contact material stack,"wall conduction, layer, insulation, quartz terms",not complete for all segments,wall/layer resistance can be folded into internal Nu,material and geometry setup-field completion
+M04,source-bounded test-section source/loss basis,test-section heat path,"partial train response, no source/property release",test-section net source/sink ambiguity contaminates TW residuals,narrow source-basis row plus same-QOI UQ
+M05,junction/stub bracketing surfaces and heat inventory,junction residual owner,unbracketed in patchwise enthalpy interface package,junction losses remain unowned residuals,junction control-volume extraction
+M06,same-time solid energy or time-drift audit,storage term eligibility,not admitted for current steady model,heater imposed-realized gaps may be overinterpreted,transient/storage audit if needed
+M07,same-label medium/fine S13 exchange/source family,recirculation exchange release and UQ,0 strict same-label mesh cells ready,upcomer exchange evidence remains diagnostic-only,scheduler-authorized same-label generation row

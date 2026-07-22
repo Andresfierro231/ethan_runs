@@ -1,0 +1,6 @@
+source_id,path,use
+medium_fine_sampler,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler,controlling post-trigger sampler output and fail-closed counts
+duplicate_job_monitor,work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor,scheduler/output adjudication and repair recommendation
+same_qoi_temporal_uq,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus,same-QOI temporal UQ status for four exchange labels
+mesh_gci_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate,pre-sampler mesh/GCI gate consequence and label matrix
+pre_sampler_production_gate,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s13_upcomer_exchange_production_harvest_uq,prior production-harvest blocked baseline

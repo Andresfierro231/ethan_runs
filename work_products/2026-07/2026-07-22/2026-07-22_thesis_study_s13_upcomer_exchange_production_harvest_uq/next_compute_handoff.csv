@@ -1,0 +1,4 @@
+priority,next_row,goal,must_preserve,forbidden
+1,TODO-S13-UPCOMER-EXCHANGE-SAME-LABEL-MEDIUM-FINE-MESH-SAMPLING-2026-07-22,sample/generate medium and fine same-label QOI rows for Salt2/Salt3/Salt4 and four exchange QOIs,"exact label, same time windows, same masks, same sign convention, same source family","production harvest, coefficient admission, ordinary Nu/f_D/K fit"
+2,TODO-S13-UPCOMER-EXCHANGE-SAME-LABEL-MESH-GCI-UQ-2026-07-22,compute accepted mesh/GCI UQ only after coarse/medium/fine exact-label rows exist,same-QOI temporal and mesh uncertainty separation,substitute Salt2-only refined smoke or matched-plane diagnostics for same-label mesh family
+3,TODO-S13-UPCOMER-EXCHANGE-SOURCE-PROPERTY-RELEASE-2026-07-22,independent source/property release for the exact exchange-cell candidate lane,Q_wall_W/source-side separation and row-specific source envelope,source-side relabel as Q_wall_W or residual absorption into internal Nu

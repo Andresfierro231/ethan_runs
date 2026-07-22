@@ -1,0 +1,17 @@
+candidate_family,branch_or_feature,rows_reviewed,dominant_use_label,admitted_rows,diagnostic_only_rows,future_candidate_rows,do_not_use_rows,decision
+current_f6_endpoint_pair,right_leg,5,diagnostic_only,0,5,0,0,right_leg can support diagnostic pressure-basis discussion but must not be fit as F6 now.
+current_f6_endpoint_pair,test_section_span,5,diagnostic_only,0,5,0,0,test_section_span can support diagnostic pressure-basis discussion but must not be fit as F6 now.
+legwise_inventory,corner_lower_left,3,do_not_use,0,0,0,3,corner_lower_left should not be used for ordinary F6 under current evidence.
+legwise_inventory,corner_lower_right,6,do_not_use,0,0,0,6,corner_lower_right should not be used for ordinary F6 under current evidence.
+legwise_inventory,corner_upper_left,3,do_not_use,0,0,0,3,corner_upper_left should not be used for ordinary F6 under current evidence.
+legwise_inventory,corner_upper_right,3,do_not_use,0,0,0,3,corner_upper_right should not be used for ordinary F6 under current evidence.
+legwise_inventory,left_lower_leg,3,do_not_use,0,0,0,3,left_lower_leg should not be used for ordinary F6 under current evidence.
+legwise_inventory,left_upper_leg,3,do_not_use,0,0,0,3,left_upper_leg should not be used for ordinary F6 under current evidence.
+legwise_inventory,lower_leg,3,do_not_use,0,0,0,3,lower_leg should not be used for ordinary F6 under current evidence.
+legwise_inventory,right_leg,3,future_candidate,0,0,3,0,"right_leg remains the preferred future ordinary F6 lane after endpoint, low-reverse-flow, and same-QOI UQ evidence lands."
+legwise_inventory,test_section_complex,3,do_not_use,0,0,0,3,test_section_complex should not be used for ordinary F6 under current evidence.
+legwise_inventory,test_section_span,3,future_candidate,0,0,3,0,"test_section_span remains the preferred future ordinary F6 lane after endpoint, low-reverse-flow, and same-QOI UQ evidence lands."
+legwise_inventory,upper_leg,3,do_not_use,0,0,0,3,upper_leg should not be used for ordinary F6 under current evidence.
+low_recirc_anchor,alternate two-tap component candidate,1,do_not_use,0,0,0,1,alternate two-tap component candidate should not be used for ordinary F6 under current evidence.
+low_recirc_anchor,corner_lower_right,3,future_candidate,0,1,2,0,"corner_lower_right remains the preferred future ordinary F6 lane after endpoint, low-reverse-flow, and same-QOI UQ evidence lands."
+pressure_corner_section_effective,corner_lower_right,3,do_not_use,0,0,0,3,"corner_lower_right must remain section-effective/pressure-recovery diagnostic evidence, not F6."

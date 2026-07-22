@@ -1,0 +1,5 @@
+admission_status,row_count,items,allowed_use,guardrail
+admitted,0,none,none_for_final_forward_v1,do not claim admitted coupled closure
+validation-only,16,TP/TW post-solve scoring targets; final split cases with score_allowed=yes,validation and reporting after solver output exists,runtime_temperature_allowed=false; fit_allowed=false for sensors
+diagnostic-only,4,previous frozen M3+TS attempts; pressure/thermal/source-sink/development diagnostics,blocker narrowing and thesis evidence,not closure admission
+blocked,4,final forward-v1 coupled admission,unresolved blocker queue,must pass prerequisite gates before final admission

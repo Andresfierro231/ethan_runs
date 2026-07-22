@@ -1,0 +1,16 @@
+source_path,exists,source_role
+reports/thesis_dossier/Chapters_and_sections/current/26_predictive_model_studies_roadmap.md,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/README.md,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/baseline_model_contract.csv,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/freeze_readiness_matrix.csv,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/README.md,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/external_bc_segment_role_audit.csv,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/fluid_handoff_contract.csv,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/README.md,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/summary.json,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/summary.json,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/README.md,true,read_only_context
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,true,read_only_context
+operational_notes/maps/forward-predictive-model.md,true,read_only_context

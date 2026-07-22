@@ -1,0 +1,9 @@
+claim_area,allowed_claim,forbidden_claim,claim_source
+CFD reference,CFD is the current high-fidelity reference layer for reduced-model evidence.,CFD evidence is experimental validation of the 1D model.,CL-01
+Transport redistribution,Promoted Salt2/Salt4 CFD evidence shows heat and hydraulic burdens redistribute by loop location.,The Salt-family proves a universal closure law.,3D paper trust-boundary table
+Heat-path ownership,Grouped heat ledgers can motivate residual-owner separation before fitting.,forbidden: Realized wallHeatFlux can be supplied to the predictive runtime model.,CL-04; CL-17; CL-18
+Pressure diagnostics,Friction and pressure-gradient reductions motivate pressure-basis and section-effective residual discussions.,"Current diagnostics admit component K, F6, clipped K, or hidden multipliers.",CL-13; CL-16; CL-26; CL-30
+Thermal effective metrics,Effective UA prime and resistance are support-gated transport diagnostics.,Local HTC/Nu is known everywhere and admitted for runtime closure.,3D paper trust-boundary table; CL-17
+Recirculation visuals,Upcomer visuals can justify recirculation-aware model-form discussion.,"Visuals admit recirculation fraction, exchange coefficient, or ordinary upcomer closure.",CL-14; CL-28
+Split discipline,"Training, support, holdout, external-test, diagnostic, and context-only roles are distinct.",Rows can be freely interchanged for fitting and scoring.,CL-04; CL-05; CL-07; CL-08
+Water context,Water is documented as future-work/context for this Salt-focused evidence layer.,This evidence establishes a final Salt-versus-Water transport law.,3D paper trust-boundary table

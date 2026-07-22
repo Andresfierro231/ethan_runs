@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="330" viewBox="0 0 860 330">
+<rect width="860" height="330" fill="#fff"/>
+<text x="40" y="40" font-family="Arial" font-size="23" fill="#111">D2 diagnostic: TP first, then TW</text>
+<text x="40" y="68" font-family="Arial" font-size="13" fill="#444">Transfer RMSE from existing diagnostic rows; no fit/admission/release.</text>
+<text x="40" y="121" font-family="Arial" font-size="15" fill="#111">M3 TP</text>
+<rect x="120" y="105" width="371.70" height="22" fill="#2f6f9f"/>
+<text x="503.70" y="121" font-family="Arial" font-size="13" fill="#111">13.57 K</text>
+<text x="40" y="169" font-family="Arial" font-size="15" fill="#111">D2 TP</text>
+<rect x="120" y="153" width="120.04" height="22" fill="#62a87c"/>
+<text x="252.04" y="169" font-family="Arial" font-size="13" fill="#111">4.38 K</text>
+<text x="40" y="217" font-family="Arial" font-size="15" fill="#111">M3 TW</text>
+<rect x="120" y="201" width="520.00" height="22" fill="#b25d2a"/>
+<text x="652.00" y="217" font-family="Arial" font-size="13" fill="#111">18.98 K</text>
+<text x="40" y="265" font-family="Arial" font-size="15" fill="#111">D2 TW</text>
+<rect x="120" y="249" width="342.82" height="22" fill="#d99a5b"/>
+<text x="474.82" y="265" font-family="Arial" font-size="13" fill="#111">12.51 K</text>
+<text x="40" y="305" font-family="Arial" font-size="12" fill="#555">Interpretation: D2 is promising for projection/development diagnostics, but not a correction release.</text>
+</svg>

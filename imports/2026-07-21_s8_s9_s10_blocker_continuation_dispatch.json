@@ -1,0 +1,34 @@
+{
+  "task": "TODO-S8-S9-S10-BLOCKER-CONTINUATION-DISPATCH-2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S8-S9-S10-BLOCKER-CONTINUATION-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/s8-s9-s10-blocker-continuation-dispatch.md",
+    "imports/2026-07-21_s8_s9_s10_blocker_continuation_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_S8_S9_S10_BLOCKER_CONTINUATION_DISPATCH.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/successor_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/lane_dependency_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/admission_guardrail_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/s11_unblock_logic.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/validation_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s9_s10_blocker_continuation_dispatch/check_dispatch_package.py"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true
+}

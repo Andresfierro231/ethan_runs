@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-07-15T16:40:00Z",
+  "equations": 9,
+  "external_fluid_mutated": false,
+  "figure_count": 9,
+  "generated_index_refreshed": false,
+  "glossary_terms": 13,
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig01_loop_schematic.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig02_glossary_equations.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig03_boundary_mode_ladder.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig04_mode_error_bars.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig05_test_section_tradeoff.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig06_heater_cooler_rmse.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig07_steady_state_rms_sem.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig08_admission_gate_funnel.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figures/fig09_forward_v1_roadmap.svg",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/term_glossary.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/equation_register.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/figure_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/source_manifest.csv",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/README.md",
+    "work_products/2026-07/2026-07-15/2026-07-15_integrated_powerpoint_figures_and_definitions/summary.json"
+  ],
+  "supersedes_task": "AGENT-433",
+  "task": "AGENT-434"
+}

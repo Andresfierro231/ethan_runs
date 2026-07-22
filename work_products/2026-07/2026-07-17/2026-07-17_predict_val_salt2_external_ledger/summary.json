@@ -1,0 +1,24 @@
+{
+  "all_target_rows": 61,
+  "fit_allowed_rows": 0,
+  "generated_at_utc": "2026-07-17T13:11:20.440640+00:00",
+  "junction_loss_positive_W": "40.9260865692",
+  "junction_split_rows": 4,
+  "max_section_latest_residual_W": "3.45099996857e-07",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger",
+  "patch_heat_rows": 69,
+  "pressure_target_rows": 30,
+  "runtime_heat_input_allowed_rows": 0,
+  "section_heat_rows": 10,
+  "sensor_policy_rows": 17,
+  "target_type_counts": {
+    "junction_stub_heat": 4,
+    "pressure_streamwise_map": 30,
+    "section_heat": 10,
+    "sensor_temperature_policy": 17
+  },
+  "task": "AGENT-486",
+  "thermal_target_rows": 14,
+  "val_salt2_external_test_ledger_ready": "yes",
+  "val_salt2_training_input_allowed": "no"
+}

@@ -1,0 +1,7 @@
+gate_id,status,evidence,statement
+single_case_smoke_only,pass,Salt 2,only Salt 2 was solved
+no_score_grid,pass,none written,no grid or ranking was run
+no_fit,pass,no tuned parameters,conductances and bounds stayed fixed
+no_model_selection,pass,one scenario,no competing model was selected
+no_admission_change,pass,registry untouched,scientific admission state was not changed
+no_source_property_update,pass,read-only Fluid inputs,source/property tables were not updated

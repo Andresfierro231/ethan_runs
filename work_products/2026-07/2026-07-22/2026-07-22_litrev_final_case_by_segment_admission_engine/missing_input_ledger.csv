@@ -1,0 +1,8 @@
+field,affected_case_segment_rows,status,reason,next_extraction_task
+Gr_star_range,18,missing,not emitted by current regime map,extend regime map extractor or release source/property/UQ gate before coefficient admission
+Bo_range,18,missing,not emitted by current regime map,extend regime map extractor or release source/property/UQ gate before coefficient admission
+L_over_Dh_range,18,missing,not emitted by current regime map,extend regime map extractor or release source/property/UQ gate before coefficient admission
+thermal_reset_distance_m_range,18,missing,not emitted by current regime map,extend regime map extractor or release source/property/UQ gate before coefficient admission
+same_QOI_UQ,18,blocked,required by current closure/admission rows,extend regime map extractor or release source/property/UQ gate before coefficient admission
+formal_mesh_GCI,18,blocked,required by current closure/admission rows,extend regime map extractor or release source/property/UQ gate before coefficient admission
+source_property_release,18,blocked,required by current closure/admission rows,extend regime map extractor or release source/property/UQ gate before coefficient admission

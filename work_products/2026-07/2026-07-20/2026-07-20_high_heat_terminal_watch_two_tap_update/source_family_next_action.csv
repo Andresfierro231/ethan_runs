@@ -1,0 +1,2 @@
+candidate_id,next_action,fallback_now,fallback_condition,auto_submit
+CAND-001,continue monitoring high-heat jobs,false,CAND-001 terminal review fails to provide usable low-reverse source,false

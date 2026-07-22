@@ -1,0 +1,9 @@
+path,recommended_claim,reason
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py,required_add,isolated parser/API module avoids broad config_loader growth
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,required_edit,needs optional external_boundary_dictionary_path loading and conversion into existing ScenarioConfig role rows
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,required_edit,needs runtime role-row validation and predictive heat-path guardrails built on current dirty external_boundary_table support
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,required_edit,needs documentation of file-facing dictionary contract and forbidden runtime inputs
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py,required_add,focused tests for parser/API and runtime leakage rejection
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,conditional_edit,only if ScenarioConfig defaults or existing broad external-boundary tests need compatibility updates
+../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,do_not_claim,not required for first parser/API implementation and currently dirty
+../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,do_not_claim,not required for first parser/API implementation and currently dirty

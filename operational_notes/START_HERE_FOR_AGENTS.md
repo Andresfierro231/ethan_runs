@@ -53,6 +53,14 @@ source/property label enforcement gate, Monday task packets, structure rules to
 prevent blank fit/admission labels, and the current recommendation not to launch
 additional weekend jobs beyond the already-running queue.
 
+Latest 2026-07-22 LitRev modeling handoff:
+`reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md`.
+Open it before starting new closure-form, source-gate, pressure-ledger,
+heat-loss, recirculation/topology, or case-segment admission-engine work. It
+identifies the Ethan-requested extra research threads and translates the latest
+source-audited litrev into model forms, equations, assumptions, blockers, and
+next implementation order.
+
 ## Before Editing
 
 - Claim or confirm a board row.

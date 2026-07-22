@@ -1,0 +1,5 @@
+gate,status,pass,evidence,consequence
+split_rerun_exact_label_rows,pass,True,aggregated_exact_label_qoi_rows=72; successful_case_mesh_pairs=6,diagnostic medium/fine spread can be computed
+same_label_medium_fine_mesh_sensitivity,diagnostic_pass,True,medium and fine rows exist for Salt2/Salt3/Salt4 and four exact labels,mesh sensitivity can be reported as two-level diagnostic evidence only
+same_label_three_grid_gci,fail_closed_missing_coarse,False,same_label_coarse_row_exists=false for all case/QOI rows,no formal Richardson/GCI admission
+production_harvest_or_admission,do_not_run,False,"formal GCI, source/property release, and coefficient-prerequisite gates remain closed",no S11/S13/S15/S6 trigger and no coefficient fit

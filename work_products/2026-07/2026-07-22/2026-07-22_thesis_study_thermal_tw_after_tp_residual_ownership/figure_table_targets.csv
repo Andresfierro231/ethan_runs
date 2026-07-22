@@ -1,0 +1,7 @@
+target_id,target_type,title,source_file,claim_supported,caption_guardrail
+T_THERM_1,table,TW-after-TP residual owner matrix,tw_after_tp_residual_owner_table.csv,Multiple candidate owners exist but none is runtime-legal,Do not present a single admitted closure
+T_THERM_2,table,TP-subtracted TW residual evidence,tp_subtracted_tw_residual_evidence.csv,D2 improves TP but TW remains residual-bearing,Values are diagnostic and not validation tuning inputs
+T_THERM_3,table,Source/property/runtime audit,source_property_runtime_audit.csv,Release rows remain zero for cp/source/property/runtime temperatures,Do not use missing fields as implied constants
+T_THERM_4,table,Same-QOI UQ and production gate status,same_qoi_uq_status.csv,Temporal UQ exists diagnostically but production/admission gates are closed,Mesh/GCI input readiness is not mesh/GCI execution
+T_THERM_5,table,S11/S12/S15/S6 consequence table,s11_s12_s15_consequence_table.csv,Downstream freeze/generalization remains blocked,No protected scoring or final-score claim
+F_THERM_1,figure,TW-after-TP owner gate waterfall,figures/svg/tw_after_tp_owner_gate_waterfall.svg,All candidate owners fail release gates and residual remains explicit,Residual is not hidden in internal Nu

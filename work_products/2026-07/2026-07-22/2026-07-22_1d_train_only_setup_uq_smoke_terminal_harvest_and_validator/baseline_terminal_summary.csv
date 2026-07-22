@@ -1,0 +1,4 @@
+case_id,root_status,mdot_model_kg_s,qhx_total_W,qambient_total_W,temperature_periodicity_error_K,pressure_residual_Pa,solve_duration_s,score_or_admission_status
+salt_2,accepted,0.0202249109771,46.3059033707,256.393763167,-5.70696556679e-09,-9.79072751761e-08,62.9154579649,not_scored_not_admitted_smoke_only
+salt_3,accepted,0.0224379768059,49.7430738118,284.756460812,-9.27229848458e-10,-2.00182483923e-08,63.3120101066,not_scored_not_admitted_smoke_only
+salt_4,accepted,0.0250322463943,53.9069751001,320.69240018,1.70564362634e-09,-1.06750057682e-07,65.1226344574,not_scored_not_admitted_smoke_only

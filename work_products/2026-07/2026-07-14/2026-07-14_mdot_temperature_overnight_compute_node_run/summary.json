@@ -1,0 +1,57 @@
+{
+  "commands": [
+    {
+      "command": "/usr/bin/python3.11 -m unittest tools.analyze.test_mdot_temperature_probe_error_audit",
+      "elapsed_s": 0.839,
+      "log": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/logs/00_unittest.log",
+      "returncode": 0
+    }
+  ],
+  "external_cfd_modeling_tools_mutated": false,
+  "finished_at": "2026-07-14T18:09:19",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "native_cfd_outputs_mutated": false,
+  "openfoam_solver_launched": false,
+  "pid": 2005799,
+  "started_at": "2026-07-14T18:04:05",
+  "status": "complete",
+  "substudies": {
+    "agent360_refresh": {
+      "case_rows": 4,
+      "correlation_rows": 21,
+      "date": "2026-07-14",
+      "execute_fluid": true,
+      "executed_model_rows": 12,
+      "external_cfd_modeling_tools_mutated": false,
+      "generated_at": "2026-07-14T18:05:48",
+      "heat_score_rows": 23,
+      "model_modes": 4,
+      "model_result_rows": 16,
+      "native_cfd_outputs_mutated": false,
+      "salt1_policy": "diagnostic_context_only_blocked_for_cfd_heat_flux_modes",
+      "sensor_error_rows": 204,
+      "task": "AGENT-360",
+      "trend_rows": 6
+    },
+    "pressure_root_solver_quality_audit": {
+      "output": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/pressure_root_solver_quality_audit",
+      "rows": 9
+    },
+    "reference_state_temperature_audit": {
+      "bias_rows": 24,
+      "output": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/reference_state_temperature_audit",
+      "rows": 12
+    },
+    "setup_only_cooler_closure_bakeoff": {
+      "output": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/setup_only_cooler_closure_bakeoff",
+      "rows": 13,
+      "summary_rows": 16
+    },
+    "test_section_boundary_form_bakeoff": {
+      "output": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/test_section_boundary_form_bakeoff",
+      "result_rows": 12,
+      "sensor_rows": 204
+    }
+  },
+  "task": "AGENT-391"
+}

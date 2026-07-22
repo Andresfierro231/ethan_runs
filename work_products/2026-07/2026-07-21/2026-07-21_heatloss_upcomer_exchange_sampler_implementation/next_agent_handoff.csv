@@ -1,0 +1,4 @@
+sequence,work_package,objective,release_condition,forbidden_action
+1,compute_node_sampler_execution,run this schema on salt_2/salt_3/salt_4 queued windows through sbatch or srun,sampled cell/interface/wall outputs exist or each case has a terminal source-field failure,no login-node OpenFOAM or duplicate sampler against live terminal jobs
+2,same_qoi_uq_pairing,attach same-label same-formula same-sign same-window UQ to exchange-state and residual QOIs,UQ rows pass for each candidate metric or remain explicitly blocked,no Phase 4B rescore without UQ status
+3,phase4b_exchange_readiness_rescore,"classify rows as one-stream, signed-flow junction, exchange-cell scoreable, or diagnostic-only",scoreable/not-scoreable decision with residuals preserved as separate lanes,no residual absorption into internal Nu

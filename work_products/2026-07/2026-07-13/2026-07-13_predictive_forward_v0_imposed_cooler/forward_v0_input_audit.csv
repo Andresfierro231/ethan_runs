@@ -1,0 +1,67 @@
+case_id,variant_id,engine,runtime_field,runtime_value,contract_class,forward_v0_allowed,source_path
+salt_2,F0_current_fluid_sources,fast_scan,fluid_case_name,Salt 2,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,heater_power_W,265.7,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,test_section_power_W,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,air_T_inlet_K,299.19,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,air_flow_Lpm,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,imposed_cooler_duty_W,136.351,setup_input,true,work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv
+salt_2,F0_current_fluid_sources,fast_scan,boundary_ambient_Ta_K,299.19,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv
+salt_2,F0_current_fluid_sources,fast_scan,radiation_on,false,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,insulation_thickness_in,1,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F0_current_fluid_sources,fast_scan,mdot_search_lower_kg_s,0.005,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_2,F0_current_fluid_sources,fast_scan,mdot_search_upper_kg_s,0.05,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_2,F1_heater_only,fast_scan,fluid_case_name,Salt 2,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,heater_power_W,265.7,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,test_section_power_W,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,air_T_inlet_K,299.19,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,air_flow_Lpm,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,imposed_cooler_duty_W,136.351,setup_input,true,work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv
+salt_2,F1_heater_only,fast_scan,boundary_ambient_Ta_K,299.19,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv
+salt_2,F1_heater_only,fast_scan,radiation_on,false,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,insulation_thickness_in,1,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_2,F1_heater_only,fast_scan,mdot_search_lower_kg_s,0.005,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_2,F1_heater_only,fast_scan,mdot_search_upper_kg_s,0.05,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_3,F0_current_fluid_sources,fast_scan,fluid_case_name,Salt 3,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,heater_power_W,297.5,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,test_section_power_W,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,air_T_inlet_K,299.79,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,air_flow_Lpm,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,imposed_cooler_duty_W,150.77,setup_input,true,work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv
+salt_3,F0_current_fluid_sources,fast_scan,boundary_ambient_Ta_K,299.79,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv
+salt_3,F0_current_fluid_sources,fast_scan,radiation_on,false,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,insulation_thickness_in,1,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F0_current_fluid_sources,fast_scan,mdot_search_lower_kg_s,0.005,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_3,F0_current_fluid_sources,fast_scan,mdot_search_upper_kg_s,0.05,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_3,F1_heater_only,fast_scan,fluid_case_name,Salt 3,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,heater_power_W,297.5,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,test_section_power_W,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,air_T_inlet_K,299.79,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,air_flow_Lpm,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,imposed_cooler_duty_W,150.77,setup_input,true,work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv
+salt_3,F1_heater_only,fast_scan,boundary_ambient_Ta_K,299.79,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv
+salt_3,F1_heater_only,fast_scan,radiation_on,false,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,insulation_thickness_in,1,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_3,F1_heater_only,fast_scan,mdot_search_lower_kg_s,0.005,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_3,F1_heater_only,fast_scan,mdot_search_upper_kg_s,0.05,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_4,F0_current_fluid_sources,fast_scan,fluid_case_name,Salt 4,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,heater_power_W,337.6,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,test_section_power_W,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,air_T_inlet_K,299.97,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,air_flow_Lpm,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,imposed_cooler_duty_W,169.227,setup_input,true,work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv
+salt_4,F0_current_fluid_sources,fast_scan,boundary_ambient_Ta_K,299.97,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv
+salt_4,F0_current_fluid_sources,fast_scan,radiation_on,false,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,insulation_thickness_in,1,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F0_current_fluid_sources,fast_scan,mdot_search_lower_kg_s,0.005,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_4,F0_current_fluid_sources,fast_scan,mdot_search_upper_kg_s,0.05,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_4,F1_heater_only,fast_scan,fluid_case_name,Salt 4,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,heater_power_W,337.6,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,test_section_power_W,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,air_T_inlet_K,299.97,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,air_flow_Lpm,37,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,imposed_cooler_duty_W,169.227,setup_input,true,work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv
+salt_4,F1_heater_only,fast_scan,boundary_ambient_Ta_K,299.97,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv
+salt_4,F1_heater_only,fast_scan,radiation_on,false,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,insulation_thickness_in,1,setup_input,true,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml
+salt_4,F1_heater_only,fast_scan,mdot_search_lower_kg_s,0.005,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md
+salt_4,F1_heater_only,fast_scan,mdot_search_upper_kg_s,0.05,setup_input,true,work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md

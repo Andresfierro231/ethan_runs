@@ -1,0 +1,4 @@
+gate,value,pass,reason
+ordinary_fit_rows,0,false,no ordinary upcomer fit rows
+anchor_candidate_rows,0,false,no non-recirculating or transition anchor candidates
+current_rows_fit_evidence,false,false,current rows are recirculation diagnostics or incomplete queued evidence

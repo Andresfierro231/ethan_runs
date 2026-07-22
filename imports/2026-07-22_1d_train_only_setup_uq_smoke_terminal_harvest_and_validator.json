@@ -1,0 +1,52 @@
+{
+  "task": "TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-TERMINAL-HARVEST-AND-VALIDATOR-2026-07-22",
+  "task_id": "TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-TERMINAL-HARVEST-AND-VALIDATOR-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Scheduler Monitor / Forward-pred / Tester / Writer / Reviewer",
+  "summary": "Harvested completed Slurm job 3310985 train-only setup-UQ smoke outputs and published a no-release/no-score terminal interpretation.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-TERMINAL-HARVEST-AND-VALIDATOR-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-train-only-setup-uq-smoke-terminal-harvest-and-validator.md",
+    "imports/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/baseline_root_and_qoi_smoke.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/one_at_a_time_setup_uq_smoke.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/residual_owner_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/logs/run_provenance.env",
+    "Fluid source tree",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/summary.json",
+    "baseline_terminal_summary": "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/baseline_terminal_summary.csv",
+    "sensitivity_family_summary": "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/sensitivity_family_summary.csv",
+    "decision_gate_terminal": "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/decision_gate_terminal.csv"
+  },
+  "decision": "terminal_harvest_complete_train_only_smoke_no_release_no_score",
+  "baseline_rows": 3,
+  "baseline_accepted_rows": 3,
+  "variant_rows": 33,
+  "variant_accepted_rows": 33,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "protected_scoring": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "candidate_freeze": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxation": false,
+  "no_scorecard_outputs": true
+}

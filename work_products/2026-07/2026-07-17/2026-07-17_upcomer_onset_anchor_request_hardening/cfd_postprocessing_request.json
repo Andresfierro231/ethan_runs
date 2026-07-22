@@ -1,0 +1,12 @@
+{
+  "admission_status": "request_only_not_evidence",
+  "case_matrix_csv": "target_re_thermal_drive_matrix.csv",
+  "date": "2026-07-17",
+  "global_window_rule": "all thermal, pressure, velocity, reverse-flow, and heat-ledger quantities must share case_key/mesh_id/window_id/station definitions",
+  "mesh_time_uncertainty_csv": "mesh_time_uncertainty_requirements.csv",
+  "pm5_pm10_extraction_csv": "pm5_pm10_extraction_request.csv",
+  "request_type": "non_launching_cfd_postprocessing_contract",
+  "same_window_fields_csv": "same_window_field_request.csv",
+  "scheduler_action": false,
+  "task": "TODO-UPCOMER-ONSET-ANCHOR-REQUEST-HARDENING"
+}

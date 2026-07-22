@@ -1,0 +1,12 @@
+guardrail_id,field_or_action,runtime_allowed,fit_allowed,model_selection_allowed,protected_scoring_allowed,allowed_use
+G01,CFD_mdot,false,false,false,false,diagnostic comparison only after frozen prediction
+G02,realized_CFD_wallHeatFlux,false,false,false,false,diagnostic comparison only after frozen prediction
+G03,imposed_CFD_cooler_duty,false,false,false,false,diagnostic comparison only after frozen prediction
+G04,validation_temperatures,false,false,false,false,diagnostic comparison only after frozen prediction
+G05,holdout_temperatures,false,false,false,false,diagnostic comparison only after frozen prediction
+G06,external_test_temperatures,false,false,false,false,diagnostic comparison only after frozen prediction
+G07,realized_test_section_heat,false,false,false,false,diagnostic comparison only after frozen prediction
+G08,heat_residual_as_runtime_closure,false,false,false,false,none
+G09,global_multiplier_selected_by_score,false,false,false,false,none
+G10,source_property_release,false_from_this_row,false_from_this_row,false_from_this_row,false,separate release row only
+G11,validation_holdout_external_rows,false,false,false,false_from_smoke_row,not used in train-only smoke

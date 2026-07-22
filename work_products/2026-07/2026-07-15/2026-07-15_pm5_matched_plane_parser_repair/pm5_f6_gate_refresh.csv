@@ -1,0 +1,4 @@
+gate,status,evidence,next_action
+pm5_plane_parser_repair,partial,"metric_rows=12; repaired_plane_wallT_rows=3; status_counts={'plane_and_wall_temperature_repaired_wallHeatFlux_blocked': 3, 'incomplete': 9}",consume repaired U/rho/T/Re/Ri rows for F6/onset review
+pm5_wallHeatFlux_internal_nu,blocked_missing_wallHeatFlux,wallHeatFlux_rows=0; foamPostProcess wallHeatFlux failed in staged logs,repair OpenFOAM wallHeatFlux functionObject/thermophysicalTransport context before internal-Nu admission
+f6_phi_re_bounded_review,blocked,all_pm5_rows_have_repaired_plane_and_wallT=False; admitted_rows=0,resample missing PM5 plane fields before F6 gate; keep mdot as guardrail and no global multiplier

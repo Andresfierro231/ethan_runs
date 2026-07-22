@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="510" viewBox="0 0 720 510">
+<rect width="720" height="100%" fill="#ffffff"/>
+<text x="40" y="28" font-family="Arial, sans-serif" font-size="18" font-weight="700">S13 predictive path status</text>
+<rect x="40" y="45" width="265" height="52" rx="4" fill="#d1e7dd" stroke="#0f5132"/>
+<text x="52" y="67" font-family="Arial, sans-serif" font-size="13" font-weight="700">runtime_input_contract</text>
+<text x="52" y="85" font-family="Arial, sans-serif" font-size="12">ready_for_diagnostic_reporting</text>
+<line x1="172.5" y1="97" x2="172.5" y2="115" stroke="#555" stroke-width="1.5"/>
+<polygon points="167.5,108 177.5,108 172.5,115" fill="#555"/>
+<text x="340" y="69" font-family="Arial, sans-serif" font-size="13">state what inputs are allowed and what remains forbidden</text>
+<text x="340" y="88" font-family="Arial, sans-serif" font-size="11" fill="#555">work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/production_readiness_table.csv</text>
+<rect x="40" y="115" width="265" height="52" rx="4" fill="#d1e7dd" stroke="#0f5132"/>
+<text x="52" y="137" font-family="Arial, sans-serif" font-size="13" font-weight="700">train_validation_holdout_external_test_separation</text>
+<text x="52" y="155" font-family="Arial, sans-serif" font-size="12">policy_ready_no_scores_released_here</text>
+<line x1="172.5" y1="167" x2="172.5" y2="185" stroke="#555" stroke-width="1.5"/>
+<polygon points="167.5,178 177.5,178 172.5,185" fill="#555"/>
+<text x="340" y="139" font-family="Arial, sans-serif" font-size="13">show split discipline before any future freeze</text>
+<text x="340" y="158" font-family="Arial, sans-serif" font-size="11" fill="#555">reports/thesis_dossier/README.md</text>
+<rect x="40" y="185" width="265" height="52" rx="4" fill="#f8d7da" stroke="#842029"/>
+<text x="52" y="207" font-family="Arial, sans-serif" font-size="13" font-weight="700">pressure_gate</text>
+<text x="52" y="225" font-family="Arial, sans-serif" font-size="12">blocked_pending_exact_pressure_row</text>
+<line x1="172.5" y1="237" x2="172.5" y2="255" stroke="#555" stroke-width="1.5"/>
+<polygon points="167.5,248 177.5,248 172.5,255" fill="#555"/>
+<text x="340" y="209" font-family="Arial, sans-serif" font-size="13">negative result and next-unblock lane</text>
+<text x="340" y="228" font-family="Arial, sans-serif" font-size="11" fill="#555">work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/blocker_unlock_matrix.csv</text>
+<rect x="40" y="255" width="265" height="52" rx="4" fill="#f8d7da" stroke="#842029"/>
+<text x="52" y="277" font-family="Arial, sans-serif" font-size="13" font-weight="700">thermal_gate</text>
+<text x="52" y="295" font-family="Arial, sans-serif" font-size="12">diagnostic_wall_core_temperatures_ready_Q_</text>
+<line x1="172.5" y1="307" x2="172.5" y2="325" stroke="#555" stroke-width="1.5"/>
+<polygon points="167.5,318 177.5,318 172.5,325" fill="#555"/>
+<text x="340" y="279" font-family="Arial, sans-serif" font-size="13">wall/core residual ownership evidence without heat-flow admission</text>
+<text x="340" y="298" font-family="Arial, sans-serif" font-size="11" fill="#555">work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv</text>
+<rect x="40" y="325" width="265" height="52" rx="4" fill="#f8d7da" stroke="#842029"/>
+<text x="52" y="347" font-family="Arial, sans-serif" font-size="13" font-weight="700">recirculation_exchange_gate</text>
+<text x="52" y="365" font-family="Arial, sans-serif" font-size="12">diagnostic_exchange_ready_same_qoi_uq_bloc</text>
+<line x1="172.5" y1="377" x2="172.5" y2="395" stroke="#555" stroke-width="1.5"/>
+<polygon points="167.5,388 177.5,388 172.5,395" fill="#555"/>
+<text x="340" y="349" font-family="Arial, sans-serif" font-size="13">finite exchange field evidence and fail-closed admission boundary</text>
+<text x="340" y="368" font-family="Arial, sans-serif" font-size="11" fill="#555">work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv</text>
+<rect x="40" y="395" width="265" height="52" rx="4" fill="#d1e7dd" stroke="#0f5132"/>
+<text x="52" y="417" font-family="Arial, sans-serif" font-size="13" font-weight="700">negative_results_as_scientific_evidence</text>
+<text x="52" y="435" font-family="Arial, sans-serif" font-size="12">ready_for_thesis_insert</text>
+<text x="340" y="419" font-family="Arial, sans-serif" font-size="13">document why the coefficient is not admitted</text>
+<text x="340" y="438" font-family="Arial, sans-serif" font-size="11" fill="#555">work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/downstream_decision.csv</text>
+</svg>

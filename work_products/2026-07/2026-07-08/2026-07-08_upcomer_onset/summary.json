@@ -1,0 +1,21 @@
+{
+  "generated_at": "2026-07-08T15:14:33",
+  "task": "TODO-UPCOMER-ONSET",
+  "rows": 3,
+  "regime_classes": [
+    "recirculation_cell_observed"
+  ],
+  "figure": "work_products/2026-07-08_upcomer_onset/figures/upcomer_onset_regime.svg",
+  "inputs": [
+    "work_products/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv",
+    "work_products/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv"
+  ],
+  "outputs": [
+    "upcomer_onset_regime_table.csv",
+    "figures/upcomer_onset_regime.svg",
+    "README.md",
+    "summary.json"
+  ],
+  "mesh_uncertainty_status": "work_in_progress_not_claimed",
+  "corrected_salt_perturbation_status": "work_in_progress_not_admitted"
+}

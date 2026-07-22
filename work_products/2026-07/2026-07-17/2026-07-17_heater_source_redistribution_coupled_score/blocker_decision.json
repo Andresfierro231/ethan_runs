@@ -1,0 +1,14 @@
+{
+  "admitted_candidates": [],
+  "blocker_decision": "keep_open",
+  "blocker_id": "predictive-wall-test-section-submodels",
+  "coupled_completed_rows": 27,
+  "coupled_status_counts": {
+    "completed": 27
+  },
+  "created_utc": "2026-07-17T21:32:53.798968+00:00",
+  "selected_lambda": "0",
+  "selection_status": "selected_from_salt2_only",
+  "task": "AGENT-511",
+  "why": "No Salt2-fit heater-source redistribution candidate has passed validation and holdout mdot, TP, TW, and all-probe gates vs M3."
+}

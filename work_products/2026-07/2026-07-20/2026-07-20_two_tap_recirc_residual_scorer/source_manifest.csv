@@ -1,0 +1,8 @@
+source_id,path,use,mutation
+raw_endpoint_pressure_velocity,work_products/2026-07/2026-07-18/2026-07-18_two_tap_staged_endpoint_sampler/raw_endpoint_pressure_velocity.csv,"endpoint pressure, velocity, mass flux, area, normals, RAF/RMF/SVF",read_only
+pressure_velocity_basis_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv,static/p_rgh/hydrostatic/kinetic/dynamic-head/K trend inputs,read_only
+endpoint_recirculation_metrics,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,aggregate RAF/RMF/SVF gate status,read_only
+component_isolation_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_isolation_decision/component_isolation_audit.csv,apparent-cluster-only isolation blocker,read_only
+same_qoi_uncertainty_audit,work_products/2026-07/2026-07-18/2026-07-18_two_tap_same_qoi_uq_status/same_qoi_uncertainty_audit.csv,missing same-QOI UQ blocker,read_only
+section_effective_model_contract,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/section_effective_model_contract.csv,"residual formula, q_ref contract, forbidden labels",read_only
+two_tap_nonrecirc_anchor_plan,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/summary.json,separate ordinary-flow contrast lane,read_only

@@ -1,0 +1,16 @@
+{
+  "task": "AGENT-344",
+  "generated_at": "2026-07-20T13:08:58-05:00",
+  "status": "compute_package_ready_for_submission",
+  "candidate_rows": 23,
+  "runnable_now_rows": 7,
+  "dependency_gated_rows": 4,
+  "blocked_rows": 12,
+  "admission_rows": 36,
+  "tmp_dir": "tmp/2026-07-20_pressure_upcomer_matched_plane_relaunch_package",
+  "runner": "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/scripts/run_upcomer_matched_plane_compute.sh",
+  "nominal_sbatch": "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/scripts/submit_nominal_upcomer_matched_plane_compute.sbatch",
+  "corrected_q_sbatch": "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/scripts/submit_corrected_q_dependency_upcomer_matched_plane_compute.sbatch",
+  "pm10_sbatch": "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/scripts/submit_pm10_upcomer_matched_plane_compute.sbatch",
+  "runnable_or_dependency_rows": 7
+}

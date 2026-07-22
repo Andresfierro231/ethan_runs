@@ -1,0 +1,33 @@
+{
+  "task": "AGENT-565",
+  "date": "2026-07-20",
+  "candidate_family": "AMX1_axial_mixing_two_stream_v1",
+  "decision": "fluid_patch_required_before_smoke",
+  "can_run_smoke_now": false,
+  "reason": "Current Fluid ScenarioConfig and validators support UMX1 energy_conserving_exchange_v1 and TSWFC2 distributed_wall_fluid_nodes_v1, but no axial_mixing_mode, axial_mixing_multiplier, axial_mixing_parent_segments, or axial-mixing ledger contract exists.",
+  "first_candidate": "AMX1a_axial_mixing_segment_diffusion_v1",
+  "first_smoke_scope_after_patch": {
+    "case": "salt2_jin_nominal",
+    "rows": "disabled baseline plus one low bounded AMX1a multiplier",
+    "no_score_grid": true,
+    "required_gates": [
+      "finite pressure root",
+      "finite temperature root",
+      "accepted_for_validation true",
+      "nonzero axial-mixing ledger",
+      "axial-mixing energy residual within tolerance",
+      "runtime input lint pass",
+      "split policy lint pass"
+    ]
+  },
+  "do_not_do_next": [
+    "Do not rerun the same four-node TSWFC2 candidate as an unlock attempt.",
+    "Do not launch a UMX1 exchange-only score grid.",
+    "Do not score Salt1-4 or external/holdout rows before AMX1 smoke passes."
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "scientific_admission_change": "none"
+}

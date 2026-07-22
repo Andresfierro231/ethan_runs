@@ -1,0 +1,6 @@
+input_family,writer_status,runtime_allowed_now,not_allowed
+setup_known_geometry_and_power,allowed after row-specific release,not for frozen scoring,infer from protected score residuals
+CFD_mdot,diagnostic target/context only,false,use as predictive model input
+realized_wallHeatFlux,diagnostic audit only,false,use as source or heat loss
+validation_holdout_external_temperatures,score targets only after freeze,false,tune or select model
+post_solve_pressure_losses,diagnostic attribution only,false,fit hidden pressure multiplier

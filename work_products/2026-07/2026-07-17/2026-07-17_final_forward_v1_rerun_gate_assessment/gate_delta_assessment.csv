@@ -1,0 +1,7 @@
+gate,new_admitted_rows,rerun_triggered,reason
+pressure_closure,0,false,zero pressure rows admitted
+test_section_passive_loss,0,false,zero test-section candidates admitted
+upcomer_hybrid,0,false,frozen candidate remains blocked
+upcomer_onset_anchors,0,false,anchor matrix design only; scheduler_action=False
+boundary_layer_executable_ablation,0,false,zero executable ablation rows
+coupled_forward_v1,0,false,final forward-v1 remains blocked

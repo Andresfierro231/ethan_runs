@@ -1,0 +1,4 @@
+case_id,surface_extraction_ready,surface_extraction_allowed_next_row,sampler_manifest_refresh_allowed,production_harvest_allowed,same_qoi_uq_allowed,next_action
+salt_2,true,true,false,false,false,claim surface VTK extraction row from seeded surface/input manifest
+salt_3,true,true,false,false,false,claim surface VTK extraction row from seeded surface/input manifest
+salt_4,true,true,false,false,false,claim surface VTK extraction row from seeded surface/input manifest

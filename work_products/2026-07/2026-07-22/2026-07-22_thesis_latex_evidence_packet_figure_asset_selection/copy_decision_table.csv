@@ -1,0 +1,10 @@
+figure_id,copy_now,copy_later_recommendation,reason
+FIG-UPCOMER-UY-COMPOSITE,false,copy_after_user_selects_final_upcomer_panel,"PNG is about 1 MB and useful; keep path-only until final layout choice."
+FIG-UPCOMER-MAG-COMPOSITE,false,copy_after_user_selects_final_upcomer_panel,"PNG is about 1.1 MB and useful; keep path-only until final layout choice."
+FIG-S12-WATERFALL,false,copy_later_low_cost_if_used,"SVG is tiny and ready, but this row is manifest-only."
+FIG-S13-PATH-STATUS,false,copy_later_low_cost_if_used,"SVG is tiny and ready, but this row is manifest-only."
+FIG-MODEL-FORM-LADDER,false,copy_later_low_cost_if_used,"SVG is modest and ready, but this row is manifest-only."
+FIG-BLOCKED-SCORECARD,false,copy_later_low_cost_if_used,"SVG is modest and ready, but this row is manifest-only."
+FIG-M3-SALT2-ELEVATION,false,copy_later_if_ch7_uses_temperature_profile_panels,"Diagnostic figure only; decide after external writer layout."
+FIG-M3-SALT3-ELEVATION,false,copy_later_if_ch7_uses_temperature_profile_panels,"Diagnostic figure only; decide after external writer layout."
+FIG-M3-SALT4-ELEVATION,false,copy_later_if_ch7_uses_temperature_profile_panels,"Diagnostic figure only; decide after external writer layout."

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="410" viewBox="0 0 920 410">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:20px;font-weight:700}.label{font-size:12px}.small{font-size:10px}</style>
+<rect x="0" y="0" width="920" height="410" fill="white"/>
+<text x="72" y="32" class="title">junction/stub heat-loss fraction by bucket</text>
+<rect x="72" y="182.0" width="126" height="132.0" fill="#2166ac" opacity="0.86"/>
+<text x="135.0" y="336" text-anchor="middle" class="label">lower_left</text>
+<text x="135.0" y="174.0" text-anchor="middle" class="label">0.199</text>
+<rect x="236" y="184.7" width="126" height="129.3" fill="#2166ac" opacity="0.86"/>
+<text x="299.0" y="336" text-anchor="middle" class="label">lower_right</text>
+<text x="299.0" y="176.7" text-anchor="middle" class="label">0.195</text>
+<rect x="400" y="151.6" width="126" height="162.4" fill="#2166ac" opacity="0.86"/>
+<text x="463.0" y="336" text-anchor="middle" class="label">upper_left</text>
+<text x="463.0" y="143.6" text-anchor="middle" class="label">0.245</text>
+<rect x="564" y="74.0" width="126" height="240.0" fill="#b2182b" opacity="0.86"/>
+<text x="627.0" y="336" text-anchor="middle" class="label">upper_right</text>
+<text x="627.0" y="66.0" text-anchor="middle" class="label">0.362</text>
+<text x="72" y="378" class="small">Fractions are diagnostic realized-loss shares; coefficient fitting remains blocked pending comparable geometry/temperature-drive metadata.</text>
+</svg>

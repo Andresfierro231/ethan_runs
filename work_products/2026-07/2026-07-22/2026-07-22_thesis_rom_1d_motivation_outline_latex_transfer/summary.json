@@ -1,0 +1,13 @@
+{
+  "task_id": "TODO-THESIS-ROM-1D-MOTIVATION-OUTLINE-LATEX-TRANSFER-2026-07-22",
+  "decision": "rom_to_1d_motivation_outline_imported_to_latex_evidence_no_body_edit",
+  "date": "2026-07-22",
+  "external_outline_added": "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/rom_to_1d_motivation_outline.md",
+  "external_claim_boundaries_added": "../papers/UTexas_Research/csem-Masters_dissertation/evidence/ch01_ch04_foundations/rom_to_1d_motivation_claim_boundaries.csv",
+  "thesis_body_prose_edited": false,
+  "raw_cfd_imported": false,
+  "binary_figure_copy": false,
+  "closure_admission": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxed": false
+}

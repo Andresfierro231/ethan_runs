@@ -1,0 +1,5 @@
+gate,allowed,reason
+observed_TP_TW_temperature_as_runtime_input,False,validation temperatures are score targets only
+bulk_to_TP_thermal_development_offset_release,False,"D2 shows promise, but no physical/source-bounded correction is released"
+wall_temperature_projection_for_TW_score,True,model-predicted wall state may be projected for post-solve score comparison
+TW10_score_or_projection,False,active-HX shell state is absent

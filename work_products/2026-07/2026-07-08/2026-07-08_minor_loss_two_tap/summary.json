@@ -1,0 +1,49 @@
+{
+  "generated_at": "2026-07-08T14:54:18",
+  "inputs": {
+    "bend_minor_loss_dir": "work_products/2026-07-01_claude_bend_minor_loss",
+    "pressure_ledger": "work_products/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv"
+  },
+  "limitations": [
+    "Preserved feature rows do not include full centerline tap-to-tap length.",
+    "K_local subtracts only a minimum abs(dz)-proxy adjacent straight loss and remains an upper-bound estimate.",
+    "Test-section complex/reducer rows are unavailable until raw feature extraction is rerun for those taps.",
+    "Rows adjacent to recirculation spans are validation diagnostics, not ordinary single-stream K closures.",
+    "All rows remain coarse_no_gci."
+  ],
+  "outputs": {
+    "csv": "work_products/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv",
+    "json": "work_products/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.json"
+  },
+  "summary": {
+    "K_apparent_range": [
+      6.224711684075602,
+      16.503825877025502
+    ],
+    "K_local_range": [
+      1.0660717239286341,
+      8.747643945836534
+    ],
+    "computed_rows": 12,
+    "features": [
+      "corner_lower_left",
+      "corner_lower_right",
+      "corner_upper_left",
+      "corner_upper_right",
+      "test_section_complex"
+    ],
+    "quality_flags": [
+      "K_local_still_upper_bound",
+      "coarse_no_gci",
+      "downstream_span_recirculation_invalid_single_stream",
+      "feature_not_in_preserved_bend_minor_loss",
+      "recirculation_adjacent",
+      "requires_raw_two_tap_extraction",
+      "tap_length_proxy_abs_dz_not_centerline_length"
+    ],
+    "row_count": 15,
+    "source_ids": 3,
+    "unavailable_rows": 3
+  },
+  "task": "TODO-MINOR-LOSS-TWO-TAP"
+}

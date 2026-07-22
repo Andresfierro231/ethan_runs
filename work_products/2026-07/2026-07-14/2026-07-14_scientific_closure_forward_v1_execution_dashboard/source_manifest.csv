@@ -1,0 +1,13 @@
+artifact,role,path
+final_forward_v1_summary,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json
+final_forward_v1_gates,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_gate_checklist.csv
+final_forward_v1_waitlist,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/scorecard_inputs_waiting_on_agents.csv
+internal_nu_dependency_blockers,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/internal_nu_dependency_blockers.csv
+cfd_triage_summary,source,work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/summary.json
+upcomer_compute_status,source,.agent/status/2026-07-14_AGENT-344.md
+hydraulic_f6_handoff,source,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/f6_readiness_handoff.csv
+boundary_guardrail_summary,source,work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/summary.json
+workstream_execution_dashboard,generated,work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/workstream_execution_dashboard.csv
+gate_landing_requirements,generated,work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/gate_landing_requirements.csv
+thesis_evidence_register,generated,work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/thesis_evidence_register.csv
+forward_v1_refresh_queue,generated,work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/forward_v1_refresh_queue.csv

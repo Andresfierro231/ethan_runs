@@ -1,0 +1,8 @@
+rank,gate,status,observed_count_or_value,blocks,next_action,forbidden_shortcut
+1,CAND001_terminal_success,fail,terminal_success_cases=0; timeout_jobs=2,raw endpoint evidence and sampler release,Use a separate scheduler-safe retry row if CAND001 remains scientifically desired,Do not score endpoints before terminal success.
+2,endpoint_fields,fail,endpoint_fields_ready=0,component-K/F6/cluster-K evidence,Sample finite p p_rgh U rho T face area normals RAF RMF and SVF after terminal success,Do not fit from partial endpoint fields.
+3,ordinary_flow,fail,ordinary_candidate_pairs=0; sampled_endpoint_ordinary_flow_pass_rows=0,ordinary F6/component-K labels,Require RAF < 0.01 and RMF < 0.01 on same-window endpoint pair,Do not relax RAF/RMF after seeing results.
+4,same_qoi_mesh_time_uq,fail,same_qoi_mesh_uq_admissible_rows=0,F6 review and F3-vs-F6 comparison,Build same-label same-formula same-sign mesh/time UQ after endpoint rows exist,Do not release target-only or mixed-basis values.
+5,component_isolation,fail,straight/development reference absent,component K,Obtain valid straight-reference/development subtraction before any component interpretation,Do not interpret section residual as local component loss.
+6,source_property_split_refresh,blocked,source_property_release_ready_rows=0; fit_allowed_rows=0,S11/S15/S6 trigger,Run candidate-specific strict source/property refresh only after candidate exists,Do not trigger freeze or final score.
+7,lower_right_result,negative_result,section_effective_rows=3; component_k_admitted_rows=0,component K/F6 claims,Cite lower-right rows as section-effective diagnostic evidence only,Do not use clipped K hidden multiplier or negative-loss closure.

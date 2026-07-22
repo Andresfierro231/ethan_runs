@@ -1,0 +1,7 @@
+summary_row,value,thesis_use,claim_boundary
+rows_scored,53,branch-use scorecard breadth,diagnostic review only
+admitted_rows,0,admission status,0 admitted pressure/F6 rows
+not_admitted_rows,53,non-admission status,do not convert to F6/component K
+future_candidate_rows,8,narrowed future ordinary lanes,future-candidate only
+do_not_use_rows,34,excluded ordinary F6/component-K use,appendix can carry full details
+preferred_future_lanes,corner_lower_right;right_leg;test_section_span,future work target,not current admission

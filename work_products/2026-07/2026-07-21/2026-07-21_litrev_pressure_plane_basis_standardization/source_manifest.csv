@@ -1,0 +1,16 @@
+source_key,path,exists,use
+schema_gap,work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv,True,read_only_input
+pressure_term_ledger,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,True,read_only_input
+streamwise_station_map,work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv,True,read_only_input
+pressure_ladder_branch_screen,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv,True,read_only_input
+two_tap_basis,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/pressure_velocity_basis_audit.csv,True,read_only_input
+two_tap_qref_face,work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/face_level_qref_flux_audit.csv,True,read_only_input
+two_tap_qref_orientation,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/q_ref_orientation_audit.csv,True,read_only_input
+pressure_corner_recovery,work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv,True,read_only_input
+f6_endpoint_matrix,work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv,True,read_only_input
+f6_same_qoi_mesh,work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_mesh_uq.csv,True,read_only_input
+f6_same_qoi_time,work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/same_qoi_time_uq.csv,True,read_only_input
+pm10_upcomer_targets,work_products/2026-07/2026-07-20/2026-07-20_pm10_same_window_residual_targets/pm10_plane_pressure_targets.csv,True,read_only_input
+readiness_refresh,reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/README.md,True,read_only_input
+latest_corrected_q_status,.agent/status/2026-07-21_AGENT-576.md,True,read_only_input
+high_heat_status,.agent/status/2026-07-17_AGENT-485.md,True,read_only_input

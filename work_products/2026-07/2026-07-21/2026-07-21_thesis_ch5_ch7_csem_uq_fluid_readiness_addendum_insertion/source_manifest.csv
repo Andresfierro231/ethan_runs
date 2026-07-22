@@ -1,0 +1,7 @@
+source_id,path,use,read_only
+MATRIX,work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration/chapter_insertion_matrix.csv,chapter insertion source of truth,true
+CLAIMS,work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration/claim_boundary_ledger.csv,claim-boundary source,true
+BLOCKERS,work_products/2026-07/2026-07-21/2026-07-21_thesis_csem_uq_fluid_readiness_integration/blocked_unlock_table.csv,blocker/unlock source,true
+CH5,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,edited chapter file,false
+CH6,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,edited chapter file,false
+CH7,reports/thesis_dossier/Chapters_and_sections/current/19_ch7_csem_pressure_thermal_predictive_results.md,edited chapter file,false

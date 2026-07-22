@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_design/exchange_sampler_dry_extraction_plan.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_design/exchange_sampler_required_schema.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_sampler_design/sampler_output_schema.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/case_time_window_queue.csv,read_only_input,true,false,false
+tools/extract/sample_upcomer_exchange_cell.py,read_only_input,true,false,false
+tools/extract/sample_upcomer_convection_cell.py,read_only_input,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation,read_only_input,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation,read_only_input,true,true,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation,read_only_input,true,true,false
+work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json,read_only_input,true,false,false
+work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_3_jin_coarse_mesh/mesh_stations.json,read_only_input,true,false,false
+work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_4_jin_coarse_mesh/mesh_stations.json,read_only_input,true,false,false

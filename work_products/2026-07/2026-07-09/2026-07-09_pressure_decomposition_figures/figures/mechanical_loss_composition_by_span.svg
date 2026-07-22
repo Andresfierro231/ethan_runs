@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="722" viewBox="0 0 1000 722">
+<!-- AGENT-234 · source pressure_term_ledger.csv · generated 2026-07-09T15:21:49 · values in figure_data.csv · see DATA_DISCLOSURE.md -->
+<rect x="0" y="0" width="1000" height="722" fill="#fcfcfb"/>
+<style>
+text{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#0b0b0b}
+.title{font-size:19px;font-weight:700;fill:#0b0b0b}
+.subtitle{font-size:11.5px;fill:#52514e}
+.section{font-size:12px;font-weight:700;fill:#52514e}
+.spanlbl{font-size:11px;fill:#0b0b0b}
+.spanlbl-r{font-size:11px;fill:#898781;font-style:italic}
+.axislbl{font-size:11px;fill:#52514e}
+.tick{font-size:10px;fill:#898781;font-variant-numeric:tabular-nums}
+.val{font-size:10px;fill:#0b0b0b;font-weight:600;font-variant-numeric:tabular-nums}
+.valg{font-size:10px;fill:#006300;font-weight:600;font-variant-numeric:tabular-nums}
+.legend{font-size:11px;fill:#0b0b0b}
+.note{font-size:10px;fill:#898781}
+</style>
+<text x="22.0" y="30.0" class="title">Mechanical pressure loss by span</text>
+<text x="22.0" y="50.0" class="subtitle">Salt 2 / 3 / 4 Jin mainline · irreversible losses only · coarse mesh, no GCI</text>
+<line x1="200.0" y1="78.0" x2="200.0" y2="642.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="200.0" y="70.0" text-anchor="middle" class="tick">0.00</text>
+<line x1="438.7" y1="78.0" x2="438.7" y2="642.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="438.7" y="70.0" text-anchor="middle" class="tick">5.0</text>
+<line x1="677.3" y1="78.0" x2="677.3" y2="642.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="677.3" y="70.0" text-anchor="middle" class="tick">10.0</text>
+<line x1="916.0" y1="78.0" x2="916.0" y2="642.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="916.0" y="70.0" text-anchor="middle" class="tick">15.0</text>
+<line x1="200.0" y1="78.0" x2="200.0" y2="642.0" stroke="#c3c2b7" stroke-width="1.0"/>
+<line x1="200.0" y1="642.0" x2="916.0" y2="642.0" stroke="#c3c2b7" stroke-width="1.0"/>
+<text x="22.0" y="95.0" class="section">Salt 2</text>
+<line x1="22.0" y1="100.0" x2="916.0" y2="100.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="190.0" y="121.5" text-anchor="end" class="spanlbl">Lower leg (heater)</text>
+<rect x="200.0" y="108.5" width="360.5" height="18.0" fill="#2a78d6"/>
+<rect x="562.5" y="108.5" width="59.2" height="18.0" fill="#eb6834"/>
+<path d="M623.7,108.5 H643.6 Q647.6,108.5 647.6,112.5 V122.5 Q647.6,126.5 643.6,126.5 H623.7 Z" fill="#4a3aa7"/>
+<text x="653.6" y="121.5" class="val">9.4 Pa</text>
+<text x="190.0" y="148.5" text-anchor="end" class="spanlbl">Right leg (downcomer)</text>
+<rect x="200.0" y="135.5" width="341.1" height="18.0" fill="#2a78d6"/>
+<rect x="543.1" y="135.5" width="64.2" height="18.0" fill="#eb6834"/>
+<path d="M609.3,135.5 H641.8 Q645.8,135.5 645.8,139.5 V149.5 Q645.8,153.5 641.8,153.5 H609.3 Z" fill="#4a3aa7"/>
+<text x="651.8" y="148.5" class="val">9.3 Pa</text>
+<text x="190.0" y="175.5" text-anchor="end" class="spanlbl-r">Left lower (upcomer) *</text>
+<rect x="200.0" y="162.5" width="73.7" height="18.0" fill="#2a78d6"/>
+<path d="M275.7,162.5 H308.3 Q312.3,162.5 312.3,166.5 V176.5 Q312.3,180.5 308.3,180.5 H275.7 Z" fill="#eb6834"/>
+<text x="318.3" y="175.5" class="val">2.4 Pa</text>
+<text x="190.0" y="202.5" text-anchor="end" class="spanlbl">Test section</text>
+<path d="M200.0,189.5 H261.2 Q265.2,189.5 265.2,193.5 V203.5 Q265.2,207.5 261.2,207.5 H200.0 Z" fill="#2a78d6"/>
+<text x="271.2" y="202.5" class="val">1.4 Pa</text>
+<text x="190.0" y="229.5" text-anchor="end" class="spanlbl-r">Left upper (upcomer) *</text>
+<rect x="200.0" y="216.5" width="54.2" height="18.0" fill="#2a78d6"/>
+<path d="M256.2,216.5 H271.2 Q275.2,216.5 275.2,220.5 V230.5 Q275.2,234.5 271.2,234.5 H256.2 Z" fill="#4a3aa7"/>
+<text x="281.2" y="229.5" class="val">1.6 Pa</text>
+<text x="190.0" y="256.5" text-anchor="end" class="spanlbl">Upper leg (downcomer)</text>
+<rect x="200.0" y="243.5" width="318.2" height="18.0" fill="#2a78d6"/>
+<rect x="520.2" y="243.5" width="60.1" height="18.0" fill="#eb6834"/>
+<path d="M582.3,243.5 H606.9 Q610.9,243.5 610.9,247.5 V257.5 Q610.9,261.5 606.9,261.5 H582.3 Z" fill="#4a3aa7"/>
+<text x="616.9" y="256.5" class="val">8.6 Pa</text>
+<text x="22.0" y="283.0" class="section">Salt 3</text>
+<line x1="22.0" y1="288.0" x2="916.0" y2="288.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="190.0" y="309.5" text-anchor="end" class="spanlbl">Lower leg (heater)</text>
+<rect x="200.0" y="296.5" width="356.4" height="18.0" fill="#2a78d6"/>
+<rect x="558.4" y="296.5" width="65.8" height="18.0" fill="#eb6834"/>
+<path d="M626.1,296.5 H653.5 Q657.5,296.5 657.5,300.5 V310.5 Q657.5,314.5 653.5,314.5 H626.1 Z" fill="#4a3aa7"/>
+<text x="663.5" y="309.5" class="val">9.6 Pa</text>
+<text x="190.0" y="336.5" text-anchor="end" class="spanlbl">Right leg (downcomer)</text>
+<rect x="200.0" y="323.5" width="423.8" height="18.0" fill="#2a78d6"/>
+<rect x="625.8" y="323.5" width="75.1" height="18.0" fill="#eb6834"/>
+<path d="M702.9,323.5 H738.9 Q742.9,323.5 742.9,327.5 V337.5 Q742.9,341.5 738.9,341.5 H702.9 Z" fill="#4a3aa7"/>
+<text x="748.9" y="336.5" class="val">11.4 Pa</text>
+<text x="190.0" y="363.5" text-anchor="end" class="spanlbl-r">Left lower (upcomer) *</text>
+<rect x="200.0" y="350.5" width="83.5" height="18.0" fill="#2a78d6"/>
+<path d="M285.5,350.5 H322.1 Q326.1,350.5 326.1,354.5 V364.5 Q326.1,368.5 322.1,368.5 H285.5 Z" fill="#eb6834"/>
+<text x="332.1" y="363.5" class="val">2.6 Pa</text>
+<text x="190.0" y="390.5" text-anchor="end" class="spanlbl">Test section</text>
+<path d="M200.0,377.5 H247.6 Q251.6,377.5 251.6,381.5 V391.5 Q251.6,395.5 247.6,395.5 H200.0 Z" fill="#2a78d6"/>
+<text x="257.6" y="390.5" class="val">1.1 Pa</text>
+<text x="190.0" y="417.5" text-anchor="end" class="spanlbl-r">Left upper (upcomer) *</text>
+<rect x="200.0" y="404.5" width="45.4" height="18.0" fill="#2a78d6"/>
+<path d="M247.4,404.5 H267.4 Q271.4,404.5 271.4,408.5 V418.5 Q271.4,422.5 267.4,422.5 H247.4 Z" fill="#4a3aa7"/>
+<text x="277.4" y="417.5" class="val">1.5 Pa</text>
+<text x="190.0" y="444.5" text-anchor="end" class="spanlbl">Upper leg (downcomer)</text>
+<rect x="200.0" y="431.5" width="318.6" height="18.0" fill="#2a78d6"/>
+<rect x="520.6" y="431.5" width="67.3" height="18.0" fill="#eb6834"/>
+<path d="M589.9,431.5 H619.8 Q623.8,431.5 623.8,435.5 V445.5 Q623.8,449.5 619.8,449.5 H589.9 Z" fill="#4a3aa7"/>
+<text x="629.8" y="444.5" class="val">8.9 Pa</text>
+<text x="22.0" y="471.0" class="section">Salt 4</text>
+<line x1="22.0" y1="476.0" x2="916.0" y2="476.0" stroke="#e1e0d9" stroke-width="1.0"/>
+<text x="190.0" y="497.5" text-anchor="end" class="spanlbl">Lower leg (heater)</text>
+<rect x="200.0" y="484.5" width="365.4" height="18.0" fill="#2a78d6"/>
+<rect x="567.4" y="484.5" width="73.6" height="18.0" fill="#eb6834"/>
+<path d="M642.9,484.5 H680.2 Q684.2,484.5 684.2,488.5 V498.5 Q684.2,502.5 680.2,502.5 H642.9 Z" fill="#4a3aa7"/>
+<text x="690.2" y="497.5" class="val">10.1 Pa</text>
+<text x="190.0" y="524.5" text-anchor="end" class="spanlbl">Right leg (downcomer)</text>
+<rect x="200.0" y="511.5" width="499.9" height="18.0" fill="#2a78d6"/>
+<rect x="701.9" y="511.5" width="86.6" height="18.0" fill="#eb6834"/>
+<path d="M790.4,511.5 H828.1 Q832.1,511.5 832.1,515.5 V525.5 Q832.1,529.5 828.1,529.5 H790.4 Z" fill="#4a3aa7"/>
+<text x="838.1" y="524.5" class="val">13.2 Pa</text>
+<text x="190.0" y="551.5" text-anchor="end" class="spanlbl-r">Left lower (upcomer) *</text>
+<rect x="200.0" y="538.5" width="102.5" height="18.0" fill="#2a78d6"/>
+<path d="M304.5,538.5 H345.9 Q349.9,538.5 349.9,542.5 V552.5 Q349.9,556.5 345.9,556.5 H304.5 Z" fill="#eb6834"/>
+<text x="355.9" y="551.5" class="val">3.1 Pa</text>
+<text x="190.0" y="578.5" text-anchor="end" class="spanlbl">Test section</text>
+<path d="M200.0,565.5 H238.3 Q242.3,565.5 242.3,569.5 V579.5 Q242.3,583.5 238.3,583.5 H200.0 Z" fill="#2a78d6"/>
+<text x="248.3" y="578.5" class="val">0.89 Pa</text>
+<text x="190.0" y="605.5" text-anchor="end" class="spanlbl-r">Left upper (upcomer) *</text>
+<rect x="200.0" y="592.5" width="39.6" height="18.0" fill="#2a78d6"/>
+<path d="M241.6,592.5 H271.1 Q275.1,592.5 275.1,596.5 V606.5 Q275.1,610.5 271.1,610.5 H241.6 Z" fill="#4a3aa7"/>
+<text x="281.1" y="605.5" class="val">1.6 Pa</text>
+<text x="190.0" y="632.5" text-anchor="end" class="spanlbl">Upper leg (downcomer)</text>
+<rect x="200.0" y="619.5" width="320.8" height="18.0" fill="#2a78d6"/>
+<rect x="522.8" y="619.5" width="75.9" height="18.0" fill="#eb6834"/>
+<path d="M600.7,619.5 H639.8 Q643.8,619.5 643.8,623.5 V633.5 Q643.8,637.5 639.8,637.5 H600.7 Z" fill="#4a3aa7"/>
+<text x="649.8" y="632.5" class="val">9.3 Pa</text>
+<text x="558.0" y="674.0" text-anchor="middle" class="axislbl">Pressure loss over span (Pa)</text>
+<rect x="22.0" y="674.0" width="13" height="13" fill="#2a78d6" rx="2"/>
+<text x="41.0" y="684.0" class="legend">de-buoyed distributed friction</text>
+<rect x="238.0" y="674.0" width="13" height="13" fill="#eb6834" rx="2"/>
+<text x="257.0" y="684.0" class="legend">development / entry-length reset</text>
+<rect x="466.8" y="674.0" width="13" height="13" fill="#4a3aa7" rx="2"/>
+<text x="485.8" y="684.0" class="legend">minor-loss upper bound</text>
+<text x="22.0" y="706.0" class="note">* upcomer recirculation span — single-stream friction is a diagnostic only. Minor-loss bars are upper bounds. Source: 2026-07-08 pressure term ledger.</text>
+</svg>

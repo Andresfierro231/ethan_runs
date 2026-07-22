@@ -1,0 +1,5 @@
+audit_id,field_or_source,runtime_policy,s6_status,source_paths
+S6-RT-001,realized_total_heat,forbidden_predictive_input_diagnostic_only,not_used,work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/runtime_double_counting_audit.csv
+S6-RT-002,cfd_mdot_or_validation_temperature,forbidden_fit_or_model_selection_input,not_used,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/holdout_external_protection_audit.csv
+S6-RT-003,heldout_or_external_rows,score_only_after_freeze_never_fit_or_select,protected,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/split_use_permissions.csv
+S6-RT-004,terminal_cfd_pending,read_only_monitor_no_harvest_or_sampler_from_s6,not_triggered,work_products/2026-07/2026-07-21/2026-07-21_litrev_latest_cfd_schema_promotion/summary.json

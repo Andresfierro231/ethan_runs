@@ -1,0 +1,6 @@
+evidence_item,output_landed,admission_lane,fit_admitted_rows,diagnostic_admitted_rows,why_not_fit_admitted,next_gate_to_fit_admit
+raw_two_tap_test_section_complex,true,diagnostic_admitted_pressure_scale_only,0,3,coarse_only_no_mesh_gci; reduced_pressure_proxy; recirculation; component_length_policy_unresolved,mesh/GCI pressure-definition/component-policy gate plus admitted straight-loss subtraction
+f6_ready_to_run_gate,true,review_ready_not_fit_admitted,0,12,PM5 rows are recirculating/onset diagnostics; reverse flow exceeds single-stream F6 fit threshold,bounded F6 scorecard on admitted pressure rows with validation/holdout improvement
+fluid_reset_k_diagnostic_sweep,true,diagnostic_admitted_component_separation_only,0,128,"sweep proves localized-K/reset-K arithmetic separation, not physical K calibration",use only after admitted raw pressure evidence identifies supported K lane
+pm5_matched_pressure_upcomer,true,diagnostic_complete_for_f6_internal_nu_review,0,12,all reviewed F6 rows remain recirculating/diagnostic; internal-Nu single-stream fitting stays closed,recirculation/onset classification and non-recirculating or section-effective policy gate
+final_hydraulic_residual_attribution,true,final_decision_blocked_not_final_numeric,0,143,no fit-admitted raw pressure/F6 closure rows exist,recompute residual after raw pressure and F6 gates admit rows

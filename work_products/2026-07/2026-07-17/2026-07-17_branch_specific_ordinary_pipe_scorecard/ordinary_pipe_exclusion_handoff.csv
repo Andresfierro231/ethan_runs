@@ -1,0 +1,8 @@
+branch_id,excluded_from_ordinary_pipe_aggregate,handoff_target,reason
+heater_lower_leg,true,branch_specific_gate_repair,"source ownership, sign/heat-balance, and mesh/GCI still block fit"
+downcomer_right_vertical,true,branch_specific_gate_repair,sign_enthalpy_heat_balance_failed;low_recirculation_validity_failed;same_qoi_publication_gci_missing_or_failed;litrev_no_nu_absorption_gate_failed
+cooler_hx_branch,true,branch_specific_gate_repair,"HX removal is a setup boundary model, not an internal-Nu fit"
+test_section_span,true,branch_specific_gate_repair,test-section passive loss and pressure definition/component gates are not admitted
+upcomer_left_vertical,true,TODO-UPCOMER-PIPE-CELL-HYBRID-MODEL,recirculating rows excluded from ordinary-pipe aggregate fits
+junction_stub_connector,true,branch_specific_gate_repair,component heat/pressure not isolated as pipe coefficient
+lower_upper_legs,true,branch_specific_gate_repair,development and wall-resistance effects not yet scored as admitted ordinary coefficients

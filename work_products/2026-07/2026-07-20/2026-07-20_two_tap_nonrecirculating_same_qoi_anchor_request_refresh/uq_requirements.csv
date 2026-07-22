@@ -1,0 +1,4 @@
+requirement_id,status,current_evidence_status,minimum_acceptance,source_path
+same_label_same_formula_same_sign,required_future,blocked_current_rows_not_admissible,"all QOIs use lower_leg__s04->right_leg__s00, static p, same sign convention",work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/component_k_decision.csv
+time_window_uq,required_future,missing_no_same_window_neighbors,at least one same-label same-formula retained-window neighbor family per candidate row,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/same_qoi_time_uq.csv
+mesh_uq,required_future,missing_no_GCI_not_same_qoi,Salt2 coarse/medium/fine same-QOI family or explicit blocked mesh-UQ missing decision,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/same_qoi_mesh_uq.csv

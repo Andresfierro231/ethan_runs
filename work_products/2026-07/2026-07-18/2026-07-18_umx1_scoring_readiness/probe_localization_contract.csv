@@ -1,0 +1,6 @@
+probe_group,sensors,primary_question,score_rule,guardrail
+upcomer_tp,TP1;TP2;TP3,does exchange improve bulk upcomer/test-section path temperature shape,report delta vs M3 and prior wall/source candidate,do not exclude TP2 posthoc unless frozen policy says unscoreable
+upcomer_tw,TW1;TW2;TW3,does wall-side upcomer residual move with exchange without hiding wall model error,report TW RMSE and signed residuals separately,do not call recirculating rows ordinary Nu evidence
+heated_incline_tw,TW4;TW5;TW6,does UMX1 reduce heated-incline wall residuals or worsen source-placement errors,report localized delta and compensation flag,do not compensate with cooler duty or realized wallHeatFlux
+test_section_tp_tw,TP3;TP4;TW6;TW7,does test-section transition improve without source leakage,report paired TP/TW deltas and sign changes,do not use measured test-section temperatures at runtime
+all_probe,TP1;TP2;TP3;TP4;TP5;TP6;TW1;TW2;TW3;TW4;TW5;TW6;TW7;TW8;TW9;TW10;TW11,does aggregate score avoid regressions outside the target region,no worse than M3 and prior wall/source candidate,TW10 remains governed by existing active-HX shell-state policy

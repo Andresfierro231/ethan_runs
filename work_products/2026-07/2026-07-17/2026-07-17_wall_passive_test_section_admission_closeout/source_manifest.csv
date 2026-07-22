@@ -1,0 +1,4 @@
+source_id,path,read_only,notes
+cooler_wall_circuit_study,work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study,true,PB1 static candidate source and wall/test-section circuit framing
+wall_test_section_coupled_admission,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission,true,PB1+cooler coupled scoring and local TS6/TS7 component gates
+wall_test_section_distribution_ladder,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder,true,PB2/PB3 local heat-placement coupled scoring

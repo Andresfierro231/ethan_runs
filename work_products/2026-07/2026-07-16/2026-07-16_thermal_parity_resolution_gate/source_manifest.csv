@@ -1,0 +1,10 @@
+source_id,path,exists,role
+residual_guardrails,work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/thermal_residual_ownership_guardrails.csv,True,residual owner and no-Nu-absorption contract
+thermal_review,work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/thermal_internal_nu_admission_review.csv,True,current thermal/Internal-Nu admission review
+hx_decision,work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/hx_candidate_gate_decision.csv,True,setup-only HX/cooler candidate decision
+hx_runtime_audit,work_products/2026-07/2026-07-15/2026-07-15_setup_only_hx_cooler_scorecard_unlock/hx_runtime_input_legality_audit.csv,True,runtime input legality audit
+internal_nu_fit_rows,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/internal_nu_fit_rows.csv,True,explicit zero admitted internal-Nu fit rows
+litrev_lessons,reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/README.md,True,LitRev methodology and model-form guardrails
+litrev_map,operational_notes/maps/literature-synthesis-and-gates.md,True,LitRev gate discipline map
+boundary_decision,work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md,True,boundary/HX/wall/radiation model-form decision
+blocker_wave,work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation/README.md,True,prior blocker state

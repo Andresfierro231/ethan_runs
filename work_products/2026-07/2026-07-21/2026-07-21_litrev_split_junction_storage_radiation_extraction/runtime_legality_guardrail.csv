@@ -1,0 +1,5 @@
+guardrail_id,runtime_input,status,package_policy,source_paths
+SJ-RT-001,realized CFD wallHeatFlux,forbidden_predictive_runtime_input,diagnostic/scoring evidence only,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/runtime_legality_audit.csv
+SJ-RT-002,separate qr radiation term from current CFD,absent_no_qr_output,record absence; do not infer from emissivity metadata,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv
+SJ-RT-003,steady storage fit,absent_no_solid_storage_field,keep storage residual owner explicit,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv
+SJ-RT-004,split-junction residual into internal Nu,forbidden,do not absorb split-junction/storage/radiation residual into internal Nu,work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv

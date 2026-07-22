@@ -1,0 +1,6 @@
+path,role,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_pressure_alternate_low_reverse_anchor_screen/summary.json,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/summary.json,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/summary.json,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_1d_final_pressure_energy_basis_and_bc_equivalence_contract/pressure_energy_basis_contract.csv,read_only_context,not_mutated
+work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/README.md,created,mutated_by_task

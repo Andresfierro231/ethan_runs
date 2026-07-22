@@ -1,0 +1,7 @@
+gate_id,input_or_behavior,status,evidence,guardrail
+RG1_disabled_default,passed,"ScenarioConfig defaults test_section_wall_fluid_mode to disabled, contact multiplier to 1.0, and node rows to empty","baseline predictive behavior must remain unchanged unless a scenario explicitly activates TSWFC2"
+RG2_setup_only_nodes,passed,"node rows accept setup geometry fractions, drive selector, hA_W_K or h_W_m2K plus area_m2, and ambient temperature fields","do not consume measured TP/TW, CFD mdot, realized CFD wallHeatFlux, or imposed CFD cooler duty as runtime inputs"
+RG3_distributed_node_floor,passed,"validator requires at least four rows when distributed_wall_fluid_nodes_v1 is active","do not reproduce the prior single bulk-to-ambient fallback"
+RG4_parent_fraction_validation,passed,"validator rejects unknown Fluid parents and fractions outside 0 <= start < end <= 1","do not smear a test-section node over the wrong loop parent"
+RG5_temperature_ledger,passed,"SegmentState and segment table export node IDs, node count, heat terms, residual, and estimated inner/outer wall temperatures","future acceptance must check temperature shape, not only mass-flow improvement"
+RG6_no_admission,passed,"no campaign, scorecard, fitted coefficient, registry mutation, scheduler action, or output admission was performed","implementation is an API unblock only"

@@ -1,0 +1,7 @@
+test_id,type,requirement,pass_condition
+role_completeness,unit,"Contract contains heater, cooler, ambient_wall, test_section, and junction_other rows for Salt 2/3/4.",24 rows total and expected patch groups present.
+sign_convention,unit,Positive heat is into fluid; cooler/passive losses remain negative where appropriate.,"Heater wallHeatFlux > 0, cooler wallHeatFlux < 0, net wallHeatFlux near zero in aggregate."
+radiation_semantics,unit,No OpenFOAM qr output term may be inferred from emissivity metadata.,All rows have radiation_present=False and a non-empty caveat.
+enthalpy_residual_caveats,unit,Span endpoint enthalpy residuals are preserved with recirculation and bracket caveats.,Junction rows remain not bracketed; upcomer/test-section quality flags survive.
+frozen_hydraulics_capability,review_gate,A fixed-mdot or frozen-hydraulics path is explicit before replay claims thermal-only iteration.,Solver audit resolves current requires_solver_extension_or_wrapper status.
+thermal_replay_gate,analysis_gate,Mean T and loop delta T are matched before model-form bakeoff.,All Salt rows have abs(Tmean error) <= 2 K and abs(loop delta T error) <= 1 K.

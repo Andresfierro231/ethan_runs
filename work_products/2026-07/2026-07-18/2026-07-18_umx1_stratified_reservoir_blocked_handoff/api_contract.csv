@@ -1,0 +1,20 @@
+field_or_behavior,interface,default_or_rule,validation_rule,ledger_or_output,notes
+upcomer_mixing_mode,ScenarioConfig string,disabled,Allowed values disabled and energy_conserving_exchange_v1 only,,Keep backward compatibility
+upcomer_exchange_multiplier,ScenarioConfig float,0.0,Finite and >= 0,,Zero remains strict no-op
+upcomer_exchange_parent_segments,ScenarioConfig list,DEFAULT_UPCOMER_EXCHANGE_PARENT_SEGMENTS,Every target must match a segment name or resolved parent name,,Existing AGENT-540 contract remains valid
+upcomer_reservoir_heat_sources,ScenarioConfig list of mappings,empty list,Every row must be a mapping with a supported target and one supported source form,,Rows become physically active only when UMX exchange is active
+segment_name,source row target,optional,If present must match exact segment name,,Exact segment routing
+parent_segment,source row target,optional,If present must match resolved parent name,,Parent-fraction routing
+fluid_parent_segment,source row target alias,optional,If present must match resolved parent name,,Alias for role-row consistency
+Q_W,direct source form,optional,Finite direct reservoir source and cannot be mixed with convective forms,upcomer_reservoir_source_W,Positive means heat into reservoir
+hA_W_K,convective source form,optional,Finite and >= 0; requires Ta_K and cannot be mixed with Q_W,upcomer_reservoir_source_W,Use Q = hA * (Ta - T_reservoir)
+h_W_m2K and area_m2,convective area source form,optional,Both finite and >= 0; requires Ta_K and cannot be mixed with Q_W,upcomer_reservoir_source_W,Equivalent hA = h * area
+Ta_K,convective source temperature,required for convective forms,Finite temperature,upcomer_reservoir_source_W,Setup-only ambient/source temperature
+coverage_multiplier,source row scalar,1.0,Finite and >= 0,upcomer_reservoir_source_W,Multiplies direct or convective source
+role,source row metadata,optional,String,upcomer_reservoir_source_roles,Used for audit/provenance only
+source,source row metadata,optional,String,upcomer_reservoir_source_roles,Used for audit/provenance only
+upcomer_reservoir_source_W,SegmentState output,0.0,Finite for active source rows,segment dataframe column,Net source into reservoir on current segment
+upcomer_reservoir_energy_delta_W,SegmentState output,0.0,Equals exchange main-to-reservoir plus reservoir source,segment dataframe column,Reservoir energy-rate update term
+upcomer_reservoir_energy_balance_residual_W,SegmentState output,0.0,Absolute value <= conservation tolerance,segment dataframe column,Reservoir balance audit
+upcomer_reservoir_source_count,SegmentState output,0,Nonnegative integer,segment dataframe column,Count of source rows applied to segment
+upcomer_reservoir_source_roles,SegmentState output,empty string,String,segment dataframe column,Semicolon-delimited role/source labels

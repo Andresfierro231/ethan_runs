@@ -1,0 +1,8 @@
+guardrail,allowed,observed
+native_output_mutation,false,false
+registry_or_admission_mutation,false,false
+scheduler_action,false,false
+solver_postprocessing_sampler_launch,false,false
+fitting_or_model_selection,false,false
+exchange_cell_admission,false,false
+residual_absorption_into_internal_Nu,false,false

@@ -1,0 +1,12 @@
+guardrail,value
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_action,False
+solver_sampler_harvest_uq_launch,False
+fluid_or_external_repo_mutation,False
+thesis_current_file_mutation,False
+fitting_or_model_selection,False
+source_property_release,False
+coefficient_admission,False
+final_score,False
+residual_absorbed_into_internal_nu,False

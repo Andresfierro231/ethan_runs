@@ -1,0 +1,89 @@
+{
+  "generated_at": "2026-07-10T11:54:54-05:00",
+  "updated_at": "2026-07-10T16:48:58-0500",
+  "task_id": "AGENT-248",
+  "purpose": "Salt2 refined pressure-only smoke tests and 8pm batch submission",
+  "profile_source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "mesh_stations": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json",
+  "source_cases_read_only": true,
+  "closure_observations_updated": false,
+  "thermal_policy": "blocked until reconstructed T path is repaired; no --dump-temperature in pressure lane",
+  "smoke": {
+    "status": "passed",
+    "host": "c318-008.ls6.tacc.utexas.edu",
+    "command": "srun -N1 -n1 -c128 bash work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/scripts/run_pressure_extraction.sh smoke",
+    "completed_at": "2026-07-10T12:06:47-0500",
+    "acceptance_gates": [
+      "OF13 preflight passed",
+      "medium and fine reconstructed pressure fields only: p_rgh U rho wallShearStress yPlus",
+      "medium and fine each produced 30 sampled section rows, 5 per required major span",
+      "medium and fine segment_friction.csv files have 12 data rows each",
+      "medium and fine momentum_budget.csv files have 6 data rows each",
+      "source decomposed T diagnostics found zero nonfinite tokens; thermal extraction remains blocked on reconstructed T"
+    ]
+  },
+  "batch": {
+    "status": "cancelled_after_immediate_compute_node_rerun",
+    "job_id": "3288637",
+    "job_name": "agent248_salt2_pressure",
+    "submitted_at": "2026-07-10T12:06:54-0500",
+    "scheduled_start": "2026-07-10T20:00:00",
+    "submit_command": "ssh login3 'cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/scripts/sbatch_pressure_extraction_8pm.sh'",
+    "squeue_confirmation": "3288637|PENDING|2026-07-10T20:00:00|2026-07-10T12:06:54|0:00|1|(BeginTime)|agent248_salt2_pressure",
+    "cancelled_at": "2026-07-10T16:48:58-0500",
+    "cancel_reason": "Immediate compute-node background rerun completed successfully and the 8pm job would duplicate the same pressure-only extraction.",
+    "sacct_after_cancel": "3288637 agent248_+ CANCELLED+ 0:0 00:00:00 None assigned"
+  },
+  "immediate_background_run": {
+    "status": "passed",
+    "host": "c318-008.ls6.tacc.utexas.edu",
+    "tmux_session": "agent248_pressure_now",
+    "started_at": "2026-07-10T16:43:22-0500",
+    "completed_at": "2026-07-10T16:48:08-0500",
+    "elapsed_wall": "00:04:46",
+    "log": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/logs/background_20260710T164330-0500_pressure.log",
+    "acceptance_gates": [
+      "medium and fine reused reconstructed pressure times",
+      "medium and fine each produced 30 sampled section rows, 5 per required major span",
+      "medium and fine segment_friction.csv files have 12 data rows each",
+      "medium and fine momentum_budget.csv files have 6 data rows each"
+    ]
+  },
+  "cases": [
+    {
+      "level": "medium",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "time_s": "518",
+      "processor_dir": "processors64",
+      "sampled_section_rows": 30,
+      "segment_friction_lines": 13,
+      "momentum_budget_lines": 7,
+      "source_t_numeric_tokens": 10410605,
+      "source_t_nonfinite_tokens": 0,
+      "outputs": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/medium"
+    },
+    {
+      "level": "fine",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "time_s": "399",
+      "processor_dir": "processors128",
+      "sampled_section_rows": 30,
+      "segment_friction_lines": 13,
+      "momentum_budget_lines": 7,
+      "source_t_numeric_tokens": 30225749,
+      "source_t_nonfinite_tokens": 0,
+      "outputs": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/outputs/fine"
+    }
+  ],
+  "scripts": {
+    "generator": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/build_salt2_refined_pressure_smoke_and_8pm_batch.py",
+    "test": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/test_salt2_refined_pressure_smoke_and_8pm_batch.py",
+    "runner": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/scripts/run_pressure_extraction.sh",
+    "batch_script": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/scripts/sbatch_pressure_extraction_8pm.sh"
+  },
+  "analysis_caveats": [
+    "This package proves the pressure-only extraction path, not publication-ready GCI admission.",
+    "Several segment-friction rows carry negative_f_pressure_recovery_or_noise flags; reconcile sign conventions and retained station selection before using as fitted closure evidence.",
+    "Thermal UA/HTC/Nu extraction remains blocked by the AGENT-245 reconstructed T parse failure and was intentionally not retried here."
+  ]
+}

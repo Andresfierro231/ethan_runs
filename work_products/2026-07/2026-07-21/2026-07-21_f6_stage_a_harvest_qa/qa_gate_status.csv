@@ -1,0 +1,6 @@
+gate,status,reason
+expected_surfaces_present,pass,8 expected VTK surfaces present
+required_fields_finite,pass,all harvested scalar/vector reductions finite
+ordinary_flow,fail,all endpoint pairs fail RAF/RMF ordinary-flow threshold
+mesh_uq,blocked,coarse rows remain blocked; medium/fine only is diagnostic
+f6_or_component_k_admission,closed,no fit/admission from recirculating diagnostic Stage A rows

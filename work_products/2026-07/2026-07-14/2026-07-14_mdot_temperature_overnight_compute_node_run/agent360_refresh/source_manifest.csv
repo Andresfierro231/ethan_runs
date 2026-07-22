@@ -1,0 +1,12 @@
+path,exists,role
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml,yes,read_only_input
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,yes,read_only_input
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,yes,read_only_input
+work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/section_heat_balance.csv,yes,read_only_input
+work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/parity_input_contract.csv,yes,read_only_input
+work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv,yes,read_only_input
+reports/2026-07/2026-07-01/2026-07-01_local_1d_validation_refresh/cfd_sensor_reference.csv,yes,read_only_input
+work_products/2026-07/2026-07-14/2026-07-14_cfd_case_admission_inventory/cfd_case_admission_inventory.csv,yes,read_only_input
+work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/case_bc_response_matrix.csv,yes,read_only_input
+operational_notes/maps/forward-predictive-model.md,yes,read_only_input
+operational_notes/maps/thermal-boundary-and-radiation.md,yes,read_only_input

@@ -1,0 +1,8 @@
+rule_id,condition,decision,evidence_required,forbidden_shortcut
+RULE-01,raw endpoint p/p_rgh/U/density fields are missing or ambiguous,diagnostic_blocked_missing_raw_endpoint_basis,finite labeled endpoint reductions for all required fields,infer endpoint pressure from preserved proxy feature loss
+RULE-02,pressure basis double-counts hydrostatic or kinetic correction,diagnostic_blocked_pressure_basis,"separate static-p, p_rgh, hydrostatic, kinetic, and q_local ledger",mix p and p_rgh losses without explicit correction policy
+RULE-03,K_local is negative after straight-reference subtraction,apparent_cluster_only_or_blocked,unclipped nonnegative K_local with physically comparable straight reference,clip negative K_local
+RULE-04,"aggregate RAF >= 0.01 or aggregate RMF >= 0.01, or metrics are missing",diagnostic_or_section_effective_only,same-window endpoint RAF/RMF/SVF,treat reverse-flow endpoint as ordinary K
+RULE-05,same-QOI mesh/time uncertainty missing,diagnostic_blocked_missing_same_qoi_UQ,same endpoint labels/formulas/sign convention over mesh/time family or explicit missing_no_GCI,reuse unrelated GCI
+RULE-06,"all pressure, isolation, recirculation, and UQ gates pass",candidate_component_K_review_allowed,raw/audit package and reviewer signoff in a new admission package,automatic admission without separate extractor/admission review
+RULE-07,F6 friction correction is requested,route_to_separate_nonrecirculating_anchor_task,ordinary nonrecirculating pressure anchors independent of component-K endpoint thread,fit F6 from component endpoint roadmap or proxy K

@@ -1,0 +1,4 @@
+allowed_runtime_use,audit_item,count,forbidden_release,status
+hA area Ta Tsur emissivity layers plus model-predicted state,setup_basis_inputs,5,numeric q_loss release remains false,pass
+none,forbidden_runtime_manifest_rows,9,wallHeatFlux validation_temperature CFD_mdot Qwall imposed_cooler_duty,pass
+dry preflight provenance,preflight_guardrail_rows,10,repair freeze score fit admission,pass

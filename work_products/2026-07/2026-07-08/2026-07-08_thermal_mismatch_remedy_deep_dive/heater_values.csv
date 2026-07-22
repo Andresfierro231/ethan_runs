@@ -1,0 +1,4 @@
+case_id,source_id,heater_imposed_duty_W,heater_wallHeatFlux_input_W,imposed_minus_wallHeatFlux_W,patch_names,bc_type
+salt_2,viscosity_screening_salt_test_2_jin_coarse_mesh,265.7,243.519,22.181,"pipeleg_lower_04_straight, pipeleg_lower_05_straight, pipeleg_lower_06_straight",rcExternalTemperature
+salt_3,viscosity_screening_salt_test_3_jin_coarse_mesh,297.5,273.155,24.345,"pipeleg_lower_04_straight, pipeleg_lower_05_straight, pipeleg_lower_06_straight",rcExternalTemperature
+salt_4,viscosity_screening_salt_test_4_jin_coarse_mesh,337.6,310.487,27.113,"pipeleg_lower_04_straight, pipeleg_lower_05_straight, pipeleg_lower_06_straight",rcExternalTemperature

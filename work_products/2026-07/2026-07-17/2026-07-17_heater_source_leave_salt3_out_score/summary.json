@@ -1,0 +1,56 @@
+{
+  "counts": {
+    "background_run_contract.csv": 1,
+    "blind_perturbation_external_scorecard.csv": 3,
+    "candidate_admission_review.csv": 2,
+    "candidate_definitions.csv": 2,
+    "case_contract_readiness.csv": 11,
+    "case_split_contract.csv": 12,
+    "heater_source_lambda_grid.csv": 21,
+    "nominal_coupled_scorecard.csv": 67,
+    "probe_error_localization.csv": 1139,
+    "runtime_input_audit.csv": 5,
+    "salt3_holdout_delta_vs_m3.csv": 1,
+    "scenario_contracts.csv": 67,
+    "selected_heater_source_weights.csv": 1,
+    "source_manifest.csv": 6,
+    "training_objective_by_lambda.csv": 21
+  },
+  "created_utc": "2026-07-17T22:08:10.417454+00:00",
+  "decision": {
+    "admitted_lanes": [],
+    "blocker_decision": "keep_open",
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "coupled_completed_rows": 67,
+    "coupled_status_counts": {
+      "completed": 67
+    },
+    "created_utc": "2026-07-17T22:08:09.849665+00:00",
+    "run_fluid": true,
+    "selected_lambda": "1",
+    "selection_status": "diagnostic_selected_from_salt1_salt2_salt4_finite_rows_with_root_rejections",
+    "task": "AGENT-529",
+    "why": "This package corrects the train/holdout split for the heater-source redistribution screen. The predictive-wall-test-section-submodels blocker remains open until blind PM5Q/val_salt2 adapters exist and the PB2/Salt1 boundary contract is repaired."
+  },
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score",
+  "parallel_workers": 4,
+  "reuse_existing_coupled": true,
+  "run_fluid": true,
+  "selection": {
+    "heater_lambda": "1",
+    "lane_id": "HS1_BASELINE_LOSO_SALT124",
+    "root_status_policy": "diagnostic only because at least one train case root was rejected",
+    "selected_candidate_id": "HS1_BASELINE_LOSO_SALT124_heater_source_lam_1p00_PLUS_HX_LUMPED_UA_NTU",
+    "selection_metric": "diagnostic equal-case mean all_probe_rmse_K over finite Salt1/Salt2/Salt4 rows; tie TW then abs mdot",
+    "selection_source": "Salt1/Salt2/Salt4 finite train rows only; Salt3/blind rows excluded",
+    "selection_status": "diagnostic_selected_from_salt1_salt2_salt4_finite_rows_with_root_rejections",
+    "train_objective_all_probe_rmse_K": "105.0540135",
+    "train_tie_break_abs_mdot_error_pct": "20.66742373",
+    "train_tie_break_tw_rmse_K": "119.7672908",
+    "tw4_to_tw5_weight": "0.2",
+    "tw5_to_tw6_weight": "0.35",
+    "tw6_to_tp3_weight": "0.45"
+  },
+  "task": "AGENT-529",
+  "timeout_seconds": 273
+}

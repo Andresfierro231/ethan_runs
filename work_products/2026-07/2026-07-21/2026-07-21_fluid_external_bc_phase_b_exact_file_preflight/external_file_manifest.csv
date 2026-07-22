@@ -1,0 +1,9 @@
+path,phase_c_action,reason,coordination_note
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py,add,new isolated parser/API module for external boundary CSV dictionaries,new file is preferred to avoid bloating config_loader.py
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,edit,load optional scenario dictionary path and segment map into ScenarioConfig role rows,external worktree currently dirty; inspect before patching
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,edit,validate role rows and implement explicit predictive convection/radiation/layer accounting,external worktree currently dirty; inspect before patching
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md,edit,document external-boundary file contract and forbidden runtime inputs,external worktree currently dirty; inspect before patching
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py,add,new focused tests for parser/API and runtime leakage rejection,new file avoids overloading existing broad solver contract test
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,conditional_edit,update only if ScenarioConfig defaults or existing external-boundary tests change,external worktree currently dirty; avoid broad edits
+../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,do_not_claim_by_default,not needed for first parser/API implementation and currently dirty,claim only if Phase C explicitly adds smoke scenario
+../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,do_not_claim_by_default,not needed for unit-tested parser/API implementation and currently dirty,claim only for later execution/smoke row

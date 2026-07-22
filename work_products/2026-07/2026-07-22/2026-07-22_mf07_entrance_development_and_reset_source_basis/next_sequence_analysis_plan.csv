@@ -1,0 +1,4 @@
+priority,analysis,why,inputs,guardrail
+1,MF08 signed heat-path thermal-development source basis,"MF07 shows a positive TP projection is plausible, but source sign and property labels are missing.","setup-known heater/cooler/passive source envelopes, reset/Graetz table, train-only TP residual table",no realized field heat input as runtime input and no coefficient release
+2,MF09 recirculating upcomer alternative gate,left lower/upper and upcomer/test-section regions cannot be forced into ordinary single-stream development.,"S13 exchange QOIs, same-QOI temporal UQ, wall/core/bulk contrast, pressure/energy residual support",ordinary upcomer Nu/f_D/K remain disabled
+3,MF10 train/support-only predeclared bakeoff,Only after MF08/MF09 can a diagnostic smoke run compare variants without overclaiming.,MF07/MF08/MF09 gates and runtime-legality matrices,"no validation, holdout, external-test, source/property release, or final score"

@@ -1,0 +1,5 @@
+rank,action,output_contract,why_first,scheduler_required
+1,derive_open_cv_throughflow_endpoint_face_masks,"one inlet and one outlet face-mask row per Salt2/Salt3/Salt4 with path, face count, area, normal, and time window",unlocks both mdot_throughflow and T_bulk endpoint sampling without proxy planes,not_for_design; maybe_for_future_sampler
+2,one_case_endpoint_sampler_smoke_after_masks_exist,Salt2 endpoint mdot/T_bulk/cp-basis dry row plus continuity mismatch and quality flags,tests signs and weighting before medium/fine or all-case harvest,only if native OpenFOAM sampling is needed
+3,row_specific_cp_property_release_preflight,"cp_J_kg_K source path, property mode, split permission, and same-window applicability",enthalpy term cannot be released without cp,false
+4,same_window_all_case_endpoint_harvest,"Salt2/Salt3/Salt4 mdot_throughflow, T_in_bulk, T_out_bulk, H_throughflow_net support rows",unlocks residual-complete diagnostic balance,likely_if_sampling_native_outputs

@@ -1,0 +1,13 @@
+source_path,use_in_preflight
+work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/candidate_readiness_matrix.csv,readiness and blocker baseline
+work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/protected_split_policy.csv,protected split rules
+work_products/2026-07/2026-07-22/2026-07-22_predictive_source_property_exact_field_recovery_salt14/salt14_row_specific_release_matrix.csv,Salt1-4 source/property release gate
+work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/summary.json,S13 coarse/GCI fail-closed gate
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_extbc_split_conflict_resolution/summary.json,passive-H2 split conflict and q-loss release gate
+work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility/summary.json,bulk heat-partition model direction
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/summary.json,corrected passive-H2 runtime implementation need
+work_products/2026-07/2026-07-22/2026-07-22_mf17_same_qoi_wall_core_exchange_uq_execution/summary.json,wall/core exchange UQ and no-admission gate
+work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_terminal_harvest_and_validator/summary.json,completed train-only setup-UQ diagnostic context
+work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/cfd_run_qoi_split_chart_wide.csv,case split and QoI chart
+work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/trainability_gate.csv,current trainability gate
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv,model-form scoreboard context

@@ -1,0 +1,13 @@
+case_key,final_scorecard_partition,target_rows,fit_allowed_rows,model_selection_allowed_rows,m0_score_status,split_guardrail
+salt1_nominal,train_nominal,6,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt2_hi10q,future_holdout_pm10,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt2_hi5q,blind_holdout_pm5q,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt2_jin_nominal,train_nominal,6,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt2_lo10q,future_holdout_pm10,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt2_lo5q,blind_holdout_pm5q,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt3_jin_nominal,train_nominal,6,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt3_q_insulation_matrix,future_external_new_cfd,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt4_hi10q,future_holdout_pm10,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt4_lo10q,future_holdout_pm10,7,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+salt4_nominal,train_nominal,6,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze
+val_salt2,blind_external_val_salt2,6,0,0,all_predictions_missing_no_freeze,no fitting or model selection; holdout/external/future rows score only after freeze

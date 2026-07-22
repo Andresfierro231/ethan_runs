@@ -1,0 +1,15 @@
+artifact,source_type,path,used_for,mutation
+scheduler_snapshot,scheduler_command,"squeue -j 3293924,3295438,3295989,3295990,3295991",current queued/running status,read_only
+scheduler_snapshot,scheduler_command,"sacct -j 3293924,3295438,3295989,3295990,3295991 --format=JobID,JobName,Partition,State,Elapsed,ExitCode,Submit,Start,End,NodeList -P",current accounting status,read_only
+slurm_stdout,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out,launch contract and preflight stdout,read_only
+slurm_stderr,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err,module/runtime stderr tail,read_only
+selected_jobs,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv,selected continuation provenance,read_only
+runtime_preflight_csv,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.csv,case Q/restart/control preflight evidence,read_only
+runtime_preflight_json,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.json,detailed patch/control evidence,read_only
+salt2_lo10q_log,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q,latest live solver time and alive status,read_only
+salt2_hi10q_log,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt2_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q,latest live solver time and alive status,read_only
+salt4_lo10q_log,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_lo10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q,latest live solver time and alive status,read_only
+salt4_hi10q_log,file,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/runs/salt4_jin_hi10q_corrected/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/logs/log.foamRun_corrected_q,latest live solver time and alive status,read_only
+stopped_pm5q_harvest_stdout,file,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/slurm-saltq_s24_done_harv-3295437.out,completed stopped +/-5Q harvest state,read_only
+selected_pm10q_harvest_sbatch,file,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/run_salt2_salt4_selected_corrected_q_harvest_after_3293924.sbatch,dependent selected +/-10Q harvester contract,read_only
+prior_terminal_gate,file,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/corrected_q_terminal_gate_rows.csv,prior live gate comparison,read_only

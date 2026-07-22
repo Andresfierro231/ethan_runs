@@ -1,0 +1,9 @@
+check_id,source,observed_value,expected_for_s0_s3_integration,status,interpretation
+completed_study_rows,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,4,4,pass,S0-S3 first wave is complete as a consolidation package.
+runtime_or_split_leakage_failures,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,0,0,pass,Runtime and split guardrails are safe to cite.
+model_scoring_or_admission,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,false,false,pass,This row should not report final scoring or admission.
+final_freeze_exists,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,false,false,pass,Use blocked-scorecard wording until S6 freezes a candidate.
+component_k_admitted_rows,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,0,0,pass,Pressure result is non-admission for component K.
+f6_admitted_rows,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,0,0,pass,Pressure result is non-admission for F6.
+fluid_edit,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,false,false,pass,S1 is contract/handoff only; Fluid API work remains separate.
+native_output_mutation,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,false,false,pass,No native CFD/OpenFOAM output mutation occurred.

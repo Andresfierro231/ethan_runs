@@ -1,0 +1,13 @@
+gate,status,available_case_count,available_for_diagnostic_context,blocks_production,reason
+V_recirc_proxy,diagnostic_ready,3,true,false,seeded CV volume exists for all cases but is proxy/nonproduction
+sampled_mdot_exchange,diagnostic_ready,3,true,false,limited sampled interface U/T/rho extraction produced retained-window proxy mdot
+tau_recirc_proxy,diagnostic_ready,3,true,false,tau is derived from proxy exchange flow and seeded volume
+wall_core_bulk_temperature_contrast,diagnostic_ready,3,true,false,limited sampled wall/core/seed temperatures exist for retained windows
+source_side_heat_flow_q_net,needs_contract_and_uq,3,true,false,"source-side q_net exists but must be labeled as a distinct QOI, not Q_wall_W"
+Q_wall_W,blocked_missing_wallHeatFlux,0,false,true,trusted wall geometry exists but wallHeatFlux/Q_wall integration is absent
+pressure_basis,blocked_missing_pressure_basis,0,false,true,p or p_rgh was not released in the S13 cell/surface field lane
+viscosity_basis,blocked_missing_mu_or_nu,0,false,true,mu/nu/nut was not released for Reynolds/viscous support
+cp_property_basis,blocked_missing_cp,0,false,true,cp_J_kg_K is not released with source/property provenance
+same_qoi_uq,blocked_missing_neighbor_window_and_mesh_gci,0,false,true,same-QOI UQ design requires same label/formula/sign/basis in neighboring windows and mesh/GCI
+production_harvest,blocked,0,false,true,no exact production QOI set has Q_wall or source-side equivalent plus same-QOI UQ
+coefficient_or_S11_admission,blocked,0,false,true,production harvest and same-QOI UQ are not released

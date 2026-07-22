@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" viewBox="0 0 760 260">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="30" y="30" font-family="Arial, sans-serif" font-size="18" font-weight="700">S12 residual-owner waterfall</text>
+<text x="30" y="86" font-family="Arial, sans-serif" font-size="13">TW5</text>
+<rect x="120" y="70" width="500.0" height="24" fill="#b0413e"/>
+<text x="630.0" y="86" font-family="Arial, sans-serif" font-size="12">47.39 K excess vs M3</text>
+<text x="30" y="131" font-family="Arial, sans-serif" font-size="13">TW6</text>
+<rect x="120" y="115" width="439.7" height="24" fill="#b0413e"/>
+<text x="569.7" y="131" font-family="Arial, sans-serif" font-size="12">41.68 K excess vs M3</text>
+<text x="30" y="190" font-family="Arial, sans-serif" font-size="12">Both dominant residuals point to heated-incline/upcomer exchange shape; no S12 candidate is frozen.</text>
+<text x="30" y="212" font-family="Arial, sans-serif" font-size="12">Use as thesis evidence only: no source/property release, no protected scoring, no internal Nu absorption.</text>
+</svg>

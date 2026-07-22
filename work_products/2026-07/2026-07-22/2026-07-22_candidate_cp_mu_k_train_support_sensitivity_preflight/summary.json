@@ -1,0 +1,21 @@
+{
+  "task_id": "TODO-CANDIDATE-CP-MU-K-TRAIN-SUPPORT-SENSITIVITY-PREFLIGHT-2026-07-22",
+  "decision": "cp_mu_k_sensitivity_preflight_complete_fail_closed_no_release",
+  "candidate_id": "MF12_signed_source_memory_bulk_to_TP",
+  "property_family": "jin_viscosity_parida_cp_santini_k",
+  "strict_source_envelope_pass_rows": 0,
+  "source_property_release_rows": 0,
+  "property_perturbation_rows": 10,
+  "qoi_propagation_targets": 8,
+  "protected_scoring_allowed": false,
+  "pressure_endpoint_readiness": "blocked_by_running_CAND001_job_3308712",
+  "runtime_property_release": false,
+  "candidate_freeze": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "validation_holdout_external_scoring": false,
+  "coefficient_admission": false,
+  "final_score_claim": false,
+  "residual_absorbed_into_internal_Nu": false
+}

@@ -1,0 +1,9 @@
+label,kind,path,notes
+Fluid status,source,../cfd-modeling-tools/.agent/status/2026-07-20_impl-2026-07-20-fluid-amx1-lower-multiplier-smoke.md,Fluid implementation closeout for lower-multiplier smoke
+Fluid campaign config,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml,Defines amx1_salt2_lower_multiplier_smoke_v2
+Fluid scenario config,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,Defines disabled baseline plus upper/lower vertical-only multipliers
+Fluid audit summary,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_lower_multiplier_smoke_v2/amx1_lower_multiplier_smoke_audit/amx1_lower_multiplier_summary.json,Machine-readable audit verdict
+Fluid form deltas,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_lower_multiplier_smoke_v2/amx1_lower_multiplier_smoke_audit/amx1_lower_multiplier_form_deltas.csv,Paired AMX1-minus-baseline deltas
+Fluid audit rows,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_lower_multiplier_smoke_v2/amx1_lower_multiplier_smoke_audit/amx1_lower_multiplier_rows.csv,Root and ledger audit rows
+Fluid runtime,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_lower_multiplier_smoke_v2/runtime/runtime_summary.csv,Campaign runtime by stage
+Fluid manifest,source,../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/amx1_salt2_lower_multiplier_smoke_v2/run_manifest.csv,Seven Salt2 rows completed ok

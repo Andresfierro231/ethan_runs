@@ -1,0 +1,17 @@
+guardrail,occurred
+"coefficient fitting",false
+"model selection",false
+"validation scoring",false
+"holdout scoring",false
+"external-test scoring",false
+"final source/property release",false
+"candidate freeze",false
+"coefficient admission",false
+"final score claim",false
+"scheduler action",false
+"solver/sampler/harvest/UQ launch",false
+"native CFD/OpenFOAM output mutation",false
+"registry/admission mutation",false
+"Fluid or external repo edit",false
+"thesis body edit",false
+"residual absorbed into internal Nu",false

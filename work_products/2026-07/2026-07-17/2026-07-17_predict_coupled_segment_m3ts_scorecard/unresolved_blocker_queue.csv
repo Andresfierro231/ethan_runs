@@ -1,0 +1,5 @@
+blocker_id,status,next_action,source_path
+pressure_closure_admission,open,admit segment-local pressure coefficients or keep diagnostic-only pressure terms,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv
+test_section_passive_loss,open,produce setup-only test-section passive loss candidate that passes validation and holdout heat gates,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/segment_thermal_model_scorecard.csv
+upcomer_hybrid_calibration,open,add ordinary/transition anchors and split-score a frozen hybrid penalty form,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/upcomer_admission_decision.csv
+boundary_layer_executable_ablation,open,run segment-specific ablations only after prerequisite closures are admitted,work_products/2026-07/2026-07-17/2026-07-17_predict_boundary_layer_development_scorecard/prerequisite_gate_scorecard.csv

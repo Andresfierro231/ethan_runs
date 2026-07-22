@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-07-13T20:42:43+00:00",
+  "date": "2026-07-13",
+  "notes": [
+    "Existing artifact proxies were used; no new OpenFOAM extraction was needed for this first validity gate."
+  ],
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics",
+  "outputs": [
+    "cfd_single_stream_validity.csv",
+    "coefficient_naming_limits.csv",
+    "validation_report.json"
+  ],
+  "primary_rows": 18,
+  "source_context": {
+    "litrev_synthesis": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways",
+    "research_pathways": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv"
+  },
+  "task_id": "TODO-LITREV-CFD-VALIDITY-DIAGNOSTICS"
+}

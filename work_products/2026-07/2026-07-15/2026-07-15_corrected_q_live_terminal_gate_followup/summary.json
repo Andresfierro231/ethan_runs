@@ -1,0 +1,17 @@
+{
+  "task": "AGENT-408",
+  "created_at": "2026-07-15T08:55:00-05:00",
+  "parent_job": "3293924",
+  "parent_job_state": "RUNNING",
+  "parent_job_elapsed": "1-15:26:54",
+  "dependent_harvester_job": "3295438",
+  "dependent_harvester_state": "PENDING Dependency",
+  "stopped_pm5q_harvest_job": "3295437",
+  "stopped_pm5q_harvest_state": "COMPLETED exit 0:0",
+  "case_rows": 4,
+  "blocked_pending_terminal_gate": 4,
+  "admitted_now": 0,
+  "native_cfd_outputs_mutated": false,
+  "jobs_submitted_or_cancelled": false,
+  "next_unlock": "Wait for 3293924 and its four foamRun steps to become terminal, then let dependency-held 3295438 run and consume its terminal monitor/postprocessing outputs."
+}

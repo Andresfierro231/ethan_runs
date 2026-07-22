@@ -1,0 +1,42 @@
+{
+  "task": "TODO-FLUID-SETUP-KNOWN-SOURCE-SINK-RUNTIME-CONTRACT-2026-07-21",
+  "task_id": "TODO-FLUID-SETUP-KNOWN-SOURCE-SINK-RUNTIME-CONTRACT-2026-07-21",
+  "date": "2026-07-21",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-SETUP-KNOWN-SOURCE-SINK-RUNTIME-CONTRACT-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-setup-known-source-sink-runtime-contract.md",
+    "imports/2026-07-21_fluid_setup_known_source_sink_runtime_contract.json",
+    "tools/analyze/build_fluid_setup_known_source_sink_runtime_contract.py",
+    "tools/analyze/test_fluid_setup_known_source_sink_runtime_contract.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/setup_known_source_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/fluid_api_capability_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/source_property_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/**",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "external_fluid_mutation": false,
+  "external_repo_mutation": false,
+  "fluid_source_mutation": false,
+  "validation_rows_consumed": 0,
+  "holdout_rows_consumed": 0,
+  "external_test_rows_consumed": 0,
+  "fit_or_model_selection": false,
+  "source_property_release": false,
+  "freeze_or_admission_decision": false,
+  "generated_index_refresh": false,
+  "thesis_current_file_edit": false
+}

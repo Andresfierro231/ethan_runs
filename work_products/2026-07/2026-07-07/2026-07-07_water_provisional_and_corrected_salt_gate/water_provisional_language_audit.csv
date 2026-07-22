@@ -1,0 +1,7 @@
+artifact,inspected_claim,required_timeout_frozen_caveat_present,closure_fit_block_present,rom_correlation_block_present,action
+"reports/2026-07/2026-07-07/2026-07-07_water_provisional_and_corrected_salt_gate/README.md","Bottom line and interpretation distinguish Water monitor-status evidence from closure-fit evidence.",true,true,true,"pass; keep provisional-only wording"
+"reports/2026-07/2026-07-07/2026-07-07_water_provisional_and_corrected_salt_gate/summary.json","Water object records source job 3265970 TIMEOUT and admission provisional_monitor_reporting_only.",true,true,true,"pass; keep caveat attached to downstream summaries"
+"work_products/2026-07-07_water_provisional_and_corrected_salt_gate/README.md","Admission boundary states Water is reportable only as provisional monitor evidence from a timeout/frozen final window.",true,true,true,"pass; use as work-product gate language"
+".agent/journal/2026-07-07/water-provisional-and-corrected-salt-gate.md","Journal separates observed Water status, timeout endpoint, and no Water closure rows.",true,true,true,"pass; maintain provenance"
+"operational_notes/07-26/07/2026-07-07_water_provisional_and_corrected_salt_gate.md","Decision says use July 6 Water outputs only as provisional monitor-status evidence and keep timeout/frozen-window caveat attached.",true,true,true,"pass; maintain pickup instructions"
+"imports/2026-07-07_water_provisional_and_corrected_salt_gate.json","Import manifest policy labels Water provisional_monitor_reporting_only_due_to_TIMEOUT.",true,true,true,"pass; keep in provenance index"

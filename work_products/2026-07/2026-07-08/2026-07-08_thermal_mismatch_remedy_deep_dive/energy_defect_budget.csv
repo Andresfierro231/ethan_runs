@@ -1,0 +1,4 @@
+case_id,prior_1d_Tmean_error_K,prior_1d_qhx_duty_W,cfd_cooler_loss_W,cooler_extra_removal_vs_1d_W,heater_imposed_minus_wall_W,remove_1d_test_section_source_W,cfd_test_section_net_sink_W,known_first_order_correction_W,apparent_K_per_known_correction_W,passive_ambient_loss_W,junction_grouped_loss_W
+salt_2,61.95,46.378,136.351,89.973,22.181,37.0,5.68,154.833,0.4,62.234,39.128
+salt_3,63.698,49.738,150.77,101.032,24.345,37.0,10.545,172.921,0.368,68.32,43.235
+salt_4,66.201,53.876,169.227,115.351,27.113,37.0,16.769,196.232,0.337,75.927,48.485

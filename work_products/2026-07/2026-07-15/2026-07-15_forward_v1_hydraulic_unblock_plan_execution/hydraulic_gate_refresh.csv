@@ -1,0 +1,6 @@
+gate,status,evidence,separation,next_action
+h1_faithful_launch,blocked_no_go,centerline_resolved=12; centerline_blocked=3; component_fit_admissible=0,component_K_and_reset_development_not_admitted,do not run H1 score as faithful closure until pressure evidence is admitted
+test_section_complex_raw_two_tap,pending_agent373,"AGENT-373 pending jobs=3295989,3295990,3295991",tap_length_evidence_only,consume AGENT-373 output when dependency chain runs; raw extraction remains staged/no-native-mutation
+reset_development_pressure_evidence,api_ready_evidence_blocked,fluid_reset_api=True; h1_launchable_after_api=False,reset_development_K_separate_from_localized_fixed_K,wait for admitted pressure rows before reset/development fitting
+pm5_matched_pressure_upcomer,blocked_parse_incomplete,interactive=COMPLETED; parsed_rows=12; admitted_rows=0; quality=blocked-missing-field,matched_pressure_upcomer_not_mdot_or_thermal_fit,"repair field/parser gap, then refresh F6/onset gate"
+f6_phi_re,blocked_no_go,pm5_independent_training_expansion_rows=0; pm5 metrics admitted=0,straight_friction_Re_correction_not_global_multiplier,define bounded test only after admitted pressure/Re variation rows exist

@@ -1,0 +1,5 @@
+model_form,insulation_thickness_in,radiation_on,mean_abs_mdot_error_pct,mean_energy_error_pct_of_heater,interpretation
+boundary_default_1p4_rad_off,1.4,False,32.67723836898755,30.15425807394728,"boundary/surface-loss sensitivity, not a new hydraulic closure form"
+boundary_default_1p0_rad_on,1.0,True,27.36701203760154,10.402523617330266,"boundary/surface-loss sensitivity, not a new hydraulic closure form"
+boundary_default_1p4_rad_on,1.4,True,35.39310609981795,13.734830560407255,"boundary/surface-loss sensitivity, not a new hydraulic closure form"
+boundary_default_2p0_rad_on,2.0,True,38.88084160478393,19.595857346390357,"boundary/surface-loss sensitivity, not a new hydraulic closure form"

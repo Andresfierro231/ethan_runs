@@ -1,0 +1,4 @@
+case_id,target_time_window_s,Q_source_side_net_static_bc_W,Q_wall_W,Q_remaining_after_wall_W,F_wall_Qwall_over_source,throughflow_enthalpy_driver_abs_mdot_deltaT_kgK_s,cp_required_to_match_Q_wall_J_kg_K,cp_required_to_match_source_side_J_kg_K,residual_value_released,can_compute_same_basis_residual_now,disposition
+salt_2,7915,166.349260094,23.1161370708,143.2331230232,0.13896146612096516,3.81821642716e-06,6054171.49912,43567268.4531,false,false,budget_skeleton_only_fail_closed
+salt_3,7618,183.730361326,25.3465488205,158.3838125055,0.13795514599531333,6.53631890883e-06,3877801.73734,28109148.8785,false,false,budget_skeleton_only_fail_closed
+salt_4,10000,205.373184962,28.1231837021,177.25000125990002,0.13693697990467257,1.30610537552e-05,2153209.39866,15724090.0169,false,false,budget_skeleton_only_fail_closed

@@ -1,0 +1,12 @@
+source_path,exists,description,usage
+work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/wall_candidate_gate_failure_matrix.csv,yes,AGENT-515 gate matrix,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/segment_heat_placement_failure_modes.csv,yes,AGENT-515 segment heat-placement failure modes,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/candidate_admission_review.csv,yes,AGENT-513 admission review,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/coupled_delta_vs_m3.csv,yes,AGENT-513 deltas versus M3,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/probe_delta_vs_m3.csv,yes,AGENT-513 probe deltas versus M3,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate/role_segment_error_summary.csv,yes,AGENT-513 role/segment residual summary,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/summary.json,yes,AGENT-511 current state,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/coupled_scorecard.csv,yes,AGENT-511 heater-source scorecard or pending rows,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score/coupled_delta_vs_m3.csv,yes,AGENT-511 deltas if available,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/summary.json,yes,corrected-split freeze summary,read_only_existing_evidence
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,yes,final predictive shell summary,read_only_existing_evidence

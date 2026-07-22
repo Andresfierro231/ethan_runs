@@ -1,0 +1,6 @@
+source_id,path,use,mutation
+phase_e_role_rows,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv,baseline setup external-boundary role rows,False
+phase_e_baseline,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/train_solve_summary.csv,baseline train metrics,False
+fj_sensor_residuals,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/sensor_segment_residuals.csv,baseline sensor residuals,False
+source_contract,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/setup_known_source_contract.csv,setup-known heater source contract,False
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,local Fluid solve_case execution,False

@@ -1,0 +1,28 @@
+candidate_id,requirement,applies,status,uq_executed,release_allowed,evidence
+D3-WALL-CORE-EXCHANGE-SHAPE,predicted_T_wall_inner,True,blocked,False,False,1D wall state exists as a model output concept but no runtime wall/profile correction operator is released
+D3-WALL-CORE-EXCHANGE-SHAPE,predicted_T_bulk,True,diagnostic_available,False,False,Bulk/fluid projection exists only as post-solve score-target projection
+D3-WALL-CORE-EXCHANGE-SHAPE,wall_core_bulk_temperature_contrast_K,True,triplet_ready_uq_not_executed,False,False,S13/D3 says triplets are ready but UQ and production use are not executed
+D3-WALL-CORE-EXCHANGE-SHAPE,Q_wall_W,True,triplet_ready_uq_not_executed,False,False,Qwall supports wall/core exchange only after same-QOI UQ and production gate
+D3-WALL-CORE-EXCHANGE-SHAPE,mdot_exchange_positive_outward_proxy_kg_s,True,triplet_ready_uq_not_executed,False,False,exchange proxy supports axial/wall-core mechanism only after UQ
+D3-WALL-CORE-EXCHANGE-SHAPE,tau_recirc_proxy_s,True,triplet_ready_uq_not_executed,False,False,recirculation proxy supports axial mixing only after UQ
+D3-WALL-CORE-EXCHANGE-SHAPE,source_property_conservation,True,fail_closed,False,False,D3 crosswalk reports source/property conservation release failed
+D3-WALL-CORE-EXCHANGE-SHAPE,runtime_temperature_release,True,fail_closed,False,False,N4/MF14 runtime temperature allowed rows are zero
+D3-WALL-CORE-EXCHANGE-SHAPE,independent_coefficient_basis,True,fail_closed,False,False,D3 wall-index shape is residual-trained and has no independent coefficient basis
+D3-AXIAL-MIXING-SHAPE,predicted_T_wall_inner,True,blocked,False,False,1D wall state exists as a model output concept but no runtime wall/profile correction operator is released
+D3-AXIAL-MIXING-SHAPE,predicted_T_bulk,True,diagnostic_available,False,False,Bulk/fluid projection exists only as post-solve score-target projection
+D3-AXIAL-MIXING-SHAPE,wall_core_bulk_temperature_contrast_K,True,triplet_ready_uq_not_executed,False,False,S13/D3 says triplets are ready but UQ and production use are not executed
+D3-AXIAL-MIXING-SHAPE,Q_wall_W,True,triplet_ready_uq_not_executed,False,False,Qwall supports wall/core exchange only after same-QOI UQ and production gate
+D3-AXIAL-MIXING-SHAPE,mdot_exchange_positive_outward_proxy_kg_s,True,triplet_ready_uq_not_executed,False,False,exchange proxy supports axial/wall-core mechanism only after UQ
+D3-AXIAL-MIXING-SHAPE,tau_recirc_proxy_s,True,triplet_ready_uq_not_executed,False,False,recirculation proxy supports axial mixing only after UQ
+D3-AXIAL-MIXING-SHAPE,source_property_conservation,True,fail_closed,False,False,D3 crosswalk reports source/property conservation release failed
+D3-AXIAL-MIXING-SHAPE,runtime_temperature_release,True,fail_closed,False,False,N4/MF14 runtime temperature allowed rows are zero
+D3-AXIAL-MIXING-SHAPE,independent_coefficient_basis,True,fail_closed,False,False,D3 wall-index shape is residual-trained and has no independent coefficient basis
+D3-SENSOR-PROJECTION-SHAPE,predicted_T_wall_inner,True,blocked,False,False,1D wall state exists as a model output concept but no runtime wall/profile correction operator is released
+D3-SENSOR-PROJECTION-SHAPE,predicted_T_bulk,True,diagnostic_available,False,False,Bulk/fluid projection exists only as post-solve score-target projection
+D3-SENSOR-PROJECTION-SHAPE,wall_core_bulk_temperature_contrast_K,True,triplet_ready_uq_not_executed,False,False,S13/D3 says triplets are ready but UQ and production use are not executed
+D3-SENSOR-PROJECTION-SHAPE,Q_wall_W,False,not_primary_requirement,False,False,not a primary requirement for this family
+D3-SENSOR-PROJECTION-SHAPE,mdot_exchange_positive_outward_proxy_kg_s,False,not_primary_requirement,False,False,not a primary requirement for this family
+D3-SENSOR-PROJECTION-SHAPE,tau_recirc_proxy_s,False,not_primary_requirement,False,False,not a primary requirement for this family
+D3-SENSOR-PROJECTION-SHAPE,source_property_conservation,False,not_primary_requirement,False,False,not a primary requirement for this family
+D3-SENSOR-PROJECTION-SHAPE,runtime_temperature_release,True,fail_closed,False,False,N4/MF14 runtime temperature allowed rows are zero
+D3-SENSOR-PROJECTION-SHAPE,independent_coefficient_basis,False,not_primary_requirement,False,False,not a primary requirement for this family

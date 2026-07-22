@@ -1,0 +1,15 @@
+{
+  "best_model_variant": "F1_heater_only",
+  "case_count": 3,
+  "external_fluid_modified": false,
+  "generated_utc": "2026-07-15T12:53:13+00:00",
+  "heavy_openfoam_run": false,
+  "host": "c318-008.ls6.tacc.utexas.edu",
+  "leg_discrepancy_rows": 15,
+  "model_change_rows": 5,
+  "model_status": "best_current_predictive_style_imposed_cooler_not_final_predictive_hx",
+  "native_solver_outputs_mutated": false,
+  "predictive_hx_admitted": false,
+  "runtime_guardrail": "CFD_mdot_realized_wallHeatFlux_and_validation_temperatures_not_runtime_inputs",
+  "task": "AGENT-356"
+}

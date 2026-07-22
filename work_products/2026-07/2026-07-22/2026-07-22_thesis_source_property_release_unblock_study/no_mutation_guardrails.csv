@@ -1,0 +1,11 @@
+guardrail,value
+native_solver_outputs_mutated,false
+registry_or_admission_mutated,false
+scheduler_action,false
+solver_or_postprocess_launched,false
+source_property_release,false
+candidate_freeze,false
+protected_scoring,false
+validation_holdout_external_scoring,false
+runtime_leakage_relaxed,false
+thesis_body_or_latex_edit,false

@@ -1,0 +1,11 @@
+artifact_id,path,source_type,access,used_for
+blocker_register,.agent/blockers.yml,repo_register,read_only,Current upcomer-onset-data-sparsity blocker definition and closure requirements.
+agent_556_runbook,work_products/2026-07/2026-07-20/2026-07-20_forward_blocker_unlock_runbook/next_agent_contracts.csv,repo_work_product,read_only,AGENT-559 required output contract.
+agent_558_umx1_intake,work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/summary.json,repo_work_product,read_only,Shows UMX1 roots are smoke-unlocked but not scorecard-ready without better stratification/onset evidence.
+f6_upcomer_status,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/upcomer_onset_classification.csv,repo_work_product,read_only,Current three observed recirculation points and no single-stream fit admission.
+recirc_hybrid_contract,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/next_extraction_queue.csv,repo_work_product,read_only,Existing same-window extraction gaps for upcomer and F6/onset closure.
+upcomer_anchor_matrix,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/upcomer_onset_anchor_matrix.csv,repo_work_product,read_only,Salt3 sentinel and q-by-insulation candidate matrix.
+upcomer_request_hardening,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_anchor_request_hardening/same_window_contract.csv,repo_work_product,read_only,Same-window field contract adopted here.
+upcomer_execution,work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger.csv,repo_work_product,read_only,Current execution queue: PM10 extraction needed; high-heat monitor; current rows remain diagnostic.
+matched_plane_active,work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/slurm_submission_log.csv,repo_work_product,read_only,Active matched-plane extraction job 3305547 and QOS-blocked PM10 array context.
+high_heat_monitor,work_products/2026-07/2026-07-20/2026-07-20_high_heat_post_exit_harvest_readiness/live_job_status.csv,repo_work_product,read_only,High-heat Salt4 jobs 3299610 and 3299620 still running in monitor evidence.

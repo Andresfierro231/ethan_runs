@@ -1,0 +1,5 @@
+qoi_label,case_count,target_ready_rows,target_minus_ready_rows,target_plus_ready_rows,same_qoi_neighbor_uq_ready,same_qoi_mesh_gci_status,move_to_mesh_gci_uq_allowed_now,production_use_allowed_now,blocking_reason
+Q_wall_W,3,3,3,0,false,not_reached_target_plus_missing,false,false,"target-minus sampled, but target-plus is missing because retained targets are latest stored times"
+mdot_exchange_positive_outward_proxy_kg_s,3,3,3,0,false,not_reached_target_plus_missing,false,false,"target-minus sampled, but target-plus is missing because retained targets are latest stored times"
+tau_recirc_proxy_s,3,3,3,0,false,not_reached_target_plus_missing,false,false,"target-minus sampled, but target-plus is missing because retained targets are latest stored times"
+wall_core_bulk_temperature_contrast_K,3,3,3,0,false,not_reached_target_plus_missing,false,false,"target-minus sampled, but target-plus is missing because retained targets are latest stored times"

@@ -1,0 +1,3 @@
+gate,status,effect_on_s12,evidence,next_action
+s13_geometry_seed,pass,permits_source_bounded_cv_rerun_only,work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_case_summary.csv,rerun source-bounded CV release with this geometry seed
+s13_source_bounded_cv_rerun,blocked_pending_new_row,still blocks S12-HIAX1 until source-bounded QOIs release,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/s12_unlock_gate.csv,claim a separate source-bounded rerun row if geometry seed passes

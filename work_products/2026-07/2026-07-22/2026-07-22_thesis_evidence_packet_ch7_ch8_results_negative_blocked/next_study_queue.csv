@@ -1,0 +1,7 @@
+priority,next_task,why_it_matters,ready_now,guardrail
+1,TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22,"Quantifies or fail-closes recirculation fraction/onset metrics behind the high-value upcomer visuals.",true,"No ordinary upcomer Nu/f_D/K or exchange-cell admission."
+2,TODO-THESIS-STUDY-THERMAL-ACCOUNTING-TRACEABILITY-EVIDENCE-PACKET-2026-07-22,"Builds heater/cooler/HX/passive wall/test-section/junction/radiation/source-sink ledger for thermal results.",true,"No realized wallHeatFlux or validation temperatures as runtime inputs."
+3,TODO-THESIS-STUDY-PRESSURE-BASIS-LADDER-EVIDENCE-PACKET-2026-07-22,"Bundles pressure negative result and basis ladder for clean Ch7 pressure narrative.",true,"No component K/F6/clipped-K/global multiplier admission."
+4,S13 same-QOI UQ execution after target-plus,"Turns triplet-ready S13 labels into accepted/rejected same-QOI UQ rows.",requires separate exact row,"No production harvest or mesh/GCI until UQ gate passes."
+5,S13 mesh/GCI UQ gate,"Decides whether direct Qwall/exchange QOIs have mesh/GCI support.",requires prior UQ/gate context,"No coefficient admission unless all gates pass."
+6,External Fluid implementation row,"Implements setup-facing external convection/radiation/layer terms from dictionaries without realized wallHeatFlux.",requires exact external file row,"No external repo mutation from this thesis packet."

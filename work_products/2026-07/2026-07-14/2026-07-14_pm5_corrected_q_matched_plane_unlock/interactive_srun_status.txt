@@ -1,0 +1,11 @@
+run_id=interactive_3295120_retry2
+started_at=2026-07-14T17:59:12-05:00
+hostname=c318-008.ls6.tacc.utexas.edu
+slurm_job_id=3295120
+slurm_partition=NuclearEnergy-dev
+stdout=/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/logs/upcomer_pm5q-interactive_3295120_retry2.out
+stderr=/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/logs/upcomer_pm5q-interactive_3295120_retry2.err
+state=RUNNING
+finished_at=2026-07-14T18:01:29-05:00
+exit_code=0
+state=COMPLETED

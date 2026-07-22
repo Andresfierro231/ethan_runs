@@ -1,0 +1,7 @@
+model_form,current_status,admitted_rows,why_not_admitted,next_gate
+M0_setup_only_baseline,diagnostic_lower_bound,0,setup-UQ context exists but source/property release and freeze absent,source/property release plus train/support freeze
+M3_segment_only_fluid_walls,legacy_diagnostic_comparator,0,not source/property released and cannot own missing heat residual,heat-path/source-property release
+MF12_signed_source_memory_bulk_to_TP,high_value_candidate_preflight,0,cp/source envelope and same-QOI TP UQ missing,row-specific source envelope plus cp/mu/k release
+M5_MF04_throughflow_recirculation_exchange_cell,high_value_exchange_candidate,0,S13 formal GCI production harvest and source/property release absent,same-label mesh/GCI plus exchange residual
+MF01_ordinary_gated_single_stream_F6,future_pressure_candidate,0,CAND001 endpoint and ordinary-flow anchor absent,terminal endpoint readiness plus RAF/RMF pass
+M6_final_frozen_candidate,not_created,0,no candidate passes runtime source/property split/UQ gates,freeze one runtime-legal candidate before protected score

@@ -1,0 +1,4 @@
+sequence,work_package,objective,entry_condition,forbidden_action
+1,monitor_cell_volume_export,check sbatch terminal state and produced cell volume CSV/summary files,submission_record.csv has a scheduler job id,do not resubmit duplicate volume jobs without a new board row
+2,surface_and_ledger_generation,generate cell/interface/wall VTKs and source/sink ledgers with exact geometry basis,cell-volume CSVs exist or terminal export failure is recorded,do not run OpenFOAM surface sampling outside a scheduler-authorized row
+3,diagnostic_sampler_execution,run exchange sampler against ready inputs and emit finite or fail-closed rows,"cell volume, cell VTK, interface VTK, and source ledger statuses are explicit",do not fit or score exchange-cell rows

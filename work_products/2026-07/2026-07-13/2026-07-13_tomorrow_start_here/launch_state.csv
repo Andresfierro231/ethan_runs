@@ -1,0 +1,5 @@
+checked_local,job_id,job_name,state,elapsed,node,decision
+2026-07-13T17:45:20-05:00,3294001,s2_coarse_T+,COMPLETED,00:02:41,c318-011,Completed 0:0; read AGENT-305 before using for thermal gate rebuild.
+2026-07-13T17:45:20-05:00,3293924,saltq_sel_cont,RUNNING,00:41:35,c318-016,Monitor tomorrow; no duplicate corrected-Q launch.
+2026-07-13T17:45:20-05:00,3292998,idv01713,RUNNING,7:34:25,c318-008,Existing interactive allocation; not a reason to launch more.
+2026-07-13T17:37:44-05:00,3293960,fwdv0_solve,COMPLETED,00:07:19,c318-011,Harvested evidence exists; no rerun needed now.

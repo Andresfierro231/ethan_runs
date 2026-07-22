@@ -1,0 +1,7 @@
+evidence_family,train_support_status,validation_holdout_external_status,uq_status,release_status
+source_property_nominal_train,train preflight complete with labels but 0 release-ready rows,protected rows released 0,not a publication uncertainty interval,closed
+thermal_accounting_traceability,train/support document-only traceability,validation holdout external rows scored 0,missing setup fields remain listed,document_only
+M2_passive_wall_test_section,train diagnostic residual-owner gate complete,no protected scoring,source basis not released; no repair execution,closed
+D3_wall_shape,diagnostic train transfer evidence only,no production or protected scoring,same-QOI UQ not executed in D3 gate,diagnostic_only
+AMX1,smoke/intake evidence reviewed only,no validation holdout external scoring,root/ledger smoke clean but progression UQ/freeze absent,closed_pending_new_source_evidence
+S13_exchange,diagnostic same-QOI temporal context exists,no production/admission scoring,same-label mesh/GCI missing,blocked

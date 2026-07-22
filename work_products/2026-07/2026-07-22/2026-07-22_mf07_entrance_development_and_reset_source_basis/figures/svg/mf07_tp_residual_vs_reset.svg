@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="860" height="430" viewBox="0 0 860 430">
+  <rect width="100%" height="100%" fill="#ffffff"/>
+  <text x="70" y="38" font-size="22" font-family="Arial" fill="#1d252c">MF07 TP residual vs reset distance</text>
+  <text x="70" y="64" font-size="13" font-family="Arial" fill="#3d474f">Train-only M3 TP residuals; color marks ordinary single-stream gate status.</text>
+  <line x1="70" y1="320" x2="790" y2="320" stroke="#222"/>
+  <line x1="70" y1="320" x2="70" y2="70" stroke="#222"/>
+  <text x="340.0" y="388" font-size="13" font-family="Arial" fill="#222">L/D from latest reset</text>
+  <text x="18" y="195.0" font-size="13" font-family="Arial" fill="#222" transform="rotate(-90 18 195.0)">abs(M3 TP error), K</text>
+  <text x="70" y="344" font-size="11" font-family="Arial" fill="#222">0</text>
+  <text x="765" y="344" font-size="11" font-family="Arial" fill="#222">16.4</text>
+  <text x="34" y="74" font-size="11" font-family="Arial" fill="#222">22.4</text>
+  <circle cx="790.0" cy="70.0" r="6" fill="#b5532a"/><text x="798.0" y="62.0" font-size="12" fill="#222">TP1</text><circle cx="316.1" cy="207.0" r="6" fill="#b5532a"/><text x="324.1" y="199.0" font-size="12" fill="#222">TP3</text><circle cx="316.1" cy="179.2" r="6" fill="#b5532a"/><text x="324.1" y="171.2" font-size="12" fill="#222">TP4</text><circle cx="278.7" cy="160.6" r="6" fill="#b5532a"/><text x="286.7" y="152.6" font-size="12" fill="#222">TP5</text><circle cx="358.8" cy="139.7" r="6" fill="#b5532a"/><text x="366.8" y="131.7" font-size="12" fill="#222">TP6</text>
+  <rect x="70" y="360" width="14" height="14" fill="#256b7f"/><text x="92" y="372" font-size="12" font-family="Arial" fill="#222">single-stream precheck rows exist</text>
+  <rect x="330" y="360" width="14" height="14" fill="#b5532a"/><text x="352" y="372" font-size="12" font-family="Arial" fill="#222">ordinary single-stream blocked</text>
+  <text x="70" y="404" font-size="12" font-family="Arial" fill="#3d474f">Segment summary: 0 thermally developing rows; 18 recirculation-blocked rows. No release or admission.</text>
+</svg>

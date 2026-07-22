@@ -1,0 +1,9 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/sampler_field_map.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/case_time_window_queue.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/upcomer_exchange_extraction_contract.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/no_admission_guardrail.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/missing_exchange_nu_evidence_queue.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/cfd_evidence_requirements.csv,read_only_input,true,false,false
+tools/extract/sample_upcomer_convection_cell.py,read_only_input,true,false,false

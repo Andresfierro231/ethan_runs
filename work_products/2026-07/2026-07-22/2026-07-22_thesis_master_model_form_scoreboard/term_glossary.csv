@@ -1,0 +1,44 @@
+term,expanded_meaning,thesis_usage
+1D,one-dimensional reduced-order model,"Network/control-volume model over branches and components, not a full 3D CFD mesh."
+CFD,computational fluid dynamics,OpenFOAM high-fidelity reference evidence used as target/context according to split role.
+CSEM,coupled systems engineering model,Thesis shorthand for the coupled reduced fluid/wall modeling workflow.
+M,endpoint model-form ladder label,M0-M6 are thesis endpoint forms from setup-only baseline through final frozen candidate.
+MF,LitRev model-form taxonomy label,MF-01 to MF-06 are literature-derived or architecture-derived model families.
+S6,frozen final scorecard study,Gate for publishing final predictive scores after exactly one runtime-legal candidate is frozen.
+S11,candidate source/property refresh gate,"Gate that checks a candidate's source validity, property sensitivity, and split legality before freeze."
+S12,thermal-shape/upcomer candidate line,Thermal candidate lane connected to source-side/upcomer evidence and residual ownership.
+S13,upcomer exchange/recirculation evidence line,Study family for the recirculating upcomer exchange-cell model and sampled/Qwall evidence.
+S14,pressure/F6 nonrecirculating anchor line,Pressure branch-use and F6 candidate gate for ordinary-flow or low-recirculation anchors.
+S15,candidate freeze/source-property score release gate,Follow-on gate after a candidate passes S11-like checks; not currently triggered.
+two-tap,two pressure endpoint/tap reduction,Pressure reduction using paired upstream/downstream endpoints over a section or feature.
+TP,fluid temperature probe,"Sensor target class for fluid/probe temperatures. In error tables, units are Kelvin."
+TW,wall temperature sensor/probe,"Sensor target class for wall temperatures. In error tables, units are Kelvin."
+K,Kelvin or loss coefficient depending context,`error_K` means Kelvin temperature error; `K_eff`/`component_K` are dimensionless pressure-loss coefficients.
+RMSE,root-mean-square error,Aggregate error magnitude; useful but insufficient without signed individual sensor errors.
+signed error,predicted minus target,Positive means over-prediction; negative means under-prediction.
+percent error,100*(predicted-target)/target,Signed error normalized by target absolute temperature in Kelvin for figure-ready sensor rows.
+QOI,quantity of interest,"Named output or target used for scoring/gating, such as pressure residual or TP/TW temperature."
+UQ,uncertainty quantification,Same-QOI mesh/time/neighbor-window uncertainty evidence required before admission.
+CV,control volume,A bounded model or CFD-derived region used for conservation ledgers.
+mdot,mass flow rate,Usually kg/s; forbidden as a realized CFD runtime input for predictive claims unless setup-facing/admitted.
+Nu,Nusselt number,Heat-transfer coefficient correlation output; not allowed to absorb residuals from sources/walls/junctions.
+f_D,Darcy friction factor,Hydraulic friction closure; ordinary single-stream use is blocked in recirculating states.
+F6,ordinary pressure/F6 branch model family,"Pressure/friction candidate lane requiring endpoint fields, ordinary-flow checks, and same-QOI UQ."
+F3,current/reference pressure model family,Reference pressure comparison family used in F3-vs-F6 discussions.
+component_K,isolated local minor-loss coefficient,"Only valid after component isolation, pressure/velocity basis, recovery, and UQ gates pass."
+K_section,section-effective loss label,Use when the extraction domain is a section rather than an isolated component.
+K_cluster,cluster-effective loss label,Use for close-coupled fittings/features that cannot be separated into a single component.
+Q_wall_W,integrated wall heat transfer in watts,Trusted wall heat-flux integral; currently not released for S13 production admission.
+wallHeatFlux,OpenFOAM wall heat-flux field,Realized CFD output; diagnostic unless converted into a permitted target/evidence lane.
+Q_source_side_net_static_bc_W,source-side static boundary heat-flow proxy,S13 source-side label: Q_source_static_bc_W minus Q_sink_static_bc_W; not the same as Q_wall_W.
+RAF,reverse area fraction,Fraction of a section/interface area with reverse-flow behavior.
+RMF,reverse mass fraction,Fraction of mass flow participating in reverse-flow behavior.
+GCI,grid convergence index,Mesh-convergence uncertainty concept; only valid for specific admitted QOI rows.
+source envelope,literature/source validity range,Author/title/equation/range provenance that bounds a closure's use.
+train,fit-eligible split role,Rows allowed for fitting only when candidate/source/property gates allow it.
+support,diagnostic/trend split role,Rows that support sensitivity/trend reasoning but are not fit rows.
+holdout,protected score split role,Rows used only after freeze; no fitting/model selection.
+external,external-test split role,Blind-style score/context rows; never used for fitting/model selection.
+Fluid,repo-local 1D solver/tooling,"The reduced-order model code path, distinct from OpenFOAM CFD."
+OpenFOAM,CFD solver and data format,Native CFD outputs are read-only unless a task explicitly claims derived extraction.
+TAMU,Texas A&M University loop context,The experimental/CFD loop context for the thesis work.

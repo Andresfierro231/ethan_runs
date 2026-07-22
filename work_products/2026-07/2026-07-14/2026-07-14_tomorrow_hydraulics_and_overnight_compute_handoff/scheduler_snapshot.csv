@@ -1,0 +1,5 @@
+job_id,name,state,time_or_reason,node_or_dependency,note
+3293924,saltq_sel_cont,RUNNING,1-00:35:04,c318-016,selected corrected-Q continuation; terminal gate pending
+3295120,idv75667,RUNNING,6:52:33,c318-008,current interactive/dev allocation observed from this session
+3295968,upc_pm5q,PENDING,Priority,1 node,matched pressure/upcomer job; do not duplicate
+3295438,saltq_s24_sel_harv,PENDING,Dependency,1 node,selected Salt2/Salt4 +/-10Q harvest dependency-held after 3293924

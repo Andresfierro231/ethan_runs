@@ -1,0 +1,4 @@
+helper_or_source,current_capability,usable_for_this_step,why_not_harvest_ready,next_action
+tools/extract/sample_span_endpoint_temperatures.py,mass-flux-weighted T_bulk from existing secmeanSurfaces XY cut files,contract_reference_only,existing span planes are not the released S13 open-CV endpoint masks,reuse weighting formula after endpoint masks are derived
+tools/extract/sample_physical_segment_interface_temperatures.py,physical segment interface T_bulk contract with recirculation diagnostics,contract_reference_only,physical segment planes do not define the recirculating-upcomer open-CV throughflow endpoints,reuse output fields and quality flags in a future S13 endpoint sampler
+validated S13 cell VTKs,cell field/topology evidence exists for Salt2/Salt3/Salt4,diagnostic_geometry_context,cell VTKs are not endpoint face masks and cannot substitute for open-CV cut surfaces,"derive face masks from released CV/topology, not from proxy plane substitution"

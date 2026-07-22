@@ -1,0 +1,17 @@
+{
+  "task_id": "TODO-THESIS-MODEL-FORM-SCOREBOARD-TRAINING-ROSTER-2026-07-22",
+  "generated_at": "2026-07-22T11:17:50-05:00",
+  "decision": "scoreboard_training_roster_complete_no_training_or_protected_scoring",
+  "model_form_rows": 12,
+  "scoreboard_presence_rows": 12,
+  "train_nominal_rows": 4,
+  "support_rows": 4,
+  "holdout_rows": 2,
+  "external_test_rows": 1,
+  "can_train_now_rows": 0,
+  "can_score_validation_now_rows": 0,
+  "source_property_release": "false",
+  "qwall_release": "false",
+  "candidate_freeze": "false",
+  "validation_holdout_external_scoring_performed": "false"
+}

@@ -1,0 +1,26 @@
+{
+  "generated_at": "2026-07-07",
+  "task_id": "AGENT-181",
+  "audit_scope": "Water July 6 provisional-output language across task report, work product, journal, operational note, and import manifest.",
+  "required_policy": {
+    "water_use": "provisional_monitor_reporting_only",
+    "mandatory_caveat": "Water came from source job 3265970 TIMEOUT and a frozen final window.",
+    "closure_fit_use": false,
+    "rom_correlation_fit_use": false
+  },
+  "result": {
+    "artifacts_audited": 6,
+    "missing_timeout_frozen_caveat": 0,
+    "missing_closure_fit_block": 0,
+    "missing_rom_correlation_block": 0,
+    "recommendation": "admit_for_provisional_reporting_only"
+  },
+  "audited_artifacts": [
+    "reports/2026-07/2026-07-07/2026-07-07_water_provisional_and_corrected_salt_gate/README.md",
+    "reports/2026-07/2026-07-07/2026-07-07_water_provisional_and_corrected_salt_gate/summary.json",
+    "work_products/2026-07-07_water_provisional_and_corrected_salt_gate/README.md",
+    ".agent/journal/2026-07-07/water-provisional-and-corrected-salt-gate.md",
+    "operational_notes/07-26/07/2026-07-07_water_provisional_and_corrected_salt_gate.md",
+    "imports/2026-07-07_water_provisional_and_corrected_salt_gate.json"
+  ]
+}

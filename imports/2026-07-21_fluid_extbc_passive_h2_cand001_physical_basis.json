@@ -1,0 +1,86 @@
+{
+  "task": "TODO-FLUID-EXTBC-PASSIVE-H2-CAND001-PHYSICAL-BASIS-2026-07-21",
+  "task_id": "TODO-FLUID-EXTBC-PASSIVE-H2-CAND001-PHYSICAL-BASIS-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Build PASSIVE-H2-CAND001 no-solve physical-basis package and decide whether a single train-only passive repair run is justified.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-EXTBC-PASSIVE-H2-CAND001-PHYSICAL-BASIS-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-extbc-passive-h2-cand001-physical-basis.md",
+    "imports/2026-07-21_fluid_extbc_passive_h2_cand001_physical_basis.json",
+    "tools/analyze/build_fluid_extbc_passive_h2_cand001_physical_basis.py",
+    "tools/analyze/test_fluid_extbc_passive_h2_cand001_physical_basis.py",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/ambient_surroundings_basis.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/area_coverage_basis.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/current_hA_basis_and_provenance_risk.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/expected_q_loss_envelope.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/independent_h_estimate_range.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/repair_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/source_sink_interaction_update.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/passive_hA_family_contribution.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/segment_heat_loss_sweep.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/sign_and_drive_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/setup_known_source_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/tw4_tw6_focus.csv"
+  ],
+  "validation": [
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile tools/analyze/build_fluid_extbc_passive_h2_cand001_physical_basis.py tools/analyze/test_fluid_extbc_passive_h2_cand001_physical_basis.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/build_fluid_extbc_passive_h2_cand001_physical_basis.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/test_fluid_extbc_passive_h2_cand001_physical_basis.py",
+      "result": "PASSIVE-H2-CAND001 physical-basis checks passed."
+    }
+  ],
+  "summary": {
+    "gate_decision": "needs_more_source",
+    "repair_run_allowed_now": false,
+    "fluid_solve_run": false,
+    "families": ["junction", "downcomer", "upcomer", "cooling_branch", "lower_leg"],
+    "all_current_h_inside_engineering_range": true,
+    "all_current_q_inside_engineering_range": true,
+    "all_passive_rows_wallHeatFlux_provenance": true
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": false,
+    "external_fluid_repo_edited": false,
+    "validation_rows_scored": 0,
+    "holdout_rows_scored": 0,
+    "external_test_rows_scored": 0,
+    "fit_or_model_selection": false,
+    "global_multiplier_admitted": false,
+    "repair_run_executed": false,
+    "freeze_or_admission_decision": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false
+  }
+}

@@ -1,0 +1,2 @@
+contract_id,timeout_seconds,command,stdout,stderr,policy
+bounded_srun_coupled_score,273,mkdir -p logs/2026-07-17 && srun -N1 -n1 python3 tools/analyze/build_wall_temperature_drive_candidate.py --run-fluid --timeout-seconds 273 > logs/2026-07-17/wall_temperature_drive_candidate.out 2> logs/2026-07-17/wall_temperature_drive_candidate.err,logs/2026-07-17/wall_temperature_drive_candidate.out,logs/2026-07-17/wall_temperature_drive_candidate.err,run bounded Fluid scoring through compute-node srun or equivalent; no login-node Fluid solve

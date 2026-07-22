@@ -1,0 +1,5 @@
+candidate_id,pb1_static_gate,runtime_gate,validation_coupled_gate,holdout_coupled_gate,admission_decision,validation_mdot_delta_vs_m3_pct,holdout_mdot_delta_vs_m3_pct,validation_all_probe_delta_vs_m3_K,holdout_all_probe_delta_vs_m3_K,scientific_read
+PB1_PLUS_HX_LUMPED_UA_NTU,pass,pass,fail,fail,not_admitted,-15.30044216,-12.53449916,35.54346998,43.57974726,mdot improves but temperature field degrades; passive-total hA scaling is not enough for admission
+PB1_PLUS_HX_SEGMENTED_UA_NTU_N16,pass,pass,fail,fail,not_admitted,-15.30630376,-12.53908742,35.55343815,43.58558425,mdot improves but temperature field degrades; passive-total hA scaling is not enough for admission
+PB1_PLUS_HX_SEGMENTED_UA_NTU_N4,pass,pass,fail,fail,not_admitted,-15.30596149,-12.53881937,35.55285468,43.58524236,mdot improves but temperature field degrades; passive-total hA scaling is not enough for admission
+PB1_PLUS_HX_SEGMENTED_UA_NTU_N8,pass,pass,fail,fail,not_admitted,-15.30623496,-12.53903501,35.55332148,43.58551587,mdot improves but temperature field degrades; passive-total hA scaling is not enough for admission

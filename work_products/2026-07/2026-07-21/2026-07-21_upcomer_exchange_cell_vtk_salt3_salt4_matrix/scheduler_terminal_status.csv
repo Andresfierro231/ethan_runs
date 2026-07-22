@@ -1,0 +1,2 @@
+job_id,job_name,state,exit_code,elapsed,node_list,artifact_status,interpretation
+3308527,upx_s34_cellvtk,COMPLETED,0:0,00:01:05,c318-016,pass,Scheduler terminal state recorded.

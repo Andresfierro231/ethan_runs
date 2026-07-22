@@ -1,0 +1,5 @@
+split_role,source_rows,consumed_rows,score_claim,phase_f_policy
+train,8,8,full Fluid execution evidence and train residual attribution,train_only_metric_allowed
+validation,8,0,none from this package,not_consumed_by_policy
+holdout,8,0,none from this package,not_consumed_by_policy
+external_test,0,0,none from this package,not_consumed_by_policy

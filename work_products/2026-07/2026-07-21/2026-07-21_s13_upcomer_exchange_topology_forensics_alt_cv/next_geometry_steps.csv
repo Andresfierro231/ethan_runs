@@ -1,0 +1,5 @@
+order,next_step,required_evidence,blocked_until
+1,review_right_leg_roi_patch_alignment,cell-center ROI and trusted right-leg wall patches must describe the same physical upcomer/right-leg region,current dominant components touch lower-leg boundary patches and not trusted right-leg wall patches
+2,define_geometry_backed_recirc_seed,a predeclared wall-linked seed or geometric recirculation band with no proxy exchange surface,component forensics identify a release-worthy wall-linked component or justify a new setup-only mask rule
+3,rerun_topology_release,"all Salt2/Salt3/Salt4 CVs pass dominance, interface, wall, and boundary-escape gates together",one case failure blocks the group release
+4,surface_wall_normals_release,"trusted interface/wall face sets, normals, face counts, areas, and source paths",topology CV release is 3/3

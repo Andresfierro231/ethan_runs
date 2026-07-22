@@ -1,0 +1,9 @@
+metric,baseline_value,amx1_value,amx1_minus_baseline,interpretation
+mdot_kg_s,0.0202587059469083,0.020238015156203,-2.0690790705301e-05,smoke_only_small_mdot_shift_not_admission_metric
+mass_flow_abs_error_kg_s,0.003458705946908301,0.003438015156203001,-2.069079070530007e-05,diagnostic_improved_slightly
+all_rmse_K,65.09844239296099,65.10180354750273,0.00336115454174,diagnostic_nearly_neutral_slightly_worse
+tp_rmse_K,62.44075993919781,62.44209279533853,0.00133285614072,diagnostic_nearly_neutral_slightly_worse
+tw_rmse_K,66.27125574822419,66.27548733670409,0.0042315884799,diagnostic_nearly_neutral_slightly_worse
+tw_no_tw10_rmse_K,58.85530991948665,58.85956809788936,0.00425817840271,diagnostic_nearly_neutral_slightly_worse
+qhx_total_W,46.40301489099448,46.40419120542641,0.00117631443193,diagnostic_nearly_neutral
+qambient_total_W,256.29665136517525,256.29547497477074,-0.00117639040451,diagnostic_nearly_neutral

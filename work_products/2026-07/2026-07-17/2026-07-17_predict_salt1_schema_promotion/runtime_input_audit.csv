@@ -1,0 +1,6 @@
+audit_id,gate,observed_state,forbidden_runtime_input
+R1_no_cfd_mdot_runtime,pass,Salt1 terminal mdot is retained only as target/diagnostic evidence after prediction.,CFD mdot
+R2_no_realized_wallHeatFlux_runtime,pass,Salt1 realized wallHeatFlux is not reduced into predictive runtime inputs in this package.,realized CFD wallHeatFlux
+R3_no_imposed_cooler_runtime,pass,Salt1 cooler/HX imposed or setup Q rows are labeled source/sink evidence; final predictive use must use setup-legal cooler model outputs.,imposed CFD cooler duty
+R4_no_validation_temperature_runtime,pass,Salt1 TP/TW rows are post-solve validation/scoring targets only and are never fit/runtime temperatures.,validation temperatures
+R5_no_clean_endtime_claim,pass,Salt1 rows retain operational stop/cancel provenance; no output calls them clean endTime completions.,false provenance claim

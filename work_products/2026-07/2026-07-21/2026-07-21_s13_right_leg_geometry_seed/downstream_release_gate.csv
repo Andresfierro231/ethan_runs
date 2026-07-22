@@ -1,0 +1,16 @@
+case_id,downstream_lane,status,required_input,available_input,blocking_reason
+salt_2,source_bounded_cv_rerun,ready,3/3 geometry seed rows with positive wall/interface and no unclassified escapes,geometry-backed right-leg wall seed,
+salt_2,surface_extraction,blocked,released source-bounded CV with exchange-interface/wall/core/normal lanes,,downstream gate requires later source-bounded CV release
+salt_2,sampler_manifest_refresh,blocked,"released surface VTKs, normals, Q_wall_W/source lane, same-window thermal fields",,downstream gate requires later source-bounded CV release
+salt_2,production_harvest,blocked,3/3 sampler-ready rows,,downstream gate requires later source-bounded CV release
+salt_2,S11_S12_S15_S6_trigger,blocked,admitted runtime-legal candidate after UQ/source-property release,,downstream gate requires later source-bounded CV release
+salt_3,source_bounded_cv_rerun,ready,3/3 geometry seed rows with positive wall/interface and no unclassified escapes,geometry-backed right-leg wall seed,
+salt_3,surface_extraction,blocked,released source-bounded CV with exchange-interface/wall/core/normal lanes,,downstream gate requires later source-bounded CV release
+salt_3,sampler_manifest_refresh,blocked,"released surface VTKs, normals, Q_wall_W/source lane, same-window thermal fields",,downstream gate requires later source-bounded CV release
+salt_3,production_harvest,blocked,3/3 sampler-ready rows,,downstream gate requires later source-bounded CV release
+salt_3,S11_S12_S15_S6_trigger,blocked,admitted runtime-legal candidate after UQ/source-property release,,downstream gate requires later source-bounded CV release
+salt_4,source_bounded_cv_rerun,ready,3/3 geometry seed rows with positive wall/interface and no unclassified escapes,geometry-backed right-leg wall seed,
+salt_4,surface_extraction,blocked,released source-bounded CV with exchange-interface/wall/core/normal lanes,,downstream gate requires later source-bounded CV release
+salt_4,sampler_manifest_refresh,blocked,"released surface VTKs, normals, Q_wall_W/source lane, same-window thermal fields",,downstream gate requires later source-bounded CV release
+salt_4,production_harvest,blocked,3/3 sampler-ready rows,,downstream gate requires later source-bounded CV release
+salt_4,S11_S12_S15_S6_trigger,blocked,admitted runtime-legal candidate after UQ/source-property release,,downstream gate requires later source-bounded CV release

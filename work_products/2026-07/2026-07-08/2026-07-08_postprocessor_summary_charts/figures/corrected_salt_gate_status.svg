@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="860" viewBox="0 0 1240 860">
+<rect x="0" y="0" width="1240" height="860" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="250" y="34" class="title">Corrected Salt Status/Gate Monitor</text>
+<text x="250" y="56" class="subtitle">Status-only evidence from live monitor; not closure-fit data</text>
+<line x1="250.00" y1="90" x2="250.00" y2="752" class="grid"/>
+<text x="250.00" y="774" text-anchor="middle" class="tick">0</text>
+<line x1="440.00" y1="90" x2="440.00" y2="752" class="grid"/>
+<text x="440.00" y="774" text-anchor="middle" class="tick">0.2</text>
+<line x1="630.00" y1="90" x2="630.00" y2="752" class="grid"/>
+<text x="630.00" y="774" text-anchor="middle" class="tick">0.4</text>
+<line x1="820.00" y1="90" x2="820.00" y2="752" class="grid"/>
+<text x="820.00" y="774" text-anchor="middle" class="tick">0.6</text>
+<line x1="1010.00" y1="90" x2="1010.00" y2="752" class="grid"/>
+<text x="1010.00" y="774" text-anchor="middle" class="tick">0.8</text>
+<line x1="1200.00" y1="90" x2="1200.00" y2="752" class="grid"/>
+<text x="1200.00" y="774" text-anchor="middle" class="tick">1</text>
+<line x1="250" y1="752" x2="1200" y2="752" class="axis"/>
+<line x1="250" y1="90" x2="250" y2="752" class="axis"/>
+<text x="242" y="119.53" text-anchor="end" class="tick">Salt1 +10Q</text>
+<rect x="250" y="103.24" width="40.26" height="24.59" fill="#D97706"/>
+<text x="295.26" y="119.53" class="small">special scrutiny</text>
+<text x="242" y="166.82" text-anchor="end" class="tick">Salt1 -10Q</text>
+<rect x="250" y="150.53" width="266.60" height="24.59" fill="#D97706"/>
+<text x="521.60" y="166.82" class="small">special scrutiny</text>
+<text x="242" y="214.11" text-anchor="end" class="tick">Salt2 +10Q</text>
+<rect x="250" y="197.81" width="178.10" height="24.59" fill="#2878B5"/>
+<text x="433.10" y="214.11" class="small">hold running wait for formal gate</text>
+<text x="242" y="261.39" text-anchor="end" class="tick">Salt2 +5Q</text>
+<rect x="250" y="245.10" width="189.26" height="24.59" fill="#2878B5"/>
+<text x="444.26" y="261.39" class="small">hold running wait for formal gate</text>
+<text x="242" y="308.68" text-anchor="end" class="tick">Salt2 -10Q</text>
+<rect x="250" y="292.38" width="240.02" height="24.59" fill="#2878B5"/>
+<text x="495.02" y="308.68" class="small">hold running wait for formal gate</text>
+<text x="242" y="355.96" text-anchor="end" class="tick">Salt2 -5Q</text>
+<rect x="250" y="339.67" width="240.34" height="24.59" fill="#2878B5"/>
+<text x="495.34" y="355.96" class="small">hold running wait for formal gate</text>
+<text x="242" y="403.25" text-anchor="end" class="tick">Salt3 -10Q</text>
+<rect x="250" y="386.95" width="183.66" height="24.59" fill="#2878B5"/>
+<text x="438.66" y="403.25" class="small">hold running wait for formal gate</text>
+<text x="242" y="450.53" text-anchor="end" class="tick">Salt3 -5Q</text>
+<rect x="250" y="434.24" width="180.38" height="24.59" fill="#2878B5"/>
+<text x="435.38" y="450.53" class="small">hold running wait for formal gate</text>
+<text x="242" y="497.82" text-anchor="end" class="tick">Salt4 +10Q</text>
+<rect x="250" y="481.53" width="153.21" height="24.59" fill="#2878B5"/>
+<text x="408.21" y="497.82" class="small">hold running wait for formal gate</text>
+<text x="242" y="545.11" text-anchor="end" class="tick">Salt4 +5Q</text>
+<rect x="250" y="528.81" width="139.19" height="24.59" fill="#2878B5"/>
+<text x="394.19" y="545.11" class="small">hold running wait for formal gate</text>
+<text x="242" y="592.39" text-anchor="end" class="tick">Salt4 -10Q</text>
+<rect x="250" y="576.10" width="165.44" height="24.59" fill="#2878B5"/>
+<text x="420.44" y="592.39" class="small">hold running wait for formal gate</text>
+<text x="242" y="639.68" text-anchor="end" class="tick">Salt4 -5Q</text>
+<rect x="250" y="623.38" width="170.99" height="24.59" fill="#2878B5"/>
+<text x="425.99" y="639.68" class="small">hold running wait for formal gate</text>
+<text x="242" y="686.96" text-anchor="end" class="tick">Salt3 +10Q</text>
+<rect x="250" y="670.67" width="3.15" height="24.59" fill="#C53030"/>
+<text x="258.15" y="686.96" class="small">special scrutiny</text>
+<text x="242" y="734.25" text-anchor="end" class="tick">Salt3 +5Q</text>
+<rect x="250" y="717.95" width="3.40" height="24.59" fill="#C53030"/>
+<text x="258.40" y="734.25" class="small">special scrutiny</text>
+<text x="725.0" y="818" text-anchor="middle" class="label">Advance fraction of target extension</text>
+<text x="250" y="842" class="small">Rows are live/status diagnostics. Formal operating-point requalification is required before any corrected Salt row enters</text>
+<text x="250" y="856" class="small">closure fitting.</text>
+</svg>

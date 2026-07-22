@@ -1,0 +1,50 @@
+{
+  "schema_name": "csem_thesis_artifact_handoff",
+  "schema_version": "2026-07-21",
+  "required_fields": [
+    "artifact_id",
+    "producer_task_id",
+    "source_package_readme",
+    "source_paths",
+    "generated_paths",
+    "target_latex_paths",
+    "target_section",
+    "claim_ids",
+    "split_role",
+    "admission_state",
+    "allowed_use",
+    "forbidden_use",
+    "runtime_leakage_audit",
+    "figure_or_table_caption_guardrail",
+    "validation_command",
+    "validation_result",
+    "open_blockers"
+  ],
+  "allowed_split_roles": [
+    "training",
+    "diagnostic",
+    "validation",
+    "holdout",
+    "external-test",
+    "literature-context",
+    "method-policy",
+    "negative-result"
+  ],
+  "allowed_admission_states": [
+    "admitted",
+    "diagnostic-only",
+    "blocked",
+    "negative-result",
+    "context-only",
+    "superseded"
+  ],
+  "runtime_leakage_forbidden_inputs": [
+    "CFD mdot as predictive runtime input",
+    "realized wallHeatFlux as predictive runtime input",
+    "imposed cooler duty as predictive runtime input",
+    "validation temperatures as predictive runtime input",
+    "holdout data as predictive runtime input",
+    "external-test data as predictive runtime input"
+  ],
+  "ready_for_latex_rule": "Ready only when split_role, admission_state, allowed_use, forbidden_use, runtime_leakage_audit, and validation_result are populated and the package README records exact source paths."
+}

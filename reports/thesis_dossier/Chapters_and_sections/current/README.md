@@ -84,6 +84,9 @@ topic-named, and readable without chat context. Dated notes remain in
 | `operational_notes/07-26/21/2026-07-21_THESIS_STUDY_EXECUTION_DOCUMENTATION_PACKAGE.md` | Start-here handoff for applying the execution contract to each thesis study row. |
 | `operational_notes/07-26/21/2026-07-21_THESIS_POST_S8_S10_EVIDENCE_AND_STUDY_REQUIREMENTS.md` | Current post-S8/S9/S10 continuation handoff; routes implementers to S12, S13, S14, and trigger-gated S15 before any S11/S6 refresh. |
 | `operational_notes/07-26/21/2026-07-21_THESIS_UPCOMER_RECIRCULATION_VISUAL_EVIDENCE_INSERTION.md` | Salt2/Salt4 upcomer visual-evidence insertion note for F-03A, including exact source paths, chapter placement, and no-admission caption guardrails. |
+| `work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/README.md` | Thesis-facing CFD run/QoI chart: one wide CSV row per CFD case with `mdot`, TP, and TW targets; `val_salt2` is grouped in `holdout_test` with `external_test` subtype. |
+| `work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/README.md` | Cross-workspace contract for parallel LaTeX writers and `ethan_runs` artifact producers; use before importing current sections into the actual CSEM dissertation LaTeX. |
+| `operational_notes/07-26/21/2026-07-21_THESIS_LATEX_PARALLEL_WORKFLOW_CONTRACT.md` | Start-here handoff for claimable LaTeX chapter sync rows, artifact handoff fields, runtime-leakage checks, and papers-board promotion. |
 
 ## Editing Rule
 

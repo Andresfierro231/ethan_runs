@@ -1,0 +1,6 @@
+input_or_output,role,legal_for_runtime,source_or_basis,guardrail
+model_solved_inner_wall_or_fluid_state,allowed_runtime_state,True,1D model state at passive H2 segment,do not use observed TP/TW or CFD wallHeatFlux
+layer_resistance_and_material_k,allowed_setup_input,True,source-backed passive H2 layer/material table,document version and source/property label before any release
+area_emissivity_exterior_h_Ta_Tsur,allowed_setup_input,True,setup dictionary/passive H2 source-basis packet,train-only smoke may report movement; no protected scoring
+realized_CFD_wallHeatFlux_or_Qwall,forbidden_runtime_input,False,diagnostic CFD output only,do not add to runtime ledger or release numeric q_loss
+CFD_mdot_or_observed_validation_temperatures,forbidden_runtime_input,False,target/protected evidence only,"do not tune, select, freeze, or score from this packet"

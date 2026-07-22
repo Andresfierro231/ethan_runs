@@ -1,0 +1,10 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_s13_upcomer_exchange_geometry_contract.py,task_output,true,false,true
+tools/extract/test_s13_upcomer_exchange_geometry_contract.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_geometry_release,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract,task_output,true,false,true

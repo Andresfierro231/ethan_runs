@@ -1,0 +1,5 @@
+claim_id,claim_status,claim,basis,forbidden_extension
+CLAIM-001,allowed,corner_lower_right pressure evidence is section-effective under material reverse flow,three Salt2/Salt3/Salt4 rows have high reverse-flow metrics and failed ordinary gates,do not call these rows ordinary component K
+CLAIM-002,allowed,hydrostatic head dominates gross static pressure rise,hydrostatic fraction of gross is approximately one for all three rows,do not normalize gross static rise as local loss K
+CLAIM-003,allowed,a named throughflow-plus-recirculation pressure residual can be quantified diagnostically,available signed residual and q_ref produce diagnostic K_eff_recirc rows,do not treat the diagnostic term as fitted F6 or admitted closure
+CLAIM-004,forbidden,component K or F6 is admitted from the current corner_lower_right rows,"component isolation, reverse-flow, and same-QOI UQ gates fail","no clipping, hidden multiplier, or protected-row scoring"

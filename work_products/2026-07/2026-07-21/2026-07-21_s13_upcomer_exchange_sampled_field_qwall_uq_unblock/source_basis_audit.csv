@@ -1,0 +1,6 @@
+basis,current_status,production_role,can_use_for_Q_wall_W_now,can_use_as_source_side_equivalent_now,smallest_next_action,guardrail
+wallHeatFlux_Q_wall_W,missing,direct wall heat-flow integration,false,false,generate or locate same-window wallHeatFlux on trusted wall faces,do not substitute q_net_W for Q_wall_W
+source_side_q_net_W,retained_window_context_present,distinct source-side heat-flow QOI if explicitly contracted,false,needs_contract_and_uq,write sign/conservation/source-property contract and run same-QOI UQ for this exact QOI,label distinct from Q_wall_W and do not admit before UQ
+pressure,missing,pressure/residual support,false,false,release p or p_rgh on the same window and exchange interface,no pressure residual support before same-window pressure basis
+viscosity,missing,Re/viscous support,false,false,release mu/nu/nut or documented property basis,no coefficient admission without property provenance
+cp,missing,energy residual and heat-flow normalization,false,needs_source_property_release,release cp_J_kg_K with source/property label,do not infer cp silently from unrelated sources

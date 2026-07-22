@@ -1,0 +1,37 @@
+{
+  "task": "TODO-D2-HOLDOUT-VALIDATION-DISPOSITION-2026-07-22",
+  "task_id": "TODO-D2-HOLDOUT-VALIDATION-DISPOSITION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Thermal-modeling / Sensor-map / Writer / Reviewer / Tester",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-D2-HOLDOUT-VALIDATION-DISPOSITION-2026-07-22.md",
+    ".agent/journal/2026-07-22/d2-holdout-validation-disposition.md",
+    "imports/2026-07-22_d2_holdout_validation_disposition.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/d2_disposition_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/d2_metric_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/split_and_runtime_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/next_gate_checklist.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_holdout_validation_disposition/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/d2_score_improvement_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/runtime_legality_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/split_claim_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/d2_reuse_boundary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf14_same_qoi_tp_projection_uq_gate/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "source_property_release_mutated": false,
+  "protected_score_or_final_score": false,
+  "residual_absorbed_into_internal_Nu": false
+}

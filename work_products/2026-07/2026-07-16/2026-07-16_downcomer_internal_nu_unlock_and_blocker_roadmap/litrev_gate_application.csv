@@ -1,0 +1,6 @@
+gate,downcomer_status,interpretation,source_path
+source_envelope_before_correlation,methodology_pass_no_active_fit,"Downcomer remains the simplest ordinary-pipe candidate, but no source-bounded correlation is promoted until the branch row is admitted.",operational_notes/maps/literature-synthesis-and-gates.md
+property_lane_fixed_before_residual_fit,pass_guardrail,Use the current Jin/property-lane context; do not hide residuals in property or Nu retuning.,operational_notes/maps/literature-synthesis-and-gates.md
+reset_named_losses_before_global_friction,pass_guardrail,Pressure/reset/development questions stay separate from thermal Nu admission.,operational_notes/maps/literature-synthesis-and-gates.md
+heat_loss_separated_before_internal_nu,blocking_until_sign_heat_balance_resolved,"The downcomer cannot absorb passive wall, storage, source, or boundary residuals into Nu.",operational_notes/maps/literature-synthesis-and-gates.md
+cfd_validity_before_coefficient_export,blocking_until_low_recirculation_evidence_exists,A low-recirculation or non-recirculating branch-local row is required before exporting a single-stream Nu label.,operational_notes/maps/literature-synthesis-and-gates.md

@@ -1,0 +1,274 @@
+{
+  "generated_at": "2026-06-26T09:51:41-05:00",
+  "family_scope": "salt_only",
+  "distributed_friction": {
+    "closure_name": "straight_friction_class_aware_re_power_law",
+    "status": "provisional_defended",
+    "current_recommendation": "use_now",
+    "target_regions": [
+      "lower_leg",
+      "test_section_span"
+    ],
+    "coefficients": {
+      "a": 5.2316378122,
+      "b": -0.9477837868,
+      "c": 2.9210668439
+    },
+    "reynolds_domain": {
+      "min": 80.35,
+      "max": 173.74
+    },
+    "mathematical_form": "log(f_D)=a+b*log(Re)+c*I[test_section_span]",
+    "note": "Current defended straight-friction lane; pair it with explicit redevelopment and local-loss separation."
+  },
+  "direct_nusselt": {
+    "closure_name": "left_lower_leg_nu_branch_aware_re_power_law",
+    "status": "provisional_defended_limited_domain",
+    "current_recommendation": "use_narrowly",
+    "target_regions": [
+      "left_lower_leg"
+    ],
+    "coefficients": {
+      "a": -3.0042709988,
+      "b": 0.9607621733
+    },
+    "reynolds_domain": {
+      "min": 76.1,
+      "max": 165.23
+    },
+    "mathematical_form": "log(Nu)=a+b*log(Re)",
+    "note": "Direct Nu is defended only on left_lower_leg; do not spread it to upcomer or downcomer."
+  },
+  "primary_ua_surface": {
+    "closure_name": "primary_ua_profile_library",
+    "status": "admit_state_surface",
+    "current_recommendation": "use_now",
+    "target_regions": [
+      "left_lower_leg",
+      "test_section_span",
+      "left_upper_leg",
+      "upcomer"
+    ],
+    "note": "Primary thermal state-surface lane for left_lower_leg, test_section_span, left_upper_leg, and upcomer."
+  },
+  "secondary_htc_surface": {
+    "closure_name": "secondary_htc_profile_library",
+    "status": "admit_secondary_surface",
+    "current_recommendation": "diagnostic_only",
+    "target_regions": [
+      "left_lower_leg",
+      "test_section_span",
+      "left_upper_leg",
+      "upcomer"
+    ],
+    "note": "Keep as a secondary comparison surface while UA' remains the admitted thermal quantity."
+  },
+  "residual_terms": {
+    "hydraulic": {
+      "closure_name": "hydraulic_residual_bucket",
+      "target_region": "features|right_leg|cooler_return|reducers|corners",
+      "output": "Deltap_residual",
+      "mathematical_form": "Positive lumped hydraulic remainder calibrated from CFD",
+      "status": "calibration_only",
+      "coefficients_or_rule": "Start with one residual per case then regress later",
+      "validity_window": "Until feature path closure and wider straight support exist",
+      "v1_usage": "Required hybrid closure",
+      "current_bakeoff_recommendation": "keep_for_hybrid_only",
+      "recommendation_note": "Needed for the hybrid lane, but still calibration-only until refreshed v2 bundle breadth lands."
+    },
+    "thermal": {
+      "closure_name": "thermal_residual_bucket",
+      "target_region": "unsupported_walls|cooler_vicinity|right_leg",
+      "output": "UA_lumped_residual",
+      "mathematical_form": "Positive lumped thermal remainder calibrated from CFD heat partition",
+      "status": "calibration_only",
+      "coefficients_or_rule": "Calibrate from heater cooling and ambient-loss balance",
+      "validity_window": "Until wider direct branch thermal support exists",
+      "v1_usage": "Required hybrid closure",
+      "current_bakeoff_recommendation": "keep_for_hybrid_only",
+      "recommendation_note": "Needed for the hybrid lane, but still calibration-only until refreshed v2 bundle breadth lands."
+    }
+  },
+  "blocked_terms": {
+    "feature_keff_full_path_closure": {
+      "current_status": "not_defensible_yet",
+      "missing_requirement": "full feature-path hydro closure beyond proxy endpoint evidence"
+    },
+    "water_dependency_package": {
+      "current_status": "readiness_only",
+      "missing_requirement": "closure-gated Water thermal and feature hardening before any Water dependency fit"
+    }
+  },
+  "branch_policy": [
+    {
+      "branch_name": "left_lower_leg",
+      "branch_role": "direct_defended",
+      "primary_model_mode": "primary_ua_and_direct_nu",
+      "direct_nu_allowed": true,
+      "direct_nu_status": "provisional_defended_limited_domain",
+      "primary_ua_allowed": true,
+      "secondary_htc_allowed": true,
+      "mean_re_effective": 101.15258954133554,
+      "mean_nu_effective": 4.190478758759951,
+      "mean_htc_effective_w_m2_k": 103.76336443317508,
+      "ua_start_w_m_k": 1.9323204792049464,
+      "ua_end_w_m_k": 8.857838075434309,
+      "mean_support_fraction": 0.9411764705882353,
+      "mean_residual_fraction_of_wall_heat": 0.3734161590547065,
+      "dominant_fit_status": "fit_used",
+      "domain_note": "direct_left_lower_leg_or_equivalent_only",
+      "modeling_note": "Best current direct internal HTC and Nu evidence lane; use as the defended direct developing-flow thermal branch."
+    },
+    {
+      "branch_name": "left_upper_leg",
+      "branch_role": "state_surface_only",
+      "primary_model_mode": "primary_ua_state_surface_only",
+      "direct_nu_allowed": false,
+      "direct_nu_status": "not_admitted",
+      "primary_ua_allowed": true,
+      "secondary_htc_allowed": true,
+      "mean_re_effective": 100.13029339573085,
+      "mean_nu_effective": 4.6293794884502875,
+      "mean_htc_effective_w_m2_k": 114.44454947307807,
+      "ua_start_w_m_k": 6.1463528318921545,
+      "ua_end_w_m_k": 6.008454446190164,
+      "mean_support_fraction": 0.9487179487179487,
+      "mean_residual_fraction_of_wall_heat": 0.6084255925203904,
+      "dominant_fit_status": "sensitivity_only",
+      "domain_note": "not_in_defended_nu_domain",
+      "modeling_note": "Carry as a primary UA' or HTC state-surface branch only; direct Nu is not yet defended."
+    },
+    {
+      "branch_name": "lower_leg",
+      "branch_role": "excluded_or_residual_only",
+      "primary_model_mode": "residual_or_blocked",
+      "direct_nu_allowed": false,
+      "direct_nu_status": "not_admitted",
+      "primary_ua_allowed": false,
+      "secondary_htc_allowed": false,
+      "mean_re_effective": 90.617043498697,
+      "mean_nu_effective": 9.986638068092951,
+      "mean_htc_effective_w_m2_k": 246.0090728861425,
+      "ua_start_w_m_k": 7.773443853115684,
+      "ua_end_w_m_k": 3.7854356379580083,
+      "mean_support_fraction": 0.748792270531401,
+      "mean_residual_fraction_of_wall_heat": 1.7131093612106238,
+      "dominant_fit_status": "excluded",
+      "domain_note": "not_in_defended_nu_domain",
+      "modeling_note": "Heating-dominant branch; direct thermal closure is not defended under the current residual and support gates."
+    },
+    {
+      "branch_name": "right_leg",
+      "branch_role": "blocked_downcomer",
+      "primary_model_mode": "residual_or_blocked",
+      "direct_nu_allowed": false,
+      "direct_nu_status": "not_admitted",
+      "primary_ua_allowed": false,
+      "secondary_htc_allowed": false,
+      "mean_re_effective": 97.4822666024109,
+      "mean_nu_effective": 2.5011341874003543,
+      "mean_htc_effective_w_m2_k": 61.65078084471822,
+      "ua_start_w_m_k": 1.7936594858782995,
+      "ua_end_w_m_k": 2.1724789544342236,
+      "mean_support_fraction": 0.7311827956989249,
+      "mean_residual_fraction_of_wall_heat": 7.447287673192213,
+      "dominant_fit_status": "excluded",
+      "domain_note": "not_in_defended_nu_domain",
+      "modeling_note": "Downcomer return branch remains blocked for direct Nu; cooler-adjacent return observables are still missing."
+    },
+    {
+      "branch_name": "test_section_span",
+      "branch_role": "state_surface_only",
+      "primary_model_mode": "primary_ua_state_surface_only",
+      "direct_nu_allowed": false,
+      "direct_nu_status": "not_admitted",
+      "primary_ua_allowed": true,
+      "secondary_htc_allowed": true,
+      "mean_re_effective": 108.82689163776591,
+      "mean_nu_effective": 5.355230603828827,
+      "mean_htc_effective_w_m2_k": 142.02951785970552,
+      "ua_start_w_m_k": 6.964283502650467,
+      "ua_end_w_m_k": 5.136139387722161,
+      "mean_support_fraction": 1.0,
+      "mean_residual_fraction_of_wall_heat": 2.6388538995430477,
+      "dominant_fit_status": "sensitivity_only",
+      "domain_note": "not_in_defended_nu_domain",
+      "modeling_note": "Carry as a primary UA' or HTC state-surface branch only; direct Nu is not yet defended and entry effects remain active."
+    },
+    {
+      "branch_name": "upcomer",
+      "branch_role": "derived_sensitivity_only",
+      "primary_model_mode": "primary_ua_sensitivity_only",
+      "direct_nu_allowed": false,
+      "direct_nu_status": "not_admitted",
+      "primary_ua_allowed": true,
+      "secondary_htc_allowed": true,
+      "mean_re_effective": 103.59787896372268,
+      "mean_nu_effective": 4.767414935873486,
+      "mean_htc_effective_w_m2_k": 120.65521237858691,
+      "ua_start_w_m_k": 1.9323204792049464,
+      "ua_end_w_m_k": 6.008454446190164,
+      "mean_support_fraction": 0.9632981397687279,
+      "mean_residual_fraction_of_wall_heat": 1.0169049570368414,
+      "dominant_fit_status": "sensitivity_only",
+      "domain_note": "derived_overlap_context_only",
+      "modeling_note": "Derived sensitivity-only branch; model separately from the straight direct branches and consider a convection-cell style closure coupled to the loop state."
+    },
+    {
+      "branch_name": "upper_leg",
+      "branch_role": "excluded_or_residual_only",
+      "primary_model_mode": "residual_or_blocked",
+      "direct_nu_allowed": false,
+      "direct_nu_status": "not_admitted",
+      "primary_ua_allowed": false,
+      "secondary_htc_allowed": false,
+      "mean_re_effective": 93.09277962809843,
+      "mean_nu_effective": 13.22331249330155,
+      "mean_htc_effective_w_m2_k": 323.5013351232734,
+      "ua_start_w_m_k": 52.762735271466795,
+      "ua_end_w_m_k": 4.454204085154359,
+      "mean_support_fraction": 0.9550827423167849,
+      "mean_residual_fraction_of_wall_heat": 2.0014385211017816,
+      "dominant_fit_status": "excluded",
+      "domain_note": "not_in_defended_nu_domain",
+      "modeling_note": "Cooler-side branch; direct thermal closure remains blocked and should stay inside the residual bucket for now."
+    }
+  ],
+  "follow_on_gaps": [
+    {
+      "topic": "external_fluid_bundle_stale",
+      "current_gap": "Readable external Fluid replay still uses June 19 ethan_cfd_informed_salt_v1 bundle.",
+      "why_it_matters": "The hybrid CFD-informed lane is not yet scored on the refreshed June 22 closure surface.",
+      "can_use_frozen_now": "yes",
+      "next_artifact_or_action": "Land a reproducible v2 bundle producer and rerun the Salt campaign under AGENT-102."
+    },
+    {
+      "topic": "hybrid_domain_breadth",
+      "current_gap": "Only 1 primary comparison hybrid row(s) are readable versus 3 primary frozen references.",
+      "why_it_matters": "Hybrid-vs-baseline conclusions remain under-supported across Salt 2-4.",
+      "can_use_frozen_now": "yes",
+      "next_artifact_or_action": "Use the frozen-state rows as a provisional training and scoring surface while continuation-fed breadth is still arriving."
+    },
+    {
+      "topic": "upcomer_submodel",
+      "current_gap": "Derived upcomer remains sensitivity-only; direct Nu is not defended there.",
+      "why_it_matters": "Upcomer likely carries buoyancy / recirculation effects beyond straight developing-pipe behavior.",
+      "can_use_frozen_now": "yes",
+      "next_artifact_or_action": "Prototype a separate upcomer hydraulic penalty or Ri-aware submodel before promoting a global closure."
+    },
+    {
+      "topic": "downcomer_observables",
+      "current_gap": "right_leg/downcomer remains blocked for direct internal Nu and cooler-adjacent return observables are still missing.",
+      "why_it_matters": "The 1D return-leg closure cannot yet be defended from the current branch-resolved CFD evidence alone.",
+      "can_use_frozen_now": "partially",
+      "next_artifact_or_action": "Preserve cooler-adjacent return diagnostics and keep the downcomer inside residual / lumped closure buckets for now."
+    },
+    {
+      "topic": "feature_loss_path_closure",
+      "current_gap": "Feature-path hardening reopened pathwise endpoint decomposition, but continuous field-integral subtraction is still bounded.",
+      "why_it_matters": "Feature K_eff remains provisional and interacts with straight-section hydraulic closure quality.",
+      "can_use_frozen_now": "yes",
+      "next_artifact_or_action": "Finish the retained-time feature extractor with hydro integral, p vs p_rgh split, and straight-reference subtraction."
+    }
+  ]
+}

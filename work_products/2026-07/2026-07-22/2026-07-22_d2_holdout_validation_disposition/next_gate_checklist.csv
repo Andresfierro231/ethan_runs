@@ -1,0 +1,8 @@
+gate,required_before_d2_successor_score,current_status,pass_required_for
+source_bounded_projection_formula,Projection equation based on geometry reset distance Graetz/development or physical source basis,missing,turning D2 into model form candidate
+same_qoi_projection_uq,Quantitative same-QOI UQ for TP1-TP6 projection labels,fail_closed,runtime release review
+runtime_temperature_policy,Proof that no validation/holdout/external temperatures enter runtime,false_for_runtime,protected score discipline
+source_property_labels,Row-specific cp/viscosity/source/sink labels if formula uses properties,not_released,candidate-specific refresh
+train_only_freeze_manifest,One predeclared candidate with fixed inputs and coefficients,missing,validation/holdout/external score
+protected_score_row,Validation/holdout/external scoring only after freeze,not_started,final thesis score
+TW_residual_owner_separation,Wall/core/source/passive/residual lanes separated after TP projection,diagnostic_fail_closed,avoid hiding TW residual in internal Nu

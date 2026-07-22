@@ -1,0 +1,2 @@
+todo_id,meaning,cases,must_wait_for_jobs,current_allowed_action,scientific_guardrail,source
+TODO-PREDICT-SALT-PM10-TERMINAL-ADMISSION,Terminal admission and PM5-style diagnostic postprocessing for Salt2/Salt4 +/-10Q corrected-Q future holdout candidates.,salt2_lo10q;salt2_hi10q;salt4_lo10q;salt4_hi10q,3293924;3295438,readiness_monitor_only_until_jobs_terminal,future holdout candidates; no fitting or model selection before explicit admission.,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv

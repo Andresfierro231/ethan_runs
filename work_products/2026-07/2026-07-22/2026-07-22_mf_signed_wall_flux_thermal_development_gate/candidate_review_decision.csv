@@ -1,0 +1,2 @@
+decision,candidate_reviewable_rows,reason,s11_s12_s13_s15_s6_trigger
+diagnostic_only_no_candidate_reviewable,0,"all physical owner layers are missing source/property, same-QOI, mesh/GCI, or formula release; empirical layer is forbidden",False

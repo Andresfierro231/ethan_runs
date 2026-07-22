@@ -1,0 +1,27 @@
+{
+  "task_id": "TODO-PRED-ENDTOEND-SCORE",
+  "date": "2026-07-21",
+  "package": "work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path",
+  "objective": "Define the shortest staged path to a setup-only predictive model that outputs mdot and temperatures with pressure and thermal residual attribution.",
+  "status": "complete",
+  "model_execution_stages": [
+    "baseline_current_model",
+    "external_bc_dictionary",
+    "pressure_source_envelope",
+    "heat_loss_network",
+    "recirculation_guard",
+    "final_scorecard"
+  ],
+  "split_claim_classes": [
+    "train_calibration",
+    "development_validation_support",
+    "holdout_testing",
+    "external_test",
+    "future_holdout_external"
+  ],
+  "new_admissions": 0,
+  "solver_or_scheduler_actions": 0,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "fluid_source_mutation": false
+}

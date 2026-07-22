@@ -1,0 +1,7 @@
+status_row,path_component,current_status,allowed_wording,forbidden_wording,next_gate,final_score_values
+S6-VIS-01,frozen_candidate,absent,No runtime-legal final candidate has been frozen; report a blocked scorecard shell.,Final model accuracy is available.,admit and predeclare one frozen candidate after S1-S5 gates pass,0
+S6-VIS-02,final_score_values,0_values,The final score table is intentionally empty pending freeze.,Use placeholder rows as numerical performance.,S6 frozen scorecard row after freeze,0
+S6-VIS-03,fit_release,closed,No current row is released for fitting or model selection.,Fit/select from source-property-blocked nominal rows.,row-specific source/property release for exact candidate lanes,0
+S6-VIS-04,holdout_external_release,score_only_after_freeze,Holdout and external rows are protected for post-freeze scoring only.,Use holdout or external residuals for tuning.,predeclared frozen prediction artifact,0
+S6-VIS-05,ordinary_upcomer_closure,not_admitted,Ordinary upcomer Nu/f_D/K remains disabled for current recirculating evidence.,Fit ordinary pipe closure from recirculating upcomer rows.,new nonrecirculating/onset anchor and admission review,0
+S6-VIS-06,pressure_component_or_F6,not_admitted,Pressure rows remain diagnostic or section-effective until basis/UQ/isolation gates pass.,"Admit component K, clipped K, F6, or hidden multiplier.",same-QOI UQ plus isolation plus low-recirculation anchor,0

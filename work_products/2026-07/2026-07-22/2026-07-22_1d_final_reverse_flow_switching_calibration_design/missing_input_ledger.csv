@@ -1,0 +1,7 @@
+missing_input,needed_by,current_evidence,blocker,next_action
+admitted_low_recirc_anchor,false_positive_rate; ordinary switch disable,0 existing replacement-ready rows,pressure anchor evidence absent,Wait for CAND001 endpoint or design future low-reverse anchors.
+same_label_S13_formal_GCI,exchange-cell activation,S13 candidate coarse/medium/fine exists but coarse equivalence not admitted,formal GCI fail-closed,Do not activate exchange-cell coefficients.
+source_property_cp_mu_k,F_m; heat exchange; nondimensional switch labels,release-ready false,source/property release absent,Repair strict source envelope and property release.
+pressure_endpoint_basis,pressure_gradient_recovery,CAND001 job still running,endpoint fields unavailable,Wait for terminal handoff.
+truth_topology_labels,all switch calibration,diagnostic topology labels only,no admitted truth-label set,Build topology-label audit after same-window fields.
+heldout_topology_cases,false-positive and false-negative rates,no frozen candidate or heldout topology plan,split/freeze gate blocked,Define held-out cases after train/support candidate manifest.

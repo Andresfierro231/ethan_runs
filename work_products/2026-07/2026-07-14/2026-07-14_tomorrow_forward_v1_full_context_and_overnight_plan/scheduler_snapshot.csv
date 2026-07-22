@@ -1,0 +1,6 @@
+job_id,name,state,elapsed,node_or_reason,interpretation,next_action
+3295120,idv75667,RUNNING,7:06:55,c318-008,current interactive/dev allocation,Use for lightweight repo-local or 1D work only under claimed board rows
+3293924,saltq_sel_cont,RUNNING,1-00:49:41,c318-016,selected corrected-Q continuation still running,Monitor; harvest only after terminal state
+3295438,saltq_s24_sel_harv,PENDING,00:00:00,Dependency,dependent selected Salt2/Salt4 harvest,Let/inspect after 3293924 exits
+3295492,upc_nominal,COMPLETED,00:03:36,c306-006,nominal matched-plane extraction completed,Harvest/read AGENT-344 outputs under proper scope
+3295901,upc_pm5q,CANCELLED,00:00:00,None assigned,PM5 matched pressure/upcomer job did not run,Diagnose cancellation before relaunching under a new row

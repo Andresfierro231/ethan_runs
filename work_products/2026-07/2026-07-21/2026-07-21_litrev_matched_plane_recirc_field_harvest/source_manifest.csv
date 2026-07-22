@@ -1,0 +1,7 @@
+source_key,source_path,read_only,exists
+schema_gap,work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv,true,true
+pressure_basis,work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv,true,true
+two_tap_recirc,work_products/2026-07/2026-07-18/2026-07-18_two_tap_pressure_basis_recirc_audit/endpoint_recirculation_metrics.csv,true,true
+upcomer_matched,work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction/matched_plane_metrics_admission.csv,true,true
+pm10_pressure_targets,work_products/2026-07/2026-07-20/2026-07-20_pm10_same_window_residual_targets/pm10_plane_pressure_targets.csv,true,true
+agent576,.agent/status/2026-07-21_AGENT-576.md,true,true

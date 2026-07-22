@@ -1,0 +1,20 @@
+{
+  "task": "AGENT-560",
+  "date": "2026-07-20",
+  "decision": "no_launch_from_this_row",
+  "preferred_candidate_id": "CAND-001",
+  "preferred_request_id": "NR-CLR-01",
+  "preferred_source_family": "Salt4 high-heat/no-recirculation probes",
+  "reason": "Source cases remain terminal-gated in the cited high-heat monitor evidence and AGENT-560 has no scheduler, native-output, solver, or postprocessing authority.",
+  "future_sampler_allowed_only_after": [
+    "fresh board row claims staged-copy cfd-pp sampler scope",
+    "selected high-heat/no-recirculation source cases are terminal successful or a replacement source family is explicitly admitted",
+    "preflight can resolve endpoint labels lower_leg__s04 and right_leg__s00",
+    "ordinary-flow precheck targets aggregate_RAF < 0.01 and aggregate_RMF < 0.01",
+    "same-QOI UQ family plan is declared or diagnostic-only status is accepted"
+  ],
+  "f6_fit_performed": false,
+  "component_k_admitted": false,
+  "scheduler_launch_performed": false,
+  "native_outputs_mutated": false
+}

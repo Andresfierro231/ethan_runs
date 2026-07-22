@@ -1,0 +1,6 @@
+target_id,artifact_type,title_or_caption,source_table,claim_boundary
+FIG-PF6-001,table,CAND001 terminal source state,cand001_terminal_source_state.csv,Shows recovery is monitor-only until terminal success
+FIG-PF6-002,table,Low-recirculation anchor map,low_recirc_anchor_map.csv,Separates future anchors from diagnostic current rows
+FIG-PF6-003,table,Pressure-basis ladder update,pressure_basis_ladder_update.csv,Preserves section-effective evidence while closing F6 admission
+FIG-PF6-004,waterfall,F6 non-admission/admission gate waterfall,f6_admission_waterfall.csv,Documents exact missing gates before F6 review
+FIG-PF6-005,table,Post-terminal action contract,post_terminal_action_contract.csv,Defines next row after job terminal state without duplicate submission

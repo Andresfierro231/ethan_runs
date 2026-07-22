@@ -1,0 +1,46 @@
+{
+  "admission_status": "diagnostic_station_pressure_ladder_not_fit_admitted",
+  "branch_average_output": "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_branch_average_pressure_map.csv",
+  "branch_rows": 66,
+  "case_count": 11,
+  "case_keys": [
+    "salt1_hi10q",
+    "salt1_lo10q",
+    "salt1_nominal",
+    "salt2_hi5q",
+    "salt2_lo5q",
+    "salt2_mainline",
+    "salt3_mainline",
+    "salt4_hi5q",
+    "salt4_lo5q",
+    "salt4_mainline",
+    "val_salt2"
+  ],
+  "case_provenance_output": "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/case_provenance_manifest.csv",
+  "created_utc": "2026-07-16T21:27:16.338665+00:00",
+  "mapping_guardrails": {
+    "lower_leg": "heater / Fluid heated_incline / station order s04 -> s00",
+    "right_leg": "downcomer / Fluid right_vertical / station order s00 -> s04",
+    "upper_leg": "cooled top leg / Fluid top-HX composite"
+  },
+  "source_packages": [
+    {
+      "harvest_job_id": "3297860",
+      "harvest_package": "AGENT-445_pressure_ladder_unlock_sbatch",
+      "harvest_task": "AGENT-445",
+      "station_csv": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/station_pressure_ladder.csv",
+      "summary_json": "work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/summary.json"
+    },
+    {
+      "harvest_job_id": "3297863",
+      "harvest_package": "AGENT-447_expanded_salt_pressure_ladder_8pm_sbatch",
+      "harvest_task": "AGENT-447",
+      "station_csv": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/station_pressure_ladder.csv",
+      "summary_json": "work_products/2026-07/2026-07-15/2026-07-15_expanded_salt_pressure_ladder_8pm_sbatch/summary.json"
+    }
+  ],
+  "source_station_rows": 330,
+  "station_output": "work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv",
+  "station_rows": 330,
+  "task": "AGENT-457"
+}

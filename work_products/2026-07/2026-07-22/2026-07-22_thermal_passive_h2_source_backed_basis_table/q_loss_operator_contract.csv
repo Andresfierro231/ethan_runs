@@ -1,0 +1,6 @@
+Qwall_used,admissible_next_use,numeric_q_loss_released,phase_e_diagnostic_state_used,q_loss_operator_basis,realized_wallHeatFlux_used,source_family,validation_temperature_used
+False,True,False,False,external loss may be computed later from setup hA/Ta/Tsur/emissivity/layers and runtime wall or fluid state,False,cooling_branch,False
+False,True,False,False,external loss may be computed later from setup hA/Ta/Tsur/emissivity/layers and runtime wall or fluid state,False,downcomer,False
+False,True,False,False,external loss may be computed later from setup hA/Ta/Tsur/emissivity/layers and runtime wall or fluid state,False,junction,False
+False,True,False,False,external loss may be computed later from setup hA/Ta/Tsur/emissivity/layers and runtime wall or fluid state,False,lower_leg,False
+False,True,False,False,external loss may be computed later from setup hA/Ta/Tsur/emissivity/layers and runtime wall or fluid state,False,upcomer,False

@@ -1,0 +1,4 @@
+target,candidate_released,trigger_allowed,reason
+S11,false,false,no production S13 exchange-cell candidate and no same-QOI UQ
+S15,false,false,no frozen runtime-legal candidate can be prepared from diagnostic proxy evidence
+S6,false,false,final scorecard remains blocked because no source/property-released candidate exists

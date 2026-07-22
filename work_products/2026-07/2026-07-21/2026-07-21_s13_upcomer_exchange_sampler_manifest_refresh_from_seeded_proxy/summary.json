@@ -1,0 +1,20 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SAMPLER-MANIFEST-REFRESH-FROM-SEEDED-PROXY-2026-07-21",
+  "generated_at": "2026-07-21T19:58:32-05:00",
+  "decision": "proxy_ready_rows_released_production_sampler_blocked",
+  "case_count": 3,
+  "sampler_proxy_ready_rows": 3,
+  "production_sampler_ready_rows": 0,
+  "production_harvest_allowed": false,
+  "same_qoi_uq_allowed": false,
+  "coefficient_admission_allowed": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "sampler_or_harvest_launched": false,
+  "fitting_or_model_selection": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "residual_absorbed_into_internal_nu": false
+}

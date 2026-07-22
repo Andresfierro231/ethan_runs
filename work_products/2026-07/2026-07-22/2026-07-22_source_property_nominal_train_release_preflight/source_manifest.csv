@@ -1,0 +1,9 @@
+source_id,path,use,mutation_status
+SRC-001,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scorecard_source_property_resolution_policy.csv,final source/property resolution policy,read_only
+SRC-002,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv,refreshed label table,read_only
+SRC-003,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/source_property_release_ledger.csv,prior source/property release gate context,read_only
+SRC-004,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/summary.json,S13 candidate-lane consequence,read_only
+SRC-005,work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/summary.json,M2 candidate-lane consequence,read_only
+SRC-006,work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/summary.json,MF02 candidate-lane consequence,read_only
+SRC-007,work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/summary.json,M0 candidate-lane consequence,read_only
+SRC-008,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,diagnostic model-form consequence,read_only

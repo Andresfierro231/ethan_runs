@@ -1,0 +1,19 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-MEDIUM-FINE-EXACT-LABEL-SAMPLER-2026-07-22",
+  "generated_at": "2026-07-22T11:45:01-05:00",
+  "decision": "terminal_exact_label_rows_sampled_mesh_gci_fail_closed_time_equivalence_missing",
+  "execute_mode": true,
+  "source_contract_rows": 1,
+  "source_preflight_ready_rows": 1,
+  "case_id_filter": "salt_2",
+  "mesh_level_filter": "medium",
+  "max_windows": 1,
+  "mesh_geometry_rows": 1,
+  "terminal_window_reduction_rows": 1,
+  "exact_label_qoi_rows": 4,
+  "sampling_error_rows": 0,
+  "same_label_mesh_gci_ready": false,
+  "production_harvest_allowed": false,
+  "admission_allowed": false,
+  "native_solver_outputs_mutated": false
+}

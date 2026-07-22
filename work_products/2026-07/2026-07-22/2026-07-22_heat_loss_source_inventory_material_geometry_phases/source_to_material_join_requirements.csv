@@ -1,0 +1,10 @@
+source_lane,material_geometry_lane,join_keys,required_before_calibration,current_join_status,forbidden_shortcut
+heater_source,wall_conduction,case_id source_segment_id heated_patch wall_segment_id,source distribution plus heated wall area/thickness/k,not_ready,Do not tune internal Nu to mimic missing heater-to-salt efficiency.
+cooler_or_jacket,jacket_cooler,case_id cooling_branch patch_id HX_or_jacket_geometry,setup-only UA/effectiveness and sign convention,not_ready,Do not use imposed CFD cooler duty as predictive runtime sink.
+test_section_source,quartz,case_id upcomer test_section_patch quartz_layer_id,source power plus quartz thickness/k/exposed area,not_ready,Do not move test-section source mismatch into passive loss.
+passive_external_convection,external_convection,case_id segment_id outer_surface_id area coverage h_ext Ta,source-backed h/area/ambient and solved surface state,not_ready,Do not select global hA multiplier from protected residual.
+radiation,radiation,case_id segment_id outer_surface_id area emissivity Tsur view_factor,source-backed radiation semantics and solved surface state,not_ready,Do not add radiation on top of realized CFD wallHeatFlux replay.
+wall_conduction,contact_resistance,segment_id contact_pair area material_stack,contact provenance or explicit uncertainty,not_ready,Do not back-solve contact resistance from holdout temperatures.
+storage,storage,case_id component_id volume mass cp time_window,transient model and time derivative evidence,not_ready,Do not tune storage in steady score.
+recirculation_exchange,recirculation_exchange,case_id mesh_label interface_faces normals wall_core_band QOI_window,S13 same-label mesh/GCI and same-window fields,not_ready,Do not treat recirculating upcomer as ordinary single-stream Nu.
+unknown_residual,unknown_residual,case_id qoi_window declared_lane_sum,all declared lanes computed with uncertainty,output_only,Do not close residual through internal Nu hidden coefficient or hidden multiplier.

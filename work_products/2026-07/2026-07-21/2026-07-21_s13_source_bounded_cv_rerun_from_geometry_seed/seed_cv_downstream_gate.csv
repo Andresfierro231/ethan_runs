@@ -1,0 +1,16 @@
+case_id,downstream_lane,status,required_input,available_input,blocking_reason
+salt_2,surface_extraction,ready_for_separate_surface_extraction_row,released seed source-bounded CV geometry with wall/interface/cap lanes,seed wall/interface/cap surface contract,
+salt_2,sampler_manifest_refresh,blocked,"surface VTKs, normals, Q_wall_W/source lane, same-window thermal fields",geometry-only seed CV; surface extraction not yet run,requires separate surface/source/Q_wall/same-window rows
+salt_2,production_harvest,blocked,3/3 sampler-ready rows,,sampler manifest is not ready
+salt_2,same_qoi_uq,blocked,same-QOI mesh/time uncertainty for exact exchange QOIs,,same-window UQ remains blocked/missing
+salt_2,S11_S12_S15_S6_trigger,blocked,"runtime-legal candidate after sampler harvest, source/property, split, and UQ gates",,geometry-only release is insufficient for candidate trigger
+salt_3,surface_extraction,ready_for_separate_surface_extraction_row,released seed source-bounded CV geometry with wall/interface/cap lanes,seed wall/interface/cap surface contract,
+salt_3,sampler_manifest_refresh,blocked,"surface VTKs, normals, Q_wall_W/source lane, same-window thermal fields",geometry-only seed CV; surface extraction not yet run,requires separate surface/source/Q_wall/same-window rows
+salt_3,production_harvest,blocked,3/3 sampler-ready rows,,sampler manifest is not ready
+salt_3,same_qoi_uq,blocked,same-QOI mesh/time uncertainty for exact exchange QOIs,,same-window UQ remains blocked/missing
+salt_3,S11_S12_S15_S6_trigger,blocked,"runtime-legal candidate after sampler harvest, source/property, split, and UQ gates",,geometry-only release is insufficient for candidate trigger
+salt_4,surface_extraction,ready_for_separate_surface_extraction_row,released seed source-bounded CV geometry with wall/interface/cap lanes,seed wall/interface/cap surface contract,
+salt_4,sampler_manifest_refresh,blocked,"surface VTKs, normals, Q_wall_W/source lane, same-window thermal fields",geometry-only seed CV; surface extraction not yet run,requires separate surface/source/Q_wall/same-window rows
+salt_4,production_harvest,blocked,3/3 sampler-ready rows,,sampler manifest is not ready
+salt_4,same_qoi_uq,blocked,same-QOI mesh/time uncertainty for exact exchange QOIs,,same-window UQ remains blocked/missing
+salt_4,S11_S12_S15_S6_trigger,blocked,"runtime-legal candidate after sampler harvest, source/property, split, and UQ gates",,geometry-only release is insufficient for candidate trigger

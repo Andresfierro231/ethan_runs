@@ -1,0 +1,3 @@
+artifact,artifact_type,has_property_mode,has_source_overlap_status,has_property_sensitivity_label,has_source_validity_envelope_status,adoption_status,next_step
+work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv,contract_csv,yes,yes,yes,yes,ready_contract_requires_labels,Consume AGENT-538 label contract in future scorecard builders.
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,scorecard_shell_csv,no,no,no,no,missing_labels,Add AGENT-538 label fields before reporting final frozen closure scores.

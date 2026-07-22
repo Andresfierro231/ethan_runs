@@ -1,0 +1,6 @@
+path,used,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/model_form_scoreboard_append.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/construction_assumptions.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/runtime_audit.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/summary.json,True,read_only
+.agent/BOARD.md,True,own_row_and_successor_rows_updated

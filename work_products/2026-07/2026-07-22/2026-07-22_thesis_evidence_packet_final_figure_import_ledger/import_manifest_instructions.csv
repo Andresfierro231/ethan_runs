@@ -1,0 +1,10 @@
+instruction_id,scope,action,status,reason
+IMP-01,all_selected_figures,keep_path_only_in_ethan_runs,complete,This row is manifest-only and does not copy binary assets.
+IMP-02,upcomer_composites,copy_later_after_layout_choice,pending,User should choose y-velocity or magnitude composite and final target path.
+IMP-03,tiny_svg_status_figures,copy_later_low_cost_if_used,pending,S12 and S13 SVGs are small but still need exact papers-board destination.
+IMP-04,model_form_and_blocked_panels,copy_later_low_cost_if_used,pending,SVGs are ready but no broad figure-folder copy is allowed.
+IMP-05,m3_temperature_profiles,copy_later_if_ch7_needs_profile_set,pending,Panels are diagnostic and should move only if the external writer uses them.
+IMP-06,broad_generated_figure_trees,do_not_copy,complete,Keep large/generated trees out of the LaTeX repo.
+IMP-07,native_openfoam_outputs,do_not_copy,complete,Native CFD trees are provenance/read-only only.
+IMP-08,captions,derive_from_caption_source_ledger,complete,Caption claims must preserve no-admission caveats.
+IMP-09,papers_repo_transfer,requires_separate_papers_board_row,pending,External edit/copy is outside this row.

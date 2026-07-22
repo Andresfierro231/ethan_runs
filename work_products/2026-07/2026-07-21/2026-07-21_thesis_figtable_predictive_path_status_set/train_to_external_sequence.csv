@@ -1,0 +1,7 @@
+sequence,stage,entry_condition,exit_condition,current_status
+1,train-only full solve,one predeclared runtime-legal candidate,accepted train roots and no runtime leakage,next_required
+2,attribution,train outputs complete,pressure/thermal/recirculation residual owners labeled,blocked_pending_train_solve
+3,freeze,one candidate passes source/property and coupled gates,frozen manifest and no protected-row tuning,blocked
+4,validation,frozen candidate,validation/support score table only,blocked
+5,holdout,post-freeze score-only run,Salt2 +/-5Q score table,protected
+6,external-test,post-freeze external ledger admission,val_salt2 external-style score,protected

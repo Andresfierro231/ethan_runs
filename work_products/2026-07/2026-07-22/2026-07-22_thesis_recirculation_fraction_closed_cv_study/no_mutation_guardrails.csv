@@ -1,0 +1,7 @@
+guardrail,value
+native_solver_outputs_mutated,false
+ordinary_upcomer_closure_admitted,false
+exchange_coefficient_admitted,false
+source_property_release,false
+validation_holdout_external_scoring,false
+runtime_leakage_relaxed,false

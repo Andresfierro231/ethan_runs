@@ -1,0 +1,18 @@
+{
+  "task": "AGENT-416",
+  "generated": "2026-07-15T09:11:35",
+  "window_seconds": 300.0,
+  "selected_cases": 12,
+  "resolved_cases": 12,
+  "stats_rows": 684,
+  "figures": 144,
+  "train_rows": [
+    "salt1_nominal",
+    "salt1_jin_nominal",
+    "salt2_jin_nominal",
+    "salt3_jin_nominal"
+  ],
+  "validation_comparison_rows": [
+    "salt2_native_val"
+  ]
+}

@@ -1,0 +1,6 @@
+qoi_name,retained_window_status,neighbor_minus_status,neighbor_plus_status,same_formula_sign_basis_required,mesh_or_gci_status,source_property_status,uq_release_allowed_now,next_required_action
+mdot_exchange_positive_outward_proxy_kg_s,retained_window_proxy_ready,missing,missing,true,missing,missing_or_not_applicable,false,generate exact same-QOI neighbor windows and accepted mesh/GCI evidence
+tau_recirc_proxy_s,retained_window_proxy_ready,missing,missing,true,missing,missing_or_not_applicable,false,generate exact same-QOI neighbor windows and accepted mesh/GCI evidence
+wall_core_bulk_temperature_contrast_K,retained_window_sampled_ready,missing,missing,true,missing,missing_or_not_applicable,false,generate exact same-QOI neighbor windows and accepted mesh/GCI evidence
+source_side_q_net_W,retained_window_source_context_ready_requires_distinct_qoi_contract,missing,missing,true,missing,needs_source_property_release,false,define distinct source-side heat-flow QOI and generate same-QOI neighbor/mesh evidence
+Q_wall_W,blocked_missing_wallHeatFlux,missing,missing,true,missing,missing_or_not_applicable,false,generate exact same-QOI neighbor windows and accepted mesh/GCI evidence

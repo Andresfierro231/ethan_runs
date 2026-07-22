@@ -1,0 +1,51 @@
+{
+  "task": "TODO-S13-MEDIUM-FINE-SAMPLER-DUPLICATE-JOB-MONITOR-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Scheduler / cfd-pp / Reviewer / Writer",
+  "objective": "Monitor duplicate S13 medium/fine sampler jobs and adjudicate completed outputs.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-MEDIUM-FINE-SAMPLER-DUPLICATE-JOB-MONITOR-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-medium-fine-sampler-duplicate-job-monitor.md",
+    "imports/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/job_state_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/output_usable_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/sampling_error_disposition.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/duplicate_risk_decision.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/repair_recommendation.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/**",
+    "tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "scheduler accounting for jobs 3310176 and 3310179",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files",
+    "thesis current/LaTeX files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "scheduler_queries_performed": true,
+    "scheduler_submission_performed": false,
+    "scheduler_cancellation_performed": false,
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "sampler_or_harvest_launched": false,
+    "production_harvest_allowed": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "final_score_claim": false,
+    "s11_s12_s13_s15_s6_triggered": false
+  },
+  "decision": "duplicate_jobs_completed_no_cancellation_needed_sampler_fail_closed_no_terminal_qoi_rows"
+}

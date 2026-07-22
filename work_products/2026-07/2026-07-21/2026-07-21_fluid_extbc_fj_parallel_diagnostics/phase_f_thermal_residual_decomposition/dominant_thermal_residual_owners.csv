@@ -1,0 +1,16 @@
+owner_type,owner_id,mae_K,rmse_K,bias_K,max_abs_residual_K,dominant_sensor,diagnostic_priority,claim_boundary
+segment,heated_incline,98.79996226425594,99.141175305862,-98.79996226425594,109.09380824932663,TW5,highest,train/support diagnostic only; not admission
+source_family_heat_role,lower_leg:ambient_wall,98.79996226425594,99.141175305862,-98.79996226425594,109.09380824932663,TW5,ranked,train/support diagnostic only; not admission
+segment,right_vertical,86.82304424808227,86.87980576875252,-86.82304424808227,90.04458167578917,TW3,ranked,train/support diagnostic only; not admission
+source_family_heat_role,downcomer:ambient_wall,86.82304424808227,86.87980576875252,-86.82304424808227,90.04458167578917,TW3,ranked,train/support diagnostic only; not admission
+segment,top_horizontal_exit,87.92395687812393,87.92395687812393,-87.92395687812393,87.92395687812393,TP1,ranked,train/support diagnostic only; not admission
+source_family_heat_role,cooling_branch;junction:ambient_wall;junction_other,87.92395687812393,87.92395687812393,-87.92395687812393,87.92395687812393,TP1,ranked,train/support diagnostic only; not admission
+segment,left_upper_vertical,82.04389770274784,82.1234000662624,-82.04389770274784,85.65660972897336,TP6,ranked,train/support diagnostic only; not admission
+source_family_heat_role,upcomer:ambient_wall,79.01127767183104,79.13477997040627,-79.01127767183104,85.65660972897336,TP6,ranked,train/support diagnostic only; not admission
+segment,cooled_incline_pre_hx,81.95315020396828,81.95315020396828,-81.95315020396828,81.95315020396828,TW9,ranked,train/support diagnostic only; not admission
+source_family_heat_role,cooling_branch:ambient_wall,81.93280207326185,81.93280460000575,-81.93280207326185,81.95315020396828,TW9,ranked,train/support diagnostic only; not admission
+segment,cooled_incline_post_hx,81.91245394255543,81.91245394255543,-81.91245394255543,81.91245394255543,TW11,ranked,train/support diagnostic only; not admission
+segment,left_lower_vertical,76.98953098455316,77.07801530037884,-76.98953098455316,80.81461106728568,TW7,ranked,train/support diagnostic only; not admission
+segment,test_section,77.51240681850976,77.51240681850976,-77.51240681850976,77.51240681850976,TP5,ranked,train/support diagnostic only; not admission
+source_family_heat_role,none_or_internal_source:no_external_bc_role,50.79463600632323,57.39280725132196,-50.79463600632323,77.51240681850976,TP5,ranked,train/support diagnostic only; not admission
+segment,cooled_incline_hx_active,24.0768651941367,24.0768651941367,-24.0768651941367,24.0768651941367,TW10,ranked,train/support diagnostic only; not admission

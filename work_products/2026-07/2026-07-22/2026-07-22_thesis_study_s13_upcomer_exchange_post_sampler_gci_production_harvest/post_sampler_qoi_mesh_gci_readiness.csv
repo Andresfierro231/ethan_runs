@@ -1,0 +1,5 @@
+qoi_label,same_qoi_temporal_uq_status,same_qoi_temporal_max_relative_percent,pre_sampler_mesh_gci_status,post_sampler_medium_fine_terminal_rows,post_sampler_exact_label_qoi_rows,post_sampler_same_label_mesh_gci_ready,production_harvest_allowed_now,admission_allowed_now,reason
+Q_wall_W,executed,0.00364554244946,blocked_missing_same_label_mesh_family,0,0,False,False,False,temporal UQ exists but post-sampler exact-label medium/fine rows are absent
+mdot_exchange_positive_outward_proxy_kg_s,executed,0.803956787612,blocked_missing_same_label_mesh_family,0,0,False,False,False,temporal UQ exists but post-sampler exact-label medium/fine rows are absent
+tau_recirc_proxy_s,executed,0.808752828051,blocked_missing_same_label_mesh_family,0,0,False,False,False,temporal UQ exists but post-sampler exact-label medium/fine rows are absent
+wall_core_bulk_temperature_contrast_K,executed,0.122613775443,blocked_missing_same_label_mesh_family,0,0,False,False,False,temporal UQ exists but post-sampler exact-label medium/fine rows are absent

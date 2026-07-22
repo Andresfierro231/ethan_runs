@@ -1,0 +1,5 @@
+heat_path_or_source,value_W,use_status,runtime_release
+cooler,-449.96244353013935,setup_or_diagnostic_context,false
+heater,1133.1,setup_or_diagnostic_context,false
+test_section,148.0,setup_or_diagnostic_context,false
+passive_operator_nominal_total,873.2718786177952,diagnostic_operator_smoke,false

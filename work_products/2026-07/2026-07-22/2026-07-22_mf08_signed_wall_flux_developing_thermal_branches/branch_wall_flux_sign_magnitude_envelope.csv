@@ -1,0 +1,5 @@
+branch_id,physical_role,fluid_energy_sign,interpretation,setup_magnitude_envelope_W,train_setup_magnitude_envelope_W,runtime_status
+cooling_branch,cooler_or_HX,negative,negative wall/source flux cools the fluid,103.16215407994024 to 128.1485764924187,103.16215407994024 to 104.07353581998868,setup_known_not_released
+downcomer_or_passive_wall,passive_loss,negative_expected,passive wall loss should cool the fluid but independent source basis is missing,missing,missing,needs_source_basis
+lower_leg,heater,positive,positive source flux heats the fluid,232.30000000000004 to 337.59999999999997,232.30000000000004 to 265.7,setup_known_contract_only
+upcomer,test_section,positive,positive source flux heats the fluid in the test-section/upcomer segment,37.0 to 37.0,37.0 to 37.0,setup_known_not_released_and_upcomer_recirculation_guarded

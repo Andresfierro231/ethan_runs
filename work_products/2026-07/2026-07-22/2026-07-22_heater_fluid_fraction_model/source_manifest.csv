@@ -1,0 +1,6 @@
+source_path,exists,use
+work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_heat_ledger.csv,true,heater setup power and realized heater wallHeatFlux score target
+work_products/2026-07/2026-07-13/2026-07-13_heater_test_section_contract/case_contract_interpretation.csv,true,prior source-contract interpretation
+work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_scalar_candidates.csv,true,prior Tmean-derived eta comparison
+work_products/2026-07/2026-07-14/2026-07-14_heater_fraction_forward_v1_paper_methods/heater_fraction_model_summary.csv,true,prior split summary
+work_products/2026-07/2026-07-22/2026-07-22_1d_final_heat_loss_power_partition_calibration_design/measurement_input_matrix.csv,true,heat-loss lane source/property release context

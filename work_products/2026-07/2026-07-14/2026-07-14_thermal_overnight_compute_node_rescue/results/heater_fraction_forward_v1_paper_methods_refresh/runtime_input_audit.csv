@@ -1,0 +1,5 @@
+audit_id,status,evidence,blocked_runtime_input
+A1_no_cfd_mdot_runtime,pass,Builder consumes no mdot column for scalar fitting or source scoring.,CFD mdot
+A2_no_wallHeatFlux_runtime,pass,Realized wallHeatFlux appears only in source manifest and claim limitations; scalar fits use train Tmean residual sensitivity.,realized CFD wallHeatFlux
+A3_no_validation_holdout_refit,pass,Only Salt2 determines H1/H2 scalar values; Salt3/Salt4 rows have score_role=score_only.,validation/holdout temperatures
+A4_no_imposed_cooler_final_claim,pass_with_limitation,Package labels all source scores final_forward_v1_blocked because the underlying context still depends on imposed-cooler forward-v0 evidence.,imposed CFD cooler duty as final predictive HX

@@ -1,0 +1,2 @@
+path,file_count,status,Q_wall_W_ready_rows,pressure_basis_ready_rows,consume_for_production_gate,decision
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute,10,completed_outputs_present,3,3,true,direct_Q_wall_W_path_available_read_only

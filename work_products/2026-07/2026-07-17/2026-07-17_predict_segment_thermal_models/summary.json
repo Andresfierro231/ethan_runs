@@ -1,0 +1,20 @@
+{
+  "admitted_setup_model_rows": 2,
+  "all_sources_present": true,
+  "date": "2026-07-17",
+  "diagnostic_source_sink_rows": 52,
+  "evidence_rollup_rows": 7,
+  "external_fluid_edit": false,
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "residual_internal_nu_fit_admitted_rows": 0,
+  "runtime_audit_pass_rows": 5,
+  "runtime_audit_rows": 5,
+  "scheduler_action": false,
+  "scoreable_predictive_thermal_rows": 2,
+  "segment_rows": 7,
+  "task": "TODO-PREDICT-SEGMENT-THERMAL-MODELS",
+  "thermal_slot_rows": 23,
+  "train_validation_holdout_improvement_status": "not_run_in_this_scorecard"
+}

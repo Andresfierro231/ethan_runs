@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="500" viewBox="0 0 980 500">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="28" y="30" font-family="Arial" font-size="18" font-weight="700">Held-out segment heat placement errors</text>
+<line x1="570.0" y1="46" x2="570.0" y2="440" stroke="#333" stroke-width="1"/>
+<text x="24" y="67" font-family="Arial" font-size="11">PB3_attenuated_shape / upcomer / test_section</text>
+<rect x="274.0" y="54" width="296.0" height="18" fill="#2f6f8f"><title>mean error -7.89 W; peak abs 10.6 W</title></rect>
+<text x="222.0" y="67" font-family="Arial" font-size="11">-7.89 W</text>
+<text x="24" y="95" font-family="Arial" font-size="11">PB2_salt2_shape / upcomer / test_section</text>
+<rect x="318.0" y="82" width="252.0" height="18" fill="#2f6f8f"><title>mean error -6.72 W; peak abs 9.34 W</title></rect>
+<text x="266.0" y="95" font-family="Arial" font-size="11">-6.72 W</text>
+<text x="24" y="123" font-family="Arial" font-size="11">PB3_attenuated_shape / junction / junction_other</text>
+<rect x="570.0" y="110" width="184.5" height="18" fill="#c44e52"><title>mean error 4.92 W; peak abs 6.15 W</title></rect>
+<text x="758.5" y="123" font-family="Arial" font-size="11">4.92 W</text>
+<text x="24" y="151" font-family="Arial" font-size="11">PB3_attenuated_shape / downcomer / ambient_wall</text>
+<rect x="570.0" y="138" width="123.6" height="18" fill="#c44e52"><title>mean error 3.3 W; peak abs 4.21 W</title></rect>
+<text x="697.6" y="151" font-family="Arial" font-size="11">3.30 W</text>
+<text x="24" y="179" font-family="Arial" font-size="11">PB3_attenuated_shape / upcomer / ambient_wall</text>
+<rect x="477.4" y="166" width="92.6" height="18" fill="#2f6f8f"><title>mean error -2.47 W; peak abs 2.81 W</title></rect>
+<text x="425.4" y="179" font-family="Arial" font-size="11">-2.47 W</text>
+<text x="24" y="207" font-family="Arial" font-size="11">PB2_salt2_shape / junction / junction_other</text>
+<rect x="570.0" y="194" width="91.9" height="18" fill="#c44e52"><title>mean error 2.45 W; peak abs 3.49 W</title></rect>
+<text x="665.9" y="207" font-family="Arial" font-size="11">2.45 W</text>
+<text x="24" y="235" font-family="Arial" font-size="11">PB2_salt2_shape / downcomer / ambient_wall</text>
+<rect x="570.0" y="222" width="68.9" height="18" fill="#c44e52"><title>mean error 1.84 W; peak abs 2.63 W</title></rect>
+<text x="642.9" y="235" font-family="Arial" font-size="11">1.84 W</text>
+<text x="24" y="263" font-family="Arial" font-size="11">PB3_attenuated_shape / cooling_branch / ambient_wall</text>
+<rect x="570.0" y="250" width="63.3" height="18" fill="#c44e52"><title>mean error 1.69 W; peak abs 2.13 W</title></rect>
+<text x="637.3" y="263" font-family="Arial" font-size="11">1.69 W</text>
+<text x="24" y="291" font-family="Arial" font-size="11">PB2_salt2_shape / upcomer / ambient_wall</text>
+<rect x="570.0" y="278" width="55.4" height="18" fill="#c44e52"><title>mean error 1.48 W; peak abs 2.12 W</title></rect>
+<text x="629.4" y="291" font-family="Arial" font-size="11">1.48 W</text>
+<text x="24" y="319" font-family="Arial" font-size="11">PB3_attenuated_shape / lower_leg / ambient_wall</text>
+<rect x="570.0" y="306" width="34.5" height="18" fill="#c44e52"><title>mean error 0.92 W; peak abs 1.16 W</title></rect>
+<text x="608.5" y="319" font-family="Arial" font-size="11">0.92 W</text>
+<text x="24" y="347" font-family="Arial" font-size="11">PB2_salt2_shape / cooling_branch / ambient_wall</text>
+<rect x="570.0" y="334" width="34.1" height="18" fill="#c44e52"><title>mean error 0.909 W; peak abs 1.29 W</title></rect>
+<text x="608.1" y="347" font-family="Arial" font-size="11">0.91 W</text>
+<text x="24" y="375" font-family="Arial" font-size="11">PB2_salt2_shape / lower_leg / ambient_wall</text>
+<rect x="570.0" y="362" width="18.7" height="18" fill="#c44e52"><title>mean error 0.499 W; peak abs 0.712 W</title></rect>
+<text x="592.7" y="375" font-family="Arial" font-size="11">0.50 W</text>
+<text x="28" y="472" font-family="Arial" font-size="12">Positive values overpredict heat loss in that 1D role; negative values underpredict it.</text>
+</svg>

@@ -1,0 +1,4 @@
+step_id,next_step,required_before,acceptance,guardrail
+PF6-NEXT-001,Refresh terminal readiness for low-recirculation source family.,sampler launch or F6 comparison,at least one terminal-ready source case with endpoint fields and no duplicate solver launch,no scheduler action from this publication-freeze row
+PF6-NEXT-002,Claim a separate staged-copy sampler/UQ row only after terminal readiness is proven.,F6 score release,"finite endpoint pressure, velocity, RAF/RMF/SVF, and same-QOI mesh/time UQ",no native-output mutation and no fit during harvest
+PF6-NEXT-003,Run F3-vs-F6 comparison only for an ordinary-flow candidate.,F6/component-K review,ordinary-flow pass plus accepted same-QOI UQ and source/property labels,"no clipped K, no hidden multiplier, no mixed-basis promotion"

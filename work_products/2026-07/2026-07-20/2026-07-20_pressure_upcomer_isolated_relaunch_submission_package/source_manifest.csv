@@ -1,0 +1,5 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_3305547_failure_repair/remaining_case_relaunch_queue.csv,yes,relaunch queue,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/candidate_readiness_matrix.csv,yes,case source metadata,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/scripts/run_upcomer_matched_plane_compute.sh,yes,existing one-case runner,read_only
+tools/ofenv/of13_env.sh,yes,OpenFOAM environment,read_only

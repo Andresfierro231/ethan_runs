@@ -1,0 +1,5 @@
+gate,status,pass,evidence,next_action
+endpoint_contract_defined,pass_preflight_only,True,composite_upcomer_open_cv inlet/outlet endpoints defined from existing physical-segment sampler convention,turn endpoint contract into staged same-window sampler row
+same_basis_required_inputs,fail_closed,False,ready_required_rows=0/27,"generate endpoint masks, normals, T_bulk, mdot_throughflow, cp release, storage, and named-loss rows"
+residual_value_release,blocked,False,no case has all required same-basis labels,do not compute or publish R_E_combined_W
+production_or_admission,closed,False,source/property/Qwall/GCI/freeze gates remain closed,continue pre-admission evidence harvest only

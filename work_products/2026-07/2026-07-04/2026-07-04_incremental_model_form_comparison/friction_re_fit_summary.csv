@@ -1,0 +1,13 @@
+span,method,point_count,fit_status,a_prefactor,b_exponent,r2_log_space,re_min,re_max,note
+left_lower_leg,section_mean_static_gradient,3,screen_only_not_publication_fit,21.0118909003391,-0.578255092461863,0.9882695030308707,71.12521667906103,134.88326391686644,Fit is a screen only; Salt 2-4 nominal points are too few for a defended law.
+left_lower_leg,section_mean_total_pressure_gradient,3,screen_only_not_publication_fit,19.932957854033997,-0.5644553659304715,0.987457459300244,71.12521667906103,134.88326391686644,Fit is a screen only; Salt 2-4 nominal points are too few for a defended law.
+left_upper_leg,section_mean_static_gradient,3,screen_only_not_publication_fit,169.0784369293458,-1.0419105018217893,0.9901985168968727,66.64763746835195,119.83306251141927,Fit is a screen only; Salt 2-4 nominal points are too few for a defended law.
+left_upper_leg,section_mean_total_pressure_gradient,3,screen_only_not_publication_fit,167.55963690280097,-1.0393962009785251,0.9901142751674092,66.64763746835195,119.83306251141927,Fit is a screen only; Salt 2-4 nominal points are too few for a defended law.
+lower_leg,section_mean_static_gradient,0,insufficient_points,,,,,,
+lower_leg,section_mean_total_pressure_gradient,0,insufficient_points,,,,,,
+right_leg,section_mean_static_gradient,0,insufficient_points,,,,,,
+right_leg,section_mean_total_pressure_gradient,0,insufficient_points,,,,,,
+test_section_span,section_mean_static_gradient,0,insufficient_points,,,,,,
+test_section_span,section_mean_total_pressure_gradient,0,insufficient_points,,,,,,
+upper_leg,section_mean_static_gradient,0,insufficient_points,,,,,,
+upper_leg,section_mean_total_pressure_gradient,0,insufficient_points,,,,,,

@@ -1,0 +1,2 @@
+protected_class,rows_released,fit_or_model_selection_allowed,reason
+validation_holdout_external,0,False,No candidate-specific source/property release and no frozen runtime-legal candidate.

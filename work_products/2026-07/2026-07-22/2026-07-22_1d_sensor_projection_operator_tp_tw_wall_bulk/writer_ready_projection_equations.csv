@@ -1,0 +1,4 @@
+equation_id,equation,status,notes
+TP_projection_score_only,T_hat_TP_i = P_bulk_i[T_bulk_1d(s_i)],operator_defined_no_offset_release,P_bulk_i is a segment/fraction mapping from the N4 sensor table.
+TW_projection_score_only,T_hat_TW_i = P_wall_i[T_wall_1d(s_i)],operator_defined_score_only,"TW projection uses model-predicted wall state, not observed wall temperature as input."
+future_bulk_to_TP_development,T_hat_TP_i = P_bulk_i[T_bulk_1d(s_i)] + Delta_T_dev_i,future_layer_not_released,"Delta_T_dev_i remains blocked by source/property, same-QOI UQ, and physical attribution gates."

@@ -1,0 +1,34 @@
+{
+  "alignment_row_count": 18,
+  "baseline_decision_counts": {
+    "mainline_coarse_can_replace_external_for_endpoint_monitor_gci": 2
+  },
+  "closure_inventory_count": 4,
+  "closure_observations_updated": false,
+  "continuation_jobs_submitted": false,
+  "endpoint_monitor_gci_row_count": 18,
+  "endpoint_monitor_gci_status_counts": {
+    "blocked_gci_not_trustworthy": 2,
+    "blocked_medium_or_fine_not_admitted": 9,
+    "diagnostic_gci_computed": 3,
+    "endpoint_monitor_gci_ready": 4
+  },
+  "generated_at": "2026-07-09T15:25:40-05:00",
+  "generated_files": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/mainline_coarse_alignment.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/mainline_coarse_baseline_decisions.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/mainline_coarse_full_history_monitor_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/endpoint_monitor_gci_mainline_coarse.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/medium_fine_closure_qoi_inventory.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/salt4_admission_review.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/next_actions.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress/summary.json"
+  ],
+  "output_dir": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_blocker_resolution_progress",
+  "registry_updated": false,
+  "salt4_review_count": 2,
+  "source_tree_read_only": true,
+  "staging_updated": false,
+  "task_id": "AGENT-235"
+}

@@ -1,0 +1,79 @@
+{
+  "task": "TODO-PREDICT-SALT-PM10-TERMINAL-ADMISSION",
+  "generated_at_utc": "2026-07-22T14:41:37Z",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PREDICT-SALT-PM10-TERMINAL-ADMISSION.md",
+    ".agent/journal/2026-07-22/predict-salt-pm10-terminal-admission.md",
+    "imports/2026-07-22_predict_salt_pm10_terminal_admission.json",
+    "tools/analyze/build_salt_pm10_terminal_admission.py",
+    "tools/analyze/test_salt_pm10_terminal_admission.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/scheduler_terminal_evidence.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/pm10_case_terminal_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/pm10_steadiness_metric_context.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/pm10_split_use_decision.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/pm10_recirc_onset_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/pm10_heat_pressure_evidence_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/selected_salt2_salt4_pm10q_after_3293924/status_table/selected_corrected_q_status_table.csv",
+    "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/selected_salt2_salt4_pm10q_after_3293924/terminal_monitor_after_3293924/live_salt_sanity_monitor.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_terminal_drift.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_corrected_split_final_predictive_scorecard/split_legal_case_table.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission",
+    "work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_blocker_execution/upcomer_anchor_admission_ledger_pm10_resolved.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/cases/*salt2_jin_lo10q_corrected*/stats.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/cases/*salt2_jin_hi10q_corrected*/stats.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/cases/*salt4_jin_lo10q_corrected*/stats.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/cases/*salt4_jin_hi10q_corrected*/stats.csv",
+    "squeue -j 3293924,3295438 -o %i,%j,%T,%M,%D,%R",
+    "sacct -j 3293924,3295438 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList -P",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "external Fluid/source trees"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "solver_or_harvester_launched": false,
+    "staged_copy_created": false,
+    "external_fluid_edit": false,
+    "fitting_or_model_selection": false,
+    "protected_scoring": false,
+    "runtime_input_release": false,
+    "source_property_release": false,
+    "final_score": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "scheduler_evidence": {
+    "3293924": {
+      "state": "TIMEOUT",
+      "elapsed": "5-00:00:06",
+      "end": "2026-07-18T17:04:02"
+    },
+    "3295438": {
+      "state": "COMPLETED",
+      "elapsed": "00:35:41",
+      "end": "2026-07-18T17:39:54"
+    }
+  },
+  "output_contract": {
+    "terminal_evidence_admitted_rows": 4,
+    "future_holdout_candidate_rows": 4,
+    "fit_allowed_now_rows": 0,
+    "model_selection_allowed_now_rows": 0,
+    "protected_score_allowed_now_rows": 0,
+    "runtime_input_allowed_now_rows": 0,
+    "total_Q_not_steady_rows": 4
+  }
+}

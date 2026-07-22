@@ -1,0 +1,2 @@
+frozen_model_id,decision,score_ready_artifact_id,score_ready_exception_id,exception_granted,holdout_score_release,reason,fit_or_model_selection_changed,native_solver_outputs_mutated
+M2_FROZEN_PREDICTION_ARTIFACT_SALT1_4_NOMINAL_2026_07_20,blocked_missing_salt1_cooler_hx,,,false,false,Salt1 cooler/HX support is missing and no 3-row score-ready exception is granted,false,false

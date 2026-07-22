@@ -1,0 +1,5 @@
+blocker,status,reason
+finite exchange exists,diagnostic_ready,3 finite exchange rows
+ordinary upcomer Nu/f_D/K admission,blocked,recirculating exchange is not a single-stream ordinary-flow basis
+source/property release,blocked,0 conservation release-ready rows
+same-QOI UQ,blocked,0 same-QOI UQ ready rows

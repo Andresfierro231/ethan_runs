@@ -1,0 +1,7 @@
+lane,observed,inferred,claim_boundary
+baseline,Phase E/S8 baseline context,reference_only,baseline is comparator
+external_boundary,negative_freeze_validation_holdout_external_blocked,plausible_but_incomplete,negative freeze; missing ambient wall rows
+passive_wall,enriched_but_source_basis_not_released_no_repair,plausible_needs_source_basis,0 source families released
+test_section_source,source_lane_partial_improvement_model_form_still_needed,partial_local_response,partial improvement and worsening both observed
+junction_stub,unowned residual/stub lane,unresolved,no independent source/property basis
+empirical_diagnostic,leg bias and reduced-DOF screens,diagnostic_not_physical_closure,fit is not physics admission and transfer was not used for model selection

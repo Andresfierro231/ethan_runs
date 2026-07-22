@@ -1,0 +1,75 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-TP-TW-SCOREBOARD-ELEVATION-PANEL-REVISION-2026-07-22",
+  "task_id": "TODO-THESIS-FIGTABLE-TP-TW-SCOREBOARD-ELEVATION-PANEL-REVISION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Figures / Implementer / Tester / Writer / Reviewer",
+  "objective": "Revise the thesis figure/table package so TP/TW temperature-vs-elevation panels are populated from the master scoreboard and S7 coordinate ledger rather than placeholder reference-script values.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-FIGTABLE-TP-TW-SCOREBOARD-ELEVATION-PANEL-REVISION-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-figtable-tp-tw-scoreboard-elevation-panel-revision.md",
+    "imports/2026-07-22_thesis_figtable_tp_tw_scoreboard_elevation_panel_revision.json",
+    "tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/caption_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_tw_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/svg/m3_tp_tw_temperature_vs_elevation_salt_2.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/svg/m3_tp_tw_temperature_vs_elevation_salt_3.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/svg/m3_tp_tw_temperature_vs_elevation_salt_4.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/png/m3_tp_tw_temperature_vs_elevation_salt_2.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/png/m3_tp_tw_temperature_vs_elevation_salt_3.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/png/m3_tp_tw_temperature_vs_elevation_salt_4.png"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/signed_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/figure_ready_signed_sensor_errors.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_qoi_projection_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_TP_TW_vs_elevation/plot.py"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    },
+    {
+      "command": "visual inspection of Salt2 and Salt4 regenerated PNG panels",
+      "result": "passed for sensor inclusion and readability"
+    }
+  ],
+  "provenance_flags": {
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_action": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "validation_holdout_external_new_scoring": false,
+    "fitting_or_model_selection": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "closure_admission": false,
+    "s11_s12_s13_s15_s6_trigger": false,
+    "thesis_current_file_edit": false,
+    "blocker_register_change": false,
+    "generated_index_refresh": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "result": {
+    "tp_tw_temperature_elevation_panel_rows": 51,
+    "tp_tw_target_rows_plotted": 48,
+    "missing_m3_tp2_predictions_marked": 3,
+    "excluded_tw10_rows_marked": 3,
+    "coordinate_basis": "S7 sensor_coordinate_ledger native_centroid_y_m fallback registry_y_m",
+    "decision": "thesis_figure_panels_ready_no_closure_admission"
+  }
+}

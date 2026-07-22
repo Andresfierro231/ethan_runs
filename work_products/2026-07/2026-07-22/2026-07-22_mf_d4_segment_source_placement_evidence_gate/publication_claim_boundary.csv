@@ -1,0 +1,4 @@
+claim,allowed,forbidden,basis
+D4 segment offsets identify where source-placement evidence should be tested next,True,Do not claim D4 is a source-bounded closure or admitted repair.,Salt2-trained residual correction transfers to Salt3/Salt4 but independent release gates fail closed.
+The right_vertical and heated/left-leg segments are high-priority source-placement targets,True,Do not use D4 coefficients as runtime inputs.,Segment residual map plus independent evidence crosswalk.
+A local source-placement candidate is ready for freeze review,False,No freeze/admission claim when all candidate rows are fail-closed.,source_bounded_candidate_gate.csv

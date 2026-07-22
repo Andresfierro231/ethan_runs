@@ -1,0 +1,2 @@
+task_id,case_id,split_role,source_segment_id,patch_group,parent_segment,parser_load,role_rows_created,solver_contract_validation,heat_path_accounting,computed_external_loss_W,solve_status,score_status,admission_status
+TODO-FLUID-EXTERNAL-BC-PHASE-D-SMOKE-SCORECARD-2026-07-21,salt_2,train,upcomer,ambient_wall,left_upper_vertical,pass,1,pass,pass,65.37489732389939,not_run_by_policy,not_scored_by_policy,not_admitted_phase_d_smoke_only

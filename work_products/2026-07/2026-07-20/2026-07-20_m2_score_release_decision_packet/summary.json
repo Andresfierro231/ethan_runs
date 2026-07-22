@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-20",
+  "decision": "blocked_missing_salt1_cooler_hx",
+  "fit_rows_added": 0,
+  "generated_at_utc": "2026-07-20T23:39:42.293615+00:00",
+  "holdout_rows_blocked": 8,
+  "holdout_rows_scored_now": 0,
+  "model_selection_rows_added": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "task": "TODO-PREDICT-M2-SCORE-RELEASE-DECISION-PACKET",
+  "three_row_exception_granted": false
+}

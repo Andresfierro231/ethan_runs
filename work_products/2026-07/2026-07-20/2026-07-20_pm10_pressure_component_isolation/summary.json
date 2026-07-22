@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-20T20:16:09-05:00",
+  "case_count": 4,
+  "component_isolation_ready_cases": 0,
+  "component_isolation_partial_cases": 4,
+  "fit_allowed_now": 0,
+  "model_selection_allowed_now": 0,
+  "runtime_input_allowed_now": 0,
+  "targets_path": "work_products/2026-07/2026-07-20/2026-07-20_pm10_same_window_residual_targets/pm10_same_window_residual_targets.csv",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_pm10_pressure_component_isolation"
+}

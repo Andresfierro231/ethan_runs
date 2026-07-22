@@ -1,0 +1,2 @@
+launch_plan_id,launch_ready,auto_submit,sbatch_path,manual_action,guardrail
+two_tap_same_qoi_anchor,false,false,,identify source case and rerun package,do not submit without exact endpoint labels and nonrecirculating preflight

@@ -1,0 +1,26 @@
+{
+  "task": "TODO-LITREV-THERMAL-HEAT-LOSS-CONTRACT-ALIGNMENT",
+  "date": "2026-07-21",
+  "role": "Thermal-modeling/Writer",
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment",
+  "heat_path_rows": 10,
+  "required_lanes_present": [
+    "internal_Nu",
+    "wall_conduction",
+    "contact_layer_resistance",
+    "insulation_quartz",
+    "external_convection",
+    "radiation",
+    "jacket_cooler_removal",
+    "storage",
+    "residual"
+  ],
+  "extra_lane_present": "heater_source_to_fluid",
+  "runtime_forbidden_inputs_explicit": true,
+  "residual_hidden_in_internal_Nu": false,
+  "admission_changed": false,
+  "native_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "fluid_code_mutated": false
+}

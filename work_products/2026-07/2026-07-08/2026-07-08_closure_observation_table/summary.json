@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-08T15:14:04",
+  "observation_rows": 423,
+  "fit_eligible_rows": 45,
+  "validation_eligible_rows": 423,
+  "source_ids": [
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh"
+  ],
+  "families": {
+    "pressure": 342,
+    "thermal": 81
+  },
+  "source_artifacts": [
+    "work_products/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "work_products/2026-06-30_claude_segment_friction/segment_friction.csv",
+    "work_products/2026-06-30_claude_thermal_htc",
+    "work_products/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.csv",
+    "work_products/2026-07-07_time_window_quasi_steady_uq/quasi_steady_observations.csv",
+    "work_products/2026-06-29_ethan_reduction_contract_audit/source_contract_map.csv",
+    "work_products/2026-07-08_cfd_scenario_contract/scenario_contract.csv"
+  ],
+  "validation_errors": [],
+  "validation_passed": true
+}

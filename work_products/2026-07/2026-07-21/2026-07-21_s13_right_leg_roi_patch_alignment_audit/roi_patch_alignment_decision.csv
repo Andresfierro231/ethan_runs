@@ -1,0 +1,2 @@
+decision_id,release_status,dominant_components_aligned,wall_candidate_components_released,new_cv_admitted,s12_unlocked,blocking_reason
+roi_patch_alignment,complete_fail_closed_geometry_seed_required,false,false,false,false,dominant reverse-flow components have no trusted right-leg wall patch contact; wall-adjacent components are absent or tiny and touch unreleased/ncc boundaries

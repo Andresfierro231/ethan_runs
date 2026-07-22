@@ -1,0 +1,43 @@
+{
+  "candidate_freeze": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THERMAL-PASSIVE-H2-MULTI-TRAIN-CORRECTED-RADIATION-SMOKE-2026-07-22.md",
+    ".agent/journal/2026-07-22/thermal-passive-h2-multi-train-corrected-radiation-smoke.md",
+    "imports/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke.json",
+    "tools/analyze/build_thermal_passive_h2_multi_train_corrected_radiation_smoke.py",
+    "tools/analyze/test_thermal_passive_h2_multi_train_corrected_radiation_smoke.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke"
+  ],
+  "date": "2026-07-22",
+  "decision": "passive_h2_multi_train_corrected_radiation_smoke_supports_development_no_admission",
+  "external_fluid_edit": false,
+  "final_score_claim": false,
+  "fitting_or_model_selection": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "numeric_q_loss_release": false,
+  "protected_scoring": false,
+  "qwall_release": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/scenario_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_predictions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/baseline_root_and_qoi_smoke.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/one_at_a_time_setup_uq_smoke.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_radiation_runtime_basis_reconciliation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_one_train_repair_preflight/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/summary.json",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task": "TODO-THERMAL-PASSIVE-H2-MULTI-TRAIN-CORRECTED-RADIATION-SMOKE-2026-07-22",
+  "task_id": "TODO-THERMAL-PASSIVE-H2-MULTI-TRAIN-CORRECTED-RADIATION-SMOKE-2026-07-22"
+}

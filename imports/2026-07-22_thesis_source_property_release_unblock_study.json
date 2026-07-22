@@ -1,0 +1,45 @@
+{
+  "task": "TODO-THESIS-SOURCE-PROPERTY-RELEASE-UNBLOCK-STUDY-2026-07-22",
+  "task_id": "TODO-THESIS-SOURCE-PROPERTY-RELEASE-UNBLOCK-STUDY-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Forward-pred / Thermal-modeling / Hydraulics / Writer / Reviewer / Tester",
+  "objective": "Identify source/property release blockers and candidate-specific unblock tasks without releasing, freezing, or scoring.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-SOURCE-PROPERTY-RELEASE-UNBLOCK-STUDY-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-source-property-release-unblock-study.md",
+    "imports/2026-07-22_thesis_source_property_release_unblock_study.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition",
+    "registry/admission state",
+    "native CFD/OpenFOAM outputs",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files",
+    "thesis current/LaTeX files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "source_property_release": false,
+    "candidate_freeze": false,
+    "protected_scoring": false,
+    "validation_holdout_external_scoring": false,
+    "admission_state_mutated": false,
+    "solver_or_openfoam_postprocess_launched": false,
+    "runtime_leakage_relaxed": false,
+    "blocker_register_changed": false,
+    "generated_index_refreshed": false
+  },
+  "decision": "source_property_unblock_study_complete_zero_release_ready_rows_no_freeze"
+}

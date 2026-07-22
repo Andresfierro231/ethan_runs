@@ -1,0 +1,5 @@
+gate,rows,ready_rows,status
+source_property_conservation,3,0,blocked
+neighbor_window_qoi,4,0,blocked
+same_qoi_uq,1,0,blocked
+production_harvest,1,0,blocked

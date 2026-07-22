@@ -1,0 +1,17 @@
+source_id,source_path,access,purpose
+f6_ab_pairs,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/stage_a_b_pair_qa.csv,read_only,S14 F6 branch-use scoring input
+f6_ab_summary,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json,read_only,S14 F6 branch-use scoring input
+f6_static_decision,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/pressure_basis_decision.csv,read_only,S14 F6 branch-use scoring input
+f6_static_pairs,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_b_pair_reconstructed_static_deltas.csv,read_only,S14 F6 branch-use scoring input
+f6_static_summary,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json,read_only,S14 F6 branch-use scoring input
+low_recirc_preflight,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv,read_only,S14 F6 branch-use scoring input
+non_upcomer_f3_gate,work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/f3_vs_branch_f6_gate.csv,read_only,S14 F6 branch-use scoring input
+non_upcomer_matrix,work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis/non_upcomer_f6_candidate_matrix.csv,read_only,S14 F6 branch-use scoring input
+pressure_canonical,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,read_only,S14 F6 branch-use scoring input
+pressure_review_matrix,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_comparison_matrix.csv,read_only,S14 F6 branch-use scoring input
+pressure_review_summary,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/summary.json,read_only,S14 F6 branch-use scoring input
+s10_candidates,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_candidate_admission_matrix.csv,read_only,S14 F6 branch-use scoring input
+s10_claim_boundary,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/claim_boundary_ledger.csv,read_only,S14 F6 branch-use scoring input
+s10_gates,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_gate_matrix.csv,read_only,S14 F6 branch-use scoring input
+s10_summary,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/summary.json,read_only,S14 F6 branch-use scoring input
+s10_waterfall,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv,read_only,S14 F6 branch-use scoring input

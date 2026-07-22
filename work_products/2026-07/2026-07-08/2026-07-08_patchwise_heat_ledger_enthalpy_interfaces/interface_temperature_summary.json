@@ -1,0 +1,20 @@
+{
+  "generated_at": "2026-07-08T17:18:41",
+  "script": "tools/extract/sample_physical_segment_interface_temperatures.py",
+  "recon_root": "tmp/2026-06-30_claude_action_items",
+  "interface_registry_csv": "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_registry.csv",
+  "interface_temperature_samples_csv": "work_products/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/interface_temperature_samples.csv",
+  "counts": {
+    "registry_rows": 15,
+    "sample_rows": 60,
+    "ok_sample_rows": 60,
+    "high_recirculation_sample_rows": 24
+  },
+  "temperature_selection_rule": "forward_bulk_when_recirc_gt_0p5_else_mixing_cup",
+  "limitations": [
+    "Uses existing secmeanSurfaces XY cut planes; no new OpenFOAM sampling is performed.",
+    "Cooler and heater patch interiors are not separately bracketed by the available planes.",
+    "Junction groups are not enclosed by a single inlet/outlet interface pair.",
+    "Upcomer and some downcomer interfaces are recirculation contaminated; forward-only bulk T is diagnostic."
+  ]
+}

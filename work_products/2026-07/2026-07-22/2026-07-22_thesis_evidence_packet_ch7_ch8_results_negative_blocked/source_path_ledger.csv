@@ -1,0 +1,11 @@
+source_id,path,evidence_role,read_status,claim_boundary
+SRC-01,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/README.md,model-form scoreboard and signed-error summary,read_only,"Diagnostic/support only; no new scoring or admission."
+SRC-02,work_products/2026-07/2026-07-22/2026-07-22_four_study_thesis_support_gate/README.md,freeze/no-freeze gate,read_only,"No single released candidate and no S15 trigger."
+SRC-03,work_products/2026-07/2026-07-22/2026-07-22_five_best_thesis_support_analyses/README.md,next analyses priority and no-admission dispatch,read_only,"Prioritization does not release candidate."
+SRC-04,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/README.md,pressure negative result,read_only,"Thesis evidence only; no component K/F6 admission."
+SRC-05,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_same_qoi_neighbor_uq_execution/README.md,S13 fail-closed same-QOI UQ status,read_only,"Target-window exists but same-QOI neighbor UQ-ready labels 0 in that package."
+SRC-06,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/README.md,S13 target-plus and triplet-ready status,read_only,"UQ not executed; production harvest not allowed by this packet."
+SRC-07,operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md,S13 direct Qwall values and broad thesis context,read_only,"Direct Qwall target values do not admit closure."
+SRC-08,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md,thermal passive heat-loss attribution,read_only,"Broad train-only attribution; no repair/admission."
+SRC-09,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md,figure/table panels,read_only,"Communication artifacts only; no closure admission."
+SRC-10,work_products/2026-07/2026-07-22/2026-07-22_thesis_governing_equations_definitions_glossary_packet/README.md,definitions and claim-use guardrails,read_only,"Term definitions and slot-not-admission rule."

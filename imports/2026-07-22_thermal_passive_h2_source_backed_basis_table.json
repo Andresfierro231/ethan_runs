@@ -1,0 +1,43 @@
+{
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THERMAL-PASSIVE-H2-SOURCE-BACKED-BASIS-TABLE-2026-07-22.md",
+    ".agent/journal/2026-07-22/thermal-passive-h2-source-backed-basis-table.md",
+    "imports/2026-07-22_thermal_passive_h2_source_backed_basis_table.json",
+    "tools/analyze/build_thermal_passive_h2_source_backed_basis_table.py",
+    "tools/analyze/test_thermal_passive_h2_source_backed_basis_table.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table"
+  ],
+  "decision": "passive_h2_setup_dictionary_source_basis_released_no_repair_no_freeze",
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T16:23:40.965369+00:00",
+  "mutation_flags": {
+    "candidate_freeze": false,
+    "fitting_or_model_selection": false,
+    "numeric_q_loss_release": false,
+    "protected_scoring": false,
+    "qwall_release": false,
+    "repair_run": false,
+    "runtime_leakage_relaxation": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "source_property_release": false
+  },
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_basis_release_preflight/exact_missing_provenance_fields.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/radiation_guidance_decision.json",
+    "reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment",
+    "native CFD/OpenFOAM outputs read-only",
+    "registry/admission state read-only",
+    "Fluid source tree read-only"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "task": "TODO-THERMAL-PASSIVE-H2-SOURCE-BACKED-BASIS-TABLE-2026-07-22",
+  "task_id": "TODO-THERMAL-PASSIVE-H2-SOURCE-BACKED-BASIS-TABLE-2026-07-22"
+}

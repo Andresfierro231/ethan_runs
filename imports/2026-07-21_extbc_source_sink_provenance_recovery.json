@@ -1,0 +1,38 @@
+{
+  "task": "TODO-EXTBC-SOURCE-SINK-PROVENANCE-RECOVERY-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Writer/Reviewer",
+  "objective": "Recover setup-side heater/cooler/test-section source-sink provenance.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-EXTBC-SOURCE-SINK-PROVENANCE-RECOVERY-2026-07-21.md",
+    ".agent/journal/2026-07-21/extbc-source-sink-provenance-recovery.md",
+    "imports/2026-07-21_extbc_source_sink_provenance_recovery.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_salt1_train_external_bc_recovery_freeze_gate/**",
+    "Salt1-Salt4 staged 0/T setup files",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "thesis current files"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "freeze_or_admission_decision": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "thesis_current_file_edit": false
+}

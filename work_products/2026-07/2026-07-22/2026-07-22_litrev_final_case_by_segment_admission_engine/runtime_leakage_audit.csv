@@ -1,0 +1,7 @@
+audit_id,forbidden_runtime_input,gate,observed_policy
+R1,CFD mdot,pass,excluded_from_engine_inputs; diagnostic/scoring only when separately allowed
+R2,realized CFD wallHeatFlux,pass,excluded_from_engine_inputs; diagnostic/scoring only when separately allowed
+R3,imposed CFD cooler duty,pass,excluded_from_engine_inputs; diagnostic/scoring only when separately allowed
+R4,validation/holdout/external-test temperatures,pass,excluded_from_engine_inputs; diagnostic/scoring only when separately allowed
+R5,post-solve pressure losses,pass,excluded_from_engine_inputs; diagnostic/scoring only when separately allowed
+R6,hidden residual multipliers,pass,excluded_from_engine_inputs; diagnostic/scoring only when separately allowed

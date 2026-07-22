@@ -1,0 +1,2 @@
+case,scenario,root_status,root_rejection_reason,accepted_for_validation,pressure_root_bracketed,temperature_root_bracketed,temperature_periodicity_error_K,temperature_scan_lower_bound_K,temperature_scan_upper_bound_K,mdot_search_upper_bound_kg_s
+Salt 2,tswfc2_smoke_salt2_four_node_v1,accepted,,True,True,True,8.847109711496159e-10,274.19,550.0,0.2

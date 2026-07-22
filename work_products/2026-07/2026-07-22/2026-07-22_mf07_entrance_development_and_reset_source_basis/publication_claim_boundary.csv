@@ -1,0 +1,5 @@
+claim,allowed,basis
+thermal development path has promise,True,train-only TP residual direction plus reset/Graetz coordinates
+released bulk-to-TP correction exists,False,source/property labels and same-QOI TP uncertainty are missing
+S13 wall/core contrast explains full D2 TP offset,False,wall/core contrast is less than five percent of the D2 TP offset in all three S13 cases
+TW correction should be fit now,False,TW should be analyzed after a defended TP projection layer

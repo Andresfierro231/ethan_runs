@@ -1,0 +1,30 @@
+{
+  "candidate_freeze_rows": 0,
+  "coefficient_admission_rows": 0,
+  "counts": {
+    "guardrail_rows": 11,
+    "manifest_rows": 9,
+    "no_mutation_rows": 6,
+    "qoi_rows": 10,
+    "runbook_rows": 7,
+    "stop_rows": 6,
+    "variation_rows": 9
+  },
+  "decision": "train_only_setup_uq_smoke_runbook_ready_no_execution",
+  "execution_launched": false,
+  "external_repo_mutated": false,
+  "fit_or_model_selection_rows": 0,
+  "fluid_mutated": false,
+  "generated_at_utc": "2026-07-22T15:33:48.489036+00:00",
+  "native_output_mutated": false,
+  "next_recommended_task": "claim a separate execution row to run S00-S06 on train rows only",
+  "protected_scoring_rows": 0,
+  "registry_mutated": false,
+  "runtime_forbidden_inputs_all_blocked": true,
+  "scheduler_or_sampler_launched": false,
+  "solver_launched": false,
+  "source_property_release_rows": 0,
+  "task_id": "TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-RUNBOOK-2026-07-22",
+  "train_only": true,
+  "validation_errors": []
+}

@@ -1,0 +1,6 @@
+order,blocker,next_experiment_or_analysis,acceptance
+1,source_property_release_zero,Strict source-envelope repair plus cp/mu/k release,At least one candidate row becomes source/property release-ready.
+2,heat_path_material_geometry_incomplete,Material/source geometry join ledger and train/support heat-path UQ,Heat residual remains explicit and physical lanes are quantified.
+3,S13_exchange_not_admitted,Same-label GCI and residual-complete open CV energy balance,Exchange-cell QOIs pass same-QOI UQ or fail closed.
+4,CAND001_endpoint_gated,Terminal endpoint readiness after monitor handoff,p/p_rgh/U/area endpoint fields present or fail closed.
+5,no_frozen_candidate,Freeze one runtime-legal train/support candidate,Protected scoring can be run once without post-score tuning.

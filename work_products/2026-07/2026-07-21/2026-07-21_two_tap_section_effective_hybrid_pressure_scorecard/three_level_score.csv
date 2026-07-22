@@ -1,0 +1,10 @@
+case_id,case_key,score_level,q_ref_pa,K_eff_recirc_used,predicted_delta_p_recirc_section_pa,observed_available_residual_pa,prediction_error_pa,abs_error_pa,abs_error_percent_gross_static,score_status,admission_status,protected_rows_consumed
+salt_2,salt2_mainline,observed_decomposition,0.16579831377,,-1.25366731683,-1.25366731683,0,0,0,explanatory_observed_terms_only,not_admitted,0
+salt_2,salt2_mainline,salt2_frozen_diagnostic,0.16579831377,-7.56139965813,-1.2536673130590084714501,-1.25366731683,0.0000000037709915285499,0.0000000037709915285499,0.0000000001228849650579071340604071314,diagnostic_transfer_check_not_admitted,not_admitted,0
+salt_2,salt2_mainline,oracle_envelope_nonpredictive,0.16579831377,-7.56139965813,-1.25366731683,-1.25366731683,0,0,0,oracle_upper_bound_nonpredictive,not_admitted,0
+salt_3,salt3_mainline,observed_decomposition,0.215858446223,,-1.84957005859,-1.84957005859,0,0,0,explanatory_observed_terms_only,not_admitted,0
+salt_3,salt3_mainline,salt2_frozen_diagnostic,0.215858446223,-7.56139965813,-1.63219198147506518974299,-1.84957005859,0.21737807711493481025701,0.21737807711493481025701,0.007120253118776902949422171846,diagnostic_transfer_check_not_admitted,not_admitted,0
+salt_3,salt3_mainline,oracle_envelope_nonpredictive,0.215858446223,-8.56843961125,-1.84957005859,-1.84957005859,0,0,0,oracle_upper_bound_nonpredictive,not_admitted,0
+salt_4,salt4_mainline,observed_decomposition,0.284180861923,,-1.67833900273,-1.67833900273,0,0,0,explanatory_observed_terms_only,not_admitted,0
+salt_4,salt4_mainline,salt2_frozen_diagnostic,0.284180861923,-7.56139965813,-2.14880507219166093438399,-1.67833900273,-0.47046606946166093438399,0.47046606946166093438399,0.01550084787332213673792019733,diagnostic_transfer_check_not_admitted,not_admitted,0
+salt_4,salt4_mainline,oracle_envelope_nonpredictive,0.284180861923,-5.90588330923,-1.67833900273,-1.67833900273,0,0,0,oracle_upper_bound_nonpredictive,not_admitted,0

@@ -1,0 +1,38 @@
+{
+  "generated_at": "2026-06-02T09:58:15-05:00",
+  "campaign_slug": "2026-06-01_modern_runs_first_batch",
+  "source_count": 12,
+  "source_ids": [
+    "viscosity_screening_salt_test_1_jin_coarse_mesh",
+    "viscosity_screening_salt_test_2_jin_coarse_mesh",
+    "viscosity_screening_salt_test_3_jin_coarse_mesh",
+    "viscosity_screening_salt_test_4_jin_coarse_mesh",
+    "viscosity_screening_salt_test_1_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_2_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_3_kirst_coarse_mesh",
+    "viscosity_screening_salt_test_4_kirst_coarse_mesh",
+    "val_water_test_1_coarse_mesh_laminar",
+    "val_water_test_2_coarse_mesh_laminar",
+    "val_water_test_3_coarse_mesh_laminar",
+    "val_water_test_4_coarse_mesh_laminar"
+  ],
+  "fluids": {
+    "hitec_salt_jin": 4,
+    "hitec_salt_kirst": 4,
+    "water": 4
+  },
+  "turbulence_models": {
+    "laminar": 12
+  },
+  "run_status_counts": {
+    "terminated": 10,
+    "completed": 2
+  },
+  "validation_status_counts": {
+    "derived_postprocessing_available": 12
+  },
+  "convergence_reached_counts": {
+    "False": 10,
+    "True": 2
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "closure_fit_admissible_terminal_gate_rows": 4,
+  "core_decision": "Corrected +/-5Q rows are terminal-harvested perturbation evidence, not independent training rows until split policy changes.",
+  "external_fluid_modified": false,
+  "forward_gate_queue_rows": 12,
+  "generated_at": "2026-07-14T20:44:12+00:00",
+  "harvest_rows": 4,
+  "independent_training_expansion_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing",
+  "registry_mutated": false,
+  "status": "complete",
+  "task": "AGENT-353"
+}

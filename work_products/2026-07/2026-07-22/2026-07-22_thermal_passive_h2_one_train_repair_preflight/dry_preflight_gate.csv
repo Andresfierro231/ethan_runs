@@ -1,0 +1,7 @@
+evidence,gate_id,next_action,status
+PASSIVE-H2-CAND001 and salt_2 train case declared exactly once.,G01_exact_candidate_and_case,Carry this declaration into a separate execution row if needed.,pass
+5 passive source-family operator rows prepared.,G02_source_backed_passive_terms,Use hA/area/Ta/Tsur/emissivity/layers only as setup inputs.,pass
+3/3 baseline and 33/33 variant roots accepted.,G03_setup_uq_context,"Treat setup-UQ as runtime cleanliness context, not score evidence.",pass
+Numeric q-loss rows remain 0.,G04_no_numeric_release,Do not publish passive numeric heat-loss values from this preflight.,pass
+Source/property and Qwall release rows remain 0.,G05_no_source_property_or_Qwall_release,Keep release gates closed.,pass
+No repair run was executed and freeze remains disallowed.,G06_no_execution_or_freeze,Open a separate train-only execution row before any solve or score.,pass

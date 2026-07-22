@@ -1,0 +1,17 @@
+{
+  "branches": {
+    "cooler_hx_branch": "waiting_on_branch_rows",
+    "downcomer_right_vertical": "waiting_on_branch_rows",
+    "heater_lower_leg": "waiting_on_branch_rows",
+    "junction_stub_connector": "no",
+    "test_section": "no",
+    "upcomer_left_vertical": "no"
+  },
+  "evidence_rows_reviewed": 28,
+  "final_decision": "no ordinary-pipe coefficient fit admitted from current rows; upcomer excluded from aggregate ordinary-pipe fit claims",
+  "generated_at_utc": "2026-07-15T22:49:49.661408+00:00",
+  "ordinary_fit_rows": 0,
+  "task": "AGENT-442",
+  "upcomer_evidence_rows": 25,
+  "upcomer_ordinary_fit_rows": 0
+}

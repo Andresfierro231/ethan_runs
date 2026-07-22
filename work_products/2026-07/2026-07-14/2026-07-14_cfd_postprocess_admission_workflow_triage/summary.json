@@ -1,0 +1,22 @@
+{
+  "task": "AGENT-347",
+  "generated_at": "2026-07-14T15:30:01-05:00",
+  "named_case_count": 7,
+  "harvest_rows": 4,
+  "hiins_review_rows": 2,
+  "immediate_training_expansion_rows": 0,
+  "named_case_training_flags": {
+    "no": 7
+  },
+  "harvest_closure_fit_admissible_rows": 4,
+  "outputs": {
+    "readme": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/README.md",
+    "workflow_steps": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/workflow_automation_steps.csv",
+    "triage": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/steady_candidate_admission_triage.csv",
+    "harvest_status": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/corrected_q_harvest_3295437_processing_status.csv",
+    "hiins_review": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/hiins_loins_construction_review.csv",
+    "salt2_comparison": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/salt2_jin_vs_val_comparison.csv",
+    "drift_ratio": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/drift_ratio_definition.md",
+    "source_manifest": "work_products/2026-07/2026-07-14/2026-07-14_cfd_postprocess_admission_workflow_triage/source_manifest.csv"
+  }
+}

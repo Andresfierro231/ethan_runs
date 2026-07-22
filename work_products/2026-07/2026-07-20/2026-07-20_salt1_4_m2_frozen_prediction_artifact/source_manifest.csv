@@ -1,0 +1,6 @@
+source_id,source_path,exists,source_role,mutation
+candidate_freeze_manifest,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/candidate_freeze_manifest.csv,yes,candidate training rows,read_only
+candidate_model_terms,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/candidate_model_terms.csv,yes,candidate admitted/blocked terms,read_only
+holdout_exclusion_audit,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv,yes,blind-row exclusion audit,read_only
+heater_scorecard,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/heater_scorecard.csv,yes,admitted heater scalar,read_only
+cooler_hx_scorecard,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv,yes,admitted cooler/HX predictions,read_only

@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-07-13T13:03:44",
+  "task_id": "AGENT-272",
+  "additive_task_ids": [
+    "AGENT-273",
+    "AGENT-275"
+  ],
+  "latest_additive_task_id": "AGENT-275",
+  "input": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+  "output_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story",
+  "input_rows": 415,
+  "usable_rows": 345,
+  "screened_rows": 70,
+  "mainline_salt234_rows": 25,
+  "compact_salt234_rows": 3,
+  "presentation_salt234_rows": 27,
+  "usable_verdict_counts": {
+    "steady": 335,
+    "quasi-steady (bounded drift/oscillation)": 10
+  },
+  "screen_reason_counts": {
+    "not_uncertainty_usable_verdict:not steady (drifting)": 34,
+    "live_or_active_case:salt1_jin_hi10q_corrected": 9,
+    "live_or_active_case:salt1_jin_lo10q_corrected": 9,
+    "live_or_active_case:salt4_jin_hi10q_corrected": 9,
+    "live_or_active_case:2026-07-08_salt1_nominal_continuation_candidate": 9
+  },
+  "usable_group_counts": {
+    "mdot": 41,
+    "temperature": 252,
+    "wall_temperature": 42,
+    "heat": 10
+  },
+  "presentation_group_counts": {
+    "mdot": 3,
+    "T probe 0": 3,
+    "T probe 1": 3,
+    "T probe 2": 3,
+    "T probe 3": 3,
+    "T probe 4": 3,
+    "T probe 5": 3,
+    "wall T": 3,
+    "total_Q residual": 3
+  },
+  "mainline_case_slugs": [
+    "modern_runs__2026-06-18_convergence_and_jin_envelope_wave__salt2_jin__viscosity_screening_salt_test_2_jin_coarse_mesh_continuation",
+    "modern_runs__2026-06-18_convergence_and_jin_envelope_wave__salt3_jin__viscosity_screening_salt_test_3_jin_coarse_mesh_continuation",
+    "modern_runs__2026-06-18_convergence_and_jin_envelope_wave__salt4_jin__viscosity_screening_salt_test_4_jin_coarse_mesh_continuation"
+  ],
+  "live_case_substrings": [
+    "2026-07-08_salt1_nominal_continuation_candidate",
+    "salt1_jin_nominal_continuation_corrected",
+    "salt1_jin_lo10q_corrected",
+    "salt1_jin_hi10q_corrected",
+    "salt4_jin_hi10q_corrected"
+  ],
+  "presentation_total_q_policy": "Report total_Q residual in absolute W terms; avoid relative error because it is near zero.",
+  "paper_envelope_formula": "1.96*unc_sem_corrected + osc_rmse_about_trend + 0.5*abs(fit_slope*(t_end-t_start))"
+}

@@ -1,0 +1,43 @@
+{
+  "task": "TODO-THESIS-LATEX-EVIDENCE-PACKET-CH3-CFD-DATABASE-2026-07-22",
+  "task_id": "TODO-THESIS-LATEX-EVIDENCE-PACKET-CH3-CFD-DATABASE-2026-07-22",
+  "date": "2026-07-22",
+  "role": "cfd-pp / Writer / Reviewer / Integrator",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-LATEX-EVIDENCE-PACKET-CH3-CFD-DATABASE-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-latex-evidence-packet-ch3-cfd-database.md",
+    "imports/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/writer_brief.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/source_property_gate_todo.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/case_provenance_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/retained_window_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/qoi_dictionary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/postprocessing_method_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/native_source_path_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/figure_table_targets.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_packet_ch3_cfd_database/claim_boundary_table.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/**"
+  ],
+  "decision": "latex_ch3_cfd_database_staged_no_external_mutation",
+  "source_property_gate_status": "warning",
+  "source_property_gate_todo_rows": 4,
+  "external_fluid_edit": false,
+  "external_papers_edit": false,
+  "thesis_body_edit": false,
+  "raw_cfd_native_copy": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "runtime_forbidden_inputs_released": false,
+  "protected_score_claim": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxed": false
+}

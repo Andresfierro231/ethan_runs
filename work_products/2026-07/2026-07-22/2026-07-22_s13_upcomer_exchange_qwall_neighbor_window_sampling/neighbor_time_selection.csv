@@ -1,0 +1,4 @@
+case_id,target_time_window_s,target_minus_time_window_s,target_plus_time_window_s,target_minus_available,target_plus_available,stored_time_count,first_stored_time_s,last_stored_time_s
+salt_2,7915,7914,,true,false,67,0,7915
+salt_3,7618,7617,,true,false,66,0,7618
+salt_4,10000,9999,,true,false,74,0,10000

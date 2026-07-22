@@ -1,0 +1,7 @@
+metric_id,score_level,cases,observed_or_tested_value,interpretation,admission_status
+PERF-001,observed_decomposition, salt2;salt3;salt4,available residuals -1.25366731683 Pa; -1.84957005859 Pa; -1.67833900273 Pa,Observed pressure-basis decomposition explains gross static rise as hydrostatic dominated and leaves small signed residual,not_admitted
+PERF-002,salt2_frozen_diagnostic,salt2;salt3;salt4,max_abs_error_pa 0.47046606946166093438399,Salt2 diagnostic K_eff transfers to Salt3/Salt4 at sub-Pa residual scale without refitting,not_admitted
+PERF-003,salt2_frozen_diagnostic,salt4,max_abs_error_percent_gross_static 0.01550084787332213673792019733,Error is small relative to gross static rise but the gross rise is not the residual target,not_admitted
+PERF-004,oracle_envelope_nonpredictive,salt2;salt3;salt4,abs_error_pa 0 for all rows,Oracle row is an upper-bound explanation using row-local residual and cannot be predictive evidence,not_admitted
+PERF-005,split_consumption,salt2;salt3;salt4,validation_rows 0; holdout_rows 0; external_test_rows 0,No protected rows were consumed by the diagnostic scorecard,not_admitted
+PERF-006,forbidden_admission_check,salt2;salt3;salt4,component_K 0; cluster_K 0; F6 0; clipped_K 0; hidden_multiplier 0,All coefficient-admission and hidden-multiplier routes remain closed,not_admitted

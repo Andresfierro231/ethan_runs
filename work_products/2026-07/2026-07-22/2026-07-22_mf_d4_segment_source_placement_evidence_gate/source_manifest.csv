@@ -1,0 +1,9 @@
+path,used,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_scoreboard.csv,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/setup_known_source_contract.csv,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment/source_basis_coverage.csv,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/expected_q_loss_envelope.csv,True,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/residual_owner_matrix.csv,True,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/thermal_residual_ablation_table.csv,True,read_only

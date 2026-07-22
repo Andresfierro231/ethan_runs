@@ -1,0 +1,8 @@
+source_id,source_path,exists,source_role,mutation
+candidate_model_freeze.json,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_frozen_prediction_artifact/candidate_model_freeze.json,yes,frozen M2 model artifact,read_only
+train_row_predictions.csv,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_frozen_prediction_artifact/train_row_predictions.csv,yes,M2 train-row prediction status,read_only
+summary.json,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_salt1_support_closeout/summary.json,yes,Salt1 closeout score-ready gate,read_only
+holdout_exclusion_audit.csv,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv,yes,blind-row exclusion audit,read_only
+pm10_split_decisions.csv,work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_split_decisions.csv,yes,PM10 terminal split decisions,read_only
+corrected_q_pm5_split_admission_matrix.csv,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv,yes,PM5 admission package,read_only
+val_salt2_external_admission_decision.csv,work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_admission_decision.csv,yes,val_salt2 external admission package,read_only

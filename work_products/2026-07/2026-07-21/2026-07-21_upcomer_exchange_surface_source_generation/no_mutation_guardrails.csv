@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,pass_no_mutation,write only under task work-product package
+scheduler,not_submitted,generated scripts fail closed until geometry release conditions pass
+openfoam,blocked,no OpenFOAM launch without explicit surface geometry
+admission,blocked,"no fit, score, model selection, exchange-cell admission, Phase 4B/5/S6 trigger"
+residual_lane,pass,"energy residual and wall/source/sink terms remain explicit lanes, not internal Nu"

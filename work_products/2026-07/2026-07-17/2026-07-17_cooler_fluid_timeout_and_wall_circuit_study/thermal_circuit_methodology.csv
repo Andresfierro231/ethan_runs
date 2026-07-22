@@ -1,0 +1,5 @@
+item,method,do_not_do
+active_terms,Keep heater source and cooler/HX sink as explicit setup/admitted boundary terms.,Do not tune passive wall or Internal Nu to absorb cooler or heater residuals.
+passive_boundary_circuit,Represent passive loss as sum(hA_setup_by_role) times a Salt2-trained drive with predeclared heater-power scaling.,"Do not use realized wallHeatFlux, validation temperatures, or holdout losses at runtime."
+test_section_local_check,Score test-section separately because it sits inside the recirculating upcomer and can fail locally even if total passive loss passes.,Do not claim a local Nu/HTC fit from recirculating test-section evidence.
+admission_rule,Require static validation/holdout gates plus coupled Fluid mdot/TP/TW review before blocker closure.,Do not close predictive-wall-test-section-submodels from a static total-loss pass alone.

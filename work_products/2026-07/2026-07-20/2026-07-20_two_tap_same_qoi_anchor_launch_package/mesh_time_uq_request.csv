@@ -1,0 +1,4 @@
+requirement_id,current_evidence_status,request_status,minimum_acceptance,fit_use_before_pass
+same_label_same_formula_same_sign,blocked_current_rows_not_admissible,required_before_component_K_admission,"all QOIs use lower_leg__s04->right_leg__s00, static p, same sign convention",forbidden
+time_window_uq,missing_no_same_window_neighbors,required_before_component_K_admission,at least one same-label same-formula retained-window neighbor family per candidate row,forbidden
+mesh_uq,missing_no_GCI_not_same_qoi,required_before_component_K_admission,Salt2 coarse/medium/fine same-QOI family or explicit blocked mesh-UQ missing decision,forbidden

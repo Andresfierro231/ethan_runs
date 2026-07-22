@@ -1,0 +1,18 @@
+{
+  "task": "AGENT-560",
+  "date": "2026-07-20",
+  "decision": "staging_complete_no_launch_from_this_row",
+  "preferred_candidate_id": "CAND-001",
+  "preferred_source_family": "Salt4 high-heat/no-recirculation probes",
+  "current_corner_lower_right_rows_admitted": 0,
+  "current_corner_lower_right_status": "diagnostic_only_material_reverse_flow_component_isolation_failed_same_qoi_uq_missing",
+  "f6_fit_performed": false,
+  "component_k_admitted": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "solver_or_postprocessing_launched": "none",
+  "scientific_admission_change": "none",
+  "blocker_register_mutated": false,
+  "next_step": "A future staged-copy sampler row may use CAND-001 only after terminal high-heat source cases and fresh preflight. AGENT-560 itself launches nothing."
+}

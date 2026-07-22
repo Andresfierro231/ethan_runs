@@ -1,0 +1,11 @@
+qoi_id,qoi,required,source,protected_target,use
+Q01,mdot_model,true,model output,false,root/pressure sensitivity
+Q02,pressure_root_status,true,model diagnostic,false,finite bracket/root gate
+Q03,temperature_root_status,true,model diagnostic,false,finite coupled thermal gate
+Q04,TP_projection_predictions,true,post-solve projection,false,train-only predicted TP shifts; no observed TP runtime input
+Q05,TW_projection_predictions,true,post-solve projection,false,train-only predicted TW shifts; no observed TW runtime input
+Q06,heat_path_terms,true,conservative thermal ledger,false,heater/cooler/passive/radiation/wall/test-section term shifts
+Q07,segment_residual_R_s,true,conservative thermal ledger,false,residual owner output only
+Q08,residual_owner_label,true,post-solve classification,false,blocker pointer; not closure
+Q09,runtime_input_lint_status,true,execution validation,false,runtime legality pass/fail
+Q10,unsupported_variant_skip_reason,true,execution validation,false,radiation/material capability transparency

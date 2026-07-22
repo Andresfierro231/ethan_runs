@@ -1,0 +1,5 @@
+case_id,time_window_s,Q_wall_W,Q_wall_W_released,release_status,production_or_admission_allowed,reason
+salt_2,7915,23.1161370708,true,exact_target_window_Q_wall_W_released_with_tiny_ncc_patch_label_mismatch,false,exact target-window input released read-only; same-QOI UQ/production gate remains blocked
+salt_3,7618,25.3465488205,true,exact_target_window_Q_wall_W_released_with_tiny_ncc_patch_label_mismatch,false,exact target-window input released read-only; same-QOI UQ/production gate remains blocked
+salt_4,10000,28.1231837021,true,exact_target_window_Q_wall_W_released_with_tiny_ncc_patch_label_mismatch,false,exact target-window input released read-only; same-QOI UQ/production gate remains blocked
+source_side_equivalent,,Q_source_side_net_static_bc_W,false,source_side_path_executed_fail_closed_production_harvest_not_ready,false,source-side QOI must not be relabeled as Q_wall_W

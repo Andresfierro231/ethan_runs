@@ -1,0 +1,6 @@
+gate,status,pass,reason
+local_same_label_mesh_family_search,executed,true,"scanned local work_products/2026-07 and staging text artifacts for exact labels and mesh-level evidence; current coarse temporal rows are context, not mesh/GCI"
+strict_same_label_mesh_level_rows,blocked,false,0/12 qoi-by-mesh-level cells have strict rows
+same_label_mesh_gci_input,blocked_missing_complete_mesh_family,false,0/4 QOI labels have any admissible local mesh-level row
+scheduler_or_sampler_launch,forbidden,false,active row allows command contracts only; no compute launch from this task
+production_harvest_or_admission,do_not_run,false,"current coarse baseline exists, but medium/fine same-label rows remain absent"

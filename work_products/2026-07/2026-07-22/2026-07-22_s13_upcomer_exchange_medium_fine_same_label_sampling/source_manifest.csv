@@ -1,0 +1,7 @@
+path,use,mutation
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/same_label_mesh_family_generated_rows.csv,current-coarse exact S13 rows and prior fail-closed medium/fine gap,read-only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract/generation_contract.csv,"exact labels, sign convention, masks, required fields, and forbidden shortcuts",read-only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_case_rows.csv,target-minus/target/target-plus temporal UQ already completed for current coarse,read-only
+work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_postprocessing_family_coverage.csv,prior endpoint postProcessing/GCI coverage for medium/fine where present,read-only
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium,read-only medium mesh native source run inventory,read-only external source
+/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine,read-only fine mesh native source run inventory,read-only external source

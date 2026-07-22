@@ -1,0 +1,35 @@
+{
+  "closure_observations_updated": false,
+  "coarse_verdict_counts": {
+    "superseded_by_mainline": 2
+  },
+  "continuation_jobs_submitted": false,
+  "coverage_row_count": 54,
+  "gci_row_count": 18,
+  "generated_at": "2026-07-09T10:42:32-05:00",
+  "generated_files": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/coarse_reconciliation.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_full_history_monitor_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/endpoint_postprocessing_family_coverage.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/mesh_uq_readiness.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/gci_results.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/closure_observation_mesh_uq_handoff.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/README.md",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/summary.json"
+  ],
+  "input_catalog": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_case_catalog.csv",
+  "input_quality": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_quality_gate/mesh_quality_gate.csv",
+  "input_scenario_contract": "work_products/2026-07/2026-07-08/2026-07-08_cfd_scenario_contract/scenario_contract.csv",
+  "mesh_uq_status_counts": {
+    "blocked_coarse_superseded_by_mainline": 18,
+    "blocked_requires_mesh_level_extraction": 6
+  },
+  "monitor_row_count": 90,
+  "output_dir": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness",
+  "publication_ready_gci_rows": 0,
+  "readiness_row_count": 24,
+  "registry_updated": false,
+  "source_tree_read_only": true,
+  "staging_updated": false,
+  "task_id": "AGENT-231"
+}

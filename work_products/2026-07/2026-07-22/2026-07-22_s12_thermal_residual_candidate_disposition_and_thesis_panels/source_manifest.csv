@@ -1,0 +1,10 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/finite_train_metric_table.csv,S12-HIAX1 train-only finite metrics,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/s12_hiax1_train_score_gate.csv,S12-HIAX1 freeze gate blockers,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/residual_owner_matrix.csv,thermal residual ownership families,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/candidate_gate_decision.csv,overall thermal candidate gate,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/residual_quantification.csv,TW5/TW6 residual quantification,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/admission_gate_matrix.csv,S12-HIAX1 admission blockers,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/thermal_residual_ablation_table.csv,train-only ablation lane disposition,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/runtime_legality_matrix.csv,runtime legality and admission matrix,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/summary.json,N3 zero candidate-release decision,true,false,false

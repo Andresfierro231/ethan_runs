@@ -1,0 +1,5 @@
+path,role,exists,mutation
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/reverse_flow_topology_proxy.csv,reverse-flow topology proxy,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/s13_exchange_tau_proxy_table.csv,exchange tau proxy,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/recirculation_onset_metric_table.csv,onset metric context,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/summary.json,medium/fine mesh disposition context,true,read_only

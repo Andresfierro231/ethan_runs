@@ -1,0 +1,5 @@
+gate_order,gate_id,lane,entry_condition,pass_condition,allowed_next_step,blocked_action
+1,P-F6-001,ordinary_anchor,CAND-001 terminal source review passes and future staged-copy sampler row claims scope,finite endpoint fields plus aggregate_RAF < 0.01 and aggregate_RMF < 0.01,component-isolation and same-QOI UQ gate review,F6 fit; component-K admission
+2,P-F6-002,ordinary_anchor,ordinary-flow gate passes,clean component isolation and same-basis straight/development subtraction with unclipped nonnegative K_local,same-QOI mesh/time UQ audit,ordinary K promotion if apparent_cluster_only
+3,P-F6-003,ordinary_anchor,component-isolation gate passes,same-label/same-formula/same-sign mesh/time uncertainty exists or bounded missing decision is documented,ordinary two-tap K admission review,admission from borrowed GCI
+4,P-F6-004,recirculation_model,current or future high-reverse rows remain material-reverse-flow,recirculation-modeled pressure residual scored against F3_shah_apparent with source/property labels and no hidden multiplier,F6 recirculation-modeled review only,ordinary F6 fit from current corner_lower_right rows

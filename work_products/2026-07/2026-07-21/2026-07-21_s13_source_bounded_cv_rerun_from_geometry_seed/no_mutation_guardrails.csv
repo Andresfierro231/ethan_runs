@@ -1,0 +1,5 @@
+guard_id,status,policy
+native_outputs,pass,read existing work-product CSVs only
+surface_sampler_harvest,pass,"no surface extraction, sampler, or harvest launched"
+admission,pass,no coefficient admission or S11/S12/S13/S15/S6 trigger
+residual_internal_Nu,pass,no residual absorbed into internal Nu

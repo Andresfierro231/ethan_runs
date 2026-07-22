@@ -27,7 +27,16 @@ provenance:
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_cross_chapter_visual_ledger/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_ch6_ch7_polish_figtable_insertions/README.md
   - operational_notes/07-26/21/2026-07-21_THESIS_POST_S8_S10_EVIDENCE_AND_STUDY_REQUIREMENTS.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv
+  - work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/README.md
   - ../papers/UTexas_Research/3d_analysis/sections/04_salt_family_results.tex
   - ../papers/UTexas_Research/3d_analysis/sections/05_salt2_mechanism_results.tex
 tags: [thesis-section, current-section, csem, results, pressure, thermal, predictive-path]
@@ -53,7 +62,7 @@ negative results, and the M0-M6 predictive-model ladder. It cannot yet report
 final frozen predictive performance, ordinary component-K admission, F6
 recorrection, or admitted passive wall/test-section closure.
 
-This chapter supports CL-09 through CL-16 and CL-23 through CL-26.
+This chapter supports CL-09 through CL-16 and CL-23 through CL-27.
 
 ## Result Status Summary
 
@@ -72,6 +81,9 @@ This chapter supports CL-09 through CL-16 and CL-23 through CL-26.
 | S8 wall/test-section candidate review | Complete negative result. | Reports no admitted or S11-ready wall/test-section candidate from the current families. |
 | S9 upcomer onset/exchange review | Complete negative/diagnostic result. | Enriches recirculation validity and exchange-QOI requirements while releasing `0` S11-ready candidates. |
 | S10 pressure/F6 gate waterfall | Complete diagnostic figure/table package. | Shows ordered pressure/F6 gates with `0` admitted rows and no published component-K/F6 values. |
+| S13 upcomer exchange scaffold | Input-ready / heat-path fail-closed. | Converts the hybrid upcomer path into a seeded surface/sampling scaffold while preserving `0` sampler-ready and `0` admitted exchange rows. |
+| S14 pressure/F6 branch-use scorecard | Complete diagnostic non-admission. | Scores `53` rows and admits `0`; future ordinary lanes are narrowed to `right_leg` and `test_section_span`. |
+| F-J and Phase H/H2 thermal attribution | Complete train-only diagnostics. | Identifies heated-incline/TW5 and broad passive-wall sensitivity without repair, freeze, or admission. |
 | M0-M6 model-form ladder | Ready endpoint strategy. | Defines model progression and scorecard contract. |
 | Final frozen predictive score | Blocked. | State shell status only; no final scores. |
 
@@ -91,6 +103,9 @@ chapter before adding any new plots:
 | Pressure-basis result | `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv` | Ordered gate failure/non-admission with `0` admitted pressure rows. |
 | Wall/test-section negative result | `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/negative_or_admission_ready_summary.csv` | Falsification result with `0` admitted and `0` S11-ready candidates. |
 | Upcomer exchange negative result | `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/exchange_qoi_figure_contract.csv` | Exchange-QOI requirements and missing-anchor/UQ state; no ordinary upcomer closure admission. |
+| Matched upcomer visual result | `work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/composites/y_velocity_side_z_trimmed_composite_labeled.png` and `.../velocity_magnitude_side_z_trimmed_composite_labeled.png` | Four-case diagnostic visual comparison with shared velocity ranges; no ordinary upcomer or exchange-cell admission. |
+| Thermal attribution result | `work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv` | Train-only passive heat-loss attribution; broad physical-basis blocker before any repair. |
+| Pressure/F6 branch-use result | `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv` | Branch-use scorecard with `0` admitted rows; no F6 recorrection. |
 | Predictive-model path | `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/blocked_scorecard_visual_table.csv` | Blocked scorecard shell; `0` final score values. |
 
 ## CFD Transport Redistribution
@@ -165,6 +180,33 @@ K_eff_recirc = Delta_p_resid / q_ref
 This expression is a model-form contract and future scoring lane. It is not an
 admitted ordinary `component_K`.
 
+The updated negative-K package turns this into a positive thesis result. The
+current rows are no longer pursued as ordinary component-K evidence. They are
+reported as a clean non-admission result and as quantified
+section-effective residual evidence. The signed residuals after hydrostatic
+and kinetic correction are:
+
+| Case | Available signed residual | Diagnostic use |
+| --- | ---: | --- |
+| Salt2 | `-1.25366731683 Pa` | Salt2 train decomposition and frozen diagnostic source. |
+| Salt3 | `-1.84957005859 Pa` | Salt2-frozen transfer check target. |
+| Salt4 | `-1.67833900273 Pa` | Salt2-frozen transfer check target. |
+
+The no-fit bakeoff tests three levels: observed decomposition, Salt2-frozen
+diagnostic transfer, and an oracle upper bound. Only the Salt2-frozen row is a
+true transfer check, and it is still diagnostic. Its maximum Salt3/Salt4 error
+is `0.47046606946166093438399 Pa`; protected validation, holdout, and
+external-test rows consumed are `0/0/0`. The same package checks the available
+F3/Shah apparent baseline artifacts and finds no numeric comparison to make:
+the current F3/F6 status is `not_evaluated_no_ordinary_candidate` because no
+ordinary admissible F6 row exists.
+
+The result for this chapter is therefore precise. The hybrid route has enough
+evidence to explain why a section-effective pressure ledger is needed, but not
+enough evidence to freeze or admit a pressure closure. The thesis can claim
+model-form motivation and residual ownership. It cannot claim that the hybrid
+term beats F3/Shah, fixes F6, or supplies an ordinary component `K`.
+
 Use the S10 pressure/F6 gate-waterfall package as the table companion for this
 section. It reports `0` admitted pressure-loss rows, `0` component or cluster
 K values, `0` F6 fits, `0` clipped-K rows, and `0` hidden/global multipliers.
@@ -208,6 +250,44 @@ result table. If a residual atlas is later generated under the open S8 figure
 task, it can supplement this section, but the current thesis-ready claim is
 already complete: the reviewed candidate families do not supply an S11-ready
 closure.
+
+## Thermal Residual Attribution After Phase H/H2
+
+The external-boundary train-only diagnostics add a useful thermal result
+without admitting a repair. F-J recomputes the Salt2 train/support baseline and
+keeps it diagnostic: all-probe RMSE is `83.36187927489736 K`, TP RMSE is
+`80.4585733904668 K`, TW RMSE is `84.6486516564125 K`, mdot is
+`0.00626567502343775 kg/s`, and the dominant thermal residual owner is
+`heated_incline` with maximum absolute residual `109.09380824932663 K`.
+Validation, holdout, and external-test rows consumed are `0/0/0`, and Phase J
+records `blocked_no_repair_candidate`.
+
+Phase H then tests six train-only passive-boundary perturbations. The important
+result is not that a new passive `hA` coefficient has been found. The important
+result is the ownership pattern. Lower-leg passive `hA` halving improves TW5
+absolute residual by only `4.59310690807564 K`; doubling it worsens TW5 by
+`7.478576361192836 K`. In contrast, global passive `hA` halving improves TW5
+by `51.63369382647278 K` and all-probe MAE by `47.133590749185956 K`, while
+global doubling worsens TW5 by `27.638341480119664 K` and all-probe MAE by
+`28.155039906096434 K`. Ambient-drive perturbations are intermediate and still
+need setup provenance.
+
+H2 closes the writing interpretation: the signal is broad and physical-basis
+limited, not lower-leg-local and not admissible as a residual-fit multiplier.
+The predeclared next candidate is a passive-`hA` source-basis rebuild using
+independent setup, geometry, or literature support. It is not executed and not
+admitted. The thesis result is residual ownership plus a stricter repair gate:
+passive-wall/source uncertainty can explain a large part of the train residual,
+but no validation, holdout, external-test, freeze, or final-score claim is
+released.
+
+This is the thesis-useful result: the failure is diagnostic, not a dead end.
+Phase E establishes that the runtime path works but the thermal residual is
+large; Phase F, G, and I assign ownership and block leakage into inadmissible
+inputs; Phase H shows heat-path responsiveness while rejecting a global
+response as a fit. The next scientific uncertainty is therefore localized to
+external heat-path physical basis and missing source/sink or redistribution
+physics, not to another unguarded residual-absorption sweep.
 
 ## Predictive-Model Path
 
@@ -291,6 +371,26 @@ and thermal support, and same-QOI uncertainty. The completed S4 guard remains
 the ordinary-closure result: `90` ordinary single-stream candidates were
 reviewed and `0` ordinary upcomer `Nu/f_D/K` or exchange-cell rows were
 admitted.
+
+S14 strengthens the pressure/F6 result with a branch-use scorecard rather than
+a new coefficient. It scores `53` rows and admits `0`: `11` rows are
+diagnostic-only, `8` are future-candidate, and `34` are do-not-use. The current
+F6 endpoint pairs remain diagnostic-only, and pressure-corner rows remain
+section-effective or pressure-recovery diagnostics forbidden for F6 admission.
+The only preferred future ordinary-pressure lanes are `right_leg` and
+`test_section_span`, and they still require ordinary-flow and same-QOI UQ
+evidence before scoring release.
+
+S13 moves the upcomer exchange path from concept to scaffold. Salt2, Salt3,
+and Salt4 are `3/3` ready for later seeded surface extraction, with `38880`
+seeded CV cells, `38880` seeded internal interface faces, and `38880` trusted
+wall faces per case. The S13 heat-path lane release then fail-closes the
+current source-side step: `Q_wall_W`, source-side heat-path release,
+same-window thermal release, and sampler refresh/harvest/UQ release rows all
+remain `0`. The matched Salt `side_z` velocity-y and magnitude composites
+belong with this result. They provide four-case diagnostic visual evidence for
+upward-throughflow plus downward/reverse pockets under a common velocity range,
+but they do not admit ordinary upcomer coefficients or an exchange-cell model.
 
 ## Diagnostic Evidence Integration
 
@@ -383,6 +483,33 @@ modeling workflow is not a route to any available coefficient that improves a
 single metric. It is a provenance-controlled admission process that decides
 which terms are runtime-legal, which terms are diagnostic, which targets are
 score-only, and which closures require more evidence before prediction.
+
+## Writer Import Notes
+
+The Ch. 7 LaTeX writer should use
+`work_products/2026-07/2026-07-21/2026-07-21_thesis_post_study_writing_refresh/thesis_writer_handoff.md`
+as the import order. The highest-value main-text result artifacts are:
+
+- matched Salt upcomer velocity figure and explanation:
+  `work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/figures/velocity_magnitude_side_z_composite_labeled.png`
+  and
+  `work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_thesis_analysis.md`;
+- S8 wall/test-section negative result:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/negative_or_admission_ready_summary.csv`;
+- S10 pressure/F6 gate waterfall:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv`;
+- S14 pressure/F6 branch-use scorecard:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv`;
+- H2 passive heat-loss attribution:
+  `work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv`;
+- blocked scorecard shell:
+  `work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/blocked_scorecard_visual_table.csv`.
+
+The main explanation gaps are tracked in
+`work_products/2026-07/2026-07-21/2026-07-21_thesis_post_study_writing_refresh/analysis_explanation_gap_register.csv`.
+The writer should treat the pressure, thermal, and recirculation tables as
+negative or diagnostic results unless a later admission package explicitly
+changes their status.
 
 ## Blocked Claims That Must Stay Out Of Results Conclusions
 

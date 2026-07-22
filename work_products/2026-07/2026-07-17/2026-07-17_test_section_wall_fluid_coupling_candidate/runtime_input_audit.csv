@@ -1,0 +1,5 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_selected_source_dependency,pass,AGENT511 selection status: selected_from_salt2_only,Salt3/Salt4 fitting targets;validation/holdout temperatures
+R2_runtime_inputs,pass,"6 contracts use setup rows, AGENT511 Salt2 lambda, PB2 distribution, and Salt2 cooler alpha_UA",realized wallHeatFlux;CFD mdot;validation/holdout wall-shell temperature;validation/holdout outer-surface temperature;validation/holdout probe temperatures;imposed CFD cooler duty;realized test-section heat
+R3_series_coupling_scope,pass,6 series-coupled role rows; 0 misplaced rows,realized wallHeatFlux;CFD mdot;validation/holdout wall-shell temperature;validation/holdout outer-surface temperature;validation/holdout probe temperatures;imposed CFD cooler duty;realized test-section heat
+R4_coupled_execution,pass,Fluid rows run in this package,execution gate only

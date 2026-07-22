@@ -1,0 +1,5 @@
+gate,status,pass,evidence,consequence
+bulk_integral_partition_stability,diagnostic_pass,True,F_wall range=0.00202448621629; mean=0.13795119734,advance bulk-integral partition as the leading modeling direction
+cp_property_release,fail_closed,False,mf16_exact_field_release_ready_rows=0; s13_source_property_release_ready_rows=0,do not compute or admit same-basis energy residual yet
+exchange_proxy_mesh_stability,fail_closed,False,medium/fine mesh disposition showed mdot/tau/contrast proxy spread remains large,defer exchange-cell coefficient fitting
+predictive_1d_next_step,open_next_contract_only,True,bulk-integral partition is stable enough for a no-fit residual-complete follow-up,"next work should harvest/reconcile throughflow enthalpy and property basis, not fit coefficients"

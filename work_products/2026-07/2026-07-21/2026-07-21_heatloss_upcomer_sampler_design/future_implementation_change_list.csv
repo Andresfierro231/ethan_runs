@@ -1,0 +1,6 @@
+change_id,future_file,required_change,acceptance
+extractor_cli_schema_mode,tools/extract/sample_upcomer_convection_cell.py,add a schema/dry-run mode that prints expected outputs without writing case directories,unit tests can validate output headers without OpenFOAM
+volume_mask_support,tools/extract/sample_upcomer_convection_cell.py,add volume/cell input parsing for connected reverse-flow recirculation mask and V_recirc,missing cell volumes fail closed with recirculation_mask_status
+exchange_interface_flux,tools/extract/sample_upcomer_convection_cell.py,define main/cell interface and integrate conservative mdot_exchange with sign basis,tau_recirc is emitted only when V_recirc and mdot_exchange are both positive and same-window
+thermal_pressure_residuals,tools/extract/sample_upcomer_convection_cell.py,emit paired thermal state plus pressure and energy residual fields with source/status columns,residual fields remain diagnostic and cannot set internal Nu
+uq_and_runtime_guards,tools/extract/sample_upcomer_convection_cell.py,join same-QOI UQ status and emit runtime/admission guard columns,all rows default to fit_allowed_now=false and score_allowed_now=false

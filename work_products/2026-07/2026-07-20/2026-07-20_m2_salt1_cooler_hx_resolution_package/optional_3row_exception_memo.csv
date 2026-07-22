@@ -1,0 +1,2 @@
+exception_id,status,would_release_holdout_scoring,current_decision,guardrail
+M2_CORE_3ROW_SUPPORTED_SCORE_READY,available_policy_option_not_granted,yes_after_explicit_approval,not_granted,Salt1 remains unsupported context; no fitting/model selection changes; no automatic blind scoring

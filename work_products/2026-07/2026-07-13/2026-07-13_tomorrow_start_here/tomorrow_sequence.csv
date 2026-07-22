@@ -1,0 +1,9 @@
+step,action,acceptance,guardrail
+1,Run AGENTS startup and read .agent/BOARD.md,"Know active scopes before editing","Do not edit active AGENT-305/306/307 paths unless you own/close the row."
+2,Check corrected Salt-Q job 3293924,"sacct/squeue terminal or running state recorded","If still running leave it alone; do not submit a duplicate continuation."
+3,If 3293924 is terminal run corrected-Q terminal harvest/admission row,"Row-specific steady/admission verdicts exist for salt2_lo10q salt2_hi10q salt4_lo10q salt4_hi10q","Do not admit based on Slurm completion alone."
+4,Verify solve-case forward-v0 evidence remains complete,"comparison_summary.json still reports 6/6 pass and sacct 3293960 COMPLETED 0:0","Use solve_case rows as authoritative; fast_scan is a proxy only within documented deltas."
+5,Claim a bounded hydraulic H1 apply/test row,"Forward rerun tests H1_localized_named_loss_and_reset_bundle and reports mdot movement","Do not fit thermal terms or export one global friction multiplier."
+6,Only after hydraulic rerun consider final scorecard work,"TODO-PRED-ENDTOEND-SCORE has train validation holdout residual attribution","Do not call precursor rows final forward-v1 scores."
+7,Rebuild thermal gate from AGENT-305 coarse smoke only under its own row,"Thermal gate can classify sign review coarse triplets heat balance and downcomer policy explicitly","Do not use repaired UA HTC Nu as fit targets before admission."
+8,Use thesis dossier for human synthesis,"Weekly/thesis narrative points to current evidence paths","Do not rely on chat logs as provenance."

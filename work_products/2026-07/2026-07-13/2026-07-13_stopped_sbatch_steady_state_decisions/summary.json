@@ -1,0 +1,50 @@
+{
+  "date": "2026-07-13",
+  "task_id": "AGENT-280",
+  "purpose": "Backfill final-window numeric evidence for sbatch jobs/steps stopped or treated as complete during July 13 coordination.",
+  "documentation_gap": "Salt4 +10Q was documented as not steady with numeric final-window evidence, but Salt1 nominal, Salt1 -10Q, and Salt1 +10Q needed a consolidated final-window drift table.",
+  "cases": [
+    {
+      "case_id": "salt1_nominal",
+      "job_step": "3282992.0",
+      "window_s": [7284, 7884],
+      "decision": "steady enough for runtime stop; separate closure/admission context still required",
+      "max_mdot_relative_drift": 0.00000008014599964106622,
+      "total_Q_drift_W": 0.0,
+      "temperature_probe_max_abs_drift_K": 0.0,
+      "wall_temperature_probe_max_abs_drift_K": 0.0
+    },
+    {
+      "case_id": "salt1_lo10q",
+      "job_step": "3288671.0",
+      "window_s": [7416, 8016],
+      "decision": "steady enough for runtime stop; not promoted as Salt1 corrected-Q closure-fit priority",
+      "max_mdot_relative_drift": 0.00000033426779629341945,
+      "total_Q_drift_W": 0.0,
+      "temperature_probe_max_abs_drift_K": 0.0,
+      "wall_temperature_probe_max_abs_drift_K": 0.0
+    },
+    {
+      "case_id": "salt1_hi10q",
+      "job_step": "3288671.1",
+      "window_s": [4987, 5587],
+      "decision": "steady enough for runtime stop/freeing slot; not promoted as Salt1 corrected-Q closure-fit priority",
+      "max_mdot_relative_drift": 0.00000200574681549857,
+      "total_Q_drift_W": 0.0,
+      "temperature_probe_max_abs_drift_K": 0.0,
+      "wall_temperature_probe_max_abs_drift_K": 0.0
+    },
+    {
+      "case_id": "salt4_hi10q",
+      "job_step": "3288671.5",
+      "window_s": [12039, 12639],
+      "decision": "not steady; included in fresh packed job 3293441",
+      "max_mdot_relative_drift": 0.006269487851352633,
+      "total_Q_drift_W": -1.5909899999999997,
+      "temperature_probe_max_abs_drift_K": 1.4510510000000068,
+      "wall_temperature_probe_max_abs_drift_K": 1.5295360000000073
+    }
+  ],
+  "future_documentation_rule": "Any user-approved sbatch cancellation, early stop, or ready-to-postprocess steady-state stop must document Slurm ID, case path, final-window time bounds, mean/latest/drift/span for key mdot monitors and total_Q where available, max temperature and wall-temperature probe drift where available, and a clear steady/not-steady/admission decision.",
+  "native_solver_outputs_mutated": false
+}

@@ -1,0 +1,9 @@
+guardrail,status
+code_edits,none
+native_output_mutation,none
+registry_or_admission_mutation,none
+scheduler_action,none
+fluid_or_external_edit,none
+fitting_or_tuning,none
+candidate_admission,none
+generated_index_refresh,none

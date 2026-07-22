@@ -1,0 +1,10 @@
+guardrail,mutated
+native_solver_outputs,False
+registry_or_admission_state,False
+scheduler_or_solver_run,False
+Fluid_or_external_repo,False
+thesis_current_or_latex,False
+source_property_release,False
+Qwall_release,False
+repair_run_or_candidate_freeze,False
+protected_scoring_or_model_selection,False

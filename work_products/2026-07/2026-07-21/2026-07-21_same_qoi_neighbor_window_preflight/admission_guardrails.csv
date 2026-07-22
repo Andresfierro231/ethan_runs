@@ -1,0 +1,5 @@
+guard_id,status,policy
+native_outputs,read_only,no CFD/OpenFOAM output mutation or sampling launch
+admission,blocked,accepted requires neighboring-window evidence plus same-QOI mesh/GCI plus source readiness
+mesh_gci,no_invention,carry existing mesh/GCI status only; do not infer a GCI from unrelated rows
+basis,same_qoi_only,do not promote mixed label/formula/sign or proxy rows

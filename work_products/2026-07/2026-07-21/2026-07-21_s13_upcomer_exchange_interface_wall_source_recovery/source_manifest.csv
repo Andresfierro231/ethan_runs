@@ -1,0 +1,16 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_s13_upcomer_exchange_interface_wall_source_recovery.py,task_output,true,false,true
+tools/extract/test_s13_upcomer_exchange_interface_wall_source_recovery.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/topology_cv_case_summary.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/face_connected_component_summary.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/boundary_escape_by_patch.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/exchange_interface_topology_contract.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/wall_core_topology_contract.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/interface_geometry_contract.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/wall_core_band_contract.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction/surface_input_disposition.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction/normal_vector_provenance.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/s13_readiness_gate.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/qoi_release_decision.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_interface_wall_source_recovery,task_output,true,false,false

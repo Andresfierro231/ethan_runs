@@ -1,0 +1,8 @@
+audit_id,gate,input_family,runtime_or_fit_use,source_path
+m2_setup_inputs_only,pass,geometry;property lane;setup heater/cooler metadata;ambient/radiation setup inputs,allowed,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/candidate_model_terms.csv
+admitted_boundary_terms_only,pass,heater and cooler/HX admitted scorecard terms,allowed,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/heater_scorecard.csv;work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv
+forbidden_cfd_targets,pass,CFD mdot; realized CFD wallHeatFlux; pressure losses; validation temperatures,forbidden,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/candidate_model_terms.csv
+exclude_pm5,pass,PM5,excluded_from_fit_model_selection_and_scoring_in_this_artifact,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv
+exclude_pm10,pass,PM10,excluded_from_fit_model_selection_and_scoring_in_this_artifact,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv
+exclude_val_salt2,pass,val_salt2,excluded_from_fit_model_selection_and_scoring_in_this_artifact,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv
+exclude_new_cfd,pass,new-CFD,excluded_from_fit_model_selection_and_scoring_in_this_artifact,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv

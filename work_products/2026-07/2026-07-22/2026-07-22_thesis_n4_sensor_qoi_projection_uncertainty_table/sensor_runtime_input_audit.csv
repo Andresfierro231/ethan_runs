@@ -1,0 +1,18 @@
+sensor,runtime_temperature_allowed,fit_allowed,model_selection_allowed,reason
+TP1,false,false,false,score-only policy; temperature is not a runtime input
+TP2,false,false,false,score-only policy; temperature is not a runtime input
+TP3,false,false,false,score-only policy; temperature is not a runtime input
+TP4,false,false,false,score-only policy; temperature is not a runtime input
+TP5,false,false,false,score-only policy; temperature is not a runtime input
+TP6,false,false,false,score-only policy; temperature is not a runtime input
+TW1,false,false,false,score-only policy; temperature is not a runtime input
+TW2,false,false,false,score-only policy; temperature is not a runtime input
+TW3,false,false,false,score-only policy; temperature is not a runtime input
+TW4,false,false,false,score-only policy; temperature is not a runtime input
+TW5,false,false,false,score-only policy; temperature is not a runtime input
+TW6,false,false,false,score-only policy; temperature is not a runtime input
+TW7,false,false,false,score-only policy; temperature is not a runtime input
+TW8,false,false,false,score-only policy; temperature is not a runtime input
+TW9,false,false,false,score-only policy; temperature is not a runtime input
+TW10,false,false,false,score-only policy; temperature is not a runtime input
+TW11,false,false,false,score-only policy; temperature is not a runtime input

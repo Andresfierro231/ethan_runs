@@ -1,0 +1,111 @@
+{
+  "task": "TODO-S13-RIGHT-LEG-GEOMETRY-SEED-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / cfd-pp / Implementer / Tester / Writer",
+  "status": "complete_released_geometry_seed_for_source_bounded_rerun",
+  "objective": "Build a predeclared geometry-backed right-leg/upcomer seed from trusted wall patches and decide whether it is ready for a later source-bounded CV rerun.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-RIGHT-LEG-GEOMETRY-SEED-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-right-leg-geometry-seed.md",
+    "imports/2026-07-21_s13_right_leg_geometry_seed.json",
+    "tools/extract/build_s13_right_leg_geometry_seed.py",
+    "tools/extract/test_s13_right_leg_geometry_seed.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_case_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_cells.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_face_lanes.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_patch_classification.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/geometry_seed_surface_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/downstream_release_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/reverse_flow_occupancy_diagnostics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/reverse_occupancy_diagnostics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/source_bounded_rerun_readiness.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/s12_unlock_impact.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/masks/salt_2_right_leg_geometry_seed_cells.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/masks/salt_3_right_leg_geometry_seed_cells.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/masks/salt_4_right_leg_geometry_seed_cells.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_roi_patch_alignment_audit",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_diagnostic_roi_average_bridge",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh"
+  ],
+  "summary": {
+    "case_count": 3,
+    "geometry_seed_ready_case_count": 3,
+    "geometry_seed_ready_for_source_bounded_rerun": true,
+    "surface_extraction_allowed": false,
+    "sampler_or_harvest_allowed": false,
+    "s12_hiax1_unlocked": false,
+    "seed_cell_count_per_case": 38880,
+    "trusted_wall_area_m2_per_case": 0.063435001093,
+    "internal_interface_area_m2_per_case": 0.0623473180949,
+    "escape_face_count_per_case": 0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launch": false,
+  "surface_vtk_extraction_launched": false,
+  "sampler_or_harvest_launch": false,
+  "external_fluid_edit": false,
+  "fluid_source_edit": false,
+  "external_repo_edit": false,
+  "admission_or_score_changed": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "solver_or_postprocessing_or_sampler_launched": false,
+    "surface_vtk_extraction_launched": false,
+    "fluid_or_external_repo_edited": false,
+    "fitting_or_model_selection": false,
+    "threshold_relaxation": false,
+    "exchange_cell_coefficient_admission": false,
+    "s12_or_s11_or_s15_or_s6_trigger": false,
+    "residual_absorbed_into_internal_Nu": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/extract/build_s13_right_leg_geometry_seed.py tools/extract/test_s13_right_leg_geometry_seed.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.extract.test_s13_right_leg_geometry_seed",
+      "result": "passed: Ran 5 tests OK"
+    },
+    {
+      "command": "python3.11 tools/extract/build_s13_right_leg_geometry_seed.py",
+      "result": "passed; geometry_seed_ready_case_count=3; geometry_seed_ready_for_source_bounded_rerun=true"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "This package only permits a later source-bounded CV rerun.",
+    "Do not launch surface extraction, sampler refresh, harvest, same-QOI UQ, or S12 implementation from this row.",
+    "Reverse-flow occupancy is diagnostic only and has no selection authority."
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "admission_rows": 6,
+  "admission_status_counts": {
+    "holdout_diagnostic_only_not_fit_admitted": 6
+  },
+  "field_validation_rows": 6,
+  "fit_admitted_rows": 0,
+  "generated_at_utc": "2026-07-17T13:07:28.589804+00:00",
+  "holdout_only_rows": 6,
+  "metric_rows": 6,
+  "old_broken_pm5_script_relaunched": "no",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair",
+  "repair_decision_rows": 2,
+  "runtime_leakage_audit_rows": 4,
+  "salt2_pm5_extraction_repaired": "yes",
+  "staged_copy_postprocessing_needed": "no",
+  "task": "AGENT-486"
+}

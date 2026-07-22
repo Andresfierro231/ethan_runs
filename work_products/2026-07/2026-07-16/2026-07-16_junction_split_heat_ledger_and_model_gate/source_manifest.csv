@@ -1,0 +1,10 @@
+source_type,path,use
+agent462_heat_audit,work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/cfd_heat_audit_by_run.csv,aggregate realized heat audit
+agent462_heat_coverage,work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_coverage_by_pressure_case.csv,pressure case coverage list
+external_bc_patch_contract,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_patch_contract.csv,patch-level junction heat and setup metadata
+wall_shell_temperatures,work_products/2026-07/2026-07-13/2026-07-13_wall_shell_temperature_sampling/patch_wall_shell_temperatures.csv,patch-level wall temperature proxies
+pressure_admission_summary,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/case_pressure_ladder_admission_summary.csv,pressure fit admission state
+pressure_admission_branch,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv,recirculation/orientation/straight-loss status
+heat_ledger_status,work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/heat_loss_ledger_status.csv,missing/promotable heat ledger status
+salt1_role_summary,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_bc_role_summary.csv,Salt1 BC metadata status
+salt1_patch_bc,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_patch_bc_role_table.csv,Salt1 patch names and setup metadata

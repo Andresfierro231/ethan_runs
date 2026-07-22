@@ -1,0 +1,16 @@
+{
+  "task": "TODO-S13-RIGHT-LEG-GEOMETRY-SEED-2026-07-21",
+  "generated_at": "2026-07-21T19:07:41-05:00",
+  "decision": "released_geometry_seed_ready_for_source_bounded_rerun",
+  "case_count": 3,
+  "geometry_seed_ready_case_count": 3,
+  "geometry_seed_ready_for_source_bounded_rerun": true,
+  "surface_extraction_allowed": false,
+  "sampler_or_harvest_allowed": false,
+  "s12_hiax1_unlocked": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "reverse_flow_selection_authority": "diagnostic_only",
+  "next_action": "claim source-bounded CV rerun row using geometry seed"
+}

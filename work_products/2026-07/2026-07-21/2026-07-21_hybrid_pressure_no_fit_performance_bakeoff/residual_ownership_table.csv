@@ -1,0 +1,6 @@
+owner,evidence,value_summary,ownership_status,allowed_use,forbidden_use
+hydrostatic_head,hydrostatic_fraction_of_gross approximately 1.0 for all rows,1.00042714667;1.00062952219;1.00058529497,dominant_gross_static_pressure_owner,basis_decomposition,component_K_or_F6_fit
+kinetic_correction,finite same-endpoint kinetic term is retained separately,-0.0571248231704;-0.0723324614108;-0.0980891272662,small_separate_basis_term,basis_decomposition,hide_inside_K
+straight_developing_reference,same-basis straight/developing correction is missing,blocked_missing_same_basis_reference,blocks_ordinary_component_K,admission_gate,infer_irreversible_component_loss
+recirculating_section_residual,available signed residual after hydrostatic and kinetic correction,-1.25366731683;-1.84957005859;-1.67833900273,section_effective_diagnostic,Delta_p_recirc_section thesis evidence,component_K;cluster_K;F6;clipped_K;hidden_multiplier
+gross_static_pressure_rise,gross static rise is about 3 kPa but not a loss coefficient target,3068.71676838;3052.95434711;3035.09893979,not_target_for_K,context_for_hydrostatic_dominance,normalize_as_local_loss

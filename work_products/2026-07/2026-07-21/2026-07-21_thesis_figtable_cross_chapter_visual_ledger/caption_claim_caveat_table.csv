@@ -1,0 +1,17 @@
+ledger_id,caption_seed,claim_boundary,required_caveat
+CVL-CH3-001,Salt 2 CFD heat-loss redistribution used as high-fidelity reference evidence.,CFD diagnostic evidence only,Do not convert grouped heat loss into an admitted local wall closure.
+CVL-CH3-002,Salt 4 CFD heat-loss redistribution used as high-fidelity reference evidence.,CFD diagnostic evidence only,Do not generalize to Water or to unreviewed Salt cases.
+CVL-CH3-003,Salt-family case matrix and retained-window provenance.,Evidence database provenance,Preserve retained-window and promotion-state labels.
+CVL-CH5-001,Steady fluid+walls loop-region atlas with segment-local model lanes.,Model architecture,Slot presence does not mean coefficient admission.
+CVL-CH5-002,Segment-local ledger separating pressure and thermal source terms from admission state.,Method/admission architecture,Targets and residuals are not runtime inputs.
+CVL-CH5-003,Throughflow-plus-recirculation architecture for upcomer validity limits.,Recirculation validity boundary,No ordinary upcomer Nu/f_D/K admission.
+CVL-CH6-001,Master thesis claim ledger linking evidence class split role uncertainty and admission state.,Claim-control table,Do not introduce uncrosswalked claims.
+CVL-CH6-002,TP/TW score-only sensor policy from S7.,Runtime-leakage control,TP/TW temperatures are outputs only.
+CVL-CH6-003,Split-role scorecard shell from S6.,Scorecard contract,0 final score values is the current rigorous state.
+CVL-CH7-001,Junction-aware versus segment-only heat and pressure ownership schematic.,Residual-owner evidence,val_salt2 remains external-test evidence.
+CVL-CH7-002,M0-M6 predictive-model ladder.,Endpoint strategy,M6 is not scored.
+CVL-CH7-003,S8 wall/test-section candidate falsification summary.,Negative result,0 admitted and 0 S11-ready candidates; no closure admission.
+CVL-CH7-004,S0-S11 gate flow for blocked final-scorecard path.,Release-gate result,Do not show protected-row scores before freeze.
+CVL-CH7-005,Pressure/F6 gate waterfall after same-QOI and anchor evidence.,Trigger-gated pressure result,Do not imply component K or F6 admission from diagnostic rows.
+CVL-CH8-001,SAM-facing closure/admission workflow transfer.,SAM/CSEM relevance,No SAM validation claim.
+CVL-CH8-002,Future-work trigger table for S9 S10 S11 and S6 thaw.,Limitations and future work,Triggers are required before final-result claims.

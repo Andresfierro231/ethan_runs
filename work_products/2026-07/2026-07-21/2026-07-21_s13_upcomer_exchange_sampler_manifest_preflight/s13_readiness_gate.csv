@@ -1,0 +1,4 @@
+case_id,time_window_s,cell_vtk_ready,volume_csv_ready,exchange_interface_ready,wall_core_ready,normals_ready,q_wall_ready,source_sink_release_ready,same_window_thermal_ready,same_qoi_uq_ready,sampler_ready,production_harvest_allowed,blocking_inputs
+salt_2,7915,true,true,false,false,false,false,false,false,false,false,false,exchange_interface_vtk;wall_vtk;normals;Q_wall_W;source_sink_release;same_window_thermal_fields;same_qoi_uq;production_harvest_readiness
+salt_3,7618,true,true,false,false,false,false,false,false,false,false,false,exchange_interface_vtk;wall_vtk;normals;Q_wall_W;source_sink_release;same_window_thermal_fields;same_qoi_uq;production_harvest_readiness
+salt_4,10000,true,true,false,false,false,false,false,false,false,false,false,exchange_interface_vtk;wall_vtk;normals;Q_wall_W;source_sink_release;same_window_thermal_fields;same_qoi_uq;production_harvest_readiness

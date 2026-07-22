@@ -1,0 +1,31 @@
+case_id,time_window_s,gate,source_field_or_property,input_contract_status,diagnostic_ready,production_ready,blocks_production,required_next_action
+salt_2,7915,interface_U,U,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_2,7915,interface_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_2,7915,interface_rho,rho,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_2,7915,wall_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_2,7915,core_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_2,7915,Q_wall_W,wallHeatFlux,blocked_missing_wallHeatFlux_Q_wall,false,false,true,use exact pressure and trusted-wall heat-flux compute row before release
+salt_2,7915,pressure,p_or_p_rgh,blocked_missing_pressure_basis,false,false,true,consume exact pressure compute row after terminal closeout
+salt_2,7915,viscosity,mu_or_nu,blocked_missing_mu_or_nu_basis,false,false,true,release property basis with source/property labels
+salt_2,7915,cp,cp,blocked_missing_source_property_release,false,false,true,release cp basis with source/property labels
+salt_2,7915,same_qoi_uq,same_qoi_uq,blocked_missing_neighbor_window_and_mesh_gci,false,false,true,run same-label neighbor-window and mesh/GCI UQ after exact QOI contract
+salt_3,7618,interface_U,U,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_3,7618,interface_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_3,7618,interface_rho,rho,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_3,7618,wall_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_3,7618,core_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_3,7618,Q_wall_W,wallHeatFlux,blocked_missing_wallHeatFlux_Q_wall,false,false,true,use exact pressure and trusted-wall heat-flux compute row before release
+salt_3,7618,pressure,p_or_p_rgh,blocked_missing_pressure_basis,false,false,true,consume exact pressure compute row after terminal closeout
+salt_3,7618,viscosity,mu_or_nu,blocked_missing_mu_or_nu_basis,false,false,true,release property basis with source/property labels
+salt_3,7618,cp,cp,blocked_missing_source_property_release,false,false,true,release cp basis with source/property labels
+salt_3,7618,same_qoi_uq,same_qoi_uq,blocked_missing_neighbor_window_and_mesh_gci,false,false,true,run same-label neighbor-window and mesh/GCI UQ after exact QOI contract
+salt_4,10000,interface_U,U,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_4,10000,interface_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_4,10000,interface_rho,rho,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_4,10000,wall_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_4,10000,core_T,T,geometry_ready_whole_mesh_field_present_surface_sampling_not_run,true,false,false,keep as diagnostic evidence and preserve source path
+salt_4,10000,Q_wall_W,wallHeatFlux,blocked_missing_wallHeatFlux_Q_wall,false,false,true,use exact pressure and trusted-wall heat-flux compute row before release
+salt_4,10000,pressure,p_or_p_rgh,blocked_missing_pressure_basis,false,false,true,consume exact pressure compute row after terminal closeout
+salt_4,10000,viscosity,mu_or_nu,blocked_missing_mu_or_nu_basis,false,false,true,release property basis with source/property labels
+salt_4,10000,cp,cp,blocked_missing_source_property_release,false,false,true,release cp basis with source/property labels
+salt_4,10000,same_qoi_uq,same_qoi_uq,blocked_missing_neighbor_window_and_mesh_gci,false,false,true,run same-label neighbor-window and mesh/GCI UQ after exact QOI contract

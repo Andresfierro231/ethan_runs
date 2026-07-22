@@ -1,0 +1,4 @@
+case_id,surface_extraction_allowed,sampler_preflight_rerun_allowed,production_harvest_allowed,same_window_uq_release_allowed,s11_candidate_review_allowed,blocker_chain,next_action
+salt_2,false,false,false,false,false,topology_cv_not_released -> interface/wall/source_not_released -> sampler_not_ready -> no_harvest -> no_same_QOI_UQ -> no_S11,release_face_closed_recirc_cv_before_rerunning_surface_or_sampler_rows
+salt_3,false,false,false,false,false,topology_cv_not_released -> interface/wall/source_not_released -> sampler_not_ready -> no_harvest -> no_same_QOI_UQ -> no_S11,release_face_closed_recirc_cv_before_rerunning_surface_or_sampler_rows
+salt_4,false,false,false,false,false,topology_cv_not_released -> interface/wall/source_not_released -> sampler_not_ready -> no_harvest -> no_same_QOI_UQ -> no_S11,release_face_closed_recirc_cv_before_rerunning_surface_or_sampler_rows

@@ -1,0 +1,4 @@
+artifact,path,numeric_token_count,finite_count,nonfinite_count,plausible_250_1500K_count,implausible_finite_count,first_nonfinite_line,first_nonfinite_token,diagnosis
+source_medium,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh/processors64/518/T,10410605,10410605,0,8628511,,,,native/decomposed source T scanned finite by AGENT-248
+source_fine,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh/processors128/399/T,30225749,30225749,0,26343706,,,,native/decomposed source T scanned finite by AGENT-248
+agent245_reconstructed_medium,work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/recon/medium/518/T,10082195,10082190,5,8380031,1702159,6825807,-nan,serial reconstructed T is syntactically/physically corrupt

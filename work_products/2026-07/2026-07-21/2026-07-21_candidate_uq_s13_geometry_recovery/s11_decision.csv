@@ -1,0 +1,2 @@
+decision_id,candidate_count_reviewed,runtime_legal_candidate_count,same_qoi_uq_admitted_count,source_property_split_pass_count,s11_status,s11_claim_allowed,decision_reason,next_action
+candidate_scoped_S11_gate,6,0,0,0,blocked,false,"no S12/S13/S14 leading candidate has finite QOI evidence plus source/property, split, and same-QOI UQ gates",advance S13 geometry/source and S14 terminal/source readiness before rerunning candidate-scoped UQ admission

@@ -1,0 +1,6 @@
+runtime_item,allowed
+CFD mdot,false
+realized wallHeatFlux/Qwall,false
+validation/holdout/external TP/TW,false
+row-local pressure/heat target,false
+source/property value release,false

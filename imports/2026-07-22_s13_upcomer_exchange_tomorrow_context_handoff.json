@@ -1,0 +1,63 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-TOMORROW-CONTEXT-HANDOFF-2026-07-22",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-TOMORROW-CONTEXT-HANDOFF-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Writer / Reviewer",
+  "summary": "Documented S13 upcomer-exchange current context, progress, blockers, open-first files, guardrails, and tomorrow's next task order.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-TOMORROW-CONTEXT-HANDOFF-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-upcomer-exchange-tomorrow-context-handoff.md",
+    "imports/2026-07-22_s13_upcomer_exchange_tomorrow_context_handoff.json",
+    "operational_notes/07-26/22/2026-07-22_S13_UPCOMER_EXCHANGE_TOMORROW_CONTEXT_HANDOFF.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files",
+    "thesis current files"
+  ],
+  "outputs": {
+    "operational_note": "operational_notes/07-26/22/2026-07-22_S13_UPCOMER_EXCHANGE_TOMORROW_CONTEXT_HANDOFF.md",
+    "status": ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-TOMORROW-CONTEXT-HANDOFF-2026-07-22.md",
+    "journal": ".agent/journal/2026-07-22/s13-upcomer-exchange-tomorrow-context-handoff.md"
+  },
+  "decision": "handoff_complete_no_science_mutation",
+  "current_best_next_task": "TODO-S13-UPCOMER-EXCHANGE-QWALL-SAME-QOI-NEIGHBOR-UQ-EXECUTION-2026-07-22",
+  "exact_qwall_ready_rows": 3,
+  "exact_pressure_basis_ready_rows": 3,
+  "same_qoi_uq_ready_rows": 0,
+  "production_ready_rows": 0,
+  "production_harvest_allowed": false,
+  "admission_allowed": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "solver_postprocessing_sampler_harvest_or_uq_launched": false,
+  "source_property_release": false,
+  "source_side_relabel_as_Q_wall": false,
+  "coefficient_admission_allowed": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": true,
+  "residual_absorbed_into_internal_nu": false,
+  "validation": [
+    "python3.11 -m json.tool imports/2026-07-22_s13_upcomer_exchange_tomorrow_context_handoff.json",
+    "python3.11 tools/docs/build_repo_index.py",
+    "python3.11 tools/docs/build_repo_index.py --check",
+    "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-TOMORROW-CONTEXT-HANDOFF-2026-07-22"
+  ],
+  "no_scorecard_outputs": true
+}

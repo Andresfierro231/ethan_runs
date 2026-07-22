@@ -1,0 +1,3 @@
+script_id,path,purpose
+runner,work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/scripts/run_pressure_ladder.sh,preflight/stage/reconstruct/sample/harvest all station planes
+sbatch,work_products/2026-07/2026-07-15/2026-07-15_pressure_ladder_unlock_sbatch/scripts/submit_pressure_ladder.sbatch,submit pressure ladder extraction to Slurm

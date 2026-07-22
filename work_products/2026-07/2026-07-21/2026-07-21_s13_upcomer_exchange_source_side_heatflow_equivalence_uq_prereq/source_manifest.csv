@@ -1,0 +1,8 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/production_readiness_table.csv,source-side readiness and current blockers,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/same_qoi_uq_prerequisite_table.csv,existing same-QOI prerequisite rows,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv,q_source/q_sink/q_net retained-window context,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv,sampled retained-window temperature and exchange context,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/qwall_contract.csv,Q_wall versus source-side distinction,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk/sign_cp_convention_contract.csv,sign and cp release status,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/qoi_release_decision.csv,same-window UQ design status,True,false,false

@@ -1,0 +1,11 @@
+guardrail,status,evidence
+new_validation_scoring,false,Read-only audit only
+new_holdout_scoring,false,Read-only audit only
+external_test_scoring,false,Read-only audit only
+fitting_or_model_selection,false,No model selection performed
+runtime_temperature_release,false,No runtime temperature release
+source_property_release,false,No source/property release
+coefficient_admission,false,No coefficient admission
+native_output_or_registry_mutation,false,Only published compact artifacts were read
+scheduler_action,false,No scheduler action
+residual_absorbed_into_internal_Nu,false,TW residual owner separation preserved

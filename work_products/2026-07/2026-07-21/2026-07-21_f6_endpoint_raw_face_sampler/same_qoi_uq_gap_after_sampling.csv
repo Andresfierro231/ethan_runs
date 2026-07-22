@@ -1,0 +1,4 @@
+gap_id,qoi,current_status,required_next,admission_effect
+F6-UQ-001,same_qoi_time_uq,blocked_pending_stage_a_raw_face_samples,sample retained/neighbor windows using identical endpoint labels and formulas,blocks_F6_fit
+F6-UQ-002,same_qoi_mesh_uq,diagnostic_only_salt2_medium_fine_available_but_GCI_not_accepted,declare mesh ratios/provenance and run accepted GCI after raw face sampling,blocks_F6_fit
+F6-UQ-003,coarse_cross_case_faces,blocked_source_path_repair_required,repair Salt2/Salt3/Salt4 coarse source paths or stage from known reconstructed cases,blocks_cross_case_F6_evidence

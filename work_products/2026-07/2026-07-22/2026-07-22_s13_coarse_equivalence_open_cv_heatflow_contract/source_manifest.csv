@@ -1,0 +1,6 @@
+artifact,path,role,mutation_status
+medium_fine_mesh_gci_disposition,work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/summary.json,controls medium/fine diagnostic result,read_only
+current_coarse_generated_rows,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/same_label_mesh_family_generated_rows.csv,candidate current-coarse rows and formulas,read_only
+mesh_level_preflight,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/qoi_mesh_level_preflight_matrix.csv,strict same-label mesh-level admission status,read_only
+source_side_qoi_contract,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/source_side_qoi_contract.csv,distinct source-side heat-flow label contract,read_only
+heat_flow_match_diagnostics,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/heat_flow_match_diagnostics.csv,Qwall/source-side mismatch and cp-scale diagnostics,read_only

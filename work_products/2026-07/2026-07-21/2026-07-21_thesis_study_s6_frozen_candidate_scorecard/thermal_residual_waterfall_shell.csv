@@ -1,0 +1,4 @@
+waterfall_id,component,source_status,score_value,admission_status,next_action,source_paths
+thermal_residual_shell,external_convection_and_radiation,radiation_capability_sensitivity_only,,not_admitted,consume radiation capability only after runtime-legal frozen candidate exists,work_products/2026-07/2026-07-21/2026-07-21_1d_radiation_capability/summary.json
+thermal_residual_shell,wall_test_section_passive_loss,negative_heatloss_freeze_no_candidate_admitted,,not_admitted,resolve wall/test-section candidate gates before final freeze,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/negative_freeze_decision.csv
+thermal_residual_shell,upcomer_exchange_or_internal_Nu,ordinary_internal_Nu_reopen_forbidden_by_S4,,not_admitted,wait terminal exchange evidence then review throughflow/exchange-cell source family separately,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json

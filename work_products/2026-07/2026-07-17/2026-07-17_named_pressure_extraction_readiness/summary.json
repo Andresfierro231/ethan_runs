@@ -1,0 +1,21 @@
+{
+  "branch_or_straight_extraction_required_rows": 6,
+  "component_or_cluster_extraction_required_rows": 3,
+  "date": "2026-07-17",
+  "diagnostic_or_section_effective_rows": 24,
+  "external_fluid_edit": "none",
+  "fit_ready_rows": 0,
+  "generated_at_utc": "2026-07-17T21:25:07+00:00",
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "named_pressure_rows": 33,
+  "native_output_mutation": "none",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness",
+  "production_closure": "F3_shah_apparent",
+  "queue_rows": 5,
+  "registry_mutation": "none",
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "source_rows": 10,
+  "summary_rows": 8,
+  "task": "AGENT-523"
+}

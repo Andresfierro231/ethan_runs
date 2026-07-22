@@ -1,0 +1,3 @@
+script_path,script_role,auto_submit,guardrail
+work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/run_stage_a_f6_endpoint_sampler.sh,stage_a_staged_copy_sampler,false,do not run on login node; submit only from a future scheduler-authorized row
+work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler/scripts/submit_stage_a_f6_endpoint_sampler.sbatch,future_compute_node_submission_template,false,not submitted by this task

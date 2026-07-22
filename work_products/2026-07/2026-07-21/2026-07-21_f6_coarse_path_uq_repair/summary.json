@@ -1,0 +1,19 @@
+{
+  "task": "TODO-F6-COARSE-PATH-UQ-REPAIR",
+  "blocked_endpoint_rows_reviewed": 12,
+  "coarse_case_rows_reviewed": 3,
+  "repaired_retained_reconstruction_case_rows": 3,
+  "stage_b_sampler_ready_endpoint_rows": 12,
+  "static_p_missing_endpoint_rows": 12,
+  "existing_xy_diagnostic_endpoint_rows": 12,
+  "same_qoi_mesh_uq_admissible_rows": 0,
+  "recommended_new_board_row": "TODO-F6-COARSE-VTK-SAMPLER-SUBMIT",
+  "f6_fit_admission": "none",
+  "component_k_admission": "none",
+  "clipped_k": false,
+  "hidden_global_multiplier": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "next_task": "TODO-F6-SAME-QOI-UQ-AND-ADMISSION-GATE"
+}

@@ -47,3 +47,47 @@ There is no terminal-success trigger yet. The monitor should keep doing only
 read-only checks. A successful `3299610` or `3299620` should trigger a separate
 S10/F6 pressure-anchor harvest/preflight row. A successful `3307441` should
 trigger a separate S9/S13 corrected-Q source-family harvest/preflight row.
+
+## 2026-07-21 18:25 Refresh
+
+I refreshed read-only scheduler/accounting state at
+`2026-07-21T18:25:14-0500`.
+
+Observed: high-heat jobs `3299610` and `3299620` are now terminal `TIMEOUT`
+states after five days. Their batch and `foamRun` steps were cancelled by
+timeout, so they do not trigger any harvest/admission row. Corrected-Q
+continuation `3307441` remains `RUNNING` at `09:26:50` elapsed on `c318-020`
+with four active `foamRun` steps.
+
+Inferred: the monitor should narrow to corrected-Q live monitoring. High-heat
+needs a separate timeout-disposition or recovery row if more work is desired;
+this monitor row should not resubmit or harvest timed-out jobs.
+
+## 2026-07-21 18:44 Refresh
+
+I refreshed read-only scheduler/accounting state at
+`2026-07-21T18:44:45-0500`.
+
+Observed: corrected-Q continuation `3307441` remains `RUNNING` at `09:46:18`
+elapsed on `c318-020` with four active `foamRun` steps. The high-heat
+steady-state relaunch `3308712` is also `RUNNING` at `00:39:15` elapsed on
+`c318-017` with four active `foamRun` steps. The earlier high-heat jobs
+`3299610` and `3299620` remain terminal `TIMEOUT` states and still do not
+trigger harvest or admission.
+
+Inferred: the active monitor set is now `3307441` plus `3308712`. A successful
+`3308712` terminal state should trigger a separate high-heat steady-state
+disposition or harvest-readiness row before any sampling, F6 use, score, or
+admission work.
+
+## 2026-07-22 12:52 Refresh
+
+I refreshed read-only Slurm accounting for `3307441` and `3308712`.
+
+Observed: `3307441` remains `RUNNING` at `1-03:53:43` elapsed on `c318-020`
+with batch plus four `foamRun` steps running. `3308712` remains `RUNNING` at
+`18:46:40` elapsed on `c318-017` with batch plus four `foamRun` steps running.
+
+Inferred: no corrected-Q or high-heat harvest/admission trigger exists. Keep
+monitoring only; any terminal-success harvest must be claimed as a separate
+row.

@@ -1,0 +1,8 @@
+evidence_id,source_path,observed_signal,released_rows,release_effect,s13_state
+recirc_cv_segmentation_preflight,work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/summary.json,3 diagnostic reverse-flow masks,0,blocks_interface_and_wall_until_face_closed_cv_exists,blocked
+topology_cv_release,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/summary.json,0 topology CV releases after face-connected owner/neighbour pass,0,keeps_exchange_interface_wall_normals_blocked,blocked
+surface_vtk_disposition,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction/summary.json,3 cell VTK rows ready,0,blocks_exchange_interface_wall_and_normals,blocked
+sampler_manifest_preflight,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/summary.json,3 manifest rows checked; 0 ready,0,blocks_production_harvest,blocked
+same_window_uq_design,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json,3 target QOIs gated,0,blocks_s11_reviewable_exchange_candidate,blocked
+candidate_uq_s13_geometry_recovery,work_products/2026-07/2026-07-21/2026-07-21_candidate_uq_s13_geometry_recovery/summary.json,33 geometry rows reviewed,0,rejects_loop_planes_and_proxy_surfaces,blocked
+static_source_sink_ledger,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv,3 static source/sink ledgers ready but wall loss blocked,0,static_bc_ledger_does_not_release_Q_wall_W_or_energy_residual,blocked

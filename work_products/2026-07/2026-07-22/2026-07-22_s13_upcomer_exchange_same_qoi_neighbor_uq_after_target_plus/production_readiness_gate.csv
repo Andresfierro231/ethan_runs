@@ -1,0 +1,5 @@
+gate,status,ready_for_next_stage,production_harvest_allowed_now,reason
+target_plus_same_qoi_harvest,complete,true,false,complete target-minus/target/target-plus table is available
+same_qoi_neighbor_window_temporal_uq,complete,true,false,4/4 QOI labels have executed temporal neighbor-window UQ
+mesh_gci_uq,ready_to_claim,true,false,mesh/GCI remains a separate required gate; do not borrow unrelated GCI
+production_harvest,do_not_run,false,false,"same-QOI temporal UQ is executed, but mesh/GCI UQ and admission gates are not complete"

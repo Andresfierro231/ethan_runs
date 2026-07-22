@@ -1,0 +1,9 @@
+decision,gate,passing_families,release_allowed,total_families
+pass,geometry_area_trace,5,True,5
+pass,room_surroundings_ambient_source,5,True,5
+pass,insulation_exposure,5,True,5
+pass,characteristic_length_orientation,5,True,5
+pass,h_correlation_literature_provenance,5,True,5
+pass,q_loss_basis_independent_of_phase_e,5,True,5
+pass,wallHeatFlux_derived_h_replacement,5,True,5
+release_nonzero_source_basis_rows,overall_passive_h2_setup_dictionary_source_basis_release,5,True,5

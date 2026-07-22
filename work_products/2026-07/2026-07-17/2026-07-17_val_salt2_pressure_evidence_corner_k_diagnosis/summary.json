@@ -1,0 +1,22 @@
+{
+  "admission_change": "none",
+  "corner_centerline_negative_k_rows": 12,
+  "corner_fit_admitted_rows": 0,
+  "corner_gate_fail_counts": {
+    "centerline_local_K_nonnegative_gate": 12,
+    "component_isolated_gate": 12,
+    "pressure_basis_resolved_gate": 12,
+    "recirculation_free_adjacent_branches_gate": 12,
+    "same_qoi_mesh_gci_gate": 12
+  },
+  "corner_rows": 12,
+  "created_utc": "2026-07-17T20:13:40.341319+00:00",
+  "decision": "keep_val_salt2_pressure_and_corner_K_diagnostic_no_fit",
+  "next_required_artifact": "repaired pressure extraction with admitted basis, non-recirculating taps, local straight reference, component isolation, and same-QOI mesh/GCI",
+  "plain_language_answer": "Corner K says 0 fit-admitted entries because every current corner row is diagnostic only: 12/12 local centerline K values are negative after straight-loss subtraction, 12/12 carry recirculation/coarse-no-GCI/component-isolation blockers, and the val_salt2 branch pressure rows themselves have 0 ordinary f_D/K fit-admitted entries.",
+  "task": "AGENT-503",
+  "val_salt2_branch_fit_admitted_rows": 0,
+  "val_salt2_branch_rows": 6,
+  "val_salt2_pressure_definition_conflict_rows": 2,
+  "val_salt2_recirc_blocked_branch_rows": 6
+}

@@ -1,0 +1,9 @@
+source_path,exists,use_in_package,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_thesis_s0_s3_first_wave_writing_integration/summary.json,true,S0-S3 infrastructure/non-admission counts,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json,true,recirculation and ordinary-upcomer non-admission counts,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/summary.json,true,source/property split release counts,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/summary.json,true,blocked frozen-scorecard shell counts,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/summary.json,true,sensor-map runtime/fit leakage counts,read_only
+work_products/2026-07/2026-07-21/2026-07-21_thesis_diagnostic_evidence_integration/diagnostic_claim_matrix.csv,true,diagnostic claim boundaries,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/attempt_outcome_matrix.csv,true,pressure/F6 non-admission evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/blocker_analysis.csv,true,pressure same-QOI and recirculation blockers,read_only

@@ -1,0 +1,17 @@
+{
+  "task_id": "TODO-1D-FINAL-REVERSE-FLOW-SWITCHING-CALIBRATION-DESIGN-2026-07-22",
+  "decision": "reverse_flow_switching_design_complete_no_calibration_no_admission",
+  "switching_states": 6,
+  "calibration_metrics": 8,
+  "activation_gate_rows": 6,
+  "one_stream_currently_enabled_for_upcomer": false,
+  "signed_network_diagnostic_allowed": true,
+  "exchange_cell_coefficient_admitted": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "scheduler_action": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "validation_holdout_external_scoring": false,
+  "final_score_claim": false
+}

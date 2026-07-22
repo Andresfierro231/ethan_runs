@@ -1,0 +1,8 @@
+case_key,split_group,split_subrole,coefficient_fit_allowed_now,model_selection_allowed_now,score_allowed_after_freeze,policy_note
+salt1_nominal,train,train_nominal,False,False,False,
+salt2_jin_nominal,train,train_nominal,False,False,False,
+salt3_jin_nominal,train,train_nominal,False,False,False,
+salt4_nominal,train,train_nominal,False,False,False,
+salt2_lo5q,holdout_test,holdout_pm5,False,False,True,
+salt2_hi5q,holdout_test,holdout_pm5,False,False,True,
+val_salt2,holdout_test,external_test,False,False,True,"External validation is reported inside the holdout/test bucket, with subtype external_test."

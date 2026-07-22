@@ -1,0 +1,7 @@
+source_id,path,exists,use
+canonical_split_policy,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy,yes,Salt1/Salt2/Salt4 train; Salt3 holdout; PM5 and val_salt2 score-only
+agent511_salt2_only_precursor,work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score,yes,"prior heater-source code pattern and failure context only, not duplicated split"
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,yes,frozen constant-UA cooler alpha_UA
+external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,yes,PB2 lane readiness check; no Salt1 rows currently
+m3_comparators,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv,yes,Salt3 holdout comparator
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,yes,read-only solve_case execution

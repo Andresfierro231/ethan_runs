@@ -1,0 +1,4 @@
+blocker,status,evidence,required_to_clear,production_consequence
+formal_three_grid_gci,blocked,medium/fine exact-label rows exist; same-label coarse member is absent from this family,"produce or admit strict same-label coarse/medium/fine triplets for each QOI, or document an explicit equivalence contract that survives review","no formal GCI, no production harvest, no S13 admission"
+source_property_qwall_release,blocked_out_of_scope,this package reads Q_wall_W diagnostic rows but does not prove source/property or Qwall release,separate source/property and source-side heat-flow equivalence package with same-QOI UQ,do not use Q_wall_W as admitted closure target here
+exchange_cell_coefficients,blocked,mesh sensitivity is diagnostic and formal GCI is blocked,"clear same-label mesh/GCI, same-window UQ, source/property release, and model-form gate",no exchange-cell coefficient fitting

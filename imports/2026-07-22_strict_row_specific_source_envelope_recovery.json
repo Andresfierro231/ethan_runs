@@ -1,0 +1,41 @@
+{
+  "task": "TODO-STRICT-ROW-SPECIFIC-SOURCE-ENVELOPE-RECOVERY-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Recover strict row-specific source-envelope state for the S13 exchange-cell plus MF12 source-memory temperature path from existing evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-STRICT-ROW-SPECIFIC-SOURCE-ENVELOPE-RECOVERY-2026-07-22.md",
+    ".agent/journal/2026-07-22/strict-row-specific-source-envelope-recovery.md",
+    "imports/2026-07-22_strict_row_specific_source_envelope_recovery.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/row_specific_recovery_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/source_family_blocker_rollup.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/exact_missing_evidence.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/downstream_gate_order.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_strict_row_specific_source_envelope_recovery/summary.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/row_level_release_candidate_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/candidate_lane_consequences.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf12_bulk_to_tp_formula_gate/formula_release_gap_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_targeted_litrev_forms/candidate_equation_forms.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "thesis_latex_edit": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "candidate_freeze": false,
+  "validation_holdout_external_scoring": false,
+  "coefficient_admission": false,
+  "final_score_claim": false
+}

@@ -1,0 +1,16 @@
+decision_key,value
+preflight_decision,candidate_preflight_complete_predeclared_mf18_no_execution_row
+candidate_contract_predeclared,true
+salt14_train_execution_row_opened,false
+reason_execution_blocked,zero release-ready rows across source/property and zero admitted thermal/Qwall/passive/exchange release gates
+validation_scoring_performed,false
+holdout_test_scoring_performed,false
+external_test_scoring_performed,false
+fitting_or_model_selection_performed,false
+source_property_release_performed,false
+qwall_release_performed,false
+numeric_q_loss_release_performed,false
+coefficient_admission_performed,false
+candidate_freeze_performed,false
+final_score_claim_performed,false
+next_rigorous_action,complete runtime-legal passive-H2 radiation implementation and recover row-specific source/property exact fields before any coefficient execution

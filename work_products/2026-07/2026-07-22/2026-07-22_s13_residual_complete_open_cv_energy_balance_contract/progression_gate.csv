@@ -1,0 +1,6 @@
+gate,status,evidence
+stable_heat_partition_evidence,diagnostic_pass,F_wall is stable across Salt2/Salt3/Salt4
+same_basis_throughflow_enthalpy,fail_closed,"endpoint masks, mdot_throughflow, T_in, and T_out are not released"
+cp_property_release,fail_closed,row-specific cp/property release remains absent
+storage_and_named_loss_owner_lanes,fail_closed,storage and named loss/source lanes are not complete for the open CV
+predictive_1d_next_step,open_next_harvest_only,harvest same-window throughflow enthalpy endpoints and cp before residual/admission

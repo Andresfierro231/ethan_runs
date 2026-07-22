@@ -1,0 +1,5 @@
+gate,allowed,reason
+production_harvest,false,mesh/source/production prerequisites fail
+ordinary_upcomer_closure_admission,false,ordinary lane disabled under recirculation/onset evidence
+exchange_cell_coefficient_admission,false,0 smoke-ready and 0 candidate-reviewable rows
+s11_s12_s13_s15_s6_trigger,false,no admitted or freeze-ready candidate

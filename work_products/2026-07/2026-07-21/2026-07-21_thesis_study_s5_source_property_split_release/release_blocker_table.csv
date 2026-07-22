@@ -1,0 +1,6 @@
+blocker_id,blocks,current_evidence,next_action,forbidden_shortcut
+row_specific_source_envelopes,training fit/model selection,Salt1 row-specific envelope partial and Salt2-4 source envelope not strict pass,refresh exact candidate lanes with source-validity envelopes before release,Do not treat nonblank labels as permission to fit.
+final_freeze_absent,holdout/external score release,FINAL_FREEZE_TBD_not_created,predeclare and freeze one runtime-legal candidate after S1-S5 pass,Do not score blind rows before freeze.
+candidate_not_admitted,S6 final scorecard,current wall/test-section and upcomer/pressure gates still block admission,resolve physical candidate gates before freeze,Do not publish final predictive accuracy from a shell.
+pm10_terminal_or_admission_pending,future holdout rows,PM10 rows are future score-only placeholders,consume terminal/admission package in a separate row,Do not fit or tune from PM10 rows.
+new_cfd_not_run_or_admitted,future external/holdout rows,Salt3 Q x insulation matrix remains proposed,run and admit new CFD before score use,Do not include planned rows in current scores.

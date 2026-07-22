@@ -1,0 +1,26 @@
+{
+  "ag392_stage_count": 8,
+  "ag392_status": "complete",
+  "ag402_pm5_quality_flag": "blocked-missing-field",
+  "blocked_run_rows": 4,
+  "date": "2026-07-15",
+  "external_cfd_modeling_tools_mutated": false,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "focused_unittest_count": 46,
+  "local_verification_status": "passed",
+  "native_cfd_outputs_mutated": false,
+  "new_solver_or_postprocessing_jobs_submitted": false,
+  "not_run_items": [
+    "corrected_q_terminal_harvest",
+    "agent373_hydraulic_chain",
+    "pm5_parser_repair",
+    "final_forward_v1_scorecard"
+  ],
+  "registry_or_admission_state_mutated": false,
+  "run_matrix_rows": 7,
+  "runnable_local_items_status": "run_or_verified",
+  "scheduler_mutated": false,
+  "sensor_policy_rows": 17,
+  "task": "AGENT-403",
+  "verified_artifact_count": 8
+}

@@ -1,0 +1,9 @@
+gate,pass_like_rows,diagnostic_like_rows,blocked_or_fail_rows,status_counts,blocks_admission
+pressure_basis_status,13,0,40,"{""blocked"": 36, ""blocked_pending_harvest"": 4, ""pass"": 3, ""pass_diagnostic_reconstructed_static_p"": 6, ""pass_static_p_sampled"": 4}",true
+endpoint_status,13,0,40,"{""blocked"": 36, ""blocked_terminal_state_not_ready"": 4, ""pass"": 13}",true
+ordinary_flow_status,0,0,53,"{""blocked"": 24, ""fail"": 19, ""not_measured"": 6, ""not_measured_pending_terminal_harvest"": 4}",true
+decomposition_status,3,10,40,"{""blocked"": 36, ""blocked_pending_harvest"": 4, ""diagnostic_pressure_delta_available"": 10, ""pass_hydrostatic_dominated_decomposition"": 3}",true
+same_qoi_uq_status,0,4,49,"{""blocked"": 36, ""blocked_not_declared_for_candidate"": 4, ""coarse_context_only_no_static_p"": 6, ""fail_missing_same_qoi_UQ"": 3, ""two_mesh_diagnostic_only_no_admission"": 4}",true
+source_property_status,36,0,17,"{""blocked_no_fit_release"": 14, ""no_coefficient_admission"": 3, ""pass_source_property_labels_available"": 36}",true
+f3_comparison_status,0,14,39,"{""blocked_missing_endpoint_pairs_and_same_qoi_UQ"": 36, ""forbidden_for_F6"": 3, ""not_evaluated_no_ordinary_candidate"": 14}",true
+forbidden_shortcut_status,53,0,0,"{""closed"": 53}",false

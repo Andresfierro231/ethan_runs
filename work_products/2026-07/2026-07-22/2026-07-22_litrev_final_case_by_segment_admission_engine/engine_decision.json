@@ -1,0 +1,11 @@
+{
+  "case_segment_rows": 18,
+  "closure_family_admitted_rows": 0,
+  "closure_status_counts": {
+    "unresolved": 18
+  },
+  "created_utc": "2026-07-22T18:47:07.132420+00:00",
+  "decision": "case_by_segment_admission_engine_fail_closed_no_coefficients_admitted",
+  "litrev_sources_recorded": 11,
+  "task": "TODO-LITREV-FINAL-CASE-BY-SEGMENT-ADMISSION-ENGINE-2026-07-22"
+}

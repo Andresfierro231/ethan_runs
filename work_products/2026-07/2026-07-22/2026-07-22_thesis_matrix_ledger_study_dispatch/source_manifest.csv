@@ -1,0 +1,10 @@
+exists,mutation_status,source_path,use_in_this_packet
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/summary.json,readiness counts and matrix status
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/next_claim_order.csv,next-order queue context
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/summary.json,numerical claim counts and caveats
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,exact numerical claim source
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/forbidden_overclaim_matrix.csv,claim-boundary source
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/uncertainty_admission_labels.csv,uncertainty/admission label source
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/summary.json,figure import manifest status
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/evidence_packet_schema.csv,evidence packet schema
+true,read_only,.agent/BOARD.md,current board row presence

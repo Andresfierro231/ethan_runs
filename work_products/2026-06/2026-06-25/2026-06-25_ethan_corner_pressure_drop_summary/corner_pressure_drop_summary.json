@@ -1,0 +1,21 @@
+{
+  "artifacts": {
+    "corner_pressure_drop_summary_json": "work_products/2026-06-25_ethan_corner_pressure_drop_summary/corner_pressure_drop_summary.json",
+    "corner_pressure_drop_window_summary_csv": "work_products/2026-06-25_ethan_corner_pressure_drop_summary/corner_pressure_drop_window_summary.csv",
+    "selected_case_packages_csv": "work_products/2026-06-25_ethan_corner_pressure_drop_summary/selected_case_packages.csv"
+  },
+  "discovered_feature_csv_count": 15,
+  "explicit_package_roots": [],
+  "generated_at": "2026-06-25T17:43:39-05:00",
+  "requested_source_ids": [],
+  "search_roots": [
+    "tmp/2026-06-18_overnight_analysis_queue/case_analysis"
+  ],
+  "selected_package_count": 13,
+  "summary_row_count": 156,
+  "window_sizes": [
+    5,
+    10,
+    20
+  ]
+}

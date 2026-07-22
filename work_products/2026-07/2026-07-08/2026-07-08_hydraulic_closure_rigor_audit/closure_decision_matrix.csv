@@ -1,0 +1,5 @@
+closure_option,evidence_status,supporting_metric,decision,blocker_or_caveat
+F3_Shah_baseline,supported_for_fit_eligible_straight_spans,July 8 pressure ledger fit-eligible rows plus development proxy,retain_as_baseline,Does not resolve recirculation-cell spans or closure-grade minor-loss K.
+per_leg_terms,conditionally_supported,max_development_fraction_of_mechanical=0.208202,evaluate_after_uncertainty,Mesh/GCI and station-placement uncertainty remain unquantified.
+explicit_minor_losses,upper_bound_only,max_minor_loss_fraction_of_mechanical=0.0612544,include_as_sensitivity_not_fit_coefficient,Full centerline tap-to-tap raw extraction is still required for closure-grade K.
+recirculation_regime_switch,strongly_supported_for_upcomer_spans,max_upcomer_backflow_area_fraction=0.31779,required_for_left_lower_and_left_upper_leg,Onset threshold remains extrapolated until admitted perturbation/sweep data pass gates.

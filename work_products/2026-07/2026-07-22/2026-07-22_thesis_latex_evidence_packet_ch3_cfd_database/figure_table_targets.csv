@@ -1,0 +1,8 @@
+target_id,target_type,suggested_title,source_files,chapter_use,required_caption_guardrail
+T3_1,table,CFD source provenance and split-role table,case_provenance_table.csv,Chapter 3 database description,State that split role controls fit/model-selection/score permissions
+T3_2,table,Retained-window postprocessing inventory,retained_window_table.csv,Chapter 3 postprocessing method,State that retained-window statistics are diagnostic unless separately admitted
+T3_3,table,CFD QoI dictionary and use boundaries,qoi_dictionary.csv,Chapter 3 methodology definitions,State forbidden runtime inputs explicitly
+T3_4,table,Postprocessing reduction method contract,postprocessing_method_table.csv,Chapter 3 reproducibility appendix,State that geometry and source windows are fixed before field reduction
+T3_5,table,Legal claim boundary for CFD evidence,claim_boundary_table.csv,Chapter 3 methods and limitations,State CFD reference is not experimental validation
+F3_1,figure,CFD extraction workflow from source inventory to legal-use join,postprocessing_method_table.csv,Chapter 3 methods figure,Show source/property and UQ gates after physical reductions
+F3_2,figure,Heat-path lane ownership guardrail,qoi_dictionary.csv and claim_boundary_table.csv,Chapter 3 thermal modeling interface,Show residual as separate from internal Nu

@@ -1,0 +1,8 @@
+source_id,path,use,mutation
+legwise_anchor_inventory,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_anchor_inventory.csv,branch candidate classification,read_only
+recirc_exclusion_mask,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_recirc_exclusion_mask.csv,ordinary F6 exclusions,read_only
+pressure_residual_contract,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/legwise_pressure_residual_contract.csv,required residual terms,read_only
+f3_admission_gate,work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/f3_vs_legwise_f6_admission_gate.csv,F3 comparison gate,read_only
+blocker_unlock_next_steps,work_products/2026-07/2026-07-20/2026-07-20_pressure_f6_two_tap_blocker_unlock_next_steps/pressure_f6_next_gate.csv,current pressure/F6 gate sequence,read_only
+pressure_term_ledger_summary,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/summary.json,pressure-ledger source context,read_only
+source_property_gate,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/source_property_gate_after_refresh.csv,source/property labels,read_only

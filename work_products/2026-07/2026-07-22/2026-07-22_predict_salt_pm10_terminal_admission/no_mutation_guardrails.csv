@@ -1,0 +1,8 @@
+guardrail,status,reason
+native_CFD_output_mutation,none,all source case roots and postProcessing artifacts consumed read-only
+scheduler_action,none,only squeue/sacct observations were consumed; no sbatch/srun/scancel
+registry_or_admission_state_mutation,none,"packet is a disposition artifact, not registry admission"
+protected_scoring,none,PM10 rows remain future blind holdout candidates; score only after final freeze
+fit_or_model_selection,none,all four PM10 rows keep fit/model-selection forbidden
+runtime_input_release,none,"recirculation, wallHeatFlux, realized mdot, and total_Q evidence are diagnostics only"
+source_property_release,none,no source/property/Qwall release was performed

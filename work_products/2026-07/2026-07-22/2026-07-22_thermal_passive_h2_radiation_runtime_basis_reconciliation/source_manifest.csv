@@ -1,0 +1,15 @@
+exists,native_or_prior_output_mutated,path,use
+True,False,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_one_train_repair_preflight/passive_operator_term_contract.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/source_backed_passive_h2_basis_table.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_runtime_operator_smoke_uq_gate/summary.json,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_predictions.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/sensor_projection_sensitivity.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/baseline_root_and_qoi_smoke.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/one_at_a_time_setup_uq_smoke.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/mdot_heat_sensitivity.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/heat_ledger_sensitivity.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/runtime_input_manifest.csv,read_only_source_context
+True,False,work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution/summary.json,read_only_source_context
+True,False,reference/geometry_reference.md,read_only_source_context
+True,False,operational_notes/maps/thermal-boundary-and-radiation.md,read_only_source_context
+True,False,reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv,read_only_source_context

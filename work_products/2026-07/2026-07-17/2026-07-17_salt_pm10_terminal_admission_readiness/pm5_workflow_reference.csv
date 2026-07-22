@@ -1,0 +1,6 @@
+step,pm5_action,pm10_action
+copy_to_scratch,"AGENT-406 used copied scratch cases, not native solver trees.",Use a new task-owned scratch tree after terminal completion.
+reconstruct_and_sample,Reconstructed representative-time staged copies and sampled upcomer inlet/mid/outlet planes plus wall-band surfaces.,Repeat for Salt2/Salt4 +/-10Q terminal representative windows.
+field_contract,"Validated U, T, rho, p_rgh, Re, Pr, Ri, Gr, Ra, and wallHeatFlux.","Require the same fields plus Gz, reverse fractions, secondary velocity, wall-core Delta T, and steady-window metadata."
+parse_metrics,Produced 12 complete matched-plane rows and 12 validation rows; Salt2 holdout package reused 6 of them.,Produce 12 PM10 rows across four cases and three planes if all fields pass.
+admission,Rows were diagnostic only; Salt2 +/-5Q had 0 fit-admitted rows and the old broken July 14 script was not relaunched.,Run terminal admission after jobs complete; default stance is holdout diagnostic until gates admit otherwise.

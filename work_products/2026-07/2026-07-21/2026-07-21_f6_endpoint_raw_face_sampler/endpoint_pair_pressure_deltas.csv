@@ -1,0 +1,5 @@
+case_id,mesh_level,branch,endpoint_pair,delta_p_static_pa,delta_p_rgh_pa,pair_status,admission_status
+salt_2,medium,right_leg,right_leg__s03->right_leg__s01,-7023.1104843,-0.21206491701,raw_pair_sampled,diagnostic_only_no_F6_fit
+salt_2,medium,test_section_span,test_section_span__s03->test_section_span__s01,1888.29676299,0.15586469672,raw_pair_sampled,diagnostic_only_no_F6_fit
+salt_2,fine,right_leg,right_leg__s03->right_leg__s01,-7025.30232649,-0.22982773551,raw_pair_sampled,diagnostic_only_no_F6_fit
+salt_2,fine,test_section_span,test_section_span__s03->test_section_span__s01,1888.05085137,0.16567593565,raw_pair_sampled,diagnostic_only_no_F6_fit

@@ -1,0 +1,21 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAME-LABEL-MESH-FAMILY-GENERATION-2026-07-22",
+  "generated_at": "2026-07-22T09:25:19-05:00",
+  "decision": "fail_closed_current_coarse_only_medium_fine_missing_no_submit_contract_ready",
+  "qoi_label_count": 4,
+  "mesh_level_count": 3,
+  "qoi_mesh_level_cells": 12,
+  "local_candidate_scan_rows": 130,
+  "strict_same_label_mesh_level_cells_ready": 0,
+  "current_coarse_rows_generated": 12,
+  "required_mesh_level_gap_rows": 36,
+  "rejected_related_mesh_evidence_rows": 3,
+  "generation_input_preflight_rows": 36,
+  "command_contract_rows": 9,
+  "compute_handoff_rows": 1,
+  "scheduler_or_sampler_launched": false,
+  "mesh_gci_computed": false,
+  "production_harvest_allowed": false,
+  "admission_allowed": false,
+  "next_required_action": "claim scheduler-authorized generation row to create exact-label coarse/medium/fine rows"
+}

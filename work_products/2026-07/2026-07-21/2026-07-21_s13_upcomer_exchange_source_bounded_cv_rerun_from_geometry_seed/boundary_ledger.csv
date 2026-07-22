@@ -1,0 +1,10 @@
+case_id,boundary_type,patches_or_basis,status,face_count,area_m2,notes
+salt_2,trusted_wall,pipeleg_right_01_lower;pipeleg_right_02_middle;pipeleg_right_03_upper,classified,38880,0.063435001093,geometry seed wall support
+salt_2,ncc_caps,ncc_pipeleg_right_01_lower_start;ncc_pipeleg_right_03_upper_end,classified,96,2.60465142293e-05,no unclassified escape
+salt_2,source_sink_surface,not_released,blocked,0,0,no admitted Q_wall_W/source-sink ledger
+salt_3,trusted_wall,pipeleg_right_01_lower;pipeleg_right_02_middle;pipeleg_right_03_upper,classified,38880,0.063435001093,geometry seed wall support
+salt_3,ncc_caps,ncc_pipeleg_right_01_lower_start;ncc_pipeleg_right_03_upper_end,classified,96,2.60465142293e-05,no unclassified escape
+salt_3,source_sink_surface,not_released,blocked,0,0,no admitted Q_wall_W/source-sink ledger
+salt_4,trusted_wall,pipeleg_right_01_lower;pipeleg_right_02_middle;pipeleg_right_03_upper,classified,38880,0.063435001093,geometry seed wall support
+salt_4,ncc_caps,ncc_pipeleg_right_01_lower_start;ncc_pipeleg_right_03_upper_end,classified,96,2.60465142293e-05,no unclassified escape
+salt_4,source_sink_surface,not_released,blocked,0,0,no admitted Q_wall_W/source-sink ledger

@@ -1,0 +1,2 @@
+decision_id,s11_unblocked,s12_unblocked,s13_unblocked,s15_unblocked,s6_unblocked,decision,candidate_count_released,rationale
+S13-SOURCE-SIDE-UQ-PREREQ,false,false,false,false,false,contract_defined_same_qoi_uq_prereq_blocked_no_production_release,0,"Q_source_side_net_static_bc_W contract is defined, but no source/property release, same-QOI UQ, production harvest, or coefficient admission exists."

@@ -1,0 +1,7 @@
+artifact,observed_rows_or_state,usable_for_terminal_qoi,usable_for_mesh_gci,decision,reason
+summary.json,decision=partial_or_failed_sampling_fail_closed,false,false,fail_closed,sampler completed but reported partial_or_failed_sampling_fail_closed
+mesh_level_geometry_summary.csv,6 geometry rows,true,false,geometry_only_useful,all six medium/fine case-mesh geometry masks released
+medium_fine_terminal_window_reductions.csv,header_only,false,false,not_usable,no terminal window reductions were written
+medium_fine_exact_label_qoi_rows.csv,header_only,false,false,not_usable,no exact-label QOI rows were written
+sampling_error_log.csv,6 error rows,false,false,repair_required,every case-mesh failed with missing face area vectors
+trusted_wall_Q_wall_detail_rows.csv,header_only,false,false,not_usable,no wallHeatFlux face details were written

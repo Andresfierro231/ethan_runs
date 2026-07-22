@@ -1,0 +1,2 @@
+source_id,case_id,fluid,turbulence_model,nprocs,scale_to_meters,heater_power_W,cooling_power_W,T_init_K,mesh_group_id
+viscosity_screening_salt_test_2_kirst_coarse_mesh,salt_test_2_kirst,hitec_salt_kirst,laminar,64,0.001,265.7,56.34,447.0,7ab7fb2650596980

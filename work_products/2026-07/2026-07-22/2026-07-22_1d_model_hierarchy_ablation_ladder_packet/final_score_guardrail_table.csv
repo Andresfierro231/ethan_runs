@@ -1,0 +1,5 @@
+score_surface,score_values_reported,allowed_now,reason
+train_final_candidate_score,0,no,no frozen predictive candidate exists
+validation_score,0,no,validation is protected until candidate freeze
+holdout_score,0,no,PM10 and PM5 rows remain protected future/blind evidence
+external_test_score,0,no,external-test scoring follows freeze only

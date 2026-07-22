@@ -1,0 +1,7 @@
+gate,status,evidence,admission_effect
+clean_endpoint_pair,pass,s03->s01 selected for right_leg and test_section_span; no s00/s04 fitting endpoints,endpoint definition blocker addressed
+launch_preflight,partial,2/5 case-mesh inputs pass required field/time preflight,only controls whether sampler can launch
+raw_RAF_RMF,blocked_pending_sampler_output,no endpoint_face_metrics.csv with RAF/RMF has been harvested yet,blocks ordinary F6 promotion
+same_qoi_time_uq,blocked_pending_sampler_output,0 rows have neighbor-time candidates but no sampled face metrics yet,blocks F6 fit admission
+same_qoi_mesh_uq,diagnostic_only,2 Salt2 mesh-spread rows exist; GCI not accepted,blocks F6 fit admission until GCI or explicit accepted uncertainty bound
+scientific_admission,closed,execution package only; no fit/admission row claimed,F6 fit and component-K admission remain none

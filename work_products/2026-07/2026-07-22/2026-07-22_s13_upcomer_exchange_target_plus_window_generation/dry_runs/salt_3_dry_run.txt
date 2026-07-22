@@ -1,0 +1,18 @@
+
+Lmod is automatically replacing "intel/19.1.1" with "gcc/13.2.0".
+
+
+Inactive Modules:
+  1) python3
+
+The following have been reloaded with a version change:
+  1) impi/19.0.9 => impi/21.12
+
+Case directory: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/s13_target_plus_window_generation_2026-07-22/salt_3/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation
+Decomposed directory: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/s13_target_plus_window_generation_2026-07-22/salt_3/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/processors64
+Restarting from latest processor time: 7618
+Using env script: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/salt2/2026-06-02_runtime_recovery/scripts/of13-env.sh
+Using launcher: srun --mpi=pmi2
+Using application: /work/09748/andresfierro231/ls6/openfoam_runtime_recovery/2026-06-02_openfoam13/source/OpenFOAM-13/platforms/linux64GccDPInt32Opt/bin/foamRun -parallel
+Using log path: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/staging/s13_target_plus_window_generation_2026-07-22/salt_3/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/logs/log.foamRun_target_plus
+Using RCWallBC libdir: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-06-25_ethan_normal_relaunch_and_recirculation_boundary_wave/runtime_libs

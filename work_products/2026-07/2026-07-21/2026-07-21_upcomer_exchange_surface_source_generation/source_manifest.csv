@@ -1,0 +1,10 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_upcomer_exchange_surface_source_generation.py,task_output,true,false,true
+tools/extract/test_build_upcomer_exchange_surface_source_generation.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_source_field_audit,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_design,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation,task_output,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/0/T,read_only_context,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/0/T,read_only_context,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/0/T,read_only_context,true,false,false

@@ -1,0 +1,17 @@
+key,path,exists
+postprocessor_story,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/presentation_story.md,True
+postprocessor_figures,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures,True
+minor_loss_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,True
+minor_loss_separation,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_separation/minor_loss_separation.csv,True
+thermal_replay_path_summary,work_products/2026-07/2026-07-08/2026-07-08_cfd_informed_fixed_mdot_1d_runs/path_summary.csv,True
+thermal_replay_readme,work_products/2026-07/2026-07-08/2026-07-08_cfd_informed_fixed_mdot_1d_runs/README.md,True
+t13_campaign_note,operational_notes/07-26/08/2026-07-08_t13_run_campaign_proposal.md,True
+mesh_uncertainty_board,.agent/BOARD.md,True
+base_figure_pressure_decomposition,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/pressure_decomposition_by_span.svg,True
+base_figure_heat_accounting,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/heat_source_sink_by_patch_group.svg,True
+base_figure_heat_residuals,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/heat_enthalpy_residual_by_segment.svg,True
+base_figure_friction_mdot,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/friction_form_mdot_error.svg,True
+base_figure_friction_leg,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/friction_per_leg_pressure_drop.svg,True
+base_figure_f5_ri,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/f5_ri_screen_coefficients.svg,True
+base_figure_upcomer,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/upcomer_backflow_vs_re.svg,True
+base_figure_gate_status,work_products/2026-07/2026-07-08/2026-07-08_postprocessor_summary_charts/figures/corrected_salt_gate_status.svg,True

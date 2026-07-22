@@ -1,0 +1,5 @@
+order_index,gate,entry_condition,current_status,allowed_next_action,forbidden_action
+1,strict_row_specific_source_envelope,existing source/property evidence,fail_closed_zero_strict_pass_rows,document missing evidence and keep release closed,do not release source/property rows
+2,same_label_mesh_gci_four_s13_qois,repaired sampler writes nonempty medium/fine exact-label rows,running_repaired_sampler_job_3310996,monitor sampler then run post-sampler GCI only if rows exist,do not run mesh/GCI on empty or proxy rows
+3,same_mask_exchange_cv_energy_residual,same-label QOI rows exist on the same masks,blocked_waiting_on_sampler_and_mesh_gci,compute CV residual on same wall/interface/bulk masks only,do not mix masks or substitute endpoint/profile proxies
+4,train_only_s13_exchange_cell_plus_mf12_smoke,source-envelope mesh/GCI and same-mask residual gates pass,blocked_no_smoke_admission,run train-only smoke as a separate frozen prevalidation gate,do not use validation holdout or external rows for tuning

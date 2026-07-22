@@ -1,0 +1,106 @@
+{
+  "task": "TODO-THESIS-MASTER-MODEL-FORM-SCOREBOARD-2026-07-22",
+  "task_id": "TODO-THESIS-MASTER-MODEL-FORM-SCOREBOARD-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Writer/Implementer/Tester/Reviewer",
+  "objective": "Build a single thesis-facing master model-form scoreboard with glossary definitions, signed individual TP/TW errors, figure-ready error rows, and recommended next model forms to try.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-MASTER-MODEL-FORM-SCOREBOARD-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-master-model-form-scoreboard.md",
+    "imports/2026-07-22_thesis_master_model_form_scoreboard.json",
+    "tools/analyze/build_thesis_master_model_form_scoreboard.py",
+    "tools/analyze/test_thesis_master_model_form_scoreboard.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard"
+  ],
+  "read_only_context": [
+    "reports/thesis_dossier/Chapters_and_sections/current",
+    "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_litrev_csem_incorporation",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence",
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard",
+    "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_overnight_compute_node_run/agent360_refresh/sensor_level_errors.csv",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json",
+    "master_scoreboard": "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv",
+    "glossary": "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/term_glossary.csv",
+    "signed_sensor_errors": "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/signed_sensor_errors.csv",
+    "figure_ready_signed_sensor_errors": "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/figure_ready_signed_sensor_errors.csv",
+    "recommended_model_forms_to_try": "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv"
+  },
+  "result": {
+    "decision": "master_scoreboard_complete_no_new_scoring_or_admission",
+    "master_scoreboard_rows": 15,
+    "glossary_rows": 43,
+    "signed_sensor_error_rows": 204,
+    "finite_signed_sensor_error_rows": 180,
+    "recommended_try_rows": 6,
+    "figure_plan_rows": 4
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_thesis_master_model_form_scoreboard.py tools/analyze/test_thesis_master_model_form_scoreboard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_thesis_master_model_form_scoreboard",
+      "result": "passed: 4 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_thesis_master_model_form_scoreboard.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard --strict",
+      "result": "passed: candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-THESIS-MASTER-MODEL-FORM-SCOREBOARD-2026-07-22",
+      "result": "passed after status header correction"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK (15 entries)"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "sampler_or_harvest_launched": false,
+  "uq_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "thesis_current_file_edited": false,
+  "validation_holdout_external_new_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "downstream_trigger": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "residual_absorbed_into_internal_Nu": false
+}

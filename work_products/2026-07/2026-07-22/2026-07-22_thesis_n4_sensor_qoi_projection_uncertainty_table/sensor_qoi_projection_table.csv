@@ -1,0 +1,18 @@
+sensor,kind,acceptance_class,one_d_segment_or_state,one_d_fraction_or_marker,score_target_use,runtime_temperature_allowed,fit_allowed,model_selection_allowed,uncertainty_caveat,score_table_effect
+TP1,TP,bounded,top_horizontal_exit,1,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TP2,TP,mapped,right_downcomer_bottom_horizontal_junction,junction,post_solve_score_target_only,false,false,false,Projected onto the 1D bottom-horizontal/right-downcomer junction for validation-only scoring; not a runtime input or fit target.,yes_after_projection_source_segment_and_finite_prediction_gates
+TP3,TP,bounded,left_lower_vertical,0,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TP4,TP,bounded,left_lower_vertical,1,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TP5,TP,bounded,test_section,1,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TP6,TP,bounded,left_upper_vertical,1,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW1,TW,bounded,right_vertical,0.25,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW2,TW,bounded,right_vertical,0.5,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW3,TW,bounded,right_vertical,0.75,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW4,TW,bounded,heated_incline,0.25,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW5,TW,bounded,heated_incline,0.5,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW6,TW,bounded,heated_incline,0.75,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW7,TW,bounded,left_lower_vertical,0.5,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW8,TW,bounded,left_upper_vertical,0.5,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW9,TW,bounded,cooled_incline_pre_hx,0.75,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes
+TW10,TW,excluded,active_hx_shell_state_not_emitted,excluded,excluded_from_score,false,false,false,excluded because active HX shell state is absent,no
+TW11,TW,bounded,cooled_incline_post_hx,0.25,post_solve_score_target_only,false,false,false,Approximate initial placement only; not an exact experimental measurement.,yes

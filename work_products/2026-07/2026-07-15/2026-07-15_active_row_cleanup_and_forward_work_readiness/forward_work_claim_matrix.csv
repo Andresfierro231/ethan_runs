@@ -1,0 +1,8 @@
+work_area,claimed_by_active_tasks,safe_to_claim_now,reason,recommended_next_action
+setup_only_cooler_hx_synthesis,AGENT-394,no,AGENT-394 or AGENT-392 currently overlaps cooler/HX/boundary evidence.,"Wait for claimed rows to complete, then synthesize/admit setup-only cooler candidate if still missing."
+sensor_policy_refresh,,yes,No active claim detected by keyword scan.,Consume completed sensor-policy package; only open new work if no final table exists.
+hydraulic_h1_f6,AGENT-373,no,AGENT-373/393 scopes cover hydraulic chain or relaunch readiness.,Wait for dependency-held jobs and completed hydraulic package before H1/F6 scoring.
+corrected_q_terminal_harvest,AGENT-266;AGENT-357;AGENT-373,no,Corrected-Q job remains scheduler-dependent.,Watch terminal state only; build harvest/admission after 3293924 and 3295438 finish.
+pm5_matched_plane_recovery,AGENT-344;AGENT-357;AGENT-363,no,PM5 recovery/relaunch readiness is already covered by active/completed forward-v1 unblock packages.,Do not relaunch without a dedicated row and diagnosis of cancelled jobs.
+thermal_overnight_rescue,AGENT-305;AGENT-344,no,AGENT-392 owns thermal overnight runner status.,Close out or consume AGENT-392 only after runner completes and status is updated.
+docs_index_refresh,AGENT-344;AGENT-394,no,Generated index refresh should wait for active rows to settle.,Run repo index only after board cleanup avoids stale/duplicate active state.

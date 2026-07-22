@@ -1,0 +1,13 @@
+{
+  "emissivity_Tsur_affect_heat_flux": "yes",
+  "evidence_class": "microcase_confirmed",
+  "generated_at": "2026-07-13T18:17:07+00:00",
+  "microcase_confirmed": true,
+  "microcase_statuses": [
+    "success"
+  ],
+  "publication_instruction": "Use source/microcase evidence as publication support that emissivity/Tsur affect wallHeatFlux; continue treating radiation as inseparable from total wallHeatFlux unless a separate qr/radiation output is later produced.",
+  "separable_radiation_output_available": "no_separate_output_observed",
+  "source_confirmed": false,
+  "task": "AGENT-277"
+}

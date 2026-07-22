@@ -1,0 +1,5 @@
+qoi_label,current_coarse_case_count,medium_fine_case_mesh_count,medium_fine_terminal_window_row_count,strict_coarse_contract_windows_available_in_medium_fine,terminal_window_equivalence_source_exists,same_label_mesh_gci_ready,gate_status,required_next_evidence
+Q_wall_W,,0,0,false,false,false,blocked_not_executed_or_no_sampled_rows,execute sampler on compute node and provide same-time or terminal-equivalence basis
+mdot_exchange_positive_outward_proxy_kg_s,,0,0,false,false,false,blocked_not_executed_or_no_sampled_rows,execute sampler on compute node and provide same-time or terminal-equivalence basis
+tau_recirc_proxy_s,,0,0,false,false,false,blocked_not_executed_or_no_sampled_rows,execute sampler on compute node and provide same-time or terminal-equivalence basis
+wall_core_bulk_temperature_contrast_K,,0,0,false,false,false,blocked_not_executed_or_no_sampled_rows,execute sampler on compute node and provide same-time or terminal-equivalence basis

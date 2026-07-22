@@ -1,0 +1,7 @@
+source_id,salt_label,insulation_in,friction_form,mdot_predicted_kg_s,mdot_cfd_kg_s,mdot_err_pct
+viscosity_screening_salt_test_2_jin_coarse_mesh,salt_2,0.25,F3_shah_apparent,0.013061314511464191,0.01318354663,-0.9271565684582996
+viscosity_screening_salt_test_2_jin_coarse_mesh,salt_2,0.25,F5_ri_corrected,0.013061314511464191,0.01318354663,-0.9271565684582996
+viscosity_screening_salt_test_3_jin_coarse_mesh,salt_3,0.3,F3_shah_apparent,0.015476139917839919,0.01497722,3.3311917554787813
+viscosity_screening_salt_test_3_jin_coarse_mesh,salt_3,0.3,F5_ri_corrected,0.015476139917839919,0.01497722,3.3311917554787813
+viscosity_screening_salt_test_4_jin_coarse_mesh,salt_4,0.3,F3_shah_apparent,0.017621154416210517,0.01698467657,3.7473651240125925
+viscosity_screening_salt_test_4_jin_coarse_mesh,salt_4,0.3,F5_ri_corrected,0.017621154416210517,0.01698467657,3.7473651240125925

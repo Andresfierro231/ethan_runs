@@ -1,0 +1,5 @@
+qoi_label,target_ready_rows,target_minus_ready_rows,target_plus_ready_rows,triplet_ready,same_qoi_uq_execution_status,mesh_gci_allowed_now,production_use_allowed_now,d3_use,next_action
+Q_wall_W,3,3,3,true,ready_not_executed,false,false,required_support_for_wall_core_exchange_or_axial_mixing_claim,all target-minus/target/target-plus rows exist; claim separate same-QOI UQ execution row next
+mdot_exchange_positive_outward_proxy_kg_s,3,3,3,true,ready_not_executed,false,false,required_support_for_wall_core_exchange_or_axial_mixing_claim,all target-minus/target/target-plus rows exist; claim separate same-QOI UQ execution row next
+tau_recirc_proxy_s,3,3,3,true,ready_not_executed,false,false,required_support_for_wall_core_exchange_or_axial_mixing_claim,all target-minus/target/target-plus rows exist; claim separate same-QOI UQ execution row next
+wall_core_bulk_temperature_contrast_K,3,3,3,true,ready_not_executed,false,false,required_support_for_wall_core_exchange_or_axial_mixing_claim,all target-minus/target/target-plus rows exist; claim separate same-QOI UQ execution row next

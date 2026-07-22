@@ -1,0 +1,19 @@
+blocker,affected_rows,affected_families,blocks_CAND001_replacement_now,next_unblock_action,forbidden_shortcut
+same_qoi_uq_missing,23,future_onset_anchor_design;pm5_recirculation_diagnostic,True,build same-label same-formula same-sign pressure UQ after endpoint/source readiness,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+material_reverse_flow,12,pm5_recirculation_diagnostic,True,find lower-recirculation or nonrecirculating anchors before F6 comparison,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+missing_hybrid_admission_evidence,12,pm5_recirculation_diagnostic,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+endpoint_pair_missing,11,future_onset_anchor_design,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+future_run_not_existing_evidence,11,future_onset_anchor_design,True,claim a separate launch/monitor row if terminal evidence remains insufficient,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+reverse_flow_unverified,11,future_onset_anchor_design,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+scheduler_launch_forbidden_in_this_row,11,future_onset_anchor_design,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+component_K,7,branch_scorecard_mask,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+ordinary_pipe_fit_not_included,7,branch_scorecard_mask,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+single_stream_Nu,7,branch_scorecard_mask,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+single_stream_f_D,7,branch_scorecard_mask,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+finite_raw_endpoint_pair,6,preferred_inventory_slot,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+ordinary_flow,6,preferred_inventory_slot,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+same_qoi_mesh_time_uq,6,preferred_inventory_slot,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+future_blind_holdout_only,4,pm10_terminal_recirculation_diagnostic,True,"preserve as protected future evidence, not train/model-selection data",do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+ordinary_pipe_fit_forbidden,4,pm10_terminal_recirculation_diagnostic,True,keep row fail-closed until its source-specific gate is cleared,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+strong_material_reverse_flow,4,pm10_terminal_recirculation_diagnostic,True,keep PM10 as recirculation/onset evidence only,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence
+total_Q_drifting,4,pm10_terminal_recirculation_diagnostic,True,do not use terminal PM10 rows for runtime/source release or closure fitting,do not promote diagnostic pressure residuals to component-K/F6/Shah closure evidence

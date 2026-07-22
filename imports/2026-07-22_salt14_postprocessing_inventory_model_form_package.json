@@ -1,0 +1,107 @@
+{
+  "task": "TODO-SALT14-POSTPROCESSING-INVENTORY-MODEL-FORM-PACKAGE-2026-07-22",
+  "task_id": "TODO-SALT14-POSTPROCESSING-INVENTORY-MODEL-FORM-PACKAGE-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Build a diagnostic Salt1-4 postProcessing inventory and model-form evidence package without mutating native solver output or releasing runtime-forbidden CFD quantities.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-SALT14-POSTPROCESSING-INVENTORY-MODEL-FORM-PACKAGE-2026-07-22.md",
+    ".agent/journal/2026-07-22/salt14-postprocessing-inventory-model-form-package.md",
+    "imports/2026-07-22_salt14_postprocessing_inventory_model_form_package.json",
+    "tools/analyze/build_salt14_postprocessing_inventory_model_form_package.py",
+    "tools/analyze/test_salt14_postprocessing_inventory_model_form_package.py",
+    "operational_notes/07-26/22/2026-07-22_SALT14_POSTPROCESSING_INVENTORY_MODEL_FORM_PACKAGE.md",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/"
+  ],
+  "read_only_context": [
+    "tools/extract/postprocessing_registry_common.py",
+    "registry/case_registry.csv",
+    "registered Salt1-4 source/runtime roots and postProcessing folders",
+    "existing registry aggregate CSV/SQLite files",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/summary.json",
+    "tidy_csv": "work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_postprocessing_tidy.csv",
+    "window_stats": "work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_postprocessing_window_stats.csv",
+    "case_deltas": "work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_case_delta_matrix.csv",
+    "use_cases": "work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_model_form_use_cases.csv"
+  },
+  "summary_counts": {
+    "source_count": 23,
+    "parsed_source_count": 23,
+    "tidy_rows": 1405596,
+    "window_stat_rows": 16353,
+    "case_delta_rows": 110,
+    "use_case_rows": 2,
+    "profile_mode": "latest"
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_salt14_postprocessing_inventory_model_form_package.py tools/analyze/test_salt14_postprocessing_inventory_model_form_package.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_salt14_postprocessing_inventory_model_form_package",
+      "result": "passed, 4 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_salt14_postprocessing_inventory_model_form_package.py",
+      "result": "passed, parsed 23 sources and wrote summary.json"
+    },
+    {
+      "command": "python3.11 -m json.tool imports/2026-07-22_salt14_postprocessing_inventory_model_form_package.json",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m json.tool work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/summary.json",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py <task files and package use-case docs>",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_model_form_use_cases.csv --strict --json",
+      "result": "passed, 0 fit/admission candidate rows and 0 findings"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py",
+      "result": "passed, indexed 2841 docs, 14 board rows, 15 blockers"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed, blocker register OK with 15 entries"
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed after generated .agent/catalog.csv line-ending/trailing-whitespace normalization"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-SALT14-POSTPROCESSING-INVENTORY-MODEL-FORM-PACKAGE-2026-07-22",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "solver_or_postprocess_launched": false,
+    "scheduler_job_submitted": false,
+    "production_harvest": false,
+    "runtime_forbidden_inputs_released": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "final_score_claim": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "status": "complete"
+}

@@ -1,0 +1,8 @@
+source_id,path,exists,use
+sensor_policy,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/sensor_map_policy_refresh.csv,true,current TP/TW policy before restoration
+tp2_projected_registry,work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_projected_sensor_registry.csv,true,projected TP2 source segment
+tp2_sensor_evidence,work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_sensor_level_evidence.csv,true,finite TP2 prediction rows
+tp2_policy_gate_evidence,work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/sensor_policy_gate_evidence.csv,true,finite-row and runtime/fit gate table
+tp2_aggregate_rmse,work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/aggregate_rmse_before_after.csv,true,before/after aggregate score impact
+tp2_gate_status,work_products/2026-07/2026-07-16/2026-07-16_tp2_1d_model_evidence/tp2_gate_status.csv,true,TP2/TW10 gate status
+segment_equation_contract,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_equation_contract/segment_equation_contract.csv,true,downcomer source-segment/runtime leakage context

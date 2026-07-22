@@ -1,0 +1,8 @@
+item_id,target_chapter,source_artifact,inserted_or_strengthened,purpose,caveat
+ENR-FT-01,Chapter 7,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/baseline_control_surface.csv,strengthened,"Baseline control-surface table for what current legal model can report","No tuning or final predictive accuracy"
+ENR-FT-02,Chapter 6,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/first_key_study_wave_status.csv,inserted,"S0-S3 release-gate status table","Infrastructure and non-admission evidence only"
+ENR-FT-03,Chapter 5,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/external_bc_completion_matrix.csv,strengthened,"External-BC coverage and setup-facing dictionary status","Do not fill setup gaps from realized CFD response"
+ENR-FT-04,Chapter 7,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/heat_path_evidence_matrix.csv,inserted,"Heat-path residual ownership table","Do not hide heat residuals in internal Nu"
+ENR-FT-05,Chapter 7,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/attempt_outcome_matrix.csv,inserted,"Pressure-corner attempt/outcome matrix","No component K F6 clipped-K or global multiplier"
+ENR-FT-06,Chapter 6,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv,inserted,"Recirculation exchange-variable availability table","No exchange-cell or ordinary upcomer closure admission"
+ENR-FT-07,Chapter 8,work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/study_portfolio.csv,strengthened,"Near-term study dependency table","S6 trigger-gated until frozen candidate exists"

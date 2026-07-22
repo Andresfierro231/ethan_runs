@@ -1,0 +1,16 @@
+source_id,path,exists,role
+research_pathways,reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv,True,read-only evidence for roadmap synthesis
+litrev_map,operational_notes/maps/literature-synthesis-and-gates.md,True,read-only evidence for roadmap synthesis
+forward_map,operational_notes/maps/forward-predictive-model.md,True,read-only evidence for roadmap synthesis
+friction_map,operational_notes/maps/friction-closures.md,True,read-only evidence for roadmap synthesis
+blockers,.agent/blockers.yml,True,read-only evidence for roadmap synthesis
+f6_anchor_summary,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/summary.json,True,read-only evidence for roadmap synthesis
+f6_anchor_gate,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/anchor_gate_table.csv,True,read-only evidence for roadmap synthesis
+f6_ladder,work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/hydraulic_model_form_ladder.csv,True,read-only evidence for roadmap synthesis
+f6_decision_tree,work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/anchor_first_decision_tree.csv,True,read-only evidence for roadmap synthesis
+segment_pressure_summary,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/summary.json,True,read-only evidence for roadmap synthesis
+segment_thermal_summary,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/summary.json,True,read-only evidence for roadmap synthesis
+wall_failure_summary,work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/summary.json,True,read-only evidence for roadmap synthesis
+wall_next_ladder,work_products/2026-07/2026-07-17/2026-07-17_wall_candidate_failure_localization/next_candidate_ladder.csv,True,read-only evidence for roadmap synthesis
+upcomer_anchor_matrix,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_cfd_anchor_matrix/README.md,True,read-only evidence for roadmap synthesis
+final_scorecard_shell,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,True,read-only evidence for roadmap synthesis

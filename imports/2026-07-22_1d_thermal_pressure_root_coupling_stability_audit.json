@@ -1,0 +1,59 @@
+{
+  "task": "TODO-1D-THERMAL-PRESSURE-ROOT-COUPLING-STABILITY-AUDIT-2026-07-22",
+  "task_id": "TODO-1D-THERMAL-PRESSURE-ROOT-COUPLING-STABILITY-AUDIT-2026-07-22",
+  "generated_at_utc": "2026-07-22T14:54:16Z",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-THERMAL-PRESSURE-ROOT-COUPLING-STABILITY-AUDIT-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-thermal-pressure-root-coupling-stability-audit.md",
+    "imports/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit.json",
+    "tools/analyze/build_1d_thermal_pressure_root_coupling_stability_audit.py",
+    "tools/analyze/test_1d_thermal_pressure_root_coupling_stability_audit.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/root_monotonicity_bracketing_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/coupled_sensitivity_risk_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/root_failure_mode_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/fluid_smoke_test_recommendations.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/lightweight_sensitivity_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/propagation_plan.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/mdot_sensitivity_coupling_estimate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/f3_f6_prerequisite_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/model_hierarchy_ladder.csv",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid and external repositories"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_or_solver_launched": false,
+    "external_fluid_edit": false,
+    "fit_or_model_selection": false,
+    "protected_scoring": false,
+    "source_property_release": false,
+    "candidate_freeze": false
+  },
+  "output_contract": {
+    "root_audit_rows": 4,
+    "sensitivity_risk_rows": 9,
+    "high_coupled_root_risk_rows": 5,
+    "failure_mode_rows": 5,
+    "fluid_smoke_test_rows": 5,
+    "f3_f6_prerequisite_fail_rows": 4
+  },
+  "validation": [
+    "python3.11 tools/analyze/build_1d_thermal_pressure_root_coupling_stability_audit.py",
+    "python3.11 -m pytest tools/analyze/test_1d_thermal_pressure_root_coupling_stability_audit.py"
+  ]
+}

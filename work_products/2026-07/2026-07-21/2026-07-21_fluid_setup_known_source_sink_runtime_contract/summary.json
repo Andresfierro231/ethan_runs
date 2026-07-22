@@ -1,0 +1,17 @@
+{
+  "contract_rows": 3,
+  "date": "2026-07-21",
+  "decision": "setup_known_lower_leg_heater_contract_ready_for_train_only_residual_decomposition",
+  "external_fluid_mutation": false,
+  "external_test_rows_consumed": 0,
+  "holdout_rows_consumed": 0,
+  "native_output_mutation": false,
+  "next_action": "run train-only heater-source residual decomposition",
+  "registry_or_admission_mutation": false,
+  "runtime_admitted_rows": 0,
+  "scheduler_action": false,
+  "source_property_released_rows": 0,
+  "status": "complete",
+  "task_id": "TODO-FLUID-SETUP-KNOWN-SOURCE-SINK-RUNTIME-CONTRACT-2026-07-21",
+  "validation_rows_consumed": 0
+}

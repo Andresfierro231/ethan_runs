@@ -1,0 +1,7 @@
+claim_id,claim,allowed,basis
+S12-C1,S12-HIAX1 remains the best named physical residual-owner hypothesis for TW5/TW6.,true,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/candidate_contract.csv
+S12-C2,Finite train-only precursor metrics exist for S12-HIAX1.,true,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/finite_train_metric_table.csv
+S12-C3,No S12 candidate can be frozen or admitted from the current evidence.,true,work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/summary.json
+S12-X1,S12-HIAX1 is an implemented frozen candidate or final predictive score.,false,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_f_s12_hiax1_train_score/freeze_decision.csv
+S12-X2,Empirical correction coefficients are physical thermal closures.,false,work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/thermal_residual_ablation_table.csv
+S12-X3,The remaining S12 residual can be hidden inside internal Nu.,false,work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/runtime_leakage_audit.csv

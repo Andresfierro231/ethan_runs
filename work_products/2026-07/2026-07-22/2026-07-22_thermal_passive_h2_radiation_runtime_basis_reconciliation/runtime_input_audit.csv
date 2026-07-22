@@ -1,0 +1,9 @@
+audit_item,pass,reason,value
+input_manifest_rows_reviewed,True,existing setup-UQ runtime manifest consumed read-only; no protected runtime input was added,18
+forbidden_runtime_input_wallHeatFlux,True,builder uses source hA/area/Ta/Tsur/emissivity/layers plus model-predicted wall-state output only,not_used
+forbidden_runtime_input_CFD_mdot,True,builder uses source hA/area/Ta/Tsur/emissivity/layers plus model-predicted wall-state output only,not_used
+forbidden_runtime_input_Qwall,True,builder uses source hA/area/Ta/Tsur/emissivity/layers plus model-predicted wall-state output only,not_used
+forbidden_runtime_input_imposed_cooler_duty,True,builder uses source hA/area/Ta/Tsur/emissivity/layers plus model-predicted wall-state output only,not_used
+forbidden_runtime_input_validation_temperature,True,builder uses source hA/area/Ta/Tsur/emissivity/layers plus model-predicted wall-state output only,not_used
+native_outputs_mutated,True,all source CFD/OpenFOAM and previous work products are read-only inputs,False
+protected_scoring_or_release,True,"same-QOI gate is diagnostic train-only; no validation/holdout/external score, source/property release, Qwall release, or coefficient admission",False

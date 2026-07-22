@@ -195,6 +195,11 @@ def parse_args() -> argparse.Namespace:
         default="magnitude",
         help="Velocity field to visualize. `magnitude` keeps the legacy full-vector/magnitude render; `y_component` uses U_y*jHat arrows, abs(U_y) glyph scaling, and signed U_y color.",
     )
+    parser.add_argument(
+        "--shared-velocity-range",
+        action="store_true",
+        help="Use one color range and one glyph velocity scale across all selected source_ids for the selected view and velocity mode.",
+    )
     return parser.parse_args()
 
 
@@ -420,11 +425,60 @@ def case_render_context(
         "slice_origin": full_origin,
         "color_range": [color_min, color_max],
         "scale_range": [scale_min, scale_max],
+        "local_color_range": [color_min, color_max],
+        "local_scale_range": [scale_min, scale_max],
+        "reference_span": reference_span,
         "scale_factor": scale_factor,
+        "shared_velocity_range": False,
         "component_data": component_data,
         "view_preset": view_preset,
         "velocity_mode": velocity_mode,
         "view_config": VIEW_PRESETS[view_preset],
+    }
+
+
+def apply_shared_velocity_range(
+    contexts: list[dict[str, object]],
+    glyph_scale_multiplier: float,
+    velocity_mode: str,
+) -> dict[str, object]:
+    if not contexts:
+        return {
+            "shared_velocity_range": False,
+            "reason": "no_contexts",
+        }
+
+    mode = VELOCITY_MODES[velocity_mode]
+    if mode["color_range"] == "positive":
+        shared_color_min = 0.0
+        shared_color_max = max(float(context["color_range"][1]) for context in contexts)
+        shared_color_max = max(shared_color_max, 1.0e-9)
+    else:
+        max_abs = max(
+            max(abs(float(context["color_range"][0])), abs(float(context["color_range"][1])))
+            for context in contexts
+        )
+        max_abs = max(max_abs, 1.0e-9)
+        shared_color_min = -max_abs
+        shared_color_max = max_abs
+
+    shared_scale_max = max(float(context["scale_range"][1]) for context in contexts)
+    shared_scale_max = max(shared_scale_max, 1.0e-9)
+    shared_reference_span = min(float(context["reference_span"]) for context in contexts)
+
+    for context in contexts:
+        context["color_range"] = [shared_color_min, shared_color_max]
+        context["scale_range"] = [0.0, shared_scale_max]
+        context["scale_factor"] = glyph_scale_multiplier * shared_reference_span / shared_scale_max
+        context["shared_velocity_range"] = True
+        context["shared_reference_span"] = shared_reference_span
+
+    return {
+        "shared_velocity_range": True,
+        "velocity_mode": velocity_mode,
+        "color_range": [shared_color_min, shared_color_max],
+        "scale_range": [0.0, shared_scale_max],
+        "reference_span": shared_reference_span,
     }
 
 
@@ -581,6 +635,10 @@ def render_component(
         "image_resolution": [image_width, image_height],
         "color_range": [color_min, color_max],
         "scale_range": [scale_min, scale_max],
+        "local_color_range": context.get("local_color_range", [color_min, color_max]),
+        "local_scale_range": context.get("local_scale_range", [scale_min, scale_max]),
+        "shared_velocity_range": bool(context.get("shared_velocity_range", False)),
+        "shared_reference_span": context.get("shared_reference_span", context.get("reference_span")),
         "png_path": str(paths["png"]),
         "png_exists": paths["png"].exists(),
         "svg_path": str(paths["svg"]),
@@ -603,10 +661,11 @@ def main() -> int:
     components = args.components or list(DEFAULT_COMPONENTS)
     output_suffix = args.output_suffix or (args.view_preset if args.view_preset != "front_z" else "")
 
-    results: list[dict[str, object]] = []
+    contexts: dict[str, dict[str, object]] = {}
+    context_errors: dict[str, str] = {}
     for row in rows:
         try:
-            context = case_render_context(
+            contexts[row["source_id"]] = case_render_context(
                 row,
                 args.array_association,
                 args.glyph_scale_multiplier,
@@ -614,7 +673,21 @@ def main() -> int:
                 args.velocity_mode,
             )
         except Exception as exc:
-            context = {"error": str(exc)}
+            context_errors[row["source_id"]] = str(exc)
+
+    shared_velocity_range_payload: dict[str, object] = {
+        "shared_velocity_range": False,
+    }
+    if args.shared_velocity_range:
+        shared_velocity_range_payload = apply_shared_velocity_range(
+            list(contexts.values()),
+            args.glyph_scale_multiplier,
+            args.velocity_mode,
+        )
+
+    results: list[dict[str, object]] = []
+    for row in rows:
+        context = contexts.get(row["source_id"], {"error": context_errors.get(row["source_id"], "missing context")})
         for component in components:
             try:
                 if "error" in context:
@@ -662,6 +735,8 @@ def main() -> int:
         "glyph_scale_multiplier": args.glyph_scale_multiplier,
         "base_opacity": args.base_opacity,
         "velocity_mode": args.velocity_mode,
+        "shared_velocity_range_requested": bool(args.shared_velocity_range),
+        "shared_velocity_range": shared_velocity_range_payload,
         "view_preset": args.view_preset,
         "output_suffix": output_suffix,
         "image_count": len(results),

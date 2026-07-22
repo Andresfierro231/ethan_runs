@@ -1,0 +1,6 @@
+runtime_item,allowed
+setup external BC dictionary,true_if_split_consistent_and_predeclared
+corrected outer-surface passive operator,diagnostic_train_context_only
+realized wallHeatFlux,false
+global hA multiplier,false
+numeric q-loss release,false

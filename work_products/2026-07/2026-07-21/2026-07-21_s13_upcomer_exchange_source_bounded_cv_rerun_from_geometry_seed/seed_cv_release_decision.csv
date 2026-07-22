@@ -1,0 +1,4 @@
+case_id,geometry_seed_ready,trusted_wall_area_m2,internal_interface_area_m2,classified_cap_area_m2,unclassified_escape_area_m2,reverse_overlap_cells,reverse_volume_fraction_of_seed,production_source_bounded_cv_released,release_decision,blocking_reason
+salt_2,true,0.063435001093,0.0623473180949,2.60465142293e-05,0,0,0,false,fail_closed_geometry_seed_only,seed has no reverse-flow occupancy and no admitted exchange-state/source-sink surface basis
+salt_3,true,0.063435001093,0.0623473180949,2.60465142293e-05,0,6,0.000159902903652,false,fail_closed_geometry_seed_only,reverse-flow overlap is tiny diagnostic occupancy and no admitted exchange-state/source-sink surface basis exists
+salt_4,true,0.063435001093,0.0623473180949,2.60465142293e-05,0,15,0.000397910207002,false,fail_closed_geometry_seed_only,reverse-flow overlap is tiny diagnostic occupancy and no admitted exchange-state/source-sink surface basis exists

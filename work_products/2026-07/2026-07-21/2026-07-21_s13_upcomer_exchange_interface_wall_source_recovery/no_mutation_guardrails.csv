@@ -1,0 +1,8 @@
+guardrail,allowed,observed
+native_solver_output_mutated,false,false
+registry_or_admission_mutated,false,false
+scheduler_action,false,false
+surface_extraction_launched,false,false
+sampler_or_harvest_launched,false,false
+exchange_cell_admission_changed,false,false
+residual_absorbed_into_internal_Nu,false,false

@@ -1,0 +1,3 @@
+term,formula,sign_convention,release_status,blocker
+H_throughflow_W,mdot_throughflow_kg_s * cp_J_kg_K * (T_out_bulk_K - T_in_bulk_K),positive removes heat from the open CV in main-throughflow direction,not_computable_same_basis,endpoint mdot/T_bulk/cp same-window lanes are not released
+R_E_combined_W,Q_source_side_net_static_bc_W - Q_wall_W - H_throughflow_W - storage_dE_dt_W - other_named_losses_W,positive residual is unaccounted source-side heat,residual_value_release_false,"throughflow enthalpy, cp/property release, storage, named losses, and same-QOI UQ are incomplete"

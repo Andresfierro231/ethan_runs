@@ -1,0 +1,4 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_split_legal_fit,pass,lambda selection is defined from Salt2 grid rows only,Salt3/Salt4 fitting targets;validation/holdout temperatures
+R2_runtime_inputs,pass,"27 scenario rows use setup inputs, Salt2 lambda, PB2 setup wall distribution, and Salt2 cooler alpha_UA",realized wallHeatFlux;CFD mdot;validation/holdout wall-shell temperature;validation/holdout probe temperatures;imposed CFD cooler duty;realized test-section heat
+R3_coupled_execution,pass,Fluid rows run in this package,execution gate only

@@ -1,0 +1,26 @@
+{
+  "cfd_emissivity_summary": {
+    "salt_2": {
+      "Tsur_values_K": "299.19",
+      "emissivity_values": "0.95",
+      "rcExternalTemperature_patch_count": 36
+    },
+    "salt_3": {
+      "Tsur_values_K": "299.79",
+      "emissivity_values": "0.95",
+      "rcExternalTemperature_patch_count": 36
+    },
+    "salt_4": {
+      "Tsur_values_K": "299.97",
+      "emissivity_values": "0.95",
+      "rcExternalTemperature_patch_count": 36
+    }
+  },
+  "cfd_radiative_exchange_status": "present_in_rcExternalTemperature_inseparable_from_wallHeatFlux",
+  "emissivity_Tsur_affect_heat_flux": "yes",
+  "evidence_class": "microcase_confirmed",
+  "generated_utc": "2026-07-13T20:31:09+00:00",
+  "one_d_agent_instruction": "Do not call no-radiation replay CFD parity. Do not double-count radiation when using CFD wallHeatFlux. Predictive 1D models should include radiative external loss capability or label radiation-off runs as sensitivity only.",
+  "separate_radiation_output_available": "no",
+  "task": "AGENT-287"
+}

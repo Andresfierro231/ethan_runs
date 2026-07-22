@@ -1,0 +1,11 @@
+{
+  "case_count": 20,
+  "claim_verdict_counts": {
+    "verified": 6
+  },
+  "cleanup_candidate_count": 6,
+  "field_summary_rows": 240,
+  "mutated_solver_outputs": false,
+  "q_check_rows": 140,
+  "temperature_patch_rows": 1380
+}

@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_solver_outputs,false,read only existing work-product CSV/JSON inputs; no native OpenFOAM files changed
+registry_or_admission_mutation,false,"manifest publication does not update registry, admission ledgers, scores, or coefficients"
+scheduler_action,false,"no sbatch/srun submission, cancel, requeue, or monitor mutation from this preflight"
+openfoam_or_sampler_launch,false,"no solver, postprocessing, surface extraction, sampler, harvest, or UQ execution"
+residual_absorbed_into_internal_Nu,false,"source, wall, sampler, and residual lanes remain explicit blockers outside internal Nu"

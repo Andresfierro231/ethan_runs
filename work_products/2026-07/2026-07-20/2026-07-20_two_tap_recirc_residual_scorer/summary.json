@@ -1,0 +1,24 @@
+{
+  "component_k_admitted_count": 0,
+  "current_row_count": 3,
+  "date": "2026-07-20",
+  "f6_fit_performed_count": 0,
+  "generated_utc": "2026-07-20T16:48:34+00:00",
+  "lower_apparent_k_primary_driver": "dynamic_pressure_denominator_growth_with_hydrostatic_dominated_static_drop",
+  "ordinary_component_k_allowed_now": false,
+  "outputs": [
+    "README.md",
+    "q_ref_orientation_audit.csv",
+    "lower_apparent_k_diagnosis.csv",
+    "recirc_residual_scorecard.csv",
+    "model_hypothesis_matrix.csv",
+    "next_extraction_contract.csv",
+    "paper_diagnostic_note.md",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "q_ref_audit_row_count": 6,
+  "q_ref_throughflow_trusted_now": false,
+  "scheduler_launch_performed": false,
+  "task": "TODO-TWO-TAP-RECIRC-RESIDUAL-SCORER"
+}

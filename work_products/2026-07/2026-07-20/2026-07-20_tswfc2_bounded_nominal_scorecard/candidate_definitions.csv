@@ -1,0 +1,2 @@
+candidate_id,candidate_family,scenario,contact_multiplier,node_count,source,fit_or_tuning,grid_status
+tswfc2_smoke_salt2_four_node_v1,TSWFC2_distributed_test_section_wall_fluid_nodes,tswfc2_smoke_salt2_four_node_v1,1.0,4,AGENT-553 four-node smoke setup,none,single_predeclared_candidate_only

@@ -1,0 +1,13 @@
+{
+  "date": "2026-07-20",
+  "decision": "blocked_missing_salt1_cooler_hx",
+  "fit_rows_added": 0,
+  "generated_at_utc": "2026-07-20T21:34:42.527631+00:00",
+  "holdout_rows_scored_now": 0,
+  "model_selection_rows_added": 0,
+  "native_solver_outputs_mutated": false,
+  "optional_3row_exception_granted": false,
+  "registry_mutation": "none",
+  "salt1_cooler_hx_supported": false,
+  "task": "TODO-PREDICT-M2-SALT1-COOLER-HX-RESOLUTION-PACKAGE"
+}

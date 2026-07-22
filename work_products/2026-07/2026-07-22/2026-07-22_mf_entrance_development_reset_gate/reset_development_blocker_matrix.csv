@@ -1,0 +1,17 @@
+span,blocker,blocked_gate_rows,resolution_path
+left_lower_leg,coarse_no_gci,15,same-QOI mesh/GCI family required
+left_lower_leg,recirculation_invalid_single_stream,15,route to recirculating-upcomer alternatives; do not use ordinary pipe closure
+left_lower_leg,same_QOI_UQ_missing,15,same-label temporal and mesh/GCI UQ required
+left_lower_leg,source_envelope_not_fit,15,source/property release before coefficient review
+left_upper_leg,coarse_no_gci,15,same-QOI mesh/GCI family required
+left_upper_leg,recirculation_invalid_single_stream,15,route to recirculating-upcomer alternatives; do not use ordinary pipe closure
+left_upper_leg,same_QOI_UQ_missing,15,same-label temporal and mesh/GCI UQ required
+left_upper_leg,source_envelope_not_fit,15,source/property release before coefficient review
+lower_leg,coarse_no_gci,15,same-QOI mesh/GCI family required
+lower_leg,same_QOI_UQ_missing,15,same-label temporal and mesh/GCI UQ required
+right_leg,coarse_no_gci,15,same-QOI mesh/GCI family required
+right_leg,same_QOI_UQ_missing,15,same-label temporal and mesh/GCI UQ required
+test_section_span,coarse_no_gci,15,same-QOI mesh/GCI family required
+test_section_span,same_QOI_UQ_missing,15,same-label temporal and mesh/GCI UQ required
+upper_leg,coarse_no_gci,15,same-QOI mesh/GCI family required
+upper_leg,same_QOI_UQ_missing,15,same-label temporal and mesh/GCI UQ required

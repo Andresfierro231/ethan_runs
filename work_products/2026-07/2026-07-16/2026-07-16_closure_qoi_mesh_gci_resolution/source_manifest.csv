@@ -1,0 +1,10 @@
+source_id,path,exists,role
+branch_mask,work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/branch_specific_fit_mask.csv,yes,branch-level ordinary-pipe and thermal model-form gate
+ordinary_rows,work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/ordinary_pipe_candidate_rows.csv,yes,row-level recirculation and single-stream exclusion evidence
+thermal_gate,work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/thermal_row_admission_gate.csv,yes,thermal residual-owner/sign/heat-balance admission evidence
+closure_qoi_punch,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_punch_list/closure_qoi_blocker_punch_list.csv,yes,current mesh/GCI closure-QOI punch list
+thermal_parity_readme,work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/README.md,yes,narrow parity-resolution interpretation
+branch_scorecard_readme,work_products/2026-07/2026-07-15/2026-07-15_branch_specific_ordinary_pipe_scorecard/README.md,yes,branch-specific model-form provenance
+geometry_map,operational_notes/maps/geometry-and-mesh-truth.md,yes,canonical geometry taxonomy and test-section parent
+thermal_map,operational_notes/maps/thermal-closures-and-internal-nu.md,yes,current Internal-Nu status map
+forward_map,operational_notes/maps/forward-predictive-model.md,yes,predictive model blocker context

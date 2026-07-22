@@ -1,0 +1,6 @@
+candidate_id,split_role,metric_family,target_count,finite_count,mae_K,rmse_K,mean_bias_K,max_abs_K,predicted_mdot_kg_s,reference_mdot_kg_s,residual_mdot_kg_s,pressure_residual_Pa,metric_use
+S12-HIAX1,train,TP,6,5,80.24939106239617,80.4585733904668,-80.24939106239617,87.92395687812393,,,,,train_only_context_not_freeze_or_final_score
+S12-HIAX1,train,TW,11,11,82.18702596558937,84.64865165641251,-82.18702596558937,109.09380824932663,,,,,train_only_context_not_freeze_or_final_score
+S12-HIAX1,train,all_probe,17,16,81.5815150583415,83.36187927489736,-81.5815150583415,109.09380824932663,,,,,train_only_context_not_freeze_or_final_score
+S12-HIAX1,train,mdot,1,1,,,,,0.00626567502343775,0.0168,-0.010534324976562249,,train_only_context_not_freeze_or_final_score
+S12-HIAX1,train,pressure_root,1,1,,,,,,,,-1.3016870923365786e-06,train_only_context_not_freeze_or_final_score

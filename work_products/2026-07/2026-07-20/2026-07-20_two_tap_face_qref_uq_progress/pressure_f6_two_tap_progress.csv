@@ -1,0 +1,4 @@
+lane,current_progress,remaining_blocker,next_step,admission_status
+pressure_q_ref,face-level positive/negative/absolute flux extracted from harvested VTK surfaces,material reverse flow blocks ordinary q_ref; same-QOI UQ still missing,build recirculation scorecard only after same-QOI residual family exists,diagnostic_only
+two_tap_component_K,"raw endpoints, pressure basis, recirculation metrics, and face flux now documented",component isolation is apparent_cluster_only and reverse flow fails ordinary gate,use nonrecirculating same-topology anchor for ordinary K contrast,blocked_no_component_K
+F6,upcomer recirculating pressure lane is contracted,0 ordinary F6 fit-eligible rows; no scoreable recirculation modeled pressure closure,compare future recirculation pressure closure against F3_shah_apparent with source/property labels,blocked_no_F6_fit

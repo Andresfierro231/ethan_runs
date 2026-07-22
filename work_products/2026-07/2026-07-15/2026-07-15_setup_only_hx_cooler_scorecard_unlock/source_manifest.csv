@@ -1,0 +1,12 @@
+source_path,exists,use_in_agent438
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/final_predictive_hx_closure_rows.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/hx_candidate_reconciliation.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/row_admission_ledger.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_setup_predictive_heat_loss_fluid_variant/fluid_variant_contract.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan/README.md,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/final_predictive_hx_closure_rows.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/realized_wallheatflux_replay_rows.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/heater_cooler_model_form_errors.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_setup_bc_model_error_synthesis_report/setup_predictive_variant_status.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/final_forward_v1_unblock_requirements.csv,yes,read_only_input
+work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/hydraulic_admission_final_decisions.csv,yes,read_only_input

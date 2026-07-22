@@ -1,0 +1,4 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_split_legal_runtime_inputs,pass,"scenario contracts use setup external-boundary rows, Salt2-only wall shape, and Salt2 cooler alpha_UA",realized wallHeatFlux;CFD mdot;validation/holdout wall-shell temperature;validation/holdout probe temperatures;imposed CFD cooler duty;realized test-section heat
+R2_contract_row_violations,pass,12 scenario rows reviewed,realized wallHeatFlux;CFD mdot;validation/holdout wall-shell temperature;validation/holdout probe temperatures;imposed CFD cooler duty;realized test-section heat
+R3_coupled_execution,pass,Fluid rows run in this package,execution gate only

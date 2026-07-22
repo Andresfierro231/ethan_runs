@@ -1,0 +1,11 @@
+{
+  "agent277_decision": "work_products/2026-07/2026-07-13/2026-07-13_rc_external_temperature_publication_evidence/publication_evidence_decision.json",
+  "generated_utc": "2026-07-13T20:31:09+00:00",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+  "platform": "Linux-4.18.0-372.26.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "python": "3.9.7",
+  "run_rows": 3,
+  "source_rows": 5,
+  "task": "AGENT-287"
+}

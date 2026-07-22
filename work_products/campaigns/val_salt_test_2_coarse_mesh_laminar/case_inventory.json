@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-05-29T16:28:22-05:00",
+  "source_id": "val_salt_test_2_coarse_mesh_laminar",
+  "case_id": "salt_test_2",
+  "source_root": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar",
+  "fluid": "hitec_salt",
+  "turbulence_model": "laminar",
+  "nprocs": 64,
+  "scale_to_meters": 0.001,
+  "walltime": "120:00:00",
+  "top_level_entries": [
+    "0",
+    "case_config.yaml",
+    "constant",
+    "dynamicCode",
+    "logs",
+    "postProcessing",
+    "processors64",
+    "system"
+  ],
+  "core_case_paths": {
+    "zero_dir": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar/0",
+    "constant_dir": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar/constant",
+    "system_dir": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar/system",
+    "post_processing_dir": "/scratch/09748/andresfierro231/projects_scratch/val_salt_test_2_coarse_mesh_laminar/postProcessing"
+  },
+  "operating_point": {
+    "heater_power_W": 265.7,
+    "cooling_power_W": 56.34,
+    "T_init_K": 451.5
+  },
+  "mesh_summary": {
+    "mesh_group_id": "7ab7fb2650596980",
+    "kernel_factor": 0.7,
+    "kernel_blend": 0.5,
+    "core_ratio": 0.64,
+    "first_cell_size": 0.225,
+    "bulk_cell_size": 1.125
+  },
+  "convergence_summary": {
+    "enabled": true,
+    "check_interval": 100,
+    "min_iterations": 500,
+    "qoi_rtol": 0.0001,
+    "qoi_window": 100
+  }
+}

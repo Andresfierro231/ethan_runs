@@ -1,0 +1,21 @@
+{
+  "date": "2026-07-14",
+  "task_id": "AGENT-361",
+  "status": "complete",
+  "external_fluid_code_edited": true,
+  "native_solver_outputs_mutated": false,
+  "thermal_fit_used": false,
+  "global_multiplier_exported": false,
+  "scheduler_action_used": false,
+  "api_added": "MinorLosses.reset_development_k_by_segment",
+  "parser_added": "campaigns.yaml minor_loss_presets reset_development_k_by_segment",
+  "pressure_charge_added": "distributed_and_minor_losses adds reset_development_k_for_segment(seg) * 0.5*rho*v^2 separately from localized_fixed_k",
+  "default_behavior_changed": false,
+  "h1_launchable_after_this_slice": false,
+  "why_h1_still_blocked": "AGENT-349 has zero fit-admissible component/cluster K rows and reset/development terms still require admitted pressure evidence.",
+  "verification": {
+    "py_compile": "passed",
+    "focused_pytest": "4 passed",
+    "broad_pytest": "interrupted_after_slow_progress_no_observed_failure"
+  }
+}

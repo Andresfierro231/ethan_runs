@@ -1,0 +1,5 @@
+acceptance_signal,required_for_runtime_row,requirement,requirement_id
+unit tests solve conduction plus exterior convection/radiation and recover outer-surface heat balance,True,analytic layer/radiation tests pass,R1
+train-only radiation_on minus radiation_off qambient or radiation lane delta is nonzero and comparable to corrected outer-surface radiation 22-26 W,True,radiation_on changes heat ledger,R2
+"inputs limited to setup h/area/Ta/Tsur/emissivity/layers/material k plus model-solved wall/fluid state; no wallHeatFlux, CFD mdot, Qwall, cooler duty, or observed temperature input",True,runtime inputs remain legal,R3
+"report mdot, qambient/qhx, TP/TW projection, heat ledger, residual movement for train rows only; protected scoring remains false",True,same-QOI train-only results documented,R4

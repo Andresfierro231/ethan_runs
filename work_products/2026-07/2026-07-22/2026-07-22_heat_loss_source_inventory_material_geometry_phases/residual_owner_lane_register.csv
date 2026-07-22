@@ -1,0 +1,11 @@
+owner,retained_as_separate_lane,absorbed_into_internal_Nu,notes
+heater_to_salt_efficiency,True,False,"setup source traceable, release not ready"
+cooler_or_jacket_removal,True,False,"setup model lane exists, no final release"
+test_section_source_loss,True,False,"partial response, no release"
+passive_external_convection,True,False,"source-backed setup rows exist, no numeric q-loss release"
+radiation,True,False,"policy/source basis exists, no numeric release"
+wall_conduction_contact,True,False,partial setup fields missing
+insulation_or_quartz,True,False,candidate not admitted
+storage,True,False,steady runtime lane not released
+recirculation_exchange,True,False,diagnostic only
+unknown_residual,True,False,output-only owner

@@ -1,0 +1,5 @@
+source_id,path,mutation,role
+unblock_packet,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_source_sink_unblock_packet,read_only,evidence source
+passive_basis,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis,read_only,evidence source
+passive_enrichment,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment,read_only,evidence source
+external_bc,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration,read_only,evidence source

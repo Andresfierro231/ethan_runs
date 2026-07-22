@@ -1,0 +1,44 @@
+{
+  "boundary_rows": 38,
+  "candidate_rows": 20,
+  "case_rows": 20,
+  "class_counts": {
+    "diagnostic-only": 1,
+    "failed": 3,
+    "historical/Kirst": 1,
+    "mainline_nominal": 3,
+    "perturbation_sensitivity": 12
+  },
+  "corrected_q_rows_admitted": 0,
+  "evidence_use_counts": {
+    "blocked_not_admitted": 6,
+    "blocked_pending_terminal_gate": 4,
+    "diagnostic_context_only": 3,
+    "failed_or_requires_investigation": 2,
+    "historical_context_only": 1,
+    "holdout_candidate": 1,
+    "not_usable": 1,
+    "train_candidate": 1,
+    "validation_candidate": 1
+  },
+  "generated_at": "2026-07-14T12:09:54",
+  "holdout_rows_now": [
+    "salt_4"
+  ],
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "cfd_case_admission_inventory.csv",
+    "boundary_condition_role_table.csv",
+    "training_validation_holdout_candidate_table.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "task": "AGENT-331",
+  "training_rows_now": [
+    "salt_2"
+  ],
+  "validation_rows_now": [
+    "salt_3"
+  ]
+}

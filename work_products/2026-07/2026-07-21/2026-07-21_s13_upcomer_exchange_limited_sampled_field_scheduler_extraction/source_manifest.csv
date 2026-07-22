@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk/sampled_field_scheduler_decision.csv,scheduler extraction permission contract,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction/diagnostic_average_exchange_metrics.csv,read-only completed diagnostic proxy context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/seeded_surface_input_manifest.csv,case-level geometry/input manifest,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/vtk/salt_2_cell_fields.vtk,salt_2 whole-mesh cell VTK,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_2_seeded_exchange_interface_faces.csv,salt_2 exchange interface face map,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_2_seeded_trusted_wall_faces.csv,salt_2 trusted wall face map,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_3_cell_fields.vtk,salt_3 whole-mesh cell VTK,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_3_seeded_exchange_interface_faces.csv,salt_3 exchange interface face map,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_3_seeded_trusted_wall_faces.csv,salt_3 trusted wall face map,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix/vtk/salt_4_cell_fields.vtk,salt_4 whole-mesh cell VTK,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_4_seeded_exchange_interface_faces.csv,salt_4 exchange interface face map,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_4_seeded_trusted_wall_faces.csv,salt_4 trusted wall face map,true,false,false

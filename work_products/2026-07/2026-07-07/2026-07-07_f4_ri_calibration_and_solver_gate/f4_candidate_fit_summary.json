@@ -1,0 +1,92 @@
+{
+  "cooler": {
+    "C_group": 1.161,
+    "bounds": {
+      "C_group_max": 5.0,
+      "C_group_min": -5.0,
+      "prediction_max": 5.0,
+      "prediction_min": 0.25
+    },
+    "form": "M_F4 = clamp(1 + C_group * signed_sqrt(Ri_streamwise), 0.25, 5.0)",
+    "n_points": 3,
+    "r2": -1123.9857682969225,
+    "rmse": 0.129893008854066,
+    "status": "candidate_screen_only",
+    "warning": "Only three Salt 2/3/4 points per physical fit group; candidate is not a validated portable correlation."
+  },
+  "downcomer": {
+    "C_group": 1.464,
+    "bounds": {
+      "C_group_max": 5.0,
+      "C_group_min": -5.0,
+      "prediction_max": 5.0,
+      "prediction_min": 0.25
+    },
+    "form": "M_F4 = clamp(1 + C_group * signed_sqrt(Ri_streamwise), 0.25, 5.0)",
+    "n_points": 3,
+    "r2": -2.2153245161646966,
+    "rmse": 0.5885595644307859,
+    "status": "candidate_screen_only",
+    "warning": "Only three Salt 2/3/4 points per physical fit group; candidate is not a validated portable correlation."
+  },
+  "heater": {
+    "C_group": 1.992,
+    "bounds": {
+      "C_group_max": 5.0,
+      "C_group_min": -5.0,
+      "prediction_max": 5.0,
+      "prediction_min": 0.25
+    },
+    "form": "M_F4 = clamp(1 + C_group * signed_sqrt(Ri_streamwise), 0.25, 5.0)",
+    "n_points": 3,
+    "r2": -60.22322724442495,
+    "rmse": 0.17803664138850706,
+    "status": "candidate_screen_only",
+    "warning": "Only three Salt 2/3/4 points per physical fit group; candidate is not a validated portable correlation."
+  },
+  "test_section": {
+    "C_group": -0.072,
+    "bounds": {
+      "C_group_max": 5.0,
+      "C_group_min": -5.0,
+      "prediction_max": 5.0,
+      "prediction_min": 0.25
+    },
+    "form": "M_F4 = clamp(1 + C_group * signed_sqrt(Ri_streamwise), 0.25, 5.0)",
+    "n_points": 3,
+    "r2": -0.10096745773587212,
+    "rmse": 0.20348600426974645,
+    "status": "candidate_screen_only",
+    "warning": "Only three Salt 2/3/4 points per physical fit group; candidate is not a validated portable correlation."
+  },
+  "upcomer_lower": {
+    "C_group": 0.219,
+    "bounds": {
+      "C_group_max": 5.0,
+      "C_group_min": -5.0,
+      "prediction_max": 5.0,
+      "prediction_min": 0.25
+    },
+    "form": "M_F4 = clamp(1 + C_group * signed_sqrt(Ri_streamwise), 0.25, 5.0)",
+    "n_points": 3,
+    "r2": -0.9047039947344491,
+    "rmse": 0.1395912675510496,
+    "status": "candidate_screen_only",
+    "warning": "Only three Salt 2/3/4 points per physical fit group; candidate is not a validated portable correlation."
+  },
+  "upcomer_upper": {
+    "C_group": -0.117,
+    "bounds": {
+      "C_group_max": 5.0,
+      "C_group_min": -5.0,
+      "prediction_max": 5.0,
+      "prediction_min": 0.25
+    },
+    "form": "M_F4 = clamp(1 + C_group * signed_sqrt(Ri_streamwise), 0.25, 5.0)",
+    "n_points": 3,
+    "r2": -0.36130778404814734,
+    "rmse": 0.12478450354707603,
+    "status": "candidate_screen_only",
+    "warning": "Only three Salt 2/3/4 points per physical fit group; candidate is not a validated portable correlation."
+  }
+}

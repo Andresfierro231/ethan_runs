@@ -1,0 +1,6 @@
+metric,required_for_ablation,runtime_leakage_allowed,score_status,target_rows,reason
+mdot,true,false,blocked_not_run,0,coupled pressure/thermal ablation not admitted
+TP_RMSE,true,false,blocked_not_run,6,post-solve validation targets only
+TW_RMSE,true,false,blocked_not_run,10,post-solve validation targets only
+Tmean,true,false,blocked_not_run,0,coupled thermal solve needed
+loop_delta_T,true,false,blocked_not_run,0,coupled thermal solve needed

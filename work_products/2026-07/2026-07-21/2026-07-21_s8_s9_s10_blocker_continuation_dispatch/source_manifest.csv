@@ -1,0 +1,11 @@
+artifact,path,role,mutated
+board,.agent/BOARD.md,coordination row and successor rows,true
+s8,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md,read-only evidence,false
+s9,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/README.md,read-only evidence,false
+s10,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/README.md,read-only evidence,false
+s14,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md,read-only evidence,false
+passive_h2,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/README.md,read-only evidence,false
+s13_heat_path,work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md,read-only evidence,false
+pressure_f6_source,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/README.md,read-only evidence,false
+cand001_timeout,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/README.md,read-only evidence,false
+

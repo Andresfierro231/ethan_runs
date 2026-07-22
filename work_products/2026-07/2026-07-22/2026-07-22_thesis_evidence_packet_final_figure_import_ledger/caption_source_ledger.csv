@@ -1,0 +1,10 @@
+figure_id,caption_source_path,range_or_basis_note,required_caveat
+FIG-UPCOMER-UY-COMPOSITE,work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/README.md,Signed y-velocity shared range is documented in shared_velocity_ranges.csv,Diagnostic only and not a recirculation fraction.
+FIG-UPCOMER-MAG-COMPOSITE,work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_thesis_analysis.md,Velocity magnitude shared range max is 0.07704159866519554 m/s,Do not admit ordinary upcomer closure or exchange-cell coefficient.
+FIG-S12-WATERFALL,work_products/2026-07/2026-07-22/2026-07-22_s12_thermal_residual_candidate_disposition_and_thesis_panels/README.md,S12 residual owner figure from completed diagnostic package,No candidate freeze or final score.
+FIG-S13-PATH-STATUS,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/README.md,Diagnostic-ready rows exist but production-ready rows are zero,No production harvest or Qwall admission.
+FIG-MODEL-FORM-LADDER,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md,Model-form ladder is no-admission panel,No rung is a frozen candidate.
+FIG-BLOCKED-SCORECARD,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md,Blocked scorecard reports zero final score values,Do not infer predictive accuracy.
+FIG-M3-SALT2-ELEVATION,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md,TP/TW panel uses target temperatures and available M3 predictions,Diagnostic profile only.
+FIG-M3-SALT3-ELEVATION,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md,TP/TW panel uses target temperatures and available M3 predictions,Diagnostic profile only.
+FIG-M3-SALT4-ELEVATION,work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md,TP/TW panel uses target temperatures and available M3 predictions,Diagnostic profile only.

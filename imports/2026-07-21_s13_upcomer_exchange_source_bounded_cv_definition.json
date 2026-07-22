@@ -1,6 +1,9 @@
 {
   "task": "TODO-S13-UPCOMER-EXCHANGE-SOURCE-BOUNDED-CV-DEFINITION-2026-07-21",
-  "generated_at": "2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Implementer / Tester / Writer",
+  "status": "complete_fail_closed_source_bounded_cv_not_released",
+  "objective": "Integrate existing S13 topology, alternate-CV, sampler, wall/source, geometry, and S12 evidence into one source-bounded CV release decision.",
   "changed_files": [
     ".agent/BOARD.md",
     ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-SOURCE-BOUNDED-CV-DEFINITION-2026-07-21.md",
@@ -16,40 +19,84 @@
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/normal_convention.csv",
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/source_sink_boundary_ledger.csv",
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/release_decision.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/s12_unlock_gate.csv",
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/next_task_queue.csv",
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/no_mutation_guardrails.csv",
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/source_manifest.csv",
     "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/summary.json"
   ],
   "read_only_context": [
-    "AGENTS.md",
-    ".agent/BOARD.md",
-    ".agent/FILE_OWNERSHIP.md",
-    ".agent/ROLES.md",
-    "tools/AGENTS.override.md",
-    "staging/AGENTS.override.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_segmentation_case_summary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/summary.json",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/topology_cv_case_summary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release/masks",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_interface_wall_source_recovery/summary.json",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/README.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction/surface_input_disposition.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/s13_readiness_gate.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation/source_sink_summary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/qoi_release_decision.csv",
-    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh"
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_cv_release",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_interface_wall_source_recovery",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate"
   ],
+  "summary": {
+    "case_count": 3,
+    "released_case_count": 0,
+    "s13_sampler_ready": false,
+    "s12_hiax1_unlocked": false,
+    "surface_extraction_allowed": false,
+    "sampler_or_harvest_allowed": false
+  },
   "native_solver_outputs_mutated": false,
   "registry_mutated": false,
   "scheduler_action": false,
-  "solver_postprocessing_surface_sampler_or_harvest_launched": false,
+  "solver_or_postprocessing_launch": false,
+  "surface_vtk_extraction_launched": false,
+  "sampler_or_harvest_launch": false,
   "external_fluid_edit": false,
-  "fit_or_model_selection_performed": false,
-  "exchange_cell_admission": false,
-  "s11_s12_s13_s15_s6_trigger": false,
-  "blocker_register_mutated": false,
-  "generated_index_mutated": false,
-  "residual_absorbed_into_internal_Nu": false,
-  "notes": "Source-bounded CV definition failed closed: no trusted wall faces and 17028 untrusted boundary faces across the three selected reverse-flow components."
+  "fluid_source_edit": false,
+  "external_repo_edit": false,
+  "admission_or_score_changed": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "solver_or_postprocessing_or_sampler_launched": false,
+    "surface_vtk_extraction_launched": false,
+    "fluid_or_external_repo_edited": false,
+    "fitting_or_model_selection": false,
+    "threshold_relaxation": false,
+    "exchange_cell_admission": false,
+    "s12_or_s11_or_s15_or_s6_trigger": false,
+    "residual_absorbed_into_internal_Nu": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/extract/build_s13_upcomer_exchange_source_bounded_cv_definition.py tools/extract/test_s13_upcomer_exchange_source_bounded_cv_definition.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.extract.test_s13_upcomer_exchange_source_bounded_cv_definition",
+      "result": "passed: Ran 4 tests OK"
+    },
+    {
+      "command": "python3.11 tools/extract/build_s13_upcomer_exchange_source_bounded_cv_definition.py",
+      "result": "passed; released_case_count=0; s12_hiax1_unlocked=false"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "Do not launch surface extraction, sampler refresh, harvest, same-QOI UQ, or S12 implementation from these blocked rows.",
+    "Do not relax source-bounded CV, wall, interface, source, or neighbor-window gates.",
+    "Do not substitute loop mdot, proxy faceZones, or residual absorption into internal Nu."
+  ]
 }

@@ -1,0 +1,8 @@
+uncertainty_axis,current_evidence,ready_for_fit,required_next_gate
+time_window_stationarity,late-window and replay digests exist for mainline rows,partial,attach fitted correction scoring to late-window spread and corrected-Q terminal windows
+mesh_hydraulic,Salt2 pressure-only medium/fine family comparison completed; pressure-gradient fit-safe spans are limited,partial_pressure_only,keep pressure-only admission separate from thermal UA/HTC/Nu
+mesh_thermal,current effective HTC/Nu rows are coarse or reconstructed-T blocked,no,clean reconstructed T or validated decomposed-field thermal sampler plus mesh comparison
+radiation_separability,rcExternalTemperature heat flux includes emissivity/Tsur effect but no separate radiation ledger,no,controlled radiation-parity rerun or solver output term before separating external convection and radiation
+interface_backflow,12 interface rows carry high-backflow flags,diagnostic_only,profile-aware interface sampling and sign review before internal Nu admission
+corrected_Q_low_heat_validation,"corrected-Q policy/short-name work exists, but this package does not admit new rows",not_in_this_package,row-specific admission after terminal/latest-time and uncertainty checks
+parameter_identifiability,0 control-volume rows currently pass all fit-candidate gates in this synthesis,no,"fit HX boundary first, then add internal Nu/global external terms only if heldout residuals require them"

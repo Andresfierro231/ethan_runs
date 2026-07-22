@@ -1,0 +1,4 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_runtime_inputs,pass,"24 scenario rows use setup rows, PB2 Salt2 shape, Fluid-computed wall state drive, and Salt2 cooler alpha_UA",realized wallHeatFlux;CFD mdot;validation/holdout wall-shell temperature;validation/holdout outer-surface temperature;validation/holdout probe temperatures;imposed CFD cooler duty;realized test-section heat
+R2_parallel_policy,pass,parallel_workers=8; conservative cap is 16 to avoid root-solver/memory contention,unbounded parallelism;login-node Fluid solve
+R3_coupled_execution,pass,Fluid rows run in this package,execution gate only

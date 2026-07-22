@@ -1,0 +1,24 @@
+{
+  "task_id": "TODO-HEATLOSS-PHASE-0-BASELINE-RELEASE-GATE",
+  "date": "2026-07-21",
+  "status": "complete",
+  "heat_path_count": 10,
+  "released_outputs": [
+    "heat_path_release_gate.csv",
+    "dependency_release_matrix.csv",
+    "runtime_forbidden_field_audit.csv"
+  ],
+  "runtime_guardrails": {
+    "residual_is_runtime_closure": false,
+    "internal_Nu_may_absorb_heat_residual": false,
+    "realized_CFD_wallHeatFlux_predictive_input": false,
+    "CFD_mdot_predictive_input": false,
+    "validation_temperatures_predictive_input": false
+  },
+  "next_phase": "TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION",
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "fluid_edit": false,
+  "model_scoring_or_admission": false
+}

@@ -1,0 +1,5 @@
+evidence_family,status,production_ready,supports_d3_mechanism,blocks_candidate,reason
+S12 TP-first exchange evidence,pass_diagnostic,False,True,True,finite exchange proxy rows exist but are diagnostic-only and require production harvest/UQ before promotion
+S12 source/property conservation release,fail,False,False,True,"source/property release rows remain failed, so wall-shape mechanism cannot be admitted"
+S13 same-QOI target/minus/plus triplets,triplets_ready_uq_not_executed,False,True,True,"4 QOI labels have triplets, but same-QOI UQ and production use are not executed"
+N4 sensor projection,bounded_not_runtime_input,False,True,True,10 TW sensors are bounded as score targets; runtime temperature allowed rows = 0

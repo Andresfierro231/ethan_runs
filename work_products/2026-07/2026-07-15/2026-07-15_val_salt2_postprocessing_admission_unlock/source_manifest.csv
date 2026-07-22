@@ -1,0 +1,18 @@
+label,path,exists,use
+registry wall heat grouped,registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/wall_heat_flux_grouped.csv,True,section heat-loss history and total_Q terminal drift
+registry case summary,registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/case_summary.csv,True,case-level postprocessing aggregate summary
+registry postprocessing long,registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregates/postprocessing_case_long.csv,True,"normalized postprocessing aggregate; cited, not re-streamed"
+registry aggregation manifest,registry/salt2/native_2d_cfd_external/salt_test_2/val_salt_test_2_coarse_mesh_laminar/aggregation_manifest.json,True,postprocessing provenance and row counts
+runtime total_Q,jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/total_Q.dat,True,native postProcessing scalar source mirrored by registry grouped CSV
+runtime mdot monitor left test section,jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_left_04_test_section/5182/surfaceFieldValue.dat,True,terminal mdot drift
+runtime mdot monitor lower straight,jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_lower_05_straight/5182/surfaceFieldValue.dat,True,terminal mdot drift
+runtime mdot monitor right middle,jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_right_02_middle/5182/surfaceFieldValue.dat,True,terminal mdot drift
+runtime mdot monitor upper cooler,jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/postProcessing/mdot_pipeleg_upper_05_cooler/5182/surfaceFieldValue.dat,True,terminal mdot drift
+val BC summary,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_summary.csv,True,BC role/source contract
+val BC patch detail,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_patch_detail.csv,True,patch-level BC detail
+val material properties,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/material_property_evidence.csv,True,material/property contract
+val Salt2 Jin comparison,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/salt2_jin_comparison.csv,True,lineage distinction and BC comparison
+val documentation README,work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/README.md,True,prior documentation package
+old steady rollup,work_products/2026-07/2026-07-09/2026-07-09_cfd_steady_state_continuation_table/all_timeseries_case_rollup.csv,True,conflicting heat-drift label
+AGENT-417 master,work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/salt_unlock_master_inventory.csv,True,prior missing-ledger block
+AGENT-417 steady evidence,work_products/2026-07/2026-07-15/2026-07-15_salt_external_test_and_q_unlock_admission/terminal_steady_state_evidence.csv,True,prior steady label

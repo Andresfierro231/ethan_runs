@@ -1,0 +1,6 @@
+owner,evidence_metric,value,status,claim
+bulk_to_TP_projection_D2,transfer_tp_rmse_K,4.38159298515,diagnostic_promising,TP projection improves relative to M3 but is not released
+TW_after_TP_residual,transfer_tw_rmse_K,12.5130610954,unowned_residual_remaining,TW residual remains after TP projection
+wall_shape_axial_mixing_D3,transfer_rmse_reduction_pct,51.6919381995,diagnostic_not_admitted,wall-shape signal is supported but same-QOI UQ/release missing
+segment_source_placement_D4,transfer_rmse_reduction_pct,54.272279139,diagnostic_upper_bound,"segment source placement is priority evidence, not source-bounded release"
+passive_hA_sensitivity_M2,global_half_TW5_improvement_K,51.63369382647278,not_repair_ready,large sensitivity exists but source basis is not released

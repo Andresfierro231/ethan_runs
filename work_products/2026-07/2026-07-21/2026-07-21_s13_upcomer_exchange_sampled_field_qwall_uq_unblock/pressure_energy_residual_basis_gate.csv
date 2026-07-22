@@ -1,0 +1,8 @@
+basis,status,blocks_production,allows_diagnostic_context,residual_supported,blocking_reason,source_path
+pressure_basis,blocked,true,true,false,p_or_p_rgh missing from cell VTK field inventory,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv
+mu_or_nu_basis,blocked,true,true,false,mu/nu/nut missing from cell VTK field inventory,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv
+wallHeatFlux_Q_wall_W,blocked,true,true,false,wallHeatFlux and Q_wall_W integration absent,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv
+cp_property_basis,blocked,true,true,false,cp_J_kg_K not released,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv
+same_qoi_uq,blocked,true,false,false,same-QOI UQ absent for reduced exchange QOIs,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv
+production_sampler_harvest,blocked,true,false,false,sampler-ready rows remain zero,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv
+coefficient_admission,blocked,true,false,false,fit/admission forbidden for diagnostic average proxy,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy/production_input_gate_matrix.csv

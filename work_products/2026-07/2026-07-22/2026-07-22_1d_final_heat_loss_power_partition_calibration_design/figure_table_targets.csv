@@ -1,0 +1,7 @@
+target_id,artifact_type,content,source_tables,claim_boundary
+"HT01","table","Heat-path measurement/input matrix by lane","measurement_input_matrix.csv","Design only; no calibration or release."
+"HT02","table","Calibration sequence and stop rules","calibration_sequence.csv","Train/support sequence only before freeze."
+"HT03","table","No-double-counting checks","no_double_counting_checks.csv","Shows why residual cannot enter internal Nu."
+"HT04","figure","Power-partition lane schematic with heater/cooler/passive/radiation/wall/storage/residual","measurement_input_matrix.csv; split_role_and_runtime_policy.csv","Schematic only, no admitted coefficients."
+"HT05","table","Diagnostic setup source totals and passive-H2 sensitivity values","README.md; source_manifest.csv","Diagnostic context; no numeric passive heat-loss release."
+"HT06","caption ledger","Allowed/forbidden thesis wording for heat-loss alignment","split_role_and_runtime_policy.csv","No final score or protected validation claim."

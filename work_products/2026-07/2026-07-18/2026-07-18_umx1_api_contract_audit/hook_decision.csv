@@ -1,0 +1,2 @@
+task,decision,real_hook_present,scenario_real_hook_field_count,loader_real_hook_field_present,possible_text_hit_count,contract_emitted,next_action,scientific_admission_change,solver_run,external_fluid_mutation
+AGENT-537,no_real_upcomer_mixing_hook_no_solver_api_contract,false,0,false,0,no_solver_api_contract,stop_before_solver; implement Fluid API in separate external-edit row,none,none,none

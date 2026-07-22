@@ -1,0 +1,5 @@
+blocker_family,rows_reviewed,strict_pass_rows,release_ready_rows,status,reason,next_action
+salt1_branch_source_envelope,1,0,0,blocked,missing row-specific Salt1 branch source-envelope evidence,join branch-level row-specific source-envelope evidence
+salt2_3_4_mixed_source_envelope,3,0,0,blocked,mixed/outside/unknown source-envelope evidence prevents strict source pass,replace mixed/outside/unknown labels with strict row-specific source evidence
+S13_exchange_cell_source_envelope,1,0,0,blocked,S13 lacks same-label mesh/GCI and same-mask energy residual,wait for repaired sampler and then run same-label mesh/GCI and same-mask CV residual gates
+MF12_source_memory_temperature_source_envelope,1,0,0,blocked,MF12 formula gate is diagnostic-only and source-basis release failed,recover sign-aware source basis and row-specific source envelope before smoke admission

@@ -1,0 +1,4 @@
+gate,requirement,current_status,launch_status,guardrail
+ordinary_flow,RAF < 0.01 and RMF < 0.01 at lower_leg__s04 and right_leg__s00,required_future,not_submitted,current reverse-flow rows remain diagnostic
+component_isolation,subtract straight/development loss on same Re/rho/mu/window/sign basis,blocked_current_component_k_rows,not_submitted,no clipping and no make-positive correction
+same_qoi_uq,"same endpoint labels, formulas, sign convention, retained window, and mesh family where available",required_future,not_submitted,do not borrow section-mean or proxy pressure GCI

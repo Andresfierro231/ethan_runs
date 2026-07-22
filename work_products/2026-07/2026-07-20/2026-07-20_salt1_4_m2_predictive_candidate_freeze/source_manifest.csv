@@ -1,0 +1,7 @@
+source_id,source_path,exists,source_role,mutation
+final_freeze_manifest,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_nominal_final_freeze/final_freeze_manifest.csv,yes,Salt1-4 nominal final training rows,read_only
+holdout_exclusion_audit,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_nominal_final_freeze/holdout_exclusion_audit.csv,yes,blind-row exclusion audit,read_only
+runtime_input_audit,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_nominal_final_freeze/runtime_input_audit.csv,yes,runtime guardrails,read_only
+submodel_admission_summary,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv,yes,admitted heater/cooler submodels,read_only
+model_form_contracts,work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_contracts.csv,yes,M2 model-form contract,read_only
+model_form_scores,work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff/model_form_scores.csv,yes,M2 score context,read_only

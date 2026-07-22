@@ -1,0 +1,4 @@
+decision_id,decision,allowed,reason
+next_exact_row,claim_neighbor_window_source_side_heatflow_extraction_or_preflight,true,"the retained-window QOI is defined and finite, but same-QOI neighbor windows are absent"
+direct_Q_wall_path,still_blocked_longer_path,false,wallHeatFlux on trusted wall faces is still absent
+production_or_admission,blocked,false,"source/property release, same-QOI UQ, harvest, and admission gates are not met"

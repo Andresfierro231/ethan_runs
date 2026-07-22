@@ -1,0 +1,331 @@
+{
+  "generated_at": "2026-07-13T10:30:12-05:00",
+  "task_id": "AGENT-265",
+  "case": "Salt2 Jin medium refined mesh, time 518",
+  "fatal_openfoam_error": {
+    "log": "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/outputs/medium/foampostprocess_viscosity_screening_salt_test_2_jin_coarse_mesh.log",
+    "line": 6825807,
+    "message": "wrong token type - expected Scalar, found on line 6825807 the punctuation token '-'",
+    "context": [
+      "    volScalarFields: T--> FOAM Warning : ",
+      "--> FOAM FATAL IO ERROR: ",
+      "wrong token type - expected Scalar, found on line 6825807 the punctuation token '-'",
+      "",
+      "file: /scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/recon/medium/518/T at line 6825807.",
+      "",
+      "    From function Foam::Istream& Foam::operator>>(Istream&, doubleScalar&)"
+    ]
+  },
+  "reconstruct_log": "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/logs/reconstruct_medium.log",
+  "foampostprocess_log": "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/outputs/medium/foampostprocess_viscosity_screening_salt_test_2_jin_coarse_mesh.log",
+  "agent248_source_diagnostics": {
+    "medium": {
+      "level": "medium",
+      "source_T": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh/processors64/518/T",
+      "numeric_token_count": 10410605,
+      "finite_count": 10410605,
+      "plausible_250_1500K_count": 8628511,
+      "nonfinite_count": 0,
+      "nonfinite_examples": [],
+      "thermal_status": "blocked_reconstructed_T_path_not_used_in_pressure_lane"
+    },
+    "fine": {
+      "level": "fine",
+      "source_T": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh/processors128/399/T",
+      "numeric_token_count": 30225749,
+      "finite_count": 30225749,
+      "plausible_250_1500K_count": 26343706,
+      "nonfinite_count": 0,
+      "nonfinite_examples": [],
+      "thermal_status": "blocked_reconstructed_T_path_not_used_in_pressure_lane"
+    }
+  },
+  "agent245_reconstructed_medium_scan": {
+    "path": "work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/recon/medium/518/T",
+    "exists": true,
+    "line_count": 10082991,
+    "numeric_token_count": 10082195,
+    "finite_count": 10082190,
+    "nonfinite_count": 5,
+    "plausible_250_1500K_count": 8380031,
+    "implausible_finite_count": 1702159,
+    "first_nonfinite": {
+      "line": 6825807,
+      "token": "-nan"
+    },
+    "first_implausible_finite": {
+      "line": 5,
+      "token": "13",
+      "value": 13.0
+    },
+    "nonfinite_examples": [
+      {
+        "line": 6825807,
+        "token": "-nan"
+      },
+      {
+        "line": 8769281,
+        "token": "-nan"
+      },
+      {
+        "line": 8769309,
+        "token": "-nan"
+      },
+      {
+        "line": 8769337,
+        "token": "-nan"
+      },
+      {
+        "line": 8773048,
+        "token": "-nan"
+      }
+    ],
+    "implausible_finite_examples": [
+      {
+        "line": 5,
+        "token": "13",
+        "value": 13.0
+      },
+      {
+        "line": 17,
+        "token": "0",
+        "value": 0.0
+      },
+      {
+        "line": 17,
+        "token": "0",
+        "value": 0.0
+      },
+      {
+        "line": 17,
+        "token": "0",
+        "value": 0.0
+      },
+      {
+        "line": 17,
+        "token": "1",
+        "value": 1.0
+      },
+      {
+        "line": 17,
+        "token": "0",
+        "value": 0.0
+      },
+      {
+        "line": 17,
+        "token": "0",
+        "value": 0.0
+      },
+      {
+        "line": 17,
+        "token": "0",
+        "value": 0.0
+      },
+      {
+        "line": 20,
+        "token": "6744264",
+        "value": 6744264.0
+      },
+      {
+        "line": 6744301,
+        "token": "4.34410241",
+        "value": 4.34410241
+      },
+      {
+        "line": 6744313,
+        "token": "0.95",
+        "value": 0.95
+      },
+      {
+        "line": 6744314,
+        "token": "0.011049",
+        "value": 0.011049
+      }
+    ]
+  },
+  "source_medium_snippet_at_fatal_line_number": [
+    {
+      "line": 6825797,
+      "text": "457.020758"
+    },
+    {
+      "line": 6825798,
+      "text": "456.792971"
+    },
+    {
+      "line": 6825799,
+      "text": "456.470175"
+    },
+    {
+      "line": 6825800,
+      "text": "456.140945"
+    },
+    {
+      "line": 6825801,
+      "text": "455.836776"
+    },
+    {
+      "line": 6825802,
+      "text": "455.562329"
+    },
+    {
+      "line": 6825803,
+      "text": "455.317792"
+    },
+    {
+      "line": 6825804,
+      "text": "455.101509"
+    },
+    {
+      "line": 6825805,
+      "text": "454.911923"
+    },
+    {
+      "line": 6825806,
+      "text": "454.747302"
+    },
+    {
+      "line": 6825807,
+      "text": "454.605476"
+    },
+    {
+      "line": 6825808,
+      "text": "457.737027"
+    },
+    {
+      "line": 6825809,
+      "text": "457.689267"
+    },
+    {
+      "line": 6825810,
+      "text": "457.431062"
+    },
+    {
+      "line": 6825811,
+      "text": "457.10416"
+    },
+    {
+      "line": 6825812,
+      "text": "456.782951"
+    },
+    {
+      "line": 6825813,
+      "text": "456.491248"
+    },
+    {
+      "line": 6825814,
+      "text": "456.230051"
+    },
+    {
+      "line": 6825815,
+      "text": "455.997469"
+    },
+    {
+      "line": 6825816,
+      "text": "455.791282"
+    },
+    {
+      "line": 6825817,
+      "text": "455.610172"
+    }
+  ],
+  "reconstructed_medium_snippet_at_fatal_line": [
+    {
+      "line": 6825797,
+      "text": "8.29165848e-315"
+    },
+    {
+      "line": 6825798,
+      "text": "3.022823849e-314"
+    },
+    {
+      "line": 6825799,
+      "text": "1.681997978e+199"
+    },
+    {
+      "line": 6825800,
+      "text": "8.29165844e-315"
+    },
+    {
+      "line": 6825801,
+      "text": "2.208135754e-259"
+    },
+    {
+      "line": 6825802,
+      "text": "5.98195094e-154"
+    },
+    {
+      "line": 6825803,
+      "text": "0"
+    },
+    {
+      "line": 6825804,
+      "text": "1.145113454e+243"
+    },
+    {
+      "line": 6825805,
+      "text": "2.466353193e-154"
+    },
+    {
+      "line": 6825806,
+      "text": "0"
+    },
+    {
+      "line": 6825807,
+      "text": "-nan"
+    },
+    {
+      "line": 6825808,
+      "text": "6.013469303e-154"
+    },
+    {
+      "line": 6825809,
+      "text": "1.170676121e+214"
+    },
+    {
+      "line": 6825810,
+      "text": "-357.643587"
+    },
+    {
+      "line": 6825811,
+      "text": "-350.00686"
+    },
+    {
+      "line": 6825812,
+      "text": "-350.358256"
+    },
+    {
+      "line": 6825813,
+      "text": "-351.025378"
+    },
+    {
+      "line": 6825814,
+      "text": "-351.941602"
+    },
+    {
+      "line": 6825815,
+      "text": "-353.026299"
+    },
+    {
+      "line": 6825816,
+      "text": "-354.199684"
+    },
+    {
+      "line": 6825817,
+      "text": "-355.393599"
+    }
+  ],
+  "diagnosis": [
+    "AGENT-248 pressure-only diagnostics found zero nonfinite tokens in native/decomposed medium and fine source T files.",
+    "AGENT-245 reconstructPar completed without reporting failure, but the serial reconstructed medium T contains -nan tokens and implausible finite values.",
+    "foamPostProcess fails when reading the first -nan token in the reconstructed serial T at line 6825807.",
+    "This is a reconstructed-field quality blocker, not evidence that the native source T field is unusable."
+  ],
+  "recommended_next_steps": [
+    "Keep thermal UA/HTC/Nu blocked until a reconstructed T repair is proven on medium and fine.",
+    "Do not sanitize or overwrite native source outputs.",
+    "For a repair trial, create a fresh task-scoped reconstruction directory and reconstruct only T under the same OF13 runtime; immediately scan the serial T for nonfinite and extreme tokens before running foamPostProcess.",
+    "If OF13 reconstructPar reproduces the corruption, bypass serial T by sampling from decomposed/collated processor T or reconstruct through a different, version-pinned OpenFOAM path; document equivalence before admitting thermal rows.",
+    "Only after zero nonfinite reconstructed-T tokens and successful --dump-temperature section sampling should thermal closure tables be regenerated."
+  ]
+}

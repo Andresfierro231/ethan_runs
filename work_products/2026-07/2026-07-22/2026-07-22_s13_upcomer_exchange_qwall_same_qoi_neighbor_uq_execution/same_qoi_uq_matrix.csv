@@ -1,0 +1,5 @@
+qoi_label,case_count,target_window_ready_rows,target_minus_ready_rows,target_plus_ready_rows,neighbor_window_uq_ready,same_qoi_mesh_gci_status,move_to_mesh_gci_uq_allowed_now,production_use_allowed_now,reason
+Q_wall_W,3,3,0,0,false,deferred_until_neighbor_window_uq_ready,false,false,same-QOI neighbor-window UQ missing; do not move to mesh/GCI or production harvest
+mdot_exchange_positive_outward_proxy_kg_s,3,3,0,0,false,deferred_until_neighbor_window_uq_ready,false,false,same-QOI neighbor-window UQ missing; do not move to mesh/GCI or production harvest
+tau_recirc_proxy_s,3,3,0,0,false,deferred_until_neighbor_window_uq_ready,false,false,same-QOI neighbor-window UQ missing; do not move to mesh/GCI or production harvest
+wall_core_bulk_temperature_contrast_K,3,3,0,0,false,deferred_until_neighbor_window_uq_ready,false,false,same-QOI neighbor-window UQ missing; do not move to mesh/GCI or production harvest

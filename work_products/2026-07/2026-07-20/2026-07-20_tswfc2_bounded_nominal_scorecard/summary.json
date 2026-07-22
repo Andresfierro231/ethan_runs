@@ -1,0 +1,25 @@
+{
+  "admission_decision": "not_admitted",
+  "blocking_reasons": "source_property_gate_blocked;numerical_coupled_gate_failed_or_missing_m3",
+  "candidate_id": "tswfc2_smoke_salt2_four_node_v1",
+  "cases_solved": [
+    "Salt 1",
+    "Salt 2",
+    "Salt 3",
+    "Salt 4"
+  ],
+  "decision": "not_admitted_no_grid_expansion",
+  "fit_or_model_selection_run": false,
+  "native_case_dirs": [
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_1",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_2",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_3",
+    "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_4"
+  ],
+  "numerical_coupled_all_pass": false,
+  "root_all_pass": true,
+  "scientific_admission_change": "none",
+  "score_grid_run": false,
+  "source_property_all_pass": false,
+  "task": "AGENT-557"
+}

@@ -1,0 +1,19 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAME-WINDOW-UQ-DESIGN-2026-07-21",
+  "generated_at": "2026-07-21T17:18:18-05:00",
+  "package": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design",
+  "target_qoi_count": 3,
+  "support_gate_count": 4,
+  "blocked_target_qoi_count": 3,
+  "s11_reviewable_candidate_count": 0,
+  "uq_release_allowed": false,
+  "sampler_or_harvest_allowed": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false
+}

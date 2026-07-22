@@ -1,0 +1,4 @@
+admissible_as_training_score,allowed_in_this_packet,case_id,external_bc_split_roles,interpretation,protected_scoring_allowed,setup_uq_train_only_label,split_label_conflict
+False,True,salt_2,train,used as train-context diagnostic only; not admission/scoring evidence,False,True,False
+False,True,salt_3,validation,used as setup-UQ train-context diagnostic only; not admission/scoring evidence,False,True,True
+False,True,salt_4,holdout,used as setup-UQ train-context diagnostic only; not admission/scoring evidence,False,True,True

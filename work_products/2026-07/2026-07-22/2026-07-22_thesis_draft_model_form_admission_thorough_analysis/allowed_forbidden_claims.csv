@@ -1,0 +1,7 @@
+claim_lane,allowed_claim,forbidden_claim
+mdot_vs_thermal,Hydraulic progress does not guarantee thermal prediction,Do not say mdot acceptance validates TP/TW.
+residual_owner,Residual must stay explicit until physical owner evidence exists,Do not put missing heat into internal Nu or hidden multiplier.
+runtime_legality,CFD fields are diagnostic unless explicitly runtime-legal,Do not use CFD mdot/wallHeatFlux/imposed cooler duty/validation temperatures as inputs.
+correlation_envelope,Ordinary correlations are disabled outside admitted ordinary-flow envelope,Do not admit Nu/fD/K/F6 on recirculating upcomer rows.
+negative_results,Fail-closed gates are scientific evidence,Do not soften blocked gates into admitted models.
+score_discipline,Final score remains zero without frozen runtime-legal candidate,Do not compute protected scores before freeze.

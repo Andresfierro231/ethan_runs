@@ -1,0 +1,11 @@
+caveat_id,assumption_or_caveat,where_to_apply,why_it_matters
+AC-01,The model scope is steady-state; wall storage/transient heat capacity is future work unless reopened.,Ch4/Ch5/Ch9,"Prevents accidental transient claims."
+AC-02,Every segment equation needs branch/station mapping and material role.,Ch5/appendix,"Avoids abstract equations detached from the physical loop."
+AC-03,Property lane must be fixed/labeled before interpreting Re/Pr/Gz/Ri/Nu/f/K.,Ch2/Ch5/Ch6,"Property choice changes closure interpretation."
+AC-04,Residual terms are accounting lanes, not closures.,Ch5/Ch7,"Prevents hiding missing heat/pressure physics in Nu, K, UA, or global multipliers."
+AC-05,Drive temperature for wall loss must be specified.,Ch5/Ch7,"Bulk, inner-wall, outer-wall, and insulation-surface drives define different closures."
+AC-06,Radiation may already be embedded in realized CFD wall-flux diagnostics.,Ch5/Ch7,"Prevents double-counting radiation in replay or predictive descriptions."
+AC-07,Pressure basis must separate hydrostatic, kinetic, distributed/developing, section/cluster, transient, and residual terms.,Ch4/Ch7,"Prevents negative or section-effective residuals from being labeled component K."
+AC-08,Recirculating upcomer rows invalidate ordinary single-stream Nu/f_D/K language unless a later gate supersedes this.,Ch5/Ch7/Ch9,"Protects the core upcomer model-form result."
+AC-09,CFD is high-fidelity computational reference evidence, not experimental validation.,All chapters,"Prevents overclaiming validation."
+AC-10,Equation presence is not admission.,All chapters,"External writer must not convert model slots into accepted coefficients."

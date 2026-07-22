@@ -1,0 +1,7 @@
+case_id,mesh_level,error_type,error_message,disposition,repair_requirement
+salt_2,medium,ValueError,salt_2 missing 87696 face area vectors,fail_closed_no_qoi_rows,add owner-to-neighbour face area vector components to generated exchange-interface rows before interface_reduction
+salt_2,fine,ValueError,salt_2 missing 190008 face area vectors,fail_closed_no_qoi_rows,add owner-to-neighbour face area vector components to generated exchange-interface rows before interface_reduction
+salt_3,medium,ValueError,salt_3 missing 87696 face area vectors,fail_closed_no_qoi_rows,add owner-to-neighbour face area vector components to generated exchange-interface rows before interface_reduction
+salt_3,fine,ValueError,salt_3 missing 190008 face area vectors,fail_closed_no_qoi_rows,add owner-to-neighbour face area vector components to generated exchange-interface rows before interface_reduction
+salt_4,medium,ValueError,salt_4 missing 87696 face area vectors,fail_closed_no_qoi_rows,add owner-to-neighbour face area vector components to generated exchange-interface rows before interface_reduction
+salt_4,fine,ValueError,salt_4 missing 190008 face area vectors,fail_closed_no_qoi_rows,add owner-to-neighbour face area vector components to generated exchange-interface rows before interface_reduction

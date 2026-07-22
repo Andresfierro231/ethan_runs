@@ -1,0 +1,25 @@
+case_id,time_window_s,qoi,input_support_status,geometry_support_ready,whole_mesh_T_U_rho_support,pressure_basis_ready,Q_wall_W_ready,same_qoi_uq_ready,diagnostic_harvest_allowed,production_harvest_allowed,coefficient_admission_allowed,blocking_reason
+salt_2,7915,V_recirc,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,recirc cell mask and volume CSV are present; diagnostic volume reduction can be a next task
+salt_2,7915,mdot_exchange,blocked_missing_sampled_interface_U_rho,true,true,false,false,false,false,false,false,requires sampled interface U and rho with released normal convention
+salt_2,7915,T_recirc,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,"recirc cell mask, volume CSV, and whole-mesh T are present, but reduction/UQ has not been run"
+salt_2,7915,R_rho,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,"whole-mesh rho is present, but density ratio reduction/UQ has not been run"
+salt_2,7915,R_mu,blocked_missing_mu_or_nu_basis,false,true,false,false,false,false,false,false,no mu/nu basis is present in the inventoried whole-mesh VTK fields
+salt_2,7915,pressure_residual,blocked_missing_pressure_basis,false,true,false,false,false,false,false,false,no p or p_rgh basis is present in the inventoried whole-mesh VTK fields
+salt_2,7915,energy_residual,blocked_missing_Q_wall_mdot_T_cp,false,true,false,false,false,false,false,false,"requires Q_wall_W, mdot_exchange*T terms, cp_J_kg_K, and source/sink sign release"
+salt_2,7915,wall_core_delta_T,blocked_missing_sampled_wall_core_reduction,true,true,false,false,false,false,false,false,requires wall/core band thermal reduction and sampled or mapped wall/core fields
+salt_3,7618,V_recirc,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,recirc cell mask and volume CSV are present; diagnostic volume reduction can be a next task
+salt_3,7618,mdot_exchange,blocked_missing_sampled_interface_U_rho,true,true,false,false,false,false,false,false,requires sampled interface U and rho with released normal convention
+salt_3,7618,T_recirc,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,"recirc cell mask, volume CSV, and whole-mesh T are present, but reduction/UQ has not been run"
+salt_3,7618,R_rho,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,"whole-mesh rho is present, but density ratio reduction/UQ has not been run"
+salt_3,7618,R_mu,blocked_missing_mu_or_nu_basis,false,true,false,false,false,false,false,false,no mu/nu basis is present in the inventoried whole-mesh VTK fields
+salt_3,7618,pressure_residual,blocked_missing_pressure_basis,false,true,false,false,false,false,false,false,no p or p_rgh basis is present in the inventoried whole-mesh VTK fields
+salt_3,7618,energy_residual,blocked_missing_Q_wall_mdot_T_cp,false,true,false,false,false,false,false,false,"requires Q_wall_W, mdot_exchange*T terms, cp_J_kg_K, and source/sink sign release"
+salt_3,7618,wall_core_delta_T,blocked_missing_sampled_wall_core_reduction,true,true,false,false,false,false,false,false,requires wall/core band thermal reduction and sampled or mapped wall/core fields
+salt_4,10000,V_recirc,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,recirc cell mask and volume CSV are present; diagnostic volume reduction can be a next task
+salt_4,10000,mdot_exchange,blocked_missing_sampled_interface_U_rho,true,true,false,false,false,false,false,false,requires sampled interface U and rho with released normal convention
+salt_4,10000,T_recirc,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,"recirc cell mask, volume CSV, and whole-mesh T are present, but reduction/UQ has not been run"
+salt_4,10000,R_rho,input_support_ready_reduction_not_run,true,true,false,false,false,false,false,false,"whole-mesh rho is present, but density ratio reduction/UQ has not been run"
+salt_4,10000,R_mu,blocked_missing_mu_or_nu_basis,false,true,false,false,false,false,false,false,no mu/nu basis is present in the inventoried whole-mesh VTK fields
+salt_4,10000,pressure_residual,blocked_missing_pressure_basis,false,true,false,false,false,false,false,false,no p or p_rgh basis is present in the inventoried whole-mesh VTK fields
+salt_4,10000,energy_residual,blocked_missing_Q_wall_mdot_T_cp,false,true,false,false,false,false,false,false,"requires Q_wall_W, mdot_exchange*T terms, cp_J_kg_K, and source/sink sign release"
+salt_4,10000,wall_core_delta_T,blocked_missing_sampled_wall_core_reduction,true,true,false,false,false,false,false,false,requires wall/core band thermal reduction and sampled or mapped wall/core fields

@@ -1,0 +1,24 @@
+{
+  "case_count": 4,
+  "counts": {
+    "gate_rows": 3,
+    "repaired_metric_rows": 12,
+    "resample_rows": 4,
+    "source_rows": 3
+  },
+  "created_utc": "2026-07-15T13:18:57.751592+00:00",
+  "date": "2026-07-15",
+  "external_fluid_modified": false,
+  "f6_pressure_onset_review_ready_not_admitted": false,
+  "internal_nu_wallHeatFlux_blocked": true,
+  "metric_rows": 12,
+  "native_solver_outputs_mutated": false,
+  "openfoam_launched": false,
+  "scheduler_jobs_launched": false,
+  "status_counts": {
+    "incomplete": 9,
+    "plane_and_wall_temperature_repaired_wallHeatFlux_blocked": 3
+  },
+  "task": "AGENT-404",
+  "wallHeatFlux_rows": 0
+}

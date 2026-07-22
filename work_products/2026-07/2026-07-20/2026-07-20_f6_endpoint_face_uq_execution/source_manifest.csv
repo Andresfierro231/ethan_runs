@@ -1,0 +1,9 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv,yes,selected clean endpoint pairs,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_pressure_deltas.csv,yes,existing same-QOI pressure deltas,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_mesh_uq_diagnostic.csv,yes,existing mesh spread status,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/same_qoi_time_uq_status.csv,yes,existing time-UQ blocker,read_only
+work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/target_feature_taps.csv,yes,coarse source case roots and retained times,read_only
+work_products/2026-07/2026-07-10/2026-07-10_salt2_refined_pressure_smoke_and_8pm_batch/summary.json,yes,Salt2 medium/fine source roots and retained times,read_only
+work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv,yes,station geometry,read_only
+tools/analyze/compute_gci.py,yes,GCI calculator,read_only

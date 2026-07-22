@@ -1,0 +1,24 @@
+{
+  "admission_change_counts": {
+    "none": 16
+  },
+  "agent554_todo_input_rows": 22,
+  "blank_required_label_rows": 0,
+  "case_rows_refreshed": 16,
+  "failure_mode_counts_after_refresh": {
+    "candidate_allowed_but_source_property_blocked": 4,
+    "diagnostic_or_no_fit_source_use": 4,
+    "outside_or_mixed_source_envelope": 3,
+    "source_property_gate_blocked": 1
+  },
+  "gate_after_refresh_allowed_candidate_rows": 0,
+  "gate_after_refresh_candidate_rows": 4,
+  "gate_after_refresh_findings": 4,
+  "historical_scorecard_rewritten": false,
+  "missing_or_blank_required_label_findings": 0,
+  "prediction_join_rows_read_only": 79,
+  "refresh_required_label_content_findings": 0,
+  "remaining_todo_rows": 16,
+  "scientific_admission_change": "none",
+  "task": "TODO-FINAL-SCORECARD-SOURCE-PROPERTY-REFRESH"
+}

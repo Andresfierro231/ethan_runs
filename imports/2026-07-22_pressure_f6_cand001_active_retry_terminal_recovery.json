@@ -1,0 +1,52 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/scientific_worth_assessment.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/current_scheduler_snapshot.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/active_retry_source_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/worth_trying_decision.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/duplicate_launch_guard.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/post_terminal_decision_tree.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/no_scoring_guardrails.csv",
+    ".agent/status/2026-07-22_TODO-PRESSURE-F6-CAND001-ACTIVE-RETRY-TERMINAL-RECOVERY-2026-07-22.md",
+    ".agent/journal/2026-07-22/pressure-f6-cand001-active-retry-terminal-recovery.md",
+    "imports/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery.json",
+    "tools/analyze/build_pressure_f6_cand001_active_retry_terminal_recovery.py",
+    "tools/analyze/test_pressure_f6_cand001_active_retry_terminal_recovery.py",
+    ".agent/BOARD.md"
+  ],
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T13:07:54.140688+00:00",
+  "mutation_flags": {
+    "blocker_register_change": false,
+    "component_cluster_or_clipped_k": false,
+    "f6_scoring_or_fit": false,
+    "fluid_or_external_repo_edit": false,
+    "hidden_global_multiplier": false,
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_submission_or_mutation": false,
+    "solver_postprocessing_sampler_or_harvest_launch": false
+  },
+  "native_solver_outputs_mutated": false,
+  "provenance_notes": "Scheduler state was read only. Existing job 3308712 was recognized as the active CAND001 retry; no duplicate job was submitted.",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/high_heat_steady_relaunch_manifest.csv",
+    "jadyn_runs/modern_runs/2026-07-16_high_heat_no_recirc_probe/README.md",
+    ".agent/status/2026-07-21_TODO-HIGH-HEAT-SALT4-STEADY-RELAUNCH-2026-07-21.md",
+    "scheduler/accounting state for jobs 3308712, 3299610, 3299620",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external repos",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": "read_only_squeue_sacct_snapshot_no_submit_cancel_requeue",
+  "task": "TODO-PRESSURE-F6-CAND001-ACTIVE-RETRY-TERMINAL-RECOVERY-2026-07-22"
+}

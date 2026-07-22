@@ -1,0 +1,59 @@
+column,required,units,allowed,description
+observation_id,yes,,unique string,Stable row identifier; one row is one observable.
+source_id,yes,,Salt 2/3/4 Jin admitted source ids,CFD source identifier.
+case_id,yes,,salt_2|salt_3|salt_4,Short case id.
+case_family,yes,,salt,Fluid/case family.
+run_class,yes,,mainline_jin_continuation,Run class admitted by the scenario contract.
+mesh_level,yes,,coarse,Mesh level for the observable.
+mesh_status,yes,,coarse_no_gci,Mesh uncertainty state; current rows have no GCI band.
+source_case_root,yes,,repo-relative path,Solver case root or source contract root used as provenance.
+source_path,yes,,existing repo-relative file,CSV or artifact file containing the numeric source value.
+source_row_key,yes,,string,Join key back to the source artifact row.
+observable_family,yes,,pressure|thermal|time_window,Broad observable class.
+observable_type,yes,,string,Specific observable source/type.
+span,yes,,span or case,Span/branch identity; case-level rows use case.
+segment_1d,yes,,span/branch/case,1D segment mapping used by model consumers.
+station_start,no,,string,Station or endpoint label when available.
+station_end,no,,string,Station or endpoint label when available.
+window_id,yes,,string,Named time-window contract.
+time_window_start_s,yes,s,finite number,Start of the extraction or statistical window.
+time_window_end_s,yes,s,finite number,End of the extraction or statistical window.
+time_window_source,yes,,string,Artifact used to assign the window.
+n_samples,no,count,number or blank,Samples used where available.
+quantity,yes,,string,Observable name consumed by closure/bakeoff scripts.
+value,yes,see units,finite number,Numeric observable value.
+units,yes,,non-empty,Physical units; use dimensionless where applicable.
+uncertainty_value,no,uncertainty_units,number or blank,Uncertainty magnitude when available.
+uncertainty_units,no,,string,Units for uncertainty_value.
+uncertainty_method,no,,string,How uncertainty was estimated.
+geometry_source,yes,,string,Geometry/provenance basis for the row.
+pressure_method,yes,,string|not_applicable,Pressure reduction method.
+thermal_method,yes,,string|not_applicable,Thermal reduction method.
+physical_interface_bracket_status,yes,,string|not_applicable,Whether thermal control volume interfaces physically bracket the row.
+thermal_residual_status,yes,,string|not_applicable,Residual computation/admission state for thermal rows.
+thermal_residual_assignment,yes,,string|not_applicable,"Residual assignment rule, e.g. wall flux minus enthalpy change."
+thermal_residual_fraction,no,dimensionless,number or blank,Thermal residual normalized by enthalpy change where available.
+thermal_residual_W,no,W,number or blank,Thermal wallHeatFlux minus enthalpy-change residual.
+interface_temperature_source,no,,repo-relative path or blank,Interface-temperature source table or plane file.
+interface_temperature_selection_rule,yes,,string|not_applicable,How mixing-cup and forward-flow temperatures are selected/preserved.
+max_interface_recirc_ratio,no,dimensionless,number or blank,Maximum interface recirculation/backflow metric used for row gating.
+recirculation_flag,yes,,yes|no,Whether recirculation/backflow contaminates this observable.
+radiation_output_term,yes,,string|not_applicable,OpenFOAM radiation output term status; do not infer radiation from emissivity.
+radiation_present,yes,,yes|no,Whether a sampled/output radiation term is present.
+control_volume,no,,string,Physical thermal control volume when applicable.
+control_volume_group,no,,string,"Control-volume group such as heater, cooler_reducer, or junction."
+interface_role,no,,string,Role of the sampled interface plane in a control volume.
+dominant_flow_direction,no,,string,Dominant directional flux across a sampled interface plane.
+backflow_fraction,no,dimensionless,number or blank,Backflow fraction from physical-interface sampling.
+convergence_status,yes,,stationary|not_available,Convergence state from source gates.
+window_state,yes,,moving_not_plateaued|not_applicable|oscillatory_not_steady|quasi_stationary|short_or_early_terminated|stationary|transient_model_only,Time-window state for fit use.
+operating_point_verdict,yes,,admitted_mainline,Operating-point admission verdict.
+admission_status,yes,,admitted_mainline|excluded|held,Row-level admission state.
+needs_special_gate_scrutiny,yes,,yes|no,Gate-scrutiny flag; corrected perturbations must be explicit.
+fit_eligible,yes,,yes|no,Whether this row may be used to fit model coefficients.
+validation_eligible,yes,,yes|no,Whether this row may be used to score a model.
+fit_use_status,yes,,diagnostic_only|fit_feature|fit_target|not_fit_apparent_or_residual|not_fit_recirculation|not_fit_thermal_caveat|not_fit_unbracketed_junction|validation_only|validation_only_thermal_residual,Reason for fit eligibility/exclusion.
+validation_use_status,yes,,validation_target|validation_diagnostic,Validation role.
+independence_group_id,yes,,string,Blocking group for correlated rows/windows.
+quality_flags,yes,,semicolon-delimited flags or none,Known row caveats.
+provenance_notes,yes,,string,Short source and interpretation note.

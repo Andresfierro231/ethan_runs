@@ -1,0 +1,4 @@
+check_id,status,value,expected,basis
+parser_algorithm,pass_unit_tested,owner_neighbour_oriented_divergence_theorem,cell volume from closed oriented face flux,synthetic cube and two-cell tests exercise owner and neighbour signs
+native_mutation,pass_no_mutation,false,false,parser reads polyMesh files and writes only package outputs
+production_mesh_policy,blocked_until_scheduler_row,full Salt meshes are multi-million-cell,compute_node_execution,do not run heavy full-mesh parsing on login node

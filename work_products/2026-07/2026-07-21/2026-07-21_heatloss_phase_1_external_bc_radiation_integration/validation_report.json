@@ -1,0 +1,35 @@
+{
+  "blocked_items": [
+    {
+      "blocker": "TODO-1D-RADIATION-CAPABILITY",
+      "meaning": "The analytic contract is release-gated, but executable 1D radiation terms and ledgers remain a future implementation row."
+    },
+    {
+      "blocker": "TODO-FLUID-EXTERNAL-BC-DICT",
+      "meaning": "This package defines the repo-local schema and audit; Fluid source edits remain separately claim-gated."
+    },
+    {
+      "blocker": "TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE",
+      "meaning": "Split junction/storage/qr evidence is still required before wall/test-section candidate scoring."
+    }
+  ],
+  "checks": {
+    "analytic_radiation_tests_pass": true,
+    "case_count": 3,
+    "internal_Nu_residual_absorption_forbidden": true,
+    "predictive_mode_forbids_wallHeatFlux": true,
+    "radiation_off_labeled_sensitivity_only": true,
+    "replay_mode_forbids_extra_convection_and_radiation": true,
+    "required_schema_fields_present": true,
+    "segment_role_field_status_explicit": true,
+    "segment_role_rows_present": true
+  },
+  "date": "2026-07-21",
+  "fluid_edit": false,
+  "model_scoring_or_admission": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "status": "complete_pending_closeout_validation",
+  "task_id": "TODO-HEATLOSS-PHASE-1-EXTERNAL-BC-RADIATION-INTEGRATION"
+}

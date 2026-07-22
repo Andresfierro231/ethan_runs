@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="284" viewBox="0 0 630 284">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="28" font-family="Arial" font-size="18" font-weight="700">TAMU Nondimensional Regime Eligibility Map</text>
+<text x="20" y="50" font-family="Arial" font-size="12">Red: ordinary single-stream blocked; amber: precheck only; gray: diagnostic only. No coefficient admission.</text>
+<text x="188" y="76" font-family="Arial" font-size="12" font-weight="700">salt_2</text>
+<text x="338" y="76" font-family="Arial" font-size="12" font-weight="700">salt_3</text>
+<text x="488" y="76" font-family="Arial" font-size="12" font-weight="700">salt_4</text>
+<text x="20" y="108" font-family="Arial" font-size="11">left_lower_leg</text>
+<rect x="180" y="86" width="144" height="28" fill="#c9483a" rx="3"/>
+<text x="188" y="105" font-family="Arial" font-size="11" fill="#ffffff">blocked</text>
+<rect x="330" y="86" width="144" height="28" fill="#c9483a" rx="3"/>
+<text x="338" y="105" font-family="Arial" font-size="11" fill="#ffffff">blocked</text>
+<rect x="480" y="86" width="144" height="28" fill="#c9483a" rx="3"/>
+<text x="488" y="105" font-family="Arial" font-size="11" fill="#ffffff">blocked</text>
+<text x="20" y="142" font-family="Arial" font-size="11">left_upper_leg</text>
+<rect x="180" y="120" width="144" height="28" fill="#c9483a" rx="3"/>
+<text x="188" y="139" font-family="Arial" font-size="11" fill="#ffffff">blocked</text>
+<rect x="330" y="120" width="144" height="28" fill="#c9483a" rx="3"/>
+<text x="338" y="139" font-family="Arial" font-size="11" fill="#ffffff">blocked</text>
+<rect x="480" y="120" width="144" height="28" fill="#c9483a" rx="3"/>
+<text x="488" y="139" font-family="Arial" font-size="11" fill="#ffffff">blocked</text>
+<text x="20" y="176" font-family="Arial" font-size="11">lower_leg</text>
+<rect x="180" y="154" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="188" y="173" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="330" y="154" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="338" y="173" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="480" y="154" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="488" y="173" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<text x="20" y="210" font-family="Arial" font-size="11">right_leg</text>
+<rect x="180" y="188" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="188" y="207" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="330" y="188" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="338" y="207" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="480" y="188" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="488" y="207" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<text x="20" y="244" font-family="Arial" font-size="11">test_section_span</text>
+<rect x="180" y="222" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="188" y="241" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="330" y="222" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="338" y="241" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="480" y="222" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="488" y="241" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<text x="20" y="278" font-family="Arial" font-size="11">upper_leg</text>
+<rect x="180" y="256" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="188" y="275" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="330" y="256" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="338" y="275" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+<rect x="480" y="256" width="144" height="28" fill="#d6a12d" rx="3"/>
+<text x="488" y="275" font-family="Arial" font-size="11" fill="#ffffff">precheck</text>
+</svg>

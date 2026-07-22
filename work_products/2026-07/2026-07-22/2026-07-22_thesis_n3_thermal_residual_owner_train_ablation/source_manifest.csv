@@ -1,0 +1,8 @@
+source_key,path,summary_path,exists,mutation_status
+s8_s12,work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate,work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/summary.json,true,read_only
+source_decomp,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp,work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/summary.json,true,read_only
+passive_source,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment/summary.json,true,read_only
+passive_h2,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/summary.json,true,read_only
+external_bc_gate,work_products/2026-07/2026-07-21/2026-07-21_train_only_external_bc_attribution_freeze_gate,work_products/2026-07/2026-07-21/2026-07-21_train_only_external_bc_attribution_freeze_gate/summary.json,true,read_only
+empirical_bias,work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic,work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/summary.json,true,read_only
+reduced_dof,work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen,work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/summary.json,true,read_only

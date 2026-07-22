@@ -1,0 +1,15 @@
+{
+  "blocking_gate_count": 7,
+  "corrected_q_rows_admitted": 0,
+  "external_fluid_modified": false,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "fitted_internal_nu_rows_consumable": false,
+  "gate_requirement_count": 5,
+  "generated_at_utc": "2026-07-14T20:37:43+00:00",
+  "generated_indexes_touched": false,
+  "native_solver_outputs_mutated": false,
+  "refresh_queue_count": 5,
+  "task": "AGENT-348",
+  "thesis_evidence_row_count": 6,
+  "workstream_count": 7
+}

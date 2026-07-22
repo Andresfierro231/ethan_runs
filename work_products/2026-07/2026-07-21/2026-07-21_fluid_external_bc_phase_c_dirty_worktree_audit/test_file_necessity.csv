@@ -1,0 +1,5 @@
+test_file,decision,required_cases,reason
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py,add,13,Phase B unit-test matrix is parser/API specific and should not be mixed into already dirty broad solver-contract tests
+../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,conditional_edit,0_by_default,Existing dirty file already contains broad external_boundary_table tests; avoid unless ScenarioConfig defaults/imports force an update
+external Fluid full test suite,do_not_run_in_audit,not_applicable,This row is read-only pre-implementation audit; run tests only after Phase C implementation edits
+repo-local finish_task,run,1,Required closeout for this audit row

@@ -1,0 +1,9 @@
+artifact,role,path
+summary.json,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json
+forward_v1_gate_checklist.csv,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_gate_checklist.csv
+summary.json,source,work_products/2026-07/2026-07-14/2026-07-14_forward_v1_pm5_hydraulic_delta/summary.json
+summary.json,source,work_products/2026-07/2026-07-14/2026-07-14_fluid_reset_development_api/summary.json
+summary.json,source,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/summary.json
+summary.json,source,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/summary.json
+salt1_training_admission_update.csv,source,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_training_admission_update.csv
+pm5_upcomer_job_harvest_status.csv,source,work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/pm5_upcomer_job_harvest_status.csv

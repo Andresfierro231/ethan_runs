@@ -13,6 +13,16 @@ provenance:
   - reports/thesis_dossier/Chapters_and_sections/current/13_two_tap_recirc_section_effective_pressure_model.md
   - work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/README.md
   - operational_notes/07-26/17/2026-07-17_CANONICAL_FINAL_PREDICTIVE_SPLIT_POLICY.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_thesis_extbc_negative_result_claim_update/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/README.md
 tags: [thesis-section, current-section, claim-ledger, evidence-ledger, split-policy, caveats]
 related:
   - TODO-THESIS-ENRICHMENT-RESEARCH-AVENUES
@@ -73,6 +83,10 @@ The ledger deliberately separates four categories:
 | CL-24 | The final scorecard shell exists, but final predictive scores and admissions wait for a frozen candidate. | Final predictive scorecard shell. | Salt1-4 training; Salt2 +/-5Q holdout; `val_salt2` external. | Blocked by `FINAL_FREEZE_TBD` and open submodel gates. | `2026-07-17_final_predictive_scorecard_shell/README.md`. | Placeholder rows are a contract, not results. |
 | CL-25 | SAM relevance is interpretive transfer, not SAM validation. | Endpoint strategy and dedicated SAM-facing section. | All evidence may inform closure discipline; no SAM scoring role yet. | Thesis-safe interpretation. | `11_sam_facing_interpretation.md`. | Do not claim SAM validation, SAM calibration, or experimental confirmation unless an actual SAM/experiment comparison is added. |
 | CL-26 | Recirculating two-tap corner pressure should be modeled as a section-effective pressure residual, not ordinary component K. | July 20 package emits a residual contract, current-row pressure/recirculation table, same-QOI UQ sampling contract, paper claim ledger, artifact crosswalk, and figure/table manifest. | Current rows are diagnostic/model-form evidence; future rows may become candidates only after same-QOI UQ and split-safe scoring. | Contract created; predictive closure and coefficient admission remain blocked. | `13_two_tap_recirc_section_effective_pressure_model.md`; `2026-07-20_two_tap_recirc_section_effective_model/section_effective_model_contract.csv`; `paper_methods_pressure_basis.md`; `paper_results_current_evidence.md`. | The allowed labels are `section_effective_pressure_residual`, `K_eff_recirc_diagnostic`, and `regime_diagnostic`; forbidden labels include ordinary `component_K`, F6 fit admission, and hidden global hydraulic multipliers. |
+| CL-27 | The external-BC thermal failure is diagnostic, not a dead end: it localizes the next uncertainty to external heat-path physical basis and missing source/sink or redistribution physics. | Phase E proves the runtime path works but leaves large train-only thermal residuals; F-J/Phase F assigns dominant ownership to heated-incline/TW5; Phase G/I prevent dictionary/source-sink leakage; Phase H/H2 show heat-path responsiveness without admitting a global fit. | Train/support diagnostics only; validation, holdout, and external-test rows consumed `0/0/0`. | Negative result / residual-localization claim; no repair, freeze, or admission. | `2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json`; `2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/dominant_thermal_residual_owners.csv`; `2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv`. | Do not treat the global passive-hA response as a fitted multiplier, internal-`Nu` correction, source/sink runtime admission, or final predictive score. |
+| CL-28 | The upcomer exchange path now has a seeded extraction scaffold, but no sampler-ready or admitted exchange-cell closure. | S13 seeded surface/input manifest and heat-path lane release; matched Salt `side_z` velocity-y and velocity-magnitude figures. | Salt2/Salt3/Salt4 input-readiness context; figures are diagnostic visual evidence. | Input-ready / heat-path fail-closed; sampler-ready rows remain `0/3`; admission remains blocked. | `2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/README.md`; `2026-07-21_s13_seeded_heat_path_lane_release/README.md`; `2026-07-21_velocity_magnitude_pictures/README.md`. | Seeded cells/faces and velocity arrows define where future exchange QOIs attach; they do not admit ordinary upcomer `Nu/f_D/K`, exchange coefficients, or runtime CFD velocity inputs. |
+| CL-29 | Passive heat-loss sensitivity is broad train-only attribution evidence, not an admitted passive-hA repair. | F-J baseline diagnostics, Phase H six-perturbation sensitivity, H2 passive heat-loss attribution. | Train/support diagnostics only. | Repair not executed; passive source-basis candidate not admitted; validation/holdout/external scores remain unconsumed. | `2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md`; `2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/README.md`; `2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv`. | Do not turn `global_passive_hA_scale_0.5` into a fitted multiplier; future repair needs independent setup/geometry/literature basis and source/property release. |
+| CL-30 | S14 narrows pressure/F6 future lanes while admitting no pressure/F6 coefficient. | S14 branch-use scorecard: `53` rows, `0` admitted, `11` diagnostic-only, `8` future-candidate, `34` do-not-use. | Diagnostic and future-candidate labeling only. | Current F6 endpoint pairs remain diagnostic; `right_leg` and `test_section_span` are future ordinary-pressure lanes only. | `2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv`; `f6_branch_decision_table.csv`. | Do not claim F6 recorrection, component K, clipped K, hidden multiplier, or S11 trigger from S14. |
 
 ## How To Use This Ledger In The Thesis
 
@@ -85,7 +99,8 @@ Claim -> evidence table/figure -> split role -> admission status -> caveat.
 
 For example, the junction-aware section should cite CL-11 through CL-13. The
 uncertainty chapter should cite CL-19 through CL-22. The forward predictive
-model chapter should cite CL-04, CL-05, CL-09, CL-10, and CL-23 through CL-24.
+model chapter should cite CL-04, CL-05, CL-09, CL-10, CL-23 through CL-24, and
+CL-27 when reporting external-boundary negative results.
 
 ## Open Claim Follow-Ups
 

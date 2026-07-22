@@ -1,0 +1,5 @@
+priority,next_study,why,success_signal,current_status_after_mf14
+1,runtime_wall_profile_basis_for_tp_projection,MF14 leaves TP correction release closed; D3 wall-shape evidence needs a runtime-legal wall/profile basis before TW/TP corrections can be admitted,source-bounded wall/profile operator or fail-closed gap table with no protected scoring,next
+2,source_property_label_release_candidate_after_exact_fields,MF13 identified source/property gaps and MF14 identified projection-UQ gaps; source labels remain required before MF12 formulas,"explicit release/fail-closed table for q_setup, cp, segment map, and placement kernel",pending
+3,train_only_mf12_formula_smoke_after_release,"Only after source/property, TP projection UQ, and wall/profile gates pass should formula execution occur",train/support-only metrics and runtime-leakage audit,blocked_by_release_gates
+4,tw_after_tp_residual_ownership,TW residual ownership should wait until TP projection and wall/profile layers are separated,TW residual-owner table after released or diagnostic TP projection subtraction,pending

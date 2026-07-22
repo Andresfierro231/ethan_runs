@@ -1,0 +1,8 @@
+source_id,path,use
+agent494_coupled_admission,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_coupled_admission,PB1+HX coupled failure mode and completed comparator rows
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,HX alpha_UA and segmented HX adapter
+agent461_m3,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv,M3 mdot/TP/TW/all-probe comparator gates
+agent_m3_sensor_baseline,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/sensor_level_errors.csv,M3 probe-level comparator for localization and role/segment summaries
+setup_external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,setup hA/Ta/Tsur/emissivity role rows and Salt2 training target evidence
+wall_layer_drive_mapping,work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv,Salt2-only upcomer/test-section attenuation diagnostic and score-only wall evidence
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,optional read-only Fluid solve_case execution

@@ -1,0 +1,4 @@
+basis_id,required_inputs,current_status,use_in_MF08,admissibility
+hydraulic_reset_after_bends_or_components,"segment length, hydraulic diameter, Re, local disturbance/reset markers",pending_MF07_or_source_basis,needed to separate straight/developing branch correction from wall-flux sign effect,not_ready
+thermal_Graetz_coordinate,"Re, Pr, hydraulic diameter, thermal entrance origin, source sign by branch",pending_MF07_or_source_basis,needed to evaluate whether a signed heat-transfer term is physically developing or merely a residual fit,not_ready
+piecewise_memory_reset,"component boundaries, branch sign, recirculation validity, reset length scale",pending_MF07_and_MF09,needed for the piecewise signed wall-flux reset-memory variant,not_ready

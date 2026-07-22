@@ -1,0 +1,5 @@
+check,status,forbidden_input,policy
+no_upcomer_in_ordinary_aggregate,pass_forbidden,recirculating upcomer rows in ordinary-pipe aggregate,handoff to hybrid lane
+no_validation_temperatures_runtime,pass_forbidden,validation TP/TW temperatures,score targets only
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,coupled solved output
+no_global_multiplier,pass_forbidden,global Nu/f friction multiplier,branch-specific forms only

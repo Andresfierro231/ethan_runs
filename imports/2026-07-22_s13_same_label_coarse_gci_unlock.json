@@ -1,0 +1,40 @@
+{
+  "task": "TODO-S13-SAME-LABEL-COARSE-GCI-UNLOCK-2026-07-22",
+  "task_id": "TODO-S13-SAME-LABEL-COARSE-GCI-UNLOCK-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Mesh-GCI / Reviewer / Tester / Writer",
+  "decision": "s13_same_label_coarse_gci_unlock_fail_closed_no_coarse_admission",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/coarse_same_label_unlock_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/s13_qoi_coarse_disposition.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/summary.json",
+    ".agent/status/2026-07-22_TODO-S13-SAME-LABEL-COARSE-GCI-UNLOCK-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-same-label-coarse-gci-unlock.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/auditable_coarse_equivalence_contract.csv",
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "external_repo_mutated": false,
+    "thesis_body_edited": false,
+    "source_property_released": false,
+    "coefficient_admitted": false,
+    "final_score_released": false
+  },
+  "provenance_notes": "Generated from compact source packages only; no native CFD, registry, scheduler, Fluid, external repo, or thesis body files were mutated."
+}

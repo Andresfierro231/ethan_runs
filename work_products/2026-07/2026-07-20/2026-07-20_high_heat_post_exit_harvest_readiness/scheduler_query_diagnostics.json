@@ -1,0 +1,8 @@
+[
+  {
+    "command": "ssh login1 sacct -P -n -j 3299610,3299620 --format=JobIDRaw,JobName,State,Elapsed,NNodes,NodeList%80",
+    "returncode": 0,
+    "stderr_tail": "To access the system:\n\n1) If not using ssh-keys, please enter your TACC password at the password prompt\n2) At the TACC Token prompt, enter your 6-digit code followed by <return>.",
+    "stdout_lines": 8
+  }
+]

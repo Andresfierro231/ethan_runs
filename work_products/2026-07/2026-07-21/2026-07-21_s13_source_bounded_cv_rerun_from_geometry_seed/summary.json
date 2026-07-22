@@ -1,0 +1,20 @@
+{
+  "task": "TODO-S13-SOURCE-BOUNDED-CV-RERUN-FROM-GEOMETRY-SEED-2026-07-21",
+  "generated_at": "2026-07-21T18:51:11-05:00",
+  "status": "complete_geometry_cv_released",
+  "case_count": 3,
+  "released_seed_cv_rows": 3,
+  "surface_extraction_ready_rows": 3,
+  "sampler_ready_rows": 0,
+  "s12_hiax1_unlocked": false,
+  "surface_extraction_launched": false,
+  "sampler_or_harvest_launched": false,
+  "scheduler_action": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fitting_or_model_selection": false,
+  "exchange_cell_coefficient_admission": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "residual_absorbed_into_internal_Nu": false,
+  "next_action": "claim surface/source manifest refresh row"
+}

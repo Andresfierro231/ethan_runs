@@ -1,0 +1,11 @@
+source_id,path,role,used_for
+SRC-001,work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/summary.json,active_retry_snapshot,prior active CAND001 retry state and monitor-only decision
+SRC-002,work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/current_scheduler_snapshot.csv,prior_scheduler_snapshot,prior scheduler state and duplicate-launch guard
+SRC-003,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/summary.json,cand001_retry_gate,endpoint fields and F6 scoring status
+SRC-004,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_low_recirc_source_readiness/summary.json,low_recirc_source_readiness,terminal-ready cases and endpoint-field readiness
+SRC-005,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_cand001_timeout_disposition/summary.json,timeout_disposition,prior timeout context and no F6 evidence status
+SRC-006,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,s14_f6_anchor_map,current F6 use labels and no-admission state
+SRC-007,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv,s14_scorecard,low-recirculation anchor row details and pressure-corner rows
+SRC-008,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,pressure_basis_ladder,section-effective residual and admitted F6 counts
+SRC-009,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/summary.json,section_effective_bakeoff,section-effective no-fit performance and forbidden admission counts
+SRC-010,read-only scheduler query squeue/sacct for job 3308712 on 2026-07-22,current_scheduler_observation,current running state; no submit cancel harvest or requeue

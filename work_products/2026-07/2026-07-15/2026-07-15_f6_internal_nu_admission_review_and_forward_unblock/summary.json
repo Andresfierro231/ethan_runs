@@ -1,0 +1,39 @@
+{
+  "created_utc": "2026-07-15T14:46:46.617407+00:00",
+  "external_fluid_mutated": false,
+  "f6_fit_admissible_rows": 0,
+  "f6_review_class_counts": {
+    "diagnostic_onset_only_material_recirculation_not_f6_fit": 12
+  },
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "final_hydraulic_residual_status": "blocked_not_final",
+  "generated_index_refreshed": false,
+  "internal_nu_fit_admissible_rows": 0,
+  "internal_nu_review_class_counts": {
+    "diagnostic_section_effective_material_recirculation_not_fit": 8,
+    "diagnostic_sign_review_required": 4
+  },
+  "native_solver_outputs_mutated": false,
+  "outputs": [
+    "README.md",
+    "f6_onset_scorecard.csv",
+    "f6_fit_candidate_table.csv",
+    "internal_nu_h_proxy_review.csv",
+    "thermal_sign_heat_balance_gate.csv",
+    "internal_nu_admission_decision.csv",
+    "final_forward_v1_unblock_requirements.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "pm5_rows": 12,
+  "pm5_wallHeatFlux_rows": 12,
+  "positive_h_proxy_rows": 8,
+  "registry_or_admission_mutated": false,
+  "scheduler_mutated": false,
+  "segment_heat_balance_gate_counts": {
+    "fail_downcomer_policy": 4,
+    "fail_sign_convention_or_direction": 12
+  },
+  "segment_heat_balance_pass_rows": 0,
+  "task": "AGENT-425"
+}

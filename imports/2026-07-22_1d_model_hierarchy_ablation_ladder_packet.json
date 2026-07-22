@@ -1,0 +1,69 @@
+{
+  "task": "TODO-1D-MODEL-HIERARCHY-ABLATION-LADDER-PACKET-2026-07-22",
+  "task_id": "TODO-1D-MODEL-HIERARCHY-ABLATION-LADDER-PACKET-2026-07-22",
+  "generated_at_utc": "2026-07-22T14:50:28Z",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-MODEL-HIERARCHY-ABLATION-LADDER-PACKET-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-model-hierarchy-ablation-ladder-packet.md",
+    "imports/2026-07-22_1d_model_hierarchy_ablation_ladder_packet.json",
+    "tools/analyze/build_1d_model_hierarchy_ablation_ladder_packet.py",
+    "tools/analyze/test_1d_model_hierarchy_ablation_ladder_packet.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/model_hierarchy_ladder.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/ablation_evidence_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/freeze_prerequisite_gate_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/final_score_guardrail_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/figure_caption_targets.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s12_thermal_residual_candidate_disposition_and_thesis_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_predict_salt_pm10_terminal_admission/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_amx1_axial_mixing_fluid_api_handoff/summary.json",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid and external repositories",
+    "thesis current/LaTeX files",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_or_sampler_launched": false,
+    "external_fluid_edit": false,
+    "fit_or_model_selection": false,
+    "candidate_freeze": false,
+    "source_property_release": false,
+    "validation_holdout_external_scoring": false,
+    "final_predictive_score_values": 0,
+    "thesis_current_or_latex_edit": false,
+    "blocker_register_change": false,
+    "generated_index_refresh": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "output_contract": {
+    "hierarchy_rows": 7,
+    "ablation_rows": 6,
+    "freeze_gate_rows": 6,
+    "final_predictive_score_values": 0,
+    "candidate_freeze_allowed": false
+  },
+  "validation": [
+    "python3.11 tools/analyze/build_1d_model_hierarchy_ablation_ladder_packet.py",
+    "python3.11 -m pytest tools/analyze/test_1d_model_hierarchy_ablation_ladder_packet.py"
+  ]
+}

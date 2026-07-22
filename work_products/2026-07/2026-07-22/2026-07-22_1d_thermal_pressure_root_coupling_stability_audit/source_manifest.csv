@@ -1,0 +1,7 @@
+path,role,read_only
+work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/lightweight_sensitivity_matrix.csv,setup-only sensitivity ranks,yes
+work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/propagation_plan.csv,protected propagation sequence,yes
+work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/mdot_sensitivity_coupling_estimate.csv,pressure residual mdot scale warning,yes
+work_products/2026-07/2026-07-22/2026-07-22_mf02_pressure_mdot_coupling_diagnostic/f3_f6_prerequisite_table.csv,F3/F6 ordinary-flow blockers,yes
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,pressure basis non-admission status,yes
+work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/model_hierarchy_ladder.csv,hierarchy/freeze context,yes

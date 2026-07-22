@@ -1,0 +1,6 @@
+check,status,forbidden_action,detail
+no_scheduler_action,pass,sbatch;srun;scancel;scontrol,request-hardening package only
+no_solver_or_harvest_launch,pass,OpenFOAM;foamRun;postprocessing harvest,all inputs are completed CSV/JSON work products
+no_native_output_mutation,pass,native CFD/OpenFOAM output edit,no native case path is written
+no_registry_or_admission_mutation,pass,registry/admission state edit,scientific status remains request/design only
+ordinary_upcomer_fit_forbidden,pass,fit Nu/f_D/K,all requested rows carry onset-only or feasibility labels

@@ -1,0 +1,12 @@
+{
+  "boundary_field_rows": 8,
+  "core_guardrail": "Do not fit heater, cooler/HX, wall/external convection, radiation, storage, or branch-mixing residuals into internal Nu.",
+  "external_fluid_modified": false,
+  "generated_at": "2026-07-14T17:31:00+00:00",
+  "internal_nu_fit_admissible_rows_today": 0,
+  "native_solver_outputs_mutated": false,
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails",
+  "residual_guardrail_rows": 7,
+  "status": "complete",
+  "task": "AGENT-336"
+}

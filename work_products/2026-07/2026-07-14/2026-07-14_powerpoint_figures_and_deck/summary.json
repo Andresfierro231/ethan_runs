@@ -1,0 +1,11 @@
+{
+  "task_id": "AGENT-367",
+  "figures": 17,
+  "slides": 18,
+  "deck": "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/2026-07-15_powerpoint_deck.pptx",
+  "report_deck": "reports/thesis_dossier/2026-07-15_powerpoint_deck.pptx",
+  "figure_manifest": "work_products/2026-07/2026-07-14/2026-07-14_powerpoint_figures_and_deck/figure_manifest.csv",
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_state_mutated": false,
+  "scheduler_state_mutated": false
+}

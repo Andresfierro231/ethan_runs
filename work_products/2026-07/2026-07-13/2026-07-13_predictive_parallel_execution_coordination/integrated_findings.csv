@@ -1,0 +1,9 @@
+finding_id,lane,status,key_result,next_action
+F1,solve_case_confirmation,pass,"Job 3293960 completed 0:0 in 00:07:19; comparison passed 6/6 rows with max mdot delta 0.0003927565 kg/s and max Tmean delta 0.005084779 K","Use solve_case rows as authoritative; fast_scan proxy is validated for these rows"
+F2,hydraulic_correction,partial_unlocked,"Best candidate H1_localized_named_loss_and_reset_bundle; mean required resistance multiplier 2.115338371","Implement/rerun bounded hydraulic correction before any final thermal claim"
+F3,hx_cooler,proxy_scoreable,"One-scalar HX1 scoring exists under Salt2 train/Salt3 validation/Salt4 holdout; F1 validation Tmean error 6.534 K and holdout 20.587 K","Rerun after hydraulic correction; do not refit on validation/holdout"
+F4,external_boundary,bridge_ready,"AGENT-297 emitted 24 Fluid-ready external BC rows and downstream Fluid patch plan","Claim external Fluid API row before editing cfd-modeling-tools"
+F5,thermal_mesh,blocked,"0 fit-admissible rows and 0 publication-ready thermal GCI rows","Resolve sign review, missing coarse triplets, lower-leg Nu/admission, and downcomer policy"
+F6,sensor_map,partial_scoreable,"17 sensors mapped; 15 provisionally diagnostic-scoreable; TP2/TW10 blocked","Use sensors only as validation targets and document exclusions"
+F7,endtoend_score,not_ready,"Scorecard precursor exists but final forward-v1 claim is blocked by unapplied hydraulic correction and thermal/sensor/API gates","Run forward-v1 after hydraulic correction and update scorecard"
+

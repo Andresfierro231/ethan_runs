@@ -1,0 +1,23 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-GEOMETRY-CONTRACT-2026-07-21",
+  "generated_at": "2026-07-21T16:42:24-05:00",
+  "status": "complete_fail_closed",
+  "case_ids": [
+    "salt_2",
+    "salt_3",
+    "salt_4"
+  ],
+  "case_count": 3,
+  "geometry_source_ledger_rows": 33,
+  "released_interface_rows": 0,
+  "released_wall_core_rows": 0,
+  "released_q_wall_rows": 0,
+  "harvest_ready_rows": 0,
+  "surface_vtk_extraction_allowed": false,
+  "exchange_cell_harvest_allowed": false,
+  "native_output_mutation": false,
+  "scheduler_action": false,
+  "fitting_or_model_selection": false,
+  "exchange_cell_admission": false,
+  "residual_absorbed_into_internal_Nu": false
+}

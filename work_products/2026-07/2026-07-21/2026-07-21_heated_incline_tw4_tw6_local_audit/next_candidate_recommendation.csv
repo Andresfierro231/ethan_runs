@@ -1,0 +1,4 @@
+priority,next_action,why,guardrail
+1,implement deterministic setup-known lower-leg heater source lane in a separate Fluid/API row,TW5/TW6 are underpredicted while setup heater Q exists,train-only first; no validation/holdout tuning
+2,rerun train-only residual decomposition after source lane is executable,distinguish missing source from remaining model form,no freeze/admission from residual-only evidence
+3,only then test axial mixing or upcomer/heated-incline exchange form,S8 says passive selectors are exhausted,predeclare one form and compare against train baseline

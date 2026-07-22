@@ -1,0 +1,24 @@
+{
+  "blocked_mesh_gci_after_tap_refresh_rows": 6,
+  "centerline_blocked_rows": 3,
+  "centerline_length_status_counts": {
+    "blocked_requires_raw_two_tap_extraction": 3,
+    "resolved_from_existing_mesh_centerline": 12
+  },
+  "centerline_resolved_rows": 12,
+  "component_fit_admissible_rows": 0,
+  "component_k_rows": 15,
+  "component_k_status_counts": {
+    "blocked_mesh_gci_after_tap_refresh": 6,
+    "blocked_missing_centerline_tap_length": 3,
+    "diagnostic_only_recirculation_adjacent": 6
+  },
+  "external_fluid_code_edited": false,
+  "generated_at_utc": "2026-07-14T20:35:38.775090+00:00",
+  "global_multiplier_exported": false,
+  "h1_faithful_launchable": false,
+  "native_solver_outputs_mutated": false,
+  "recirculation_diagnostic_rows": 6,
+  "recommendation": "do_not_fit_component_k_yet; proceed_to_reset_development_api_and_mesh_gci_admission",
+  "thermal_fit_used": false
+}

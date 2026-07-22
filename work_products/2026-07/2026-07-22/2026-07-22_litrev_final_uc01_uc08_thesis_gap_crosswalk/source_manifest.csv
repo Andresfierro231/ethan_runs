@@ -1,0 +1,5 @@
+source_path,exists,use
+../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_unresolved_claims.csv,true,read_only
+../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/README.md,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_narrative_question_coverage_gap_audit/README.md,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/README.md,true,read_only

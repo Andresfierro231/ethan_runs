@@ -1,0 +1,3 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_m2_salt1_cooler_hx_resolution_package/summary.json,yes,Salt1 cooler/HX resolution,read_only
+work_products/2026-07/2026-07-20/2026-07-20_m2_holdout_scoring_readiness/scoring_row_queue.csv,yes,holdout readiness queue,read_only

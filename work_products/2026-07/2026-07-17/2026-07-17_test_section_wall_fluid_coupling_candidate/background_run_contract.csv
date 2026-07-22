@@ -1,0 +1,2 @@
+contract_id,timeout_seconds,command,policy
+bounded_srun_coupled_score,273,srun -N1 -n1 python3.11 tools/analyze/build_test_section_wall_fluid_coupling_candidate.py --run-fluid --timeout-seconds 273,run bounded Fluid scoring through compute-node srun; no login-node Fluid solve

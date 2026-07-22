@@ -1,0 +1,4 @@
+study,sbatch_path,job_name,partition,time_limit,dependency_recommendation,compute_requirement,local_validation
+m3ts,work_products/2026-07/2026-07-15/2026-07-15_m3ts_val_salt2_matched_plane_sbatch_submit/scripts/run_m3ts_setup_only_scorecard.sbatch,m3ts_score,development,01:00:00,afterok:3295438,lightweight Python scorecard rebuild; no OpenFOAM,pending
+val_salt2,work_products/2026-07/2026-07-15/2026-07-15_m3ts_val_salt2_matched_plane_sbatch_submit/scripts/run_val_salt2_external_test.sbatch,val_s2_ext,development,01:00:00,afterok:3295438,lightweight Python external-test rebuild; no OpenFOAM,pending
+matched_plane_onset,work_products/2026-07/2026-07-15/2026-07-15_m3ts_val_salt2_matched_plane_sbatch_submit/scripts/run_matched_plane_onset_extraction.sbatch,pm5_onset,NuclearEnergy,08:00:00,afterok:3295438,OpenFOAM reconstruct/foamPostProcess sampling on compute node,pending

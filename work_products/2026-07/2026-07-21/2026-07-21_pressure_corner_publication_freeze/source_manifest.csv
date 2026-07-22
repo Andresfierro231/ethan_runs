@@ -1,0 +1,7 @@
+source_path,use,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv,frozen pressure-corner numeric audit,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/README.md,interpretive source summary and guardrails,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/summary.json,row counts and guardrail counts,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv,LitRev pressure-corner basis rules,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv,CFD pressure decomposition contract,read_only
+operational_notes/maps/pressure-and-momentum-budget.md,topic-map continuity,read_only

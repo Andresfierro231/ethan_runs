@@ -1,0 +1,25 @@
+{
+  "collapsed_row_count": 3,
+  "compact_row_count": 47,
+  "generated_at": "2026-07-14T14:30:36-05:00",
+  "input_row_count": 50,
+  "label_counts": {
+    "needs continuation": 33,
+    "not run": 3,
+    "steady": 11
+  },
+  "lineages_with_superseded_rows": 2,
+  "native_solver_outputs_mutated": false,
+  "output_table": "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_compact_lineage_table.csv",
+  "q_variant_counts": {
+    "hi10q": 4,
+    "hi5q": 6,
+    "hiq": 7,
+    "lo10q": 4,
+    "lo5q": 6,
+    "loq": 4,
+    "nominal": 16
+  },
+  "source_table": "work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/submitted_cfd_run_steady_state_table.csv",
+  "task": "AGENT-346"
+}

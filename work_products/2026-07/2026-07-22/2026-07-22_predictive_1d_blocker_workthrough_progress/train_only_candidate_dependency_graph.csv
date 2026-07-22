@@ -1,0 +1,7 @@
+node,depends_on,status,evidence,unblocks
+source_property_release,,blocked,release-ready rows remain 0,candidate_preflight
+S13_residual_complete_contract,source_property_release,contract_defined_fail_closed,open-CV residual equation and case skeletons defined; 0 residual values released,bulk_integral_candidate_family
+PASSIVE_H2_runtime_operator,Fluid runtime implementation row,ready_to_launch_separate_row,corrected operator target and tests specified,passive_wall_candidate_family
+pressure_endpoint_companion,AGENT-519 terminal trigger,scheduler_gated,ordinary F6 current evidence fail-closed,pressure_mdot_coupling_companion
+candidate_preflight,source_property_release;S13_residual_complete_contract or PASSIVE_H2_runtime_operator,blocked,no freeze-ready candidates,train_only_discovery
+freeze_manifest,train_only_discovery;UQ;runtime_audit;split_audit,closed,final score values remain 0,S15_then_S6_final_score

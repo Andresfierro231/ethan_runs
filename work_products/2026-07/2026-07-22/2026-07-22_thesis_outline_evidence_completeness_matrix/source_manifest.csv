@@ -1,0 +1,12 @@
+source_id,path,use,mutation_status
+thesis_dossier_readme,reports/thesis_dossier/README.md,front-door chapter context,read_only
+mentor_outline,reports/thesis_dossier/mentor_thesis_outline.md,chapter structure context,read_only
+evidence_packet_contract,work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/evidence_packet_schema.csv,schema requirement,read_only
+cfd_legal_use,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/summary.json,CFD legal use and split status,read_only
+source_property_atlas,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json,source/property release status,read_only
+ch7_ch8_packet,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch7_ch8_results_negative_blocked/summary.json,negative and blocked results,read_only
+model_form_scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,model form counts,read_only
+pressure_basis,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,pressure gate status,read_only
+recirculation_onset,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/summary.json,recirculation/onset status,read_only
+figure_import_ledger,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/summary.json,figure import status,read_only
+blockers,.agent/BLOCKERS.md,current blocker register,read_only

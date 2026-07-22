@@ -1,0 +1,21 @@
+{
+  "accepted_rows": 0,
+  "blocked_rows": 8,
+  "clipped_k_rows": 0,
+  "closure_admissions": 0,
+  "coefficient_admissions": 0,
+  "diagnostic_only_rows": 2,
+  "f6_fit_performed_rows": 0,
+  "fit_or_model_selection": false,
+  "fluid_or_external_edit": false,
+  "generated_index_refresh": false,
+  "global_multiplier_rows": 0,
+  "native_output_mutation": false,
+  "not_applicable_rows": 2,
+  "phase_c_rows": 12,
+  "registry_or_admission_mutation": false,
+  "runtime_leakage_failures": 0,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "task": "TODO-SAME-QOI-UQ-PHASE-C-ADMISSION-TABLE-2026-07-21"
+}

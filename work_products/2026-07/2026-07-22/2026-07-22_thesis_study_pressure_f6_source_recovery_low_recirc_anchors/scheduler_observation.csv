@@ -1,0 +1,7 @@
+observed_at_local,job_id,command_kind,state,elapsed,node_or_end,action_taken,interpretation
+2026-07-22,3308712,squeue,RUNNING,15:44:43,c318-017,read_only_query,no terminal recovery or harvest possible yet
+2026-07-22,3308712,sacct,RUNNING,15:44:43,End Unknown,read_only_query,batch and four foamRun steps still running
+2026-07-22,3308712.0,sacct,RUNNING,15:44:18,End Unknown,read_only_query,source case step still running
+2026-07-22,3308712.1,sacct,RUNNING,15:44:18,End Unknown,read_only_query,source case step still running
+2026-07-22,3308712.2,sacct,RUNNING,15:44:18,End Unknown,read_only_query,source case step still running
+2026-07-22,3308712.3,sacct,RUNNING,15:44:18,End Unknown,read_only_query,source case step still running

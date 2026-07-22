@@ -1,0 +1,2 @@
+candidate_id,runtime_gate,root_gate,source_property_gate,numerical_coupled_gate,admission_decision,blocking_reasons,grid_expansion,scientific_admission_change
+tswfc2_smoke_salt2_four_node_v1,pass,pass,fail,fail,not_admitted,source_property_gate_blocked;numerical_coupled_gate_failed_or_missing_m3,none,none

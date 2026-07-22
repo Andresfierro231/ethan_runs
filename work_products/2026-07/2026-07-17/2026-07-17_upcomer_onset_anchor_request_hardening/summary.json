@@ -1,0 +1,17 @@
+{
+  "blocker_attack_rows": 5,
+  "guardrail_rows": 5,
+  "launch_gate_rows": 5,
+  "mesh_time_requirement_rows": 5,
+  "native_solver_outputs_mutated": false,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_anchor_request_hardening",
+  "pm5_pm10_request_rows": 35,
+  "reason_not_unblocked": "request contract only; CFD execution, postprocessing, and admission remain future work",
+  "registry_mutated": false,
+  "same_window_field_rows": 10,
+  "scheduler_action": false,
+  "scientific_admission_change": "none",
+  "target_matrix_rows": 12,
+  "task": "TODO-UPCOMER-ONSET-ANCHOR-REQUEST-HARDENING",
+  "unblocks_upcomer_onset_data_sparsity": false
+}

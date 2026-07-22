@@ -1,0 +1,9 @@
+category,path_pattern,reason,allowed_alternative
+native_solver_outputs,"jadyn_runs/**/case_stage/**; staging/**/processor*; linked_cases/**","Native or staged solver outputs are too large and are provenance sources, not compact thesis evidence.","Reference exact paths in source manifests."
+raw_sampled_fields,"tmp_extract/**; work_products/**/raw*; work_products/**/sampled_fields/**","Raw fields are not writer-facing and can be huge.","Copy reviewed CSV excerpts or packet ledgers only."
+broad_generated_figures,"figures_rendered/**; work_products/**/figures/**","Broad figure trees are too large and may contain unreviewed variants.","Copy selected reviewed PNG/SVG/PDF assets with source manifests."
+scheduler_logs,"**/slurm-*.out; **/logs/**","Logs are not thesis-facing except tiny terminal-status excerpts.","Summarize terminal status in evidence packet."
+external_repos,"../papers/**; ../cfd-modeling-tools/**","This row has no external mutation authority.","Create separate exact artifact-transfer or implementation row."
+manuscript_chapter_bodies,"../papers/**.tex; reports/thesis_dossier/Chapters_and_sections/current/*.md","Outside writer owns prose/chapter composition.","Provide evidence packets and instructions only."
+unreviewed_work_products,"work_products/** not named in copy_no_copy_manifest.csv","Unreviewed packages may contain stale or superseded claims.","Add a future evidence packet row before use."
+admission_state_files,"registry/**; .agent/blockers.yml; generated .agent/STATE.md/.agent/BLOCKERS.md","Global state changes are out of scope.","Read generated state only when a future row claims it."

@@ -1,0 +1,32 @@
+{
+  "task": "TODO-LITREV-THROUGHFLOW-RECIRC-EXCHANGE-CELL",
+  "date": "2026-07-21",
+  "status": "complete",
+  "objective": "Define a dry reduced-model interface and switching contract for one-stream, signed-flow junction, and throughflow plus recirculation/exchange-cell modes.",
+  "outputs": {
+    "switching_modes": 4,
+    "interface_fields": 21,
+    "cfd_evidence_requirements": 11,
+    "failure_criteria": 12,
+    "coefficient_fits": 0,
+    "admissions": 0
+  },
+  "required_fields_present_in_contract": [
+    "R_mu",
+    "R_rho",
+    "V_recirc",
+    "mdot_exchange",
+    "T_recirc",
+    "tau_recirc",
+    "pressure_residual",
+    "energy_residual"
+  ],
+  "guardrails": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "fluid_or_external_code_mutated": false,
+    "fitting_or_tuning_performed": false,
+    "coefficient_admission_changed": false
+  }
+}

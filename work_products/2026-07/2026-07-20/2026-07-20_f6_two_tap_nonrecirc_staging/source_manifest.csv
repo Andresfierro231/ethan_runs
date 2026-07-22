@@ -1,0 +1,9 @@
+artifact_id,path,source_type,access,used_for
+agent_556_runbook,work_products/2026-07/2026-07-20/2026-07-20_forward_blocker_unlock_runbook/next_agent_contracts.csv,repo_work_product,read_only,AGENT-560 required output contract and no-compute guardrail.
+two_tap_nonrecirc_plan,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/README.md,repo_work_product,read_only,Preferred conditional CAND-001 source-family decision.
+two_tap_source_selection,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/source_case_selection.csv,repo_work_product,read_only,Source-case ranks and future sampler preconditions.
+two_tap_staging_contract,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/staging_contract.csv,repo_work_product,read_only,Base staging constraints adopted and narrowed.
+two_tap_endpoint_contract,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/endpoint_sampling_contract.csv,repo_work_product,read_only,Endpoint field and gate requirements.
+two_tap_uq_plan,work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/same_qoi_uq_family_plan.csv,repo_work_product,read_only,Same-QOI UQ requirements.
+component_repair,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_admission_repair/split_decision.csv,repo_work_product,read_only,Current Salt2/Salt3/Salt4 corner_lower_right rows remain diagnostic-only.
+high_heat_monitor,work_products/2026-07/2026-07-20/2026-07-20_high_heat_post_exit_harvest_readiness/harvest_readiness_queue.csv,repo_work_product,read_only,High-heat source cases are running/not terminal in cited evidence.

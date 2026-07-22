@@ -1,0 +1,5 @@
+panel_id,panel_type,source,status,claim_boundary
+A,prior_N2_context,work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/panel_manifest.csv,ready_existing_artifact,diagnostic N2 package remains valid
+B,Q_wall_one_sided_time_drift,work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels_refresh_after_neighbor_sampling/qwall_target_minus_time_drift_table.csv,table_ready,target-minus adjacent drift only; not UQ
+C,same_QOI_neighbor_UQ_blocker,work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels_refresh_after_neighbor_sampling/same_qoi_neighbor_uq_blocker_table.csv,table_ready,target-plus missing for all QOIs
+D,production_admission_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_neighbor_window_sampling/production_readiness_gate.csv,caption_ready,"production harvest, mesh/GCI UQ, and admission remain closed"

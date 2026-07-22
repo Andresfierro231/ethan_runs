@@ -1,0 +1,37 @@
+{
+  "counts": {
+    "background_run_contract.csv": 1,
+    "candidate_admission_review.csv": 3,
+    "candidate_definitions.csv": 3,
+    "coupled_delta_vs_m3.csv": 6,
+    "coupled_scorecard.csv": 9,
+    "next_steps.csv": 2,
+    "probe_delta_vs_m3.csv": 102,
+    "probe_error_localization.csv": 153,
+    "role_segment_error_summary.csv": 60,
+    "runtime_input_audit.csv": 4,
+    "scenario_contracts.csv": 9,
+    "source_manifest.csv": 8,
+    "static_candidate_gate.csv": 6,
+    "static_drive_audit.csv": 12,
+    "wall_candidate_definitions.csv": 2
+  },
+  "created_utc": "2026-07-17T21:47:21.233819+00:00",
+  "decision": {
+    "admitted_candidates": [],
+    "blocker_decision": "keep_open",
+    "blocker_id": "predictive-wall-test-section-submodels",
+    "coupled_completed_rows": 9,
+    "coupled_status_counts": {
+      "completed": 9
+    },
+    "created_utc": "2026-07-17T21:47:21.117103+00:00",
+    "task": "AGENT-513",
+    "why": "No wall-temperature-drive candidate has passed validation and holdout mdot, all-probe, and TW gates vs M3."
+  },
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_wall_temperature_drive_candidate",
+  "reuse_existing_coupled": true,
+  "run_fluid": true,
+  "task": "AGENT-513",
+  "timeout_seconds": 273
+}

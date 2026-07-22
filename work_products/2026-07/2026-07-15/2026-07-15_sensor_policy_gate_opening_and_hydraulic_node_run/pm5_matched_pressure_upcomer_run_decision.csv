@@ -1,0 +1,5 @@
+case_key,current_status,missing_plane_field_rows,missing_wallHeatFlux_rows,run_decision,reason
+salt2_hi5q,requires_resampling,3,3,rerun_scratch_resampling_after_controlDict_functions_fix,resample planes with rho/Re/Pr/Ri/Gr/Ra plus U/T at representative time
+salt2_lo5q,partial_repaired_pressure_onset_evidence,0,3,do_not_rerun_plane_now_wallHeatFlux_still_missing,repair wallHeatFlux generation/sampling for wall band
+salt4_hi5q,requires_resampling,3,3,rerun_scratch_resampling_after_controlDict_functions_fix,resample planes with rho/Re/Pr/Ri/Gr/Ra plus U/T at representative time
+salt4_lo5q,requires_resampling,3,3,rerun_scratch_resampling_after_controlDict_functions_fix,resample planes with rho/Re/Pr/Ri/Gr/Ra plus U/T at representative time

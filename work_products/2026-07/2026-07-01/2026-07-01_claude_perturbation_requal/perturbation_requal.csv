@@ -1,0 +1,17 @@
+run,salt,Q_W,nominal_Q_W,q_ratio,restart_time_s,t_end_s,advance_s,mdot,nominal_mdot,pct_moved,expected_move_pct,plateaued,hydraulic_verdict,thermal_verdict,op_verdict,usable_for_correlation
+salt2_jin_hiq_balq,2,265.7,265.7,1.0,0.0,2432.0,2432.0,-0.013156758758587848,-0.01319629,0.3,,True,stationary,stationary,control_no_q_perturbation,False
+salt2_jin_hiq_hiins,2,292.27,265.7,1.1,2431.0,7935.0,5504.0,-0.013197700308641975,-0.01319629,-0.011,3.228,True,stationary,stationary,false_steady,False
+salt2_jin_loq_loins,2,239.13,265.7,0.9,2431.0,7708.0,5277.0,-0.013196863529189393,-0.01319629,-0.004,3.451,True,stationary,stationary,false_steady,False
+salt3_jin_hiq_hiins,3,327.25,297.5,1.1,2514.0,5798.0,3284.0,-0.01496465346632414,-0.01497722,0.084,3.228,True,stationary,stationary,false_steady,False
+salt3_jin_loq_loins,3,267.75,297.5,0.9,2514.0,5601.0,3087.0,-0.014962924235253389,-0.01497722,0.095,3.451,True,stationary,stationary,false_steady,False
+salt4_jin_hiq_hiins,4,371.36,337.6,1.1,2082.0,8311.0,6229.0,-0.017079364055380172,-0.01708333,0.023,3.228,True,stationary,stationary,false_steady,False
+salt4_jin_loq_loins,4,303.84,337.6,0.9,2082.0,6197.0,4115.0,-0.0170686428514,-0.01708333,0.086,3.451,True,stationary,stationary,false_steady,False
+salt1_jin_basecont,1,232.3,232.3,1.0,3756.33125,4026.15625,269.8,-0.011233061637971014,-0.01126902,0.319,,True,stationary,stationary,control_no_q_perturbation,False
+salt1_jin_hiq_balq,1,255.53,232.3,1.1,3617.6625,3892.49375,274.8,-0.011237153934571427,-0.01126902,0.283,3.228,True,stationary,stationary,false_steady,False
+salt1_jin_loq_balq,1,209.07,232.3,0.9,3617.6625,3892.49375,274.8,-0.011237153934571427,-0.01126902,0.283,3.451,True,stationary,stationary,false_steady,False
+salt2_jin_hi5q_balq,2,278.985,265.7,1.05,2431.0,4969.0,2538.0,-0.013183409267889764,-0.01319629,0.098,1.64,True,stationary,stationary,false_steady,False
+salt2_jin_lo5q_balq,2,252.415,265.7,0.95,2431.0,4985.0,2554.0,-0.013183516510798124,-0.01319629,0.097,1.695,True,stationary,stationary,false_steady,False
+salt3_jin_hi5q_balq,3,312.375,297.5,1.05,2514.0,3841.0,1327.0,-0.014947309597831327,-0.01497722,0.2,1.64,True,stationary,stationary,false_steady,False
+salt3_jin_lo5q_balq,3,282.625,297.5,0.95,2514.0,4077.0,1563.0,-0.014949921197391304,-0.01497722,0.182,1.695,True,stationary,stationary,false_steady,False
+salt4_jin_hi5q_balq,4,354.48,337.6,1.05,5776.0,6938.0,1162.0,-0.017077328524089348,-0.01708333,0.035,1.64,True,stationary,stationary,false_steady,False
+salt4_jin_lo5q_balq,4,320.72,337.6,0.95,5776.0,6995.0,1219.0,-0.017071436248786886,-0.01708333,0.07,1.695,True,stationary,stationary,false_steady,False

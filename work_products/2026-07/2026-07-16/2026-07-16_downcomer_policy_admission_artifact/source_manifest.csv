@@ -1,0 +1,8 @@
+source_id,path,exists,role
+agent466_downcomer_gate,work_products/2026-07/2026-07-16/2026-07-16_downcomer_internal_nu_unlock_and_blocker_roadmap/downcomer_admission_gate.csv,yes,input
+thermal_sign_review,work_products/2026-07/2026-07-13/2026-07-13_thermal_sign_enthalpy_review/thermal_sign_enthalpy_review.csv,yes,input
+segment_enthalpy_residuals,work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv,yes,input
+downcomer_recirculation,work_products/2026-06/2026-06-30/2026-06-30_claude_downcomer_recirculation/downcomer_recirculation.csv,yes,input
+agent459_final_gci,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv,yes,input
+agent455_mesh_gci,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv,yes,input
+litrev_map,operational_notes/maps/literature-synthesis-and-gates.md,yes,input

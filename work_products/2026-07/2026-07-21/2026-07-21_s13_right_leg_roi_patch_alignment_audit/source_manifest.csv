@@ -1,0 +1,6 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/component_topology_forensics.csv,read component geometry and release status,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_topology_forensics_alt_cv/component_boundary_escape_by_patch.csv,read component boundary contacts,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/wall_core_band_contract.csv,read trusted wall patch candidates,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/release_decision.csv,read source-bounded release result,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_roi_patch_alignment_audit,generated task-owned package,true,false,true

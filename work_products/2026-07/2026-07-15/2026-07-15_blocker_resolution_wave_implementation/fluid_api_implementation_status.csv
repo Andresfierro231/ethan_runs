@@ -1,0 +1,3 @@
+interface,status_after_agent413,runtime_class,default_behavior,guardrail,test_required
+hx_ua_multiplier,implemented,setup_or_train_scalar,1.0 reproduces baseline predictive_airside_hx,does not pass imposed CFD cooler duty,predictive_hx_ua_multiplier_changes_computed_hx_duty
+external_boundary_table,already_implemented_prior_to_agent413,setup_boundary_dictionary,absent dictionaries preserve old behavior,do not combine realized wallHeatFlux replay with added radiation,external_boundary_override_changes_target_segment_only

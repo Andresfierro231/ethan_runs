@@ -1,0 +1,13 @@
+{
+  "archived_rows": 15,
+  "date": "2026-07-21",
+  "external_fluid_mutation": false,
+  "generated_index_refresh": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "remaining_active_or_open_rows": 10,
+  "scheduler_action": false,
+  "status": "complete",
+  "task_id": "TODO-BOARD-HYGIENE-COMPLETE-ACTIVE-ROW-ARCHIVE-2026-07-21",
+  "validated_rows": 15
+}

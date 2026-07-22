@@ -1,0 +1,10 @@
+guard_id,changed,policy
+native_output_mutation,false,read existing artifacts only
+registry_or_admission_mutation,false,no registry/admission edit
+scheduler_action,false,no scheduler action
+solver_sampler_harvest_uq_launch,false,inventory/gate only
+Q_wall_W_release_or_relabel,false,consume prior exact Qwall read-only
+source_property_release,false,not part of this row
+source_side_relabel_as_Q_wall,false,forbidden
+S11_S12_S13_S15_S6_trigger,false,forbidden
+residual_absorbed_into_internal_Nu,false,forbidden

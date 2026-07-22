@@ -1,0 +1,2 @@
+gate_id,preferred_candidate,launch_status,endpoint_pair,pressure_basis,same_qoi_requirements,no_make_positive_correction
+same_qoi_sampler_launch,CAND-001,blocked,lower_leg__s04->right_leg__s00,static_p_pa_primary_with_p_rgh_cross_check,Delta_p;K_app;RAF;RMF same formula/sign/window;time UQ;mesh UQ where available,true

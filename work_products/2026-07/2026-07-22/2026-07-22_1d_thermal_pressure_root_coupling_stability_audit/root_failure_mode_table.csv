@@ -1,0 +1,6 @@
+failure_mode,trigger,likely_causes,required_response
+no_pressure_root_bracket,pressure residual has no sign change over legal mdot bracket,invalid pressure-loss basis; property mode discontinuity; forbidden F6 term,fail closed and report bracket endpoints; do not fit multiplier
+thermal_pressure_iteration_oscillation,nested thermal/pressure residual grows or flips sign repeatedly,cooler UA and pressure loss interaction; property-temperature coupling,add damping/safeguarded iteration smoke before any scoring
+nonfinite_projection,bulk/wall state maps to NaN/Inf TP/TW or excluded TW10 shell state,missing segment state; missing active-HX wall/shell state,"exclude affected score row or add legal state, never observed-temperature runtime feedback"
+ordinary_closure_leakage,recirculating section-effective K/F6 used as ordinary pipe term,large local apparent K_eff misread as mdot sensitivity,block admission until low-recirculation anchors and same-QOI UQ exist
+source_property_leakage,realized Qwall/total_Q/CFD mdot used as runtime source/property input,diagnostic thermal residual absorbed into source release,fail runtime legality audit; create separate source/property release row

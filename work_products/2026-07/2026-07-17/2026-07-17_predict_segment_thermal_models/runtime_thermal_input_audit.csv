@@ -1,0 +1,6 @@
+check,status,forbidden_input,policy
+no_realized_wall_heat_runtime,pass_forbidden,realized wallHeatFlux,Realized wall heat remains diagnostic/validation data.
+no_imposed_cfd_cooler_duty_runtime,pass_forbidden,imposed CFD cooler duty,Cooler removal must come from setup-only admitted model terms.
+no_validation_temperatures_runtime,pass_forbidden,validation TP/TW temperatures,Temperatures are score targets; runtime uses setup metadata and solved state.
+no_internal_nu_residual_absorption,pass_forbidden,residual internal Nu fit,Source/sink ownership is explicit; internal Nu cannot hide heater/cooler/passive/radiation residuals.
+no_cfd_mdot_runtime,pass_forbidden,CFD mdot,mdot remains solved by the coupled segment model.

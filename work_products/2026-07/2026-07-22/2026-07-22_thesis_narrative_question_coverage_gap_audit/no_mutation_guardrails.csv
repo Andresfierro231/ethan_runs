@@ -1,0 +1,13 @@
+guardrail,status,evidence
+no_protected_scoring,pass,No validation holdout or external-test scoring performed
+no_fitting_or_model_selection,pass,No fit model selection or tuning performed
+no_source_property_release,pass,Only release-state claims from existing packets were cited
+no_qwall_release,pass,No Qwall values were released or admitted
+no_candidate_freeze,pass,Final candidate count remains zero
+no_final_score,pass,Final score values remain zero
+no_native_output_mutation,pass,Native CFD/OpenFOAM outputs were read-only
+no_registry_mutation,pass,Registry and admission state were read-only
+no_scheduler_action,pass,No scheduler action was taken by this audit row
+no_fluid_external_edit,pass,Fluid and external repositories were read-only
+no_thesis_body_edit,pass,No thesis LaTeX/body file was edited
+no_runtime_leakage_relaxation,pass,Forbidden runtime inputs remain forbidden

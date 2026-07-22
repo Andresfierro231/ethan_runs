@@ -1,0 +1,6 @@
+model_form_id,can_claim,cannot_claim
+M0,A setup-only predictive baseline contract is defined and ready to run once a frozen prediction artifact exists.,No final numeric baseline score yet.
+M1,CFD thermal-boundary replay is useful diagnostic context for heat placement.,It is not predictive and cannot support final endpoint performance claims.
+M2,Heater and cooler/HX setup-only boundary terms are admitted submodels with small W-scale held-out residuals.,A complete heater+cooler+wall/test-section predictive model is admitted.
+M3,Segment-only fluid+walls is the main reduced-order network comparison form and has legacy diagnostic score context.,"Locked-split final performance, because no Salt1-4 nominal freeze exists."
+M4,Junction-aware ledgers improve attribution and motivate named local ownership lanes.,Predictive corner-K or junction heat coefficients are fit-admitted.

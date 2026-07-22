@@ -1,0 +1,8 @@
+scope,label,root_gate_pass,amx1_active_segments,ledger_abs_sum_W,ledger_total_net_W,ledger_max_abs_residual_W,runtime_s
+AMX1,broad_control,true,46,8.08855832584,5.55111512313e-17,0.0,
+AMX1,lower_vertical_only,true,46,2.18789513564,8.32667268469e-17,0.0,
+AMX1,test_section_only,true,46,2.735082827,0.0,0.0,
+AMX1,upper_vertical_only,true,46,2.16210384627,0.0,0.0,
+campaign,total,,,,,,528.803825
+campaign,solve,,,,,,503.636152
+campaign,max_scenario,,,,,,112.44852

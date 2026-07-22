@@ -1,0 +1,6 @@
+gate_id,current_state,required_to_score,evidence,next_action
+corrected_split_freeze_exists,fail,all blind/current holdout/external rows,AGENT-499 found no corrected Salt1-4 nominal freeze,Create admitted final freeze from Salt1-4 nominal only after model candidate admission.
+candidate_admitted,fail,all rows,AGENT-498/499 report 0 admitted wall/test-section/coupled candidates,Resolve wall/test-section/source-placement/axial-mixing blockers before freeze.
+blind_rows_excluded_from_fit,pass,holdout/external integrity,"case partition contract sets fit/model_selection no for Salt2 +/-5Q, val_salt2, PM10, and new CFD",Keep this invariant in any future scorer.
+pm10_terminal_admission,fail_live_or_pending_jobs,future +/-10Q rows,PM10 watch rows remain blocked by live/pending jobs in the cited readiness package,Monitor/admit after terminal state in a separate task.
+new_cfd_admission,fail_not_run,future new CFD row,Salt3 Q x insulation matrix is proposed and not admitted,Run/admit new CFD before adding it to scoring.

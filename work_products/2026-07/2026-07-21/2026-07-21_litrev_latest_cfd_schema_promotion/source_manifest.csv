@@ -1,0 +1,11 @@
+source_id,source_path,access,purpose
+schema_gap,work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv,read_only,schema_gap
+pressure_corner_anchor,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_case_readiness.csv,read_only,pressure_corner_anchor
+pressure_corner_decision,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv,read_only,pressure_corner_decision
+high_heat_monitor,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/README.md,read_only,high_heat_monitor
+high_heat_status_refresh,work_products/2026-07/2026-07-20/2026-07-20_high_heat_status_refresh/README.md,read_only,high_heat_status_refresh
+pm10_terminal,work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_terminal_admission_rows.csv,read_only,pm10_terminal
+pm10_readiness_refresh,reports/2026-07/2026-07-20/2026-07-20_cfd_postprocessing_readiness_refresh/cfd_postprocessing_readiness_refresh.csv,read_only,pm10_readiness_refresh
+corrected_q_continuation,.agent/status/2026-07-21_AGENT-576.md,read_only,corrected_q_continuation
+matched_recirc,work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv,read_only,matched_recirc
+same_qoi,work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,read_only,same_qoi

@@ -1,0 +1,16 @@
+{
+  "active_like_missing_status_rows": 3,
+  "active_rows": 179,
+  "completed_rows_still_in_active": 172,
+  "coordination_issue_rows": 4,
+  "duplicate_task_id_count": 0,
+  "duplicate_task_ids": [],
+  "external_fluid_modified": false,
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "generated_at": "2026-07-15T13:03:15+00:00",
+  "generated_indexes_mutated": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "task": "AGENT-401"
+}

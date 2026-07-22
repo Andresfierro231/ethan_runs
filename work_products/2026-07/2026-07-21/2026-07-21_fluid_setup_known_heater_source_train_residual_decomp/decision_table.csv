@@ -1,0 +1,2 @@
+decision,worker_status,root_status,basis,s11_trigger,s15_trigger,s6_trigger,claim_boundary
+source_lane_partial_improvement_model_form_still_needed,pass,accepted,TW4-TW6 train-only residual response to deterministic setup-known heater source redistribution,False,False,False,"no candidate freeze, no source/property release, no validation/holdout/external scoring"

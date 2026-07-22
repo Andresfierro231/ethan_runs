@@ -1,0 +1,30 @@
+{
+  "admitted_setup_model_rows": 2,
+  "admitted_wall_candidates": 0,
+  "blocked_pending_terminal_rows": 8,
+  "campaign_rows": 6,
+  "date": "2026-07-17",
+  "external_fluid_edit": "none",
+  "fit_admitted_pressure_rows": 0,
+  "generated_at_utc": "2026-07-17T21:00:46+00:00",
+  "generated_index_refresh": "not_run_active_AGENT_517_owns_generated_index_paths",
+  "native_output_mutation": "none",
+  "open_blockers": [
+    "f6-friction-re-correction",
+    "predictive-wall-test-section-submodels",
+    "upcomer-onset-data-sparsity"
+  ],
+  "ordinary_f6_scoreable_rows": 0,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_research_studies_roadmap_and_today_start",
+  "pm5_recirculation_diagnostic_rows": 12,
+  "production_closure": "F3_shah_apparent",
+  "registry_mutation": "none",
+  "residual_internal_nu_fit_admitted_rows": 0,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "scoreable_predictive_model_rows": 0,
+  "source_rows": 15,
+  "study_rows": 10,
+  "task": "AGENT-518",
+  "today_rows": 6
+}

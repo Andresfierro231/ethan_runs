@@ -1,0 +1,5 @@
+source_id,path,mutation,role
+non_upcomer,work_products/2026-07/2026-07-20/2026-07-20_f6_non_upcomer_branch_modeling_analysis,read_only,evidence source
+raw_face,work_products/2026-07/2026-07-21/2026-07-21_f6_endpoint_raw_face_sampler,read_only,evidence source
+basis_ladder,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet,read_only,evidence source
+source_recovery,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_f6_source_recovery_low_recirc_anchors,read_only,evidence source

@@ -1,0 +1,6 @@
+target_id,artifact,writer_use,caption_boundary
+thermal_accounting_traceability_ledger,thermal_accounting_traceability_ledger.csv,"chapter table listing heat owner, status, allowed inputs, forbidden inputs, and unresolved blocker",Evidence/accounting only; no closure admission or runtime residual fit.
+setup_source_sink_values,setup_source_sink_values.csv,exact heater/cooler/test-section setup values by case and split role,"Setup-known metadata, not source/property release or final score."
+diagnostic_heat_values,diagnostic_heat_values_by_case_role.csv,"diagnostic wall/source heat magnitudes by case, physical role, and residual owner",Uses realized CFD wallHeatFlux as diagnostic trace only; forbidden as predictive runtime input.
+runtime_forbidden_audit,runtime_forbidden_input_audit.csv,claim-boundary table for runtime legality,"forbidden: Validation temperatures, CFD mdot, and realized heat terms cannot drive predictions."
+residual_owner_gate_matrix,residual_owner_gate_matrix.csv,shows why accounting proceeds before fitting,Every owner remains diagnostic or blocked; residual is not hidden in internal Nu.

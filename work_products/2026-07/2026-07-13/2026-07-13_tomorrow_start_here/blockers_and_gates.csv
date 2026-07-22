@@ -1,0 +1,9 @@
+lane,current_state,next_gate,do_not_do
+corrected_salt_q,Job 3293924 running at latest check,"Terminal harvest plus row-specific convergence/admission review","Do not launch duplicate corrected-Q jobs while 3293924 is live."
+forward_v0_solve_case,Job 3293960 completed and comparison passed 6/6,"Use solve_case outputs as authoritative baseline evidence","Do not treat stale pre-harvest status text as newer than comparison_summary.json and board."
+hydraulics,Forward-v0 mdot overpredicts all Salt rows; H1 candidate selected,"Apply/test H1 localized named-loss/reset bundle in bounded forward rerun","Do not hide reset/component losses in one global friction multiplier."
+hx_cooler,HX1 one-scalar fit exists; F1 heater-only improves Tmean proxy scores,"Re-score only after hydraulic correction or as clearly guardrailed proxy","Do not interpret thermal improvement while mdot guardrail fails."
+thermal_mesh,0 fit-admissible thermal rows and 0 publication-ready thermal GCI rows,"Sign/enthalpy review plus coarse/medium/fine triplet gate plus downcomer policy","Do not fit UA/HTC/Nu from repaired medium/fine smoke rows."
+sensors,15 diagnostic-scoreable sensors; TP2 and TW10 blocked,"Use sensor map after solve for validation target scoring only","Do not use TP/TW measurements as runtime inputs or fit anchors."
+external_fluid_api,Repo-local external boundary dictionary and patch plan exist,"Claim a separate external Fluid edit row if direct implementation is needed","Do not edit ../cfd-modeling-tools from this repo-local handoff scope."
+documentation,Continuity protocol exists; generated STATE may lag post-17:34 rows,"Regenerate docs index at the end of the next significant scoped session","Do not trust stale prose over current board/status/package evidence."

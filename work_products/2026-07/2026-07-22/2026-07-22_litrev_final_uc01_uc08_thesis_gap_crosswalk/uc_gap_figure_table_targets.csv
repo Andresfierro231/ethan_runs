@@ -1,0 +1,3 @@
+target_id,type,rows,caption,required_caveat
+UC-GAP-TABLE,table,8,UC01-UC08 unresolved-claim crosswalk to CSEM thesis blockers,No final predictive scores are released.
+UC-BLOCKER-WATERFALL,figure/table,8,Literature final-release blockers mapped to model-form admission gates,"Negative scientific result, not model failure."

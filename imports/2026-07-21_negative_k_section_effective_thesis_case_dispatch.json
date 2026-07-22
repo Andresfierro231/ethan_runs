@@ -1,0 +1,51 @@
+{
+  "task": "TODO-NEGATIVE-K-SECTION-EFFECTIVE-THESIS-CASE-DISPATCH-2026-07-21",
+  "task_id": "TODO-NEGATIVE-K-SECTION-EFFECTIVE-THESIS-CASE-DISPATCH-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer/Tester/Reviewer",
+  "objective": "Consolidate the negative-K non-admission case, publish section-effective thesis evidence, propose follow-on board rows, and rerun existing hybrid pressure scorecard checks.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-NEGATIVE-K-SECTION-EFFECTIVE-THESIS-CASE-DISPATCH-2026-07-21.md",
+    ".agent/journal/2026-07-21/negative-k-section-effective-thesis-case-dispatch.md",
+    "imports/2026-07-21_negative_k_section_effective_thesis_case_dispatch.json",
+    "operational_notes/07-26/21/2026-07-21_NEGATIVE_K_SECTION_EFFECTIVE_THESIS_CASE_DISPATCH.md",
+    "operational_notes/maps/pressure-and-momentum-budget.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/case_memo.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/evidence_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/board_task_proposals.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/model_performance_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/validation_commands.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_negative_k_section_effective_thesis_case_dispatch/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_corner_basis_recovery/pressure_corner_basis_recovery_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/residual_equation_contract.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/section_effective_pressure_scorecard.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/three_level_score.csv"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "fluid_source_mutated": false,
+    "external_repo_mutated": false,
+    "thesis_current_files_mutated": false,
+    "blocker_register_mutated": false,
+    "generated_index_refreshed": false,
+    "component_k_admitted": false,
+    "f6_fit_admitted": false,
+    "validation_holdout_external_scored": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "provenance_notes": "All scientific values are copied from frozen/read-only July 21 pressure-corner and scorecard packages. No native solver output was read or mutated by this task."
+}

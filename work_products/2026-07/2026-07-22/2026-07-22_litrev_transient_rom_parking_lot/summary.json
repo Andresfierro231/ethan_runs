@@ -1,0 +1,16 @@
+{
+  "admission_or_implementation": false,
+  "candidate_admission": false,
+  "decision": "mf05_mf06_parked_future_only_no_implementation",
+  "external_fluid_edit": false,
+  "fitting_or_tuning": false,
+  "generated_at_utc": "2026-07-22T14:58:00Z",
+  "generated_index_refresh": false,
+  "lanes_parked": 2,
+  "mf05_trigger": "repeatable positive-mean periodic fitting response with unchanged topology",
+  "mf06_trigger": "verified FOM snapshot ensemble, mode/energy criterion, conservation checks, extrapolation detector, and held-out validation",
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "task_id": "TODO-LITREV-TRANSIENT-ROM-PARKING-LOT"
+}

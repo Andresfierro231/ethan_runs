@@ -1,0 +1,6 @@
+source_id,path,use
+agent492_wall_circuit,work_products/2026-07/2026-07-17/2026-07-17_cooler_fluid_timeout_and_wall_circuit_study,"PB1, TS6 static evidence and timeout diagnosis"
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,cooler candidate definitions and alpha_UA
+agent461_m3ts,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard,coupled M3+TS comparator context
+setup_external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,setup external-boundary role rows and hA data
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,optional read-only Fluid solve_case execution

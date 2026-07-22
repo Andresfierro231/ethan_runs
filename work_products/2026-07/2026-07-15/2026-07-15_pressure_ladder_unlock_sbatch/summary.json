@@ -1,0 +1,16 @@
+{
+  "generated_at": "2026-07-15T23:04:56.156594+00:00",
+  "harvested_adjacent_parsed_rows": 72,
+  "harvested_adjacent_rows": 72,
+  "harvested_station_parsed_rows": 90,
+  "harvested_station_rows": 90,
+  "last_harvest_at": "2026-07-15T23:16:19.029748+00:00",
+  "last_harvest_job_id": "3297860",
+  "native_solver_outputs_mutated": false,
+  "preflight_failures": 0,
+  "preflight_rows": 3,
+  "registry_or_admission_mutated": false,
+  "submitted_job_id": "3297860",
+  "submitted_job_state": "PENDING_PRIORITY",
+  "task": "AGENT-445"
+}

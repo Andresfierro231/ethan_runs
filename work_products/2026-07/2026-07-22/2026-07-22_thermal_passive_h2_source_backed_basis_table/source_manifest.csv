@@ -1,0 +1,9 @@
+mutation_status,path,role,source_id
+read_only,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_basis_release_preflight/exact_missing_provenance_fields.csv,starting blocker context,source_release_preflight_missing_fields
+read_only,work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/cfd_external_boundary_dictionary.csv,source-backed setup h/area/ambient/layer/radiation basis,predictive_external_bc_dictionary
+read_only,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv,patch role and boundary dictionary trace,thermal_boundary_patch_role_table
+read_only,work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv,allowed/forbidden runtime input contract,heat_loss_path_contract
+read_only,work_products/2026-07/2026-07-13/2026-07-13_cfd_radiative_boundary_guidance/radiation_guidance_decision.json,radiation treatment and wallHeatFlux replay guardrail,radiation_guidance_decision
+read_only,reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/boundary_setup_summary.csv,boundary setup source reference,external_boundary_setup_reference
+read_only,work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis,prior broad-screen context not fitted closure,prior_physical_basis
+read_only,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment,prior provenance-blocker context,prior_source_enrichment

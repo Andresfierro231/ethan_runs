@@ -1,0 +1,9 @@
+policy_item,current_policy,reason,next_gate
+"train/support only calibration","Only train/support rows may be used before freeze.","Protected scores must remain blind.","Freeze one runtime-legal candidate first."
+"validation/holdout/external use","Score-only after freeze; no fitting or model selection.","Avoid protected target leakage.","S15/S6 after source/property release."
+"realized wallHeatFlux","Diagnostic/scoring evidence only, not runtime input.","Post-solve CFD heat would leak target physics.","Independent setup heat-path model."
+"imposed cooler duty","Forbidden as predictive runtime input.","It is a CFD boundary condition/replay value, not a setup-only cooler model.","Setup UA/effectiveness candidate."
+"validation temperatures","Forbidden runtime input.","Would directly fit target temperatures.","Frozen score-only evaluation."
+"global UA shortcut","Forbidden as final closure.","Hides missing heat-path ownership.","Source-backed segmentwise resistance/external BC network."
+"internal Nu","Salt-side convection only, not residual owner.","Prevents hiding heat residual in Nu.","Source-envelope and same-QOI UQ before any Nu admission."
+"residual","Output/blocker only.","Residual preserves missing-physics information.","New physical owner evidence."

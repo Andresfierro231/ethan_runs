@@ -1,0 +1,6 @@
+handoff_id,next_task,depends_on_contract_rows,readiness,objective,acceptance_gate
+H01,TODO-1D-SENSOR-PROJECTION-OPERATOR-TP-TW-WALL-BULK-2026-07-22,E01; E07; E11,ready,map model bulk/wall states to TP/TW observations without validation-temperature leakage,sensor operator table and uncertainty/exclusion policy
+H02,TODO-1D-SETUP-ONLY-BC-UQ-PROPAGATION-2026-07-22,E02; E03; E04; E05; E07,ready_after_this_contract,propagate setup-only uncertainty through heat paths before final scoring,allowed priors/ranges with no validation tuning
+H03,source/property release preflight for heater/passive/test-section lanes,E02; E04; E06,blocked_by_no_release,decide whether any source-bounded thermal candidate can be reviewable,exactly one released source/property candidate before S11/S15/S6
+H04,S13 same-label medium/fine exchange/source generation,E09,blocked_scheduler_authorization_required,recover exact same-label mesh family for source-side heatflow equivalence and UQ,coarse/medium/fine same-QOI rows before any exchange score
+H05,TODO-1D-MODEL-HIERARCHY-ABLATION-LADDER-PACKET-2026-07-22,E00-E11,ready_after_sensor_operator_or_as_negative_packet,"turn the ledger, negative evidence, and blocked gates into a thesis model ladder",explicit zero final score values unless separate frozen scorecard exists

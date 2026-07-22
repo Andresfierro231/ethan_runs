@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-22T12:25:00-05:00",
+  "decision": "split_exact_label_rows_complete_mesh_gci_disposition_unlocked_no_admission",
+  "expected_case_mesh_pairs": 6,
+  "successful_case_mesh_pairs": 6,
+  "aggregated_exact_label_qoi_rows": 72,
+  "aggregated_terminal_window_reduction_rows": 18,
+  "sampling_error_rows_in_successful_outputs": 0,
+  "mesh_gci_disposition_unlocked": true,
+  "mesh_gci_disposition_run_here": false,
+  "production_harvest_allowed": false,
+  "admission_allowed": false,
+  "coefficient_admission": false
+}

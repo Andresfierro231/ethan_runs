@@ -1,0 +1,5 @@
+priority,next_step,why,success_signal
+1,Add local wall-temperature drive/state to the test-section and upcomer wall model.,Static hA redistribution preserves total heat but misses TP/TW by tens of kelvin.,Validation and holdout all-probe/TW RMSE beat M3 while mdot stays no worse.
+2,Separate heater/source placement from passive loss before another wall hA fit.,Current candidates improve mdot but shift the thermal field in the wrong places.,Probe residuals localize to fewer spans and do not create a global TW penalty.
+3,Model upcomer axial mixing/thermal stratification instead of ordinary local Nu in the test-section lane.,The test section sits inside the recirculating upcomer; single-stream heat transfer fits remain invalid.,A recirculation-aware upcomer/test-section candidate improves TW and TP probes without using realized wallHeatFlux.
+4,"Only after a wall/test-section candidate passes, rerun the final corrected-split end-to-end scorecard.",Current PB1/PB2/PB3 candidates all fail coupled admission gates.,A frozen candidate has train/validation/holdout/external rows with no runtime leakage.

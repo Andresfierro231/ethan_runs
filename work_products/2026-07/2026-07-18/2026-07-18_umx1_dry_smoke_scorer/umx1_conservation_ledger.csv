@@ -1,0 +1,10 @@
+case_id,candidate_id,engine,active_umx_segment_count,finite_temperature_count,max_abs_reservoir_energy_residual_W,net_exchange_residual_W,conservation_gate_status,notes
+salt_2,UMX1_disabled_baseline,fast_scan,0,0,0,0,pass_noop,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_2,UMX1_exchange_0p01,fast_scan,10,10,0,0,pass,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_2,UMX1_exchange_0p05,fast_scan,10,10,0,0,pass,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_3,UMX1_disabled_baseline,fast_scan,0,0,0,0,pass_noop,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_3,UMX1_exchange_0p01,fast_scan,10,10,0,0,pass,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_3,UMX1_exchange_0p05,fast_scan,10,10,0,0,pass,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_4,UMX1_disabled_baseline,fast_scan,0,0,0,0,pass_noop,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_4,UMX1_exchange_0p01,fast_scan,10,10,0,0,pass,Tolerance 1e-09 W; disabled candidate must remain inactive.
+salt_4,UMX1_exchange_0p05,fast_scan,10,10,0,0,pass,Tolerance 1e-09 W; disabled candidate must remain inactive.

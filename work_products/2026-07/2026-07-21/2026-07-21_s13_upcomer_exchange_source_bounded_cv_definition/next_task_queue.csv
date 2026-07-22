@@ -1,0 +1,3 @@
+step_id,next_step,trigger,acceptance,guardrail
+S13-SBCV-NEXT-001,Do not rerun sampler preflight.,0/3 source-bounded CV rows released,new geometry rule or source boundary definition that removes untrusted escapes and yields positive trusted wall faces,"no surface extraction, sampler, harvest, UQ, or S11/S12/S13 claim from blocked geometry"
+S13-SBCV-NEXT-002,Open a separate geometry-method row only if a defensible source-bounded wall/control-volume rule is proposed.,current largest reverse-flow components remain fragmented and wall-disconnected,reproducible source-bounded CV definition passes before wall/source work,do not substitute loop mdot planes or outlet proxies for exchange interface

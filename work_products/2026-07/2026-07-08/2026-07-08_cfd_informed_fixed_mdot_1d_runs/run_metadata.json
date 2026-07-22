@@ -1,0 +1,21 @@
+{
+  "best_path_by_mean_abs_Tmean_error": "P1_cfd_cooler_duty_only",
+  "command": "tools/analyze/run_cfd_informed_fixed_mdot_1d_replays.py --output-dir work_products/2026-07-08_cfd_informed_fixed_mdot_1d_runs",
+  "contract": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-08_thermal_boundary_contract/cfd_thermal_boundary_contract.csv",
+  "cwd": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs",
+  "ethan_runs_git_revision": "449e9a61c97f8ddbab14a8f1b5ab0b2a6192dfa8",
+  "fluid_git_revision": "34af0397beadcd00e7d1f6520f01ff3946209aa9",
+  "fluid_root": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid",
+  "generated_utc": "2026-07-08T20:29:01+00:00",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "path_summary_rows": 7,
+  "platform": "Linux-4.18.0-372.26.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "pressure_policy": "diagnostic_only_not_rooted",
+  "python": "3.9.7",
+  "result_rows": 21,
+  "run_plan_rows": 21,
+  "slurm_job_id": "3282230",
+  "slurm_step_id": "1",
+  "targets": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv",
+  "task": "AGENT-211"
+}

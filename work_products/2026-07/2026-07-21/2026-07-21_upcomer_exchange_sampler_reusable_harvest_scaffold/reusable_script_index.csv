@@ -1,0 +1,5 @@
+script,purpose,side_effects,scheduler_action,syntax_checked
+scripts/harvest_one_exchange_case.sh,Run sample_upcomer_exchange_cell.py for one fully populated same-window case.,writes only the caller-selected output directory,false,pending_until_validation
+scripts/harvest_exchange_case_matrix.sh,Validate and run a manifest of fully populated same-window cases.,writes only output directories listed in manifest,false,pending_until_validation
+scripts/validate_exchange_case_inputs.py,Fail closed unless each row has files and explicit normal vectors.,none,false,pending_until_validation
+scripts/check_exchange_outputs.py,Check sampler row files after a harvest run.,none,false,pending_until_validation

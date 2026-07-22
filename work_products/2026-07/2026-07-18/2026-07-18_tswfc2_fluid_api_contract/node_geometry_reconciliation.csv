@@ -1,0 +1,5 @@
+node_id,dry_contract_parent,implemented_parent,start_fraction,end_fraction,drive_selector,setup_conductance_field,reconciliation_status,notes
+TSWFC2_N01_pre_test_bracket,left_upper_vertical,left_lower_vertical,0.80,1.00,pipe_outer_wall_temperature,hA_W_K,corrected_for_implementation,"pre-test bracket belongs to the lower upcomer side of the refined Fluid geometry"
+TSWFC2_N02_test_section_lower,left_upper_vertical,test_section,0.00,0.50,pipe_outer_wall_temperature,hA_W_K,corrected_for_implementation,"lower quartz/test-section span is its own Fluid parent segment, not a subspan of left_upper_vertical"
+TSWFC2_N03_test_section_upper,left_upper_vertical,test_section,0.50,1.00,pipe_outer_wall_temperature,hA_W_K,corrected_for_implementation,"upper quartz/test-section span is its own Fluid parent segment, preserving axial temperature-shape resolution"
+TSWFC2_N04_post_test_bracket,left_upper_vertical,left_upper_vertical,0.00,0.20,pipe_outer_wall_temperature,hA_W_K,kept_with_fraction_limit,"post-test bracket remains on the upper upcomer side and is limited to the first parent fraction"

@@ -1,0 +1,28 @@
+{
+  "task_id": "AGENT-284",
+  "generated_at": "2026-07-13T14:10:33-05:00",
+  "closure_observations": "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+  "pressure_dir": "work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison",
+  "thermal_medium_input": "work_products/2026-07/2026-07-13/2026-07-13_reconstructed_t_repair_trial/outputs/medium/segment_htc_uaprime_viscosity_screening_salt_test_2_jin_coarse_mesh.csv",
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_salt2_closure_qoi_mesh_gci",
+  "case_id": "salt_2",
+  "r21": 1.5,
+  "r32": 1.5,
+  "triplet_count": 25,
+  "numeric_triplet_complete_count": 14,
+  "gci_row_count": 14,
+  "publication_ready_count": 0,
+  "admission_decision_counts": {
+    "blocked_gci_not_trustworthy": 8,
+    "blocked_missing_triplet_qoi": 11,
+    "diagnostic_not_publication_gci": 6
+  },
+  "source_gate_counts": {
+    "blocked_missing_thermal_triplet": 6,
+    "blocked_thermal_segment": 1,
+    "diagnostic_or_not_fit_safe": 8,
+    "medium_fine_source_rows_admitted": 10
+  },
+  "thermal_status": "blocked_missing_fine_thermal_extraction",
+  "native_solver_outputs_mutated": false
+}

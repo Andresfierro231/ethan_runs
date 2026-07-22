@@ -1,0 +1,7 @@
+qoi_label,temporal_uq_status,mesh_gci_gate_input_ready,accepted_same_label_mesh_gci,production_use_allowed,admission_allowed,current_blocker,next_gate
+Q_wall_W,executed_diagnostic,true,false,false,false,missing accepted same-label medium/fine mesh/GCI rows,active S13 sampler smoke then post-sampler mesh/GCI gate
+mdot_exchange_positive_outward_proxy_kg_s,executed_diagnostic,true,false,false,false,missing accepted same-label medium/fine mesh/GCI rows,active S13 sampler smoke then post-sampler mesh/GCI gate
+tau_recirc_proxy_s,executed_diagnostic,true,false,false,false,missing accepted same-label medium/fine mesh/GCI rows,active S13 sampler smoke then post-sampler mesh/GCI gate
+wall_core_bulk_temperature_contrast_K,executed_diagnostic,true,false,false,false,missing accepted same-label medium/fine mesh/GCI rows,active S13 sampler smoke then post-sampler mesh/GCI gate
+closed_recirc_fraction,not_executed,false,false,false,false,closed CV fraction definition and same-window surfaces missing,define connected closed CV plus RAF/RMF/V_recirc UQ contract
+Ri_same_cv,not_executed,false,false,false,false,same-window same-CV Ri basis missing,extract beta DeltaT U L on same CV with source/property labels

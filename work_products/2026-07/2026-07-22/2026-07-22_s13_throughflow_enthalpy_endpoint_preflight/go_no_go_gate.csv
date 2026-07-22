@@ -1,0 +1,9 @@
+gate,status,evidence,allows_now
+cell_vtk_available,pass,all three validated cell VTKs exist,preflight_only
+volume_csv_available,pass,all three volume CSVs exist,preflight_only
+endpoint_face_masks_available,fail_closed,throughflow inlet/outlet endpoint face masks are missing,preflight_only
+throughflow_normal_released,fail_closed,throughflow normal is blank in the sampler manifest,preflight_only
+cp_property_release_ready,fail_closed,cp_J_kg_K release_ready is false,preflight_only
+same_window_T_bulk_mdot_ready,fail_closed,T_in/T_out/mdot_throughflow are not harvested on endpoint masks,preflight_only
+storage_named_losses_ready,fail_closed,storage and named loss/source lanes are not bounded,preflight_only
+residual_harvest_go,fail_closed,fail closed until every prior gate passes,no_harvest

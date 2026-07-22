@@ -1,0 +1,7 @@
+guard_id,changed,policy
+native_output_mutation,false,native processors64 fields were read only
+scheduler_action,false,no sbatch/srun launched for this in-session reducer
+OpenFOAM_solver_or_postprocess,false,no solver or OpenFOAM postProcess command launched
+sampler_harvest_uq_admission,false,"no sampler, harvest, UQ, fitting, or admission"
+registry_Fluid_external_blocker,false,"no registry, Fluid, external, or blocker-register edit"
+residual_internal_Nu,false,residual remains explicit; internal Nu was not modified or back-filled

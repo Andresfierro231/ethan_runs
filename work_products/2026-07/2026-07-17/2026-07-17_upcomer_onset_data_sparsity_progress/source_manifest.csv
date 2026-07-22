@@ -1,0 +1,7 @@
+source_id,path,exists,use
+upcomer_onset_classification,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/upcomer_onset_classification.csv,yes,upcomer onset data-sparsity evidence and admission guardrail input
+upcomer_next_evidence_queue,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/next_evidence_queue.csv,yes,upcomer onset data-sparsity evidence and admission guardrail input
+recirculation_feature_admission_table,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/recirculation_feature_admission_table.csv,yes,upcomer onset data-sparsity evidence and admission guardrail input
+pm5_recirc_readiness_ledger,work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/pm5_recirc_readiness_ledger.csv,yes,upcomer onset data-sparsity evidence and admission guardrail input
+high_heat_harvest_queue,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,yes,upcomer onset data-sparsity evidence and admission guardrail input
+f6_candidate_inventory,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_candidate_inventory.csv,yes,upcomer onset data-sparsity evidence and admission guardrail input

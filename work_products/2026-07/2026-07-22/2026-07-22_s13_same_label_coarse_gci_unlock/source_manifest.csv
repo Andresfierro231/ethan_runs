@@ -1,0 +1,5 @@
+source_path,exists,use
+work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/README.md,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/auditable_coarse_equivalence_contract.csv,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet/README.md,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/outputs/salt_2_medium/README.md,true,read_only

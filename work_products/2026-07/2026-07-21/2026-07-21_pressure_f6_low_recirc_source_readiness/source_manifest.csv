@@ -1,0 +1,15 @@
+source_id,source_path,access,purpose
+anchor_decision,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv,read_only,F6 low-recirculation source readiness
+candidate_terminal_preflight,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv,read_only,F6 low-recirculation source readiness
+claim_freeze_next_steps,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/ordinary_flow_next_steps.csv,read_only,F6 low-recirculation source readiness
+claim_freeze_summary,work_products/2026-07/2026-07-21/2026-07-21_pressure_f6_publication_claim_freeze/summary.json,read_only,F6 low-recirculation source readiness
+endpoint_field_availability,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/endpoint_field_availability.csv,read_only,F6 low-recirculation source readiness
+f6_ab_summary,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json,read_only,F6 low-recirculation source readiness
+f6_gate_refresh,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/f6_gate_refresh.csv,read_only,F6 low-recirculation source readiness
+f6_static_summary,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json,read_only,F6 low-recirculation source readiness
+low_recirc_summary,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/summary.json,read_only,F6 low-recirculation source readiness
+s13_manifest_summary,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/summary.json,read_only,F6 low-recirculation source readiness
+s13_uq_summary,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json,read_only,F6 low-recirculation source readiness
+s14_branch_decision,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_decision_table.csv,read_only,F6 low-recirculation source readiness
+s14_summary,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,read_only,F6 low-recirculation source readiness
+source_case_readiness,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_case_readiness.csv,read_only,F6 low-recirculation source readiness

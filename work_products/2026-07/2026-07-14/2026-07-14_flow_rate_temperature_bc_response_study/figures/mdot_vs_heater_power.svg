@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="780" height="480" viewBox="0 0 780 480">
+<!-- generated_by=AGENT-351; source=work_products/2026-07/2026-07-14/2026-07-14_flow_rate_temperature_bc_response_study/figures/mdot_vs_heater_power.svg; x=heater_power_W; y=mdot_mean_abs_kg_s -->
+<rect width="100%" height="100%" fill="#fcfcfb"/>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#111}.title{font-size:19px;font-weight:700}.axis{font-size:12px;fill:#444}.tick{font-size:10px;fill:#777}.legend{font-size:11px;fill:#333}</style>
+<text x="92" y="28" class="title">Flow rate vs heater setup power</text>
+<text x="411.0" y="458" text-anchor="middle" class="axis">heater power [W]</text>
+<text x="18" y="235" transform="rotate(-90 18 235)" text-anchor="middle" class="axis">mean |mdot| [kg/s]</text>
+<line x1="92.0" x2="92.0" y1="54" y2="410" stroke="#e5e2da"/>
+<line x1="92" x2="730" y1="54.0" y2="54.0" stroke="#e5e2da"/>
+<text x="92.0" y="428" text-anchor="middle" class="tick">232</text>
+<text x="82" y="57.0" text-anchor="end" class="tick">0.0171</text>
+<line x1="251.5" x2="251.5" y1="54" y2="410" stroke="#e5e2da"/>
+<line x1="92" x2="730" y1="143.0" y2="143.0" stroke="#e5e2da"/>
+<text x="251.5" y="428" text-anchor="middle" class="tick">259</text>
+<text x="82" y="146.0" text-anchor="end" class="tick">0.0156</text>
+<line x1="411.0" x2="411.0" y1="54" y2="410" stroke="#e5e2da"/>
+<line x1="92" x2="730" y1="232.0" y2="232.0" stroke="#e5e2da"/>
+<text x="411.0" y="428" text-anchor="middle" class="tick">285</text>
+<text x="82" y="235.0" text-anchor="end" class="tick">0.0142</text>
+<line x1="570.5" x2="570.5" y1="54" y2="410" stroke="#e5e2da"/>
+<line x1="92" x2="730" y1="321.0" y2="321.0" stroke="#e5e2da"/>
+<text x="570.5" y="428" text-anchor="middle" class="tick">311</text>
+<text x="82" y="324.0" text-anchor="end" class="tick">0.0127</text>
+<line x1="730.0" x2="730.0" y1="54" y2="410" stroke="#e5e2da"/>
+<line x1="92" x2="730" y1="410.0" y2="410.0" stroke="#e5e2da"/>
+<text x="730.0" y="428" text-anchor="middle" class="tick">338</text>
+<text x="82" y="413.0" text-anchor="end" class="tick">0.0112</text>
+<rect x="92" y="54" width="638" height="356" fill="none" stroke="#bdb8ad"/>
+<circle cx="294.4" cy="290.5" r="5" fill="#12664f" opacity="0.9"><title>salt2_jin heater_power_W=265.7 mdot=0.013199</title></circle>
+<circle cx="487.0" cy="182.1" r="5" fill="#12664f" opacity="0.9"><title>salt3_jin heater_power_W=297.5 mdot=0.014982</title></circle>
+<circle cx="730.0" cy="54.3" r="5" fill="#12664f" opacity="0.9"><title>salt4_jin heater_power_W=337.6 mdot=0.017081</title></circle>
+<circle cx="92.0" cy="409.4" r="5" fill="#5e6b73" opacity="0.9"><title>salt1_jin heater_power_W=232.3 mdot=0.011245</title></circle>
+<circle cx="92.0" cy="410.0" r="5" fill="#5e6b73" opacity="0.9"><title>salt1_jin_basecont heater_power_W=232.3 mdot=0.011236</title></circle>
+<circle cx="92.0" cy="409.1" r="5" fill="#5e6b73" opacity="0.9"><title>salt1_jin_optins heater_power_W=232.3 mdot=0.011250</title></circle>
+<circle cx="294.4" cy="290.3" r="5" fill="#5e6b73" opacity="0.9"><title>salt2_jin_hiins_loH heater_power_W=265.7 mdot=0.013203</title></circle>
+<circle cx="294.4" cy="292.9" r="5" fill="#5e6b73" opacity="0.9"><title>salt2_jin_hiq_balq heater_power_W=265.7 mdot=0.013160</title></circle>
+<circle cx="294.4" cy="290.6" r="5" fill="#5e6b73" opacity="0.9"><title>salt2_jin_loins_hiH heater_power_W=265.7 mdot=0.013198</title></circle>
+<circle cx="294.4" cy="292.9" r="5" fill="#5e6b73" opacity="0.9"><title>salt2_jin_optins heater_power_W=265.7 mdot=0.013160</title></circle>
+<circle cx="487.0" cy="185.5" r="5" fill="#5e6b73" opacity="0.9"><title>salt3_jin_optins heater_power_W=297.5 mdot=0.014926</title></circle>
+<circle cx="730.0" cy="54.9" r="5" fill="#5e6b73" opacity="0.9"><title>salt4_jin_hiq_hiins_job3246562_failed_missing_system_controlDict heater_power_W=337.6 mdot=0.017072</title></circle>
+<circle cx="730.0" cy="54.9" r="5" fill="#5e6b73" opacity="0.9"><title>salt4_jin_optins heater_power_W=337.6 mdot=0.017072</title></circle>
+<circle cx="92.0" cy="409.7" r="5" fill="#b23838" opacity="0.9"><title>salt1_jin_hiq_balq heater_power_W=232.3 mdot=0.011240</title></circle>
+<circle cx="294.4" cy="290.9" r="5" fill="#b23838" opacity="0.9"><title>salt2_jin_hi5q_balq heater_power_W=265.7 mdot=0.013193</title></circle>
+<circle cx="294.4" cy="290.3" r="5" fill="#b23838" opacity="0.9"><title>salt2_jin_hiq_hiins heater_power_W=265.7 mdot=0.013203</title></circle>
+<circle cx="294.4" cy="290.9" r="5" fill="#b23838" opacity="0.9"><title>salt2_jin_lo5q_balq heater_power_W=265.7 mdot=0.013193</title></circle>
+<circle cx="294.4" cy="290.6" r="5" fill="#b23838" opacity="0.9"><title>salt2_jin_loq_loins heater_power_W=265.7 mdot=0.013199</title></circle>
+<circle cx="487.0" cy="183.4" r="5" fill="#b23838" opacity="0.9"><title>salt3_jin_hi5q_balq heater_power_W=297.5 mdot=0.014960</title></circle>
+<circle cx="487.0" cy="182.2" r="5" fill="#b23838" opacity="0.9"><title>salt3_jin_hiq_hiins heater_power_W=297.5 mdot=0.014980</title></circle>
+<circle cx="487.0" cy="183.2" r="5" fill="#b23838" opacity="0.9"><title>salt3_jin_lo5q_balq heater_power_W=297.5 mdot=0.014963</title></circle>
+<circle cx="487.0" cy="182.9" r="5" fill="#b23838" opacity="0.9"><title>salt3_jin_loq_loins heater_power_W=297.5 mdot=0.014969</title></circle>
+<circle cx="730.0" cy="54.0" r="5" fill="#b23838" opacity="0.9"><title>salt4_jin_hi5q_balq heater_power_W=337.6 mdot=0.017087</title></circle>
+<circle cx="730.0" cy="54.4" r="5" fill="#b23838" opacity="0.9"><title>salt4_jin_hiq_hiins heater_power_W=337.6 mdot=0.017080</title></circle>
+<circle cx="730.0" cy="54.7" r="5" fill="#b23838" opacity="0.9"><title>salt4_jin_lo5q_balq heater_power_W=337.6 mdot=0.017075</title></circle>
+<circle cx="730.0" cy="55.3" r="5" fill="#b23838" opacity="0.9"><title>salt4_jin_loq_loins heater_power_W=337.6 mdot=0.017065</title></circle>
+<circle cx="505" cy="68" r="5" fill="#12664f"/>
+<text x="517" y="72" class="legend">admitted_or_usable</text>
+<circle cx="505" cy="86" r="5" fill="#5e6b73"/>
+<text x="517" y="90" class="legend">diagnostic</text>
+<circle cx="505" cy="104" r="5" fill="#b26a00"/>
+<text x="517" y="108" class="legend">terminal_harvested_split_pending</text>
+<circle cx="505" cy="122" r="5" fill="#8a5a9e"/>
+<text x="517" y="126" class="legend">pending_terminal_admission</text>
+<circle cx="505" cy="140" r="5" fill="#b23838"/>
+<text x="517" y="144" class="legend">invalid_false_steady</text>
+<circle cx="505" cy="158" r="5" fill="#b23838"/>
+<text x="517" y="162" class="legend">invalid_or_rejected</text>
+</svg>

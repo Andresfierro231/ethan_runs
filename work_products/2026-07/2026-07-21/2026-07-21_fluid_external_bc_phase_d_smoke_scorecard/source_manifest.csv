@@ -1,0 +1,6 @@
+artifact,path,use,mutation
+repo_local_external_boundary_dictionary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,read-only source dictionary; filtered to one train row for smoke,False
+filtered_smoke_dictionary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_d_smoke_scorecard/phase_d_train_upcomer_ambient_smoke_dictionary.csv,generated input consumed by external Fluid parser,True
+external Fluid parser/API,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py,read-only import of load_external_boundary_dictionary and role-row conversion,False
+external Fluid solver contract,../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,"read-only import of ScenarioConfig, contract validator, and ambient heat accounting",False
+Phase C implementation summary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_c_implementation/summary.json,gate evidence for Phase D,False

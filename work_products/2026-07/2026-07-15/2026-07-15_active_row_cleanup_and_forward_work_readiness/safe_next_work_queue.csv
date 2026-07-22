@@ -1,0 +1,5 @@
+priority,next_work,claim_status,depends_on,recommended_scope,acceptance_signal
+P1,Consume AGENT-394 or AGENT-393 cooler/HX outputs after completion.,blocked_by_active_claim,AGENT-394,new dated setup-only cooler/HX admission package only if no completed package exists,runtime-leakage-free cooler candidate admitted or explicitly no-go under Salt2/Salt3/Salt4 split
+P2,Close out AGENT-392 thermal runner or consume its finished outputs.,blocked_by_active_claim,AGENT-305;AGENT-344,status refresh/read-only summary if runner has stopped,stage_status and status file agree; no live process ambiguity
+P3,Watch corrected-Q terminal state and harvester dependency.,scheduler_dependent,3293924;3295438,"read-only scheduler snapshot until terminal, then admission package",terminal corrected-Q rows receive split/admission labels
+P4,Regenerate repo index after active rows settle.,defer,board cleanup and active-row closeouts,generated index refresh only after duplicate/stale rows are resolved,.agent/STATE.md and .agent/BLOCKERS.md no longer lag active board state

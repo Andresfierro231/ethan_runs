@@ -1,0 +1,8 @@
+{
+  "case_count": 3,
+  "component_k_admitted": false,
+  "decision": "apparent_cluster_only",
+  "f6_fit_performed": false,
+  "rationale": "All rows are material-reverse-flow diagnostic rows and no same-basis straight reference supports ordinary K without violating guardrails.",
+  "task": "TODO-TWO-TAP-COMPONENT-ISOLATION-DECISION"
+}

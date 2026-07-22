@@ -1,0 +1,19 @@
+case_id,case_label,span_id,span_label,recirculation,friction_pa,dev_reset_pa,minor_pa,mechanical_total_pa,buoyancy_signed_pa,buoyancy_abs_pa,Re
+salt_2,Salt 2,lower_leg,Lower leg (heater),False,7.5947,1.2820,0.4995,9.3763,5.2184,5.2184,68.00
+salt_2,Salt 2,right_leg,Right leg (downcomer),False,7.1884,1.3859,0.7647,9.3391,1.4833,1.4833,61.16
+salt_2,Salt 2,left_lower_leg,Left lower (upcomer) *,True,1.5864,0.7655,0.0000,2.3520,0.4664,0.4664,71.13
+salt_2,Salt 2,test_section_span,Test section,False,1.3666,0.0000,0.0000,1.3666,0.7459,0.7459,68.80
+salt_2,Salt 2,left_upper_leg,Left upper (upcomer) *,True,1.1779,0.0000,0.3980,1.5759,1.3850,1.3850,66.65
+salt_2,Salt 2,upper_leg,Upper leg (downcomer),False,6.7085,1.3009,0.5997,8.6090,-39.2740,39.2740,62.71
+salt_3,Salt 3,lower_leg,Lower leg (heater),False,7.5074,1.4203,0.6568,9.5845,5.4369,5.4369,90.20
+salt_3,Salt 3,right_leg,Right leg (downcomer),False,8.9197,1.6162,0.8373,11.3732,1.0719,1.0719,84.75
+salt_3,Salt 3,left_lower_leg,Left lower (upcomer) *,True,1.7912,0.8511,0.0000,2.6423,0.4199,0.4199,96.77
+salt_3,Salt 3,test_section_span,Test section,False,1.0802,0.0000,0.0000,1.0802,0.7047,0.7047,91.05
+salt_3,Salt 3,left_upper_leg,Left upper (upcomer) *,True,0.9936,0.0000,0.5026,1.4962,1.3257,1.3257,88.44
+salt_3,Salt 3,upper_leg,Upper leg (downcomer),False,6.7166,1.4515,0.7097,8.8778,-38.0217,38.0217,83.86
+salt_4,Salt 4,lower_leg,Lower leg (heater),False,7.6969,1.5828,0.8638,10.1435,5.2382,5.2382,122.60
+salt_4,Salt 4,right_leg,Right leg (downcomer),False,10.5136,1.8552,0.8744,13.2432,0.7399,0.7399,118.00
+salt_4,Salt 4,left_lower_leg,Left lower (upcomer) *,True,2.1895,0.9513,0.0000,3.1409,0.4140,0.4140,134.88
+salt_4,Salt 4,test_section_span,Test section,False,0.8869,0.0000,0.0000,0.8869,0.6239,0.6239,123.66
+salt_4,Salt 4,left_upper_leg,Left upper (upcomer) *,True,0.8725,0.0000,0.7017,1.5742,1.4645,1.4645,119.83
+salt_4,Salt 4,upper_leg,Upper leg (downcomer),False,6.7616,1.6321,0.9034,9.2970,-36.4483,36.4483,114.88

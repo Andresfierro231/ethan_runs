@@ -1,0 +1,10 @@
+audit_id,field_or_dependency,classification,allowed_runtime_use,notes
+RUNTIME-001,heater_power_W,setup_input,yes,Operating setup value.
+RUNTIME-002,test_section_power_W,setup_input,yes,Operating setup value.
+RUNTIME-003,air_T_inlet_K and air_flow_Lpm,setup_input,yes,Ambient/cooler setup values.
+RUNTIME-004,fluid properties and geometry,setup_input,yes,Material/geometry contract inputs.
+RUNTIME-005,axial_mixing_mode and axial_mixing_multiplier,predeclared_model_input,yes,Must be selected before scoring and not row-fitted from target residuals.
+RUNTIME-006,CFD mdot,forbidden_runtime_input,no,May be used only as target/evidence outside predictive runtime.
+RUNTIME-007,realized wallHeatFlux,forbidden_runtime_input,no,May be used only as target/evidence outside predictive runtime.
+RUNTIME-008,validation temperatures,forbidden_runtime_input,no,Forbidden and not runtime; may be used only as scoring targets outside predictive execution.
+RUNTIME-009,source/property labels,release_gate_input,yes,Labels control whether fit/model-selection prose is allowed; they do not tune model parameters.

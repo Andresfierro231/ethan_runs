@@ -1,0 +1,66 @@
+[
+  {
+    "resistance_class": "buoyancy_drive",
+    "governing_role": "loop-scale density/elevation head that drives natural circulation",
+    "expected_sign": "drives flow in the solved circulation direction",
+    "rom_role": "left-hand-side pressure drive",
+    "admissible_closure_form": "computed from rho(T), gravity projection, and elevation",
+    "required_evidence": "temperature/density field and geometry orientation"
+  },
+  {
+    "resistance_class": "distributed_wall_friction_candidate",
+    "governing_role": "irreversible straight-span wall loss",
+    "expected_sign": "positive mechanical loss",
+    "rom_role": "Darcy-Weisbach distributed pressure loss",
+    "admissible_closure_form": "f_D(Re, geometry, branch) after buoyancy/development checks",
+    "required_evidence": "clean section alignment, no recirculation, corrected total-pressure loss, GCI"
+  },
+  {
+    "resistance_class": "minor_loss_or_development_region",
+    "governing_role": "bend, fitting, reducer, junction, entrance, or redevelopment loss",
+    "expected_sign": "positive loss after reversible pressure exchange is removed",
+    "rom_role": "minor-loss K or separate development correction",
+    "admissible_closure_form": "K_feature or development-length correction",
+    "required_evidence": "two-tap total-pressure loss and adjacent straight-friction subtraction"
+  },
+  {
+    "resistance_class": "reversible_acceleration_area_change_diagnostic",
+    "governing_role": "static pressure exchange from area or velocity change",
+    "expected_sign": "can be positive or negative and is not an irreversible loss",
+    "rom_role": "diagnostic term to separate from K/friction",
+    "admissible_closure_form": "not fit as resistance",
+    "required_evidence": "section mean total pressure and area/velocity change"
+  },
+  {
+    "resistance_class": "buoyancy_contaminated_apparent_resistance",
+    "governing_role": "raw apparent pressure slope where buoyancy source exceeds or masks wall loss",
+    "expected_sign": "can be negative",
+    "rom_role": "blocked apparent quantity until decomposed",
+    "admissible_closure_form": "not admissible until variable-density buoyancy term is removed",
+    "required_evidence": "mechanical-loss decomposition using p, p_rgh, rho, gravity projection"
+  },
+  {
+    "resistance_class": "recirculation_cell_effective_resistance",
+    "governing_role": "mixed-convection cell or reverse-flow structure modifying effective transport",
+    "expected_sign": "not reducible to one Darcy f without a cell model",
+    "rom_role": "branch-specific effective resistance or regime switch",
+    "admissible_closure_form": "onset law in Ri/Ra plus effective transport model",
+    "required_evidence": "backflow metric, median/characteristic Ri, onset/off-domain points"
+  },
+  {
+    "resistance_class": "thermal_resistance_UAprime",
+    "governing_role": "wall-to-bulk conductance per unit length",
+    "expected_sign": "positive conductance under physics-positive heat-flow convention",
+    "rom_role": "1D energy-equation closure",
+    "admissible_closure_form": "UA'(segment), R'=1/UA', or guarded Nu relation",
+    "required_evidence": "signed heat-flux audit, enthalpy-flux T_bulk, UA'=hP check, GCI"
+  },
+  {
+    "resistance_class": "unresolved_residual",
+    "governing_role": "remaining mismatch after modeled terms",
+    "expected_sign": "case-dependent",
+    "rom_role": "calibration residual and uncertainty ledger",
+    "admissible_closure_form": "reported residual, not promoted to physics law",
+    "required_evidence": "full term balance and error table"
+  }
+]

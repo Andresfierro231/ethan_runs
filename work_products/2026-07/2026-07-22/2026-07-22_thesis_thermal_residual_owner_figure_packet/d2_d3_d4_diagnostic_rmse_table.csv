@@ -1,0 +1,7 @@
+model_or_gate,metric,value,admitted
+M3_baseline_TP,transfer_tp_rmse_K,13.5673279702,false
+D2_TP_projection,transfer_tp_rmse_K,4.38159298515,false
+M3_baseline_TW,transfer_tw_rmse_K,18.980361511,false
+D2_after_TP_TW,transfer_tw_rmse_K,12.5130610954,false
+D3_wall_shape,transfer_rmse_reduction_pct,51.6919381995,false
+D4_segment_source,transfer_rmse_reduction_pct,54.272279139,false

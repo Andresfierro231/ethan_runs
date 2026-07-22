@@ -1,0 +1,7 @@
+{
+  "case_key": "salt4_lo5q",
+  "control_dict": "tmp/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/recon/salt4_lo5q/system/controlDict",
+  "mode": "surfaces",
+  "plane_count": 3,
+  "source_id": "viscosity_screening_salt_test_4_jin_coarse_mesh"
+}

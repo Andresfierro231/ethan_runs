@@ -1,0 +1,7 @@
+target_id,target_type,title,source_file,claim_supported,caption_guardrail
+T_PRESS_1,table,Pressure anchor absence proof,anchor_absence_proof.csv,No existing reviewable low-recirculation anchor exists,Do not imply F6 was evaluated numerically
+T_PRESS_2,table,Candidate span inventory summary,candidate_span_inventory_summary.csv,Existing/future anchor families and blockers,Future designs are not evidence until launched and harvested
+T_PRESS_3,table,Reverse-flow screen,reverse_flow_screen_table.csv,RAF/RMF gate failure explains ordinary-anchor absence,RAF/RMF limits must not be relaxed post hoc
+T_PRESS_4,table,Pressure-basis compatibility matrix,pressure_basis_compatibility.csv,Lower-right rows are section-effective not component K,No clipped K or hidden multiplier
+T_PRESS_5,table,Minimum future harvest runbook,minimum_future_harvest_runbook.csv,Exact sequence for a later scheduler row,This row did not launch compute
+F_PRESS_1,figure,F6/component-K admission gate waterfall,figures/svg/pressure_anchor_admission_gate_waterfall.svg,All current pressure-admission gates are closed,No component-K F6 or Shah comparison admission

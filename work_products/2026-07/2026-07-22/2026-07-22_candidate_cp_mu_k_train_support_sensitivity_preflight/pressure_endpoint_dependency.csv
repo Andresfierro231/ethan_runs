@@ -1,0 +1,4 @@
+dependency,observed_state,owner_or_source,readiness_decision,allowed_now,forbidden_now
+CAND001_job_3308712,RUNNING_on_c318-017_at_2026-07-22_check,AGENT-519_monitor_lane,not_ready,false,No endpoint readiness claim no F6/component-K fit no sampler/harvest launch no duplicate scheduler action.
+pressure_static_p_and_p_rgh_basis,endpoint fields absent for CAND001,source_property_cp_viscosity_pressure_basis_preflight,blocked,false,No pressure-based property/frequency scoring until terminal endpoint fields exist.
+pressure_QOI_after_terminal,await_terminal_handoff,TODO-PRESSURE-CAND001-TERMINAL-ENDPOINT-READINESS-GATE-2026-07-22,queued_not_claimed,false,Claim only after monitor clears terminal state and exact files are available.

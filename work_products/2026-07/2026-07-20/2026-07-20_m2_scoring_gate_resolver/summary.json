@@ -1,0 +1,14 @@
+{
+  "date": "2026-07-20",
+  "fit_rows_added": 0,
+  "generated_at_utc": "2026-07-20T18:12:43.555866+00:00",
+  "holdout_rows_released_now": 0,
+  "holdout_rows_scored": 0,
+  "model_selection_rows_added": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "salt1_cooler_hx_supported": false,
+  "score_gate_status": "blocked_missing_salt1_cooler_hx",
+  "score_ready_exception_granted": false,
+  "task": "TODO-PREDICT-M2-SCORING-GATE-RESOLVER"
+}

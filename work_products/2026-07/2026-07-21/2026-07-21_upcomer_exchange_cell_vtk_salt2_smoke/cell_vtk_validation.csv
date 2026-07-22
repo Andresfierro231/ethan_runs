@@ -1,0 +1,2 @@
+case_id,time_window_s,cell_vtk,validation_status,cell_data_count,expected_volume_cells,fields_present,missing_fields,volume_basis,sampler_ready_for_cell_lane
+salt_2,7915,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke/cell_vtk/salt_2_cell_fields.vtk,pending_or_failed_cell_vtk,0,2166996,,T;U;rho,whole_mesh_vtk_cell_order_matches_volume_csv_if_count_and_order_guard_pass,false

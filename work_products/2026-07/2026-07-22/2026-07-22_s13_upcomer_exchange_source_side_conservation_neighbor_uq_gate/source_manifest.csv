@@ -1,0 +1,8 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/source_side_qoi_contract.csv,read exact source-side QOI label/formula/sign,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/case_heatflow_equivalence_basis.csv,read retained-window case heat-flow basis,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/conservation_source_property_prerequisites.csv,read conservation/source-property blockers,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/same_qoi_uq_requirement_matrix.csv,read source-side same-QOI requirements,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/production_readiness_table.csv,read prior post-extraction readiness,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/neighbor_window_requirements.csv,read same-window UQ design,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute,read-only check for active exact pressure/Qwall outputs,true,false,false

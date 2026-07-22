@@ -1,0 +1,10 @@
+source_path,role_in_this_task,read_or_write,mutation_status,notes
+.agent/BOARD.md,task claim and closeout row,read_write,mutated_own_row_only,Claimed and completed this row only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_paper_outline_evidence_transfer_gap_request/README.md,upstream transfer/gap packet,read_only,not_mutated,Used as routing source
+work_products/2026-07/2026-07-22/2026-07-22_thesis_paper_outline_evidence_transfer_gap_request/completed_studies_to_import.csv,upstream completed-study ledger,read_only,not_mutated,Compared against latest completed packets
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,current compact claims ledger,read_only,not_mutated,Reviewed headers and source coverage; no ledger edit
+work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/source_number_index.csv,current source-number index,read_only,not_mutated,Reviewed existing source IDs; proposed additions only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_s13_mesh_gci_upcomer_exchange_evidence_packet/summary.json,new S13 source,read_only,not_mutated,Packet-level counts used in proposed ledger delta
+work_products/2026-07/2026-07-22/2026-07-22_thesis_pressure_f6_ordinary_basis_failure_packet/summary.json,new pressure source,read_only,not_mutated,Packet-level counts used in proposed ledger delta
+work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/summary.json,new source/property source,read_only,not_mutated,Packet-level counts used in proposed ledger delta
+native CFD/OpenFOAM outputs,guardrail context only,read_only,not_mutated,No native outputs opened broadly or mutated

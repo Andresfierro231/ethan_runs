@@ -1,0 +1,7 @@
+run_id,q_heater_W,expected_Re,status
+S3 anchor,297.5,90.0,admitted current anchor
+T13-A1,595.0,107.0,proposed
+T13-A2,1190.0,161.0,proposed
+T13-A3,2380.0,221.0,proposed onset target
+T13-A4,4760.0,305.0,proposed high-Re check
+T13-A5,9520.0,428.0,optional convergence risk

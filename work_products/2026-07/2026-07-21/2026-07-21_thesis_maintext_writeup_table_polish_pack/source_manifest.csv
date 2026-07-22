@@ -1,0 +1,13 @@
+source_id,path,used_for,mutation_status
+s6_gate,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/s0_s11_gate_flow_table.csv,s6_gate,read_only
+s6_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/blocked_scorecard_visual_table.csv,s6_scorecard,read_only
+s7_sensor,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/sensor_overlay_table.csv,s7_sensor,read_only
+s8_negative,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/negative_or_admission_ready_summary.csv,s8_negative,read_only
+s9_exchange,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/exchange_qoi_figure_contract.csv,s9_exchange,read_only
+s10_pressure,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv,s10_pressure,read_only
+s13_heat,work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/heat_path_lane_table.csv,s13_heat,read_only
+s14_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv,s14_scorecard,read_only
+h2_waterfall,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv,h2_waterfall,read_only
+velocity_ranges,work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/shared_velocity_ranges.csv,velocity_ranges,read_only
+velocity_analysis,work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_thesis_analysis.md,velocity_analysis,read_only
+writer_handoff,work_products/2026-07/2026-07-21/2026-07-21_thesis_post_study_writing_refresh/thesis_writer_handoff.md,writer_handoff,read_only

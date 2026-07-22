@@ -1,0 +1,9 @@
+guard_id,changed,policy
+native_output_mutation,false,read-only evidence synthesis only
+registry_or_admission_mutation,false,no admission or registry edits
+scheduler_action,false,no compute launch
+solver_sampler_harvest_uq_launch,false,"no new scoring, sampler, harvest, or UQ execution"
+thesis_current_file_edit,false,package only; thesis current files read-only
+fitting_or_model_selection,false,"no fitting, tuning, or model selection"
+coefficient_admission,false,all candidate rows preserve source admission labels
+protected_rows_consumed,false,existing score labels only; no holdout/external model selection

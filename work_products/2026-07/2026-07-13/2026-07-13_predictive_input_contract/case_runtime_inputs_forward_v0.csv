@@ -1,0 +1,4 @@
+case_id,fluid_case_name,source_id,heater_power_W,test_section_power_W,air_T_inlet_K,air_flow_Lpm,imposed_cooler_duty_W,boundary_ambient_Ta_K,radiation_on,insulation_thickness_in,source_contract_variants,mdot_search_lower_kg_s,mdot_search_upper_kg_s,runtime_input_status
+salt_2,Salt 2,viscosity_screening_salt_test_2_jin_coarse_mesh,265.7,37,299.19,37,136.351,299.19,false,1,F0_current_fluid_sources;F1_heater_only,0.005,0.05,allowed_forward_v0_imposed_cooler
+salt_3,Salt 3,viscosity_screening_salt_test_3_jin_coarse_mesh,297.5,37,299.79,37,150.77,299.79,false,1,F0_current_fluid_sources;F1_heater_only,0.005,0.05,allowed_forward_v0_imposed_cooler
+salt_4,Salt 4,viscosity_screening_salt_test_4_jin_coarse_mesh,337.6,37,299.97,37,169.227,299.97,false,1,F0_current_fluid_sources;F1_heater_only,0.005,0.05,allowed_forward_v0_imposed_cooler

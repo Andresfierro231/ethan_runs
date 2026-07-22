@@ -1,0 +1,6 @@
+check,status,evidence
+native_solver_outputs_mutated,pass,Read completed work_product CSV/JSON artifacts only.
+scheduler_or_solver_launched,pass,"Atlas builder does not call srun, sbatch, Fluid, OpenFOAM, or postprocessing."
+duplicate_coupled_scoring_submitted,pass,AGENT-511 live job is treated as read-only pending state; no duplicate submission.
+heldout_external_fit_or_tuning,pass,Salt3/Salt4 rows are score/diagnostic only; external/blind rows are not used.
+scientific_admission_state_changed,pass,Freeze remains blocked unless a completed admitted candidate exists; none is found.

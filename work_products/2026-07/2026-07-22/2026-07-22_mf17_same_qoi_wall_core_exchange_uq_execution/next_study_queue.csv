@@ -1,0 +1,4 @@
+priority,next_study,why,success_signal,status_after_mf17
+1,same_label_mesh_gci_after_medium_fine_sampler,MF17 executes temporal UQ; mesh/GCI is next before production/admission,accepted same-label mesh/GCI rows for the four S13 QOIs,blocked_on_active_sampler
+2,strict_row_specific_source_envelope_recovery,MF16 source/property release remains closed,strict source-envelope pass for candidate train rows,serial_blocker
+3,same_mask_exchange_control_volume_energy_residual,heat-flow diagnostics show Qwall and source-side heat are different lanes,same-mask enthalpy/source/wall residual ledger with cp/property basis,pending_after_source_property

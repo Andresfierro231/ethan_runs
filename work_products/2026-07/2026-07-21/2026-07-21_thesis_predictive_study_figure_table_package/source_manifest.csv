@@ -1,0 +1,8 @@
+source_id,path,use,mutation_status
+s0_s3_integration,work_products/2026-07/2026-07-21/2026-07-21_thesis_s0_s3_first_wave_writing_integration/README.md,S0-S3 publication integration,read_only
+s4_guard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/README.md,S4 recirculation guard evidence,read_only
+s5_release,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/README.md,S5 split/source release evidence,read_only
+phase5_negative_freeze,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/README.md,blocked S6/final scorecard status,read_only
+figure_plan,reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md,conceptual figure plan,read_only
+incorporation_plan,reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md,current figure/table routing,read_only
+existing_figure_crosswalk,reports/thesis_dossier/figures/figure_claim_crosswalk.csv,existing conceptual SVG claim mapping,read_only

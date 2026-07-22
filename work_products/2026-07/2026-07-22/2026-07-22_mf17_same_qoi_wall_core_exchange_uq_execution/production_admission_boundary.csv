@@ -1,0 +1,6 @@
+gate,status,evidence,release_allowed,next_action
+same_qoi_temporal_uq_for_four_qois,pass_executed,4 of 4 QOIs executed,False,preserve as temporal UQ support
+mesh_gci_uq,ready_not_executed,mesh/GCI remains separate; active medium/fine exact-label sampler is not consumed for admission here,False,wait for same-label mesh/GCI row
+production_harvest,blocked,target_plus_same_qoi_harvest=false; same_qoi_neighbor_window_temporal_uq=false; mesh_gci_uq=false; production_harvest=false,False,do not run production harvest from MF17
+source_property_release,fail_closed,MF16 exact-field release-ready rows 0,False,strict source envelope recovery remains serial blocker
+wall_core_exchange_coefficient_admission,fail_closed,temporal UQ is not a coefficient or closure admission,False,require source-bounded coefficient/operator plus mesh/GCI and source/property release

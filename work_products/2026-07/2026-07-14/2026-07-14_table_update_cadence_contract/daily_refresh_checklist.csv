@@ -1,0 +1,6 @@
+step,check,pass_condition
+1,Read board active rows and status closeouts,"Every in-flight gate-moving row has an owner, scope, and latest status or is flagged stale."
+2,Read blocker register,Open blockers and resolved/superseded blockers match current evidence.
+3,Scan latest package summaries,"Any package with changed admission, scorecard, blocker, API, or thesis state is queued for table refresh."
+4,Refresh scoped tables,Only claimed files are edited; active-agent scopes are not touched.
+5,Close out,"Status, journal, import manifest, README, and index refresh are complete when scoped."

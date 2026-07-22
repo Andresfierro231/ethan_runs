@@ -1,0 +1,4 @@
+heldout_case_id,candidate_training_cases,baseline_abs_Tmean_error_K,cooler_duty_parity_abs_Tmean_error_K,cooler_duty_parity_improvement_K,cooler_duty_parity_improvement_pct,validation_status,admission_note
+salt_2,salt_3;salt_4,62.226,6.219,56.007,90.0058,readiness_only_no_parameters_fit,mainline Salt2-4 diagnostic rows only; corrected-Q and low-heat heldout rows are not admitted here
+salt_3,salt_2;salt_4,63.986,4.453,59.533,93.0407,readiness_only_no_parameters_fit,mainline Salt2-4 diagnostic rows only; corrected-Q and low-heat heldout rows are not admitted here
+salt_4,salt_2;salt_3,65.026,2.697,62.329,95.8524,readiness_only_no_parameters_fit,mainline Salt2-4 diagnostic rows only; corrected-Q and low-heat heldout rows are not admitted here

@@ -1,0 +1,7 @@
+source_id,source_path,exists,source_role,mutation
+nonrecirculating_anchor_request.csv,work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/nonrecirculating_anchor_request.csv,yes,prior anchor request,read_only
+launch_gate_contract.csv,work_products/2026-07/2026-07-18/2026-07-18_two_tap_nonrecirc_anchor_request/launch_gate_contract.csv,yes,prior launch gates,read_only
+endpoint_reverse_flow_gate.csv,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_admission_repair/endpoint_reverse_flow_gate.csv,yes,reverse-flow blocker evidence,read_only
+component_k_decision.csv,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/component_k_decision.csv,yes,component-K split decision,read_only
+same_qoi_time_uq.csv,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/same_qoi_time_uq.csv,yes,time UQ status,read_only
+same_qoi_mesh_uq.csv,work_products/2026-07/2026-07-20/2026-07-20_two_tap_corner_lower_right_isolation_uq_progress/same_qoi_mesh_uq.csv,yes,mesh UQ status,read_only

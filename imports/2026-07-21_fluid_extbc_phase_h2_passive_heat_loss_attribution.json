@@ -1,0 +1,87 @@
+{
+  "task": "TODO-FLUID-EXTBC-PHASE-H2-PASSIVE-HEAT-LOSS-ATTRIBUTION-2026-07-21",
+  "task_id": "TODO-FLUID-EXTBC-PHASE-H2-PASSIVE-HEAT-LOSS-ATTRIBUTION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Perform Phase H2 passive heat-loss attribution and three follow-on studies from existing train-only evidence.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-EXTBC-PHASE-H2-PASSIVE-HEAT-LOSS-ATTRIBUTION-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-extbc-phase-h2-passive-heat-loss-attribution.md",
+    "imports/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution.json",
+    "tools/analyze/build_fluid_extbc_phase_h2_passive_heat_loss_attribution.py",
+    "tools/analyze/test_fluid_extbc_phase_h2_passive_heat_loss_attribution.py",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/hA_area_unit_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/passive_hA_family_contribution.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/physical_plausibility_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/repair_candidate_predeclaration_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/segment_heat_loss_sweep.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/sign_and_drive_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/source_sink_coupling_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/heat_path_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/sensitivity_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/sensor_delta.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/failure_classification.csv"
+  ],
+  "validation": [
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile tools/analyze/build_fluid_extbc_phase_h2_passive_heat_loss_attribution.py tools/analyze/test_fluid_extbc_phase_h2_passive_heat_loss_attribution.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/build_fluid_extbc_phase_h2_passive_heat_loss_attribution.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/test_fluid_extbc_phase_h2_passive_heat_loss_attribution.py",
+      "result": "Phase H2 passive heat-loss attribution checks passed."
+    }
+  ],
+  "summary": {
+    "passive_role_rows": 12,
+    "heat_ledger_rows": 46,
+    "source_sink_rows": 12,
+    "lower_leg_tw5_improvement_K": 4.59310690807564,
+    "global_tw5_improvement_K": 51.63369382647278,
+    "non_lower_allocated_tw5_improvement_share": 0.9110443865683547,
+    "repair_candidates_executed": 0,
+    "repair_candidates_admitted": 0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": false,
+    "external_fluid_repo_edited": false,
+    "validation_rows_scored": 0,
+    "holdout_rows_scored": 0,
+    "external_test_rows_scored": 0,
+    "fit_or_model_selection": false,
+    "repair_run_executed": false,
+    "freeze_or_admission_decision": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false
+  }
+}

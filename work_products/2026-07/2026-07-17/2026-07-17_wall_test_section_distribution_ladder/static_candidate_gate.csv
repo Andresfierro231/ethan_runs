@@ -1,0 +1,7 @@
+wall_candidate_id,case_id,split_role,predicted_total_loss_W,target_total_loss_W_for_scoring_only,abs_error_W,abs_error_pct,nonphysical_value_count,static_gate,gate_reason
+PB2_salt2_local_shape_passive_hA_p1,salt_2,train,107.0420928,107.0420928,0,0,0,fit_row_not_generalization_scored,no_negative_or_missing_shape_values
+PB2_salt2_local_shape_passive_hA_p1,salt_3,validation,122.0798331,122.0994302,0.019597097,0.0160501134,0,pass,no_negative_or_missing_shape_values
+PB2_salt2_local_shape_passive_hA_p1,salt_4,holdout,142.1021403,141.1810184,0.921121862,0.6524403012,0,pass,no_negative_or_missing_shape_values
+PB3_upcomer_test_section_attenuated_shape_p1,salt_2,train,107.0420927,107.0420928,1.100001157e-08,1.027634203e-08,0,fit_row_not_generalization_scored,no_negative_or_missing_shape_values
+PB3_upcomer_test_section_attenuated_shape_p1,salt_3,validation,122.0869756,122.0994302,0.012454589,0.0102003662,0,pass,no_negative_or_missing_shape_values
+PB3_upcomer_test_section_attenuated_shape_p1,salt_4,holdout,142.1206599,141.1810184,0.939641463,0.6655579294,0,pass,no_negative_or_missing_shape_values

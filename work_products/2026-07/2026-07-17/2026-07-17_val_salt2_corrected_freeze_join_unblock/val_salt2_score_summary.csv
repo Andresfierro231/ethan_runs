@@ -1,0 +1,4 @@
+evidence_lane,scored_rows,rmse,mae,bias_prediction_minus_target,score_status,score_use
+pressure_streamwise_map,0,,,,no_joined_predictions,blind_external_score_only
+thermal_section_and_junction,0,,,,no_joined_predictions,blind_external_score_only
+sensor_temperature,0,,,,no_joined_predictions,blind_external_score_only

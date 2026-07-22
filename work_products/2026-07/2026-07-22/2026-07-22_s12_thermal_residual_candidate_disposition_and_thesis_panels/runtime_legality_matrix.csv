@@ -1,0 +1,6 @@
+candidate_or_lane,runtime_legal,source_property_released,admission_allowed,validation_holdout_external_scored,final_score_released,residual_absorbed_into_internal_Nu,reason
+S12-HIAX1,false,false,false,false,false,false,negative freeze; missing ambient wall rows
+passive_wall,false,false,false,false,false,false,0 source families released
+test_section_source,false,false,false,false,false,false,partial improvement and worsening both observed
+empirical_correction,false,false,false,false,false,false,fit is not physics admission and transfer was not used for model selection
+junction_stub,false,false,false,false,false,false,no independent source/property basis

@@ -1,0 +1,17 @@
+{
+  "all_sources_present": true,
+  "corner_component_k_admitted_rows": 0,
+  "corner_dry_rows": 3,
+  "date": "2026-07-20",
+  "frozen_model_forms": 3,
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "next_steps": 5,
+  "ordinary_nu_fd_k_rows_admitted": 0,
+  "regime_gate_rows": 10,
+  "research_avenues": 4,
+  "task": "TODO-DIRECT-RECIRC-MODEL-FORMS-AND-DRY-SCORERS",
+  "umx1_grid_authorized": false,
+  "upcomer_dry_rows": 10,
+  "upcomer_fit_admitted_rows": 0
+}

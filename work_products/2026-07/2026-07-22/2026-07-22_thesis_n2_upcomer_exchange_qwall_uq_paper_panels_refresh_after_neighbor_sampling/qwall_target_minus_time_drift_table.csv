@@ -1,0 +1,4 @@
+case_id,target_minus_time_window_s,target_time_window_s,target_plus_time_window_s,Q_wall_target_minus_W,Q_wall_target_W,Q_wall_target_minus_to_target_delta_W,Q_wall_target_minus_to_target_relative_delta,target_plus_status,paper_claim
+salt_2,7914,7915,,23.1160706147,23.1161370708,6.64561000008e-05,2.87487912869e-06,missing_no_later_time_directory,one-sided adjacent-window drift only; not same-QOI UQ
+salt_3,7617,7618,,25.3465346415,25.3465488205,1.41790000008e-05,5.59405546735e-07,missing_no_later_time_directory,one-sided adjacent-window drift only; not same-QOI UQ
+salt_4,9999,10000,,28.1221584595,28.1231837021,0.0010252426,3.64554244946e-05,missing_no_later_time_directory,one-sided adjacent-window drift only; not same-QOI UQ

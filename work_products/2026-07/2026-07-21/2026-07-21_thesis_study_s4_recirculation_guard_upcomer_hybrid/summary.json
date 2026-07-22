@@ -1,0 +1,20 @@
+{
+  "admission_state_mutated": false,
+  "created_utc": "2026-07-21T17:02:20.803143+00:00",
+  "exchange_cell_coefficient_admitted_rows": 0,
+  "exchange_variable_rows": 14,
+  "fit_or_model_selection_performed": false,
+  "fluid_or_external_edit": false,
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "ordinary_candidate_rows_reviewed": 90,
+  "ordinary_closure_admitted_rows": 0,
+  "ordinary_disable_rows": 4,
+  "ordinary_upcomer_Nu_fD_K_admitted_rows": 0,
+  "output_dir": "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid",
+  "registry_mutated": false,
+  "reverse_flow_evidence_rows": 45,
+  "scheduler_action": false,
+  "scoreable_now_rows": 0,
+  "task": "TODO-THESIS-STUDY-S4-RECIRCULATION-GUARD-UPCOMER-HYBRID-2026-07-21"
+}

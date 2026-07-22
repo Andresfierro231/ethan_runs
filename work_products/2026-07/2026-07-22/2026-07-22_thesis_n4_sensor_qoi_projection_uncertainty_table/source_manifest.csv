@@ -1,0 +1,5 @@
+source_key,path,summary_path,exists,mutation_status
+sensor_contract,work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract,work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract/summary.json,true,read_only
+sensor_s7,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/summary.json,true,read_only
+master_scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard,work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json,true,read_only
+s6_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s6_frozen_candidate_scorecard/summary.json,true,read_only

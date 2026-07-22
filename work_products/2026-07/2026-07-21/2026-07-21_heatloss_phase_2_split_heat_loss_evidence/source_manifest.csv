@@ -1,0 +1,9 @@
+source_path,used_for,mutation_status
+work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/patchwise_heat_ledger.csv,patchwise heat rows and grouped junction evidence,read_only
+work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/segment_enthalpy_residuals.csv,segment enthalpy residual ownership,read_only
+work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/resistance_network_terms.csv,wall/external/radiation resistance status,read_only
+work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/junction_heat_loss_trends.csv,junction heat trend interpretation,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv,heat-path contract and guardrails,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_1_external_bc_radiation_integration/external_bc_segment_role_audit.csv,external BC/radiation setup field status,read_only
+operational_notes/maps/thermal-boundary-and-radiation.md,radiation current state and no-double-counting policy,read_only
+.agent/BOARD.md,task scope and guardrails,read_only

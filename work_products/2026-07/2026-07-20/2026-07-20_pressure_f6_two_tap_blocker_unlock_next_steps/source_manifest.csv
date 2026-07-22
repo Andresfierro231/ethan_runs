@@ -1,0 +1,11 @@
+source_id,path,use,mutation
+face_qref_summary,work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/summary.json,current q_ref and admission counts,read_only
+face_flux_audit,work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/face_level_qref_flux_audit.csv,face-level reverse flow and flux evidence,read_only
+residual_uq_progress,work_products/2026-07/2026-07-20/2026-07-20_two_tap_face_qref_uq_progress/residual_uq_progress.csv,same-QOI residual blocker carry-forward,read_only
+nonrecirc_staging,work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/endpoint_sampling_contract.csv,future endpoint sampler contract,read_only
+nonrecirc_uq_plan,work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/same_qoi_uq_family_plan.csv,future same-QOI UQ requirements,read_only
+high_heat_monitor,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,CAND-001 terminal/readiness state,read_only
+same_qoi_launch_package,work_products/2026-07/2026-07-20/2026-07-20_two_tap_same_qoi_anchor_launch_package/mesh_time_uq_request.csv,current same-QOI launch blocker state,read_only
+recirc_residual_scorer,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_residual_scorer/next_extraction_contract.csv,recirculating residual next extraction needs,read_only
+recirc_section_model,work_products/2026-07/2026-07-20/2026-07-20_two_tap_recirc_section_effective_model/model_form_decision_table.csv,allowed/forbidden model forms,read_only
+blocker_review,work_products/2026-07/2026-07-20/2026-07-20_blocker_register_review_after_unlock_wave/blocker_status_review.csv,open blocker status after unlock wave,read_only

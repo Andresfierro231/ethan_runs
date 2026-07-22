@@ -1,0 +1,5 @@
+blocked_item,why_not_run_now,blocking_evidence,safe_next_step
+corrected_q_terminal_harvest,Job 3293924 is still running and harvester 3295438 is pending.,read_only_scheduler_snapshot,"Monitor until terminal, then run/admit harvest package."
+agent373_hydraulic_chain,"Jobs 3295989, 3295990, and 3295991 are already submitted and dependency-pending.",read_only_scheduler_snapshot,Do not duplicate; intake terminal outputs when the chain completes.
+pm5_parser_repair,AGENT-404 has an active claim for parser repair/reparse.,.agent/BOARD.md and .agent/status/2026-07-15_AGENT-404.md,Wait for AGENT-404 closeout; consume repaired metrics if admitted.
+final_forward_v1_scorecard,"Required gates are not admitted: hydraulics, corrected-Q cfd-pp harvest, PM5/upcomer parser/onset, and final HX/BC admission.",AGENT-393/394/402 summaries and scheduler snapshot.,Run scorecard only after gate checklist says all blocking rows are admitted.

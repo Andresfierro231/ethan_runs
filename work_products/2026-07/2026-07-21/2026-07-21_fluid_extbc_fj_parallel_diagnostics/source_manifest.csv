@@ -1,0 +1,8 @@
+source_id,path,use,mutation
+phase_e_summary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json,baseline quantitative result,False
+phase_e_thermal_residuals,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/thermal_residual_attribution.csv,train residual baseline,False
+phase_e_segment_states,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/segment_states.csv,heat-path and segment state attribution,False
+phase_e_heat_path,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/heat_path_ledger.csv,segment heat-path ownership,False
+phase_e_role_rows,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/role_row_ledger.csv,external-BC source family mapping,False
+external_bc_dictionary,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,dictionary completeness and source/sink admissibility,False
+phase_b_mapping_contract,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/segment_mapping_contract.csv,segment mapping coverage audit,False

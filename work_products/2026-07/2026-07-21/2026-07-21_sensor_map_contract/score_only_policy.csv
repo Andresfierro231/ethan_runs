@@ -1,0 +1,4 @@
+policy_id,applies_to,allowed_use,forbidden_use,source
+SENSOR-SCORE-ONLY-001,TP/TW sensors,post-solve score target and diagnostic residual discussion,runtime input; closure fit target; model-selection criterion,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/score_only_target_policy.csv
+SENSOR-TP2-001,TP2,score-only projected 1D validation target,training feature; runtime boundary; admission by itself,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv
+SENSOR-TW10-001,TW10,excluded from active score rows until a shell state exists,surrogate shell-temperature runtime claim,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/bounded_or_excluded_sensor_rationale.csv

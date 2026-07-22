@@ -1,0 +1,6 @@
+order,check,required_state,how_to_verify,launch_block_if_missing
+1,duplicate_job_guard,no active duplicate CAND-001 retry job,squeue/sacct in future scheduler row,true
+2,source_case_selection,exact CAND-001 source cases and restart points named,source readiness table and prior timeout logs,true
+3,walltime_resource_plan,walltime exceeds prior 5-day timeouts or scope is reduced,runbook records expected runtime and resources,true
+4,terminal_success_definition,OpenFOAM terminal completion and readable retained time windows,future row writes terminal/source-field readiness table,true
+5,post_terminal_sampler_gate,finite endpoint fields plus RAF/RMF/SVF before sampler/admission,endpoint field requirement table,true

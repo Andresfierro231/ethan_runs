@@ -1,0 +1,9 @@
+gate,status,ready,reason
+recirculation_control_volume,seeded_diagnostic_available_not_production_energy_CV,false,validated segmentation/topology-to-cell-mask evidence still must be promoted to the exact energy CV
+trusted_exchange_interface,diagnostic_proxy_available,false,production interface must come from the recirc cell mask and carry same-label mesh/GCI
+wall_core_band,proxy_contrast_available,false,wall/core band must be derived from the same recirc volume before thermal contrast is released
+same_window_temporal_UQ,executed_for_4_proxy_QOIs,true,target-minus/target/target-plus temporal UQ exists for Qwall/mdot/tau/wall-core contrast
+same_label_mesh_GCI,blocked_missing_same_label_mesh_family,false,Qwall/exchange QOIs have no accepted same-label mesh family
+source_property_basis,not_released,false,source-side heat and cp/property basis cannot yet be used for production energy residuals
+production_exchange_cell_harvest,do_not_run,false,"requires same recirc mask, exchange interface, wall/core band, mesh/GCI, cp, and same-QOI UQ"
+model_admission_or_score,forbidden,false,"no coefficient fitting, protected scoring, ordinary closure, or exchange-cell admission from this package"

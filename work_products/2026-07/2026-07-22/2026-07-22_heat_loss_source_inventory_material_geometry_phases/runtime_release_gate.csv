@@ -1,0 +1,8 @@
+gate_id,required_condition,current_status,pass_fail,release_effect_if_passed,current_release_effect
+R01,row_specific_source_inventory,setup source/sink values traceable for heater cooler test-section,partial_pass,allows source inventory documentation,documentation_only_no_runtime_release
+R02,material_geometry_ledger,segmentwise area thickness k coverage contact and surface fields complete,fail,would allow resistance-network calibration preflight,no_calibration
+R03,external_BC_ledger,h_ext Ta Tsur emissivity view-factor and radiation semantics released,fail,would allow setup-only external convection/radiation runtime lane,no_numeric_heat_loss_release
+R04,source_property_cp_mu_k_release,candidate-specific cp/mu/k and source envelope strict pass,fail,would allow source-property sensitivity execution,no_property_release
+R05,same_QOI_UQ,train/support same-QOI UQ for heat ledger TP TW pressure support,fail,would allow freeze preflight,no_freeze
+R06,protected_split_freeze,exactly one runtime-legal candidate frozen before protected score,fail,would allow one protected score,no_protected_scoring
+R07,residual_owner_policy,residual emitted only after declared lanes and not internal Nu,pass,preserves scientific accounting,residual_output_only

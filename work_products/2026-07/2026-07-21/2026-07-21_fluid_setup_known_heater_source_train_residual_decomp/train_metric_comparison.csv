@@ -1,0 +1,8 @@
+metric,baseline_value,candidate_value,delta_candidate_minus_baseline,claim_boundary
+all_mae_K,81.5815150583415,81.65061561384258,0.06910055550108041,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"
+tp_mae_K,80.24939106239617,79.7314092736083,-0.5179817887878642,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"
+tw_mae_K,82.18702596558934,82.52298213213089,0.3359561665415498,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"
+all_rmse_K,,83.51256166904624,,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"
+tp_rmse_K,,79.94970740223968,,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"
+tw_rmse_K,,85.08273446042833,,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"
+max_abs_error_K,,110.43452079501566,,"train-only comparison; no fitting, freeze, admission, validation, holdout, or external scoring"

@@ -1,0 +1,13 @@
+case_or_family,split_role,train_role_allowed,coefficient_fit_allowed_now,model_selection_allowed_now,coefficient_fit_allowed_after_source_property_release,score_claim_allowed,claim_boundary
+salt_1_nominal,train_nominal,True,False,False,True,train_support_execution_evidence_only,Salt1-4 nominal training support for later coefficient discovery/freeze; current fitting remains locked until source/property release
+salt_2_nominal,train_nominal,True,False,False,True,train_support_execution_evidence_only,Salt1-4 nominal training support for later coefficient discovery/freeze; current fitting remains locked until source/property release
+salt_3_nominal,train_nominal,True,False,False,True,train_support_execution_evidence_only,Salt1-4 nominal training support for later coefficient discovery/freeze; current fitting remains locked until source/property release
+salt_4_nominal,train_nominal,True,False,False,True,train_support_execution_evidence_only,Salt1-4 nominal training support for later coefficient discovery/freeze; current fitting remains locked until source/property release
+salt_1_minus10Q,support_stress_or_sensitivity,False,False,False,False,support_diagnostic_only_after_train_freeze,may audit robustness after coefficients are frozen; cannot tune coefficients
+salt_1_plus10Q,support_stress_or_sensitivity,False,False,False,False,support_diagnostic_only_after_train_freeze,may audit robustness after coefficients are frozen; cannot tune coefficients
+salt_4_minus5Q,support_stress_or_sensitivity,False,False,False,False,support_diagnostic_only_after_train_freeze,may audit robustness after coefficients are frozen; cannot tune coefficients
+salt_4_plus5Q,support_stress_or_sensitivity,False,False,False,False,support_diagnostic_only_after_train_freeze,may audit robustness after coefficients are frozen; cannot tune coefficients
+salt_2_minus5Q,holdout_testing,False,False,False,False,holdout_once_after_freeze_only,"protected holdout; no fitting, residual-owner tuning, or model-form selection"
+salt_2_plus5Q,holdout_testing,False,False,False,False,holdout_once_after_freeze_only,"protected holdout; no fitting, residual-owner tuning, or model-form selection"
+val_salt2,external_test,False,False,False,False,external_test_once_after_freeze_only,external test; no tuning or rescue after looking
+legacy_salt3_salt4_transfer_packages,legacy_diagnostic_context,False,False,False,False,cannot_be_combined_with_salt1_4_training_as_validation,"If Salt1-4 nominal are used for training, older Salt3/Salt4 transfer labels are historical diagnostics only."

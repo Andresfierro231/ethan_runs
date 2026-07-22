@@ -1,0 +1,6 @@
+gate,status,ready,production_harvest_allowed_now,reason
+same_qoi_neighbor_window_temporal_uq,complete,true,false,all four exact QOI labels have target-minus/target/target-plus temporal UQ
+same_label_mesh_family_inventory,complete,true,false,inventory executed over curated S13 and same-QOI mesh/GCI evidence artifacts
+same_label_mesh_gci_uq,blocked_missing_same_label_mesh_family,false,false,0/4 QOI labels have accepted same-label mesh/GCI rows
+next_compute_contract,ready_to_claim,true,false,"exact labels, signs, source/property basis, windows, and mesh-family requirements are specified"
+production_harvest_or_admission,do_not_run,false,false,mesh/GCI support remains absent after inventory

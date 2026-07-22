@@ -1,0 +1,14 @@
+source_id,path,use
+fluid_walls_model_form,operational_notes/07-26/16/2026-07-16_fluid_walls_steady_1d_model_form.md,"Field contract, steady-state equation, test-section equation, and upcomer/onset policy."
+geometry_reference,reference/geometry_reference.md,"Authoritative segment names, dimensions, flow order, test-section material, and upcomer recirculation note."
+segment_plan,operational_notes/07-26/15/2026-07-15_segment_resolved_pressure_thermal_modeling_plan.md,Segment-local pressure/thermal slots and runtime leakage guardrails.
+pressure_ladder_admission,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/README.md,"Pressure-ladder admission result: 66 branch rows reviewed, 0 true f_D/K rows admitted."
+heat_audit,work_products/2026-07/2026-07-16/2026-07-16_pressure_loop_plot_and_cfd_heat_audit/heat_audit_and_modeling_recommendations.md,"Role-level heat accounting, pressure-map caveats, and junction/stub loss interpretation."
+recirc_contract,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/README.md,"Recirculation/admission rule: 42 effective-lane rows, 0 ordinary single-stream upcomer rows admitted."
+recirc_hybrid_lanes,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv,"Ordinary, transition, recirculating, and test-section-upcomer lane contract."
+m3ts_scorecard,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/README.md,M3+TS runtime rows pass setup-input audit but remain blocked by heat-loss and coupled-score gates.
+heater_admission,work_products/2026-07/2026-07-16/2026-07-16_heater_lower_leg_source_sign_gci_admission/README.md,Heater source/sign/GCI admission: 0 fit-admissible rows.
+downcomer_admission,work_products/2026-07/2026-07-16/2026-07-16_downcomer_policy_admission_artifact/README.md,Downcomer policy admission: 0 ordinary Nu fit rows admitted.
+predictive_heat_loss_path,work_products/2026-07/2026-07-13/2026-07-13_predictive_heat_loss_path/README.md,Thermal circuit diagnostics and uncertainty gates; 0 thermal fit-candidate rows.
+predictive_hx_fit,work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/README.md,"HX/cooler model forms, split policy, and interpretation limits."
+boundary_hx_wall_radiation_decision,work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/README.md,Boundary/HX/wall/radiation separation and double-counting guardrails.

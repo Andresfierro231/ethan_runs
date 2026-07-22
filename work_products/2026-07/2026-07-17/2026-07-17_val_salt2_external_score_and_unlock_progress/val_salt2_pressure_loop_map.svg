@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="600" viewBox="0 0 1120 600">
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#202020}.title{font-size:21px;font-weight:700}.label{font-size:12px}.small{font-size:10px}.grid{stroke:#dddddd;stroke-width:1}.axis{stroke:#333333;stroke-width:1.2}</style>
+<rect x="0" y="0" width="1120" height="600" fill="white"/>
+<text x="82" y="30" class="title">val_salt2 pressure map through loop</text>
+<rect x="66.5" y="54" width="168.6" height="434" fill="#f6e8c3" opacity="0.5"/>
+<text x="150.8" y="542" text-anchor="middle" class="small">heater</text>
+<rect x="238.6" y="54" width="168.6" height="434" fill="#d8f0d2" opacity="0.5"/>
+<text x="322.9" y="542" text-anchor="middle" class="small">lower upcomer</text>
+<rect x="410.7" y="54" width="168.6" height="434" fill="#fddbc7" opacity="0.5"/>
+<text x="495.0" y="542" text-anchor="middle" class="small">test section</text>
+<rect x="582.7" y="54" width="168.6" height="434" fill="#c7eae5" opacity="0.5"/>
+<text x="667.0" y="542" text-anchor="middle" class="small">upper upcomer</text>
+<rect x="754.8" y="54" width="168.6" height="434" fill="#d1e5f0" opacity="0.5"/>
+<text x="839.1" y="542" text-anchor="middle" class="small">cooled leg</text>
+<rect x="926.9" y="54" width="168.6" height="434" fill="#eeeeee" opacity="0.5"/>
+<text x="1011.2" y="542" text-anchor="middle" class="small">downcomer</text>
+<line x1="82" y1="488.0" x2="1080" y2="488.0" class="grid"/>
+<text x="74" y="492.0" text-anchor="end" class="label">-20000</text>
+<line x1="82" y1="401.2" x2="1080" y2="401.2" class="grid"/>
+<text x="74" y="405.2" text-anchor="end" class="label">-15000</text>
+<line x1="82" y1="314.4" x2="1080" y2="314.4" class="grid"/>
+<text x="74" y="318.4" text-anchor="end" class="label">-10000</text>
+<line x1="82" y1="227.6" x2="1080" y2="227.6" class="grid"/>
+<text x="74" y="231.6" text-anchor="end" class="label">-5000</text>
+<line x1="82" y1="140.8" x2="1080" y2="140.8" class="grid"/>
+<text x="74" y="144.8" text-anchor="end" class="label">0</text>
+<line x1="82" y1="54.0" x2="1080" y2="54.0" class="grid"/>
+<text x="74" y="58.0" text-anchor="end" class="label">5000</text>
+<line x1="82.0" y1="54" x2="82.0" y2="488" class="grid"/>
+<text x="82.0" y="518" text-anchor="middle" class="small">0</text>
+<line x1="254.1" y1="54" x2="254.1" y2="488" class="grid"/>
+<text x="254.1" y="518" text-anchor="middle" class="small">5</text>
+<line x1="426.1" y1="54" x2="426.1" y2="488" class="grid"/>
+<text x="426.1" y="518" text-anchor="middle" class="small">10</text>
+<line x1="598.2" y1="54" x2="598.2" y2="488" class="grid"/>
+<text x="598.2" y="518" text-anchor="middle" class="small">15</text>
+<line x1="770.3" y1="54" x2="770.3" y2="488" class="grid"/>
+<text x="770.3" y="518" text-anchor="middle" class="small">20</text>
+<line x1="942.3" y1="54" x2="942.3" y2="488" class="grid"/>
+<text x="942.3" y="518" text-anchor="middle" class="small">25</text>
+<line x1="1080.0" y1="54" x2="1080.0" y2="488" class="grid"/>
+<text x="1080.0" y="518" text-anchor="middle" class="small">29</text>
+<polyline points="82.0,140.8 116.4,302.4 150.8,251.8 185.2,256.0 219.7,263.6 254.1,149.1 288.5,169.6 322.9,189.9 357.3,210.2 391.7,230.6 426.1,315.5 460.6,298.9 495.0,282.4 529.4,266.1 563.8,249.6 598.2,335.7 632.6,359.7 667.0,383.5 701.4,407.2 735.9,431.0 770.3,360.8 804.7,199.4 839.1,249.0 873.5,251.3 907.9,240.2 942.3,87.7 976.8,148.4 1011.2,209.4 1045.6,270.2 1080.0,331.2" fill="none" stroke="#1b7837" stroke-width="2.6"/>
+<circle cx="82.0" cy="140.8" r="2.4" fill="#1b7837"/>
+<circle cx="116.4" cy="302.4" r="2.4" fill="#1b7837"/>
+<circle cx="150.8" cy="251.8" r="2.4" fill="#1b7837"/>
+<circle cx="185.2" cy="256.0" r="2.4" fill="#1b7837"/>
+<circle cx="219.7" cy="263.6" r="2.4" fill="#1b7837"/>
+<circle cx="254.1" cy="149.1" r="2.4" fill="#1b7837"/>
+<circle cx="288.5" cy="169.6" r="2.4" fill="#1b7837"/>
+<circle cx="322.9" cy="189.9" r="2.4" fill="#1b7837"/>
+<circle cx="357.3" cy="210.2" r="2.4" fill="#1b7837"/>
+<circle cx="391.7" cy="230.6" r="2.4" fill="#1b7837"/>
+<circle cx="426.1" cy="315.5" r="2.4" fill="#1b7837"/>
+<circle cx="460.6" cy="298.9" r="2.4" fill="#1b7837"/>
+<circle cx="495.0" cy="282.4" r="2.4" fill="#1b7837"/>
+<circle cx="529.4" cy="266.1" r="2.4" fill="#1b7837"/>
+<circle cx="563.8" cy="249.6" r="2.4" fill="#1b7837"/>
+<circle cx="598.2" cy="335.7" r="2.4" fill="#1b7837"/>
+<circle cx="632.6" cy="359.7" r="2.4" fill="#1b7837"/>
+<circle cx="667.0" cy="383.5" r="2.4" fill="#1b7837"/>
+<circle cx="701.4" cy="407.2" r="2.4" fill="#1b7837"/>
+<circle cx="735.9" cy="431.0" r="2.4" fill="#1b7837"/>
+<circle cx="770.3" cy="360.8" r="2.4" fill="#1b7837"/>
+<circle cx="804.7" cy="199.4" r="2.4" fill="#1b7837"/>
+<circle cx="839.1" cy="249.0" r="2.4" fill="#1b7837"/>
+<circle cx="873.5" cy="251.3" r="2.4" fill="#1b7837"/>
+<circle cx="907.9" cy="240.2" r="2.4" fill="#1b7837"/>
+<circle cx="942.3" cy="87.7" r="2.4" fill="#1b7837"/>
+<circle cx="976.8" cy="148.4" r="2.4" fill="#1b7837"/>
+<circle cx="1011.2" cy="209.4" r="2.4" fill="#1b7837"/>
+<circle cx="1045.6" cy="270.2" r="2.4" fill="#1b7837"/>
+<circle cx="1080.0" cy="331.2" r="2.4" fill="#1b7837"/>
+<line x1="82" y1="488" x2="1080" y2="488" class="axis"/>
+<line x1="82" y1="54" x2="82" y2="488" class="axis"/>
+<text x="581.0" y="576" text-anchor="middle" class="label">loop-order station index</text>
+<text x="22" y="271.0" transform="rotate(-90 22,271.0)" text-anchor="middle" class="label">static pressure relative to loop start [Pa]</text>
+<text x="82" y="596" class="small">External-test target only; not a fitted pressure coefficient.</text>
+</svg>

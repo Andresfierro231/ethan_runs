@@ -1,0 +1,5 @@
+phase,name,status,next_unlock
+1,bulk_integral_heat_partition,complete_diagnostic,use Q_remaining_after_wall_W as conservation target
+2,residual_complete_open_cv_contract,complete_fail_closed,throughflow endpoint/cp/storage harvest lanes
+3,same_window_throughflow_enthalpy_and_cp_harvest,next_best_action,compute R_E and decide whether exchange-cell detail is required
+4,exchange_cell_or_bulk_closure_choice,deferred_no_fit,only after same-QOI UQ and mesh/GCI support residual QOIs

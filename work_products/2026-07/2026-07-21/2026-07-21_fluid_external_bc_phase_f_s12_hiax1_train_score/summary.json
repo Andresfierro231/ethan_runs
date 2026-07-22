@@ -1,0 +1,38 @@
+{
+  "task_id": "TODO-FLUID-EXTERNAL-BC-PHASE-F-S12-HIAX1-TRAIN-SCORE-2026-07-21",
+  "candidate_id": "S12-HIAX1",
+  "phase_f_status": "complete_fail_closed_no_freeze",
+  "finite_train_metrics_available": true,
+  "s12_candidate_itself_scored": false,
+  "frozen_candidate": false,
+  "validation_rows_consumed": 0,
+  "holdout_rows_consumed": 0,
+  "external_test_rows_consumed": 0,
+  "root_status": "accepted",
+  "predicted_mdot_kg_s": 0.00626567502343775,
+  "reference_mdot_kg_s": 0.0168,
+  "residual_mdot_kg_s": -0.010534324976562249,
+  "pressure_residual_Pa": -1.3016870923365786e-06,
+  "tp_rmse_K": 80.4585733904668,
+  "tw_rmse_K": 84.64865165641251,
+  "all_probe_rmse_K": 83.36187927489736,
+  "s12_open_blocker_count": 4,
+  "s12_open_blockers": [
+    "finite_candidate_score",
+    "exchange_state_evidence",
+    "same_qoi_uq",
+    "source_property_release"
+  ],
+  "next_action": "Resolve S13/S12 exchange-state harvest and source/property release before scoring or freezing S12-HIAX1 as an implemented candidate.",
+  "forbidden_actions_not_done": [
+    "validation scoring",
+    "holdout scoring",
+    "external-test scoring",
+    "model selection",
+    "candidate freeze",
+    "source/property release",
+    "Fluid source edit"
+  ],
+  "allowed_runtime_inputs": "setup geometry; segment identity; material/layer metadata; setup external-boundary rows; predeclared source-family coefficient only after S11/S15",
+  "forbidden_runtime_inputs": "CFD mdot; realized wallHeatFlux; imposed cooler duty; realized test-section heat; validation temperatures; holdout temperatures; residual fill"
+}

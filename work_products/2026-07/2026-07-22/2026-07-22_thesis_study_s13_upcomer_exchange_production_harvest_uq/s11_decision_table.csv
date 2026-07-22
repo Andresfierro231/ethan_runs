@@ -1,0 +1,5 @@
+pathway,candidate_status,supporting_evidence,blocking_evidence,next_action
+exchange_cell_candidate,not_s11_reviewable,exchange-cell fit-ready rows = 0,same-label mesh/GCI and source/property release are not complete,generate medium/fine same-label mesh rows before any production harvest
+ordinary_upcomer_Nu_fD_K,disabled,ordinary internal-Nu fit rows = 0,near-onset/nonrecirculating anchors are absent,produce independent low-recirculation/onset anchors before reopening ordinary closure
+S11_candidate_source_property_refresh,closed,0 named admission-worthy physical candidates,source/property nominal train preflight releases 0 rows,rerun only after one physical candidate clears mesh/UQ/source gates
+S15_freeze_score_release,closed,0 frozen runtime-legal candidates,S12/S13/S14 have not released exactly one candidate,do not score validation/holdout/external rows

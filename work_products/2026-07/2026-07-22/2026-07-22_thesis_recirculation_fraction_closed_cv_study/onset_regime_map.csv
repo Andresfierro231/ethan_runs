@@ -1,0 +1,4 @@
+gate,status,current_evidence,next_required_evidence
+closed_cv_fraction,blocked,3 topology rows plus 3 exchange tau rows,"same-mask volume, reverse/forward mass flux, connected component, thermal contrast, and time/mesh UQ"
+richardson_or_onset_same_basis,blocked,3 diagnostic onset rows,Re/Ri/properties and buoyancy/throughflow basis on the same CV and windows
+ordinary_upcomer_closure,disabled,recirculating exchange-cell behavior,do not admit ordinary Nu/f_D/K/F6 from these proxies

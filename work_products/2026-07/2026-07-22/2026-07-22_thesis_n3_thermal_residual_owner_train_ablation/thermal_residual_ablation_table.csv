@@ -1,0 +1,7 @@
+lane,evidence,metric_context,physical_plausibility,runtime_legality,split_role,status,reason
+baseline,Phase E/S8 baseline context,baseline_all_mae_K=81.581515 from source-decomp comparison,reference_only,not_a_closure,train_context,evidence_only,baseline is comparator
+external_boundary,negative_freeze_validation_holdout_external_blocked,available_ambient_wall_rows=12,plausible_but_incomplete,not_released,train_only,fail_closed,negative freeze; missing ambient wall rows
+passive_wall,enriched_but_source_basis_not_released_no_repair,global_tw5_improvement_K=51.6337,plausible_needs_source_basis,not_released,train_only,evidence_only,0 source families released
+test_section_source,source_lane_partial_improvement_model_form_still_needed,all_mae_K:0.06910055550108041; tp_mae_K:-0.5179817887878642; tw_mae_K:0.3359561665415498,partial_local_response,not_released,train_only,evidence_only,partial improvement and worsening both observed
+junction_stub,unowned residual/stub lane,no admitted owner,unresolved,not_released,blocked,fail_closed,no independent source/property basis
+empirical_diagnostic,leg bias and reduced-DOF screens,empirical_train_mae_K=7.2809; transfer_mae_K=13.3245,diagnostic_not_physical_closure,not_released,train_support_diagnostic,evidence_only,fit is not physics admission and transfer was not used for model selection

@@ -1,0 +1,8 @@
+artifact_id,path,source_type,access,used_for
+blocker_register,.agent/blockers.yml,repo_register,read_only,Current blocker statuses and evidence thresholds.
+agent_557,work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/summary.json,repo_work_product,read_only,TSWFC2 bounded scorecard not-admission.
+agent_558,work_products/2026-07/2026-07-20/2026-07-20_umx1_fluid_intake_decision/summary.json,repo_work_product,read_only,UMX1 root smoke unlock but not scorecard-ready.
+agent_559,work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_anchor_design/summary.json,repo_work_product,read_only,Upcomer onset design no-launch decision.
+agent_560,work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/summary.json,repo_work_product,read_only,F6/two-tap nonrecirculating staging no-launch decision.
+forward_map,operational_notes/maps/forward-predictive-model.md,topic_map,read_only,Forward-model wave documentation.
+pressure_map,operational_notes/maps/pressure-and-momentum-budget.md,topic_map,read_only,Pressure/two-tap wave documentation.

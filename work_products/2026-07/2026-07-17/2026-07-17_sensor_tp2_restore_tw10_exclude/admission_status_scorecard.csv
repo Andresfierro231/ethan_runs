@@ -1,0 +1,4 @@
+item,admission_status,admitted_use,forbidden_use,decision
+TP2 restored 1D sensor target,validation-only,post-solve TP/TW aggregate scoring only,runtime input; fit target; closure calibration,admitted_to_aggregate_score_after_projection_source_segment_and_finite_row_gates
+TW10 cooling-jacket shell surrogate,blocked,reported as excluded,aggregate TP/TW score until active-HX shell-state model exists,keep_excluded
+Final predictive forward-v1 model,blocked,none from this sensor package alone,claim final forward-v1 is admitted,sensor scoring gate only; broader hydraulic/thermal gates remain separate

@@ -1,0 +1,17 @@
+basis_id,source_family,status,evidence,blocks_repair,required_next
+S12-residual_owner_identified,S12-HIAX1,pass,TW5/TW6 residual atlas points away from passive selectors and toward heated-incline/upcomer exchange thermal shape.,false,none
+S12-runtime_legality,S12-HIAX1,pass_contract_only,"Contract forbids CFD mdot, realized wallHeatFlux, imposed cooler duty, validation temperatures, and residual fill.",false,preserve in implementation
+S12-finite_candidate_score,S12-HIAX1,fail,No full M3+candidate score exists for mdot/TP/TW/all-probe/residual effects.,true,implement a legal setup/scoring row after source fields exist
+S12-exchange_state_evidence,S12-HIAX1,fail,"V_recirc, mdot_exchange, tau_recirc, paired thermal state, pressure residual, and energy residual are not harvested/admitted.",true,S13 geometry/sampler/UQ prerequisites
+S12-same_qoi_uq,S12-HIAX1,fail,Same-QOI neighboring-window and mesh/GCI evidence are absent for this candidate.,true,same-QOI UQ package after finite candidate score
+S12-source_property_release,S12-HIAX1,fail,"Architecture is source-backed but no source-bounded coefficient, property sensitivity, or split release exists.",true,S11 only after one scored candidate exists
+PASSIVE-H2-source-basis,PASSIVE-H2-CAND001,needs_more_source,"current h and fixed-state q estimates are inside broad engineering screens, but passive h provenance remains wallHeatFlux-derived and ambient/geometry basis is not source-released",True,source geometry/ambient/insulation/literature release before any solve
+H2-predeclaration,PASSIVE-H2-CAND001,not_executed,global_passive_hA_scale_0.5 improved TW5 by 51.6337 K and all-probe MAE by 47.1336 K,true,independent hA/area/source-family basis; ambient Ta reconciliation; active source/sink contract rows complete; predeclared train-only run plan
+heated-incline-mapping_issue,heated_incline_audit,secondary_caveat,TW4-TW6 coordinates are bounded/not exact,false,not primary because residual is systematic and heated-incline-local
+heated-incline-unit_or_area_issue,heated_incline_audit,not_primary,area/h/emissivity/Ta/Tsur are finite and internally consistent across Salt1-Salt4,false,no evidence of unit flip or area-order error
+heated-incline-missing_source_term,heated_incline_audit,primary,heater setup Q exists but heater source is document-only in Fluid runtime path,true,highest-priority next implementation gate
+heated-incline-external_bc_metadata_issue,heated_incline_audit,not_primary_for_ambient_wall,ambient wall metadata is present and legal,false,current ambient-only path remains thermally weak
+heated-incline-model_form_issue,heated_incline_audit,secondary_primary_after_source_gate,S8 candidate families failed and TW5/TW6 require energy-conserving stratification/exchange treatment,true,test after legal source-term inclusion
+heated-incline-inconclusive,heated_incline_audit,false,current evidence supports missing source first and model form second,false,no broad tuning or admission
+setup-source-decision,setup_known_heater_source,source_lane_partial_improvement_model_form_still_needed,"no candidate freeze, no source/property release, no validation/holdout/external scoring",true,new physical form or source-basis release; do not use source lane alone
+empirical-leg-bias-physics,empirical_leg_bias,diagnostic_only,not admitted for legs=junction;downcomer;upcomer;cooling_branch;lower_leg;unmapped,true,translate diagnostic bias into source-backed physical candidate before S11

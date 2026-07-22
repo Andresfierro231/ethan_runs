@@ -1,0 +1,38 @@
+{
+  "task": "TODO-FLUID-EXTERNAL-BC-PHASE-B-EXACT-FILE-PREFLIGHT-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "external_repo_edited": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_admission_changed": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "exact_external_files_named": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/external_boundary.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_external_boundary_contract.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py"
+  ],
+  "do_not_claim_by_default": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/campaigns.yaml",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/outputs_tamu_loop_v2_resumable/**",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/**"
+  ],
+  "required_phase_c_tests": 13,
+  "external_worktree_dirty_relevant_files": [
+    "tamu_first_order_model/Fluid/configs/campaigns.yaml",
+    "tamu_first_order_model/Fluid/configs/scenarios.yaml",
+    "tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md",
+    "tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "tamu_first_order_model/Fluid/tests/test_solver_contracts.py"
+  ],
+  "acceptance_signal": "Later Phase C agent can claim exact external parser/API/test files and runtime guardrails without guessing ownership boundaries."
+}

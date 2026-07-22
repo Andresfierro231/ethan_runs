@@ -1,0 +1,21 @@
+{
+  "created_utc": "2026-07-13T20:42:42+00:00",
+  "date": "2026-07-13",
+  "notes": [
+    "Chen 2017 numeric overlap is checked directly from the lit-review audited range.",
+    "Tian 2024 is kept reference-only for laminar TAMU rows.",
+    "Muzychka/Yovanovich and Everts/Meyer are retained as method/gate sources pending conversion and range audit."
+  ],
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope",
+  "outputs": [
+    "branch_source_envelope.csv",
+    "source_overlap_flags.csv",
+    "validation_report.json"
+  ],
+  "primary_rows": 90,
+  "source_context": {
+    "litrev_synthesis": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways",
+    "research_pathways": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv"
+  },
+  "task_id": "TODO-LITREV-SOURCE-ENVELOPE"
+}

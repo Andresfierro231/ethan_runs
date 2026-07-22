@@ -1,0 +1,6 @@
+source_id,path,use,mutation
+source_sink_provenance,work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv,setup-known Q evidence,False
+next_use_gate,work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/next_use_gate.csv,source-model gate requirements,False
+heated_incline_audit,work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/failure_classification.csv,TW4-TW6 failure classification,False
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,existing heater_source_mode capability,False
+fluid_tests,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py,existing source-mode tests,False

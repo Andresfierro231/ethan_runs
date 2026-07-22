@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="520" viewBox="0 0 840 520">
+<!-- generated_by=AGENT-351; source=.agent/journal/2026-07-01/T3-perturbation-requalification.md -->
+<rect width="100%" height="100%" fill="#fcfcfb"/>
+<style>text{font-family:system-ui,-apple-system,"Segoe UI",Helvetica,Arial,sans-serif;fill:#111}.title{font-size:19px;font-weight:700}.lbl{font-size:10px}.tick{font-size:10px;fill:#777}.legend{font-size:11px}</style>
+<text x="32" y="28" class="title">Q perturbation rows: expected vs observed mdot movement</text>
+<line x1="220.0" x2="220.0" y1="50" y2="470" stroke="#e5e2da"/>
+<text x="220.0" y="492" text-anchor="middle" class="tick">0.0%</text>
+<line x1="360.0" x2="360.0" y1="50" y2="470" stroke="#e5e2da"/>
+<text x="360.0" y="492" text-anchor="middle" class="tick">1.0%</text>
+<line x1="500.0" x2="500.0" y1="50" y2="470" stroke="#e5e2da"/>
+<text x="500.0" y="492" text-anchor="middle" class="tick">2.0%</text>
+<line x1="640.0" x2="640.0" y1="50" y2="470" stroke="#e5e2da"/>
+<text x="640.0" y="492" text-anchor="middle" class="tick">3.0%</text>
+<line x1="780.0" x2="780.0" y1="50" y2="470" stroke="#e5e2da"/>
+<text x="780.0" y="492" text-anchor="middle" class="tick">4.0%</text>
+<text x="212" y="63" text-anchor="end" class="lbl">salt2_jin_hiq_hiins</text>
+<rect x="220" y="54" width="452.2" height="8" fill="#d39b33"/>
+<rect x="220" y="65" width="1.5" height="8" fill="#b23838"/>
+<text x="212" y="90" text-anchor="end" class="lbl">salt2_jin_loq_loins</text>
+<rect x="220" y="81" width="483.0" height="8" fill="#d39b33"/>
+<rect x="220" y="92" width="0.6" height="8" fill="#b23838"/>
+<text x="212" y="117" text-anchor="end" class="lbl">salt3_jin_hiq_hiins</text>
+<rect x="220" y="108" width="452.2" height="8" fill="#d39b33"/>
+<rect x="220" y="119" width="11.8" height="8" fill="#b23838"/>
+<text x="212" y="144" text-anchor="end" class="lbl">salt3_jin_loq_loins</text>
+<rect x="220" y="135" width="483.0" height="8" fill="#d39b33"/>
+<rect x="220" y="146" width="13.3" height="8" fill="#b23838"/>
+<text x="212" y="171" text-anchor="end" class="lbl">salt4_jin_hiq_hiins</text>
+<rect x="220" y="162" width="452.2" height="8" fill="#d39b33"/>
+<rect x="220" y="173" width="3.2" height="8" fill="#b23838"/>
+<text x="212" y="198" text-anchor="end" class="lbl">salt4_jin_loq_loins</text>
+<rect x="220" y="189" width="483.0" height="8" fill="#d39b33"/>
+<rect x="220" y="200" width="12.0" height="8" fill="#b23838"/>
+<text x="212" y="225" text-anchor="end" class="lbl">salt2_jin_hi5q_balq</text>
+<rect x="220" y="216" width="229.6" height="8" fill="#d39b33"/>
+<rect x="220" y="227" width="13.7" height="8" fill="#b23838"/>
+<text x="212" y="252" text-anchor="end" class="lbl">salt2_jin_lo5q_balq</text>
+<rect x="220" y="243" width="238.0" height="8" fill="#d39b33"/>
+<rect x="220" y="254" width="13.6" height="8" fill="#b23838"/>
+<text x="212" y="279" text-anchor="end" class="lbl">salt3_jin_hi5q_balq</text>
+<rect x="220" y="270" width="229.6" height="8" fill="#d39b33"/>
+<rect x="220" y="281" width="28.0" height="8" fill="#b23838"/>
+<text x="212" y="306" text-anchor="end" class="lbl">salt3_jin_lo5q_balq</text>
+<rect x="220" y="297" width="238.0" height="8" fill="#d39b33"/>
+<rect x="220" y="308" width="25.5" height="8" fill="#b23838"/>
+<text x="212" y="333" text-anchor="end" class="lbl">salt4_jin_hi5q_balq</text>
+<rect x="220" y="324" width="229.6" height="8" fill="#d39b33"/>
+<rect x="220" y="335" width="4.9" height="8" fill="#b23838"/>
+<text x="212" y="360" text-anchor="end" class="lbl">salt4_jin_lo5q_balq</text>
+<rect x="220" y="351" width="238.0" height="8" fill="#d39b33"/>
+<rect x="220" y="362" width="9.8" height="8" fill="#b23838"/>
+<text x="212" y="387" text-anchor="end" class="lbl">salt1_jin_hiq_balq</text>
+<rect x="220" y="378" width="452.2" height="8" fill="#d39b33"/>
+<rect x="220" y="389" width="39.6" height="8" fill="#b23838"/>
+<text x="212" y="414" text-anchor="end" class="lbl">salt1_jin_loq_balq</text>
+<rect x="220" y="405" width="483.0" height="8" fill="#d39b33"/>
+<rect x="220" y="416" width="39.6" height="8" fill="#b23838"/>
+<rect x="570" y="32" width="12" height="8" fill="#d39b33"/><text x="588" y="40" class="legend">expected |move|</text>
+<rect x="570" y="48" width="12" height="8" fill="#b23838"/><text x="588" y="56" class="legend">observed |move|</text>
+</svg>

@@ -1,0 +1,4 @@
+case_id,dry_run_returncode,dry_run_log,dry_run_passed
+salt_2,0,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_window_generation/dry_runs/salt_2_dry_run.txt,true
+salt_3,0,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_window_generation/dry_runs/salt_3_dry_run.txt,true
+salt_4,0,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_window_generation/dry_runs/salt_4_dry_run.txt,true

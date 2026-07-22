@@ -1,0 +1,7 @@
+gate_id,gate,current_status,pass_fail,activation_consequence
+G01,one_stream_anchor,low-recirculation/nonrecirculating anchor not admitted,fail,ordinary upcomer closure disabled
+G02,signed_network_fallback,dry contract available,pass_diagnostic_only,diagnostic signed-flow residual lane allowed
+G03,exchange_cell_geometry,S13 interface/CV evidence diagnostic not production released,fail,exchange-cell coefficient disabled
+G04,same_QOI_UQ,temporal evidence exists but formal production mesh/GCI not admitted,fail,no coefficient admission
+G05,source_property_release,0 release-ready rows,fail,no thermal/enthalpy coefficient admission
+G06,split_freeze,no frozen candidate,fail,no validation/holdout/external scoring

@@ -1,0 +1,11 @@
+{
+  "global_friction_multiplier_recommended": false,
+  "input_paths": [
+    "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv",
+    "work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv"
+  ],
+  "named_loss_rows": 33,
+  "reset_rows": 33,
+  "validity_rows_consumed": 54
+}

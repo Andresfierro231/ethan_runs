@@ -1,0 +1,9 @@
+source_id,path,exists,role
+f6_candidate_inventory,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_candidate_inventory.csv,yes,canonical current F6 PM5 candidate rows
+f6_next_extraction_queue,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/next_extraction_queue.csv,yes,current narrowed F6 evidence queue
+f6_admission_contract,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_admission_contract.md,yes,ordinary and recirculation-modeled lane rules
+f6_summary,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/summary.json,yes,current F6 decision counts
+pm10_case_readiness,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv,yes,future PM10 terminal admission readiness
+pm10_summary,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/summary.json,yes,PM10 blocked/live count summary
+high_heat_harvest_queue,work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,yes,high-heat terminal harvest readiness
+recirculation_anchor_matrix,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv,yes,proposed onset-bracketing CFD studies

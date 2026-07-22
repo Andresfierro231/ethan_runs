@@ -1,0 +1,31 @@
+{
+  "generated_at": "2026-07-07T19:25:52-05:00",
+  "task": "AGENT-193",
+  "inputs": {
+    "momentum_budget": "work_products/2026-07-01_claude_momentum_budget/momentum_budget.csv",
+    "segment_friction": "work_products/2026-07-01_claude_segment_friction/segment_friction.csv",
+    "bend_minor_loss_dir": "work_products/2026-07-01_claude_bend_minor_loss"
+  },
+  "outputs": {
+    "ledger_csv": "work_products/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv",
+    "ledger_json": "work_products/2026-07-07_pressure_term_ledger/pressure_term_ledger.json"
+  },
+  "counts": {
+    "total_rows": 18,
+    "source_ids": 3,
+    "spans_per_case": 6
+  },
+  "key_metrics": {
+    "max_abs_residual_fraction_main_legs": 0.0,
+    "max_f_debuoyed_round_trip_error": 0.0,
+    "acceptance_main_legs_pass": true
+  },
+  "limitations": [
+    "Bend K values are upper bounds per AGENT-189 evidence freeze; local-q_ref normalization may overestimate actual minor loss.",
+    "development_loss uses Shah (1978) apparent f minus F1 as entry-length proxy; validity requires flat inlet profile which may not hold after a bend-induced swirl zone. At TAMU loop x+ = 0.08-0.6, dev_loss \u2248 17-45% of distributed \u2014 it is a major loss mechanism, NOT a small correction.",
+    "Recirculation spans (left_lower_leg, left_upper_leg) have unreliable momentum budgets due to backflow; treat as diagnostic only.",
+    "x_plus uncertainty exists pending T6 GCI (mesh-independence bounds unknown).",
+    "Only 3 Re points (Salt 2/3/4 Jin); no corrected-Q or Salt 1 rows admitted.",
+    "residual_pa is the MOMENTUM BUDGET CLOSURE TERM only (-sigma*distributed - gross - buoyancy), not the task's gross - buoyancy - distributed - dev - minor. The task formula yields residual \u2248 -(dev+minor) \u2248 -20 to -40% of distributed (far exceeds 5% gate). The budget-closure residual \u2248 inertial term \u2248 \u00b10.1% which does pass the gate. development_loss and minor_loss are diagnostic columns, not residual corrections."
+  ]
+}

@@ -1,0 +1,8 @@
+step,action,why_now,required_output,protected_rows
+1,Recover Salt1-4 nominal source/property exact fields,This is the top blocker to any credible coefficient training,release matrix or fail-closed replacement contract,no validation or holdout_test targets
+2,Unlock S13 same-label coarse/GCI or admitted equivalence,This is the shortest path for the most promising missing-physics lane M5/MF04,coarse/GCI/equivalence gate with Qwall/source-side distinction,no protected scoring
+3,Resolve Passive-H2 external-BC split conflicts,Passive-H2 corrected radiation is now plausible enough to cleanly include or exclude,case-level conflict matrix and CAND001 train-only admissibility decision,no protected scoring
+4,Predeclare train-only candidate family,Prevent model selection drift before coefficients exist,equations parameter count runtime-input audit and residual output contract,no protected scoring
+5,Run Salt1-4 nominal train-only coefficient discovery only if gates pass,This is the first admissible train step,train residual table pressure residual thermal residual heat ledger,no protected targets read
+6,Freeze exactly one runtime-legal candidate,Required before S11/S15/S6 and protected scoring,frozen manifest coefficients inputs source/property labels and leakage audit,no scoring before manifest
+7,Score holdout_test once without retuning,Only after freeze; keep val_salt2 as external_test subtype,separate train support holdout_test and external_test-subtype scorecards,no post-score tuning

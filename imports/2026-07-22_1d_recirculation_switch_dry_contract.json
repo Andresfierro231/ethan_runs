@@ -1,0 +1,59 @@
+{
+  "task": "TODO-1D-RECIRCULATION-SWITCH-DRY-CONTRACT-2026-07-22",
+  "task_id": "TODO-1D-RECIRCULATION-SWITCH-DRY-CONTRACT-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Publish a dry three-lane 1D recirculation model-form switch contract that disables ordinary one-stream upcomer Nu/f_D/K/F6 claims under active recirculation evidence and keeps exchange-cell coefficients blocked.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-RECIRCULATION-SWITCH-DRY-CONTRACT-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-recirculation-switch-dry-contract.md",
+    "imports/2026-07-22_1d_recirculation_switch_dry_contract.json",
+    "tools/analyze/build_1d_recirculation_switch_dry_contract.py",
+    "tools/analyze/test_1d_recirculation_switch_dry_contract.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_recirculation_switch_dry_contract"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/recirculation_onset_metric_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/evidence_availability_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives/ordinary_upcomer_disable_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/closure_eligibility_decisions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_model_hierarchy_ablation_ladder_packet/model_hierarchy_ladder.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate/source_property_atlas.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/RUNNING.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/switching_model_selection_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_litrev_throughflow_recirc_exchange_cell/model_interface_contract.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_1d_recirculation_switch_dry_contract.py",
+      "result": "passed, 5 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_1d_recirculation_switch_dry_contract.py tools/analyze/test_1d_recirculation_switch_dry_contract.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_1d_recirculation_switch_dry_contract.py",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_launched_by_this_packet": false,
+    "solver_or_postprocess_launched": false,
+    "mesh_gci_disposition_rerun": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "ordinary_Nu_fD_K_F6_claims_allowed": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "decision": "dry_recirculation_switch_contract_ready_no_coefficients_no_admission"
+}

@@ -1,0 +1,8 @@
+artifact_or_concept,transfers_to_sam_facing_work,do_not_claim
+Branchwise pressure ledger,"Use branch/component-specific loss ownership instead of one global hydraulic multiplier.","A SAM minor-loss coefficient is validated by current CFD diagnostics."
+Junction/stub heat ledger,"Preserve junction, connector, and stub heat-loss ownership where geometry supports it.","Realized CFD junction heat is a predictive runtime input."
+Corner pressure diagnostics,"Represent corner/bend pressure features as structured evidence requiring better extraction before coefficient admission.","Negative or diagnostic apparent K values are physical component K values."
+fluid+walls thermal circuit,"Carry internal convection, wall conduction, insulation/contact, external convection, radiation, heater, cooler, and residual lanes separately.","All thermal mismatch can be collapsed into one heat-loss multiplier."
+Upcomer recirculation flags,"Mark states where ordinary throughflow pipe closure is invalid and a regime/exchange flag is needed.","Ordinary upcomer Nu, f_D, or K applies to recirculating rows."
+Admission/uncertainty metadata,"Attach split role, runtime legality, mesh/GCI status, recirculation flag, sensor caveat, and blocker state to every candidate input.","A coefficient without admission status is safe as a SAM-facing input."
+Model-form ladder M0-M6,"Use as a structure for comparing setup-only, diagnostic, admitted, blocked, and frozen candidates.","Diagnostic replay forms are final predictive models."

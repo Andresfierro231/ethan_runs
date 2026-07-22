@@ -1,0 +1,23 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-SURFACE-SOURCE-GENERATION-2026-07-21",
+  "generated_at": "2026-07-21T15:51:42-05:00",
+  "case_rows": 3,
+  "surface_contract_rows": 15,
+  "source_sink_rows": 21,
+  "source_sink_summary_rows": 3,
+  "ready_source_sink_summary_rows": 3,
+  "blocked_surface_rows": 9,
+  "scheduler_action": false,
+  "openfoam_launch": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "fluid_edit": false,
+  "external_repo_edit": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "phase4b_rescore_run": false,
+  "phase5_or_s6_trigger": false,
+  "residual_absorbed_into_internal_Nu": false
+}

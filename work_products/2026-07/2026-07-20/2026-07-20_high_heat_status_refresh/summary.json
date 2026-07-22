@@ -1,0 +1,12 @@
+{
+  "admitted_rows_now": 0,
+  "case_count": 4,
+  "date": "2026-07-20",
+  "fit_or_model_selection_changed": false,
+  "generated_at_utc": "2026-07-20T18:12:59.314164+00:00",
+  "job_count": 2,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "running_job_count": 2,
+  "task": "TODO-HIGH-HEAT-STATUS-REFRESH-2026-07-20"
+}

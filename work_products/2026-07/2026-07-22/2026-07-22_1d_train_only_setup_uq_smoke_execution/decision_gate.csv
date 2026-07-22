@@ -1,0 +1,5 @@
+gate_id,status,blocks_expansion,blocks_admission,evidence,next_action
+runtime_manifest,pass,false,true,1302 runtime manifest rows; forbidden fields absent=True,baseline_smoke
+baseline_root,pass,false,true,3/3 baseline roots accepted,run_one_at_a_time_variants
+variant_roots,pass,false,true,33/33 variant roots accepted,review_sensitivity_only
+scientific_release,no_release_no_score_no_admission,false,true,"This row is smoke-only; it cannot release source/property, fit coefficients, score protected rows, or freeze a candidate.",separate review row after smoke artifacts exist

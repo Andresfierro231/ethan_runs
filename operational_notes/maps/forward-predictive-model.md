@@ -9,6 +9,8 @@ related:
   - operational_notes/maps/README.md
   - operational_notes/maps/thermal-boundary-and-radiation.md
   - operational_notes/maps/literature-synthesis-and-gates.md
+  - reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md
+  - operational_notes/07-26/22/2026-07-22_LITREV_FINAL_RELEASE_TASK_DISPATCH.md
 ---
 # Forward Predictive Model — Map of Content
 
@@ -35,6 +37,18 @@ The current predictive input contract and a pressure-rooted forward-v0
 is a **diagnostic**, not a fully predictive claim: predictive modes must not
 consume CFD mdot, realized CFD `wallHeatFlux`, or validation temperatures at
 runtime.
+
+2026-07-22 LitRev final-release update: the controlling LitRev evidence layer is
+`../papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/`.
+The dispatch note at
+`operational_notes/07-26/22/2026-07-22_LITREV_FINAL_RELEASE_TASK_DISPATCH.md`
+adds the current task sequence: UC-01..UC-08 thesis gap crosswalk, executable
+case-by-segment admission engine, property package gate, reverse-flow switching
+calibration design, pressure/energy/boundary-condition contract, heat-loss
+power-partition calibration design, and CSEM writer evidence packet. The key
+constraint is unchanged: final predictive scores stay zero until a frozen
+runtime-legal candidate passes source, property, split, uncertainty, and
+runtime-input gates.
 
 2026-07-17 canonical split update: AGENT-481 supersedes the older final
 predictive split that held out Salt4 nominal. The canonical final predictive
@@ -218,6 +232,33 @@ upcomer exchange/internal-`Nu` gating, and frozen scorecard handoff. For forward
 model work, do Phase 0 through Phase 2 before any new wall/test-section
 scorecard and do Phase 5 only after a runtime-legal candidate exists or a
 negative result is frozen.
+
+2026-07-22 LitRev modeling handoff:
+`reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md`
+is now the best literature-to-forward-model bridge. Use it before creating new
+model forms or scorecard gates: it makes MF-01 the conservative first
+architecture, keeps MF-02 losses section/cluster-named until isolation gates
+pass, parks MF-03/MF-04 topology forms behind recirculation calibration, and
+sets the next executable target as a case-by-segment admission engine.
+
+2026-07-22 model-form training roster update:
+`work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/`
+is the current scoreboard supplement for the next Salt1-4 nominal training
+phase. It keeps the master scoreboard read-only, adds the newer MF12, MF15,
+MF07/MF08/MF10, and diagnostic D1-D4 families to a trainability roster, and
+defines the split discipline: Salt1-4 nominal rows are train rows, support rows
+are diagnostic after freeze, and the protected `holdout_test` bucket contains
+Salt2 +/-5Q plus `val_salt2` with `split_subrole=external_test`. Validation and
+holdout/test scoring remain locked until one runtime-legal candidate is frozen.
+
+2026-07-22 CFD run/QoI chart update:
+`work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/`
+is the thesis-facing run/QoI chart for future model-form tables. Open its
+`cfd_run_qoi_split_chart_wide.csv` for one row per CFD case with `mdot`,
+`TP1`-`TP6`, `TW1`-`TW11`, `TP_mean_K`, and `TW_mean_K`, and open
+`holdout_test_policy_update.csv` for the split policy. It is a target/diagnostic
+table only: CFD `mdot`, TP/TW, realized `wallHeatFlux`, imposed cooler duty,
+and residual fills remain forbidden predictive runtime inputs.
 
 2026-07-21 first key studies wave:
 `work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/`
@@ -927,7 +968,65 @@ B9 validation split, B10 Fluid external-boundary API.
   expansion rows, 12 resolved hydraulic tap-length rows, and 0 fit-admissible
   component/cluster K rows. This is progress evidence, not final forward-v1
   admission.
+- Phase H2 passive heat-loss attribution audit:
+  `work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/`.
+  The Phase H global passive hA response is broad rather than lower-leg-local:
+  lower-leg hA half improves TW5 by `4.593107 K`, while global passive hA half
+  improves TW5 by `51.633694 K` and all-probe MAE by `47.133591 K`.
+  H2 reviews 12 passive role rows and 46 heat-ledger rows: h/area/hA arithmetic
+  and heat-loss sign checks pass, but all 12 passive rows carry wallHeatFlux
+  provenance paths and therefore need an independent setup/geometry/literature
+  hA basis before any repair. The predeclared next candidate is
+  `PASSIVE-H2-CAND001 passive_hA_source_basis_rebuild_v1`, explicitly not the
+  train-optimal `global_passive_hA_scale_0.5` multiplier and not executed or
+  admitted by H2. No validation/holdout/external-test scoring, fitting, repair
+  run, freeze, admission, Fluid edit, or native-output mutation occurred.
+- PASSIVE-H2-CAND001 physical-basis package:
+  `work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/`.
+  The no-solve physical-basis gate is `needs_more_source`, not
+  `run_one_train_repair`. Current family h values for `junction`, `downcomer`,
+  `upcomer`, `cooling_branch`, and `lower_leg` all sit inside broad
+  Churchill-Chu-style engineering screens, and fixed-state q estimates also
+  sit inside those broad envelopes. That means the package finds no independent
+  physical contradiction sufficient to run a passive repair. The blocker
+  remains source release: all current passive rows are wallHeatFlux-derived,
+  ambient/geometry/insulation basis is provisional, and the completed
+  setup-known heater source row gives only partial/local residual improvement.
+  Do not run a train repair until geometry, ambient/surroundings, insulation
+  exposure, and literature/correlation inputs are source-released.
+- Empirical leg bias/correction diagnostic:
+  `work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/`.
+  This train-only affine layer fits `T_corrected = multiplier_leg*T_1D +
+  offset_leg` on Salt2 Phase E sensor residuals. It compresses all-sensor train
+  MAE from `81.581515 K` to `7.280898 K`, but the fitted coefficients are
+  diagnostic residual ownership only: some multipliers/offsets are too large
+  to claim as physics, `junction` has no train sensors, and no protected split
+  is scored. Use this as an upper-bound empirical correction and hypothesis
+  generator for wall/source/3D-to-1D discrepancy studies, not as an admitted
+  predictive model.
+- Reduced-DOF bias transfer screen:
+  `work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/`.
+  This follow-on predeclares six reduced empirical families with `0-4` degrees
+  of freedom, fits coefficients on existing TSWFC2 Salt1/Salt2 train/support
+  sensor rows only, then applies those frozen coefficients unchanged to Salt3
+  and Salt4 legacy validation/holdout-style stress rows. The best train/support
+  family is `F2_global_affine` at `8.501470 K` corrected MAE. The best
+  score-only transfer family is
+  `F5_thermal_family_offset_shared_multiplier`, reducing Salt3/Salt4 transfer
+  MAE from `106.121666 K` to `13.324483 K`. This is strong evidence that a
+  low-dimensional systematic 1D/3D temperature discrepancy exists, but it is
+  not final corrected-split validation/holdout/external admission: the source
+  TSWFC2 candidate remains `not_admitted_no_grid_expansion`, no external-test
+  row is scored, and transfer rows do not refit coefficients or select a final
+  model.
 - Live blocker/task state: `.agent/BLOCKERS.md`, `.agent/BOARD.md`.
+- Predictive blocker burn-down:
+  `work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/`.
+  This is the current efficient unblock sequence: recover Salt1-4
+  source/property exact fields, unlock S13 same-label coarse/GCI or strict
+  equivalence, resolve Passive-H2 external-BC split conflicts, then predeclare
+  one train-only candidate before any coefficient fit, freeze, or
+  holdout_test scoring.
 
 ## Related
 

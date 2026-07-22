@@ -1,0 +1,3 @@
+guardrail_id,rule,status,evidence
+F6-SEP-01,Do not use material-reverse-flow corner_lower_right rows as ordinary F6 anchors.,enforced,recirculation_gate failed for 3/3 rows
+F6-SEP-02,"Do not admit component K from this review because recirculation, isolation, and UQ gates fail.",enforced,final_gate_review.csv

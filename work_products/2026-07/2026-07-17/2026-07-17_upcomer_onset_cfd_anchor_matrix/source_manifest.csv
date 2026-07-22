@@ -1,0 +1,6 @@
+source_id,path,exists,use
+source_matrix,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv,true,proposed CFD anchor cases
+output_contract,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/required_output_contract.csv,true,required outputs
+active_high_heat,work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/active_high_heat_context.csv,true,readiness context
+hybrid_gaps,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/onset_anchor_gap.csv,true,hybrid missing evidence
+onset_class,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/upcomer_onset_classification.csv,true,current onset classifications

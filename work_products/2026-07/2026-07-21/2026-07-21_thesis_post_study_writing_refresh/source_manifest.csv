@@ -1,0 +1,17 @@
+source_id,path,used_for,mutation_status
+SRC-001,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/summary.json,Phase E runtime path and train residual context,read_only
+SRC-002,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md,F-J diagnostic package overview,read_only
+SRC-003,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/dominant_thermal_residual_owners.csv,dominant residual owner evidence,read_only
+SRC-004,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/missing_case_rows.csv,dictionary completeness boundary,read_only
+SRC-005,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/runtime_input_decision_table.csv,source/sink admissibility boundary,read_only
+SRC-006,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/owner_delta.csv,Phase H heat-path response,read_only
+SRC-007,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/tw5_response_waterfall.csv,H2 broad response and repair gate,read_only
+SRC-008,reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md,current figure/table routing ledger,read_only
+SRC-009,work_products/2026-07/2026-07-21/2026-07-21_velocity_magnitude_pictures/velocity_magnitude_side_z_thesis_analysis.md,upcomer velocity figure explanation,read_only
+SRC-010,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/s0_s11_gate_flow_table.csv,S6 gate-flow source table,read_only
+SRC-011,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s7_sensor_map_overlay/sensor_overlay_table.csv,S7 sensor score-only policy table,read_only
+SRC-012,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/negative_or_admission_ready_summary.csv,S8 wall/test-section negative-result table,read_only
+SRC-013,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s9_upcomer_exchange_evidence/exchange_qoi_figure_contract.csv,S9 exchange-QOI requirement table,read_only
+SRC-014,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv,S10 pressure/F6 gate waterfall,read_only
+SRC-015,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_use_scorecard.csv,S14 pressure/F6 branch-use scorecard,read_only
+SRC-016,work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/heat_path_lane_table.csv,S13 seeded heat-path fail-closed table,read_only

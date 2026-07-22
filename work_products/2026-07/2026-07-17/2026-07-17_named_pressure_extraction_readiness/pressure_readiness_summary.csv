@@ -1,0 +1,9 @@
+category,count,interpretation
+total_named_pressure_rows,33,Rows reviewed from LitRev reset/named-loss table.
+fit_ready_candidate,0,Rows with no readiness blockers under AGENT-523 gates.
+component_or_cluster_extraction_required,3,"Nearest named-K lane, but extraction fields are missing."
+branch_or_straight_extraction_required,6,Needs pressure/velocity/development/UQ repair before scoring.
+diagnostic_or_section_effective_only,24,Recirculation/universal-name guardrails block ordinary coefficients.
+loss_class_cluster_K,15,Cluster/component-like K candidates.
+loss_class_branch_apparent,15,Branch-apparent pressure rows.
+loss_class_straight_section,3,Straight-section f_D_delta_p candidates.

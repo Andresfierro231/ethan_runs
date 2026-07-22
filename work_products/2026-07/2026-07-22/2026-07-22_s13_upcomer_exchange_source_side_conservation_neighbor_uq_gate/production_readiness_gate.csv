@@ -1,0 +1,10 @@
+gate,status,release_allowed_now,production_harvest_allowed_now,reason
+source_side_heat_flow_basis,blocked_missing_source_property_conservation,false,false,source-side QOI is labeled and finite but not source/property or conservation released
+direct_Q_wall_W_basis,ready,true,false,active exact-Qwall row released target-window Q_wall_W read-only
+exchange_flux,diagnostic_proxy_only,false,false,retained-window mdot proxy exists but neighbor/UQ and production release are absent
+residence_time,diagnostic_proxy_only,false,false,retained-window tau proxy exists but neighbor/UQ and production release are absent
+thermal_contrast,diagnostic_ready_not_uq_released,false,false,retained sampled wall/core contrast exists but no same-QOI UQ
+pressure_energy_residual_support,partial_pressure_released_cp_residual_blocked,false,false,target-window pressure basis is released but cp/source-property and energy residual equation release are absent
+same_qoi_uq,blocked_missing_neighbor_windows_and_mesh_gci,false,false,same-QOI UQ matrix has no ready rows
+production_harvest,blocked,false,false,"target-window heat-flow basis exists, but same-QOI UQ and residual/source-property release are missing"
+coefficient_or_S11_admission,blocked,false,false,production harvest is blocked; no candidate/admission trigger allowed

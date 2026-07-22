@@ -1,0 +1,9 @@
+source_id,path,used_for,mutation_status
+recirc_packet_readme,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/README.md,prior recirculation/onset decision and counts,not_mutated
+recirc_metric_table,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/recirculation_onset_metric_table.csv,case-level proxy and blocker values,not_mutated
+reverse_topology,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/reverse_flow_topology_proxy.csv,reverse-candidate fractions and connected-component status,not_mutated
+s13_exchange_tau,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/s13_exchange_tau_proxy_table.csv,current-coarse exchange and tau proxies,not_mutated
+temporal_uq_boundary,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/same_qoi_temporal_uq_boundary.csv,same-QOI temporal UQ status,not_mutated
+mesh_gci_gate,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/summary.json,mesh/GCI fail-closed status,not_mutated
+regime_map,work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/segment_case_regime_map.csv,Re/Pr/Ri/Ra/Gz context,not_mutated
+closure_decisions,work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/closure_eligibility_decisions.csv,ordinary/exchange closure eligibility,not_mutated

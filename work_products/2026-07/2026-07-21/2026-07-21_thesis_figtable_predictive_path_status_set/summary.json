@@ -1,0 +1,21 @@
+{
+  "blocked_gate_rows": 5,
+  "chapter_files_edited": false,
+  "created_utc": "2026-07-21T21:36:50.306766+00:00",
+  "date": "2026-07-21",
+  "figure_assets_edited": false,
+  "final_score_values": 0,
+  "fitting_or_model_selection": false,
+  "fluid_or_external_repo_edited": false,
+  "holdout_or_external_released": false,
+  "native_solver_outputs_mutated": false,
+  "negative_evidence_rows": 5,
+  "new_scientific_admission": false,
+  "registry_or_admission_mutated": false,
+  "runtime_contract_rows": 4,
+  "scheduler_action_taken": false,
+  "sequence_rows": 6,
+  "split_rows": 4,
+  "status": "complete",
+  "task": "TODO-THESIS-FIGTABLE-PREDICTIVE-PATH-STATUS-SET-2026-07-21"
+}

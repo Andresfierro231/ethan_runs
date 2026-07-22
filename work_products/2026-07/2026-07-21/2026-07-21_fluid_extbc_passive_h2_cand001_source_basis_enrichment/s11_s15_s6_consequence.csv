@@ -1,0 +1,2 @@
+decision_id,s11_unblocked,s15_unblocked,s6_unblocked,candidate_count_released,decision,rationale
+PASSIVE-H2-SOURCE-BASIS-ENRICHMENT,false,false,false,0,enriched_but_source_basis_not_released_no_repair,"source-basis enrichment improves documentation but releases no repair candidate, no source/property row, and no protected split scoring"

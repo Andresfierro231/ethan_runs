@@ -1,0 +1,44 @@
+{
+  "task_id": "TODO-THESIS-FIGURE-IMPORT-COUNT-AUDIT-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Writer/Reviewer/Tester",
+  "decision": "authoritative_figure_count_12_legacy_selected_count_9_resolved_no_copy_with_verified_path_corrections",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/audited_selected_asset_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/legacy_selected_count_reconciliation.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/caption_boundary_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/source_path_existence_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/thesis_repo_transfer_todo.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/copy_no_copy_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/summary.json",
+    ".agent/status/2026-07-22_TODO-THESIS-FIGURE-IMPORT-COUNT-AUDIT-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-figure-import-count-audit.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/figure_candidate_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/selected_figure_import_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/caption_source_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/final_import_manifest.csv",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "AGENTS.md"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_mutated": false,
+    "external_repo_mutated": false,
+    "thesis_body_edited": false,
+    "binary_assets_copied": false,
+    "science_admission_changed": false
+  },
+  "provenance_notes": "Generated evidence packet from structured source CSV/JSON only; no native solver outputs or external thesis repo files were mutated.",
+  "task": "TODO-THESIS-FIGURE-IMPORT-COUNT-AUDIT-2026-07-22",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true
+}

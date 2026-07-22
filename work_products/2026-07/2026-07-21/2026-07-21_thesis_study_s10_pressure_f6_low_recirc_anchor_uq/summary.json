@@ -1,0 +1,29 @@
+{
+  "task": "TODO-THESIS-STUDY-S10-PRESSURE-F6-LOW-RECIRC-ANCHOR-UQ-2026-07-21",
+  "date": "2026-07-21",
+  "created_utc": "2026-07-21T20:23:42.894703+00:00",
+  "status": "complete",
+  "study_state": "negative_result_s11_still_blocked",
+  "candidate_rows": 11,
+  "lane_counts": {
+    "low_recirc_pressure_anchor": 4,
+    "current_pressure_corner_rows": 3,
+    "F6_endpoint_pair": 4
+  },
+  "admitted_candidate_rows": 0,
+  "s11_ready_candidates": 0,
+  "s11_unblocked": false,
+  "component_k_admitted_rows": 0,
+  "cluster_k_admitted_rows": 0,
+  "f6_fit_rows": 0,
+  "clipped_k_rows": 0,
+  "hidden_global_multiplier_rows": 0,
+  "solver_or_sampler_or_harvest_launch": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action_taken": false,
+  "fluid_or_external_repo_edited": false,
+  "fitting_or_model_selection": false,
+  "generated_index_mutation": false,
+  "next_action": "Do not claim S11 yet; continue terminal/coarse-path UQ repair or future low-recirculation anchor harvest."
+}

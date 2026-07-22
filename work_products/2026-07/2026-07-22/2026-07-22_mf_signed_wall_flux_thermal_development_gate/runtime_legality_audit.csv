@@ -1,0 +1,6 @@
+item,runtime_allowed,fit_allowed,diagnostic_allowed,reason
+setup-side signed heat-source labels,conditional_after_source_property_release,False,True,MF08 documents signs but does not release source/property terms.
+realized CFD wallHeatFlux,False,False,True,realized wallHeatFlux is post-solve evidence only.
+TP/TW target temperatures,False,False,True,post-solve targets support residual-owner diagnosis only.
+S13 exchange proxy values,False,False,True,temporal UQ exists but production/source/mesh gates remain closed.
+empirical bias offsets,False,False,True,"use only as attribution context, not closure."

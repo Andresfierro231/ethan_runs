@@ -1,0 +1,17 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SOURCE-BOUNDED-CV-RERUN-FROM-GEOMETRY-SEED-2026-07-21",
+  "generated_at": "2026-07-21T18:53:22-05:00",
+  "decision": "released_seeded_source_bounded_cv_surface_preflight_ready",
+  "case_count": 3,
+  "released_case_count": 3,
+  "surface_preflight_ready": true,
+  "surface_extraction_launched": false,
+  "sampler_or_harvest_allowed": false,
+  "same_qoi_uq_ready": false,
+  "s11_s12_s15_s6_trigger": false,
+  "exchange_cell_coefficient_admission": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "next_action": "open seeded surface/input preflight row"
+}

@@ -1,0 +1,13 @@
+case_id,time_window_s,blocked_input,blocker,next_action,fit_allowed_now,score_allowed_now
+salt_2,7915,cell_vtk,requires same-window cell sample with U/T/rho and cellId or same-order volume basis,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_2,7915,exchange_interface_vtk,requires named exchange interface geometry and normal sign convention,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_2,7915,wall_vtk,requires wall/core surface definition for wall-core Delta T and wall heat diagnostic,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_2,7915,source_sink_ledger,requires same-window Q_source/Q_sink extraction and sign convention,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_3,7618,cell_vtk,requires same-window cell sample with U/T/rho and cellId or same-order volume basis,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_3,7618,exchange_interface_vtk,requires named exchange interface geometry and normal sign convention,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_3,7618,wall_vtk,requires wall/core surface definition for wall-core Delta T and wall heat diagnostic,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_3,7618,source_sink_ledger,requires same-window Q_source/Q_sink extraction and sign convention,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_4,10000,cell_vtk,requires same-window cell sample with U/T/rho and cellId or same-order volume basis,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_4,10000,exchange_interface_vtk,requires named exchange interface geometry and normal sign convention,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_4,10000,wall_vtk,requires wall/core surface definition for wall-core Delta T and wall heat diagnostic,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false
+salt_4,10000,source_sink_ledger,requires same-window Q_source/Q_sink extraction and sign convention,claim_separate_generation_or_extraction_row_before_sampler_execution,false,false

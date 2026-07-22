@@ -1,0 +1,52 @@
+{
+  "task": "TODO-WORKTREE-BOARD-STAGE-FOR-PUSH-2026-07-22",
+  "task_id": "TODO-WORKTREE-BOARD-STAGE-FOR-PUSH-2026-07-22",
+  "generated_by": "codex",
+  "generated_at": "2026-07-22",
+  "objective": "Clean completed board locks and prepare an intentional git index for a later push without adding heavy/generated local artifacts.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-WORKTREE-BOARD-STAGE-FOR-PUSH-2026-07-22.md",
+    ".agent/journal/2026-07-22/worktree-board-stage-for-push.md",
+    "imports/2026-07-22_worktree_board_stage_for_push.json",
+    ".gitignore",
+    ".agent/STATE.md",
+    ".agent/BLOCKERS.md",
+    ".agent/catalog.csv",
+    ".agent/catalog.json"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/ROLES.md",
+    ".agent/FILE_OWNERSHIP.md",
+    "git status --porcelain=v1 --untracked-files=all",
+    "validated closeout artifacts for archived completed rows"
+  ],
+  "archived_completed_rows": [
+    "TODO-THERMAL-PASSIVE-H2-RADIATION-RUNTIME-BASIS-RECONCILIATION-2026-07-22",
+    "TODO-THESIS-PAPER-OUTLINE-EVIDENCE-TRANSFER-GAP-REQUEST-2026-07-22",
+    "TODO-S13-MEDIUM-FINE-EXACT-LABEL-SPLIT-RERUN-2026-07-22",
+    "TODO-S13-MEDIUM-FINE-MESH-GCI-DISPOSITION-2026-07-22",
+    "TODO-S13-COARSE-EQUIVALENCE-OPEN-CV-HEATFLOW-CONTRACT-2026-07-22",
+    "TODO-D2-SOURCE-BOUNDED-PROJECTION-HOLDOUT-EXTERNAL-SCORE-GATE-2026-07-22"
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "fluid_or_external_repo_mutated": false,
+    "thesis_body_or_latex_mutated": false,
+    "files_deleted_or_reverted": false,
+    "commit_created": false,
+    "push_performed": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "ignore_rules_added": [
+    "staging/s13_target_plus_window_generation_2026-07-22/**",
+    "work_products/**/trusted_wall_Q_wall_detail_rows.csv",
+    "work_products/**/salt14_postprocessing_tidy.csv"
+  ]
+}

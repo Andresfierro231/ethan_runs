@@ -1,0 +1,7 @@
+scenario_field,required_value_or_rule,validation_rule,reason
+upcomer_mixing_mode,disabled or energy_conserving_exchange_v1,reject any other value before solve,prevents silent fallback or undocumented model forms
+upcomer_exchange_multiplier,finite value >= 0 and from candidate_grid_contract.csv,reject negative infinite nan or unlisted values,one-scalar predeclared model selection only
+upcomer_exchange_parent_segments,left_lower_vertical;test_section;left_upper_vertical by default,reject unknown parent or resolved segment names,keeps UMX1 scoped to upcomer/test-section path
+upcomer_reservoir_heat_sources,setup/provenance rows only,may not include realized CFD wallHeatFlux or validation residuals,prevents leakage into reservoir/source routing
+root_status,accepted required for every train row before scoring,rejected train root stops expansion,avoids selecting finite but nonphysical rejected candidates
+ledger_conservation,main_to_reservoir + reservoir_to_main residual approximately zero,fail before probe metrics if nonconservative,energy conservation gate precedes residual interpretation

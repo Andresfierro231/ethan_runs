@@ -1,0 +1,8 @@
+source_path,exists,use,mutation_allowed
+work_products/2026-07/2026-07-22/2026-07-22_salt14_postprocessing_inventory_model_form_package/salt14_postprocessing_window_stats.csv,True,read_only_context,False
+work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/final_window_metrics.csv,True,read_only_context,False
+work_products/2026-07/2026-07-13/2026-07-13_time_series_uncertainty_story/screened_out_not_steady_or_live.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/case_split_legal_use_table.csv,True,read_only_context,False
+work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv,True,read_only_context,False
+reports/2026-07/2026-07-01/2026-07-01_local_1d_closure_bakeoff_refresh/defended_full_coverage_surface/cfd_sensor_reference.csv,True,read_only_context,False
+work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/canonical_train_validation_holdout_plan.csv,True,read_only_context,False

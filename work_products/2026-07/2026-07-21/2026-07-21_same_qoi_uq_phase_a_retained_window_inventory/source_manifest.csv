@@ -1,0 +1,28 @@
+source_path,source_role,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/README.md,dispatch start-here context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_and_fluid_phase_study_dispatch/same_qoi_uq_required_outputs.csv,candidate-family dispatch table,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/README.md,prior same-QOI execution result,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,row-level same-QOI retained/neighbor/GCI status source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/uq_gap_queue.csv,next evidence queue for blocked rows,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/README.md,pressure-corner synthesis context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/blocker_analysis.csv,pressure same-QOI blocker evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/next_evidence_sequence.csv,pressure next-task routing evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,retained pressure-corner time and final diagnostic label source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/README.md,upcomer exchange preflight context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv,exchange variable availability source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/same_qoi_uq_status.csv,upcomer same-QOI gate status source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/upcomer_exchange_qoi_rows.csv,diagnostic upcomer QOI row source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/README.md,terminal/source readiness context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/terminal_source_family_matrix.csv,terminal source family readiness source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/required_exchange_qoi_coverage.csv,required exchange-QOI coverage source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/summary.json,terminal readiness guardrail/source summary,read_only
+work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/thermal_mesh_gate_qois.csv,thermal mesh/retained evidence source,read_only
+work_products/2026-07/2026-07-15/2026-07-15_thermal_row_admission_ledger/thermal_row_admission_ledger.csv,thermal and heat-loss ledger source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_5_frozen_scorecard_and_thesis_handoff/summary.json,heat-loss frozen-scorecard state source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/README.md,heat-loss upcomer exchange extraction context,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/case_time_window_queue.csv,heat-loss upcomer retained-time queue source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/upcomer_exchange_extraction_contract.csv,heat-loss exchange field contract source,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/summary.json,heat-loss exchange guardrail/source summary,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/qoi_retained_window_inventory.csv,Phase A output inventory,created
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/README.md,Phase A package README,created
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/summary.json,Phase A machine-readable summary,created

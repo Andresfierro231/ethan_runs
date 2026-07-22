@@ -1,0 +1,29 @@
+{
+  "component_k_admitted_count": 0,
+  "current_row_count": 3,
+  "date": "2026-07-20",
+  "f6_fit_performed_count": 0,
+  "generated_utc": "2026-07-20T16:33:42+00:00",
+  "nonrecirculating_anchor_lane": "separate_no_launch_from_this_row",
+  "ordinary_component_k_allowed_now": false,
+  "outputs": [
+    "README.md",
+    "paper_methods_pressure_basis.md",
+    "paper_results_current_evidence.md",
+    "recirc_pressure_basis_table.csv",
+    "section_effective_model_contract.csv",
+    "current_corner_lower_right_recirc_rows.csv",
+    "same_qoi_uq_sampling_contract.csv",
+    "model_form_decision_table.csv",
+    "paper_claims_and_limitations.csv",
+    "artifact_crosswalk.csv",
+    "figure_table_manifest.csv",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "paper_claim_count": 4,
+  "recirculating_section_effective_contract_created": true,
+  "same_qoi_uq_missing": true,
+  "scheduler_launch_performed": false,
+  "task": "TODO-TWO-TAP-RECIRC-SECTION-EFFECTIVE-MODEL"
+}

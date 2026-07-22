@@ -1,0 +1,8 @@
+{
+  "generated_at": "2026-07-08T10:46:02",
+  "scenario_rows": 19,
+  "observation_rows": 132,
+  "mainline_1p4_detected": 4,
+  "prior_extraction_older_than_case_latest": 5,
+  "recommendation": "freeze a single latest-window contract before final closure fitting"
+}

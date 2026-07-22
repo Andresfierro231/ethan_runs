@@ -1,0 +1,19 @@
+input_name,role,runtime_allowed_now,fit_allowed_now,required_before_admission
+U,"velocity vector, throughflow, reverse mask, secondary velocity",false,false,yes
+T,bulk/core temperature and wall-core Delta T,false,false,yes
+wallHeatFlux,source/sink ledger and wall heat-balance gate,false,false,yes
+Re,throughflow regime coordinate,false,false,yes
+Pr,thermal property coordinate,false,false,yes
+Ri,mixed-convection/onset coordinate,false,false,yes
+Gr,buoyancy coordinate,false,false,yes
+Ra,buoyancy-thermal coordinate,false,false,yes
+Gz,thermal development coordinate,false,false,yes
+wall_core_deltaT,cell-driving thermal contrast,false,false,yes
+reverse_area_fraction,cell/onset classifier,false,false,yes
+reverse_mass_fraction,material backflow classifier,false,false,yes
+secondary_velocity_fraction,recirculation-cell strength proxy,false,false,yes
+steady_window_status,admission gate for terminal or quasi-steady use,false,false,yes
+mesh_time_uncertainty,do not fit coefficients without uncertainty bounds,false,false,yes
+CFD mdot,forbidden leakage,false,false,no
+realized wallHeatFlux as runtime closure,forbidden leakage,false,false,no
+validation TP/TW temperatures,forbidden leakage,false,false,no

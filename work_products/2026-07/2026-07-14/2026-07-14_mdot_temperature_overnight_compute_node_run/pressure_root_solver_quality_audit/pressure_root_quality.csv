@@ -1,0 +1,10 @@
+case_id,mode_id,root_status,root_mdot_kg_s,cfd_mdot_kg_s,root_pressure_residual_Pa,cfd_mdot_pressure_residual_Pa,root_rejection_reason
+salt_2,M1_full_cfd_segment_heat_flux_pressure_root,fast_scan_bracketed_pressure_root,0.01953125,0.01318,174.876928056,12461.930743,
+salt_2,M2_cfd_heater_test_section_cooler_pressure_root,fast_scan_bracketed_pressure_root,0.01453125,0.01318,0.324673029239,-11.8158895909,
+salt_2,M3_cfd_heater_cooler_pressure_root,fast_scan_bracketed_pressure_root,0.01515625,0.01318,0.900402514706,-15.7931118785,
+salt_3,M1_full_cfd_segment_heat_flux_pressure_root,fast_scan_bracketed_pressure_root,0.01484375,0.01497,13462.6069646,-53.4517026988,
+salt_3,M2_cfd_heater_test_section_cooler_pressure_root,fast_scan_bracketed_pressure_root,0.01640625,0.01497,-0.679429741278,-11.9329915657,
+salt_3,M3_cfd_heater_cooler_pressure_root,fast_scan_bracketed_pressure_root,0.01734375,0.01497,-0.978457453873,-17.9481834313,
+salt_4,M1_full_cfd_segment_heat_flux_pressure_root,fast_scan_bracketed_pressure_root,0.00703125,0.01698,10147.984552,15214.4241033,
+salt_4,M2_cfd_heater_test_section_cooler_pressure_root,fast_scan_bracketed_pressure_root,0.01890625,0.01698,-0.156864668954,-13.2864406171,
+salt_4,M3_cfd_heater_cooler_pressure_root,fast_scan_bracketed_pressure_root,0.0203125,0.01698,-0.732022187983,-20.8777315136,

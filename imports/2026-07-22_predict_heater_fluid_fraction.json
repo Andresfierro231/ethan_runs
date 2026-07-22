@@ -1,0 +1,42 @@
+{
+  "candidate_freeze": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PREDICT-HEATER-FLUID-FRACTION.md",
+    ".agent/journal/2026-07-22/predict-heater-fluid-fraction.md",
+    "imports/2026-07-22_predict_heater_fluid_fraction.json",
+    "tools/analyze/build_heater_fluid_fraction_model.py",
+    "tools/analyze/test_heater_fluid_fraction_model.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/heater_fraction_candidate_scores.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/heater_fraction_model_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/model_decision.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_heater_fluid_fraction_model/summary.json"
+  ],
+  "coefficient_admission": false,
+  "date": "2026-07-22",
+  "decision": "heater_eta_candidate_passes_wallflux_score_no_final_forward_admission",
+  "external_fluid_edit": false,
+  "external_papers_edit": false,
+  "final_score_claim": false,
+  "native_solver_outputs_mutated": false,
+  "protected_score_claim": false,
+  "qwall_release": false,
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md"
+  ],
+  "registry_mutated": false,
+  "role": "Implementer / Tester / Writer",
+  "runtime_leakage_relaxed": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "source_property_release": false,
+  "task": "TODO-PREDICT-HEATER-FLUID-FRACTION",
+  "task_id": "TODO-PREDICT-HEATER-FLUID-FRACTION",
+  "thesis_body_edit": false
+}

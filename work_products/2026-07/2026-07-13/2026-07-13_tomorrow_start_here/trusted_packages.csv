@@ -1,0 +1,13 @@
+order,topic,path,why_open
+1,coordination,.agent/BOARD.md,Check active rows and avoid overlapping active scopes.
+2,current_state,.agent/STATE.md,Generated index; useful but may lag board changes after 17:34.
+3,blockers,.agent/BLOCKERS.md,Generated blocker register; verify against latest board/status notes.
+4,tomorrow_handoff,operational_notes/07-26/13/2026-07-13_TOMORROW_START_HERE.md,Top-level pickup instructions and current project state.
+5,corrected_salt_q,operational_notes/07-26/13/2026-07-13_TOMORROW_CORRECTED_SALT_Q_LIVE_JOB_HANDOFF.md,Exact live-job monitor and terminal-harvest sequence for 3293924.
+6,predictive_state,work_products/2026-07/2026-07-13/2026-07-13_predictive_endtoend_scorecard_precursor/README.md,Boundary for what can and cannot be scored now.
+7,hydraulics,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/README.md,Next model-improvement path: H1 named-loss/reset bundle.
+8,hx_fit,work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/README.md,One-scalar HX campaign and split-policy evidence.
+9,thermal_gate,work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/README.md,Why thermal UA/HTC/Nu remains diagnostic only.
+10,sensors,work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/README.md,Which TP/TW outputs can be used as validation targets.
+11,thesis,reports/thesis_dossier/README.md,Human-facing synthesis hub.
+12,thesis,reports/thesis_dossier/master_thesis_bullet_outline.md,Current chapter and research-pathway scaffold.

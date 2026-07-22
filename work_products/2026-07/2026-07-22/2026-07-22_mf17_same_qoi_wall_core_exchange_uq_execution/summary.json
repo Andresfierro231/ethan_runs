@@ -1,0 +1,20 @@
+{
+  "admission_allowed": false,
+  "case_temporal_uq_rows": 12,
+  "coefficient_admission": false,
+  "created_utc": "2026-07-22T15:34:27.722199+00:00",
+  "d3_transfer_rmse_reduction_pct_read_only": 51.6919381995,
+  "decision": "same_qoi_wall_core_exchange_temporal_uq_executed_no_admission",
+  "heat_flow_match_ready_rows": 0,
+  "mechanism_rows": 2,
+  "mesh_gci_gate_input_ready": true,
+  "mesh_gci_uq_executed": false,
+  "mf15_wall_profile_release_ready_rows": 0,
+  "production_harvest_allowed": false,
+  "qoi_label_count": 4,
+  "qwall_production_release": false,
+  "residual_absorbed_into_internal_nu": false,
+  "same_qoi_temporal_uq_executed_qois": 4,
+  "source_property_release": false,
+  "task_id": "TODO-MF17-SAME-QOI-WALL-CORE-EXCHANGE-UQ-EXECUTION-2026-07-22"
+}

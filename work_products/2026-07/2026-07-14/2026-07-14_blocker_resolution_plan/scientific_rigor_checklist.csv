@@ -1,0 +1,11 @@
+gate_id,gate,rule,applies_to,failure_action
+R1,Provenance completeness,"Every row cites exact source paths, not chat memory or citation numbers.",all areas,block publication/admission claim
+R2,No native CFD mutation,All analysis consumes staged/repaired outputs or read-only source evidence.,all areas,stop and create separate approved repair/staging row
+R3,GCI defensibility,"No GCI for two-level, source-blocked, non-monotone, oscillatory, divergent, or invalid-order triplets.",A1,mark diagnostic-only or blocked-missing-triplet
+R4,Thermal admission separation,"HTC/UA/Nu cannot absorb heater, cooler, passive-loss, wall-storage, junction, or radiation residuals.","A1,A2",validation-only or blocked
+R5,Predictive input discipline,"Forward predictive runs cannot use CFD mdot, realized CFD wallHeatFlux, or validation temperatures at runtime.",A2,"label replay/diagnostic, not predictive"
+R6,Locked split,"Salt2=train, Salt3=validation, Salt4=holdout unless a later admitted split package supersedes it.","A2,A3",do not report final forward-v1 score
+R7,Radiation semantics,Current CFD wallHeatFlux includes rcExternalTemperature radiation; do not add separate qr on top of realized wallHeatFlux.,"A1,A2",block parity/predictive claim
+R8,No global hydraulic fudge,"Do not hide component, reset, redevelopment, cluster, or branch-apparent loss inside one global friction multiplier.","A2,A3",demote to diagnostic screen
+R9,Recirculation label discipline,Rows with recirculation-cell behavior cannot be promoted as ordinary single-stream f/K/Nu closures without policy evidence.,"A1,A3",validation-only or blocked
+R10,Documentation closeout,"Each gate-moving task writes status, journal, import manifest, package README, and index refresh when scoped.",all areas,task incomplete

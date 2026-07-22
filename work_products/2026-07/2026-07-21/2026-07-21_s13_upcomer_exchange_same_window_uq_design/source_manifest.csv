@@ -1,0 +1,6 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s9_upcomer_onset_anchor_exchange_uq/same_window_uq_requirements.csv,s9_requirements,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_a_retained_window_inventory/qoi_retained_window_inventory.csv,phase_a_retained_inventory,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/mesh_gci_coverage_matrix.csv,phase_b_mesh_gci_matrix,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_c_admission_table/same_qoi_uq_admission_table.csv,phase_c_admission_table,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/downstream_surface_vtk_inputs.csv,geometry_downstream_inputs,true,false,false

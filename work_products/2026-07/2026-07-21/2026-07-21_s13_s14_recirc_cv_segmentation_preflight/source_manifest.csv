@@ -1,0 +1,8 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_s13_s14_recirc_cv_segmentation_preflight.py,task_output,true,false,true
+tools/extract/test_s13_s14_recirc_cv_segmentation_preflight.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt2_smoke,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_vtk_salt3_salt4_matrix,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight,task_output,true,false,true

@@ -1,0 +1,6 @@
+source_path,use
+work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility/bulk_integral_heat_partition_rows.csv,case budget skeleton and stable heat partition rows
+work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility/energy_residual_feasibility.csv,residual equation and missing same-basis inputs
+work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/open_cv_use_policy.csv,open-CV diagnostic/admission policy
+work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/case_qoi_preflight_matrix.csv,cp/property/source release blocker status
+work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation/qoi_reconciliation_summary.csv,S13 Qwall/proxy mesh/GCI disposition

@@ -1,0 +1,75 @@
+metadata:
+  source_validation_tables:
+    salt: validation_data/salt_validation_source.csv
+    water: validation_data/water_validation_source.csv
+    normalized: validation_data/validation_cases.csv
+  measurement_uncertainties:
+    thermocouple_C: 1.1
+    power_meter_percent_1_to_100W: 1.0
+    power_meter_percent_100_to_999W: 0.93
+    air_flow_meter_percent: 1.0
+  excluded_measurements:
+    - label: TW11_K_unlabeled
+      values:
+        Salt 1: 444.87
+        Water 1: 314.03
+      status: excluded_until_identified
+      notes: Unlabeled Kelvin values from the source spreadsheet are preserved for provenance but not consumed by the active validation workflow.
+
+cases:
+  - name: Salt 1
+    fluid: salt
+    heater_power_W: 232.3
+    test_section_power_W: 37.0
+    air_T_inlet_C: 25.96
+    air_flow_Lpm: 37.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Salt 2
+    fluid: salt
+    heater_power_W: 265.7
+    test_section_power_W: 37.0
+    air_T_inlet_C: 26.04
+    air_flow_Lpm: 37.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Salt 3
+    fluid: salt
+    heater_power_W: 297.5
+    test_section_power_W: 37.0
+    air_T_inlet_C: 26.64
+    air_flow_Lpm: 37.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Salt 4
+    fluid: salt
+    heater_power_W: 337.6
+    test_section_power_W: 37.0
+    air_T_inlet_C: 26.82
+    air_flow_Lpm: 37.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Water 1
+    fluid: water
+    heater_power_W: 58.8
+    test_section_power_W: 0.0
+    air_T_inlet_C: 23.70
+    air_flow_Lpm: 188.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Water 2
+    fluid: water
+    heater_power_W: 77.6
+    test_section_power_W: 0.0
+    air_T_inlet_C: 23.65
+    air_flow_Lpm: 186.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Water 3
+    fluid: water
+    heater_power_W: 93.0
+    test_section_power_W: 0.0
+    air_T_inlet_C: 23.72
+    air_flow_Lpm: 190.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv
+  - name: Water 4
+    fluid: water
+    heater_power_W: 129.0
+    test_section_power_W: 0.0
+    air_T_inlet_C: 23.79
+    air_flow_Lpm: 189.0
+    provenance: predictive operating inputs paired with validation_data/validation_cases.csv

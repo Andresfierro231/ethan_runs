@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-07-15T14:07:27.802914+00:00",
+  "date": "2026-07-15",
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "fluid_hx_ua_multiplier_hook": "implemented",
+  "native_solver_outputs_mutated": false,
+  "pm5_f6_review_ready_rows": 12,
+  "pm5_readiness_counts": {
+    "review_ready_not_admitted": 12
+  },
+  "pm5_rows": 12,
+  "registry_or_case_admission_mutated": false,
+  "scheduler_mutated": false,
+  "task": "AGENT-413",
+  "thermal_fit_admissible_rows": 0,
+  "thermal_review_counts": {
+    "blocked": 5,
+    "validation_only": 11
+  },
+  "thermal_rows": 16,
+  "work_product_dir": "work_products/2026-07/2026-07-15/2026-07-15_blocker_resolution_wave_implementation"
+}

@@ -1,0 +1,4 @@
+decision_id,status,decision,reason,trigger_to_reopen
+s8_freeze_candidate,blocked,do_not_release_freeze_candidate,"no S8 candidate has passed source/property, validation, holdout, and smoke-family gates",new setup-only physical form plus S9 or independent heat-loss source evidence
+negative_falsification_package,released,publish current negative candidate package,current Phase 3 plus AMX/UMX/TSWFC evidence has 0 S11-ready candidates,new execution evidence with split-clean scorecard
+ordinary_internal_Nu_reopening,blocked,keep ordinary single-stream upcomer Nu/f_D/K excluded,upcomer residual requires exchange/onset evidence before ordinary Nu attribution,exchange-cell readiness plus recirculation-aware same-QOI UQ

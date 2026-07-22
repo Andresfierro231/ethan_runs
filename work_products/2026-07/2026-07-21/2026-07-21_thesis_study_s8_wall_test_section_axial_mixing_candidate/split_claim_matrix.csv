@@ -1,0 +1,5 @@
+split,rows,allowed_claim,forbidden_claim
+train,none_used_for_new_fit_in_this_package,existing evidence can motivate a future predeclared setup-only candidate,"no fitted S8 coefficient, no model selection, no final score"
+validation,existing_phase3_validation_label_salt_3_only_as_prior_score_evidence,prior wall/test-section candidates failed validation gates versus M3,do not tune S8 on validation residuals
+holdout,existing_phase3_holdout_label_salt_4_only_as_prior_score_evidence,prior wall/test-section candidates failed holdout gates versus M3,do not use holdout residuals to select fitted parameters
+external_test,none_scored_or_released,external-test claim remains blocked,no external predictive score or admission statement

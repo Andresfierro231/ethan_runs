@@ -1,0 +1,5 @@
+check,status,runtime_policy
+salt2_pm5_rows_used_for_fit,pass_not_used,Salt2 +/-5Q are final predictive holdout/testing rows only.
+wallHeatFlux_runtime_input,pass_forbidden,"wallHeatFlux is target/diagnostic evidence only, never a predictive runtime input."
+model_selection_on_holdout,pass_forbidden,"Do not select, tune, or refit model form using Salt2 +/-5Q PM5 rows."
+native_solver_output_mutation,pass_no_mutation,All consumed PM5 evidence comes from AGENT-406 staged-copy work products.

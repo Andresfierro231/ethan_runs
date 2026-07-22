@@ -1,0 +1,15 @@
+{
+  "anchor_request_rows": 1,
+  "auto_submit": false,
+  "component_k_current_status": "blocked_current_rows_diagnostic_only",
+  "date": "2026-07-20",
+  "endpoint_pair": "lower_leg__s04->right_leg__s00",
+  "feature": "corner_lower_right",
+  "generated_at_utc": "2026-07-20T17:42:05.719930+00:00",
+  "launch_gate_rows": 3,
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "sampling_contract_rows": 4,
+  "task": "TODO-TWO-TAP-NONRECIRCULATING-SAME-QOI-ANCHOR-REQUEST-REFRESH",
+  "uq_requirement_rows": 3
+}

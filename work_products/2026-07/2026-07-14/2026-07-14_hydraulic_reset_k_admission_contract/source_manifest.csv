@@ -1,0 +1,8 @@
+source_id,path,role
+reset_map,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,reset/development row evidence
+named_losses,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv,branch/component/cluster loss context
+minor_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,component and cluster K admission source
+pressure_ledger,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,pressure-term provenance for reset and minor-loss reductions
+h1_gap,work_products/2026-07/2026-07-14/2026-07-14_h1_faithful_gap_and_f6_decision/h1_faithful_implementation_gap_table.csv,prior H1 faithful gap decision
+f6_decision,work_products/2026-07/2026-07-14/2026-07-14_h1_faithful_gap_and_f6_decision/f6_candidate_decision_table.csv,prior F6 bounded-candidate decision
+corrected_q_gate,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/summary.json,F6 Re-variation admission status

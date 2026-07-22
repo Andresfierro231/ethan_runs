@@ -1,0 +1,79 @@
+{
+  "task": "TODO-FLUID-EMPIRICAL-LEG-BIAS-CORRECTION-DIAGNOSTIC-2026-07-21",
+  "task_id": "TODO-FLUID-EMPIRICAL-LEG-BIAS-CORRECTION-DIAGNOSTIC-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
+  "objective": "Build a train-only empirical per-leg affine bias/correction diagnostic from Phase E Salt2 residuals.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-FLUID-EMPIRICAL-LEG-BIAS-CORRECTION-DIAGNOSTIC-2026-07-21.md",
+    ".agent/journal/2026-07-21/fluid-empirical-leg-bias-correction-diagnostic.md",
+    "imports/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic.json",
+    "tools/analyze/build_fluid_empirical_leg_bias_correction_diagnostic.py",
+    "tools/analyze/test_fluid_empirical_leg_bias_correction_diagnostic.py",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/corrected_train_residual_metrics.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/explanation_hypothesis_ledger.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/identifiability_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/leg_bias_correction_coefficients.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/split_runtime_leakage_audit.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic/train_bias_fit_rows.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/thermal_residual_attribution.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h_compute_safe_sensitivity/sensor_delta.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/repair_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/tw4_tw6_focus.csv"
+  ],
+  "validation": [
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile tools/analyze/build_fluid_empirical_leg_bias_correction_diagnostic.py tools/analyze/test_fluid_empirical_leg_bias_correction_diagnostic.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/build_fluid_empirical_leg_bias_correction_diagnostic.py",
+      "result": "passed"
+    },
+    {
+      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 tools/analyze/test_fluid_empirical_leg_bias_correction_diagnostic.py",
+      "result": "Empirical leg bias/correction diagnostic checks passed."
+    }
+  ],
+  "summary": {
+    "baseline_all_mae_K": 81.5815150583415,
+    "corrected_all_mae_K": 7.2808975996294265,
+    "delta_all_mae_K": -74.30061745871207,
+    "train_fit_rows": 16,
+    "excluded_rows": 1,
+    "validation_rows_scored": 0,
+    "holdout_rows_scored": 0,
+    "external_test_rows_scored": 0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": false,
+    "external_fluid_repo_edited": false,
+    "validation_rows_scored": 0,
+    "holdout_rows_scored": 0,
+    "external_test_rows_scored": 0,
+    "physical_fit_or_model_selection": false,
+    "empirical_train_fit": true,
+    "repair_run_executed": false,
+    "freeze_or_admission_decision": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false
+  }
+}

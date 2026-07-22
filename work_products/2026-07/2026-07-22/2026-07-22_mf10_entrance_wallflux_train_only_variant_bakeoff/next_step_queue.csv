@@ -1,0 +1,4 @@
+priority,next_step,stop_condition
+1,source-property/cp release preflight for MF08/MF09 candidate family,0 release-ready rows
+2,candidate disable/default API contract before any Fluid smoke,variant cannot be disabled or audited at runtime
+3,bounded train-only Fluid smoke row after one executable candidate exists,uses validation/holdout/external rows or hidden tuning

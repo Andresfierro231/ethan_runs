@@ -1,0 +1,17 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-FACE-AREA-VECTOR-REPAIR-RERUN-2026-07-22",
+  "generated_at": "2026-07-22T11:10:00-05:00",
+  "decision": "face_vector_repair_source_ready_fresh_slurm_rerun_required",
+  "completed_sampler_exact_label_qoi_rows": 0,
+  "completed_sampler_sampling_error_rows": 6,
+  "completed_sampler_face_csv_vector_columns_present": false,
+  "current_source_face_vector_writer_present": true,
+  "current_source_interface_reader_requires_vectors": true,
+  "writer_regression_test_added": true,
+  "unit_tests_passed": true,
+  "fresh_scheduler_rerun_submitted": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "production_harvest_allowed": false,
+  "admission_allowed": false
+}

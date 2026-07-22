@@ -1,0 +1,37 @@
+case_id,qoi_label,mesh_level,same_label_row_present,same_window_triplet_present,formula_sign_basis_matched,source_property_basis_matched,geometry_mask_basis_matched,mesh_level_status,missing_or_blocking_reason,production_use_allowed_now
+salt_2,Q_wall_W,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_2,Q_wall_W,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,Q_wall_W,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,mdot_exchange_positive_outward_proxy_kg_s,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_2,mdot_exchange_positive_outward_proxy_kg_s,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,mdot_exchange_positive_outward_proxy_kg_s,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,tau_recirc_proxy_s,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_2,tau_recirc_proxy_s,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,tau_recirc_proxy_s,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,wall_core_bulk_temperature_contrast_K,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_2,wall_core_bulk_temperature_contrast_K,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_2,wall_core_bulk_temperature_contrast_K,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,Q_wall_W,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_3,Q_wall_W,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,Q_wall_W,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,mdot_exchange_positive_outward_proxy_kg_s,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_3,mdot_exchange_positive_outward_proxy_kg_s,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,mdot_exchange_positive_outward_proxy_kg_s,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,tau_recirc_proxy_s,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_3,tau_recirc_proxy_s,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,tau_recirc_proxy_s,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,wall_core_bulk_temperature_contrast_K,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_3,wall_core_bulk_temperature_contrast_K,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_3,wall_core_bulk_temperature_contrast_K,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,Q_wall_W,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_4,Q_wall_W,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,Q_wall_W,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,mdot_exchange_positive_outward_proxy_kg_s,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_4,mdot_exchange_positive_outward_proxy_kg_s,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,mdot_exchange_positive_outward_proxy_kg_s,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,tau_recirc_proxy_s,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_4,tau_recirc_proxy_s,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,tau_recirc_proxy_s,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,wall_core_bulk_temperature_contrast_K,current_coarse_continuation,true,true,true,true,true,available_current_coarse_baseline,not_missing_for_current_coarse_baseline,false
+salt_4,wall_core_bulk_temperature_contrast_K,medium,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false
+salt_4,wall_core_bulk_temperature_contrast_K,fine,false,false,false,false,false,missing_same_label_required_mesh_level,"no medium/fine row with exact label, same windows, same masks, and same source family",false

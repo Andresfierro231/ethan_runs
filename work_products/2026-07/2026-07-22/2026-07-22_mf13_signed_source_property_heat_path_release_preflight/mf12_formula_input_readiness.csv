@@ -1,0 +1,33 @@
+candidate_id,requirement,applies,readiness_status,train_only_smoke_unblocked,reason
+MF12a_signed_graetz_probe_offset,sigma_q,True,diagnostic_ready_for_active_heater_cooler_test_section_only,False,"setup-known sign direction exists for active sources, but is diagnostic only"
+MF12a_signed_graetz_probe_offset,q_setup,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12a_signed_graetz_probe_offset,cp,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12a_signed_graetz_probe_offset,A_source_or_source_kernel,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12a_signed_graetz_probe_offset,reset_graetz,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12a_signed_graetz_probe_offset,wall_profile,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12a_signed_graetz_probe_offset,same_qoi_tp_projection,True,blocked_needs_UQ_and_runtime_legality,False,TP projection lacks same-QOI UQ and runtime legality decision
+MF12a_signed_graetz_probe_offset,upcomer_recirc_guard,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12b_piecewise_signed_source_integral,sigma_q,True,diagnostic_ready_for_active_heater_cooler_test_section_only,False,"setup-known sign direction exists for active sources, but is diagnostic only"
+MF12b_piecewise_signed_source_integral,q_setup,True,contract_only_not_runtime_released,False,setup magnitudes exist as metadata; runtime input release is blocked
+MF12b_piecewise_signed_source_integral,cp,True,blocked_no_row_level_property_release,False,source/property labels and cp lane are not released
+MF12b_piecewise_signed_source_integral,A_source_or_source_kernel,True,blocked_no_source_bounded_formula,False,source-bounded amplitude/kernel is not admitted
+MF12b_piecewise_signed_source_integral,reset_graetz,True,diagnostic_ready_not_admitted,False,MF07 coordinates exist diagnostically but are not a released correction
+MF12b_piecewise_signed_source_integral,wall_profile,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12b_piecewise_signed_source_integral,same_qoi_tp_projection,True,blocked_needs_UQ_and_runtime_legality,False,TP projection lacks same-QOI UQ and runtime legality decision
+MF12b_piecewise_signed_source_integral,upcomer_recirc_guard,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12c_wall_profile_projection,sigma_q,True,diagnostic_ready_for_active_heater_cooler_test_section_only,False,"setup-known sign direction exists for active sources, but is diagnostic only"
+MF12c_wall_profile_projection,q_setup,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12c_wall_profile_projection,cp,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12c_wall_profile_projection,A_source_or_source_kernel,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12c_wall_profile_projection,reset_graetz,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12c_wall_profile_projection,wall_profile,True,blocked_needs_runtime_wall_profile_basis,False,D3 signal lacks runtime wall-profile model
+MF12c_wall_profile_projection,same_qoi_tp_projection,True,blocked_needs_UQ_and_runtime_legality,False,TP projection lacks same-QOI UQ and runtime legality decision
+MF12c_wall_profile_projection,upcomer_recirc_guard,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12d_empirical_projection_prior_for_diagnostic_only,sigma_q,True,diagnostic_ready_for_active_heater_cooler_test_section_only,False,"setup-known sign direction exists for active sources, but is diagnostic only"
+MF12d_empirical_projection_prior_for_diagnostic_only,q_setup,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12d_empirical_projection_prior_for_diagnostic_only,cp,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12d_empirical_projection_prior_for_diagnostic_only,A_source_or_source_kernel,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12d_empirical_projection_prior_for_diagnostic_only,reset_graetz,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12d_empirical_projection_prior_for_diagnostic_only,wall_profile,False,not_primary_requirement,False,not a primary input for this candidate formula
+MF12d_empirical_projection_prior_for_diagnostic_only,same_qoi_tp_projection,True,blocked_needs_UQ_and_runtime_legality,False,TP projection lacks same-QOI UQ and runtime legality decision
+MF12d_empirical_projection_prior_for_diagnostic_only,upcomer_recirc_guard,False,not_primary_requirement,False,not a primary input for this candidate formula

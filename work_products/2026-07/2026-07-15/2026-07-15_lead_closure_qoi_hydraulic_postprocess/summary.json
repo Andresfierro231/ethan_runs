@@ -1,0 +1,37 @@
+{
+  "closure_gate_status_counts": {
+    "blocked_missing_triplet": 6,
+    "blocked_non_monotone_or_oscillatory": 16,
+    "blocked_sign_or_semantics_review": 3
+  },
+  "closure_qoi_rows": 25,
+  "created_utc": "2026-07-15T14:05:23.773469+00:00",
+  "date": "2026-07-15",
+  "external_fluid_modified": false,
+  "f6_status": "reopenable_for_review_not_final",
+  "final_forward_v1_status": "blocked_no_go_final_forward_v1_not_admitted",
+  "final_hydraulic_residual_status": "blocked_not_final",
+  "hostname": "c318-008.ls6.tacc.utexas.edu",
+  "internal_nu_fit_admissible_rows_today": 0,
+  "native_solver_outputs_mutated": false,
+  "openfoam_postprocessing_launched_by_builder": false,
+  "openfoam_postprocessing_launched_in_agent409_scratch": true,
+  "pm5_admission_status_counts": {
+    "ready_for_pressure_and_internal_nu_gate_review_not_admitted": 12
+  },
+  "pm5_metric_status_counts": {
+    "complete_with_wallHeatFlux": 12
+  },
+  "pm5_rows": 12,
+  "pm5_vtk_validation_fail_rows": 0,
+  "raw_two_tap_diagnostic_rows": 3,
+  "raw_two_tap_rows": 3,
+  "raw_two_tap_status": "diagnostic_landed_not_fit_admitted",
+  "registry_or_admission_mutated": false,
+  "reset_k_status": "diagnostic_admitted_component_separation_only",
+  "scheduler_jobs_launched": false,
+  "scratch_dir": "tmp/2026-07-15_lead_closure_qoi_hydraulic_postprocess",
+  "staged_openfoam_runner": "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/scripts/run_staged_raw_two_tap.sh",
+  "task": "AGENT-409",
+  "work_product_dir": "work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess"
+}

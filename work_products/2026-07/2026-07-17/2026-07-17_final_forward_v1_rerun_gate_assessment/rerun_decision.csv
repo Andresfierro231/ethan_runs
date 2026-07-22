@@ -1,0 +1,2 @@
+decision,boundary_layer_rerun,coupled_m3ts_rerun,scientific_reason,next_gate_sequence
+do_not_rerun_boundary_or_coupled_scorecards_now,false,false,No upstream prerequisite gate moved to admitted or executable; rerunning would only reproduce the blocked state.,pressure branch admission; test-section setup resistance-network candidate; upcomer anchor launch/staging; frozen hybrid split scoring

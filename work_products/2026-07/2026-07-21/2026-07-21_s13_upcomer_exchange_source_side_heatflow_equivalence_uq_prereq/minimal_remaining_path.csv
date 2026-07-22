@@ -1,0 +1,3 @@
+rank,path,current_state,smallest_next_step,then_required,why_smaller_than_direct_Q_wall,production_release_allowed_now
+1,source_side_equivalent,contract_pinned_static_context_only,source/property and residual-equation release for Q_source_side_net_static_bc_W,same-label neighbor windows plus same-QOI mesh/GCI,does not require wallHeatFlux generation before defining the heat-flow QOI,false
+2,direct_Q_wall_W,blocked_missing_wallHeatFlux,generate or recover wallHeatFlux on trusted wall faces and integrate Q_wall_W,same-QOI neighbor windows plus mesh/GCI for Q_wall_W,not_applicable,false

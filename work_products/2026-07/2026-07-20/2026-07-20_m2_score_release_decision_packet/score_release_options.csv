@@ -1,0 +1,3 @@
+option_id,status,release_condition,holdout_score_release,selected_now
+default_4row_supported,blocked,numeric Salt1 cooler/HX projection exists,false,false
+M2_CORE_3ROW_SUPPORTED_SCORE_READY,policy_option_not_granted,explicit approval that Salt1 unsupported context does not block holdout scoring,false,false

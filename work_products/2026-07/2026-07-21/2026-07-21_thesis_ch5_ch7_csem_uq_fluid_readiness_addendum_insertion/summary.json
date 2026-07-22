@@ -1,0 +1,22 @@
+{
+  "all_required_text_present": true,
+  "blocker_register_mutation": false,
+  "blocker_rows": 5,
+  "chapter_edit_audit_rows": 6,
+  "chapter_insertion_rows": 8,
+  "claim_boundary_rows": 5,
+  "created_utc": "2026-07-21T21:38:57.917100+00:00",
+  "date": "2026-07-21",
+  "final_score_values": 0,
+  "fitting_or_model_selection": false,
+  "fluid_or_external_repo_edited": false,
+  "generated_index_mutation": false,
+  "heldout_or_external_score_claim": false,
+  "native_solver_outputs_mutated": false,
+  "new_scientific_admission": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action_taken": false,
+  "solver_or_sampler_or_harvest_launch": false,
+  "status": "complete",
+  "task": "TODO-THESIS-CH5-CH7-CSEM-UQ-FLUID-READINESS-ADDENDUM-INSERTION-2026-07-21"
+}

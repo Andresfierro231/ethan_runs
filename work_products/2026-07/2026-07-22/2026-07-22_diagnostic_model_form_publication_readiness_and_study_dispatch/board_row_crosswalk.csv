@@ -1,0 +1,8 @@
+board_task,listed_on_board,priority,study,dispatch_status
+TODO-MF-D4-SEGMENT-SOURCE-PLACEMENT-EVIDENCE-GATE-2026-07-22,True,1,Segment-local source-placement evidence gate,ready_to_claim
+TODO-MF-D3-WALL-SHAPE-AXIAL-MIXING-GATE-2026-07-22,True,2,Wall-shape axial-mixing or wall/core exchange gate,ready_to_claim
+TODO-M2-PASSIVE-WALL-TEST-SECTION-SOURCE-BOUNDED-REPAIR-GATE-2026-07-22,True,3,Passive wall/test-section source-bounded repair gate,ready_to_claim
+TODO-MF-D2-TP-TW-QOI-PROJECTION-GATE-2026-07-22,True,4,TP/TW QOI projection uncertainty gate,ready_to_claim
+TODO-M0-SETUP-ONLY-BASELINE-PREDICTION-SCORECARD-2026-07-22,True,5,M0 setup-only baseline scorecard,ready_to_claim
+TODO-MF02-PRESSURE-MDOT-COUPLING-DIAGNOSTIC-2026-07-22,True,6,Pressure/mdot coupling diagnostic,ready_to_claim
+TODO-S13-UPCOMER-EXCHANGE-TARGET-PLUS-SAME-QOI-HARVEST-2026-07-22,True,7,S13 target-plus same-QOI harvest,ready_to_claim

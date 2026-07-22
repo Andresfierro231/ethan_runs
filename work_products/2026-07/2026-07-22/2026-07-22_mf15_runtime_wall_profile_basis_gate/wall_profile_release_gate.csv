@@ -1,0 +1,7 @@
+gate,status,evidence,release_allowed,missing_for_release
+wall_shape_signal_present,pass_diagnostic,D3 transfer RMSE reduction 51.6919381995 pct,False,runtime wall/profile operator and independent basis
+candidate_reviewable_now,fail_closed,0 of 3 D3 candidate rows ready,False,"same-QOI UQ, source/property conservation, runtime basis"
+same_qoi_uq_executed,fail_closed,0 executed UQ requirement rows,False,execute separate same-QOI UQ/production gate
+runtime_temperature_release,fail_closed,N4/MF14 runtime temperature allowed rows are zero,False,runtime wall and bulk state use boundary
+source_property_conservation,fail_closed,D3 crosswalk reports source/property conservation release failed,False,source/property conservation release
+wall_profile_correction_release,fail_closed,No D3 runtime coefficient or correction may enter the model,False,source-bounded wall/profile correction proof and admission

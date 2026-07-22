@@ -1,0 +1,6 @@
+guardrail,allowed,observed
+native_output_mutation,false,false
+scheduler_action,false,false
+solver_or_postprocessing_or_sampler_launch,false,false
+registry_or_admission_mutation,false,false
+surface_vtk_extraction,false,false

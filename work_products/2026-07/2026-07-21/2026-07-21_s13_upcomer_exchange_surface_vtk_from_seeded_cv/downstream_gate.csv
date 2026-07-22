@@ -1,0 +1,4 @@
+gate,status,allowed_next,reason,next_action
+sampler_manifest_refresh,blocked,false,geometry-only VTKs lack sampled U/T/rho/p/wallHeatFlux fields and Q_wall_W,build sampled interface/wall field extraction or sampler manifest only after field/Q_wall contract is available
+production_harvest,blocked,false,sampler-ready rows remain zero and same-QOI UQ is absent,refresh sampler manifest after sampled fields exist
+same_qoi_uq_or_admission,blocked,false,no harvested exchange QOIs or same-window UQ exist,run only after production harvest produces QOIs

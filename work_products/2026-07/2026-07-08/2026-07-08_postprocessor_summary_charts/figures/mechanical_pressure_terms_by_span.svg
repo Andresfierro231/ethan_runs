@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="1040" viewBox="0 0 1240 1040">
+<rect x="0" y="0" width="1240" height="1040" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="230" y="34" class="title">Mechanical Pressure Terms By Span</text>
+<text x="230" y="56" class="subtitle">Signed p_rgh density-gradient terms removed; compare loss-scale terms only</text>
+<text x="706.0" y="1004" text-anchor="middle" class="label">Pa over span</text>
+<line x1="230.00" y1="90" x2="230.00" y2="922" class="grid"/>
+<text x="230.00" y="944" text-anchor="middle" class="tick">0</text>
+<line x1="547.33" y1="90" x2="547.33" y2="922" class="grid"/>
+<text x="547.33" y="944" text-anchor="middle" class="tick">5</text>
+<line x1="864.67" y1="90" x2="864.67" y2="922" class="grid"/>
+<text x="864.67" y="944" text-anchor="middle" class="tick">10</text>
+<line x1="1182.00" y1="90" x2="1182.00" y2="922" class="grid"/>
+<text x="1182.00" y="944" text-anchor="middle" class="tick">15</text>
+<line x1="230" y1="90" x2="230" y2="922" class="axis"/>
+<line x1="230" y1="922" x2="1182" y2="922" class="axis"/>
+<text x="220" y="118.04" text-anchor="end" class="tick">Salt 2 lower</text>
+<rect x="230.00" y="96.79" width="482.01" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="109.29" width="81.37" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="121.79" width="31.70" height="9.50" fill="#6B46C1"/>
+<text x="220" y="164.26" text-anchor="end" class="tick">Salt 2 right/down</text>
+<rect x="230.00" y="143.01" width="456.23" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="155.51" width="87.96" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="168.01" width="48.53" height="9.50" fill="#6B46C1"/>
+<text x="220" y="210.48" text-anchor="end" class="tick">Salt 2 left lower</text>
+<rect x="230.00" y="189.23" width="100.69" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="201.73" width="48.59" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="214.23" width="0.00" height="9.50" fill="#6B46C1"/>
+<text x="220" y="256.70" text-anchor="end" class="tick">Salt 2 test section</text>
+<rect x="230.00" y="235.45" width="86.74" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="247.95" width="0.00" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="260.45" width="0.00" height="9.50" fill="#6B46C1"/>
+<text x="220" y="302.92" text-anchor="end" class="tick">Salt 2 left upper</text>
+<rect x="230.00" y="281.67" width="74.76" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="294.17" width="0.00" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="306.67" width="25.26" height="9.50" fill="#6B46C1"/>
+<text x="220" y="349.15" text-anchor="end" class="tick">Salt 2 upper</text>
+<rect x="230.00" y="327.90" width="425.76" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="340.40" width="82.56" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="352.90" width="38.06" height="9.50" fill="#6B46C1"/>
+<text x="220" y="395.37" text-anchor="end" class="tick">Salt 3 lower</text>
+<rect x="230.00" y="374.12" width="476.47" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="386.62" width="90.14" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="399.12" width="41.68" height="9.50" fill="#6B46C1"/>
+<text x="220" y="441.59" text-anchor="end" class="tick">Salt 3 right/down</text>
+<rect x="230.00" y="420.34" width="566.10" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="432.84" width="102.58" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="445.34" width="53.14" height="9.50" fill="#6B46C1"/>
+<text x="220" y="487.81" text-anchor="end" class="tick">Salt 3 left lower</text>
+<rect x="230.00" y="466.56" width="113.68" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="479.06" width="54.02" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="491.56" width="0.00" height="9.50" fill="#6B46C1"/>
+<text x="220" y="534.04" text-anchor="end" class="tick">Salt 3 test section</text>
+<rect x="230.00" y="512.79" width="68.55" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="525.29" width="0.00" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="537.79" width="0.00" height="9.50" fill="#6B46C1"/>
+<text x="220" y="580.26" text-anchor="end" class="tick">Salt 3 left upper</text>
+<rect x="230.00" y="559.01" width="63.06" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="571.51" width="0.00" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="584.01" width="31.90" height="9.50" fill="#6B46C1"/>
+<text x="220" y="626.48" text-anchor="end" class="tick">Salt 3 upper</text>
+<rect x="230.00" y="605.23" width="426.28" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="617.73" width="92.12" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="630.23" width="45.04" height="9.50" fill="#6B46C1"/>
+<text x="220" y="672.70" text-anchor="end" class="tick">Salt 4 lower</text>
+<rect x="230.00" y="651.45" width="488.50" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="663.95" width="100.45" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="676.45" width="54.82" height="9.50" fill="#6B46C1"/>
+<text x="220" y="718.92" text-anchor="end" class="tick">Salt 4 right/down</text>
+<rect x="230.00" y="697.67" width="667.27" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="710.17" width="117.75" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="722.67" width="55.49" height="9.50" fill="#6B46C1"/>
+<text x="220" y="765.15" text-anchor="end" class="tick">Salt 4 left lower</text>
+<rect x="230.00" y="743.90" width="138.96" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="756.40" width="60.38" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="768.90" width="0.00" height="9.50" fill="#6B46C1"/>
+<text x="220" y="811.37" text-anchor="end" class="tick">Salt 4 test section</text>
+<rect x="230.00" y="790.12" width="56.29" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="802.62" width="0.00" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="815.12" width="0.00" height="9.50" fill="#6B46C1"/>
+<text x="220" y="857.59" text-anchor="end" class="tick">Salt 4 left upper</text>
+<rect x="230.00" y="836.34" width="55.38" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="848.84" width="0.00" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="861.34" width="44.53" height="9.50" fill="#6B46C1"/>
+<text x="220" y="903.81" text-anchor="end" class="tick">Salt 4 upper</text>
+<rect x="230.00" y="882.56" width="429.14" height="9.50" fill="#2878B5"/>
+<rect x="230.00" y="895.06" width="103.58" height="9.50" fill="#D97706"/>
+<rect x="230.00" y="907.56" width="57.34" height="9.50" fill="#6B46C1"/>
+<rect x="230" y="958" width="14" height="14" fill="#2878B5"/>
+<text x="250" y="970" class="legend">de-buoyed friction target</text>
+<rect x="547" y="958" width="14" height="14" fill="#D97706"/>
+<text x="567" y="970" class="legend">development/reset estimate</text>
+<rect x="864" y="958" width="14" height="14" fill="#6B46C1"/>
+<text x="884" y="970" class="legend">minor loss upper bound</text>
+<text x="230" y="984" class="small">Source: July 8 pressure ledger. Development and minor-loss bars are diagnostic estimates, not additive corrections on top of the</text>
+<text x="230" y="998" class="small">CFD de-buoyed friction target.</text>
+</svg>

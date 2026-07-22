@@ -1,0 +1,8 @@
+runtime_item,status,allowed_next_use,forbidden_use,evidence
+hA_area_Ta_Tsur_emissivity_layers,source_backed_setup_basis,allowed_for_separate_train_only_repair_preflight,do_not_treat_as_numeric_q_loss_release,source-backed basis table has 5/5 source families release-ready
+q_loss_operator,operator_only,allowed_as_future runtime operator using setup basis and runtime state,do_not_replay Phase E diagnostic wallHeatFlux or validation temperatures,q_loss_operator_contract rows 5
+realized_wallHeatFlux,forbidden_runtime_input,not_allowed,do_not_use for repair run input freeze or fitting,forbidden runtime audit rows 7 and Qwall release rows 0
+validation_temperatures,forbidden_runtime_input,not_allowed,do_not_use before candidate freeze,validation/holdout/external scoring rows 0
+global_multiplier,forbidden_hidden_fit,not_allowed,do_not_fit residual into multiplier or internal Nu,preflight says global_fitted_multiplier_allowed False
+internal_Nu_residual_absorption,forbidden_closure_shortcut,not_allowed,do_not_absorb passive residual into internal Nu,TW-after-TP package and PASSIVE-H2 preflight both forbid residual absorption
+protected_split_rows,protected,score_only_after_freeze,do_not tune fit or select with holdout/external rows,source-property atlas protected rows released 0

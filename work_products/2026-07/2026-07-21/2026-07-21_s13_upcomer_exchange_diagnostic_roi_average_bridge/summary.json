@@ -1,0 +1,18 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-DIAGNOSTIC-ROI-AVERAGE-BRIDGE-2026-07-21",
+  "generated_at": "2026-07-21T18:42:21-05:00",
+  "decision": "complete_diagnostic_only_no_release",
+  "case_count": 3,
+  "diagnostic_proxy_rows": 3,
+  "proxy_support_rows": 15,
+  "admission_rows_released": 0,
+  "surface_extraction_allowed": false,
+  "sampler_or_harvest_allowed": false,
+  "same_window_uq_allowed": false,
+  "fit_or_model_selection": false,
+  "exchange_cell_admission": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "residual_absorbed_into_internal_Nu": false
+}

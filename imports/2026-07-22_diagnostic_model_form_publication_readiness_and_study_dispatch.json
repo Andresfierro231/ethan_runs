@@ -1,0 +1,43 @@
+{
+  "task": "TODO-DIAGNOSTIC-MODEL-FORM-PUBLICATION-READINESS-AND-STUDY-DISPATCH-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Writer / Tester / Reviewer",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-DIAGNOSTIC-MODEL-FORM-PUBLICATION-READINESS-AND-STUDY-DISPATCH-2026-07-22.md",
+    ".agent/journal/2026-07-22/diagnostic-model-form-publication-readiness-and-study-dispatch.md",
+    "imports/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch.json",
+    "tools/analyze/build_diagnostic_model_form_publication_readiness_and_study_dispatch.py",
+    "tools/analyze/test_diagnostic_model_form_publication_readiness_and_study_dispatch.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/study_dispatch_from_findings.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/board_row_crosswalk.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/publication_readiness_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/diagnostic_form_publication_claims.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_diagnostic_model_form_publication_readiness_and_study_dispatch/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/model_form_scoreboard_append.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/construction_assumptions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/runtime_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/summary.json"
+  ],
+  "mutation_flags": {
+    "native_cfd_openfoam_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_or_solver_or_sampler_or_uq": false,
+    "fluid_or_external_repositories": false,
+    "thesis_current_or_latex_files": false,
+    "new_fitting_or_scoring_or_admission": false
+  },
+  "validation": [
+    "python3.11 tools/analyze/build_diagnostic_model_form_publication_readiness_and_study_dispatch.py",
+    "python3.11 tools/analyze/test_diagnostic_model_form_publication_readiness_and_study_dispatch.py"
+  ]
+}

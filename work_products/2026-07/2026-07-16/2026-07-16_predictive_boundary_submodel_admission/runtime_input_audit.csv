@@ -1,0 +1,6 @@
+audit_id,gate,observed_state,forbidden_runtime_input
+R1_no_cfd_mdot_runtime,pass,Heater/HX admission reads scalar scorecards and W errors only; no CFD mdot column is consumed for runtime prediction.,CFD mdot
+R2_no_realized_wallheatflux_runtime,pass,Realized wallHeatFlux rows remain diagnostic replay rows in AGENT-407/423 and are not admission inputs for heater/HX.,realized CFD wallHeatFlux
+R3_no_imposed_cooler_runtime,pass,Cooler target duty is used only after prediction for scoring; the admitted candidate uses Salt2-fitted setup-only UA bulk drive.,imposed CFD cooler duty
+R4_no_validation_refit,pass,Salt3 and Salt4 rows are scored without refitting heater eta or cooler UA.,validation/holdout temperatures or heat targets for fitting
+R5_wall_test_section_not_admitted_by_api_only,pass,External-boundary API fields are implementation evidence only; absence of scored setup-only wall/test-section rows blocks admission.,diagnostic negative-source test-section compatibility rows as physical closure

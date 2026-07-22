@@ -1,0 +1,10 @@
+guardrail_id,protected_item,runtime_allowed,fit_allowed,model_selection_allowed,allowed_use,enforcement
+G01,CFD_mdot,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G01,realized_CFD_wallHeatFlux,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G01,imposed_CFD_cooler_duty,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G01,validation_temperatures,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G01,holdout_temperatures,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G01,realized_test_section_heat,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G01,heat_residual_as_runtime_closure,false,false,false,diagnostic or post-freeze score comparison only,fail package if marked runtime allowed
+G08,global_multiplier_selection,false,false,false,none,all broad multiplier rows remain diagnostic/blocker evidence
+G09,source_property_release,false_from_this_row,false_from_this_row,false_from_this_row,separate release preflight only,summary source_property_release_rows=0

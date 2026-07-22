@@ -1,0 +1,27 @@
+{
+  "generated_at": "2026-07-09T16:45:18-05:00",
+  "task": "TODO-THERMAL-OPENFOAM-INTERFACE-SAMPLING",
+  "output_package": "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling",
+  "tmp_dir": "tmp/2026-07-09_thermal_openfoam_interface_sampling",
+  "case_count": 3,
+  "plane_count_per_case": 16,
+  "total_plane_count": 48,
+  "control_volumes": [
+    "cooler_reducer_interior",
+    "heater_interior",
+    "lower_left_junction",
+    "lower_right_junction",
+    "test_section_lower_junction",
+    "test_section_upper_junction",
+    "upper_left_junction",
+    "upper_right_junction"
+  ],
+  "source_cases_read_only": true,
+  "native_solver_outputs_mutated": false,
+  "radiation_policy": "sample qr only if a reconstructed qr field exists; otherwise record absent_no_qr_output",
+  "entrypoints": {
+    "local_smoke_preflight": "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/scripts/run_local_smoke_preflight.sh",
+    "runner": "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/scripts/run_thermal_openfoam_interface_sampling.sh",
+    "sbatch": "work_products/2026-07/2026-07-09/2026-07-09_thermal_openfoam_interface_sampling/scripts/submit_overnight_thermal_sampling.sbatch"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "counts": {
+    "cooler_rows": 3,
+    "heater_rows": 3,
+    "runtime_rows": 5,
+    "source_rows": 7,
+    "summary_rows": 3,
+    "wall_rows": 1
+  },
+  "date": "2026-07-16",
+  "decision": "supersede_broad_blocker_with_narrow_wall_test_section_blocker",
+  "generated_at_utc": "2026-07-16T20:56:46.443373+00:00",
+  "generated_index_refresh": "required_after_blocker_register_update",
+  "new_or_remaining_blocker": "predictive-wall-test-section-submodels",
+  "original_blocker": "predictive-heater-cooler-wall-submodels",
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/heater_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/wall_test_section_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/runtime_input_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/blocker_decision.json",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/source_manifest.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/summary.json"
+  ],
+  "task": "AGENT-454"
+}

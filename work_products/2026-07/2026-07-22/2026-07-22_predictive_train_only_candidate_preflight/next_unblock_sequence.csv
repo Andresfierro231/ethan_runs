@@ -1,0 +1,6 @@
+rank,next_action,why_it_is_next,success_output,still_forbidden
+1,Claim TODO-PASSIVE-H2-OUTER-INSULATION-RADIATION-RUNTIME-IMPLEMENTATION-2026-07-22,current radiation_on is a no-op and corrected radiation is the cleanest runtime-legal thermal improvement,analytic tests plus nonzero train-only heat-ledger movement,no validation/holdout/external scoring or numeric q-loss release
+2,Recover Salt1-4 row-specific setup source/property evidence,coefficient execution is blocked primarily by 0/4 release-ready source/property rows,row-specific strict-pass matrix or exact fail-closed source inventory,no fitting or S11/S15 release until all gates pass
+3,Build residual-complete open-CV heat-flow contract for MF18,S13 bulk partition is stable but same-basis energy residual is not computable now,source/Qwall distinction and residual-complete ledger,no relabeling source-side heat flow as Q_wall_W
+4,Repeat candidate preflight after gates change,the current contract can become executable only after nonzero release-ready rows,fixed MF18 execution manifest and train-only runner row,no protected scoring before freeze
+5,Run Salt1-4 nominal train-only coefficient discovery only if MF18 gates pass,first admissible coefficient step must use train rows only,train residual table and frozen-candidate eligibility decision,no model selection using holdout or external-test rows

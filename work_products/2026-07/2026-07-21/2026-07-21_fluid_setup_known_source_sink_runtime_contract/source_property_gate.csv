@@ -1,0 +1,4 @@
+gate_id,gate,status,result
+SP-001,setup_known_source_contract,pass,lower-leg heater Q has setup-known provenance and executable Fluid source mode
+SP-002,train_only_residual_effect_test,next_row_required,must run train-only residual decomposition before source/property release
+SP-003,source_property_release,blocked,no freeze/admission/source-property release from contract evidence alone

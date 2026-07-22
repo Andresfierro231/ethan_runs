@@ -1,0 +1,8 @@
+source_key,source_path,read_only,exists
+model_forms,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,true,true
+cfd_contract,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv,true,true
+source_envelope,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv,true,true
+reset_map,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,true,true
+pressure_term,work_products/2026-07/2026-07-07/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv,true,true
+recirc_harvest,work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,true,true
+pressure_basis,work_products/2026-07/2026-07-21/2026-07-21_litrev_pressure_plane_basis_standardization/pressure_plane_basis_standardization.csv,true,true

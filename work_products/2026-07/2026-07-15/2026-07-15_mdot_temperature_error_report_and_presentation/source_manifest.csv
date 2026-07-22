@@ -1,0 +1,5 @@
+source_id,path,role
+agent360_audit,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit,primary mdot-temperature audit source
+paper_ready_report,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/paper_ready_report.md,prior report text
+trend_register,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/trend_conclusion_register.csv,finding register
+config_appendix,work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit/model_config_appendix,1D configuration appendix source

@@ -1,0 +1,9 @@
+tested_model_form_id,split_group,sensor_kind,finite_rows,rmse_K,mae_K,mean_signed_error_K,max_abs_error_K,interpretation,use_class
+D2_M3_sensor_kind_offsets_train,train,TP,5,4.140442550746808,3.3241220680200003,9.999983063835316e-11,7.2744251969,D2 tests sensor-kind projection after TP/TW separation.,diagnostic_only
+D2_M3_sensor_kind_offsets_train,train,TW,10,11.307265405504708,8.3761124649051,-1.3490076278266372e-10,22.9907439371,D2 tests sensor-kind projection after TP/TW separation.,diagnostic_only
+D2_M3_sensor_kind_offsets_train,transfer,TP,10,4.381592985154921,3.98548007646,2.0832034533,6.6916415221,D2 tests sensor-kind projection after TP/TW separation.,diagnostic_only
+D2_M3_sensor_kind_offsets_train,transfer,TW,20,12.51306109537669,10.778360226812499,3.0488285493725007,21.6083308531,D2 tests sensor-kind projection after TP/TW separation.,diagnostic_only
+M3_as_is,train,TP,5,15.649099124704595,15.091422693000002,-15.091422693000002,22.36584789,M3 baseline residual context.,diagnostic_only
+M3_as_is,train,TW,10,20.954929641872738,17.642415519000004,-17.642415519000004,40.633159456,M3 baseline residual context.,diagnostic_only
+M3_as_is,transfer,TP,10,13.56732797017971,13.008219239799999,-13.008219239799999,20.514600244,M3 baseline residual context.,diagnostic_only
+M3_as_is,transfer,TW,20,18.980361511037316,14.975001499000001,-14.593586969500004,39.250746372,M3 baseline residual context.,diagnostic_only

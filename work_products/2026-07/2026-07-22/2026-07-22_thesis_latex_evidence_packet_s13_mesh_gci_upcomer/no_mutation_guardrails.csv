@@ -1,0 +1,11 @@
+guardrail,value
+native_solver_outputs_mutated,false
+registry_mutated,false
+scheduler_action,none
+solver_or_postprocess_launched,false
+qwall_source_property_release,false
+coefficient_admission,false
+candidate_freeze,false
+validation_holdout_external_score,false
+runtime_temperature_or_qwall_leakage,false
+ordinary_upcomer_closure_admission,false

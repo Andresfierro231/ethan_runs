@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-07-09T17:46:28-05:00",
+  "all_timeseries_cases": 47,
+  "primary_rows": 22,
+  "salt1_live_latest_time_s": 5040.975,
+  "salt1_live_state": "RUNNING",
+  "sources": [
+    "work_products/2026-07/2026-07-09/2026-07-09_timeseries_steadystate/steady_state_summary.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_gate_3280969_review/row_verdicts.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_corrected_salt_q_minimal_continuation_plan/convergence_resubmit_recommendations.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt1_nominal_3282992_monitor_admission/README.md"
+  ]
+}

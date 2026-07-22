@@ -1,0 +1,6 @@
+variant_id,gate_decision,ready_for_train_only_smoke,source_basis_ready,reset_graetz_ready,wallHeatFlux_fit_forbidden,ordinary_upcomer_or_pressure_K_claim,reason
+MF08a_cooler_negative_wall_flux_strong_development,needs_source_basis,False,False,False,True,False,"Cooler sink sign is setup-known, but source/property release and reset/Graetz basis are not ready."
+MF08b_downcomer_negative_wall_flux_weak_passive_cooling,needs_source_basis,False,False,False,True,False,Passive/downcomer source basis is not released and M2 found no reviewable repair candidate.
+MF08c_heater_positive_wall_flux_development,needs_source_basis,False,False,False,True,False,"Lower-leg heater Q is setup-known and Fluid contract-only, but train-only residual tests did not release source/property admission."
+MF08d_piecewise_signed_wall_flux_reset_memory,needs_source_basis,False,False,False,True,False,Requires released signed source envelopes plus MF07 reset/Graetz and MF09 upcomer guards.
+forbidden_realized_wallHeatFlux_fit,forbidden_as_wallHeatFlux_fit,False,False,False,True,False,Realized CFD wallHeatFlux is an output/diagnostic field and cannot be used as a predictive runtime input.

@@ -1,0 +1,5 @@
+claim_lane,source_dictionary_rows_available,rows_consumed,source_cases,permitted_claim,forbidden_claim
+train_support_execution,8,8,salt_2,full Fluid execution evidence and train residual attribution,"freeze decision, final admission, validation score, holdout score, external-test score"
+validation,8,0,salt_3 rows exist in source dictionary but were not loaded,none from this package,validation-temperature runtime input or validation score
+holdout,8,0,salt_4 rows exist in source dictionary but were not loaded,none from this package,holdout score or scorecard release
+external_test,0,0,none consumed,none from this package,external-test score or external validation claim

@@ -1,0 +1,16 @@
+{
+  "active_blockers": 5,
+  "best_next_move": "m2_salt1_cooler_hx_resolution",
+  "date": "2026-07-20",
+  "fit_rows_added_now": 0,
+  "generated_at_utc": "2026-07-21T00:26:12.877483+00:00",
+  "high_heat_terminal_jobs": 0,
+  "holdout_rows_blocked": 8,
+  "holdout_rows_scored_now": 0,
+  "model_selection_rows_added_now": 0,
+  "native_solver_outputs_mutated": false,
+  "pressure_upcomer_retry_now": false,
+  "registry_mutation": "none",
+  "scheduler_action": "none",
+  "task": "TODO-NEXT-PROGRESS-BLOCKER-ANALYSIS"
+}

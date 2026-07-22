@@ -1,0 +1,5 @@
+path,role,exists
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/README.md,completed diagnostic precedent,true
+work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/README.md,hydraulic chain verification,true
+work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/README.md,F6/internal-Nu admission review,true
+tools/ofenv/of13_env.sh,OpenFOAM 13 environment,true

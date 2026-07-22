@@ -1,0 +1,26 @@
+{
+  "task_id": "TODO-THESIS-CH3-CFD-PROVENANCE-QOI-COMPACT-PACKET-2026-07-22",
+  "generated_at": "2026-07-22T11:20:00-05:00",
+  "decision": "chapter3_cfd_database_packet_ready_diagnostic_only_no_runtime_release",
+  "source_count": 23,
+  "parsed_source_count": 23,
+  "tidy_rows": 1405596,
+  "window_stat_rows": 16353,
+  "profile_mode": "latest",
+  "case_provenance_rows": 11,
+  "qoi_dictionary_rows": 12,
+  "method_rows": 8,
+  "claim_boundary_rows": 9,
+  "runtime_forbidden_inputs_released": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "fluid_external_repository_mutated": false,
+  "heat_residual_hidden_in_internal_nu": false,
+  "current_blockers": [
+    "source_property_cp_viscosity_pressure_basis_release_fail_closed",
+    "s13_same_qoi_neighbor_and_mesh_uq_before_production_harvest",
+    "pressure_component_anchor_absent_or_unadmitted",
+    "protected_holdout_external_score_requires_independent_freeze"
+  ]
+}

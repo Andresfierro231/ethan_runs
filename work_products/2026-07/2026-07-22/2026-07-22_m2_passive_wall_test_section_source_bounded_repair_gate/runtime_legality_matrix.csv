@@ -1,0 +1,7 @@
+candidate_or_input,runtime_status,reason,allowed_now
+PASSIVE-H2-CAND001,blocked,source basis not released; wallHeatFlux provenance risk remains,False
+global_passive_hA_scale_0.5,forbidden,"train diagnostic global multiplier, not a source-bounded repair",False
+TS5_setup_resistance_network_wall_external,contract_only,API hooks exist but no scored setup-only candidate and source/property gate blocked,False
+CFD_wallHeatFlux_or_realized_test_section_heat,forbidden_runtime_input,diagnostic/scoring evidence only,False
+validation_holdout_temperatures,forbidden_runtime_input,no protected target use in this gate,False
+source_geometry_ambient_insulation_literature_basis,needed_future_input,next source-basis row may assemble this evidence without solving,True

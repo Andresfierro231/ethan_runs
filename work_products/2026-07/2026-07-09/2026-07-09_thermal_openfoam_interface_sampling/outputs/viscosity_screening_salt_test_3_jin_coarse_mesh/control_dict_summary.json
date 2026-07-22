@@ -1,0 +1,11 @@
+{
+  "control_dict": "tmp/2026-07-09_thermal_openfoam_interface_sampling/recon/viscosity_screening_salt_test_3_jin_coarse_mesh/system/controlDict",
+  "fields": [
+    "U",
+    "T",
+    "rho",
+    "p_rgh"
+  ],
+  "radiation_output_term": "absent_no_qr_output",
+  "plane_count": 16
+}

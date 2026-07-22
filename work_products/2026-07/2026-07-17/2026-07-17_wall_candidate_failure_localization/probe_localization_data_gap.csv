@@ -1,0 +1,4 @@
+artifact,path,detail_rows,status,effect_on_scientific_claim,required_repair
+probe_delta_vs_m3,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_delta_vs_m3.csv,136,available,Per-probe localization rows are available.,none
+probe_error_localization,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/probe_error_localization.csv,204,available,Per-probe localization rows are available.,none
+role_segment_error_summary,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder/role_segment_error_summary.csv,80,available,Per-probe localization rows are available.,none

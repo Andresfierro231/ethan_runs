@@ -1,0 +1,10 @@
+source_id,path,role,used_for
+SRC-001,work_products/2026-07/2026-07-22/2026-07-22_mf13_signed_source_property_heat_path_release_preflight/summary.json,signed_heat_path_preflight,MF13 release-ready and setup-known source rows
+SRC-002,work_products/2026-07/2026-07-22/2026-07-22_mf15_runtime_wall_profile_basis_gate/summary.json,wall_profile_basis,wall/profile correction release status and D3 diagnostic signal
+SRC-003,work_products/2026-07/2026-07-22/2026-07-22_mf16_source_property_exact_fields_release_candidate/summary.json,exact_field_release_candidate,exact field rows and release-ready status
+SRC-004,work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/summary.json,nominal_train_release_preflight,nominal release-ready labels and protected-row closure
+SRC-005,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/summary.json,thermal_accounting,setup source/sink totals and runtime-forbidden leakage status
+SRC-006,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,pressure_basis_ladder,pressure/F6 non-admission and section-effective evidence
+SRC-007,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s13_upcomer_exchange_production_harvest_uq/summary.json,s13_exchange_release,S13 exchange QOI temporal/mesh/source-property blockers
+SRC-008,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_f6_source_recovery_low_recirc_anchors/summary.json,pressure_recovery,live CAND001 terminal-source blocker
+SRC-009,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate/summary.json,thermal_freeze_gate,current thermal freeze status and candidate blocker ownership

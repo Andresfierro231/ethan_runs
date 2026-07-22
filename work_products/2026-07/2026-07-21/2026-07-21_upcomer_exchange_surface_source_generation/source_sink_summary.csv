@@ -1,0 +1,4 @@
+case_id,case_key,time_window_s,q_source_w,q_sink_w,q_net_w,source_row_count,sink_row_count,status,energy_residual_release_condition
+salt_2,salt2_jin_nominal_continuation,7915,302.7,136.350739906,166.349260094,4,3,static_bc_source_sink_ready_wall_loss_still_blocked,requires Q_wall_W from task-owned wallHeatFlux integration plus exchange state
+salt_3,salt3_jin_nominal_continuation,7618,334.5,150.769638674,183.730361326,4,3,static_bc_source_sink_ready_wall_loss_still_blocked,requires Q_wall_W from task-owned wallHeatFlux integration plus exchange state
+salt_4,salt4_jin_nominal_continuation,10000,374.599999999,169.226815037,205.373184962,4,3,static_bc_source_sink_ready_wall_loss_still_blocked,requires Q_wall_W from task-owned wallHeatFlux integration plus exchange state

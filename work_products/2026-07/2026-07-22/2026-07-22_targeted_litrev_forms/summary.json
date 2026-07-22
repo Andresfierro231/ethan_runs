@@ -1,0 +1,30 @@
+{
+  "task": "TODO-TARGETED-LITREV-FORMS",
+  "date": "2026-07-22",
+  "decision": "targeted_litrev_forms_ready_no_formula_implementation_no_admission",
+  "candidate_forms_recorded": 9,
+  "sources_recorded": 15,
+  "fit_allowed_rows": 0,
+  "model_selection_allowed_rows": 0,
+  "formula_implementation_allowed_now": false,
+  "primary_reason": "Literature supports method and architecture selection, but constants, source envelopes, property modes, pressure basis, and row-specific admissibility remain incomplete.",
+  "thesis_usable_evidence": [
+    "negative component-K result should be published as diagnostic evidence",
+    "corner two-tap rows support section-effective residual reporting only",
+    "throughflow-plus-recirculation architecture is the preferred hybrid pressure route to test",
+    "heat-loss resistance network remains setup-only until source/sink labels are complete"
+  ],
+  "blocked_or_deferred_lanes": {
+    "component_K": "blocked by reverse-flow gate, component isolation, and same-QOI UQ requirements",
+    "F6_friction_re_correction": "blocked until low-recirculation/nonrecirculating anchors or explicit hybrid pressure modeling pass",
+    "internal_Nu": "blocked until source envelopes, boundary classes, and external heat-loss ownership are resolved",
+    "unsteady_and_ROM": "parked future lanes pending temporal or snapshot sufficiency"
+  },
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": "none",
+    "external_fluid_edit": false,
+    "thesis_latex_edit": false
+  }
+}

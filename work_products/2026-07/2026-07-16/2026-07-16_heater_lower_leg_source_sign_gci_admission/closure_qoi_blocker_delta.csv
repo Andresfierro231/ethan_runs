@@ -1,0 +1,6 @@
+metric,before_agent468,after_agent468,delta,interpretation
+heater_candidate_rows_reviewed,7,7,0,AGENT-468 narrows existing heater evidence; it does not add new CFD rows.
+heater_nu_candidate_rows_reviewed,2,2,0,The existing two heater Nu-equivalent rows are reviewed at row level.
+heater_source_sign_heat_balance_pass_rows,0,0,0,No source/sign/heat-balance pass row exists yet.
+heater_same_qoi_publication_gci_rows,0,0,0,No heater final-use GCI row is publication-ready.
+heater_fit_admissible_internal_nu_rows,0,0,0,The blocker remains open because no heater row passes all hard gates.

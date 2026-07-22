@@ -1,0 +1,5 @@
+qoi,same_label_coarse_evidence,formal_gci_ready,production_harvest_ready,source_property_or_qwall_release,reason
+Q_wall_W,not_admitted,false,false,false,coarse equivalence criteria not all satisfied; no proxy substitution or source-side/Qwall relabel allowed
+exchange_proxy,not_admitted,false,false,false,coarse equivalence criteria not all satisfied; no proxy substitution or source-side/Qwall relabel allowed
+tau_proxy,not_admitted,false,false,false,coarse equivalence criteria not all satisfied; no proxy substitution or source-side/Qwall relabel allowed
+wall_core_contrast,not_admitted,false,false,false,coarse equivalence criteria not all satisfied; no proxy substitution or source-side/Qwall relabel allowed

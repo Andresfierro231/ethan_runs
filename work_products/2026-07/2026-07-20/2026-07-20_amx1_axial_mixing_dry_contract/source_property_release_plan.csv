@@ -1,0 +1,6 @@
+release_item,current_release_state,required_evidence,blocks_fit_or_admission,next_step
+AMX1_multiplier_envelope,blocked_patch_required,Document literature/physics envelope or setup-only derivation for allowed multiplier values,yes,Do before any scorecard claims model selection.
+Salt2_smoke,blocked_patch_required,Fluid API patch plus finite accepted roots and nonzero conservative ledgers,no,Run smoke only after patch.
+Salt1_nominal_training,blocked_source_property_refresh_required,Row-specific source-envelope labels remain required before final training/admission,yes,Refresh labels before consuming Salt1 in any final scorecard.
+Salt2_to_Salt4_nominal_scorecard,blocked_until_smoke_passes,Smoke pass plus strict runtime/split/source-property audit,yes,Run bounded nominal scorecard only if AMX1 smoke passes.
+External_or_holdout_rows,blocked_no_frozen_candidate,Admitted frozen nominal candidate plus external target eligibility,yes,Do not score external/holdout rows in AMX1 smoke work.

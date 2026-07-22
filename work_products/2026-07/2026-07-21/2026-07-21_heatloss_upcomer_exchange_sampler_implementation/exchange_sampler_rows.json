@@ -1,0 +1,35 @@
+{
+  "rows": [
+    {
+      "case_id": "salt_2",
+      "time_window_s": "7915",
+      "extraction_status": "not_available_with_reason:missing_required_vtk_inputs",
+      "missing_inputs": "cell_vtk;interface_vtk",
+      "R_mu": NaN,
+      "R_mu_status": "not_available_with_reason:missing_inputs",
+      "R_rho": NaN,
+      "V_recirc_m3": NaN,
+      "mdot_exchange_kg_s": NaN,
+      "tau_recirc_s": NaN,
+      "T_main_K": NaN,
+      "T_recirc_K": NaN,
+      "wall_core_delta_T_K": NaN,
+      "pressure_residual_Pa": NaN,
+      "pressure_residual_status": "not_available_with_reason:missing_pressure_basis",
+      "energy_residual_W": NaN,
+      "energy_residual_status": "not_available_with_reason:missing_energy_or_exchange_basis",
+      "same_window_id": "salt_2:7915",
+      "pressure_basis": "not_available_with_reason:missing_inputs",
+      "thermal_basis": "not_available_with_reason:missing_inputs",
+      "property_mode": "not_available_with_reason:missing_inputs",
+      "source_use_category": "training_or_support_only_until_split_gate",
+      "admission_use": "diagnostic_only_until_same_qoi_uq_and_phase4b_rescore",
+      "fit_allowed_now": "false",
+      "score_allowed_now": "false",
+      "runtime_policy": "not_a_predictive_runtime_input",
+      "residual_policy": "do_not_hide_heat_residual_in_internal_Nu",
+      "interface_basis": "not_available_with_reason:missing_inputs",
+      "recirc_mask_basis": "not_available_with_reason:missing_inputs"
+    }
+  ]
+}

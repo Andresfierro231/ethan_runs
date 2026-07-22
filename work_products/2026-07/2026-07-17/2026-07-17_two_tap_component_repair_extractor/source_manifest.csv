@@ -1,0 +1,9 @@
+source_id,path,exists,role
+component_repair_targets,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/component_repair_targets.csv,True,read-only extractor source
+future_extractor_schema,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/future_extractor_schema.csv,True,read-only extractor source
+acceptance_gate_matrix,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/acceptance_gate_matrix.csv,True,read-only extractor source
+minor_loss_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,True,read-only extractor source
+tap_centerline_lengths,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/tap_centerline_length_table.csv,True,read-only extractor source
+component_k_recomputed,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv,True,read-only extractor source
+raw_pressure_two_tap_harvest,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv,True,read-only extractor source
+corner_k_gate_matrix,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv,True,read-only extractor source

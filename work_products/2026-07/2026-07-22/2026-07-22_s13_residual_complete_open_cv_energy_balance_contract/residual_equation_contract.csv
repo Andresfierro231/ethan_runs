@@ -1,0 +1,2 @@
+equation_id,formula,positive_sign_convention,open_cv_allowed,coefficient_admission_allowed,reason
+S13_OPEN_CV_RESIDUAL,R_E = Q_source_side_net_static_bc_W - Q_wall_W - mdot_throughflow*cp*DeltaT_throughflow - storage - other_named_losses,"positive residual means source-side heat not owned by wall heat, throughflow enthalpy, storage, or other named loss lanes",true,false,"open CV is diagnostic only until every boundary flux term is named, same-basis cp/property evidence is released, and uncertainty is bounded"

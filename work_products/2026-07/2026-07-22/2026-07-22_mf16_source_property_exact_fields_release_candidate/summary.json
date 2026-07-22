@@ -1,0 +1,19 @@
+{
+  "candidate_freeze": false,
+  "created_utc": "2026-07-22T15:34:27.528916+00:00",
+  "decision": "source_property_exact_fields_release_candidate_fail_closed_no_release",
+  "exact_field_release_ready_rows": 0,
+  "exact_field_rows": 6,
+  "fitting_or_model_selection": false,
+  "labels_complete_rows": 4,
+  "mf13_release_ready_rows": 0,
+  "mf15_wall_profile_release_ready_rows": 0,
+  "nominal_release_ready_rows": 0,
+  "nominal_rows": 4,
+  "protected_rows_released": 0,
+  "residual_absorbed_into_internal_nu": false,
+  "s11_s15_s6_opened": false,
+  "source_property_release": false,
+  "task_id": "TODO-MF16-SOURCE-PROPERTY-EXACT-FIELDS-RELEASE-CANDIDATE-2026-07-22",
+  "validation_holdout_external_scoring": false
+}

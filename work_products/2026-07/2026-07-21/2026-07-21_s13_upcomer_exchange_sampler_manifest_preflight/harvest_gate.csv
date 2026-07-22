@@ -1,0 +1,4 @@
+case_id,time_window_s,manifest_ready,harvest_allowed,sampler_launch_allowed,missing_inputs,next_task
+salt_2,7915,false,false,false,interface_normal;interface_vtk;throughflow_normal;wall_vtk,release trusted interface/wall surfaces and numeric normal vectors before sampler launch
+salt_3,7618,false,false,false,interface_normal;interface_vtk;throughflow_normal;wall_vtk,release trusted interface/wall surfaces and numeric normal vectors before sampler launch
+salt_4,10000,false,false,false,interface_normal;interface_vtk;throughflow_normal;wall_vtk,release trusted interface/wall surfaces and numeric normal vectors before sampler launch

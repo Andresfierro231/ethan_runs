@@ -1,0 +1,4 @@
+path,path_id,mean_abs_Tmean_error_K,mean_abs_loop_delta_T_error_K,thermal_gate_pass,interpretation
+Baseline current 1D,P0_fixed_mdot_current_1d_contract,63.745917,1.075127,False,Baseline replay; isolates thermal state from pressure-root mdot changes.
+CFD cooler duty only,P1_cfd_cooler_duty_only,4.456216,0.140312,False,Tests whether the cooling-jacket duty magnitude is the dominant missing sink.
+CFD cooler + heater flux,P4_cfd_cooler_plus_heater_wallflux,39.749277,0.58034,False,Combines the largest cooler correction with heater-interface heat transfer.

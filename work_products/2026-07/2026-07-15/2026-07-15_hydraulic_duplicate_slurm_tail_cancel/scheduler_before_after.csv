@@ -1,0 +1,7 @@
+snapshot,job_id,job_name,partition,state,elapsed,exit_code,submit,start,end,node_list,queue_reason,interpretation
+before,3295989,hyd_stage,NuclearEnergy-dev,PENDING,00:00:00,0:0,2026-07-14T17:56:40,Unknown,Unknown,None assigned,Dependency,dependency-held duplicate of locally completed AGENT-405 safe stage chain
+before,3295990,hyd_stage,NuclearEnergy-dev,PENDING,00:00:00,0:0,2026-07-14T17:56:46,Unknown,Unknown,None assigned,Dependency,dependency-held duplicate of locally completed AGENT-405 safe stage chain
+before,3295991,hyd_stage,NuclearEnergy-dev,PENDING,00:00:00,0:0,2026-07-14T17:56:53,Unknown,Unknown,None assigned,Dependency,dependency-held duplicate of locally completed AGENT-405 safe stage chain
+after,3295989,hyd_stage,NuclearEnergy-dev,CANCELLED by 890970,00:00:00,0:0,2026-07-14T17:56:40,None,2026-07-15T08:56:42,None assigned,,removed from queue; never ran as Slurm job
+after,3295990,hyd_stage,NuclearEnergy-dev,CANCELLED by 890970,00:00:00,0:0,2026-07-14T17:56:46,None,2026-07-15T08:56:42,None assigned,,removed from queue; never ran as Slurm job
+after,3295991,hyd_stage,NuclearEnergy-dev,CANCELLED by 890970,00:00:00,0:0,2026-07-14T17:56:53,None,2026-07-15T08:56:42,None assigned,,removed from queue; never ran as Slurm job

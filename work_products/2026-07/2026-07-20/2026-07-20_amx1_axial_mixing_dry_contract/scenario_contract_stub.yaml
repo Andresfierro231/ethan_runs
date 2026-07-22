@@ -1,0 +1,35 @@
+# AMX1 dry contract only. This YAML is not executable until the Fluid patch
+# in fluid_patch_contract.csv lands.
+scenario:
+  name: amx1a_salt2_smoke_low_setup
+  base_case: salt2_jin_nominal
+  capability_state: requires_fluid_patch
+  run_scope: smoke_only
+  no_score_grid: true
+  axial_mixing_mode: segment_diffusion_v1
+  axial_mixing_multiplier: 0.05
+  axial_mixing_parent_segments:
+    - left_lower_vertical
+    - test_section
+    - left_upper_vertical
+  combine_with_upcomer_exchange: false
+  required_outputs:
+    - pressure_root_status
+    - temperature_root_status
+    - accepted_for_validation
+    - mdot_kg_s
+    - temperature_periodicity_error_K
+    - axial_mixing_q_from_prev_W
+    - axial_mixing_q_to_next_W
+    - axial_mixing_net_W
+    - axial_mixing_residual_W
+  smoke_acceptance:
+    finite_roots: true
+    accepted_roots: true
+    axial_mixing_ledger_nonzero: true
+    axial_mixing_residual_abs_W_max: 1.0e-8
+  forbidden_runtime_inputs:
+    - CFD mdot
+    - realized wallHeatFlux
+    - validation temperatures
+    - scoring target values

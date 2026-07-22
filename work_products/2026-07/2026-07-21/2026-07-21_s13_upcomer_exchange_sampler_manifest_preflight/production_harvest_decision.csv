@@ -1,0 +1,2 @@
+decision_id,status,reason,required_next_action,scheduler_action_allowed,harvest_allowed,admission_allowed
+S13-production-harvest,do_not_run,0/3 rows are sampler-ready under current released evidence,"complete upstream interface, wall/core, Q_wall_W, source-release, and UQ rows before harvest",false,false,false

@@ -1,0 +1,21 @@
+{
+  "task": "TODO-THESIS-PREDICTIVE-STUDY-FIGURE-TABLE-PACKAGE-2026-07-21",
+  "date": "2026-07-21",
+  "status": "complete",
+  "visual_table_rows": 9,
+  "ready_now_rows": 7,
+  "blocked_shell_rows": 1,
+  "trigger_gated_rows": 1,
+  "final_score_values_included": 0,
+  "diagnostic_visuals_labeled": true,
+  "runtime_leakage_claims": 0,
+  "holdout_external_fit_claims": 0,
+  "new_scientific_analysis": false,
+  "model_fitting_or_selection": false,
+  "closure_admission_change": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "fluid_or_external_edit": false,
+  "generated_index_refresh": false
+}

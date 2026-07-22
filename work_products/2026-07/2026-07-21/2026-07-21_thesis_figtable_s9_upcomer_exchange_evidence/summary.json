@@ -1,0 +1,15 @@
+{
+  "task_id": "TODO-THESIS-FIGTABLE-S9-UPCOMER-EXCHANGE-EVIDENCE-2026-07-21",
+  "onset_visual_rows": 14,
+  "schematic_rows": 5,
+  "qoi_contract_rows": 6,
+  "missing_anchor_uq_rows": 10,
+  "ordinary_upcomer_nu_fd_k_admitted_rows": 0,
+  "exchange_cell_coefficient_admitted_rows": 0,
+  "s11_ready_candidates": 0,
+  "solver_or_sampler_or_harvest_launch": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "scheduler_action": false,
+  "figure_or_chapter_asset_edit": false
+}

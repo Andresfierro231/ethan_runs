@@ -1,0 +1,15 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SURFACE-VTK-EXTRACTION-2026-07-21",
+  "generated_at": "2026-07-21T17:18:18-05:00",
+  "package": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_extraction",
+  "cell_vtk_ready_rows": 3,
+  "released_surface_rows": 0,
+  "blocked_surface_rows": 12,
+  "surface_vtk_extraction_allowed": false,
+  "harvest_allowed": false,
+  "scheduler_action": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "closure_admission_change": false
+}

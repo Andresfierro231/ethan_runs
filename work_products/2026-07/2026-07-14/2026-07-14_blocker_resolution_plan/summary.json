@@ -1,0 +1,30 @@
+{
+  "task_id": "AGENT-323",
+  "generated_at": "2026-07-14T11:41:50-05:00",
+  "output_dir": "work_products/2026-07/2026-07-14/2026-07-14_blocker_resolution_plan",
+  "area_count": 3,
+  "work_packet_count": 9,
+  "rigor_gate_count": 10,
+  "milestone_count": 5,
+  "open_blocker_count": 6,
+  "open_blockers_covered": 6,
+  "priority_counts": {
+    "1": 2,
+    "2": 2,
+    "3": 2,
+    "4": 1,
+    "5": 1,
+    "6": 1
+  },
+  "validation_error_count": 0,
+  "validation_errors": [],
+  "stale_blockers_excluded": [
+    "of12-reconstructpar-segfault",
+    "no-mesh-for-gci",
+    "cfd-no-radiation-parity",
+    "refined-mesh-t-reconstruction-corruption"
+  ],
+  "native_solver_outputs_mutated": false,
+  "external_cfd_modeling_tools_mutated": false,
+  "next_recommended_packet": "A1.1"
+}

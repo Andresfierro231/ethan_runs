@@ -1,0 +1,6 @@
+chapter_or_section,table_rows_to_use,placement_note
+Ch2_literature_review,all rows,Use as compact source-envelope table organized by method/screening/architecture/source-gap status.
+Ch4_CFD_reduction,NIST_TN2206;CsizmadiaHos2014;PatinoJaramillo2022Flow;Podila2023,Use for pressure-basis and CFD-derived diagnostic discipline.
+Ch5_model_forms,MuzychkaYovanovich2004_2009;VDIHeatAtlas2010;Delafosse_Tajsoleiman_exchange_sources,Use for model-form ladder and escalation requirements.
+Ch6_admission_uncertainty,NIST_TN2206;CsizmadiaHos2014;SalehiIdemSleiti2017;VDIHeatAtlas2010,Use as admission gate justification and no-overclaim guardrail.
+Ch8_limitations,HooperDarby;Delafosse_Tajsoleiman_exchange_sources;VDIHeatAtlas2010,Use to define future work and missing source details without admitting closures.

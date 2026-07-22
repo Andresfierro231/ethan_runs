@@ -1,0 +1,88 @@
+{
+  "case_ids": [
+    "salt_2",
+    "salt_3",
+    "salt_4"
+  ],
+  "column_map": {
+    "Re": "context only (not plotted; disclosed in figure_data.csv)",
+    "buoyancy_contribution_pa": "buoyancy driving term, signed (fig 2)",
+    "development_loss_pa": "development/reset segment (fig 1 & 2)",
+    "distributed_friction_pa": "friction segment (fig 1 & 2)",
+    "minor_loss_pa": "minor-loss upper-bound segment (fig 1 & 2)",
+    "recirculation_flag": "asterisk / italic label on recirculation spans"
+  },
+  "counts": {
+    "cases": 3,
+    "rows": 18,
+    "spans": 6
+  },
+  "generated_at": "2026-07-09T15:21:49",
+  "inputs": {
+    "pressure_ledger": "work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv"
+  },
+  "limitations": [
+    "All rows are coarse_no_gci; no GCI/mesh-independence bounds applied.",
+    "Buoyancy term uses station-order sign convention; negative = drives downcomer flow.",
+    "Minor-loss values are upper bounds (local dynamic-head normalization overestimates).",
+    "Recirculation spans (left_lower_leg, left_upper_leg) are diagnostic only.",
+    "Development/reset loss is zero for test_section_span and left_upper_leg (non-entry spans)."
+  ],
+  "outputs": {
+    "data_disclosure": "DATA_DISCLOSURE.md",
+    "drive_vs_resistance_chart": "figures/buoyancy_drive_vs_resistance_by_span.svg",
+    "figure_data": "figure_data.csv",
+    "mechanical_composition_chart": "figures/mechanical_loss_composition_by_span.svg"
+  },
+  "palette": {
+    "buoyancy": "#008300",
+    "dev_reset": "#eb6834",
+    "friction": "#2a78d6",
+    "minor": "#4a3aa7"
+  },
+  "palette_validation": {
+    "mode": "light",
+    "ok": true,
+    "report": [
+      {
+        "check": "Lightness band",
+        "detail": "all 4 inside L 0.43-0.77",
+        "state": "PASS"
+      },
+      {
+        "check": "Chroma floor",
+        "detail": "all >= 0.1",
+        "state": "PASS"
+      },
+      {
+        "check": "CVD separation",
+        "detail": "worst adjacent #eb6834<->#2a78d6 \u0394E 96.7 (protan)",
+        "state": "PASS"
+      },
+      {
+        "check": "Contrast vs surface",
+        "detail": "all >= 3.0:1",
+        "state": "PASS"
+      }
+    ],
+    "surface": "#fcfcfb",
+    "worst_cvd_delta_e": 96.7
+  },
+  "replaced_figures": {
+    "mechanical_pressure_terms_by_span.svg": "AGENT-233 \u2014 grouped sub-bars, composition illegible",
+    "pressure_decomposition_by_span.svg": "AGENT-207 \u2014 overlapping marks at zero + scale compressed by downcomer buoyancy"
+  },
+  "reusable_modules": [
+    "tools/analyze/svg_chart_kit.py",
+    "tools/analyze/palette_validator.py"
+  ],
+  "span_ids": [
+    "left_lower_leg",
+    "left_upper_leg",
+    "lower_leg",
+    "right_leg",
+    "test_section_span",
+    "upper_leg"
+  ],
+  "task": "AGENT-234"
+}

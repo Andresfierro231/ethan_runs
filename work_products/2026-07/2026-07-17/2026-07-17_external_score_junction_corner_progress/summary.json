@@ -1,0 +1,20 @@
+{
+  "corner_k_fit_admitted_rows": 0,
+  "corner_k_rows": 12,
+  "external_readiness_rows": 3,
+  "generated_at_utc": "2026-07-17T16:03:49.301064+00:00",
+  "generated_index_refresh": "not_run_active_generated_index_scope",
+  "junction_audit_rows": 16,
+  "junction_trend_rows": 4,
+  "native_output_mutation": "none",
+  "next_study_rows": 5,
+  "numeric_sensor_targets_joined": 17,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress",
+  "recirculation_classifier_owner": "AGENT-495_active_scope",
+  "registry_mutation": "none",
+  "runtime_audit_rows": 7,
+  "scheduler_action": "none",
+  "sensor_policy_rows": 17,
+  "task": "AGENT-496",
+  "val_salt2_junction_rows": 4
+}

@@ -1,0 +1,8 @@
+task_id,priority,row_present_on_board,scope_quality,next_action
+TODO-THESIS-FIGURE-IMPORT-COUNT-AUDIT-2026-07-22,HIGH,true,usable_if_preflight_clean,Claim after checking overlap.
+TODO-THESIS-S13-MESH-GCI-UPCOMER-EXCHANGE-EVIDENCE-PACKET-2026-07-22,HIGH,true,gated_by_active_s13_rerun,Wait for S13 split rerun terminal closeout.
+TODO-THESIS-RECIRCULATION-FRACTION-CLOSED-CV-STUDY-2026-07-22,HIGH,true,usable_if_preflight_clean,Claim after checking overlap.
+TODO-THESIS-PRESSURE-F6-ORDINARY-BASIS-FAILURE-PACKET-2026-07-22,HIGH,true,usable_if_preflight_clean,Claim after checking overlap.
+TODO-THESIS-SOURCE-PROPERTY-RELEASE-UNBLOCK-STUDY-2026-07-22,HIGH,true,usable_if_preflight_clean,Claim after checking overlap.
+TODO-THESIS-THERMAL-RESIDUAL-OWNER-FIGURE-PACKET-2026-07-22,HIGH,true,usable_if_preflight_clean,Claim after checking overlap.
+TODO-THESIS-SENSOR-PROJECTION-APPENDIX-TABLE-PACKET-2026-07-22,HIGH,true,usable_if_preflight_clean,Claim after checking overlap.

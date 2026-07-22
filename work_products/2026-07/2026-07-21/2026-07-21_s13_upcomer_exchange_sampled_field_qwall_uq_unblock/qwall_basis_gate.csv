@@ -1,0 +1,4 @@
+case_id,time_window_s,trusted_wall_T_sampled,trusted_wall_T_area_avg_K,wallHeatFlux_source_exists,Q_wall_W_released,q_net_W_static_context,source_side_equivalent_released,production_ready,decision,reason
+salt_2,7915,true,443.188800694,false,false,166.349260094,false,false,blocked_wall_temperature_not_heat_flux,trusted wall-owner T is useful diagnostic context but cannot substitute for wallHeatFlux-integrated Q_wall_W
+salt_3,7618,true,455.466977289,false,false,183.730361326,false,false,blocked_wall_temperature_not_heat_flux,trusted wall-owner T is useful diagnostic context but cannot substitute for wallHeatFlux-integrated Q_wall_W
+salt_4,10000,true,469.906413889,false,false,205.373184962,false,false,blocked_wall_temperature_not_heat_flux,trusted wall-owner T is useful diagnostic context but cannot substitute for wallHeatFlux-integrated Q_wall_W

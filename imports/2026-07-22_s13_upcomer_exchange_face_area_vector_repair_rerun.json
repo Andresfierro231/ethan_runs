@@ -1,0 +1,65 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-FACE-AREA-VECTOR-REPAIR-RERUN-2026-07-22",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-FACE-AREA-VECTOR-REPAIR-RERUN-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Repair S13 medium/fine exact-label sampler face contracts so generated trusted-wall and exchange-interface rows include face area vector components.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-FACE-AREA-VECTOR-REPAIR-RERUN-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-upcomer-exchange-face-area-vector-repair-rerun.md",
+    "imports/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun.json",
+    "tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/sampling_error_log.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_same_label_sampling/sampling_command_contract.csv",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun/summary.json",
+    "repair_audit": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun/face_vector_repair_audit.csv",
+    "rerun_gate": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun/rerun_readiness_gate.csv"
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.extract.test_s13_upcomer_exchange_medium_fine_exact_label_sampler",
+      "result": "passed, 7 tests"
+    },
+    {
+      "command": "python3.11 -m json.tool work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun/summary.json",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m json.tool imports/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun.json",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-FACE-AREA-VECTOR-REPAIR-RERUN-2026-07-22",
+      "result": "passed"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_job_submitted": false,
+    "solver_or_postprocess_launched": false,
+    "production_harvest": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "final_score_claim": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "status": "complete"
+}

@@ -1,0 +1,2 @@
+task_id,decision,case,scenario,root_status,accepted_for_validation,ledger_pass,finite_pass,no_score_grid,no_admission_change,output_root
+AGENT-553,smoke_passed_no_grid,Salt 2,tswfc2_smoke_salt2_four_node_v1,accepted,True,True,True,True,True,/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_smoke_scenario

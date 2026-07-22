@@ -1,0 +1,13 @@
+part,leg,model_form,scope,n_rows,rmse_W,mae_W,mean_error_W,fit_policy,interpretation
+part5,heating_leg,electrical_heater_power_1_to_1,all_non_salt1,3,24.6290127197,24.5461563567,24.5461563567,setup_model_diagnostic,Current or setup-derived heater model form.
+part5,heating_leg,electrical_heater_power_1_to_1,holdout,1,27.1129415,27.1129415,27.1129415,setup_model_diagnostic,Current or setup-derived heater model form.
+part5,heating_leg,electrical_heater_power_1_to_1,train,1,22.18090242,22.18090242,22.18090242,setup_model_diagnostic,Current or setup-derived heater model form.
+part5,heating_leg,electrical_heater_power_1_to_1,validation,1,24.34462515,24.34462515,24.34462515,setup_model_diagnostic,Current or setup-derived heater model form.
+part5,heating_leg,imposed_cfd_heater_upper_bound,all_non_salt1,3,0,0,0,diagnostic_upper_bound_not_predictive,Zero-error diagnostic by construction; not predictive.
+part5,heating_leg,imposed_cfd_heater_upper_bound,holdout,1,0,0,0,diagnostic_upper_bound_not_predictive,Zero-error diagnostic by construction; not predictive.
+part5,heating_leg,imposed_cfd_heater_upper_bound,train,1,0,0,0,diagnostic_upper_bound_not_predictive,Zero-error diagnostic by construction; not predictive.
+part5,heating_leg,imposed_cfd_heater_upper_bound,validation,1,0,0,0,diagnostic_upper_bound_not_predictive,Zero-error diagnostic by construction; not predictive.
+part5,heating_leg,salt2_fit_constant_heater_efficiency,all_non_salt1,3,0.679823269157,0.520406057003,-0.520406057003,fit_on_salt2_score_salt3_salt4_salt1_excluded,One-scalar Salt2 fit; evaluate Salt3 validation and Salt4 holdout without refitting.
+part5,heating_leg,salt2_fit_constant_heater_efficiency,holdout,1,1.07024501484,1.07024501484,-1.07024501484,fit_on_salt2_score_salt3_salt4_salt1_excluded,One-scalar Salt2 fit; evaluate Salt3 validation and Salt4 holdout without refitting.
+part5,heating_leg,salt2_fit_constant_heater_efficiency,train,1,0,0,0,fit_on_salt2_score_salt3_salt4_salt1_excluded,One-scalar Salt2 fit; evaluate Salt3 validation and Salt4 holdout without refitting.
+part5,heating_leg,salt2_fit_constant_heater_efficiency,validation,1,0.490973156172,0.490973156172,-0.490973156172,fit_on_salt2_score_salt3_salt4_salt1_excluded,One-scalar Salt2 fit; evaluate Salt3 validation and Salt4 holdout without refitting.

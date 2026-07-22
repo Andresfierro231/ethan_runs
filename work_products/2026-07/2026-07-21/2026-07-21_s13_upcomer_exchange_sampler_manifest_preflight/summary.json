@@ -1,0 +1,18 @@
+{
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAMPLER-MANIFEST-PREFLIGHT-2026-07-21",
+  "generated_at": "2026-07-21T17:18:46-05:00",
+  "package": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight",
+  "manifest_rows": 3,
+  "ready_manifest_rows": 0,
+  "fail_closed_rows": 3,
+  "validator_return_code": 66,
+  "scaffold_validator_expected_to_fail": true,
+  "harvest_allowed": false,
+  "sampler_launch_allowed": false,
+  "scheduler_action": false,
+  "native_output_mutation": false,
+  "registry_mutation": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false
+}

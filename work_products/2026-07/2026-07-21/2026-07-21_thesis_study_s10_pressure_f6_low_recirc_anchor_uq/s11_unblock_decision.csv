@@ -1,0 +1,2 @@
+decision_id,candidate_id,candidate_family,s11_unblocked,reason,required_before_s11,component_k_admission,f6_fit_admission,next_board_task
+S10-S11-DECISION,,pressure_F6_low_recirc_anchor,false,0 S11-ready pressure/F6 candidates,terminal-ready low-recirculation source; RAF/RMF ordinary-flow pass; finite endpoint fields; same-QOI UQ; source/property split release; F3 comparison possible without clipped K or hidden multiplier,none,none,S11 cannot be claimed yet; continue terminal/coarse-path UQ repair or a future low-recirculation anchor harvest row.

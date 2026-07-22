@@ -1,0 +1,32 @@
+{
+  "task_id": "TODO-TSWFC2-DISTRIBUTED-WALL-FLUID",
+  "generated_at": "2026-07-18T16:36:26-05:00",
+  "status": "complete",
+  "implemented": true,
+  "fluid_mode": "distributed_wall_fluid_nodes_v1",
+  "default_mode": "disabled",
+  "minimum_active_node_rows": 4,
+  "acceptance_signal": "future dry contract and scorecard must show improved TP/TW/all-probe temperature shape, not only mass-flow improvement",
+  "validation": [
+    {
+      "command": "python -m py_compile tamu_loop_model_v2/solver.py tamu_loop_model_v2/config_loader.py tests/test_solver_contracts.py",
+      "result": "passed"
+    },
+    {
+      "command": "python -m pytest tests/test_solver_contracts.py -q -k 'tswfc2 or scenario_config_defaults_match_active_solver_contract'",
+      "result": "passed",
+      "selected_tests": 4,
+      "deselected_tests": 45
+    }
+  ],
+  "guardrails": {
+    "native_solver_outputs_mutated": false,
+    "ethan_registry_mutated": false,
+    "fluid_campaign_launched": false,
+    "scorecard_created": false,
+    "scheduler_action": false,
+    "admission_changed": false,
+    "fitted_coefficients_changed": false,
+    "forbidden_runtime_inputs_introduced": false
+  }
+}

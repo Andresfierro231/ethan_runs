@@ -1,0 +1,8 @@
+qoi_label,formula_or_definition,sign_or_basis,current_status,coefficient_use_allowed
+R_mu,mu_recirc / mu_main or admitted local viscosity ratio at the same property basis,dimensionless positive ratio,dry_slot_only_blocked_same_cv_property_basis,false
+R_rho,rho_recirc / rho_main or admitted local density ratio at the same property basis,dimensionless positive ratio,dry_slot_only_blocked_same_cv_property_basis,false
+V_recirc,sum cell volumes over admitted recirculation cell mask,m3; same CV as interface and wall/core band,blocked_closed_cv_not_admitted,false
+mdot_exchange,surface integral rho U dot n over admitted internal exchange faces,kg/s; positive from recirculation cell to main flow,diagnostic_proxy_only_current_coarse,false
+T_recirc,mass- or volume-weighted temperature over admitted recirculation CV,K; same-window property basis,blocked_closed_cv_not_admitted,false
+pressure_residual,"observed/admitted section pressure residual after hydrostatic, kinetic, straight/developing, recovery, and source-basis terms",Pa or dimensionless residual; basis must be declared before F6/K claims,support_evidence_only_no_component_K_or_F6_model,false
+energy_residual,Q_wall_W + enthalpy_exchange_terms + storage/source/sink residual on same CV/window,W; positive convention must be declared in harvest package,support_slot_only_blocked_same_qoi_mesh_gci_source_property,false

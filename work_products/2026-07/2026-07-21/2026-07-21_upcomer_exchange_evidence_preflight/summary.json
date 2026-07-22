@@ -1,0 +1,22 @@
+{
+  "blocker_register_change": false,
+  "built_at_utc": "2026-07-21T16:35:46.118213+00:00",
+  "closure_admission_change": false,
+  "exchange_cell_admission": "none",
+  "exchange_variable_rows": 14,
+  "external_repo_edit": false,
+  "fitting_or_model_selection": false,
+  "fluid_edit": false,
+  "native_output_mutation": false,
+  "ordinary_internal_nu_admission": "none",
+  "phase4b_ready": false,
+  "phase5_trigger": "not_triggered",
+  "qoi_rows": 42,
+  "registry_mutation": false,
+  "sampler_allowed_now": false,
+  "sampler_source_rows": 5,
+  "scheduler_action": false,
+  "task": "TODO-UPCOMER-EXCHANGE-EVIDENCE-PREFLIGHT-2026-07-21",
+  "variables_available_existing": 4,
+  "variables_requiring_sampler_or_terminal": 10
+}

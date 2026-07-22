@@ -1,0 +1,13 @@
+source_path,exists,use,mutation
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/probe_residual_atlas.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/role_segment_residual_atlas.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/invariant_failure_modes.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/admission_gate_sanity.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/cross_candidate_residual_matrix.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/next_lane_decision.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/summary.json,true,read_only_evidence,none
+operational_notes/07-26/17/2026-07-17_WEEKEND_NEXT_MODEL_HANDOFF_PLAN.md,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/coupled_delta_vs_m3.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/candidate_admission_review.csv,true,read_only_evidence,none
+work_products/2026-07/2026-07-17/2026-07-17_test_section_wall_fluid_coupling_candidate/README.md,true,read_only_evidence,none

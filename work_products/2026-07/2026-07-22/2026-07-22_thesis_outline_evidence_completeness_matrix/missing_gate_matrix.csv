@@ -1,0 +1,7 @@
+gate,blocking_status,affected_sections,current_evidence_path,next_action
+source_property_release,blocked_zero_release_ready_rows,CH5;CH6;CH7,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json,Produce candidate-specific strict-pass source/property evidence before S11/S15
+pressure_anchor_admission,blocked_zero_component_k_or_f6_rows,CH6;CH7,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,Find low-recirculation/nonrecirculating anchors or keep pressure as negative evidence
+S13_mesh_GCI,blocked_active_sampler_not_closed,CH7;S13,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/README.md,Wait for exact-label sampler closeout before GCI/production-harvest decision
+final_freeze,blocked_no_single_released_candidate,CH5;CH6;CH7;CH8,work_products/2026-07/2026-07-22/2026-07-22_four_study_thesis_support_gate/README.md,Do not open S15 until one named runtime-legal candidate exists
+runtime_leakage,closed_guardrail_active,all,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_cfd_legal_use_matrix/runtime_forbidden_input_bans.csv,Keep forbidden CFD mdot wallHeatFlux cooler duty and validation temperatures out of runtime inputs
+figure_transfer,blocked_destination_not_claimed,APP;CH7;CH8,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/README.md,Open exact papers-board artifact-transfer row before copying selected figures

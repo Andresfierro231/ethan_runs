@@ -1,0 +1,7 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/sample_upcomer_exchange_cell.py,task_output,true,false,true
+tools/extract/test_sample_upcomer_exchange_cell.py,task_output,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/case_time_window_queue.csv,read_only_context,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_upcomer_exchange_evidence_extraction/sampler_field_map.csv,read_only_context,true,false,false
+tools/extract/sample_upcomer_convection_cell.py,read_only_context,true,false,false
+tools/extract/sample_upcomer_matched_plane_metrics.py,read_only_context,true,false,false

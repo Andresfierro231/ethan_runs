@@ -1,0 +1,6 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/endpoint_face_sampling_matrix.csv,yes,prior launch matrix,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_face_uq_execution/case_mesh_input_matrix.csv,yes,prior source input matrix,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_endpoint_pair_same_qoi_uq_preflight/endpoint_pair_selection.csv,yes,clean endpoint labels,read_only
+work_products/2026-07/2026-07-01/2026-07-01_rom_postprocessing_correctness_validation/geometry_reference.csv,yes,station tangent and geometry,read_only
+tools/analyze/compute_gci.py,yes,GCI calculator,read_only

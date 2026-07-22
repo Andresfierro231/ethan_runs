@@ -1,0 +1,6 @@
+gate,target_rows,required_fields,pass_rule,current_status,forbidden_shortcut
+pressure_and_velocity_basis,3,final_pressure_basis;final_velocity_basis;density_basis,all bases explicit and same-window,blocked,score K from pressure proxy or mean velocity proxy
+straight_reference,3,centerline_tap_length_m;straight_loss_subtraction_pa;reference_span_label,local K remains physically interpretable after straight-loss subtraction,blocked_current_centerline_reference_over_subtracts,clip negative K to zero or use dz proxy
+component_isolation,3,component_isolation_label;reset_development_exclusion,component loss separated from branch-apparent and reset/development losses,blocked,name a cluster or branch-apparent loss as universal component K
+recirculation_policy,3,RAF;RMF;SVF;steady_window,ordinary coefficient only if RAF < 0.01 and RMF < 0.01,blocked_until_same-window masks exist,ordinary f_D/K from material reverse-flow sections
+same_qoi_mesh_time_UQ,3,mesh_family;time_window;uncertainty_bound,same pressure-loss QoI uncertainty attached or row remains diagnostic,blocked,reuse unrelated mesh/GCI or fabricate monotonicity

@@ -1,0 +1,1 @@
+candidate_id,case_id,split_role,fluid_case_name,segment_name,n_segments,cell_index,ua_W_K,ntu,epsilon,q_cell_W,q_cumulative_W,T_fluid_in_K,T_fluid_out_K,T_air_in_K,T_air_out_K,mdot_kg_s,cp_fluid_J_kg_K,mdot_air_kg_s,cp_air_J_kg_K,T_fluid_solver_guess_out_K

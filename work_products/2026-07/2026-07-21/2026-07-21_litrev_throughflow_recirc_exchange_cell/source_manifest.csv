@@ -1,0 +1,14 @@
+source_id,path,use,mutation_status
+litrev_model_forms,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,MF-03/MF-04 switching and field requirements,read_only
+litrev_package,work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/README.md,source and guardrail context,read_only
+agent467_contract,work_products/2026-07/2026-07-16/2026-07-16_recirc_feature_admission_and_hybrid_contract/hybrid_1d_model_contract.csv,existing hybrid lanes and admission guardrails,read_only
+upcomer_section,reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md,current upcomer interpretation and hybrid-model boundary,read_only
+two_tap_section,reports/thesis_dossier/Chapters_and_sections/current/13_two_tap_recirc_section_effective_pressure_model.md,current pressure residual model boundary,read_only
+upcomer_pipe_cell,work_products/2026-07/2026-07-17/2026-07-17_upcomer_pipe_cell_hybrid_model/README.md,existing upcomer pipe-cell diagnostic contract,read_only
+direct_recirc,work_products/2026-07/2026-07-20/2026-07-20_direct_recirc_model_forms_and_dry_scorers/README.md,frozen direct recirculation dry forms,read_only
+pressure_map,operational_notes/maps/pressure-and-momentum-budget.md,pressure ledger and two-tap blocker context,read_only
+thermal_map,operational_notes/maps/thermal-closures-and-internal-nu.md,thermal residual and internal Nu guardrails,read_only
+native_cfd,jadyn_runs/**,native CFD/OpenFOAM outputs,not_touched
+registry,registry/case_registry.csv,global case registry,not_touched
+scheduler,scheduler_state,Slurm or job state,not_touched
+fluid,../cfd-modeling-tools/**,external Fluid source/API,not_touched

@@ -1,0 +1,6 @@
+trigger_id,blocked_visual_or_claim,current_state,required_trigger,target_section,forbidden_until_trigger
+TRIG-S6-FINAL-SCORE,final frozen predictive score figure,S6 shell complete with 0 final score values,S11 releases one predeclared runtime-legal frozen candidate then S6 is reopened,Chapter 7 final predictive results,No final accuracy or protected-row residual table.
+TRIG-S9-UPCOMER,upcomer exchange/onset evidence figure,S9 open,Sampler inputs and same-window UQ establish exchange/onset evidence,Chapter 6 or 7 recirculation validity,No ordinary upcomer Nu/f_D/K or exchange-cell coefficient admission.
+TRIG-S10-PRESSURE,pressure/F6 admission waterfall,S10 open / figure task active,Same-QOI UQ and low-recirculation anchor evidence complete,Chapter 7 pressure results,No component K F6 clipped K or global multiplier admission.
+TRIG-S11-CANDIDATE,candidate-specific release figure,S11 trigger-gated,A named physical candidate from S8 S9 or S10 passes runtime source/property and split gates,Chapter 7 predictive path,No frozen candidate scorecard thaw.
+TRIG-SAM,SAM validation figure,no SAM model/scorecard,Separate SAM model and independent scorecard/admission package,Chapter 8 SAM relevance,No SAM validation calibration or experimental confirmation claim.

@@ -1,0 +1,8 @@
+case_key,split_group,split_subrole,use_in_preflight,use_in_future_coefficient_training,use_in_future_score_after_freeze,notes
+salt1_nominal,train,train_nominal,true,blocked_until_source_property_release,false,train row but source/property exact fields are not release-ready
+salt2_jin_nominal,train,train_nominal,true,blocked_until_source_property_release,false,train row but source/property exact fields are not release-ready
+salt3_jin_nominal,train,train_nominal,true,blocked_until_source_property_release,false,train row but source/property exact fields are not release-ready and passive split conflict remains diagnostic
+salt4_nominal,train,train_nominal,true,blocked_until_source_property_release,false,train row but source/property exact fields are not release-ready and passive split conflict remains diagnostic
+salt2_lo5q,holdout_test,holdout_pm5,false,false,true,protected holdout_test after freeze only
+salt2_hi5q,holdout_test,holdout_pm5,false,false,true,protected holdout_test after freeze only
+val_salt2,holdout_test,external_test,false,false,true,external-test subtype grouped in holdout_test after freeze only

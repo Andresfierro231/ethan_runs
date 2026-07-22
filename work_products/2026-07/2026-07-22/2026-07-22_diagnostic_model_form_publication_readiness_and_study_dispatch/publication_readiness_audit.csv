@@ -1,0 +1,7 @@
+criterion,status,evidence,remaining_gap
+numeric reproducibility,pass,builder and validator scripts exist; runtime_audit.csv records phase runtimes,none for diagnostic addendum
+split discipline,pass,Salt2 train_candidate fit only; Salt3/Salt4 transfer report only,do not describe Salt3/Salt4 as final protected validation from this package
+construction assumptions,pass,"construction_assumptions.csv lists formula, basis, missing fields, and forbidden inputs for each tested form",source-bounded physical construction still needed for D3/D4/D1
+per-sensor signed errors,pass,tested_model_form_sensor_errors.csv includes signed K and percent error for every finite TP/TW row,"figures should use signed errors, not only RMSE"
+publication claim boundary,pass_with_guardrail,README and assumptions label all fitted rows diagnostic_not_admitted,"publication text must call D1-D4 residual-shape diagnostics, not admitted closures"
+source-bounded physical admission,fail_closed,"missing_fields column records no independent Q_wall/passive wall term, no same-QOI UQ, no M0 baseline, no source/property release",execute successor board rows before claiming predictive model-form improvement

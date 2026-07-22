@@ -1,0 +1,24 @@
+{
+  "task": "AGENT-324",
+  "status": "complete",
+  "blocker_id": "upcomer-onset-data-sparsity",
+  "blocker_decision": "remains_open",
+  "n_points": 3,
+  "recirculating_points": 3,
+  "non_recirculating_points": 0,
+  "re_min": 71.12521667906103,
+  "re_max": 134.88326391686644,
+  "route_A_mid_Re": 250.0,
+  "route_B_mid_Re": 167.5,
+  "outputs": [
+    "upcomer_onset_evidence_status.csv",
+    "math_and_theory.csv",
+    "next_evidence_requirements.csv",
+    "blocker_status.csv",
+    "results_interpretation.md",
+    "source_manifest.csv",
+    "README.md",
+    "summary.json"
+  ],
+  "generated_at": "2026-07-14T11:47:10"
+}

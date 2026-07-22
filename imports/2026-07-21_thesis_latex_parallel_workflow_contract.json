@@ -1,0 +1,52 @@
+{
+  "task": "TODO-THESIS-LATEX-PARALLEL-WORKFLOW-CONTRACT-2026-07-21",
+  "task_id": "TODO-THESIS-LATEX-PARALLEL-WORKFLOW-CONTRACT-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Coordinator/Writer/Reviewer",
+  "objective": "Create a durable cross-workspace plan, contract, board packet, and instructions for parallel CSEM thesis LaTeX writing and thesis-facing analysis artifact production.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-THESIS-LATEX-PARALLEL-WORKFLOW-CONTRACT-2026-07-21.md",
+    ".agent/journal/2026-07-21/thesis-latex-parallel-workflow-contract.md",
+    "imports/2026-07-21_thesis_latex_parallel_workflow_contract.json",
+    "operational_notes/07-26/21/2026-07-21_THESIS_LATEX_PARALLEL_WORKFLOW_CONTRACT.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/latex_sync_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/artifact_handoff_schema.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/apply_papers_workflow_update.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/parallel_work_lanes.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_latex_parallel_workflow_contract/papers_board_rows.md",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/status/csem-latex-parallel-workflow-contract-2026-07-21.md",
+    "../papers/.agent/journal/2026-07-21/csem-latex-parallel-workflow-contract-2026-07-21.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/README.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    "reports/thesis_dossier/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/README.md",
+    "../papers/AGENTS.md",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/FILE_OWNERSHIP.md",
+    "../papers/.agent/ROLES.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/AGENTS.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/README.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/structural/body.tex"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_or_solver_launched": false,
+    "sampler_or_harvest_launched": false,
+    "fluid_source_tree_mutated": false,
+    "external_repo_mutated": true,
+    "actual_latex_mutated": false
+  },
+  "provenance_notes": "This task created the ethan_runs workflow contract and, with explicit approval, updated papers workspace coordination docs. No CSEM chapter LaTeX was edited; backlog rows still need Coordinator promotion to Active before manuscript edits."
+}

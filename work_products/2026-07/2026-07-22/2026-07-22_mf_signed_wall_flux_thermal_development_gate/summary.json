@@ -1,0 +1,19 @@
+{
+  "candidate_reviewable_rows": 0,
+  "coefficient_admission": false,
+  "decision": "diagnostic_only_no_candidate_reviewable",
+  "final_score": false,
+  "fluid_or_external_repo_mutation": false,
+  "forbidden_owner_rows": 1,
+  "generated_at": "2026-07-22T09:16:17-05:00",
+  "native_output_mutation": false,
+  "next_sequence_rows": 4,
+  "release_gate_rows": 7,
+  "release_gates_passed": 0,
+  "residual_absorbed_into_internal_nu": false,
+  "residual_owner_rows": 7,
+  "runtime_temperature_release": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task_id": "TODO-MF-SIGNED-WALL-FLUX-THERMAL-DEVELOPMENT-GATE-2026-07-22"
+}

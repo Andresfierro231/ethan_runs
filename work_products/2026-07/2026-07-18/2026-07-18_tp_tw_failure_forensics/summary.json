@@ -1,0 +1,20 @@
+{
+  "admitted_candidate_families": 0,
+  "blocker_status": "open",
+  "candidate_family_rows": 10,
+  "created_utc": "2026-07-18T18:05:16.809003+00:00",
+  "decision": "contract_first_no_grid",
+  "next_model_contract_rows": 4,
+  "out_dir": "work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics",
+  "physics_requirement_rows": 5,
+  "recommended_next_model": "UMX1_energy_conserving_upcomer_exchange",
+  "role_segment_failure_rows": 10,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "secondary_model": "TSWFC2_distributed_test_section_wall_fluid_nodes",
+  "sensor_failure_rows": 15,
+  "solver_or_postprocessing_launched": "none",
+  "task": "AGENT-536",
+  "top_role_segment_failure": "TW:heated_incline",
+  "top_sensor_failure": "TW5"
+}

@@ -1,0 +1,6 @@
+gate,status,evidence,consequence,release_allowed
+reset_graetz_coordinates_exist,pass_diagnostic,33 rows have L/D below 0.05*Re*Pr.,thermal development is plausible enough for a source-basis study.,False
+train_only_TP_residual_direction,pass_diagnostic,5/5 train M3 TP rows are cold relative to post-solve TP targets.,a positive bulk-to-TP projection layer is plausible before TW correction.,False
+signed_source_direction_sufficiency,mixed,3 train TP rows match signed-source expectation; 2 oppose it.,thermal development likely cannot be a simple local signed-source correction only.,False
+s13_wall_core_magnitude_sufficiency,fail_full_ownership,max |wall-core contrast| / D2 train TP offset = 0.0113.,"S13 exchange evidence is useful, but wall/core contrast alone cannot explain the D2 TP offset.",False
+source_property_and_same_qoi_release,fail_closed,"same-QOI TP projection UQ, released formula, and source/property labels are missing.",MF07 stays diagnostic-only; MF08/MF09 must run before any train-only smoke.,False

@@ -1,0 +1,5 @@
+mode,runtime_allowed_inputs,computed_terms,forbidden_runtime_inputs,acceptance
+predictive,setup geometry; h_W_m2_K; Ta_K; Tsur_K; emissivity; area_m2; coverage_factor; layer resistance metadata; solved state selected by drive_temperature_selector,external_convection; radiation; wall_or_layer_resistance,forbidden: realized wall heat flux; CFD mdot; validation temperatures; imposed cooler duty; heat residual,separate convection/radiation/layer lanes may be active; realized total heat flux is excluded
+replay,diagnostic total boundary heat from prior CFD only when explicitly labeled replay,total diagnostic boundary heat only,forbidden: adding separate predictive convection or radiation on top of replay total heat,replay rows cannot be used for predictive admission
+diagnostic_sensitivity,declared sensitivity switch and setup fields,one-at-a-time sensitivity lane,forbidden: claiming radiation-off sensitivity as CFD parity,sensitivity rows remain non-admission evidence
+blocked_missing_fields,row identity and missing-field labels,none,forbidden: back-solving fields from residual or validation outputs,blocked rows publish missing fields instead of filling them

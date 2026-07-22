@@ -1,0 +1,8 @@
+category,count,interpretation
+blocker_rows,7,All launch/admission gates represented.
+blocking_rows,4,Rows that still block coefficient use.
+research_paths,6,Concrete research lanes from staged sampling through governance.
+next_steps,7,Ordered executable follow-on queue.
+admission_rules,7,Decision rules for future extractor/admission package.
+sampling_jobs_launched,0,Roadmap only.
+ordinary_admissions,0,No F6 or component-K coefficient admitted.

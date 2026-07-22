@@ -1,0 +1,7 @@
+category,allowed_use,forbidden_use
+setup_geometry,runtime model input when source-backed,fill missing setup fields from scored CFD response
+external_boundary_dictionary,setup-facing heat-path input,realized CFD wallHeatFlux as runtime heat loss
+CFD_pressure_heat_fields,"target, diagnostic, residual ownership, admission gate",scored-row pressure/heat as model input
+CFD_mdot,score target or diagnostic reference,runtime mass-flow input
+TP_TW_temperatures,post-solve score target and residual diagnostic,"runtime input, fit target, or model-selection signal"
+holdout_external_rows,post-freeze scoring only,"fitting, tuning, model selection, or candidate choice"

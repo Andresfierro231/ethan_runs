@@ -1,0 +1,5 @@
+split_or_claim,mf14_use,new_scoring,model_selection,release_or_admission
+train/support,existing diagnostic evidence and sensor-map bookkeeping only,False,False,False
+validation,not used; any existing D2 transfer values are read-only prior package context,False,False,False
+holdout,not used,False,False,False
+external-test,not used,False,False,False

@@ -1,0 +1,34 @@
+{
+  "closure_qoi_gate_status_counts": {
+    "blocked_missing_triplet": 6,
+    "blocked_non_monotone_or_oscillatory": 16,
+    "blocked_sign_or_semantics_review": 3
+  },
+  "coefficient_policy_rows": 7,
+  "date": "2026-07-15",
+  "evidence_classification_rows": 15,
+  "evidence_fit_admissible_counts": {
+    "no": 15
+  },
+  "evidence_use_class_counts": {
+    "diagnostic_only": 15
+  },
+  "final_forward_v1_state": "blocked_no_go_final_forward_v1_not_admitted",
+  "final_hydraulic_residual_state": "blocked_not_final",
+  "forward_ledger_admission_class_counts": {
+    "blocked_empty_fit_set": 1,
+    "diagnostic_replay": 18,
+    "diagnostic_upper_bound": 6,
+    "predictive_candidate": 6
+  },
+  "forward_unblock_rows": 8,
+  "generated_utc": "2026-07-15T14:41:03.073344+00:00",
+  "hydraulic_unblock_rows": 7,
+  "next_executable_job": "run_setup_only_HX_cooler_scorecard_then_raw_pressure_admission_package",
+  "output_dir": "work_products/2026-07/2026-07-15/2026-07-15_recirculation_policy_forward_hydraulic_unblock_plan",
+  "pm5_rows": 12,
+  "raw_two_tap_rows": 3,
+  "recirculation_policy_rows": 18,
+  "source_manifest_rows": 11,
+  "task": "AGENT-419"
+}

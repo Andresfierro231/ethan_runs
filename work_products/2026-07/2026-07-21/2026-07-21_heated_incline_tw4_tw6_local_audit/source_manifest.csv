@@ -1,0 +1,5 @@
+artifact,role,mutation,notes
+work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/thermal_residual_attribution.csv,read_only_input,false,TW4-TW6 residuals
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv,read_only_input,false,sensor coordinate classes
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s8_wall_ts_residual_atlas/tw5_tw6_residual_atlas.csv,read_only_input,false,S8 candidate failure context
+work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/setup_source_sink_provenance_ledger.csv,read_only_input,false,recovered heater source provenance

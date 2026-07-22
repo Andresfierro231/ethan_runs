@@ -1,0 +1,10 @@
+path,exists,role,mutation
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract/same_label_mesh_family_inventory.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract/generation_contract.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_inventory_and_generation_contract/next_compute_row_skeleton.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_case_rows.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/qwall_exchange_mesh_gci_gate_matrix.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/missing_mesh_family_blocker_table.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/same_qoi_neighbor_window_rows.csv,true,read-only source for same-label mesh-family generation preflight,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_three_case_cell_vtk_manifest/three_case_cell_vtk_manifest.csv,true,read-only source for same-label mesh-family generation preflight,read_only

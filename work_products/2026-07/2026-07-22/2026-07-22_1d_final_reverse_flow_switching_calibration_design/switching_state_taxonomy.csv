@@ -1,0 +1,7 @@
+state_id,physical_state,detect_from,allowed_model_lane,current_status,forbidden_claim
+S01,ordinary_single_stream,no reverse-flow topology and low-recirculation/nonrecirculating anchor admitted,one_stream,disabled_for_current_upcomer_rows,No ordinary Nu/fD/K/F6 from recirculating evidence.
+S02,local_wall_region_reversal,near-wall signed velocity or wall-band flow fraction,signed_flow_junction_network,diagnostic_design_only,No wall reversal coefficient fit.
+S03,core_wall_counterflow,opposite signs in core and wall bands plus mass residual check,signed_flow_junction_network,diagnostic_design_only,No scalar tee/component K fit.
+S04,localized_recirculation,closed CV recirculation cells and residence evidence,throughflow_plus_recirc_exchange_cell,architecture_only,No exchange coefficient admission.
+S05,negative_net_branch_flow,branch-integrated mdot sign reversal,signed_flow_junction_network,diagnostic_design_only,No ordinary branch loss coefficient.
+S06,zero_net_flux_exchange,near-zero net branch flow with nonzero exchange across interface,throughflow_plus_recirc_exchange_cell,blocked_pending_same_QOI_UQ,No Qwall or mdot_exchange production release.

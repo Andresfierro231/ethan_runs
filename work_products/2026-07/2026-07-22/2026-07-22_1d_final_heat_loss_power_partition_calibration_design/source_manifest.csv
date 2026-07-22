@@ -1,0 +1,8 @@
+artifact,source_path,role,mutation_status
+"Thermal accounting ledger","work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/thermal_accounting_traceability_ledger.csv","heat-path lane evidence and runtime policy","read_only"
+"Setup source/sink values","work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/setup_source_sink_values.csv","setup heater/cooler/test-section values","read_only"
+"PASSIVE-H2 summary","work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_runtime_operator_smoke_uq_gate/summary.json","diagnostic passive operator sensitivity","read_only"
+"Residual owner contract","work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/residual_owner_contract.csv","allowed residual-owner evidence","read_only"
+"S12 heat-path residual table","work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate/heat_path_residual_owner_table.csv","freeze-gate and source/property blockers","read_only"
+"M2 passive basis gate","work_products/2026-07/2026-07-22/2026-07-22_m2_passive_wall_test_section_source_bounded_repair_gate/passive_heat_path_source_basis_table.csv","passive/test-section source-basis blockers","read_only"
+"This package","work_products/2026-07/2026-07-22/2026-07-22_1d_final_heat_loss_power_partition_calibration_design/**","new additive calibration-design artifacts","created"

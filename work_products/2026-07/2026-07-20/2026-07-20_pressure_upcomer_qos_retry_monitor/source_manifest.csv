@@ -1,0 +1,5 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/summary.json,yes,isolated relaunch summary,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/submission_attempt.csv,yes,prior submission attempts,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/preflight_gate.csv,yes,preflight gate,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/scripts/submit_pressure_upcomer_isolated_relaunch.sbatch,yes,sbatch script,read_only

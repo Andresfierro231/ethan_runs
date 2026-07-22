@@ -1,0 +1,7 @@
+check,status,detail
+no_scheduler_action,pass,AGENT-531 only reads existing packages and writes derived audit artifacts
+no_solver_or_postprocessing_launch,pass,no Fluid/OpenFOAM/cfd-pp run is submitted by this builder
+no_runtime_temperature_or_cfd_leakage,pass,"uses only post-solve residual outputs; no realized CFD wallHeatFlux, mdot, cooler duty, or validation temperatures become runtime inputs"
+parallel_workers_noop,pass,requested --parallel-workers=8; ignored because this is a no-solver audit
+timeout_noop,pass,requested --timeout-seconds=273; ignored because this is a no-solver audit
+active_AGENTS526_collision_avoided,pass,solver-backed wall/fluid coupling and axial-mixing runs are deferred to later non-overlapping task rows

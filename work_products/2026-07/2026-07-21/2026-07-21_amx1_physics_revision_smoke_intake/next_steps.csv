@@ -1,0 +1,4 @@
+priority,next_step,reason,guardrail
+1,Do not expand parent-cell AMX1 to Salt1-Salt4,Both parent-cell rows still worsen Salt2 all-probe and TP RMSE,No Salt1-Salt4 expansion or admission change
+2,Pause AMX1 form variants without new CFD structure evidence,Broad localized lower-multiplier clipped and parent-cell forms all leave wrong-sign TP/all-probe deltas,Require new source/location evidence before another AMX1 smoke
+3,Shift primary effort to setup-only wall/test-section/passive-boundary candidates,The remaining high blocker is explicitly wall/test-section/passive-boundary,Preserve runtime-input and source/property gates

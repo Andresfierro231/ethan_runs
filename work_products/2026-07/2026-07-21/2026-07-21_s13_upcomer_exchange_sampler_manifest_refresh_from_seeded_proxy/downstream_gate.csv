@@ -1,0 +1,5 @@
+gate,status,allowed,reason
+production_harvest,blocked,false,proxy-ready rows are nonproduction and same-QOI UQ/Q_wall/pressure/cp remain absent
+same_qoi_uq,blocked_pending_production_qois,false,"UQ must be run on exact production QOIs, not proxy-only rows"
+s12_diagnostic_context,available,true,proxy rows can support documented diagnostic/negative-result reasoning
+s11_s15_s6_or_coefficient_admission,blocked,false,no production sampler harvest or same-QOI UQ exists

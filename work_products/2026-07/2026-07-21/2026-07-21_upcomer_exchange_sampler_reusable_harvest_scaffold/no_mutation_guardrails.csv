@@ -1,0 +1,5 @@
+guard_id,status,policy
+harvest_execution,blocked_by_default,generated scripts only run when an explicit populated manifest is passed by a later task
+scheduler,blocked,"this scaffold does not submit, cancel, requeue, or monitor scheduler jobs"
+native_outputs,blocked,scripts read supplied VTK/CSV files and write task-selected output directories only
+admission,blocked,"no fit, model selection, score release, exchange-cell admission, or residual absorption into internal Nu"

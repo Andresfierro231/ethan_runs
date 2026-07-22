@@ -1,0 +1,9 @@
+source_id,source_path,access,purpose
+freeze,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,read_only,freeze
+claims,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/pressure_corner_publication_claims.csv,read_only,claims
+methods,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/pressure_corner_methods_note.md,read_only,methods
+comparison,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_comparison_matrix.csv,read_only,comparison
+gates,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/pressure_corner_gate_review.csv,read_only,gates
+delta,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_comparison_admission_review/publication_delta_note.md,read_only,delta
+synthesis,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/scientific_finding_narrative.md,read_only,synthesis
+map,operational_notes/maps/pressure-and-momentum-budget.md,read_only,map

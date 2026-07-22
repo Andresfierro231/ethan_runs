@@ -1,0 +1,11 @@
+exists,mutation_status,source_path,use
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/summary.json,basis ladder summary
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/pressure_basis_ladder.csv,basis definitions and allowed/forbidden use
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/section_effective_residual_values.csv,section-effective residual values
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/pressure_non_admission_gate_matrix.csv,non-admission gates
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/f3_f6_and_hybrid_comparison_status.csv,F3/F6 comparison status
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/summary.json,low-recirculation anchor absence counts
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/anchor_absence_proof.csv,ordinary-anchor absence proof
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/summary.json,CAND001 terminal/endpoint/UQ gate
+true,read_only,work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/lower_right_negative_result_classification.csv,lower-right negative classification
+true,read_only,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/summary.json,hybrid pressure no-fit context

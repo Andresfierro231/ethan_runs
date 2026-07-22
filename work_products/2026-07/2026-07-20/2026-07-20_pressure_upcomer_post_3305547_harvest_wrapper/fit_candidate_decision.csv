@@ -1,0 +1,2 @@
+decision_id,decision,admitted_rows,reason,fit_or_model_selection_changed,native_solver_outputs_mutated,next_action
+post_3305547_pressure_upcomer_fit_gate,no_fit_candidate_released,0,matched-plane parser/admission rollup has not produced admitted pressure/upcomer rows,false,false,"after 3305547 terminal success, run parser and rerun this wrapper"

@@ -1,0 +1,23 @@
+{
+  "Fluid_or_external_repo_mutation": false,
+  "ablation_rows": 6,
+  "candidate_reviewable_rows": 0,
+  "coefficient_admission_allowed": false,
+  "decision": "train_only_residual_owner_ablation_complete_no_candidate_release",
+  "evidence_only_rows": 4,
+  "fail_closed_rows": 2,
+  "fitting_or_model_selection": false,
+  "generated_at_utc": "2026-07-22T01:59:10.896730+00:00",
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "residual_absorbed_into_internal_nu": false,
+  "runtime_temperature_input_release": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "s8_candidate_count_released": 0,
+  "scheduler_action": false,
+  "solver_sampler_harvest_uq_launched": false,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-N3-THERMAL-RESIDUAL-OWNER-TRAIN-ABLATION-2026-07-21",
+  "thesis_current_file_edit": false,
+  "validation_holdout_external_rows_scored": 0
+}

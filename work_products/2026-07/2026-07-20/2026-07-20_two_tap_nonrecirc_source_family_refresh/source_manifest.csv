@@ -1,0 +1,5 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_nonrecirc_anchor_plan/source_case_selection.csv,yes,anchor plan source selection,read_only
+work_products/2026-07/2026-07-20/2026-07-20_f6_two_tap_nonrecirc_staging/source_case_selection.csv,yes,staging source selection,read_only
+work_products/2026-07/2026-07-20/2026-07-20_two_tap_same_qoi_anchor_launch_package/staged_copy_case_request.csv,yes,current launch block,read_only
+work_products/2026-07/2026-07-20/2026-07-20_high_heat_status_refresh/updated_live_job_status.csv,yes,high-heat live status,read_only

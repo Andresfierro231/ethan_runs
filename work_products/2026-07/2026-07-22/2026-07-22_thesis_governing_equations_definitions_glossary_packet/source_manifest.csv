@@ -1,0 +1,13 @@
+source_id,path,role,read_write_status,notes
+SRC-01,work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/evidence_packet_schema.csv,schema,read_only,"Defines required evidence-packet fields."
+SRC-02,reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md,model_form_equations,read_only,"Primary source for steady fluid+walls balance, wall circuit, test-section balance, pressure model, runtime contract."
+SRC-03,reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md,split_policy,read_only,"Primary source for final split and runtime leakage rule."
+SRC-04,reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md,recirculation_definitions,read_only,"Source for upcomer geometry, reverse-flow metrics, and hybrid model lane."
+SRC-05,reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,claim_boundaries,read_only,"Maps claims to evidence, split role, blocker/admission state, caveats."
+SRC-06,reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md,segment_atlas,read_only,"Defines loop-region material/pressure/thermal/source roles and next actions."
+SRC-07,reports/thesis_dossier/Chapters_and_sections/current/10_uncertainty_chapter_package.md,uncertainty_definitions,read_only,"Defines time-window, mesh/GCI, property, sensor, split, and model-form uncertainty."
+SRC-08,reports/thesis_dossier/Chapters_and_sections/current/13_two_tap_recirc_section_effective_pressure_model.md,pressure_residual_equations,read_only,"Source for section-effective pressure residual and K_eff_recirc definitions."
+SRC-09,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,admission_snapshot,read_only,"Source for evidence classes, release gates, runtime input rule, sensor discipline."
+SRC-10,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/README.md,s13_qoi_status,read_only,"Source for target-plus and same-QOI triplet-ready but UQ-not-executed status."
+SRC-11,work_products/2026-07/2026-07-21/2026-07-21_hybrid_pressure_no_fit_performance_bakeoff/README.md,pressure_negative_result,read_only,"Source for hybrid pressure no-fit diagnostic transfer and non-admission."
+SRC-12,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/README.md,thermal_negative_result,read_only,"Source for broad passive hA response and no repair/admission caveat."

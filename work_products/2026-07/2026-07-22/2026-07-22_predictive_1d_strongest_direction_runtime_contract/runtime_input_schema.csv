@@ -1,0 +1,10 @@
+field,unit,required,runtime_legal,source,contract
+case_id,label,True,True,case setup,identifier only; no score label logic
+heater_power_setpoint_W,W,True,True,setup thermal-boundary ledger,"external forcing, not a diagnostic wall integral"
+passive_segment_area_m2,m2,True,True,geometry trace,segment-local passive boundary geometry
+passive_segment_emissivity,1,True,True,material/source-basis table,predeclared physical property; no fitted multiplier
+ambient_temperature_K,K,True,True,room/surroundings setup source,"independent boundary source, not an observed validation temperature"
+surroundings_temperature_K,K,True,True,room/surroundings setup source,radiation sink temperature from source basis
+model_solved_wall_temperature_K,K,True,True,1D state,solved state only; forbidden wallHeatFlux and observed temperature inputs remain excluded
+throughflow_enthalpy_W,W,False,False,blocked endpoint/property harvest,explicit missing lane until same-basis endpoints and cp evidence are released
+storage_and_named_losses_W,W,False,False,blocked owner ledger,must remain explicit; never hidden in internal Nu

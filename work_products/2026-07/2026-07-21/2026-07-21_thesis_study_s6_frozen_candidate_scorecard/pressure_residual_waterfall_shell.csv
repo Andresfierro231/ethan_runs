@@ -1,0 +1,4 @@
+waterfall_id,component,source_status,score_value,admission_status,next_action,source_paths
+pressure_residual_shell,major_distributed_loss,blocked_no_fit_admitted_pressure_model,,not_admitted,terminal low-recirculation anchor harvest before ordinary component review,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/README.md
+pressure_residual_shell,corner_or_junction_feature_loss,section_effective_diagnostic_only,,not_admitted,measure low-recirculation endpoint fields and same-window RAF/RMF before component K review,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/anchor_decision.csv
+pressure_residual_shell,recirculation_or_exchange_invalid_region,ordinary_single_stream_closures_disabled_by_S4,,not_admitted,keep throughflow/exchange-cell evidence separate from ordinary K/fD claims,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s4_recirculation_guard_upcomer_hybrid/summary.json

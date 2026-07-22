@@ -1,0 +1,6 @@
+test_id,formula,emissivity,area_m2,surface_K,surroundings_K,computed_W,expected_W,abs_error_W,pass_fail,reason
+zero_emissivity,epsilon*sigma*area*(surface_K^4-surroundings_K^4),0.0,1.0,350.0,300.0,0.000000,0.000000,0.000000000,pass,zero emissivity disables radiative exchange
+zero_delta,epsilon*sigma*area*(surface_K^4-surroundings_K^4),0.95,1.0,300.0,300.0,0.000000,0.000000,0.000000000,pass,equal surface and surroundings temperatures produce zero net exchange
+hot_surface_loss,epsilon*sigma*area*(surface_K^4-surroundings_K^4),0.95,1.0,350.0,300.0,372.029722,372.029722,0.000000353,pass,hotter surface gives positive heat loss
+cool_surface_gain,epsilon*sigma*area*(surface_K^4-surroundings_K^4),0.95,1.0,290.0,300.0,-55.333243,-55.333243,0.000000045,pass,cooler surface gives radiative heat gain
+linearized_coefficient,4*epsilon*sigma*Tmean^3,0.95,not_applicable,not_applicable,not_applicable,7.396826,7.396826,0.000000230,pass,linearized coefficient is available only when explicitly labeled

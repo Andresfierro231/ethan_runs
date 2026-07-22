@@ -1,0 +1,5 @@
+source_path,exists,use
+work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/README.md,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/split_scope_audit.csv,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_radiation_runtime_basis_reconciliation/README.md,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/README.md,true,read_only

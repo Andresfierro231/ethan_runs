@@ -1,0 +1,54 @@
+{
+  "task": "TODO-THESIS-SUGGESTED-MODEL-FORM-DIAGNOSTIC-TESTS-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Implementer / Tester / Writer / Reviewer",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-SUGGESTED-MODEL-FORM-DIAGNOSTIC-TESTS-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-suggested-model-form-diagnostic-tests.md",
+    "imports/2026-07-22_thesis_suggested_model_form_diagnostic_tests.json",
+    "tools/analyze/build_thesis_suggested_model_form_diagnostic_tests.py",
+    "tools/analyze/test_thesis_suggested_model_form_diagnostic_tests.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_scoreboard.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/construction_assumptions.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/model_form_scoreboard_append.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/runtime_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/figures/svg/tested_model_form_transfer_rmse.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/figures/svg/transfer_signed_sensor_errors_best_vs_m3.svg"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/signed_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch/model_form_error_reduction_targets.csv"
+  ],
+  "mutation_flags": {
+    "native_cfd_openfoam_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_or_solver_or_sampler_or_uq": false,
+    "fluid_or_external_repositories": false,
+    "thesis_current_or_latex_files": false,
+    "canonical_master_scoreboard_in_place": false,
+    "validation_or_holdout_targets_used_for_fit": false
+  },
+  "output_contract": {
+    "scoreboard_addendum": "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_scoreboard.csv",
+    "per_sensor_signed_errors": "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv",
+    "construction_assumptions": "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/construction_assumptions.csv",
+    "runtime_audit": "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/runtime_audit.csv",
+    "admission_status": "diagnostic_not_admitted"
+  },
+  "validation": [
+    "python3.11 tools/analyze/build_thesis_suggested_model_form_diagnostic_tests.py",
+    "python3.11 tools/analyze/test_thesis_suggested_model_form_diagnostic_tests.py"
+  ]
+}

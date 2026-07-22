@@ -1,0 +1,23 @@
+path,producer,required_for_confirmation,notes
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_run_plan.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_results.csv,fast_scan command,true,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_variant_summary.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_sensor_predictions_experimental.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_sensor_predictions_cfd.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_segment_states.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_input_audit.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/forward_v0_litrev_gate_reference_audit.csv,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/summary.json,fast_scan command,true,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/fast_scan_reference/README.md,fast_scan command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_run_plan.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_results.csv,solve_case command,true,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_variant_summary.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_sensor_predictions_experimental.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_sensor_predictions_cfd.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_segment_states.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_input_audit.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_litrev_gate_reference_audit.csv,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/summary.json,solve_case command,true,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/README.md,solve_case command,false,same schema as completed forward-v0 package
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_vs_fast_scan_comparison.csv,comparison pass,true,row-level solve_case minus fast_scan deltas
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json,comparison pass,true,"aggregate row counts, status, and metric bands"

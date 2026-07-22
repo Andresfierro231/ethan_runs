@@ -1,0 +1,14 @@
+{
+  "decision": "passive_h2_extbc_split_conflicts_resolved_fail_closed_train_context_only",
+  "case_rows": 3,
+  "split_conflict_rows": 2,
+  "numeric_q_loss_release_rows": 0,
+  "candidate_admission_rows": 0,
+  "guardrails": {
+    "realized_wallHeatFlux_runtime_use": false,
+    "global_hA_multiplier": false,
+    "protected_scoring": false,
+    "fitting_or_model_selection": false,
+    "repair_freeze_execution": false
+  }
+}

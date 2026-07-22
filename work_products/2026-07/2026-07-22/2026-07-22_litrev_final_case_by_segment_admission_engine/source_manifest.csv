@@ -1,0 +1,16 @@
+source_path,exists,use
+work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/segment_case_regime_map.csv,true,input
+work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/closure_eligibility_decisions.csv,true,input
+work_products/2026-07/2026-07-22/2026-07-22_1d_final_pressure_energy_basis_and_bc_equivalence_contract/pressure_energy_basis_contract.csv,true,input
+work_products/2026-07/2026-07-22/2026-07-22_heat_loss_source_inventory_material_geometry_phases/heat_path_lane_contract.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_source_validity_envelope.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_active_equation_gate_matrix.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_Nu_correlation_gate_matrix.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_property_gate_matrix.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_minor_loss_K_gate_matrix.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_CFD_coefficient_gate_matrix.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_ROM_admission_gate.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_model_form_hierarchy.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_reverse_flow_taxonomy.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_pressure_energy_accounting_rules.csv,true,input
+/scratch/09748/andresfierro231/projects_scratch/papers/UTexas_Research/LitRev-start---Closure-and-Modeling-Decisions-for-Developing-HITEC-Flow-TAMU-MSFL/data/audit_outputs/final_release/HITEC_final_unresolved_claims.csv,true,input

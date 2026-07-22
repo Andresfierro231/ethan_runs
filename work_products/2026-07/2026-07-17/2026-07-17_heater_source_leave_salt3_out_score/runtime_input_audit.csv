@@ -1,0 +1,6 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_training_split,pass,"loso_train_grid cases=salt_1,salt_2,salt_4",Salt3 fitting target;Salt3 model-selection target;Salt2 +/-5Q fitting target;val_salt2 fitting target;CFD mdot;validation/holdout probe temperatures;realized wallHeatFlux;imposed CFD cooler duty
+R2_no_holdout_or_blind_fit,pass,"Salt3, Salt2 +/-5Q, and val_salt2 are absent from fit/model-selection rows",holdout/external leakage into fit or model selection
+R3_runtime_inputs,pass,"67 executable rows use setup heater power, candidate lambda, Fluid default wall setup, and frozen cooler alpha_UA",Salt3 fitting target;Salt3 model-selection target;Salt2 +/-5Q fitting target;val_salt2 fitting target;CFD mdot;validation/holdout probe temperatures;realized wallHeatFlux;imposed CFD cooler duty
+R4_parallel_policy,pass,parallel_workers=4; conservative cap is 16,unbounded parallelism;login-node Fluid solve
+R5_coupled_execution,pass,Fluid rows run in this package,execution gate only

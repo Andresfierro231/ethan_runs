@@ -1,0 +1,4 @@
+priority,next_step,reason,guardrail
+1,Do not expand this clipped AMX1 form to Salt1-Salt4,Both clipped rows still worsen Salt2 all-probe and TP RMSE,No Salt1-Salt4 expansion or admission change
+2,If AMX1 continues revise physical placement or source term,Strength limiting reduced magnitude but did not change regression sign,Keep first revised form Salt2-only smoke
+3,Shift primary effort to setup-only wall/test-section/passive-boundary candidates,AMX1 broad localized lower-multiplier and clipped forms all leave wrong-sign TP/all-probe deltas,Preserve runtime-input and source/property gates

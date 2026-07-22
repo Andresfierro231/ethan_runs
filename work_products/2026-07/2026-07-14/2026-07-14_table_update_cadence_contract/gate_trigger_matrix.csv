@@ -1,0 +1,7 @@
+gate_event,detector,tables_to_check,required_action,closeout_required
+daily_no_gate_refresh,calendar day or session closeout,T01;T02;T03;T04;T05;T06;T07;T08,"Record no-gate-change status if no blocker, admission, scorecard, or story state changed.",status_or_journal_note
+blocker_state_changed,blocker register diff or package decision,T01;T08,"Update blocker register, generated blocker table when scoped, and thesis claim wording.",status;journal;import;index_refresh_if_scoped
+admission_class_changed,fit/validation/diagnostic/blocked status differs from prior package,T02;T06;T08,Update admission inventory and state source evidence for each changed row.,package_readme;status;journal;import
+scorecard_changed,new train/validation/holdout scores or residual attribution,T03;T05;T08,"Refresh scorecard and state whether rows are predictive, proxy, diagnostic, or blocked.",package_readme;status;journal;import
+boundary_model_changed,"heater, cooler, wall-layer, external-BC, or radiation model decision/result",T03;T04;T07;T08,"Record setup inputs, assumptions, equations, residual lanes, and predictive admissibility.",package_readme;status;journal;import
+terminal_cfd_harvest,Slurm terminal state plus post-exit evidence package,T06;T02;T05;T08,"Run admission gate before downstream fit, validation, or sensitivity use.",admission_package;status;journal;import

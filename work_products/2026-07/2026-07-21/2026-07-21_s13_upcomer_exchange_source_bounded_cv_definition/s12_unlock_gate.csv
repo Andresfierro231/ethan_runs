@@ -1,0 +1,4 @@
+gate_id,status,required_for_s12,evidence,blocking_reason
+s13_source_bounded_cv_release,fail,yes,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/release_decision.csv,0/3 source-bounded CV rows released
+s13_sampler_manifest_rerun,blocked,yes,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/sampler_input_gap_matrix.csv,interface/wall/normals/Q_wall/source/UQ lanes remain blocked
+s12_hiax1_implementation,blocked,yes,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s12_thermal_shape_ownership_candidate/candidate_contract.csv,cannot implement exchange-shape term without released exchange-state QOIs

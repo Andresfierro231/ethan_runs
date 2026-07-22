@@ -1,0 +1,6 @@
+audit_id,checked_item,status,runtime_allowed,notes
+LEAK-001,realized wallHeatFlux values,excluded,false,source paths may cite wallHeatFlux diagnostics but no realized heat-flux values are promoted
+LEAK-002,CFD mdot or sampled velocity,excluded,false,no mdot or velocity appears in recovered source/sink runtime candidates
+LEAK-003,validation or holdout temperatures,excluded,false,Salt3/Salt4 setup rows are provenance only and not used for tuning or scoring
+LEAK-004,setup Q constants in 0/T,recovered_but_not_admitted,false,usable as provenance candidates only until source-model and split gates release them
+LEAK-005,ambient wall h/Ta/Tsur/emissivity,already_legal,true,covered by external-BC dictionary and Salt1 recovery packages

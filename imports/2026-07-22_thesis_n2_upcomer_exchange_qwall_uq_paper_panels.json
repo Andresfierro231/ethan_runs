@@ -1,0 +1,37 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/caption_bank.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/panel_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/qwall_source_side_status_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/same_qoi_uq_status_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/sampled_interface_summary_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/scientific_discussion.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/single_stream_closure_blocker_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels/wall_core_temperature_contrast_table.csv",
+    ".agent/status/2026-07-22_TODO-THESIS-N2-UPCOMER-EXCHANGE-QWALL-UQ-PAPER-PANELS-2026-07-21.md",
+    ".agent/journal/2026-07-22/thesis-n2-upcomer-exchange-qwall-uq-paper-panels.md",
+    "imports/2026-07-22_thesis_n2_upcomer_exchange_qwall_uq_paper_panels.json"
+  ],
+  "date": "2026-07-22",
+  "decision": "paper_panels_ready_diagnostic_only_no_single_stream_closure",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_source_side_conservation_neighbor_uq_gate",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq"
+  ],
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task": "TODO-THESIS-N2-UPCOMER-EXCHANGE-QWALL-UQ-PAPER-PANELS-2026-07-21",
+  "task_id": "TODO-THESIS-N2-UPCOMER-EXCHANGE-QWALL-UQ-PAPER-PANELS-2026-07-21",
+  "thesis_current_file_edit": false,
+  "validation_holdout_external_rows_scored": 0
+}

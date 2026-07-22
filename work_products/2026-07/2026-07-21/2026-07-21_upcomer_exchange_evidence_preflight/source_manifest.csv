@@ -1,0 +1,10 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/upcomer_exchange_cell_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/missing_exchange_nu_evidence_queue.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/phase4_decision_gate.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/ordinary_single_stream_nu_reopening_candidates.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/runtime_internal_nu_audit.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/next_gate_queue.csv,read_only_input,true,false,false
+operational_notes/maps/forward-predictive-model.md,read_only_input,true,false,false

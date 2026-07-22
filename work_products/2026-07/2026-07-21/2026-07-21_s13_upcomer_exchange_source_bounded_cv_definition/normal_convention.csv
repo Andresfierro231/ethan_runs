@@ -1,0 +1,4 @@
+case_id,surface_lane,released,normal_vector,positive_flux_convention,blocking_reason,source_paths
+salt_2,exchange_interface,false,,positive mdot_exchange from recirculation CV toward main throughflow,no released exchange-interface faces,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/interface_geometry_contract.csv
+salt_3,exchange_interface,false,,positive mdot_exchange from recirculation CV toward main throughflow,no released exchange-interface faces,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/interface_geometry_contract.csv
+salt_4,exchange_interface,false,,positive mdot_exchange from recirculation CV toward main throughflow,no released exchange-interface faces,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_geometry_contract/interface_geometry_contract.csv

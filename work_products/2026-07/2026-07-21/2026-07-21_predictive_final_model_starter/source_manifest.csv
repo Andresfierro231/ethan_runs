@@ -1,0 +1,16 @@
+path,role_in_package,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/staged_implementation_plan.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/split_claim_boundaries.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/residual_attribution_contract.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/scorecard_output_contract.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/admission_gate_shell.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/runtime_input_audit.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/holdout_release_gates.csv,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,read input contract or current evidence,read_only
+.agent/BLOCKERS.md,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_amx1_physics_revision_smoke_intake/README.md,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-20/2026-07-20_upcomer_onset_anchor_design/README.md,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-18/2026-07-18_f6_legwise_pressure_anchor_plan/README.md,read input contract or current evidence,read_only
+work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter,generated starter package,modified

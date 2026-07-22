@@ -1,0 +1,17 @@
+{
+  "candidate_ready_rows": 0,
+  "candidate_rows": 3,
+  "coefficient_admission": false,
+  "created_utc": "2026-07-22T15:01:07.575353+00:00",
+  "d3_transfer_rmse_reduction_pct": 51.6919381995,
+  "decision": "runtime_wall_profile_basis_fail_closed_diagnostic_signal_only",
+  "new_validation_holdout_external_scoring": false,
+  "residual_absorbed_into_internal_nu": false,
+  "runtime_temperature_input_release": false,
+  "same_qoi_triplet_ready_qois": 4,
+  "same_qoi_uq_executed": false,
+  "source_property_release": false,
+  "task_id": "TODO-MF15-RUNTIME-WALL-PROFILE-BASIS-GATE-2026-07-22",
+  "wall_profile_correction_release": false,
+  "wall_profile_correction_release_ready_rows": 0
+}

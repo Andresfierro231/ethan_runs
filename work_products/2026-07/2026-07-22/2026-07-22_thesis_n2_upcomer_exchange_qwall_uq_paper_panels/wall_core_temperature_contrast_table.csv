@@ -1,0 +1,4 @@
+case_id,trusted_wall_T_area_avg_K,interface_core_T_area_avg_K,seeded_cv_T_volume_avg_K,delta_T_wall_minus_core_K,delta_T_core_minus_seed_K,interpretation
+salt_2,443.188800694,443.330957335,443.184540921,-0.142156641269,0.146416414127,"small wall/core/seed contrast supports exchange-cell diagnostic evidence, not a single-stream closure"
+salt_3,455.466977289,455.621257297,455.462760824,-0.154280008347,0.158496473136,"small wall/core/seed contrast supports exchange-cell diagnostic evidence, not a single-stream closure"
+salt_4,469.906413889,470.076946819,469.904568133,-0.17053292931,0.172378686086,"small wall/core/seed contrast supports exchange-cell diagnostic evidence, not a single-stream closure"

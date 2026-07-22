@@ -1,0 +1,10 @@
+{
+  "best_wall_circuit_candidate": "PB1_total_hA_heater_power_drive_p1",
+  "best_wall_circuit_status": "static_screen_promising_not_admitted",
+  "blocker_decision": "keep_open",
+  "cooler_rerun_has_completed_rows": true,
+  "cooler_timeout_diagnosis": "45 s was too short for Fluid solve_case; 180 s completed this rerun, and posthoc elapsed_s supports a larger future production bound.",
+  "created_utc": "2026-07-17T13:58:01.091432+00:00",
+  "task": "AGENT-492",
+  "why": "The passive-total hA/heater-power circuit can be promoted to coupled scoring if it passes static rows, but blocker closure still requires coupled mdot/TP/TW and local test-section review."
+}

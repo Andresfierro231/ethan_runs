@@ -1,0 +1,2 @@
+candidate_or_family,ready_for_train_only_smoke,coefficient_admission,source_property_release,protected_scoring_or_final_score,decision,reason
+MF07_entrance_development_reset_bulk_to_TP,False,False,False,False,diagnostic_only,"reset/Graetz/source-sign evidence exists, but released bulk-to-TP formula, thermal reset labels, source/property release, and same-QOI TP projection UQ are missing."

@@ -1,0 +1,6 @@
+category,count,interpretation
+component_repair_target_rows,3,AGENT-523 component/cluster rows nearest to repair.
+ordinary_admitted_now,0,No target is currently admitted as ordinary K/f_D evidence.
+field_contract_rows,7,Required fields for the future repair extractor.
+acceptance_gate_rows,5,Predeclared gates before coefficient use.
+blocked_mesh_gci_after_tap_refresh,3,Current component table status for the three targets.

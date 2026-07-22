@@ -1,0 +1,4 @@
+check,status,forbidden_input,policy
+no_solver_launch,pass_forbidden,OpenFOAM/Fluid solve,assessment only
+no_scheduler_action,pass_forbidden,scheduler action,assessment only
+no_native_output_mutation,pass_forbidden,native CFD outputs,read-only summaries

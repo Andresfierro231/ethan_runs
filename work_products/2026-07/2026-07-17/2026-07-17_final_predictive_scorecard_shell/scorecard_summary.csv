@@ -1,0 +1,4 @@
+summary_key,value,interpretation
+case_partitions,"{""blind_external_val_salt2"": 1, ""blind_holdout_pm5q"": 2, ""excluded_support_diagnostic"": 4, ""future_external_new_cfd"": 1, ""future_holdout_pm10"": 4, ""train_nominal"": 4}",Salt1-4 nominal training rows are separated from blind/current/future test rows.
+prediction_join_status,"{""blocked_pending_corrected_final_freeze"": 20, ""blocked_pending_future_admission_and_final_freeze"": 35, ""pending_final_freeze_training_prediction"": 24}",All score rows are placeholders because no final frozen prediction artifact exists.
+current_decision,scorecard_shell_ready_no_final_scores,The shell is ready for a future frozen prediction join but does not score or admit a model.

@@ -1,0 +1,3 @@
+stage,release_status,rows_consumed_by_this_task,fit_allowed,model_selection_allowed,presentation_policy,source_paths
+holdout,blocked_until_validation_after_freeze,0,no,no,frozen-model score only,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/scorecard_release_guardrails.csv
+external_test,blocked_until_holdout_after_validation_after_freeze,0,no,no,external generalization evidence only; never tuning evidence,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/scorecard_release_guardrails.csv

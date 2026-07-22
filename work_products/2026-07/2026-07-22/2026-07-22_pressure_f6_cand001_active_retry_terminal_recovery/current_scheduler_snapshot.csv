@@ -1,0 +1,18 @@
+generated_at_utc,job_id,role,squeue_return_code,squeue_state_hint,sacct_return_code,sacct_parent_state,sacct_parent_elapsed,sacct_parent_node,squeue_stderr,sacct_stderr,read_only_scheduler_snapshot,job_id_step,job_name
+2026-07-22T13:07:54.140688+00:00,3308712,active_cand001_retry,0,running_or_queued,0,RUNNING,14:02:42,c318-017,,,True,,
+2026-07-22T13:07:54.140688+00:00,3308712,sacct_step,0,,0,RUNNING,14:02:42,c318-017,,,True,3308712,salt4_heat2_pack
+2026-07-22T13:07:54.140688+00:00,3308712,sacct_step,0,,0,RUNNING,14:02:42,c318-017,,,True,3308712.batch,batch
+2026-07-22T13:07:54.140688+00:00,3308712,sacct_step,0,,0,RUNNING,14:02:17,c318-017,,,True,3308712.0,foamRun
+2026-07-22T13:07:54.140688+00:00,3308712,sacct_step,0,,0,RUNNING,14:02:17,c318-017,,,True,3308712.1,foamRun
+2026-07-22T13:07:54.140688+00:00,3308712,sacct_step,0,,0,RUNNING,14:02:17,c318-017,,,True,3308712.2,foamRun
+2026-07-22T13:07:54.140688+00:00,3308712,sacct_step,0,,0,RUNNING,14:02:17,c318-017,,,True,3308712.3,foamRun
+2026-07-22T13:07:54.140688+00:00,3299610,prior_timeout_context,1,not_visible_in_squeue,0,TIMEOUT,5-00:00:25,c318-017,slurm_load_jobs error: Invalid job id specified,,True,,
+2026-07-22T13:07:54.140688+00:00,3299610,sacct_step,1,,0,TIMEOUT,5-00:00:25,c318-017,,,True,3299610,salt4_q3x_probe
+2026-07-22T13:07:54.140688+00:00,3299610,sacct_step,1,,0,CANCELLED,5-00:00:25,c318-017,,,True,3299610.batch,batch
+2026-07-22T13:07:54.140688+00:00,3299610,sacct_step,1,,0,CANCELLED,4-23:50:12,c318-017,,,True,3299610.0,foamRun
+2026-07-22T13:07:54.140688+00:00,3299620,prior_timeout_context,1,not_visible_in_squeue,0,TIMEOUT,5-00:00:08,c318-018,slurm_load_jobs error: Invalid job id specified,,True,,
+2026-07-22T13:07:54.140688+00:00,3299620,sacct_step,1,,0,TIMEOUT,5-00:00:08,c318-018,,,True,3299620,salt4_heat_pack
+2026-07-22T13:07:54.140688+00:00,3299620,sacct_step,1,,0,CANCELLED,5-00:00:08,c318-018,,,True,3299620.batch,batch
+2026-07-22T13:07:54.140688+00:00,3299620,sacct_step,1,,0,CANCELLED,4-23:43:09,c318-018,,,True,3299620.0,foamRun
+2026-07-22T13:07:54.140688+00:00,3299620,sacct_step,1,,0,CANCELLED,4-23:43:09,c318-018,,,True,3299620.1,foamRun
+2026-07-22T13:07:54.140688+00:00,3299620,sacct_step,1,,0,CANCELLED,4-23:43:09,c318-018,,,True,3299620.2,foamRun

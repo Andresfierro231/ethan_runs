@@ -1,0 +1,5 @@
+figure_id,figure_name,data_source,plot_type,notes
+F-master-1,Master model-form ladder and admission state,master_model_form_scoreboard.csv,table or swimlane,Show M0-M6 and MF-01-MF-06 with admitted/diagnostic/blocked/future labels.
+F-master-2,Signed TP/TW individual sensor errors,figure_ready_signed_sensor_errors.csv,faceted signed bar chart or heatmap,Use signed K and signed percent error; do not rely only on RMSE.
+F-master-3,S13 upcomer exchange trend,master_model_form_scoreboard.csv plus S13 trend table,three-case trend table or compact line plot,"Plot tau_recirc_proxy, mdot_exchange_positive_outward_proxy, and source-side hA proxy as diagnostic-only."
+F-master-4,Two-tap section-effective pressure residual,two-tap scorecard source tables,signed residual bar chart,Show section-effective residuals; explicitly label component_K/F6 not admitted.

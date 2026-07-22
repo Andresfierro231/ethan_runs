@@ -1,0 +1,3 @@
+timestamp,action,command_summary,result,details
+2026-07-07T19:27:00-05:00,submit_continuation,corr_saltq_g1_cont afterany:3275448 via login3,blocked,"sbatch rejected request: project ASC23046 had 4633 SUs remaining and 4688 SUs already requested by running/waiting jobs; no job ID created."
+2026-07-07T19:27:23-05:00,cancel_gate_jobs,scancel 3279638 3279646 via login3,success,"sacct later reported both gate jobs CANCELLED by 890970 with no start time."

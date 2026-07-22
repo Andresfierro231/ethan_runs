@@ -1,0 +1,22 @@
+{
+  "task_id": "TODO-LITREV-RECIRCULATION-SWITCHING-CALIBRATION",
+  "created": "2026-07-21",
+  "template_rows": 7,
+  "split_requirement_rows": 4,
+  "unresolved_threshold_rows": 6,
+  "selected_numeric_thresholds": 0,
+  "admission_status": "no_admission_change",
+  "model_use_decision": "template_only_thresholds_unresolved",
+  "guardrails": [
+    "no code",
+    "no native-output mutation",
+    "no registry mutation",
+    "no scheduler action",
+    "no Fluid edit",
+    "no external edit",
+    "no generated-index refresh",
+    "no universal literature thresholds imported",
+    "no coefficient admission"
+  ],
+  "analysis": "The current evidence can define TAMU switching fields and split discipline but cannot select epsilon values. Reverse area/mass evidence is strong enough to block ordinary one-stream coefficient use for current lower-right rows, but a future TAMU-specific threshold still needs same definitions, same-QOI uncertainty, and held-out validation."
+}

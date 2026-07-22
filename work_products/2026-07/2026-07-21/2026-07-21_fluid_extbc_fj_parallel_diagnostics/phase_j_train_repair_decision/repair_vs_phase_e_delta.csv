@@ -1,0 +1,2 @@
+metric,phase_e_value,repair_value,delta,reason
+repair_solve_ran,baseline_diagnostic_available,not_run,,No deterministic legal correction was released by Phase G or Phase I; Phase H sensitivities are diagnostic and cannot be selected as fits.

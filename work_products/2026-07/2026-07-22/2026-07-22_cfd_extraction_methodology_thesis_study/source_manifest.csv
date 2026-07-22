@@ -1,0 +1,18 @@
+source_path,role,used_for
+.agent/BOARD.md,coordination,Task authorization and new source/property/cp preflight row
+operational_notes/06-26/30/2026-06-30_thermal_extraction_spec.md,method_reference,Definitions for wall heat flux bulk temperature HTC UA prime Nu property evaluation and caveats
+operational_notes/maps/cfd-runs-and-admission.md,map_reference,CFD case schema lanes and admission/split context
+operational_notes/maps/forward-predictive-model.md,map_reference,Runtime-forbidden inputs and predictive model guardrails
+operational_notes/maps/thermal-closures-and-internal-nu.md,map_reference,Internal Nu boundaries and heat residual ownership
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/README.md,evidence_package,Exact target-window pressure and Qwall method/status
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/pressure_reduction_summary.csv,data_source,Pressure reduction fields and units
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/trusted_wall_Q_wall_summary.csv,data_source,Q_wall_W sign convention and values
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/source_field_audit.csv,data_source,Native-field existence and mutation audit
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv,data_source,Interface wall core thermal/exchange proxy summary
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_interface_fields.csv,data_source,Face-level sampled U T rho and mdot proxy
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/source_basis_audit.csv,data_source,Source basis and Qwall blocker state
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/thermal_accounting_traceability_ledger.csv,data_source,Heat-path runtime/forbidden lanes
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_basis_ladder_evidence_packet/pressure_basis_ladder.csv,data_source,Pressure-basis ladder and non-admission boundary
+work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/nominal_train_release_audit.csv,data_source,Nominal train source/property release blockers
+work_products/2026-07/2026-07-22/2026-07-22_mf13_signed_source_property_heat_path_release_preflight/source_property_release_gate.csv,data_source,cp/source/property release gate status
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_same_qoi_neighbor_uq_execution/same_qoi_uq_matrix.csv,data_source,Same-QOI UQ gate state

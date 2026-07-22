@@ -1,0 +1,16 @@
+{
+  "task_id": "TODO-PRESSURE-FUTURE-LOW-REVERSE-ANCHOR-DESIGN-REFINE-2026-07-22",
+  "decision": "future_low_reverse_anchor_design_refined_no_launch_endpoint_gated",
+  "future_anchor_design_rows": 4,
+  "endpoint_requirement_rows": 6,
+  "existing_replacement_ready_rows": 0,
+  "same_qoi_uq_ready_rows": 0,
+  "component_K_or_F6_release_rows": 0,
+  "cand001_state": "RUNNING",
+  "endpoint_readiness_claimed": false,
+  "scheduler_action": false,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "validation_holdout_external_scoring": false,
+  "final_score_claim": false
+}

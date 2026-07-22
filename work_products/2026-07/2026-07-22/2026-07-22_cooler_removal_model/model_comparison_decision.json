@@ -1,0 +1,15 @@
+{
+  "coupled_rows_completed": 0,
+  "coupled_status_counts": {
+    "not_run_use_--run-fluid_on_compute_node": 12
+  },
+  "created_utc": "2026-07-22T18:46:15.992034+00:00",
+  "final_blocker_impact": "Does not close predictive-wall-test-section-submodels by itself. Coupled score rows still need a compute-node run before blocker impact can be adjudicated.",
+  "fixed_mdot_segmented_duty_status": "pending_native_or_replay_runner; not invented from coupled totals",
+  "runtime_input_gate": "pass",
+  "segmented_candidate_status": "implemented_but_coupled_run_pending",
+  "selected_current_candidate": "HX_LUMPED_UA_NTU",
+  "selection_basis": "Constant-UA reproduces the prior split-legal Salt2-fit duty screen: Salt3 abs error 2.869104004 W and Salt4 abs error 7.502618613 W.",
+  "source_package": "work_products/2026-07/2026-07-22/2026-07-22_cooler_removal_model",
+  "task": "TODO-PREDICT-COOLER-REMOVAL"
+}

@@ -1,0 +1,4 @@
+evidence_family,rows,same_cv_compatible,use_now,caveat
+reverse_flow_topology_proxy,3,false,diagnostic_topology_evidence,reverse-flow topology cannot by itself define a mass-conserved closed recirculation fraction
+s13_exchange_tau_proxy,3,false,diagnostic_exchange_residence_evidence,tau and exchange mdot use repaired interface masks but still lack closed-CV fraction normalization
+medium_fine_mesh_disposition,12,partial,mesh_sensitivity_context,formal GCI remains blocked by missing same-label coarse member

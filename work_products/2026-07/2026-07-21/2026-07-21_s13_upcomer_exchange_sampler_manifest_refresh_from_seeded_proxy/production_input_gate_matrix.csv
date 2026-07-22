@@ -1,0 +1,8 @@
+input_gate,status,blocks_production_sampler,allows_proxy_context,blocking_reason
+pressure_basis,blocked,true,true,p_or_p_rgh missing from cell VTK field inventory
+mu_or_nu_basis,blocked,true,true,mu/nu/nut missing from cell VTK field inventory
+wallHeatFlux_Q_wall_W,blocked,true,true,wallHeatFlux and Q_wall_W integration absent
+cp_property_basis,blocked,true,true,cp_J_kg_K not released
+same_qoi_uq,blocked,true,false,same-QOI UQ absent for reduced exchange QOIs
+production_sampler_harvest,blocked,true,false,sampler-ready rows remain zero
+coefficient_admission,blocked,true,false,fit/admission forbidden for diagnostic average proxy

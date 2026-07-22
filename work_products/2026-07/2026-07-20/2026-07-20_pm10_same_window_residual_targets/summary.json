@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-07-20T19:29:42-05:00",
+  "case_count": 4,
+  "plane_rows": 12,
+  "residual_target_available_cases": 4,
+  "fit_allowed_now": 0,
+  "model_selection_allowed_now": 0,
+  "runtime_input_allowed_now": 0,
+  "parsed_dir": "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_pm10_same_window_residual_targets"
+}

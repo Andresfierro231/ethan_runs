@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="620" viewBox="0 0 980 620">
+<rect x="0" y="0" width="980" height="620" fill="#FFFFFF"/>
+<style>
+text{font-family:Arial,Helvetica,sans-serif;fill:#111827}
+.title{font-size:22px;font-weight:700}
+.subtitle{font-size:12px;fill:#4B5563}
+.axis{stroke:#374151;stroke-width:1}
+.grid{stroke:#E5E7EB;stroke-width:1}
+.tick{font-size:11px;fill:#4B5563}
+.label{font-size:12px;fill:#111827}
+.small{font-size:10px;fill:#4B5563}
+.legend{font-size:11px;fill:#111827}
+</style>
+<text x="90" y="34" class="title">Heat Ledger Enthalpy Residual By Segment</text>
+<text x="90" y="56" class="subtitle">Residual = segment wallHeatFlux sum - mdot cp DeltaT</text>
+<text x="18" y="288.0" class="label" transform="rotate(-90 18 288.0)">W</text>
+<line x1="90" y1="490.00" x2="940" y2="490.00" class="grid"/>
+<text x="82" y="494.00" text-anchor="end" class="tick">-200</text>
+<line x1="90" y1="355.33" x2="940" y2="355.33" class="grid"/>
+<text x="82" y="359.33" text-anchor="end" class="tick">-100</text>
+<line x1="90" y1="220.67" x2="940" y2="220.67" class="grid"/>
+<text x="82" y="224.67" text-anchor="end" class="tick">0</text>
+<line x1="90" y1="86.00" x2="940" y2="86.00" class="grid"/>
+<text x="82" y="90.00" text-anchor="end" class="tick">100</text>
+<line x1="90" y1="220.67" x2="940" y2="220.67" class="axis"/>
+<line x1="90" y1="86" x2="90" y2="490" class="axis"/>
+<rect x="139.19" y="220.67" width="40.46" height="69.37" fill="#C53030"/>
+<rect x="187.35" y="220.67" width="40.46" height="117.89" fill="#2878B5"/>
+<rect x="235.52" y="220.67" width="40.46" height="148.12" fill="#0F766E"/>
+<rect x="283.69" y="220.67" width="40.46" height="218.75" fill="#D97706"/>
+<text x="231.66666666666666" y="518" text-anchor="middle" class="tick">Salt 2</text>
+<rect x="422.52" y="220.67" width="40.46" height="95.73" fill="#C53030"/>
+<rect x="470.69" y="220.67" width="40.46" height="109.45" fill="#2878B5"/>
+<rect x="518.85" y="220.67" width="40.46" height="182.57" fill="#0F766E"/>
+<rect x="567.02" y="160.66" width="40.46" height="60.01" fill="#D97706"/>
+<text x="515.0" y="518" text-anchor="middle" class="tick">Salt 3</text>
+<rect x="705.85" y="220.67" width="40.46" height="132.29" fill="#C53030"/>
+<rect x="754.02" y="220.67" width="40.46" height="96.67" fill="#2878B5"/>
+<rect x="802.19" y="220.67" width="40.46" height="219.09" fill="#0F766E"/>
+<rect x="850.35" y="171.27" width="40.46" height="49.40" fill="#D97706"/>
+<text x="798.3333333333333" y="518" text-anchor="middle" class="tick">Salt 4</text>
+<rect x="90" y="544" width="14" height="14" fill="#C53030"/>
+<text x="110" y="556" class="legend">lower_leg</text>
+<rect x="260" y="544" width="14" height="14" fill="#2878B5"/>
+<text x="280" y="556" class="legend">cooling_branch</text>
+<rect x="430" y="544" width="14" height="14" fill="#0F766E"/>
+<text x="450" y="556" class="legend">downcomer</text>
+<rect x="600" y="544" width="14" height="14" fill="#D97706"/>
+<text x="620" y="556" class="legend">upcomer</text>
+<text x="90" y="584" class="small">Source: patchwise heat ledger joined to span endpoint temperatures. Upcomer residuals are diagnostic-only because endpoint</text>
+<text x="90" y="598" class="small">recirculation is high; junctions are not enthalpy-bracketed.</text>
+</svg>

@@ -1,0 +1,7 @@
+role,path,description
+input,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scorecard_source_property_resolution_policy.csv,Final source/property resolution policy consumed by builder
+input,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv,Conservative nonblank source/property labels used as base labels
+input,tools/agent/source_property_gate.py,Strict source/property gate used for validation
+output,tools/analyze/build_final_predictive_scorecard_shell.py,Builder updated to consume source/property resolution policy
+output,tools/analyze/test_final_predictive_scorecard_shell.py,Focused tests updated for policy integration
+output,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/,Regenerated final predictive scorecard shell

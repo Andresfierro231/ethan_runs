@@ -1,0 +1,22 @@
+{
+  "basis_field_rows": 8,
+  "date": "2026-07-18",
+  "endpoint_surface_rows": 6,
+  "external_fluid_edit": "none",
+  "generated_at_utc": "2026-07-18T18:03:59+00:00",
+  "generated_index_refresh": "not_run_active_agent_owns_generated_index_paths",
+  "launch_gate_rows": 7,
+  "native_output_mutation": "none",
+  "ordinary_admissions": 0,
+  "output_dir": "work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan",
+  "recirculation_contract_rows": 3,
+  "registry_mutation": "none",
+  "same_qoi_uncertainty_rows": 3,
+  "sampling_jobs_launched": 0,
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "solver_or_postprocessing_launched": "none",
+  "source_rows": 12,
+  "target_rows": 3,
+  "task": "TODO-TWO-TAP-COMPONENT-RAW-ENDPOINTS"
+}

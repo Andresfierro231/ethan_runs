@@ -1,0 +1,9 @@
+guardrail,status,evidence
+native_openfoam_outputs_mutated,false,Read only published work_products summaries and compact CSVs
+registry_or_admission_mutated,false,No registry case-admission or model-admission files edited
+scheduler_action,false,No sbatch srun solver postProcess sampler harvest UQ launch or scheduler action
+active_s13_sampler_mutated,false,Active S13 smoke package and outputs were not edited
+fluid_external_repository_mutated,false,No Fluid or external repository edits
+source_property_release_mutated,false,No source/property or Qwall release state changed
+production_harvest_or_mesh_gci_run,false,No production harvest mesh/GCI rerun or sampler launch
+coefficient_or_final_score,false,No ordinary closure exchange coefficient candidate freeze protected score or final score

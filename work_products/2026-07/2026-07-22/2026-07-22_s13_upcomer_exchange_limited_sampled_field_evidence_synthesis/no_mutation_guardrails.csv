@@ -1,0 +1,10 @@
+guard_id,changed,policy
+native_output_mutation,false,read completed packages only
+registry_or_admission_mutation,false,no registry/admission edit
+scheduler_action,false,no scheduler action
+solver_sampler_harvest_uq_launch,false,no launch from this package
+thesis_current_file_edit,false,insert-ready package only
+Q_wall_W_release,false,Q_wall_W remains blocked
+source_property_release,false,no source/property promotion
+downstream_trigger,false,no S11/S12/S13/S15/S6 trigger
+residual_absorbed_into_internal_Nu,false,no residual absorption

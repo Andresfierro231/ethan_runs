@@ -1,0 +1,11 @@
+guard_id,changed,policy
+native_output_mutation,false,read completed packages only
+registry_or_admission_mutation,false,no registry/admission edit
+scheduler_action,false,no scheduler action
+fluid_solve_or_external_edit,false,no Fluid solve or external edit
+validation_holdout_external_scoring,false,no protected scoring
+fitting_or_model_selection,false,no fit or model selection
+source_property_release,false,no source/property release
+final_score_or_freeze,false,no final score or candidate freeze
+downstream_trigger,false,no S11/S12/S13/S15/S6 trigger
+residual_absorbed_into_internal_Nu,false,forbidden

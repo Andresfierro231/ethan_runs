@@ -1,0 +1,18 @@
+{
+  "admission_status_rows": 4,
+  "all_sources_present": true,
+  "blocking_prerequisite_gates": 6,
+  "candidate_rows": 4,
+  "candidates_admitted": 0,
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "final_forward_v1_status": "blocked",
+  "generated_index_refreshed": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 5,
+  "runtime_audit_rows": 5,
+  "scheduler_action": false,
+  "task": "TODO-PREDICT-COUPLED-SEGMENT-M3TS-SCORECARD",
+  "unresolved_blocker_rows": 4
+}

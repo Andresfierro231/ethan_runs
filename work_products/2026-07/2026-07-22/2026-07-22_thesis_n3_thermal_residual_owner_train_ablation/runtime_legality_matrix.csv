@@ -1,0 +1,7 @@
+lane,runtime_legal,source_property_released,admission_allowed,reason
+baseline,false,false,false,baseline is comparator
+external_boundary,false,false,false,negative freeze; missing ambient wall rows
+passive_wall,false,false,false,0 source families released
+test_section_source,false,false,false,partial improvement and worsening both observed
+junction_stub,false,false,false,no independent source/property basis
+empirical_diagnostic,false,false,false,fit is not physics admission and transfer was not used for model selection

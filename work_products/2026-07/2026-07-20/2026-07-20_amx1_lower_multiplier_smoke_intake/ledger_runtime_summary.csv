@@ -1,0 +1,12 @@
+field,value
+root_gate_rows_passed,7/7
+amx1_ledger_rows_nonzero,6/6
+amx1_ledger_rows_conservative,6/6
+min_amx1_ledger_abs_sum_W,0.4324187041688136
+max_amx1_ledger_abs_sum_W,1.5315226889816838
+max_abs_ledger_total_net_W,0.00000000000000010408340855860843
+max_abs_ledger_residual_W,0.0
+runtime_total_duration_s,755.5354629999999
+runtime_solve_duration_s,731.341217
+runtime_max_scenario_duration_s,113.182292
+runtime_summary_found,true

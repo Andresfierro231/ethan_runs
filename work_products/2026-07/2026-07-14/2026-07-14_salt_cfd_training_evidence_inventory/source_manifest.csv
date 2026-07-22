@@ -1,0 +1,39 @@
+artifact,role,path,exists,notes
+case_registry.csv,read_only_input,registry/case_registry.csv,True,input evidence; not mutated
+_all_postprocessing_runs.csv,read_only_input,registry/_all_postprocessing_runs.csv,True,input evidence; not mutated
+_family_index.csv,read_only_input,registry/salt1/_family_index.csv,True,input evidence; not mutated
+_family_index.csv,read_only_input,registry/salt2/_family_index.csv,True,input evidence; not mutated
+_family_index.csv,read_only_input,registry/salt3/_family_index.csv,True,input evidence; not mutated
+_family_index.csv,read_only_input,registry/salt4/_family_index.csv,True,input evidence; not mutated
+admission_split_table.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv,True,input evidence; not mutated
+thermal_boundary_patch_role_table.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv,True,input evidence; not mutated
+patch_role_area_heat_summary.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv,True,input evidence; not mutated
+admission_decision_table.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_salt1_terminal_harvest_admission_review/admission_decision_table.csv,True,input evidence; not mutated
+final_window_metrics.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_stopped_sbatch_steady_state_decisions/final_window_metrics.csv,True,input evidence; not mutated
+corrected_case_manifest.csv,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv,True,input evidence; not mutated
+all_corrected_q_status_table.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_corrected_q_latest_time_refresh/all_corrected_q_status_table.csv,True,input evidence; not mutated
+corrected_q_terminal_gate_rows.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/corrected_q_terminal_gate_rows.csv,True,input evidence; not mutated
+selected_runtime_preflight_3293924.csv,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3293924.csv,True,input evidence; not mutated
+selected_submitted_jobs.csv,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv,True,input evidence; not mutated
+submitted_jobs.csv,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/submitted_jobs.csv,True,input evidence; not mutated
+README.md,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/README.md,True,input evidence; not mutated
+TODO.md,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/TODO.md,True,input evidence; not mutated
+slurm-saltq_sel_cont-3293924.out,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.out,True,input evidence; not mutated
+slurm-saltq_sel_cont-3293924.err,read_only_input,jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/slurm-saltq_sel_cont-3293924.err,True,input evidence; not mutated
+refreshed_qoi_mesh_gate_status.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/refreshed_qoi_mesh_gate_status.csv,True,input evidence; not mutated
+thermal_admission_table.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv,True,input evidence; not mutated
+fit_safety_summary.csv,read_only_input,work_products/2026-07/2026-07-13/2026-07-13_salt2_pressure_only_mesh_family_comparison/fit_safety_summary.csv,True,input evidence; not mutated
+upcomer_recirculation_onset_conditions.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/upcomer_recirculation_onset_conditions.csv,True,input evidence; not mutated
+blocked_missing_metrics.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv,True,input evidence; not mutated
+next_evidence_requirements.csv,read_only_input,work_products/2026-07/2026-07-14/2026-07-14_upcomer_onset_blocker_resolution/next_evidence_requirements.csv,True,input evidence; not mutated
+mesh-gci-and-uncertainty.md,read_only_input,operational_notes/maps/mesh-gci-and-uncertainty.md,True,input evidence; not mutated
+cfd-runs-and-admission.md,read_only_input,operational_notes/maps/cfd-runs-and-admission.md,True,input evidence; not mutated
+thermal-boundary-and-radiation.md,read_only_input,operational_notes/maps/thermal-boundary-and-radiation.md,True,input evidence; not mutated
+salt_cfd_candidate_inventory.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+corrected_q_perturbation_status.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/corrected_q_perturbation_status.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+steady_state_admission_matrix.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/steady_state_admission_matrix.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+bc_role_label_inventory.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/bc_role_label_inventory.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+recommended_salt_split.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/recommended_salt_split.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+run_actions_needed.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/run_actions_needed.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+upcomer_onset_candidate_cases.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/upcomer_onset_candidate_cases.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py
+excluded_or_diagnostic_salt_runs.csv,generated_output,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/excluded_or_diagnostic_salt_runs.csv,True,generated by tools/analyze/build_salt_cfd_training_evidence_inventory.py

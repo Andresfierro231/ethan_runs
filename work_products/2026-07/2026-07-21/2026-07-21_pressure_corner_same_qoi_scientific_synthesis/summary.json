@@ -1,0 +1,16 @@
+{
+  "admitted_rows": 0,
+  "attempt_rows": 5,
+  "blocker_rows": 7,
+  "clipped_k_rows": 0,
+  "cluster_k_admitted_rows": 0,
+  "component_k_admitted_rows": 0,
+  "f6_fit_rows": 0,
+  "guardrail": "documentation and triage only; no native-output mutation, sampler launch, fitting, coefficient admission, clipped K, or global multiplier",
+  "next_sequence_rows": 6,
+  "package_multiplier_rows": 0,
+  "pressure_corner_rows_reviewed": 3,
+  "recommended_next_board_row": "TODO-PRESSURE-CORNER-LOW-RECIRC-ANCHOR-HARVEST",
+  "same_qoi_rows_reviewed": 83,
+  "task": "TODO-PRESSURE-CORNER-SAME-QOI-SCIENTIFIC-SYNTHESIS-2026-07-21"
+}

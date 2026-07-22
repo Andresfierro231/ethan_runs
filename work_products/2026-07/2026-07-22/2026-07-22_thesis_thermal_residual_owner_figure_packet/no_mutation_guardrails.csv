@@ -1,0 +1,7 @@
+guardrail,value
+thermal_closure_claim,false
+residual_absorbed_into_internal_nu,false
+source_property_release,false
+candidate_freeze_or_final_score,false
+Fluid_solve_or_edit,false
+runtime_temperature_release,false

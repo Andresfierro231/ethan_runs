@@ -1,0 +1,14 @@
+source_path,role,notes
+.agent/BOARD.md,coordination,Current board is more recent than generated STATE if they disagree.
+operational_notes/07-26/13/2026-07-13_TOMORROW_CORRECTED_SALT_Q_LIVE_JOB_HANDOFF.md,live_job_handoff,Detailed monitor and terminal-gate instructions for corrected Salt-Q job 3293924.
+work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/comparison_summary.json,solve_case_confirmation,Reports solve_case-vs-fast_scan pass status for six forward-v0 rows.
+work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/README.md,hx_fit,HX1 one-scalar campaign; heater-only F1 improves temperature proxy scores but mdot remains high.
+work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/README.md,hydraulic_next,H1 localized named-loss/reset bundle is the preferred next hydraulic candidate.
+work_products/2026-07/2026-07-13/2026-07-13_predictive_endtoend_scorecard_precursor/README.md,scorecard_boundary,Precursor only; final forward-v1 remains blocked.
+work_products/2026-07/2026-07-13/2026-07-13_predictive_external_bc_implementation_wave/README.md,external_boundary_bridge,Fluid-ready external-boundary rows and downstream Fluid patch plan; external source not edited here.
+work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/README.md,sensor_contract,17 TP/TW labels mapped; 15 diagnostic-scoreable; TP2 and TW10 blocked.
+work_products/2026-07/2026-07-13/2026-07-13_thermal_mesh_gate/README.md,thermal_gate,Zero fit-admissible thermal rows; thermal closure remains blocked.
+reports/thesis_dossier/README.md,thesis_hub,Living front door for thesis and weekly-presentation context.
+reports/thesis_dossier/master_thesis_bullet_outline.md,thesis_outline,Current thesis model forms and two-week plan.
+operational_notes/maps/forward-predictive-model.md,topic_map,Forward predictive model map of content.
+operational_notes/maps/literature-synthesis-and-gates.md,topic_map,Lit-review gates and author/title provenance chain.

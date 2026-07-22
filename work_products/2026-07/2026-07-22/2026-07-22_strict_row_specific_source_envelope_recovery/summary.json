@@ -1,0 +1,25 @@
+{
+  "task_id": "TODO-STRICT-ROW-SPECIFIC-SOURCE-ENVELOPE-RECOVERY-2026-07-22",
+  "decision": "strict_source_envelope_recovery_fail_closed_zero_release_rows",
+  "nominal_train_rows_reviewed": 4,
+  "label_complete_rows": 4,
+  "strict_source_envelope_pass_rows": 0,
+  "source_property_release_rows": 0,
+  "s13_mf12_smoke_admission_rows": 0,
+  "downstream_gate_order": [
+    "strict_row_specific_source_envelope",
+    "same_label_mesh_gci_four_s13_qois",
+    "same_mask_exchange_cv_energy_residual",
+    "train_only_s13_exchange_cell_plus_mf12_source_memory_temperature_smoke"
+  ],
+  "current_s13_sampler_dependency": "repaired sampler job 3310996 running at last checked state",
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "candidate_freeze": false,
+  "validation_holdout_external_scoring": false,
+  "coefficient_admission": false,
+  "final_score_claim": false
+}

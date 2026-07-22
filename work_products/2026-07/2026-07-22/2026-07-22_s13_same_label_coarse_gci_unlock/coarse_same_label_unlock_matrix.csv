@@ -1,0 +1,7 @@
+criterion,necessity,current_status,current_evidence_or_gap,coarse_same_label_pass,admission_effect_if_satisfied
+qoi_label_formula_sign_units,required,not_admitted_currently,"current rows state formula/sign basis, but no audited joined triplet contract exists",false,can consider coarse-equivalent triplet only after all required criteria pass
+geometry_mask_provenance,required,not_admitted_currently,medium/fine masks are mesh-level sampler masks; current coarse is reconstructed from prior topology packages,false,can consider coarse-equivalent triplet only after all required criteria pass
+time_window_equivalence,required,not_admitted_currently,coarse windows are continuation retained windows; medium/fine terminal windows are not strict same-time companions,false,can consider coarse-equivalent triplet only after all required criteria pass
+field_source_property_basis,required,not_admitted_currently,source/property and cp/viscosity releases remain separate gates,false,can consider coarse-equivalent triplet only after all required criteria pass
+closed_or_residual_accounted_cv,required_for_admission,not_admitted_currently,"open-CV diagnostics exist, but no production energy residual is closed on the same basis",false,can consider coarse-equivalent triplet only after all required criteria pass
+same_qoi_uq_and_mesh_disposition,required,partially_available_diagnostic,temporal UQ exists and Q_wall_W medium/fine spread is low; formal GCI and proxy stability fail closed,false,can consider coarse-equivalent triplet only after all required criteria pass

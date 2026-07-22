@@ -1,0 +1,49 @@
+case_id,path_id,lane,model_W,cfd_imposed_W,cfd_realized_W,model_minus_cfd_realized_W,interpretation
+salt_2,N0_current_fluid_rad_off,heater_source,265.7,265.7,243.519098,22.180902,Heater setup versus heat actually transferred to the fluid.
+salt_2,N0_current_fluid_rad_off,cooler_sink,-53.755454,-136.35074,-136.35074,82.595286,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_2,N0_current_fluid_rad_off,test_section,37.0,37.0,-5.679836,42.679836,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_2,N0_current_fluid_rad_off,external_passive_loss,-177.637369,0.0,-101.362257,-76.275112,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_2,N1_heater_cooler_imposed_rad_off,heater_source,265.7,265.7,243.519098,22.180902,Heater setup versus heat actually transferred to the fluid.
+salt_2,N1_heater_cooler_imposed_rad_off,cooler_sink,-136.35074,-136.35074,-136.35074,0.0,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_2,N1_heater_cooler_imposed_rad_off,test_section,0.0,37.0,-5.679836,5.679836,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_2,N1_heater_cooler_imposed_rad_off,external_passive_loss,-92.712741,0.0,-101.362257,8.649516,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_2,N3_realized_wallflux_diagnostic_rad_off,heater_source,243.519098,265.7,243.519098,0.0,Heater setup versus heat actually transferred to the fluid.
+salt_2,N3_realized_wallflux_diagnostic_rad_off,cooler_sink,-0.0,-136.35074,-136.35074,136.35074,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_2,N3_realized_wallflux_diagnostic_rad_off,test_section,0.0,37.0,-5.679836,5.679836,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_2,N3_realized_wallflux_diagnostic_rad_off,external_passive_loss,-243.392833,0.0,-101.362257,-142.030576,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_2,N2_cfd_setup_bc_plus_passive_conv_rad_off,heater_source,265.7,265.7,243.519098,22.180902,Heater setup versus heat actually transferred to the fluid.
+salt_2,N2_cfd_setup_bc_plus_passive_conv_rad_off,cooler_sink,-136.35074,-136.35074,-136.35074,0.0,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_2,N2_cfd_setup_bc_plus_passive_conv_rad_off,test_section,37.0,37.0,-5.679836,42.679836,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_2,N2_cfd_setup_bc_plus_passive_conv_rad_off,external_passive_loss,-166.34508,0.0,-101.362257,-64.982823,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_3,N0_current_fluid_rad_off,heater_source,297.5,297.5,273.155375,24.344625,Heater setup versus heat actually transferred to the fluid.
+salt_3,N0_current_fluid_rad_off,cooler_sink,-53.865976,-150.769639,-150.769639,96.903663,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_3,N0_current_fluid_rad_off,test_section,37.0,37.0,-10.54504,47.54504,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_3,N0_current_fluid_rad_off,external_passive_loss,-178.986459,0.0,-111.55439,-67.432069,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_3,N1_heater_cooler_imposed_rad_off,heater_source,297.5,297.5,273.155375,24.344625,Heater setup versus heat actually transferred to the fluid.
+salt_3,N1_heater_cooler_imposed_rad_off,cooler_sink,-150.769639,-150.769639,-150.769639,-0.0,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_3,N1_heater_cooler_imposed_rad_off,test_section,0.0,37.0,-10.54504,10.54504,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_3,N1_heater_cooler_imposed_rad_off,external_passive_loss,-105.123113,0.0,-111.55439,6.431277,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_3,N3_realized_wallflux_diagnostic_rad_off,heater_source,273.155375,297.5,273.155375,0.0,Heater setup versus heat actually transferred to the fluid.
+salt_3,N3_realized_wallflux_diagnostic_rad_off,cooler_sink,-0.0,-150.769639,-150.769639,150.769639,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_3,N3_realized_wallflux_diagnostic_rad_off,test_section,0.0,37.0,-10.54504,10.54504,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_3,N3_realized_wallflux_diagnostic_rad_off,external_passive_loss,-272.869069,0.0,-111.55439,-161.314679,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_3,N2_cfd_setup_bc_plus_passive_conv_rad_off,heater_source,297.5,297.5,273.155375,24.344625,Heater setup versus heat actually transferred to the fluid.
+salt_3,N2_cfd_setup_bc_plus_passive_conv_rad_off,cooler_sink,-150.769639,-150.769639,-150.769639,-0.0,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_3,N2_cfd_setup_bc_plus_passive_conv_rad_off,test_section,37.0,37.0,-10.54504,47.54504,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_3,N2_cfd_setup_bc_plus_passive_conv_rad_off,external_passive_loss,-183.726184,0.0,-111.55439,-72.171794,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_4,N0_current_fluid_rad_off,heater_source,337.6,337.6,310.487058,27.112942,Heater setup versus heat actually transferred to the fluid.
+salt_4,N0_current_fluid_rad_off,cooler_sink,-53.999574,-169.226815,-169.226814,115.227239,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_4,N0_current_fluid_rad_off,test_section,37.0,37.0,-16.768686,53.768686,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_4,N0_current_fluid_rad_off,external_passive_loss,-179.991474,0.0,-124.412333,-55.579141,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_4,N1_heater_cooler_imposed_rad_off,heater_source,337.6,337.6,310.487058,27.112942,Heater setup versus heat actually transferred to the fluid.
+salt_4,N1_heater_cooler_imposed_rad_off,cooler_sink,-169.226815,-169.226815,-169.226814,-1e-06,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_4,N1_heater_cooler_imposed_rad_off,test_section,0.0,37.0,-16.768686,16.768686,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_4,N1_heater_cooler_imposed_rad_off,external_passive_loss,-120.528256,0.0,-124.412333,3.884077,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_4,N3_realized_wallflux_diagnostic_rad_off,heater_source,310.487058,337.6,310.487058,0.0,Heater setup versus heat actually transferred to the fluid.
+salt_4,N3_realized_wallflux_diagnostic_rad_off,cooler_sink,-0.0,-169.226815,-169.226814,169.226814,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_4,N3_realized_wallflux_diagnostic_rad_off,test_section,0.0,37.0,-16.768686,16.768686,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_4,N3_realized_wallflux_diagnostic_rad_off,external_passive_loss,-310.407832,0.0,-124.412333,-185.995499,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.
+salt_4,N2_cfd_setup_bc_plus_passive_conv_rad_off,heater_source,337.6,337.6,310.487058,27.112942,Heater setup versus heat actually transferred to the fluid.
+salt_4,N2_cfd_setup_bc_plus_passive_conv_rad_off,cooler_sink,-169.226815,-169.226815,-169.226814,-1e-06,Cooling-jacket duty parity; negative means heat removed from fluid.
+salt_4,N2_cfd_setup_bc_plus_passive_conv_rad_off,test_section,37.0,37.0,-16.768686,53.768686,Quartz/test-section role discrepancy; CFD setup source can realize as net sink.
+salt_4,N2_cfd_setup_bc_plus_passive_conv_rad_off,external_passive_loss,-205.368926,0.0,-124.412333,-80.956593,Ambient/junction passive external heat-loss lane with radiation disabled in the 1D pass; heater/test/cooler are reported separately.

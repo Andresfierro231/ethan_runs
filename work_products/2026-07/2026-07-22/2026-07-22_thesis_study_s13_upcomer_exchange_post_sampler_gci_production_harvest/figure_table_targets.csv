@@ -1,0 +1,4 @@
+target_id,recommended_artifact,purpose,status
+fig_s13_post_sampler_gate_waterfall,production_go_no_go_gate.csv,show why temporal UQ did not unlock production after sampler execution,table_ready_no_plot_required
+table_s13_qoi_readiness_after_sampler,post_sampler_qoi_mesh_gci_readiness.csv,"list four QOI labels with temporal UQ, post-sampler rows, mesh/GCI, production, and admission flags",table_ready
+table_s13_repair_queue,next_repair_queue.csv,give the next implementer exact repair order before rerun,table_ready

@@ -1,0 +1,10 @@
+{
+  "case_key": "salt4_jin_q3x_no_recirc_probe",
+  "cooler_policy": "scale three fixed cooler/sink Q patches by same 3.0x factor as heater",
+  "current_max_heater_power_W": 371.36000000000007,
+  "prediction_class": "aggressive_bracket_not_admitted_no_recirc_prediction",
+  "runtime_policy": "explicit integer restart, general timeFormat, timePrecision 6, diagnostic-only convergenceMonitor",
+  "target_heater_power_W": 1012.8000000000001,
+  "target_vs_current_max_ratio": 2.727272727272727,
+  "task": "AGENT-471"
+}

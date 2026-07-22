@@ -1,0 +1,7 @@
+span,row_count,allowed_rows,recirc_blocked_rows,uq_blocked_rows,lane_status,coefficient_admission_status
+left_lower_leg,15,0,15,15,blocked_for_single_stream_developing,no_coefficient_admission
+left_upper_leg,15,0,15,15,blocked_for_single_stream_developing,no_coefficient_admission
+lower_leg,15,15,0,15,precheck_only_no_admission,no_coefficient_admission
+right_leg,15,15,0,15,precheck_only_no_admission,no_coefficient_admission
+test_section_span,15,15,0,15,precheck_only_no_admission,no_coefficient_admission
+upper_leg,15,15,0,15,precheck_only_no_admission,no_coefficient_admission

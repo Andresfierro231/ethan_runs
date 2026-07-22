@@ -1,0 +1,12 @@
+source_or_property_family,current_release_status,release_ready,protected_row_release_allowed,candidate_use_now,primary_blocker,next_gate
+Salt1 branch source envelope,blocked,no,no,diagnostic context only,missing row-specific Salt1 branch source-envelope evidence,join row-specific strict-pass source-envelope evidence before S11/S15 release
+Salt2/Salt3/Salt4 mixed source envelope,blocked,no,no,diagnostic context only,mixed/outside/unknown source-envelope evidence prevents strict pass,replace mixed/outside/unknown labels with row-specific strict-pass evidence
+heater source fraction and test-section source/loss,evidence_only,no,no,source-bounded residual ownership discussion,independent source allocation has not been released for prediction,independent source/property release tied to setup-known inputs
+cooler/HX removal or UA,blocked,no,no,not a runtime candidate input,cooler duty or realized heat removal would be post-solve leakage,predeclared setup-known cooler model with no realized CFD duty input
+passive wall and external hA/radiation,evidence_only,no,no,thermal residual attribution only,passive wall repair is not released as source-bounded candidate,runtime-legal wall basis plus row-specific source-envelope pass
+fluid property mode,label_only,no,no,provenance label and gate context,property sensitivity remains material-closure fit blocked,candidate-specific property release independent of protected rows
+wall/layer materials,evidence_only,no,no,wall/core temperature interpretation,runtime wall profile basis is not released,predeclared wall material/source basis with same-QOI UQ
+signed wall flux and heat path,preflight_only,no,no,heat-path diagnostic and source-property blocker evidence,signed source/property heat path has not passed release gate,same-window energy residual and candidate-specific source release
+S13 exchange Qwall,blocked,no,no,finite sampled-field evidence only,"production harvest, same-label mesh family, and same-QOI UQ gates remain blocked",production exchange-state harvest plus same-window Qwall UQ
+empirical correction,diagnostic_only,no,no,bias-shape interpretation only,not a physical source/property release,convert to a physical source-bounded candidate or keep diagnostic
+junction/stub source or pressure coupling,blocked,no,no,blocker localization,no independent source/property release and pressure anchors remain insufficient,low-recirculation pressure anchors plus independent source/property release

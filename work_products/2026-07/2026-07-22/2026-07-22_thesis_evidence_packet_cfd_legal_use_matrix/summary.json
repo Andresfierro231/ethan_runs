@@ -1,0 +1,21 @@
+{
+  "candidate_freeze": false,
+  "case_split_rows": 16,
+  "current_protected_score_allowed": false,
+  "date": "2026-07-22",
+  "decision": "cfd_evidence_legal_use_matrix_ready_no_scoring_no_runtime_leakage",
+  "evidence_class_rows": 8,
+  "final_score": "not_performed",
+  "fluid_or_external_edit": false,
+  "native_output_mutation": false,
+  "pm10_protected_score_allowed_now_rows": 0,
+  "pm10_terminal_evidence_admitted_rows": 4,
+  "registry_or_admission_mutation": false,
+  "runtime_forbidden_input_rows": 6,
+  "runtime_leakage_detected": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-EVIDENCE-PACKET-CFD-LEGAL-USE-MATRIX-2026-07-22",
+  "validation_holdout_external_scoring": false,
+  "writer_claim_boundary_rows": 5
+}

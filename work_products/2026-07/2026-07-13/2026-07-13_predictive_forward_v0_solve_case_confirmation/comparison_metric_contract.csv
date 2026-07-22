@@ -1,0 +1,9 @@
+metric_id,source_file,comparison,confirmation_band,interpretation
+row_identity,forward_v0_results.csv,same case_id and variant_id in fast_scan_reference and solve_case_full,all 6 rows present in both engines,missing rows block confirmation
+accepted_for_validation,forward_v0_results.csv,solve_case accepted_for_validation and fast_scan accepted_for_validation,all solve_case rows true; mismatches reported,solve_case is authoritative; a false solve_case row blocks thesis use
+mdot_delta_kg_s,forward_v0_results.csv,solve_case mdot_kg_s minus fast_scan mdot_kg_s,report all rows; <= 1e-3 kg/s supports fast_scan as a proxy,"larger deltas do not invalidate solve_case, but fast_scan must be labeled approximate"
+pressure_residual_delta_Pa,forward_v0_results.csv,solve_case pressure_residual_Pa minus fast_scan pressure_residual_Pa,report all rows; solve_case should be near its internal validity policy,used to diagnose whether fast_scan residual tolerances are materially different
+model_Tmean_delta_K,forward_v0_results.csv,solve_case model_Tmean_proxy_K minus fast_scan model_Tmean_proxy_K,report all rows; <= 1 K supports fast_scan thermal proxy,larger thermal deltas mean thesis tables should use solve_case only
+model_loop_delta_delta_K,forward_v0_results.csv,solve_case model_loop_delta_proxy_K minus fast_scan model_loop_delta_proxy_K,report all rows; <= 1 K supports fast_scan loop-span proxy,checks whether local thermal gradients shift under full solve
+qambient_delta_W,forward_v0_results.csv,solve_case qambient_total_W minus fast_scan qambient_total_W,report all rows; <= 5 W supports fast_scan heat-ledger proxy,larger deltas require heat-ledger claims from solve_case package
+sensor_streams,forward_v0_sensor_predictions_experimental.csv and forward_v0_sensor_predictions_cfd.csv,row counts and downstream error summaries after solve,expected 102 experimental and 102 CFD sensor rows per engine,"sensor rows remain validation outputs, not runtime inputs"

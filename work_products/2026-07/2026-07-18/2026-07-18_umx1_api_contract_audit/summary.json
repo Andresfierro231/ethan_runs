@@ -1,0 +1,25 @@
+{
+  "api_contract_rows": 6,
+  "blockers_touched": [
+    "predictive-wall-test-section-submodels",
+    "upcomer-onset-data-sparsity"
+  ],
+  "contract_emitted": "no_solver_api_contract",
+  "created_at_utc": "2026-07-18T18:07:51.230088+00:00",
+  "date": "2026-07-18",
+  "decision": "no_real_upcomer_mixing_hook_no_solver_api_contract",
+  "external_fluid_mutation": "none",
+  "loader_real_hook_field_present": "false",
+  "next_action": "stop_before_solver; implement Fluid API in separate external-edit row",
+  "output_path": "work_products/2026-07/2026-07-18/2026-07-18_umx1_api_contract_audit",
+  "possible_text_hit_count": 0,
+  "real_hook_present": "false",
+  "runtime_audit_gates": 3,
+  "scenario_fields_reviewed": 44,
+  "scenario_real_hook_field_count": 0,
+  "scientific_admission_change": "none",
+  "solver_run": "none",
+  "source_manifest_rows": 9,
+  "static_scan_rows": 61,
+  "task": "AGENT-537"
+}

@@ -1,0 +1,13 @@
+path,role,exists,native_solver_output,mutated
+tools/extract/build_s13_right_leg_geometry_seed.py,task-owned builder,true,false,true
+work_products/2026-07/2026-07-21/2026-07-21_s13_s14_recirc_cv_segmentation_preflight/recirc_segmentation_case_summary.csv,read reverse-flow mask provenance,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_roi_patch_alignment_audit/summary.json,read prior ROI alignment blocker,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_definition/release_decision.csv,read prior source-bounded blocker,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_diagnostic_roi_average_bridge/diagnostic_roi_average_bridge.csv,read diagnostic-only proxy context,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh,read salt_2 polyMesh topology,true,true,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes/salt_2_cell_volumes.csv,read salt_2 cell volumes,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh,read salt_3 polyMesh topology,true,true,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes/salt_3_cell_volumes.csv,read salt_3 cell volumes,true,false,false
+jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh,read salt_4 polyMesh topology,true,true,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_input_generation/cell_volumes/salt_4_cell_volumes.csv,read salt_4 cell volumes,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s13_right_leg_geometry_seed,generated task-owned package,true,false,true

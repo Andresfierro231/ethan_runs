@@ -1,0 +1,10 @@
+source_id,path,use,mutation_status
+scorecard_readme,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/README.md,final scorecard shell summary and counts,read_only
+case_partition_contract,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,row-level split and source/property permissions,read_only
+source_property_gate_audit,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/source_property_label_gate_audit.csv,label completeness and blocked rows,read_only
+holdout_release_gates,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/holdout_release_gates.csv,holdout/external protection evidence,read_only
+scorecard_summary,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/summary.json,machine-readable shell counts,read_only
+source_property_enforcement_readme,work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/README.md,enforcement decision and counts,read_only
+source_property_enforced_rows,work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/source_property_enforced_fit_admission_rows.csv,enforced candidate row audit,read_only
+source_property_enforcement_summary,work_products/2026-07/2026-07-18/2026-07-18_source_property_label_enforcement/summary.json,enforcement machine-readable counts,read_only
+canonical_split_policy,work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/README.md,split policy context,read_only

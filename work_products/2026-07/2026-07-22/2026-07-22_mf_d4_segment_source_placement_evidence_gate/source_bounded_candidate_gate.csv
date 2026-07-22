@@ -1,0 +1,5 @@
+candidate_id,prediction_source_segment,mapped_source_family,transfer_improved,d4_minus_m3_transfer_rmse_K,d4_mean_correction_K,independent_evidence_ready,source_bounded_candidate_ready,gate_status,decision_reason
+D4-SOURCE-heated_incline,heated_incline,lower_leg,True,-3.03105262114,11.2569883681,False,False,fail_closed_empirical_upper_bound_only,D4 transfer improvement is empirical; independent source/property or geometry release is missing
+D4-SOURCE-left_lower_vertical,left_lower_vertical,upcomer,True,-8.55869351373,12.7272805634,False,False,fail_closed_empirical_upper_bound_only,D4 transfer improvement is empirical; independent source/property or geometry release is missing
+D4-SOURCE-left_upper_vertical,left_upper_vertical,upcomer,True,-11.1411976364,16.1742732272,False,False,fail_closed_empirical_upper_bound_only,D4 transfer improvement is empirical; independent source/property or geometry release is missing
+D4-SOURCE-right_vertical,right_vertical,downcomer,True,-18.7328701562,30.599847404,False,False,fail_closed_empirical_upper_bound_only,D4 transfer improvement is empirical; independent source/property or geometry release is missing

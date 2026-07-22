@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="610" viewBox="0 0 1100 610" role="img" aria-labelledby="title desc">
+  <title id="title">Upcomer onset evidence gate</title>
+  <desc id="desc">Diagnostic recirculation evidence exists, but closed fraction, same-CV Ri, mesh GCI, production harvest, and admission are blocked.</desc>
+  <rect width="1100" height="610" fill="#f7f8f5"/>
+  <text x="50" y="54" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#1f2a2e">Upcomer onset and recirculation-fraction gate</text>
+  <text x="50" y="87" font-family="Arial, sans-serif" font-size="15" fill="#45565c">Salt2-4 show persistent reverse-flow proxies, but current evidence remains diagnostic.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="70" y="130" width="145" height="58" rx="4" fill="#2f7d68"/>
+    <text x="94" y="163" font-size="14" font-weight="700" fill="#ffffff">Visual bound</text>
+    <text x="90" y="181" font-size="12" fill="#ffffff">0.0770 m/s</text>
+    <rect x="245" y="130" width="145" height="58" rx="4" fill="#2f7d68"/>
+    <text x="270" y="163" font-size="14" font-weight="700" fill="#ffffff">Reverse proxy</text>
+    <text x="270" y="181" font-size="12" fill="#ffffff">0.158-0.162</text>
+    <rect x="420" y="130" width="145" height="58" rx="4" fill="#b9822b"/>
+    <text x="452" y="163" font-size="14" font-weight="700" fill="#ffffff">S13 tau</text>
+    <text x="440" y="181" font-size="12" fill="#ffffff">301-869 s</text>
+    <rect x="595" y="130" width="145" height="58" rx="4" fill="#8f4638"/>
+    <text x="624" y="163" font-size="14" font-weight="700" fill="#ffffff">Closed CV</text>
+    <text x="626" y="181" font-size="12" fill="#ffffff">blocked</text>
+    <rect x="770" y="130" width="145" height="58" rx="4" fill="#8f4638"/>
+    <text x="805" y="163" font-size="14" font-weight="700" fill="#ffffff">Mesh/GCI</text>
+    <text x="802" y="181" font-size="12" fill="#ffffff">0 accepted</text>
+    <rect x="945" y="130" width="85" height="58" rx="4" fill="#8f4638"/>
+    <text x="960" y="163" font-size="14" font-weight="700" fill="#ffffff">Admit</text>
+    <text x="962" y="181" font-size="12" fill="#ffffff">closed</text>
+  </g>
+  <g font-family="Arial, sans-serif" font-size="14" fill="#1f2a2e">
+    <text x="70" y="255" font-weight="700">What can be said now</text>
+    <text x="70" y="291">Salt2/Salt3/Salt4 have similar right-leg reverse-candidate fractions and fragmented reverse-flow topology.</text>
+    <text x="70" y="327">Current-coarse S13 exchange/tau proxies are finite and temporally bounded for four QOI labels.</text>
+    <text x="70" y="363">Ordinary upcomer Nu, f_D, K, and F6 remain disabled for recirculating spans.</text>
+    <text x="70" y="399">The next admission-relevant evidence is exact-label medium/fine mesh/GCI after the active S13 smoke passes.</text>
+  </g>
+  <rect x="70" y="475" width="960" height="72" rx="4" fill="#ffffff" stroke="#c7d0d3"/>
+  <text x="92" y="504" font-family="Arial, sans-serif" font-size="16" font-weight="700" fill="#1f2a2e">Decision</text>
+  <text x="92" y="530" font-family="Arial, sans-serif" font-size="14" fill="#1f2a2e">Diagnostic onset evidence is ready, but closed recirculation fraction, same-CV Ri, production harvest, and coefficient admission fail closed.</text>
+</svg>

@@ -1,0 +1,7 @@
+gate_id,gate,status,release_allowed_now,evidence,next_required
+PH2-SRC-01,engineering_screen,pass,false,all current passive h and fixed-state q estimates sit inside broad engineering screens,promote from order screen to source-backed family-specific basis
+PH2-SRC-02,wall_heat_flux_independence,fail,false,all passive rows still carry wall heat-flux provenance paths,replace current h basis with independent setup/geometry/literature values
+PH2-SRC-03,ambient_geometry_insulation_basis,fail,false,"ambient, geometry/area, insulation exposure, and room-flow basis remain provisional",document source-backed ambient and external-surface exposure envelope
+PH2-SRC-04,source_sink_coupling,partial,false,"setup-known source/sink rows exist, but heater-source decomposition is partial/local",account for source/sink interactions before repair execution
+PH2-SRC-05,thermal_owner_gate,blocked,false,S8/S12 gate decision is needs_more_physical_basis with 0 released candidates,do not run repair until exactly one physical candidate is source-backed
+PH2-SRC-06,overall_passive_h2_source_release,needs_more_source,false,source-basis package is enriched but remains no-release,source ambient/geometry/insulation/literature basis before any Fluid repair row

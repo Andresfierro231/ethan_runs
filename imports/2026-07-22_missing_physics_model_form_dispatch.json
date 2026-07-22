@@ -1,0 +1,56 @@
+{
+  "task": "TODO-MISSING-PHYSICS-MODEL-FORM-DISPATCH-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Forward-pred / Thermal-modeling / Hydraulics / Writer / Reviewer",
+  "objective": "Represent the biggest missing physics families on the todo board and provide enough context for other agents to implement source-basis, variant, and train-only diagnostic studies.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-MISSING-PHYSICS-MODEL-FORM-DISPATCH-2026-07-22.md",
+    ".agent/journal/2026-07-22/missing-physics-model-form-dispatch.md",
+    "imports/2026-07-22_missing_physics_model_form_dispatch.json",
+    "operational_notes/07-26/22/2026-07-22_MISSING_PHYSICS_MODEL_FORM_DISPATCH.md"
+  ],
+  "read_only_context": [
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md"
+  ],
+  "added_board_rows": [
+    "TODO-MF07-ENTRANCE-DEVELOPMENT-AND-RESET-SOURCE-BASIS-2026-07-22",
+    "TODO-MF08-SIGNED-WALL-FLUX-DEVELOPING-THERMAL-BRANCHES-2026-07-22",
+    "TODO-MF09-RECIRCULATING-UPCOMER-THERMAL-MODEL-ALTERNATIVES-2026-07-22",
+    "TODO-MF10-ENTRANCE-WALLFLUX-TRAIN-ONLY-VARIANT-BAKEOFF-2026-07-22",
+    "TODO-MF11-EMPIRICAL-F2-F5-PHYSICAL-ATTRIBUTION-GATE-2026-07-22"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_mutated": false,
+    "admission_state_mutated": false,
+    "scheduler_action": false,
+    "solver_or_sampler_or_harvest_or_uq_launched": false,
+    "fluid_or_external_repo_mutated": false,
+    "thesis_current_or_latex_mutated": false,
+    "validation_holdout_external_scoring_performed": false,
+    "fitting_tuning_model_selection_performed": false,
+    "source_property_release_performed": false,
+    "qwall_or_source_side_release_performed": false,
+    "coefficient_admission_performed": false,
+    "final_score_claim_performed": false,
+    "s11_s12_s13_s15_s6_triggered": false,
+    "blocker_register_mutated": false,
+    "generated_index_refreshed": false,
+    "runtime_leakage_relaxed": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "notes": "Documentation and board dispatch only. The new rows require source-basis gates and explicit documentation before any train-only diagnostic bakeoff."
+}

@@ -1,0 +1,4 @@
+case_id,postprocessing_case_id,mdot_window_stat_rows,temperature_window_stat_rows,max_mdot_rel_std_pct,max_temperature_std_K,admissibility_role,why_not_residual_input
+salt_2,salt_test_2_jin,4,63,0.0277284,0.0574564,diagnostic_drift_and_error_support_only,CFD mdot/probe temperatures are not same-basis throughflow endpoint enthalpy inputs and remain forbidden as predictive runtime inputs
+salt_3,salt_test_3_jin,4,63,0.034883,0.0907173,diagnostic_drift_and_error_support_only,CFD mdot/probe temperatures are not same-basis throughflow endpoint enthalpy inputs and remain forbidden as predictive runtime inputs
+salt_4,salt_test_4_jin,4,63,0.222325,0.576478,diagnostic_drift_and_error_support_only,CFD mdot/probe temperatures are not same-basis throughflow endpoint enthalpy inputs and remain forbidden as predictive runtime inputs

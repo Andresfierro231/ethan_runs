@@ -1,0 +1,15 @@
+source_path,exists,use,native_or_external_mutation
+work_products/2026-07/2026-07-22/2026-07-22_predictive_1d_blocker_workthrough_progress/summary.json,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_predictive_1d_blocker_workthrough_progress/execution_readiness_gates.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_predictive_1d_blocker_workthrough_progress/fluid_runtime_handoff_requirements.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility/summary.json,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility/partition_stability_summary.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_residual_complete_open_cv_energy_balance_contract/summary.json,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_residual_complete_open_cv_energy_balance_contract/required_input_matrix.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_residual_complete_open_cv_energy_balance_contract/throughflow_enthalpy_harvest_contract.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_s13_residual_complete_open_cv_energy_balance_contract/residual_equation_contract.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/summary.json,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/implementation_handoff_contract.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/corrected_operator_family_ledger.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/runtime_input_audit.csv,True,read-only evidence,False
+work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/summary.json,True,read-only evidence,False

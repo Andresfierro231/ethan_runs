@@ -1,0 +1,8 @@
+check_id,status,evidence,next_task
+forbid_realized_wallHeatFlux,pass,"tests.test_external_boundary_contract rejects populated wallHeatFlux field in a dictionary row.","Keep in Phase D smoke audit as a runtime-output leakage check."
+forbid_cfd_mdot_velocity_shortcut,pass,"tests.test_external_boundary_contract rejects cfd_mdot_kg_s shortcut fields; parser forbidden-field set includes CFD/measured mdot and velocity aliases.","Keep in Phase D smoke audit; do not use CFD mdot as a predictive Fluid input."
+forbid_validation_temperature_drive,pass,"Parser rejects TP/TW/validation/measured drive selectors; solver validator rejects role-row validation-temperature fields.","Phase D should inspect output ledgers for drive selectors and source labels."
+forbid_residual_fill,pass,"Parser requires predictive runtime policies to explicitly forbid residual fill and rejects permissive residual policy text.","Phase D should keep residuals diagnostic-only."
+forbid_imposed_cooler_duty,pass,"Predictive source/sink roles are rejected and document_only_source_sink_or_blocked rows do not become role rows.","Future cooler-duty modeling needs a separate source/sink contract, not passive external-boundary rows."
+prevent_radiation_double_count,pass,"Replay rows with active predictive radiation are rejected; README states replay total heat and predictive convection/radiation are mutually exclusive.","Phase D smoke should compare heat-path ledger columns for duplicate replay/predictive terms."
+require_explicit_segment_map,pass,"Parser refuses empty or missing external_boundary_segment_map and raises on unmapped segment_id/role rows.","Next Fluid config work must review and claim a specific segment map before running campaigns."

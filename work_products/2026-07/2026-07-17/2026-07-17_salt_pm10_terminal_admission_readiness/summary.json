@@ -1,0 +1,14 @@
+{
+  "blocked_live_job_count": 0,
+  "blocked_scheduler_unknown_count": 4,
+  "case_count": 4,
+  "generated_at_utc": "2026-07-20T16:32:31.773983+00:00",
+  "job_count": 2,
+  "native_output_mutation": "none",
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness",
+  "pm5_postprocessing_reusable_pattern": "yes_after_pm10_terminal_completion",
+  "ready_for_terminal_admission_count": 0,
+  "scheduler_action": "none_disabled_for_test",
+  "task": "AGENT-493",
+  "terminal_admission_performed": "no"
+}

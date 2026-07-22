@@ -1,0 +1,2 @@
+case_key,case_id,term_id,projection_status,candidate_value,source_path,guardrail
+salt1_nominal,salt_1,cooler_hx,blocked_missing_supported_scorecard_row,,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv,do_not_fabricate_salt1_cooler_hx_projection

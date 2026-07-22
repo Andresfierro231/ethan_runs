@@ -1,0 +1,4 @@
+case_id,case_key,time_s,direct_patch_sampling_status,cutting_plane_sampling_status,parsed_endpoint_rows,decision,next_action,guardrail
+salt_2,salt2_mainline,7915,blocked_empty_ncc_patch_boundary,ready_for_cutting_plane_sampling,2,raw_endpoint_sampled,run pressure/velocity basis audit,no F6 fit; no component-K admission; no native-output mutation
+salt_3,salt3_mainline,7618,blocked_empty_ncc_patch_boundary,ready_for_cutting_plane_sampling,2,raw_endpoint_sampled,run pressure/velocity basis audit,no F6 fit; no component-K admission; no native-output mutation
+salt_4,salt4_mainline,10000,blocked_empty_ncc_patch_boundary,ready_for_cutting_plane_sampling,2,raw_endpoint_sampled,run pressure/velocity basis audit,no F6 fit; no component-K admission; no native-output mutation

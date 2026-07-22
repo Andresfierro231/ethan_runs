@@ -1,0 +1,39 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/caption_bank.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/lane_evidence_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/physical_plausibility_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/runtime_legality_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/scientific_discussion.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/thermal_residual_ablation_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation/train_only_metric_context.csv",
+    ".agent/status/2026-07-22_TODO-THESIS-N3-THERMAL-RESIDUAL-OWNER-TRAIN-ABLATION-2026-07-21.md",
+    ".agent/journal/2026-07-22/thesis-n3-thermal-residual-owner-train-ablation.md",
+    "imports/2026-07-22_thesis_n3_thermal_residual_owner_train_ablation.json"
+  ],
+  "date": "2026-07-22",
+  "decision": "train_only_residual_owner_ablation_complete_no_candidate_release",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution",
+    "work_products/2026-07/2026-07-21/2026-07-21_train_only_external_bc_attribution_freeze_gate",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_empirical_leg_bias_correction_diagnostic",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen"
+  ],
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task": "TODO-THESIS-N3-THERMAL-RESIDUAL-OWNER-TRAIN-ABLATION-2026-07-21",
+  "task_id": "TODO-THESIS-N3-THERMAL-RESIDUAL-OWNER-TRAIN-ABLATION-2026-07-21",
+  "thesis_current_file_edit": false,
+  "validation_holdout_external_rows_scored": 0
+}

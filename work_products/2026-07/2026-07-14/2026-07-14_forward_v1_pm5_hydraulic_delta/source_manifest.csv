@@ -1,0 +1,10 @@
+artifact,role,path
+pm5_summary,source,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/summary.json
+pm5_split_matrix,source,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_split_admission_matrix.csv
+pm5_heat_role_reduction,source,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_heat_role_reduction.csv
+pm5_forward_queue,source,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_pm5_admission_split_processing/corrected_q_pm5_forward_gate_queue.csv
+hydraulic_tap_summary,source,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/summary.json
+hydraulic_k_table,source,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv
+hydraulic_h1_readiness,source,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/h1_faithful_readiness_after_tap_refresh.csv
+forward_summary,source,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/summary.json
+forward_dashboard_summary,source,work_products/2026-07/2026-07-14/2026-07-14_scientific_closure_forward_v1_execution_dashboard/summary.json

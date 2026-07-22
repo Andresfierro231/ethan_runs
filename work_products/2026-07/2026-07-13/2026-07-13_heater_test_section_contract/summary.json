@@ -1,0 +1,23 @@
+{
+  "current_37W_mean_abs_Tmean_error_vs_cfd_K": 34.3736183211,
+  "diagnostic_realized_wallHeatFlux_mean_eta_heater": 0.9181258262805708,
+  "diagnostic_realized_wallHeatFlux_mean_test_section_external_loss_W": 10.997853994000002,
+  "generated_at": "2026-07-13T21:43:43+00:00",
+  "heater_only_mean_abs_Tmean_error_vs_cfd_K": 4.60896609261,
+  "n_candidates": 6,
+  "n_cases": 3,
+  "recommended_candidate_id": "C1_heater_only_predictive_setup",
+  "recommended_contract": {
+    "eta_heater": "1.0",
+    "test_section_external_loss_W": "0.0",
+    "test_section_fluid_fraction": "0.0"
+  },
+  "source_paths": {
+    "forward_results": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_results.csv",
+    "forward_variant_summary": "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_imposed_cooler/forward_v0_variant_summary.csv",
+    "section_heat_balance": "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/section_heat_balance.csv"
+  },
+  "task_id": "TODO-PRED-HEATER-TEST-CONTRACT",
+  "thermal_closure_claim_status": "provisional",
+  "wallHeatFlux_runtime_policy": "diagnostic_only_not_forward_runtime_input"
+}

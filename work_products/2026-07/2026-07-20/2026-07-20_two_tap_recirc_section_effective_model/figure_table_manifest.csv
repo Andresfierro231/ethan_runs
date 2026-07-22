@@ -1,0 +1,5 @@
+asset_id,asset_type,title,source_artifact,paper_role,status,limitation_caption_note
+TT-RECIRC-T1,table,Two-tap corner_lower_right pressure-basis decomposition,recirc_pressure_basis_table.csv,show static pressure is hydrostatic-dominated while p_rgh residual is small and diagnostic,ready_as_table_source,No component K admitted; same-QOI UQ missing.
+TT-RECIRC-T2,table,Reverse-flow and admission-gate status for current two-tap rows,current_corner_lower_right_recirc_rows.csv,document why ordinary reverse-flow gates fail,ready_as_table_source,"Rows are regime evidence, not coefficient fits."
+TT-RECIRC-F1,schematic,Throughflow plus recirculation-cell pressure residual model,section_effective_model_contract.csv,illustrate separate throughflow lane and recirculation pressure penalty,figure_spec_only,Future candidate lane; not yet admitted.
+TT-RECIRC-T3,table,Same-QOI UQ and non-recirculating anchor roadmap,same_qoi_uq_sampling_contract.csv,state what evidence would be needed for coefficient admission,ready_as_table_source,No scheduler launch in this task.

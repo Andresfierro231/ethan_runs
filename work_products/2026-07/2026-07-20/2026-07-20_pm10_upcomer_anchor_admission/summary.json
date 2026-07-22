@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-20T20:16:54-05:00",
+  "case_count": 4,
+  "ordinary_anchor_candidates": 0,
+  "onset_transition_candidates": 0,
+  "recirculation_diagnostics": 4,
+  "blocked_missing_extraction": 0,
+  "blocked_missing_fields": 0,
+  "recirculation_anchor_allowed_rows": 4,
+  "recirculation_calibration_conditional_rows": 4,
+  "recirculation_model_selection_conditional_rows": 4,
+  "hybrid_validation_allowed_rows": 4,
+  "ordinary_pipe_fit_allowed_rows": 0,
+  "recirculation_feature_rows": 12,
+  "fit_allowed_now": 0,
+  "model_selection_allowed_now": 0,
+  "runtime_input_allowed_now": 0,
+  "parsed_dir": "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed",
+  "output_dir": "work_products/2026-07/2026-07-20/2026-07-20_pm10_upcomer_anchor_admission",
+  "source_paths": [
+    "work_products/2026-07/2026-07-20/2026-07-20_salt_pm10_terminal_admission_classification/pm10_terminal_drift.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package"
+  ]
+}

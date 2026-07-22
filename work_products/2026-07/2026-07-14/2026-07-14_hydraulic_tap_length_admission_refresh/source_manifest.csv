@@ -1,0 +1,5 @@
+source_id,path,role
+minor_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,original two-tap K rows with dz proxy
+agent338_tap_gaps,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/tap_length_gap_table.csv,tap-gap priorities and blockers
+agent338_component_k,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/component_cluster_k_admission_table.csv,prior component/cluster K admission status
+mesh_centerlines,work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines,existing mesh-centerline station artifacts

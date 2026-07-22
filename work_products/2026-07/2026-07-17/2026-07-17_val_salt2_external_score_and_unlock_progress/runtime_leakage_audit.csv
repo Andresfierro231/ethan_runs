@@ -1,0 +1,8 @@
+audit_item,status,evidence,source_paths
+val_salt2_training_fit_model_selection,pass_forbidden,61 targets all emitted as external-test score targets only.,work_products/2026-07/2026-07-17/2026-07-17_predict_val_salt2_external_ledger/val_salt2_external_pressure_thermal_sensor_targets.csv;work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/val_salt2_sensor_numeric_join.csv
+frozen_predictions,pass_missing_reported,No admitted frozen prediction artifact found; residual rows are prediction_missing.,work_products/2026-07/2026-07-17/2026-07-17_predict_coupled_segment_m3ts_scorecard/coupled_candidate_gate_scorecard.csv
+corner_k_fit_admission,pass_forbidden,0 fit-admitted corner rows.,work_products/2026-07/2026-07-17/2026-07-17_external_score_junction_corner_progress/pressure_corner_k_unlock_contract.csv
+pm10_terminal_admission,pass_blocked_live_jobs,4 PM10 rows remain monitor-only.,work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/pm10_case_readiness.csv;work_products/2026-07/2026-07-17/2026-07-17_salt_pm10_terminal_admission_readiness/live_job_status.csv
+native_output_mutation,pass_none,Builder reads existing CSV/JSON artifacts only.,tools/analyze/build_val_salt2_external_score_and_unlock_progress.py
+registry_mutation,pass_none,No registry files are opened for writing.,tools/analyze/build_val_salt2_external_score_and_unlock_progress.py
+scheduler_action,pass_none,"No sacct, squeue, sbatch, srun, OpenFOAM, or Fluid commands are run.",tools/analyze/build_val_salt2_external_score_and_unlock_progress.py

@@ -1,0 +1,22 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-SAMPLER-DESIGN-2026-07-21",
+  "generated_at": "2026-07-21T14:07:20-05:00",
+  "required_schema_fields": 10,
+  "dry_plan_rows": 3,
+  "fixture_validation_rows": 2,
+  "guardrail_rows": 5,
+  "handoff_rows": 3,
+  "compute_execution_allowed": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "fluid_edit": false,
+  "external_repo_edit": false,
+  "fitting_or_model_selection": false,
+  "closure_admission_change": false,
+  "blocker_register_change": false,
+  "generated_index_refresh": false,
+  "phase4b_rescore_run": false,
+  "phase5_or_s6_trigger": false
+}

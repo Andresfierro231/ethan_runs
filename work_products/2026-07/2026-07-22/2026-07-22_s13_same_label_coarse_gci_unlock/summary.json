@@ -1,0 +1,15 @@
+{
+  "decision": "s13_same_label_coarse_gci_unlock_fail_closed_no_coarse_admission",
+  "criteria_rows": 6,
+  "criteria_pass_rows": 0,
+  "qoi_rows": 4,
+  "formal_gci_ready_rows": 0,
+  "production_harvest_ready_rows": 0,
+  "guardrails": {
+    "proxy_substitution": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "protected_scoring": false,
+    "scheduler_action": "none"
+  }
+}

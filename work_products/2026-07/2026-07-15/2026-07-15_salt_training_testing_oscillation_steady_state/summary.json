@@ -1,0 +1,12 @@
+{
+  "task": "AGENT-411",
+  "generated": "2026-07-15T08:58:23",
+  "window_seconds": 300.0,
+  "selected_cases": 8,
+  "resolved_cases": 8,
+  "stats_rows": 456,
+  "figures": 96,
+  "representative_drifting_groups": 0,
+  "representative_quasi_groups": 0,
+  "representative_steady_groups": 24
+}

@@ -1,0 +1,9 @@
+owner_family,evidence_strength,key_number_or_status,freeze_gate_interpretation,thesis_claim
+heater_setup_source,strong,setup heater total 1133.1 W,setup-known source row can be documented but does not freeze wall/test-section candidate,heater source is traceable setup evidence
+cooler_hx_setup_sink,strong,setup cooler total -449.96244353013935 W,setup-known sink row can be documented but does not freeze wall/test-section candidate,cooler/HX sink is traceable setup evidence
+test_section_setup_source,strong,setup test-section total 148.0 W,setup-known source row can be documented but not used to absorb residuals,test-section source is traceable setup evidence
+passive_wall_test_section,blocked,"M2 S11-reviewable candidates 0; global-to-lower response ratio 11.241561509419686",broad response is not a released source-bounded local repair,passive wall/test-section remains primary thermal blocker
+D3_wall_shape,diagnostic,"transfer RMSE reduction 51.6919381995 percent; production use false",shape signal supports residual attribution but not freeze,D3 is thesis evidence for missing local wall/core shape
+AMX1_axial_mixing,negative_runtime_clean,"5 campaigns reviewed; 16 AMX1 rows; 0 forms ready for freeze",basic API/ledger readiness is not enough; source physics missing,AMX1 negative result narrows next model form
+S13_upcomer_exchange,diagnostic_blocked,"same-QOI triplets ready for 4 QOIs; same-label mesh/GCI accepted rows 0",exchange-cell path cannot freeze before mesh/GCI and source/property release,S13 remains diagnostic exchange evidence
+source_property_labels,closed,"0/4 nominal train rows release-ready",strict release gate blocks candidate freeze,no thermal freeze without source/property release

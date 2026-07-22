@@ -1,0 +1,4 @@
+case_key,source_path,source_role,exists,salt1_cooler_hx_supported,status,evidence
+salt1_nominal,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/cooler_hx_scorecard.csv,admitted cooler/HX scorecard,yes,false,not_supported,blocked_missing_supported_scorecard_row
+salt1_nominal,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_salt1_support_closeout/salt1_boundary_projection_candidate.csv,prior Salt1 projection closeout,yes,false,not_supported,blocked_missing_supported_scorecard_row
+salt1_nominal,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_nominal_final_freeze/final_freeze_manifest.csv,Salt1 final freeze membership,yes,false,not_supported,blocked_missing_supported_scorecard_row

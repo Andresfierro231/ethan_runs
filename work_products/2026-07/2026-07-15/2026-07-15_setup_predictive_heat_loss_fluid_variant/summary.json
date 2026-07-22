@@ -1,0 +1,17 @@
+{
+  "date": "2026-07-15",
+  "dry_run_rows": 6,
+  "fluid_files_modified": [
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/README.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tests/test_solver_contracts.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/journals/2026-07/2026-07-15_workflow_journal.md"
+  ],
+  "implemented": true,
+  "native_cfd_outputs_mutated": false,
+  "registry_or_admission_state_mutated": false,
+  "runtime_leakage_guardrail": "no_realized_CFD_wallHeatFlux_no_CFD_mdot_no_imposed_CFD_cooler_duty_no_validation_temperatures",
+  "scheduler_mutated": false,
+  "task": "AGENT-418"
+}

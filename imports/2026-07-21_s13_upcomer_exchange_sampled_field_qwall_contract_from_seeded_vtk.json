@@ -1,0 +1,84 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-CONTRACT-FROM-SEEDED-VTK-2026-07-21",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-CONTRACT-FROM-SEEDED-VTK-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/cfd-pp/Implementer/Tester/Writer",
+  "objective": "Build a dry sampled-field and Q_wall extraction contract from released seeded geometry VTKs.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-CONTRACT-FROM-SEEDED-VTK-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-sampled-field-qwall-contract-from-seeded-vtk.md",
+    "imports/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk.json",
+    "tools/analyze/build_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk.py",
+    "tools/analyze/test_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release",
+    "work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_surface_source_generation",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "scheduler state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk.py tools/analyze/test_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk",
+      "result": "passed: 6 tests"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk --strict",
+      "result": "passed: candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-CONTRACT-FROM-SEEDED-VTK-2026-07-21",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK (15 entries)"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "openfoam_solver_or_postprocessing_launched": false,
+  "surface_extraction_launched": false,
+  "field_sampling_launched": false,
+  "sampler_or_harvest_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "downstream_trigger": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "residual_absorbed_into_internal_Nu": false
+}

@@ -1,0 +1,22 @@
+{
+  "candidate_rows": 4,
+  "component_k_admitted": false,
+  "date": "2026-07-20",
+  "f6_fit_performed": false,
+  "generated_utc": "2026-07-20T15:55:17+00:00",
+  "launch_decision": "no_launch_from_this_row",
+  "native_outputs_mutated": false,
+  "open_blockers_carried": [
+    "two-tap-corner-lower-right-material-reverse-flow",
+    "two-tap-corner-lower-right-component-isolation-fails",
+    "two-tap-corner-lower-right-same-qoi-uq-missing"
+  ],
+  "ordinary_anchor_available_now": false,
+  "preferred_candidate_id": "CAND-001",
+  "requests_evaluated": [
+    "NR-ALT-01",
+    "NR-CLR-01"
+  ],
+  "scheduler_launch_performed": false,
+  "task": "TODO-TWO-TAP-NONRECIRC-ANCHOR-PLAN"
+}

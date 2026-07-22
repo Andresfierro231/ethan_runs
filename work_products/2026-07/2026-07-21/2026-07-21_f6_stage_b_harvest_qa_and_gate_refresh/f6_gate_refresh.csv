@@ -1,0 +1,7 @@
+gate,previous_status,refreshed_status,reason
+raw_face_sampling,pass_stage_a_only,pass,20/20 Stage A+B endpoint faces sampled
+ordinary_flow,fail,fail,0/10 endpoint pairs pass RAF/RMF ordinary-flow thresholds
+static_pressure_basis,blocked_for_coarse,blocked,12 coarse endpoint faces still lack static p
+same_qoi_mesh_uq,blocked,blocked,coarse VTK diagnostics do not repair missing static-p basis or same-QOI mesh/UQ
+f3_comparison,not_evaluated_no_ordinary_candidate,not_evaluated_no_ordinary_candidate,no F6 pair clears ordinary-flow and pressure-basis gates
+admission,closed,closed,"all Stage A+B rows remain diagnostic; no component_K, cluster_K, section_effective, or pressure_recovery admission"

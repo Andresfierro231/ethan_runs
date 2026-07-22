@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-07-13T20:42:47+00:00",
+  "date": "2026-07-13",
+  "notes": [
+    "No global friction multiplier is recommended; localized resets and named losses remain explicit."
+  ],
+  "output_dir": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses",
+  "outputs": [
+    "reset_distance_map.csv",
+    "named_pressure_loss_table.csv",
+    "validation_report.json"
+  ],
+  "primary_rows": 33,
+  "source_context": {
+    "litrev_synthesis": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways",
+    "research_pathways": "reports/2026-07/2026-07-13/2026-07-13_litrev_lessons_and_research_pathways/research_pathways.csv"
+  },
+  "task_id": "TODO-LITREV-RESET-NAMED-LOSSES"
+}

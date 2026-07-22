@@ -1,0 +1,25 @@
+{
+  "task": "AGENT-423",
+  "row_count": 40,
+  "family_counts": {
+    "diagnostic_test_section_negative_source": 3,
+    "final_predictive_hx_closure": 14,
+    "fitted_internal_nu": 3,
+    "imposed_cooler_duty": 8,
+    "realized_wallheatflux_replay": 12
+  },
+  "admission_class_counts": {
+    "blocked_empty_fit_set": 3,
+    "diagnostic_boundary_form_screen": 3,
+    "diagnostic_replay_not_predictive": 12,
+    "diagnostic_upper_bound_or_leakage_warning": 8,
+    "predictive_candidate_pending_final_gate": 6,
+    "setup_legal_candidate_pending_final_gate": 8
+  },
+  "final_predictive_rows_admitted": 0,
+  "fitted_internal_nu_rows_admitted": 0,
+  "runtime_cfd_duty_leakage_rows_admitted": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_state_mutated": false,
+  "generated_index_refreshed": false
+}

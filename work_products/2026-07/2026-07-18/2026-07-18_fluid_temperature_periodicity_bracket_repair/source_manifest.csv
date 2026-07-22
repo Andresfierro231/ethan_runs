@@ -1,0 +1,4 @@
+source_type,path,used_for,mutation_status
+umx1_smoke_results,work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer/umx1_smoke_results.csv,fixed-mdot thermal bracket replay,read_only_existing_evidence
+agent529_root_policy,work_products/2026-07/2026-07-17/2026-07-17_heater_source_leave_salt3_out_score,prior finite rejected root policy context,read_only_existing_evidence
+fluid_solver,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read-only march_temperatures and current _temperature_scan_bounds audit,read_only_due_active_external_solver_owner

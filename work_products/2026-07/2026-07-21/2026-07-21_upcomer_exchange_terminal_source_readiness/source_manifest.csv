@@ -1,0 +1,16 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/scoped_sampler_source_queue.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/exchange_variable_availability.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_evidence_preflight/phase4b_rescore_decision.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/upcomer_exchange_cell_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/missing_exchange_nu_evidence_queue.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/recirc_harvest_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_litrev_matched_plane_recirc_field_harvest/matched_plane_recirc_field_harvest.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/candidate_terminal_preflight.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/source_case_readiness.csv,read_only_input,true,false,false
+work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_low_recirc_anchor_harvest/endpoint_field_availability.csv,read_only_input,true,false,false
+jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/selected_submitted_jobs.csv,read_only_input,true,false,false
+jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/logs/selected_runtime_preflight_3307441.csv,read_only_input,true,false,false
+.agent/status/2026-07-17_AGENT-519.md,read_only_input,true,false,false
+.agent/status/2026-07-21_AGENT-576.md,read_only_input,true,false,false
+operational_notes/maps/forward-predictive-model.md,read_only_input,true,false,false

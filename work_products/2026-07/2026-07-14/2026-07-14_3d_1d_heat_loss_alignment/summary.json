@@ -1,0 +1,22 @@
+{
+  "assumption_rows": 21,
+  "case_count": 3,
+  "case_summary_rows": 18,
+  "cases": [
+    "salt_2",
+    "salt_3",
+    "salt_4"
+  ],
+  "generated_utc": "2026-07-14T20:44:03+00:00",
+  "heavy_openfoam_run": false,
+  "host": "c318-008.ls6.tacc.utexas.edu",
+  "native_solver_outputs_mutated": false,
+  "predictive_rows_admitted": 0,
+  "radiation_policy": "rcExternalTemperature_radiation_inseparable_in_total_wallHeatFlux_no_separate_qr",
+  "role_alignment_rows": 63,
+  "runtime_guardrail": "CFD_mdot_and_realized_wallHeatFlux_are_diagnostic_not_predictive_runtime_inputs",
+  "segment_alignment_rows": 90,
+  "source_manifest_rows": 11,
+  "study_mode": "fixed_mdot_diagnostic_heat_path_alignment",
+  "task": "AGENT-350"
+}

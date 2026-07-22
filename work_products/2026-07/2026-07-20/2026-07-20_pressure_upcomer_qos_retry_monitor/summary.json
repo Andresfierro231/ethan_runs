@@ -1,0 +1,13 @@
+{
+  "active_submit_pressure_jobs": 3,
+  "date": "2026-07-20",
+  "fit_rows_released_now": 0,
+  "generated_at_utc": "2026-07-20T23:42:05.950361+00:00",
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "retry_now": false,
+  "submission_attempted": false,
+  "submission_result": "not_attempted_retry_window_blocked",
+  "submitted_job_id": "",
+  "task": "TODO-PRESSURE-UPCOMER-QOS-RETRY-MONITOR"
+}

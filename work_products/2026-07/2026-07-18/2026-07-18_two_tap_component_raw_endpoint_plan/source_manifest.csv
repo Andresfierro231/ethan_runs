@@ -1,0 +1,13 @@
+source_id,path,exists,role,mutation_status
+raw_queue,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_extractor/next_raw_postprocessing_queue.csv,True,read-only input,not_mutated
+extractor_output,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_extractor/two_tap_component_repair_output.csv,True,read-only input,not_mutated
+extractor_gates,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_extractor/extractor_gate_results.csv,True,read-only input,not_mutated
+component_targets,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/component_repair_targets.csv,True,read-only input,not_mutated
+repair_field_contract,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/repair_field_contract.csv,True,read-only input,not_mutated
+future_extractor_schema,work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract/future_extractor_schema.csv,True,read-only input,not_mutated
+minor_loss_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,True,read-only input,not_mutated
+tap_centerline_lengths,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/tap_centerline_length_table.csv,True,read-only input,not_mutated
+component_k_recomputed,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_tap_length_admission_refresh/component_cluster_k_recomputed_admission_table.csv,True,read-only input,not_mutated
+raw_pressure_preflight,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_preflight.csv,True,read-only input,not_mutated
+raw_pressure_two_tap_harvest,work_products/2026-07/2026-07-15/2026-07-15_staged_closure_qoi_pressure_sbatch/raw_pressure_two_tap_harvest.csv,True,read-only input,not_mutated
+monday_handoff,operational_notes/07-26/17/2026-07-17_MONDAY_HYDRAULICS_CONTEXT_AND_NEXT_STEPS.md,True,read-only input,not_mutated

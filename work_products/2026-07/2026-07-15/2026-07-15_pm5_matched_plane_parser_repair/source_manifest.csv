@@ -1,0 +1,4 @@
+path,role,exists
+work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/pm5_matched_plane_case_list.csv,case list,true
+tmp/2026-07-14_pm5_corrected_q_matched_plane_unlock/recon,staged VTK inputs,true
+tools/extract/sample_upcomer_matched_plane_metrics.py,original parser used for comparison,true

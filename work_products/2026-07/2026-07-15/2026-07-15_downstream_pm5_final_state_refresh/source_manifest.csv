@@ -1,0 +1,9 @@
+path,role,exists
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/summary.json,input,True
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,input,True
+work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/pm5_f6_internal_nu_unlock_scorecard.csv,input,True
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/README.md,input,True
+work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/internal_nu_fit_rows.csv,input,True
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/README.md,input,True
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/hydraulic_gate_status_after_pm5.csv,input,True
+work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/summary.json,input,True

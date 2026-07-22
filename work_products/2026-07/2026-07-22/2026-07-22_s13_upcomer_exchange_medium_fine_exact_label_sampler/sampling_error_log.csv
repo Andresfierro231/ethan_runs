@@ -1,0 +1,7 @@
+case_id,mesh_level,source_root,error_type,error_message,execution_status
+salt_2,medium,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh,ValueError,salt_2 missing 87696 face area vectors,fail_closed_sampling_error
+salt_2,fine,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh,ValueError,salt_2 missing 190008 face area vectors,fail_closed_sampling_error
+salt_3,medium,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_3_jin_medium_mesh,ValueError,salt_3 missing 87696 face area vectors,fail_closed_sampling_error
+salt_3,fine,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_3_jin_fine_mesh,ValueError,salt_3 missing 190008 face area vectors,fail_closed_sampling_error
+salt_4,medium,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_4_jin_medium_mesh,ValueError,salt_4 missing 87696 face area vectors,fail_closed_sampling_error
+salt_4,fine,/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_4_jin_fine_mesh,ValueError,salt_4 missing 190008 face area vectors,fail_closed_sampling_error

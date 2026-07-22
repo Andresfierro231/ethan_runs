@@ -1,0 +1,7 @@
+audit_id,gate,evidence,source_path
+m2_fit_scope,pass,candidate freeze uses Salt1-4 nominal manifest only,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/candidate_freeze_manifest.csv
+holdout_predictions_disabled,pass,readiness queue sets score_now=no for every row,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_frozen_prediction_artifact/summary.json
+exclude_pm10,pass,not used for fit or model selection,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv
+exclude_pm5,pass,not used for fit or model selection,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv
+exclude_holdout,pass,not used for fit or model selection,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv
+exclude_val_salt2,pass,not used for fit or model selection,work_products/2026-07/2026-07-20/2026-07-20_salt1_4_m2_predictive_candidate_freeze/holdout_exclusion_audit.csv

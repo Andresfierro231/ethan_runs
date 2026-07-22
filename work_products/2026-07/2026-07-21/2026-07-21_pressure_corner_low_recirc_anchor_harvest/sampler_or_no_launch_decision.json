@@ -1,0 +1,25 @@
+{
+  "clipped_k": false,
+  "cluster_k_admitted": false,
+  "component_k_admitted": false,
+  "decision": "no_launch_preflight_only",
+  "f6_fit_performed": false,
+  "global_multiplier_applied": false,
+  "native_outputs_mutated": false,
+  "next_board_row": "TODO-LITREV-LATEST-CFD-SCHEMA-PROMOTION or a narrower high-heat terminal refresh row before sampler",
+  "ordinary_component_k_review_queued": false,
+  "preferred_candidate_id": "CAND-001",
+  "preferred_source_family": "Salt4 high-heat/no-recirculation probes",
+  "required_before_sampler": [
+    "fresh terminal-state package or scheduler-read row confirms selected source cases terminal successful",
+    "future row claims exact staged-copy/sampler output paths",
+    "endpoint labels lower_leg__s04 and right_leg__s00 resolve",
+    "raw fields p, p_rgh, U, rho/T, face area, normals are finite",
+    "same-window aggregate RAF < 0.01 and RMF < 0.01 before ordinary component-K review",
+    "same-QOI uncertainty family is declared or diagnostic-only status is retained"
+  ],
+  "sampler_launch_performed": false,
+  "scheduler_action": false,
+  "task": "TODO-PRESSURE-CORNER-LOW-RECIRC-ANCHOR-HARVEST",
+  "terminal_ready_cases": 0
+}

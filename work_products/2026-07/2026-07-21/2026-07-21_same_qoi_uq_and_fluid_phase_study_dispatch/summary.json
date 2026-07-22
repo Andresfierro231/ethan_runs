@@ -1,0 +1,21 @@
+{
+  "task": "TODO-SAME-QOI-UQ-AND-FLUID-PHASE-STUDY-DISPATCH-2026-07-21",
+  "phase_rows": 7,
+  "same_qoi_required_output_rows": 5,
+  "external_fluid_required_output_rows": 4,
+  "successor_board_rows_added": 7,
+  "same_qoi_prior_reviewed_rows": 83,
+  "same_qoi_prior_admitted_rows": 0,
+  "fluid_external_runtime_dictionary_rows": 24,
+  "recommended_first_phase": "TODO-SAME-QOI-UQ-PHASE-A-RETAINED-WINDOW-INVENTORY-2026-07-21",
+  "native_solver_outputs_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_or_sampler_launched": false,
+  "external_fluid_edit": false,
+  "fitting_or_model_selection_performed": false,
+  "closure_admission_changed": false,
+  "blocker_register_mutated": false,
+  "generated_docs_index_mutated": false,
+  "thesis_current_files_edited": false
+}

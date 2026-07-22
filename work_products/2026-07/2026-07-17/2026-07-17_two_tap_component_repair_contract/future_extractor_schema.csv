@@ -1,0 +1,18 @@
+table_name,column,units,required,reason
+future_two_tap_component_repair_output,case_id,text,yes,join to case/registry evidence
+future_two_tap_component_repair_output,feature,text,yes,local component or connector name
+future_two_tap_component_repair_output,time_window,s,yes,same-window pressure/velocity/recirculation basis
+future_two_tap_component_repair_output,p_upstream_pa,Pa,yes,raw pressure basis endpoint
+future_two_tap_component_repair_output,p_downstream_pa,Pa,yes,raw pressure basis endpoint
+future_two_tap_component_repair_output,pressure_basis,text,yes,static/total/p_rgh and corrections
+future_two_tap_component_repair_output,hydrostatic_correction_pa,Pa,yes,avoid buoyancy double-counting
+future_two_tap_component_repair_output,kinetic_correction_pa,Pa,yes,avoid dynamic-head double-counting
+future_two_tap_component_repair_output,straight_loss_subtraction_pa,Pa,yes,local component isolation
+future_two_tap_component_repair_output,local_dynamic_pressure_pa,Pa,yes,K normalization
+future_two_tap_component_repair_output,K_apparent,dimensionless,yes,diagnostic apparent feature loss
+future_two_tap_component_repair_output,K_local,dimensionless,yes,candidate after straight-loss subtraction
+future_two_tap_component_repair_output,RAF,fraction,yes,ordinary-vs-recirculation gate
+future_two_tap_component_repair_output,RMF,fraction,yes,ordinary-vs-recirculation gate
+future_two_tap_component_repair_output,SVF,fraction,yes,secondary-flow diagnostic
+future_two_tap_component_repair_output,mesh_time_uncertainty,text,yes,same-QOI uncertainty gate
+future_two_tap_component_repair_output,admission_status,text,yes,explicit admitted/diagnostic/blocked label

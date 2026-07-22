@@ -1,0 +1,10 @@
+candidate_input,leakage_risk,severity,mitigation
+cooling_branch:cooler,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+lower_leg:heater,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+upcomer:test_section,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+cooling_branch:cooler,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+lower_leg:heater,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+upcomer:test_section,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+cooling_branch:cooler,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+lower_leg:heater,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use
+upcomer:test_section,inferred_from_cfd,high,keep document-only; require independent setup-known or experiment-imposed source before runtime use

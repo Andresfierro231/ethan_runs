@@ -1,0 +1,8 @@
+candidate_family,rows,existing_or_future,best_current_status,reviewable_anchor_rows,key_blockers,next_action
+preferred_inventory_slots,6,existing_inventory,ordinary_f6_candidate_slots_named_but_not_ready,0,ordinary_flow;finite_raw_endpoint_pair;same_qoi_mesh_time_uq,find lower-recirculation or forced alternate branch anchor then sample endpoints
+sampled_salt2_right_leg_and_test_section,8,existing_sampled,diagnostic endpoint samples fail RAF/RMF ordinary-flow limits,0,RAF up to 0.635638538588 and RMF about 0.5 versus 0.01 limits,do not fit; use only as diagnostic failed ordinary-flow screen
+PM5_recirculation_diagnostic,12,existing_diagnostic,material reverse flow present,0,material_reverse_flow;missing_hybrid_admission_evidence;same_qoi_uq_missing,keep for recirculation/onset evidence only
+PM10_terminal_recirculation_diagnostic,4,existing_terminal_future_blind,strong recirculation and terminal/drift constraints,0,strong_material_reverse_flow;total_Q_drifting;future_blind_holdout_only,keep protected as future recirculation/onset evidence
+branch_scorecard_masks,7,existing_aggregate,branch aggregate not endpoint anchor,0,single_stream_Nu;single_stream_f_D;component_K;ordinary_pipe_fit_not_included,do not use aggregate branch scorecards as endpoint anchors
+future_onset_anchor_designs,11,future_design,not measured and scheduler launch forbidden in prior screen,0,future_run_not_existing_evidence;reverse_flow_unverified;endpoint_pair_missing;same_qoi_uq_missing,claim separate scheduler row only after exact command contract
+lower_right_two_tap_section_effective,3,existing_negative_result,section-effective residual evidence only,0,component isolation absent and residual negative/small,retain as pressure-basis ladder evidence not F6

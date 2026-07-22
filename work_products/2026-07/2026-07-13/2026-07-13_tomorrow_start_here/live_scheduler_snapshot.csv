@@ -1,0 +1,4 @@
+job_id,name,state,elapsed,node,notes
+3293924,saltq_sel_cont,RUNNING,00:33:48,c318-016,"four foamRun substeps 3293924.0-.3 running; corrected-Q continuation"
+3292998,idv01713,RUNNING,07:26:38,c318-008,"pre-existing running job/allocation; identify ownership before touching"
+

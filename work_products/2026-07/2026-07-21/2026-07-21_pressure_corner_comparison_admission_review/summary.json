@@ -1,0 +1,21 @@
+{
+  "F6_rows_admitted_or_fit": 0,
+  "admission_status": "no_coefficient_admission",
+  "allowed_label_counts": {
+    "section_effective": 3
+  },
+  "cluster_K_rows_admitted": 0,
+  "component_K_rows_admitted": 0,
+  "gate_rows": 24,
+  "guardrails": [
+    "no native-output mutation",
+    "no registry mutation",
+    "no scheduler action",
+    "no Fluid edit",
+    "no fitting/tuning/model selection",
+    "no clipped_K",
+    "no hidden global multiplier"
+  ],
+  "rows_reviewed": 3,
+  "task_id": "TODO-PRESSURE-CORNER-COMPARISON-ADMISSION-REVIEW"
+}

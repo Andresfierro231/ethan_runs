@@ -1,0 +1,2 @@
+decision,stale_warning_rows,labels_complete_after_refresh_rows,release_ready_rows,final_fit_allowed_rows,final_model_selection_allowed_rows,writer_action,next_unblock
+ch3_source_property_warning_resolved_by_demote_no_release,4,4,0,0,0,use rows for Ch3 database provenance only; do not use for fit/admission prose,row-specific strict-pass source-envelope evidence followed by candidate-specific S11/S15 release gate

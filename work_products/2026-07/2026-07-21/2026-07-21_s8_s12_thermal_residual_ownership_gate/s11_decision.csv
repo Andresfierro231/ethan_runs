@@ -1,0 +1,2 @@
+decision_id,s11_unblocked,s15_unblocked,s6_unblocked,decision,candidate_count_released,rationale,next_claimable
+S11-THERMAL-OWNER-GATE,False,False,False,needs_more_physical_basis,0,"No exactly-one runtime-legal physical candidate passed source/property, split, finite-score, and UQ gates.",S13 sampled-field/Qwall/UQ unblock or passive source-basis enrichment; do not run Fluid repair from this package

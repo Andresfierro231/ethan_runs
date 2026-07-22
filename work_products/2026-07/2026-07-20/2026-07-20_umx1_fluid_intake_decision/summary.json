@@ -1,0 +1,22 @@
+{
+  "task": "AGENT-558",
+  "date": "2026-07-20",
+  "decision": "blocked_not_scorecard_ready_no_grid",
+  "root_status": "umx1_smoke_root_gate_passed",
+  "umx1_smoke_rows_completed": 12,
+  "umx1_smoke_rows_accepted": 12,
+  "umx1_smoke_rows_rejected": 0,
+  "best_umx1_smoke_scenario": "umx1_bracket_baseline_ins_1.0in_rad_1",
+  "best_umx1_smoke_all_rmse_K": 69.69354233926565,
+  "best_exchange_scenario": "umx1_exchange_low_setup_ins_1.0in_rad_1",
+  "best_exchange_all_rmse_K": 70.24283068370542,
+  "combined_umx1_tswfc2_all_rmse_K": 97.99076284159179,
+  "upcomer_energy_residual_max_abs_W": 0.0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "score_grid_run": false,
+  "scientific_admission_change": "none",
+  "next_step": "Do not launch a UMX1 grid from the current exchange variants. Use the accepted-root Fluid API as an execution substrate only after a new setup-only physical candidate, source/property release gate, or upcomer-onset anchor is documented."
+}

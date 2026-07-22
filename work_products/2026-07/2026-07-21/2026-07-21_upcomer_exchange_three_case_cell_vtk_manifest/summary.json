@@ -1,0 +1,16 @@
+{
+  "task": "TODO-UPCOMER-EXCHANGE-THREE-CASE-CELL-VTK-MANIFEST-2026-07-21",
+  "generated_at": "2026-07-21T16:43:40-05:00",
+  "cell_vtk_rows": 3,
+  "cell_vtk_pass_rows": 3,
+  "sampler_ready_rows": 0,
+  "remaining_blocker_rows": 12,
+  "scheduler_action": false,
+  "openfoam_launch": false,
+  "sampler_harvest_launched": false,
+  "fit_score_or_admission_changed": false,
+  "native_solver_output_mutated": false,
+  "registry_or_admission_mutated": false,
+  "residual_absorbed_into_internal_Nu": false,
+  "current_blocker": "exchange_interface_vtk, wall_vtk, normals, Q_wall_W, and source/sink sign convention remain unreleased"
+}

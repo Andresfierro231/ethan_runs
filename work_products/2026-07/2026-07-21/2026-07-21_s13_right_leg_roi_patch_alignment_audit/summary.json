@@ -1,0 +1,15 @@
+{
+  "task": "TODO-S13-RIGHT-LEG-ROI-PATCH-ALIGNMENT-AUDIT-2026-07-21",
+  "generated_at": "2026-07-21T18:25:44-05:00",
+  "decision": "complete_fail_closed_geometry_seed_required",
+  "case_count": 3,
+  "dominant_components_aligned": false,
+  "wall_candidate_components_released": false,
+  "new_cv_admitted": false,
+  "s12_unlocked": false,
+  "native_output_mutation": false,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "threshold_relaxation": false,
+  "next_action": "define a predeclared geometry-backed right-leg/upcomer seed tied to trusted wall patches"
+}

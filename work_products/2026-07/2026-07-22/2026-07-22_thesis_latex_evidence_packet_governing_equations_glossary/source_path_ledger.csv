@@ -1,0 +1,6 @@
+source_id,source_path,used_for,notes
+foundation_equations,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_ch1_ch4_foundations/equations_definitions_ledger.csv,Base equations/definitions,"Prior compact ledger imported into thesis evidence/ch01_ch04_foundations."
+model_form_current,reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md,Steady fluid+walls balance and model record,"Defines steady scope, segment record, energy balance, wall circuit, test-section balance, pressure balance, runtime inputs."
+ch5_csem_model,reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md,CSEM-specific model architecture,"Adds recirculation guard, seeded exchange-CV path, external-boundary dictionary, and LitRev model-form relationship."
+ch6_admission,reports/thesis_dossier/Chapters_and_sections/current/18_ch6_csem_closure_admission_uncertainty.md,Admission terminology and runtime discipline,"Defines evidence classes, gate status, runtime-input rule, sensor-map discipline, source/property labels."
+claim_ledger,reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,Claim status and caveats,"Controls what terms may be called admitted/diagnostic/blocked."

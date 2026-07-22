@@ -1,0 +1,31 @@
+{
+  "blocked_pending_terminal_rows": 8,
+  "date": "2026-07-17",
+  "generated_at_utc": "2026-07-17T20:25:16+00:00",
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "hybrid_scoreable_rows": 0,
+  "live_scheduler_requested": true,
+  "live_scheduler_states": {
+    "3293924": "unknown_or_not_in_queue:sacct=1;squeue=127",
+    "3295438": "unknown_or_not_in_queue:sacct=1;squeue=127",
+    "3299610": "unknown_or_not_in_queue:sacct=1;squeue=127",
+    "3299620": "unknown_or_not_in_queue:sacct=1;squeue=127"
+  },
+  "native_output_mutation": "none",
+  "ordinary_f6_scoreable_rows": 0,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement",
+  "pm10_ready_cases_recorded": 0,
+  "pm5_ordinary_anchor_rows": 0,
+  "pm5_recirculation_diagnostic_rows": 12,
+  "pm5_rows": 12,
+  "production_closure": "F3_shah_apparent",
+  "promotion_allowed": "no",
+  "recommended_next_cfd_rows": 11,
+  "registry_mutation": "none",
+  "scheduler_action": "read_only_status_check",
+  "scientific_admission_change": "none",
+  "task": "AGENT-505",
+  "terminal_status_counts": {
+    "live_unknown_check_before_harvest": 8
+  }
+}

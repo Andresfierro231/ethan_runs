@@ -1,0 +1,14 @@
+guardrail,value
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_action,False
+fluid_or_external_edit,False
+thesis_body_or_latex_edit,False
+validation_holdout_external_scoring,False
+fitting_or_model_selection,False
+source_property_release,False
+qwall_release,False
+coefficient_admission,False
+candidate_freeze,False
+final_score_claim,False
+runtime_leakage_relaxation,False

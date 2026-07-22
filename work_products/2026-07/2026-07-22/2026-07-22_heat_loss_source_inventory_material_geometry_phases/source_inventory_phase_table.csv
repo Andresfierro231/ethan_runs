@@ -1,0 +1,19 @@
+case_id,split_label_observed,heat_path,source_segment_id,setup_patch_or_group,setup_value_W,runtime_allowed_now,calibration_phase_status,guardrail
+salt_1,train,heater,lower_leg,pipeleg_lower_04_05_06_straight_total,232.30000000000004,false,inventory_traceable_not_released,Do not use realized wallHeatFlux or protected temperature fit.
+salt_1,train,cooler_or_jacket,cooling_branch,pipeleg_upper_05_cooler,-103.16215407994024,false,inventory_traceable_not_released,Do not copy imposed CFD cooler duty as runtime sink.
+salt_1,train,test_section_source,upcomer,pipeleg_left_04_test_section,37.0,false,inventory_traceable_not_released,Keep test-section source separate from passive loss.
+salt_2,train,heater,lower_leg,pipeleg_lower_04_05_06_straight_total,265.7,false,inventory_traceable_not_released,Do not use realized wallHeatFlux or protected temperature fit.
+salt_2,train,cooler_or_jacket,cooling_branch,pipeleg_upper_05_cooler,-104.07353581998868,false,inventory_traceable_not_released,Do not copy imposed CFD cooler duty as runtime sink.
+salt_2,train,test_section_source,upcomer,pipeleg_left_04_test_section,37.0,false,inventory_traceable_not_released,Keep test-section source separate from passive loss.
+salt_3,validation_label_metadata_only,heater,lower_leg,pipeleg_lower_04_05_06_straight_total,297.5,false,inventory_traceable_not_released,No validation scoring or tuning from this inventory row.
+salt_3,validation_label_metadata_only,cooler_or_jacket,cooling_branch,pipeleg_upper_05_cooler,-114.57817713779176,false,inventory_traceable_not_released,No validation scoring or tuning from this inventory row.
+salt_3,validation_label_metadata_only,test_section_source,upcomer,pipeleg_left_04_test_section,37.0,false,inventory_traceable_not_released,No validation scoring or tuning from this inventory row.
+salt_4,holdout_label_metadata_only,heater,lower_leg,pipeleg_lower_04_05_06_straight_total,337.59999999999997,false,inventory_traceable_not_released,No holdout scoring or tuning from this inventory row.
+salt_4,holdout_label_metadata_only,cooler_or_jacket,cooling_branch,pipeleg_upper_05_cooler,-128.1485764924187,false,inventory_traceable_not_released,No holdout scoring or tuning from this inventory row.
+salt_4,holdout_label_metadata_only,test_section_source,upcomer,pipeleg_left_04_test_section,37.0,false,inventory_traceable_not_released,No holdout scoring or tuning from this inventory row.
+all_cases,diagnostic_only,passive_external_convection,external_wall_surfaces,PASSIVE-H2_nominal_convective_operator,216.7791447688486,false,diagnostic_operator_not_released,No global hA multiplier selected from residual.
+all_cases,diagnostic_only,radiation,external_wall_surfaces,PASSIVE-H2_nominal_radiative_operator,656.4927338489465,false,diagnostic_operator_not_released,Do not double-count radiation with realized CFD wallHeatFlux replay.
+all_cases,diagnostic_only,passive_total,external_wall_surfaces,PASSIVE-H2_nominal_total_operator,873.2718786177952,false,diagnostic_operator_not_released,Numeric passive heat-loss is not released.
+all_cases,not_a_source,storage,fluid_and_solid_masses,unsteady_energy_storage,,false,future_transient_lane_only,Do not tune storage as steady residual closure.
+all_cases,not_a_source,recirculation_exchange,upcomer_exchange_cell,S13_exchange_QOI_paths,,false,gated_by_same_label_mesh_gci_and_source_property,Keep recirculation exchange separate from ordinary Nu/f_D/K.
+all_cases,not_a_source,unknown_residual,all_heat_paths,explicit_residual_output,,false,output_only_never_runtime_closure,Never hide residual in internal Nu or a hidden multiplier.

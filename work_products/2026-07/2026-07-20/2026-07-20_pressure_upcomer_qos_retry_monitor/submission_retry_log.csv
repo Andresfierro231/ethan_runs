@@ -1,0 +1,2 @@
+attempt_id,attempt_context,command,return_code,submission_result,job_id,next_action
+3,qos_retry_monitor,"ssh login1 ""cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/scripts/submit_pressure_upcomer_isolated_relaunch.sbatch""",,not_attempted_retry_window_blocked,,retry_after_submit_limit_clears_or_existing_jobs_complete

@@ -1,0 +1,12 @@
+input_group,coverage_status,covered_rows,missing_rows,evidence,m0_use
+scorecard_schema,available,79,0,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,defines targets and required prediction fields only
+case_split_contract,available,16,0,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,separates train/support/holdout/external/future roles
+frozen_prediction_artifact,missing,0,79,work_products/2026-07/2026-07-21/2026-07-21_predictive_final_model_starter/baseline_model_contract.csv,blocks numerical M0 predictions and residual scores
+runtime_source_property_release,not_released_for_fit_or_final_score,0,79,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s5_source_property_split_release/source_property_release_ledger.csv,labels rows; no source/property release performed
+metric::all_probe_temperature_rmse_K,schema_available_prediction_missing,12,12,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell
+metric::loop_mdot_abs_error_pct,schema_available_prediction_missing,12,12,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell
+metric::pm5_upcomer_recirculation_diagnostic,schema_available_prediction_missing,7,7,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell
+metric::pressure_streamwise_rmse_Pa,schema_available_prediction_missing,12,12,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell
+metric::thermal_section_heat_abs_residual_W,schema_available_prediction_missing,12,12,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell
+metric::tp_sensor_rmse_K,schema_available_prediction_missing,12,12,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell
+metric::tw_sensor_rmse_K,schema_available_prediction_missing,12,12,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv,metric retained in comparison-ready shell

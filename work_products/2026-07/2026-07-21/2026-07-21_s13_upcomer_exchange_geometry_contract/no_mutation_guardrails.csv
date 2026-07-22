@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,pass_read_only,geometry contract reads prior packages only
+surface_extraction,blocked,no interface/wall VTK extraction until geometry source is trusted
+harvest,blocked,no exchange-cell harvest from partial cell-only inputs
+admission,blocked,"no fit, score, model selection, ordinary upcomer reopening, or exchange-cell admission"
+residual_lane,pass,do not absorb pressure or energy residual into internal Nu

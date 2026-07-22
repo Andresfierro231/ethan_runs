@@ -1,0 +1,8 @@
+guardrail,status
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_or_solver_action,False
+fitting_or_model_selection,False
+source_property_release,False
+final_score_or_admission,False
+residual_absorbed_into_internal_nu,False

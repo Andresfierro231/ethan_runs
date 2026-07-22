@@ -1,0 +1,6 @@
+protected_family,row_count,fit_allowed,model_selection_allowed,score_release_condition,protection_status,guardrail
+salt2_pm5_holdout,2,no,no,predeclared frozen candidate plus release gate,pass,Holdout rows never tune or select the candidate they score.
+val_salt2_external,1,no,no,predeclared frozen candidate plus external-test ledger release,pass,External residuals cannot be back-propagated into source choice or model form.
+pm10_future_holdout,4,no,no,terminal admission plus predeclared frozen candidate,pass,Future PM10 rows remain unavailable for current fit/model selection.
+new_cfd_future_external,1,no,no,run/admission plus predeclared frozen candidate,pass,Planned CFD rows cannot influence current model selection.
+excluded_support_diagnostic,4,no,no,no final score release,pass,Support rows may document failure modes but are not blind validation.

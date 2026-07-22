@@ -1,0 +1,4 @@
+allowed_use_here,case_id,external_bc_split_role,protected_scoring_allowed,reason,scenario_id,train_context_diagnostic_allowed
+True,salt_2,train,False,Salt2 train row is eligible for no-protected train-context handoff,salt_2__V00__nominal,True
+False,salt_3,validation,False,Salt2 is train; Salt3/Salt4 remain diagnostic train-context only until split conflict row resolves them,salt_3__V00__nominal,True
+False,salt_4,holdout,False,Salt2 is train; Salt3/Salt4 remain diagnostic train-context only until split conflict row resolves them,salt_4__V00__nominal,True

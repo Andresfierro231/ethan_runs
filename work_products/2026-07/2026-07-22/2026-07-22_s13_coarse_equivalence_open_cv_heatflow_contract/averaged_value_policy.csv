@@ -1,0 +1,4 @@
+quantity_type,examples,averaged_values_allowed,required_weighting,admission_limit
+intensive_state,"T_recirc, T_core, rho, mu, cp",True,"volume-, mass-, or area-weighted basis stated per QOI",usable as reduced-model state only with same-mask UQ and property provenance
+flux_or_integral,"Q_wall_W, mdot_exchange, source-side heat flow",False,integrate signed face/cell contributions first; averages may be secondary diagnostics only,do not replace integrals with area-average fields times approximate area unless equivalence is proved
+residual,"energy residual, pressure residual",False,compute from conserved/integral terms with sign convention,average residual indicators are screening metrics only

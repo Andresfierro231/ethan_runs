@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-04T09:54:09-05:00",
+  "row_count": 78,
+  "case_count": 14,
+  "sources": {
+    "friction": "work_products/2026-07-01_claude_segment_friction/segment_friction.csv",
+    "thermal_dir": "work_products/2026-06-30_claude_thermal_htc",
+    "upcomer_dir": "work_products/2026-06-30_claude_upcomer_convection_cell",
+    "downcomer": "work_products/2026-06-30_claude_downcomer_recirculation/downcomer_recirculation.csv",
+    "segment_dp": "work_products/2026-07-01_claude_1d_predictivity_trial/segment_dp_compare.csv",
+    "run_status": "work_products/2026-07-04_postprocessing_run_status_and_next_steps/run_status_inventory.csv",
+    "model_ladder": "work_products/2026-07-04_incremental_model_form_comparison/incremental_model_form_ladder.csv"
+  }
+}

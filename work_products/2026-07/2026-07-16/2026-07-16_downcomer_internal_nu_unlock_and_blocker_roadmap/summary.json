@@ -1,0 +1,23 @@
+{
+  "blocker_decision": "not_resolved_downcomer_narrowed",
+  "downcomer_decision_counts": {
+    "not_admitted_downcomer_policy_sign_recirculation_mesh": 1
+  },
+  "downcomer_fit_admissible_rows": 0,
+  "downcomer_internal_nu_candidate_rows": 1,
+  "external_fluid_mutated": false,
+  "future_studies_documented": 12,
+  "generated_at": "2026-07-16T22:18:14+00:00",
+  "native_solver_outputs_mutated": false,
+  "open_blockers": [
+    "closure-qoi-mesh-gci",
+    "upcomer-onset-data-sparsity",
+    "predictive-wall-test-section-submodels",
+    "f6-friction-re-correction"
+  ],
+  "open_blockers_covered": 4,
+  "open_blockers_total": 4,
+  "registry_mutated": false,
+  "scheduler_action_taken": false,
+  "task": "AGENT-466"
+}

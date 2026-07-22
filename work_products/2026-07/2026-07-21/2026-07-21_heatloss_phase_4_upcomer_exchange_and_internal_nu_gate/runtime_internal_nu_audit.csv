@@ -1,0 +1,4 @@
+audit_id,status,policy,evidence,source_paths
+no_runtime_residual_absorption,pass_guardrail,forbidden: heat residuals are not hidden in internal Nu or exchange coefficients,ordinary_internal_Nu_fit_allowed=false for every row,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/ordinary_single_stream_nu_reopening_candidates.csv
+no_new_execution,pass,"no Fluid, OpenFOAM, scheduler, solver, or postprocessing launch",existing artifacts only,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/source_manifest.csv
+admission_state,pass_no_mutation,"no registry, admission, blocker-register, or generated-index mutation",Phase 4 emits package-local gate status only,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate/phase4_decision_gate.csv

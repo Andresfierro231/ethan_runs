@@ -1,0 +1,18 @@
+sensor,runtime_temperature_allowed,fit_allowed,model_selection_allowed,reason,audit_result
+TP1,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TP2,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TP3,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TP4,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TP5,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TP6,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW1,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW2,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW3,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW4,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW5,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW6,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW7,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW8,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW9,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW10,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release
+TW11,false,false,false,score-only policy; temperature is not a runtime input,pass_no_runtime_release

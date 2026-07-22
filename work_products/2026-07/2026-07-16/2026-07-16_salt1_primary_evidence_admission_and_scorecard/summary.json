@@ -1,0 +1,24 @@
+{
+  "task": "AGENT-448",
+  "salt1_cases_reviewed": 3,
+  "salt1_suspicious_cases": [],
+  "salt1_promoted_to_primary_evidence": true,
+  "scorecard_rows": 19,
+  "scorecard_status_counts": {
+    "admitted": 6,
+    "validation-only": 3,
+    "diagnostic-only": 2,
+    "blocked": 8
+  },
+  "outputs": [
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/README.md",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/board_cleanup_moved_rows.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/board_cleanup_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/final_admission_status_scorecard.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_convergence_audit.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_primary_evidence_decision.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_terminal_monitor_metrics.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/salt1_terminal_summary.csv",
+    "work_products/2026-07/2026-07-16/2026-07-16_salt1_primary_evidence_admission_and_scorecard/summary.json"
+  ]
+}

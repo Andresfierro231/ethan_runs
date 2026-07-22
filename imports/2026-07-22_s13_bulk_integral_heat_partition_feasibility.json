@@ -1,0 +1,71 @@
+{
+  "task": "TODO-S13-BULK-INTEGRAL-HEAT-PARTITION-FEASIBILITY-2026-07-22",
+  "task_id": "TODO-S13-BULK-INTEGRAL-HEAT-PARTITION-FEASIBILITY-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Run a no-fit S13 bulk-integral heat-partition feasibility analysis to identify the cleanest path toward a predictive 1D model.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-BULK-INTEGRAL-HEAT-PARTITION-FEASIBILITY-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-bulk-integral-heat-partition-feasibility.md",
+    "imports/2026-07-22_s13_bulk_integral_heat_partition_feasibility.json",
+    "tools/analyze/build_s13_bulk_integral_heat_partition_feasibility.py",
+    "tools/analyze/test_s13_bulk_integral_heat_partition_feasibility.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/open_cv_use_policy.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/averaged_value_policy.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/qoi_mesh_disposition_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/heat_flow_match_diagnostics.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/source_side_qoi_contract.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/case_heatflow_equivalence_basis.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/field_release_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_accounting_traceability_evidence_packet/thermal_accounting_traceability_ledger.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m pytest tools/analyze/test_s13_bulk_integral_heat_partition_feasibility.py",
+      "result": "passed, 7 tests"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_bulk_integral_heat_partition_feasibility.py tools/analyze/test_s13_bulk_integral_heat_partition_feasibility.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/build_s13_bulk_integral_heat_partition_feasibility.py",
+      "result": "passed; generated heat-partition, residual-feasibility, model-ladder, and progression-gate outputs"
+    }
+  ],
+  "outputs": {
+    "package": "work_products/2026-07/2026-07-22/2026-07-22_s13_bulk_integral_heat_partition_feasibility",
+    "decision": "bulk_integral_heat_partition_feasible_diagnostic_no_fit_residual_next",
+    "F_wall_mean": 0.13795119734031702,
+    "F_wall_min": 0.13693697990467257,
+    "F_wall_max": 0.13896146612096516,
+    "F_wall_range": 0.002024486216292587,
+    "recommended_next_model_direction": "bulk_integral_heat_partition_then_residual_complete_open_cv"
+  },
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "scheduler_action": false,
+    "solver_or_openfoam_postprocess_launched": false,
+    "sampler_or_harvest_or_uq_launched": false,
+    "generated_docs_index_refreshed": false,
+    "source_property_or_qwall_release": false,
+    "coefficient_admission": false,
+    "production_harvest_allowed": false,
+    "validation_holdout_external_scoring": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "thesis_body_mutated": false,
+  "no_scorecard_outputs": true,
+  "decision": "bulk_integral_heat_partition_feasible_diagnostic_no_fit_residual_next"
+}

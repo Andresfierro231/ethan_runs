@@ -1,0 +1,3 @@
+case_id,branch,qoi_name,coarse,medium,fine,r21,r32,same_qoi_status,gci_run_status,gci_tool
+salt_2,right_leg,right_leg_delta_p_total_pressure_pa,5.70256984311,5.3683671613,5.29566896854,,,pass_same_label_formula_sign,blocked_missing_declared_refinement_ratios,tools/analyze/compute_gci.py
+salt_2,test_section_span,test_section_span_delta_p_total_pressure_pa,0.627308601946,0.722847926384,0.719257439441,,,pass_same_label_formula_sign,blocked_missing_declared_refinement_ratios,tools/analyze/compute_gci.py

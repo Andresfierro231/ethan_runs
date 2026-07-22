@@ -1,0 +1,9 @@
+role,path,description
+input,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/refreshed_final_scorecard_source_property_labels.csv,July 20 refreshed case labels
+input,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_property_refresh/remaining_source_property_todo.csv,Remaining source/property TODO rows
+input,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/branch_source_envelope.csv,July 13 branch source-envelope table
+input,work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv,July 13 source overlap flags
+input,work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv,Read-only scorecard shell contract
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/case_source_envelope_resolution.csv,Four candidate source-envelope decisions
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/scorecard_source_property_resolution_policy.csv,16-row final scorecard integration policy
+output,work_products/2026-07/2026-07-20/2026-07-20_final_scorecard_source_envelope_resolution/source_envelope_evidence_detail.csv,Branch/source evidence behind candidate decisions

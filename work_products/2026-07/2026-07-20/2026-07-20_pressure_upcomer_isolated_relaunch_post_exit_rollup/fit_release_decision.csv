@@ -1,0 +1,2 @@
+decision_id,decision,candidate_rows,total_rows,fit_rows_released_now,reason
+pressure_upcomer_fit_release_after_isolated_relaunch,blocked_no_fit_release,0,6,0,"one or more rows missing, blocked, diagnostic, or not terminal"

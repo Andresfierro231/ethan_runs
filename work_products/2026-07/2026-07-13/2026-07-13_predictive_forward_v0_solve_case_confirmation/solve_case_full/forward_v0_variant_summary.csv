@@ -1,0 +1,3 @@
+variant_id,engine,n_rows,mean_abs_Tmean_error_vs_cfd_K,mean_abs_loop_delta_error_vs_cfd_K,mean_mdot_error_vs_cfd_kg_s,mean_mdot_error_vs_experimental_kg_s,max_abs_pressure_residual_Pa,mean_qambient_total_W
+F0_current_fluid_sources,solve_case,3,34.3768134222,4.41928504069,0.00783583099037,0.00474583099037,1.43056347213e-07,185.151473151
+F1_heater_only,solve_case,3,4.60964505861,3.12693777911,0.00535822070209,0.00226822070209,8.49853805107e-08,148.151326045

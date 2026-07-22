@@ -1,0 +1,14 @@
+path,role,exists,mutation
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_summary.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus/same_qoi_temporal_uq_case_rows.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/same_qoi_neighbor_window_rows.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/qwall_exchange_mesh_gci_gate_matrix.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/missing_mesh_family_blocker_table.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/mesh_gci_requirements.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_same_qoi_uq_phase_b_mesh_gci_evidence_matrix/mesh_gci_coverage_matrix.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_three_case_cell_vtk_manifest/three_case_cell_vtk_manifest.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_seeded_heat_path_lane_release/qwall_contract.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/qwall_or_source_side_path_decision.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_uq_unblock/qwall_basis_gate.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_side_heatflow_equivalence_uq_prereq/neighbor_window_mesh_gci_prereq.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only
+work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_exact_pressure_qwall_compute/trusted_wall_Q_wall_summary.csv,curated evidence artifact searched for exact labels and mesh-family status,true,read_only

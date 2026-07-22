@@ -1,0 +1,16 @@
+{
+  "boundary_mode_rows": 4,
+  "case_mode_rows": 9,
+  "date": "2026-07-15",
+  "external_cfd_modeling_tools_mutated": false,
+  "figure_plan_rows": 6,
+  "generated_at": "2026-07-15T09:40:02",
+  "key_findings": 6,
+  "native_cfd_outputs_mutated": false,
+  "registry_or_admission_state_mutated": false,
+  "scheduler_state_mutated": false,
+  "slide_count": 12,
+  "source_package": "work_products/2026-07/2026-07-14/2026-07-14_mdot_temperature_probe_error_audit",
+  "task": "AGENT-420",
+  "work_product": "work_products/2026-07/2026-07-15/2026-07-15_mdot_temperature_error_report_and_presentation"
+}

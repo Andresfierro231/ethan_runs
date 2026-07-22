@@ -1,0 +1,11 @@
+{
+  "component_k_admitted": false,
+  "decision": "diagnostic_only_apparent_cluster_recirculation_blocked_missing_UQ",
+  "f6_fit_performed": false,
+  "next_step": "nonrecirculating_anchor_request_or_recirc_modeled_diagnostic_path",
+  "ordinary_component_k_candidates": 0,
+  "pressure_velocity_basis_gate": "pass",
+  "raw_endpoint_surface_availability": "pass",
+  "recirculation_pass_pairs": 0,
+  "task": "TODO-TWO-TAP-SEPARATED-ADMISSION-REVIEW"
+}

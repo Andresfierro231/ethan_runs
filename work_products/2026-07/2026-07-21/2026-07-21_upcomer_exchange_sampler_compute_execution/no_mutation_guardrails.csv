@@ -1,0 +1,6 @@
+guard_id,status,policy
+native_outputs,pass_no_mutation,source and reconstructed OpenFOAM directories are read-only evidence for this gate
+scheduler,pass_no_action,"no sbatch, srun, cancel, requeue, or monitor action was performed"
+login_node,pass_no_openfoam,"no reconstructPar, foamPostProcess, sampler, or solver was run on the login node"
+diagnostic_heat_flux,pass_scoring_only,wallHeatFlux is diagnostic/support evidence only and never fit as a predictive parameter
+admission,pass_no_admission,"no exchange-cell closure, pressure model, energy residual, Nu, K, or scorecard admission changed"

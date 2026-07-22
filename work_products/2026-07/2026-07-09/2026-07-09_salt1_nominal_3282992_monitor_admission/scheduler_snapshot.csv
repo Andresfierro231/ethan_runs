@@ -1,0 +1,5 @@
+checked_at,source,job_id,job_name,state,partition,elapsed,time_limit,nodes,node_or_reason,exit_code,submit,start,end,alloc_cpus
+2026-07-09T16:30:41-05:00,squeue,3282992,salt1_nom_cont,RUNNING,NuclearEnergy,1-03:08:59,5-00:00:00,1,c318-016,,,,,
+2026-07-09T16:30:41-05:00,sacct,3282992,salt1_nom_cont,RUNNING,,1-03:08:59,5-00:00:00,1,,0:0,2026-07-08T13:14:15,2026-07-08T13:21:42,Unknown,256
+2026-07-09T16:30:41-05:00,sacct,3282992.batch,batch,RUNNING,,1-03:08:59,,1,,0:0,2026-07-08T13:21:42,2026-07-08T13:21:42,Unknown,256
+2026-07-09T16:30:41-05:00,sacct,3282992.0,foamRun,RUNNING,,1-03:01:23,,1,,0:0,2026-07-08T13:29:18,2026-07-08T13:29:18,Unknown,64

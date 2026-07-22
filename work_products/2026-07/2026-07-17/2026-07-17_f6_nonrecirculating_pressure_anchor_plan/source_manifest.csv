@@ -1,0 +1,7 @@
+source_id,path,exists,use
+f6_candidates,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_candidate_inventory.csv,true,current 12 PM5 F6 candidate rows
+f6_gate_matrix,work_products/2026-07/2026-07-17/2026-07-17_f6_recorrection_resolution_plan/f6_row_gate_matrix.csv,true,current F6 ordinary/hybrid gate decisions
+f6_anchor_table,work_products/2026-07/2026-07-17/2026-07-17_f6_anchor_first_refinement/anchor_gate_table.csv,true,PM10/high-heat anchor-first pending rows
+named_pressure,work_products/2026-07/2026-07-17/2026-07-17_named_pressure_extraction_readiness/named_pressure_readiness.csv,true,named pressure rows and extraction readiness
+segment_pressure,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,true,segment pressure model blockers and runtime guardrails
+f6_internal_nu,work_products/2026-07/2026-07-15/2026-07-15_f6_internal_nu_admission_review_and_forward_unblock/f6_onset_scorecard.csv,true,PM5 onset diagnostics and non-admission rationale

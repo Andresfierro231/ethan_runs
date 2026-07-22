@@ -1,0 +1,5 @@
+qoi_label,successful_case_mesh_pairs,terminal_window_rows,medium_fine_exact_label_rows_exist,same_label_mesh_gci_disposition_unlocked,mesh_gci_disposition_run_here,required_next_step
+Q_wall_W,6,18,true,true,false,open separate mesh/GCI disposition row; do not fit coefficients
+mdot_exchange_positive_outward_proxy_kg_s,6,18,true,true,false,open separate mesh/GCI disposition row; do not fit coefficients
+tau_recirc_proxy_s,6,18,true,true,false,open separate mesh/GCI disposition row; do not fit coefficients
+wall_core_bulk_temperature_contrast_K,6,18,true,true,false,open separate mesh/GCI disposition row; do not fit coefficients

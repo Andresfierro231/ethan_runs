@@ -1,0 +1,7 @@
+gate_id,status,evidence,next_action
+scheduler_terminal,pass,Slurm 3310985 COMPLETED 0:0 in 00:38:40 on c318-011,do not resubmit
+post_run_validator,pass,python3.11 tools/analyze/test_1d_train_only_setup_uq_smoke_execution.py --output-dir work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_execution passed,interpret_smoke_only
+baseline_root,pass,3/3 baseline roots accepted,review_variant_sensitivity
+variant_roots,pass,33/33 variant roots accepted,review_sensitivity_only
+residual_owner,blocked_for_admission,residual_owner_sensitivity.csv has diagnostic_missing_cp for all 36 rows,do not admit residual owner or absorb residual into internal Nu
+scientific_release,no_release_no_score_no_admission,0 protected scoring 0 fitting/model selection 0 source/property release 0 coefficient admission 0 candidate freeze 0 final score,open separate review row if using smoke to design next train-only solve

@@ -1,0 +1,12 @@
+source_id,path,exists,role
+blocker_register,.agent/blockers.yml,True,read-only synthesis input
+blockers_rendered,.agent/BLOCKERS.md,True,read-only synthesis input
+tp_tw_forensics,work_products/2026-07/2026-07-18/2026-07-18_tp_tw_failure_forensics/summary.json,True,read-only synthesis input
+umx1_api,work_products/2026-07/2026-07-18/2026-07-18_umx1_api_contract_audit/summary.json,True,read-only synthesis input
+source_property,work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/summary.json,True,read-only synthesis input
+source_property_next,work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/blockers_research_paths_next_steps.csv,True,read-only synthesis input
+two_tap_raw,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/summary.json,True,read-only synthesis input
+wall_blocker_audit,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_blocker_audit/README.md,True,read-only synthesis input
+upcomer_blocker,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/README.md,True,read-only synthesis input
+f6_unblock,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/README.md,True,read-only synthesis input
+two_tap_readme,work_products/2026-07/2026-07-18/2026-07-18_two_tap_component_raw_endpoint_plan/README.md,True,read-only synthesis input

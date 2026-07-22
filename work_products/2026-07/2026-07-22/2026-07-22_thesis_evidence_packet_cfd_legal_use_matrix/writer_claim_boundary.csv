@@ -1,0 +1,6 @@
+claim_type,claim_text,boundary
+safe,CFD evidence can be used to diagnose why candidate paths remain blocked.,Do not turn that evidence into runtime inputs or protected scores.
+safe,PM10 terminal evidence is available for future blind-holdout planning.,It is not a current scorecard result.
+safe,Negative S12/S13/pressure results strengthen the model-admission argument.,"They are evidence of blocked gates, not admitted closures."
+unsafe,A candidate is final because train rows match.,"Train-only agreement cannot justify freeze, validation, holdout, or external scoring."
+unsafe,Use CFD mdot or measured temperatures to improve runtime prediction.,forbidden: that would violate the runtime input contract.

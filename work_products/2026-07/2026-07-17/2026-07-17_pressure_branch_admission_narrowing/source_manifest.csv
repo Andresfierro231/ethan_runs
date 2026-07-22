@@ -1,0 +1,6 @@
+source_id,path,exists,use
+pressure_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,true,segment pressure admission state
+pressure_ladder,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv,true,branch pressure masks
+pressure_term_ledger,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,true,pressure evidence rows
+minor_loss,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,true,minor-loss/two-tap evidence
+branch_mask,work_products/2026-07/2026-07-17/2026-07-17_branch_specific_ordinary_pipe_scorecard/ordinary_pipe_branch_mask.csv,true,ordinary branch exclusion state

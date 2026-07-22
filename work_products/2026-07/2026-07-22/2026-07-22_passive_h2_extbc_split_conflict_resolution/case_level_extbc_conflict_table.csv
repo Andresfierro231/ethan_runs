@@ -1,0 +1,4 @@
+case_id,external_bc_split_roles,setup_uq_train_only_label,split_label_conflict,allowed_in_future_candidate_preflight,protected_scoring_allowed,numeric_q_loss_release,source_provenance_decision
+salt_2,train,True,False,true,false,false,setup-known operator can be studied only within split-consistent train context
+salt_3,validation,True,True,train_context_diagnostic_only,false,false,setup-known operator can be studied only within split-consistent train context
+salt_4,holdout,True,True,train_context_diagnostic_only,false,false,setup-known operator can be studied only within split-consistent train context

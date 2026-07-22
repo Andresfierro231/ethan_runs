@@ -1,0 +1,43 @@
+{
+  "task": "AGENT-357",
+  "generated_at": "2026-07-14T16:45:00-05:00",
+  "pm5_case_count": 4,
+  "matched_plane_count": 12,
+  "preflight_ok": true,
+  "submitted_job_id": "3295968",
+  "submitted_job_name": "upc_pm5q",
+  "submitted_partition": "NuclearEnergy",
+  "supersedes_cancelled_job_id": "3295901",
+  "cancelled_job_partition": "normal",
+  "cancelled_job_state": "CANCELLED",
+  "second_batch_job_state": "CANCELLED",
+  "interactive_run_id": "interactive_3295120_retry2",
+  "interactive_allocation_job_id": "3295120",
+  "interactive_allocation_partition": "NuclearEnergy-dev",
+  "interactive_host": "c318-008.ls6.tacc.utexas.edu",
+  "interactive_launch_method": "srun -N1 -n1",
+  "interactive_state": "COMPLETED",
+  "interactive_exit_code": 0,
+  "interactive_finished_at": "2026-07-14T18:01:29-05:00",
+  "interactive_restart_note": "interactive_3295120 and interactive_3295120_retry1 failed on inherited source-case system/functions; runner now disables system/functions in tmp staging and retry2 completed all four pm5 rows.",
+  "parsed_csv_count": 4,
+  "parsed_metric_row_count": 12,
+  "admitted_metric_row_count": 0,
+  "parsed_metric_status": "incomplete",
+  "parsed_quality_flag": "blocked-missing-field",
+  "parsed_failure_summary": "sampled plane files missing one of required fields U/rho/T; sampled wall files missing wall T or wallHeatFlux",
+  "initial_scheduler_state": "PENDING",
+  "initial_pending_reason": "Priority",
+  "native_solver_outputs_mutated": false,
+  "writes_expected_when_job_runs": [
+    "tmp/2026-07-14_pm5_corrected_q_matched_plane_unlock/recon/**",
+    "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/logs/**",
+    "work_products/2026-07/2026-07-14/2026-07-14_pm5_corrected_q_matched_plane_unlock/parsed/**"
+  ],
+  "salt1_caveats": [
+    "Salt1 nominal and lo10q have terminal/steady/postprocessing evidence but only partial case-level BC role promotion, not a patch-complete terminal BC table.",
+    "Use is admitted for training by dated policy override; perturbed rows must remain labeled as perturbations, not nominal baselines.",
+    "Matched pressure/upcomer metrics are separate and not implied by thermal closure admission."
+  ],
+  "salt1_hi10q_conflict_resolution": "Terminal harvest and final-window metrics support stationary terminal context, while the older July 14 salt inventory classified the same row as failed/not-admissible from a stale latest-time gate. Resolve by superseding the older inventory decision with the terminal harvest package after one curator signoff; no rerun is indicated by current evidence."
+}

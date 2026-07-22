@@ -1,0 +1,91 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-FACE-VECTOR-EXACT-LABEL-SLURM-RERUN-2026-07-22",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-FACE-VECTOR-EXACT-LABEL-SLURM-RERUN-2026-07-22",
+  "date": "2026-07-22",
+  "objective": "Submit one fresh Slurm rerun of the S13 medium/fine exact-label sampler from current face-vector-ready source into a new output package; superseded by the smoke-first requirement before completion.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-UPCOMER-EXCHANGE-FACE-VECTOR-EXACT-LABEL-SLURM-RERUN-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-upcomer-exchange-face-vector-exact-label-slurm-rerun.md",
+    "imports/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_area_vector_repair_rerun/summary.json",
+    "tools/extract/build_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "tools/extract/test_s13_upcomer_exchange_medium_fine_exact_label_sampler.py",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/",
+    "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/"
+  ],
+  "scheduler": {
+    "submit_host": "login3",
+    "job_id": "3311004",
+    "job_name": "s13_mf_vec",
+    "last_observed_state": "CANCELLED on c318-012; end 2026-07-22T11:42:10; exit code 0:15",
+    "stdout": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun/logs/slurm-%j.out",
+    "stderr": "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun/logs/slurm-%j.err"
+  },
+  "validation": [
+    {
+      "command": "bash -n work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun/run_face_vector_exact_label_sampler.sbatch",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m json.tool imports/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun.json",
+      "result": "passed before submission"
+    },
+    {
+      "command": "python3.11 -m unittest tools.extract.test_s13_upcomer_exchange_medium_fine_exact_label_sampler",
+      "result": "passed, 7 tests"
+    },
+    {
+      "command": "ssh login3 sbatch work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun/run_face_vector_exact_label_sampler.sbatch",
+      "result": "submitted batch job 3311004"
+    },
+    {
+      "command": "squeue -j 3311004",
+      "result": "job 3311004 PENDING for Resources"
+    },
+    {
+      "command": "sacct -j 3311004 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList",
+      "result": "job 3311004 PENDING with no node assigned"
+    },
+    {
+      "command": "squeue -j 3311004",
+      "result": "later check: job 3311004 RUNNING on c318-012"
+    },
+    {
+      "command": "sacct -j 3311004 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList",
+      "result": "later check: job 3311004 and batch step RUNNING on c318-012, start 2026-07-22T11:14:17"
+    },
+    {
+      "command": "sacct -j 3311004 --format=JobID,JobName,State,ExitCode,Elapsed,Start,End,NodeList",
+      "result": "job 3311004 and batch step CANCELLED with exit code 0:15, end 2026-07-22T11:42:10"
+    },
+    {
+      "command": "head -5 work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_face_vector_exact_label_slurm_rerun/faces/salt_2_medium_exchange_interface_faces.csv",
+      "result": "partial canceled package header includes area_vector_x_m2, area_vector_y_m2, and area_vector_z_m2; package is superseded/non-admissible"
+    }
+  ],
+  "provenance_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_state_mutated": false,
+    "solver_or_postprocess_launched": false,
+    "scheduler_job_submitted": true,
+    "scheduler_job_cancelled": true,
+    "superseded_by_smoke_first_gate": true,
+    "partial_outputs_admissible": false,
+    "partial_face_header_confirms_area_vector_columns": true,
+    "production_harvest": false,
+    "mesh_gci_disposition_rerun": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "final_score_claim": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "submitted Slurm job 3311004 through login3, then cancelled it to enforce one-case/window smoke before any full six-case rerun",
+  "external_fluid_edit": false,
+  "status": "complete_cancelled_superseded"
+}

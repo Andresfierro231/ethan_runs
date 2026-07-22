@@ -1,0 +1,5 @@
+artifact,role,mutation,notes
+work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/summary.json,read_only_input,false,parent F-J result
+work_products/2026-07/2026-07-21/2026-07-21_extbc_source_sink_provenance_recovery/summary.json,read_only_input,false,source/sink provenance result
+work_products/2026-07/2026-07-21/2026-07-21_heated_incline_tw4_tw6_local_audit/summary.json,read_only_input,false,heated-incline diagnostic result
+work_products/2026-07/2026-07-21/2026-07-21_salt1_train_external_bc_recovery_freeze_gate/summary.json,read_only_input,false,Salt1 train-envelope metadata result

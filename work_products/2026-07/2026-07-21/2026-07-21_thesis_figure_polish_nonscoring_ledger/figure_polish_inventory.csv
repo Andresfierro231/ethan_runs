@@ -1,0 +1,8 @@
+figure_id,source_path,exists,current_use,polish_status,quantitative_overlay_allowed
+F-01,reports/thesis_dossier/figures/svg/F01_fluid_walls_loop_segment_atlas.svg,true,loop-region atlas,usable_svg_export_optional,false
+F-02,reports/thesis_dossier/figures/svg/F02_segment_local_ledger_inset.svg,true,segment-local ledger inset,usable_svg_export_optional,false
+F-03,reports/thesis_dossier/figures/svg/F03_upcomer_hybrid_schematic.svg,true,upcomer hybrid schematic,usable_svg_export_optional,false
+F-03A,reports/thesis_dossier/figures/figure_claim_crosswalk.csv,true,rendered upcomer velocity-arrow evidence references,usable_existing_rendered_assets_no_new_render,false
+F-04,reports/thesis_dossier/figures/svg/F04_junction_aware_vs_segment_only.svg,true,junction-aware comparison,usable_svg_export_optional,false
+F-05,reports/thesis_dossier/figures/svg/F05_model_form_ladder.svg,true,model-form ladder,usable_svg_export_optional,false
+F-06,reports/thesis_dossier/figures/svg/F06_sam_facing_flowchart.svg,true,SAM-facing flowchart,usable_svg_export_optional,false

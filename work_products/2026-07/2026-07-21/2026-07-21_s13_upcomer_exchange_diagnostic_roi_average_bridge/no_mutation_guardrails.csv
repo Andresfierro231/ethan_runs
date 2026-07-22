@@ -1,0 +1,7 @@
+guard_id,status,policy
+native_output_mutation,false,"read only existing VTK, masks, volumes, and ledgers"
+scheduler_action,false,local diagnostic reduction only
+surface_extraction,false,blocked geometry cannot launch surface extraction
+sampler_or_harvest,false,proxy rows are not sampler inputs
+coefficient_or_admission,false,effective indicators are not coefficients and cannot be fit
+residual_absorbed_into_internal_Nu,false,energy residual remains explicit and blocked by Q_wall_W

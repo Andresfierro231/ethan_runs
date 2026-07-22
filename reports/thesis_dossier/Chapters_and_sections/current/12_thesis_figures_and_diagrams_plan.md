@@ -13,6 +13,7 @@ provenance:
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_upcomer_orthogonal_arrow_render/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_val_salt2_upcomer_orthogonal_arrow_views/README.md
   - work_products/2026-07/2026-07-21/2026-07-21_thesis_val_salt2_upcomer_side_neg_x_arrow_view/README.md
+  - work_products/2026-07/2026-07-21/2026-07-21_thesis_val_salt2_upcomer_y_velocity_arrow_views/README.md
 tags: [thesis-section, current-section, figures, diagrams, figure-plan, segment-atlas, upcomer, sam]
 related:
   - TODO-THESIS-FIGURES-DIAGRAMS
@@ -154,6 +155,22 @@ velocity-profile SVG, not the external Salt2 arrow render:
 registry/salt2/ethan_modern_runs_staged/salt_test_2_jin/viscosity_screening_salt_test_2_jin_coarse_mesh/plots/velocity_profiles/svg/registry_velocity_final.svg
 ```
 
+If the thesis needs the vertical throughflow component instead of magnitude,
+use the separate `U_y` arrow set:
+
+```text
+figures/figures_rendered/paraview_velocity_y_arrows/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_x.svg
+figures/figures_rendered/paraview_velocity_y_arrows/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_neg_x.svg
+figures/figures_rendered/paraview_velocity_y_arrows/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_y.svg
+figures/figures_rendered/paraview_velocity_y_arrows/val_salt_test_2_coarse_mesh_laminar/upcomer/svg/val_salt_test_2_coarse_mesh_laminar_upcomer_velocity_y_component_arrows_side_z.svg
+```
+
+These y-component renders use arrows oriented by `U_y*jHat`, glyph length from
+`abs(U_y)`, and signed color from `U_y`; they are for qualitative vertical-flow
+diagnostics only. The `side_z` and x-normal views read most directly as
+up/down-flow images; the `side_y` view looks along the y direction, so
+y-directed glyphs appear mostly as circular arrow ends.
+
 Caption the figure as diagnostic recirculation evidence. It may justify
 abandoning ordinary single-stream and 2D-axisymmetric upcomer closure as the
 working basis for this regime, but it must not be captioned as an admitted
@@ -278,3 +295,24 @@ hand-authored SVG set.
 | Upcomer recirculation | F-03, F-03A |
 | Forward predictive model | F-05 |
 | SAM-facing interpretation / conclusion | F-06 |
+
+## 2026-07-22 Readiness Refresh
+
+Current readiness packet:
+`work_products/2026-07/2026-07-22/2026-07-22_thesis_figures_diagrams/`.
+
+F-01 through F-06 are ready for claim-controlled thesis use as conceptual SVGs.
+F-03A/F-03B remain diagnostic CFD visual candidates only. F-07/F-08 are future
+status/uncertainty panel targets and should wait for their source packets rather
+than being drawn from memory.
+
+Guardrails for the next figure pass:
+
+- Keep `M6` labeled as pending until a frozen runtime-legal candidate exists.
+- Keep formal GCI blocked unless a true same-label mesh family is admitted.
+- Keep upcomer ordinary `Nu`, `f_D`, `K`, and exchange coefficients blocked for
+  current recirculating rows.
+- Do not use realized CFD `wallHeatFlux`, CFD `mdot`, imposed cooler duty, or
+  validation temperatures as predictive runtime inputs.
+- Do not edit or duplicate the active blocked-scorecard panel package without a
+  separate row.

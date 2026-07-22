@@ -1,0 +1,12 @@
+artifact,role,mutation_status,path
+h1_hydraulic_scorecard,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/h1_hydraulic_scorecard.csv
+thermal_admission_internal_nu_final_gate,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_thermal_admission_internal_nu_final_gate/summary.json
+boundary_hx_wall_radiation_decision,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_boundary_hx_wall_radiation_model_form_decision/decision_table.csv
+fluid_localized_h1_and_boundary_api,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_fluid_localized_h1_and_boundary_api/summary.json
+corrected_q_terminal_admission_gate,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_corrected_q_terminal_admission_gate/summary.json
+sensor_map_contract,source,read_only,work_products/2026-07/2026-07-13/2026-07-13_predictive_sensor_map_contract/summary.json
+upcomer_recirculation_internal_nu_admissibility,source,read_only,work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/summary.json
+forward_v1_gate_checklist,generated,new_artifact,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/forward_v1_gate_checklist.csv
+scorecard_inputs_waiting_on_agents,generated,new_artifact,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/scorecard_inputs_waiting_on_agents.csv
+internal_nu_dependency_blockers,generated,new_artifact,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/internal_nu_dependency_blockers.csv
+final_forward_v1_gate_table,generated_alias,new_artifact,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/final_forward_v1_gate_table.csv

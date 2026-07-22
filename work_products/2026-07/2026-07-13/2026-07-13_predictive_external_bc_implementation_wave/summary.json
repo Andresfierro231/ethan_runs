@@ -1,0 +1,29 @@
+{
+  "task_id": "AGENT-297",
+  "generated_at": "2026-07-13T22:12:15+00:00",
+  "host": "c318-008.ls6.tacc.utexas.edu",
+  "platform": "Linux-4.18.0-372.26.1.el8_6.x86_64-x86_64-with-glibc2.28",
+  "git_rev": "99df9cf",
+  "source_paths": {
+    "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "patch_parity_contract": "work_products/2026-07/2026-07-13/2026-07-13_patch_boundary_fixed_mdot_1d_parity/parity_input_contract.csv",
+    "wall_layer_drive": "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/external_bc_drive_table.csv",
+    "wall_layer_parity": "work_products/2026-07/2026-07-13/2026-07-13_wall_layer_drive_mapping/section_heat_parity.csv",
+    "validation_split": "work_products/2026-07/2026-07-13/2026-07-13_predictive_validation_split/admission_split_table.csv",
+    "hx_forward_scores": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_primary_forward_scores.csv",
+    "hx_fit_parameters": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_fit_parameters.csv",
+    "hx_validation_splits": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hx_fit/hx_validation_splits.csv",
+    "hydraulic_residuals": "work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_gate/forward_v0_hydraulic_residuals.csv"
+  },
+  "row_counts": {
+    "external_boundary_rows": 24,
+    "boundary_score_rows": 24,
+    "hx_score_rows": 6,
+    "hydraulic_summary_rows": 2,
+    "decision_rows": 4
+  },
+  "fluid_source_modified": false,
+  "native_solver_outputs_modified": false,
+  "hx_package_caveat": "fit_protocol_status.csv and validation_split_requirements.csv are stale; use hx_validation_splits.csv, hx_fit_parameters.csv, and hx_primary_forward_scores.csv",
+  "radiation_policy": "setup parity includes emissivity/Tsur radiation; realized wallHeatFlux replay does not add separate radiation"
+}

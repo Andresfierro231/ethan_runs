@@ -1,0 +1,57 @@
+{
+  "generated_at": "2026-07-07T00:00:00-05:00",
+  "task": "AGENT-187",
+  "owner": "claude",
+  "role": "Implementer",
+  "purpose": "F4 leg-class friction multiplier: calibration dataset, OLS fits, and friction_closures.py implementation",
+  "inputs": {
+    "momentum_budget": "work_products/2026-07-01_claude_momentum_budget/momentum_budget.json",
+    "segment_arc_lengths": "work_products/2026-07-01_claude_segment_friction/segment_friction.csv"
+  },
+  "outputs": {
+    "calibration_dataset": "work_products/2026-07-07_f4_buoyancy_friction/f4_calibration_dataset.csv",
+    "fit_summary_json": "work_products/2026-07-07_f4_buoyancy_friction/f4_fit_summary.json",
+    "fit_summary_csv": "work_products/2026-07-07_f4_buoyancy_friction/f4_fit_summary.csv",
+    "calibration_script": "work_products/2026-07-07_f4_buoyancy_friction/run_f4_calibration.py",
+    "friction_closures": "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py"
+  },
+  "counts": {
+    "admitted_cases": 3,
+    "excluded_cases": 1,
+    "calibration_rows": 18,
+    "leg_classes_fit": 4,
+    "new_closure_forms": 1
+  },
+  "fit_model": "f_corrected / f_lam = a + b / Re  (OLS, linear in 1/Re)",
+  "fitted_coefficients": {
+    "heater":    {"a": 3.113314, "b": -31.8183,  "r2": 0.8764, "n": 3},
+    "cooler":    {"a": 2.549138, "b": -20.1248,  "r2": 0.9812, "n": 3},
+    "downcomer": {"a": 4.361424, "b": -134.0506, "r2": 0.9910, "n": 3},
+    "upcomer":   {"a": 1.548087, "b": -19.6165,  "r2": 0.0151, "n": 9}
+  },
+  "new_closure_form": "F4_leg_class",
+  "closure_form_key": "F4_leg_class",
+  "closure_function": "dp_F4_leg_class",
+  "limitations": [
+    "Only 3 data points per class (heater, cooler, downcomer); n=9 for upcomer",
+    "Ri correction NOT included — wall-bulk deltaT per leg not yet extracted",
+    "Upcomer R2=0.015 (essentially no predictive value as a single class)",
+    "Coarse mesh only — no GCI bounds (T6 blocked)",
+    "Valid Re range approx 60-135 (Salt 2-4 operating band only)",
+    "Driver-side thermal mismatch (~60 K) limits mdot improvement from friction alone",
+    "Corrected Salt Q perturbations excluded pending formal requalification gate"
+  ],
+  "admission_policy": {
+    "admitted": ["viscosity_screening_salt_test_2_jin_coarse_mesh", "viscosity_screening_salt_test_3_jin_coarse_mesh", "viscosity_screening_salt_test_4_jin_coarse_mesh"],
+    "excluded": {"viscosity_screening_salt_test_1_jin_coarse_mesh": "weakly_converged"},
+    "deferred": "corrected_salt_q_perturbations — await operating_point_verdict=requalified"
+  },
+  "buoyancy_note": "F4 is a SHEAR/RESISTANCE correction only. buoyancy_pressure() in solver.py handles the hydrostatic term separately. The de-buoyed f_corrected_over_flam from momentum_budget.json was used as the fit target.",
+  "next_steps": [
+    "Extract wall-bulk deltaT per leg from sample_segment_htc_uaprime.py outputs",
+    "Compute section-median Ri per leg (use MEDIAN not mean; see CLAUDE.md gotcha #4)",
+    "Fit Ri-corrected form: f/f_lam = f3h_ratio * (1 + C_leg * max(Ri_streamwise, 0)^n)",
+    "Wire F4_leg_class into solver.py ScenarioConfig via friction_form='F4_leg_class'",
+    "Add corrected Salt Q rows once formal gate issues requalified verdict"
+  ]
+}

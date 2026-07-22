@@ -1,0 +1,7 @@
+priority,action_id,can_start_now,collision_risk,inputs,deliverable,success_condition
+P0,freeze_final_forward_v1_no_go,yes,none,This AGENT-394 package.,Declare final forward-v1 still blocked until hydraulic/cfd-pp gates land.,No scorecard is labeled final forward-v1 from diagnostic or setup-only rows.
+P1,write_sensor_map_policy_refresh,yes,low,AGENT-391 sensor/error/reference-state/test-section outputs plus existing sensor map contract.,Scorecard-ready sensor-map policy table.,Train/validation/holdout roles are explicit and leakage rows are labeled diagnostic.
+P1,select_setup_only_hx_candidate_lane,yes,low,AGENT-391 cooler bakeoff and AGENT-392 predictive_hx_fit_setup_only_refresh.,HX/cooler candidate lane decision table.,One setup-only lane is ready for the next scorecard and imposed/realized CFD cooler lanes are excluded.
+P2,monitor_corrected_q_and_hydraulic_chain,yes_read_only,none,"Slurm jobs 3293924, 3295438, 3295989, 3295990, 3295991.",Terminal-state intake once jobs finish.,No duplicate jobs; only terminal outputs are consumed.
+P2,diagnose_pm5_cancelled_job,yes_under_new_cfd_pp_claim,medium,AGENT-357 PM5 package and sacct row 3295901.,Relaunch/no-relaunch decision for matched pressure/upcomer extraction.,PM5 blocker has either terminal output or a documented scheduler reason for cancellation.
+P3,rerun_forward_scorecard_after_gates,no,none_until_gates_land,Admitted cfd-pp/hydraulics/BC-modeling gate outputs.,Final forward-v1 scorecard with residual attribution.,All score rows use admitted inputs and declared Salt2/Salt3/Salt4 split discipline.

@@ -1,0 +1,12 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/repair_gate.csv,passive physical-basis gate,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/ambient_surroundings_basis.csv,ambient basis status,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/area_coverage_basis.csv,geometry/area coverage basis,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/independent_h_estimate_range.csv,independent h order screen,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/current_hA_basis_and_provenance_risk.csv,current hA provenance risk,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_passive_h2_cand001_physical_basis/expected_q_loss_envelope.csv,fixed-state q envelope,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/hA_area_unit_audit.csv,role-row wall heat-flux provenance audit,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_phase_h2_passive_heat_loss_attribution/repair_candidate_predeclaration_gate.csv,predeclared passive candidate gate,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_s8_s12_thermal_residual_ownership_gate/summary.json,thermal residual ownership decision,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_heater_source_train_residual_decomp/tw4_tw6_focus.csv,heater-source residual decomposition,True,false,false
+work_products/2026-07/2026-07-21/2026-07-21_fluid_setup_known_source_sink_runtime_contract/source_sink_runtime_contract.csv,setup-known source/sink contract,False,false,false

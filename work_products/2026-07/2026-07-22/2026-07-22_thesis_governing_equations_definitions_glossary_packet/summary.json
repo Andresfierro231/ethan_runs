@@ -1,0 +1,33 @@
+{
+  "task": "TODO-THESIS-GOVERNING-EQUATIONS-DEFINITIONS-GLOSSARY-PACKET-2026-07-22",
+  "date": "2026-07-22",
+  "decision": "writer_glossary_packet_ready_no_latex_no_admission",
+  "equation_rows": 12,
+  "symbol_rows": 21,
+  "assumption_caveat_rows": 12,
+  "claim_use_rows": 13,
+  "source_manifest_rows": 12,
+  "target_latex_path": "outside-writer methods/model-form/admission/results/appendix areas only; no LaTeX edit performed",
+  "admission_state": "diagnostic_support_packet",
+  "slot_not_admission_rule": true,
+  "latex_edit": false,
+  "external_repo_mutation": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_postprocessing_sampler_harvest_uq_launched": false,
+  "validation_holdout_external_scored": false,
+  "fitting_or_model_selection_performed": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "runtime_leakage_relaxed": false,
+  "next_board_tasks": [
+    "TODO-THESIS-COMPACT-EVIDENCE-APPENDIX-PACKET-PLAN-2026-07-22",
+    "TODO-THESIS-EVIDENCE-PACKET-CH7-CH8-RESULTS-NEGATIVE-BLOCKED-2026-07-22",
+    "TODO-THESIS-STUDY-RECIRCULATION-FRACTION-ONSET-EVIDENCE-PACKET-2026-07-22",
+    "TODO-THESIS-STUDY-THERMAL-ACCOUNTING-TRACEABILITY-EVIDENCE-PACKET-2026-07-22",
+    "TODO-THESIS-STUDY-PRESSURE-BASIS-LADDER-EVIDENCE-PACKET-2026-07-22"
+  ]
+}

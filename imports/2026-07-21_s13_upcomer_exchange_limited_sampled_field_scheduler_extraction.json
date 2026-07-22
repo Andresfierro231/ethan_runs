@@ -1,0 +1,135 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-LIMITED-SAMPLED-FIELD-SCHEDULER-EXTRACTION-2026-07-21",
+  "task_id": "TODO-S13-UPCOMER-EXCHANGE-LIMITED-SAMPLED-FIELD-SCHEDULER-EXTRACTION-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics/Thermal-modeling/cfd-pp/Scheduler/Implementer/Tester/Writer",
+  "objective": "Run the scheduler-authorized limited sampled-field extraction for S13 interface U/T/rho and wall/core T without production harvest, Q_wall release, UQ, fitting, or admission.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-LIMITED-SAMPLED-FIELD-SCHEDULER-EXTRACTION-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-limited-sampled-field-scheduler-extraction.md",
+    "imports/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction.json",
+    "tools/extract/build_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction.py",
+    "tools/extract/test_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_qwall_contract_from_seeded_vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_average_field_thermal_reduction",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_refresh_from_seeded_proxy",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+    "whole-mesh cell VTK files listed in seeded_surface_input_manifest.csv",
+    "cell-volume CSVs",
+    "source/sink generation package",
+    "native CFD/OpenFOAM outputs",
+    "registry/admission state",
+    "Fluid source tree",
+    "external repositories",
+    "blocker register",
+    "generated docs index files",
+    "thesis current files"
+  ],
+  "outputs": {
+    "summary": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/summary.json",
+    "sampled_field_summary": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_field_summary.csv",
+    "sampled_interface_fields": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_interface_fields.csv",
+    "sampled_wall_core_temperature": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/sampled_wall_core_temperature.csv",
+    "scheduler_execution_record": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/scheduler_execution_record.csv",
+    "downstream_gate": "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction/downstream_gate.csv"
+  },
+  "scheduler": {
+    "cancelled_batch_job_id": "3308952",
+    "cancelled_batch_state": "CANCELLED+",
+    "cancelled_batch_exit_code": "0:0",
+    "cancelled_batch_elapsed": "00:00:00",
+    "cancelled_batch_node": "None assigned",
+    "job_id": "3307325",
+    "step_id": "3307325.0",
+    "step_state": "COMPLETED",
+    "step_exit_code": "0:0",
+    "step_elapsed": "00:01:43",
+    "node": "c318-008",
+    "parent_job_state_when_checked": "RUNNING",
+    "scheduler_mutation_after_observation": false
+  },
+  "result": {
+    "decision": "limited_sampled_field_extraction_complete_nonharvest",
+    "case_count": 3,
+    "sampled_summary_rows": 3,
+    "sampled_interface_detail_rows": 116640,
+    "sampled_wall_detail_rows": 116640,
+    "Q_wall_W_released_rows": 0,
+    "sampler_ready_rows": 0,
+    "production_harvest_allowed_rows": 0,
+    "same_qoi_uq_ready_rows": 0,
+    "admission_allowed_rows": 0,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "validation": [
+    {
+      "command": "squeue -j 3307325",
+      "result": "observed parent job 3307325 RUNNING on c318-008; no scheduler mutation performed"
+    },
+    {
+      "command": "sacct -j 3307325 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList,Submit,Start,End",
+      "result": "observed 3307325.0 python3.11 COMPLETED 0:0 in 00:01:43"
+    },
+    {
+      "command": "sacct -j 3308952 --format=JobID,JobName,State,ExitCode,Elapsed,NodeList,Submit,Start,End",
+      "result": "observed 3308952 s13_limsamp CANCELLED+ 0:0 with no node assigned"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/extract/build_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction.py tools/extract/test_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.extract.test_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction",
+      "result": "passed: 4 tests"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction --strict",
+      "result": "passed: candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_limited_sampled_field_scheduler_extraction",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/finish_task.py --task-id TODO-S13-UPCOMER-EXCHANGE-LIMITED-SAMPLED-FIELD-SCHEDULER-EXTRACTION-2026-07-21",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/docs/build_repo_index.py --check",
+      "result": "passed: blocker register OK (15 entries)"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": true,
+  "scheduler_mutation_after_observation": false,
+  "openfoam_solver_or_postprocessing_launched": false,
+  "surface_extraction_launched": false,
+  "field_sampling_launched": true,
+  "sampler_or_harvest_launched": false,
+  "fluid_source_edited": false,
+  "external_fluid_edit": false,
+  "external_repo_edited": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "coefficient_admission": false,
+  "Q_wall_W_release": false,
+  "sampler_ready_promotion": false,
+  "production_harvest": false,
+  "same_qoi_uq": false,
+  "downstream_trigger": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "residual_absorbed_into_internal_Nu": false
+}

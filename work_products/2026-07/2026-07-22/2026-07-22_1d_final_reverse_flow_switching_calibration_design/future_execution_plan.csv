@@ -1,0 +1,6 @@
+order,work_package,compute_needed,acceptance,stop_rule
+1,topology_label_audit,no,Map all candidate rows to one_stream signed_network exchange_cell labels,Stop if labels require protected-row tuning.
+2,low_reverse_anchor_endpoint_readiness,maybe_after_CAND001_terminal,Confirm endpoint fields and RAF/RMF ordinary-flow gates,Stop if endpoint fields absent or ordinary-flow fails.
+3,S13_same_QOI_exchange_GCI,no_existing_or_scheduler_later,Admit or fail-close same-label exchange QOIs,Stop before coefficient fit if GCI fails.
+4,train_support_switching_smoke,maybe,Run fixed switching logic on train/support only,Stop before validation/holdout/external rows.
+5,frozen_switch_manifest,no,Freeze switch thresholds and candidates before score,Stop if any runtime input is forbidden.

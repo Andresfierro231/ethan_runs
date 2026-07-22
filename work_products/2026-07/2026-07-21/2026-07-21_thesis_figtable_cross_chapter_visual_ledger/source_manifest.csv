@@ -1,0 +1,9 @@
+source_path,role,mutation_status,notes
+.agent/BOARD.md,task_scope,read_only_except_own_row,Claimed visual-ledger row and later closeout status.
+reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md,source_context,read_only,Existing figure plan.
+reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md,source_context,read_only,Current figure/table routing package.
+reports/thesis_dossier/figures/README.md,source_context,read_only,Existing thesis SVG figure inventory.
+../papers/UTexas_Research/3d_analysis/figures/README.md,source_context,read_only,External 3D paper figure inventory; not edited.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s6_blocked_scorecard_shell/README.md,source_evidence,read_only,S6 blocked shell handoff created in parallel task.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/README.md,source_evidence,read_only,S7 score-only TP/TW contract.
+work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s8_wall_test_section_axial_mixing_candidate/README.md,source_evidence,read_only,S8 negative result and S11 trigger state.

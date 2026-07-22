@@ -1,0 +1,3 @@
+job_id,scheduler_state,terminal_state,harvest_gate,required_before_two_tap_source_release
+3299610,R,false,blocked_running_or_unknown,terminal success;steady window;RAF/RMF low-reverse evidence;same-QOI sampler contract
+3299620,R,false,blocked_running_or_unknown,terminal success;steady window;RAF/RMF low-reverse evidence;same-QOI sampler contract

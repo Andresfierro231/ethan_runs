@@ -1,0 +1,8 @@
+audit_item,status,evidence,source_paths
+val_salt2_external_only,pass_forbidden,61 rows retain no training/fit/model-selection permission; leakage rows=0.,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv
+prediction_join_count,pass_reported,0 residual rows scored from joined predictions.,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_prediction_join_contract.csv
+tp2_tw10_policy,pass_excluded,TP2 and TW10 are excluded from aggregate sensor scoring.,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv
+native_output_mutation,pass_none,Reads existing CSV/JSON artifacts only.,tools/analyze/build_val_salt2_corrected_freeze_join_unblock.py
+registry_mutation,pass_none,No registry writes.,tools/analyze/build_val_salt2_corrected_freeze_join_unblock.py
+scheduler_action,pass_none,"No sacct, squeue, sbatch, srun, OpenFOAM, or Fluid command is run.",tools/analyze/build_val_salt2_corrected_freeze_join_unblock.py
+scientific_admission_change,pass_none,"Junction, corner-K, PM10, and val_salt2 split states are reported, not changed.",work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/junction_heat_coefficient_readiness.csv;work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/corner_k_unlock_gate.csv;work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/pm10_holdout_admission_watch.csv

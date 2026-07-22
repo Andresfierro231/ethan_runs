@@ -1,0 +1,5 @@
+contract_row,input_class,runtime_status,current_evidence,forbidden_use
+PPS-RUNTIME-01,setup geometry/material/property lane,allowed,fluid+walls model contract and CSEM addendum,none
+PPS-RUNTIME-02,external h/Ta/Tsur/emissivity/coverage/drive selector,allowed_smoke_level,Fluid external BC smoke validates setup dictionary mechanism,do not call this final TP/TW score
+PPS-RUNTIME-03,realized CFD mdot/wallHeatFlux/test-section heat/cooler duty,forbidden,S6/S8/S12 runtime leakage ledgers,predictive runtime input or residual absorber
+PPS-RUNTIME-04,validation/holdout/external TP/TW temperatures,forbidden_for_fit_or_selection,final split policy and S7 score-only target contract,"model form selection, tuning, or coefficient fit"

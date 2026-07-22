@@ -1,0 +1,10 @@
+case_id,diagnostic_lane,value,units,status,basis
+salt_2,selected_reverse_component_fraction,0.527214632,fraction,diagnostic_only,"selected alternate CV is still a reverse-flow component, not an admitted physical heat-loss closure"
+salt_2,selected_reverse_component_volume,5.67507313777e-05,m3,diagnostic_only,volume from task-owned cell-volume CSV restricted to selected reverse-flow component
+salt_2,wall_adjacent_reverse_component_count,0,count,diagnostic_only,components with at least one owner face on right-leg wall patches
+salt_3,selected_reverse_component_fraction,7.22637337e-05,fraction,diagnostic_only,"selected alternate CV is still a reverse-flow component, not an admitted physical heat-loss closure"
+salt_3,selected_reverse_component_volume,3.46600177346e-09,m3,diagnostic_only,volume from task-owned cell-volume CSV restricted to selected reverse-flow component
+salt_3,wall_adjacent_reverse_component_count,1,count,diagnostic_only,components with at least one owner face on right-leg wall patches
+salt_4,selected_reverse_component_fraction,0.000600025715,fraction,diagnostic_only,"selected alternate CV is still a reverse-flow component, not an admitted physical heat-loss closure"
+salt_4,selected_reverse_component_volume,4.17358587372e-08,m3,diagnostic_only,volume from task-owned cell-volume CSV restricted to selected reverse-flow component
+salt_4,wall_adjacent_reverse_component_count,1,count,diagnostic_only,components with at least one owner face on right-leg wall patches

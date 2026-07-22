@@ -1,0 +1,9 @@
+path,role
+work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/selected_salt2_salt4_pm10q_after_3293924/status_table/selected_corrected_q_status_table.csv,completed PM10 terminal harvest status
+work_products/2026-07/2026-07-14/2026-07-14_corrected_q_postprocess_harvest_submission/slurm-saltq_s24_sel_harv-3295438.out,harvest-not-admission guardrail
+work_products/2026-07/2026-07-17/2026-07-17_high_heat_harvest_readiness_and_live_monitor/harvest_readiness_queue.csv,high-heat runtime harvest queue
+work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/upcomer_recirculation_onset_conditions.csv,current recirculation diagnostics
+work_products/2026-07/2026-07-14/2026-07-14_upcomer_recirculation_internal_nu_admissibility/blocked_missing_metrics.csv,current upcomer blockers
+work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_nu_admission_criteria.csv,upcomer admission criteria
+work_products/2026-07/2026-07-16/2026-07-16_recirculation_cfd_anchor_study_design/proposed_cfd_run_matrix.csv,prepared Salt3 anchor matrix
+work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_compute_extraction,existing compute extraction package to reuse

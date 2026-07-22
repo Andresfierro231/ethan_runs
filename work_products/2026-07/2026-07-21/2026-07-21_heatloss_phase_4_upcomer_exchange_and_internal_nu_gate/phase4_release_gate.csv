@@ -1,0 +1,5 @@
+gate_id,status,evidence,next_action
+ordinary_internal_nu_reopening_gate,fail_zero_reopened_internal_Nu_rows,ordinary reopening gate emits 0 admitted Nu rows,keep ordinary internal Nu closed
+exchange_cell_readiness_gate,fail_no_fit_ready_exchange_cell,"missing V_recirc, mdot_exchange, T_recirc, pressure residual basis, energy closure, and UQ",run separate evidence extraction before calibration
+residual_attribution_gate,pass_residual_not_hidden_in_internal_Nu,runtime and heat-path contracts forbid residual absorption,carry residual as named unresolved/exchange target
+phase5_trigger_gate,not_triggered,no runtime-legal heat-loss candidate or internal-Nu reopening candidate passed,Phase 5 remains trigger-gated

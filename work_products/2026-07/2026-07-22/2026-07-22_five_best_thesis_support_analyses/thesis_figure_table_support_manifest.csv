@@ -1,0 +1,6 @@
+artifact_id,analysis_id,target,source_package,claim_boundary
+fig_s13_exchange_status,S13_EXCHANGE_QWALL_UQ_GATE,Ch6/Ch8 or appendix,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis,diagnostic exchange evidence only; ordinary upcomer closures disabled
+table_reduced_dof_transfer,REDUCED_DOF_TRANSFER_INTERPRETATION,model-form limitations section,work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen,transfer screen is not source/property release
+table_passive_source_release,PASSIVE_BOUNDARY_SOURCE_FINALIZATION,thermal residual ownership section,work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_passive_h2_cand001_source_basis_enrichment,0 released passive families; no repair execution
+table_pressure_f6_waterfall,PRESSURE_F6_CAND001_RETRY_UQ_GATE,pressure/F6 non-admission section,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate,"no component K, cluster K, clipped K, or F6 fit"
+table_sensor_runtime_negative_results,PUBLICATION_SYNTHESIS_SENSOR_RUNTIME_NEGATIVE_RESULTS,limitations/conclusions,work_products/2026-07/2026-07-21/2026-07-21_sensor_map_contract,temperature probes remain score-only and not runtime inputs

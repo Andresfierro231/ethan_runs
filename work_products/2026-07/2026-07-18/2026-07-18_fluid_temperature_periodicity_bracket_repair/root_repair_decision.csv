@@ -1,0 +1,5 @@
+gate_id,status,evidence,decision,next_action
+runtime_legality,pass,UMX1 smoke package already passed runtime/split guardrails; this audit only changes thermal scan evidence.,unchanged,do not add forbidden runtime inputs
+accepted_root_policy,pass,43 AGENT-529 context rows preserve finite rejected roots as diagnostic-only.,do_not_relax_gate,rerun strict scorer after Fluid patch
+thermal_bracket_repair,pass,6 rows recover a thermal bracket above the current Fluid upper bound; 0 rows do not.,patch_required,claim non-conflicting external Fluid row and add adaptive high-side temperature bracket expansion
+admission,not_admitted,Audit package produces no fitted candidate and no score-grid expansion.,no_admission,full grid remains blocked until refreshed roots/conservation pass strict smoke

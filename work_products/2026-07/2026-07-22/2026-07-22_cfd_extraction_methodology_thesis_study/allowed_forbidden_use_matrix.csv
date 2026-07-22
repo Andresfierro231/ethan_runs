@@ -1,0 +1,12 @@
+artifact_or_quantity,allowed_thesis_use,forbidden_use,runtime_predictive_input_allowed,current_status
+native_CFD_fields,Source/provenance for reductions and figures,Direct mutation or undocumented manual extraction,false,read_only
+p_p_rgh_reductions,Pressure-basis evidence and later same-QOI UQ input,Admit component K F6 or global multiplier without same-basis isolation,false,released_diagnostic
+Q_wall_W,Trusted-wall heat-path diagnostic and same-QOI Qwall target,Use realized CFD wallHeatFlux as predictive runtime heat loss or add radiation on top of wallHeatFlux replay,false,released_diagnostic_target_window
+U_T_rho_interface_samples,Mechanism evidence for exchange direction thermal contrast and proxy mdot,Production harvest coefficient fit before sampler/UQ/mesh gates,false,limited_nonharvest
+wall_core_bulk_temperature_contrast,Diagnostic wall/core exchange and sensor-projection support,Use validation wall/probe temperatures as runtime inputs,false,limited_nonharvest
+cp_viscosity_k_labels,Property provenance and future source/property preflight basis,Broad source/property release or protected scoring before strict pass,false,labels_present_release_blocked
+setup_heater_cooler_inputs,Setup-known boundary condition lane if admitted by separate source/property gate,Back-solve from validation residual or realized CFD wallHeatFlux,conditional_by_gate,partly_admitted_by_prior_boundary_rows
+internal_Nu,Reference/default or diagnostic internal convection lane only,Absorb heater cooler passive wall radiation storage recirculation or residual heat loss,false,not_fit_admitted
+source_side_heat_QOI,Distinct source-side heat-flow QOI if explicitly contracted and UQ-passed,Relabel as Q_wall_W or use as wall flux equivalent without conservation/property contract,false,not_released
+same_QOI_UQ,Gate temporal/mesh uncertainty before production harvest,Move target-only values to production/admission,false,blocked_missing_neighbor_windows
+split_admission_flags,Control fit model-selection score-only and external-test use,Ignore split role or tune on holdout/external/protected rows,false,active_guardrail

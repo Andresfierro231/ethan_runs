@@ -1,0 +1,4 @@
+stage_id,path,exists,row_count,stage_status,hostname,admission_use
+raw_two_tap,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_node_run_outputs/test_section_complex_raw_two_tap_status.csv,true,3,missing_summary,,preflight_only_not_admitted
+f6_gate,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_node_run_outputs/f6_ready_to_run_gate.csv,true,4,completed_gate_refresh_not_ready_unless_new_evidence_lands,c318-008.ls6.tacc.utexas.edu,gate_status_not_admitted
+reset_k_sweep,work_products/2026-07/2026-07-15/2026-07-15_sensor_policy_gate_opening_and_hydraulic_node_run/hydraulic_node_run_outputs/fluid_reset_k_diagnostic_sweep.csv,true,128,completed,c318-008.ls6.tacc.utexas.edu,diagnostic_admitted_for_component_separation_only

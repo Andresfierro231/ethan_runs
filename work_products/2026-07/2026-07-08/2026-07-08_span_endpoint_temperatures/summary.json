@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-07-08",
+  "task": "AGENT-203",
+  "inputs": {
+    "recon_root": "tmp/2026-06-30_claude_action_items",
+    "heat_ledger": "work_products/2026-07-07_heat_source_sink_ledger/heat_source_sink_ledger.csv"
+  },
+  "outputs": {
+    "span_endpoint_temperatures_csv": "work_products/2026-07-08_span_endpoint_temperatures/span_endpoint_temperatures.csv"
+  },
+  "method": "8-column XY cut files from secmeanSurfaces foamPostProcess output. T derived from rho inversion: T=(2293.6-rho)/0.7497. T_bulk = sum(rho*u_n*T)/sum(rho*u_n) (mass-flux-weighted, constant cp). Normal direction from mean velocity vector at each cut plane.",
+  "counts": {
+    "total_rows": 18,
+    "ok_endpoint_pairs": 18,
+    "finite_delta_T": 18
+  },
+  "limitations": [
+    "T derived from rho inversion (T=(2293.6-rho)/0.7497); exact for linear EOS but assumes correct rho_coeffs",
+    "mass-flux-weighted T_bulk uses mean-U as cut-plane normal \u2014 exact if flow is unidirectional at each cut",
+    "mdot_implied requires Q_wall from heat ledger; enthalpy_change_w is not independently extracted",
+    "right_leg (downcomer) flow convention: s04_to_s00; inlet/outlet labels adjusted accordingly",
+    "test_section_span Ri bias ~5.7% from global D = 22.098 mm vs actual bore 20.9 mm (see ri_length_scale_audit.md)"
+  ]
+}

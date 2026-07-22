@@ -1,0 +1,17 @@
+{
+  "candidate_rows": 12,
+  "classification_counts": {
+    "recirculation_diagnostic": 12
+  },
+  "date": "2026-07-17",
+  "f6_blocker_decision": "keep_open_narrowed",
+  "generated_at": "2026-07-17T13:05:48+00:00",
+  "generated_index_refresh": "not_run_active_AGENT_482_owns_generated_indexes",
+  "hybrid_candidate_rows": 12,
+  "hybrid_scoreable_rows": 0,
+  "ordinary_f6_candidate_rows": 0,
+  "ordinary_f6_scoreable_rows": 0,
+  "production_closure": "F3_shah_apparent",
+  "queue_rows": 5,
+  "task": "AGENT-487"
+}

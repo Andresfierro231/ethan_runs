@@ -1,0 +1,36 @@
+{
+  "generated_at": "2026-07-09T17:46:43-05:00",
+  "task_id": "AGENT-245",
+  "purpose": "9pm batch rerun of Salt2 refined closure-QOI extraction with hard gates",
+  "profile_source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "mesh_stations": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json",
+  "cases": [
+    {
+      "level": "medium",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+      "time_s": "518",
+      "processor_dir": "processors64"
+    },
+    {
+      "level": "fine",
+      "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/fine/viscosity_screening_salt_test_2_jin_fine_mesh",
+      "time_s": "399",
+      "processor_dir": "processors128"
+    }
+  ],
+  "expected_batch_script": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_refined_closure_qoi_repair_batch/scripts/sbatch_repair_extraction_9pm.sh",
+  "submitted_batch_job": {
+    "job_id": "3287580",
+    "state_at_submit_check": "PENDING",
+    "reason": "BeginTime",
+    "scheduled_start": "2026-07-09T21:00:00",
+    "submitted_at": "2026-07-09T17:46:57-05:00",
+    "final_state": "FAILED",
+    "exit_code": "1:0",
+    "elapsed": "00:03:05",
+    "node": "c318-018",
+    "failure_summary": "Medium section sampling failed while OpenFOAM 13 foamPostProcess read corrupted reconstructed T at 518; no fine attempt and no closure-ready section/friction outputs."
+  },
+  "source_cases_read_only": true,
+  "closure_observations_updated": false
+}

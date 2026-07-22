@@ -1,0 +1,31 @@
+{
+  "admission_status": "closed",
+  "clipped_k": false,
+  "cluster_k_admission": "none",
+  "component_k_admission": "none",
+  "decision": "validated_for_delta_diagnostic_only",
+  "f6_fit_admission": "none",
+  "final_label": "diagnostic",
+  "hidden_global_multiplier": false,
+  "native_solver_outputs_mutated": false,
+  "next_tasks": [
+    "TODO-PRESSURE-F6-PUBLICATION-CLAIM-FREEZE",
+    "ordinary-flow/source-family work before any F6 coefficient admission"
+  ],
+  "openfoam_plus_max_abs_pair_error_pa": 4.382729351630587,
+  "openfoam_plus_passed_pair_rows": 4,
+  "opposite_minus_max_abs_pair_error_pa": 14051.366582282586,
+  "opposite_minus_passed_pair_rows": 0,
+  "ordinary_candidate_pairs": 0,
+  "reason": "single_hydrostatic_sign_convention_validates_against_all_stage_a_pair_deltas",
+  "registry_mutated": false,
+  "same_qoi_mesh_uq_status": "blocked",
+  "scheduler_action": "none",
+  "selected_convention": "openfoam_plus_rho_g_dot_x",
+  "stage_a_pair_validation_rows": 8,
+  "stage_a_validation_face_rows": 8,
+  "stage_b_candidate_face_rows": 12,
+  "stage_b_reconstructed_face_rows": 12,
+  "stage_b_reconstructed_pair_rows": 6,
+  "task": "TODO-F6-STATIC-P-BASIS-RECONSTRUCTION-AUDIT"
+}

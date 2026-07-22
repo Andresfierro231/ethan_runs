@@ -1,0 +1,9 @@
+source_id,path,use,mutation_status
+first_key_readme,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/README.md,primary decision and current counts,read_only
+first_key_summary,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/summary.json,machine-readable guardrail counts,read_only
+s0_baseline,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/baseline_control_surface.csv,S0 baseline and runtime release evidence,read_only
+s1_external_bc,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/external_bc_completion_matrix.csv,S1 external-BC completion evidence,read_only
+s2_heat_split,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/split_heat_completion_matrix.csv,S2 split heat-loss evidence,read_only
+s3_pressure,work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/pressure_source_envelope_release_gate.csv,S3 pressure source-envelope evidence,read_only
+roadmap,reports/thesis_dossier/Chapters_and_sections/current/26_predictive_model_studies_roadmap.md,claim-class and S0-S6 sequencing context,read_only
+dispatch,work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/README.md,board-dispatch context,read_only

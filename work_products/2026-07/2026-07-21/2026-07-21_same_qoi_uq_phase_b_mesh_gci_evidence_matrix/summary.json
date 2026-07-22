@@ -1,0 +1,18 @@
+{
+  "accepted_rows": 0,
+  "ambiguous_rows": 0,
+  "blocked_rows": 8,
+  "closure_admissions": 0,
+  "diagnostic_only_rows": 2,
+  "fluid_or_external_edit": false,
+  "generated_index_refresh": false,
+  "invented_gci_rows": 0,
+  "native_output_mutation": false,
+  "new_solver_or_sampler_runs": 0,
+  "not_applicable_rows": 2,
+  "phase_a_qoi_rows": 12,
+  "phase_b_matrix_rows": 12,
+  "registry_or_admission_mutation": false,
+  "scheduler_action": false,
+  "task": "TODO-SAME-QOI-UQ-PHASE-B-MESH-GCI-EVIDENCE-MATRIX-2026-07-21"
+}

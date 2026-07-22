@@ -1,0 +1,6 @@
+gate,status,allowed,reason
+exactly_one_candidate_released,fail,false,zero candidate_or_lane rows have candidate_released=true
+source_property_release,fail,false,all inspected lanes report source_property_released=false
+same_qoi_uq_or_release_basis,fail,false,"S13 direct Qwall exists, but same-QOI UQ is not ready/executed and passive/source lanes are unreleased"
+protected_split_integrity,pass,true,consumed zero validation/holdout/external rows and performed no fit/model selection
+s15_candidate_freeze,blocked_no_freeze,false,S15 remains trigger-gated until exactly one released candidate exists

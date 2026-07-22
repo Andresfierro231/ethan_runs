@@ -1,0 +1,24 @@
+{
+  "date": "2026-07-21",
+  "fluid_edit": false,
+  "generated_at_utc": "2026-07-21T16:10:01.087971+00:00",
+  "heat_path_rows": 24,
+  "junction_families": [
+    "lower_left",
+    "lower_right",
+    "upper_left",
+    "upper_right"
+  ],
+  "missing_field_rows": 5,
+  "model_scoring_or_admission": false,
+  "native_output_mutation": false,
+  "next_phase": "TODO-HEATLOSS-PHASE-3-WALL-TEST-SECTION-MODEL-SCORE",
+  "qr_output_rows_admitted": 0,
+  "registry_mutation": false,
+  "residual_owner_rows": 15,
+  "scheduler_action": false,
+  "solid_storage_runtime_rows_admitted": 0,
+  "split_junction_rows": 12,
+  "status": "complete",
+  "task_id": "TODO-HEATLOSS-PHASE-2-SPLIT-HEAT-LOSS-EVIDENCE"
+}

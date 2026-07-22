@@ -1,0 +1,5 @@
+lane,status,blocker,release_condition,fit_allowed_now,score_allowed_now
+cell_vtk,unblocked_salt2_only,Salt2 whole-mesh VTK validated; Salt3/Salt4 matrix expansion not run in this smoke,replicate fixed runner for Salt3/Salt4 before production exchange harvest,false,false
+exchange_interface_vtk,blocked_no_trusted_exchange_interface,geometry-release rejected loop faceZones and upcomer outlet proxy,publish trusted main/recirculation exchange interface geometry and sign convention,false,false
+wall_vtk_and_Q_wall_W,blocked_no_recirc_wall_core_band,wall/core band is not tied to a released recirculation cell region,publish wall/core band and task-owned wallHeatFlux integration contract,false,false
+exchange_harvest,blocked_until_interface_and_wall_lanes_exist,mdot_exchange and energy residual need interface/wall inputs,cell/interface/wall/source lanes validate in populated harvest manifest,false,false

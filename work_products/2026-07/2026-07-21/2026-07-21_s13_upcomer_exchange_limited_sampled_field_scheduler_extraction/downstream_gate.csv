@@ -1,0 +1,5 @@
+gate,status,allowed,reason
+limited_sampled_field_extraction,complete_nonharvest,true,interface U/T/rho and wall/core T sampled from released geometry and existing cell VTK fields
+Q_wall_W_release,blocked,false,wallHeatFlux remains absent; wall T is not Q_wall_W
+sampler_manifest_refresh,blocked,false,"production sampler readiness still lacks Q_wall_W, pressure, viscosity, cp, and UQ"
+production_harvest_uq_admission,blocked,false,this extraction is limited nonharvest evidence only

@@ -1,0 +1,86 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-MODEL-FORM-FOLDER-AND-SCOREBOARD-READER-2026-07-22",
+  "task_id": "TODO-THESIS-FIGTABLE-MODEL-FORM-FOLDER-AND-SCOREBOARD-READER-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Figures / Forward-pred / Implementer / Tester / Writer / Reviewer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-FIGTABLE-MODEL-FORM-FOLDER-AND-SCOREBOARD-READER-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-figtable-model-form-folder-and-scoreboard-reader.md",
+    "imports/2026-07-22_thesis_figtable_model_form_folder_and_scoreboard_reader.json",
+    "tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/model_form_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_tw_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/signed_error_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/caption_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/M1",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/M1b",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/M2",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/M3",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/progress"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/signed_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/figure_ready_signed_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n1_frozen_runtime_legal_candidate_gate/blocked_scorecard_logic.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_sensor_predictions_experimental.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s7_sensor_map_tp_tw_contract/sensor_coordinate_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_qoi_projection_table.csv",
+    "reference/geometry_reference.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_TP_TW_vs_elevation/plot.py"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "provenance_flags": {
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_action": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "validation_holdout_external_new_scoring": false,
+    "fitting_or_model_selection": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "s11_s12_s13_s15_s6_trigger": false,
+    "thesis_current_file_edit": false,
+    "blocker_register_change": false,
+    "fluid_source_edit": false,
+    "external_repo_edit": false,
+    "runtime_temperature_input_release": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "result": {
+    "decision": "thesis_figure_panels_ready_no_closure_admission",
+    "figure_panels": 30,
+    "model_form_ids": ["M1", "M1b", "M2", "M3"],
+    "current_best_numeric_model_form_by_experimental_tp_tw_rmse": "M3",
+    "current_best_numeric_model_form_experimental_tp_tw_rmse_K": "19.5676078164",
+    "most_likely_future_predictive_family": "M5 / MF-04 throughflow-plus-recirculation exchange cell",
+    "tp_tw_temperature_elevation_panel_rows": 204,
+    "tp_temperature_elevation_panel_rows": 72,
+    "finite_signed_error_panel_rows": 180,
+    "final_score_values": 0
+  }
+}

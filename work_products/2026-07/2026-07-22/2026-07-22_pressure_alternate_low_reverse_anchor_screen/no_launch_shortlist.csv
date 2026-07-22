@@ -1,0 +1,4 @@
+priority,candidate_or_action,status,can_do_in_this_task,unlock_signal,forbidden_action
+1,CAND001 terminal disposition,owned by active scheduler monitor row; not queried or harvested here,False,terminal lower-recirculation source evidence with finite endpoint fields,scheduler query/action or duplicate harvest from this row
+2,existing PM5/PM10/branch/inventory replacement anchor,0 existing rows can replace CAND001 now,False,"an existing row must pass reverse-flow, endpoint, same-QOI UQ, source, and admission gates",use recirculation diagnostics as ordinary F6 anchors
+3,future onset-anchor design shortlist,11 future designs preserved as no-launch candidates,False,separate launch row after current terminal/source evidence is exhausted,"launch, stage, or mutate solver/source outputs from this screen"

@@ -1,0 +1,19 @@
+{
+  "candidate_formula_rows": 4,
+  "coefficient_admission": false,
+  "d2_train_tp_mean_signed_error_K": 9.999983063835316e-11,
+  "d2_transfer_tp_rmse_K": 4.38159298515,
+  "decision": "diagnostic_only_needs_source_basis",
+  "generated_at": "2026-07-22T14:32:17.827825+00:00",
+  "m3_train_tp_mean_signed_error_K": -15.091422693000002,
+  "m3_train_tp_rows": 5,
+  "m3_transfer_tp_rmse_K": 13.5673279702,
+  "next_study_rows": 5,
+  "ready_for_train_only_smoke": false,
+  "release_gate_rows": 6,
+  "residual_absorbed_into_internal_nu": false,
+  "sensor_evidence_rows": 10,
+  "source_property_release": false,
+  "task_id": "TODO-MF12-BULK-TO-TP-FORMULA-GATE-2026-07-22",
+  "validation_holdout_external_scoring": false
+}

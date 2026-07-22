@@ -1,0 +1,23 @@
+{
+  "generated_utc": "2026-07-13T21:10:48+00:00",
+  "n_case_runtime_rows": 3,
+  "n_modes": 3,
+  "n_runtime_fields": 32,
+  "n_validation_targets": 75,
+  "n_violations": 0,
+  "source_files": {
+    "cfd_coefficient_naming_limits": "work_products/2026-07/2026-07-13/2026-07-13_litrev_cfd_validity_diagnostics/coefficient_naming_limits.csv",
+    "fluid_cases": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml",
+    "fluid_validation": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/../cfd-modeling-tools/tamu_first_order_model/Fluid/validation_data/validation_cases.csv",
+    "heat_loss_admission_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv",
+    "litrev_campaign_index": "work_products/2026-07/2026-07-13/2026-07-13_litrev_todo_campaign_index/README.md",
+    "named_loss_table": "work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv",
+    "patch_table": "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv",
+    "property_mode_lane": "work_products/2026-07/2026-07-13/2026-07-13_litrev_property_sensitivity/property_sensitivity_summary.csv",
+    "research_plan": "work_products/2026-07/2026-07-13/2026-07-13_forward_predictive_model_research_plan/research_plan.md",
+    "source_envelope_gate": "work_products/2026-07/2026-07-13/2026-07-13_litrev_source_envelope/source_overlap_flags.csv",
+    "thermal_targets": "work_products/2026-07/2026-07-08/2026-07-08_thermal_boundary_contract/case_thermal_targets.csv"
+  },
+  "strict_status": "pass",
+  "task_id": "TODO-PRED-INPUT-CONTRACT"
+}

@@ -1,112 +1,49 @@
 {
   "task": "TODO-FLUID-EXTBC-FJ-PARALLEL-DIAGNOSTICS-2026-07-21",
+  "task_id": "TODO-FLUID-EXTBC-FJ-PARALLEL-DIAGNOSTICS-2026-07-21",
   "date": "2026-07-21",
   "role": "Forward-pred/Thermal-modeling/Implementer/Tester/Writer",
-  "objective": "Implement F-J train-only external-BC diagnostic packages from completed Phase E without scoring protected splits or making freeze/admission decisions.",
+  "objective": "Close out Fluid external-BC Phase F-J train/support diagnostics without consuming validation, holdout, or external-test rows.",
   "changed_files": [
     ".agent/BOARD.md",
     ".agent/status/2026-07-21_TODO-FLUID-EXTBC-FJ-PARALLEL-DIAGNOSTICS-2026-07-21.md",
     ".agent/journal/2026-07-21/fluid-extbc-fj-parallel-diagnostics.md",
     "imports/2026-07-21_fluid_extbc_fj_parallel_diagnostics.json",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/README.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/build_fj_parallel_diagnostics.py",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/check_fj_parallel_diagnostics.py",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/source_manifest.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/summary.json",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/baseline_recomputed_solve_summary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/baseline_recomputed_validation_table_post_solve_train_only.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/README.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/sensor_segment_residuals.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/segment_residual_ownership.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/role_residual_ownership.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_f_thermal_residual_decomposition/dominant_thermal_residual_owners.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/README.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/dictionary_case_split_matrix.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/missing_case_rows.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/document_only_source_sink_rows.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/ambient_wall_coverage_matrix.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/unit_sign_consistency_audit.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_g_dictionary_completeness_audit/mapping_contract_audit.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_h_heatloss_network_sensitivity/sensitivity_interpretation.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_h_heatloss_network_sensitivity/sensitivity_matrix.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_h_heatloss_network_sensitivity/sensitivity_solve_summary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_h_heatloss_network_sensitivity/sensitivity_delta_by_segment.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/README.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/source_sink_admissibility_matrix.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/runtime_input_decision_table.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_i_source_sink_admissibility/leakage_risk_register.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/README.md",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/repair_candidate_manifest.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/repair_solve_summary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/repair_thermal_residuals.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/repair_vs_phase_e_delta.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/runtime_leakage_audit.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/split_claim_matrix.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/phase_j_train_repair_decision/failure_matrix.csv"
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics"
   ],
   "read_only_context": [
     "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_e_train_full_solve/**",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv",
-    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/segment_mapping_contract.csv",
-    "../cfd-modeling-tools/tamu_first_order_model/Fluid/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/**",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_phase_b_exact_file_preflight/**",
+    "external Fluid source tree",
     "native CFD/OpenFOAM outputs",
     "registry/admission state",
     "scheduler state",
-    "generated docs index files",
     "blocker register",
+    "generated documentation indexes",
     "thesis current files"
-  ],
-  "validation": [
-    {
-      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 -m py_compile work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/build_fj_parallel_diagnostics.py work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/check_fj_parallel_diagnostics.py",
-      "result": "pass"
-    },
-    {
-      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/build_fj_parallel_diagnostics.py",
-      "result": "pass"
-    },
-    {
-      "command": "env PYTHONDONTWRITEBYTECODE=1 python3.11 work_products/2026-07/2026-07-21/2026-07-21_fluid_extbc_fj_parallel_diagnostics/check_fj_parallel_diagnostics.py",
-      "result": "pass"
-    }
-  ],
-  "interrupted_attempts": [
-    {
-      "action": "Phase H foreground full sensitivity sweep",
-      "result": "interrupted after non-baseline Fluid sensitivity exceeded practical foreground runtime",
-      "mutation": "partial task-owned outputs only; final package regenerated fail-closed"
-    },
-    {
-      "action": "Phase H signal-guarded foreground sensitivity sweep",
-      "result": "interrupted because signal alarm did not interrupt Fluid call promptly",
-      "mutation": "partial task-owned outputs only; final package regenerated fail-closed"
-    }
   ],
   "native_solver_outputs_mutated": false,
   "registry_mutated": false,
-  "scheduler_action": false,
-  "openfoam_solver_or_postprocessing_launch": false,
-  "fluid_source_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": "none",
+  "scheduler_submission_cancel_requeue_or_dependency_mutation": false,
+  "solver_or_openfoam_or_postprocessing_or_sampler_or_harvest_launched": false,
+  "openfoam_surface_or_postprocessing_launched": false,
   "external_fluid_edit": false,
+  "fluid_source_mutated": false,
+  "external_repo_edit": false,
   "external_repo_mutated": false,
   "validation_rows_consumed": 0,
   "holdout_rows_consumed": 0,
   "external_test_rows_consumed": 0,
-  "fit_or_model_selection": false,
+  "fit_or_model_selection_changed": false,
+  "fitting_or_model_selection_performed": false,
   "freeze_or_admission_decision": false,
   "final_predictive_admission": false,
-  "blocker_register_change": false,
-  "generated_index_refresh": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
   "thesis_current_file_edit": false,
-  "mutation_flags": {
-    "native_output": false,
-    "registry": false,
-    "scheduler": false,
-    "openfoam": false,
-    "fluid_source": false,
-    "external_repo": false,
-    "generated_index": false,
-    "blocker_register": false,
-    "thesis_current": false
-  }
+  "residual_absorbed_into_internal_Nu": false,
+  "notes": "Phase F-J diagnostics complete. Heated_incline remains top residual owner; no runtime-allowed source/sink repair candidate is released."
 }

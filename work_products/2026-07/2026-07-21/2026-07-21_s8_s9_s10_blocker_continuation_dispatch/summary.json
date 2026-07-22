@@ -1,0 +1,17 @@
+{
+  "task": "TODO-S8-S9-S10-BLOCKER-CONTINUATION-DISPATCH-2026-07-21",
+  "status": "complete",
+  "successor_rows_added": 3,
+  "successor_rows": [
+    "TODO-S8-S12-THERMAL-RESIDUAL-OWNERSHIP-GATE-2026-07-21",
+    "TODO-S13-UPCOMER-EXCHANGE-SAMPLED-FIELD-QWALL-UQ-UNBLOCK-2026-07-21",
+    "TODO-S10-S14-PRESSURE-F6-CAND001-RETRY-AND-UQ-GATE-2026-07-21"
+  ],
+  "s11_unblocked": false,
+  "scheduler_action": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "external_fluid_edit": false,
+  "coefficient_admission": false
+}
+

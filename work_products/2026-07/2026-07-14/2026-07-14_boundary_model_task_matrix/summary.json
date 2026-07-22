@@ -1,0 +1,27 @@
+{
+  "task": "AGENT-327",
+  "status": "complete",
+  "package": "work_products/2026-07/2026-07-14/2026-07-14_boundary_model_task_matrix",
+  "deliverables": [
+    "boundary_model_task_matrix.csv",
+    "fluid_api_gap_for_external_bc.csv",
+    "README.md"
+  ],
+  "components_split": [
+    "heater_realized_fraction",
+    "cooler_hx_removal",
+    "wall_layer_external_convection",
+    "radiation_semantics",
+    "integrated_forward_score"
+  ],
+  "next_executable_task": "BCM-HEATER-FRACTION-V1",
+  "next_external_fluid_api_task": "BCM-COOLER-HX-UA-V1",
+  "guardrails": [
+    "No CFD cooler duty as runtime input.",
+    "No realized CFD wallHeatFlux as runtime input.",
+    "No validation temperatures as runtime input.",
+    "Do not add separate radiation on top of CFD wallHeatFlux replay.",
+    "Use Salt2 train, Salt3 validation, Salt4 holdout unless a later admission package changes the split."
+  ],
+  "primary_decision": "Run a repo-local heater-only/source-contract task first; follow with Fluid direct UA/effectiveness HX API work."
+}

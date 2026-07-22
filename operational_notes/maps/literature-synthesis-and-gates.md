@@ -9,6 +9,7 @@ related:
   - operational_notes/maps/README.md
   - operational_notes/maps/friction-closures.md
   - operational_notes/maps/thermal-closures-and-internal-nu.md
+  - reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md
 ---
 # Literature Synthesis & Gates — Map of Content
 
@@ -40,6 +41,10 @@ match CFD (property lane locked before calibration). The 2026-07-21 new-LitRev
 extraction adds the next model-form dispatch layer: six reduced model candidates,
 pressure/corner extraction rules, CFD postprocessing contract fields, and
 assignable next-agent lanes, while keeping all closures non-admitted.
+The 2026-07-22 latest-LitRev handoff adds the current Ethan-facing synthesis:
+14 requested research threads, MF-01 through MF-06 model forms, pressure/energy
+ledgers, property hierarchy, branch consequences, negative lessons, and the
+case-by-segment admission-engine target.
 
 ## Trusted results
 - **Branchwise closure ledger** is the governing architecture (not a global
@@ -116,6 +121,11 @@ assignable next-agent lanes, while keeping all closures non-admitted.
   hydrostatic, kinetic, straight/developing, recovery, recirculation, and
   uncertainty gates pass. →
   `work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/`
+- **Latest LitRev modeling handoff** — TODO-LITREV-LATEST-MODELING-HANDOFF-2026-07-22
+  summarizes the newest source-audited litrev for Ethan model work and points
+  later agents to the model-form hierarchy, active equations, source gates,
+  branch consequences, and next implementation order. →
+  `reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md`
 
 ## Gate discipline (the rule)
 - source-envelope overlap **before** using a source-bounded correlation;
@@ -180,6 +190,8 @@ flags (reverse area/mass, secondary-velocity fraction); ROM (future).
   `work_products/2026-07/2026-07-18/2026-07-18_source_envelope_property_carryforward/`
 - Blocker / research-path / next-step synthesis:
   `work_products/2026-07/2026-07-18/2026-07-18_blocker_research_path_next_step_synthesis/`
+- Latest LitRev modeling handoff:
+  `reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md`
 
 ## Related
 - `operational_notes/maps/README.md` — MOC index

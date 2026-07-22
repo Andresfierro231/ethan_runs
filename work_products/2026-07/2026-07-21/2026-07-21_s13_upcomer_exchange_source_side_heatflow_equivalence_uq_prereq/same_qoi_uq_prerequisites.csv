@@ -1,0 +1,6 @@
+qoi_label,retained_window_status,exact_formula_required,exact_sign_basis_required,neighbor_minus_window_status,neighbor_plus_window_status,same_qoi_mesh_gci_status,source_property_status,uq_release_allowed_now,production_release_allowed_now,next_required_action
+Q_source_side_net_static_bc_W,retained_window_static_context_pinned,true,true,missing,missing,missing,needs_source_property_release,false,false,generate same-label neighbor windows and accepted mesh/GCI for the pinned source-side QOI
+mdot_exchange_positive_outward_proxy_kg_s,retained_window_proxy_ready,true,true,missing,missing,missing,not_applicable_or_missing,false,false,generate exact same-QOI neighbor-window and mesh/GCI evidence
+tau_recirc_proxy_s,retained_window_proxy_ready,true,true,missing,missing,missing,not_applicable_or_missing,false,false,generate exact same-QOI neighbor-window and mesh/GCI evidence
+wall_core_bulk_temperature_contrast_K,retained_window_sampled_ready,true,true,missing,missing,missing,not_applicable_or_missing,false,false,generate exact same-QOI neighbor-window and mesh/GCI evidence
+E_source_side_residual_W,blocked_until_conservation_residual_defined,true,true,missing,missing,missing,needs_source_property_release,false,false,generate exact same-QOI neighbor-window and mesh/GCI evidence

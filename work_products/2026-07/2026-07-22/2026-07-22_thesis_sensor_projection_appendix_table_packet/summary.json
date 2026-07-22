@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-22",
+  "decision": "sensor_projection_appendix_ready_no_runtime_temperature_release",
+  "sensor_rows": 17,
+  "tp_rows": 6,
+  "tw_rows": 11,
+  "acceptance_class_counts": {
+    "bounded": 15,
+    "excluded": 1,
+    "mapped": 1
+  },
+  "runtime_temperature_allowed_rows": 0,
+  "fit_allowed_rows": 0,
+  "model_selection_allowed_rows": 0,
+  "tp2_status": "mapped to right_downcomer_bottom_horizontal_junction for score-only projection",
+  "tw10_status": "excluded because active HX shell state is not emitted",
+  "guardrails": {
+    "runtime_temperature_release": false,
+    "fit_release": false,
+    "model_selection_release": false,
+    "coefficient_admission": false,
+    "final_score": false,
+    "thesis_body_edit": false,
+    "native_solver_output_mutation": false,
+    "registry_mutation": false
+  }
+}

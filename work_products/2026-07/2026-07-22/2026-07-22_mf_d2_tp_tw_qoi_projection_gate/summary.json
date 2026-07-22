@@ -1,0 +1,23 @@
+{
+  "task_id": "TODO-MF-D2-TP-TW-QOI-PROJECTION-GATE-2026-07-22",
+  "generated_at": "2026-07-22T08:37:19-05:00",
+  "decision": "thermal_development_path_promising_diagnostic_only_no_correction_release",
+  "score_summary_rows": 3,
+  "residual_separation_rows": 8,
+  "tp_projection_rows": 6,
+  "next_analysis_rows": 4,
+  "d2_transfer_tp_rmse_K": 4.38159298515,
+  "m3_transfer_tp_rmse_K": 13.5673279702,
+  "d2_transfer_tw_rmse_K": 12.5130610954,
+  "m3_transfer_tw_rmse_K": 18.980361511,
+  "released_bulk_to_tp_correction_exists": false,
+  "thermal_development_path_promising": true,
+  "runtime_temperature_release": false,
+  "source_property_release": false,
+  "final_score_values": 0,
+  "coefficient_admission": false,
+  "scheduler_action": false,
+  "native_output_mutation": false,
+  "fluid_or_external_repo_mutation": false,
+  "residual_absorbed_into_internal_nu": false
+}

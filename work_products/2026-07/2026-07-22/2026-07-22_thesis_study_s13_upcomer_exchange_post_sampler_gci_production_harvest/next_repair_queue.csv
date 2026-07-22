@@ -1,0 +1,4 @@
+priority,repair_task,why,success_signal,forbidden_action
+1,patch_medium_fine_sampler_face_area_vectors,interface_reduction requires face area vector components and all six case-meshes failed before sampling,medium/fine terminal reductions and exact-label QOI rows exist for all six case-meshes and three terminal windows,do not treat geometry-only rows as sampled QOI evidence
+2,use_clean_output_or_job_lock_for_rerun,duplicate jobs wrote the same package and create overwrite ambiguity,single Slurm job writes to clean dated repair package or lock prevents duplicate execution,do not submit duplicate jobs to the same output directory
+3,rerun_tests_and_one_case_smoke_before_full_submit,bug is deterministic and should be caught before six-case full pass,unit test covers area-vector columns and one medium terminal window produces finite reductions,do not launch full production-like pass before smoke validates reducer contract

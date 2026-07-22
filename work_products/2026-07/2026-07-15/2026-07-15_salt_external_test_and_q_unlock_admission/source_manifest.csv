@@ -1,0 +1,12 @@
+source,used_for,exists
+work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_expanded_case_set/selected_cases.csv,postProcessing paths and steady selected rows,yes
+work_products/2026-07/2026-07-15/2026-07-15_salt_oscillation_expanded_case_set/case_summary.csv,TP/TW/mdot steady evidence,yes
+work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/salt_cfd_candidate_inventory.csv,run status/admission/action base inventory,yes
+work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/corrected_q_perturbation_status.csv,corrected-Q run states and solver/log paths,yes
+work_products/2026-07/2026-07-14/2026-07-14_salt_training_testing_evidence_rollup/salt_training_testing_case_use_table.csv,user-policy split/admission labels,yes
+work_products/2026-07/2026-07-14/2026-07-14_val_salt_test_2_coarse_mesh_documentation/boundary_condition_summary.csv,val_salt2 BC/source contract,yes
+work_products/2026-07/2026-07-14/2026-07-14_salt1_terminal_bc_and_pm5_upcomer_harvest/salt1_terminal_patch_bc_role_table.csv,Salt1 patch-complete terminal BC roles,yes
+work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/section_heat_loss_comparison.csv,Salt2-4 nominal section heat-loss ledger status,yes
+work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/f6_pm5_row_readiness.csv,+/-5Q F6/upcomer review status,yes
+work_products/2026-07/2026-07-15/2026-07-15_downstream_pm5_final_state_refresh/internal_nu_pm5_row_readiness.csv,+/-5Q internal-Nu review status,yes
+work_products/2026-07/2026-07-15/2026-07-15_corrected_q_live_terminal_gate_followup/scheduler_snapshot.csv,live +/-10Q terminal-harvest blocker,yes

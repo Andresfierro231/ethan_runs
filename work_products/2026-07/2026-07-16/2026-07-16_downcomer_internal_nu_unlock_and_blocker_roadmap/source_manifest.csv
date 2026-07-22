@@ -1,0 +1,14 @@
+source_id,path,exists,role
+agent459_branch_admission,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/branch_local_thermal_admission.csv,yes,branch-local gate summary
+agent459_fit_rows,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/internal_nu_fit_admissible_rows.csv,yes,row-level Internal-Nu gate vectors
+agent459_final_use_gci,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/final_use_closure_qoi_gci.csv,yes,non-upcomer final-use mesh/GCI state
+agent459_unblock_queue,work_products/2026-07/2026-07-16/2026-07-16_branch_local_internal_nu_unblock/targeted_extraction_admission_queue.csv,yes,targeted unblock queue
+agent455_candidates,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_internal_nu_candidate_rows.csv,yes,upstream leg-specific candidates
+agent455_mesh,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv,yes,upstream mesh/GCI candidates
+agent461_m3ts,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/README.md,yes,predictive wall/test-section blocker evidence
+agent464_f6_upcomer,work_products/2026-07/2026-07-16/2026-07-16_f6_upcomer_blocker_status_scorecard/README.md,yes,F6 and upcomer blocker evidence
+litrev_map,operational_notes/maps/literature-synthesis-and-gates.md,yes,LitRev methodology gates
+thermal_map,operational_notes/maps/thermal-closures-and-internal-nu.md,yes,thermal/Internal-Nu continuity hub
+mesh_map,operational_notes/maps/mesh-gci-and-uncertainty.md,yes,mesh/GCI continuity hub
+forward_map,operational_notes/maps/forward-predictive-model.md,yes,forward predictive model continuity hub
+blocker_register,.agent/blockers.yml,yes,current blocker ledger

@@ -1,0 +1,11 @@
+source_id,path,exists,role
+named_pressure_loss_table,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv,True,read-only readiness source
+reset_distance_map,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,True,read-only readiness source
+target_package_gate_contract,work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/target_package_gate_contract.csv,True,read-only readiness source
+branch_gate_carryforward_summary,work_products/2026-07/2026-07-17/2026-07-17_litrev_gate_carryforward_ledger/branch_gate_carryforward_summary.csv,True,read-only readiness source
+segment_pressure_model_scorecard,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/segment_pressure_model_scorecard.csv,True,read-only readiness source
+pressure_model_slot_admission,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/pressure_model_slot_admission.csv,True,read-only readiness source
+pressure_evidence_rollup,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_pressure_models/pressure_evidence_rollup.csv,True,read-only readiness source
+hydraulic_model_form_ladder,work_products/2026-07/2026-07-17/2026-07-17_f6_litrev_hydraulic_model_form_ladder/hydraulic_model_form_ladder.csv,True,read-only readiness source
+corner_k_gate_matrix,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/corner_k_gate_matrix.csv,True,read-only readiness source
+next_pressure_evidence_queue,work_products/2026-07/2026-07-17/2026-07-17_val_salt2_pressure_evidence_corner_k_diagnosis/next_pressure_evidence_queue.csv,True,read-only readiness source

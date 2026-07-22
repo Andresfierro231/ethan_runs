@@ -1,0 +1,5 @@
+uncertainty_axis,applies_to,minimum_action,acceptance_rule
+time_window,all proposed rows,"retain enough saved times for terminal-window mdot, heat residual, T, wall T, reverse fractions",classify steady/quasi-steady/drifting; no onset label promoted from a drifting-only window
+mesh,sentinel cell-off and cell-max plus one transition matrix row,repeat selected endpoints on medium mesh after coarse pilot identifies useful regime,publish onset class with mesh caveat until same-QOI medium/fine or GCI exists
+insulation_mutation,all hiins/loins rows,audit h/thickness/layer values in root 0/T and collated restart T before foamRun,reject as false-insulation if live restart field remains baseline
+heat_balance,all rows,derive cooler fixed-Q from parent heat ledger and re-check net heat after passive insulation mutation,record signed source/sink residual; do not compare onset rows as balanced if residual is uncontrolled

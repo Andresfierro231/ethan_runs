@@ -1,0 +1,33 @@
+{
+  "task": "TODO-F6-SAME-QOI-UQ-AND-ADMISSION-GATE",
+  "decision_rows": 12,
+  "stage_a_pair_rows": 4,
+  "coarse_mesh_uq_rows": 6,
+  "uq_context_rows": 2,
+  "diagnostic_rows": 12,
+  "ordinary_candidate_pairs": 0,
+  "recirc_diagnostic_pairs": 4,
+  "same_qoi_mesh_uq_admissible_rows": 0,
+  "coarse_static_p_missing_endpoint_rows": 12,
+  "f3_comparison_status": "not_evaluated_no_ordinary_candidate",
+  "admission_status": "closed",
+  "allowed_labels": [
+    "cluster_K",
+    "component_K",
+    "diagnostic",
+    "pressure_recovery",
+    "section_effective"
+  ],
+  "f6_fit_admission": "none",
+  "component_k_admission": "none",
+  "cluster_k_admission": "none",
+  "clipped_k": false,
+  "hidden_global_multiplier": false,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "next_tasks": [
+    "TODO-F6-COARSE-VTK-SAMPLER-SUBMIT",
+    "pressure_basis_reconstruction_only_if_static_p_convention_is_explicitly_claimed"
+  ]
+}

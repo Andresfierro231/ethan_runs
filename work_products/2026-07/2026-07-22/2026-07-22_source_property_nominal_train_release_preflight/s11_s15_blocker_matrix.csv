@@ -1,0 +1,5 @@
+gate,status,evidence,s11_s15_action
+nominal_train_label_presence,pass,all four nominal train rows have required nonblank labels,necessary but not sufficient
+nominal_train_source_envelope_strict_pass,fail,Salt1 lacks row-specific branch envelope; Salt2/Salt3/Salt4 remain mixed/outside/unknown,block source/property release
+candidate_specific_physical_gate,fail,"S13, M2, MF02, and M0 summaries do not expose S11-reviewable candidate",block candidate freeze
+protected_row_release,pass_closed,"0 validation, holdout, or external-test rows released",preserve split policy

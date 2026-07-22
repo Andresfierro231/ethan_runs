@@ -1,0 +1,20 @@
+{
+  "detector_rows": 43,
+  "generated_at": "2026-07-14T13:50:31-05:00",
+  "label_counts": {
+    "needs continuation": 33,
+    "not run": 3,
+    "steady": 14
+  },
+  "native_solver_outputs_mutated": false,
+  "no_detector_rows": 7,
+  "required_outputs": [
+    "submitted_cfd_run_steady_state_table.csv",
+    "submitted_cfd_run_summary.csv",
+    "source_manifest.csv",
+    "summary.json",
+    "README.md"
+  ],
+  "row_count": 50,
+  "task": "AGENT-343"
+}

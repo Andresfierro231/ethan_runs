@@ -1,0 +1,13 @@
+{
+  "admitted_rows_now": 0,
+  "cand001_status": "terminal_gated_running",
+  "date": "2026-07-20",
+  "generated_at_utc": "2026-07-20T23:41:51.742673+00:00",
+  "native_solver_outputs_mutated": false,
+  "registry_mutation": "none",
+  "running_jobs": 2,
+  "task": "TODO-HIGH-HEAT-TERMINAL-WATCH-TWO-TAP-UPDATE",
+  "terminal_jobs": 0,
+  "two_tap_launch_allowed_now": false,
+  "watched_jobs": 2
+}

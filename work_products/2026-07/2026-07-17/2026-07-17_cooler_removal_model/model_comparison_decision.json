@@ -1,0 +1,15 @@
+{
+  "coupled_rows_completed": 12,
+  "coupled_status_counts": {
+    "completed": 12
+  },
+  "created_utc": "2026-07-17T13:57:05.256933+00:00",
+  "final_blocker_impact": "Does not close predictive-wall-test-section-submodels by itself. It removes cooler-duty magnitude as the leading uncertainty only after coupled rows are reviewed.",
+  "fixed_mdot_segmented_duty_status": "pending_native_or_replay_runner; not invented from coupled totals",
+  "runtime_input_gate": "pass",
+  "segmented_candidate_status": "bounded_coupled_rows_partially_or_fully_completed",
+  "selected_current_candidate": "HX_LUMPED_UA_NTU",
+  "selection_basis": "Constant-UA reproduces the prior split-legal Salt2-fit duty screen: Salt3 abs error 2.869104004 W and Salt4 abs error 7.502618613 W.",
+  "source_package": "work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model",
+  "task": "AGENT-482"
+}

@@ -1,0 +1,15 @@
+{
+  "candidate_count": 4,
+  "coupled_rows": 12,
+  "coupled_status_counts": {
+    "not_run_use_--run-fluid_on_compute_node": 12
+  },
+  "created_utc": "2026-07-22T18:46:16.076348+00:00",
+  "duty_rows": 12,
+  "output_dir": "work_products/2026-07/2026-07-22/2026-07-22_cooler_removal_model",
+  "run_fluid": false,
+  "segmented_profile_rows": 0,
+  "selected_current_candidate": "HX_LUMPED_UA_NTU",
+  "task": "TODO-PREDICT-COOLER-REMOVAL",
+  "timeout_seconds": 90
+}

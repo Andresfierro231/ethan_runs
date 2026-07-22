@@ -1,0 +1,73 @@
+{
+  "task": "TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-RUNBOOK-2026-07-22",
+  "task_id": "TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-RUNBOOK-2026-07-22",
+  "generated_at_utc": "2026-07-22T15:33:48Z",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-1D-TRAIN-ONLY-SETUP-UQ-SMOKE-RUNBOOK-2026-07-22.md",
+    ".agent/journal/2026-07-22/1d-train-only-setup-uq-smoke-runbook.md",
+    "imports/2026-07-22_1d_train_only_setup_uq_smoke_runbook.json",
+    "tools/analyze/build_1d_train_only_setup_uq_smoke_runbook.py",
+    "tools/analyze/test_1d_train_only_setup_uq_smoke_runbook.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/setup_legal_variation_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/executable_runbook.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/qoi_output_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/split_and_runtime_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/stop_rules.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_conservative_thermal_ledger_residual_owner_contract/conservative_equation_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_sensor_projection_operator_tp_tw_wall_bulk/sensor_projection_operator_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_setup_only_bc_uq_propagation/uncertainty_source_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_1d_thermal_pressure_root_coupling_stability_audit/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/runtime_legality_audit.csv",
+    "native CFD/OpenFOAM outputs read-only",
+    "registry/admission state read-only",
+    "scheduler state read-only",
+    "Fluid and external repositories read-only"
+  ],
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_or_solver_launched": false,
+    "sampler_or_harvest_launched": false,
+    "external_fluid_edit": false,
+    "fit_or_model_selection": false,
+    "protected_scoring": false,
+    "source_property_release": false,
+    "candidate_freeze": false,
+    "coefficient_admission": false,
+    "runtime_leakage_relaxation": false
+  },
+  "output_contract": {
+    "decision": "train_only_setup_uq_smoke_runbook_ready_no_execution",
+    "variation_rows": 9,
+    "runbook_rows": 7,
+    "qoi_rows": 10,
+    "guardrail_rows": 11,
+    "stop_rows": 6,
+    "source_manifest_rows": 9,
+    "no_mutation_rows": 6,
+    "execution_launched": false,
+    "train_only": true,
+    "runtime_forbidden_inputs_all_blocked": true
+  },
+  "validation": [
+    "python3.11 -m py_compile tools/analyze/build_1d_train_only_setup_uq_smoke_runbook.py tools/analyze/test_1d_train_only_setup_uq_smoke_runbook.py",
+    "python3.11 tools/analyze/test_1d_train_only_setup_uq_smoke_runbook.py",
+    "python3.11 tools/analyze/build_1d_train_only_setup_uq_smoke_runbook.py"
+  ],
+  "next_recommended_task": "Claim a separate execution row to run S00-S06 on train rows only and report mdot/TP/TW/heat-ledger sensitivity without protected tuning or coefficient/source release."
+}

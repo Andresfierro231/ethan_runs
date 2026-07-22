@@ -1,0 +1,8 @@
+source_role,path,used_for,mutation_status,exists_at_closeout
+input,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/summary.json,source-backed basis counts,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/passive_h2_repair_freeze_preflight.csv,candidate freeze preflight state,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/passive_h2_source_release_gate.csv,source basis gates,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_source_backed_basis_table/q_loss_operator_contract.csv,q-loss operator legality,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_source_property_release_atlas/summary.json,source/property release state,read_only,true
+input,work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/summary.json,residual-owner/freeze blocker,read_only,true
+output,work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_repair_freeze_gate,task-owned PASSIVE-H2 gate package,mutated,true

@@ -1,0 +1,5 @@
+path,role,source_id
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-22/2026-07-22_1d_train_only_setup_uq_smoke_runbook/README.md,read_only_contract,runbook
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/cases.yaml,read_only_setup_inputs,fluid_cases
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/configs/scenarios.yaml,read_only_setup_scenarios,fluid_scenarios
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read_only_api,fluid_solver

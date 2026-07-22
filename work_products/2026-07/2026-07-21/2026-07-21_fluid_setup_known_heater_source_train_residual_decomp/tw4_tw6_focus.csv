@@ -1,0 +1,4 @@
+case_id,sensor,sensor_kind,prediction_source_segment,baseline_residual_K,candidate_residual_K,delta_residual_K,baseline_abs_residual_K,candidate_abs_residual_K,delta_abs_residual_K,response_class,claim_boundary
+salt_2,TW4,TW,heated_incline,-88.97995704040545,-95.6693122991469,-6.689355258741443,88.97995704040545,95.6693122991469,6.689355258741443,worsens,train-only source-lane residual delta; not validation/holdout/external scoring
+salt_2,TW5,TW,heated_incline,-109.09380824932663,-110.43452079501566,-1.3407125456890299,109.09380824932663,110.43452079501566,1.3407125456890299,worsens,train-only source-lane residual delta; not validation/holdout/external scoring
+salt_2,TW6,TW,heated_incline,-98.32612150303572,-96.52503010041835,1.8010914026173737,98.32612150303572,96.52503010041835,-1.8010914026173737,improves,train-only source-lane residual delta; not validation/holdout/external scoring

@@ -1,0 +1,9 @@
+artifact,rows,role,primary_inputs
+salt1_branch_source_envelope.csv,5,Salt1 branch-envelope blocker ledger,"final scorecard source-envelope resolution; source/property refresh"
+amx1_multiplier_source_envelope.csv,5,AMX1 multiplier and form release blocker ledger,"AMX1 dry contract; Salt1-Salt4 comparison; localized-form smoke"
+score_only_source_property_labels.csv,9,PM10/PM5/val_salt2 score-only labels,"PM10 validation repair; final source-envelope resolution"
+salt2_4_source_envelope_reclassification.csv,3,Salt2-Salt4 strict reclassification attempt,"final source-envelope resolution"
+thesis_literature_source_envelope_table.csv,6,chapter-facing literature/source-envelope table,"final source-envelope resolution; source/property gate infrastructure"
+property_mode_sensitivity_ledger.csv,5,property-mode sensitivity release ledger,"property sensitivity summary; final source-envelope resolution; PM10 and AMX1 packages"
+source_property_regression_sweep.csv,8,gate regression sweep handoff,"final scorecard shell; source/property packages; PM10 and AMX1 packages"
+

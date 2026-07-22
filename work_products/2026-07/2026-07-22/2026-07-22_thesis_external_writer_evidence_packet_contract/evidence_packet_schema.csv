@@ -1,0 +1,20 @@
+field,required,description
+packet_id,yes,Stable packet identifier used by board rows and external writers.
+target_latex_path,yes,Exact LaTeX file or appendix area the packet supports.
+target_section,yes,Chapter or section the evidence belongs to.
+writer_use,yes,What an external prose writer may safely say from this packet.
+source_paths,yes,Exact repo paths to READMEs CSVs figures scripts or LaTeX sources supporting the packet.
+key_numbers,yes,Small set of exact thesis-facing numbers with units and source paths.
+governing_equations,yes,Equations or balance forms needed to understand the claim.
+definitions,yes,Term definitions symbols units and sign conventions.
+assumptions,yes,Physical numerical split and source-property assumptions.
+caveats,yes,Known limitations and uncertainty caveats.
+allowed_claims,yes,Claims the prose writer may make.
+forbidden_claims,yes,Claims the prose writer must not make.
+runtime_leakage_audit,yes,Explicit status for CFD mdot wallHeatFlux cooler duty validation temperatures holdout and external-test use.
+split_role_status,yes,Train support validation holdout external-test diagnostic or context-only status.
+admission_state,yes,Admitted diagnostic-only blocked negative-result context-only or pending.
+figures_tables,yes,Recommended figure and table source paths labels captions and target placement.
+validation,yes,Commands or source package validations that make the packet trustworthy.
+open_questions,yes,What remains missing or blocked.
+next_board_tasks,yes,Board tasks that continue or consume the packet.

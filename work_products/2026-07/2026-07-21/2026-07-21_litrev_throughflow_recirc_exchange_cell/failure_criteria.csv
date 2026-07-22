@@ -1,0 +1,13 @@
+failure_id,applies_to,condition,resulting_status,reason
+missing_topology,MF-03,No discrete signed path topology or branch-level mass balance exists.,diagnostic_only,Do not implement a signed junction network from local face-level reverse flow alone.
+net_branch_reversal,MF-04,An entire modeled branch or junction path has reproducible negative net mdot.,handoff_to_MF03,Exchange-cell mode represents local exchange with net throughflow not discrete path reversal.
+low_recirculation,MF-04,RAF RMF and SVF are all below TAMU-calibrated low-recirculation tolerances and pressure/thermal gates pass.,handoff_to_one_stream,Do not add an exchange cell where one bulk state is adequate.
+missing_cell_volume,MF-04,V_recirc cannot be tied to a coherent CFD region or volume mask.,diagnostic_only,The model cannot define T_recirc residence time or stored/exchanged energy.
+missing_exchange_rate,MF-04,mdot_exchange is missing or not conservative across the main-stream/cell interface.,diagnostic_only,The cell energy equation cannot close without invented exchange.
+near_zero_denominator,pressure_residual,q_ref or mdot_exchange denominator is near zero or cancellation-dominated.,no_fit_diagnostic,Return status rather than extreme K_eff or residence time.
+missing_pressure_basis,pressure_residual,static p p_rgh hydrostatic kinetic or sign-basis fields are missing.,diagnostic_only,Pressure residual cannot be decomposed.
+missing_energy_basis,energy_residual,T_main T_recirc property mode or wall/source terms are missing.,diagnostic_only,Energy residual cannot be decomposed.
+missing_uq,admission,same-QOI mesh/time uncertainty is missing for regime metrics or residual targets.,diagnostic_only,No coefficient or switching threshold admission without uncertainty.
+runtime_leakage,implementation,The design uses held-out CFD mdot realized wallHeatFlux or validation temperatures as runtime inputs.,reject,Violates split-safe predictive policy.
+hidden_multiplier,implementation,Pressure or thermal residual is absorbed into a global friction heat-transfer or Nu multiplier.,reject,Contradicts AGENT-467 and two-tap section-effective guardrails.
+coefficient_promotion,admission,Current dry residual is labeled ordinary Nu f_D component_K F6 or admitted exchange coefficient.,reject,This package defines an interface only and admits no coefficients.

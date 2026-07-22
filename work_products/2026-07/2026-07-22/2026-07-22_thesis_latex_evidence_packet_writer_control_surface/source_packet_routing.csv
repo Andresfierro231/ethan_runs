@@ -1,0 +1,8 @@
+source_packet,source_path,dispatch_use
+outline_evidence_completeness,work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/summary.json,Controls chapter/section readiness labels.
+outline_next_claim_order,work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/next_claim_order.csv,Original next-order study queue.
+compact_numerical_claims,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv,Exact values and source links for writer packets.
+forbidden_overclaims,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/forbidden_overclaim_matrix.csv,Controls claim-boundary wording.
+uncertainty_admission_labels,work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/uncertainty_admission_labels.csv,Controls uncertainty/admission labels.
+figure_import_ledger,work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/summary.json,Shows manifest-only figure import status and count caveat.
+evidence_packet_schema,work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/evidence_packet_schema.csv,Defines expected fields for downstream thesis packets.

@@ -1,0 +1,13 @@
+guardrail,status,evidence
+no_duplicate_submission,pass,No scheduler submission was made by terminal harvest row
+no_cancel_requeue_dependency,pass,No scheduler mutation after querying terminal state
+no_fluid_edit,pass,Fluid source tree was read-only
+no_native_output_mutation,pass,Native CFD/OpenFOAM outputs were read-only
+no_registry_mutation,pass,Registry/admission state was read-only
+no_protected_scoring,pass,Summary reports protected_scoring_rows 0
+no_fitting_model_selection,pass,Summary reports fit_or_model_selection_rows 0
+no_source_property_release,pass,Summary reports source_property_release_rows 0
+no_coefficient_admission,pass,Summary reports coefficient_admission_rows 0
+no_candidate_freeze,pass,Summary reports candidate_freeze_rows 0
+no_final_score,pass,Score/admission status remains not_scored_not_admitted_smoke_only
+no_runtime_leakage_relaxation,pass,Runtime-forbidden values remain unavailable for admission

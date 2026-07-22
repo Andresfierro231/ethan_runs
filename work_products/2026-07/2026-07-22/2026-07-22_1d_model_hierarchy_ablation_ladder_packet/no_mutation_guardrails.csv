@@ -1,0 +1,11 @@
+guardrail,status
+native_output_mutation,none
+registry_or_admission_mutation,none
+scheduler_solver_sampler_harvest_uq_launch,none
+fit_or_model_selection,none
+validation_holdout_external_scoring,none
+source_property_release,none
+candidate_freeze,none
+fluid_or_external_edit,none
+latex_or_thesis_current_edit,none
+residual_absorbed_into_internal_nu,none

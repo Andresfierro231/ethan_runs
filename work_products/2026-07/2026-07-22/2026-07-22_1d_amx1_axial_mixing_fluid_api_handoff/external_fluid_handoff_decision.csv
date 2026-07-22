@@ -1,0 +1,6 @@
+decision_item,status,reason,allowed_next_action,forbidden_next_action
+claim_original_pairwise_api_handoff,closed_superseded,Original pairwise AMX1 API and ledger concept has already been implemented and smoked,Use prior external Fluid rows as implementation evidence,Do not open a duplicate Fluid row for the same pairwise API contract.
+expand_current_gradient_clipped_form,closed,Gradient-clipped Salt2 smoke remained diagnostic-only and worsened all-probe and TP RMSE,Preserve as negative model-form evidence,Do not run Salt1-Salt4 expansion from this form.
+expand_parent_cell_form,closed,Parent-cell revision passed runtime/conservation but worsened all-probe and TP RMSE,Preserve as negative model-form evidence,Do not tune parent-cell multiplier as fitting evidence.
+new_amx1_form_from_source_evidence,conditional_open,New Fluid work is useful only if new source evidence defines exchange direction locality or source-bounded envelope,Create a narrow external Fluid row after source evidence packet lands,Do not invent a new AMX1 variant from target residuals alone.
+shift_to_wall_test_section_setup_only_lane,open_current_best,Existing AMX1 forms did not unlock TW5/TW6 or TP residual ownership,Prioritize setup-only wall/test-section/passive-boundary candidates and S13 mesh/GCI evidence,Do not absorb residual into internal Nu.

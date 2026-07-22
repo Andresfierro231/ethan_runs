@@ -1,0 +1,4 @@
+validator,manifest,return_code,validation_status,expected_to_pass_now,stdout,stderr
+work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_sampler_reusable_harvest_scaffold/scripts/validate_exchange_case_inputs.py,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/case_vtk_input_manifest.preflight.csv,66,expected_fail_closed,false,,"salt_2 missing interface_vtk: MISSING_EXCHANGE_INTERFACE_VTK
+salt_3 missing interface_vtk: MISSING_EXCHANGE_INTERFACE_VTK
+salt_4 missing interface_vtk: MISSING_EXCHANGE_INTERFACE_VTK"

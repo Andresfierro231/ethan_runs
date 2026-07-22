@@ -1,0 +1,30 @@
+{
+  "component_k_admission": "none",
+  "date": "2026-07-20",
+  "decision": "endpoint_pairs_selected_same_qoi_diagnostic_only",
+  "diagnostic_mesh_spread_rows": 2,
+  "endpoint_pair_rows": 6,
+  "f6_fit_admission": "none",
+  "generated_at_utc": "2026-07-21T00:32:16+00:00",
+  "mesh_uq_pass_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "ordinary_candidates_scoped": 6,
+  "outputs": [
+    "endpoint_pair_selection.csv",
+    "endpoint_pair_pressure_deltas.csv",
+    "existing_endpoint_qoi_inventory.csv",
+    "same_qoi_mesh_uq_diagnostic.csv",
+    "same_qoi_time_uq_status.csv",
+    "raw_endpoint_sampling_contract.csv",
+    "admission_gate_status.csv",
+    "paper_methods_endpoint_pair_uq_note.md",
+    "source_manifest.csv",
+    "summary.json"
+  ],
+  "pressure_delta_rows": 10,
+  "raw_RAF_RMF_available_rows": 0,
+  "registry_mutation": "none",
+  "scheduler_launch_performed": false,
+  "task": "TODO-F6-ENDPOINT-PAIR-SAME-QOI-UQ-PREFLIGHT",
+  "time_uq_pass_rows": 0
+}

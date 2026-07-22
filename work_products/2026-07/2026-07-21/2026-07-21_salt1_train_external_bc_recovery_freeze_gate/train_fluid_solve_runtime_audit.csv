@@ -1,0 +1,5 @@
+case_key,case_id,parser_status,role_row_count,ambient_wall_role_row_count,full_fluid_train_solve_status,runtime_clean,forbidden_runtime_inputs_detected,notes
+salt1_nominal,salt_1,pass,8,8,not_run_source_property_or_candidate_gate_failed,parser_only_yes_solver_not_run,0,parser and role-row conversion passed
+salt2_jin_nominal,salt_2,pass,12,8,not_run_source_property_or_candidate_gate_failed,parser_only_yes_solver_not_run,0,parser and role-row conversion passed
+salt3_jin_nominal,salt_3,pass,12,8,not_run_source_property_or_candidate_gate_failed,parser_only_yes_solver_not_run,0,parser and role-row conversion passed
+salt4_nominal,salt_4,pass,12,8,not_run_source_property_or_candidate_gate_failed,parser_only_yes_solver_not_run,0,parser and role-row conversion passed

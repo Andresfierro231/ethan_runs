@@ -1,0 +1,10 @@
+{
+  "mesh_level": "medium",
+  "source_case_root": "/home1/09748/andresfierro231/bubble_flow_loop/tamu_loop_box/ethan_data/modern_runs/salt/medium/viscosity_screening_salt_test_2_jin_medium_mesh",
+  "profile_source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+  "mesh_stations": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-01/2026-07-01_claude_mesh_centerlines/viscosity_screening_salt_test_2_jin_coarse_mesh/mesh_stations.json",
+  "time_s": "518",
+  "processor_dir": "processors64",
+  "recon_dir": "/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/recon/medium",
+  "completed_at": "2026-07-09T16:44:14-0500"
+}

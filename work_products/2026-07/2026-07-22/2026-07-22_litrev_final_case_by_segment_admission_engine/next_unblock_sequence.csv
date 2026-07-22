@@ -1,0 +1,6 @@
+order,next_task,why,acceptance
+1,strict_row_specific_source_envelope_repair,Every thermal candidate needs source-envelope pass before release,At least one candidate row has strict source-envelope pass with legal source/property labels.
+2,candidate_cp_mu_k_release,Re Pr Gz enthalpy and storage need property release,cp/mu/k source paths validity intervals and split permission pass.
+3,S13_same_label_GCI_and_heat_residual,Qwall/exchange candidates need same-QOI mesh/time support,Formal GCI or explicit fail-closed disposition exists for exact QOIs.
+4,CAND001_terminal_endpoint_readiness,Pressure candidates need endpoint fields after terminal handoff,Terminal success/failure and endpoint fields are documented.
+5,frozen_candidate_manifest,Protected scoring requires one frozen runtime-legal candidate,One candidate manifest fixes inputs coefficients and split policy before scoring.

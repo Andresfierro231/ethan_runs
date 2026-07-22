@@ -1,0 +1,8 @@
+source_id,path,use
+agent511_heater_source,work_products/2026-07/2026-07-17/2026-07-17_heater_source_redistribution_coupled_score,selected Salt2 heater lambda and source weights
+agent522_wall_circuit,work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study,completed non-series wall-circuit comparator and failure context
+agent498_distribution,work_products/2026-07/2026-07-17/2026-07-17_wall_test_section_distribution_ladder,PB2 wall distribution and role-row contract helper
+agent482_cooler,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model,HX alpha_UA and segmented HX adapter
+agent461_m3,work_products/2026-07/2026-07-16/2026-07-16_coupled_m3ts_test_section_scorecard/m2_m3_comparators.csv,M3 comparator gates
+setup_external_boundary_rows,work_products/2026-07/2026-07-14/2026-07-14_external_bc_thermal_profile_parity_study/external_bc_segment_equivalents.csv,setup hA/Ta/Tsur/emissivity role rows
+fluid_solver_readonly,/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,read-only import with in-process role-loss adapter

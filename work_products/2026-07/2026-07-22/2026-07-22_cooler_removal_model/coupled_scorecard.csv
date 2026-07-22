@@ -1,0 +1,13 @@
+candidate_id,case_id,split_role,coupled_run_status,elapsed_s,root_status,qhx_total_W,mdot_error_pct,tp_rmse_K,tw_rmse_K,all_probe_rmse_K,Tmean_error_K,loop_delta_error_K,coupled_gate,source_path
+HX_LUMPED_UA_NTU,salt_2,train,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_LUMPED_UA_NTU,salt_3,validation,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_LUMPED_UA_NTU,salt_4,holdout,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N4,salt_2,train,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N4,salt_3,validation,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N4,salt_4,holdout,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N8,salt_2,train,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N8,salt_3,validation,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N8,salt_4,holdout,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N16,salt_2,train,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N16,salt_3,validation,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md
+HX_SEGMENTED_UA_NTU_N16,salt_4,holdout,not_run_use_--run-fluid_on_compute_node,,,,,,,,,,pending_coupled_run,operational_notes/07-26/17/2026-07-17_COOLER_MODEL_COMPREHENSIVE_TEST_PLAN.md

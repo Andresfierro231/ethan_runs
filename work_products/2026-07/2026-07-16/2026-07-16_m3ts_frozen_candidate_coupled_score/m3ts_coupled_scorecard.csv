@@ -1,0 +1,10 @@
+candidate_id,case_id,split_role,coupled_run_status,root_status,mdot_error_pct,tp_rmse_K,tw_rmse_K,all_probe_rmse_K,Tmean_error_K,loop_delta_error_K,coupled_gate,source_path
+M3TS_R0_role_table_unscaled,salt_2,train,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R0_role_table_unscaled,salt_3,validation,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R0_role_table_unscaled,salt_4,holdout,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R1_salt2_fit_test_section_coverage,salt_2,train,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R1_salt2_fit_test_section_coverage,salt_3,validation,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R1_salt2_fit_test_section_coverage,salt_4,holdout,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R2_resistance_network_role_table,salt_2,train,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R2_resistance_network_role_table,salt_3,validation,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out
+M3TS_R2_resistance_network_role_table,salt_4,holdout,timeout_after_45s,,,,,,,,fail_solver_timeout,bounded Fluid solve_case attempt timed out

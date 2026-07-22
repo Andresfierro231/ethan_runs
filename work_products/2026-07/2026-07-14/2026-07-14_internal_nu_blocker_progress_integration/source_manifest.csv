@@ -1,0 +1,12 @@
+source_id,path,exists,use
+blockers,.agent/BLOCKERS.md,yes,authoritative current open/resolved blocker state
+extraction_contract,work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/README.md,yes,current zero-fit Nu decision and reopen evidence
+extraction_contract_csv,work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_extraction_contract.csv,yes,exact metric fields and formulas
+admission_criteria,work_products/2026-07/2026-07-14/2026-07-14_upcomer_internal_nu_extraction_contract/upcomer_nu_admission_criteria.csv,yes,classification gates and forbidden labels
+matched_plane_plan,work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/README.md,yes,existing proxy limitation and compute-node requirement
+matched_plane_targets,work_products/2026-07/2026-07-14/2026-07-14_upcomer_matched_plane_extraction_plan/upcomer_matched_plane_extraction_plan.csv,yes,candidate plane/case extraction plan
+salt_inventory,work_products/2026-07/2026-07-14/2026-07-14_salt_cfd_training_evidence_inventory/upcomer_onset_candidate_cases.csv,yes,candidate onset cases and corrected-Q/target-Re status
+residual_guardrails,work_products/2026-07/2026-07-14/2026-07-14_boundary_internal_nu_residual_guardrails/README.md,yes,physical residual ownership lanes
+forward_gate,work_products/2026-07/2026-07-14/2026-07-14_final_forward_v1_scorecard_gate/README.md,yes,forward-v1 restriction against fitted internal-Nu consumption
+hydraulic_contract,work_products/2026-07/2026-07-14/2026-07-14_hydraulic_reset_k_admission_contract/README.md,yes,F6/K readiness dependency on admitted Re-variation rows
+submitted_runs,work_products/2026-07/2026-07-14/2026-07-14_submitted_cfd_run_steady_state_table/README.md,yes,submitted CFD run readiness context

@@ -1,0 +1,5 @@
+source_path,exists,source_role,mutation
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/slurm_submission_log.csv,yes,submission log,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/candidate_readiness_matrix.csv,yes,case readiness,read_only
+work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_matched_plane_relaunch_package/parsed,yes,parsed matched-plane outputs,read_only
+tmp/2026-07-20_pressure_upcomer_matched_plane_relaunch_package,yes,local reconstruction scratch,read_only

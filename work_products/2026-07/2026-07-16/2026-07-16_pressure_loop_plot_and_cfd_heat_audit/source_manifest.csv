@@ -1,0 +1,6 @@
+source_type,path,use
+pressure_station_map,work_products/2026-07/2026-07-16/2026-07-16_postprocessed_cfd_streamwise_pressure_1d_maps/all_streamwise_pressure_1d_map.csv,station pressure values and loop order for plots
+pressure_case_review,work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_case_scientific_review.csv,pressure-case list and coverage status
+mainline_patch_role_heat,work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/patch_role_area_heat_summary.csv,Salt2-4 mainline role-level CFD realized heat accounting
+val_salt2_heat_ledger,work_products/2026-07/2026-07-15/2026-07-15_val_salt2_postprocessing_admission_unlock/val_salt2_section_heat_loss_ledger.csv,val_salt2 section heat ledger
+junction_corner_review,work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/scientific_review.md,prior scientific review of junction and corner evidence

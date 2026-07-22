@@ -1,0 +1,5 @@
+qoi_label,target_window_status,neighbor_minus_window_status,neighbor_plus_window_status,same_qoi_mesh_gci_status,source_property_status,same_formula_sign_basis_required,same_qoi_uq_ready,production_use_allowed_now,blocking_reason
+Q_source_side_net_static_bc_W,retained_window_source_context_ready_distinct_qoi_contract,missing,missing,missing,needs_source_property_release,true,false,false,"missing exact same-QOI neighbor windows, same-QOI mesh/GCI, and/or source-property release"
+mdot_exchange_positive_outward_proxy_kg_s,retained_window_proxy_ready,missing,missing,missing,not_applicable_or_missing,true,false,false,"missing exact same-QOI neighbor windows, same-QOI mesh/GCI, and/or source-property release"
+tau_recirc_proxy_s,retained_window_proxy_ready,missing,missing,missing,not_applicable_or_missing,true,false,false,"missing exact same-QOI neighbor windows, same-QOI mesh/GCI, and/or source-property release"
+wall_core_bulk_temperature_contrast_K,retained_window_sampled_ready,missing,missing,missing,not_applicable_or_missing,true,false,false,"missing exact same-QOI neighbor windows, same-QOI mesh/GCI, and/or source-property release"

@@ -1,0 +1,7 @@
+source_id,source_path,mutation_status
+mf09,work_products/2026-07/2026-07-22/2026-07-22_mf09_recirculating_upcomer_thermal_model_alternatives,read_only
+mf10,work_products/2026-07/2026-07-22/2026-07-22_mf10_entrance_wallflux_train_only_variant_bakeoff,read_only
+qwall_mesh_gci,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate,read_only
+temporal_uq,work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_qoi_neighbor_uq_after_target_plus,read_only
+onset,work_products/2026-07/2026-07-17/2026-07-17_upcomer_onset_data_sparsity_progress,read_only
+heatloss_phase4,work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_4_upcomer_exchange_and_internal_nu_gate,read_only

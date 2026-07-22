@@ -1,0 +1,5 @@
+evidence_id,evidence_class,row_count,allowed_use,limitation
+raw_fit_safe_pressure_gradient,training_guardrail,2,may_screen_or_calibrate_hydraulic_terms_with_mesh_caveat,GCI publication readiness is false; only two raw spans are fit-safe.
+momentum_corrected_friction,diagnostic_only,6,may_inform_debuoyed_friction_or_profile_terms_not_raw_pressure_gradient_fit,Debuoyed/profile evidence is not raw pressure-gradient fitting evidence.
+h1_mdot_screen_f1_heater_only,forward_v1_diagnostic_unblocker,3,hydraulic-only mdot movement scorecard; no thermal fitting,H1 is an aggregate localized-loss proxy until Fluid localized-loss metadata is used in a full solve_case campaign.
+corrected_q_admission,blocked_validation_expansion,0,none_for_f6_refit_yet,Corrected-Q rows are not admitted for F6 coefficient revision in the current gate state.

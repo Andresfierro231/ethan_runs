@@ -1,0 +1,10 @@
+source_id,path,exists,use
+thermal_contract,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_equation_contract/thermal_model_slots.csv,true,thermal slots and runtime guardrails
+boundary_admission,work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv,true,heater/cooler/test-section admission decisions
+test_section,work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv,true,test-section passive loss candidates
+thermal_parity,work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/thermal_row_admission_gate.csv,true,internal-Nu absorption guardrails
+salt1_thermal,work_products/2026-07/2026-07-17/2026-07-17_predict_salt1_schema_promotion/salt1_thermal_score_rows.csv,true,Salt1 promoted final-training thermal rows
+salt2_thermal,work_products/2026-07/2026-07-17/2026-07-17_salt2_pm5q_val_salt2_readiness_ledger/thermal_source_sink_ledger.csv,true,Salt2/val source-sink diagnostics
+cooler_model_decision,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/model_comparison_decision.json,true,cooler coupled decision state
+cooler_coupled_score,work_products/2026-07/2026-07-17/2026-07-17_cooler_removal_model/coupled_scorecard.csv,true,cooler coupled scores
+sensor_policy,work_products/2026-07/2026-07-17/2026-07-17_sensor_tp2_restore_tw10_exclude/sensor_policy_scorecard.csv,true,TP/TW sensor policy for downstream scoring

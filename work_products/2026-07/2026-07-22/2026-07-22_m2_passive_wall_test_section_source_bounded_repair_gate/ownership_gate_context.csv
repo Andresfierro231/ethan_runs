@@ -1,0 +1,7 @@
+gate_id,gate,status,evidence,decision_effect
+THERM-G1,single_physical_candidate_available,fail,No candidate has finite train score plus source/property/same-QOI readiness.,needs_more_physical_basis
+THERM-G2,repeat_failed_s8_families_avoided,pass,S8 prior wall/test-section selector families remain rejected.,do_not_expand_failed_families
+THERM-G3,passive_repair_source_basis,fail,PASSIVE-H2-CAND001 gate decision is needs_more_source.,needs_more_physical_basis
+THERM-G4,exchange_state_and_uq,fail,S12-HIAX1 still lacks exchange-state harvest and same-QOI UQ.,needs_more_physical_basis
+THERM-G5,empirical_correction_physics_admission,fail,Empirical leg-bias layer is diagnostic residual ownership only.,no_physics_admission
+THERM-G6,overall_decision,needs_more_physical_basis,5 evidence families reviewed; none releases a repair or S11 candidate.,S11_blocked

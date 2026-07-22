@@ -1,0 +1,7 @@
+guardrail,status
+native_output_mutation,False
+scheduler_action,False
+protected_split_scoring,False
+source_property_or_qwall_release,False
+candidate_freeze_or_final_score,False
+residual_absorbed_into_internal_nu,False

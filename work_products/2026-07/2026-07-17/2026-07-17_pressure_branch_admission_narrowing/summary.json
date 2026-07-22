@@ -1,0 +1,16 @@
+{
+  "all_sources_present": true,
+  "branch_rows": 7,
+  "date": "2026-07-17",
+  "external_fluid_edit": false,
+  "fit_admitted_pressure_rows": 0,
+  "generated_index_refreshed": false,
+  "least_risk_candidate_rows": 1,
+  "missing_evidence_rows": 33,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "runtime_audit_pass_rows": 4,
+  "runtime_audit_rows": 4,
+  "scheduler_action": false,
+  "task": "TODO-PRESSURE-BRANCH-ADMISSION-NARROWING"
+}

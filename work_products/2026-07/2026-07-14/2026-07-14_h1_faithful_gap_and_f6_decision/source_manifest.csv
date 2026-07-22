@@ -1,0 +1,8 @@
+source_id,path,role
+h1_scorecard,work_products/2026-07/2026-07-14/2026-07-14_predictive_h1_hydraulic_scorecard/README.md,aggregate H1 directional screen
+localized_fixed_k,work_products/2026-07/2026-07-14/2026-07-14_localized_fixed_k_forward_score/summary.json,faithful localized fixed-K screen result
+correction_candidates,work_products/2026-07/2026-07-13/2026-07-13_predictive_hydraulic_correction_candidates/README.md,ranked hydraulic candidate context
+named_losses,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/named_pressure_loss_table.csv,component/cluster/branch-apparent candidate rows
+reset_map,work_products/2026-07/2026-07-13/2026-07-13_litrev_reset_named_losses/reset_distance_map.csv,reset/development evidence
+f6_screen,work_products/2026-07/2026-07-14/2026-07-14_f6_hydraulic_screen/f6_hydraulic_scorecard.csv,F6 current blocker state
+blockers,.agent/BLOCKERS.md,open blocker register

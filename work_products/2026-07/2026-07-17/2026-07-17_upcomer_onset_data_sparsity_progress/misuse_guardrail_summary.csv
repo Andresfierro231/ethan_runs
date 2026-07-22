@@ -1,0 +1,4 @@
+guardrail_id,status,evidence,action
+G1_no_current_ordinary_upcomer_fit,pass,0 ordinary/conditional rows in current ledger,keep all current upcomer/test-section rows diagnostic-only for ordinary Nu/f_D/K
+G2_material_recirculation_blocks_single_stream_labels,pass,36 recirculation diagnostic rows,route these rows to the hybrid/onset lane
+G3_missing_same_window_fields_block_promotion,pass,32 rows missing required same-window fields,extract or design same-window pressure/thermal/uncertainty evidence before promotion

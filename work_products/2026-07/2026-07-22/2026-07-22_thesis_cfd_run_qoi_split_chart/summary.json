@@ -1,0 +1,15 @@
+{
+  "task_id": "TODO-THESIS-CFD-RUN-QOI-SPLIT-CHART-2026-07-22",
+  "generated_at": "2026-07-22T12:00:42-05:00",
+  "decision": "cfd_run_qoi_split_chart_complete_no_model_scoring",
+  "wide_rows": 7,
+  "long_rows": 127,
+  "train_rows": 4,
+  "holdout_test_rows": 3,
+  "external_test_rows_grouped_as_holdout_test": 1,
+  "all_source_paths_exist": true,
+  "model_scoring_performed": false,
+  "fitting_model_selection_performed": false,
+  "source_property_release": false,
+  "candidate_freeze": false
+}

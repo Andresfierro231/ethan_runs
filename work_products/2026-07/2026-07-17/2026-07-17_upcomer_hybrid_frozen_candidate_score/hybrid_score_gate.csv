@@ -1,0 +1,7 @@
+score_gate,status,required_metric,current_evidence
+onset_anchor_coverage,blocked,ordinary/transition/recirculating anchors,design_only_not_launched
+train_validation_holdout_mdot,blocked,mdot error,not_run
+train_validation_holdout_tp_tw,blocked,TP_RMSE;TW_RMSE,not_run
+thermal_state_scores,blocked,Tmean;loop_delta_T,not_run
+residual_ownership,blocked,no pressure/thermal residual absorption,guardrail_only
+mesh_time_uncertainty,blocked,RAF/RMF/SVF/wall-core uncertainty,missing

@@ -1,0 +1,15 @@
+{
+  "decision": "thermal_residual_owner_figure_packet_ready_diagnostic_no_closure",
+  "diagnostic_rmse_rows": 6,
+  "generated_at_utc": "2026-07-22T18:16:41.967879+00:00",
+  "heat_path_rows": 4,
+  "native_solver_outputs_mutated": false,
+  "passive_sensitivity_rows": 3,
+  "residual_absorbed_into_internal_nu": false,
+  "scheduler_action": false,
+  "single_runtime_legal_owner_identified": false,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-THERMAL-RESIDUAL-OWNER-FIGURE-PACKET-2026-07-22",
+  "thermal_closure_admitted": false,
+  "waterfall_rows": 5
+}

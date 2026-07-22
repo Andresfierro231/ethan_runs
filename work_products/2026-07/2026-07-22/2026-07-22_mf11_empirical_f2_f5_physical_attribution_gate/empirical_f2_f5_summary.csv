@@ -1,0 +1,7 @@
+model_family,form,dof,transfer_baseline_mae_K,transfer_corrected_mae_K,transfer_mae_reduction_K,transfer_mae_reduction_pct,publication_role,physical_closure_claim_allowed
+F0_null_baseline,T_c = T_1D,0,106.12166567949048,106.12166567949048,0.0,0.0,baseline_only,False
+F1_global_offset,T_c = T_1D + b,1,106.12166567949048,19.06139771204093,87.06026796744955,82.0381657317646,lowest_dof_discrepancy_model,False
+F2_global_affine,T_c = a*T_1D + b,2,106.12166567949048,13.873168817512036,92.24849686197844,86.92710981430324,recommended_publication_diagnostic_model,False
+F3_sensor_kind_offset,T_c = T_1D + b_sensor_kind,2,106.12166567949048,19.14668416838287,86.97498151110761,81.95779905470968,bulk_wall_bias_screen,False
+F4_thermal_family_offset,T_c = T_1D + b_thermal_family,3,106.12166567949048,17.5142732526239,88.60739242686657,83.49604377157003,heat_path_bias_screen,False
+F5_thermal_family_offset_shared_multiplier,T_c = a*T_1D + b_thermal_family,4,106.12166567949048,13.324482852092467,92.797182827398,87.4441446364636,upper_reduced_dof_diagnostic_bound,False

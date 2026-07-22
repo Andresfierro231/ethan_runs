@@ -1,0 +1,74 @@
+{
+  "generated_at": "2026-07-07",
+  "task_id": "AGENT-189",
+  "role": "Coordinator / Reviewer / Writer",
+  "decision": {
+    "admitted_evidence_set": [
+      "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "viscosity_screening_salt_test_3_jin_coarse_mesh",
+      "viscosity_screening_salt_test_4_jin_coarse_mesh"
+    ],
+    "excluded_or_held": {
+      "salt1": "hold_pending_salt1_qualification",
+      "corrected_salt_q": "hold_pending_formal_operating_point_gate",
+      "needs_special_gate_scrutiny_true": "not_closure_fit_admissible_without_coordinator_review"
+    }
+  },
+  "review_findings": [
+    {
+      "severity": "medium",
+      "finding": "AGENT-187 implemented external friction_closures.py before the requested Ri audit and full F1/F3/F4/F5 comparison sequence was complete.",
+      "disposition": "Treat F4_leg_class as provisional data-driven model-form evidence, not final Ri-corrected F4."
+    },
+    {
+      "severity": "medium",
+      "finding": "AGENT-187 fit is f_corrected/f_lam = a + b/Re and does not include Ri, Ra, streamwise projection, or documented Delta-T/property basis.",
+      "disposition": "Require a new read-only Ri calibration table before further solver edits."
+    },
+    {
+      "severity": "high",
+      "finding": "Corrected Salt Q and special-scrutiny rows must not enter closure fits.",
+      "disposition": "Carry needs_special_gate_scrutiny forward and require coordinator review for flagged rows."
+    }
+  ],
+  "next_read_only_task": {
+    "suggested_scope": [
+      "work_products/2026-07-08_f4_ri_calibration_table/**",
+      "optional tools/analyze/build_f4_ri_calibration_table.py"
+    ],
+    "must_not_edit": [
+      "../cfd-modeling-tools/**",
+      "native solver case outputs"
+    ],
+    "required_outputs": [
+      "f4_ri_calibration_table.csv",
+      "f4_ri_calibration_table.json",
+      "README.md"
+    ],
+    "required_join_inputs": [
+      "work_products/2026-07-01_claude_momentum_budget/momentum_budget.json",
+      "work_products/2026-07-04_friction_forms/friction_forms_comparison.csv",
+      "work_products/2026-07-01_claude_segment_friction/segment_friction.csv",
+      "work_products/2026-07-07_f4_buoyancy_friction/f4_calibration_dataset.csv",
+      "work_products/2026-07-07_corrected_salt_live_monitor/live_salt_sanity_monitor.csv"
+    ]
+  },
+  "ri_audit_requirements": {
+    "characteristic_ri": "median_section_Ri",
+    "mean_ri_status": "diagnostic_only_unless_justified",
+    "inclined_leg_projection": "required_with_angle_and_sign_convention",
+    "deltaT_basis": "must_record_wall_bulk_or_reconstruction_method",
+    "property_basis": "must_record_temperature_basis",
+    "length_scale_basis": "hydraulic_diameter_unless_documented_otherwise"
+  },
+  "solver_edit_gate": {
+    "allowed_now": false,
+    "open_after": "read_only_ri_table_and_F1_F3_F4_F5_comparison_complete",
+    "must_preserve": [
+      "no_buoyancy_double_counting",
+      "default_solver_behavior",
+      "row_level_admission_flags",
+      "thermal_driver_caveat_for_mdot"
+    ]
+  }
+}

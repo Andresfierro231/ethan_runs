@@ -1,0 +1,41 @@
+{
+  "blocked_row_count": 5,
+  "fit_eligible_row_count": 0,
+  "forward_v1_internal_nu_fit_allowed": false,
+  "generated_at_utc": "2026-07-14T16:51:24+00:00",
+  "native_solver_outputs_mutated": false,
+  "radiation_double_count_allowed": false,
+  "row_count": 16,
+  "segment_summary": [
+    {
+      "blocked_qoi_count": 4,
+      "dominant_blockers": "blocked_downcomer_policy;wallHeatFlux_enthalpy_opposed_direction;large_wallHeatFlux_enthalpy_residual;high_recirculation_interface;high_recirculation_forward_bulk_used;high_recirculation_interface_temperature;coarse_status_thermally_blocked_segment_right_leg;medium_status_thermally_blocked_segment_right_leg",
+      "fit_eligible_qoi_count": 0,
+      "forward_v1_internal_nu_fit_allowed": "no",
+      "segment": "downcomer",
+      "segment_decision": "blocked",
+      "validation_only_qoi_count": 0
+    },
+    {
+      "blocked_qoi_count": 1,
+      "dominant_blockers": "repaired_q_sign_label_conflict;coarse_sign_review_required;medium_sign_review_required;fine_sign_review_required;internal_Nu_residual_absorption_forbidden;missing_or_nonfinite_coarse_medium_or_fine_value;coarse_nu_direct_not_admitted;medium_nu_direct_not_admitted",
+      "fit_eligible_qoi_count": 0,
+      "forward_v1_internal_nu_fit_allowed": "no",
+      "segment": "lower_leg",
+      "segment_decision": "mixed_validation_only_and_blocked",
+      "validation_only_qoi_count": 5
+    },
+    {
+      "blocked_qoi_count": 0,
+      "dominant_blockers": "repaired_q_sign_label_conflict;wallHeatFlux_enthalpy_opposed_direction;large_wallHeatFlux_enthalpy_residual;high_recirculation_interface;high_recirculation_forward_bulk_used;high_recirculation_interface_temperature;recirculation_cell_diagnostic_only;coarse_sign_review_required",
+      "fit_eligible_qoi_count": 0,
+      "forward_v1_internal_nu_fit_allowed": "no",
+      "segment": "upcomer",
+      "segment_decision": "validation_only",
+      "validation_only_qoi_count": 6
+    }
+  ],
+  "source_table": "work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv",
+  "task": "AGENT-319",
+  "validation_only_row_count": 11
+}

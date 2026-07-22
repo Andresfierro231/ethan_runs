@@ -1,0 +1,5 @@
+gate,status,admitted_rows,reason
+segment_pressure_models,blocked,0,no scoreable predictive pressure model rows
+segment_thermal_models,partial,2,heater/cooler setup admitted; test-section/upcomer/wall development blocked
+branch_specific_ordinary_pipe,blocked,0,ordinary-pipe aggregate has zero included current branches
+upcomer_hybrid,diagnostic_only,1,"hybrid contract complete, predictive calibration missing"

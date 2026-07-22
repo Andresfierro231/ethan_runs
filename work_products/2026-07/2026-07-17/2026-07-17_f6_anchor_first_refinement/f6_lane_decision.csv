@@ -1,0 +1,5 @@
+lane,current_rows,scoreable_rows,promotion_allowed,production_baseline,status,stop_go_gate,next_action
+ordinary_F6_anchor,0,0,no,F3_shah_apparent,no_current_low_reverse_pressure_anchor,"RAF < 0.01, RMF < 0.01, same-window pressure loss, split-safe score over F3",terminal high-heat harvest first; ordinary F6 only if low-reverse gate passes
+transition_anchor,0,0,no,F3_shah_apparent,not_yet_bracketed,paired low-reverse and material-recirculation rows with same output contract,use Salt3 Q x insulation matrix only if terminal high-heat/PM10 evidence remains insufficient
+recirculation_diagnostic,12,0,no,F3_shah_apparent,diagnostic_only,"named closure plus pressure residual movement, Delta T, Gz, UQ, validation/holdout improvement",do not fit ordinary friction; preserve as onset/regime evidence
+blocked_pending_terminal,8,0,no,F3_shah_apparent,waiting_for_terminal_or_harvest,terminal jobs plus PM5-style scratch-copy postprocessing,monitor/harvest in separately claimed task

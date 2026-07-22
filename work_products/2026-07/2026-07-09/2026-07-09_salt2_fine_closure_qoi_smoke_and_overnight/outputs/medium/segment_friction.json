@@ -1,0 +1,19 @@
+{
+  "generated_at": "2026-07-09T16:42:43-05:00",
+  "default_method": "section_mean_total_pressure_gradient",
+  "friction_convention": "Darcy-Weisbach (f_D); Fanning would be f_D/4. Laminar ref is 64/Re (Darcy).",
+  "sign_convention": "dp_loss/ds = -(p_down - p_up)/(s_down - s_up); positive = loss; negative f flagged.",
+  "method_note": "TOTAL-pressure gradient (default) is the irreversible mechanical-energy loss; STATIC p_rgh gradient additionally includes reversible area-change (Bernoulli) pressure, so the two differ by the reversible kinetic term.",
+  "mu_pa_s": null,
+  "mu_source": "jin_correlation_from_section_mean_rho_eos",
+  "reynolds_note": "mu is not in the section-mean JSON; Re/f_lam/excess are NaN unless --mu-pa-s is given or --auto-mu-jin is set. With --auto-mu-jin, per-segment T is inferred from section-mean rho via the linear salt EoS and mu(T) from the Jin viscosity correlation (tools/analyze/salt_properties.py); these inherit the section-mean / coarse-mesh caveats and are indicative, not closure-grade. Re is NOT fabricated.",
+  "confidence_boundaries": "Section-mean values; dynamic head term ~0.18 Pa is small vs p_rgh swings so the static-vs-total split is indicative not closure-grade; coarse mesh (no mesh-independence bound); laminar; few stations per segment (n reported).",
+  "alignment_gate": 0.8,
+  "cases": [
+    {
+      "source_id": "viscosity_screening_salt_test_2_jin_coarse_mesh",
+      "section_json": "work_products/2026-07/2026-07-09/2026-07-09_salt2_fine_closure_qoi_smoke_and_overnight/outputs/medium/section_mean_pressure_viscosity_screening_salt_test_2_jin_coarse_mesh.json",
+      "segments": []
+    }
+  ]
+}

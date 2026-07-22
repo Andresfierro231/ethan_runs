@@ -1,0 +1,12 @@
+source_path,role_in_package,mutation_status,notes
+.agent/BOARD.md,board_scope,edited_own_row,"Added and later completed the execution documentation package row."
+.agent/BLOCKERS.md,blocker_context,read_only,"Defines open blockers that set S8-S10 gates."
+work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/README.md,next_study_dispatch,read_only,"Defines S7-S11 and negative-results board routes."
+work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/next_study_portfolio.csv,next_study_portfolio,read_only,"Source for per-study required outputs and acceptance signals."
+reports/thesis_dossier/Chapters_and_sections/current/26_predictive_model_studies_roadmap.md,predictive_roadmap,read_only,"High-level thesis study sequencing context."
+reports/thesis_dossier/README.md,front_door,edited_additive,"Linked the execution package."
+reports/thesis_dossier/Chapters_and_sections/current/README.md,current_sections_front_door,edited_additive,"Linked the execution package."
+native CFD/OpenFOAM outputs,solver_outputs,not_touched,"No native output mutation."
+registry/admission state,global_state,not_touched,"No registry or admission mutation."
+scheduler state,compute_state,not_touched,"No scheduler action."
+Fluid source tree and external repos,external_code,not_touched,"No Fluid or external edit."

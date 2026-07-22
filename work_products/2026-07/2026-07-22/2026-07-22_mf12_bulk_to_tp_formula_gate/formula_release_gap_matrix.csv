@@ -1,0 +1,7 @@
+gate,status,evidence,release_allowed
+reset_graetz_coordinates,pass_diagnostic,MF07 has 33 segment-classification rows and TP reset/Graetz joins,False
+train_tp_direction_signal,pass_diagnostic,5/5 M3 train TP rows are cold relative to targets; mean signed error -15.091423 K,False
+d2_projection_signal,pass_diagnostic,D2 TP RMSE 4.38159298515 K versus M3 TP RMSE 13.5673279702 K,False
+signed_source_runtime_release,fail_closed,MF08 runtime-allowed source rows 0; source/property released rows 0; variants needing source basis 4,False
+wall_profile_or_tp_projection_uq,fail_closed,Same-QOI TP projection UQ and runtime wall-profile source basis are not released,False
+admission_or_final_score,fail_closed,"No coefficient admission, source/property release, validation/holdout/external score, or final score is authorized",False

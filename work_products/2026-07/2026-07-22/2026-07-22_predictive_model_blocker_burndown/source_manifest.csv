@@ -1,0 +1,18 @@
+source_path,use_in_burndown
+work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/next_training_sequence.csv,Defines canonical train-to-freeze-to-protected-score order.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_model_form_scoreboard_training_roster/scoreboard_presence_audit.csv,Confirms current model-form coverage and supplement-only forms.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch/model_form_error_reduction_targets.csv,Quantifies M1/M2/M3 improvement and remaining thermal error-reduction target.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_scoreboard_signed_error_shape_and_model_form_dispatch/study_enrichment_status.csv,Summarizes requested study status and next row routing.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/summary.json,Provides diagnostic D1-D4 transfer result and runtime.
+work_products/2026-07/2026-07-22/2026-07-22_source_property_nominal_train_release_preflight/summary.json,Shows nominal train source/property release-ready rows remain 0/4.
+work_products/2026-07/2026-07-22/2026-07-22_source_property_cp_viscosity_pressure_basis_preflight/summary.json,Shows MF16/cp/viscosity/pressure release-ready rows remain zero.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_source_property_release_unblock_study/release_unblock_matrix.csv,Maps source/property families to minimal unblock tasks.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_s12_thermal_source_property_freeze_gate/candidate_freeze_gate_matrix.csv,Shows thermal candidate freeze readiness remains zero.
+work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_runtime_operator_smoke_uq_gate/summary.json,Provides PASSIVE-H2 diagnostic operator evidence and no-release guardrails.
+work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/summary.json,Provides multi-train corrected radiation smoke evidence.
+work_products/2026-07/2026-07-22/2026-07-22_d2_source_bounded_projection_holdout_external_score_gate/README.md,Documents D2 protected-score fail-closed and source-bounded projection successors.
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/summary.json,Confirms S13 medium/fine exact-label rows complete and no admission.
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/summary.json,Provides S13 two-level spread and formal GCI fail-closed result.
+work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/summary.json,Provides coarse-equivalence/open-CV contract and no-admission result.
+work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_f6_source_recovery_low_recirc_anchors/summary.json,Shows CAND001 still running and no pressure/F6 recovery.
+.agent/BOARD.md,Provides live active/planned task state and duplicate-row avoidance.

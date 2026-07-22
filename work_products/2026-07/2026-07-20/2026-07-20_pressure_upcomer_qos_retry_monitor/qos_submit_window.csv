@@ -1,0 +1,2 @@
+preflight_clean,prior_submit_status,active_submit_pressure_jobs,retry_now,retry_reason,submit_command
+true,submit_attempt_blocked_by_QOSMaxSubmitJobPerUserLimit,3,false,wait_for_existing_jobs_or_submit_limit_to_clear,"ssh login1 ""cd /scratch/09748/andresfierro231/projects_scratch/ethan_runs && sbatch work_products/2026-07/2026-07-20/2026-07-20_pressure_upcomer_isolated_relaunch_submission_package/scripts/submit_pressure_upcomer_isolated_relaunch.sbatch"""

@@ -1,0 +1,23 @@
+{
+  "atlas_release_ready_rows": 0,
+  "candidate_freeze": false,
+  "candidate_release_path_rows": 6,
+  "cp_preflight_mf16_release_ready_rows": 0,
+  "decision": "source_property_unblock_study_complete_zero_release_ready_rows_no_freeze",
+  "external_fluid_edit": false,
+  "generated_at_utc": "2026-07-22T17:33:01.938710+00:00",
+  "mf16_exact_field_release_ready_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "nominal_train_release_ready_rows": "0/4",
+  "protected_rows_released": 0,
+  "protected_runtime_rows": 1,
+  "protected_scoring": false,
+  "registry_mutated": false,
+  "release_unblock_rows": 15,
+  "s12_freeze_ready_candidates": 0,
+  "scheduler_action": false,
+  "source_property_release": false,
+  "task_id": "TODO-THESIS-SOURCE-PROPERTY-RELEASE-UNBLOCK-STUDY-2026-07-22",
+  "thesis_transfer_rows": 4,
+  "validation_holdout_external_scoring": false
+}

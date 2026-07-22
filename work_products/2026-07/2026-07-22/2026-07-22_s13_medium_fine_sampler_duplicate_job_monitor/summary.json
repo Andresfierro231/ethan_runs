@@ -1,0 +1,23 @@
+{
+  "task_id": "TODO-S13-MEDIUM-FINE-SAMPLER-DUPLICATE-JOB-MONITOR-2026-07-22",
+  "generated_at": "2026-07-22T10:45:00-05:00",
+  "decision": "duplicate_jobs_completed_no_cancellation_needed_sampler_fail_closed_no_terminal_qoi_rows",
+  "monitored_jobs": [
+    "3310176",
+    "3310179"
+  ],
+  "jobs_running_now": 0,
+  "jobs_completed": 2,
+  "job_cancellation_performed": false,
+  "new_submission_performed": false,
+  "source_contract_rows": 6,
+  "mesh_geometry_rows": 6,
+  "terminal_window_reduction_rows": 0,
+  "exact_label_qoi_rows": 0,
+  "sampling_error_rows": 6,
+  "usable_terminal_output": false,
+  "same_label_mesh_gci_ready": false,
+  "production_harvest_allowed": false,
+  "admission_allowed": false,
+  "native_solver_outputs_mutated": false
+}

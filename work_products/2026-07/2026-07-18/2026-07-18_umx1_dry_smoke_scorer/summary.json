@@ -1,0 +1,68 @@
+{
+  "admission_status": "not_admitted_smoke_only",
+  "candidate_count": 3,
+  "conservation_pass_rows": 9,
+  "conservation_rows": 9,
+  "engine": "fast_scan",
+  "executable_case_count": 3,
+  "expansion_status": "stop_before_grid",
+  "generated_utc": "2026-07-18T20:39:12+00:00",
+  "no_admission_gates": [
+    {
+      "blocks_admission": "true",
+      "blocks_expansion": "false",
+      "evidence": "180 runtime audit rows; forbidden runtime fields absent.",
+      "gate_id": "runtime_legality",
+      "next_action": "eligible_for_smoke_review_only",
+      "status": "pass"
+    },
+    {
+      "blocks_admission": "true",
+      "blocks_expansion": "true",
+      "evidence": "3/9 root rows pass.",
+      "gate_id": "accepted_roots",
+      "next_action": "stop_before_grid",
+      "status": "fail_or_not_run"
+    },
+    {
+      "blocks_admission": "true",
+      "blocks_expansion": "false",
+      "evidence": "9/9 conservation rows pass.",
+      "gate_id": "conservation_residual",
+      "next_action": "eligible_for_bounded_followup_only",
+      "status": "pass"
+    },
+    {
+      "blocks_admission": "true",
+      "blocks_expansion": "false",
+      "evidence": "Salt2/Salt3/Salt4 nominal executable; Salt1 explicitly blocked pending schema promotion.",
+      "gate_id": "split_discipline",
+      "next_action": "promote Salt1 schema before final-training admission work",
+      "status": "pass"
+    },
+    {
+      "blocks_admission": "true",
+      "blocks_expansion": "true",
+      "evidence": "This task is a smoke scorer only; no fitting, tuning, model selection, or admission.",
+      "gate_id": "scientific_admission",
+      "next_action": "open a separate scored-grid/admission row only after reviewing smoke artifacts",
+      "status": "not_admitted_smoke_only"
+    }
+  ],
+  "package": "work_products/2026-07/2026-07-18/2026-07-18_umx1_dry_smoke_scorer",
+  "planned_smoke_rows": 9,
+  "root_pass_rows": 3,
+  "root_rows": 9,
+  "salt1_status": "blocked_schema_promotion_missing",
+  "smoke_result_rows": 9,
+  "solve_case_note": "Full predictive-HX solve_case remains available through scripts/run_umx1_smoke.sbatch; interactive AGENT-544 run uses fast_scan when selected.",
+  "source_files": {
+    "agent_540_package": "work_products/2026-07/2026-07-18/2026-07-18_umx1_fluid_api_implementation",
+    "fluid_root": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid",
+    "input_contract": "work_products/2026-07/2026-07-13/2026-07-13_predictive_input_contract",
+    "split_policy": "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv"
+  },
+  "split_executable_rows": 3,
+  "status": "fast_scan_smoke_complete",
+  "task_id": "AGENT-544"
+}

@@ -1,0 +1,8 @@
+source_id,path,exists,use
+segment_equation_contract,work_products/2026-07/2026-07-17/2026-07-17_predict_segment_equation_contract/segment_equation_contract.csv,true,pressure slots and runtime guardrails
+pressure_term_ledger,work_products/2026-07/2026-07-08/2026-07-08_pressure_term_ledger/pressure_term_ledger.csv,true,pressure term evidence
+minor_loss_two_tap,work_products/2026-07/2026-07-08/2026-07-08_minor_loss_two_tap/minor_loss_two_tap.csv,true,minor-loss/two-tap evidence
+pressure_ladder_recirc_admission,work_products/2026-07/2026-07-16/2026-07-16_pressure_ladder_harvest_admission_table/branch_orientation_straight_loss_recirc_admission.csv,true,branch recirculation/admission gates
+hydraulic_chain_decisions,work_products/2026-07/2026-07-15/2026-07-15_agent373_hydraulic_chain_node_verification/hydraulic_admission_final_decisions.csv,true,hydraulic final decision blockers
+f6_summary,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/summary.json,true,F6/Re correction blocker state
+f6_candidate_inventory,work_products/2026-07/2026-07-17/2026-07-17_f6_friction_re_correction_unblock/f6_candidate_inventory.csv,true,F6 candidate classifications

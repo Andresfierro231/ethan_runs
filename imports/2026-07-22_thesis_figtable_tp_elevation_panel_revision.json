@@ -1,0 +1,68 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-TP-ELEVATION-PANEL-REVISION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Figures / Writer / Reviewer / Tester",
+  "objective": "Revise the thesis figure package so the primary M3 visual is TP1-TP6 temperature versus elevation with explicit missing-prediction handling.",
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-FIGTABLE-TP-ELEVATION-PANEL-REVISION-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-figtable-tp-elevation-panel-revision.md",
+    "imports/2026-07-22_thesis_figtable_tp_elevation_panel_revision.json",
+    "tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/caption_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/svg/m3_tp_temperature_vs_elevation_salt_2.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/png/m3_tp_temperature_vs_elevation_salt_2.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/svg/m3_tp_temperature_vs_elevation_salt_3.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/png/m3_tp_temperature_vs_elevation_salt_3.png",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/svg/m3_tp_temperature_vs_elevation_salt_4.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/png/m3_tp_temperature_vs_elevation_salt_4.png"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/figure_ready_signed_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_TP_TW_vs_elevation/plot.py"
+  ],
+  "mutation_flags": {
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_action": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "validation_holdout_external_new_scoring": false,
+    "fitting_or_model_selection": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "s11_s12_s13_s15_s6_trigger": false,
+    "thesis_current_file_edit": false,
+    "blocker_register_change": false,
+    "generated_index_refresh": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    },
+    {
+      "command": "visual inspection of m3_tp_temperature_vs_elevation_salt_2/3/4.png",
+      "result": "passed"
+    }
+  ],
+  "decision": "tp_elevation_primary_panels_ready_no_closure_admission",
+  "tp_temperature_elevation_panel_rows": 18,
+  "missing_m3_tp_predictions_marked": 3,
+  "final_score_values": 0
+}

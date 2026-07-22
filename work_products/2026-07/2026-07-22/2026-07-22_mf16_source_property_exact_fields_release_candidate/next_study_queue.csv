@@ -1,0 +1,4 @@
+priority,next_study,why,success_signal,status_after_mf16
+1,strict_row_specific_source_envelope_recovery,MF16 blocks primarily on row-specific strict-pass source-envelope evidence,Salt1/Salt2 train rows have strict source-envelope pass without protected-row leakage,next_serial
+2,same_qoi_wall_core_exchange_uq_execution,MF15 says triplets exist and MF17 can preserve temporal UQ evidence for wall/core mechanism,Qwall/exchange/recirc/wall-core temporal UQ summarized with no admission,parallel_ready
+3,candidate_specific_cp_property_sensitivity_gate,property labels exist but sensitivity remains material-closure-fit-blocked,cp/property uncertainty envelope for exactly one physical candidate,pending

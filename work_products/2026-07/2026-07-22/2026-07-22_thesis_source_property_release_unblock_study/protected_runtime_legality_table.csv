@@ -1,0 +1,2 @@
+row_family,release_allowed_now,runtime_use_allowed_now,score_use_allowed_now,reason
+validation_holdout_external,false,false,score_only_if_frozen_model_exists,No candidate-specific source/property release and no frozen runtime-legal candidate.

@@ -1,0 +1,6 @@
+equation_id,model_form_id,equation,fit_role,runtime_or_training_boundary
+E1,UA_LMTD_1P,LMTD = ((T_hot_in - T_air_out) - (T_hot_out - T_air_in)) / ln((T_hot_in - T_air_out)/(T_hot_out - T_air_in)),state equation,runtime uses predicted temperatures and calibrated UA only
+E2,UA_LMTD_1P,Q_hx_pred = UA_HX * LMTD; T_hot_out = T_hot_in - Q_hx_pred/C_hot; T_air_out = T_air_in + Q_hx_pred/C_air,prediction equation,no imposed cooler duty term at runtime
+E3,EPS_NTU_COUNTERFLOW_1P,NTU = UA_HX/C_min; Cr = C_min/C_max; epsilon = (1 - exp(-NTU*(1-Cr))) / (1 - Cr*exp(-NTU*(1-Cr))),effectiveness equation,requires admitted cold-side capacity from setup inputs
+E4,EPS_NTU_COUNTERFLOW_1P,"Q_hx_pred = epsilon * C_min * max(T_hot_in - T_air_in, 0)",prediction equation,calibrated UA is fixed before held-out scoring
+E5,all,minimize sum_train w_i * (Q_hx_target_i - Q_hx_pred_i(theta))^2; score heldout without refit,fit objective,"Q_hx_target is training evidence only, never a runtime input"

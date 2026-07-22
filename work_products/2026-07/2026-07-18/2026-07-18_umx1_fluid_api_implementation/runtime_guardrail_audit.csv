@@ -1,0 +1,8 @@
+guardrail,status,evidence
+native_cfd_or_openfoam_outputs_mutated,no,"No native solver-output paths were edited."
+registry_mutated,no,"registry/case_registry.csv not touched by AGENT-540."
+scheduler_action,no,"No sbatch, srun, scancel, or queue mutation was performed."
+fluid_solver_or_scoring_grid_launched,no,"Only unittest and py_compile validation commands were run."
+fitting_or_tuning_performed,no,"No coefficient fit, calibration, or model selection was run."
+scientific_admission_changed,no,"UMX1 remains an implemented API hook awaiting a separate scoring/admission row."
+external_fluid_source_mutated,yes,"Limited to claimed Fluid API/test/doc/journal paths listed in implementation_change_log.csv."

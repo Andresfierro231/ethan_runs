@@ -1,0 +1,7 @@
+gate,status,observed_value,criterion,consequence
+patch_level_wall_heat_flux_available,pass,69,"69 wall_heat_flux entities, including wall and zero-gradient connector patches",val_salt2 can now be audited below aggregate section level
+section_reconciliation_to_july15_ledger,pass,3.450999968568347e-07,maximum absolute latest patch-minus-section residual < 1e-6 W,patch extraction is consistent with the accepted section ledger
+junction_split_closes_to_section_junction_loss,pass,0.0,four-bucket junction split sums to July 15 aggregate junction loss,val_salt2 junction/stub heat is now comparable to Salt2-4 split ledgers
+bc_source_material_contract_available,pass,18,val_salt2 BC/source/material rows from AGENT-422/July 14 documentation,thermal roles and runtime-input guardrails are documented
+external_test_policy_locked,pass_guardrail,AGENT-481 external-test-only,do not fit or tune on val_salt2 unless explicitly reclassified later,"training-quality postprocessing exists, but blind validation is preserved"
+training_use_without_reclassification,fail_policy,not allowed by current split policy,explicit future decision must spend the external-test row before training,usable as main external evidence now; not admitted as training evidence now

@@ -1,0 +1,8 @@
+gate,status,evidence,release_allowed,missing_for_release
+tp_same_qoi_labels_present,pass_diagnostic,6 of 6 TP rows have bulk-fluid projection labels,False,quantitative_same_qoi_uq_and_runtime_temperature_release
+sensor_projection_acceptance_class_documented,pass_diagnostic,TP rows carry bounded/mapped acceptance classes and caveats from N4,False,exact measurement provenance or quantitative projection uncertainty
+thermal_development_evidence_present,pass_diagnostic,D2 provides promising thermal-development/projection evidence for TP1-TP6,False,source-bounded correction formula and UQ
+quantitative_same_qoi_uq_ready,fail_closed,0 of 6 TP rows have quantitative same-QOI UQ,False,uncertainty propagation for projection operator and probe placement
+runtime_temperature_release,fail_closed,0 of 6 TP rows allow runtime temperature use,False,runtime_temperature_allowed_true
+bulk_to_tp_correction_release,fail_closed,0 released correction rows,False,source-bounded thermal-development offset proof
+protected_scoring_or_model_selection,pass_guardrail,MF14 performs no new validation/holdout/external scoring and no model selection,False,separate freeze/admission row after upstream gates

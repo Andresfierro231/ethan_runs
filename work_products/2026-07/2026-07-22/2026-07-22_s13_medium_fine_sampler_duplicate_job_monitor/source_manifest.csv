@@ -1,0 +1,7 @@
+path,role,exists,native_solver_output,mutated
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/summary.json,monitored sampler summary,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/sampling_error_log.csv,monitored sampler fail-closed error log,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/mesh_level_geometry_summary.csv,monitored geometry output,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/logs/slurm-3310176.out,job 3310176 stdout,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/logs/slurm-3310179.out,job 3310179 stdout,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_sampler_duplicate_job_monitor,generated monitor package,true,false,true

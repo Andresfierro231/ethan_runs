@@ -1,0 +1,30 @@
+{
+  "after_tp2_gates_aggregate": {
+    "metric": "aggregate_sensor_count_after_tp2_gates",
+    "reason": "TP2 changes aggregate from 5 TP + 10 TW to 6 TP + 10 TW only after projection/source-segment/finite-row gates pass; TW10 remains excluded.",
+    "rmse_impact_status": "pending_finite_tp2_prediction_rows",
+    "total_count": 16,
+    "tp_count": 6,
+    "tw_count": 10
+  },
+  "current_aggregate": {
+    "metric": "aggregate_sensor_count_current",
+    "reason": "Current AGENT-405 policy excludes TP2 and TW10.",
+    "rmse_impact_status": "baseline_current_policy",
+    "total_count": 15,
+    "tp_count": 5,
+    "tw_count": 10
+  },
+  "final_decision": "TP2 restored as gated scoring candidate; TW10 remains excluded; neither may be a runtime temperature input or fit target",
+  "gate_status": {
+    "TP2_finite_prediction_before_aggregate": "pending",
+    "TP2_runtime_input_forbidden": "pass",
+    "TP2_source_segment_named": "pass",
+    "TW10_excluded_until_active_hx_shell_state": "pass"
+  },
+  "generated_at_utc": "2026-07-15T22:49:49.757077+00:00",
+  "sensor_rows": 17,
+  "task": "AGENT-442",
+  "tp2_source_segment_after_refresh": "right_downcomer_bottom_horizontal_junction",
+  "tw10_aggregate_after_refresh": "excluded"
+}

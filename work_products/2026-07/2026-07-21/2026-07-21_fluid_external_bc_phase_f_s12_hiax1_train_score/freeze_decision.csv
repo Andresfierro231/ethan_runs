@@ -1,0 +1,2 @@
+candidate_id,decision,finite_train_metrics_available,s12_candidate_itself_scored,reason,next_required_step
+S12-HIAX1,do_not_freeze,yes,no,"legal Phase E train solve gives finite baseline/precursor metrics, but S12-HIAX1 exchange-state, same-QOI UQ, and source/property gates remain closed.",S13 exchange-state harvest/UQ or a source-bounded S12-HIAX1 implementation preflight before candidate scoring.

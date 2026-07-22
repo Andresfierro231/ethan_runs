@@ -1,0 +1,9 @@
+case_key,row_family,release_status,score_now,fit_allowed,model_selection_allowed,blocker
+salt2_lo5q,PM5,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+salt2_hi5q,PM5,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+val_salt2,val_salt2,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+salt2_lo10q,PM10,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+salt2_hi10q,PM10,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+salt4_lo10q,PM10,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+salt4_hi10q,PM10,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception
+salt3_q_insulation_matrix,holdout,blocked,no,no,no,missing_salt1_cooler_hx_or_explicit_exception

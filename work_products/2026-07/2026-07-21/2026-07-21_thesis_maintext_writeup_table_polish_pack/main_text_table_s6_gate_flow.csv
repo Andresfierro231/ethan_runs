@@ -1,0 +1,13 @@
+gate,short_name,main_text_status,thesis_message,score_values_released,fit_or_selection,claim_boundary
+S0,pressure_corner_freeze,complete diagnostic,pressure corner rows are diagnostic/non-admitted,0,none,gate evidence only; no final predictive score
+S1,first_wave_context,complete diagnostic,first-wave thesis context is documentation-ready,0,none,gate evidence only; no final predictive score
+S2,source_property_labels,complete release gate,source/property labels are carried into S6 split rows,0,none,gate evidence only; no final predictive score
+S3,pressure_F6_non_admission,complete non admission,"component K, F6, clipped K, and hidden multipliers remain disabled",0,none,gate evidence only; no final predictive score
+S4,recirculation_guard,complete guardrail,ordinary upcomer closure remains disabled for recirculating evidence,0,none,gate evidence only; no final predictive score
+S5,source_property_split_release,complete release gate,fit/model selection remain closed for all S6 rows,0,none,gate evidence only; no final predictive score
+S6,frozen_candidate_scorecard,complete blocked shell,"no frozen runtime-legal candidate exists, so final score cells are empty",0,none,gate evidence only; no final predictive score
+S7,sensor_map_targets,complete score only contract,"TP/TW targets are mapped, bounded, or excluded and are not runtime inputs",0,none,gate evidence only; no final predictive score
+S8,wall_test_section_residual_atlas,queued or trigger gated,requires exact S8 evidence package or diagnostic-only row,0,none,gate evidence only; no final predictive score
+S9,upcomer_exchange_evidence,queued or trigger gated,requires exchange/onset sampler evidence before ordinary closure admission,0,none,gate evidence only; no final predictive score
+S10,pressure_F6_gate_waterfall,ready or recently packaged,pressure/F6 gate waterfall can be shown as blocked/diagnostic evidence,0,none,gate evidence only; no final predictive score
+S11,cross_chapter_visual_integration,queued after figure packages,requires package outputs before chapter integration,0,none,gate evidence only; no final predictive score

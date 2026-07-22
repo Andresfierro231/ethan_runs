@@ -1,0 +1,6 @@
+analysis_id,diagnostic_ready,source_property_released,same_qoi_uq_ready,production_ready,candidate_released,s11_or_s15_trigger,fail_closed_reason
+S13_EXCHANGE_QWALL_UQ_GATE,yes,no,no,no,no,no,"source-side conservation, neighbor-window, and same-QOI UQ gates are not ready"
+REDUCED_DOF_TRANSFER_INTERPRETATION,yes,no,no,no,no,no,empirical transfer is diagnostic and not a source-backed closure
+PASSIVE_BOUNDARY_SOURCE_FINALIZATION,yes,no,no,no,no,no,no passive source family passed release gates
+PRESSURE_F6_CAND001_RETRY_UQ_GATE,yes,no,no,no,no,no,CAND001 has no terminal success and F6 has no ordinary candidate pairs
+PUBLICATION_SYNTHESIS_SENSOR_RUNTIME_NEGATIVE_RESULTS,yes,not_applicable,not_applicable,yes_non_scoring,no,no,publication support only; no scoring or admission lane

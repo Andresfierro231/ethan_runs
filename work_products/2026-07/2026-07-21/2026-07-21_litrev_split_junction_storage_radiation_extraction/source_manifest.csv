@@ -1,0 +1,8 @@
+source_path,use,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/split_junction_stub_heat_rows.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/heat_path_evidence_matrix.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/energy_residual_owner_matrix.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/missing_field_queue.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_heatloss_phase_2_split_heat_loss_evidence/runtime_legality_audit.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_thermal_heat_loss_contract_alignment/heat_loss_path_contract.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_cfd_postprocessing_schema_gap/cfd_postprocessing_schema_gap_audit.csv,Read-only split-junction/storage/radiation extraction evidence.,read_only

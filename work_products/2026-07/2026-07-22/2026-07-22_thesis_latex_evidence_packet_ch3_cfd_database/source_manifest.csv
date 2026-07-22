@@ -1,0 +1,8 @@
+source_path,staged_as,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/case_provenance_table.csv,case_provenance_table.csv,copied_read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/retained_window_table.csv,retained_window_table.csv,copied_read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/qoi_dictionary.csv,qoi_dictionary.csv,copied_read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/postprocessing_method_table.csv,postprocessing_method_table.csv,copied_read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/native_source_path_manifest.csv,native_source_path_manifest.csv,copied_read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/figure_table_targets.csv,figure_table_targets.csv,copied_read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/claim_boundary_table.csv,claim_boundary_table.csv,copied_read_only

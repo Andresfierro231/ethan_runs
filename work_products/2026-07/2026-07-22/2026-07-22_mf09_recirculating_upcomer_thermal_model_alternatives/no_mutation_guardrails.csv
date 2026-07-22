@@ -1,0 +1,9 @@
+guardrail,status
+native_CFD_OpenFOAM_outputs_mutated,false
+scheduler_solver_sampler_or_harvest_launched,false
+registry_or_admission_mutated,false
+Fluid_or_external_repo_edited,false
+ordinary_upcomer_Nu_fD_K_admitted,false
+source_side_relabel_as_wall_heat_flux,false
+coefficient_fit_or_score_triggered,false
+residual_absorbed_into_internal_Nu,false

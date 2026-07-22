@@ -1,0 +1,14 @@
+{
+  "generated_at": "2026-07-09T10:41:28-05:00",
+  "generated_files": [
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/coarse_reconciliation.csv",
+    "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness/coarse_reconciliation_README.md"
+  ],
+  "output_dir": "work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_followon_readiness",
+  "row_count": 2,
+  "source_tree_read_only": true,
+  "task_id": "AGENT-231",
+  "verdict_counts": {
+    "superseded_by_mainline": 2
+  }
+}

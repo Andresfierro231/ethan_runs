@@ -1,0 +1,7 @@
+guard_id,changed,policy
+native_output_mutation,false,read-only package inputs
+registry_or_admission_mutation,false,no registry/admission edit
+scheduler_action,false,no scheduler action
+sampler_or_harvest_launch,false,manifest refresh only; no sampler/harvest
+same_qoi_uq_or_admission,false,no UQ/admission/trigger
+residual_absorbed_into_internal_Nu,false,residual remains explicit and non-fitted

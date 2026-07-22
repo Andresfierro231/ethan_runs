@@ -1,0 +1,7 @@
+category,count,interpretation
+extractor_rows,3,Rows emitted in AGENT-525 future schema.
+ordinary_admitted_rows,0,No row passes all gates.
+diagnostic_blocked_rows,3,Rows correctly retained as diagnostic.
+missing_endpoint_pressure_rows,3,Rows with blank p_upstream_pa or p_downstream_pa.
+negative_K_local_rows,3,Rows where current centerline straight-reference subtraction over-subtracts.
+gate_fail_rows,15,Failed predeclared gate rows.

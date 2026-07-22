@@ -1,0 +1,17 @@
+path,role_in_package,mutation_status
+reports/thesis_dossier/Outline.md,read current thesis direction and Chapter 8 forward model contract,read_only
+reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md,read steady fluid+walls equations and runtime contract,read_only
+reports/thesis_dossier/Chapters_and_sections/current/03_split_policy_and_evidence_classes.md,read canonical split and leakage rules,read_only
+reports/thesis_dossier/Chapters_and_sections/current/04_upcomer_recirculation_modeling.md,read recirculation guardrails and hybrid upcomer lane,read_only
+reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md,read junction/stub heat and corner pressure diagnostic status,read_only
+reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md,read M0-M6 model-form ladder and scorecard requirements,read_only
+reports/thesis_dossier/Chapters_and_sections/current/07_wall_test_section_coupled_score_and_physics_plan.md,read wall/test-section negative result and next physics lanes,read_only
+reports/thesis_dossier/Chapters_and_sections/current/09_fluid_walls_segment_atlas.md,read segment roles and admission state,read_only
+operational_notes/maps/forward-predictive-model.md,read and add package link,modified_additive
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,read LitRev model forms MF-01 through MF-06,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv,read CFD reduction requirements CFD-01 through CFD-18,read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/pressure_corner_extraction_findings.csv,read pressure/corner non-admission and recovery rules,read_only
+.agent/BLOCKERS.md,read active blocker set and resolved/superseded warnings,read_only
+.agent/BOARD.md,claim and close TODO-PRED-ENDTOEND-SCORE row,modified
+work_products/2026-07/2026-07-21/2026-07-21_predictive_model_execution_path/**,new execution-path package,modified
+

@@ -1,0 +1,4 @@
+audit_id,gate,evidence,forbidden_runtime_input
+R1_runtime_inputs,pass,"scenario contracts use setup external-boundary rows, PB1 Salt2 drive, and cooler alpha_UA only",realized wallHeatFlux; CFD mdot; validation temperatures; imposed CFD cooler duty; realized test-section net heat
+R2_static_local_test_section_policy,pass,TS6/TS7 remain diagnostic component rows and cannot be hidden inside passive-total PB1 success,component promotion from passive-total cancellation alone
+R3_coupled_execution,pass,Fluid rows attempted in this package,none; execution gate only

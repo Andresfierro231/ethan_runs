@@ -1,0 +1,9 @@
+source_id,path,role,read_write_status
+SRC-001,work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/summary.json,same-QOI UQ negative summary,read-only
+SRC-002,work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/same_qoi_uq_admission_table.csv,same-QOI row evidence,read-only
+SRC-003,work_products/2026-07/2026-07-21/2026-07-21_litrev_same_qoi_uq_execution/uq_gap_queue.csv,missing-window/GCI blocker queue,read-only
+SRC-004,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_same_qoi_scientific_synthesis/README.md,pressure same-QOI context,read-only
+SRC-005,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/summary.json,external BC contract summary,read-only
+SRC-006,work_products/2026-07/2026-07-21/2026-07-21_fluid_external_bc_dict/fluid_external_boundary_runtime_dictionary.csv,Fluid runtime dictionary contract,read-only
+SRC-007,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_terminal_source_readiness/summary.json,upcomer exchange source readiness,read-only
+SRC-008,.agent/BOARD.md,board rows and task scopes,updated

@@ -1,0 +1,64 @@
+{
+  "case_rows": 3,
+  "fit_admitted_pressure_rows": 0,
+  "generated_at_utc": "2026-07-17T13:07:02.032407+00:00",
+  "guardrails": {
+    "duplicate_pressure_or_pm5_jobs": false,
+    "native_outputs_mutated": false,
+    "registry_mutated": false,
+    "salt2_pm5q_fit_or_tune_allowed": false,
+    "scheduler_action": false,
+    "scientific_admission_changed": false,
+    "val_salt2_training_input_allowed": false
+  },
+  "outputs": [
+    "case_inventory.csv",
+    "fluid_walls_readiness_ledger.csv",
+    "pressure_readiness_ledger.csv",
+    "pm5_recirc_readiness_ledger.csv",
+    "thermal_source_sink_ledger.csv",
+    "uncertainty_and_admission_status.csv",
+    "source_manifest.csv",
+    "README.md",
+    "summary.json"
+  ],
+  "pm5_rows": 7,
+  "pressure_rows": 18,
+  "readiness_rows": 21,
+  "status_counts": {
+    "boundary_layer_state_status": {
+      "diagnostic": 18,
+      "missing": 3
+    },
+    "geometry_status": {
+      "admitted": 18,
+      "partial": 3
+    },
+    "material_stack_status": {
+      "admitted": 3,
+      "partial": 18
+    },
+    "pressure_model_status": {
+      "diagnostic": 18,
+      "missing": 3
+    },
+    "recirculation_flags_status": {
+      "diagnostic": 15,
+      "missing": 3,
+      "partial": 3
+    },
+    "source_sink_role_status": {
+      "diagnostic": 21
+    },
+    "thermal_circuit_status": {
+      "partial": 21
+    },
+    "uncertainty_status": {
+      "missing": 3,
+      "partial": 18
+    }
+  },
+  "task": "AGENT-484",
+  "thermal_rows": 26,
+  "uncertainty_rows": 21
+}

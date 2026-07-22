@@ -1,0 +1,53 @@
+{
+  "agent449_pressure_definition_conflict_branch_rows": 24,
+  "bottom_line": "pressure_maps_are_location/provenance_diagnostic;no_hydraulic_fit_admission;aggregate_junction_heat_loss_understood_diagnostic;corner_K_understood_as_diagnostic_upper_bound",
+  "corner_rows": 12,
+  "corner_summary_rows": 4,
+  "created_utc": "2026-07-16T21:43:28.792908+00:00",
+  "fit_admitted_pressure_rows": 0,
+  "junction_heat_rows": 18,
+  "junction_other_case_rows": 3,
+  "minor_loss_separation_leg_class_summary": {
+    "cooler": {
+      "mean_minor_fraction_pct": 9.4,
+      "mean_phi_original": 1.5352,
+      "mean_phi_pipe_only": 1.3906,
+      "mean_reduction_pct": 9.4,
+      "n_points": 3
+    },
+    "downcomer": {
+      "mean_minor_fraction_pct": 8.9,
+      "mean_phi_original": 1.8112,
+      "mean_phi_pipe_only": 1.6514,
+      "mean_reduction_pct": 8.8,
+      "n_points": 3
+    },
+    "heater": {
+      "mean_minor_fraction_pct": 9.9,
+      "mean_phi_original": 1.8135,
+      "mean_phi_pipe_only": 1.635,
+      "mean_reduction_pct": 9.8,
+      "n_points": 3
+    },
+    "upcomer": {
+      "mean_minor_fraction_pct": 22.7,
+      "mean_phi_original": 0.7584,
+      "mean_phi_pipe_only": 0.6001,
+      "mean_reduction_pct": 20.9,
+      "n_points": 6
+    }
+  },
+  "outputs": {
+    "corner_pressure_drop_evidence_state": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/corner_pressure_drop_evidence_state.csv",
+    "junction_heat_loss_evidence_state": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/junction_heat_loss_evidence_state.csv",
+    "pressure_branch_review": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_branch_scientific_review.csv",
+    "pressure_case_review": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/pressure_case_scientific_review.csv",
+    "scientific_review": "work_products/2026-07/2026-07-16/2026-07-16_pressure_map_scientific_review_and_junction_corner_state/scientific_review.md"
+  },
+  "pressure_branch_rows": 66,
+  "pressure_case_count": 11,
+  "pressure_station_rows": 330,
+  "recirculation_blocked_branch_rows": 66,
+  "static_prgh_delta_sign_diff_rows": 24,
+  "task": "AGENT-460"
+}

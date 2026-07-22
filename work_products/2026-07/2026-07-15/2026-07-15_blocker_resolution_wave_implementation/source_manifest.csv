@@ -1,0 +1,6 @@
+artifact,path,rows
+pm5_metrics,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_pm5_matched_plane_metrics.csv,12
+pm5_validation,work_products/2026-07/2026-07-15/2026-07-15_pm5_wall_band_vtk_and_f6_unlock_repair/resampled_vtk_field_validation.csv,12
+thermal_admission,work_products/2026-07/2026-07-14/2026-07-14_thermal_closure_mesh_gate_refresh/thermal_admission_table.csv,16
+hydraulic_gate,work_products/2026-07/2026-07-15/2026-07-15_lead_closure_qoi_hydraulic_postprocess/hydraulic_gate_status_after_pm5.csv,3
+forward_ledger,work_products/2026-07/2026-07-15/2026-07-15_forward_v1_row_admission_ledger/row_admission_ledger.csv,31

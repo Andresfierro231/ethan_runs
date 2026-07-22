@@ -1,0 +1,2 @@
+job_id,job_name,partition,allocation,submit_method,submit_host,initial_state,terminal_state,exit_code,elapsed,node,submitted_at,script_path,status,monitor_command,forbidden_action
+3308290,upx_vols,NuclearEnergy,ASC23046,ssh_login3_sbatch,login3,R,COMPLETED,0:0,00:02:32,c318-014,2026-07-21T14:50:49-05:00,work_products/2026-07/2026-07-21/2026-07-21_upcomer_exchange_cell_volume_export_sbatch/scripts/submit_upcomer_exchange_cell_volume_export.sbatch,completed_validated,sacct -j 3308290,"do not resubmit/cancel/harvest/launch OpenFOAM without new board row"

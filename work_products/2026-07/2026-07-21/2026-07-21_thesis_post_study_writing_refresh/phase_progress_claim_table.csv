@@ -1,0 +1,7 @@
+phase,thesis_point,evidence,status,allowed_use,forbidden_use
+Phase E,runtime path works but thermal residual is large,"accepted Salt2 train solve; top residual still O(100 K)",established_train_diagnostic,implementation readiness and negative-result setup,final predictive score or thermal admission
+Phase F,residual ownership localizes the dominant failure,"heated_incline/TW5 max absolute residual 109.09380824932663 K",established_train_diagnostic,residual-owner claim and next-uncertainty localization,internal-Nu absorption or hidden multiplier
+Phase G,dictionary boundaries prevent leakage,"Salt1 expected rows missing in F-J audit; unit/sign audit passes where rows exist",established_boundary,metadata completeness and fail-closed repair gate,filling setup gaps from realized CFD response
+Phase I,source/sink admissibility remains closed,"0 runtime-allowed source/sink rows; 9 forbidden candidate rows",established_boundary,source/sink provenance boundary,heater/cooler/test-section runtime admission
+Phase H,H2,heat path is responsive but not fit-admissible,"global passive hA half improves TW5 by 51.63369382647278 K; lower-leg hA half improves TW5 by 4.59310690807564 K",established_train_diagnostic,physical-basis candidate direction,global passive-hA fitted repair or final freeze
+Thesis synthesis,the failure is diagnostic not a dead end,"Phase E/F/G/I/H chain",chapter_ready_claim,localize next science to external heat-path basis and missing source/sink or redistribution physics,dead-end framing or unguarded selector sweep

@@ -1,0 +1,9 @@
+source_segment_id,source_physical_role,proposed_fluid_parent_segments,conversion_status,notes
+downcomer,ambient_wall,right_vertical,ready_for_phase_c_review,Direct Fluid parent for right-side downcomer.
+lower_leg,ambient_wall,heated_incline,review_before_use,Maps the lower heated incline passive ambient wall; lower horizontal stubs are not represented by this source row unless Phase C adds split mapping.
+lower_leg,heater,,document_only_do_not_convert,Heater is a source/sink role, not a passive external boundary role.
+upcomer,ambient_wall,left_lower_vertical;left_upper_vertical,review_before_use,Upcomer steel wall spans bracket the quartz test section; do not smear across test_section.
+upcomer,test_section,test_section,ready_for_phase_c_review,Quartz/test-section role should target Fluid test_section only.
+cooling_branch,ambient_wall,top_horizontal_inlet;cooled_incline_pre_hx;cooled_incline_post_hx;top_horizontal_exit,review_before_use,Passive ambient wall around cooling branch; active HX cooler role remains excluded.
+cooling_branch,cooler,,document_only_do_not_convert,Cooler duty is not a predictive external-boundary input.
+junction,junction_other,top_horizontal_inlet;top_horizontal_exit;bottom_horizontal_inlet;bottom_horizontal_exit,review_before_use,Junction/stub grouping needs explicit area/coverage review to avoid double count.

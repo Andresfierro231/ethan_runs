@@ -1,0 +1,2 @@
+candidate_id,candidate_status,pressure_rows,same_qoi_uq_pass,ordinary_flow_pass,endpoint_field_gate_pass,source_property_gate_pass,f3_comparison_ready,s11_reviewable,reason
+MF02_pressure_mdot_coupling,diagnostic_only_not_admission_candidate,3,False,False,False,False,False,False,"Pressure residual basis is section-effective/recovery diagnostic; lower-right rows fail ordinary-flow, same-QOI UQ, and component-isolation gates."

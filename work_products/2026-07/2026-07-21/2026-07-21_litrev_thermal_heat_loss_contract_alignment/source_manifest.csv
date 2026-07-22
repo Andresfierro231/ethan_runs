@@ -1,0 +1,18 @@
+source_path,source_role,mutation_status
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/cfd_postprocessing_contract.csv,"Read rows CFD-13 to CFD-15 for enthalpy bulk temperature wall heat-transfer and heat-loss-network separation",read_only
+work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction/model_form_candidates.csv,"Read MF-01 and MF-04 for gated single-stream and throughflow-plus-recirculation context",read_only
+reports/thesis_dossier/Chapters_and_sections/current/02_model_form_fluid_walls.md,"Current steady fluid+walls energy balance wall circuit predictive input contract and test-section balance",read_only
+operational_notes/maps/thermal-boundary-and-radiation.md,"Current external boundary radiation and rcExternalTemperature guardrails",read_only_then_additive_pointer_update
+operational_notes/maps/thermal-closures-and-internal-nu.md,"Current internal-Nu status and no-residual-absorption guardrails",read_only_then_additive_pointer_update
+reports/2026-07/2026-07-09/2026-07-09_external_boundary_setup_reference/README.md,"External boundary setup values roles radiation interpretation and wallHeatFlux no-double-counting policy",read_only
+work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/README.md,"Prior separated heat-loss calibration result",read_only
+work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/heat_closure_admission.csv,"Prior admission rows showing internal Nu blocked from external heat-loss absorption",read_only
+work_products/2026-07/2026-07-13/2026-07-13_litrev_heat_loss_calibration/separated_heat_loss_ledger.csv,"Patch-level heat path separation evidence",read_only
+work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/residual_owner_resolution_gate.csv,"Residual owner and forbidden internal-Nu use matrix",read_only
+work_products/2026-07/2026-07-16/2026-07-16_predictive_boundary_submodel_admission/submodel_admission_summary.csv,"Heater cooler and wall/test-section submodel admission summary",read_only
+work_products/2026-07/2026-07-16/2026-07-16_predictive_test_section_heat_loss_model/setup_candidate_summary.csv,"Test-section passive loss candidate failures",read_only
+work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/thermal_model_slot_admission.csv,"Segment thermal slot admission and blocker matrix",read_only
+work_products/2026-07/2026-07-17/2026-07-17_predict_segment_thermal_models/source_sink_ownership_contract.csv,"Source and sink ownership guardrails",read_only
+work_products/2026-07/2026-07-17/2026-07-17_wall_thermal_circuit_study/candidate_admission_review.csv,"Wall/passive/test-section candidate coupled gate failures",read_only
+work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger/README.md,"Patchwise sign convention heat roles and radiation no-qr caveat",read_only
+work_products/2026-07/2026-07-08/2026-07-08_patchwise_heat_ledger_enthalpy_interfaces/README.md,"Physical-interface enthalpy residual and junction/upcomer diagnostic caveats",read_only

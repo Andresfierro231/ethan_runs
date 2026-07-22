@@ -1,0 +1,7 @@
+stop_id,condition,required_action
+STOP-01,runtime manifest contains forbidden field,abort and mark invalid
+STOP-02,baseline train root is nonfinite or unbracketed,stop before variants and report root blocker
+STOP-03,"variant changes protected-row score, fit, or model selection",invalidate execution row
+STOP-04,source/property release or candidate freeze implied,stop; claim separate release row
+STOP-05,F6/component-K/internal-Nu/exchange coefficient emitted,stop; coefficient admission is forbidden
+STOP-06,unsupported radiation/material capability missing,"skip variant with reason, do not infer residual"

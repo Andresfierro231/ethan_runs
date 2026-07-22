@@ -1,0 +1,15 @@
+{
+  "admission_status": "diagnostic_not_admitted",
+  "candidate_ready_rows": 0,
+  "candidate_rows": 3,
+  "d3_transfer_local_shape_rmse_after_bias_K": 7.93285020379,
+  "d3_transfer_rmse_K": 8.38846755024,
+  "d3_transfer_rmse_reduction_pct": 51.6919381995,
+  "decision": "d3_wall_shape_signal_supported_diagnostic_only_same_qoi_triplets_ready_uq_not_executed",
+  "production_use_allowed_now": false,
+  "same_qoi_triplet_ready_qois": 4,
+  "same_qoi_uq_executed": false,
+  "task": "TODO-MF-D3-WALL-SHAPE-AXIAL-MIXING-GATE-2026-07-22",
+  "transfer_wall_rows": 20,
+  "wall_rows": 30
+}

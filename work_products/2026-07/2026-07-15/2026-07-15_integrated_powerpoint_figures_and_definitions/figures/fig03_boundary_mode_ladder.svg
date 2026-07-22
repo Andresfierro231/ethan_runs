@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="560" viewBox="0 0 1080 560">
+  <rect width="1080" height="560" fill="#ffffff"/>
+
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,4 L0,8 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <text x="50.0" y="52.0" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#111827" text-anchor="start">Boundary-condition ladder: what information is allowed?</text>
+  <rect x="70.0" y="110.0" width="205.0" height="330.0" rx="8.0" fill="#ffffff" stroke="#dc2626" stroke-width="3.0"/>
+  <text x="172.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#dc2626" text-anchor="middle">M1</text>
+  <text x="94.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">Full CFD segment heat</text>
+  <text x="94.0" y="212.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">ledger</text>
+  <line x1="94.0" y1="262.0" x2="251.0" y2="262.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="94.0" y="300.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">pressure solve</text>
+  <line x1="94.0" y1="352.0" x2="251.0" y2="352.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="94.0" y="392.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Diagnostic upper bound</text>
+  <rect x="315.0" y="110.0" width="205.0" height="330.0" rx="8.0" fill="#ffffff" stroke="#7c3aed" stroke-width="3.0"/>
+  <text x="417.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#7c3aed" text-anchor="middle">M1b</text>
+  <text x="339.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">Full CFD segment heat</text>
+  <text x="339.0" y="212.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">ledger</text>
+  <line x1="339.0" y1="262.0" x2="496.0" y2="262.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="339.0" y="300.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">fixed CFD mdot</text>
+  <line x1="339.0" y1="352.0" x2="496.0" y2="352.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="339.0" y="392.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Thermal isolation only</text>
+  <rect x="560.0" y="110.0" width="205.0" height="330.0" rx="8.0" fill="#ffffff" stroke="#2563eb" stroke-width="3.0"/>
+  <text x="662.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#2563eb" text-anchor="middle">M2</text>
+  <text x="584.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">CFD heater +</text>
+  <text x="584.0" y="212.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">test-section + cooler</text>
+  <line x1="584.0" y1="262.0" x2="741.0" y2="262.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="584.0" y="300.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">pressure solve</text>
+  <line x1="584.0" y1="352.0" x2="741.0" y2="352.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="584.0" y="392.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Best mdot diagnostic</text>
+  <rect x="805.0" y="110.0" width="205.0" height="330.0" rx="8.0" fill="#ffffff" stroke="#16a34a" stroke-width="3.0"/>
+  <text x="907.0" y="150.0" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#16a34a" text-anchor="middle">M3</text>
+  <text x="829.0" y="190.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">CFD heater + cooler</text>
+  <text x="829.0" y="212.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">only</text>
+  <line x1="829.0" y1="262.0" x2="986.0" y2="262.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="829.0" y="300.0" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#111827" text-anchor="start">pressure solve</text>
+  <line x1="829.0" y1="352.0" x2="986.0" y2="352.0" stroke="#d1d5db" stroke-width="1.5"/>
+  <text x="829.0" y="392.0" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#4b5563" text-anchor="start">Best TP/TW diagnostic</text>
+  <text x="540.0" y="504.0" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="600" fill="#4b5563" text-anchor="middle">All four modes are diagnostic until runtime inputs are setup-only and admitted.</text>
+</svg>

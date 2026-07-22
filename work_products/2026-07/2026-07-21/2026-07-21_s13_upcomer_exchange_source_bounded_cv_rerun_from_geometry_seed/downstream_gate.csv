@@ -1,0 +1,5 @@
+gate,status,ready_for_next_row,next_row,forbidden_now,evidence
+seeded_source_bounded_cv,pass,true,S13 seeded surface/input preflight,"surface_extraction,sampler,harvest,UQ,S11,S12,S15,S6,fit,admission",work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/seeded_release_decision.csv
+surface_input_preflight,not_run,true,extract_or_fail_close_seeded_interface_wall_surfaces_and_normals,production_harvest,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/seeded_exchange_interface_faces.csv
+sampler_manifest_refresh,blocked_pending_surface_preflight,false,rerun sampler manifest only after surface/input preflight passes,sampler_or_harvest,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampler_manifest_preflight/sampler_input_gap_matrix.csv
+same_qoi_uq,blocked_pending_neighbor_windows_and_mesh_gci,false,same-window/same-QOI UQ after QOI harvest exists,S11/S12/S15/S6,work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_same_window_uq_design/summary.json

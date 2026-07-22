@@ -1,0 +1,9 @@
+source_id,path,exists,role
+agent455_candidates,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_internal_nu_candidate_rows.csv,yes,row-level leg-specific Internal-Nu candidate gate
+agent455_mesh_gci,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/mesh_gci_gate_for_admitted_candidates.csv,yes,Closure-QOI/GCI final-use candidate decisions
+agent455_model_forms,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/leg_specific_nu_model_form_matrix.csv,yes,distinct leg model-form lanes
+agent455_geometry,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/geometry_taxonomy_correction.csv,yes,test-section/upcomer taxonomy
+agent455_blocker_decision,work_products/2026-07/2026-07-16/2026-07-16_closure_qoi_mesh_gci_resolution/blocker_unblock_decision.csv,yes,previous blocker decision input
+thermal_parity,work_products/2026-07/2026-07-16/2026-07-16_thermal_parity_resolution_gate/README.md,yes,residual-owner and no-Nu-absorption guardrail
+thermal_map,operational_notes/maps/thermal-closures-and-internal-nu.md,yes,thermal/Internal-Nu topic hub
+mesh_map,operational_notes/maps/mesh-gci-and-uncertainty.md,yes,mesh/GCI topic hub

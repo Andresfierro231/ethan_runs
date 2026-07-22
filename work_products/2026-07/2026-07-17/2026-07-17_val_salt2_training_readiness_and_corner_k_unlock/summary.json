@@ -1,0 +1,14 @@
+{
+  "corner_centerline_negative_k_rows": 12,
+  "corner_fit_admitted_rows": 0,
+  "corner_rows": 12,
+  "generated_at_utc": "2026-07-17T12:53:05.381132+00:00",
+  "max_section_latest_residual_W": 3.450999968568347e-07,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_training_readiness_and_corner_k_unlock",
+  "pressure_ladder_duplicate_jobs_submitted": "no",
+  "task": "AGENT-483",
+  "val_junction_loss_positive_W": 40.9260865692,
+  "val_junction_patch_rows": 21,
+  "val_patch_rows": 69,
+  "val_training_policy": "external_test_only_training_quality_artifact_not_training_input"
+}

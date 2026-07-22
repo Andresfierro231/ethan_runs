@@ -1,0 +1,19 @@
+{
+  "acceptance_gate_rows": 5,
+  "component_repair_target_rows": 3,
+  "date": "2026-07-17",
+  "external_fluid_edit": "none",
+  "field_contract_rows": 7,
+  "future_schema_rows": 17,
+  "generated_at_utc": "2026-07-17T21:31:29+00:00",
+  "generated_index_refresh": "not_run_active_agents_own_generated_index_paths",
+  "native_output_mutation": "none",
+  "ordinary_admitted_now": 0,
+  "output_dir": "work_products/2026-07/2026-07-17/2026-07-17_two_tap_component_repair_contract",
+  "registry_mutation": "none",
+  "scheduler_action": "none",
+  "scientific_admission_change": "none",
+  "source_rows": 8,
+  "summary_rows": 5,
+  "task": "AGENT-525"
+}

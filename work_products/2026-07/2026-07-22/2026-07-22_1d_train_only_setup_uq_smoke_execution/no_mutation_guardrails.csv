@@ -1,0 +1,7 @@
+guardrail,note,value
+native_solver_outputs_mutated,no OpenFOAM output paths written,False
+registry_mutated,registry/admission state not changed,False
+scheduler_action,no sbatch/srun/scancel used,False
+fluid_source_edited,Fluid source tree read-only,False
+protected_scoring_performed,no validation/holdout/external measured targets scored,False
+release_or_admission,no source/property/Qwall/coefficient/final-score release,False

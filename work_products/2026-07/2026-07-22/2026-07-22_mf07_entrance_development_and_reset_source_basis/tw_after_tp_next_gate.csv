@@ -1,0 +1,4 @@
+priority,step,objective,exit_condition,forbidden
+1,MF08 signed wall-flux development gate,separate heating/cooling branch signs and source envelopes before any TP offset formula,source-bounded signed thermal branches are ready for train-only smoke or fail closed,do not use realized wallHeatFlux as runtime input
+2,bulk-to-TP train-only smoke only after formula release,evaluate TP residual movement using predeclared reset/Graetz/source signs,TP correction has same-QOI UQ and no protected-row tuning,do not tune on validation/holdout/external rows
+3,TW-after-TP residual ownership,"attribute remaining TW error to wall resistance, axial mixing, source placement, or wall/core exchange",TW residual-owner table references D3/D4/S13/M2 evidence,do not absorb remaining residual into internal Nu

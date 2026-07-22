@@ -1,0 +1,5 @@
+evidence_item,observed_signal,existing_metric_reused_read_only,new_scoring_performed,runtime_use_allowed,admission_allowed,claim_boundary
+D2_vs_M3_transfer,"D2 strongly improves TP transfer and partly improves TW, consistent with a bulk-to-probe/QOI projection issue plus remaining wall physics.",True,False,False,False,promising_diagnostic_not_admitted
+D2_vs_D1_global_offset,"Separating TP from TW barely changes total transfer RMSE versus one global offset, but it sharpens the physical queue: TP projection first, TW wall response second.",True,False,False,False,diagnostic_ordering_signal
+D2_vs_D3_D4_context,"D3/D4 improve beyond D2, so D2 alone is not the final physics; it is the first projection layer before wall/segment source placement.",True,False,False,False,supports_layered_analysis_plan
+D2_summary_decision,thermal_development_path_promising_diagnostic_only_no_correction_release,True,False,False,False,"D2 is evidence for study priority, not a released correction"

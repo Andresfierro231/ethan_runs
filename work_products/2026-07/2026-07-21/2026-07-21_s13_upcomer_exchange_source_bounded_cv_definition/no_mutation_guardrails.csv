@@ -1,0 +1,5 @@
+guard_id,status,policy
+native_outputs,pass,no native CFD/OpenFOAM outputs mutated
+scheduler,pass,no scheduler action
+surface_sampler_harvest,pass,"no surface extraction, sampler, or harvest launched"
+admission,pass,no S11/S12/S13/S15/S6 trigger or admission

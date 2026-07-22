@@ -1,0 +1,10 @@
+{
+  "task": "AGENT-341",
+  "generated_at": "2026-07-14T13:40:57-05:00",
+  "status": "complete_plan_existing_rows_diagnostic_only",
+  "plan_rows": 27,
+  "mesh_repeat_rows": 9,
+  "existing_proxy_rows": 12,
+  "admission_grade_rows": 0,
+  "compute_node_required": true
+}

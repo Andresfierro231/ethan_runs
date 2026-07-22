@@ -1,0 +1,51 @@
+{
+  "task": "TODO-BOARD-NO-CODEX-LATEX-WRITING-POLICY-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator/Writer/Reviewer/Cleaner",
+  "objective": "Ensure live ethan_runs board work does not assign Codex to actual LaTeX prose writing, while preserving evidence-packet support for an outside thesis writer.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-BOARD-NO-CODEX-LATEX-WRITING-POLICY-2026-07-22.md",
+    ".agent/journal/2026-07-22/board-no-codex-latex-writing-policy.md",
+    "imports/2026-07-22_board_no_codex_latex_writing_policy.json",
+    "operational_notes/07-26/22/2026-07-22_BOARD_NO_CODEX_LATEX_WRITING_POLICY.md",
+    "reports/thesis_dossier/README.md",
+    "operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/README.md"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    ".agent/BOARD.md",
+    "reports/thesis_dossier/README.md",
+    "operational_notes/07-26/22/2026-07-22_THESIS_TOMORROW_CONTEXT_PROGRESS_HANDOFF.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_external_writer_evidence_packet_contract/README.md",
+    "historical completed TODO-THESIS-LATEX rows in .agent/BOARD.md"
+  ],
+  "policy_decision": "Codex-owned rows in ethan_runs may produce thesis-facing evidence packets, analyses, assumptions, caveats, manifests, captions, and writer instructions. They must not be scoped as actual LaTeX prose writing or full thesis chapter composition.",
+  "renamed_open_row": {
+    "from": "TODO-THESIS-LATEX-COMPACT-EVIDENCE-APPENDIX-PLAN-2026-07-22",
+    "to": "TODO-THESIS-COMPACT-EVIDENCE-APPENDIX-PACKET-PLAN-2026-07-22",
+    "reason": "The row should produce evidence-packet/import instructions for an outside writer, not imply direct LaTeX writing."
+  },
+  "historical_completed_latex_rows_preserved": true,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_postprocessing_sampler_harvest_uq_launched": false,
+  "external_fluid_edit": false,
+  "external_papers_edit": false,
+  "latex_edit": false,
+  "thesis_chapter_body_edit": false,
+  "validation_holdout_external_scored": false,
+  "fitting_or_model_selection_performed": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "s11_s12_s13_s15_s6_trigger": false,
+  "blocker_register_mutated": false,
+  "generated_index_refreshed": false,
+  "runtime_leakage_relaxed": false,
+  "provenance_notes": "Documentation-only board hygiene. Historical completed direct-LaTeX rows remain on the board as provenance, but the live policy and open rows now direct Codex to evidence-packet support only."
+}

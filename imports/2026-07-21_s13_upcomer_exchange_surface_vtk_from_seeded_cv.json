@@ -1,0 +1,104 @@
+{
+  "task": "TODO-S13-UPCOMER-EXCHANGE-SURFACE-VTK-FROM-SEEDED-CV-2026-07-21",
+  "date": "2026-07-21",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Implementer / Tester / Writer",
+  "status": "complete_geometry_surface_vtk_released",
+  "objective": "Generate task-owned geometry-only VTK surfaces for seeded exchange-interface and trusted-wall faces from released seeded face IDs.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-21_TODO-S13-UPCOMER-EXCHANGE-SURFACE-VTK-FROM-SEEDED-CV-2026-07-21.md",
+    ".agent/journal/2026-07-21/s13-upcomer-exchange-surface-vtk-from-seeded-cv.md",
+    "imports/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv.json",
+    "tools/extract/build_s13_upcomer_exchange_surface_vtk_from_seeded_cv.py",
+    "tools/extract/test_s13_upcomer_exchange_surface_vtk_from_seeded_cv.py",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/README.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/released_surface_vtk_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/surface_vtk_validation.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/downstream_gate.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/source_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/vtk/salt_2_exchange_interface.vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/vtk/salt_2_trusted_wall.vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/vtk/salt_3_exchange_interface.vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/vtk/salt_3_trusted_wall.vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/vtk/salt_4_exchange_interface.vtk",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/vtk/salt_4_trusted_wall.vtk"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/summary.json",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/seeded_exchange_interface_faces.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_source_bounded_cv_rerun_from_geometry_seed/seeded_trusted_wall_faces.csv",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt2_jin/case_stage/viscosity_screening_salt_test_2_jin_coarse_mesh_continuation/constant/polyMesh",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt3_jin/case_stage/viscosity_screening_salt_test_3_jin_coarse_mesh_continuation/constant/polyMesh",
+    "jadyn_runs/modern_runs/2026-06-18_convergence_and_jin_envelope_wave/runs/salt4_jin/case_stage/viscosity_screening_salt_test_4_jin_coarse_mesh_continuation/constant/polyMesh"
+  ],
+  "summary": {
+    "case_count": 3,
+    "surface_vtk_rows": 6,
+    "validated_surface_vtk_rows": 6,
+    "geometry_only_surface_vtk_released": true,
+    "sampled_fields_present": false,
+    "Q_wall_W_released": false,
+    "sampler_ready_rows": 0,
+    "sampler_or_harvest_allowed": false,
+    "same_qoi_uq_ready": false,
+    "exchange_cell_coefficient_admission": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launch": false,
+  "surface_vtk_extraction_launched": false,
+  "sampler_or_harvest_launch": false,
+  "external_fluid_edit": false,
+  "fluid_source_edit": false,
+  "external_repo_edit": false,
+  "admission_or_score_changed": false,
+  "blocker_register_changed": false,
+  "generated_index_refreshed": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action_taken": false,
+    "solver_or_postprocessing_or_sampler_launched": false,
+    "surface_vtk_extraction_launched": false,
+    "fluid_or_external_repo_edited": false,
+    "fitting_or_model_selection": false,
+    "exchange_cell_coefficient_admission": false,
+    "s12_or_s11_or_s13_or_s15_or_s6_trigger": false,
+    "residual_absorbed_into_internal_Nu": false
+  },
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/extract/build_s13_upcomer_exchange_surface_vtk_from_seeded_cv.py tools/extract/test_s13_upcomer_exchange_surface_vtk_from_seeded_cv.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.extract.test_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+      "result": "passed: Ran 5 tests OK"
+    },
+    {
+      "command": "python3.11 tools/extract/build_s13_upcomer_exchange_surface_vtk_from_seeded_cv.py",
+      "result": "passed; validated_surface_vtk_rows=6/6"
+    },
+    {
+      "command": "python3.11 tools/agent/runtime_input_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/agent/source_property_gate.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv --strict",
+      "result": "passed; candidate_rows=0 findings=0"
+    },
+    {
+      "command": "python3.11 tools/agent/split_policy_lint.py work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv",
+      "result": "passed"
+    }
+  ],
+  "guardrails": [
+    "Geometry-only VTK release does not permit sampler refresh or production harvest.",
+    "No sampled fields or Q_wall_W were produced.",
+    "No exchange-cell coefficient, S11/S12/S13/S15/S6 trigger, fitting, or admission is allowed from this package."
+  ]
+}

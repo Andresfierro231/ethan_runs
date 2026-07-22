@@ -1,0 +1,11 @@
+resource,mutated,status
+native_CFD_OpenFOAM_outputs,false,read_only_only
+registry_admission_state,false,not_changed
+scheduler_state,false,no_submit_cancel_or_monitor_action
+Fluid_external_repositories,false,not_changed
+thesis_LaTeX_or_manuscript_body,false,not_changed
+source_property_release_state,false,no_release
+Qwall_or_candidate_admission,false,no_admission
+blocker_register,false,not_changed
+generated_docs_index,false,not_refreshed_until_closeout_validation
+internal_Nu_residual_absorption,false,explicitly_forbidden

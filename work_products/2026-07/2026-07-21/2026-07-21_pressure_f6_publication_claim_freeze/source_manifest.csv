@@ -1,0 +1,17 @@
+source_id,source_path,access,purpose
+f6_ab_gate_refresh,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/f6_gate_refresh.csv,read_only,pressure/F6 publication claim freeze
+f6_ab_summary,work_products/2026-07/2026-07-21/2026-07-21_f6_stage_b_harvest_qa_and_gate_refresh/summary.json,read_only,pressure/F6 publication claim freeze
+f6_static_admission_impact,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/admission_impact.csv,read_only,pressure/F6 publication claim freeze
+f6_static_decision,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/pressure_basis_decision.csv,read_only,pressure/F6 publication claim freeze
+f6_static_stage_b_pairs,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/stage_b_pair_reconstructed_static_deltas.csv,read_only,pressure/F6 publication claim freeze
+f6_static_summary,work_products/2026-07/2026-07-21/2026-07-21_f6_static_p_basis_reconstruction_audit/summary.json,read_only,pressure/F6 publication claim freeze
+pressure_corner_canonical,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/canonical_pressure_corner_result.csv,read_only,pressure/F6 publication claim freeze
+pressure_corner_summary,work_products/2026-07/2026-07-21/2026-07-21_pressure_corner_publication_freeze/summary.json,read_only,pressure/F6 publication claim freeze
+s10_claim_boundary,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/claim_boundary_ledger.csv,read_only,pressure/F6 publication claim freeze
+s10_gate_matrix,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/s10_gate_matrix.csv,read_only,pressure/F6 publication claim freeze
+s10_summary,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s10_pressure_f6_low_recirc_anchor_uq/summary.json,read_only,pressure/F6 publication claim freeze
+s10_waterfall,work_products/2026-07/2026-07-21/2026-07-21_thesis_figtable_s10_pressure_f6_gate_waterfall/pressure_f6_gate_waterfall.csv,read_only,pressure/F6 publication claim freeze
+s14_branch_decision,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_branch_decision_table.csv,read_only,pressure/F6 publication claim freeze
+s14_claim_ledger,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/f6_publication_claim_ledger.csv,read_only,pressure/F6 publication claim freeze
+s14_s11_decision,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/s11_decision.csv,read_only,pressure/F6 publication claim freeze
+s14_summary,work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,read_only,pressure/F6 publication claim freeze

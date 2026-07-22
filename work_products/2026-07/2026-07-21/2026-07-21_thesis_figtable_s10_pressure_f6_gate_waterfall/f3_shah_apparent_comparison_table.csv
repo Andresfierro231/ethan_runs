@@ -1,0 +1,2 @@
+comparison_id,comparison,status,reason,comparison_value,admission_use,source_paths
+S10-F3-001,F6_to_F3_component_or_cluster_K,not_evaluated_no_ordinary_candidate,F6 has zero ordinary-flow candidates and zero same-QOI admissible mesh/UQ rows,,not_admitted,work_products/2026-07/2026-07-21/2026-07-21_f6_same_qoi_uq_and_admission_gate/f3_comparison_status.csv

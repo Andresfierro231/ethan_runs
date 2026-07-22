@@ -1,0 +1,6 @@
+gate,status,pass,evidence,consequence
+sampler_terminal_execution,fail_closed,False,exact_label_qoi_rows=0; terminal_window_reduction_rows=0,no terminal medium/fine QOI rows exist for production harvest
+duplicate_job_disposition,complete_no_cancellation_needed,True,jobs_completed=2; jobs_running_now=0; new_submission=False,scheduler state is settled; output package remains unusable for terminal evidence
+same_qoi_temporal_uq,diagnostic_pass,True,same_qoi_temporal_uq_complete_qois=4,temporal support is preserved but cannot replace mesh/GCI evidence
+same_label_mesh_gci,blocked_no_post_sampler_rows,False,same_label_mesh_gci_ready=False,no GCI computation or mesh-family acceptance may be claimed
+production_harvest,do_not_run,False,"terminal QOI, exact-label medium/fine, mesh/GCI, and source/property release gates are not complete","no production harvest, coefficient fit, or final score release"

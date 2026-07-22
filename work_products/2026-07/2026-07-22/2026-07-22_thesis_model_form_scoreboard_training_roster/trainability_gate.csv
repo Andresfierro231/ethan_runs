@@ -1,0 +1,6 @@
+gate,status,evidence,next_required_action
+scoreboard_coverage,pass_for_roster,12 model-form rows in additive training roster; master scoreboard left unmutated,later scoring agent can consume model_form_training_roster.csv
+train_on_salt1_4_nominal,allowed_after_active_execution_close_for_diagnostic_training,canonical split table marks Salt1-4 nominal as train_nominal,do not read protected validation/holdout/external targets during coefficient discovery
+validation_holdout_scoring,locked,can_score_validation_now rows=0; no frozen candidate exists,freeze exactly one runtime-legal candidate before protected scoring
+runtime_source_property_release,fail_closed,source_property_exact_fields_release_candidate_fail_closed_no_release,recover strict source-property exact fields or keep thermal models diagnostic
+diagnostic_training_now,blocked_or_defer_to_active_setup_uq,roster can_train_now rows=0; active setup-UQ execution owns current train-only run,do not duplicate active train-only Fluid execution

@@ -1,0 +1,4 @@
+check_id,status,evidence,required_action
+validation_split,blocked,no declared predictive validation-split artifact found,declare training and held-out rows before fitting
+runtime_forbidden_inputs,pass,no forbidden runtime fields admitted,keep imposed cooler duty and wallHeatFlux out of predictive-HX runtime inputs
+fit_execution,not_run_protocol_blocked,no declared predictive validation-split artifact found,run a bounded one-parameter fit only after split and admission gates pass

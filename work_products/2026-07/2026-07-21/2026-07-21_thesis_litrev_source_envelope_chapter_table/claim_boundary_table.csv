@@ -1,0 +1,6 @@
+boundary_id,rule
+LITREV-001,Method sources may justify extraction discipline but do not supply TAMU numerical coefficients by themselves.
+LITREV-002,Screening references may bound magnitude or risk but cannot admit component K/F6/Nu closures without geometry and source-envelope gates.
+LITREV-003,Architecture analogues may define required variables and validation gates but cannot provide universal exchange coefficients.
+LITREV-004,Heat-loss framework sources must keep internal convection wall conduction external convection radiation jacket and residual terms separate.
+LITREV-005,No literature row relaxes runtime leakage rules or permits validation/holdout temperatures as runtime inputs.

@@ -1,0 +1,102 @@
+[
+  {
+    "heat_path": "heater_source_to_fluid",
+    "lane_scope": "Declared heater/electrical source that may enter the fluid or wall before losses are applied",
+    "runtime_inputs_allowed": ["setup heater power", "declared heater/source distribution", "optional admitted train-only heater efficiency", "geometry", "property lane"],
+    "forbidden_runtime_inputs": ["realized CFD heater wallHeatFlux", "validation temperatures", "CFD mdot", "hidden internal Nu correction"],
+    "outputs": ["Q_heater_to_fluid", "heater efficiency or source split", "source residual if present"],
+    "current_status": "admitted setup-only scalar boundary lane for current predictive work",
+    "current_blocker": "source distribution and same-time solid/storage audit remain incomplete for stronger physical claims",
+    "guardrail": "Do not compensate heater-transfer mismatch by changing internal Nu."
+  },
+  {
+    "heat_path": "internal_Nu",
+    "lane_scope": "Salt-side internal convection and thermal boundary-layer closure only",
+    "runtime_inputs_allowed": ["geometry", "Re", "Pr", "Gz", "hydraulic diameter", "admitted wall-bulk drive", "source-envelope bounded Nu form", "solved local fluid state"],
+    "forbidden_runtime_inputs": ["external heat residual", "passive wall loss", "radiation residual", "heater or cooler duty error", "storage", "recirculation/mixing residual", "CFD wallHeatFlux as runtime input"],
+    "outputs": ["h_internal", "Nu_internal", "R_internal_convection", "thermal entrance/development flag"],
+    "current_status": "not fit-admitted; baseline/reference or diagnostic only",
+    "current_blocker": "0 fit-admissible internal-Nu rows; sign/heat-balance recirculation and same-QOI mesh/GCI gates remain open",
+    "guardrail": "Heat residual may not be hidden in internal Nu."
+  },
+  {
+    "heat_path": "wall_conduction",
+    "lane_scope": "Pipe wall or solid wall conduction between inner and outer surfaces",
+    "runtime_inputs_allowed": ["wall material", "inner/outer radii or thickness", "k_wall", "area/perimeter", "solved wall or coupled wall state"],
+    "forbidden_runtime_inputs": ["fit multiplier that absorbs external convection/radiation/storage", "realized CFD wallHeatFlux as runtime input", "validation wall temperatures"],
+    "outputs": ["R_wall_conduction", "inner/outer wall temperature relation", "wall heat-rate contribution"],
+    "current_status": "partial and diagnostic for most segments",
+    "current_blocker": "segment-local wall material ownership and coupled validation still incomplete; wall-circuit candidates failed validation/holdout gates",
+    "guardrail": "Keep wall conduction as a resistance lane distinct from internal convection."
+  },
+  {
+    "heat_path": "contact_layer_resistance",
+    "lane_scope": "Contact gaps local layers coatings and imperfect thermal interfaces where documented",
+    "runtime_inputs_allowed": ["declared contact/layer resistance", "layer thickness", "k_layer", "area", "setup patch/layer metadata"],
+    "forbidden_runtime_inputs": ["back-solving a contact resistance from held-out heat residual", "collapsing contact resistance into Nu", "validation temperatures"],
+    "outputs": ["R_contact_or_layer", "layer temperature drop if modeled"],
+    "current_status": "partial and mostly diagnostic",
+    "current_blocker": "contact/local layer ownership is not yet isolated by segment or independently validated",
+    "guardrail": "Use contact/layer terms only when the layer is a setup field or admitted trained parameter."
+  },
+  {
+    "heat_path": "insulation_quartz",
+    "lane_scope": "Insulated steel regions and bare-quartz test-section exterior path",
+    "runtime_inputs_allowed": ["insulation thickness", "k_insulation", "quartz thickness", "k_quartz", "exposed area", "drive-temperature selector", "Ta/Tsur/emissivity/h if external path is included"],
+    "forbidden_runtime_inputs": ["realized test-section wallHeatFlux", "validation/holdout temperatures", "legacy 37 W source as passive loss", "residual fitted into Nu"],
+    "outputs": ["R_insulation", "R_quartz_external", "Q_test_section_net", "heat-loss sign for quartz/test-section"],
+    "current_status": "quartz/test-section material exists but passive-loss candidate is not admitted",
+    "current_blocker": "predictive-wall-test-section-submodels remains open; setup-only physical candidates fail validation/holdout heat gates or lack accepted coupled score",
+    "guardrail": "Test section stays explicit and may be net source or sink; do not delete it or bury it in Nu."
+  },
+  {
+    "heat_path": "external_convection",
+    "lane_scope": "Ambient external convection on passive walls heater exterior junctions and test-section exterior",
+    "runtime_inputs_allowed": ["h_ext", "Ta", "exposed area", "drive-temperature selector", "setup segment/patch role", "coverage factor"],
+    "forbidden_runtime_inputs": ["CFD realized wallHeatFlux as predictive runtime input", "validation temperatures", "hidden residual multiplier", "separate radiation added during wallHeatFlux replay"],
+    "outputs": ["Q_external_convection", "R_external_convection", "segment external-loss contribution"],
+    "current_status": "setup dictionary lane exists but many segment models remain validation-only",
+    "current_blocker": "external BC dictionary first-class bridge remains TODO; segment-local wall resistance and coupled score are incomplete",
+    "guardrail": "External convection is a boundary lane, not an internal Nu correction."
+  },
+  {
+    "heat_path": "radiation",
+    "lane_scope": "Surface-to-surroundings radiative exchange on rcExternalTemperature or predictive external boundaries",
+    "runtime_inputs_allowed": ["predictive emissivity", "Tsur", "area", "surface temperature from solve", "view-factor assumption if admitted"],
+    "forbidden_runtime_inputs": ["adding radiation on top of CFD realized wallHeatFlux", "claiming radiation absent", "fitting radiation residual into Nu", "using qr when no qr field exists"],
+    "outputs": ["Q_radiation or h_rad when modeled separately in predictive mode", "radiation_on/off sensitivity label"],
+    "current_status": "CFD radiation embedded in wallHeatFlux; separate 1D radiation capability still open",
+    "current_blocker": "TODO-1D-RADIATION-CAPABILITY open; current CFD has no exported separate qr heat term",
+    "guardrail": "Do not double count radiation; do not absorb radiative mismatch into Nu."
+  },
+  {
+    "heat_path": "jacket_cooler_removal",
+    "lane_scope": "Active cooler HX or jacket removal distinct from passive ambient losses",
+    "runtime_inputs_allowed": ["setup cooler/HX geometry", "coolant/air inlet conditions", "UA or effectiveness-NTU candidate admitted from allowed training rows", "property lane"],
+    "forbidden_runtime_inputs": ["imposed CFD cooler duty as predictive runtime input", "realized cooler wallHeatFlux for prediction", "internal Nu correction to hide cooler error", "validation temperatures"],
+    "outputs": ["Q_cooler_removed", "cooler UA/effectiveness", "cooler residual if scored"],
+    "current_status": "admitted setup-only cooler/HX candidate for current predictive boundary submodel",
+    "current_blocker": "broader distributed/coupled review continues but current scalar setup-only lane passes its gate",
+    "guardrail": "Cooler/jacket removal is an active sink lane, not a passive wall loss and not Nu."
+  },
+  {
+    "heat_path": "storage",
+    "lane_scope": "Wall solid and fluid transient heat capacity or non-steady accumulation",
+    "runtime_inputs_allowed": ["steady model: none", "future transient rho_cp_volume", "wall temperature time derivative", "time-window metadata"],
+    "forbidden_runtime_inputs": ["using storage to tune steady fit without transient evidence", "erasing storage residual via Nu", "unlogged time-window drift"],
+    "outputs": ["Q_storage or dE_wall_dt only in future transient/ROM lane", "steady storage flag"],
+    "current_status": "not in present steady fluid+walls runtime model",
+    "current_blocker": "steady thesis scope excludes wall storage; same-time solid-energy audit and transient model not admitted",
+    "guardrail": "Storage remains an explicit residual owner or future lane, never an internal Nu fit."
+  },
+  {
+    "heat_path": "residual",
+    "lane_scope": "Named remaining imbalance after all declared source sink wall boundary storage and recirculation lanes are evaluated",
+    "runtime_inputs_allowed": ["none as a closure", "residual tolerance and ledger ownership labels only"],
+    "forbidden_runtime_inputs": ["runtime residual as a fitted heat path", "residual hidden in internal Nu", "residual used as training target without owner", "validation heat targets at runtime"],
+    "outputs": ["Q_residual", "residual_fraction", "owner_candidate", "blocker label", "next extraction requirement"],
+    "current_status": "diagnostic/scoring only",
+    "current_blocker": "large segment residuals remain; junctions unbracketed; upcomer recirculation and test-section passive loss not admitted",
+    "guardrail": "Residual is an output and blocker pointer, not a physical closure."
+  }
+]

@@ -1,0 +1,8 @@
+gate,passed,release_allowed,reason
+bulk_to_TP_formula_released,False,False,MF07 stayed diagnostic-only.
+signed_source_property_release,False,False,MF08 has 0 smoke-ready variants and 4/4 need source basis.
+recirculating_upcomer_exchange_release,False,False,MF09 has 0 smoke-ready variants and no same-label mesh/GCI.
+TP_to_TW_wall_shape_release,False,False,D3 is diagnostic and should wait until TP projection is defended.
+segment_source_placement_release,False,False,D4 has 0 source-bounded candidate-ready rows.
+train_only_smoke_authorized,False,False,MF10 did not run new scores because upstream gates failed.
+candidate_reviewable_now,False,False,All owner layers are not reviewable or forbidden.
