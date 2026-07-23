@@ -82,6 +82,12 @@ anchor row must pass RAF `< 0.01`, RMF `< 0.01`, endpoint-field readiness,
 same-QOI same-formula same-sign time/mesh UQ, source/property/split labels, and
 then a separate admission row.
 
+## Validation
+
+`python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/check_pressure_low_recirc_anchor_packet.py` passes with:
+
+`PASS pressure low-recirc anchor packet: 36 rows reviewed, 6 future anchors, 0 reviewable current anchors`.
+
 ## Guardrails
 
 No scheduler launch, scheduler query/action, solver, postProcess, sampler,

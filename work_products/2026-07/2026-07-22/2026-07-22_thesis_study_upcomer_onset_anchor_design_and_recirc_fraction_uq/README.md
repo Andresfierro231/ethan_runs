@@ -75,6 +75,14 @@ The following remain blocked and must not be silently inferred:
 - `no_mutation_guardrails.csv`
 - `summary.json`
 - `figures/svg/upcomer_onset_evidence_gate.svg`
+- `check_upcomer_onset_packet.py`
+
+## Validation
+
+`python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/check_upcomer_onset_packet.py`
+passes with:
+
+`PASS upcomer onset packet: 3 cases, 9 metric definitions, 6 UQ/mesh rows, 5 closure-disable rows`.
 
 ## Next Gate
 

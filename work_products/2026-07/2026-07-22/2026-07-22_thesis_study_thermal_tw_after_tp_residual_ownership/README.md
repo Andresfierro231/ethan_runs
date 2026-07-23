@@ -86,6 +86,12 @@ and same-QOI production gate that can prove one candidate owner independently:
 - decide whether Qwall/exchange/wall-core QOIs can be production harvested;
 - only then evaluate S11/S12/S15/S6 consequences.
 
+## Validation
+
+`python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/check_thermal_tw_after_tp_packet.py` passes with:
+
+`PASS thermal TW-after-TP packet: 6 residual rows, 9 owner rows, D2_TP_RMSE=4.38159 K, D2_TW_RMSE=12.5131 K`.
+
 ## Guardrails
 
 No native CFD/OpenFOAM output, registry/admission state, scheduler state,

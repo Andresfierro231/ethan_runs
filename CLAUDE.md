@@ -28,6 +28,21 @@ the authoritative latest handoff.
    the definitive current-phase task backlog (T1–T13 with context, method,
    acceptance, deps).
 
+### Token/output discipline
+
+Before reading large coordination or evidence files, prefer the bounded agent
+helpers documented in `tools/agent/README.md`:
+
+- `python3.11 tools/agent/board_summary.py --task-filter <topic> --active-only --limit 20`
+- `python3.11 tools/agent/status_scope.py <paths...>`
+- `python3.11 tools/agent/safe_rg.py "pattern" <paths...> --glob "*.md" --max-lines 120`
+- `python3.11 tools/agent/preview_csv.py <file.csv> --cols col1,col2 --rows 20`
+- `python3.11 tools/agent/manifest_check.py imports/<manifest>.json --check-paths`
+
+Do not dump `.agent/BOARD.md`, full repo-wide search output, full dirty status,
+or complete evidence CSV/JSON files when one of these scoped helpers answers the
+question.
+
 For any session doing 1D-model or CFD closure work, also read:
 - `operational_notes/06-26/30/2026-06-30_mesh_geometry_vs_probe_csv_provenance.md`
   (CRITICAL: probe CSV ≠ mesh geometry; lower↔right labels swapped)

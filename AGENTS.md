@@ -35,6 +35,75 @@ Any agent launched from the repo root or any subfolder must do this first:
 
 Use `.agent/scripts/agent_context.sh` when starting from a subdirectory.
 
+## Token-efficient coordination protocol
+
+The live board is intentionally short. Historical completed/archive rows belong
+in `.agent/BOARD_ARCHIVE.md`, not inline in `.agent/BOARD.md`.
+
+- Startup reads may use `.agent/BOARD.md` directly, but coordinators should use
+  `python3.11 tools/agent/board_summary.py --limit 30` for routine board scans.
+- When a task ID or keyword is known, use
+  `python3.11 tools/agent/board_slice.py --task-id <TASK>` or
+  `python3.11 tools/agent/board_slice.py --active --open --query <text>`
+  instead of printing the live board table.
+- After selecting a task, use
+  `python3.11 tools/agent/task_context.py --task-id <TASK>` to list editable
+  paths, read-only lanes, local instructions, conflicts, and closeout artifact
+  presence without rereading long board rows.
+- Use `python3.11 tools/agent/board_summary.py --include-archive --limit 30`
+  only when historical task rows are needed.
+- Use `python3.11 tools/docs/state_brief.py --active --blockers` for current
+  generated state instead of reading all of `.agent/STATE.md`.
+- Use `python3.11 tools/agent/live_blockers.py --limit 12` for open blocker
+  scans instead of printing all blocker notes.
+- Use `python3.11 tools/agent/scope_conflict_audit.py --limit 20` when
+  broad optional scopes such as `tools/analyze/` appear to block narrow rows;
+  narrow stale broad claims before adding duplicate workarounds.
+- After moving completed rows out of live sections, run
+  `python3.11 tools/agent/board_archive.py --apply`, then
+  `python3.11 tools/agent/board_archive.py --check`.
+- Do not append new `## Archived ...` sections to `.agent/BOARD.md`; put them
+  through `board_archive.py` so the live board stays bounded.
+- For worktree cleanup or staging, prefer
+  `python3.11 tools/git/clean_status_summary.py`,
+  `python3.11 tools/git/staged_audit.py`, and
+  `python3.11 tools/git/diff_check_filtered.py` before raw large
+  `git status`, `git diff --cached`, or path-listing commands.
+- For unstaged or staged diff review, use
+  `python3.11 tools/git/diff_summary.py --mode unstaged -- <owned paths>` or
+  `--mode staged` before raw `git diff`; only print hunks for the exact file
+  that needs review.
+- For verbose guardrail/lint scripts, use
+  `python3.11 tools/agent/guardrail_summary.py -- <command>` first, then rerun
+  the raw command only when the summary fails or detailed claim-boundary review
+  is required.
+- For large commits, use quiet git commands when possible and summarize with
+  `git show --stat --oneline --summary -1`.
+- For searches, use `python3.11 tools/agent/safe_rg.py "pattern" <paths>
+  --glob "*.md"` before any broad `rg`; broad `.` searches require an explicit
+  opt-in and still have a line cap.
+- For dirty-worktree checks, use `python3.11 tools/agent/status_scope.py
+  <paths...>` unless the task is explicitly repo-wide cleanup.
+- For evidence tables, use `python3.11 tools/agent/preview_csv.py <file.csv>
+  --cols ... --rows N` instead of dumping full CSV files.
+- For work-product/package inspection, use
+  `python3.11 tools/agent/package_brief.py <path> --rows 1` before recursive
+  `find`, broad `head`, or whole-file reads.
+- For JSON manifest validation, use `python3.11 tools/agent/manifest_check.py
+  <manifest.json> --check-paths` instead of pretty-printing full manifests on
+  success.
+- For closeout scaffolding, use
+  `python3.11 tools/agent/closeout_stub.py --task-id <TASK>` in dry-run mode,
+  then `--write` only when the board row owns the closeout artifact paths.
+- After publishing a durable report, use `python3.11 tools/agent/link_report.py
+  <report.md> --write` or manually add equivalent links so the report is
+  discoverable from standard start-here/topic-map files.
+- If a command may print more than about 200 lines, bound it with an agent
+  helper, path/glob filter, or explicit line limit before running it.
+- If a live coordination file changes repeatedly during a turn, re-check the
+  exact row with `board_slice.py --task-id <TASK>` before patching and report a
+  concurrency caveat in closeout.
+
 ## Research avenue continuity protocol
 
 Claude and Codex agents must use this same protocol when opening a clearly new

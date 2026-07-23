@@ -11,5 +11,16 @@ work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_sampled_field_q
 work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis/s13_exchange_trend_table.csv,S13 limited sampled-field evidence synthesis,true,false,false
 work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence/summary.json,S14 pressure/F6 branch-use scorecard,true,false,false
 work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard/summary.json,two-tap section-effective pressure scorecard,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_scoreboard.csv,D1-D4 tried diagnostic model-form scores,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv,D1-D4 tried diagnostic sensor-level signed errors,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate/summary.json,D2 TP/TW QOI projection gate,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate/summary.json,D3 wall-shape axial-mixing gate,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate/summary.json,D4 segment source-placement evidence gate,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard/summary.json,M0 setup-only baseline shell,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery/summary.json,PASSIVE-H2 role/subspan mapping recovery,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate/summary.json,PASSIVE-H2 final-form phase gate,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_mapping_split_uq_preflight/summary.json,PASSIVE-H2 source-mapping split UQ preflight,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_hx_coupled_fluid_evaluation_scheduler/summary.json,HX coupled Fluid diagnostic evaluation,true,false,false
+work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/summary.json,CAND001 pressure terminal endpoint readiness,true,false,false
 reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,thesis claim ledger,true,false,false
 reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md,model-form endpoint strategy,true,false,false
