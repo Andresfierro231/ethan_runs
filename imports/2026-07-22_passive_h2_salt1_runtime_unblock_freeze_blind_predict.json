@@ -1,0 +1,91 @@
+{
+  "task": "TODO-PASSIVE-H2-SALT1-RUNTIME-UNBLOCK-FREEZE-BLIND-PREDICT-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-SALT1-RUNTIME-UNBLOCK-FREEZE-BLIND-PREDICT-2026-07-22",
+  "generated_at": "2026-07-22T16:12:37-05:00",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_runtime_unblock_freeze_blind_predict",
+    "tools/analyze/build_passive_h2_salt1_runtime_unblock_freeze_blind_predict.py",
+    "tools/analyze/test_passive_h2_salt1_runtime_unblock_freeze_blind_predict.py",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-SALT1-RUNTIME-UNBLOCK-FREEZE-BLIND-PREDICT-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-salt1-runtime-unblock-freeze-blind-predict.md",
+    "imports/2026-07-22_passive_h2_salt1_runtime_unblock_freeze_blind_predict.json"
+  ],
+  "read_only_context": [
+    {
+      "source_label": "salt1_augmented_runtime_dictionary",
+      "source_path": "work_products/2026-07/2026-07-21/2026-07-21_salt1_train_external_bc_recovery_freeze_gate/augmented_fluid_external_boundary_runtime_dictionary.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "salt1_recovery_rows",
+      "source_path": "work_products/2026-07/2026-07-21/2026-07-21_salt1_train_external_bc_recovery_freeze_gate/salt1_external_bc_recovery_rows.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "prior_salt14_freeze_attempt",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt14_diagnostic_freeze_and_blind_predictions/summary.json",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "prior_train_test_gate",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt14_pm5_valsalt2_diagnostic_traintest/summary.json",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "prior_three_case_runtime_gate",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/three_case_runtime_evidence.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_role_filtered_gate",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_candidate_gate_rerun_passive_role_filtered_policy/summary.json",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "fluid_runner",
+      "source_path": "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/passive_h2_radiation_runtime_smoke.py",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "pm5_targets",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_holdout_metrics.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "val_salt2_targets",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": true,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "fluid_or_external_source_edit": false,
+    "source_property_or_qwall_release": false,
+    "admitted_final_candidate_freeze": false,
+    "final_score_claim": false
+  },
+  "decision": "passive_h2_salt1_runtime_smoke_complete_freeze_blind_predictions_blocked_by_release_gates"
+}

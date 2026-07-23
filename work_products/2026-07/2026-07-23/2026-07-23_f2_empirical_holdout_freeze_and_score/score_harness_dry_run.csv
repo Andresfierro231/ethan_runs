@@ -1,0 +1,2 @@
+dataset,role,n_rows,raw_rmse_K,corrected_rmse_K,raw_mae_K,corrected_mae_K,affine_identity_check_passed
+Salt_2_nominal_validation_table,harness_correctness_dry_run_NOT_a_holdout_score,16,98.08628192137664,16.462654989070014,96.82145931139144,8.40909003763106,True

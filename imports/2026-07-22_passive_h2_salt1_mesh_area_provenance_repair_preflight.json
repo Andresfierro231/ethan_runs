@@ -1,0 +1,51 @@
+{
+  "task": "TODO-PASSIVE-H2-SALT1-MESH-AREA-PROVENANCE-REPAIR-PREFLIGHT-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-SALT1-MESH-AREA-PROVENANCE-REPAIR-PREFLIGHT-2026-07-22",
+  "generated_at": "2026-07-22T17:08:00-05:00",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-SALT1-MESH-AREA-PROVENANCE-REPAIR-PREFLIGHT-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-salt1-mesh-area-provenance-repair-preflight.md",
+    "imports/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight.json",
+    "operational_notes/07-26/22/2026-07-22_PASSIVE_H2_SALT1_MESH_AREA_PROVENANCE_REPAIR_PREFLIGHT.md",
+    "tools/analyze/build_passive_h2_salt1_mesh_area_provenance_repair_preflight.py",
+    "tools/analyze/test_passive_h2_salt1_mesh_area_provenance_repair_preflight.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/patch_mesh_area_evidence.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/family_area_reconciliation.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/mesh_area_backed_operator_candidate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/release_preflight_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/constant/polyMesh/boundary",
+    "jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/constant/polyMesh/faces",
+    "jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/constant/polyMesh/points",
+    "jadyn_runs/modern_runs/2026-07-08_salt1_nominal_continuation_candidate/runs/salt1_jin_nominal_continuation_corrected/case_stage/viscosity_screening_salt_test_1_jin_coarse_mesh_continuation/0/T",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_junction_setup_row_recovery_background/salt1_five_family_operator_rows_for_fluid.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_junction_setup_row_recovery_background/summary.json"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "thesis_current_or_latex_edit": false,
+  "source_property_release": false,
+  "qwall_or_numeric_q_loss_release": false,
+  "coefficient_admission": false,
+  "candidate_freeze": false,
+  "protected_or_final_scoring": false,
+  "validation_holdout_external_scoring": false,
+  "fitting_tuning_model_selection": false,
+  "runtime_wallHeatFlux_used": false,
+  "runtime_leakage_relaxation": false,
+  "residual_absorbed_into_internal_nu": false,
+  "provenance_flags": {
+    "generated_from_script": "tools/analyze/build_passive_h2_salt1_mesh_area_provenance_repair_preflight.py",
+    "native_output_mutation": false,
+    "linked_cases_used_as_provenance": false
+  }
+}

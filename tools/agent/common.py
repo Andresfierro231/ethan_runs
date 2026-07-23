@@ -14,6 +14,7 @@ from typing import Iterable
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 BOARD = REPO_ROOT / ".agent" / "BOARD.md"
+BOARD_ARCHIVE = REPO_ROOT / ".agent" / "BOARD_ARCHIVE.md"
 STATE = REPO_ROOT / ".agent" / "STATE.md"
 BLOCKERS = REPO_ROOT / ".agent" / "BLOCKERS.md"
 CATALOG_JSON = REPO_ROOT / ".agent" / "catalog.json"
@@ -30,6 +31,7 @@ class BoardRow:
     scope: str
     goal: str
     line_no: int
+    source_path: Path | None = None
 
     @property
     def status(self) -> str:
@@ -98,7 +100,7 @@ def iter_files(paths: Iterable[Path], suffixes: tuple[str, ...] = (".md", ".csv"
                     yield p
 
 
-def parse_board(path: Path = BOARD) -> list[BoardRow]:
+def _parse_board_file(path: Path) -> list[BoardRow]:
     rows: list[BoardRow] = []
     if not path.exists():
         return rows
@@ -112,7 +114,20 @@ def parse_board(path: Path = BOARD) -> list[BoardRow]:
             continue
         if not TASK_RE.fullmatch(cells[0]):
             continue
-        rows.append(BoardRow(cells[0], cells[1], cells[2], cells[3], "|".join(cells[4:]).strip(), line_no))
+        rows.append(BoardRow(cells[0], cells[1], cells[2], cells[3], "|".join(cells[4:]).strip(), line_no, path))
+    return rows
+
+
+def parse_board(path: Path = BOARD, *, include_archive: bool = False) -> list[BoardRow]:
+    """Parse board rows.
+
+    By default this reads only the live board. Use ``include_archive=True`` for
+    closeout/history checks that must still find rows moved out of the live
+    coordination file.
+    """
+    rows = _parse_board_file(path)
+    if include_archive and path == BOARD:
+        rows.extend(_parse_board_file(BOARD_ARCHIVE))
     return rows
 
 

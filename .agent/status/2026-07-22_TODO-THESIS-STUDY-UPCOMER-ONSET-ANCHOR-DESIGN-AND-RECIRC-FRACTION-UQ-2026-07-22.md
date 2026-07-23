@@ -40,8 +40,9 @@ coefficient admission, and ordinary upcomer closures remain closed.
 
 ## Validation
 
-CSV and JSON parse validation was run after file creation. The SVG is a static
-handoff figure.
+PASS: `python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/check_upcomer_onset_packet.py`
+
+Output: `PASS upcomer onset packet: 3 cases, 9 metric definitions, 6 UQ/mesh rows, 5 closure-disable rows`. The SVG is a static handoff figure.
 
 ## Guardrails
 

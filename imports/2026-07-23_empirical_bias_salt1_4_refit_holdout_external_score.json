@@ -1,0 +1,95 @@
+{
+  "manifest_id": "2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score",
+  "owner": "claude",
+  "task": "TODO-EMPIRICAL-BIAS-SALT1-4-REFIT-HOLDOUT-EXTERNAL-SCORE-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "Refit the F0-F5 reduced-DOF empirical bias-correction family on ALL FOUR Salt1-4 nominal train cases (instead of Salt1/Salt2 only), then re-score against the real Salt2 +/-5Q holdout and val_salt2 external-test targets, and directly compare old-fit vs new-fit performance.",
+  "scope": "Empirical discrepancy/digital-twin-ROM diagnostic only, not a physical closure. Explicit SECOND scoring exposure of salt2_lo5q/salt2_hi5q/val_salt2 within this session (first was an ad hoc, in-conversation-only pass, never written to the repo, cited here for comparison). Does not modify, supersede, or duplicate the separate, concurrent TODO-F2-EMPIRICAL-HOLDOUT-FREEZE-AND-SCORE-HARNESS-2026-07-23 effort (original Salt1/2-fit F2 single-use freeze), which was left untouched.",
+  "new_tools": [
+    "tools/analyze/build_empirical_bias_salt1_4_refit_holdout_external_score.py",
+    "tools/analyze/test_empirical_bias_salt1_4_refit_holdout_external_score.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/README.md",
+    ".agent/status/2026-07-23_TODO-EMPIRICAL-BIAS-SALT1-4-REFIT-HOLDOUT-EXTERNAL-SCORE-2026-07-23.md",
+    ".agent/journal/2026-07-23/empirical-bias-salt1-4-refit-holdout-external-score.md",
+    "operational_notes/07-26/23/2026-07-23_EMPIRICAL_BIAS_SALT1_4_REFIT_HOLDOUT_EXTERNAL_SCORE.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/summary.json",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/refit_coefficients.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/train_fit_quality.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/holdout_external_score_old_vs_new.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/best_model_recommendation.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/source_manifest.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/fit_and_transfer_sensor_rows.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_admission_table.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv",
+    "jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv",
+    "jadyn_runs/salt2/2026-06-01_continuation_candidate/case_stage/val_salt_test_2_coarse_mesh_laminar_continuation/case_config.yaml",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/scripts/build_tswfc2_bounded_nominal_scorecard.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py",
+    "tools/analyze/build_fluid_reduced_dof_bias_transfer_screen.py"
+  ],
+  "validation": [
+    {
+      "command": "python3 -m py_compile tools/analyze/build_empirical_bias_salt1_4_refit_holdout_external_score.py tools/analyze/test_empirical_bias_salt1_4_refit_holdout_external_score.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3 tools/analyze/build_empirical_bias_salt1_4_refit_holdout_external_score.py",
+      "result": "passed; wrote full work_products package; runs solve_case() (1D only, no OpenFOAM) for salt2_lo5q/salt2_hi5q/val_salt2"
+    },
+    {
+      "command": "python3 tools/analyze/test_empirical_bias_salt1_4_refit_holdout_external_score.py",
+      "result": "Empirical bias Salt1-4 refit holdout/external score checks passed."
+    }
+  ],
+  "summary": {
+    "n_train_rows": 64,
+    "fit_cases": "Salt1,Salt2,Salt3,Salt4",
+    "best_train_family": "F2_global_affine",
+    "best_holdout_family": "F2_global_affine",
+    "best_external_family": "F2_global_affine",
+    "best_robust_family": "F2_global_affine",
+    "overall_recommendation": "F2_global_affine",
+    "f2_refit_multiplier": 0.5746889644933884,
+    "f2_refit_offset_K": 138.28222646893295,
+    "salt2_lo5q_new_fit_F2_MAE_K": 3.5017398572680727,
+    "salt2_hi5q_new_fit_F2_MAE_K": 3.1694407461151193,
+    "val_salt2_new_fit_F2_MAE_K": 5.868112800214832
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": true,
+    "external_fluid_repo_edited": false,
+    "physical_closure_claim": false,
+    "physical_candidate_freeze": false,
+    "legitimate_single_use_protected_score": false,
+    "second_exposure_of_holdout_and_external_rows_this_session": true,
+    "concurrent_f2_freeze_effort_touched": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false,
+    "deletion_staging_commit_push": false
+  },
+  "open_questions_for_user": [
+    "Should the Salt1-4-refit F2_global_affine coefficients (a=0.5747, b=138.28) be adopted as the thesis-reported empirical ROM, given this is now the second in-session exposure of the holdout/external rows and not a clean single-use score?",
+    "Should a genuinely fresh, single-use exposure of salt2_lo5q/salt2_hi5q/val_salt2 be planned for whichever coefficient set is ultimately reported in the thesis, rather than citing either of this session's two exposures as final?"
+  ]
+}

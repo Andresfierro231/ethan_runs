@@ -1,0 +1,33 @@
+{
+  "manifest_id": "2026-07-23_cfd_basis_valsalt2_external_score_and_exp_basis_relabel",
+  "owner": "claude",
+  "task": "TODO-CFD-BASIS-VALSALT2-EXTERNAL-SCORE-AND-EXP-BASIS-RELABEL-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "Score the frozen global all-4 CFD affine on val_salt2 CFD reference_k (method-consistent extraction) as an external test; relabel experiment-basis packages off-scope for the CFD-only main body.",
+  "scope": "Global-only CFD-basis empirical ROM; val_salt2 external test; experiment-basis relabel.",
+  "new_tools": ["tools/analyze/build_salt2_pm5_holdout_inputs_and_f2_score.py (extended)", "tools/analyze/test_salt2_pm5_holdout_inputs_and_f2_score.py"],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_salt2_pm5_holdout_inputs_and_f2_score/scripts/generate_1d_valsalt2_prediction.py",
+    ".agent/status/2026-07-23_TODO-CFD-BASIS-VALSALT2-EXTERNAL-SCORE-AND-EXP-BASIS-RELABEL-2026-07-23.md",
+    ".agent/journal/2026-07-23/cfd-basis-valsalt2-external-score-and-exp-basis-relabel.md"
+  ],
+  "relabeled_off_scope": [
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/README.md",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/README.md"
+  ],
+  "key_results": {
+    "model_form": "global all-4 nominal CFD affine",
+    "a": 0.7669693427694646,
+    "b": 29.890929644616563,
+    "holdout_salt2_pm5_mae_K": 7.04,
+    "holdout_reduction_percent": 92.6,
+    "external_val_salt2_mae_K": 7.62,
+    "external_val_salt2_reduction_percent": 91.6,
+    "external_val_salt2_n": 15,
+    "vintage_artifact_note": "prior 2026-06-23 val extraction gave 29.3 K; method-consistent 2026-07-23 gives 7.62 K"
+  },
+  "open_questions_for_user": [
+    "Package this CFD-basis result into the thesis evidence-packet and transfer to the papers repo now?",
+    "val_salt2 is a partial external (same operating point as Salt2 nominal); acceptable, or acquire an operating-point-novel external CFD case?"
+  ]
+}

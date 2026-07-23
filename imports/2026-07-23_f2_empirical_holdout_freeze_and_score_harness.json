@@ -1,0 +1,36 @@
+{
+  "manifest_id": "2026-07-23_f2_empirical_holdout_freeze_and_score_harness",
+  "owner": "claude",
+  "task": "TODO-F2-EMPIRICAL-HOLDOUT-FREEZE-AND-SCORE-HARNESS-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "Freeze F2 (empirical affine bias ROM) into an immutable pre-registration manifest and build + dry-run-validate the score-once harness; scope the exact remaining inputs for a legal protected-holdout score. Scores no protected row.",
+  "scope": "Track A F2_global_affine (T_corrected = a*T_1D + b); primary holdout Salt2 +/-5Q, external val_salt2; empirical discrepancy diagnostic only, no physical-closure claim.",
+  "new_tools": [
+    "tools/analyze/build_f2_empirical_holdout_freeze_and_score.py",
+    "tools/analyze/test_f2_empirical_holdout_freeze_and_score.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_f2_empirical_holdout_freeze_and_score/README.md",
+    "operational_notes/07-26/23/2026-07-23_F2_EMPIRICAL_HOLDOUT_FREEZE_AND_SCORE_HARNESS.md",
+    ".agent/status/2026-07-23_TODO-F2-EMPIRICAL-HOLDOUT-FREEZE-AND-SCORE-HARNESS-2026-07-23.md",
+    ".agent/journal/2026-07-23/f2-empirical-holdout-freeze-and-score-harness.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-23/2026-07-23_f2_empirical_holdout_freeze_and_score/"
+  ],
+  "key_results": {
+    "f2_a_multiplier": 0.3729829182408737,
+    "f2_b_offset_K": 246.55192842685844,
+    "content_sha256": "3f4cc72f8503a2b228b0360def8145d48d3bc5fc44c8f7c42afd7e9677e1c52b",
+    "harness_dry_run_corrected_rmse_K_salt2_nominal": 16.462654989070014,
+    "protected_rows_scored": 0,
+    "decision": "f2_frozen_and_score_harness_ready_holdout_score_blocked_pending_target_extraction",
+    "sole_blocker_primary_holdout": "TP/TW CFD sensor target extraction for Salt2 +/-5Q (existing runs) + 1D +/-5Q predictions",
+    "physical_closure_claim_allowed": false,
+    "final_protected_score_values": 0
+  },
+  "open_questions_for_user": [
+    "Authorize the Salt2 +/-5Q TP/TW CFD sensor target extraction (postprocessing on existing corrected runs, no new solve) to unlock the first real F2 holdout number?",
+    "Should val_salt2 external scoring be pursued (needs a missing sensor-level external artifact) or deferred?"
+  ]
+}

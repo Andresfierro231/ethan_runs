@@ -1,0 +1,47 @@
+{
+  "candidate_frozen": false,
+  "date": "2026-07-23",
+  "final_predictive_admission": false,
+  "friction_root_cause": {
+    "closure_form_used": "F1",
+    "closure_forms_available_but_unwired": [
+      "F3_hagenbach",
+      "F4_leg_class",
+      "F5_ri_corrected"
+    ],
+    "f_times_Re_all_cases": [
+      64.0,
+      64.0,
+      64.0,
+      64.0
+    ]
+  },
+  "legitimate_single_use_protected_score": false,
+  "mdot": {
+    "affine_a": 0.5688041864582456,
+    "affine_b": 0.0042901970515859065,
+    "affine_mean_rel_err_pct": 2.20214383858112,
+    "corrected_mae_kg_s": 0.0005292970724547924,
+    "corrected_mean_rel_err_pct": 3.1658220088627402,
+    "evidentiary_tier": "train_only_not_validated",
+    "multiplier_a": 0.7504257967710826,
+    "raw_mean_rel_err_pct": 32.57455114068148
+  },
+  "mdot_correction_holdout_validated": false,
+  "native_solver_run": false,
+  "no_new_fitting_beyond_declared_mdot_multiplier": true,
+  "no_new_solver_runs": true,
+  "physical_closure_claim_allowed": false,
+  "registry_or_admission_mutated": false,
+  "status": "complete",
+  "task_id": "TODO-COMBINED-BEST-CURRENT-MODEL-TEMP-MDOT-CORRECTION-2026-07-23",
+  "temp": {
+    "evidentiary_tier": "holdout_external_validated",
+    "multiplier_a": 0.5746889644933884,
+    "offset_bias_K": 138.28222646893295,
+    "salt2_hi5q_mae_K": 3.1694407461151193,
+    "salt2_lo5q_mae_K": 3.5017398572680727,
+    "train_mae_K": 9.291089110109809,
+    "val_salt2_mae_K": 5.868112800214832
+  }
+}

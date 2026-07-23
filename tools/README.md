@@ -26,6 +26,7 @@ package-specific and should not be run as generic maintenance commands.
 | Path | Use |
 | --- | --- |
 | `tools/agent/` | Board preflight, closeout validation, lints, dashboard, background-compute helper. |
+| `tools/git/` | Bounded git status, staged-file audit, and filtered diff-check helpers for large worktrees. |
 | `tools/analyze/` | Analysis and work-product builders, usually paired with tests and package READMEs. |
 | `tools/extract/` | CFD sampling, OpenFOAM/VTK parsing, rendering, and staged extraction helpers. |
 | `tools/intake/` | Case registration and import manifest helpers. |
@@ -52,6 +53,8 @@ Prefer `--help`, targeted tests, and read-only lints before running a builder:
 
 ```bash
 python3.11 tools/agent/board_dashboard.py --limit 20
+python3.11 tools/agent/board_summary.py --limit 30
+python3.11 tools/git/clean_status_summary.py --untracked all --limit 30
 python3.11 tools/agent/preflight_task.py --task-id <TASK_ID>
 python3.11 -m unittest tools.docs.test_repo_tool_inventory
 ```

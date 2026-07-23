@@ -1,0 +1,4 @@
+insulation_multiplier,major_loss_multiplier,mdot_err_pct,TP_K,TW_K,note
+0.08,0.6,-0.67,4.43,19.5,best combo found -- near-zero mdot error AND near-minimum TP
+0.09,0.6,0.64,4.85,19.61,
+0.07,0.6,-2.04,5.35,19.73,

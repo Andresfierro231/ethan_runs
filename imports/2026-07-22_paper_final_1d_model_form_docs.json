@@ -1,0 +1,41 @@
+{
+  "task": "TODO-PAPER-FINAL-1D-MODEL-FORM-DOCS",
+  "task_id": "TODO-PAPER-FINAL-1D-MODEL-FORM-DOCS",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PAPER-FINAL-1D-MODEL-FORM-DOCS.md",
+    ".agent/journal/2026-07-22/paper-final-1d-model-form-docs.md",
+    "imports/2026-07-22_paper_final_1d_model_form_docs.json",
+    "reports/thesis_dossier/2026-07-22_final_1d_model_form_for_paper.md"
+  ],
+  "read_only_context": [
+    "operational_notes/07-26/16/2026-07-16_fluid_walls_steady_1d_model_form.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/17_ch5_csem_fluid_walls_model.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/05_junction_aware_ledgers.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/13_two_tap_recirc_section_effective_pressure_model.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_draft_model_form_admission_thorough_analysis/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_outer_insulation_radiation_runtime_implementation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_model_form_bakeoff/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_mesh_uncertainty/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_upcomer_onset/summary.json",
+    ".agent/BLOCKERS.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_sampler_launch": false,
+  "external_fluid_edit": false,
+  "external_papers_edit": false,
+  "thesis_current_or_latex_edit": false,
+  "validation_holdout_external_scoring": false,
+  "protected_scoring": false,
+  "fitting_or_model_selection": false,
+  "source_property_release": false,
+  "qwall_release": false,
+  "coefficient_admission": false,
+  "candidate_freeze": false,
+  "final_score_claim": false,
+  "runtime_leakage_relaxation": false,
+  "no_scorecard_outputs": true
+}

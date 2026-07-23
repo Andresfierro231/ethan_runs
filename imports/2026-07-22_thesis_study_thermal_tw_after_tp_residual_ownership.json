@@ -1,8 +1,4 @@
 {
-  "task": "TODO-THESIS-STUDY-THERMAL-TW-AFTER-TP-RESIDUAL-OWNERSHIP-2026-07-22",
-  "task_id": "TODO-THESIS-STUDY-THERMAL-TW-AFTER-TP-RESIDUAL-OWNERSHIP-2026-07-22",
-  "date": "2026-07-22",
-  "role": "Thermal-modeling / Sensor-map / Forward-pred / Writer / Reviewer / Tester",
   "changed_files": [
     ".agent/BOARD.md",
     ".agent/status/2026-07-22_TODO-THESIS-STUDY-THERMAL-TW-AFTER-TP-RESIDUAL-OWNERSHIP-2026-07-22.md",
@@ -18,8 +14,16 @@
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/source_manifest.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/no_mutation_guardrails.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/summary.json",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/figures/svg/tw_after_tp_owner_gate_waterfall.svg"
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/figures/svg/tw_after_tp_owner_gate_waterfall.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/check_thermal_tw_after_tp_packet.py"
   ],
+  "date": "2026-07-22",
+  "external_fluid_edit": false,
+  "heat_residual_hidden_in_internal_nu": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "protected_score_or_final_score": false,
+  "qwall_or_coefficient_release": false,
   "read_only_context": [
     "AGENTS.md",
     ".agent/BOARD.md",
@@ -39,13 +43,14 @@
     "work_products/2026-07/2026-07-22/2026-07-22_s12_thermal_residual_candidate_disposition_and_thesis_panels/candidate_disposition_table.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_n4_sensor_qoi_projection_uncertainty_table/sensor_runtime_input_audit.csv"
   ],
-  "native_solver_outputs_mutated": false,
   "registry_mutated": false,
   "registry_or_admission_mutated": false,
+  "role": "Thermal-modeling / Sensor-map / Forward-pred / Writer / Reviewer / Tester",
   "scheduler_action": false,
-  "external_fluid_edit": false,
   "source_property_release_mutated": false,
-  "qwall_or_coefficient_release": false,
-  "protected_score_or_final_score": false,
-  "heat_residual_hidden_in_internal_nu": false
+  "task": "TODO-THESIS-STUDY-THERMAL-TW-AFTER-TP-RESIDUAL-OWNERSHIP-2026-07-22",
+  "task_id": "TODO-THESIS-STUDY-THERMAL-TW-AFTER-TP-RESIDUAL-OWNERSHIP-2026-07-22",
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/check_thermal_tw_after_tp_packet.py"
+  ]
 }

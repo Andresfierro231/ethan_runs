@@ -1,0 +1,51 @@
+{
+  "task": "TODO-PRESSURE-CAND001-TERMINAL-ENDPOINT-READINESS-GATE-2026-07-22",
+  "task_id": "TODO-PRESSURE-CAND001-TERMINAL-ENDPOINT-READINESS-GATE-2026-07-22",
+  "generated_at": "2026-07-22T14:29:27-05:00",
+  "objective": "Read-only terminal endpoint readiness gate for pressure CAND001 job 3308712.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PRESSURE-CAND001-TERMINAL-ENDPOINT-READINESS-GATE-2026-07-22.md",
+    ".agent/journal/2026-07-22/pressure-cand001-terminal-endpoint-readiness-gate.md",
+    "imports/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate.json",
+    "tools/analyze/build_pressure_cand001_terminal_endpoint_readiness_gate.py",
+    "tools/analyze/test_pressure_cand001_terminal_endpoint_readiness_gate.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/scheduler_terminal_snapshot.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/endpoint_readiness_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/ordinary_flow_uq_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/next_action_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_f6_cand001_active_retry_terminal_recovery/current_scheduler_snapshot.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/endpoint_field_requirement_table.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_low_recirc_nonrecirc_anchor_inventory/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_pressure_future_low_reverse_anchor_design_refine/cand001_dependency_state.csv",
+    "Slurm sacct/squeue read-only snapshots for job 3308712"
+  ],
+  "results": {
+    "decision": "cand001_endpoint_readiness_blocked_job_running_no_sampler_no_admission",
+    "job_state": "RUNNING",
+    "endpoint_ready_fields": 0,
+    "sampler_allowed_now": false,
+    "admission_allowed_now": false
+  },
+  "mutation_flags": {
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_mutation": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "fluid_or_external_edit": false,
+    "thesis_current_file_edit": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true
+}

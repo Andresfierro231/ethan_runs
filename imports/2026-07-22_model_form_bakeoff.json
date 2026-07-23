@@ -1,0 +1,26 @@
+{
+  "task": "TODO-MODEL-FORM-BAKEOFF",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-MODEL-FORM-BAKEOFF.md",
+    ".agent/journal/2026-07-22/model-form-bakeoff.md",
+    "imports/2026-07-22_model_form_bakeoff.json",
+    "tools/analyze/build_model_form_bakeoff_from_observations.py",
+    "tools/analyze/test_model_form_bakeoff_from_observations.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_model_form_bakeoff/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_f5_ri_corrected/mdot_comparison_f5.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_pressure_term_ledger/pressure_term_ledger.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "protected_scoring_executed": false,
+  "admission_or_release": false,
+  "residual_absorbed_into_internal_nu": false
+}

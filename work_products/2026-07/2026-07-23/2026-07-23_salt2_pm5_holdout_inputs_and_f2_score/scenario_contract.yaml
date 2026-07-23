@@ -1,0 +1,48 @@
+scenario_groups:
+- name: tswfc2_bounded_nominal_scorecard
+  type: explicit_list
+  scenarios:
+  - name: tswfc2_smoke_salt2_four_node_v1
+    ambient_temperature_K: 300.0
+    insulation_thickness_in: 1.0
+    radiation_on: false
+    model_mode: predictive_airside_hx
+    air_counterflow: true
+    max_outer_iterations: 80
+    mdot_search_lower_kg_s: 1.0e-05
+    mdot_search_upper_kg_s: 0.2
+    test_section_wall_fluid_mode: distributed_wall_fluid_nodes_v1
+    test_section_wall_fluid_contact_multiplier: 1.0
+    test_section_wall_fluid_node_rows:
+    - node_id: TSWFC2_N01_pre_test_bracket
+      parent_segment: left_lower_vertical
+      start_fraction: 0.8
+      end_fraction: 1.0
+      role: pre_test_section_bracket
+      hA_W_K: 0.04
+      Ta_K: 300.0
+      drive_selector: pipe_outer_wall_temperature
+    - node_id: TSWFC2_N02_test_section_lower
+      parent_segment: test_section
+      start_fraction: 0.0
+      end_fraction: 0.5
+      role: test_section_lower
+      hA_W_K: 0.05
+      Ta_K: 300.0
+      drive_selector: pipe_outer_wall_temperature
+    - node_id: TSWFC2_N03_test_section_upper
+      parent_segment: test_section
+      start_fraction: 0.5
+      end_fraction: 1.0
+      role: test_section_upper
+      hA_W_K: 0.05
+      Ta_K: 300.0
+      drive_selector: pipe_outer_wall_temperature
+    - node_id: TSWFC2_N04_post_test_bracket
+      parent_segment: left_upper_vertical
+      start_fraction: 0.0
+      end_fraction: 0.2
+      role: post_test_section_bracket
+      hA_W_K: 0.04
+      Ta_K: 300.0
+      drive_selector: pipe_outer_wall_temperature

@@ -5,17 +5,20 @@ from tools.analyze.build_upcomer_onset_regime_table import build
 
 def test_upcomer_onset_outputs() -> None:
     summary = build()
-    out = Path("work_products/2026-07-08_upcomer_onset")
+    out = Path("work_products/2026-07/2026-07-22/2026-07-22_upcomer_onset")
     assert summary["rows"] == 3
     assert (out / "upcomer_onset_regime_table.csv").exists()
     assert (out / "figures/upcomer_onset_regime.svg").exists()
+    assert (out / "current_uq_context.csv").exists()
+    assert (out / "source_manifest.csv").exists()
     assert (out / "README.md").exists()
 
 
 def test_upcomer_onset_keeps_work_in_progress_boundaries() -> None:
     summary = build()
-    assert summary["mesh_uncertainty_status"] == "work_in_progress_not_claimed"
-    assert summary["corrected_salt_perturbation_status"] == "converged_rows_closure_fit_admissible"
-    table = Path("work_products/2026-07-08_upcomer_onset/upcomer_onset_regime_table.csv").read_text()
+    assert summary["mesh_uncertainty_status"] == "current_gate_open_elsewhere_no_formal_gci_here"
+    assert summary["ordinary_pipe_admission_rows"] == 0
+    assert summary["exchange_coefficient_admission_rows"] == 0
+    table = Path("work_products/2026-07/2026-07-22/2026-07-22_upcomer_onset/upcomer_onset_regime_table.csv").read_text()
     assert "recirculation_cell_observed" in table
     assert "exclude_from_pipe_friction_fit" in table

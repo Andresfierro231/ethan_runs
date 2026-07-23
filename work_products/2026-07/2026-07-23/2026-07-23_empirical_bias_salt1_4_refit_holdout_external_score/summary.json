@@ -1,0 +1,24 @@
+{
+  "best_external_family": "F2_global_affine",
+  "best_holdout_family": "F2_global_affine",
+  "best_robust_family": "F2_global_affine",
+  "best_train_family": "F2_global_affine",
+  "candidate_frozen": false,
+  "date": "2026-07-23",
+  "final_predictive_admission": false,
+  "fit_cases": "Salt1,Salt2,Salt3,Salt4",
+  "legitimate_single_use_protected_score": false,
+  "n_train_rows": 64,
+  "native_solver_run": false,
+  "overall_recommendation": "F2_global_affine",
+  "physical_closure_claim_allowed": false,
+  "raw_prediction_mdot_kg_s": {
+    "salt2_hi5q": 0.023134380617149737,
+    "salt2_lo5q": 0.02121846342270209,
+    "val_salt2": 0.019578568816785463
+  },
+  "registry_or_admission_mutated": false,
+  "second_exposure_of_holdout_and_external_rows_this_session": true,
+  "status": "complete",
+  "task_id": "TODO-EMPIRICAL-BIAS-SALT1-4-REFIT-HOLDOUT-EXTERNAL-SCORE-2026-07-23"
+}

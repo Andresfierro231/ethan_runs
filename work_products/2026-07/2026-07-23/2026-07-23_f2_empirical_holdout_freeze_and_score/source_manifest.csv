@@ -1,0 +1,3 @@
+role,path,exists
+frozen_coefficients,work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv,True
+nominal_validation_table_salt2,work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_2/validation_table.csv,True

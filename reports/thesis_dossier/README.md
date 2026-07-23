@@ -73,6 +73,14 @@ Latest external-writer evidence packet contract:
      writer or a separate manuscript workflow, not this board.
 
 0.3. `work_products/2026-07/2026-07-22/2026-07-22_cfd_extraction_methodology_thesis_study/README.md`
+
+0.4. `operational_notes/07-26/22/2026-07-22_THESIS_LATEX_MODEL_FORM_FIGURE_PACKAGE_TRANSFER.md`
+   - Start-here note for the CSEM LaTeX evidence copy of the model-form figure
+     package.
+   - Use before inserting or regenerating model-form ladder, scorecard
+     waterfall, TP/TW elevation, signed-error, or passive-H2 diagnostic figures.
+     Future regeneration should first refresh the master scoreboard under the
+     board dependency row.
    - Current CFD extraction methodology packet for Chapter 3/4 support.
    - Open this before describing what CFD data are extracted or how they are
      reduced. It includes the data dictionary, reduction-method table,
@@ -282,6 +290,7 @@ unless a later dated note reopens them.
 | LitRev-to-CSEM incorporation bridge | `reports/thesis_dossier/Chapters_and_sections/current/25_litrev_csem_thesis_incorporation.md` | Chapter-level bridge for importing LitRev source envelopes, pressure-corner rules, CFD postprocessing contracts, model-form hierarchy, heat-loss separation, and future-work triggers into the external CSEM dissertation. |
 | Predictive model studies roadmap | `reports/thesis_dossier/Chapters_and_sections/current/26_predictive_model_studies_roadmap.md` | Study sequence for strengthening final predictive-model claims while separating train/support, validation, holdout, and external-test evidence. |
 | CFD run/QoI split chart | `work_products/2026-07/2026-07-22/2026-07-22_thesis_cfd_run_qoi_split_chart/README.md` | Thesis-facing CSV chart of CFD runs versus `mdot`, TP, and TW targets; groups `val_salt2` inside `holdout_test` with `external_test` subtype and preserves no-fit/no-runtime-input guardrails. |
+| CSEM LaTeX model-form figure package | `../papers/UTexas_Research/csem-Masters_dissertation/evidence/model_form_figure_package/README.md` | Copied current model-form figure package, scripts, and master-scoreboard snapshot for later thesis figure insertion/regeneration; use the scoreboard dependency row before refreshing plots. |
 | Thesis research studies board dispatch | `work_products/2026-07/2026-07-21/2026-07-21_thesis_research_studies_board_dispatch/README.md` | Board-backed S0-S6 study portfolio, dependency order, and figure/table wishlist for continuing thesis writing without duplicating active S0-S3 work or overclaiming final predictive results. |
 | Thesis next studies board dispatch | `work_products/2026-07/2026-07-21/2026-07-21_thesis_next_studies_board_dispatch/README.md` | Board-backed S7-S11 and negative-results continuation plan for sensor mapping, wall/test-section candidates, upcomer onset/exchange UQ, pressure/F6 anchor UQ, and candidate-specific release refresh. |
 | Thesis study execution documentation package | `work_products/2026-07/2026-07-21/2026-07-21_thesis_study_execution_documentation_package/README.md` | Publication-grade workflow, required artifacts, templates, claim/admission rules, and validation checklist for running S7-S11 rigorously. |

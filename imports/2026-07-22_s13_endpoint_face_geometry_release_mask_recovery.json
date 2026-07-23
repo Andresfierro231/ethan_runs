@@ -1,0 +1,38 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/endpoint_face_geometry_recovery_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/candidate_face_id_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/release_mask_schema_gap.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/regeneration_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/summary.json",
+    "tools/analyze/build_s13_endpoint_face_geometry_release_mask_recovery.py",
+    "tools/analyze/test_s13_endpoint_face_geometry_release_mask_recovery.py",
+    ".agent/status/2026-07-22_TODO-S13-ENDPOINT-FACE-GEOMETRY-RELEASE-MASK-RECOVERY-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-endpoint-face-geometry-release-mask-recovery.md",
+    "imports/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery.json"
+  ],
+  "created_at_utc": "2026-07-22T20:19:59.212524+00:00",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "provenance_flags": {
+    "candidate_freeze": false,
+    "endpoint_proxy_substitution": false,
+    "final_score_claim": false,
+    "qwall_release": false,
+    "residual_value_release": false
+  },
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_geometry_enrichment_for_release_masks/endpoint_regeneration_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/endpoint_mask_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/classified_cap_face_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "task": "TODO-S13-ENDPOINT-FACE-GEOMETRY-RELEASE-MASK-RECOVERY-2026-07-22"
+}

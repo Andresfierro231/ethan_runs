@@ -16,6 +16,7 @@ Updated: `2026-06-09`
 - `*/AGENTS.override.md`
 - `JOURNAL.md`
 - `.agent/BOARD.md`
+- `.agent/BOARD_ARCHIVE.md`
 - `.agent/FILE_OWNERSHIP.md`
 - `.agent/ROLES.md`
 - `.agent/DECISIONS.md`
@@ -30,6 +31,7 @@ Updated: `2026-06-09`
 | Path pattern | Default owner | Notes |
 | --- | --- | --- |
 | `.agent/**` | Coordinator | Shared coordination state. Other roles may add status, journal, handoff, cleanup, or lock entries only for their assigned task. |
+| `.agent/BOARD_ARCHIVE.md` | Coordinator | Historical board rows. Do not edit manually except for emergency conflict repair; use `tools/agent/board_archive.py`. |
 | `*/AGENTS.override.md` | Coordinator or assigned Implementer | Local instruction files must stay short and reflect real subtree workflow, not generic restatements. |
 | `journals/**` | Writer | Historical curated research log. Do not rewrite existing entries casually. |
 | `operational_notes/**` | Writer or Coordinator | Use for dated planning and checkpoints. Preserve contradictory or incomplete lines of investigation. |

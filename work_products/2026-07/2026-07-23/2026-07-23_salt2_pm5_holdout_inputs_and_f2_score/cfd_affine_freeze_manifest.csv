@@ -1,0 +1,2 @@
+freeze_id,form,target_reference,fit_cases,a_multiplier,b_offset_K,n_fit_pairs,model_class,physical_closure_claim_allowed,excluded_sensors
+CFD_AFFINE_ALL4_2026_07_23,"T_corrected = a * T_1D + b (global affine, 2 DOF)","CFD reference_k (TP=t_core_k, TW=t_wall_area_avg_k)",salt_1 + salt_2 + salt_3 + salt_4 nominal (all-four train),0.7669693427694646,29.890929644616563,60,empirical_discrepancy_ROM,False,"['TP2', 'TW10']"

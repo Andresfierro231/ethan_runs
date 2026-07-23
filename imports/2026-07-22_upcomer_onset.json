@@ -1,0 +1,25 @@
+{
+  "task": "TODO-UPCOMER-ONSET",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-UPCOMER-ONSET.md",
+    ".agent/journal/2026-07-22/upcomer-onset.md",
+    "imports/2026-07-22_upcomer_onset.json",
+    "tools/analyze/build_upcomer_onset_regime_table.py",
+    "tools/analyze/test_upcomer_onset_regime_table.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_upcomer_onset/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv",
+    "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/diagnostic_onset_evidence_table.csv"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "ordinary_pipe_admission_rows": 0,
+  "exchange_coefficient_admission_rows": 0,
+  "residual_absorbed_into_internal_nu": false
+}

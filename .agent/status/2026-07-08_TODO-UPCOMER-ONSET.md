@@ -15,6 +15,12 @@ AGENT-196 upcomer correlation output.
 - Added `tools/analyze/test_upcomer_onset_regime_table.py`.
 - Generated `work_products/2026-07-08_upcomer_onset/**`.
 
+## Changes Made
+
+Legacy starter artifacts were added under the July 8 row. The 2026-07-22
+continuation supersedes the active work state and leaves this file as historical
+provenance.
+
 ## Observed Facts
 
 - The package has `3` admitted Salt 2/3/4 mainline rows.
@@ -42,6 +48,14 @@ into a clean ordinary-pipe regime.
 - `python tools/analyze/build_upcomer_onset_regime_table.py`: passed.
 - `python -m pytest tools/analyze/test_upcomer_onset_regime_table.py`: passed,
   `2 passed`.
+
+## Guardrails
+
+Historical starter pass only. No native solver output, registry/admission state,
+scheduler state, Fluid/external repository, ordinary upcomer coefficient
+admission, exchange-cell coefficient admission, source/property release, final
+score, or residual absorption into internal Nu was authorized by this status
+file.
 
 ## Recommended Next Action
 

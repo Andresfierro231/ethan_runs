@@ -1,0 +1,46 @@
+{
+  "task": "TODO-PASSIVE-H2-CONTEXT-HANDOFF-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-CONTEXT-HANDOFF-2026-07-22",
+  "generated_at": "2026-07-22T17:05:00-05:00",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-CONTEXT-HANDOFF-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-context-handoff.md",
+    "imports/2026-07-22_passive_h2_context_handoff.json",
+    "operational_notes/07-26/22/2026-07-22_PASSIVE_H2_CONTEXT_HANDOFF.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_context_handoff/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_context_handoff/context_links.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/README.md"
+  ],
+  "changed_paths": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-CONTEXT-HANDOFF-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-context-handoff.md",
+    "imports/2026-07-22_passive_h2_context_handoff.json",
+    "operational_notes/07-26/22/2026-07-22_PASSIVE_H2_CONTEXT_HANDOFF.md",
+    "operational_notes/maps/forward-predictive-model.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_context_handoff/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_context_handoff/context_links.csv",
+    ".agent/STATE.md",
+    ".agent/catalog.json",
+    ".agent/catalog.csv",
+    ".agent/BLOCKERS.md"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_junction_setup_row_recovery_background/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_junction_setup_row_recovery_background/fluid_smoke_outputs/salt_1/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_post_junction_source_property_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_r4_predeclared_source_envelope_uq_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/summary.json",
+    ".agent/BOARD.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "protected_scoring": false,
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "final_score_claim": false
+}

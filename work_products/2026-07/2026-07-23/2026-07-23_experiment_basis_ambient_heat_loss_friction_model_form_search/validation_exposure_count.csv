@@ -1,0 +1,5 @@
+case,exposure_number_this_session,cumulative_note
+salt2_lo5q,3rd-4th (depending on how counted),"empirical-only F1-based (this package's prior sibling), empirical-only Salt1-4-refit (prior sibling), physics-only F3_hagenbach+insulation (this package), physics+residual correction (this package)"
+salt2_hi5q,3rd-4th (depending on how counted),same four attempts as salt2_lo5q
+val_salt2,3rd-4th (depending on how counted),same four attempts as salt2_lo5q
+ALL_THREE,,"None of this constitutes a legitimate single-use protected-split score. This package is a further exposure on top of the two already documented in the prior packages (2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score, 2026-07-23_combined_best_current_model_temp_mdot_correction)."

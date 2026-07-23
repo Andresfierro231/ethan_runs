@@ -1,0 +1,12 @@
+insulation_multiplier,TP_K_min,TP_K_max,note
+1.0,96.5,97.0,baseline (nameplate insulation) across mlm 1.0-2.0
+0.5,63.0,63.0,
+0.2,25.6,26.8,
+0.15,15.6,16.6,
+0.12,9.7,10.8,
+0.1,6.0,8.4,best region
+0.08,4.37,4.76,BEST -- genuine local minimum
+0.06,6.9,7.3,getting worse again
+0.05,8.4,9.1,
+0.02,16.2,17.4,
+0.01,19.3,20.6,"worse than ins=0.1 -- confirms non-monotonic optimum, not 'more heat loss is always better'"

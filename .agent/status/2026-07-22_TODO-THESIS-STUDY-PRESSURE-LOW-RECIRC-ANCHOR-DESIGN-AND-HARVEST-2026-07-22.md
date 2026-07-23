@@ -40,7 +40,9 @@ multiplier, or F3/F6/Shah comparison admission.
 
 ## Validation
 
-CSV and JSON parse validation was run after file creation. The SVG is a static
+PASS: `python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/check_pressure_low_recirc_anchor_packet.py`
+
+Output: `PASS pressure low-recirc anchor packet: 36 rows reviewed, 6 future anchors, 0 reviewable current anchors`. The SVG is a static
 handoff figure and did not require compute or rendering.
 
 ## Guardrails

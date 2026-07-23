@@ -16,6 +16,12 @@ and separates mdot, pressure-distribution, and thermal-state mismatch scores.
 - Added `tools/analyze/test_model_form_bakeoff_from_observations.py`.
 - Generated `work_products/2026-07-08_model_form_bakeoff/**`.
 
+## Changes Made
+
+Legacy starter artifacts were added under the July 8 row. The 2026-07-22
+continuation supersedes the active work state and leaves this file as historical
+provenance.
+
 ## Observed Facts
 
 - Consumed `423` canonical observation rows.
@@ -46,6 +52,13 @@ axes are needed to prevent friction-only overinterpretation.
 - `python tools/analyze/build_model_form_bakeoff_from_observations.py`: passed.
 - `python -m pytest tools/analyze/test_model_form_bakeoff_from_observations.py`:
   passed, `2 passed`.
+
+## Guardrails
+
+Historical starter pass only. No native solver output, registry/admission state,
+scheduler state, Fluid/external repository, protected scoring, coefficient
+admission, source/property release, final score, or residual absorption into
+internal Nu was authorized by this status file.
 
 ## Recommended Next Action
 

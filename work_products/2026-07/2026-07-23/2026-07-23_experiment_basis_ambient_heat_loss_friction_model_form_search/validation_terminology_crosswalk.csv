@@ -1,0 +1,4 @@
+this_package_label,repo_split_policy_label,note
+validation (salt2_lo5q),blind_holdout_pm5q (Salt2 -5%Q),"genuine perturbation run, never used in any fit in this package"
+validation (salt2_hi5q),blind_holdout_pm5q (Salt2 +5%Q),"genuine perturbation run, never used in any fit in this package"
+validation (val_salt2),external_test,"independent external-test case, different property set/basis than Salt1-4 train"

@@ -1,0 +1,40 @@
+{
+  "manifest_id": "2026-07-22_passive_h2_strict_source_envelope_and_release_uq_conversion",
+  "owner": "claude",
+  "task": "TODO-PASSIVE-H2-STRICT-SOURCE-ENVELOPE-AND-RELEASE-UQ-CONVERSION-2026-07-22",
+  "generated_at": "2026-07-22",
+  "purpose": "Convert diagnostic PASSIVE-H2 R4 evidence into a strict source-envelope (8 train rows) and a fail-closed release-grade same-QOI UQ readiness isolating the sole freeze blocker.",
+  "scope": "PASSIVE-H2-R4-CAND001 (junction-excluded, four-family) across Salt1-4; strict source-envelope conversion + same-QOI UQ readiness; no release/freeze/score.",
+  "new_tools": [
+    "tools/analyze/build_passive_h2_strict_source_envelope_and_release_uq_conversion.py",
+    "tools/analyze/test_passive_h2_strict_source_envelope_and_release_uq_conversion.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_strict_source_envelope_and_release_uq_conversion/README.md",
+    "operational_notes/07-26/22/2026-07-22_PASSIVE_H2_STRICT_SOURCE_ENVELOPE_AND_RELEASE_UQ_CONVERSION.md",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-STRICT-SOURCE-ENVELOPE-AND-RELEASE-UQ-CONVERSION-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-strict-source-envelope-and-release-uq-conversion.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_strict_source_envelope_and_release_uq_conversion/"
+  ],
+  "key_results": {
+    "strict_source_envelope_pass_rows": 8,
+    "strict_train_release_eligible_rows": 8,
+    "same_qoi_release_uq_ready_labels": 0,
+    "decision": "strict_source_envelope_achieved_release_blocked_on_same_qoi_mesh_gci_triplet",
+    "sole_remaining_freeze_blocker": "same-QOI 3-mesh GCI triplet (medium/fine CFD at Salt2 physical window)",
+    "source_property_release": false,
+    "candidate_freeze": false,
+    "final_score_values": 0
+  },
+  "board_hygiene": {
+    "rows_archived": 17,
+    "stale_duplicate_planned_rows_removed": 5,
+    "live_active_rows_after": "5 trigger-gated + this task"
+  },
+  "open_questions_for_user": [
+    "Approve scheduling a coarse/medium/fine reconstruction of the Salt2 nominal physical window for the same-QOI GCI triplet (the sole remaining PASSIVE-H2 R4 freeze blocker)?",
+    "With Codex out of credits, who acts as the independent S11/S15 reviewer before any freeze/release is admitted?"
+  ]
+}

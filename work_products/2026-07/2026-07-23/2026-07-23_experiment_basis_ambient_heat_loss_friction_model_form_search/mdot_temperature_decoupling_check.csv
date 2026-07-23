@@ -1,0 +1,4 @@
+fit_basis,friction_form_for_mdot,multiplier_a,offset_b_K,train_mae_K,salt2_lo5q_MAE_K,salt2_hi5q_MAE_K,val_salt2_MAE_K,provenance
+F1_based,F1,0.5746889644933884,138.28222646893295,9.291089110109809,3.5017398572680727,3.1694407461151193,5.868112800214832,work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score
+F3_hagenbach_based,F3_hagenbach,0.5756298068314786,137.69705222200258,9.2465,3.476,3.348,5.834,computed_in_session_via_direct_solve_case_calls_this_conversation_ad_hoc_python_never_written_to_repo_as_reusable_tool_not_rerun_by_this_script_reproducible_only_by_rerunning_the_solver_with_the_stated_ScenarioConfig_settings
+CONCLUSION,,,,,,,,"mdot-correction and T-correction are decoupled for this model -- fixing friction/mdot does not change the T-bias story at all (train MAE, validation MAE/RMSE all essentially unchanged between the F1-based and F3_hagenbach-based affine T-refits)"

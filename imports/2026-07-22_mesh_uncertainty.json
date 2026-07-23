@@ -1,0 +1,26 @@
+{
+  "task": "TODO-MESH-UNCERTAINTY",
+  "date": "2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-MESH-UNCERTAINTY.md",
+    ".agent/journal/2026-07-22/mesh-uncertainty.md",
+    "imports/2026-07-22_mesh_uncertainty.json",
+    "tools/analyze/build_mesh_uncertainty_package.py",
+    "tools/analyze/test_mesh_uncertainty_package.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_mesh_uncertainty/"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation/",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_mesh_gci_disposition/",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "formal_gci_allowed_rows": 0,
+  "production_harvest_allowed": false,
+  "admission_allowed": false,
+  "residual_absorbed_into_internal_nu": false
+}

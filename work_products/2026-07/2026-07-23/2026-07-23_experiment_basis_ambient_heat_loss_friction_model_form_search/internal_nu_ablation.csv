@@ -1,0 +1,12 @@
+htc_mult,TP_K,TW_K,mdot_err_pct,note
+1,96.49,98.94,12.68,
+2,95.31,98.98,,
+5,94.6,99.01,,
+10,94.36,99.02,,
+20,94.24,99.03,,
+50,94.17,99.03,,
+100,94.15,99.03,,
+200,94.13,99.03,,
+500,94.13,99.03,,asymptote reached
+CONCLUSION,2.36,,,"Internal HTC, swept across 500x (a physically implausible magnitude for a real Nusselt correlation on this geometry), asymptotically closes only 96.49-94.13=2.36 K of the ~96 K gap. As internal h -> infinity, internal thermal resistance R_i -> 0, which only removes ONE term from the total series resistance network (R_i + R_wall + R_ins + R_o); the asymptote proves the wall/insulation/ambient resistances dominate completely, meaning NO internal-Nu value can close this gap. This is quantitative evidence FOR this repo's own standing guardrail rather than mere deference to it -- the guardrail is numerically justified here, not just procedurally followed."
+MDOT_NOTE,,,,"mdot_err_pct only reported at htc_mult=1 (matches finding 1's F3_hagenbach Salt2 +12.68%); not reported separately at other htc_mult values in-session, expected to remain approximately unchanged since only internal HTC (not friction or mdot-relevant terms) was varied in this ablation"

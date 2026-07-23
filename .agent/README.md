@@ -51,10 +51,26 @@ Useful read-only checks live under `tools/agent/`:
   requirements before editing.
 - `finish_task.py --task-id <TASK>`: validate status/journal/import/index
   handoff before closing a task.
+- `board_summary.py --limit 30`: bounded live-board summary for routine
+  coordinator scans.
+- `board_slice.py --task-id <TASK>`: print one exact board row or a small
+  query-filtered slice without dumping long scope text.
+- `task_context.py --task-id <TASK>`: show allowed edit paths, read-only
+  context, conflicts, instruction files, and closeout artifact presence.
+- `board_archive.py --apply && board_archive.py --check`: move historical
+  archived sections into `.agent/BOARD_ARCHIVE.md`.
 - `board_dashboard.py`: compact view of active/live rows and open TODOs.
+- `package_brief.py <path> --rows 1`: summarize package files, CSV headers,
+  row counts, scalar JSON, and README headings before detailed inspection.
+- `closeout_stub.py --task-id <TASK>`: dry-run or write status/journal/import
+  skeletons for scoped closeout.
+- `../docs/state_brief.py --active --blockers`: compact current-state and
+  blocker view from generated docs.
 - `split_policy_lint.py`: catch stale final-predictive split language.
 - `case_schema_lint.py`: check CFD-to-1D postprocessing schema coverage.
 - `runtime_input_lint.py`: catch possible predictive runtime-input leakage.
+- `guardrail_summary.py -- <command>`: summarize noisy guardrail/lint output
+  into bounded PASS/FAIL/NOTE lines before rerunning verbose checks.
 - `background_compute_helper.py`: recommend `sbatch`, `srun`, or `tmux+srun`
   and list required handoff fields.
 
@@ -82,9 +98,31 @@ Background compute policy:
 
 See `tools/agent/README.md` for complete tool usage and failure semantics.
 
+Low-token default sequence for a known task:
+
+```bash
+python3.11 tools/agent/board_slice.py --task-id <TASK>
+python3.11 tools/agent/task_context.py --task-id <TASK>
+python3.11 tools/docs/state_brief.py --active --blockers
+```
+
+For evidence packages, run `package_brief.py` before opening whole CSV, JSON,
+or README files. Keep raw board/status/CSV dumps for cases where the bounded
+helpers show that detailed inspection is necessary.
+
+For git-heavy cleanup and staging, prefer bounded summaries:
+
+```bash
+python3.11 tools/git/clean_status_summary.py --untracked all --limit 30
+python3.11 tools/git/staged_audit.py --limit 20
+python3.11 tools/git/diff_check_filtered.py --max-output-lines 80
+python3.11 tools/git/diff_summary.py --mode unstaged --limit 40 -- <owned paths>
+```
+
 ## Files here
 
 - `BOARD.md`: active tasks, backlog, blocked work, and review queue
+- `BOARD_ARCHIVE.md`: historical archived board sections
 - `FILE_OWNERSHIP.md`: editable path rules and shared files
 - `ROLES.md`: agent role definitions
 - `DECISIONS.md`: durable coordination decisions

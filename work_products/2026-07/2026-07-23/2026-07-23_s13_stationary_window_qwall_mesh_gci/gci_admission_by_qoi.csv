@@ -1,0 +1,5 @@
+qoi_label,qoi_class,cases_evaluated,cases_mesh_uq_admitted,max_gci_fine_pct,mesh_uq_status,source_property_release,candidate_freeze
+Q_wall_W,steady_integral,3,3,0.5085688485816808,admitted_mesh_converged,False,False
+mdot_exchange_positive_outward_proxy_kg_s,recirc_exchange_proxy,3,0,172.15476764117923,fail_closed_mesh_unconverged,False,False
+tau_recirc_proxy_s,recirc_exchange_proxy,3,0,767.8545584556591,fail_closed_mesh_unconverged,False,False
+wall_core_bulk_temperature_contrast_K,recirc_exchange_proxy,3,0,281.6996480105513,fail_closed_mesh_unconverged,False,False

@@ -762,7 +762,15 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--run-fluid", action="store_true", help="Run Fluid solve_case coupled rows; use only on a compute node.")
     parser.add_argument("--timeout-seconds", type=int, default=90, help="Per candidate/case Fluid solve timeout for --run-fluid.")
+    parser.add_argument("--output-dir", type=Path, default=None, help="Optional package output directory; defaults to the canonical cooler-removal package.")
     args = parser.parse_args()
+    if args.output_dir is not None:
+        global OUT, OUT_REL
+        OUT = args.output_dir if args.output_dir.is_absolute() else ROOT / args.output_dir
+        try:
+            OUT_REL = OUT.resolve().relative_to(ROOT.resolve())
+        except ValueError:
+            OUT_REL = OUT
     summary = build_package(run_fluid=args.run_fluid, timeout_seconds=args.timeout_seconds)
     print(json.dumps(summary, indent=2, sort_keys=True))
 

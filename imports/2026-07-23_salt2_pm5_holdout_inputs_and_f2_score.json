@@ -1,0 +1,40 @@
+{
+  "manifest_id": "2026-07-23_salt2_pm5_holdout_inputs_and_f2_score",
+  "owner": "claude",
+  "task": "TODO-SALT2-PM5-HOLDOUT-INPUTS-AND-F2-SCORE-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "CFD-basis empirical affine ROM: extract Salt2 +/-5Q + nominal Salt1-4 CFD reference_k (OF13 TP/TW sampling), fit all-4 CFD affine, score-once on the Salt2 +/-5Q CFD holdout. Purely computational; experiment out of scope.",
+  "new_tools": [
+    "tools/analyze/build_salt2_pm5_holdout_inputs_and_f2_score.py",
+    "tools/analyze/test_salt2_pm5_holdout_inputs_and_f2_score.py",
+    "tools/analyze/build_f2_empirical_holdout_freeze_and_score.py",
+    "tools/analyze/test_f2_empirical_holdout_freeze_and_score.py"
+  ],
+  "edited_shared_tools": [
+    "tools/case_analysis_profiles.py (user-authorized: +2 pm5 profiles reusing SALT2_MAJOR_SPANS; mesh byte-identical md5 5e17f598)",
+    "tools/extract/sample_streamwise_boundary_layer_landmarks.py (numpy-2.0 np.trapz -> _trapz compat shim)"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_salt2_pm5_holdout_inputs_and_f2_score/README.md",
+    ".agent/status/2026-07-23_TODO-SALT2-PM5-HOLDOUT-INPUTS-AND-F2-SCORE-2026-07-23.md",
+    ".agent/journal/2026-07-23/salt2-pm5-holdout-inputs-and-f2-score.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-23/2026-07-23_salt2_pm5_holdout_inputs_and_f2_score/"
+  ],
+  "key_results": {
+    "basis": "CFD reference_k only",
+    "cfd_affine_all4_a": 0.7669693427694646,
+    "cfd_affine_all4_b": 29.890929644616563,
+    "holdout_salt2_pm5_combined_mae_K": 7.04,
+    "holdout_raw_1D_mae_K": 95.1,
+    "holdout_reduction_percent": 92.6,
+    "external_val_salt2_status": "deferred"
+  },
+  "reconciliation": "Supersedes the experiment-basis 2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score for the CFD-only main body.",
+  "open_questions_for_user": [
+    "Confirm the experiment-basis refit + combined packages should be relabeled off-scope for the CFD-only main body?",
+    "Thesis: global all-4 CFD affine (holdout 7.0 K) or Salt2-local affine (6.0 K)? (report both)",
+    "Resolve val_salt2's own 1D operating point to complete the CFD external score?"
+  ]
+}

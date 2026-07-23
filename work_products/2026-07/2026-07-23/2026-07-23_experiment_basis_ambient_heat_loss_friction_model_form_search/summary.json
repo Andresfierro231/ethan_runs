@@ -1,0 +1,46 @@
+{
+  "candidate_frozen": false,
+  "date": "2026-07-23",
+  "f1_based_f2_verified": {
+    "multiplier_a": 0.5746889644933884,
+    "offset_b_K": 138.28222646893295,
+    "train_mae_K": 9.291089110109809
+  },
+  "final_predictive_admission": false,
+  "friction_closure_comparison": {
+    "F1": 32.58,
+    "F3_hagenbach": 11.82,
+    "F3_shah_apparent": 15.83
+  },
+  "guardrail_phrase_verified": "do not tune Nu to absorb heater, cooler/HX, passive wall, radiation, storage, or branch-mixing residuals",
+  "internal_nu_ablation_gap_closed_K": 2.36,
+  "legitimate_single_use_protected_score": false,
+  "m3_comparator": {
+    "admission_status": "blocked_freeze=FINAL_FREEZE_TBD_not_created;wall_blocker=local_wall_temperature_source_placement_or_upcomer_mixing_physics",
+    "tp_rmse_K": 13.558,
+    "tw_rmse_K": 18.9775
+  },
+  "main_body_scope": "off_scope_experiment_basis",
+  "native_solver_run_by_this_script": false,
+  "no_new_solver_runs_by_this_script": true,
+  "physical_closure_claim_allowed": false,
+  "recommended_combo": {
+    "friction_form": "F3_hagenbach",
+    "insulation_multiplier": 0.08,
+    "major_loss_multiplier": 0.6
+  },
+  "registry_or_admission_mutated": false,
+  "salt1_4_train_mean_at_recommended_combo": {
+    "mean_TP_K": 5.73,
+    "mean_TW_K": 20.68,
+    "mean_abs_mdot_err_pct": 4.48
+  },
+  "status": "complete",
+  "task_id": "TODO-EXPERIMENT-BASIS-AMBIENT-HEAT-LOSS-FRICTION-MODEL-FORM-SEARCH-2026-07-23",
+  "validated_against": "experimental_measured_K_not_CFD_reference_k",
+  "validation_case_scores_raw_physics_MAE_K": {
+    "salt2_hi5q": 2.398,
+    "salt2_lo5q": 5.387,
+    "val_salt2": 7.418
+  }
+}

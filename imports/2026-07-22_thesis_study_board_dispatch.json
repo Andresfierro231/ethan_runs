@@ -1,0 +1,41 @@
+{
+  "task": "TODO-THESIS-STUDY-BOARD-DISPATCH-2026-07-22",
+  "task_id": "TODO-THESIS-STUDY-BOARD-DISPATCH-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Writer / Reviewer",
+  "objective": "Place thesis scientific studies still needed for evidence/results completeness onto the live board.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-STUDY-BOARD-DISPATCH-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-study-board-dispatch.md",
+    "imports/2026-07-22_thesis_study_board_dispatch.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_board_dispatch"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_completeness_matrix/chapter_evidence_completeness_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/compact_numerical_claims_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_outline_evidence_gap_board_refresh/studies_waiting_and_needed.csv",
+    ".agent/BLOCKERS.md",
+    ".agent/BOARD.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_cfd_openfoam_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_state": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_tree": false,
+    "thesis_latex_repo": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "candidate_freeze": false,
+    "final_score_claim": false,
+    "runtime_leakage_relaxation": false
+  }
+}
+

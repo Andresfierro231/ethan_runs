@@ -1,8 +1,4 @@
 {
-  "task": "TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22",
-  "task_id": "TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22",
-  "date": "2026-07-22",
-  "role": "Hydraulics / cfd-pp / Scheduler / Writer / Reviewer / Tester",
   "changed_files": [
     ".agent/BOARD.md",
     ".agent/status/2026-07-22_TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22.md",
@@ -19,8 +15,15 @@
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/source_manifest.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/no_mutation_guardrails.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/summary.json",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/figures/svg/pressure_anchor_admission_gate_waterfall.svg"
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/figures/svg/pressure_anchor_admission_gate_waterfall.svg",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/check_pressure_low_recirc_anchor_packet.py"
   ],
+  "component_K_or_F6_release": false,
+  "date": "2026-07-22",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "protected_score_or_final_score": false,
   "read_only_context": [
     "AGENTS.md",
     ".agent/BOARD.md",
@@ -39,12 +42,14 @@
     "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/endpoint_field_requirement_table.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_s10_s14_pressure_f6_cand001_retry_and_uq_gate/scheduler_safe_retry_runbook.md"
   ],
-  "native_solver_outputs_mutated": false,
   "registry_mutated": false,
   "registry_or_admission_mutated": false,
+  "role": "Hydraulics / cfd-pp / Scheduler / Writer / Reviewer / Tester",
   "scheduler_action": false,
-  "external_fluid_edit": false,
   "source_property_release_mutated": false,
-  "component_K_or_F6_release": false,
-  "protected_score_or_final_score": false
+  "task": "TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22",
+  "task_id": "TODO-THESIS-STUDY-PRESSURE-LOW-RECIRC-ANCHOR-DESIGN-AND-HARVEST-2026-07-22",
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_pressure_low_recirc_anchor_design_and_harvest/check_pressure_low_recirc_anchor_packet.py"
+  ]
 }

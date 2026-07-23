@@ -1,0 +1,5 @@
+role,path,exists
+coarse_sampled_rows,work_products/2026-07/2026-07-22/2026-07-22_s13_direct_coarse_extraction_gci_uq_chain/direct_sampled_coarse_surface_field_rows.csv,True
+medium_fine_exact_label_rows,work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_exact_label_qoi_rows.csv,True
+mesh_cell_count_inventory,work_products/2026-07/2026-07-09/2026-07-09_salt_mesh_refinement_discovery/mesh_case_inventory.csv,True
+gci_engine,tools/analyze/compute_gci.py,True

@@ -1,0 +1,76 @@
+{
+  "task": "TODO-AGENT-TOKEN-EFFICIENCY-TOOLS-AND-INSTRUCTIONS-2026-07-22",
+  "task_id": "TODO-AGENT-TOKEN-EFFICIENCY-TOOLS-AND-INSTRUCTIONS-2026-07-22",
+  "title": "Agent token efficiency tools and instructions",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/README.md",
+    ".agent/journal/2026-07-22/agent-token-efficiency-tools-and-instructions.md",
+    ".agent/status/2026-07-22_TODO-AGENT-TOKEN-EFFICIENCY-TOOLS-AND-INSTRUCTIONS-2026-07-22.md",
+    "AGENTS.md",
+    "imports/2026-07-22_agent_token_efficiency_tools_and_instructions.json",
+    "imports/2026-07-22_todo_agent_token_efficiency_tools_and_instructions_2026_07_22.json",
+    "tools/agent/README.md",
+    "tools/agent/board_slice.py",
+    "tools/agent/closeout_stub.py",
+    "tools/agent/package_brief.py",
+    "tools/agent/task_context.py",
+    "tools/agent/test_agent_tools.py",
+    "tools/docs/state_brief.py"
+  ],
+  "read_only_context": [
+    "AGENTS.md startup protocol",
+    ".agent/BOARD.md active-row coordination state",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "tools/agent/common.py",
+    "tools/agent/board_summary.py",
+    "tools/agent/README.md",
+    ".agent/README.md",
+    ".agent/STATE.md generated state before closeout",
+    ".agent/BLOCKERS.md generated blockers before closeout",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_geometry_enrichment_for_release_masks"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "solver_or_postprocessing_launched": false,
+  "sampler_harvest_or_uq_launched": false,
+  "external_fluid_edit": false,
+  "thesis_current_or_latex_edit": false,
+  "science_release_or_admission_mutated": false,
+  "source_property_or_qwall_release": false,
+  "runtime_leakage_relaxed": false,
+  "generated_index_refreshed": true,
+  "no_scorecard_outputs": true,
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/agent/board_slice.py tools/agent/task_context.py tools/agent/package_brief.py tools/agent/closeout_stub.py tools/docs/state_brief.py",
+      "result": "pass"
+    },
+    {
+      "command": "python3.11 -m pytest tools/agent/test_agent_tools.py",
+      "result": "pass; 22 passed"
+    },
+    {
+      "command": "python3.11 tools/agent/board_slice.py --task-id TODO-AGENT-TOKEN-EFFICIENCY-TOOLS-AND-INSTRUCTIONS-2026-07-22",
+      "result": "pass; one bounded row"
+    },
+    {
+      "command": "python3.11 tools/agent/task_context.py --task-id TODO-AGENT-TOKEN-EFFICIENCY-TOOLS-AND-INSTRUCTIONS-2026-07-22",
+      "result": "pass; zero active conflicts at validation time"
+    },
+    {
+      "command": "python3.11 tools/docs/state_brief.py --active --blockers",
+      "result": "pass; compact blocker table"
+    },
+    {
+      "command": "python3.11 tools/agent/package_brief.py work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_geometry_enrichment_for_release_masks --rows 1 --csv-limit 4",
+      "result": "pass; package summarized without full CSV dump"
+    },
+    {
+      "command": "python3.11 tools/agent/closeout_stub.py --task-id TODO-AGENT-TOKEN-EFFICIENCY-TOOLS-AND-INSTRUCTIONS-2026-07-22 --title 'Agent token efficiency tools and instructions'",
+      "result": "pass; dry-run paths correct"
+    }
+  ]
+}

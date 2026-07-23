@@ -1,0 +1,78 @@
+{
+  "task": "TODO-THESIS-TWO-TRACK-ROM-MODEL-WRITEUP-2026-07-23",
+  "task_id": "TODO-THESIS-TWO-TRACK-ROM-MODEL-WRITEUP-2026-07-23",
+  "date": "2026-07-23",
+  "role": "Writer/Reviewer/Forward-pred",
+  "objective": "Produce a thesis-facing two-track ROM model writeup separating empirical bias-corrected CFD-ROM performance from strict predictive/admission defensibility.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-23_TODO-THESIS-TWO-TRACK-ROM-MODEL-WRITEUP-2026-07-23.md",
+    ".agent/journal/2026-07-23/thesis-two-track-rom-model-writeup.md",
+    "imports/2026-07-23_thesis_two_track_rom_model_writeup.json",
+    "work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/README.md",
+    "work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/thesis_model_writeup.md",
+    "work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/model_track_comparison.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/source_manifest.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_metric_scorecard.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_p1d_bulk_cv_h2_train_only_thesis_prototype/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate/README.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md"
+  ],
+  "summary": {
+    "decision": "two_track_rom_writeup_ready_no_new_score_no_freeze",
+    "track_a_main": "F2_global_affine",
+    "track_a_upper_bound": "F5_thermal_family_offset_shared_multiplier",
+    "track_b_architecture": "steady fluid+walls",
+    "track_b_candidate_lane": "P1D-BULK-CV-H2 / PASSIVE-H2-CAND001",
+    "final_score_values": 0,
+    "new_fit_or_score_run": false
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/agent/preview_csv.py work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/model_track_comparison.csv --rows 20",
+      "result": "parsed 6 rows"
+    },
+    {
+      "command": "python3.11 tools/agent/preview_csv.py work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/claim_boundary_table.csv --rows 20",
+      "result": "parsed 8 rows"
+    },
+    {
+      "command": "python3.11 tools/agent/preview_csv.py work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/source_manifest.csv --rows 20",
+      "result": "parsed 10 rows"
+    },
+    {
+      "command": "python3.11 -c \"import json, pathlib; json.load(open('imports/2026-07-23_thesis_two_track_rom_model_writeup.json')); print('json ok')\"",
+      "result": "json ok"
+    }
+  ],
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "solver_postprocessing_sampler_harvest_uq_launch": false,
+    "fluid_or_external_edit": false,
+    "thesis_current_or_latex_edit": false,
+    "new_validation_holdout_external_test_scoring": false,
+    "new_fitting_tuning_model_selection": false,
+    "source_property_release": false,
+    "coefficient_admission": false,
+    "candidate_freeze": false,
+    "final_score_claim": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "runtime_leakage_relaxation": false,
+    "residual_absorbed_into_internal_nu": false
+  }
+}

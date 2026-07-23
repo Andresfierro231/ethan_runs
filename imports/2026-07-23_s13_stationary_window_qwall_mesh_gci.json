@@ -1,0 +1,37 @@
+{
+  "manifest_id": "2026-07-23_s13_stationary_window_qwall_mesh_gci",
+  "owner": "claude",
+  "task": "TODO-S13-STATIONARY-WINDOW-QWALL-MESH-GCI-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "Compute the first admissible mesh GCI for S13 exchange-CV QOIs by a stationary-terminal-window reframe that removes the same-absolute-time blocker for steady QOIs.",
+  "scope": "S13 seeded right-leg exchange-CV QOIs (Q_wall + 3 recirculation proxies) across the existing coarse/medium/fine Jin meshes for Salt2/3/4; read-only; no release/freeze/score.",
+  "new_tools": [
+    "tools/analyze/build_s13_stationary_window_qwall_mesh_gci.py",
+    "tools/analyze/test_s13_stationary_window_qwall_mesh_gci.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_s13_stationary_window_qwall_mesh_gci/README.md",
+    "operational_notes/07-26/23/2026-07-23_S13_STATIONARY_WINDOW_QWALL_MESH_GCI.md",
+    ".agent/status/2026-07-23_TODO-S13-STATIONARY-WINDOW-QWALL-MESH-GCI-2026-07-23.md",
+    ".agent/journal/2026-07-23/s13-stationary-window-qwall-mesh-gci.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-23/2026-07-23_s13_stationary_window_qwall_mesh_gci/"
+  ],
+  "key_results": {
+    "r21": 1.478,
+    "r32": 1.460,
+    "qwall_mesh_uq_admitted_cases": 3,
+    "qwall_gci_fine_pct": {"salt_2": 0.0005, "salt_3": 0.51, "salt_4": 0.36},
+    "qwall_observed_order_p": {"salt_2": 10.2, "salt_3": 2.06, "salt_4": 2.02},
+    "exchange_proxy_cases_mesh_uq_admitted": 0,
+    "same_qoi_mesh_gci_gate": "pass_for_Q_wall_only",
+    "source_property_release": false,
+    "candidate_freeze": false,
+    "final_score_values": 0
+  },
+  "open_questions_for_user": [
+    "Approve the stationary-window equivalence argument as an admitted same-QOI mesh-UQ basis for the thesis (needs independent review)?",
+    "Sample PASSIVE-H2 qambient / loop mdot at the coarse/medium/fine stationary windows to extend mesh-UQ to those QOIs?"
+  ]
+}

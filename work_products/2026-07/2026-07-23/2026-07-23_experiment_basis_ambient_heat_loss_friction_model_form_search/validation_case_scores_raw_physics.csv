@@ -1,0 +1,5 @@
+case,case_role_this_package,split_policy_label_crosswalk,MAE_K,RMSE_K,mdot_kg_s,mdot_ground_truth_available,property_basis_caveat
+salt2_lo5q,validation,blind_holdout_pm5q,5.387,5.586,0.015866,False,
+salt2_hi5q,validation,blind_holdout_pm5q,2.398,4.292,0.017491,False,
+val_salt2,validation,external_test,7.418,10.786,0.011763,False,"This package used the salt_current property override for val_salt2 per this session's earlier convention. The PARALLEL CFD-basis session found this was methodologically inconsistent for the CFD comparison -- it found val_salt2's correct operating point should use salt_jin default properties matching Salt2 nominal, not salt_current. This experiment-basis package has NOT been re-verified against that correction. Flag as a known limitation needing follow-up; do not silently claim consistency."
+COMPARATOR_earlier_empirical_F1_based_F2,comparator,,,,,,"salt2_lo5q=3.5K, salt2_hi5q=3.17K, val_salt2=5.87K with 2 fitted parameters; the physics-only combo here is comparable overall (better on hi5q, worse on lo5q and val_salt2) with ZERO fitted parameters vs. F2's 2 fitted parameters"

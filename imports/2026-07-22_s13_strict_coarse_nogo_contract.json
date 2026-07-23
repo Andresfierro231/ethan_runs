@@ -1,0 +1,82 @@
+{
+  "task": "TODO-S13-STRICT-COARSE-NOGO-CONTRACT-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Mesh-GCI / Implementer / Tester / Writer / Reviewer",
+  "objective": "Resolve strict S13 same-label coarse equivalence disposition and publish a formal no-go contract from existing read-only evidence.",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/auditable_coarse_equivalence_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_coarse_equivalence_open_cv_heatflow_contract/coarse_basis_resolution.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/coarse_same_label_unlock_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/s13_qoi_coarse_disposition.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation/candidate_triplet_reconciliation.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation/qoi_reconciliation_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/latest_sampler_success_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/gci_go_no_go_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_exact_label_qoi_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_mesh_uncertainty/README.md"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-STRICT-COARSE-NOGO-CONTRACT-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-strict-coarse-nogo-contract.md",
+    "imports/2026-07-22_s13_strict_coarse_nogo_contract.json",
+    "tools/analyze/build_s13_strict_coarse_nogo_contract.py",
+    "tools/analyze/test_s13_strict_coarse_nogo_contract.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/strict_coarse_equivalence_criteria.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/case_qoi_strict_coarse_no_go.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/qoi_formal_gci_no_go_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/coarse_unlock_action_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/replacement_coarse_dataset_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/summary.json"
+  ],
+  "decision": "s13_strict_same_label_coarse_no_go_formal_gci_blocked",
+  "criteria_rows": 6,
+  "criteria_pass_rows": 0,
+  "case_qoi_rows": 12,
+  "current_coarse_candidate_rows": 12,
+  "admitted_same_label_coarse_rows": 0,
+  "strict_coarse_no_go_rows": 12,
+  "formal_gci_ready_rows": 0,
+  "production_harvest_allowed_rows": 0,
+  "medium_fine_exact_label_rows": 72,
+  "replacement_contract_rows": 4,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_s13_strict_coarse_nogo_contract.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_strict_coarse_nogo_contract.py tools/analyze/test_s13_strict_coarse_nogo_contract.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_strict_coarse_nogo_contract",
+      "result": "7 tests passed"
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "solver_postprocessing_sampler_harvest_uq_launch": false,
+    "fluid_or_external_repo_mutated": false,
+    "thesis_current_or_latex_mutated": false,
+    "source_property_or_qwall_released": false,
+    "formal_gci_run_or_admission": false,
+    "production_harvest_allowed": false,
+    "coefficient_fitting_or_admission": false,
+    "protected_or_final_scoring": false,
+    "candidate_freeze": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "coordination_caveat": "task_context.py reported a broad trigger-gated S11 tools/analyze pattern conflict; this task stayed in fresh S13-specific files and did not touch S11 candidate/source-property paths.",
+  "next_action": "Generate or admit direct same-label coarse rows, then rerun formal GCI gate and same-QOI UQ before any S13 harvest/admission or coefficient fitting."
+}

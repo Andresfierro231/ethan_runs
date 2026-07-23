@@ -215,3 +215,81 @@ corner-K rows. The result is therefore diagnostic, not an admitted component-K
 closure. Together, the thermal and hydraulic evidence show why the final 1D
 model should use local role ledgers with explicit admission status rather than
 one global correction factor.
+
+## 2026-07-22 Refresh: Local Ownership Still Wins, Admission Still Fails Closed
+
+Current packet:
+`work_products/2026-07/2026-07-22/2026-07-22_thesis_junction_aware_section_refresh/`.
+
+The latest pressure/energy and heat-loss partition contracts sharpen the same
+conclusion. The junction/stub thermal lane remains a real local owner:
+Salt2-4 train-context rows span `39.128349537` to `48.485215891 W`, while the
+independent `val_salt2` row remains external-test evidence at approximately
+`40.926087 W`. These values can support a named junction/stub heat-loss lane,
+but they still cannot be used as predictive runtime inputs because the source is
+realized CFD wall heat-flux evidence.
+
+The pressure lane remains stricter. The current pressure/F6 packet reports
+`3` section-effective residual rows but `0` component-`K` admissions, `0` F6
+fit rows, `0` admitted F6 rows, and `0` ordinary candidate pairs. The signed
+lower-right residuals are negative after current pressure-basis subtraction, so
+they are evidence that the extraction basis needs repair, not evidence for a
+clipped positive `K` or a hidden multiplier.
+
+The refreshed thesis statement is therefore:
+
+- junction/stub heat belongs in a local thermal ownership lane;
+- corner and lower-right pressure residuals belong in a diagnostic local
+  pressure lane;
+- neither lane is currently an admitted predictive coefficient;
+- pressure, heat, and internal convection residuals must stay separated.
+
+This preserves the current guardrail: no realized `wallHeatFlux`, CFD `mdot`,
+imposed cooler duty, protected temperature, clipped `K`, global multiplier, or
+internal-`Nu` residual absorption is allowed to become a runtime shortcut.
+
+## July 22 Refresh: Keep Junctions As Ownership Lanes
+
+The later July 22 packets strengthen this section without changing its
+admission boundary. The updated `fluid+walls` model-form packet still reports
+`0` final admitted candidates, `0` final score values, and `0`
+source/property release-ready rows. That means the junction-aware ledger is a
+model-form and evidence-ownership result, not a new predictive closure.
+
+For thermal accounting, the current heat-loss/source inventory separates
+internal convection, wall conduction/contact, insulation/quartz, external
+convection, radiation, jacket/cooler, heater/test-section sources, storage,
+recirculation exchange, and residual lanes. This reinforces the rule that
+junction/stub heat cannot be silently assigned to ordinary pipe wall loss or
+hidden in internal `Nu`. The PASSIVE-H2 runtime-contract packet gives a narrow
+example of the same discipline: corrected radiation is a named external
+boundary contribution of `22.4052516482..25.6530978934 W` over the three train
+cases, while the full passive operator spans
+`38.6073163603..44.6770586908 W`. It is still a contract for later runtime
+implementation, not a released numeric heat-loss input.
+
+For pressure accounting, the current negative-K and low-reverse-anchor packets
+confirm that the existing `corner_lower_right` rows should remain
+section-effective diagnostics. The July 22 future-anchor refinement still has
+`0` replacement-ready pressure rows, `0` same-QOI UQ-ready rows, and `0`
+component-K/F6 release rows. The pressure result is therefore not that a corner
+coefficient has been recovered. The result is that a throughflow-plus-
+recirculation pressure residual lane is needed, and ordinary F6 promotion must
+wait for nonrecirculating or low-reverse anchors with same-QOI UQ.
+
+For upcomer and test-section coupling, the July 22 onset and mesh packages keep
+the same guardrail. The upcomer onset refresh emits `3` current train rows, all
+classified as `recirculation_cell_observed`, with `0` ordinary upcomer
+admissions and `0` exchange-coefficient admissions. The mesh uncertainty
+packet emits `4` QOI disposition rows and `12` case/QOI sensitivity rows, with
+`0` formal GCI-ready rows. These are useful diagnostic constraints on where
+local ledger terms belong; they do not release ordinary one-stream `Nu`,
+`f_D`, `K`, exchange-cell coefficients, or formal mesh/GCI uncertainty for
+predictive admission.
+
+The current paper-safe conclusion is therefore unchanged but sharper:
+junction-aware ledgers are necessary because the CFD and reduced-model
+diagnostics locate residuals in physical ownership lanes. They are not
+sufficient by themselves for admission. A future model can promote one lane
+only after the matching source/property, split, runtime-input, same-QOI UQ, and
+candidate-freeze gates pass.

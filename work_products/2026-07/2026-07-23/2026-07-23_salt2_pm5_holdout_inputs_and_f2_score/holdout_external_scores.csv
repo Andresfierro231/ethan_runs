@@ -1,0 +1,9 @@
+split,case,model,n,corrected_rmse_K,corrected_mae_K,raw_rmse_K,raw_mae_K,note
+holdout,salt2_lo5q,new_cfd_affine,15,9.835203953081413,7.250453769054862,90.04112660832202,89.66446999709895,
+holdout,salt2_lo5q,orig_experiment_f2,15,7.886800301551746,5.779606885974613,90.04112660832202,89.66446999709895,
+holdout,salt2_hi5q,new_cfd_affine,15,8.673290221692888,6.83121626171829,100.8955767582812,100.52178377846094,
+holdout,salt2_hi5q,orig_experiment_f2,15,8.365502361759583,6.24039506807585,100.8955767582812,100.52178377846094,
+holdout,salt2_pm5_combined,new_cfd_affine,30,9.272464614880493,7.040835015386576,95.62249183712504,95.09312688777995,
+holdout,salt2_pm5_combined,orig_experiment_f2,30,8.129675539686744,6.010000977025231,95.62249183712504,95.09312688777995,
+external,val_salt2,new_cfd_affine,15,10.250652587886675,7.615185760434417,91.39863678801882,91.01328113928012,"partial external: same operating point as Salt2 nominal train (identical salt_jin 1D input), independent val CFD realization as target."
+external,val_salt2,orig_experiment_f2,15,9.08379054529152,6.602647050552787,91.39863678801882,91.01328113928012,"partial external: same operating point as Salt2 nominal train (identical salt_jin 1D input), independent val CFD realization as target."

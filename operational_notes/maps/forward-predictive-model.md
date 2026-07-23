@@ -11,6 +11,7 @@ related:
   - operational_notes/maps/literature-synthesis-and-gates.md
   - reports/2026-07/2026-07-22/2026-07-22_litrev_latest_modeling_handoff/README.md
   - operational_notes/07-26/22/2026-07-22_LITREV_FINAL_RELEASE_TASK_DISPATCH.md
+  - operational_notes/07-26/22/2026-07-22_THESIS_LATEX_MODEL_FORM_FIGURE_PACKAGE_TRANSFER.md
 ---
 # Forward Predictive Model — Map of Content
 
@@ -49,6 +50,32 @@ power-partition calibration design, and CSEM writer evidence packet. The key
 constraint is unchanged: final predictive scores stay zero until a frozen
 runtime-legal candidate passes source, property, split, uncertainty, and
 runtime-input gates.
+
+2026-07-22 PASSIVE-H2 final-form admission update:
+`work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate/`
+is the current H2 admission checkpoint after outer-insulation radiation runtime
+implementation. Decision:
+`passive_h2_final_form_admission_phase_fail_closed_runtime_supported_no_freeze_no_score`.
+The usable result is train/support evidence: `radiation_on` changes the Fluid
+heat ledger by `14.629985767350746 W` versus a `22.405251648168736 W` corrected
+radiation target, accepted Salt2 train roots exist, and forbidden runtime-input
+flags are zero. Final form is still blocked: release-grade subspan mapping is
+`0/5`, same-QOI setup-UQ-ready labels are `0/6`, source/property release-ready
+rows are `0`, freeze-ready candidates are `0`, and final score values remain
+`0`. Next H2 work should claim subspan mapping recovery first, then Salt2
+same-QOI setup-UQ, then rerun the candidate-specific source/property gate.
+
+2026-07-22 PASSIVE-H2 post-junction handoff:
+`operational_notes/07-26/22/2026-07-22_PASSIVE_H2_CONTEXT_HANDOFF.md`
+is the current start-here note for H2 continuation. Salt1 junction recovery
+landed via Slurm `3312160`, and
+`work_products/2026-07/2026-07-22/2026-07-22_passive_h2_post_junction_source_property_gate/`
+records four-case diagnostic runtime evidence for Salt1/Salt2/Salt3/Salt4:
+`4/4` runtime-complete, `4/4` accepted roots, and `4/4` nonzero radiation
+heat-ledger response. The blocker shifted from runtime coverage to release-grade
+source/property provenance, release-grade mesh-area/subspan provenance, and
+same-QOI release UQ. Final score, freeze, coefficient admission, Qwall/numeric
+q-loss release, and source/property release remain closed.
 
 2026-07-17 canonical split update: AGENT-481 supersedes the older final
 predictive split that held out Salt4 nominal. The canonical final predictive
@@ -259,6 +286,18 @@ is the thesis-facing run/QoI chart for future model-form tables. Open its
 `holdout_test_policy_update.csv` for the split policy. It is a target/diagnostic
 table only: CFD `mdot`, TP/TW, realized `wallHeatFlux`, imposed cooler duty,
 and residual fills remain forbidden predictive runtime inputs.
+
+2026-07-22 LaTeX model-form figure transfer:
+`operational_notes/07-26/22/2026-07-22_THESIS_LATEX_MODEL_FORM_FIGURE_PACKAGE_TRANSFER.md`
+documents the copied CSEM thesis evidence package at
+`../papers/UTexas_Research/csem-Masters_dissertation/evidence/model_form_figure_package/`.
+Use that folder for current model-form ladder, scorecard-waterfall, TP/TW
+elevation, signed-error, and passive-H2 diagnostic figures. Future LaTeX-writing
+agents should claim
+`TODO-THESIS-LATEX-SCOREBOARD-PLOT-REGENERATION-DEPENDENCY-2026-07-22` before
+refreshing the master scoreboard or regenerating plots. Do not view/render
+figures unless needed, and do not treat any copied diagnostic panel as closure
+admission or final predictive scoring.
 
 2026-07-21 first key studies wave:
 `work_products/2026-07/2026-07-21/2026-07-21_predictive_first_key_studies_wave/`
@@ -1038,3 +1077,25 @@ B9 validation split, B10 Fluid external-boundary API.
 - `reports/thesis_dossier/README.md` — living weekly-presentation and thesis
   synthesis hub; update only when the forward-model story, blockers, or
   thesis-facing claims change.
+
+2026-07-22 PASSIVE-H2 candidate source/property rerun update: `work_products/2026-07/2026-07-22/2026-07-22_passive_h2_candidate_source_property_gate_rerun` reran the H2 candidate source/property gate after the
+exact subspan release-recovery and Salt2 same-QOI setup-UQ rows. Decision:
+`passive_h2_candidate_source_property_gate_rerun_fail_closed_support_progress_no_release_no_freeze`. Progress is real but support-only: Salt2 setup subspan
+support is `5/5` and diagnostic same-QOI setup-UQ labels are `6/6`. Release and
+final form remain closed: release-grade subspan rows `0/5`, source/property
+release-ready rows `0`, freeze-ready candidates `0`, and final score values
+`0`. The Salt3/Salt4 diagnostic smoke row is now complete but fail-closed:
+the runner is train-only while Salt3/Salt4 rows are validation/holdout. Next
+work is an explicit non-scoring diagnostic runner contract or same-QOI
+train/support rows, release-grade source/property provenance, then exact
+same-QOI runtime UQ before any S15/S6 path.
+
+2026-07-22 PASSIVE-H2 context handoff:
+`operational_notes/07-26/22/2026-07-22_PASSIVE_H2_CONTEXT_HANDOFF.md`.
+Salt1/Salt2/Salt3/Salt4 runtime coverage is diagnostic-complete after Salt1
+junction recovery, but source/property release remains closed. The follow-on
+Salt1 mesh-area preflight
+`work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt1_mesh_area_provenance_repair_preflight/`
+found `39/39` setup patches and `4/5` family area reconciliation pass rows;
+`junction` is the remaining area-provenance blocker. No release, freeze, or
+score is admitted.

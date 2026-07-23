@@ -1,0 +1,13 @@
+friction_form,case,measured_mdot_kg_s,pct_err,mean_pct_err_this_form,note
+F1,Salt1,0.0158,24.62,32.58,"current default (friction_form='F1'); plain 64/Re, no entry-length or buoyancy correction"
+F1,Salt2,0.0168,32.09,32.58,"current default (friction_form='F1'); plain 64/Re, no entry-length or buoyancy correction"
+F1,Salt3,0.0175,39.44,32.58,"current default (friction_form='F1'); plain 64/Re, no entry-length or buoyancy correction"
+F1,Salt4,0.0201,34.15,32.58,"current default (friction_form='F1'); plain 64/Re, no entry-length or buoyancy correction"
+F3_shah_apparent,Salt1,0.0158,9.78,15.83,"won on a DIFFERENT case config in the historical 2026-07-07 benchmark (work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv); closure performance is candidate-specific, not universally transferable"
+F3_shah_apparent,Salt2,0.0168,15.7,15.83,"won on a DIFFERENT case config in the historical 2026-07-07 benchmark (work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv); closure performance is candidate-specific, not universally transferable"
+F3_shah_apparent,Salt3,0.0175,21.56,15.83,"won on a DIFFERENT case config in the historical 2026-07-07 benchmark (work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv); closure performance is candidate-specific, not universally transferable"
+F3_shah_apparent,Salt4,0.0201,16.29,15.83,"won on a DIFFERENT case config in the historical 2026-07-07 benchmark (work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv); closure performance is candidate-specific, not universally transferable"
+F3_hagenbach,Salt1,0.0158,9.08,11.82,"WINNER for this candidate; Shah (1978) entrance-length correction, zero fitting, already implemented in friction_closures.py, just not wired into this candidate's friction_form setting (was 'F1')"
+F3_hagenbach,Salt2,0.0168,12.68,11.82,"WINNER for this candidate; Shah (1978) entrance-length correction, zero fitting, already implemented in friction_closures.py, just not wired into this candidate's friction_form setting (was 'F1')"
+F3_hagenbach,Salt3,0.0175,16.33,11.82,"WINNER for this candidate; Shah (1978) entrance-length correction, zero fitting, already implemented in friction_closures.py, just not wired into this candidate's friction_form setting (was 'F1')"
+F3_hagenbach,Salt4,0.0201,9.19,11.82,"WINNER for this candidate; Shah (1978) entrance-length correction, zero fitting, already implemented in friction_closures.py, just not wired into this candidate's friction_form setting (was 'F1')"

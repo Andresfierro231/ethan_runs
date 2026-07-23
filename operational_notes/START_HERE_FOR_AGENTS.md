@@ -158,8 +158,25 @@ undocumented handoffs.
 
 ```bash
 python3.11 tools/agent/board_dashboard.py
+python3.11 tools/agent/board_summary.py --task-filter <topic> --active-only --limit 20
+python3.11 tools/agent/status_scope.py <paths...>
+python3.11 tools/agent/safe_rg.py "pattern" <paths...> --glob "*.md" --max-lines 120
+python3.11 tools/agent/preview_csv.py <file.csv> --cols col1,col2 --rows 20
+python3.11 tools/agent/manifest_check.py imports/<manifest>.json --check-paths
 python3.11 tools/agent/split_policy_lint.py operational_notes .agent/BOARD.md
 python3.11 tools/agent/runtime_input_lint.py <package-or-doc>
 python3.11 tools/agent/case_schema_lint.py <work-product-or-package>
 python3.11 tools/docs/build_repo_index.py --check
 ```
+
+## Token / Output Budget Rules
+
+- Do not print `.agent/BOARD.md` wholesale. Use `board_summary.py`,
+  `board_dashboard.py`, or targeted `safe_rg.py` filters.
+- Do not run bare repo-wide `rg`; use `safe_rg.py` with paths/globs and a line
+  limit.
+- Do not run full dirty-repo `git status --short`; use `status_scope.py` with
+  task-owned paths.
+- Do not dump full CSV/JSON evidence artifacts. Use `preview_csv.py` for CSVs
+  and `manifest_check.py` for quiet JSON validation.
+- If a command might print more than about 200 lines, bound it before running.

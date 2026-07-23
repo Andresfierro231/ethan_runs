@@ -1,0 +1,4 @@
+case,case_role,MAE_K,RMSE_K,provenance
+salt2_lo5q,holdout,3.5017398572680727,3.894800597234892,work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/holdout_external_score_old_vs_new.csv
+salt2_hi5q,holdout,3.1694407461151193,4.841879924100761,work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/holdout_external_score_old_vs_new.csv
+val_salt2,external,5.868112800214832,8.585302211611603,work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/holdout_external_score_old_vs_new.csv

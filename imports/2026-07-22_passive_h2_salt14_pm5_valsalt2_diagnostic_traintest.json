@@ -1,0 +1,122 @@
+{
+  "task": "TODO-PASSIVE-H2-SALT14-PM5-VALSALT2-DIAGNOSTIC-TRAINTEST-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-SALT14-PM5-VALSALT2-DIAGNOSTIC-TRAINTEST-2026-07-22",
+  "generated_at": "2026-07-22T15:45:45-05:00",
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt14_pm5_valsalt2_diagnostic_traintest",
+    "tools/analyze/build_passive_h2_salt14_pm5_valsalt2_diagnostic_traintest.py",
+    "tools/analyze/test_passive_h2_salt14_pm5_valsalt2_diagnostic_traintest.py",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-SALT14-PM5-VALSALT2-DIAGNOSTIC-TRAINTEST-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-salt14-pm5-valsalt2-diagnostic-traintest.md",
+    "imports/2026-07-22_passive_h2_salt14_pm5_valsalt2_diagnostic_traintest.json"
+  ],
+  "read_only_context": [
+    {
+      "source_label": "canonical_split_policy",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_canonical_final_predictive_split_policy/canonical_final_predictive_split_policy.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "scorecard_case_partition",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/case_partition_contract.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "scorecard_holdout_release_gates",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/holdout_release_gates.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "scorecard_model_freeze_contract",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/model_freeze_contract.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "scorecard_prediction_join_shell",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_final_predictive_scorecard_shell/prediction_join_shell.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_h2_train_prototype",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_p1d_bulk_cv_h2_train_only_thesis_prototype/train_context_prototype_outputs.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_h2_corrected_radiation_summary",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_corrected_radiation_summary.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_h2_salt2_runtime_implementation",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_outer_insulation_radiation_runtime_implementation/runtime_smoke_summary.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_h2_split_preflight",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_mapping_split_uq_preflight/case_split_disposition.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_h2_salt34_runtime_smoke",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/runtime_smoke_qoi_rows.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "passive_h2_salt34_heat_delta",
+      "source_path": "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/heat_ledger_delta_by_case.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "salt2_pm5_holdout_metrics",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_holdout_metrics.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    },
+    {
+      "source_label": "val_salt2_external_targets",
+      "source_path": "work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv",
+      "exists": "true",
+      "use": "read_only_input",
+      "mutated": "false"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "fluid_or_external_edit": false,
+    "thesis_current_or_latex_edit": false,
+    "protected_row_fitting_or_model_selection": false,
+    "source_property_or_qwall_release": false,
+    "candidate_freeze": false,
+    "final_score_claim": false
+  },
+  "decision": "passive_h2_salt14_pm5_valsalt2_requested_traintest_blocked_no_fit_no_score"
+}

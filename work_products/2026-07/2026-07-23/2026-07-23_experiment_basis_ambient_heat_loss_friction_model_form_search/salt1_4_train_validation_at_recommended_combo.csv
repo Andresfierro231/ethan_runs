@@ -1,0 +1,8 @@
+case,friction_form,insulation_multiplier,major_loss_multiplier,mdot_err_pct,TP_K,TW_K,note
+Salt1,F3_hagenbach,0.08,0.6,-7.66,11.04,20.57,"Salt1 documented elsewhere in this repo as 'weakly converged; use with caution' per CLAUDE.md -- likely explains why it is the outlier here, not a model-form failure"
+Salt2,F3_hagenbach,0.08,0.6,-0.67,4.43,19.5,
+Salt3,F3_hagenbach,0.08,0.6,6.16,3.94,20.51,
+Salt4,F3_hagenbach,0.08,0.6,3.44,3.51,22.16,
+MEAN,F3_hagenbach,0.08,0.6,4.48,5.73,20.68,"mean of |mdot_err_pct|, TP_K, TW_K across all four cases"
+COMPARATOR_F1_ins1_baseline,F1,1.0,1.0,32.6,90-100,,work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/friction_root_cause.csv (f*Re=64.0 confirms F1) and this package's own finding 1
+COMPARATOR_M3_segment_only_fluid_walls,n/a (different reduced-order framework),,,,13.558,18.9775,"best previously-found NON-empirical (real model-form, not post-hoc statistical fit) comparator anywhere in this repo -- a totally different reduced-order framework, not this Fluid solver; diagnostic_not_admitted status there"

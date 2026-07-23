@@ -48,6 +48,17 @@ Generated index refresh was deferred during AGENT-489 because active AGENT-482
 owned `.agent/STATE.md`, `.agent/BLOCKERS.md`, `.agent/catalog.json`, and
 `.agent/catalog.csv`.
 
+TODO-TOKEN-EFFICIENT-AGENT-TOOLS-2026-07-22 added low-output inspection
+helpers and made them part of startup guidance:
+
+- `tools/agent/safe_rg.py` guards broad ripgrep and truncates total output.
+- `tools/agent/status_scope.py` requires path-scoped git status.
+- `tools/agent/preview_csv.py` prints selected CSV columns/rows only.
+- `tools/agent/manifest_check.py` validates JSON manifests quietly.
+- `tools/agent/link_report.py` adds report links to standard discovery files.
+- `tools/agent/board_summary.py` now supports task, owner, status, section, and
+  Active-section filters.
+
 ## Trusted Entry Points
 
 - Startup and common commands: `operational_notes/START_HERE_FOR_AGENTS.md`
@@ -67,6 +78,12 @@ owned `.agent/STATE.md`, `.agent/BLOCKERS.md`, `.agent/catalog.json`, and
 - `case_schema_lint.py`: CFD-to-1D schema coverage guard.
 - `background_compute_helper.py`: `sbatch` / `srun` / `tmux` recommendation.
 - `board_dashboard.py`: compact active/TODO board view.
+- `board_summary.py`: bounded board counts plus task/owner/status filters.
+- `safe_rg.py`: bounded `rg` wrapper for broad-search prevention.
+- `status_scope.py`: path-scoped dirty-worktree status.
+- `preview_csv.py`: selected-column and row-limited CSV inspection.
+- `manifest_check.py`: quiet manifest validation.
+- `link_report.py`: dry-run/default report discoverability linker.
 - `source_property_gate.py`: source/property label and gate audit for
   scorecard-like fit/admission rows.
 
@@ -110,3 +127,6 @@ Required running-job handoff fields:
 - Do not refresh generated index files while another active row owns them.
 - Do not run heavy work on login nodes.
 - Do not promote diagnostic CFD evidence to predictive runtime input.
+- Do not print full-board, full-repo search, full dirty-status, or full
+  evidence-table output when one of the bounded agent tools can answer the
+  question.

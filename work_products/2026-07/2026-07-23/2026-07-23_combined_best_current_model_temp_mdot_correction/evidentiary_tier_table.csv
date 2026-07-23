@@ -1,0 +1,3 @@
+component,tier,why
+temperature,holdout_external_validated,"F2_global_affine (Salt1-4 refit) is scored against salt2_lo5q/salt2_hi5q (real +/-5Q holdout perturbation runs) and val_salt2 (independent external-test case with a different property set), none of which were used in the coefficient fit."
+mass_flow,train_only_not_validated,"The 1-DOF multiplicative mdot correction is fit AND scored on the SAME 4 Salt1-4 nominal points -- the only 4 points with a measured mass-flow ground truth in the whole dataset. No measured mdot exists for salt2_lo5q/salt2_hi5q/val_salt2, and a Re-based back-calculation from those stations was reviewed and rejected because they are non-single-stream (37-79% local reverse-flow area fraction)."

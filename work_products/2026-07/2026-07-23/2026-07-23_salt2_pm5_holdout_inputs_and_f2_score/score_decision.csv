@@ -1,0 +1,13 @@
+key,value
+cfd_affine_all4_a,0.7669693427694646
+cfd_affine_all4_b,29.890929644616563
+holdout_salt2_pm5_new_cfd_affine_rmse_K,9.272464614880493
+holdout_salt2_pm5_new_cfd_affine_mae_K,7.040835015386576
+holdout_salt2_pm5_raw_1D_mae_K,95.09312688777995
+holdout_orig_experiment_f2_mae_K,6.010000977025231
+external_val_salt2_status,scored_cfd_basis_salt_jin
+external_val_salt2_new_cfd_affine_mae_K,7.615185760434417
+external_val_salt2_new_cfd_affine_rmse_K,10.250652587886675
+external_val_salt2_n,15
+physical_closure_claim,False
+repeated_exposure_caveat,"Salt2 +/-5Q and val_salt2 used more than once this session for model comparison; diagnostic refit, not a pristine single-use protected-split freeze score."

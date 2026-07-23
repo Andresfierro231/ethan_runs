@@ -1,0 +1,96 @@
+{
+  "task": "TODO-THESIS-FIGTABLE-D2-H2-DIAGNOSTIC-FIGURE-EXTENSION-2026-07-22",
+  "task_id": "TODO-THESIS-FIGTABLE-D2-H2-DIAGNOSTIC-FIGURE-EXTENSION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Figures / Thermal-modeling / Forward-pred / Implementer / Tester / Writer / Reviewer",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-FIGTABLE-D2-H2-DIAGNOSTIC-FIGURE-EXTENSION-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-figtable-d2-h2-diagnostic-figure-extension.md",
+    "imports/2026-07-22_thesis_figtable_d2_h2_diagnostic_figure_extension.json",
+    "tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/model_form_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_tw_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/tp_temperature_elevation_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/signed_error_panel_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/passive_h2_operator_case_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/passive_h2_operator_family_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/passive_h2_operator_global_patch_points.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/caption_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/D2_M3_sensor_kind_offsets_train",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figtable_model_form_and_blocked_scorecard_panels/figures/PASSIVE-H2-CAND001"
+  ],
+  "read_only_context": [
+    "AGENTS.md",
+    ".agent/BOARD.md",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_sensor_errors.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests/tested_model_form_scoreboard.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_d2_source_bounded_projection_holdout_external_score_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/candidate_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/corrected_operator_family_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/predictive_heat_ledger_delta.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_corrected_radiation_summary.csv",
+    "work_products/2026-07/2026-07-13/2026-07-13_predictive_forward_v0_solve_case_confirmation/solve_case_full/forward_v0_sensor_predictions_experimental.csv",
+    "reference/geometry_reference.md"
+  ],
+  "validation": [
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_thesis_figtable_model_form_and_blocked_scorecard_panels.py tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 tools/analyze/test_thesis_figtable_model_form_and_blocked_scorecard_panels.py",
+      "result": "passed"
+    },
+    {
+      "command": "visual inspection of D2 Salt2 TP/TW panel and PASSIVE-H2 case heat-path PNG",
+      "result": "passed"
+    }
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "provenance_flags": {
+    "native_output_mutation": false,
+    "registry_or_admission_mutation": false,
+    "scheduler_action": false,
+    "solver_sampler_harvest_uq_launched": false,
+    "validation_holdout_external_new_scoring": false,
+    "new_fitting_or_model_selection": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "numeric_q_loss_release": false,
+    "coefficient_admission": false,
+    "candidate_freeze": false,
+    "final_score_claim": false,
+    "s11_s12_s13_s15_s6_trigger": false,
+    "thesis_current_file_edit": false,
+    "blocker_register_change": false,
+    "fluid_source_edit": false,
+    "external_repo_edit": false,
+    "runtime_temperature_input_release": false,
+    "hidden_multiplier": false,
+    "residual_absorbed_into_internal_nu": false
+  },
+  "result": {
+    "decision": "thesis_figure_panels_ready_no_closure_admission",
+    "figure_panels": 40,
+    "model_form_ids": ["M1", "M1b", "M2", "M3", "D2_M3_sensor_kind_offsets_train", "PASSIVE-H2-CAND001"],
+    "current_best_numeric_model_form_by_experimental_tp_tw_rmse": "D2_M3_sensor_kind_offsets_train",
+    "current_best_numeric_model_form_experimental_tp_tw_rmse_K": "8.10959406187",
+    "current_best_numeric_model_form_status": "best_numeric_diagnostic_projection_addendum_not_admitted",
+    "best_current_legacy_numeric_model": "M3",
+    "passive_h2_corrected_operator_total_min_W": "38.6073163603066",
+    "passive_h2_corrected_operator_total_max_W": "44.677058690827764",
+    "operator_figure_panels": 3,
+    "final_score_values": 0
+  }
+}

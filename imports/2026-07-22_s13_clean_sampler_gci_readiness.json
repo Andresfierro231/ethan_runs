@@ -1,0 +1,69 @@
+{
+  "task": "TODO-S13-CLEAN-SAMPLER-GCI-READINESS-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Mesh-GCI / Implementer / Tester / Writer / Reviewer",
+  "objective": "Audit S13 sampler/GCI readiness using the failed medium/fine sampler, latest successful split rerun, and coarse/GCI disposition without scheduler or native-output mutation.",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/sampling_error_log.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_medium_fine_exact_label_sampler/faces",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_exact_label_qoi_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_candidate_coarse_medium_fine_reconciliation/qoi_reconciliation_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_same_label_coarse_gci_unlock/summary.json"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-CLEAN-SAMPLER-GCI-READINESS-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-clean-sampler-gci-readiness.md",
+    "imports/2026-07-22_s13_clean_sampler_gci_readiness.json",
+    "tools/analyze/build_s13_clean_sampler_gci_readiness.py",
+    "tools/analyze/test_s13_clean_sampler_gci_readiness.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/face_lane_contract_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/sampler_failure_reconciliation.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/latest_sampler_success_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/gci_go_no_go_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/clean_next_run_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_clean_sampler_gci_readiness/summary.json"
+  ],
+  "decision": "s13_clean_sampler_gci_readiness_latest_split_rerun_complete_gci_blocked_by_coarse_no_harvest",
+  "latest_split_terminal_window_reduction_rows": 18,
+  "latest_split_exact_label_qoi_rows": 72,
+  "gci_ready_rows": 0,
+  "production_harvest_allowed_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_s13_clean_sampler_gci_readiness.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_clean_sampler_gci_readiness.py tools/analyze/test_s13_clean_sampler_gci_readiness.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_clean_sampler_gci_readiness",
+      "result": "8 tests passed"
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "fluid_or_external_repo_mutated": false,
+    "thesis_current_or_latex_mutated": false,
+    "source_property_or_qwall_released": false,
+    "residual_value_released": false,
+    "coefficient_fitting_or_admission": false,
+    "protected_or_final_scoring": false,
+    "candidate_freeze": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "next_action": "Resolve strict same-label coarse equivalence or keep formal GCI fail-closed; do not duplicate the completed medium/fine split rerun unless input contracts change."
+}

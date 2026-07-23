@@ -1,0 +1,48 @@
+{
+  "task": "TODO-PASSIVE-H2-SOURCE-PROPERTY-GATE-RERUN-WITH-SALT34-SMOKE-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-SOURCE-PROPERTY-GATE-RERUN-WITH-SALT34-SMOKE-2026-07-22",
+  "changed_files": [
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-SOURCE-PROPERTY-GATE-RERUN-WITH-SALT34-SMOKE-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-source-property-gate-rerun-with-salt34-smoke.md",
+    "imports/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke.json",
+    "tools/analyze/build_passive_h2_source_property_gate_rerun_with_salt34_smoke.py",
+    "tools/analyze/test_passive_h2_source_property_gate_rerun_with_salt34_smoke.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/three_case_runtime_evidence.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/source_property_release_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/unblock_blocker_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/next_action_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/claim_boundaries.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_property_gate_rerun_with_salt34_smoke/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_outer_insulation_radiation_runtime_implementation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/case_runtime_smoke_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_subspan_mapping_release_recovery/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_candidate_specific_source_property_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/summary.json"
+  ],
+  "results": {
+    "decision": "passive_h2_with_salt34_smoke_runtime_evidence_complete_release_fail_closed",
+    "runtime_completed_case_rows": 3,
+    "runtime_nonzero_case_rows": 3,
+    "source_property_release_ready_rows": 0,
+    "freeze_ready_candidates": 0,
+    "final_score_values": 0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "scheduler_action_in_this_task": false,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "protected_scoring": false,
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "final_score_claim": false
+}

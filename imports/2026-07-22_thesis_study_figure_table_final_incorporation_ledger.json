@@ -1,0 +1,50 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/build_final_incorporation_ledger.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/check_final_incorporation_ledger.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/final_incorporation_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/caption_source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/missing_artifact_task_list.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/figure_count_reconciliation.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/external_writer_packet_schema_alignment.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/validation_report.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/summary.json",
+    ".agent/status/2026-07-22_TODO-THESIS-STUDY-FIGURE-TABLE-FINAL-INCORPORATION-LEDGER-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-study-figure-table-final-incorporation-ledger.md",
+    "imports/2026-07-22_thesis_study_figure_table_final_incorporation_ledger.json",
+    ".agent/BOARD.md"
+  ],
+  "date": "2026-07-22",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "candidate_freeze_or_final_score_claim": false,
+    "coefficient_admission": false,
+    "external_fluid_or_papers_repo_edited": false,
+    "figure_binary_copied": false,
+    "native_cfd_or_openfoam_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "thesis_latex_edited": false
+  },
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_figure_import_count_audit/**",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_evidence_packet_final_figure_import_ledger/**",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_tables_ledgers_post_study_refresh/**",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_compact_numerical_claims_ledger/**",
+    "reports/thesis_dossier/Chapters_and_sections/current/12_thesis_figures_and_diagrams_plan.md",
+    "reports/thesis_dossier/Chapters_and_sections/current/21_csem_figure_table_incorporation_package.md"
+  ],
+  "registry_mutated": false,
+  "role": "Writer / Figure-curation / Reviewer / Tester",
+  "scheduler_action": false,
+  "task": "TODO-THESIS-STUDY-FIGURE-TABLE-FINAL-INCORPORATION-LEDGER-2026-07-22",
+  "task_id": "TODO-THESIS-STUDY-FIGURE-TABLE-FINAL-INCORPORATION-LEDGER-2026-07-22",
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_figure_table_final_incorporation_ledger/check_final_incorporation_ledger.py"
+  ]
+}

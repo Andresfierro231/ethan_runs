@@ -1,0 +1,99 @@
+{
+  "manifest_id": "2026-07-23_combined_best_current_model_temp_mdot_correction",
+  "owner": "claude",
+  "task": "TODO-COMBINED-BEST-CURRENT-MODEL-TEMP-MDOT-CORRECTION-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "Assemble the final best-current combined model (temperature + mass-flow correction) requested by the user, combining the holdout/external-validated F2_global_affine (Salt1-4 refit) temperature correction with a train-only 1-DOF multiplicative mass-flow correction, documenting the friction root-cause finding for the mdot bias and the F6 pure-multiplier temperature ablation, and naming future work separately.",
+  "scope": "Empirical discrepancy/digital-twin-ROM diagnostic only, not a physical closure. Cites the F2 temperature correction verbatim from the read-only upstream refit package (no re-fitting). Recomputes the mass-flow multiplicative/affine fits in the open from the same 4 read-only Salt1-4 nominal summary.csv pairs already verified this session (not a new fitting exercise). Hard-codes the F6 ablation and friction-root-cause numbers with explicit provenance since those exact scoring passes were run ad hoc in-conversation this session and are not yet materialized as upstream CSVs. Does not touch any other board row's files (empirical_bias_salt1_4_refit, salt2_pm5_holdout_inputs_and_f2_score, f2_empirical_holdout_freeze_and_score, s13_stationary_window_qwall_mesh_gci).",
+  "new_tools": [
+    "tools/analyze/build_combined_best_current_model_temp_mdot_correction.py",
+    "tools/analyze/test_combined_best_current_model_temp_mdot_correction.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/README.md",
+    ".agent/status/2026-07-23_TODO-COMBINED-BEST-CURRENT-MODEL-TEMP-MDOT-CORRECTION-2026-07-23.md",
+    ".agent/journal/2026-07-23/combined-best-current-model-temp-mdot-correction.md",
+    "operational_notes/07-26/23/2026-07-23_COMBINED_BEST_CURRENT_MODEL_TEMP_MDOT_CORRECTION.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/summary.json",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/combined_model_spec.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/mdot_correction_fit.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/temp_correction_holdout_scores.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/f6_pure_multiplier_ablation.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/friction_root_cause.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/evidentiary_tier_table.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/future_work_sequence.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/source_manifest.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/refit_coefficients.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/holdout_external_score_old_vs_new.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/train_fit_quality.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_1/summary.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_2/summary.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_3/summary.csv",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_4/summary.csv",
+    "work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_admission_table.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py"
+  ],
+  "validation": [
+    {
+      "command": "python3 -m py_compile tools/analyze/build_combined_best_current_model_temp_mdot_correction.py tools/analyze/test_combined_best_current_model_temp_mdot_correction.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3 tools/analyze/build_combined_best_current_model_temp_mdot_correction.py",
+      "result": "passed; wrote full work_products package; no OpenFOAM, no 1D solve_case() run, no case_stage mutation"
+    },
+    {
+      "command": "python3 tools/analyze/test_combined_best_current_model_temp_mdot_correction.py",
+      "result": "Combined best-current model temp/mdot correction checks passed."
+    }
+  ],
+  "summary": {
+    "temperature_correction_a": 0.5746889644933884,
+    "temperature_correction_b": 138.28222646893295,
+    "temperature_holdout_mae_salt2_lo5q_K": 3.5017398572680727,
+    "temperature_holdout_mae_salt2_hi5q_K": 3.1694407461151193,
+    "temperature_external_mae_val_salt2_K": 5.868112800214832,
+    "temperature_evidentiary_tier": "holdout_external_validated",
+    "mdot_correction_a": 0.7504257967710826,
+    "mdot_raw_mean_rel_err_pct": 32.57455114068148,
+    "mdot_corrected_mean_rel_err_pct": 3.1658220088627402,
+    "mdot_evidentiary_tier": "train_only_not_validated",
+    "friction_closure_used": "F1",
+    "friction_closures_available_but_unwired": ["F3_hagenbach", "F4_leg_class", "F5_ri_corrected"],
+    "friction_f_times_re_all_cases": 64.0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": false,
+    "external_fluid_repo_edited": false,
+    "physical_closure_claim": false,
+    "physical_candidate_freeze": false,
+    "mdot_correction_claimed_holdout_validated": false,
+    "legitimate_single_use_protected_score": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false,
+    "other_board_row_files_touched": false,
+    "deletion_staging_commit_push": false
+  },
+  "open_questions_for_user": [
+    "Should the thesis narrative adopt this combined package's two-tier framing (temperature holdout-validated, mass-flow train-only) as the headline current-best-model statement, or wait for future_work_sequence.csv step 1 (friction-form swap) before reporting the mass-flow correction at all?",
+    "Should a genuine held-out mdot readout (future_work_sequence.csv step 4) be prioritized before any further predictive-model packaging work?"
+  ]
+}

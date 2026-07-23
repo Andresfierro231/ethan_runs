@@ -100,3 +100,10 @@
   destination for routine task closeout; normal task reporting still belongs in
   the task-specific status, journal, import manifest, package README, and topic
   map.
+
+## 2026-07-22
+
+- Scheduler wrappers for this Ethan/S13 workflow must not submit to
+  `development`. Use the NuclearEnergy dev queue. On Lonestar6 `sinfo` reports
+  the partition spelling as `NuclearEnergy-dev`; pair it with account
+  `ASC23046` unless a later task-specific scheduler note supersedes this.

@@ -1,0 +1,6 @@
+row_type,multiplier_a,offset_b_K,MAE_K,case_or_note,status
+coefficients,0.7915691091053846,97.05201417937809,9.2199,"train (Salt1-4, n=64)","OPTIONAL, not required"
+validation_score,,,2.834,salt2_lo5q,"OPTIONAL, not required"
+validation_score,,,4.034,salt2_hi5q,"OPTIONAL, not required"
+validation_score,,,5.523,val_salt2,"OPTIONAL, not required"
+meta_finding,,,4.13,"essentially the SAME ~9.2K training ceiling as every other affine-correction attempt this session regardless of underlying raw model -- the 2-DOF affine correction form itself seems to have a ~9.2-9.3K floor on this dataset no matter what physics precedes it, suggesting genuine local/segment-level structure a global affine correction cannot capture","helps lo5q substantially but slightly hurts hi5q vs the raw-physics-only version -- a genuine tradeoff, not a strict win"

@@ -1,0 +1,80 @@
+{
+  "task": "TODO-S13-DIRECT-SAME-LABEL-COARSE-EVIDENCE-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Mesh-GCI / Implementer / Tester / Writer / Reviewer",
+  "objective": "Attempt direct same-label coarse evidence admission from existing topology-derived S13 artifacts and publish an exact fail-closed extraction contract where required evidence is missing.",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/seeded_surface_input_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/case_preflight_matrix.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/input_file_existence_checks.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_vtk_from_seeded_cv/released_surface_vtk_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_same_label_mesh_family_generation/same_label_mesh_family_generated_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_target_plus_same_qoi_harvest/same_qoi_neighbor_window_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_medium_fine_exact_label_split_rerun/aggregated_exact_label_qoi_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_strict_coarse_nogo_contract/coarse_unlock_action_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_endpoint_face_geometry_release_mask_recovery/endpoint_face_geometry_recovery_matrix.csv"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-DIRECT-SAME-LABEL-COARSE-EVIDENCE-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-direct-same-label-coarse-evidence.md",
+    "imports/2026-07-22_s13_direct_same_label_coarse_evidence.json",
+    "tools/analyze/build_s13_direct_same_label_coarse_evidence.py",
+    "tools/analyze/test_s13_direct_same_label_coarse_evidence.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/direct_coarse_evidence_lane_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/case_qoi_direct_coarse_admission_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/direct_coarse_extraction_action_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_direct_same_label_coarse_evidence/summary.json"
+  ],
+  "decision": "s13_direct_coarse_geometry_ready_sampled_same_window_admission_blocked",
+  "case_rows": 3,
+  "evidence_lane_rows": 24,
+  "case_qoi_rows": 12,
+  "topology_geometry_ready_rows": 12,
+  "current_coarse_triplet_ready_rows": 12,
+  "field_property_basis_ready_rows": 0,
+  "same_window_medium_fine_role_ready_rows": 0,
+  "endpoint_residual_basis_ready_rows": 0,
+  "direct_same_label_coarse_admitted_rows": 0,
+  "formal_gci_allowed_rows": 0,
+  "same_qoi_uq_rerun_allowed_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_s13_direct_same_label_coarse_evidence.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_direct_same_label_coarse_evidence.py tools/analyze/test_s13_direct_same_label_coarse_evidence.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_direct_same_label_coarse_evidence",
+      "result": "5 tests passed"
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "solver_postprocessing_sampler_harvest_uq_launch": false,
+    "fluid_or_external_repo_mutated": false,
+    "thesis_current_or_latex_mutated": false,
+    "source_property_or_qwall_released": false,
+    "formal_gci_run_or_admission": false,
+    "same_qoi_uq_rerun": false,
+    "production_harvest_allowed": false,
+    "coefficient_fitting_or_admission": false,
+    "protected_or_final_scoring": false,
+    "candidate_freeze": false,
+    "s11_s12_s13_s15_s6_trigger": false
+  },
+  "coordination_caveat": "task_context.py reported a broad trigger-gated S11 tools/analyze pattern conflict; this task stayed in fresh S13-specific files and did not touch S11 candidate/source-property paths.",
+  "next_action": "Claim a scheduler-authorized direct coarse sampled-field extraction row; then resolve same-window medium/fine equivalence and endpoint residual basis before formal GCI or same-QOI UQ."
+}

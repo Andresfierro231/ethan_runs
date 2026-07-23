@@ -1,0 +1,5 @@
+case,status,paired_sensors
+salt_1,ok,15
+salt_2,ok,15
+salt_3,ok,15
+salt_4,ok,15

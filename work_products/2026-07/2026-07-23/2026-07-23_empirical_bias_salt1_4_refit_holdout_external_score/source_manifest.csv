@@ -1,0 +1,10 @@
+path,used_for,mutation_status
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/fit_and_transfer_sensor_rows.csv,Salt1-4 raw predicted_K/reference_K/sensor_kind/thermal_family sensor rows (refit input),read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/frozen_coefficients.csv,"OLD (Salt1/2-fit) frozen coefficients, for old-vs-new comparison",read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-17/2026-07-17_predict_salt2_pm5_holdout_extraction_repair/salt2_pm5_admission_table.csv,salt2_lo5q/salt2_hi5q bulk_T_K/wall_T_K holdout targets,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-17/2026-07-17_val_salt2_external_score_and_unlock_progress/val_salt2_external_score_targets.csv,val_salt2 sensor_temperature score_allowed==yes external-test targets,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/jadyn_runs/modern_runs/2026-07-04_corrected_salt_q_perturbations/corrected_case_manifest.csv,salt2 +/-5Q corrected heater-power confirmation,read_only
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py,solve_case() and ScenarioConfig used for raw 1D predictions,read_only
+/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/config_loader.py,load_cases() Salt 2 nominal ExperimentCase,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/scripts/build_tswfc2_bounded_nominal_scorecard.py,source of the exact tswfc2_smoke_salt2_four_node_v1 ScenarioConfig,read_only
+/scratch/09748/andresfierro231/projects_scratch/ethan_runs/tools/analyze/build_fluid_reduced_dof_bias_transfer_screen.py,source of the F0-F5 fitting methodology being reproduced at a larger fit set,read_only

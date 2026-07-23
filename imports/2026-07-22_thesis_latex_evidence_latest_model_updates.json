@@ -1,0 +1,48 @@
+{
+  "task": "TODO-THESIS-LATEX-EVIDENCE-LATEST-MODEL-UPDATES-2026-07-22",
+  "task_id": "TODO-THESIS-LATEX-EVIDENCE-LATEST-MODEL-UPDATES-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Writer / Reviewer / Integrator / Tester",
+  "objective": "Transfer completed compact model/update evidence into the CSEM thesis LaTeX repo and create a draft coordination surface for the outside writer.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-THESIS-LATEX-EVIDENCE-LATEST-MODEL-UPDATES-2026-07-22.md",
+    ".agent/journal/2026-07-22/thesis-latex-evidence-latest-model-updates.md",
+    "imports/2026-07-22_thesis_latex_evidence_latest_model_updates.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_latex_evidence_latest_model_updates",
+    "../papers/.agent/BOARD.md",
+    "../papers/.agent/status/csem-latex-evidence-latest-model-updates-2026-07-22.md",
+    "../papers/.agent/journal/2026-07-22/csem-latex-evidence-latest-model-updates-2026-07-22.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/latest_model_updates_2026_07_22",
+    "../papers/UTexas_Research/csem-Masters_dissertation/draft_coordination",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/README.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/evidence/compact_import_manifest.csv"
+  ],
+  "read_only_context": [
+    "completed model/update work_products under work_products/2026-07/2026-07-22",
+    "active board rows used only to exclude not-ready evidence",
+    "../papers/UTexas_Research/csem-Masters_dissertation/AGENTS.md",
+    "../papers/UTexas_Research/csem-Masters_dissertation/README.md"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": "none",
+  "external_fluid_edit": false,
+  "no_scorecard_outputs": true,
+  "mutation_flags": {
+    "native_cfd_openfoam_outputs": false,
+    "registry_or_admission_state": false,
+    "scheduler_state": false,
+    "solver_or_postprocessing_launched": false,
+    "fluid_source_tree": false,
+    "thesis_body_tex": false,
+    "generated_latex_outputs_staged": false,
+    "raw_cfd_import": false,
+    "source_property_release": false,
+    "qwall_release": false,
+    "coefficient_admission": false,
+    "candidate_freeze": false,
+    "final_score_claim": false,
+    "runtime_leakage_relaxation": false
+  }
+}

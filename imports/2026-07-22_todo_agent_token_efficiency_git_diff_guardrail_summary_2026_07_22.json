@@ -1,0 +1,58 @@
+{
+  "task": "TODO-AGENT-TOKEN-EFFICIENCY-GIT-DIFF-GUARDRAIL-SUMMARY-2026-07-22",
+  "task_id": "TODO-AGENT-TOKEN-EFFICIENCY-GIT-DIFF-GUARDRAIL-SUMMARY-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Coordinator / Implementer / Tester / Writer / Reviewer",
+  "objective": "Add the remaining low-token tooling gaps: path-scoped git diff summaries and quiet guardrail/lint command summaries.",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/README.md",
+    ".agent/status/2026-07-22_TODO-AGENT-TOKEN-EFFICIENCY-GIT-DIFF-GUARDRAIL-SUMMARY-2026-07-22.md",
+    ".agent/journal/2026-07-22/agent-token-efficiency-git-diff-guardrail-summary.md",
+    "AGENTS.md",
+    "imports/2026-07-22_agent_token_efficiency_git_diff_guardrail_summary.json",
+    "imports/2026-07-22_todo_agent_token_efficiency_git_diff_guardrail_summary_2026_07_22.json",
+    "tools/agent/README.md",
+    "tools/agent/guardrail_summary.py",
+    "tools/agent/test_agent_tools.py",
+    "tools/git/README.md",
+    "tools/git/diff_summary.py"
+  ],
+  "read_only_context": [
+    "tools/agent/README.md",
+    "tools/git/README.md",
+    "tools/agent/test_agent_tools.py",
+    "tools/git/clean_status_summary.py",
+    "tools/git/diff_check_filtered.py",
+    "tools/agent/status_scope.py",
+    "tools/agent/board_slice.py",
+    ".agent/FILE_OWNERSHIP.md",
+    ".agent/ROLES.md"
+  ],
+  "validation": [
+    "python3.11 -m pytest tools/agent/test_agent_tools.py -q",
+    "python3.11 tools/git/diff_summary.py --mode unstaged --limit 12 -- tools/git tools/agent AGENTS.md .agent/README.md",
+    "python3.11 tools/agent/guardrail_summary.py --limit 12 -- python3.11 -c \"print('== Demo =='); print('PASS: ok'); print('ordinary detail'); print('NOTE: bounded')\"",
+    "python3.11 tools/agent/guardrail_summary.py --limit 20 -- python3.11 tools/docs/build_repo_index.py --check"
+  ],
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_solver_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "solver_postprocessing_sampler_harvest_uq_launched": false,
+    "science_admission_changed": false,
+    "source_property_or_qwall_released": false,
+    "fluid_or_external_repo_edited": false,
+    "thesis_edited": false,
+    "blocker_register_source_changed": false,
+    "generated_index_rewritten": false,
+    "deleted_files": false,
+    "git_staged_committed_or_pushed": false,
+    "runtime_leakage_relaxed": false
+  },
+  "no_scorecard_outputs": true
+}

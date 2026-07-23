@@ -15,6 +15,9 @@ from typing import Any
 
 import numpy as np
 
+# numpy 2.0 removed np.trapz (renamed np.trapezoid); support both.
+_trapz = getattr(np, "trapz", None) or np.trapezoid
+
 ROOT = Path(__file__).resolve().parents[2]
 TMP_MPL_ROOT = ROOT / "tmp" / "mplconfig"
 TMP_MPL_ROOT.mkdir(parents=True, exist_ok=True)
@@ -650,8 +653,8 @@ def summarize_profiles(
             else:
                 normalized_u = np.clip(u_abs_valid / u_core, 0.0, 1.0)
                 delta99_u = interpolate_threshold_distance(y_valid, normalized_u, 0.99)
-                delta_star_u = float(np.trapz(1.0 - normalized_u, y_valid))
-                theta_u = float(np.trapz(normalized_u * (1.0 - normalized_u), y_valid))
+                delta_star_u = float(_trapz(1.0 - normalized_u, y_valid))
+                theta_u = float(_trapz(normalized_u * (1.0 - normalized_u), y_valid))
                 shape_factor_u = (
                     float(delta_star_u / theta_u) if math.isfinite(theta_u) and abs(theta_u) > EPS else math.nan
                 )

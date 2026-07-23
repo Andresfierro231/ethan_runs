@@ -148,7 +148,7 @@ def main() -> int:
     args = parser.parse_args()
 
     errors: list[str] = []
-    rows = parse_board()
+    rows = parse_board(include_archive=True)
     row = find_task(args.task_id, rows)
     if row is None:
         errors.append(f"task {args.task_id} not found on board")

@@ -10,9 +10,10 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "work_products/2026-07-08_upcomer_onset"
-DATA = ROOT / "work_products/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv"
-FIT = ROOT / "work_products/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv"
+OUT = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_upcomer_onset"
+DATA = ROOT / "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_dataset.csv"
+FIT = ROOT / "work_products/2026-07/2026-07-07/2026-07-07_upcomer_correlation_v2/upcomer_correlation_fit.csv"
+CURRENT_UQ = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/diagnostic_onset_evidence_table.csv"
 
 
 def read_csv(path: Path) -> list[dict[str, str]]:
@@ -85,9 +86,34 @@ def build_rows() -> list[dict[str, Any]]:
                 "onset_Re_route_B_mid": fit["onset_Re_route_B_mid"],
                 "uncertainty": uncertainty + ";three_point_extrapolation;coarse_no_gci",
                 "minimal_cfd_design_recommendation": "add admitted points near Re 150, 200, 250 plus wall-core DeltaT extraction and mesh/GCI evidence",
+                "current_uq_context": "recirculation_fraction_uq_available_if_case_label_matches",
             }
         )
     return rows
+
+
+def current_uq_rows() -> list[dict[str, Any]]:
+    if not CURRENT_UQ.exists():
+        return [
+            {
+                "source_path": rel(CURRENT_UQ),
+                "status": "missing_optional_current_uq_table",
+                "use": "not_available",
+                "admission_effect": "none",
+            }
+        ]
+    rows = read_csv(CURRENT_UQ)
+    return [
+        {
+            "source_path": rel(CURRENT_UQ),
+            "status": "available",
+            "use": "diagnostic_context_only",
+            "admission_effect": "none",
+            "row_count": len(rows),
+            "reverse_candidate_fraction_min": min((row.get("reverse_candidate_fraction_of_right_leg_roi", "") for row in rows), default=""),
+            "reverse_candidate_fraction_max": max((row.get("reverse_candidate_fraction_of_right_leg_roi", "") for row in rows), default=""),
+        }
+    ]
 
 
 def write_svg(rows: list[dict[str, Any]]) -> Path:
@@ -166,11 +192,20 @@ because all admitted points are inside the recirculating regime.
 - Corrected Salt perturbation conclusions remain work in progress and are not
   used here.
 - Wall-core Delta T is not yet directly available in the regime table source.
+- Current recirculation-fraction UQ context is included only as diagnostic
+  context; it does not admit an onset threshold or exchange coefficient.
 
 ## Recommended Next Action
 
 Use `figures/upcomer_onset_regime.svg` as a regime-table figure, with caveats.
 Add new CFD/design points near Re 150, 200, and 250 before fitting a threshold.
+
+## Guardrails
+
+No ordinary upcomer `Nu`, `f_D`, component `K`, exchange-cell coefficient,
+source/property release, validation/holdout/external scoring, native-output
+mutation, registry/admission mutation, scheduler action, Fluid/external edit,
+final score, or residual absorption into internal Nu was performed.
 """
     (OUT / "README.md").write_text(text, encoding="utf-8")
 
@@ -201,7 +236,22 @@ def build() -> dict[str, Any]:
             "onset_Re_route_B_mid",
             "uncertainty",
             "minimal_cfd_design_recommendation",
+            "current_uq_context",
         ],
+    )
+    write_csv(
+        OUT / "current_uq_context.csv",
+        current_uq_rows(),
+        ["source_path", "status", "use", "admission_effect", "row_count", "reverse_candidate_fraction_min", "reverse_candidate_fraction_max"],
+    )
+    write_csv(
+        OUT / "source_manifest.csv",
+        [
+            {"source_path": rel(DATA), "role": "legacy_upcomer_regime_dataset", "mutation_status": "read_only"},
+            {"source_path": rel(FIT), "role": "legacy_onset_fit_source", "mutation_status": "read_only"},
+            {"source_path": rel(CURRENT_UQ), "role": "current_recirc_fraction_uq_context", "mutation_status": "read_only"},
+        ],
+        ["source_path", "role", "mutation_status"],
     )
     fig = write_svg(rows)
     write_readme(rows)
@@ -211,10 +261,11 @@ def build() -> dict[str, Any]:
         "rows": len(rows),
         "regime_classes": sorted({row["regime_class"] for row in rows}),
         "figure": rel(fig),
-        "inputs": [rel(DATA), rel(FIT)],
-        "outputs": ["upcomer_onset_regime_table.csv", "figures/upcomer_onset_regime.svg", "README.md", "summary.json"],
-        "mesh_uncertainty_status": "work_in_progress_not_claimed",
-        "corrected_salt_perturbation_status": "converged_rows_closure_fit_admissible",
+        "inputs": [rel(DATA), rel(FIT), rel(CURRENT_UQ)],
+        "outputs": ["upcomer_onset_regime_table.csv", "current_uq_context.csv", "source_manifest.csv", "figures/upcomer_onset_regime.svg", "README.md", "summary.json"],
+        "mesh_uncertainty_status": "current_gate_open_elsewhere_no_formal_gci_here",
+        "ordinary_pipe_admission_rows": 0,
+        "exchange_coefficient_admission_rows": 0,
     }
     (OUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     return summary

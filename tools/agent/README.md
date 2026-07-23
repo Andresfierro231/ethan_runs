@@ -31,7 +31,27 @@ Run commands from the repo root unless noted otherwise.
 | `finish_task.py` | before closeout | Enforce minimum status/journal/import/index handoff. |
 | `source_property_gate.py` | before scorecard closeout | Audit fit/admission rows for source/property labels and gate blockers. |
 | `new_task.py` | before starting a new row | Scaffold task artifacts in dry-run or explicit-write mode. |
+| `claim_task.py` | before starting a new row | Compatibility alias for `new_task.py` used by older handoffs. |
+| `board_summary.py` | routine coordinator scans | Print bounded live-board counts, active rows, and completed rows still in Active. |
+| `board_slice.py` | when task/query is known | Print one exact row or a small filtered board slice without dumping long scope text. |
+| `board_row.py` | when task/query is known | Compatibility alias for `board_slice.py` used by older handoffs. |
+| `task_context.py` | after choosing a task | Show edit paths, read-only lanes, conflicts, instruction files, and closeout artifact presence. |
+| `board_archive.py` | after board hygiene | Move `## Archived ...` sections from the live board into `.agent/BOARD_ARCHIVE.md`. |
 | `board_dashboard.py` | anytime | Print compact active/live agent and open TODO view. |
+| `live_blockers.py` | startup / blocker scan | Print compact open blocker rows from generated `.agent/BLOCKERS.md` without long notes. |
+| `scope_conflict_audit.py` | before claiming/narrowing rows | Report broad open edit-path claims and active path overlaps. |
+| `safe_rg.py` | before repo searches | Guard broad ripgrep calls and stop after bounded output. |
+| `status_scope.py` | before status checks | Require path-scoped `git status --short -- <paths>`. |
+| `guardrail_summary.py` | before noisy validators | Run guardrail/lint commands and print bounded PASS/FAIL/NOTE lines. |
+| `preview_csv.py` | before CSV inspection | Show selected columns/rows instead of dumping full evidence tables. |
+| `read_csv_brief.py` | before CSV inspection | Compatibility alias for `preview_csv.py` used by older handoffs. |
+| `package_brief.py` | before package inspection | Summarize package files, CSV headers/counts, scalar JSON, and README headings. |
+| `package_digest.py` | before package inspection | Compatibility alias for `package_brief.py` used by older handoffs. |
+| `gate_snapshot.py` | before gate-package review | Print bounded package decision, pass/blocker, closed-guardrail, and action-row summaries. |
+| `manifest_check.py` | before manifest validation | Quiet JSON validation without pretty-printing full manifests. |
+| `closeout_stub.py` | before closeout docs | Dry-run or write status/journal/import skeletons for the current task. |
+| `closeout_bundle.py` | before closeout docs | Compatibility alias for `closeout_stub.py` used by older handoffs. |
+| `link_report.py` | after publishing reports | Add report links to standard discovery files in dry-run or explicit-write mode. |
 | `background_compute_helper.py` | before launching work | Choose `sbatch`, `srun`, or `tmux+srun` and list handoff fields. |
 | `split_policy_lint.py` | before predictive docs closeout | Catch stale current split language. |
 | `runtime_input_lint.py` | before predictive model closeout | Catch possible forbidden runtime-input leakage. |
@@ -163,6 +183,133 @@ Prints:
 - open TODO rows.
 
 This is for scanning, not for scientific status decisions.
+
+## `board_summary.py`
+
+```bash
+python3.11 tools/agent/board_summary.py --limit 30
+python3.11 tools/agent/board_summary.py --include-archive --limit 30
+python3.11 tools/agent/board_summary.py --task-filter LITREV --active-only --limit 10
+python3.11 tools/agent/board_summary.py --owner-filter codex --status-filter running --limit 10
+python3.11 tools/agent/board_summary.py --json
+```
+
+Use this instead of broad board reads when checking coordination state. It
+prints row counts by section/status, active rows needing attention, and completed
+rows still sitting in Active.
+
+## Low-Token Task Startup
+
+Use this sequence when the task ID or topic is known:
+
+```bash
+python3.11 tools/agent/board_slice.py --task-id TODO-EXAMPLE-2026-07-22
+python3.11 tools/agent/task_context.py --task-id TODO-EXAMPLE-2026-07-22
+python3.11 tools/agent/live_blockers.py --limit 12
+python3.11 tools/docs/state_brief.py --active --blockers
+```
+
+`board_slice.py` also supports bounded topic queries:
+
+```bash
+python3.11 tools/agent/board_slice.py --active --open --query S13 --limit 8
+python3.11 tools/agent/board_slice.py --task-id TODO-EXAMPLE-2026-07-22 --full
+python3.11 tools/agent/board_slice.py --query heat-loss --include-archive --json
+```
+
+Older handoffs may name equivalent aliases. These are supported and should be
+treated as the same tools: `board_row.py` -> `board_slice.py`,
+`claim_task.py` -> `new_task.py`, `package_digest.py` -> `package_brief.py`,
+`read_csv_brief.py` -> `preview_csv.py`, and `closeout_bundle.py` ->
+`closeout_stub.py`.
+
+`task_context.py` is the preferred one-task permission/context view. It prints
+only the selected row's editable paths, read-only context, active overlaps,
+instruction files to read, and whether closeout artifacts already exist.
+
+Use `scope_conflict_audit.py` when a row appears blocked by a broad optional
+scope such as `tools/analyze/`:
+
+```bash
+python3.11 tools/agent/scope_conflict_audit.py --limit 20
+python3.11 tools/agent/scope_conflict_audit.py --task-id TODO-EXAMPLE-2026-07-22
+```
+
+## Low-Output Inspection Tools
+
+Use these before any command that could print hundreds or thousands of lines.
+
+```bash
+python3.11 tools/agent/safe_rg.py "pattern" chapters data --glob "*.tex" --max-lines 120
+python3.11 tools/agent/safe_rg.py "pattern" . --glob "*.md" --max-count 5 --max-lines 80
+python3.11 tools/agent/live_blockers.py --limit 12
+python3.11 tools/agent/scope_conflict_audit.py --limit 20
+python3.11 tools/agent/status_scope.py tools/agent operational_notes/START_HERE_FOR_AGENTS.md
+python3.11 tools/agent/guardrail_summary.py -- scripts/check_guardrails.sh
+python3.11 tools/agent/preview_csv.py data.csv --cols case_id,gate_status,reason --grep blocked --rows 20
+python3.11 tools/agent/package_brief.py work_products/2026-07/2026-07-22/example --rows 1
+python3.11 tools/agent/gate_snapshot.py work_products/2026-07/2026-07-22/example --limit 8
+python3.11 tools/agent/manifest_check.py imports/2026-07-22_example.json --check-paths
+python3.11 tools/agent/closeout_stub.py --task-id TODO-EXAMPLE-2026-07-22
+```
+
+Rules:
+
+- Use `safe_rg.py` instead of bare repo-wide `rg`; broad `.` searches require
+  `--allow-broad` and still stop at `--max-lines`.
+- Use `status_scope.py`; do not run full `git status --short` in this dirty
+  workspace unless explicitly diagnosing repo-wide state.
+- Use `guardrail_summary.py` for validators that print long claim-boundary or
+  lint hit lists; rerun the raw command only when the summary reports a failure
+  or the task requires detailed review.
+- Use `preview_csv.py` for evidence tables; select columns and a row limit.
+- Use `package_brief.py` before recursive package inspection; escalate to
+  individual files only after the brief identifies what matters.
+- Use `gate_snapshot.py` on gate/audit packages before opening their full CSVs;
+  it reports compact decision, pass/blocker, guardrail, and next-action rows.
+- Use `manifest_check.py` for JSON validation; do not pretty-print full
+  manifests unless reviewing content.
+- Use `closeout_stub.py` in dry-run mode to confirm standard status, journal,
+  and manifest paths; use `--write` only when those paths are owned by the
+  board row.
+
+## `link_report.py`
+
+Dry-run default:
+
+```bash
+python3.11 tools/agent/link_report.py reports/2026-07/2026-07-22/example/README.md \
+  --title "Example report"
+```
+
+Explicit write:
+
+```bash
+python3.11 tools/agent/link_report.py reports/2026-07/2026-07-22/example/README.md \
+  --title "Example report" --targets start,maps,litrev,forward,thesis --write
+```
+
+This helper is intentionally simple. Review its diff after use and adjust the
+wording when a report needs a more specific pointer.
+
+## `board_archive.py`
+
+```bash
+python3.11 tools/agent/board_archive.py
+python3.11 tools/agent/board_archive.py --apply
+python3.11 tools/agent/board_archive.py --archive-task <TASK_ID> --apply
+python3.11 tools/agent/board_archive.py --check
+```
+
+Default mode is a dry run. `--apply` moves every `## Archived ...` section from
+`.agent/BOARD.md` to `.agent/BOARD_ARCHIVE.md`, preserving parser-readable rows
+verbatim and leaving a short archive pointer on the live board. `--archive-task`
+moves one `STATUS: COMPLETE` or `STATUS: BLOCKED` live row directly into the
+archive after validation. `--check` fails if archive sections are still embedded
+in the live board.
+
+`finish_task.py` is archive-aware, so completed tasks remain discoverable after
+their rows move out of `.agent/BOARD.md`.
 
 ## `background_compute_helper.py`
 

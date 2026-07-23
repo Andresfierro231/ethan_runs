@@ -1,0 +1,72 @@
+{
+  "task": "TODO-S13-THROUGHFLOW-ENDPOINT-MASK-DERIVATION-2026-07-22",
+  "date": "2026-07-22",
+  "role": "Thermal-modeling / Hydraulics / cfd-pp / Implementer / Tester / Writer / Reviewer",
+  "objective": "Address the S13 open-CV throughflow endpoint-mask blocker by auditing seeded cap-face artifacts and producing candidate masks or a fail-closed unblock contract.",
+  "read_only_context": [
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/seeded_surface_input_manifest.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_2_classified_seed_cap_faces.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_3_classified_seed_cap_faces.csv",
+    "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer_exchange_surface_input_manifest_from_seeded_cv/faces/salt_4_classified_seed_cap_faces.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_enthalpy_endpoint_preflight/endpoint_mask_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_enthalpy_endpoint_preflight/next_action_queue.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_residual_complete_open_cv_energy_balance_contract/throughflow_enthalpy_harvest_contract.csv"
+  ],
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-S13-THROUGHFLOW-ENDPOINT-MASK-DERIVATION-2026-07-22.md",
+    ".agent/journal/2026-07-22/s13-throughflow-endpoint-mask-derivation.md",
+    "imports/2026-07-22_s13_throughflow_endpoint_mask_derivation.json",
+    "tools/analyze/build_s13_throughflow_endpoint_mask_derivation.py",
+    "tools/analyze/test_s13_throughflow_endpoint_mask_derivation.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/classified_cap_face_inventory.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/endpoint_mask_derivation_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/endpoint_mask_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/next_unblock_contract.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks/salt_2_inlet_candidate_face_mask.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks/salt_2_outlet_candidate_face_mask.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks/salt_3_inlet_candidate_face_mask.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks/salt_3_outlet_candidate_face_mask.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks/salt_4_inlet_candidate_face_mask.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_throughflow_endpoint_mask_derivation/masks/salt_4_outlet_candidate_face_mask.csv"
+  ],
+  "decision": "s13_throughflow_endpoint_masks_fail_closed_candidate_seed_cap_masks_only",
+  "candidate_endpoint_masks_written": 6,
+  "released_endpoint_masks": 0,
+  "harvest_allowed_rows": 0,
+  "residual_value_release_rows": 0,
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "validation": [
+    {
+      "command": "python3.11 tools/analyze/build_s13_throughflow_endpoint_mask_derivation.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m py_compile tools/analyze/build_s13_throughflow_endpoint_mask_derivation.py tools/analyze/test_s13_throughflow_endpoint_mask_derivation.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3.11 -m unittest tools.analyze.test_s13_throughflow_endpoint_mask_derivation",
+      "result": "7 tests passed"
+    }
+  ],
+  "mutation_flags": {
+    "native_openfoam_outputs_mutated": false,
+    "registry_mutated": false,
+    "scheduler_action": false,
+    "fluid_or_external_repo_mutated": false,
+    "thesis_current_or_latex_mutated": false,
+    "source_property_or_qwall_released": false,
+    "residual_value_released": false,
+    "coefficient_fitting_or_admission": false,
+    "protected_or_final_scoring": false,
+    "endpoint_proxy_substitution": false
+  },
+  "next_action": "Regenerate or enrich the open-CV endpoint geometry table with area vectors, owner cells, normal convention, positive-mdot convention, and terminal window before any endpoint sampler or residual harvest."
+}

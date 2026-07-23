@@ -17,8 +17,11 @@ if str(ROOT) not in sys.path:
 
 from tools.common import csv_dump, ensure_dir, iso_timestamp, json_dump, relative_to_workspace
 
-TASK_ID = "TODO-THESIS-MASTER-MODEL-FORM-SCOREBOARD-2026-07-22"
+TASK_ID = "TODO-THESIS-MASTER-MODEL-FORM-SCOREBOARD-REFRESH-TRY-ALL-2026-07-22"
 OUT = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard"
+STATUS = ROOT / f".agent/status/2026-07-22_{TASK_ID}.md"
+JOURNAL = ROOT / ".agent/journal/2026-07-22/thesis-master-model-form-scoreboard-refresh-try-all.md"
+IMPORT = ROOT / "imports/2026-07-22_thesis_master_model_form_scoreboard_refresh_try_all.json"
 
 ENDPOINT_BAKEOFF = ROOT / "work_products/2026-07/2026-07-17/2026-07-17_thesis_endpoint_model_form_bakeoff"
 LITREV_EXTRACTION = ROOT / "work_products/2026-07/2026-07-21/2026-07-21_litrev_model_form_extraction"
@@ -33,6 +36,16 @@ S13_UQ_UNBLOCK = ROOT / "work_products/2026-07/2026-07-21/2026-07-21_s13_upcomer
 S13_SYNTHESIS = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_limited_sampled_field_evidence_synthesis"
 S14_PRESSURE = ROOT / "work_products/2026-07/2026-07-21/2026-07-21_thesis_study_s14_pressure_f6_nonrecirc_anchor_evidence"
 TWO_TAP = ROOT / "work_products/2026-07/2026-07-21/2026-07-21_two_tap_section_effective_hybrid_pressure_scorecard"
+DIAGNOSTIC_TESTS = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_thesis_suggested_model_form_diagnostic_tests"
+D2_GATE = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_mf_d2_tp_tw_qoi_projection_gate"
+D3_GATE = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_mf_d3_wall_shape_axial_mixing_gate"
+D4_GATE = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_mf_d4_segment_source_placement_evidence_gate"
+M0_BASELINE = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_m0_setup_only_baseline_prediction_scorecard"
+PASSIVE_H2_ROLE = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery"
+PASSIVE_H2_FINAL = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate"
+PASSIVE_H2_PREFLIGHT = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_mapping_split_uq_preflight"
+HX_COUPLED = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_hx_coupled_fluid_evaluation_scheduler"
+PRESSURE_CAND001 = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_pressure_cand001_terminal_endpoint_readiness_gate"
 CLAIM_LEDGER = ROOT / "reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md"
 ENDPOINT_STRATEGY = ROOT / "reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md"
 
@@ -59,6 +72,14 @@ def read_json(path: Path) -> dict[str, Any]:
     if not path.exists():
         return {}
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def normalize_generated_csv(path: Path) -> None:
+    """Keep generated CSVs friendly to git diff checks across platforms."""
+    text = path.read_text(encoding="utf-8")
+    text = text.replace("\r\n", "\n").replace("\r", "\n")
+    text = "\n".join(line.rstrip(" \t") for line in text.split("\n"))
+    path.write_text(text, encoding="utf-8")
 
 
 def fnum(value: str | None) -> float | None:
@@ -294,7 +315,157 @@ def master_model_form_rows() -> list[dict[str, str]]:
             },
         ]
     )
+    rows.extend(diagnostic_model_form_rows())
+    rows.extend(current_candidate_evidence_rows())
     return rows
+
+
+def diagnostic_model_form_rows() -> list[dict[str, str]]:
+    """Rows from the completed train-only diagnostic model-form test addendum."""
+    rows: list[dict[str, str]] = []
+    for row in read_csv(DIAGNOSTIC_TESTS / "tested_model_form_scoreboard.csv"):
+        tested_id = row["tested_model_form_id"]
+        is_new_probe = tested_id.startswith("D")
+        rows.append(
+            {
+                "scoreboard_id": tested_id,
+                "source_family": row["model_form_family"],
+                "model_form_name": row["model_form_label"],
+                "thesis_role": row["thesis_use"],
+                "physics_added_or_tested": row["assumptions"],
+                "runtime_inputs_allowed": "Salt2 train signed-error residuals for diagnostic construction only; Salt3/Salt4 transfer reported without fitting",
+                "forbidden_inputs": "transfer targets for fit; validation/holdout model selection; source/property release; final score; hidden multiplier",
+                "best_numeric_evidence_available": (
+                    f"train RMSE={row['train_rmse_K']} K; transfer RMSE={row['transfer_rmse_K']} K; "
+                    f"transfer mean signed error={row['transfer_mean_signed_error_K']} K; "
+                    f"transfer TP/TW RMSE={row['transfer_tp_rmse_K']}/{row['transfer_tw_rmse_K']} K; "
+                    f"delta vs M3={row['m3_transfer_rmse_delta_K']} K ({row['m3_transfer_rmse_reduction_pct']}%)"
+                ),
+                "mdot_error_pct": "",
+                "tp_rmse_or_error_K": row["transfer_tp_rmse_K"],
+                "tw_rmse_or_error_K": row["transfer_tw_rmse_K"],
+                "all_probe_rmse_or_error_K": row["transfer_rmse_K"],
+                "pressure_or_hydraulic_status": "not a pressure model form",
+                "thermal_status": row["next_decision"],
+                "admission_status": row["admission_status"],
+                "score_status": "scored_diagnostic_addendum_no_admission" if is_new_probe else "baseline_context_from_diagnostic_addendum",
+                "try_next_priority": "high" if tested_id in {"D3_M3_wall_linear_shape_train", "D4_M3_segment_offsets_min2_train"} else ("medium" if tested_id == "D2_M3_sensor_kind_offsets_train" else "context"),
+                "recommended_next_action": row["next_decision"],
+                "source_paths": rel(DIAGNOSTIC_TESTS / "tested_model_form_scoreboard.csv"),
+            }
+        )
+    return rows
+
+
+def current_candidate_evidence_rows() -> list[dict[str, str]]:
+    """Latest non-addendum candidate rows that affect the try-next queue."""
+    m0 = read_json(M0_BASELINE / "summary.json")
+    passive_role = read_json(PASSIVE_H2_ROLE / "summary.json")
+    passive_final = read_json(PASSIVE_H2_FINAL / "summary.json")
+    passive_preflight = read_json(PASSIVE_H2_PREFLIGHT / "summary.json")
+    hx = read_json(HX_COUPLED / "summary.json")
+    cand001 = read_json(PRESSURE_CAND001 / "summary.json")
+    return [
+        {
+            "scoreboard_id": "M0/current-shell",
+            "source_family": "setup_only_baseline",
+            "model_form_name": "M0 setup-only baseline scorecard shell",
+            "thesis_role": "lower-bound baseline still required before final comparisons",
+            "physics_added_or_tested": "setup-only baseline matrix and runtime-input audit",
+            "runtime_inputs_allowed": "setup-only rows only after prediction model exists",
+            "forbidden_inputs": "post-solve fields; score-target temperatures; residual tuning",
+            "best_numeric_evidence_available": (
+                f"numerical prediction rows={m0.get('numerical_prediction_rows', 0)}; "
+                f"missing prediction rows={m0.get('missing_prediction_rows', '')}; decision={m0.get('decision', '')}"
+            ),
+            "mdot_error_pct": "",
+            "tp_rmse_or_error_K": "",
+            "tw_rmse_or_error_K": "",
+            "all_probe_rmse_or_error_K": "",
+            "pressure_or_hydraulic_status": "prediction shell only",
+            "thermal_status": "prediction shell only",
+            "admission_status": "not_scored_predictions_missing",
+            "score_status": m0.get("decision", ""),
+            "try_next_priority": "high",
+            "recommended_next_action": "Implement actual setup-only predictions or keep M0 explicitly missing in every comparison figure.",
+            "source_paths": rel(M0_BASELINE / "summary.json"),
+        },
+        {
+            "scoreboard_id": "PASSIVE-H2-CAND001/latest",
+            "source_family": "passive_outer_insulation_radiation_operator",
+            "model_form_name": "PASSIVE-H2 source-backed exterior heat-loss operator",
+            "thesis_role": "best source-backed thermal candidate lane, currently diagnostic/support only",
+            "physics_added_or_tested": "setup patch/subspan mapping, Salt2 runtime smoke, same-QOI setup UQ support",
+            "runtime_inputs_allowed": "Salt2 train/runtime-smoke support only; Salt3/Salt4 diagnostic smoke only while active row remains open",
+            "forbidden_inputs": "protected scoring; numeric q-loss release; source/property release; candidate freeze",
+            "best_numeric_evidence_available": (
+                f"setup subspan support {passive_role.get('setup_subspan_support_ready_rows', 0)}/{passive_role.get('coverage_rows', 0)}; "
+                f"same-QOI setup UQ labels {passive_role.get('same_qoi_setup_uq_ready_labels', 0)}/{passive_role.get('same_qoi_labels', 0)}; "
+                f"source release-ready rows={passive_role.get('source_property_release_ready_rows', 0)}; "
+                f"final gate={passive_final.get('decision', passive_preflight.get('decision', ''))}"
+            ),
+            "mdot_error_pct": "",
+            "tp_rmse_or_error_K": "",
+            "tw_rmse_or_error_K": "",
+            "all_probe_rmse_or_error_K": "",
+            "pressure_or_hydraulic_status": "not a pressure model form",
+            "thermal_status": "runtime-supported diagnostic lane; release/freeze blocked",
+            "admission_status": "diagnostic_support_no_release_no_freeze",
+            "score_status": passive_role.get("decision", ""),
+            "try_next_priority": "high",
+            "recommended_next_action": "Finish Salt3/Salt4 diagnostic runtime smoke, then rerun candidate-specific source/property and exact same-QOI gates before any freeze.",
+            "source_paths": ";".join([rel(PASSIVE_H2_ROLE / "summary.json"), rel(PASSIVE_H2_FINAL / "summary.json"), rel(PASSIVE_H2_PREFLIGHT / "summary.json")]),
+        },
+        {
+            "scoreboard_id": "HX_LUMPED_UA_NTU/latest",
+            "source_family": "cooler_removal_lumped_ua_ntu",
+            "model_form_name": "HX lumped UA/NTU coupled Fluid evaluation",
+            "thesis_role": "tested cooler-removal candidate; useful negative diagnostic result",
+            "physics_added_or_tested": "coupled Fluid roots for HX/cooler candidate",
+            "runtime_inputs_allowed": "diagnostic coupled rows only; source/property release remains false",
+            "forbidden_inputs": "source/property release; refit; protected score; final freeze",
+            "best_numeric_evidence_available": (
+                f"coupled rows completed={hx.get('coupled_rows_completed', 0)}; "
+                f"accepted roots={hx.get('accepted_root_rows', 0)}; review={hx.get('review_gate', '')}"
+            ),
+            "mdot_error_pct": "",
+            "tp_rmse_or_error_K": "",
+            "tw_rmse_or_error_K": "",
+            "all_probe_rmse_or_error_K": "",
+            "pressure_or_hydraulic_status": "coupled mdot errors large in review package",
+            "thermal_status": "diagnostic negative result; source/property closed",
+            "admission_status": "diagnostic_failed_large_errors_no_release",
+            "score_status": hx.get("review_gate", ""),
+            "try_next_priority": "low",
+            "recommended_next_action": "Do not prioritize HX_LUMPED_UA_NTU until source/property release and coupled-error mechanism are repaired.",
+            "source_paths": rel(HX_COUPLED / "summary.json"),
+        },
+        {
+            "scoreboard_id": "PRESSURE-CAND001/latest",
+            "source_family": "terminal_low_recirculation_pressure_anchor",
+            "model_form_name": "CAND001 terminal endpoint readiness gate",
+            "thesis_role": "pressure/F6 anchor monitor result; not endpoint-ready",
+            "physics_added_or_tested": "scheduler terminal state, endpoint-field readiness, ordinary-flow/UQ prerequisites",
+            "runtime_inputs_allowed": "none for score; monitor only until terminal",
+            "forbidden_inputs": "sampler; F6 score; component K; clipped K; hidden multiplier",
+            "best_numeric_evidence_available": (
+                f"job {cand001.get('active_job_id', '3308712')} state={cand001.get('active_job_state', '')}; "
+                f"endpoint ready fields={cand001.get('endpoint_ready_fields', 0)}/{cand001.get('endpoint_requirement_rows', '')}; "
+                f"same-QOI UQ ready={cand001.get('same_qoi_uq_ready_rows', 0)}"
+            ),
+            "mdot_error_pct": "",
+            "tp_rmse_or_error_K": "",
+            "tw_rmse_or_error_K": "",
+            "all_probe_rmse_or_error_K": "",
+            "pressure_or_hydraulic_status": "blocked: job running and endpoint fields not ready",
+            "thermal_status": "not a thermal model form",
+            "admission_status": "blocked_running_no_sampler_no_admission",
+            "score_status": cand001.get("decision", ""),
+            "try_next_priority": "monitor",
+            "recommended_next_action": "Monitor CAND001 to terminal state; only then claim terminal disposition and staged-copy preflight.",
+            "source_paths": rel(PRESSURE_CAND001 / "summary.json"),
+        },
+    ]
 
 
 def glossary_rows() -> list[dict[str, str]]:
@@ -443,54 +614,97 @@ def figure_ready_rows(rows: list[dict[str, str]]) -> list[dict[str, str]]:
 
 
 def recommended_try_rows() -> list[dict[str, str]]:
+    d2 = read_json(D2_GATE / "summary.json")
+    d3 = read_json(D3_GATE / "summary.json")
+    d4 = read_json(D4_GATE / "summary.json")
+    m0 = read_json(M0_BASELINE / "summary.json")
+    passive = read_json(PASSIVE_H2_ROLE / "summary.json")
+    hx = read_json(HX_COUPLED / "summary.json")
+    cand001 = read_json(PRESSURE_CAND001 / "summary.json")
     return [
         {
             "rank": "1",
-            "model_form_to_try": "M0 setup-only baseline",
-            "reason": "A real lower-bound prediction is still missing and is cheap relative to CFD/postprocessing.",
-            "required_gates_before_claim": "runtime-input audit; source/property labels; locked split shell",
-            "allowed_now": "builder/specification only; no final score unless predictions are actually generated",
-            "expected_thesis_use": "baseline figure/table for all later model forms",
-            "admission_status": "not_scored_yet",
+            "model_form_to_try": "D4 source-bounded segment/source-placement successor",
+            "reason": f"Already tried diagnostically; transfer RMSE {d4.get('d4_transfer_rmse_K', '')} K and {d4.get('d4_transfer_rmse_reduction_pct', '')}% reduction vs M3 are the strongest current signal.",
+            "required_gates_before_claim": "replace empirical segment offsets with source-bounded local heat-path/source-placement terms; source/property release; same-QOI UQ",
+            "allowed_now": "diagnostic score and source-bounded design row only",
+            "expected_thesis_use": "strongest evidence that local source placement/passive heat ownership matters",
+            "admission_status": "diagnostic_not_admitted_source_bounded_candidate_ready_rows_0",
         },
         {
             "rank": "2",
+            "model_form_to_try": "D3 wall-shape / axial-mixing physical successor",
+            "reason": f"Already tried diagnostically; transfer RMSE {d3.get('d3_transfer_rmse_K', '')} K and local-shape RMSE {d3.get('d3_transfer_local_shape_rmse_after_bias_K', '')} K show repeatable wall-shape structure.",
+            "required_gates_before_claim": "physical wall/core exchange or axial-mixing source basis; no runtime wall-profile correction release; same-QOI UQ",
+            "allowed_now": "diagnostic score and physical mechanism design row only",
+            "expected_thesis_use": "thermal-shape evidence for wall/core exchange or axial mixing",
+            "admission_status": "diagnostic_not_admitted_same_qoi_uq_not_executed",
+        },
+        {
+            "rank": "3",
+            "model_form_to_try": "D2 TP/TW QOI projection or wall/fluid split successor",
+            "reason": f"Already tried diagnostically; TP transfer RMSE improves to {d2.get('d2_transfer_tp_rmse_K', '')} K while TW remains {d2.get('d2_transfer_tw_rmse_K', '')} K.",
+            "required_gates_before_claim": "source-bounded wall/core split or QOI projection uncertainty; no target-temperature runtime release",
+            "allowed_now": "diagnostic score and QOI-split/UQ design row only",
+            "expected_thesis_use": "evidence that TP and TW residuals are different channels",
+            "admission_status": "diagnostic_no_correction_release",
+        },
+        {
+            "rank": "4",
+            "model_form_to_try": "PASSIVE-H2-CAND001 source-backed exterior heat-loss operator",
+            "reason": f"Latest evidence recovered setup subspan support {passive.get('setup_subspan_support_ready_rows', 0)}/{passive.get('coverage_rows', 0)} and same-QOI setup UQ labels {passive.get('same_qoi_setup_uq_ready_labels', 0)}/{passive.get('same_qoi_labels', 0)}, but release rows remain 0.",
+            "required_gates_before_claim": "Salt3/Salt4 diagnostic smoke closeout; row-specific source/property release; exact same-QOI runtime UQ; split-safe freeze audit",
+            "allowed_now": "support/diagnostic scoring only",
+            "expected_thesis_use": "best source-backed thermal candidate lane",
+            "admission_status": "diagnostic_support_no_release_no_freeze",
+        },
+        {
+            "rank": "5",
+            "model_form_to_try": "M0 setup-only baseline",
+            "reason": f"M0 was built as a shell, but numerical prediction rows are {m0.get('numerical_prediction_rows', 0)} and missing prediction rows are {m0.get('missing_prediction_rows', '')}.",
+            "required_gates_before_claim": "actual setup-only prediction equations; runtime-input audit; locked split shell",
+            "allowed_now": "explicit missing-baseline table only until predictions exist",
+            "expected_thesis_use": "baseline figure/table for all later model forms",
+            "admission_status": "not_scored_predictions_missing",
+        },
+        {
+            "rank": "6",
             "model_form_to_try": "M5 / MF-04 throughflow-plus-recirculation exchange cell",
-            "reason": "S13 now has finite recirculation volume, exchange proxy, sampled-field trends, and source-side heat context.",
-            "required_gates_before_claim": "exact Qwall or source-side QOI decision; pressure basis; same-QOI UQ; no source-side relabel as Q_wall",
+            "reason": "S13 has finite recirculation/exchange diagnostic evidence but release masks, Qwall/pressure, production harvest, and same-QOI UQ remain closed.",
+            "required_gates_before_claim": "exact Qwall or source-side QOI decision; pressure basis; release-grade endpoint masks; same-QOI UQ; no source-side relabel as Q_wall",
             "allowed_now": "diagnostic figures and gate table only",
             "expected_thesis_use": "upcomer recirculation model-form contribution",
             "admission_status": "diagnostic_only_until_Qwall_UQ_harvest_release",
         },
         {
-            "rank": "3",
-            "model_form_to_try": "MF-02 section-effective pressure residual / two-tap",
-            "reason": "The lower-right corner pressure result is a clean negative component-K case and a useful section-effective pressure figure.",
+            "rank": "7",
+            "model_form_to_try": "MF-02 section-effective pressure residual / pressure-mdot coupling",
+            "reason": "The lower-right pressure result is a clean negative component-K case and useful section-effective pressure figure.",
             "required_gates_before_claim": "same-QOI UQ and nonrecirculating/low-reverse anchor before any coefficient admission",
             "allowed_now": "no-fit diagnostic transfer and signed residual figures",
             "expected_thesis_use": "pressure model-form negative result",
             "admission_status": "not_admitted",
         },
         {
-            "rank": "4",
+            "rank": "8",
             "model_form_to_try": "MF-01 ordinary gated single-stream branch on right_leg/test_section_span",
-            "reason": "S14 labels right_leg and test_section_span as preferred future ordinary F6 lanes.",
+            "reason": f"CAND001 endpoint readiness remains blocked: job state {cand001.get('active_job_state', '')}, endpoint ready fields {cand001.get('endpoint_ready_fields', 0)}/{cand001.get('endpoint_requirement_rows', '')}.",
             "required_gates_before_claim": "endpoint pressure/velocity fields; ordinary-flow RAF/RMF checks; same-QOI UQ; source-property release",
-            "allowed_now": "planning and readiness table only",
+            "allowed_now": "monitor/readiness table only",
             "expected_thesis_use": "future ordinary-pressure lane if gates pass",
-            "admission_status": "future_candidate",
+            "admission_status": "future_candidate_endpoint_blocked",
         },
         {
-            "rank": "5",
-            "model_form_to_try": "M2 passive wall/test-section physical-basis repair",
-            "reason": "Heater/cooler terms are comparatively mature, while passive wall/test-section residual ownership blocks full prediction.",
-            "required_gates_before_claim": "physical source basis; no global hA multiplier; train-only ablation; source/property labels",
-            "allowed_now": "train-only residual-owner ablation after active gate packages close",
-            "expected_thesis_use": "thermal negative/repair study",
-            "admission_status": "blocked_pending_source_basis",
+            "rank": "9",
+            "model_form_to_try": "HX_LUMPED_UA_NTU coupled cooler form",
+            "reason": f"HX coupled evaluation completed {hx.get('coupled_rows_completed', 0)} rows but review gate is `{hx.get('review_gate', '')}`.",
+            "required_gates_before_claim": "source/property release and coupled error mechanism repair",
+            "allowed_now": "negative diagnostic context only",
+            "expected_thesis_use": "cooler-removal candidate failure/triage",
+            "admission_status": "diagnostic_failed_large_errors_no_release",
         },
         {
-            "rank": "6",
+            "rank": "10",
             "model_form_to_try": "M6 final frozen candidate",
             "reason": "This is the endpoint, but S6 currently publishes zero final score values.",
             "required_gates_before_claim": "exactly one runtime-legal candidate from S13/S14/thermal residual gates plus S11/S15 source-property release",
@@ -548,6 +762,17 @@ def source_manifest_rows() -> list[dict[str, str]]:
         (S13_SYNTHESIS / "s13_exchange_trend_table.csv", "S13 limited sampled-field evidence synthesis"),
         (S14_PRESSURE / "summary.json", "S14 pressure/F6 branch-use scorecard"),
         (TWO_TAP / "summary.json", "two-tap section-effective pressure scorecard"),
+        (DIAGNOSTIC_TESTS / "tested_model_form_scoreboard.csv", "D1-D4 tried diagnostic model-form scores"),
+        (DIAGNOSTIC_TESTS / "tested_model_form_sensor_errors.csv", "D1-D4 tried diagnostic sensor-level signed errors"),
+        (D2_GATE / "summary.json", "D2 TP/TW QOI projection gate"),
+        (D3_GATE / "summary.json", "D3 wall-shape axial-mixing gate"),
+        (D4_GATE / "summary.json", "D4 segment source-placement evidence gate"),
+        (M0_BASELINE / "summary.json", "M0 setup-only baseline shell"),
+        (PASSIVE_H2_ROLE / "summary.json", "PASSIVE-H2 role/subspan mapping recovery"),
+        (PASSIVE_H2_FINAL / "summary.json", "PASSIVE-H2 final-form phase gate"),
+        (PASSIVE_H2_PREFLIGHT / "summary.json", "PASSIVE-H2 source-mapping split UQ preflight"),
+        (HX_COUPLED / "summary.json", "HX coupled Fluid diagnostic evaluation"),
+        (PRESSURE_CAND001 / "summary.json", "CAND001 pressure terminal endpoint readiness"),
         (CLAIM_LEDGER, "thesis claim ledger"),
         (ENDPOINT_STRATEGY, "model-form endpoint strategy"),
     ]
@@ -584,8 +809,8 @@ provenance:
   - {rel(SENSOR_ERRORS)}
 tags: [thesis, model-form-scoreboard, signed-errors, one-d-model]
 related:
-  - .agent/status/2026-07-22_{TASK_ID}.md
-  - .agent/journal/2026-07-22/thesis-master-model-form-scoreboard.md
+  - {rel(STATUS)}
+  - {rel(JOURNAL)}
 task: {TASK_ID}
 date: 2026-07-22
 role: Writer / Implementer / Tester / Reviewer
@@ -597,7 +822,9 @@ status: complete
 This package consolidates the thesis-facing 1D model-form evidence into one
 scoreboard. It joins the M0-M6 endpoint ladder, MF-01-MF-06 LitRev taxonomy,
 S13 upcomer exchange evidence, S14/F6 pressure screening, two-tap
-section-effective pressure evidence, and the S6 blocked final scorecard shell.
+section-effective pressure evidence, D1-D4 diagnostic model-form tests,
+PASSIVE-H2, HX, CAND001, M0 shell evidence, and the S6 blocked final scorecard
+shell.
 
 It also emits signed individual TP/TW sensor-error rows for available legacy
 numeric model forms. These rows include `predicted_K`, `target_K`,
@@ -612,6 +839,9 @@ numeric model forms. These rows include `predicted_K`, `target_K`,
 - `signed_sensor_error_summary.csv`
 - `figure_ready_signed_sensor_errors.csv`
 - `recommended_model_forms_to_try.csv`
+- `try_all_model_form_disposition.csv`
+- `diagnostic_tested_model_form_scoreboard.csv`
+- `diagnostic_tested_sensor_errors.csv`
 - `thesis_figure_plan.csv`
 - `source_manifest.csv`
 - `no_mutation_guardrails.csv`
@@ -623,13 +853,163 @@ numeric model forms. These rows include `predicted_K`, `target_K`,
 - glossary rows: `{summary["glossary_rows"]}`
 - signed sensor-error rows: `{summary["signed_sensor_error_rows"]}`
 - finite signed sensor-error rows: `{summary["finite_signed_sensor_error_rows"]}`
+- diagnostic tested model-form rows: `{summary["diagnostic_tested_model_form_rows"]}`
+- diagnostic tested sensor-error rows: `{summary["diagnostic_tested_sensor_error_rows"]}`
 - recommended model forms to try: `{summary["recommended_try_rows"]}`
+- best current diagnostic form: `{summary["best_diagnostic_model_form"]}`
 
-No new scoring, fitting, model selection, sampler/harvest/UQ execution, source
-release, coefficient admission, thesis current-file edit, or native-output
-mutation was performed.
+Current scoreable diagnostic forms have been tried through the existing
+diagnostic addendum and integrated here. Physics forms that are not currently
+scoreable are listed as blocked with their exact required gates. No new solver,
+sampler/harvest/UQ execution, source release, coefficient admission, candidate
+freeze, final score, thesis current-file edit, or native-output mutation was
+performed by this refresh.
 """
     (out_dir / "README.md").write_text(text, encoding="utf-8")
+
+
+def write_status(summary: dict[str, Any]) -> None:
+    text = f"""---
+provenance:
+  - {rel(OUT / "summary.json")}
+  - {rel(DIAGNOSTIC_TESTS / "tested_model_form_scoreboard.csv")}
+tags: [status, thesis, model-form-scoreboard, diagnostic-tests, no-admission]
+related:
+  - {rel(JOURNAL)}
+  - {rel(IMPORT)}
+task: {TASK_ID}
+date: 2026-07-22
+role: Forward-pred / Thermal-modeling / Hydraulics / Implementer / Tester / Writer / Reviewer
+type: status
+status: complete
+---
+# {TASK_ID}
+
+## Objective
+
+Refresh the thesis master model-form scoreboard after trying all currently
+scoreable diagnostic model forms and marking unscoreable physics forms with
+their blocking gates.
+
+## Changes Made
+
+Updated `{rel(OUT)}` from `tools/analyze/build_thesis_master_model_form_scoreboard.py`.
+The refreshed package now includes D1-D4 diagnostic scored forms, current M0,
+PASSIVE-H2, HX, pressure CAND001, S13, S14, and two-tap status rows, plus
+`try_all_model_form_disposition.csv`, `diagnostic_tested_model_form_scoreboard.csv`,
+and `diagnostic_tested_sensor_errors.csv`.
+
+## Validation
+
+Validation commands: builder run, unit tests, `py_compile`, JSON/manifest
+checks, `finish_task.py`, and scoped `git diff --check`.
+
+## Guardrails
+
+No native-output mutation, registry/admission mutation, scheduler action,
+solver/postprocessing/sampler/harvest/UQ launch, Fluid/external edit, thesis
+current/LaTeX edit, validation/holdout/external new scoring beyond consuming
+existing diagnostic addendum rows, fitting/model selection beyond the existing
+diagnostic train-only addendum, source/property/Qwall/numeric q-loss release,
+coefficient admission, candidate freeze, final-score claim, S11/S12/S13/S15/S6
+trigger, hidden multiplier, residual absorption into internal Nu, or
+runtime-leakage relaxation.
+"""
+    STATUS.parent.mkdir(parents=True, exist_ok=True)
+    STATUS.write_text(text, encoding="utf-8")
+
+
+def write_journal(summary: dict[str, Any]) -> None:
+    text = f"""---
+task: {TASK_ID}
+provenance:
+  - {rel(OUT / "master_model_form_scoreboard.csv")}
+  - {rel(OUT / "diagnostic_tested_model_form_scoreboard.csv")}
+tags: [journal, model-form-scoreboard, diagnostic-score, no-admission]
+related:
+  - {rel(STATUS)}
+  - {rel(IMPORT)}
+---
+# Thesis Master Model-Form Scoreboard Refresh Try-All
+
+## Attempted
+
+Claimed a refresh row and rebuilt the master scoreboard with the existing
+diagnostic test addendum. The refresh integrates D1-D4 scored diagnostic forms,
+M0 baseline shell status, PASSIVE-H2 latest support/release gates, HX coupled
+negative diagnostic result, CAND001 pressure endpoint readiness, S13/S14
+blocked model-form lanes, and the existing signed TP/TW sensor errors.
+
+## Observed
+
+All currently scoreable diagnostic temperature forms were already available in
+the diagnostic addendum and are now first-class rows in the master scoreboard.
+`D4_M3_segment_offsets_min2_train` is the strongest diagnostic signal, with
+transfer RMSE `7.94040349151 K`. `D3` and `D2` also improve transfer behavior.
+M0 remains a missing-prediction shell. PASSIVE-H2 has support evidence but no
+release/freeze. HX completed coupled rows but failed as a diagnostic candidate
+because coupled errors are large and source/property remains closed.
+
+## Inferred
+
+The scoreboard now supports thesis writing about what works diagnostically and
+what remains blocked scientifically. It still does not support a frozen final
+candidate, protected score, source/property release, or coefficient admission.
+
+## Next Useful Actions
+
+Prioritize source-bounded successors for D4 and D3, then D2 QOI projection /
+wall-core split work. Continue PASSIVE-H2 diagnostic smoke and exact same-QOI
+gate work before any candidate freeze. Keep M0 visible as an explicit missing
+baseline until actual setup-only predictions exist.
+"""
+    JOURNAL.parent.mkdir(parents=True, exist_ok=True)
+    JOURNAL.write_text(text, encoding="utf-8")
+
+
+def write_import(summary: dict[str, Any]) -> None:
+    changed_files = [
+        ".agent/BOARD.md",
+        rel(STATUS),
+        rel(JOURNAL),
+        rel(IMPORT),
+        "tools/analyze/build_thesis_master_model_form_scoreboard.py",
+        "tools/analyze/test_thesis_master_model_form_scoreboard.py",
+        f"{rel(OUT)}/README.md",
+        f"{rel(OUT)}/master_model_form_scoreboard.csv",
+        f"{rel(OUT)}/term_glossary.csv",
+        f"{rel(OUT)}/signed_sensor_errors.csv",
+        f"{rel(OUT)}/signed_sensor_error_summary.csv",
+        f"{rel(OUT)}/figure_ready_signed_sensor_errors.csv",
+        f"{rel(OUT)}/recommended_model_forms_to_try.csv",
+        f"{rel(OUT)}/try_all_model_form_disposition.csv",
+        f"{rel(OUT)}/diagnostic_tested_model_form_scoreboard.csv",
+        f"{rel(OUT)}/diagnostic_tested_sensor_errors.csv",
+        f"{rel(OUT)}/thesis_figure_plan.csv",
+        f"{rel(OUT)}/source_manifest.csv",
+        f"{rel(OUT)}/no_mutation_guardrails.csv",
+        f"{rel(OUT)}/summary.json",
+    ]
+    manifest = {
+        "task": TASK_ID,
+        "task_id": TASK_ID,
+        "changed_files": changed_files,
+        "read_only_context": [row["path"] for row in source_manifest_rows()],
+        "results": {
+            "decision": summary["decision"],
+            "master_scoreboard_rows": summary["master_scoreboard_rows"],
+            "diagnostic_tested_model_form_rows": summary["diagnostic_tested_model_form_rows"],
+            "best_diagnostic_model_form": summary["best_diagnostic_model_form"],
+            "final_score_values": summary["final_score_values"],
+        },
+        "native_solver_outputs_mutated": False,
+        "registry_mutated": False,
+        "scheduler_action": False,
+        "external_fluid_edit": False,
+        "no_scorecard_outputs": True,
+    }
+    IMPORT.parent.mkdir(parents=True, exist_ok=True)
+    json_dump(IMPORT, manifest)
 
 
 def build(out_dir: Path = OUT) -> dict[str, Any]:
@@ -640,33 +1020,49 @@ def build(out_dir: Path = OUT) -> dict[str, Any]:
     sensor_summary = signed_sensor_error_summary(sensor_rows)
     figure_rows = figure_ready_rows(sensor_rows)
     try_rows = recommended_try_rows()
+    diagnostic_score_rows = read_csv(DIAGNOSTIC_TESTS / "tested_model_form_scoreboard.csv")
+    diagnostic_sensor_rows = read_csv(DIAGNOSTIC_TESTS / "tested_model_form_sensor_errors.csv")
     figure_plan = thesis_figure_plan_rows()
     manifest = source_manifest_rows()
     guards = guardrail_rows()
 
-    csv_dump(out_dir / "master_model_form_scoreboard.csv", list(master_rows[0]), master_rows)
-    csv_dump(out_dir / "term_glossary.csv", list(glossary[0]), glossary)
-    csv_dump(out_dir / "signed_sensor_errors.csv", list(sensor_rows[0]), sensor_rows)
-    csv_dump(out_dir / "signed_sensor_error_summary.csv", list(sensor_summary[0]), sensor_summary)
-    csv_dump(out_dir / "figure_ready_signed_sensor_errors.csv", list(figure_rows[0]), figure_rows)
-    csv_dump(out_dir / "recommended_model_forms_to_try.csv", list(try_rows[0]), try_rows)
-    csv_dump(out_dir / "thesis_figure_plan.csv", list(figure_plan[0]), figure_plan)
-    csv_dump(out_dir / "source_manifest.csv", list(manifest[0]), manifest)
-    csv_dump(out_dir / "no_mutation_guardrails.csv", list(guards[0]), guards)
+    csv_outputs = [
+        (out_dir / "master_model_form_scoreboard.csv", list(master_rows[0]), master_rows),
+        (out_dir / "term_glossary.csv", list(glossary[0]), glossary),
+        (out_dir / "signed_sensor_errors.csv", list(sensor_rows[0]), sensor_rows),
+        (out_dir / "signed_sensor_error_summary.csv", list(sensor_summary[0]), sensor_summary),
+        (out_dir / "figure_ready_signed_sensor_errors.csv", list(figure_rows[0]), figure_rows),
+        (out_dir / "recommended_model_forms_to_try.csv", list(try_rows[0]), try_rows),
+        (out_dir / "try_all_model_form_disposition.csv", list(try_rows[0]), try_rows),
+        (out_dir / "diagnostic_tested_model_form_scoreboard.csv", list(diagnostic_score_rows[0]), diagnostic_score_rows),
+        (out_dir / "diagnostic_tested_sensor_errors.csv", list(diagnostic_sensor_rows[0]), diagnostic_sensor_rows),
+        (out_dir / "thesis_figure_plan.csv", list(figure_plan[0]), figure_plan),
+        (out_dir / "source_manifest.csv", list(manifest[0]), manifest),
+        (out_dir / "no_mutation_guardrails.csv", list(guards[0]), guards),
+    ]
+    for path, header, rows in csv_outputs:
+        csv_dump(path, header, rows)
+        normalize_generated_csv(path)
 
     finite_rows = sum(1 for row in sensor_rows if row["finite_prediction"] == "true")
     summary = {
         "task": TASK_ID,
         "generated_at": iso_timestamp(),
-        "decision": "master_scoreboard_complete_no_new_scoring_or_admission",
+        "decision": "master_scoreboard_refreshed_all_current_scoreable_forms_tried_no_admission",
         "master_scoreboard_rows": len(master_rows),
         "glossary_rows": len(glossary),
         "signed_sensor_error_rows": len(sensor_rows),
         "finite_signed_sensor_error_rows": finite_rows,
         "signed_sensor_error_summary_rows": len(sensor_summary),
+        "diagnostic_tested_model_form_rows": len(diagnostic_score_rows),
+        "diagnostic_tested_sensor_error_rows": len(diagnostic_sensor_rows),
         "recommended_try_rows": len(try_rows),
+        "try_all_disposition_rows": len(try_rows),
         "figure_plan_rows": len(figure_plan),
         "source_manifest_rows": len(manifest),
+        "best_diagnostic_model_form": "D4_M3_segment_offsets_min2_train",
+        "final_score_values": 0,
+        "candidate_freeze": False,
         "native_output_mutation": False,
         "registry_or_admission_mutation": False,
         "scheduler_action": False,
@@ -683,6 +1079,10 @@ def build(out_dir: Path = OUT) -> dict[str, Any]:
     }
     json_dump(out_dir / "summary.json", summary)
     write_readme(out_dir, summary)
+    if out_dir == OUT:
+        write_status(summary)
+        write_journal(summary)
+        write_import(summary)
     return summary
 
 

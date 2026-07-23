@@ -1,0 +1,12 @@
+key,value
+method,stationary_terminal_window_mesh_gci_removes_same_absolute_time_blocker_for_steady_qois
+r21,1.4781512804584056
+r32,1.4600200420429916
+qwall_cases_mesh_uq_admitted,3
+exchange_proxy_cases_mesh_uq_admitted,0
+overall,qwall_mesh_uq_admitted_exchange_proxies_fail_closed_mesh_unconverged
+same_qoi_mesh_gci_gate,pass_for_Q_wall_only
+source_property_release,False
+candidate_freeze,False
+final_score_values,0
+scope_note,"Q_wall is the seeded exchange-CV trusted-wall wallHeatFlux integral; its mesh-UQ admission is a mesh_gci_gate component, not a PASSIVE-H2 qambient release and not a freeze."

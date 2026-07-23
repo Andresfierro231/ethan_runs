@@ -17,7 +17,7 @@ from typing import Any
 
 
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "work_products/2026-07/2026-07-09/2026-07-09_model_form_bakeoff_thermal_refresh"
+OUT = ROOT / "work_products/2026-07/2026-07-22/2026-07-22_model_form_bakeoff"
 
 OBS = ROOT / "work_products/2026-07/2026-07-09/2026-07-09_closure_observation_table_thermal_refresh/closure_observations.csv"
 FRICTION = ROOT / "work_products/2026-07/2026-07-07/2026-07-07_friction_forms_comparison/mdot_comparison.csv"
@@ -285,7 +285,7 @@ Generated: `{datetime.now().isoformat(timespec='seconds')}`
 
 ## Scope
 
-Refresh bakeoff for `AGENT-247`. This package consumes the canonical July 9
+Refresh bakeoff for `TODO-MODEL-FORM-BAKEOFF`. This package consumes the canonical July 9
 observation table and existing 1D model-form outputs. It does not rerun or edit
 the external Fluid model.
 
@@ -301,6 +301,8 @@ the external Fluid model.
   table carries explicit no-`qr` semantics.
 - Thermal residuals and sampled interface rows are scored separately from mdot
   and pressure; they are not used to fit model coefficients.
+- No validation, holdout, or external-test scoring was newly executed in this
+  refresh.
 
 ## Inferred Interpretation
 
@@ -322,8 +324,23 @@ why mdot alone is not a sufficient closure score.
 Rerun the external Fluid model only after deciding which candidate forms should
 emit per-segment pressure and heat predictions in a common schema. Keep pressure
 distribution, mdot, and thermal-state mismatch as separate objective columns.
+
+## Guardrails
+
+No native solver output, registry/admission state, scheduler state, Fluid source,
+external repository, thesis body, source/property release, coefficient
+admission, final score, or residual absorption into internal Nu was mutated.
 """
     (OUT / "README.md").write_text(text, encoding="utf-8")
+
+
+def source_manifest() -> list[dict[str, str]]:
+    return [
+        {"source_path": rel(OBS), "role": "canonical_observation_table", "mutation_status": "read_only"},
+        {"source_path": rel(FRICTION), "role": "F1_F3_F4_mdot_score_source", "mutation_status": "read_only"},
+        {"source_path": rel(F5), "role": "F5_Ri_corrected_screen_source", "mutation_status": "read_only"},
+        {"source_path": rel(PRESSURE), "role": "pressure_distribution_target_source", "mutation_status": "read_only"},
+    ]
 
 
 def build() -> dict[str, Any]:
@@ -389,9 +406,14 @@ def build() -> dict[str, Any]:
         ],
     )
     write_readme(summary_rows, case_scores, obs)
+    write_csv(
+        OUT / "source_manifest.csv",
+        source_manifest(),
+        ["source_path", "role", "mutation_status"],
+    )
     summary = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
-        "task": "AGENT-247",
+        "task": "TODO-MODEL-FORM-BAKEOFF",
         "observation_rows": len(obs),
         "case_score_rows": len(case_scores),
         "model_forms": [row["model_form"] for row in summary_rows],
@@ -404,9 +426,12 @@ def build() -> dict[str, Any]:
             "model_form_case_scores.csv",
             "observation_use_summary.csv",
             "observation_quality_summary.csv",
+            "source_manifest.csv",
             "README.md",
             "summary.json",
         ],
+        "protected_scoring_executed": False,
+        "admission_or_release": False,
     }
     (OUT / "summary.json").write_text(json.dumps(summary, indent=2) + "\n", encoding="utf-8")
     return summary

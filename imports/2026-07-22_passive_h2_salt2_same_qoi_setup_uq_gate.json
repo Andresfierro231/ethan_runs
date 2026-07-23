@@ -1,0 +1,39 @@
+{
+  "task": "TODO-PASSIVE-H2-SALT2-SAME-QOI-SETUP-UQ-GATE-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-SALT2-SAME-QOI-SETUP-UQ-GATE-2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-SALT2-SAME-QOI-SETUP-UQ-GATE-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-salt2-same-qoi-setup-uq-gate.md",
+    "imports/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate.json",
+    "tools/analyze/build_passive_h2_salt2_same_qoi_setup_uq_gate.py",
+    "tools/analyze/test_passive_h2_salt2_same_qoi_setup_uq_gate.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/qoi_readiness_gate.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/qoi_envelope_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/input_family_sensitivity.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/runtime_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt2_same_qoi_setup_uq_gate/summary.json"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery/same_qoi_setup_uq_readiness.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery/same_qoi_setup_only_uq_results.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_subspan_mapping_release_recovery/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_runtime_operator_smoke_uq_gate/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_outer_insulation_radiation_runtime_implementation/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate/summary.json"
+  ],
+  "results": {
+    "decision": "passive_h2_salt2_same_qoi_setup_uq_diagnostic_ready_no_release",
+    "diagnostic_ready_qoi_labels": 6,
+    "release_ready_qoi_labels": 0
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "final_score_claim": false
+}

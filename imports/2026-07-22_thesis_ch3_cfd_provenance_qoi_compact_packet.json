@@ -8,6 +8,8 @@
     ".agent/status/2026-07-22_TODO-THESIS-CH3-CFD-PROVENANCE-QOI-COMPACT-PACKET-2026-07-22.md",
     ".agent/journal/2026-07-22/thesis-ch3-cfd-provenance-qoi-compact-packet.md",
     "imports/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet.json",
+    "tools/analyze/build_thesis_ch3_cfd_provenance_qoi_compact_packet.py",
+    "tools/analyze/test_thesis_ch3_cfd_provenance_qoi_compact_packet.py",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/README.md",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/case_provenance_table.csv",
     "work_products/2026-07/2026-07-22/2026-07-22_thesis_ch3_cfd_provenance_qoi_compact_packet/retained_window_table.csv",

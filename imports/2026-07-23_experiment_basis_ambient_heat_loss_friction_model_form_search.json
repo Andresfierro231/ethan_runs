@@ -1,0 +1,116 @@
+{
+  "manifest_id": "2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search",
+  "owner": "claude",
+  "task": "TODO-EXPERIMENT-BASIS-AMBIENT-HEAT-LOSS-FRICTION-MODEL-FORM-SEARCH-2026-07-23",
+  "generated_at": "2026-07-23",
+  "purpose": "Document a real solver-level model-form search (friction-closure form, ambient heat-loss/insulation magnitude, internal-Nu magnitude) for reducing TP/TW error on the TSWFC2 candidate tswfc2_smoke_salt2_four_node_v1, scored against EXPERIMENTAL measured_K (NOT CFD reference_k). Twelve findings: friction closure comparison, mdot/temperature decoupling check, two undocumented prior sweeps found, a sign-error correction (methodological lesson), a corrected-direction insulation screening sweep with a genuine non-monotonic optimum, a fine mdot-zero-crossing refinement, full Salt1-4 train validation at the recommended combo, validation-case scores with zero fitted parameters, an optional residual affine correction, a decisive internal-Nu ablation up to 500x, physical-plausibility caveats, and a validation-exposure count.",
+  "scope": "Experiment-anchored (measured_K) secondary track, explicitly OFF-SCOPE for the CFD-only thesis main body (which uses CFD reference_k, tracked separately in the concurrent CFD-basis packages). Not a physical closure claim; insulation_multiplier~=0.08 is a calibrated hypothesis, NOT an independently-verified physical measurement. Not a legitimate single-use protected-split score (3rd-4th exposure this session of salt2_lo5q/salt2_hi5q/val_salt2). No new solver runs performed by this task; all solver-level numbers were computed in-conversation earlier this session via ad hoc solve_case() calls and are cited with explicit provenance, not re-run. Does not touch any other board row's files.",
+  "new_tools": [
+    "tools/analyze/build_experiment_basis_ambient_heat_loss_friction_model_form_search.py",
+    "tools/analyze/test_experiment_basis_ambient_heat_loss_friction_model_form_search.py"
+  ],
+  "new_docs": [
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/README.md",
+    ".agent/status/2026-07-23_TODO-EXPERIMENT-BASIS-AMBIENT-HEAT-LOSS-FRICTION-MODEL-FORM-SEARCH-2026-07-23.md",
+    ".agent/journal/2026-07-23/experiment-basis-ambient-heat-loss-friction-model-form-search.md",
+    "operational_notes/07-26/23/2026-07-23_EXPERIMENT_BASIS_AMBIENT_HEAT_LOSS_FRICTION_MODEL_FORM_SEARCH.md"
+  ],
+  "work_products": [
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/summary.json",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/friction_closure_comparison.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/mdot_temperature_decoupling_check.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/prior_undocumented_sweeps_found.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/sign_convention_corrections.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/insulation_screening_sweep.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/insulation_friction_zero_crossing_refinement.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/salt1_4_train_validation_at_recommended_combo.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/validation_case_scores_raw_physics.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/residual_correction_on_physics_baseline.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/internal_nu_ablation.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/physical_plausibility_caveats.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/claim_boundary_table.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/validation_exposure_count.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/validation_terminology_crosswalk.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/source_manifest.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_experiment_basis_ambient_heat_loss_friction_model_form_search/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/refit_coefficients.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/train_fit_quality.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_empirical_bias_salt1_4_refit_holdout_external_score/holdout_external_score_old_vs_new.csv",
+    "work_products/2026-07/2026-07-23/2026-07-23_combined_best_current_model_temp_mdot_correction/friction_root_cause.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/master_model_form_scoreboard.csv",
+    ".agent/BLOCKERS.md",
+    "CLAUDE.md",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/friction_closures.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/solver.py",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/joint_htc_friction_calibration_weekend_focused_v1/trial_grid__salt.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/practical_reduced_order_broadened_v1/analysis/scenario_rankings.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/practical_reduced_order_broadened_v1/scenario_plan.csv",
+    "../cfd-modeling-tools/tamu_first_order_model/Fluid/results/diagnostics/practical_reduced_order_broadened_v1/RUN_SUMMARY.md",
+    "work_products/2026-07/2026-07-20/2026-07-20_tswfc2_bounded_nominal_scorecard/case_outputs/Salt_2/validation_table.csv"
+  ],
+  "validation": [
+    {
+      "command": "python3 -m py_compile tools/analyze/build_experiment_basis_ambient_heat_loss_friction_model_form_search.py tools/analyze/test_experiment_basis_ambient_heat_loss_friction_model_form_search.py",
+      "result": "passed"
+    },
+    {
+      "command": "python3 tools/analyze/build_experiment_basis_ambient_heat_loss_friction_model_form_search.py",
+      "result": "passed; wrote full work_products package; no OpenFOAM, no 1D solve_case() run, no case_stage mutation"
+    },
+    {
+      "command": "python3 tools/analyze/test_experiment_basis_ambient_heat_loss_friction_model_form_search.py",
+      "result": "Experiment-basis ambient heat-loss + friction model-form search checks passed."
+    }
+  ],
+  "summary": {
+    "friction_closure_comparison_mean_pct_err": {
+      "F1": 32.58,
+      "F3_shah_apparent": 15.83,
+      "F3_hagenbach": 11.82
+    },
+    "recommended_combo": {
+      "friction_form": "F3_hagenbach",
+      "insulation_multiplier": 0.08,
+      "major_loss_multiplier": 0.6
+    },
+    "salt1_4_train_mean_at_recommended_combo": {
+      "mean_abs_mdot_err_pct": 4.48,
+      "mean_TP_K": 5.73,
+      "mean_TW_K": 20.68
+    },
+    "internal_nu_ablation_gap_closed_K": 2.36,
+    "m3_comparator_TP_K": 13.558,
+    "m3_comparator_TW_K": 18.9775
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "native_cfd_outputs_mutated": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "openfoam_solver_or_postprocessing_launch": false,
+    "local_fluid_1d_solve_case_run": false,
+    "external_fluid_repo_edited": false,
+    "physical_closure_claim": false,
+    "physical_candidate_freeze": false,
+    "insulation_8pct_claimed_as_verified_physical_measurement": false,
+    "legitimate_single_use_protected_score": false,
+    "final_predictive_admission": false,
+    "source_property_release": false,
+    "blocker_register_changed": false,
+    "generated_docs_index_changed": false,
+    "thesis_files_changed": false,
+    "other_board_row_files_touched": false,
+    "deletion_staging_commit_push": false,
+    "cfd_reference_k_basis_claimed_as_main_body": false
+  },
+  "open_questions_for_user": [
+    "Should the recommended combo (friction_form=F3_hagenbach, insulation_multiplier=0.08, major_loss_multiplier=0.6) be actually re-run as a real solver campaign (not just cited from this session's ad hoc exploration) to confirm it before any further use?",
+    "Should the val_salt2 property-basis discrepancy (this package used salt_current; the parallel CFD-basis session found salt_jin is methodologically consistent) be resolved before this package's validation-case scores are cited again?",
+    "Is there any physical/photographic evidence of the rig's actual insulation condition that could confirm or refute the insulation~=8%-of-nameplate calibrated hypothesis?"
+  ]
+}

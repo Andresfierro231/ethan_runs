@@ -1,0 +1,9 @@
+key,value
+f2_frozen,True
+harness_built_and_dry_run_validated,True
+protected_rows_scored,0
+overall,f2_frozen_and_score_harness_ready_holdout_score_blocked_pending_target_extraction
+sole_blocker_salt2_pm5,TP/TW CFD sensor target extraction for salt2_lo5q/salt2_hi5q (existing runs) + 1D +/-5Q predictions
+additional_blocker_val_salt2,missing compatible external-test sensor artifact
+physical_closure_claim,False
+final_protected_score_values,0

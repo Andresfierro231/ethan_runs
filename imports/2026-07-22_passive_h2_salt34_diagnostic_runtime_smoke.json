@@ -1,0 +1,49 @@
+{
+  "task": "TODO-PASSIVE-H2-SALT34-DIAGNOSTIC-RUNTIME-SMOKE-2026-07-22",
+  "task_id": "TODO-PASSIVE-H2-SALT34-DIAGNOSTIC-RUNTIME-SMOKE-2026-07-22",
+  "changed_files": [
+    ".agent/BOARD.md",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-SALT34-DIAGNOSTIC-RUNTIME-SMOKE-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-salt34-diagnostic-runtime-smoke.md",
+    "imports/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke.json",
+    "tools/analyze/build_passive_h2_salt34_diagnostic_runtime_smoke.py",
+    "tools/analyze/test_passive_h2_salt34_diagnostic_runtime_smoke.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/case_runtime_smoke_summary.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/heat_ledger_delta_by_case.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/runtime_smoke_qoi_rows.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/release_gate_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/command_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/salt34_runtime_legality.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/operator_case_split_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/runner_contract_audit.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/release_freeze_disposition.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_salt34_diagnostic_runtime_smoke/no_mutation_guardrails.csv"
+  ],
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery/salt34_runtime_smoke_eligibility.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thermal_passive_h2_multi_train_corrected_radiation_smoke/case_family_corrected_radiation_operator.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_corrected_operator_predictive_train_packet/predicted_heat_ledger_delta.csv",
+    "/scratch/09748/andresfierro231/projects_scratch/cfd-modeling-tools/tamu_first_order_model/Fluid/tamu_loop_model_v2/passive_h2_radiation_runtime_smoke.py"
+  ],
+  "results": {
+    "decision": "passive_h2_salt34_diagnostic_runtime_smoke_complete_no_release_no_score",
+    "completed_case_rows": 2,
+    "accepted_root_case_rows": 2,
+    "nonzero_radiation_case_rows": 2
+  },
+  "native_solver_outputs_mutated": false,
+  "registry_mutated": false,
+  "registry_or_admission_mutated": false,
+  "scheduler_action": true,
+  "external_fluid_edit": false,
+  "fluid_or_external_edit": false,
+  "fluid_source_edit": false,
+  "thesis_current_or_latex_edit": false,
+  "protected_scoring": false,
+  "source_property_release": false,
+  "candidate_freeze": false,
+  "final_score_claim": false
+}

@@ -1,0 +1,36 @@
+{
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/README.md",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/release_grade_subspan_evidence_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/release_blocker_ledger.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/runtime_legality_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/source_manifest.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/no_mutation_guardrails.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_release_evidence/summary.json",
+    "tools/analyze/build_passive_h2_role_subspan_release_evidence.py",
+    "tools/analyze/test_passive_h2_role_subspan_release_evidence.py",
+    ".agent/status/2026-07-22_TODO-PASSIVE-H2-ROLE-SUBSPAN-RELEASE-EVIDENCE-2026-07-22.md",
+    ".agent/journal/2026-07-22/passive-h2-role-subspan-release-evidence.md",
+    "imports/2026-07-22_passive_h2_role_subspan_release_evidence.json"
+  ],
+  "created_at_utc": "2026-07-22T20:17:44.376137+00:00",
+  "external_fluid_edit": false,
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "provenance_flags": {
+    "candidate_freeze": false,
+    "final_score_claim": false,
+    "qwall_release": false,
+    "source_property_release": false
+  },
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery/family_subspan_recovery_matrix.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_role_subspan_mapping_recovery/source_family_patch_subspan_coverage.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_source_mapping_split_uq_preflight/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_passive_h2_outer_insulation_radiation_runtime_implementation/summary.json",
+    "work_products/2026-07/2026-07-13/2026-07-13_thermal_boundary_patch_role_table/thermal_boundary_patch_role_table.csv"
+  ],
+  "registry_mutated": false,
+  "scheduler_action": false,
+  "task": "TODO-PASSIVE-H2-ROLE-SUBSPAN-RELEASE-EVIDENCE-2026-07-22"
+}

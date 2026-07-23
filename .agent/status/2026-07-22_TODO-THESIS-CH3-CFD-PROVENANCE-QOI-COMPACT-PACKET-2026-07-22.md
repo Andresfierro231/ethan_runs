@@ -50,6 +50,8 @@ a reference simulation database, not an experimental validation database.
   files.
 - Recorded a status file, journal entry, and import manifest for the task.
 - Updated the board row to complete.
+- Added task-owned builder/test wrappers that validate the existing compact
+  package row counts and guardrails.
 
 ## Validation
 
@@ -57,6 +59,9 @@ a reference simulation database, not an experimental validation database.
   retained-window rows, 12 QoI dictionary rows, 8 method rows, 9 claim-boundary
   rows, 7 figure/table rows, 8 source-manifest rows, and 8 guardrail rows.
 - JSON parse validation passed for `summary.json` and the import manifest.
+- `python3.11 tools/analyze/build_thesis_ch3_cfd_provenance_qoi_compact_packet.py`
+- `python3.11 -m unittest tools.analyze.test_thesis_ch3_cfd_provenance_qoi_compact_packet`
+- `python3.11 -m py_compile tools/analyze/build_thesis_ch3_cfd_provenance_qoi_compact_packet.py tools/analyze/test_thesis_ch3_cfd_provenance_qoi_compact_packet.py`
 
 ## Unresolved Blockers
 

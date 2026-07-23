@@ -1,48 +1,38 @@
 {
+  "changed_files": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/check_upcomer_onset_packet.py",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/README.md",
+    ".agent/status/2026-07-22_TODO-THESIS-STUDY-UPCOMER-ONSET-ANCHOR-DESIGN-AND-RECIRC-FRACTION-UQ-2026-07-22.md",
+    "imports/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq.json",
+    ".agent/BOARD.md"
+  ],
+  "date": "2026-07-22",
+  "external_fluid_edit": false,
+  "mutation_flags": {
+    "active_s13_sampler_mutated": false,
+    "candidate_freeze_or_final_score_claim": false,
+    "coefficient_admission": false,
+    "external_fluid_or_papers_repo_edited": false,
+    "native_cfd_or_openfoam_outputs_mutated": false,
+    "ordinary_upcomer_closure_admission": false,
+    "production_harvest": false,
+    "registry_or_admission_mutated": false,
+    "scheduler_action": false,
+    "source_property_or_qwall_release": false
+  },
+  "native_solver_outputs_mutated": false,
+  "no_scorecard_outputs": true,
+  "read_only_context": [
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/*.csv",
+    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/summary.json",
+    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/summary.json"
+  ],
+  "registry_mutated": false,
+  "role": "Hydraulics / Thermal-modeling / cfd-pp / Writer / Reviewer / Tester",
+  "scheduler_action": false,
   "task": "TODO-THESIS-STUDY-UPCOMER-ONSET-ANCHOR-DESIGN-AND-RECIRC-FRACTION-UQ-2026-07-22",
   "task_id": "TODO-THESIS-STUDY-UPCOMER-ONSET-ANCHOR-DESIGN-AND-RECIRC-FRACTION-UQ-2026-07-22",
-  "date": "2026-07-22",
-  "role": "Hydraulics / Thermal-modeling / cfd-pp / Writer / Reviewer / Tester",
-  "changed_files": [
-    ".agent/BOARD.md",
-    ".agent/status/2026-07-22_TODO-THESIS-STUDY-UPCOMER-ONSET-ANCHOR-DESIGN-AND-RECIRC-FRACTION-UQ-2026-07-22.md",
-    ".agent/journal/2026-07-22/thesis-study-upcomer-onset-anchor-design-and-recirc-fraction-uq.md",
-    "imports/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq.json",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/README.md",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/recirculation_fraction_definition_contract.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/diagnostic_onset_evidence_table.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/nondimensional_regime_context.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/same_qoi_uq_mesh_gate.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/ordinary_closure_disable_map.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/future_anchor_design_matrix.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/figure_table_targets.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/source_manifest.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/no_mutation_guardrails.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/summary.json",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/figures/svg/upcomer_onset_evidence_gate.svg"
-  ],
-  "read_only_context": [
-    "AGENTS.md",
-    ".agent/BOARD.md",
-    ".agent/FILE_OWNERSHIP.md",
-    ".agent/ROLES.md",
-    "tools/AGENTS.override.md",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/README.md",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/recirculation_onset_metric_table.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/reverse_flow_topology_proxy.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/s13_exchange_tau_proxy_table.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_thesis_study_recirculation_fraction_onset_evidence_packet/same_qoi_temporal_uq_boundary.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_s13_upcomer_exchange_qwall_mesh_gci_uq_gate/summary.json",
-    "work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/segment_case_regime_map.csv",
-    "work_products/2026-07/2026-07-22/2026-07-22_1d_regime_map_nondimensional_closure_eligibility/closure_eligibility_decisions.csv"
-  ],
-  "native_solver_outputs_mutated": false,
-  "registry_mutated": false,
-  "registry_or_admission_mutated": false,
-  "scheduler_action": false,
-  "external_fluid_edit": false,
-  "active_s13_sampler_mutated": false,
-  "source_property_release_mutated": false,
-  "production_harvest_or_mesh_gci_run": false,
-  "coefficient_or_final_score": false
+  "validation": [
+    "python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_upcomer_onset_anchor_design_and_recirc_fraction_uq/check_upcomer_onset_packet.py"
+  ]
 }

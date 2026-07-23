@@ -38,9 +38,11 @@ class ThesisMasterModelFormScoreboardTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as tmp:
             out = Path(tmp) / "pkg"
             summary = builder.build(out)
-            self.assertEqual(summary["decision"], "master_scoreboard_complete_no_new_scoring_or_admission")
-            self.assertGreaterEqual(summary["master_scoreboard_rows"], 15)
+            self.assertEqual(summary["decision"], "master_scoreboard_refreshed_all_current_scoreable_forms_tried_no_admission")
+            self.assertGreaterEqual(summary["master_scoreboard_rows"], 25)
             self.assertEqual(summary["signed_sensor_error_rows"], 204)
+            self.assertEqual(summary["diagnostic_tested_model_form_rows"], 6)
+            self.assertEqual(summary["final_score_values"], 0)
             for filename in [
                 "master_model_form_scoreboard.csv",
                 "term_glossary.csv",
@@ -48,6 +50,9 @@ class ThesisMasterModelFormScoreboardTests(unittest.TestCase):
                 "signed_sensor_error_summary.csv",
                 "figure_ready_signed_sensor_errors.csv",
                 "recommended_model_forms_to_try.csv",
+                "try_all_model_form_disposition.csv",
+                "diagnostic_tested_model_form_scoreboard.csv",
+                "diagnostic_tested_sensor_errors.csv",
                 "thesis_figure_plan.csv",
                 "source_manifest.csv",
                 "no_mutation_guardrails.csv",
@@ -59,6 +64,8 @@ class ThesisMasterModelFormScoreboardTests(unittest.TestCase):
             ids = {row["scoreboard_id"] for row in master}
             self.assertIn("M5/S13", ids)
             self.assertIn("MF-02/two-tap", ids)
+            self.assertIn("D4_M3_segment_offsets_min2_train", ids)
+            self.assertIn("PASSIVE-H2-CAND001/latest", ids)
 
 
 if __name__ == "__main__":

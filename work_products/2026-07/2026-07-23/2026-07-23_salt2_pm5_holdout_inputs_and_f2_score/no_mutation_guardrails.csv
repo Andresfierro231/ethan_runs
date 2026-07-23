@@ -1,0 +1,11 @@
+guardrail,value
+native_output_mutation,False
+registry_or_admission_mutation,False
+scheduler_action,False
+physical_source_property_or_qwall_release,False
+physical_candidate_freeze,False
+physical_closure_claim,False
+coefficient_admission_as_physical_htc,False
+s11_s15_s6_trigger_fired,False
+hidden_multiplier_beyond_declared_affine,False
+deletion_staging_commit_push,False

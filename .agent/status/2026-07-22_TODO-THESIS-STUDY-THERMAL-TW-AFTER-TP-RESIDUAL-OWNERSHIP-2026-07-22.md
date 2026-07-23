@@ -41,7 +41,9 @@ coefficient/admission evidence.
 
 ## Validation
 
-CSV and JSON parse validation was run after file creation. The SVG artifact was
+PASS: `python3.11 work_products/2026-07/2026-07-22/2026-07-22_thesis_study_thermal_tw_after_tp_residual_ownership/check_thermal_tw_after_tp_packet.py`
+
+Output: `PASS thermal TW-after-TP packet: 6 residual rows, 9 owner rows, D2_TP_RMSE=4.38159 K, D2_TW_RMSE=12.5131 K`. The SVG artifact was
 created as a static thesis handoff figure; no rendering or image conversion was
 required.
 

@@ -1,0 +1,11 @@
+path,used_for,mutation_status
+work_products/2026-07/2026-07-22/2026-07-22_fluid_empirical_bias_models_publication_report/report.md,empirical_bias_track_interpretation,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/transfer_summary.csv,F2_F5_transfer_metrics,read_only
+work_products/2026-07/2026-07-21/2026-07-21_fluid_reduced_dof_bias_transfer_screen/split_metric_scorecard.csv,split_specific_transfer_metrics,read_only
+work_products/2026-07/2026-07-22/2026-07-22_thesis_master_model_form_scoreboard/recommended_model_forms_to_try.csv,D4_D3_D2_model_form_context,read_only
+work_products/2026-07/2026-07-22/2026-07-22_predictive_model_blocker_burndown/README.md,strict_predictive_blocker_state,read_only
+work_products/2026-07/2026-07-22/2026-07-22_p1d_bulk_cv_h2_train_only_thesis_prototype/README.md,P1D_H2_candidate_status,read_only
+work_products/2026-07/2026-07-22/2026-07-22_passive_h2_final_form_admission_phase_gate/README.md,PASSIVE_H2_fail_closed_context,read_only
+reports/thesis_dossier/Chapters_and_sections/current/06_intermediate_model_forms_and_endpoint_strategy.md,M0_M6_strict_ladder_context,read_only
+reports/thesis_dossier/Chapters_and_sections/current/08_thesis_claim_ledger.md,runtime_input_and_claim_boundaries,read_only
+work_products/2026-07/2026-07-23/2026-07-23_thesis_two_track_rom_model_writeup/thesis_model_writeup.md,new_synthesis_artifact,created

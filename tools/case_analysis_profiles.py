@@ -58,6 +58,14 @@ SALT3_JIN_SOURCE_ID = "viscosity_screening_salt_test_3_jin_coarse_mesh"
 SALT3_KIRST_SOURCE_ID = "viscosity_screening_salt_test_3_kirst_coarse_mesh"
 SALT4_JIN_SOURCE_ID = "viscosity_screening_salt_test_4_jin_coarse_mesh"
 SALT4_KIRST_SOURCE_ID = "viscosity_screening_salt_test_4_kirst_coarse_mesh"
+# Salt2 +/-5Q corrected heater-power perturbation runs. These continue the exact
+# same coarse Salt2 jin mesh (identical polyMesh topology, TP/TW registration,
+# and wall/connector patch names); only the heater power -- and hence the T field
+# values -- differ. Reuse the Salt2-family profile so any later incompatibility
+# surfaces as a real shared-contract issue rather than hidden by omission. Keyed
+# by their registry source_id (registry/case_registry.csv).
+SALT2_JIN_LO5Q_SOURCE_ID = "salt2_jin_lo5q_corrected"
+SALT2_JIN_HI5Q_SOURCE_ID = "salt2_jin_hi5q_corrected"
 WATER1_VAL_SOURCE_ID = "val_water_test_1_coarse_mesh_laminar"
 WATER2_VAL_SOURCE_ID = "val_water_test_2_coarse_mesh_laminar"
 WATER3_VAL_SOURCE_ID = "val_water_test_3_coarse_mesh_laminar"
@@ -669,6 +677,8 @@ SUPPORTED_CASE_ANALYSIS_PROFILES = {
     # it on the same reusable profile path so any later incompatibility is
     # treated as a real shared-contract issue rather than hidden by omission.
     SALT4_KIRST_SOURCE_ID: build_salt_family_case_profile(SALT4_KIRST_SOURCE_ID, "salt4_kirst_case_v1"),
+    SALT2_JIN_LO5Q_SOURCE_ID: build_salt_family_case_profile(SALT2_JIN_LO5Q_SOURCE_ID, "salt2_jin_lo5q_corrected_case_v1"),
+    SALT2_JIN_HI5Q_SOURCE_ID: build_salt_family_case_profile(SALT2_JIN_HI5Q_SOURCE_ID, "salt2_jin_hi5q_corrected_case_v1"),
     WATER1_VAL_SOURCE_ID: build_water_family_case_profile(WATER1_VAL_SOURCE_ID, "water1_val_case_v1"),
     WATER2_VAL_SOURCE_ID: build_water_family_case_profile(WATER2_VAL_SOURCE_ID, "water2_val_case_v1"),
     WATER3_VAL_SOURCE_ID: build_water_family_case_profile(WATER3_VAL_SOURCE_ID, "water3_val_case_v1"),
